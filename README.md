@@ -1,6 +1,7 @@
 # my-cheat-sheets
 
-`my-cheat-sheets` _is a place to keep my python code snippets and examples._
+`my-cheat-sheets` _is a place to keep my cheat sheets for various Apps,
+Operating Systems and Languages._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
