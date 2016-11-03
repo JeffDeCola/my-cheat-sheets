@@ -1,4 +1,4 @@
-# my-python-examples task-readme-github-pages.yml
+# my-cheat-sheets task-readme-github-pages.yml
 
 platform: linux
 
@@ -9,10 +9,10 @@ image_resource:
     tag: 1.7.1
 
 inputs:
-- name: my-python-examples
+- name: my-cheat-sheets
 
 outputs:
-- name: my-python-examples-updated
+- name: my-cheat-sheets-updated
 
 run:
-  path: ./my-python-examples/ci/scripts/readme-github-pages.sh
+  path: ./my-cheat-sheets/ci/scripts/readme-github-pages.sh

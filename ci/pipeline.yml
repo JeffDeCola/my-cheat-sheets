@@ -1,51 +1,38 @@
-# my-python-examples pipeline.yml
+# my-cheat-sheets pipeline.yml
 
 jobs:
 
 - name: job-readme-github-pages
   plan:
-  - get: my-python-examples
-    trigger: true
-  - task: task-readme-github-pages
-    file: my-python-examples/ci/tasks/task-readme-github-pages.yml
-  - put: my-python-examples
-    params:
-      repository: my-python-examples-updated
-
-- name: job-unit-tests
-  plan:
-  - get: my-python-examples
+  - get: my-cheat-sheets
     trigger: true
   - put: resource-slack-alert
     params:
       channel: '#jeff-builds'
-      text: "From my-python-examples: STARTED job-unit-tests in concourse ci."
+      text: "From my-cheat-sheets: STARTED job-readme-github-pages in concourse ci."
   - put: resource-repo-status
-    params: { state: "pending", description: "STARTED job-unit-tests in concourse ci.", commit: "my-python-examples" }
-  - task: task-unit-tests
-    file: my-python-examples/ci/tasks/task-unit-tests.yml
+    params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-cheat-sheets" }
+  - task: task-readme-github-pages
+    file: my-cheat-sheets/ci/tasks/task-readme-github-pages.yml
     on_success:
       do:
-      - put: my-python-examples
+      - put: my-cheat-sheets
         params:
-          repository: my-python-examples  
+          repository: my-cheat-sheets  
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text_file: coverage-results/test_coverage.txt
-          text: |
-            From my-python-examples: PASSED job-unit-tests in concourse ci. 
-            $TEXT_FILE_CONTENT
+          text: "From my-cheat-sheets: PASSED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "success", description: "PASSED job-unit-tests in concourse ci", commit: "my-python-examples" }
+        params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
     on_failure:
       do:
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text: "From my-python-examples: FAILED job-unit-tests in concourse ci."
+          text: "From my-cheat-sheets: FAILED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "failure", description: "FAILED job-unit-tests in concourse ci.", commit: "my-python-examples" }
+        params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
 
 resource_types:
 
@@ -62,11 +49,11 @@ resource_types:
 
 resources:
 
-- name: my-python-examples
+- name: my-cheat-sheets
   type: git
   source:
-    #uri: https://github.com/jeffdecola/my-python-examples
-    uri: git@github.com:jeffdecola/my-python-examples.git
+    #uri: https://github.com/jeffdecola/my-cheat-sheets
+    uri: git@github.com:jeffdecola/my-cheat-sheets.git
     branch: master
     private_key: {{git_private_key}}
 - name: resource-slack-alert
@@ -76,5 +63,5 @@ resources:
 - name: resource-repo-status 
   type: github-status
   source:
-    repository: jeffdecola/my-python-examples 
+    repository: jeffdecola/my-cheat-sheets 
     access_token: {{repo_github_token}}
