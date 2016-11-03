@@ -1,17 +1,17 @@
 #!/bin/bash
-# my-python-examples readme-github-pages.sh
+# my-cheat-sheets readme-github-pages.sh
 
 set -e -x
 
-# The code is located in /my-python-examples
+# The code is located in /my-cheat-sheets
 echo "pwd is: " $PWD
 echo "List whats in the current directory"
 ls -lat 
 
-# Note: my-python-examples-updated already created becasue of yml file
-git clone my-python-examples my-python-examples-updated
+# Note: my-cheat-sheets-updated already created becasue of yml file
+git clone my-cheat-sheets my-cheat-sheets-updated
 
-cd my-python-examples-updated
+cd my-cheat-sheets-updated
 ls -lat 
 
 # FOR GITHUB WEBPAGES
