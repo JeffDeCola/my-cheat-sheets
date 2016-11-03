@@ -1,0 +1,80 @@
+# my-python-examples pipeline.yml
+
+jobs:
+
+- name: job-readme-github-pages
+  plan:
+  - get: my-python-examples
+    trigger: true
+  - task: task-readme-github-pages
+    file: my-python-examples/ci/tasks/task-readme-github-pages.yml
+  - put: my-python-examples
+    params:
+      repository: my-python-examples-updated
+
+- name: job-unit-tests
+  plan:
+  - get: my-python-examples
+    trigger: true
+  - put: resource-slack-alert
+    params:
+      channel: '#jeff-builds'
+      text: "From my-python-examples: STARTED job-unit-tests in concourse ci."
+  - put: resource-repo-status
+    params: { state: "pending", description: "STARTED job-unit-tests in concourse ci.", commit: "my-python-examples" }
+  - task: task-unit-tests
+    file: my-python-examples/ci/tasks/task-unit-tests.yml
+    on_success:
+      do:
+      - put: my-python-examples
+        params:
+          repository: my-python-examples  
+      - put: resource-slack-alert
+        params:
+          channel: '#jeff-builds'
+          text_file: coverage-results/test_coverage.txt
+          text: |
+            From my-python-examples: PASSED job-unit-tests in concourse ci. 
+            $TEXT_FILE_CONTENT
+      - put: resource-repo-status
+        params: { state: "success", description: "PASSED job-unit-tests in concourse ci", commit: "my-python-examples" }
+    on_failure:
+      do:
+      - put: resource-slack-alert
+        params:
+          channel: '#jeff-builds'
+          text: "From my-python-examples: FAILED job-unit-tests in concourse ci."
+      - put: resource-repo-status
+        params: { state: "failure", description: "FAILED job-unit-tests in concourse ci.", commit: "my-python-examples" }
+
+resource_types:
+
+- name: slack-notification
+  type: docker-image
+  source:
+    repository: cfcommunity/slack-notification-resource
+    tag: latest
+- name: github-status
+  type: docker-image
+  source:
+    repository: dpb587/github-status-resource
+    tag: master
+
+resources:
+
+- name: my-python-examples
+  type: git
+  source:
+    #uri: https://github.com/jeffdecola/my-python-examples
+    uri: git@github.com:jeffdecola/my-python-examples.git
+    branch: master
+    private_key: {{git_private_key}}
+- name: resource-slack-alert
+  type: slack-notification
+  source:
+    url: {{slack_url}} 
+- name: resource-repo-status 
+  type: github-status
+  source:
+    repository: jeffdecola/my-python-examples 
+    access_token: {{repo_github_token}}

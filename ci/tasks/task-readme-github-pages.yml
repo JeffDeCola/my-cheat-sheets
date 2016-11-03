@@ -1,0 +1,18 @@
+# my-python-examples task-readme-github-pages.yml
+
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: 1.7.1
+
+inputs:
+- name: my-python-examples
+
+outputs:
+- name: my-python-examples-updated
+
+run:
+  path: ./my-python-examples/ci/scripts/readme-github-pages.sh
