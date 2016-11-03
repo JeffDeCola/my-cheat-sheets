@@ -18,7 +18,7 @@ jobs:
       do:
       - put: my-cheat-sheets
         params:
-          repository: my-cheat-sheets  
+          repository: my-cheat-sheets-updated  
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
