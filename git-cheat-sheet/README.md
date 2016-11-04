@@ -102,16 +102,18 @@ git status
 
 ### Add Files
 
+```bash
 README.md
 LICENSE
 .gitignore
 .codeclimate
 -R /ci
 -R /docs
+```
 
 Update all the above files with new REPONAME.
 
-### Push
+### Initial Push
 
 ```bash
 git add .
@@ -120,14 +122,14 @@ git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 git push origin master
 ```
 
-### Create Branch
+### Create "develop" Branch
 
 ```bash
 git checkout -b "develop" master
 git push --set-upstream origin develop
 ```
 
-### GitHub Setting
+### GitHub WebPage Setting
 
 In Settings add GitHub Webpage on /docs
 
@@ -141,6 +143,6 @@ Login to codeclimate and add new REPONAME.
 fly -t ci set-pipeline -p REPONAME -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
 ```
 
-### SNAP A PIC FOR README.md
+### Snap a Concourse Picture for README.md
 
 Place in `/docs/pics/REPONAME-pipeline.jpg`
