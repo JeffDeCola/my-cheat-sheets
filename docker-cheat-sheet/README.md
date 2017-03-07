@@ -1,6 +1,6 @@
 # DOCKER CHEAT SHEET
 
-`docker` is a Virtual Linux Container.
+`docker` _is a Virtual Linux Container._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

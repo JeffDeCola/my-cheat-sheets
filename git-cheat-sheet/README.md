@@ -1,6 +1,6 @@
 # GIT CHEAT SHEET
 
-`git` is a free and open source Distributed Version Control System.
+`git` _is a free and open source Distributed Version Control System._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
