@@ -8,7 +8,7 @@ echo "pwd is: " $PWD
 echo "List whats in the current directory"
 ls -lat 
 
-# Note: my-cheat-sheets-updated already created becasue of yml file
+# Note: my-cheat-sheets-updated already created becasue of .yml file
 git clone my-cheat-sheets my-cheat-sheets-updated
 
 cd my-cheat-sheets-updated
@@ -16,7 +16,7 @@ ls -lat
 
 # FOR GITHUB WEBPAGES
 # BASICALLY COPY README.md to /docs/_includes/README.md
-# Remove everything before the second hedading.
+# Remove everything before the second heading.
 sed '0,/GitHub Webpage/d' README.md > temp-README.md
 # update the image links (remove docs/)
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
