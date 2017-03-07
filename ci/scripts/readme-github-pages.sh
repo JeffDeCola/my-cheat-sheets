@@ -15,7 +15,7 @@ cd my-cheat-sheets-updated
 ls -lat 
 
 # FOR GITHUB WEBPAGES
-# BASICALLY COPY README.md to /docs/_includes/README.md
+# BASICALLY COPY README.md to /docs/_includes/README.md 
 # Remove everything before the second heading.
 sed '0,/GitHub Webpage/d' README.md > temp-README.md
 # update the image links (remove docs/)
