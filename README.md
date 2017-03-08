@@ -1,5 +1,9 @@
 # my-cheat-sheets
 
+[![Code Climate](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/gpa.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets)
+[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
+
 `my-cheat-sheets` _is a place to keep my cheat sheets for various Apps,
 Operating Systems and Languages._
 
