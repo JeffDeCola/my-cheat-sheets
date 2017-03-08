@@ -1,5 +1,5 @@
 
-## CHEAT SHEETS
+# CHEAT SHEETS
 
 * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
 
