@@ -18,6 +18,8 @@ ls -lat
 # BASICALLY COPY README.md to /docs/_includes/README.md 
 # Remove everything before the second heading.
 sed '0,/GitHub Webpage/d' README.md > temp-README.md
+# Change the first heading ## to #
+sed -i '0,/##/{s/##/#/}' temp-README.md
 # update the image links (remove docs/)
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
 
