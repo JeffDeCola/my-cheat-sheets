@@ -38,3 +38,4 @@ update_concourse.cmd
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 /docs/_site/
+/docs/_includes/README.md
