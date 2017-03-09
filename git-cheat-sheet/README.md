@@ -1,24 +1,32 @@
 # GIT CHEAT SHEET
 
-`git` _is a free and open source Distributed Version Control System._
+`git` _is a free and open source DVCS (Distributed Version Control System)._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## INSTALL
 
+For linux,
+
 ```bash
 sudo apt install git
+```
+
+For Winodws,
+
+```bash
+https://git-scm.com/downloads
 ```
 
 ## CONFIGURE
 
 ```bash
-git config --global user.name "Jeff DeCola"
-git config --global user.email EMAIL
+git config --global user.name "Jeff DeCola (HOSTNAME)"
+git config --global user.email YOUREMAIL
 git config --global core.editor nano
 ```
 
-Check,
+Check configuration,
 
 ```bash
 git config --list
@@ -26,7 +34,7 @@ git config --list
 
 ## SSH KEY
 
-Generate public and private key for ubuntu on virtual box and ubuntu on windows,
+Generate public and private key for Ubuntu,
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "phrase"
@@ -46,13 +54,13 @@ cat ~/.ssh/id_rsa.pub
 
 Goto GitHub and add your key.
 
-To connect use,
+To connect ti GitHub use,
 
 ```bash
 ssh -T git@github.com
 ```
 
-Force git to use ssh rather the http (Get this from GitHub.com),
+Force git to use ssh rather the http,
 
 ```bash
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
@@ -64,37 +72,37 @@ Check Settings,
 git config --list
 ```
 
-## CLONE
+## CLONE A REPO
 
 ```bash
 git clone https://github.com/JeffDeCola/REPONAME.git
 ```
 
-## FIRST PUSH
+## INITIAL PUSH
 
 ```bash
 git add .
-git commit
+git commit -m "initial"
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 git push origin master
 ```
 
-## CREATE BRANCH
+## CREATE A BRANCH
 
 ```bash
 git checkout -b "develop" master
 git push --set-upstream origin develop
 ```
 
-## HOW I CREATE A NEW REPO FOR THE FIRST TIME
+# HOW I CREATE A NEW REPO
 
-### Setup repo on GitHub
+## SETUP REPO ON GITHUB
 
 Do this first.
 
-### Create local repo
+## CREATE LOCAL REPO
 
-````bash
+```bash
 git clone https://github.com/JeffDeCola/REPONAME.git
 cd REPONAME
 git status
@@ -117,12 +125,12 @@ Update all the above files with new REPONAME.
 
 ```bash
 git add .
-git commit (initial)
+git commit -m "initial"
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 git push origin master
 ```
 
-### Create "develop" Branch
+### Create a "develop" Branch
 
 ```bash
 git checkout -b "develop" master
@@ -131,13 +139,13 @@ git push --set-upstream origin develop
 
 ### GitHub WebPage Setting
 
-In Settings add GitHub Webpage on /docs
+At GitHub add GitHub Webpage on /docs.
 
 ### Add REPONAME to codeclimate
 
 Login to codeclimate and add new REPONAME.
 
-### Configure Concourse
+### Configure Concourse CI
 
 ```bash
 fly -t ci set-pipeline -p REPONAME -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
@@ -145,4 +153,4 @@ fly -t ci set-pipeline -p REPONAME -c ci/pipeline.yml --load-vars-from ci/.crede
 
 ### Snap a Concourse Picture for README.md
 
-Place in `/docs/pics/REPONAME-pipeline.jpg`
+Place in `/docs/pics/REPONAME-pipeline.jpg`.
