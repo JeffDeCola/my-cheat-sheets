@@ -117,7 +117,7 @@ git clean -df
 
 ## INTERGRATE GIT WITH BASH PROPMPT
 
-I use [git-aware-promp] https://github.com/jimeh/git-aware-prompt
+I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
 # HOW I CREATE A NEW REPO
 

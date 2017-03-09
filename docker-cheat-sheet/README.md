@@ -7,6 +7,7 @@
 ## VIRTUAL MACHINE VERSUS DOCKER CONTAINER
 
 ![IMAGE - Virtual-Machine-vs-Docker - IMAGE](docs/pics/Virtual-Machine-vs-Docker.jpg)
+![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
 With a Virtual Machine you must use a Hypervisor emulated Virtual Hardware.
 A Virtual Machine needs a guest OS and takes a lot of system resources.
