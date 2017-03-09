@@ -18,7 +18,7 @@ For Winodws,
 https://git-scm.com/downloads
 ```
 
-## CONFIGURE
+## CONFIGURE FOR LINUX
 
 ```bash
 git config --global user.name "Jeff DeCola (HOSTNAME)"
@@ -30,6 +30,16 @@ Check configuration,
 
 ```bash
 git config --list
+```
+
+## CONFIGURE FOR WINDOWS
+
+Same as above but may also have to add permissions to ci scripts.
+
+e.g.
+
+```bash
+git update-index --chmod=+x readme-github-pages.sh
 ```
 
 ## SSH KEY
@@ -94,13 +104,26 @@ git checkout -b "develop" master
 git push --set-upstream origin develop
 ```
 
+## LOST DATA
+
+If you lost local data (maybe a snapshot screwed up), 
+just grab the lastest code from the git master. 
+
+```bash
+git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
+```
+
+## INTERGRATE GIT WITH BASH PROPMPT
+
+I use [git-aware-promp] https://github.com/jimeh/git-aware-prompt
+
 # HOW I CREATE A NEW REPO
 
-## SETUP REPO ON GITHUB
+First setup a repo on github.
 
-Do this first.
-
-## CREATE LOCAL REPO
+Clone the Repo,
 
 ```bash
 git clone https://github.com/JeffDeCola/REPONAME.git
@@ -108,20 +131,21 @@ cd REPONAME
 git status
 ```
 
-### Add Files
+Add Files,
 
 ```bash
 README.md
 LICENSE
 .gitignore
 .codeclimate
+update_concourse.sh
 -R /ci
 -R /docs
 ```
 
-Update all the above files with new REPONAME.
+Update all the above files with your REPONAME.
 
-### Initial Push
+Initial Push,
 
 ```bash
 git add .
@@ -130,27 +154,24 @@ git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 git push origin master
 ```
 
-### Create a "develop" Branch
+Create a "develop" Branch,
 
 ```bash
 git checkout -b "develop" master
 git push --set-upstream origin develop
 ```
 
-### GitHub WebPage Setting
-
 At GitHub add GitHub Webpage on /docs.
 
-### Add REPONAME to codeclimate
+Add REPONAME to codeclimate.
 
 Login to codeclimate and add new REPONAME.
 
-### Configure Concourse CI
+Configure Concourse CI,
 
 ```bash
 fly -t ci set-pipeline -p REPONAME -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
 ```
 
-### Snap a Concourse Picture for README.md
-
-Place in `/docs/pics/REPONAME-pipeline.jpg`.
+Snap a Concourse picture for README.md and place in
+`/docs/pics/REPONAME-pipeline.jpg`.
