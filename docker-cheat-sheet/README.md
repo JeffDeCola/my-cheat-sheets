@@ -8,7 +8,7 @@
 
 ![IMAGE - Virtual-Machine-vs-Docker - IMAGE](docs/pics/Virtual-Machine-vs-Docker.jpg)
 
-Wit a Virtual Machine you must use a Hypervisor emulated Virtual Hardware.
+With a Virtual Machine you must use a Hypervisor emulated Virtual Hardware.
 A Virtual Machine needs a guest OS and takes a lot of system resources.
 
 Containers (Like Docker Containers) use a shared host OS.  But you must use that
@@ -43,7 +43,7 @@ docker rmi IMAGE-ID
 DELETE ALL IMAGES
 
 ```bash
-docker rmi $(docker images -q)	
+docker rmi $(docker images -q)
 ```
 
 CONTAINERS
@@ -114,13 +114,13 @@ docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
 Now see what the docker container daemon is doing,
 
 ```bash
-docker logs NAME 
+docker logs NAME
 ```
 
 Stop a container
 
 ```bash
-docker stop NAME 
+docker stop NAME
 ```
 
 BUILD YOUR OWN IMAGE (METHOD 1) - Modify existing image
