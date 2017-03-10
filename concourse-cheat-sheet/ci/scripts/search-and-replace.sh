@@ -8,9 +8,14 @@ ls -lat
 
 pwd
 
-docker images
-docker ps
-
 cd /my-cheat-sheets
 ls -lat
+
+cd ..
+touch result.txt
+mv result.txt result
+cd result
+ls -lat
+pwd
+
 
