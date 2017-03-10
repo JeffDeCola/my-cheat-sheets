@@ -106,7 +106,7 @@ git push --set-upstream origin develop
 
 ## LOST DATA
 
-If you lost local data (maybe a snapshot screwed up), 
+If you lost local data (maybe a snapshot screwed up),
 just grab the lastest code from the git master. 
 
 ```bash
@@ -119,7 +119,7 @@ git clean -df
 
 I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
-# HOW I CREATE A NEW REPO
+## HOW I CREATE A NEW REPO
 
 First setup a repo on github.
 
