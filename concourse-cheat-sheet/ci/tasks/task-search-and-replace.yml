@@ -12,7 +12,7 @@ inputs:
 - name: my-cheat-sheets
 
 outputs:
-- name: search-outputs
+- name: result
 
 run:
   path: ./my-cheat-sheets/concourse-cheat-sheet/ci/scripts/search-and-replace.sh
