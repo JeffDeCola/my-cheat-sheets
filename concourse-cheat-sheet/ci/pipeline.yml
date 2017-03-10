@@ -7,7 +7,7 @@ jobs:
   - get: my-cheat-sheets
     trigger: true
   - task: task-seach-and-replace
-    file: /my-cheat-sheets/concourse-cheat-sheet/ci/tasks/task-seach-and-replace.yml
+    file: my-cheat-sheets/concourse-cheat-sheet/ci/tasks/task-search-and-replace.yml
     #on_success:
     #  do:
     #  - put: my-cheat-sheets

@@ -9,7 +9,7 @@ image_resource:
     tag: 1.7.1
 
 inputs:
-- name: search-inputs
+- name: my-cheat-sheets
 
 outputs:
 - name: search-outputs
