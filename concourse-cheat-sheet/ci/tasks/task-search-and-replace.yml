@@ -15,5 +15,5 @@ outputs:
 - name: search-outputs
 
 run:
-  path: ./my-cheat-sheets/concourse-cheat-sheets/ci/scripts/search-and-replace.sh
+  path: ./my-cheat-sheets/concourse-cheat-sheet/ci/scripts/search-and-replace.sh
 
