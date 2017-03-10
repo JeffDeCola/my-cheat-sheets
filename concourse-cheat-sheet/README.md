@@ -210,4 +210,10 @@ access_token: {{repo_github_token}}
 
 ```
 
+Now upload the pipeline to concourse,
+
+```bash
+fly -t ci set-pipeline -p search-and-replace -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+```
+
 
