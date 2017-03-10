@@ -7,15 +7,17 @@ Concourse's main goal is to run tasks.
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
+[My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+
 ## INSTALL AND RUN CONCOURSE ON VIRTUALBOX
 
 Get vargrant for windows
 
 https://www.vagrantup.com
 
-Get the concourse vagrant files. 
+Get the Concourse Vagrant files. 
 
-To run, from windows cmd prompt type,
+To run, from Windows cmd prompt type,
 
 ```bash
 vagrant up
@@ -29,7 +31,7 @@ vagrant destroy                             # remove the old Vagrant box
 vagrant up 
 ```
 
-Reinstal the new fly.exe for windows and linux.
+Reinstal the new fly.exe for Windows and Linux.
 
 
 ## INSTALL FLY ON WINDOWS
@@ -38,7 +40,7 @@ Open concourse,
 
 http://192.168.100.4:8080/
 
-In bottom right download latest verions of fly.exe for linux,
+In bottom right download latest verions of fly.exe for Linux,
 
 Place in,
 
@@ -46,7 +48,7 @@ Place in,
 C:\Program Files (x86)\Concourse\fly.exe
 ```
 
-Login fly to concourse,
+Login fly to Concourse,
 
 ```bash
 "C:\Program Files (x86)\Concourse\fly.exe" -t ci login -c http://192.168.100.4:8080/
@@ -60,11 +62,11 @@ Check version,
 
 ## INSTALL FLY ON LINUX
 
-Open concourse,
+Open Concourse,
 
 http://192.168.100.4:8080/
 
-In bottom right download latest verions of fly.exe for linux,
+In bottom right download latest verions of fly.exe for Linux,
 
 Place in,
 
@@ -73,7 +75,7 @@ mkdir $HOME/bin
 install $HOME/Downloads/fly $HOME/bin
 ```
 
-Login fly to concourse,
+Login fly to Concourse,
 
 ```bash
 fly -t ci login -c http:// 192.168.100.4:8080/
