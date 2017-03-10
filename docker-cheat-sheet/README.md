@@ -37,7 +37,7 @@ Check version,
 ```bash
 docker version
 ```
-- 
+
 ## IMAGES
 
 An image is ready to run.
@@ -170,7 +170,7 @@ MAINTAINER Jeff DeCola
 CMD echo "Hi Jeff"
 ```
 
-Another example of a Dockerfile,
+Another example,
 
 ```bash
 FROM docker/whalesay:latest
@@ -188,8 +188,7 @@ COPY whatever /
 CMD echo "Hi Jeff"
 ```
 
-### Build an Image
-
+Build the image,
 
 ```bash
 docker build -t jeffdecola/NAME .

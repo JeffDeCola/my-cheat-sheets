@@ -1,0 +1,19 @@
+# concourse-cheat-sheet task-search-and-replace.yml
+
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: 1.7.1
+
+inputs:
+- name: search-inputs
+
+outputs:
+- name: search-outputs
+
+run:
+  path: ./my-cheat-sheets/concourse-cheat-sheets/ci/scripts/search-and-replace.sh
+
