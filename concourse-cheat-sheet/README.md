@@ -85,7 +85,7 @@ Check version,
 fly -version
 ```
 
-## SIMPLE TEST CASE
+## CONCOURSE EXAMPLE - SEARCH AND REPLACE IN A FILE
 
 Concourse job is to run tasks.  So lets run a task that
 does a search and replace on a file.
@@ -96,9 +96,16 @@ There are 3 main files:
 
 ```bash
 #!/bin/bash
-# my-go-examples readme-github-pages.sh
+# my-go-examples searchadsfasdf.sh
 
 ls -lat
+```
+NOTE: If in windows, must change permissions to execute.
+
+Open git for windows,
+
+```bash
+git update-index --chmod=+x search-and-replace.sh
 ```
 
 2. tasks/task-search-and-replace.yml
