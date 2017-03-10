@@ -8,7 +8,7 @@ ls -lat
 
 pwd
 
-cd /my-cheat-sheets
+cd my-cheat-sheets
 ls -lat
 
 cd ..
