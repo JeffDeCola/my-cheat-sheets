@@ -5,3 +5,5 @@ set -e -x
 
 echo "List whats in the current directory"
 ls -lat 
+
+pwd
