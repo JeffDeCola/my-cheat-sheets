@@ -92,7 +92,7 @@ does a search and replace on a file.
 
 There are 3 main files:
 
-1. scripts/search_and_replace.sh
+### 1. scripts/search_and_replace.sh
 
 ```bash
 #!/bin/bash
@@ -108,7 +108,7 @@ Open git for windows,
 git update-index --chmod=+x search-and-replace.sh
 ```
 
-2. tasks/task-search-and-replace.yml
+### 2. tasks/task-search-and-replace.yml
 
 ```bash
 # my-go-examples task-readme-github-pages.yml
@@ -131,7 +131,7 @@ run:
 path: ./my-go-examples/ci/scripts/readme-github-pages.sh
 ```
 
-3. pipeline.yml
+### 3. pipeline.yml
 
 ```bash
 # my-go-examples pipeline.yml

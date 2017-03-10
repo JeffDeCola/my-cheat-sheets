@@ -8,3 +8,9 @@ ls -lat
 
 pwd
 
+docker images
+docker ps
+
+cd /my-cheat-sheets
+ls -lat
+
