@@ -17,8 +17,6 @@ Operating Systems and Languages._
 
 * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-cheat-sheet)
 
-* [tbd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/tbd-cheat-sheet)
-
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
 A Concourse Pipeline will automatically update the GitHub WebPage.
