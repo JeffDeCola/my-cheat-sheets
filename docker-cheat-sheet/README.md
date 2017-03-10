@@ -1,6 +1,6 @@
 # DOCKER CHEAT SHEET
 
-`docker` _is a Virtual Linux Container._ Docker Hub is an online 
+`docker` _is a Virtual Linux Container._ Docker Hub is an online
 resource to place docker containers.
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
@@ -9,7 +9,8 @@ resource to place docker containers.
 
 ## A VIRTUAL MACHINE VS DOCKER CONTAINER
 
-The followng disagram shows the difference betwenn a Virtual Machine and a Docker Container.
+The followng diagram shows the difference betwenn a Virtual Machine
+and a Docker Container.
 
 ![IMAGE - Virtual-Machine-vs-Docker - IMAGE](../docs/pics/Virtual-Machine-vs-Docker.jpg)
 
@@ -36,18 +37,18 @@ Check version,
 ```bash
 docker version
 ```
-
+- 
 ## IMAGES
 
-An image is a ready to run.
+An image is ready to run.
 
-List Images on Machine
+List images,
 
 ```bash
 docker images
 ```
 
-Delete a docker image,
+Delete an image,
 
 ```bash
 docker rmi IMAGE-ID
@@ -61,7 +62,7 @@ docker rmi $(docker images -q)
 
 ## CONTAINERS
 
-A Container is a running image.
+A container is a running image.
 
 List of Running Containers
 
@@ -69,7 +70,7 @@ List of Running Containers
 docker ps
 ```
 
-Run an image from Docker Hub
+Run an image from Docker Hub,
 
 ```bash
 docker run jeffdecola/hello-go
@@ -110,14 +111,14 @@ Delete all containers,
 docker rm $(docker ps -a -q)
 ```
 
-Run an interactive container,
-
-This is cool, gives you a tty terminal,
+Run an interactive container, This is cool, it gives you a tty terminal,
 
 ```bash
 docker run -t -i ubuntu /bin/bash
 docker run -t -i jeffdecola/hello-go
 ```
+-t tty
+-i interactive
 
 Run a container as a daemon,
 
@@ -160,11 +161,7 @@ jeffdecola/sinatra:jeffver
 
 ## BUILD YOUR OWN IMAGE (METHOD 2) - Create Dockerfile
 
-```bash
-mkdir hello-world-test
-```
-
-nano  Dockerfile
+create a Dockerfile,
 
 ```bash
 ## Test
@@ -173,7 +170,7 @@ MAINTAINER Jeff DeCola
 CMD echo "Hi Jeff"
 ```
 
-Another example of a Dockerfile
+Another example of a Dockerfile,
 
 ```bash
 FROM docker/whalesay:latest
@@ -191,18 +188,20 @@ COPY whatever /
 CMD echo "Hi Jeff"
 ```
 
-### Build ???
+### Build an Image
+
 
 ```bash
 docker build -t jeffdecola/NAME .
 ```
+-t is tag name.
 
-### Run Image,
+Check your build,
 
 ```bash
-docker run -t -i jeffdecola/NAME
-docker run -t -i jeffdecola/NAME /bin/bash
+docker images
 ```
+
 
 
 
