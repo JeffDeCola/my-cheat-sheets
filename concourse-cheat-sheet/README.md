@@ -9,8 +9,6 @@ Concourse's main goal is to run tasks.
 
 ## INSTALL AND RUN CONCOURSE ON VIRTUALBOX
 
-Will run concourse on VirtualBox using vagrant.
-
 Get vargrant for windows
 
 https://www.vagrantup.com
