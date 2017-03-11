@@ -200,7 +200,3 @@ Check your build,
 ```bash
 docker images
 ```
-
-
-
-
