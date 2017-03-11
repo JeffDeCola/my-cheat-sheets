@@ -86,3 +86,18 @@ Check version,
 ```bash
 fly -version
 ```
+
+## BASIC STRUCTURE OF CONCOURSE
+
+See a more detailed example at
+[my-concourse-ci-tasks](https://jeffdecola.github.io/my-concourse-ci-tasks/).
+
+The following diagram illustrates compase running a task called seach-and-replace.
+
+* `pipiline.yml` Grabs a repo from github
+* `config.yml` Configures task
+    * Grabs golang docker image 
+    * Sets up inputs/outputs into task container
+* `task.sh` does the task
+
+![IMAGE - concourse cheat sheet structure - IMAGE](docs/pics/Concourse-structure.jpg)
