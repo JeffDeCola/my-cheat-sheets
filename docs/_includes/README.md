@@ -5,7 +5,7 @@
 
 * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
 
-* [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-cheat-sheet)
+* [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
 
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
