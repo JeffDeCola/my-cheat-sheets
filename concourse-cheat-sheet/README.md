@@ -100,4 +100,4 @@ The following diagram illustrates compase running a task called seach-and-replac
     * Sets up inputs/outputs into task container
 * `task.sh` does the task
 
-![IMAGE - concourse cheat sheet structure - IMAGE](docs/pics/Concourse-structure.jpg)
+![IMAGE - concourse cheat sheet structure - IMAGE](../docs/pics/Concourse-structure.jpg)
