@@ -94,10 +94,33 @@ See a more detailed example at
 
 The following diagram illustrates compase running a task called seach-and-replace.
 
-* `pipiline.yml` Grabs a repo from github
+* `pipiline.yml` A pipeline of resources and jobs.
 * `config.yml` Configures task
-    * Grabs golang docker image 
+    * Grabs docker image 
     * Sets up inputs/outputs into task container
 * `task.sh` does the task
 
+`IMPORTANT - THE JOBS ARE COMPLETELY IDENPENDENT OF EACH OTHER`
+If you want to store 'state', use a resource to send it offsite.
+
 ![IMAGE - concourse cheat sheet structure - IMAGE](../docs/pics/Concourse-structure.jpg)
+
+## LOAD PIPELINE TO CONCOURSE CI
+
+First login,
+
+```bash
+fly -t ci login
+```
+
+Then upload file,
+
+```bash
+fly -t ci set-pipeline -p my-cheat-sheets -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+```
+
+To remove pipeline,
+
+```bash
+fly -t ci destroy-pipeline --pipeline my-cheat-sheets
+```
