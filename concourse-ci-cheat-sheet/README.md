@@ -1,4 +1,4 @@
-# CONCOURSE CHEAT SHEET
+# CONCOURSE CI CHEAT SHEET
 
 `concourse` _is a pipelined CI (Continuous Integration) for
 Software Builds._
@@ -9,7 +9,7 @@ Concourse's main goal is to run tasks.
 
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
-## INSTALL AND RUN CONCOURSE ON VIRTUALBOX
+## INSTALL AND RUN CONCOURSE CI ON VIRTUALBOX
 
 Get vargrant for windows
 
@@ -87,7 +87,7 @@ Check version,
 fly -version
 ```
 
-## BASIC STRUCTURE OF CONCOURSE
+## BASIC STRUCTURE OF CONCOURSE CI
 
 See a more detailed example at
 [my-concourse-ci-tasks](https://jeffdecola.github.io/my-concourse-ci-tasks/).
