@@ -42,6 +42,26 @@ e.g.
 git update-index --chmod=+x readme-github-pages.sh
 ```
 
+## HTTPS ACCESS
+
+Generate a personal access token for your machines .netrc
+file at github.com.
+
+Creating a .netrc file and be placing this token in
+login field as follows,
+
+
+```bash
+nano ~/.netrc
+```
+
+Add,
+
+```bash
+machine github.com
+login {TOKEN FROM GITHUB}
+```
+
 ## SSH KEY
 
 Generate public and private key for Ubuntu,
