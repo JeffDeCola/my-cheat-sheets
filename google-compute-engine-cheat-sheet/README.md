@@ -1,4 +1,4 @@
-# GCE (GOOGLE COMPUTE ENGINE) CHEAT SHEET
+# GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
 
 `google compute engine` _part of google Cloud Platform, provides
 high performance scalable VMs (Virtual Machines)._
