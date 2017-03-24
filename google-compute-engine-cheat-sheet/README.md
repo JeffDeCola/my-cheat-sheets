@@ -1,4 +1,4 @@
-# GCE (GOOGLE COMPUTE ENGINE) CHEAT SHEET
+# GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
 
 `google compute engine` _part of google Cloud Platform, provides
 high performance scalable VMs (Virtual Machines)._
@@ -6,6 +6,7 @@ high performance scalable VMs (Virtual Machines)._
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 [Google Cloud Platform Reference](https://cloud.google.com/sdk/gcloud/reference/)
+
 [Compute Engine Reference](https://cloud.google.com/sdk/gcloud/reference/compute/)
 
 ## BASIC GCP (GOOGLE CLOUD PLATFORM) COMMANDS
@@ -16,7 +17,7 @@ GCP Help,
 gcloud help
 ```
 
-Version information for GC SDK Components,
+Version information for GCP SDK Components,
 
 ```bash
 gcloud config list
@@ -50,7 +51,7 @@ gcloud compute instance-groups managed list
 gcloud compute instance-groups unmanged list
 ```
 
-List your instances (they should call it VMs),
+List your instances/VMs,
 
 ```bash
 gcloud compute instances list
@@ -64,13 +65,13 @@ GCE Help,
 gcloud help compute
 ```
 
-List of GCE Machines Types per Zone,
+List of Machines Types per zone,
 
 ```bash
 gcloud compute machine-types list
 ```
 
-List GCE Zones,
+List zones,
 
 ```bash
 gcloud compute zones list
