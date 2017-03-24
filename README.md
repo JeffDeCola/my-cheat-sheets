@@ -17,6 +17,8 @@ Operating Systems and Languages._
 
 * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
 
+* [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
 A Concourse Pipeline will automatically update the GitHub WebPage.
