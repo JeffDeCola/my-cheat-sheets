@@ -89,3 +89,27 @@ gcloud help compute instance-groups managed create
 gcloud help compute instance-groups unmanaged create
 gcloud help compute instances create
 ```
+
+## GCLOUD BETA - PUBSUB
+
+Beta versions of gcloud commands such as ones for pubsub.
+
+List whats available
+
+```bash
+gcloud help beta
+```
+
+List pubsub topics,
+
+```bash
+gcloud beta pubsub topics list
+```
+
+List pubsub subscriptions,
+This lists everything, so it can be a long list.
+
+```bash
+gcloud beta pubsub subscriptions list
+```
+
