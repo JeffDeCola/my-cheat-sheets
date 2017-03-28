@@ -23,6 +23,10 @@ Operating Systems and Languages._
 
 * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
 
+* [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+
+* [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
+
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
 A Concourse Pipeline will automatically update the GitHub WebPage.
