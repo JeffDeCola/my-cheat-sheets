@@ -27,6 +27,10 @@ Operating Systems and Languages._
 
 * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
 
+* [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+
+* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kuberbetes-cheat-sheet)
+
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
 A Concourse Pipeline will automatically update the GitHub WebPage.
