@@ -1,6 +1,7 @@
 # TERRAFORM CHEAT SHEET
 
-`terraform` _????._
+`terraform` _creates, combines and manages infrastructure across
+multiple providers._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

@@ -30,3 +30,31 @@ After install check version,
 ```bash
 packer version
 ```
+
+## SUPPORTS
+
+Packer supports building images for Amazon, Google, VirtualBox, etc...
+
+## TEMPLATE FILE EXAMPLE
+
+`testcase.json` example,
+
+???????
+
+`Variables` are just that.
+
+`Builders` are ???
+
+`Provisioners` are ???
+
+Validate template file,
+
+```bash
+packer validate example.json
+```
+
+## RUN EXAMPLE
+
+```bash
+packer build testcase.json
+```
