@@ -90,7 +90,7 @@ Test your webhook,
 ```bash
 curl -X POST --data-urlencode \
 'payload={"channel": "#grafana-alert", "username": "jeff", "text": "This is posted to #grafana-alert and comes from a bot named Jeff.", "icon_emoji": ":ghost:"}' \
-https://hooks.slack.com/services/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
+https://hooks.slack.com/services/xxxxxxx/xxxxxx/xxxxxxxx
 ```
 
 To get the slack notification link to works,
