@@ -69,10 +69,10 @@ grafana-cli plugins ls
 ```
 ### GRAFANA HTTP API
 
-GET http://10.240.0.61:3000/dashboard/db/jeff-hello
+GET http://x.x.x.x.:3000/dashboard/db/jeff-hello
 
 
-curl http://admin:admin@10.240.0.61:3000/api/org
+curl http://admin:admin@x.x.x.x.:3000/api/org
 
 
 ## SLACK NOTIFICAITON
