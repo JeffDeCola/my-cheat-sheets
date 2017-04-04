@@ -135,6 +135,16 @@ git reset --hard FETCH_HEAD
 git clean -df
 ```
 
+## REMOVING A COMMIT ON GITHUB
+
+Note: You will destroy the commit history and not at all
+nice for collaboration.
+
+```bash
+git reset —hard <SHA>
+git push —force
+```
+
 ## INTERGRATE GIT WITH BASH PROPMPT
 
 I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
