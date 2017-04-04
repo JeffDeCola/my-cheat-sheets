@@ -29,7 +29,9 @@ Operating Systems and Languages._
 
 * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
 
-* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kuberbetes-cheat-sheet)
+* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
+
+* [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
 
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
