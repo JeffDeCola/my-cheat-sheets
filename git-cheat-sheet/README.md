@@ -149,6 +149,20 @@ git push —force
 
 I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
+## MAC-OS git chekcout autocomplete
+
+```bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+```
+
+Add to `~/.bash_profile`,
+
+```bash
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+```
+
 ## HOW I CREATE A NEW REPO
 
 First setup a repo on github.
