@@ -156,11 +156,9 @@ git push —force
 ## TO GET ALL CAUGHT UP
 
 If you just want to have all your local branches
-and master up to date,
+and master up to date, the best way to do this is branch by branch.
 
-The best way to do this is, branch by branch.
-
-Note `pull = fetch + merge`
+Note `pull = fetch + merge`.
 
 ```bash
 git checkout master
