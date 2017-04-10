@@ -162,13 +162,13 @@ Note `pull = fetch + merge`.
 
 ```bash
 git checkout master
-git pull origin master
+git pull
 
 git checkout branch1
-git pull origin branch1
+git pull
 
 git checkout branch2
-git pull origin branchname2
+git pull
 ```
 
 ## INTERGRATE GIT WITH BASH PROPMPT
