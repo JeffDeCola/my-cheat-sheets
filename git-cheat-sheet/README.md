@@ -104,8 +104,16 @@ git config --list
 
 ## CLONE A REPO
 
+Via http,
+
 ```bash
-git clone https://github.com/JeffDeCola/REPONAME.git
+git clone https://github.com/JeffDeCola/my-cheat-sheets.git
+```
+
+Via ssh,
+
+```bash
+git clone git@github.com:JeffDeCola/my-cheat-sheets.git
 ```
 
 ## INITIAL PUSH
@@ -127,7 +135,7 @@ git push --set-upstream origin develop
 ## LOST DATA
 
 If you lost local data (maybe a snapshot screwed up),
-just grab the lastest code from the git master. 
+just grab the lastest code from the git master.
 
 ```bash
 git fetch origin master
@@ -143,6 +151,26 @@ nice for collaboration.
 ```bash
 git reset —hard <SHA>
 git push —force
+```
+
+## TO GET ALL CAUGHT UP
+
+If you just want to have all your local branches
+and master up to date,
+
+The best way to do this is, branch by branch.
+
+Note `pull = fetch + merge`
+
+```bash
+git checkout master
+git pull origin master
+
+git checkout branch1
+git pull origin branch1
+
+git checkout branch2
+git pull origin branchname2
 ```
 
 ## INTERGRATE GIT WITH BASH PROPMPT
