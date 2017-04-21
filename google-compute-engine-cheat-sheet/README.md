@@ -57,6 +57,44 @@ List your instances/VMs,
 gcloud compute instances list
 ```
 
+## GCE HEALTH CHECK COMMANDS
+
+List your health checks at GCE,
+
+```bash
+gcloud compute health-checks list
+gcloud compute http-health-checks list
+```
+
+Describe the health check settings,
+
+```bash
+gcloud compute health-checks describe general-http-healthcheck-8080
+gcloud compute http-health-checks describe p-jeff-test
+```
+
+Add your instance group to an existing GCE Health Check,
+
+You can go into the browser and do it, or via CLI using,
+
+```bash
+gcloud beta compute instance-groups managed set-autohealing [IMAGE_NAME] \
+    --http-health-check [HEALTHCHECK_NAME] \
+    --initial-delay 120 \
+   --zone [ZONE]
+```
+
+## SHOW EXTERNAL IPs FOR PROJECT
+
+Listing static external IP addresses,
+
+
+```bash
+gcloud compute addresses list
+```
+
+gcloud compute addresses list
+
 ## OTHER BASIC GCE COMMANDS
 
 GCE Help,
@@ -143,4 +181,37 @@ To see command line arguments,
 
 ```bash
 gcloud beta emulators pubsub --help
+```
+
+## METADATA SERVER QUERY
+
+Every instance stores its metadata on the metadata server.
+You can query this metadata server programmatically for information such as 
+
+* The instance's host name
+* Instance ID
+* Startup scripts, and
+* Custom metadata
+
+ssh onto your instance and perform the following
+
+Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
+
+```bash
+curl -s http://metadata.google.internal/computeMetadata/v1/project/project-id  -H "Metadata-Flavor: Google"
+```
+
+Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
+
+```bash
+curl -s http://metadata.google.internal/computeMetadata/v1/instance -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/hostname -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/machine-type -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible  -H "Metadata-Flavor: Google"
+```
+
+wait for a change,
+
+```bash
+curl http://metadata.google.internal/computeMetadata/v1/instance/maintenance-event?wait_for_change=true -H 'Metadata-Flavor: Google'
 ```
