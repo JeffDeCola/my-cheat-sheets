@@ -9,7 +9,14 @@ Concourse's main goal is to run tasks.
 
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
-## INSTALL AND RUN CONCOURSE CI ON VIRTUALBOX
+There are a few ways to install concourse:
+
+* Local VM with Vagrant
+* Standalone Binary
+* Docker Repository
+* Clusters with BOSH
+
+## INSTALL CONCOURSE CI ON VIRTUALBOX USING VAGRANT
 
 Get vargrant for windows
 
@@ -33,6 +40,9 @@ vagrant up
 
 Reinstal the new fly.exe for Windows and Linux.
 
+## INSTALL CONCOURSE CI BINARY ON GOOGLE COMPUTE ENGINE
+
+This is a little more involved and the dirrections are here.
 
 ## INSTALL FLY ON WINDOWS
 
@@ -96,7 +106,7 @@ The following diagram illustrates compase running a task called seach-and-replac
 
 * `pipeline.yml` A pipeline of resources and jobs.
 * `config.yml` Configures task
-    * Grabs docker image 
+    * Grabs docker image
     * Sets up inputs/outputs into task container
 * `task.sh` does the task
 
@@ -124,4 +134,32 @@ To remove pipeline,
 
 ```bash
 fly -t ci destroy-pipeline --pipeline NAME
+```
+
+## CREATE A NEW TEAM
+
+Create a new team,
+
+```bash
+fly -t ci set-team --team-name ciusers \
+    --basic-auth-username admin \
+    --basic-auth-password admin
+```
+
+Login to new team,
+
+```bash
+fly -t ci login -n ciusers -c http://<ip>:8080
+```
+
+Show all targets,
+
+```bash
+fly targets
+```
+
+Show all teams,
+
+```bash
+fly -t ci teams
 ```
