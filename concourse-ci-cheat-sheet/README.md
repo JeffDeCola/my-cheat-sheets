@@ -42,7 +42,8 @@ Reinstal the new fly.exe for Windows and Linux.
 
 ## INSTALL CONCOURSE CI BINARY ON GOOGLE COMPUTE ENGINE
 
-This is a little more involved and the dirrections are here.
+This is a little more involved and the directions are
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md).
 
 ## INSTALL FLY ON WINDOWS
 
