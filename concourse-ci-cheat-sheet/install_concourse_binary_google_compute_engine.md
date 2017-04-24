@@ -1,13 +1,12 @@
-# INSTALL CONCOURSE BINARY GOOGLE COMPUTE ENGINE
+# INSTALL CONCOURSE BINARY ON GOOGLE COMPUTE ENGINE
 
-First get your ubuntu instance running on Google Copmpute Engine
-using at least 1 CPU.
+First get an ubuntu instance running on Google Compute Engine.
 
-ssh into you instance.
+Then ssh into you instance.
 
 ## CONCOURSE BINARY AND KEYS
 
-Get the concourse binary,
+Get the latest concourse binary,
 
 ```bash
 wget https://github.com/concourse/concourse/releases/download/v2.7.3/concourse_linux_amd64
@@ -40,6 +39,7 @@ Install postgresSQL Server,
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-client postgresql-contrib
 sudo -u postgres psql postgres
+
 > \password postgres
 > enter password
 > admin
@@ -65,6 +65,7 @@ Optionally I think I could of done,
 Make sure you have these two lines (I believe this is done),
 
 `host all all 127.0.0.1/32 md5`
+
 `host all all ::1/128 md5`
 
 Edit postgresql.conf,
@@ -91,12 +92,9 @@ Open psql as user postgres,
 
 ```bash
 psql
-```
-
-```bash
-create database atc;
-create database concourse;
-create user concourse password 'admin';
+> create database atc;
+> create database concourse;
+> create user concourse password 'admin';
 ```
 
 Check that role was created correctly,
@@ -105,13 +103,18 @@ Check that role was created correctly,
 SELECT rolname FROM pg_roles;
 ```
 
-Exit psql `ctrl+D` and Exit postgres user `exit`.
+Exit psql `ctrl+D` 
+
+Exit postgres user `exit`.
 
 ## START CONCOURSE WEB
 
-Now lets start a Single node, local Postgres. Spin up the ATC, 
-listening on port 8080, with some basic auth configured, and a TSA listening on port 2222.
-This assumes you have a local Postgres server running on the default port (5432) 
+Now lets start a Single node, local Postgres. 
+
+Spin up the ATC, listening on port 8080, with some basic auth configured,
+and a TSA listening on port 2222.
+
+This assumes you have a local Postgres server running on the default port (5432)
 with an atc database, accessible by the current user.
 
 ```bash
@@ -121,7 +124,7 @@ concourse web \
   --session-signing-key session_signing_key \
   --tsa-host-key tsa_host_key \
   --tsa-authorized-keys authorized_worker_keys \
-  --external-url http://10.240.0.79 \
+  --external-url http://<INSTANCE_IP> \
   --postgres-data-source postgres://concourse:admin@localhost/concourse &
 ```
 
@@ -135,16 +138,16 @@ concourse web \
   --tsa-worker-private-key worker_key &
 ```
 
-Check it out
+Check it out in a browser,
 
-`http://<ip>:8080/`
+`http://<INSTANCE_IP>:8080/`
 
 ## FLY
 
 Login to fly using "main" team,
 
 ```bash
-fly -t ci login -c http://<ip>:8080
+fly -t ci login -c http://<INSTANCE_IP>:8080
 ```
 
 Enter the above username and password.
