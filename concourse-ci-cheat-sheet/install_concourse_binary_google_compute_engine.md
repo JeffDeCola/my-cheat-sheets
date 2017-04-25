@@ -4,9 +4,12 @@ First get an ubuntu instance running on Google Compute Engine.
 
 Then ssh into you instance.
 
+You may want to consider looking at this
+[repo using ansible](https://github.com/ahelal/ansible-concourse)
+
 ## CONCOURSE BINARY AND KEYS
 
-Get the latest concourse binary,
+Get the latest Concourse binary,
 
 ```bash
 wget https://github.com/concourse/concourse/releases/download/v2.7.3/concourse_linux_amd64
@@ -41,32 +44,28 @@ sudo apt-get -y install postgresql postgresql-client postgresql-contrib
 sudo -u postgres psql postgres
 
 > \password postgres
-> enter password
-> admin
+> "admin"
 > CREATE EXTENSION adminpack;
 > \q
 ```
 
-Edit pg_hba.conf,
+Check pg_hba.conf,
 
 ```bash
 sudo nano /etc/postgresql/9.5/main/pg_hba.conf
 ```
 
-Make sure you have,
-
-`host all all 127.0.0.1/32 md5`
-
-Optionally I think I could of done,
-
-`host concourse concourse 127.0.0.1/32 md5`
-`host atc concourse 127.0.0.1/32 md5`
-
-Make sure you have these two lines (I believe this is done),
+Make sure you have these two lines,
 
 `host all all 127.0.0.1/32 md5`
 
 `host all all ::1/128 md5`
+
+Optionally I think you could do,
+
+`host concourse concourse 127.0.0.1/32 md5`
+
+`host atc concourse 127.0.0.1/32 md5`
 
 Edit postgresql.conf,
 
@@ -142,9 +141,11 @@ Check it out in a browser,
 
 `http://<INSTANCE_IP>:8080/`
 
+Donwload fly executable to your machine.
+
 ## FLY
 
-Login to fly using "main" team,
+Login to fly using "main" team (default),
 
 ```bash
 fly -t ci login -c http://<INSTANCE_IP>:8080
