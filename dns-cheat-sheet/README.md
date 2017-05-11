@@ -1,7 +1,7 @@
 # DNS CHEAT SHEET
 
 `dns` _(Domain Name Server) resolves hosts/domains into IP addresses
-and visa versa.  Basically a large database.
+and visa versa.  Basically a large database._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -18,9 +18,9 @@ Installing BIND is out of the scope of this cheat-sheet.
 
 All DNS configurations for BIND are located under `/etc/bind`.
 
-* /etc/bind/named.conf - Primary configuration.
+* /etc/bind/named.conf - _Primary configuration._
 
-* /etc/bind/db.root -  describes the root name servers in the world.
+* /etc/bind/db.root -  _Describes the root name servers in the world._
 
 ## DNSmasq - LIGHTWEIGHT NAMESERVER AND DHCP FOR LINUX
 
@@ -42,26 +42,24 @@ The configuration file for DNS resolver (the client DNS).
 
 There are 3 directives in this file:
 
-nameserver # Points to the IP address of the Name Server(s) you want to use.
-domain     # Domain Name of local host
-search     # Search list for host name lookup.  you need this to resolve short host names.
+* nameserver _Points to the IP address of the Name Server(s)._
+* domain     _Domain Name of local host._
+* search     _Search list for host name lookup.  This resolves short host names._
 
-A note about searc.  Search resolves short hostnames.
-
-For example if you have,
+Search resolves short hostnames. For example if you have,
 
 `search whatever.com`
 
-and if you ssh into something like `ssh p-test`.  It will actually try,
+And you ssh into something like `ssh p-test`.  It will actually do,
 
 `ssh p-test.whatever.com`
 
 ## CHECK THAT DNS IS WORKING
 
-host ubuntu.com
-dig ubuntu.com
-ping ubuntu.com
-nslookup ubuntu.com
+* host ubuntu.com
+* dig ubuntu.com
+* ping ubuntu.com
+* nslookup ubuntu.com
 
 ## RESOLVCONF PROGRAM 
 
@@ -76,17 +74,24 @@ file can become out-of-sync. The resolvconf program addresses
 this problem. It acts as an intermediary between programs that supply
 nameserver information and programs that use this information.
 
-So bottom line, `we can't edit /etc/resolv.conf`.
+So bottom line, we can't edit `/etc/resolv.conf`.
 
-And its actually linked to,
+The file is actually linked to,
 
 `/etc/resolv.conf -> ../run/resolvconf/resolv.conf`
 
+But there are two methods to solve this.
+
 ## METHOD 1 - ADDING TO RESOLV.CONF - USE TAIL FILE
+
+Again, when using resolvconf program, you can't edit
+`/etc/resolv.conf`, so this is method 1 to get around that.
 
 `sudo nano /etc/resolvconf/resolv.conf.d/tail`
 
 nameserver 1.2.3.4
+
+You can restart if you want.
 
 `sudo resolveconf -u`
 
@@ -99,7 +104,13 @@ sudo nano /etc/network/interfaces
 iface lo inet loopback
     dns-nameservers 12.34.56.78 12.34.56.79
 
-## TO PREVENT UPDATES
+## TO PREVENT UPDATES FROM DHCP
+
+When dhclient runs; either on reboot or when you
+manually run it loads this script nodnsupdate.
+This script overrides an internal function called
+make_resolv_conf() that would normally overwrite
+resolv.conf and instead does nothing.
 
 sudo nano /etc/dhcp/dhclient-enter-hooks.d/nodnsupdate
 
@@ -111,9 +122,3 @@ make_resolv_conf() {
 ```
 
 chmod +x /etc/dhcp/dhclient-enter-hooks.d/nodnsupdate
-
-When dhclient runs -- either on reboot or when you
-manually run it loads this script nodnsupdate.
-This script overrides an internal function called
-make_resolv_conf() that would normally overwrite
-resolv.conf and instead does nothing.
