@@ -90,6 +90,12 @@ To connect ti GitHub use,
 ssh -T git@github.com
 ```
 
+If you want to use a particular public key file,
+
+```bash
+ssh -i ~/.ssh/id_rsa.pub git@github.com
+```
+
 Force git to use ssh rather the http,
 
 ```bash
@@ -100,6 +106,12 @@ Check Settings,
 
 ```bash
 git config --list
+```
+
+To check the fingerprint at github against your local public key.
+
+```bash
+ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 ```
 
 ## CLONE A REPO

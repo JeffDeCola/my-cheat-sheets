@@ -215,3 +215,13 @@ wait for a change,
 ```bash
 curl http://metadata.google.internal/computeMetadata/v1/instance/maintenance-event?wait_for_change=true -H 'Metadata-Flavor: Google'
 ```
+
+## SSH INTO YOUR INSTANCE
+
+You can ssh onto your instance,
+
+Become root,
+
+```bash
+sudo su -
+```

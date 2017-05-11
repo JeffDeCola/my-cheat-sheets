@@ -11,27 +11,31 @@ Operating Systems and Languages._
 
 ## CHEAT SHEETS
 
-* [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
-
-* [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
-
 * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
-
-* [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
-
-* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
-
-* [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
-
-* [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
 
 * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
 
-* [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+* [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+
+* [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
+
+* [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
+
+* [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+
+* [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
 
 * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
 
+* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
+
 * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
+
+* [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+
+* [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+
+A lot of these cheat sheets have info I gathered from other sources.
 
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
