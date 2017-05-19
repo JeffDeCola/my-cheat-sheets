@@ -62,7 +62,9 @@ ping ubuntu.com
 nslookup ubuntu.com
 ```
 
-## CLIENT - RESOLVCONF PROGRAM MANAGES /etc/resolve.conf
+## PROGRAM - RESOLVCONF PROGRAM
+
+Used by ubuntu and debian.
 
 The service file is `/lib/systemd/system/resolvconf.service`.
 
@@ -104,6 +106,43 @@ sudo nano /etc/network/interfaces
 
 iface lo inet loopback
     dns-nameservers 12.34.56.78 12.34.56.79
+
+## PROGRAM - NETWORK MANAGER
+
+Used by centos and red hat.
+
+Status,
+
+```bash
+systemctl status NetworkManager
+```
+
+Install,
+
+```bash
+sudo apt-get -y install network-manager
+sudo yum -y install NetworkManager
+```
+
+Start,
+
+```bash
+sudo systemctl start NetworkManager.service
+```
+
+Enable restarting the network manager when the system reboots,
+
+```bash
+sudo systemctl enable NetworkManager.service
+```
+
+Configure,
+
+```bash
+/etc/NetworkManager/NetworkManager.conf
+```
+
+Now use with /etc/resolve.conf
 
 ## CLIENT - TO PREVENT UPDATES FROM DHCP
 
