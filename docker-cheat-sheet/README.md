@@ -1,7 +1,7 @@
 # DOCKER CHEAT SHEET
 
 `docker` _is a Virtual Linux Container._ Docker Hub is an online
-resource to place docker containers.
+resource to place docker containers._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

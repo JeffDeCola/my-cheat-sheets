@@ -11,29 +11,37 @@ Operating Systems and Languages._
 
 ## CHEAT SHEETS
 
-* [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
+* OPERATION TOOLS
 
-* [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
+  * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
 
-* [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+  * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
 
-* [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
+* TOOLS
 
-* [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
+  * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
 
-* [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
 
-* [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
+  * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
 
-* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
+  * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
 
-* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
+  * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
 
-* [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
+  * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
 
-* [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
 
-* [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+* OS TOOLS
+
+  * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+
+* SERVER/COMPUTE
+
+  * [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+
+  * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
 
 A lot of these cheat sheets have info I gathered from other sources.
 
