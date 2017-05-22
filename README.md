@@ -11,19 +11,7 @@ Operating Systems and Languages._
 
 ## CHEAT SHEETS
 
-* OPERATION TOOLS
-
-  * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
-
-  * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
-
-* TOOLS
-
-  * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
-
-  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
-
-  * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
+* OCHESTRATION (DEPLOYMENT)
 
   * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
 
@@ -31,17 +19,33 @@ Operating Systems and Languages._
 
   * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
 
+* INFRASTRUCTURE
+
+  * [ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ansible-cheat-sheet)
+
+  * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
+
+  * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
+
+  * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
+
+  * [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+
   * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+
+* TELEMETRY
+
+  * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
+
+  * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
+
+* SOURCE CONTROL
+
+  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
 
 * OS TOOLS
 
   * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
-
-* SERVER/COMPUTE
-
-  * [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
-
-  * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
 
 A lot of these cheat sheets have info I gathered from other sources.
 
