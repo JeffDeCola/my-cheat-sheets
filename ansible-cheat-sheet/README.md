@@ -1,6 +1,6 @@
 # ANSIBLE CHEAT SHEET
 
-`ansible` _is a configuration management and provisioning tool for deployin a server._
+`ansible` _is a configuration management and provisioning tool for deploying a server/service._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -11,7 +11,7 @@
 * Provisioning (make availible)
 * Ochestration (automation)
 * Security
-* Continous delivery
+* Continuous delivery
 
 ## ANSIBLE USES SSH
 
@@ -93,7 +93,7 @@ ansible all --module-name ping
 ansible all -m ping
 ```
 
-## MODULE
+## MODULES
 
 Ansible’s way of abstracting certain system management or configuration tasks.
 
@@ -169,4 +169,19 @@ ansible-playbook test.yml
 
 ## ROLES
 
-Special kind of playbook.
+Roles are special kind of playbook.
+
+Folders are as follows:
+
+* defaults      The default variables (lower priority variables).
+  * main.yml
+* files         If need to add files.
+* handlers      Targets for notify directives, and are almost always associated with services.
+  * main.yml
+* meta          Meta data.
+  * main.yml
+* tasks         Series of Ansible plays to install, configure, and run software.
+  * main.yml
+* templates     Similar to files except that templates support modification.
+* vars          The default variables (higher priority variables).
+  * main.yml
