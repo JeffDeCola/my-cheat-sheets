@@ -4,7 +4,7 @@ First get an ubuntu instance running on Google Compute Engine.
 
 Then ssh into you instance.
 
-You may want to consider looking at this
+You may also want to consider looking at this
 [repo using ansible](https://github.com/ahelal/ansible-concourse)
 
 ## CONCOURSE BINARY AND KEYS
@@ -106,9 +106,9 @@ Exit psql `ctrl+D`
 
 Exit postgres user `exit`.
 
-## START CONCOURSE WEB
+## START CONCOURSE WEB - SINGLE NODE
 
-Now lets start a Single node, local Postgres. 
+Now lets start a Single node, local Postgres.
 
 Spin up the ATC, listening on port 8080, with some basic auth configured,
 and a TSA listening on port 2222.
@@ -117,17 +117,17 @@ This assumes you have a local Postgres server running on the default port (5432)
 with an atc database, accessible by the current user.
 
 ```bash
-concourse web \
+sudo concourse web \
   --basic-auth-username USERNAME \
   --basic-auth-password PASSWORD \
   --session-signing-key session_signing_key \
   --tsa-host-key tsa_host_key \
   --tsa-authorized-keys authorized_worker_keys \
-  --external-url http://<INSTANCE_IP> \
+  --external-url http://10.240.4.154:8080 \
   --postgres-data-source postgres://concourse:admin@localhost/concourse &
 ```
 
-## START CONCOURSE WORKER
+## START CONCOURSE WORKER - SINGLE MODE
 
 ```bash
   sudo concourse worker \
@@ -139,11 +139,19 @@ concourse web \
 
 Check it out in a browser,
 
-`http://<INSTANCE_IP>:8080/`
+```bash
+http://<INSTANCE_IP>:8080/
+```
 
-Donwload fly executable to your machine.
+Check ps,
+
+```bash
+ps -aux | grep concourse
+```
 
 ## FLY
+
+Donwload fly executable to your machine.
 
 Login to fly using "main" team (default),
 
