@@ -7,4 +7,6 @@ resource to place docker containers.
 
 [Jeff's Docker Hub Images](https://hub.docker.com/u/jeffdecola/)
 
-## A VIRTUAL MACHINE VS DOCKER CONTAINER
+## TBD
+
+coming soon.
