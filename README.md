@@ -11,15 +11,7 @@ Operating Systems and Languages._
 
 ## CHEAT SHEETS
 
-* TOOLS
-
-  * OCHESTRATION (DEPLOYMENT)
-
-    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
-
-    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
-
-    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+* OPERATIONS TOOLS
 
   * CONFIGURATION MANAGEMENT
 
@@ -32,6 +24,14 @@ Operating Systems and Languages._
   * DISCOVERY / CONFIGURATION
 
     * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
+
+  * OCHESTRATION (DEPLOYMENT)
+
+    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
+
+    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
+
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
 
   * TELEMETRY
 
@@ -56,6 +56,14 @@ Operating Systems and Languages._
 * LINUX
 
   * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+
+* LANGUAGES
+
+  * [go](https://github.com/JeffDeCola/my-go-examples)
+
+  * [php](https://github.com/JeffDeCola/my-php-containers)
+
+  * [python](https://github.com/JeffDeCola/my-python-examples)
 
 A lot of these cheat sheets have info I gathered from other sources.
 
