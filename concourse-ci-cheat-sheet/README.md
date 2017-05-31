@@ -11,10 +11,11 @@ Concourse's main goal is to run tasks.
 
 There are a few ways to install concourse:
 
-* Local VM with Vagrant
-* Standalone Binary
+* Local VM with Vagrant (below)
+* [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md)
 * Docker Repository
 * Clusters with BOSH
+* Ansible Roles
 
 ## INSTALL CONCOURSE CI ON VIRTUALBOX USING VAGRANT
 
@@ -128,7 +129,7 @@ fly -t ci login
 Then upload file,
 
 ```bash
-fly -t ci set-pipeline -p NAME -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
 ```
 
 To remove pipeline,
@@ -164,3 +165,32 @@ Show all teams,
 ```bash
 fly -t ci teams
 ```
+
+## PASSING SECRETS TO USE IN YOUR SCRIPT (via env)
+
+To pass secrets to your concourse script, first use fly to upload
+the secret to concourse,
+
+```bash
+fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml --var "private-key=$(cat private-key.txt)"
+```
+
+Then update the task in your pipeline to add params,
+
+```yml
+- task: mybuild
+  file: task.yml
+  params:
+    PRIVATE_KEY: {{private-key}}
+```
+
+Then in you `task.yml` file, also use params with the same name,
+it will be overwritten.
+
+```yml
+params:
+  PRIVITE_KEY: "this will be overwritten"
+```
+
+Hence, this will create an env variable `PRIVATE_KEY` you
+may use in your script.
