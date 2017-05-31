@@ -54,10 +54,11 @@ Delete an image,
 docker rmi IMAGE-ID
 ```
 
-Delete all images,
+Delete all images (-f is force),
 
 ```bash
 docker rmi $(docker images -q)
+docker rmi -f $(docker images -q)
 ```
 
 ## CONTAINERS
@@ -193,6 +194,7 @@ Build the image,
 ```bash
 docker build -t jeffdecola/NAME .
 ```
+
 -t is tag name.
 
 Check your build,
