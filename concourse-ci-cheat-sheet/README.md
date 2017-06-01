@@ -168,14 +168,16 @@ fly -t ci teams
 
 ## PASSING SECRETS TO USE IN YOUR SCRIPT (via env)
 
-To pass secrets to your concourse script, first use fly to upload
-the secret to concourse,
+To pass secrets (files and variables) to your concourse script,
+first use fly to upload the secret to concourse,
 
 ```bash
-fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml --var "private-key=$(cat private-key.txt | base64)"
+fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml \
+    --var "private-key-file=$(cat private-key-file.txt | base64)" \
+    --var "private-key=$(echo jeffdecola)"
 ```
 
-Use base64 so you can unpack it properly on the other side.
+Use base64 on files so you can unpack them properly on the other side.
 
 Update the task in your pipeline with params,
 
@@ -183,18 +185,23 @@ Update the task in your pipeline with params,
 - task: mybuild
   file: task.yml
   params:
+    PRIVATE_KEY-FILE: {{private-key-file}}
     PRIVATE_KEY: {{private-key}}
 ```
 
 Then in your `task.yml` file, also use params with the same name
-(it will be overwritten).
+(the value will be overwritten).
 
 ```yml
 params:
+  PRIVITE_KEY-FILE: "this will be overwritten"
   PRIVITE_KEY: "this will be overwritten"
 ```
 
-This will create an env variable `PRIVATE_KEY` you
+This will create an env variable `PRIVATE_KEY-FILE` and `PRIVATE_KEY` you
 may use in your concourse script.
 
-echo $PRIVATE_KEY | base64 -d > private-key.txt
+```bash
+echo $PRIVATE_KEY-FILE | base64 -d > private-key-file.txt
+echo $PRIVATE_KEY
+```
