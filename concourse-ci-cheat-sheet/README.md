@@ -172,10 +172,12 @@ To pass secrets to your concourse script, first use fly to upload
 the secret to concourse,
 
 ```bash
-fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml --var "private-key=$(cat private-key.txt)"
+fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml --var "private-key=$(cat private-key.txt | base64)"
 ```
 
-Then update the task in your pipeline to add params,
+Use base64 so you can unpack it properly on the other side.
+
+Update the task in your pipeline with params,
 
 ```yml
 - task: mybuild
@@ -184,13 +186,15 @@ Then update the task in your pipeline to add params,
     PRIVATE_KEY: {{private-key}}
 ```
 
-Then in you `task.yml` file, also use params with the same name,
-it will be overwritten.
+Then in your `task.yml` file, also use params with the same name
+(it will be overwritten).
 
 ```yml
 params:
   PRIVITE_KEY: "this will be overwritten"
 ```
 
-Hence, this will create an env variable `PRIVATE_KEY` you
-may use in your script.
+This will create an env variable `PRIVATE_KEY` you
+may use in your concourse script.
+
+echo $PRIVATE_KEY | base64 -d > private-key.txt
