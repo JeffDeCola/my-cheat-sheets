@@ -15,7 +15,7 @@ There are a few ways to install concourse:
 * [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md)
 * Docker Repository
 * Clusters with BOSH
-* [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-ansilbe-google-compute-engine.md).
+* [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md).
 
 ## INSTALL CONCOURSE CI ON VIRTUALBOX USING VAGRANT
 
