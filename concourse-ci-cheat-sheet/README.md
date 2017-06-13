@@ -11,7 +11,7 @@ Concourse's main goal is to run tasks.
 
 There are a few ways to install concourse:
 
-* Local VM with Vagrant (below)
+* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet#install-concourse-ci-on-virtualbox-using-vagrant) (below)
 * [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md)
 * Docker Repository
 * Clusters with BOSH
