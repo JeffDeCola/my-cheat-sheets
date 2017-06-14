@@ -108,8 +108,8 @@ The following diagram illustrates compase running a task called seach-and-replac
 
 * `pipeline.yml` A pipeline of resources and jobs.
 * `config.yml` Configures task
-    * Grabs docker image
-    * Sets up inputs/outputs into task container
+  * Grabs docker image
+  * Sets up inputs/outputs into task container
 * `task.sh` does the task
 
 `IMPORTANT - THE JOBS ARE COMPLETELY IDENPENDENT OF EACH OTHER`
@@ -131,6 +131,8 @@ Then upload file,
 ```bash
 fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
 ```
+
+## REMOVE A PIPELINE
 
 To remove pipeline,
 
