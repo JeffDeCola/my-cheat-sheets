@@ -99,6 +99,18 @@ Check version,
 fly -version
 ```
 
+## UPDATE FLY TO MATCH CONCOURSE VERSION
+
+To update fly,
+
+```bash
+fly -t ci sync
+```
+
+```bash
+`fly -version`
+```
+
 ## BASIC STRUCTURE OF CONCOURSE CI
 
 See a more detailed example at
