@@ -108,7 +108,7 @@ fly -t ci sync
 ```
 
 ```bash
-`fly -version`
+fly -version
 ```
 
 ## BASIC STRUCTURE OF CONCOURSE CI
