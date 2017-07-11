@@ -55,6 +55,14 @@ Operating Systems and Languages._
 
   * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/postgreSQL-cheat-sheet)
 
+* API
+
+  * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/RESTful-cheat-sheet)
+
+* MESSINGING
+
+  * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/NATS-cheat-sheet)
+
 * SOURCE / VERSION CONTROL
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
