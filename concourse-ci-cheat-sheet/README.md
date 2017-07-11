@@ -152,6 +152,27 @@ To remove pipeline,
 fly -t ci destroy-pipeline --pipeline NAME
 ```
 
+
+## RESTART A BAD WORKER (STALLED)
+
+Check your workers if they are stalled,
+
+```bash
+fly -t ci workers
+```
+
+If stalled, make sure you login using this full login with -c,
+
+```bash
+fly -t ci login -c http://NAME:8080/
+```
+
+And then prune-workers,
+
+```bash
+fly -t ci prune-worker -w WORKERNAME
+```
+
 ## CREATE A NEW TEAM
 
 Create a new team,
