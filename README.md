@@ -59,6 +59,8 @@ Operating Systems and Languages._
 
   * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/RESTful-cheat-sheet)
 
+  * [youtube-content-id](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-content-id-cheat-sheet)
+
 * MESSINGING
 
   * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/NATS-cheat-sheet)
