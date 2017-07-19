@@ -66,7 +66,8 @@ sudo su - postgres
 Open psql as user postgres,
 
 ## GET THIS CODE
-
+ 
+ 
 Select * From Case ac
 join templates as t
     on +.ID = c.teamplte_ID
