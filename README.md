@@ -59,7 +59,11 @@ Operating Systems and Languages._
 
   * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/RESTful-cheat-sheet)
 
-  * [youtube-content-id](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-content-id-cheat-sheet)
+  * [youtube-content-id-api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-content-id-api-cheat-sheet)
+
+  * [youtube-data-api-v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-data-api-v3-cheat-sheet)
+
+  * [youtube-player-api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-player-api-cheat-sheet)
 
 * MESSINGING
 
