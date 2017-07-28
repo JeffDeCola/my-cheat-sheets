@@ -36,8 +36,12 @@ OAuth 2.0 Client ID.
 
 Content ID uses OAuth 2.0 Client ID for authentification.
 
-Refer to [OAuth 2.0 authorization cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/OAuth-2.0-authorization-cheat-sheet)
+Refer to [OAuth 2.0 Authorization Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/OAuth-2.0-authorization-cheat-sheet)
 for how to authentificate.
+
+## TBD
+
+TBD
 
 
 

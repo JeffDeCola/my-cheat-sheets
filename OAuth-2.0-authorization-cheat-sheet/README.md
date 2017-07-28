@@ -2,49 +2,37 @@
 
 `OAuth 2.0 Authorization` _is ???????????????????????????????._
 
+`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authetificate._
+
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## CREATE OAuth 2.0 CLIENT ID
+## OAuth 2.0 AVAILABLE FLOWS
+
+1. Server-Side Flow (Scope of this cheat sheet)
+1. Client-Side Flow
+1. Installed App Flow
+1. Device Flow
+1. Service Account Flow
+
+The following diagram illustrates how everything fits for
+Web Server-Side Flow. To accesss a users info they must be
+in your g-suite domain.
+
+![IMAGE - OAuth 2.0 Web Server Authorization Flow - IMAGE](OAuth-2.0-web-server-authorization-flow.jpg)
+
+## STEP 1 - CREATE OAuth 2.0 CLIENT ID & SECRET
 
 To create Create a `OAuth 2.0 Client ID` goto credentials page
 [here](https://console.developers.google.com/projectselector/apis/credentials)
 and select create credentials.
 
-The Sellect `other` and create.  You now have a client ID.
+Create a OAuth 2.0 client IDs for a web application.
 
-## OAuth 2.0 AVAILABLE FLOWS
+You will now have a Client ID and a Secret.
 
-1. Server-Side Flow
-2. Client-Side Flow
-3. Installed App Flow
-4. Device Flow
-5. Service Account Flow (This is the scope of this cheat sheet)
+## STEP 2 -
 
-## OAuth 2.0 SERVICE ACCOUNT FLOW - To AUTHORISE API CALLS
-
-A Service Account is a Google Account that can be used to
-authorize API calls without any user interaction. It's Server to Server.
-
-For the OAuth 2.0 flow for Service Accounts, the steps for authenticating
-and authorizing access to API resources do not take place in a web browser
-
-Your application can use the OAuth 2.0 flow for Service Accounts
-for the YouTube Content ID API if it is authenticating and authorizing
-requests as a YouTube content owner.
-
-## STEP 1 - CREATE JWT (JSON WEB TOKEN)
-
-You can use the `golang/oauth2` client libraries
-[here](https://github.com/golang/oauth2/)
-to implement OAuth 2.0 in your application.
-
-Create a JWT which is used to get an access token.
-
-## STEP 2 - REQUEST ACCESS TOKEN
-
-## STEP 3 - RECEIVE AND EXTRACT ACCESS TOKEN
-
-This token is good for one hour.
+## STEP 3 -
 
 ## STEP 4 - USE ACCESS TOKEN TO CALL API
 
