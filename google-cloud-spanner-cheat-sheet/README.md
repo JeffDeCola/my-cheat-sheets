@@ -1,6 +1,7 @@
 # GOOGLE CLOUD SPANNER CHEAT SHEET
 
-`google cloud spanner` _is a horizontally scalable relational database service from google_
+`google cloud spanner` _is a horizontally scalable relational database
+service from google._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

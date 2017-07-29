@@ -156,7 +156,8 @@ Note, If you wanted to be a Agent Server, you would put it here.
 }
 ```
 
-Note: In GCE, the IP that your instances communicate through is usually set up on eth0
+Note: In GCE, the IP that your instances communicate through is usually set
+up on eth0
 
 `STEP 4` - Restart Consul Agent Client,
 
@@ -252,18 +253,24 @@ With the port number,
 dig @<ip> <service_name>.service.consul SRV
 dig @10.240.1.114 p-stack-to-graph-grp-20170417-1707-fzhj.service.consul SRV
 ```
+
 ## REGISTER
 
+TBD
 
 ## CONSUL AGENT (/CHECKS /SERVICES)
 
 CHECKS,
 
+```bash
 curl http://10.240.1.114:8500/v1/agent/checks | jq
+```
 
 SERVICES,
 
+```bash
 curl http://10.240.1.114:8500/v1/agent/services
+```
 
 /health/checks/:service
 

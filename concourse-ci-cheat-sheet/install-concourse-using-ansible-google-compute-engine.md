@@ -31,7 +31,8 @@ First get the followiong ubuntu instances running on Google Compute Engine:
 * p-concourse-worker-03
 * p-concourse-worker-04
 
-GCE Labels can be used to identify the hosts in the next step.  Or just make an inventory file.
+GCE Labels can be used to identify the hosts in the next step.
+Or just make an inventory file.
 
 ## LOCAL INVENTORY (HOSTS) FILE
 

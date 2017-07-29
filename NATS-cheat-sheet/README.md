@@ -1,7 +1,7 @@
 # NATS CHEAT SHEET
 
-`NATS` _is ?????._
+`NATS` _TBD._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## ????
+## TBD
