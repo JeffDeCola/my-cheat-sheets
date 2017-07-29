@@ -11,7 +11,8 @@ Concourse's main goal is to run tasks.
 
 There are a few ways to install concourse:
 
-* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet#install-concourse-ci-on-virtualbox-using-vagrant) (below)
+* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet#install-concourse-ci-on-virtualbox-using-vagrant)
+  (below)
 * [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md)
 * Docker Repository
 * Clusters with BOSH
@@ -21,9 +22,9 @@ There are a few ways to install concourse:
 
 Get vargrant for windows
 
-https://www.vagrantup.com
+[https://www.vagrantup.com](https://www.vagrantup.com)
 
-Get the Concourse Vagrant files. 
+Get the Concourse Vagrant files.
 
 To run, from Windows cmd prompt type,
 
@@ -50,7 +51,7 @@ This is a little more involved and the directions are
 
 Open concourse,
 
-http://192.168.100.4:8080/
+[http://192.168.100.4:8080](http://192.168.100.4:8080)
 
 In bottom right download latest verions of fly.exe for Linux,
 
@@ -76,7 +77,7 @@ Check version,
 
 Open Concourse,
 
-http://192.168.100.4:8080/
+[http://192.168.100.4:8080](http://192.168.100.4:8080)
 
 In bottom right download latest verions of fly.exe for Linux,
 

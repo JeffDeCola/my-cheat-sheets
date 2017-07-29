@@ -173,15 +173,16 @@ Roles are special kind of playbook.
 
 Folders are as follows:
 
-* `defaults`      _The default variables (lower priority variables)._
+* `defaults`    _The default variables (lower priority variables)._
   * main.yml
-* `files`         _If need to add files._
-* `handlers`      _Targets for notify directives, and are almost always associated with services._
+* `files`       _If need to add files._
+* `handlers`    _Targets for notify directives, and are almost always
+  associated with services._
   * main.yml
-* `meta`          _Meta data._
+* `meta`        _Meta data._
   * main.yml
-* `tasks`         _Series of Ansible plays to install, configure, and run software._
+* `tasks`       _Series of Ansible plays to install, configure, and run software._
   * main.yml
-* `templates`     _Similar to files except that templates support modification._
-* `vars`          _The default variables (higher priority variables)._
+* `templates`   _Similar to files except that templates support modification._
+* `vars`        _The default variables (higher priority variables)._
   * main.yml

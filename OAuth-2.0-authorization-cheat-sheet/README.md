@@ -1,8 +1,7 @@
 # OAuth 2.0 AUTHORIZATON CHEAT SHEET
 
-`OAuth 2.0 Authorization` _is ???????????????????????????????._
-
-`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authetificate._
+`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authenticate themselfs
+in order for an APP to gain access to their information via an API._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
