@@ -9,8 +9,8 @@ log in with one of the many accounts they already have.
 
 There are 5 available flows when using OAuth 2.0.
 
-1. [Web Server-Side Flow](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/OAuth-2.0-authorization-cheat-sheet/Oauth-2.0-authorization-web-server-app-flow.md)
+1. [Web Server-Side Flow](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md)
 1. Client-Side Flow
 1. Installed App Flow
 1. Device Flow
-1. [Service Account Flow](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/OAuth-2.0-authorization-cheat-sheet/Oauth-2.0-authorization-service-account-flow.md)
+1. [Service Account Flow](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md)
