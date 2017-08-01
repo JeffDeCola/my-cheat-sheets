@@ -4,16 +4,6 @@
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## OAuth 2.0 AVAILABLE FLOWS
-
-There are 5 available flows when using OAuth 2.0.
-
-1. Server-Side Flow
-1. Client-Side Flow
-1. Installed App Flow
-1. Device Flow
-1. Service Account Flow (Scope of this cheat sheet)
-
 ## OAuth 2.0 SERVICE ACCOUNT FLOW - TO AUTHORISE API CALLS
 
 A Service Account is a Google Account that can be used to
