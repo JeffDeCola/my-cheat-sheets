@@ -21,32 +21,24 @@ and select create credentials.
 
 Create a OAuth 2.0 client IDs for a Web Application.
 
-Origin URI,
-
-[http://127.0.0.1:3000](http://127.0.0.1:3000)
-
-Redirect URI,
-
-[http://127.0.0.1:3000/GoogleCallback](http://127.0.0.1:3000/GoogleCallback)
-
 You will now have a Client ID and a Secret.
 
-## STEP 2 - ???
+## STEP 2 - USER GETS REDIRECTED TO LOGIN TO ACCOUNT
+
+The user opens the website and clicks the login button.
+
+## STEP 3 - GET AUTHORIZATION CODE
 
 You can use the `golang/oauth2` client libraries
 [here](https://github.com/golang/oauth2)
 to implement OAuth 2.0 in your application.
 
-## STEP 3 - ????
+## STEP 4 - USER AUTH CODE TO GET TOKEN
 
-## STEP 4 - USE ACCESS TOKEN TO CALL API
+Use the code you get to obtain a token.
 
-After Getting access token for your user...?????
+## STEP 5 - USE ACCESS TOKEN TO CALL API
 
 You can use the `google/google-api-go-client` client libraries
 [here](https://github.com/google/google-api-go-client)
 to use APIs in your application.
-
-### REFRESH ACCESS TOKEN
-
-?????
