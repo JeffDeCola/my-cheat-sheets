@@ -1,27 +1,85 @@
 
 # CHEAT SHEETS
 
-* [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
+* OPERATIONS TOOLS
 
-* [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
+  * CONFIGURATION MANAGEMENT
 
-* [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
+    * [ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ansible-cheat-sheet)
 
-* [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+  * CONTINUOUS INTEGRATION
 
-* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
+    * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
 
-* [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
+  * DISCOVERY / CONFIGURATION
 
-* [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
 
-* [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/consul-cheat-sheet)
+  * OCHESTRATION (DEPLOYMENT)
 
-* [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
 
-* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/kubernetes-cheat-sheet)
+    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/packer-cheat-sheet)
 
-* [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/terraform-cheat-sheet)
+
+  * TELEMETRY
+
+    * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/grafana-cheat-sheet)
+
+    * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/stackdriver-cheat-sheet)
+
+  * VIRTUAL MACHINES / CONTAINERS
+
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/docker-cheat-sheet)
+
+    * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/vagrant-cheat-sheet)
+
+* COMPUTE
+
+  * [google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-compute-engine-cheat-sheet)
+
+* DATABASE
+
+  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/google-cloud-spanner-cheat-sheet)
+
+  * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/postgreSQL-cheat-sheet)
+
+* API
+
+  * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/RESTful-cheat-sheet)
+
+  * [youtube content id api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-content-id-api-cheat-sheet)
+
+  * [youtube data api v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-data-api-v3-cheat-sheet)
+
+  * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/youtube-player-api-cheat-sheet)
+
+* AUTHORIZATION
+
+  * [OAuth 2.0 authorization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/OAuth-2.0-authorization-cheat-sheet)
+
+* MESSINGING
+
+  * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/NATS-cheat-sheet)
+
+* SOURCE / VERSION CONTROL
+
+  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
+
+* LINUX
+
+  * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+
+* LANGUAGES
+
+  * [go](https://github.com/JeffDeCola/my-go-examples)
+
+  * [php](https://github.com/JeffDeCola/my-php-containers)
+
+  * [python](https://github.com/JeffDeCola/my-python-examples)
+
+A lot of these cheat sheets have info I gathered from other sources.
 
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
