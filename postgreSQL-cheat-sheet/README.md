@@ -51,7 +51,7 @@ Open psql as user postgres,
 psql
 ```
 
-Exit psql `ctrl+D` 
+Exit psql `ctrl+D`
 
 Exit postgres user `exit`.
 
@@ -66,8 +66,7 @@ sudo su - postgres
 Open psql as user postgres,
 
 ## GET THIS CODE
- 
- 
+
 Select * From Case ac
 join templates as t
     on +.ID = c.teamplte_ID

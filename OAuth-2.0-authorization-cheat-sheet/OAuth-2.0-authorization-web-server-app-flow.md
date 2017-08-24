@@ -33,9 +33,17 @@ You can use the `golang/oauth2` client libraries
 [here](https://github.com/golang/oauth2)
 to implement OAuth 2.0 in your application.
 
-## STEP 4 - USER AUTH CODE TO GET TOKEN
+## STEP 4 - USER AUTH CODE TO GET TOKEN (ACCESS AND REFRESH)
 
-Use the code you get to obtain a token.
+Use the code you get to obtain a an
+
+* Access Token: Good for one hour.
+* Refresh Token : Only get once. Save this. Good forever until user revokes.
+
+You only get a refresh token if you specified
+access_type as offline when getting auth code.  Meaning
+the user can be offline but you may use the refresh token to
+get a new access token.
 
 ## STEP 5 - USE ACCESS TOKEN TO CALL API
 
