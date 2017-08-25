@@ -55,20 +55,82 @@ Exit psql `ctrl+D`
 
 Exit postgres user `exit`.
 
+## INSTALL ON MAC OS
+
+```bash
+brew install postgres
+```
+
+## STATE SERVER
+
+```bash
+pg_ctl -D /usr/local/var/postgres start
+```
+
+``` check
+ps aux | grep -i postgres
+```
+
 ## USE
 
 Become user postgres,
 
 ```bash
 sudo su - postgres
+psql
 ```
 
 Open psql as user postgres,
 
-## GET THIS CODE
+```bash
+psql -d postgres
+```
 
-Select * From Case ac
-join templates as t
-    on +.ID = c.teamplte_ID
-    when +.ID = {}
+Quit,
 
+```bash
+\q
+```
+
+## CREATE AND CONNECT TO A DATABASE
+
+Create a database,
+
+```bash
+create database rm
+```
+
+List all databases,
+
+```bash
+\l
+```
+
+Connect to a database,
+
+```bash
+\c rm
+```
+
+## CREATE TABLE
+
+Some types you can do,
+
+```bash
+create table people (id int primary key not null, first_name text, last_name text);
+```
+
+## LIST TABLE
+
+list all tables in a database,
+
+```bash
+\d
+```
+
+list a table in database,
+
+```bash
+\d people
+\d+ people
+```
