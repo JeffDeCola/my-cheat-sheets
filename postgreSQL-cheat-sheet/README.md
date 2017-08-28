@@ -134,3 +134,10 @@ list a table in database,
 \d people
 \d+ people
 ```
+
+## LIST ROWS OF TALBE
+
+```bash
+select * from people;
+select last_name from people;
+```
