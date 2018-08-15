@@ -20,6 +20,8 @@ https://git-scm.com/downloads
 
 ## CONFIGURE FOR LINUX
 
+I also like to add the hostname/machine name so I know where it came from,
+
 ```bash
 git config --global user.name "Jeff DeCola (HOSTNAME)"
 git config --global user.email YOUREMAIL
