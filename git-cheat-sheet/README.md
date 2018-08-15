@@ -6,13 +6,13 @@
 
 ## INSTALL
 
-For linux,
+For Linux,
 
 ```bash
 sudo apt install git
 ```
 
-For Winodws,
+For Windows,
 
 ```bash
 https://git-scm.com/downloads
