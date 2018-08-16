@@ -141,7 +141,7 @@ remote.origin.url=git@github.com:JeffDeCola/my-cheat-sheets.git
 
 The Git Workflow.
 
-![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+![IMAGE - GIT Repo Workflow Diagram - IMAGE](../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
 
 ### CLONE
 
