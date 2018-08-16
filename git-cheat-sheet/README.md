@@ -14,16 +14,24 @@ sudo apt install git
 
 For Windows,
 
+There are two main options,
+
+Option 1. Stand alone, git for windows app (completely independent from
+bash on ubuntu on windows)
+
 ```bash
 https://git-scm.com/downloads
 ```
+
+Option 2. Open bash on ubuntu on windows and install like linux above.
+I'm not a huge fan of bash on windows.
 
 ## CONFIGURE FOR LINUX
 
 I also like to add the hostname/machine name so I know where it came from,
 
 ```bash
-git config --global user.name "Jeff DeCola (HOSTNAME)"
+git config --global user.name "Jeff DeCola (HOSTNAME/MACHINE NAME)"
 git config --global user.email YOUREMAIL
 git config --global core.editor nano
 ```
