@@ -86,15 +86,22 @@ Now add key,
 ssh-add ~/.ssh/id_rsa
 ```
 
-Copy this file,
+Copy your public ssh key,
 
 ```bash
 cat ~/.ssh/id_rsa.pub
 ```
 
-Goto GitHub and add your key.
+Goto GitHub.com and paste your public ssh key (settings -> ssh keys)
 
-To connect ti GitHub use,
+Check the fingerprint at github against your local public key.
+You may not need the md5 option,
+
+```bash
+ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
+```
+
+To connect to GitHub use,
 
 ```bash
 ssh -T git@github.com
@@ -106,25 +113,37 @@ If you want to use a particular public key file,
 ssh -i ~/.ssh/id_rsa.pub git@github.com
 ```
 
-Force git to use ssh rather the http,
+Force git to use ssh on your local repo, rather the https,
 
 ```bash
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 ```
 
-Check Settings,
+Check ssh settings,
 
 ```bash
 git config --list
 ```
 
-To check the fingerprint at github against your local public key.
+Hence,
 
 ```bash
-ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
+remote.origin.url=https://github.com/JeffDeCola/my-cheat-sheets.git
 ```
 
-## CLONE A REPO
+Was changed to ssh method,
+
+```bash
+remote.origin.url=git@github.com:JeffDeCola/my-cheat-sheets.git
+```
+
+## WORKFLOW
+
+The Git Workflow.
+
+![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+
+### CLONE
 
 Via http,
 
@@ -138,16 +157,31 @@ Via ssh,
 git clone git@github.com:JeffDeCola/my-cheat-sheets.git
 ```
 
-## INITIAL PUSH
+I would set the repo to always use ssh,
+
+```bash
+git remote set-url origin git@github.com:JeffDeCola/my-cheat-sheets.git
+```
+
+### ADD/COMMIT/PUSH
+
+Your first push,
 
 ```bash
 git add .
 git commit -m "initial"
-git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 git push origin master
 ```
 
-## CREATE A BRANCH
+Normal flow just use `git push`.
+
+### PULL (fetch and Merge)
+
+```bash
+git pull
+```
+
+### CHECKOUT - CREATE A BRANCH
 
 ```bash
 git checkout -b "develop" master
@@ -178,7 +212,7 @@ git push —force
 ## TO GET ALL CAUGHT UP
 
 If you just want to have all your local branches
-and master up to date, the best way to do this is branch by branch.
+and master up to date, the best way to do this is branch-by-branch.
 
 Note `pull = fetch + merge`.
 
