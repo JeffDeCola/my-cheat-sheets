@@ -77,9 +77,13 @@ Operating Systems and Languages._
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/git-cheat-sheet)
 
-* LINUX
+* OPERATING SYSTEMS
 
-  * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/dns-cheat-sheet)
+  * LINUX
+
+    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/Operating-Systems/Linux/dns-cheat-sheet)
+
+  * WINDOWS
 
 * LANGUAGES
 
