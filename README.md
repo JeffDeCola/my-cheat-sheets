@@ -12,7 +12,7 @@ main sections,
 
 * DEVELOPMENT
 * OPERATIONS TOOLS
-* IAAS (INFRASTRUCTURE AS A SERVICE)
+* IaaS (INFRASTRUCTURE as a SERVICE)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -24,8 +24,8 @@ _Sections in alphabetical order_
 
 * DEVELOPMENT ENVIRONMENT
 
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/virtual-machines-containers/vagrant-cheat-sheet)
-  * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operating-systems/development/development-environment/visual-studio-code-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/delelopment/development-environment/vagrant-cheat-sheet)
+  * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/visual-studio-code-cheat-sheet)
 
 * LANGUAGES
 
@@ -66,7 +66,21 @@ _Sections in alphabetical order_
 
 * SOURCE / VERSION CONTROL
 
-  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/soource-version-control/apigit-cheat-sheet)
+  * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/source-version-control/git-cheat-sheet)
+
+### IaaS (INFRASTRUCTURE as a SERVICE)
+
+* COMPUTE
+
+  * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/amazon-web-services-cheat-sheet)
+
+  * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+
+* DATABASE
+
+  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/google-cloud-spanner-cheat-sheet)
+
+  * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
 
 ### OPERATIONS TOOLS
 
@@ -82,15 +96,15 @@ _Sections in alphabetical order_
 
   * BUILDS / DEPLOYMENT
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/virtual-machines-containers/docker-cheat-sheet)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/docker-cheat-sheet)
 
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/packer-cheat-sheet)
 
-    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/terraform-cheat-sheet)
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/terraform-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION  
 
-    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/consul-cheat-sheet)
+    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
 
   * RESOURCE MANAGEMENT / SCHEDULING
 
@@ -105,20 +119,6 @@ _Sections in alphabetical order_
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
 
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/stackdriver-cheat-sheet)
-
-### IAAS (INFRASTRUCTURE AS A SERVICE)
-
-* COMPUTE
-
-  * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/amazon-web-services-cheat-sheet)
-
-  * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
-
-* DATABASE
-
-  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/google-cloud-spanner-cheat-sheet)
-
-  * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
 
 _A lot of these cheat sheets has info I gathered from other sources._
 
