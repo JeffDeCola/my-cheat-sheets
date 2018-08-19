@@ -1,7 +1,8 @@
 # GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
 
-`google compute engine` _part of google Cloud Platform, provides
-high performance scalable VMs (Virtual Machines)._
+`(gce) google compute engine` _part of google Cloud Platform, 
+like [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/compute/amazon-web-services-cheat-sheet),
+provides high performance scalable VMs (Virtual Machines)._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
