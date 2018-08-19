@@ -86,17 +86,19 @@ _Sections in alphabetical order_
 
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/packer-cheat-sheet)
 
-  * RESOURCE MANAGEMENT / SCHEDULING
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/terraform-cheat-sheet)
+
+  * DISCOVERY / CONFIGURATION  
 
     * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/consul-cheat-sheet)
+
+  * RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/kubernetes-cheat-sheet)
 
     * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/servers/compute/google-compute-engine-cheat-sheet)
 
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/mesos-cheat-sheet)
-
-    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/terraform-cheat-sheet)
 
 * TELEMETRY
 
