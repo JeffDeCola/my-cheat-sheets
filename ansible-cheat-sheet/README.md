@@ -8,8 +8,8 @@
 
 * Configuration management
 * Application deployment
-* Provisioning (make availible)
-* Ochestration (automation)
+* Provisioning (make available)
+* Orchestration (automation)
 * Security
 * Continuous delivery
 
@@ -124,7 +124,7 @@ then easily provision and manage them.
 * Plays contain Tasks
 * Tasks call modules
 * Tasks run sequentially
-* Handlers are triggered by taks and are run once, at the end of the plays.
+* Handlers are triggered by tasks and are ran once, at the end of the plays.
 
 A playbook template looks like,
 
