@@ -9,96 +9,23 @@ Concourse's main goal is to run tasks.
 
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
+# INSTALL CONCOURSE CI SERVER
+
 There are a few ways to install concourse:
 
-* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet#install-concourse-ci-on-virtualbox-using-vagrant)
-  (below)
-* [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md)
+* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet/install-concourse-ci-on-virtualbox-using-vagrant)
+* [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-binary-google-compute-engine.md)
 * Docker Repository
-* Clusters with BOSH
-* [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md).
+* [Clusters with BOSH]((https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
+* [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
-## INSTALL CONCOURSE CI ON VIRTUALBOX USING VAGRANT
+## INSTALL FLY
 
-Get vargrant for windows
+Now we need a way to connect to your concourse server.
+Fly allows you to uploads/updates your files.
 
-[https://www.vagrantup.com](https://www.vagrantup.com)
-
-Get the Concourse Vagrant files.
-
-To run, from Windows cmd prompt type,
-
-```bash
-vagrant up
-```
-
-To upgrade (will destroy current pipelines).
-
-```bash
-vagrant box update --box concourse/lite     # gets the newest Vagrant box
-vagrant destroy                             # remove the old Vagrant box
-vagrant up 
-```
-
-Reinstal the new fly.exe for Windows and Linux.
-
-## INSTALL CONCOURSE CI BINARY ON GOOGLE COMPUTE ENGINE
-
-This is a little more involved and the directions are
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md).
-
-## INSTALL FLY ON WINDOWS
-
-Open concourse,
-
-[http://192.168.100.4:8080](http://192.168.100.4:8080)
-
-In bottom right download latest verions of fly.exe for Linux,
-
-Place in,
-
-```bash
-C:\Program Files (x86)\Concourse\fly.exe
-```
-
-Login fly to Concourse,
-
-```bash
-"C:\Program Files (x86)\Concourse\fly.exe" -t ci login -c http://192.168.100.4:8080/
-```
-
-Check version,
-
-```bash
-"C:\Program Files (x86)\Concourse\fly.exe" -version
-```
-
-## INSTALL FLY ON LINUX
-
-Open Concourse,
-
-[http://192.168.100.4:8080](http://192.168.100.4:8080)
-
-In bottom right download latest verions of fly.exe for Linux,
-
-Place in,
-
-```bash
-mkdir $HOME/bin
-install $HOME/Downloads/fly $HOME/bin
-```
-
-Login fly to Concourse,
-
-```bash
-fly -t ci login -c http:// 192.168.100.4:8080/
-```
-
-Check version,
-
-```bash
-fly -version
-```
+* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-fly-on-windows.md)
+* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-fly-on-linux.md)
 
 ## UPDATE FLY TO MATCH CONCOURSE VERSION
 
