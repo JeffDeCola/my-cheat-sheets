@@ -14,7 +14,7 @@ main sections,
 * INFRASTRUCTURE AS A SERVICE
 * OPERATIONS TOOLS
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+[See my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## MY CHEAT SHEETS
 
@@ -73,13 +73,11 @@ _Sections in alphabetical order_
 * COMPUTE
 
   * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/amazon-web-services-cheat-sheet)
-
   * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
 
 * DATABASE
 
   * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/google-cloud-spanner-cheat-sheet)
-
   * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
 
 ### OPERATIONS TOOLS
@@ -97,9 +95,7 @@ _Sections in alphabetical order_
   * BUILDS / DEPLOYMENT
 
     * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/docker-cheat-sheet)
-
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/packer-cheat-sheet)
-
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/terraform-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION  
@@ -109,15 +105,12 @@ _Sections in alphabetical order_
   * RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/kubernetes-cheat-sheet)
-
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/google-compute-engine-cheat-sheet)
-
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/marathon-cheat-sheet-sheet)
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/mesos-cheat-sheet)
 
 * TELEMETRY
 
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
-
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/stackdriver-cheat-sheet)
 
 _A lot of these cheat sheets has info I gathered from other sources._
@@ -126,7 +119,8 @@ _A lot of these cheat sheets has info I gathered from other sources._
 
 ## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
-A Concourse Pipeline will automatically update the GitHub WebPage.
+A concourse pipeline will automatically update
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
@@ -138,13 +132,9 @@ Use fly to upload the the pipeline file _ci/pipline.yml_ to Concourse:
 fly -t ci set-pipeline -p my-cheat-sheets -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
 ```
 
-## CONCOURSE RESOURCES IN PIPELINE
-
 `my-cheat-sheets` also contains a few extra concourse resources:
 
 * A resource (_resource-slack-alert_) uses a [docker image](https://hub.docker.com/r/cfcommunity/slack-notification-resource)
   that will notify slack on your progress.
 * A resource (_resource-repo-status_) use a [docker image](https://hub.docker.com/r/dpb587/github-status-resource)
   that will update your git status for that particular commit.
-
-The above resources can be removed from the pipeline.
