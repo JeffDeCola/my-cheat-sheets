@@ -11,8 +11,8 @@ With this in mind, I organized my cheat sheets into three
 main sections, 
 
 * DEVELOPMENT
+* INFRASTRUCTURE AS A SERVICE
 * OPERATIONS TOOLS
-* IaaS (INFRASTRUCTURE as a SERVICE)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -24,7 +24,7 @@ _Sections in alphabetical order_
 
 * DEVELOPMENT ENVIRONMENT
 
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/delelopment/development-environment/vagrant-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/vagrant-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/visual-studio-code-cheat-sheet)
 
 * LANGUAGES
@@ -68,7 +68,7 @@ _Sections in alphabetical order_
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/source-version-control/git-cheat-sheet)
 
-### IaaS (INFRASTRUCTURE as a SERVICE)
+### INFRASTRUCTURE AS A SERVICE
 
 * COMPUTE
 
@@ -110,7 +110,7 @@ _Sections in alphabetical order_
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/kubernetes-cheat-sheet)
 
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/servers/compute/google-compute-engine-cheat-sheet)
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/google-compute-engine-cheat-sheet)
 
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/mesos-cheat-sheet)
 
