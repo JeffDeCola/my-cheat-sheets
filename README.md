@@ -4,15 +4,16 @@
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-cheat-sheets` _is a place to keep my cheat sheets with
-the number one goal of creating services.
+`my-cheat-sheets` _is a place to keep my cheat sheets 
+for various apps and tools for the goal of creating a service.
 
-With this in mind, I organized my cheat sheets into three
-main sections, 
+I organized everything into three main sections, 
 
 * DEVELOPMENT
 * INFRASTRUCTURE AS A SERVICE
 * OPERATIONS TOOLS
+
+_A lot of these cheat sheets has info I gathered from other sources._
 
 View this readme file on [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -113,20 +114,22 @@ All _sections in alphabetical order_
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/stackdriver-cheat-sheet)
 
-_A lot of these cheat sheets has info I gathered from other sources._
+## VISUAL OVERVIEW
+
+Here is my concept on how everything fits together,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
 ## MY GITHUB WEBPAGE UPDATED USING CONCOURSE
 
 For fun, a concourse pipeline automatically updates
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
 A _ci/.credentials.yml_ file needs to be created for your _slack_url_ and _repo_github_token_.
 
-Use fly to upload the the pipeline file _ci/pipline.yml_ to Concourse:
+Use fly to upload the the pipeline file _ci/pipline.yml_ to concourse:
 
 ```bash
 fly -t ci set-pipeline -p my-cheat-sheets -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
