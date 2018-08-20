@@ -102,7 +102,7 @@ Check that role was created correctly,
 SELECT rolname FROM pg_roles;
 ```
 
-Exit psql `ctrl+D` 
+Exit psql `ctrl+D`
 
 Exit postgres user `exit`.
 

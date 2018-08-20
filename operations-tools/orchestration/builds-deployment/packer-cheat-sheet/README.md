@@ -23,7 +23,7 @@ Container:
 
 Goto this website to install.  Must be 64-bit machine.
 
-https://www.packer.io/downloads.html
+[https://www.packer.io/downloads.html](https://www.packer.io/downloads.html)
 
 After install check version,
 

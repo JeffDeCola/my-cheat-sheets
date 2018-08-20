@@ -118,6 +118,7 @@ Run an interactive container, This is cool, it gives you a tty terminal,
 docker run -t -i ubuntu /bin/bash
 docker run -t -i jeffdecola/hello-go
 ```
+
 -t tty
 -i interactive
 
