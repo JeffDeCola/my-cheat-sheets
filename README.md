@@ -5,7 +5,7 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets with
-the number one gaol of creating services.
+the number one goal of creating services.
 
 With this in mind, I organized my cheat sheets into three
 main sections, 
@@ -14,11 +14,11 @@ main sections,
 * INFRASTRUCTURE AS A SERVICE
 * OPERATIONS TOOLS
 
-[See my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View this readme file on [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## MY CHEAT SHEETS
 
-_Sections in alphabetical order_
+All _sections in alphabetical order_
 
 ### DEVELOPMENT
 
@@ -117,9 +117,9 @@ _A lot of these cheat sheets has info I gathered from other sources._
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
-## GITHUB WEBPAGE UPDATED USING CONCOURSE
+## MY GITHUB WEBPAGE UPDATED USING CONCOURSE
 
-A concourse pipeline will automatically update
+For fun, a concourse pipeline automatically updates
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
