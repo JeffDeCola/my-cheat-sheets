@@ -9,14 +9,14 @@ Concourse's main goal is to run tasks.
 
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
-# INSTALL CONCOURSE CI SERVER
+## INSTALL CONCOURSE CI SERVER
 
 There are a few ways to install concourse:
 
 * [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet/install-concourse-ci-on-virtualbox-using-vagrant)
 * [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-binary-google-compute-engine.md)
 * Docker Repository
-* [Clusters with BOSH]((https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
+* [Clusters with BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
 * [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
 ## INSTALL FLY
