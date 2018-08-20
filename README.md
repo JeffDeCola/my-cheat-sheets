@@ -3,7 +3,7 @@
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-cheat-sheets` _is a place to keep my cheat sheets 
+`my-cheat-sheets` _is a place to keep my cheat sheets
 for various apps and tools for the goal of creating a service.
 
 I organized everything into three main sections,
@@ -12,7 +12,7 @@ I organized everything into three main sections,
 * INFRASTRUCTURE AS A SERVICE
 * OPERATIONS TOOLS
 
-_A lot of these cheat sheets has info I gathered from other sources._
+A lot of these cheat sheets has info I gathered from other sources.
 
 View this readme file on [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -98,7 +98,7 @@ All _sections in alphabetical order_
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/packer-cheat-sheet)
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/terraform-cheat-sheet)
 
-  * DISCOVERY / CONFIGURATION  
+  * DISCOVERY / CONFIGURATION
 
     * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
 

@@ -58,7 +58,6 @@ file at github.com.
 Creating a .netrc file and be placing this token in
 login field as follows,
 
-
 ```bash
 nano ~/.netrc
 ```
@@ -236,7 +235,8 @@ I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 ## MAC-OS git chekcout autocomplete
 
 ```bash
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
+-o ~/.git-completion.bash
 ```
 
 Add to `~/.bash_profile`,

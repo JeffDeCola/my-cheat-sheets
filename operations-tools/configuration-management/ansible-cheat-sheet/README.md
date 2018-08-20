@@ -67,7 +67,6 @@ Your public SSH key should be located in authorized_keys on those systems.
 
 There are many more things you can do with a inventory file.
 
-
 ## COMMANDS
 
 All commands have the same format,

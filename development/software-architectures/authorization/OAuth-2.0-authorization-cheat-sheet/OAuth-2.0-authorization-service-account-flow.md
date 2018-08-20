@@ -1,6 +1,7 @@
 # OAuth 2.0 SERVICE ACCOUNT AUTHERIZATION CHEAT SHEET
 
-`OAuth 2.0 Service Account Authorization Flow` _is using your service account to access your data or one of your teams data via g-suite._
+`OAuth 2.0 Service Account Authorization Flow` _is using your
+service account to access your data or one of your teams data via g-suite._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
