@@ -8,8 +8,7 @@
 
 Out of the scope for this cheat-sheet.
 
-Refer to []Debian Install](http://docs.grafana.org/installation/debian/).
-
+Refer to [Debian Install](http://docs.grafana.org/installation/debian/).
 
 ## ADMIN LOGIN
 
@@ -67,13 +66,16 @@ list plugins,
 ```bash
 grafana-cli plugins ls
 ```
+
 ### GRAFANA HTTP API
 
+```bash
 GET http://x.x.x.x.:3000/dashboard/db/jeff-hello
+```
 
-
+```bash
 curl http://admin:admin@x.x.x.x.:3000/api/org
-
+```
 
 ## SLACK NOTIFICAITON
 
@@ -83,21 +85,25 @@ At Slack setup an incomming webhook.
 
 The end result will give you a URL like:
 
-https://hooks.slack.com/services/xxx/xxx/xxxx
+```bash
+https://hooks.slack.com/services/xxx/xxx/xxx
+```
 
 Test your webhook,
 
 ```bash
 curl -X POST --data-urlencode \
 'payload={"channel": "#grafana-alert", "username": "jeff", "text": "This is posted to #grafana-alert and comes from a bot named Jeff.", "icon_emoji": ":ghost:"}' \
-https://hooks.slack.com/services/xxxxxxx/xxxxxx/xxxxxxxx
+https://hooks.slack.com/services/xxx/xxx/xxx
 ```
 
 To get the slack notification link to works,
 
-Normally its, 
+Normally its,
 
-http://localhost:3000/dashboard/db/xxxxxxxxxx
+```bash
+http://localhost:3000/dashboard/db/xxx
+```
 
 But the ip is not filled in.
 

@@ -205,10 +205,14 @@ curl -s http://metadata.google.internal/computeMetadata/v1/project/project-id  -
 Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
 
 ```bash
-curl -s http://metadata.google.internal/computeMetadata/v1/instance -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/hostname -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/machine-type -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible  -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance \
+-H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/hostname \
+-H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/machine-type \
+-H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible \
+-H "Metadata-Flavor: Google"
 ```
 
 wait for a change,
