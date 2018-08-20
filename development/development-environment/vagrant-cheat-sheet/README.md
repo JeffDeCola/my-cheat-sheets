@@ -44,9 +44,6 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-To chose a particular box version use,
-
-
 ## YOUR LOCAL VAGRANT BOXES
 
 To list boxes on your machine,

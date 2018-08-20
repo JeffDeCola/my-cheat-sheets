@@ -103,11 +103,12 @@ Create `concourse.yml`.  This playbook creates 2X Web / 4X Workers.
   vars:
     postgresql_version: 9.6
     # List of databases to be created (optional)
-    # Note: for more flexibility with extensions use the postgresql_database_extensions setting.
+    # Note: for more flexibility with extensions use the
+    # postgresql_database_extensions setting.
     postgresql_databases:
       - name: concourse
         # optional; specify the owner of the database
-        owner: postgres  
+        owner: postgres
         # flag to install the hstore extension on this database (yes/no)
         hstore: yes
         # flag to install the uuid-ossp extension on this database (yes/no)
@@ -219,15 +220,16 @@ sudo /etc/init.d/concourse-worker start
 which calls,
 
 ```bash
-start-stop-daemon --start --background --name con-web --chdir /opt/concourseci/bin \
---chuid concourseci --group concourseci --exec /opt/concourseci/bin/concourse-web
+start-stop-daemon --start --background --name con-web \
+    --chdir /opt/concourseci/bin \
+    --chuid concourseci --group concourseci --exec /opt/concourseci/bin/concourse-web
 ```
 
 that in turn calls,
 
 ```bash
 exec /opt/concourseci/bin/concourse web >> \
-/var/log/concourse/concourseci_web.log 2>&1
+    /var/log/concourse/concourseci_web.log 2>&1
 ```
 
 Check systemd log,
