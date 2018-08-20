@@ -1,6 +1,6 @@
 # GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
 
-`(gce) google compute engine` _part of google Cloud Platform, 
+`(gce) google compute engine` _part of google Cloud Platform,
 like [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/compute/amazon-web-services-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
@@ -88,7 +88,6 @@ gcloud beta compute instance-groups managed set-autohealing [IMAGE_NAME] \
 ## SHOW EXTERNAL IPs FOR PROJECT
 
 Listing static external IP addresses,
-
 
 ```bash
 gcloud compute addresses list
@@ -199,31 +198,34 @@ ssh onto your instance and perform the following
 Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
 
 ```bash
-curl -s http://metadata.google.internal/computeMetadata/v1/project/project-id \
+curl -s http://metadata.google.internal/computeMetadata/v1/\
+project/project-id \
 -H "Metadata-Flavor: Google"
 ```
 
 Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
 
 ```bash
-curl \
--s http://metadata.google.internal/computeMetadata/v1/instance \
--H "Metadata-Flavor: Google"
-curl \
--s http://metadata.google.internal/computeMetadata/v1/instance/hostname \
--H "Metadata-Flavor: Google"
-curl \
--s http://metadata.google.internal/computeMetadata/v1/instance/machine-type \
--H "Metadata-Flavor: Google"
-curl \
--s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible \
--H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/hostname \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/machine-type \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/scheduling/preemptible \
+    -H "Metadata-Flavor: Google"
 ```
 
 wait for a change,
 
 ```bash
-curl http://metadata.google.internal/computeMetadata/v1/instance/maintenance-event?wait_for_change=true -H 'Metadata-Flavor: Google'
+curl http://metadata.google.internal/computeMetadata/v1\
+/instance/maintenance-event?wait_for_change=true \
+    -H 'Metadata-Flavor: Google'
 ```
 
 ## SSH INTO YOUR INSTANCE

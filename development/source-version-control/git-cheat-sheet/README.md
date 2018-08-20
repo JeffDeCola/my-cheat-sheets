@@ -235,8 +235,8 @@ I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 ## MAC-OS git chekcout autocomplete
 
 ```bash
-curl \
-    https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash \
+curl https://raw.githubusercontent.com/git/git/master\
+/contrib/completion/git-completion.bash \
     -o ~/.git-completion.bash
 ```
 
