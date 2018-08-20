@@ -2,8 +2,6 @@
 
 `git` _is a free and open source DVCS (Distributed Version Control System)._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
 ## INSTALL
 
 For Linux,
@@ -139,9 +137,13 @@ remote.origin.url=git@github.com:JeffDeCola/my-cheat-sheets.git
 
 ## WORKFLOW
 
-The Git Workflow.
+The Git Workflow, showing how everything fits together,
 
-![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+
+A simpler view,
+
+![IMAGE - Simple GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/Simple-GIT-Repo-Workflow-Diagram.jpg)
 
 ### CLONE
 
