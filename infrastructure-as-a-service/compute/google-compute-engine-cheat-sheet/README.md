@@ -187,7 +187,7 @@ gcloud beta emulators pubsub --help
 ## METADATA SERVER QUERY
 
 Every instance stores its metadata on the metadata server.
-You can query this metadata server programmatically for information such as 
+You can query this metadata server programmatically for information such as,
 
 * The instance's host name
 * Instance ID
@@ -199,19 +199,24 @@ ssh onto your instance and perform the following
 Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
 
 ```bash
-curl -s http://metadata.google.internal/computeMetadata/v1/project/project-id  -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1/project/project-id \
+-H "Metadata-Flavor: Google"
 ```
 
 Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
 
 ```bash
-curl -s http://metadata.google.internal/computeMetadata/v1/instance \
+curl \
+-s http://metadata.google.internal/computeMetadata/v1/instance \
 -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/hostname \
+curl \
+-s http://metadata.google.internal/computeMetadata/v1/instance/hostname \
 -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/machine-type \
+curl \
+-s http://metadata.google.internal/computeMetadata/v1/instance/machine-type \
 -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible \
+curl \
+-s http://metadata.google.internal/computeMetadata/v1/instance/scheduling/preemptible \
 -H "Metadata-Flavor: Google"
 ```
 

@@ -162,7 +162,8 @@ up on eth0
 `STEP 4` - Restart Consul Agent Client,
 
 ```bash
-sudo /usr/bin/consul agent -config-dir /etc/consul.d/ -config-file=/etc/consul.conf -join 104.154.212.93 -syslog
+sudo /usr/bin/consul agent -config-dir /etc/consul.d/ \
+-config-file=/etc/consul.conf -join 104.154.212.93 -syslog
 ```
 
 Should get seomthing like this back
@@ -202,7 +203,6 @@ server so it can monitor health.
 ## METHOD 3 - REGISTER AND QUERY A SERVICE VIA GO
 
 You may also use go to register your service.
-
 
 ## CHECK HEALTH STATUS
 

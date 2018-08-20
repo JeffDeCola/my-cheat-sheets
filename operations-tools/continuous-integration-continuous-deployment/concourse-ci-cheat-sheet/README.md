@@ -80,7 +80,6 @@ To remove pipeline,
 fly -t ci destroy-pipeline --pipeline NAME
 ```
 
-
 ## RESTART A BAD WORKER (STALLED)
 
 Check your workers if they are stalled,
@@ -135,7 +134,8 @@ To pass secrets (files and variables) to your concourse script,
 first use fly to upload the secret to concourse,
 
 ```bash
-fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml \
+fly -t ci set-pipeline -p NAME \
+    -c pipeline.yml --load-vars-from .credentials.yml \
     --var "private-key-file=$(cat private-key-file.txt | base64)" \
     --var "private-key=$(echo jeffdecola)"
 ```

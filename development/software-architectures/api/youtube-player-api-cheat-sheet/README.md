@@ -30,5 +30,6 @@ Content owners or Administartors will have access to their assets:
 
 * ?????
 
-By combining `YOUYoutube Content ID` with `Youtube Data API` and `Youtube Player API`,
-you can enable your app to updaload, manage and play videos.
+By combining `YOUYoutube Content ID` with `Youtube Data API`
+and `Youtube Player API`, you can enable your app to updaload,
+manage and play videos.

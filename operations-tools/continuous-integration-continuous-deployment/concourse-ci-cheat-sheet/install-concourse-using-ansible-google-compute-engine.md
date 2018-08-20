@@ -106,13 +106,20 @@ Create `concourse.yml`.  This playbook creates 2X Web / 4X Workers.
     # Note: for more flexibility with extensions use the postgresql_database_extensions setting.
     postgresql_databases:
       - name: concourse
-        owner: postgres             # optional; specify the owner of the database
-        hstore: yes                 # flag to install the hstore extension on this database (yes/no)
-        uuid_ossp: yes              # flag to install the uuid-ossp extension on this database (yes/no)
-        citext: yes                 # flag to install the citext extension on this database (yes/no)
-        encoding: 'UTF-8'           # override global {{ postgresql_encoding }} variable per database
-        lc_collate: 'en_US.UTF-8'   # override global {{ postgresql_locale }} variable per database
-        lc_ctype: 'en_US.UTF-8'     # override global {{ postgresql_ctype }} variable per database
+        # optional; specify the owner of the database
+        owner: postgres  
+        # flag to install the hstore extension on this database (yes/no)
+        hstore: yes
+        # flag to install the uuid-ossp extension on this database (yes/no)
+        uuid_ossp: yes
+        # flag to install the citext extension on this database (yes/no)
+        citext: yes
+        # override global {{ postgresql_encoding }} variable per database
+        encoding: 'UTF-8'
+        # override global {{ postgresql_locale }} variable per database
+        lc_collate: 'en_US.UTF-8'
+        # override global {{ postgresql_ctype }} variable per database
+        lc_ctype: 'en_US.UTF-8'
     # List of users to be created (optional)
     postgresql_users:
       - name: concourseci
@@ -163,7 +170,6 @@ Test the WEBs,
 
 [http://p-concourse-web-02:8080/](http://p-concourse-web-02:8080/)
 
-
 ## TESTING AND TROUBLESHOOTING - POSTGRESQL - ON THE INSTANCE
 
 ```bash
@@ -213,13 +219,15 @@ sudo /etc/init.d/concourse-worker start
 which calls,
 
 ```bash
-start-stop-daemon --start --background --name con-web --chdir /opt/concourseci/bin --chuid concourseci --group concourseci --exec /opt/concourseci/bin/concourse-web
+start-stop-daemon --start --background --name con-web --chdir /opt/concourseci/bin \
+--chuid concourseci --group concourseci --exec /opt/concourseci/bin/concourse-web
 ```
 
 that in turn calls,
 
 ```bash
-exec /opt/concourseci/bin/concourse web >> /var/log/concourse/concourseci_web.log 2>&1
+exec /opt/concourseci/bin/concourse web >> \
+/var/log/concourse/concourseci_web.log 2>&1
 ```
 
 Check systemd log,
