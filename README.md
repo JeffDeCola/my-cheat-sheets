@@ -124,6 +124,11 @@ Here is my concept on how everything fits together,
 For fun, a concourse pipeline automatically updates
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+Its does the update by copying (with a little editing)
+this README.md file to `/docs/_includes/README.md`.
+You can see concourse task
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
+
 ![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
 A _ci/.credentials.yml_ file needs to be created for your _slack_url_ and _repo_github_token_.
