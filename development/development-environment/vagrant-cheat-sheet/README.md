@@ -31,7 +31,6 @@ Search for boxes here,
 
 [vagrant box search](https://app.vagrantup.com/boxes/search)
 
-
 ## VAGRANTFILE
 
 Vagrants uses a declarative config file which describes your

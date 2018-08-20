@@ -20,7 +20,7 @@ To upgrade vagrant box (will destroy current pipelines).
 ```bash
 vagrant box update --box concourse/lite     # gets the newest Vagrant box
 vagrant box prune                           # remove the old Vagrant boxes
-vagrant up 
+vagrant up
 ```
 
 Reinstal the new fly.exe for Windows and Linux.
