@@ -209,12 +209,9 @@ You may also use go to register your service.
 To check health status,
 
 ```bash
-curl \
-    http://<ip>:8500/v1/health/checks/<service_name> \
-    | jq
-curl \
-    http://10.240.1.114:8500/v1/health/checks/p-stack-to-graph-grp-20170417-1707-fzhj \
-    | jq
+curl http://<ip>:8500/v1/health/checks/<service_name> | jq
+curl http://10.240.1.114:8500/v1/health/checks/\
+p-stack-to-graph-grp-20170417-1707-fzhj | jq
 ```
 
 ## QUERY SERVICE
@@ -240,12 +237,9 @@ curl http://10.240.1.114:8500/v1/catalog/services | jq
 or just for a particular service,
 
 ```bash
-curl \
-    http://<ip>:8500/v1/catalog/service/<service_name>
-    | jq
-curl \
-    http://10.240.1.114:8500/v1/catalog/service/p-stack-to-graph-grp-20170417-1707-fzhj \
-    | jq
+curl http://<ip>:8500/v1/catalog/service/<service_name> | jq
+curl http://10.240.1.114:8500/v1/catalog/service\
+/p-stack-to-graph-grp-20170417-1707-fzhj | jq
 ```
 
 Query Consul DNS Server Database for the service
