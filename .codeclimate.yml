@@ -5,4 +5,4 @@ ratings:
   paths:
   - "**.md"
 exclude_patterns:
-- "docs/mokey.md"
+- "docs/index.md"
