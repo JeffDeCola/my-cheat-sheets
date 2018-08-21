@@ -5,9 +5,10 @@ Software Builds._
 
 Concourse's main goal is to run tasks.
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL CONCOURSE CI SERVER
 

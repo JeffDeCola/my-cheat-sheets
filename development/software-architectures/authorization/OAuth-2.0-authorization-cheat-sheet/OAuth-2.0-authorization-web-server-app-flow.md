@@ -3,7 +3,8 @@
 `OAuth 2.0 Web Server Side Authorization Flow` _allows users to authenticate themselfs
 in order for an APP to gain access to their information via an API._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## HIGH-LEVEL VIEW
 

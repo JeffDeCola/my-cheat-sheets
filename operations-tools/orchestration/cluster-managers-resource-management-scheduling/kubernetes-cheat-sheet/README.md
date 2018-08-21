@@ -2,7 +2,8 @@
 
 `kubernetes` _automating deployment, scaling and management of containers._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## TBD
 

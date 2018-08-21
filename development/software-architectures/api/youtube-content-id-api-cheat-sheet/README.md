@@ -2,7 +2,8 @@
 
 `youtube-content-id-api` _is an api for YouTube's Rights Management System._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## WHAT IS YOUTUBE'S CONTENT-ID SYSTEM
 

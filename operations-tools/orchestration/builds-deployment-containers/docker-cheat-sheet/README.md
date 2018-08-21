@@ -3,9 +3,10 @@
 `docker` _is a Virtual Linux Container._ Docker Hub is an online
 resource to place docker containers._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
 [Jeff's Docker Hub Images](https://hub.docker.com/u/jeffdecola/)
+
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## A VIRTUAL MACHINE VS DOCKER CONTAINER
 

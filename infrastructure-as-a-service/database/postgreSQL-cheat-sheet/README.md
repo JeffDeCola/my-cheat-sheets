@@ -2,7 +2,8 @@
 
 `postgreSQL` _is a open source object-relational database system._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL AND CONFIGURE postgreSQL on UBUNTU/DEBIAN
 

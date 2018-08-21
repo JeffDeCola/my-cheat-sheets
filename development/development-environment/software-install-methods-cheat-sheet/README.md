@@ -3,7 +3,7 @@
 `software install methods` _is a very high level view on
 software/app installs._
 
-View my entire cheat sheet list on
+View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL METHODS
