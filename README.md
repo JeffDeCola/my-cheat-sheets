@@ -24,6 +24,7 @@ All _sections in alphabetical order_
 
 * DEVELOPMENT ENVIRONMENT
 
+  * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/software-install-methods-cheat-sheet)
   * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/vagrant-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/visual-studio-code-cheat-sheet)
 
@@ -37,7 +38,7 @@ All _sections in alphabetical order_
 
   * LINUX
 
-    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/dns-cheat-sheet) _Operating test test test test test test test test test_
+    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/dns-cheat-sheet)
 
   * WINDOWS
 
@@ -48,10 +49,8 @@ All _sections in alphabetical order_
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/RESTful-cheat-sheet)
-      _Operating test test test test test test test test test_
     * [youtube content id api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-content-id-api-cheat-sheet)
     * [youtube data api v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-data-api-v3-cheat-sheet)
-    _Operating test test test test test test test test test_
     * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-player-api-cheat-sheet)
 
   * AUTHORIZATION
@@ -72,10 +71,10 @@ All _sections in alphabetical order_
 
 ### INFRASTRUCTURE AS A SERVICE
 
-* COMPUTE
+* CLOUD SERVICES / COMPUTE
 
-  * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/amazon-web-services-cheat-sheet)
-  * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
+  * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
 
 * DATABASE
 
@@ -94,21 +93,21 @@ All _sections in alphabetical order_
 
 * ORCHESTRATION
 
-  * BUILDS / DEPLOYMENT
+  * BUILDS / DEPLOYMENT / CONTAINERS
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/docker-cheat-sheet)
-    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/packer-cheat-sheet)
-    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment/terraform-cheat-sheet)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
+    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION
 
     * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
 
-  * RESOURCE MANAGEMENT / SCHEDULING
+  * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
-    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/kubernetes-cheat-sheet)
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/marathon-cheat-sheet-sheet)
-    * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/resource-management-scheduling/mesos-cheat-sheet)
+    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet-sheet)
+    * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
 * TELEMETRY
 
