@@ -99,16 +99,16 @@ All _sections in alphabetical order_
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
-  * DISCOVERY / CONFIGURATION
-
-    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
-
-  * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
+ * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
     * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet-sheet)
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
+  * DISCOVERY / CONFIGURATION
+
+    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
+ 
 * TELEMETRY
 
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
