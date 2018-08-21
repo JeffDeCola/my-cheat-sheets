@@ -3,7 +3,8 @@
 `google cloud spanner` _is a horizontally scalable relational database
 service from google._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## SCALES HORIZONATALLY (Adding machines)
 

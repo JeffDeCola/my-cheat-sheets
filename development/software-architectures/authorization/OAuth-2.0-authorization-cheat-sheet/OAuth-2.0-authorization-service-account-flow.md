@@ -3,7 +3,8 @@
 `OAuth 2.0 Service Account Authorization Flow` _is using your
 service account to access your data or one of your teams data via g-suite._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OAuth 2.0 SERVICE ACCOUNT FLOW - TO AUTHORISE API CALLS
 

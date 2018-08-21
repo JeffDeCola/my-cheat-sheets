@@ -2,7 +2,8 @@
 
 `youtube-player-api` _is an api for YouTube's ?????._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## YOUTUBE CONTENT PARTNER - ALLOWS ACCESS
 

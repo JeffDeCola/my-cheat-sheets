@@ -3,7 +3,8 @@
 `packer` _is a tool for creating VM or container images (for multiple platforms)
 from a single source configuration file._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## A VIRTUAL MACHINE VS CONTAINER
 

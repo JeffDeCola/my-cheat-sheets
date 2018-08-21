@@ -3,7 +3,8 @@
 OAuth2 makes it much more convenient to log in to your app, because the user can
 log in with one of the many accounts they already have.
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OAuth 2.0 AVAILABLE FLOWS
 

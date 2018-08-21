@@ -14,7 +14,8 @@ I organized everything into three main sections,
 
 A lot of these cheat sheets has info I gathered from other sources.
 
-View this readme file on [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## MY CHEAT SHEETS
 

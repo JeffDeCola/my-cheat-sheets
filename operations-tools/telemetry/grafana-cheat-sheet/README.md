@@ -2,7 +2,8 @@
 
 `grafana` _is an open platform for analytics and monitoring (metrics dashboard)_
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL GRAFANA SERVER ON DEBIAN
 

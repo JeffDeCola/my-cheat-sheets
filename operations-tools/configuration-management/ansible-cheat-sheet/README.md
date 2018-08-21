@@ -1,8 +1,10 @@
 # ANSIBLE CHEAT SHEET
 
-`ansible` _is a configuration management and provisioning tool for deploying a server/service._
+`ansible` _is a configuration management and provisioning
+tool for deploying a server/service._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## WHAT CAN YOU DO WITH ANSIBLE
 
