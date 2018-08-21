@@ -37,7 +37,7 @@ All _sections in alphabetical order_
 
   * LINUX
 
-    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/dns-cheat-sheet)
+    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/dns-cheat-sheet) _Operating test test test test test test test test test_
 
   * WINDOWS
 
@@ -48,8 +48,10 @@ All _sections in alphabetical order_
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/RESTful-cheat-sheet)
+      _Operating test test test test test test test test test_
     * [youtube content id api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-content-id-api-cheat-sheet)
     * [youtube data api v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-data-api-v3-cheat-sheet)
+    _Operating test test test test test test test test test_
     * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/api/youtube-player-api-cheat-sheet)
 
   * AUTHORIZATION
