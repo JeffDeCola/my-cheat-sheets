@@ -40,10 +40,13 @@ All _sections in alphabetical order_
   * LINUX
 
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/dns-cheat-sheet)
+    * [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
 
   * WINDOWS
 
     * [bash on ubuntu on windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/windows/bash-on-ubuntu-on-windows-cheat-sheet)
+
+  * MAC OS
 
 * SOFTWARE ARCHITECTURES
 
@@ -117,7 +120,8 @@ All _sections in alphabetical order_
 
 ## VISUAL OVERVIEW
 
-Here is my concept on how everything fits together,
+Here is my concept on how various apps and tools together
+for the goal of creating a service.
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 

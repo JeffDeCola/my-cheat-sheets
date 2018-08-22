@@ -6,7 +6,8 @@ and visa versa.  Basically a large database._
 * DNS SERVER _or name server_
 * DNS CLIENT _or resolver_
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## SERVER - BIND - NAME SERVER FOR LINUX
 
