@@ -2,8 +2,7 @@
 
 `systemd-systemctl` _controls what programs run when Linux boots up._
 
-Note, Ubuntu 14.04 uses Upstart as the init system,
-systemd is for Ubuntu 14.10+. 
+Note: Ubuntu 14.04 uses upstart as the init system.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -11,26 +10,29 @@ View my entire list of cheat sheets on
 ## SYSTEMCTL
 
 `systemctl` is a systemd utility which is responsible for
-Controlling the systemd system and service manager.
+controlling the systemd and service manager.
 
-Check your version,
+Check your versions,
 
 ```bash
 systemd --version
 systemctl --version
 ```
 
-Checck where binaries are,
+Check where binaries are,
 
 ```bash
 whereis systemd 
 whereis systemctl
-`
-check if systemd is running,
+```
+
+Check if systemd is running,
 
 ```bash
 ps -eaf | grep [s]ystemd
 `
+
+## UNITS (SERVICES, MOUNT POINTS, SOCKETS AND DEVICES)
 
 Systemctl accepts the following as units,
 
@@ -57,10 +59,10 @@ List all services enabled (starts on linux boot),
 systemctl list-unit-files --type=service | grep enabled
 ```
 
-## SERVICE - CREATE, START AND STOP A SERVICES - BY WAY OF AN EXAMPLE
+## CREATE, START AND STOP A SERVICE - BY WAY OF AN EXAMPLE
 
 Lets do this by way of creating a service that runs at boot.
-How about something that prints "Hi $USER, have a great day",
+How about something that prints "Hi $USER, #",
 when linux boots
 
 Create a shell script such as the following,
@@ -82,13 +84,15 @@ do
 done
 ```
 
+Test it,
+
 ```bash
 sh say-hi.sh
 ```
 
 May have to add permissions to run `chmod 664`.
 
-Now create a .service file with your path to say-hi.sh,
+Now create a .service file with your path to `say-hi.sh`,
 
 ```bash
 sudo nano /etc/systemd/system/say-hi.service
@@ -113,7 +117,7 @@ Check your service,
 sudo systemd-analyze verify say-hi
 ```
 
-Now see all the services and you should see it disabled,
+Now see if the service is disabled,
 
 ```bash
 systemctl list-unit-files --type=service | grep say-hi
@@ -131,7 +135,7 @@ Lets start it,
 sudo ystemctl start say-hi
 ```
 
-Check it working bu looking at the tail (switch -f) of the service logs,
+Ways to check if it working,
 
 ```bash
 journalctl -f
@@ -139,13 +143,13 @@ systemctl status say-hi
 systemctl is-active say-hi
 ```
 
-Lets stop it
+Lets stop it,
 
 ```bash
 sudo systemctl stop say-hi.service
 ```
 
-Cehck its stoped counting.
+Check its stopped,
 
 ```bash
 journalctl -f
@@ -155,16 +159,18 @@ systemctl is-active say-hi
 
 ## ENABLE A SERVICE AT BOOT
 
-Now comes the meat and potatoes, getting the
+Now comes the meat and potatoes; getting the
 service to run at boot.
+
+First enable the service to start at boot,
 
 ```bash
 systemctl enable say-hi
 ```
 
-It will create a symlink,
+Reboot your system.
 
-Test it be rebooting and checking the status,
+Now check the status,
 
 ```bash
 journalctl -f
@@ -172,13 +178,13 @@ systemctl status say-hi
 systemctl is-active say-hi
 ```
 
-To disable your service jefffrom boot, just disable it,
+Disable your service from boot,
 
 ```bash
 sudo systemctl disable say-hi
 ```
 
-And you still need to stop it
+Now stop it,
 
 ```bash
 sudo systemctl stop say-hi
