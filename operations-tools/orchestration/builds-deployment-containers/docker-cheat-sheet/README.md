@@ -31,9 +31,9 @@ Container:
 
 Goto this website to install.  Must be 64-bit machine.
 
-`https://docs.docker.com/engine/installation/linux/ubuntulinux`
+https://docs.docker.com/install
 
-Check version,
+When you're done, check version,
 
 ```bash
 docker version
@@ -60,6 +60,18 @@ Delete all images (-f is force),
 ```bash
 docker rmi $(docker images -q)
 docker rmi -f $(docker images -q)
+```
+
+Get an image from [hub.docker.com](https://hub.docker.com/explore/),
+
+```bash
+docker pull concourse/concourse
+```
+
+Check you got it,
+
+```bash
+docker images
 ```
 
 ## CONTAINERS
@@ -204,3 +216,16 @@ Check your build,
 ```bash
 docker images
 ```
+
+## DOCKER-COMPOSE
+
+Compose is a tool for defining and running
+multi-container Docker applications. 
+
+With Compose, you use a .yml file to configure your application’s
+services. Then, with a single command, you create and
+start all the services from your configuration.
+
+Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
+of using docker-compose to start up concourse services using two
+docker containers.

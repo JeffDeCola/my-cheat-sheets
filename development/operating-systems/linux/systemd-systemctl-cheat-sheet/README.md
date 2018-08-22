@@ -1,6 +1,6 @@
 # SYSTEMD SYSTEMCTL CHEAT SHEET
 
-`systemd-systemctl` _controls what programs run when Linux boots up._
+`systemd systemctl` _controls what programs run when Linux boots up._
 
 Note: Ubuntu 14.04 uses upstart as the init system.
 

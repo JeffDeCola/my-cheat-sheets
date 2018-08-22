@@ -2,7 +2,8 @@
 
 `vagrant` _creates and configures portable dev environments._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
