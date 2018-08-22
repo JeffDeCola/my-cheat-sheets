@@ -30,7 +30,7 @@ Check if systemd is running,
 
 ```bash
 ps -eaf | grep [s]ystemd
-`
+```
 
 ## UNITS (SERVICES, MOUNT POINTS, SOCKETS AND DEVICES)
 
@@ -65,13 +65,15 @@ Lets do this by way of creating a service that runs at boot.
 How about something that prints "Hi $USER, #",
 when linux boots
 
-Create a shell script such as the following,
+Create a shell script,
 
 ```bash
 nano say-hi.sh
 ```
 
-```base
+with,
+
+```sh
 #!/bin/bash
 
 count=1
@@ -97,6 +99,8 @@ Now create a .service file with your path to `say-hi.sh`,
 ```bash
 sudo nano /etc/systemd/system/say-hi.service
 ```
+
+with,
 
 ```text
 [Unit]
