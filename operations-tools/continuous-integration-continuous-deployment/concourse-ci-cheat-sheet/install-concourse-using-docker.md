@@ -5,10 +5,10 @@ making it easy to run just about anywhere, especially with Docker.
 
 These are two ways to install concourse using docker.
 
-* using docker run (the traditional way)
-* using docker compose
+* Using `docker run IMAGENAME` (the traditional way)
+* Using `docker-compose up`
 
-We will use the later since its easier and has a
+We will use `docker-compose` since its easier and has a
 configuration/provisioning file.
 
 ## INSTALL CONCOURSE USING DOCKER-COMPOSE
@@ -16,7 +16,7 @@ configuration/provisioning file.
 Get the `docker-compose.yml` file above.
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/docker-compose.yml
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/docker-compose.yml
 ```
 
 Note that this file will use two docker containers.

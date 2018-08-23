@@ -56,7 +56,7 @@ With compose, you use a .yml file to configure your application’s
 services. Then, with a single command, you create and
 start all the services from your configuration.
 
-Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
+Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
 of using docker-compose to start up concourse services using two
 docker containers.
 
@@ -126,6 +126,12 @@ Stop a runing container,
 
 ```bash
 docker stop IMAGE-ID
+```
+
+Find the switches you can use with a container,
+
+```bash
+docker run IMAGENAME --help
 ```
 
 List old containers you have lying around (casched),

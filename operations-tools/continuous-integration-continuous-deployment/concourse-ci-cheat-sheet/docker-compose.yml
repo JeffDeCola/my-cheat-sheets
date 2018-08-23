@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+
   concourse-db:
     image: postgres
     environment:
@@ -21,6 +22,7 @@ services:
     - CONCOURSE_POSTGRES_PASSWORD=concourse_pass
     - CONCOURSE_POSTGRES_DATABASE=concourse
     - CONCOURSE_EXTERNAL_URL
+    - CONCOURSE_PEER_URL=http://10.0.16.11:8080
     - CONCOURSE_ADD_LOCAL_USER=test:$$2a$$10$$0W9/ilCpYXY/yCPpaOD.6eCrGda/fnH3D4lhsw1Mze0WTID5BuiTW
     - CONCOURSE_MAIN_TEAM_ALLOW_ALL_USERS=true
     - CONCOURSE_WORKER_GARDEN_NETWORK
