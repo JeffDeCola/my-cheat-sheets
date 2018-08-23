@@ -53,3 +53,31 @@ reboot
 
 Must have a shared folder.
 
+
+## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
+
+Configure your network configuraiton file
+ `/etc/network/interfaces`,
+
+```text
+auto eth1
+iface eth1 inet static
+    address 192.168.100.5
+    netmask 255.255.255.0
+```
+
+Restart/Status `networking.service` using systemclt
+or reboot your machine,
+
+```bash
+sudo systemctl restart networking
+systemctl status networking.service
+```
+
+Recheck your devices,
+
+```bash
+ifconfig -a
+```
+
+For more infomation goto [network device configuration](),
