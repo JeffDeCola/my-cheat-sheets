@@ -136,11 +136,11 @@ this README.md file to `/docs/_includes/README.md`.
 You can see concourse task
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
 
-![IMAGE - my-cheat-sheets concourse ci piepline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
+![IMAGE - my-cheat-sheets concourse ci pipeline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
 A _ci/.credentials.yml_ file needs to be created for your _slack_url_ and _repo_github_token_.
 
-Use fly to upload the the pipeline file _ci/pipline.yml_ to concourse:
+Use fly to upload the the pipeline file _ci/pipeline.yml_ to concourse:
 
 ```bash
 fly -t ci set-pipeline -p my-cheat-sheets -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
