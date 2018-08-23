@@ -19,6 +19,13 @@ Get the `docker-compose.yml` file above.
 wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/docker-compose.yml
 ```
 
+Gernerate the keys needed
+
+```bash
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/generate-keys.sh
+sudo sh generate-keys.sh
+```
+
 Note that this file will use two docker containers.
 
 To run
@@ -40,4 +47,12 @@ And see which containers are running,
 
 ```bash
 docker ps
+```
+
+## IF YOU GET AN IMAGE ERROR
+
+Just prune the containers,
+
+```bash
+docker container prune
 ```
