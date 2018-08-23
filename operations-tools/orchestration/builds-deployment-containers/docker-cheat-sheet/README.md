@@ -39,6 +39,27 @@ When you're done, check version,
 docker version
 ```
 
+## DOCKER RUN (RUN A SINGLE CONTAINER)
+
+To run a simple docker comtainer just use `docker run`,
+
+```bash
+docker run jeffdecola/hello-go
+```
+
+## DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)
+
+Compose is a tool for defining and running
+multi-container Docker applications. 
+
+With compose, you use a .yml file to configure your application’s
+services. Then, with a single command, you create and
+start all the services from your configuration.
+
+Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
+of using docker-compose to start up concourse services using two
+docker containers.
+
 ## IMAGES
 
 An image is ready to run.
@@ -74,7 +95,7 @@ Check you got it,
 docker images
 ```
 
-## CONTAINERS
+## CONTAINERS - RUNNING IMAGES
 
 A container is a running image.
 
@@ -216,16 +237,3 @@ Check your build,
 ```bash
 docker images
 ```
-
-## DOCKER-COMPOSE
-
-Compose is a tool for defining and running
-multi-container Docker applications. 
-
-With Compose, you use a .yml file to configure your application’s
-services. Then, with a single command, you create and
-start all the services from your configuration.
-
-Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
-of using docker-compose to start up concourse services using two
-docker containers.
