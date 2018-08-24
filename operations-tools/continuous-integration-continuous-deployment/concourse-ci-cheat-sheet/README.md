@@ -16,7 +16,7 @@ There are a few ways to install concourse:
 
 * [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-ci-on-virtualbox-using-vagrant)
 * [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-binary-google-compute-engine.md)
-* [Docker Repository](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
+* [Docker Repository](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-docker-compose/README.md)
 * [Clusters with BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
 * [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
