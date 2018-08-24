@@ -32,6 +32,12 @@ Run docker-compose up,
 docker-compose up
 ```
 
+Keep the output minimal,
+
+```bash
+docker-compose up -d
+```
+
 Note that this will pull two docker images,
 
 ```bash
@@ -55,12 +61,15 @@ That's it, check that its working,
 
 [192.168.100.5:8080](http://192.168.100.5:8080)
 
-Login as user `jeff` and password `test`.
+I could not get login as user
+`jeff` and password `test`.
 
-## USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE,
+I just used `test` `test`.
+
+## USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE
 
 If you want to access this from outside you box,
-first setup a static IP to a network device. 
+first setup a static IP to a network device.
 I have a cheat sheet on that called
 [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/network-device-configuration-cheat-sheet)
 

@@ -8,7 +8,7 @@ View my entire list of cheat sheets on
 
 ## INSTALL METHODS
 
-    * SOURCE 
+    * SOURCE
     * BINARY
     * INSTALLER / PACKAGES
     * VIRTUAL MACHINE / CONTAINER
