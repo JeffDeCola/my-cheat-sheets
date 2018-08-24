@@ -3,10 +3,15 @@
 `network device configuration` _will help you manage
 your network devices._
 
+There are two methods we will go over,
+
+* ifupdown
+* netplan
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SEE YOUR DEVICES
+## SEE WHAT DEVICES/INTERFACE NAMES YOU HAVE
 
 See your network devices and their configurations,
 
@@ -23,12 +28,12 @@ The files are located here,
 Note, that newer version of ubuntu have changed `eth0` / `eth1`
 to interface names like `enp0s3`.
 
-## CONFIGURE YOUR NETWORK DEVICE
+## ifupdown METHOD - CONFIGURE YOUR NETWORK DEVICE
 
 Edit this file,
 
 ```bash
-/etc/network/interfaces
+sudo nano /etc/network/interfaces
 ```
 
 For example, if you want to have a
@@ -41,7 +46,7 @@ iface eth1 inet static
     netmask 255.255.255.0
 ```
 
-## START/STOP networking.service
+## ifupdown METHOD - START/STOP networking.service
 
 The file,
 
@@ -67,9 +72,47 @@ You should see your new static ip address.
 For more information on services refer to my cheat sheet
 [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet).
 
-## OTHER COMMANDS
+## netplan METHOD - CONFIGURE YOUR NETWORK DEVICE
 
-tbd
+Edit this .yaml file,
 
+```bash
+sudo nano /etc/netplan/NAME.yaml
+```
 
+For example, if you want to have a
+Static IP of `192.168.100.5` on network device `enp0s8`,
+add the following under `ethernets`,
 
+```YAML
+network:
+ version: 2
+ renderer: networkd
+ ethernets:
+        ...
+   enp0s8:
+     dhcp4: no
+     dhcp6: no
+     addresses: [192.168.100.5/24]
+        ...
+```
+
+you can check it,
+
+```bash
+netplan --debug generate.
+```
+
+## netplan METHOD - netplan apply
+
+```bash
+sudo netplan apply
+```
+
+Recheck your devices,
+
+```bash
+ifconfig -a
+```
+
+You should see your new static ip address.
