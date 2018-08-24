@@ -31,7 +31,7 @@ Container:
 
 Goto this website to install.  Must be 64-bit machine.
 
-https://docs.docker.com/install
+[docs.docker.com/install](https://docs.docker.com/install)
 
 When you're done, check version,
 
@@ -50,7 +50,7 @@ docker run jeffdecola/hello-go
 ## DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)
 
 Compose is a tool for defining and running
-multi-container Docker applications. 
+multi-container Docker applications.
 
 With compose, you use a .yml file to configure your application’s
 services. Then, with a single command, you create and

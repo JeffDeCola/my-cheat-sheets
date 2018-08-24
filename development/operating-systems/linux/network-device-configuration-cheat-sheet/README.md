@@ -14,11 +14,14 @@ See your network devices and their configurations,
 ifconfig -a
 ```
 
-The fiels are located here,
+The files are located here,
 
 ```bash
 /sys/class/net
 ```
+
+Note, that newer version of ubuntu have changed `eth0` / `eth1`
+to interface names like `enp0s3`.
 
 ## CONFIGURE YOUR NETWORK DEVICE
 
@@ -28,9 +31,8 @@ Edit this file,
 /etc/network/interfaces
 ```
 
-For example, if you want to have a 
+For example, if you want to have a
 Static IP of `192.168.100.5` on network device `eth1`,
-
 
 ```text
 auto eth1
@@ -47,10 +49,10 @@ The file,
 /lib/systemd/system/networking.service
 ```
 
-Restart/Status using systemclt,
+Restart/Status using `systemctl`,
 
 ```bash
-sudo systemctl restart networking
+sudo systemctl restart networking.service
 systemctl status networking.service
 ```
 
@@ -60,9 +62,10 @@ Recheck your devices,
 ifconfig -a
 ```
 
-For more information on services refer to my cheat sheet
-[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+You should see your new static ip address.
 
+For more information on services refer to my cheat sheet
+[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet).
 
 ## OTHER COMMANDS
 
