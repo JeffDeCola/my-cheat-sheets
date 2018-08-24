@@ -47,6 +47,9 @@ docker images
 * postgres
 * concourse/concourse
 
+I like to keep specific versions, so it doesn't
+just keep pulling and storing the latest.
+
 It will then create three docker containers:
 
 ```bash
@@ -65,6 +68,12 @@ I could not get login as user
 `jeff` and password `test`.
 
 I just used `test` `test`.
+
+To stop all docker containers is simple,
+
+```bash
+docker-compose down
+```
 
 ## USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE
 
@@ -92,4 +101,10 @@ or
 
 ```bash
 docker container prune
+```
+
+And make sure to stop all running containers,
+
+```bash
+docker-compose down
 ```
