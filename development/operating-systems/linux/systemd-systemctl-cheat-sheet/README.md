@@ -22,7 +22,7 @@ systemctl --version
 Check where binaries are,
 
 ```bash
-whereis systemd 
+whereis systemd
 whereis systemctl
 ```
 
@@ -37,8 +37,8 @@ ps -eaf | grep [s]ystemd
 Systemctl accepts the following as units,
 
 * services (.service)
-* mount point (.mount) 
-* sockets (.socket) 
+* mount point (.mount)
+* sockets (.socket)
 * devices (.device)
 
 List all units,

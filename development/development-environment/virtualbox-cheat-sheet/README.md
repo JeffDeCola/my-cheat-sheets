@@ -23,8 +23,9 @@ From the terminal, run the following commands,
 ```bash
 sudo mkdir -p /media/cdrom
 sudo mount /dev/cdrom /media/cdrom
-sudo apt install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
-sudo sh /media/cdrom/VBoxLinuxAdditions.run  
+sudo apt install -y dkms build-essential linux-headers-generic \
+  linux-headers-$(uname -r)
+sudo sh /media/cdrom/VBoxLinuxAdditions.run
 reboot
 ```
 
@@ -53,24 +54,32 @@ reboot
 
 Must have a shared folder.
 
-
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
-Configure your network configuraiton file
- `/etc/network/interfaces`,
+See your network devices and their configurations,
+
+```bash
+ifconfig -a
+```
+
+Note, that newer version of ubuntu have changed `eth0` / `eth1`
+to interface names like `enp0s3`.
+
+Configure your network configuration file
+ `/etc/network/interfaces` for a static IP address `192.168.100.5`,
 
 ```text
-auto eth1
-iface eth1 inet static
+auto enp0s3
+iface enp0s3 inet static
     address 192.168.100.5
     netmask 255.255.255.0
 ```
 
-Restart/Status `networking.service` using systemclt
+Restart/Status `networking.service` using `systemclt`
 or reboot your machine,
 
 ```bash
-sudo systemctl restart networking
+sudo systemctl restart networking.service
 systemctl status networking.service
 ```
 
@@ -80,4 +89,6 @@ Recheck your devices,
 ifconfig -a
 ```
 
-For more infomation goto [network device configuration](),
+You should see your new static ip address.
+
+For more information goto [network device configuration](),

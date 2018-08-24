@@ -63,9 +63,9 @@ All _sections in alphabetical order_
 
     * [OAuth 2.0 authorization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet)
 
-  * MESSINGING
+  * MESSAGING
 
-    * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/messinging/NATS-cheat-sheet)
+    * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/software-architectures/messaging/NATS-cheat-sheet)
 
   * MICROSERVICES
 
@@ -105,7 +105,7 @@ All _sections in alphabetical order_
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
- * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
+  * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
     * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet-sheet)
@@ -114,7 +114,7 @@ All _sections in alphabetical order_
   * DISCOVERY / CONFIGURATION
 
     * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
- 
+
 * TELEMETRY
 
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
