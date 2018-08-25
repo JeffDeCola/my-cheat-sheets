@@ -10,7 +10,7 @@ View my entire list of cheat sheets on
 
 ## A VIRTUAL MACHINE VS DOCKER CONTAINER
 
-The followng diagram shows the difference betwenn a Virtual Machine
+The following diagram shows the difference betwenn a Virtual Machine
 and a Docker Container.
 
 ![IMAGE - Virtual-Machine-vs-Docker - IMAGE](../../../../docs/pics/Virtual-Machine-vs-Docker.jpg)

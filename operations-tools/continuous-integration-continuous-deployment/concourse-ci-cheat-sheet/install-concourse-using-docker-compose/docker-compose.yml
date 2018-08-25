@@ -1,7 +1,9 @@
 version: '3'
 
 services:
+
   concourse-db:
+    # build: ./dir
     image: postgres:10.5
     environment:
       POSTGRES_DB: "concourse"
@@ -10,6 +12,7 @@ services:
       PGDATA: "/database"
 
   concourse-web:
+    # build: ./dir
     image: concourse/concourse:4.0.0
     command: web
     links: [concourse-db]
@@ -30,6 +33,7 @@ services:
       CONCOURSE_MAIN_TEAM_ALLOW_ALL_USERS: "true"
 
   concourse-worker:
+    # build: ./dir
     image: concourse/concourse:4.0.0
     command: worker
     privileged: true
