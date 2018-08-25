@@ -1,4 +1,4 @@
-# my-cheat-sheetss
+# my-cheat-sheets-VB
 
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
