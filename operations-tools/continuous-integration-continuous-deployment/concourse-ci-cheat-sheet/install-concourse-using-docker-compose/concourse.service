@@ -6,11 +6,11 @@ After=docker.service
 [Service]
 Restart=always
 
-WorkingDirectory=/home/jeff/concourse
+WorkingDirectory=/your/working/path
 
-ExecStartPre=/home/jeff/concourse/clean-up.sh
-ExecStart=/home/jeff/concourse/start-concourse.sh
-ExecStop=/home/jeff/concourse/stop-concourse.sh
+ExecStartPre=/your/working/path/clean-up.sh
+ExecStart=/your/working/path/start-concourse.sh
+ExecStop=/your/working/path/stop-concourse.sh
 
 [Install]
 WantedBy=multi-user.target

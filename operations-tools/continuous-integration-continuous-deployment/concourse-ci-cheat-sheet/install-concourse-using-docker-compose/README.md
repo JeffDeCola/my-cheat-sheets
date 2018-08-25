@@ -35,7 +35,7 @@ docker-compose up
 Keep the output minimal,
 
 ```bash
-docker-compose up -d
+docker-compose up
 ```
 
 Note that this will pull two docker images,
@@ -91,16 +91,17 @@ Remember to match the static IP to what's in your
 
 ## IF YOU GET AN IMAGE ERROR
 
-Start fresh, so prune the containers,
+Start fresh, so prune the containers and volumes,
 
 ```bash
-sh prune-containers.sh
+sh clean-up.sh
 ```
 
 or
 
 ```bash
 docker container prune
+docker volume prune
 ```
 
 And make sure to stop all running containers,
@@ -127,14 +128,18 @@ sudo nano /etc/systemd/system/concourse.service
 
 ```yaml
 [Unit]
-Description=Concourse docker-compose containers
+Description=Concourse service with docker compose
 Requires=docker.service
 After=docker.service
 
 [Service]
 Restart=always
-ExecStart=/you/path/start-concourse.sh
-ExecStop=/your/path/stop-concourse.sh
+
+WorkingDirectory=/your/working/path
+
+ExecStartPre=/your/working/path/clean-up.sh
+ExecStart=/your/working/path/start-concourse.sh
+ExecStop=/your/working/path/stop-concourse.sh
 
 [Install]
 WantedBy=multi-user.target
