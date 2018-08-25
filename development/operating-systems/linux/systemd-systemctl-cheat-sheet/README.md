@@ -92,7 +92,7 @@ Test it,
 sh say-hi.sh
 ```
 
-May have to add permissions to run `chmod 664`.
+May have to add permissions to run `chmod 775`.
 
 Now create a .service file with your path to `say-hi.sh`,
 
@@ -113,7 +113,11 @@ ExecStart=your/path/to/say-hi.sh
 WantedBy=multi-user.target
 ```
 
-May also have to `chmod 664` .
+May also have to `chmod 664`  this file,
+
+```bash
+sudo chmod 644 /etc/systemd/system/say-hi.service
+```
 
 Check your service,
 
