@@ -3,7 +3,6 @@ version: '3'
 services:
 
   concourse-db:
-    # build: ./dir
     image: postgres:10.5
     environment:
       POSTGRES_DB: "concourse"
@@ -12,7 +11,6 @@ services:
       PGDATA: "/database"
 
   concourse-web:
-    # build: ./dir
     image: concourse/concourse:4.0.0
     command: web
     links: [concourse-db]
@@ -20,7 +18,8 @@ services:
     ports: ["8080:8080"]
     volumes: ["./keys/web:/concourse-keys"]
     environment:
-      CONCOURSE_LOG_LEVEL: "debug"
+      CONCOURSE_LOG_LEVEL: "error"
+      CONCOURSE_TSA_LOG_LEVEL: "error"
       CONCOURSE_POSTGRES_HOST: "concourse-db"
       CONCOURSE_POSTGRES_USER: "concourse_user"
       CONCOURSE_POSTGRES_PASSWORD: "concourse_pass"
@@ -33,7 +32,6 @@ services:
       CONCOURSE_MAIN_TEAM_ALLOW_ALL_USERS: "true"
 
   concourse-worker:
-    # build: ./dir
     image: concourse/concourse:4.0.0
     command: worker
     privileged: true
@@ -41,6 +39,10 @@ services:
     depends_on: [concourse-web]
     volumes: ["./keys/worker:/concourse-keys"]
     environment:
+      CONCOURSE_LOG_LEVEL: "error"
+      CONCOURSE_GARDEN_LOG_LEVEL: "error"
+      CONCOURSE_BAGGAGECLAIM_LOG_LEVEL: "error"
+      CONCOURSE_TSA_HOST_LOG_LEVEL: "error"
       CONCOURSE_TSA_HOST: "concourse-web:2222"
       CONCOURSE_GARDEN_NETWORK:
     
