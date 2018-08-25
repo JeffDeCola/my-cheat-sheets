@@ -108,3 +108,64 @@ And make sure to stop all running containers,
 ```bash
 docker-compose down
 ```
+
+## START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)
+
+I wrote a cheat sheet on this which has this info;
+[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+
+The goal is to start `start-concourse.sh` on boot/crash.
+
+Note, may have to `chmod 755` this file.
+
+Create your `concourse.service` file and
+place in `/etc/systemd/system`,
+
+```bash
+sudo nano /etc/systemd/system/concourse.service
+```
+
+```yaml
+[Unit]
+Description=Concourse docker-compose containers
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/you/path/start-concourse.sh
+ExecStop=/your/path/stop-concourse.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+May also have to `chmod 664` this file.
+
+```bash
+sudo chmod 644 /etc/systemd/system/concourse.service
+```
+
+Tell the system about this new unit service,
+
+```bash
+sudo systemctl daemon-reload
+```
+
+Start and Enable on boot,
+
+```bash
+sudo systemctl start concourse
+sudo systemctl enable concourse
+```
+
+If you want, check how systemctl is doing,
+```bash
+journalctl -f
+```
+
+Changes will come to effect on a reboot,
+
+```bash
+sudo reboot
+```
