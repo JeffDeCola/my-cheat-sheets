@@ -53,26 +53,36 @@ e.g.
 git update-index --chmod=+x readme-github-pages.sh
 ```
 
-## HTTPS ACCESS
+## HTTPS ACCESS (USING .netrc)
 
-Generate a personal access token for your machines .netrc
-file at github.com.
+Generate a `personal access token` for your machines
+at github.com (Settings Developer -> settings).
 
-Creating a .netrc file and be placing this token in
-login field as follows,
+Creating a `.netrc` file,
 
 ```bash
 nano ~/.netrc
 ```
 
-Add,
+Add your token,
 
 ```bash
 machine github.com
 login {TOKEN FROM GITHUB}
 ```
 
-## SSH KEY
+When in a repo, you can use https for access,
+
+```bash
+git remote set-url origin https://github.com/JeffDeCola/REPONAME.git
+```
+
+Check
+```bash
+git config --list
+```
+
+## SSH KEY (USING KEYS)
 
 Generate public and private key for Ubuntu,
 
@@ -119,7 +129,7 @@ Force git to use ssh on your local repo, rather the https,
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
 ```
 
-Check ssh settings,
+Check your settings,
 
 ```bash
 git config --list

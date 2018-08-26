@@ -20,25 +20,13 @@ There are a few ways to install concourse:
 * [Clusters with BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
 * [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
-## INSTALL FLY
+## INSTALL AND CONNECT FLY TO CONCOURSE
 
 Now we need a way to connect to your concourse server.
 Fly allows you to uploads/updates your files.
 
 * [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-windows.md)
 * [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-linux.md)
-
-## UPDATE FLY TO MATCH CONCOURSE VERSION
-
-To update fly,
-
-```bash
-fly -t ci sync
-```
-
-```bash
-fly -version
-```
 
 ## BASIC STRUCTURE OF CONCOURSE CI
 
@@ -60,14 +48,6 @@ If you want to store 'state', use a resource to send it offsite.
 ![IMAGE - concourse cheat sheet structure - IMAGE](../../../docs/pics/Concourse-structure.jpg)
 
 ## LOAD PIPELINE TO CONCOURSE CI
-
-First login,
-
-```bash
-fly -t ci login
-```
-
-Then upload file,
 
 ```bash
 fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml

@@ -1,8 +1,8 @@
-# INSTALL FLY ON WINDOWS
+# INSTALL AND CONNECT FLY ON WINDOWS
 
 Open concourse,
 
-[http://192.168.100.4:8080](http://192.168.100.4:8080)
+[http://192.168.100.6:8080](http://192.168.100.6:8080)
 
 In bottom right download latest verions of fly.exe for Linux,
 
@@ -15,7 +15,7 @@ C:\Program Files (x86)\Concourse\fly.exe
 Login fly to Concourse,
 
 ```bash
-"C:\Program Files (x86)\Concourse\fly.exe" -t ci login -c http://192.168.100.4:8080/
+"C:\Program Files (x86)\Concourse\fly.exe" -t ci login -c http://192.168.100.6:8080/
 ```
 
 Check version,
