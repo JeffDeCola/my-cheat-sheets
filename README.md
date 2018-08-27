@@ -46,7 +46,7 @@ All _sections in alphabetical order_
 
   * WINDOWS
 
-    * [bash on ubuntu on windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/windows/bash-on-ubuntu-on-windows-cheat-sheet)
+    * [wsl (bash on ubuntu on windows)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/windows/wsl-bash-on-ubuntu-on-windows-cheat-sheet)
 
   * MAC OS
 
