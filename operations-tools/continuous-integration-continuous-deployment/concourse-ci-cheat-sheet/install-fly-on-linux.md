@@ -1,22 +1,22 @@
-# INSTALL FLY ON LINUX
+# INSTALL AND CONNECT FLY ON LINUX
 
 Open Concourse,
 
-[http://192.168.100.4:8080](http://192.168.100.4:8080)
+[http://192.168.100.6:8080](http://192.168.100.6:8080)
 
-In bottom right download latest verions of fly.exe for Linux,
+In bottom right download latest versions of fly.exe for Linux,
 
-Place in,
+Place in your bin folder with a version (I
+find this easier in the long run),
 
 ```bash
 mkdir $HOME/bin
-install $HOME/Downloads/fly $HOME/bin
+mv $HOME/Downloads/fly $HOME/bin/fly-x.x.x
 ```
 
-Login fly to Concourse,
-
+Make a symbolic link to your version,
 ```bash
-fly -t ci login -c http:// 192.168.100.4:8080/
+ln -s fly-x.x.x fly
 ```
 
 Check version,
@@ -24,3 +24,12 @@ Check version,
 ```bash
 fly -version
 ```
+
+Login fly to concourse,
+
+```bash
+fly -t ci login -c http://192.168.100.6:8080/
+```
+
+To authenticate, you will handshake with a token.
+

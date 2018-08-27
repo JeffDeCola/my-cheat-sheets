@@ -39,6 +39,12 @@ When you're done, check version,
 docker version
 ```
 
+To mange docker as non-root, add yourself to the docker group
+
+```bash
+sudo usermod -aG docker $USER
+```
+
 ## DOCKER RUN (RUN A SINGLE CONTAINER)
 
 To run a simple docker comtainer just use `docker run`,
