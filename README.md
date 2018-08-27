@@ -4,7 +4,7 @@
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
-for various apps and tools for the goal of creating a service._
+for various apps and tools for the goal of creating services._
 
 I organized everything into three main sections,
 

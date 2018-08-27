@@ -8,7 +8,7 @@ echo "pwd is: " $PWD
 echo "List whats in the current directory"
 ls -lat 
 
-# Note: my-cheat-sheets-updated already created becasue of yml file
+# Note: my-cheat-sheets-updated already created becasue of .yml file
 git clone my-cheat-sheets my-cheat-sheets-updated
 
 cd my-cheat-sheets-updated
