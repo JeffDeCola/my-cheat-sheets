@@ -28,6 +28,20 @@ Fly allows you to uploads/updates your files.
 * [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-windows.md)
 * [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-linux.md)
 
+## CREATE A TEAM
+
+You are now logged in to concourse with team `main`.
+You can check `~/.flyrc` to see this.
+
+To creat a new team,
+
+```bash
+fly -t ci set-team --team-name team-jeff --local-user test
+fly -t ci login -n team-jeff
+```
+
+check `~/.flyrc` to see your new team.
+
 ## BASIC STRUCTURE OF CONCOURSE CI
 
 See a more detailed example at
@@ -47,15 +61,22 @@ If you want to store 'state', use a resource to send it offsite.
 
 ![IMAGE - concourse cheat sheet structure - IMAGE](../../../docs/pics/Concourse-structure.jpg)
 
-## LOAD PIPELINE TO CONCOURSE CI
+## CREATING YOUR FIRST PIPELINE
+
+There are plenty of better explanations on the web then I could do here.
+
+I have a few examples in my repo
+[my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks).
+
+## LOAD/REMOVE PIPELINE TO/FROM CONCOURSE
+
+Load your pipeline to concourse,
 
 ```bash
 fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
 ```
 
-## REMOVE A PIPELINE
-
-To remove pipeline,
+To remove,
 
 ```bash
 fly -t ci destroy-pipeline --pipeline NAME
@@ -81,7 +102,7 @@ And then prune-workers,
 fly -t ci prune-worker -w WORKERNAME
 ```
 
-## CREATE A NEW TEAM
+## CREATE A NEW TEAM WITH NEW USER
 
 Create a new team,
 
@@ -91,7 +112,7 @@ fly -t ci set-team --team-name ciusers \
     --basic-auth-password admin
 ```
 
-Login to new team,
+Like above, login to new team,
 
 ```bash
 fly -t ci login -n ciusers -c http://<ip>:8080
