@@ -1,6 +1,5 @@
 # my-cheat-sheets
 
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
@@ -129,18 +128,17 @@ for the goal of creating a service.
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
-For fun, I use concourse, a continuous integration tool,
-to automatically updates [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+For fun, I use concourse to automatically update
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/) and alert me of
+the changes via repo status and slack.
 
-It accomplishes this by copying and editing
-this _README.md_ file to _/docs/_includes/README.md_.
+The update is accomplished this by copying and editing
+this `README.md` file to `/docs/_includes/README.md`.
 You can see the concourse task (a shell script)
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
 
 A pipeline file [pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/pipeline.yml)
-shows the ci flow.
-
-Visually the pipeline looks like,
+shows the entire ci flow. Visually, it looks like,
 
 ![IMAGE - my-cheat-sheets concourse ci pipeline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
