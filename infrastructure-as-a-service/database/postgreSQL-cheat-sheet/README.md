@@ -12,6 +12,17 @@ Install postgresSQL Server,
 ```bash
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-client postgresql-contrib
+```
+
+check version,
+
+```bash
+psql --version
+```
+
+Enter postgres using psql,
+
+```bash
 sudo -u postgres psql postgres
 
 > \password postgres
@@ -23,30 +34,28 @@ sudo -u postgres psql postgres
 Check pg_hba.conf,
 
 ```bash
-sudo nano /etc/postgresql/9.5/main/pg_hba.conf
+sudo nano /etc/postgresql/<VERSION>/main/pg_hba.conf
 ```
 
 Edit postgresql.conf,
 
 ```bash
-sudo nano /etc/postgresql/9.5/main/postgresql.conf
+sudo nano /etc/postgresql/<VERSION>/main/postgresql.conf
 ```
 
 Replace `listen_addresses = 'localhost'` with `listen_addresses = '*'`
 
-Restart postgres,
+To restart postgres,
 
 ```bash
 sudo service postgresql restart
 ```
 
-Change user postgres
+Open `psql` as user `postgres`,
 
 ```bash
 sudo su - postgres
 ```
-
-Open psql as user postgres,
 
 ```bash
 psql
@@ -72,9 +81,9 @@ pg_ctl -D /usr/local/var/postgres start
 ps aux | grep -i postgres
 ```
 
-## USE
+## USING PSQL
 
-Become user postgres,
+Become user `postgres`,
 
 ```bash
 sudo su - postgres
@@ -93,24 +102,49 @@ Quit,
 \q
 ```
 
-## CREATE AND CONNECT TO A DATABASE
+## CREATE A USER
 
-Create a database,
+For example, create user concourse,
 
 ```bash
-create database rm
+sudo su - postgres
+createuser concourse
+```
+
+or
+
+```bash
+sudo -u postgres createuser concourse
+```
+
+## CREATE A DATABASE / CONNECT TO A DATABASE
+
+Create a database
+
+sudo -u postgres createdb --owner=concourse atc
+
+
+```bash
+sudo su - postgres
+creatdb --owner=concourse <DBNAME>
+```
+or
+
+```bash
+createdb --owner=concourse <DBNAME>
 ```
 
 List all databases,
 
 ```bash
+psql
 \l
 ```
 
-Connect to a database,
+Connect to a `database` as user `postgres`,
 
 ```bash
-\c rm
+\c <DBNAME>
 ```
 
 ## CREATE TABLE
@@ -123,13 +157,13 @@ create table people (id int primary key not null, first_name text, last_name tex
 
 ## LIST TABLE
 
-list all tables in a database,
+List all tables in a database,
 
 ```bash
 \d
 ```
 
-list a table in database,
+List a table in database,
 
 ```bash
 \d people
