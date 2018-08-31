@@ -33,4 +33,4 @@ fly -t ci login -c http://192.168.100.6:8080/
 
 To authenticate, you will handshake with a token.
 
-The name and token are stored in `~/.flyrc`
+The name and token are stored in `~/.flyrc`.

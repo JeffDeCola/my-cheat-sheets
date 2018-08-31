@@ -261,6 +261,12 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 ```
 
+
+## IF YOU PUSH SOMETHING SECRET UP BY ACCIDENT
+
+This [article](https://help.github.com/articles/removing-sensitive-data-from-a-repository)
+will show you how to scrub the file permanently.
+
 ## HOW I CREATE A NEW REPO
 
 First setup a repo on github.

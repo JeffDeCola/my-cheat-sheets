@@ -1,18 +1,17 @@
 # my-cheat-sheets
 
-[![Issue Count](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
-for various apps and tools for the goal of creating a service._
+for various Apps and tools for the goal of creating a service._
 
 I organized everything into three main sections,
 
 * DEVELOPMENT
-* INFRASTRUCTURE AS A SERVICE
+* INFRASTRUCTURE AS A SERVICE (IaaS)
 * OPERATIONS TOOLS
 
-A lot of these cheat sheets has info I gathered from other sources.
+These cheat sheets contain info I gathered from other sources.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -23,12 +22,12 @@ All _sections in alphabetical order_
 
 ### DEVELOPMENT
 
-* DEVELOPMENT ENVIRONMENT
+* DEVELOPMENT ENVIRONMENTS
 
-  * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/software-install-methods-cheat-sheet)
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/vagrant-cheat-sheet)
-  * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/virtualbox-cheat-sheet)
-  * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/visual-studio-code-cheat-sheet)
+  * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/vagrant-cheat-sheet)
+  * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/virtualbox-cheat-sheet)
+  * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
 
 * LANGUAGES
 
@@ -75,7 +74,7 @@ All _sections in alphabetical order_
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/source-version-control/git-cheat-sheet)
 
-### INFRASTRUCTURE AS A SERVICE
+### INFRASTRUCTURE AS A SERVICE (IaaS)
 
 * CLOUD SERVICES / COMPUTE
 
@@ -95,7 +94,7 @@ All _sections in alphabetical order_
 
 * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
 
-  * [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet)
+  * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet)
 
 * ORCHESTRATION
 
@@ -122,34 +121,28 @@ All _sections in alphabetical order_
 
 ## VISUAL OVERVIEW
 
-Here is my concept on how various apps and tools together
+Here is my concept on how various Apps and tools fit together
 for the goal of creating a service.
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
-## MY GITHUB WEBPAGE UPDATED USING CONCOURSE
+## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
-For fun, a concourse pipeline automatically updates
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+For fun, I use concourse to automatically update
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/) and alert me of
+the changes via repo status and slack.
 
-Its does the update by copying (with a little editing)
-this README.md file to `/docs/_includes/README.md`.
-You can see concourse task
+The update is accomplished this by copying and editing
+this `README.md` file to `/docs/_includes/README.md`.
+You can see the concourse task (a shell script)
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
+
+A pipeline file [pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/pipeline.yml)
+shows the entire ci flow. Visually, it looks like,
 
 ![IMAGE - my-cheat-sheets concourse ci pipeline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
-A _ci/.credentials.yml_ file needs to be created for your _slack_url_ and _repo_github_token_.
+For more information on using concourse for continuous integration,
+refer to my cheat sheet [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet).
 
-Use fly to upload the the pipeline file _ci/pipeline.yml_ to concourse:
 
-```bash
-fly -t ci set-pipeline -p my-cheat-sheets -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
-```
-
-`my-cheat-sheets` also contains a few extra concourse resources:
-
-* A resource (_resource-slack-alert_) uses a [docker image](https://hub.docker.com/r/cfcommunity/slack-notification-resource)
-  that will notify slack on your progress.
-* A resource (_resource-repo-status_) use a [docker image](https://hub.docker.com/r/dpb587/github-status-resource)
-  that will update your git status for that particular commit.

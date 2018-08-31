@@ -1,4 +1,4 @@
-# CONCOURSE CI CHEAT SHEET
+# CONCOURSE CHEAT SHEET
 
 `concourse` _is a pipelined CI (Continuous Integration) for
 Software Builds._

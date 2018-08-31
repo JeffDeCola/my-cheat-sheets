@@ -174,3 +174,107 @@ Changes will come to effect on a reboot,
 ```bash
 sudo reboot
 ```
+
+## USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER
+
+Instead of using docker postgres, lets use our own on the server itself.
+
+Install (unless you already have it),
+
+```bash
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+```
+
+Create user concourse and database atc via the user postgres,
+
+```bash
+sudo -u postgres createuser -P concourse
+```
+
+Prompt to enter the password `concourse-password`.
+
+```bash
+sudo -u postgres createdb --owner=concourse atc
+```
+Or in psql,
+
+```text
+CREATE DATABASE yourdbname;
+CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
+GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
+```
+
+Check you have a database. Switch to user postgres and
+enter `psql`,
+
+```bash
+sudo su - postgres
+psql
+\l
+```
+
+And list the users,
+```bash
+\du
+```
+
+
+sudo nano /etc/postgresql/9.3/main/postgresql.conf
+
+Enable or add:
+
+listen_addresses = '*'
+
+Restart the database engine:
+
+sudo service postgresql restart
+
+Also, you can check the file pg_hba.conf
+
+sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+
+And add your network or host address:
+
+host    all             all             192.168.1.0/24          md5
+
+
+
+
+
+
+
+
+
+
+
+
+
+Edit,
+
+```bash
+sudo nano /etc/postgresql/<VERSION>/main/pg_hba.conf
+```
+
+add,
+
+```text
+ host all all 192.168.100.6/24 md5
+```
+
+where `type database user address method`
+
+Hence we must add a user concourse,
+
+```bash
+sudo adduser --system --group concourse
+```
+
+To restart postgres,
+
+```bash
+sudo service postgresql restart
+```
+
+You can get more info on postgreSQL at my cheat-sheet
+[postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/database/postgreSQL-cheat-sheet).
