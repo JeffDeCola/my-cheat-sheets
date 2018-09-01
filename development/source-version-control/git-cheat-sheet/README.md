@@ -1,11 +1,16 @@
 # GIT CHEAT SHEET
 
-`git` _is a free and open source DVCS (Distributed Version Control System)._
+`git` _is a free and open source
+DVCS (Distributed Version Control System) It is the largest host
+of both open and private source code in the world._
+
+Typically, it lives on your local machine (local repos) and on
+GitHub.com (remote repos).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## INSTALL
+## INSTALL GIT LOCAL
 
 For Linux,
 
@@ -17,7 +22,7 @@ For Windows,
 
 There are two main options,
 
-Option 1. Stand alone, git for windows app (completely independent from
+Option 1. Stand alone, git for windows App (completely independent from
 bash on ubuntu on windows)
 
 ```bash
@@ -25,15 +30,16 @@ https://git-scm.com/downloads
 ```
 
 Option 2. Open bash on ubuntu on windows and install like linux above.
-I'm not a huge fan of bash on windows.
 
-## CONFIGURE FOR LINUX
+## CONFIGURE SOME SETTINGS
+
+The global settings tell Github who you are,
 
 I also like to add the hostname/machine name so I know where it came from,
 
 ```bash
-git config --global user.name "Jeff DeCola (HOSTNAME/MACHINE NAME)"
-git config --global user.email YOUREMAIL
+git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
+git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 ```
 
@@ -43,14 +49,10 @@ Check configuration,
 git config --list
 ```
 
-## CONFIGURE FOR WINDOWS
-
-Same as above but may also have to add permissions to ci scripts.
-
-e.g.
+Or check the config file,
 
 ```bash
-git update-index --chmod=+x readme-github-pages.sh
+cat ~/.gitconfig
 ```
 
 ## HTTPS ACCESS (USING .netrc)
@@ -64,20 +66,21 @@ Creating a `.netrc` file,
 nano ~/.netrc
 ```
 
-Add your token,
+Add your token to this file,
 
 ```bash
 machine github.com
 login {TOKEN FROM GITHUB}
 ```
 
-When in a repo, you can use https for access,
+When in a repo working directory, you can set git to use https for access,
 
 ```bash
-git remote set-url origin https://github.com/JeffDeCola/REPONAME.git
+git remote set-url origin https://github.com/<YOUR-GIT-USERNAME>/REPONAME.git
 ```
 
-Check
+Check your configuration for this repo,
+
 ```bash
 git config --list
 ```
@@ -90,7 +93,7 @@ Generate public and private key for Ubuntu,
 ssh-keygen -t rsa -b 4096 -C "phrase"
 ```
 
-Now add key,
+Now add your key,
 
 ```bash
 ssh-add ~/.ssh/id_rsa
@@ -104,14 +107,14 @@ cat ~/.ssh/id_rsa.pub
 
 Goto GitHub.com and paste your public ssh key (settings -> ssh keys)
 
-Check the fingerprint at github against your local public key.
+You can check the fingerprint at Github against your local public key.
 You may not need the md5 option,
 
 ```bash
 ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 ```
 
-To connect to GitHub use,
+With the above complete, now connect to GitHub,
 
 ```bash
 ssh -T git@github.com
@@ -123,7 +126,8 @@ If you want to use a particular public key file,
 ssh -i ~/.ssh/id_rsa.pub git@github.com
 ```
 
-Force git to use ssh on your local repo, rather the https,
+Finally, like above, set git to use ssh on your local repo,
+rather the https,
 
 ```bash
 git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
@@ -135,29 +139,37 @@ Check your settings,
 git config --list
 ```
 
-Hence,
+## INTERGRATE GIT WITH BASH PROMPT
 
-```bash
-remote.origin.url=https://github.com/JeffDeCola/my-cheat-sheets.git
-```
-
-Was changed to ssh method,
-
-```bash
-remote.origin.url=git@github.com:JeffDeCola/my-cheat-sheets.git
-```
+I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
 ## WORKFLOW
 
-The Git Workflow, showing how everything fits together,
+The Git Work flow, showing how everything fits together,
 
 ![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+
+From the above diagram, we can see the time line of all
+the branches and the corresponding versions,
+
+![IMAGE - GIT Repo Timeline - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Timeline.jpg)
 
 A simpler view,
 
 ![IMAGE - Simple GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/Simple-GIT-Repo-Workflow-Diagram.jpg)
 
-### CLONE
+## CREATING A REPO
+
+There are three main ways to creating a repo,
+
+* Clone a repo (GitHub -> Local)
+* Create a repo From Scratch (Local -> GitHub)
+* Create a repo at GitHub (Github -> Local)
+
+### CLONE A REPO
+
+This is the easiest method.  For example, lets grab
+all these cheat sheets,
 
 Via http,
 
@@ -171,46 +183,149 @@ Via ssh,
 git clone git@github.com:JeffDeCola/my-cheat-sheets.git
 ```
 
-I would set the repo to always use ssh,
+### CREATE A REPO FROM SCRATCH
+
+In a directory, that you want to turn into a repo, simply,
 
 ```bash
-git remote set-url origin git@github.com:JeffDeCola/my-cheat-sheets.git
+git init
 ```
 
-### ADD/COMMIT/PUSH
+A `.git` file (local repo) has been created.
 
-Your first push,
+### CREATE A REPO AT GITHUB
+
+This is also very easy, create a repo on GitHub.
+
+Then clone the repo to your local machine and check it out,
+
+```bash
+git clone https://github.com/JeffDeCola/<REPONAME>.git
+```
+
+## GIT STATUS
+
+```bash
+git status 
+```
+
+Or a more shorthand,
+
+```bash
+git status -s
+```
+
+## ADD & COMMIT (CREATING A NEW VERSION IN YOUR REPO)
+
+The flow is to add your new source to the stagging area
+and then commit the new source to your local repo.
 
 ```bash
 git add .
-git commit -m "initial"
-git push origin master
+git commit -m "your comment"
 ```
 
-Normal flow just use `git push`.
+When you `commit`, your are basically creating a
+new version of your source into your repo.
 
-### PULL (fetch and Merge)
+## COMMIT VERSIONS (LOG)
+
+You can check the versions of your commits,
+
+```bash
+git log
+```
+
+The latest version is called the `HEAD`.
+
+That lists everything and is way to long,
+I like to look at my last 5-10 commits
+using oneline,
+
+```bash
+git log -n 10 --oneline
+```
+
+You could make an alias if you use this a lot.
+
+## PUSH TO GITHUB (YOUR REMOTE REPO)
+
+Lets say you are on branch develop,
+
+```bash
+git push origin develop
+```
+As a side note, if you want to be lazy,
+configure to do origin develop for you,
+
+```bash
+git push --set-upstream origin develop
+```
+
+Then all subsequent pushes are,
+
+```bash
+git push
+```
+
+## PULL (fetch and merge)
 
 ```bash
 git pull
 ```
 
+## CHECKOUT
+
+Checkout can,
+
+* Create A Branch
+* Goto a branch
+* Goto to a specific commit (version).
+
 ### CHECKOUT - CREATE A BRANCH
+
+Create a new branch from master,
 
 ```bash
 git checkout -b "develop" master
-git push --set-upstream origin develop
 ```
 
-## LOST DATA
-
-If you lost local data (maybe a snapshot screwed up),
-just grab the lastest code from the git master.
+List all branches,
 
 ```bash
-git fetch origin master
-git reset --hard FETCH_HEAD
-git clean -df
+git branch
+```
+
+### CHECKOUT - GOTO A BRANCH
+
+To goto branch develop,
+
+```bash
+git checkout develop
+```
+
+### CHECKOUT - GOTO A SPECIFIC COMMIT (VERSION)
+
+Let's go back in time using git checkout.
+
+See all your commits (versions),
+
+```bash
+git log -n 10 --oneline
+```
+
+Goto a particular version (use hash),
+
+```bash
+git checkout <VERSION>
+```
+
+This is also called a 'detached HEAD' state.
+
+Let's go back to the head,
+
+```bash
+git checkout master
 ```
 
 ## REMOVING A COMMIT ON GITHUB
@@ -219,7 +334,7 @@ Note: You will destroy the commit history and not at all
 nice for collaboration.
 
 ```bash
-git reset —hard <SHA>
+git reset —hard <VERSION>
 git push —force
 ```
 
@@ -241,11 +356,18 @@ git checkout branch2
 git pull
 ```
 
-## INTERGRATE GIT WITH BASH PROPMPT
+## LOST DATA
 
-I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
+If you lost local data (maybe a snapshot screwed up),
+just grab the latest code from the git master.
 
-## MAC-OS git chekcout autocomplete
+```bash
+git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
+```
+
+## MAC-OS git checkout autocomplete
 
 ```bash
 curl https://raw.githubusercontent.com/git/git/master\
@@ -261,25 +383,24 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 ```
 
-
 ## IF YOU PUSH SOMETHING SECRET UP BY ACCIDENT
 
 This [article](https://help.github.com/articles/removing-sensitive-data-from-a-repository)
 will show you how to scrub the file permanently.
 
-## HOW I CREATE A NEW REPO
+## MY NOTES - HOW I CREATE A REPO
 
-First setup a repo on github.
+First, I create a repo on GitHub.
 
-Clone the Repo,
+Then I clone the repo to my local machine and check it out,
 
 ```bash
-git clone https://github.com/JeffDeCola/REPONAME.git
-cd REPONAME
+git clone https://github.com/JeffDeCola/<REPONAME>.git
+cd <REPONAME>
 git status
 ```
 
-Add Files,
+I add files I want,
 
 ```bash
 README.md
@@ -291,35 +412,34 @@ update_concourse.sh
 -R /docs
 ```
 
-Update all the above files with your REPONAME.
-
-Initial Push,
+Then my initial push,
 
 ```bash
 git add .
 git commit -m "initial"
-git remote set-url origin git@github.com:JeffDeCola/REPONAME.git
+git remote set-url origin git@github.com:JeffDeCola/<REPONAME>.git
 git push origin master
 ```
 
-Create a "develop" Branch,
+I create a `develop` branch since I would never work on master,
 
 ```bash
 git checkout -b "develop" master
 git push --set-upstream origin develop
 ```
 
-At GitHub add GitHub Webpage on /docs.
+The `--set-upstream` switch makes me lazy so I just use
+`git push` rather then `git push origin master`.
 
-Add REPONAME to codeclimate.
+At github.com I go into my repo settings and add GitHub Webpage on `/docs`.
 
-Login to codeclimate and add new REPONAME.
+I login to codeclimate and add new <REPONAME>.
 
-Configure Concourse CI,
+I configure concourse,
 
 ```bash
-fly -t ci set-pipeline -p REPONAME -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+fly -t ci set-pipeline -p <REPONAME> -c ci/pipeline.yml --load-vars-from ../.credentials.yml
 ```
 
-Snap a Concourse picture for README.md and place in
+Then I snap a concourse picture for my README.md and place in
 `/docs/pics/REPONAME-pipeline.jpg`.

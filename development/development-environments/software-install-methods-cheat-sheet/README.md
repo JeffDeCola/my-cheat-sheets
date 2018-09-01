@@ -8,49 +8,45 @@ View my entire list of cheat sheets on
 
 ## INSTALL METHODS
 
-    * SOURCE
-    * BINARY
-    * INSTALLER / PACKAGES
-    * VIRTUAL MACHINE / CONTAINER
+    * [SOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#source)
+    * [BINARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#binary)
+    * [INSTALLER / PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#installer--packages)
+    * [VIRTUAL MACHINE / CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#virtual-machines--containers)
 
 Each have their own strengths and drawbacks.
 
 ## SOURCE
 
 The purest form of the install. Download source code
-(go, python c, etc...) and compile.
+(e.g. go, python c, etc...) and compile.
 
-There is most likely a lot of provisioning and configuraiton involved.
+There is most likely a lot of provisioning and configuration involved.
 To update software, you need to grab the new source.
 
 ## BINARY
 
-Download the binary (e.g. something.exe) that has been already
+Download the binary (e.g. _something.exe_) that has been already
 compiled for your machine.
 
 ## INSTALLER / PACKAGES
 
 An installer/provisioning type program is
-used to install your app.
+used to install your App.
 
 Linux has many types of software that can be used
-as installers (and I use this term very loosly)
-since they are much more then just installation.
-
-For example, BOSH and
-[ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/configuration-management/ansible-cheat-sheet).
+as installers (and I use this term very loosely)
+since they are much more then just installation (e.g. BOSH and
+[ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/configuration-management/ansible-cheat-sheet)).
 
 Linux systems use packages, that contains everything a particular
-program needs to run.
-
-For example, `apt-get` is used in ubuntu.
+program needs to run. (e.g., `apt-get` is used in ubuntu).
 
 ## VIRTUAL MACHINES / CONTAINERS
 
-Sometimes its easier just to grab a Virtual Machine or container
-which someone who has already done all the work.
+Sometimes its easier just to grab a virtual machine or container
+where someone who has already done all the work.
 
-For example, [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environment/vagrant-cheat-sheet)
+For example, [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/vagrant-cheat-sheet)
 will allow you to quickly fire up a VM.
 Or use [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
-to get a container with the app you want.
+to get a container with the App you want.
