@@ -1,7 +1,7 @@
 
 # MY CHEAT SHEETS
 
-All _sections in alphabetical order_
+_All sections in alphabetical order._
 
 ### DEVELOPMENT
 
