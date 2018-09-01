@@ -1,13 +1,15 @@
 # VIRTUALBOX CHEAT SHEET
 
-`virtualbox` _creates and configures portable dev environments._
+`virtualbox` _a "virtualization" product, allows you to
+run an operating system (guest) on top of your existing
+operating system (host)_.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL ON WINDOWS
 
-Download and install[virtualbox](https://www.virtualbox.org/).
+Download and install from [virtualbox](https://www.virtualbox.org/).
 
 ## INSTALL GUEST ADDITIONS FROM COMMAND LINE
 
