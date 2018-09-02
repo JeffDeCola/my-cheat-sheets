@@ -156,11 +156,11 @@ I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
 The Git Work flow, showing how everything fits together,
 
-* Remote (github) and Local Repos
-* Two Developers working together
-* Branches
-* Fork and Clone a repo
-* Versions
+* Remote (github) and Local Repos.
+* Two Developers working together.
+* Branches.
+* Fork and Clone a repo.
+* Versions.
 
 ![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
 
@@ -185,9 +185,9 @@ A simpler view of the git workflow,
 
 There are three main ways to creating a repo,
 
-* Clone a repo (GitHub -> Local)
-* Create a repo From Scratch (Local -> GitHub)
-* Create a repo at GitHub (Github -> Local)
+* Clone a repo (GitHub -> Local).
+* Create a repo From Scratch (Local -> GitHub).
+* Create a repo at GitHub (Github -> Local).
 
 ### CLONE A REPO
 
@@ -269,9 +269,18 @@ using oneline,
 git log -n 10 --oneline
 ```
 
+To be more fancy and see a visual representation of your
+commits and branches,
+
+```bash
+git log -n 10 --oneline --decorate --graph --all
+```
+
 You could make an alias if you use this a lot.
 
 ## PUSH TO GITHUB (YOUR REMOTE REPO)
+
+Update local repo changes to remote branch.
 
 Lets say you are on branch develop,
 
@@ -293,27 +302,37 @@ git push
 
 ## PULL FROM GITHUB (fetch and merge)
 
+Sync local repo with remote repo.
+
 ```bash
 git pull origin <BRANCH>
 ```
 
-origin is just a fancy way of saying branch.
+Origin is just a fancy way of saying remote.
 
 ## CHECKOUT
 
 Checkout can,
 
-* Create A Branch
-* Goto a branch
+* Create A Branch.
+* Goto a branch.
 * Goto to a specific commit (version).
-* Goto to a specific file (version)
+* Goto to a specific file (version).
 
 ### CHECKOUT - CREATE A BRANCH
 
-Create a new branch from master,
+Create a new branch develop from master,
 
 ```bash
 git checkout -b "develop" master
+git checkout -b "develop"
+```
+You can create a branch off any other branch.
+
+Could also create a by,
+
+```bash
+git branch develop
 ```
 
 List all branches,
@@ -388,33 +407,107 @@ reverts as it you never committed.
 git reset HEAD
 ```
 
-## REBASE (BRANCH WILL MATCH MASTER)
+## REBASE (BRANCH WILL HAVE NEW BASE)
 
-This is an extremely useful command if you want your
-branch to match master.
+Really rewriting your project history by
+choosing a different base from when you branch.
+
+You use this to keep a linear path.
 
 Other people could of added to master and your
 branch would never have this info.
 
 ```bash
-git checkout <BRANCHNAME>
+git checkout <BRANCH>
 git rebase master
 ```
 
-It's basically the same as creating a new branch,
+Now your branch has all the edits plus
+the branches edits.
+
+![IMAGE - GIT Rebase - IMAGE](../../../docs/pics/Git-Rebase.jpg)
+
+## CREATE / DELETE A BRANCH
+
+Create,
 
 ```bash
-git checkout -b "<BRANCHNAME>"
+git branch <BRANCH>
 ```
 
-See the diagram above form a visually understanding
-as to why you want to do this.
-
-## REMOVE A BRANCH
+Delete,
 
 ```bash
 git branch -d <BRANCH>
 ```
+
+-D is force delete.
+
+## MERGE
+
+There are a few types of merges,
+
+* Fast-Forward Merge (don't preserve branch commits).
+* No Fast-Forward Merge (preserve branch commits).
+* Three way merge (merge commit)
+
+the format is
+
+```bash
+git merge SOURCE DESTINATION
+```
+
+### MERGE - FAST FORWARD
+
+If only your branch has commits.
+
+Branch commits not preserved.
+
+If you want to merge a branch to master
+and then delete the branch.
+
+```bash
+git diff master <BRANCH>
+git merge master <BRANCH>
+git branch -d < BRANCH>
+```
+
+Where master is the target.  Note, the
+fast-forward works if master has no changes.
+
+### MERGE - NO FAST-FORWARD
+
+If only your branch has commits.
+
+Branching commits are preserved.
+
+```bash
+git diff master <BRANCH>
+git merge <BRANCH> --no-ff
+git branch -d < BRANCH>
+```
+
+### MERGE - THREE WAY MERGE
+
+If both your branch and master have commits.
+
+You need to go back to split point.
+
+```bash
+git diff master <BRANCH>
+git merge <BRANCH>
+git branch -d < BRANCH>
+```
+
+## MERGE CONFLICTS
+
+Very simply, if you get conflicts,
+you can just manually edit each file.
+
+There are visual tools such as `git mergetool`
+from `p4merge` that can help you,
+but that is out of the scope of this cheat
+sheet.
 
 ## REMOVING A COMMIT ON GITHUB
 
