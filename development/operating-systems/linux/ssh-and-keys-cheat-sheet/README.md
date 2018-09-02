@@ -1,6 +1,7 @@
 # SSH AND KEYS CHEAT SHEET
 
-`ssh and keys` _??????????????????????????????._
+`ssh and keys` _secure shell is a way to securely
+communicate (via ssh keys) with a remote computer._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -13,7 +14,8 @@ Really just another way to 'login' to a server.
 Sequence:
 
 * You create both a public and private key.
-* You give the server your public key.
+* You give the remote computer your public key.
+* You keep your private key and NEVER share.
 * The server encrypts the data and sends it to you.
 * You use your private key to decrypt it.
 
@@ -32,7 +34,7 @@ ssh-keygen -t rsa -b 4096 -C "Keys for Github"
 
 * -t switch is the `rsa` type key (very popular).
 * -b switch is the length in bits.
-* -C is a comment for this key
+* -C is a comment for this key.
 
 This will create two keys and place them in
 `~/.ssh` with default names as `id_rsa` and `id_rsa.pub`.
@@ -56,8 +58,8 @@ ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 
 ## WHAT IS SSH
 
-Another way to communicate to a remote server without
-traditional `login`.
+Another way to communicate to a remote computer without
+traditional username/password `login`.
 
 It stands for secure shell and uses port 22.
 
