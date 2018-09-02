@@ -14,9 +14,11 @@ _All sections in alphabetical order._
 
 * LANGUAGES
 
-  * [go](https://github.com/JeffDeCola/my-go-examples)
-  * [php](https://github.com/JeffDeCola/my-php-containers)
-  * [python](https://github.com/JeffDeCola/my-python-examples)
+  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet)
+    [go examples](https://github.com/JeffDeCola/my-go-examples)
+  * [php examples](https://github.com/JeffDeCola/my-php-containers)
+  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/python-cheat-sheet)
+  * [python examples](https://github.com/JeffDeCola/my-python-examples)
 
 * OPERATING SYSTEMS
 
@@ -127,6 +129,6 @@ shows the entire ci flow. Visually, it looks like,
 ![IMAGE - my-cheat-sheets concourse ci pipeline - IMAGE](pics/my-cheat-sheets-pipeline.jpg)
 
 For more information on using concourse for continuous integration,
-refer to my cheat sheet [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet).
+refer to my cheat sheet on [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet).
 
 
