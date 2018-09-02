@@ -12,7 +12,7 @@ View my entire list of cheat sheets on
 
 ## INSTALL GIT LOCAL
 
-For Linux,
+For linux,
 
 ```bash
 sudo apt install git
@@ -43,7 +43,7 @@ git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 ```
 
-Check configuration,
+Check your configuration,
 
 ```bash
 git config --list
@@ -57,7 +57,7 @@ cat ~/.gitconfig
 
 ## HTTPS ACCESS (USING .netrc)
 
-Generate a `personal access token` for your machines
+Generate a `personal access token` for your machine
 at github.com (Settings Developer -> settings).
 
 Creating a `.netrc` file,
@@ -83,6 +83,7 @@ Check your configuration for this repo,
 
 ```bash
 git config --list
+git remote -v
 ```
 
 ## SSH KEY (USING KEYS)
@@ -140,6 +141,7 @@ Check your settings,
 
 ```bash
 git config --list
+git remote -v
 ```
 
 For more information about ssh, I wrote a cheat sheet
@@ -238,6 +240,26 @@ Or a more shorthand,
 git status -s
 ```
 
+## LOCAL REPOS BRANCHS
+
+Lets say  you have one brach develop.
+
+* master
+* origin
+* origin/master - local copy of remote
+* origin/develop - local copy of remote
+* orogin/HEAD - local copy of remote
+* HEAD
+* FETCH_HEAD
+* ORIG_HEAD
+* develop - the branch
+
+FETCH_HEAD
+HEAD
+master
+ORIG_HEAD
+
+
 ## ADD & COMMIT (CREATING A NEW VERSION IN YOUR REPO)
 
 The flow is to add your new source to the stagging area
@@ -300,15 +322,24 @@ Then all subsequent pushes are,
 git push
 ```
 
-## PULL FROM GITHUB (fetch and merge)
+## PULL FROM GITHUB (git fetch and git merge)
 
 Sync local repo with remote repo.
 
 ```bash
 git pull origin <BRANCH>
+git pull origin master
 ```
 
 Origin is just a fancy way of saying remote.
+
+Pull with rebase won't merge, but for smaller
+changes this may be cleaner,
+
+```bash
+git pull --rebase <REMOTE> <BRANCH>
+git pull --rebase origin master
+```
 
 ## CHECKOUT
 
@@ -442,6 +473,31 @@ git branch -d <BRANCH>
 ```
 
 -D is force delete.
+
+## FETCH (UPDATES YOUR ORIGIN/MASTER)
+
+Gets the latest commits and places them in local repo,
+
+```bash
+git fetch
+git fetch origin master
+```
+
+Does not effect your work, but you can see whats up.
+
+Remote `master` to local copy of remote master `origin/master`
+
+But to use them in your working directory, you need to merge.
+
+```bash
+git merge origin/master master
+```
+
+The above two steps is basically,
+
+```bash
+git pull origin master
+```
 
 ## MERGE
 
