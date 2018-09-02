@@ -240,25 +240,28 @@ Or a more shorthand,
 git status -s
 ```
 
-## LOCAL REPOS BRANCHS
+## BRANCHES, LOCAL COPY OF REMOTE BRANCHES AND HEAD POINTERS
 
-Lets say  you have one brach develop.
+Lets say  you have one branch develop,
 
-* master
-* origin
-* origin/master - local copy of remote
-* origin/develop - local copy of remote
-* orogin/HEAD - local copy of remote
-* HEAD
-* FETCH_HEAD
-* ORIG_HEAD
-* develop - the branch
+* BRANCHES
+  * master
+  * develop
 
-FETCH_HEAD
-HEAD
-master
-ORIG_HEAD
+* LOCAL COPY OF REMOTE BRANCHES
+  * origin/master
+  * origin/develop
 
+You also have pointers to latest commit,
+
+* POINTERS TO CURRENT BRANCH COMMIT
+  * HEAD - Pointer to current commit
+  * origin/HEAD - local copy of remote pointer to current commit
+
+And a reference to the remote repo,
+
+* REMOTE REPO
+  * origin
 
 ## ADD & COMMIT (CREATING A NEW VERSION IN YOUR REPO)
 
