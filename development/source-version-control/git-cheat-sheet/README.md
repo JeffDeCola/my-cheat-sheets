@@ -87,13 +87,15 @@ git config --list
 
 ## SSH KEY (USING KEYS)
 
-Generate public and private key for Ubuntu,
+Generate public and private keys,
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "phrase"
+ssh-keygen -t rsa -b 4096 -C "Keys for Github"
 ```
 
-Now add your key,
+Note, we are using a rsa type key with 4096 bit encryption.
+
+Now add your key to your machine,
 
 ```bash
 ssh-add ~/.ssh/id_rsa
@@ -114,7 +116,7 @@ You may not need the md5 option,
 ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
 ```
 
-With the above complete, now connect to GitHub,
+With the above complete, now connect your key to GitHub,
 
 ```bash
 ssh -T git@github.com
@@ -126,7 +128,8 @@ If you want to use a particular public key file,
 ssh -i ~/.ssh/id_rsa.pub git@github.com
 ```
 
-Finally, like above, set git to use ssh on your local repo,
+That's all there is to it.  Now we can use ssh with GitHub.
+Like above, set git to use ssh on your local repo,
 rather the https,
 
 ```bash
@@ -139,7 +142,13 @@ Check your settings,
 git config --list
 ```
 
+For more information about ssh, I wrote a cheat sheet
+[ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/ssh-and-keys-cheat-sheet).
+
 ## INTERGRATE GIT WITH BASH PROMPT
+
+It's nice to have your prompt tell you what
+branch you are on and give other status information.
 
 I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
@@ -147,14 +156,28 @@ I use [git-aware-promp](https://github.com/jimeh/git-aware-prompt).
 
 The Git Work flow, showing how everything fits together,
 
+* Remote (github) and Local Repos
+* Two Developers working together
+* Branches
+* Fork and Clone a repo
+* Versions
+
 ![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
 
-From the above diagram, we can see the time line of all
-the branches and the corresponding versions,
+From the above diagram, I put it into a timeline flow. It shows,
+
+* Timeline of the above diagram.
+* Local and Remote (github.com) repos.
+* Branches for each repo.
+* The latest version for each branch (HEAD).
 
 ![IMAGE - GIT Repo Timeline - IMAGE](../../../docs/pics/GIT-Repo-Workflow-Timeline.jpg)
 
-A simpler view,
+NOTE: This above is a perfect example of why you need to `rebase`
+your branches (see below) if you don't create a new branch
+`git checkout -b "<NEWBRANCH>"` from master.
+
+A simpler view of the git workflow,
 
 ![IMAGE - Simple GIT Repo Workflow Diagram - IMAGE](../../../docs/pics/Simple-GIT-Repo-Workflow-Diagram.jpg)
 
@@ -268,11 +291,13 @@ Then all subsequent pushes are,
 git push
 ```
 
-## PULL (fetch and merge)
+## PULL FROM GITHUB (fetch and merge)
 
 ```bash
-git pull
+git pull origin <BRANCH>
 ```
+
+origin is just a fancy way of saying branch.
 
 ## CHECKOUT
 
@@ -281,6 +306,7 @@ Checkout can,
 * Create A Branch
 * Goto a branch
 * Goto to a specific commit (version).
+* Goto to a specific file (version)
 
 ### CHECKOUT - CREATE A BRANCH
 
@@ -328,6 +354,68 @@ Let's go back to the head,
 git checkout master
 ```
 
+### CHECKOUT - GOTO A SPECIFIC FILE (VERSION)
+
+This is the same as above, except you add a file name
+
+```bash
+git checkout <VERSION> <FILENAME>
+```
+
+Go back,
+
+```bash
+git checkout HEAD <FILENAME>
+```
+
+## REVERT
+
+If you commit and didn't want to, just issue reset and it
+will revert to the last commit.
+
+```bash
+git revert HEAD
+```
+
+But it will still keep what you did as commits.
+
+## RESET
+
+Reset, is like revert except it completely erase the commit and
+reverts as it you never committed.
+
+```bash
+git reset HEAD
+```
+
+## REBASE (BRANCH WILL MATCH MASTER)
+
+This is an extremely useful command if you want your
+branch to match master.
+
+Other people could of added to master and your
+branch would never have this info.
+
+```bash
+git checkout <BRANCHNAME>
+git rebase master
+```
+
+It's basically the same as creating a new branch,
+
+```bash
+git checkout -b "<BRANCHNAME>"
+```
+
+See the diagram above form a visually understanding
+as to why you want to do this.
+
+## REMOVE A BRANCH
+
+```bash
+git branch -d <BRANCH>
+```
+
 ## REMOVING A COMMIT ON GITHUB
 
 Note: You will destroy the commit history and not at all
@@ -349,11 +437,23 @@ Note `pull = fetch + merge`.
 git checkout master
 git pull
 
-git checkout branch1
+git checkout <BRANCH1>
 git pull
 
-git checkout branch2
+git checkout <BRANCH2>
 git pull
+```
+
+But, I would also rebase branches if you are ready
+to start fresh or if other people added to master and
+you needed that code.
+
+```bash
+git checkout <BRANCH1>
+git rebase master
+
+git checkout <BRANCH2>
+git rebase master
 ```
 
 ## LOST DATA
