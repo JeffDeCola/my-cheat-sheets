@@ -8,10 +8,10 @@ View my entire list of cheat sheets on
 
 ## INSTALL METHODS
 
-    * [SOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#source)
-    * [BINARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#binary)
-    * [INSTALLER / PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#installer--packages)
-    * [VIRTUAL MACHINE / CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#virtual-machines--containers)
+* [SOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#source)
+* [BINARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#binary)
+* [INSTALLER / PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#installer--packages)
+* [VIRTUAL MACHINE / CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#virtual-machines--containers)
 
 Each have their own strengths and drawbacks.
 
