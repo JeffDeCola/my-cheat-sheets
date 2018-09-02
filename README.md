@@ -31,11 +31,11 @@ _All sections in alphabetical order._
 
 * LANGUAGES
 
-  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet)
+  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet) /
     [go examples](https://github.com/JeffDeCola/my-go-examples)
-  * [php examples](https://github.com/JeffDeCola/my-php-containers)
-  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/python-cheat-sheet)
-  * [python examples](https://github.com/JeffDeCola/my-python-examples)
+  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/python-cheat-sheet) /
+    [python examples](https://github.com/JeffDeCola/my-python-examples)
+    [php examples](https://github.com/JeffDeCola/my-php-containers)
 
 * OPERATING SYSTEMS
 
