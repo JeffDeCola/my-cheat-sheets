@@ -249,3 +249,11 @@ Check your build,
 ```bash
 docker images
 ```
+
+## PUSH TO DOKERHUB
+
+To push your image to docker hub,
+
+```bash
+????
+```

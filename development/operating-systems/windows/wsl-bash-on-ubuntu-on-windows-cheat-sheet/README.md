@@ -11,6 +11,6 @@ View my entire list of cheat sheets on
 The WSL (Windows System for Linux) allows you to run Linux on Windows.
 
 A popular distro of linux is ubuntu.  People refer to this
-as Bash on Ubuntu on Windows.
+as `Bash on Ubuntu on Windows`.
 
 
