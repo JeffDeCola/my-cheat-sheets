@@ -80,9 +80,9 @@ Your prompt should look like,
 That is a mouthful and the setup took me forever to
 figure out because you actually need two versions of go.
 
-Here is a nice diagram that might help explain what's going on,
+Here's a diagram that might help explain what's going on,
 
-![IMAGE - USING GO with WINDOWS VS CODE and BASH WSL TERMINAL - IMAGE](../../docs/pics/using-go-with-windows-vs-code-and-bash-wsl-terminal.jpg)
+![IMAGE - USING GO with WINDOWS VS CODE and BASH WSL TERMINAL - IMAGE](../../../docs/pics/using-go-with-windows-vs-code-and-bash-wsl-terminal.jpg)
 
 You will need to install the following on windows,
 
