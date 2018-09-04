@@ -77,7 +77,7 @@ Your prompt should look like,
 
 ## USING GO with WINDOWS VS CODE and BASH WSL TERMINAL
 
-That is a mouthful and the setup took me forever to
+That is a mouthful and the setup took me a minute to
 figure out because you actually need two versions of go.
 
 Here's a diagram that might help explain what's going on,
@@ -90,7 +90,7 @@ You will need to install the following on windows,
 * [git for windows](https://git-scm.com/downloads)
 * Obviously VS Code.
 
-When you install go, it should set the paths as follows,
+When you install go for Windows, it should set the paths as follows,
 
 ```bash
 GOROOT=C:\Go\
@@ -98,7 +98,8 @@ GOPATH C:\Users\<WINDOWSNAME>\go
 Path=...\Go\bin;...%GOPATH%\bin
 ```
 
-Open a windows command prompt and type the following,
+To check everything, open a windows command prompt and
+type the following,
 
 * `set` Check the go paths above.
 * `go version`
@@ -106,12 +107,13 @@ Open a windows command prompt and type the following,
 
 You may need to create your workspace directory for go.
 
-When you open VS Code, You install the go extension.
+When you open VS Code, install the go extension.
 
 IMPORTANT - Now here's the trick, it will use the Windows
 version of go (and git to install), NOT the go version in bash.
 
-The go extensions will be placed in
+The go extensions will automatically be placed in
 `C:\Users\<WINDOWSNAME>\go\bin`
 
-You're good to go.  Yep, that joke has never been used before. :)
+That's it, you're good to go.  Yep, that joke has never been
+used before. :)
