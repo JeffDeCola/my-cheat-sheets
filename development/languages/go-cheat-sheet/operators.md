@@ -1,6 +1,7 @@
 # OPERATORS
 
-An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations.
+An operator is a symbol that tells the compiler to perform specific
+mathematical or logical manipulations.
 
 * Arithmetic Operators
 * Relational Operators
@@ -21,7 +22,7 @@ An operator is a symbol that tells the compiler to perform specific mathematical
 
 ## RELATIONAL
 
-Returns a boolean type.
+Returns a boolean type,
 
 * `==`
 * `!=`
@@ -32,7 +33,7 @@ Returns a boolean type.
 
 ## LOGICAL
 
-Used on boolean types.
+Used on boolean types,
 
 * `&&`
 * `||`
@@ -40,27 +41,27 @@ Used on boolean types.
 
 ## BITWISE
 
-`&`
-`|`
-`^`
-`<<`
-`>>`
+* `&`
+* `|`
+* `^`
+* `<<`
+* `>>`
 
 ## ASSIGNMENT
 
-`=`
-`+=`
-`-=`
-`*=`
-`/=`
-`%=`
-`<<=`
-`>>=`
-`&=`
-`^=`
-`|=`
+* `=`
+* `+=`
+* `-=`
+* `*=`
+* `/=`
+* `%=`
+* `<<=`
+* `>>=`
+* `&=`
+* `^=`
+* `|=`
 
 ## MISCELLANEOUS
 
-`&`
-`*`
+* `&`
+* `*`

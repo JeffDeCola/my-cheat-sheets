@@ -4,9 +4,8 @@ OK, lets get go...ing.  Yep, that just happened.
 
 ## INSTALL
 
-Instructions for binary and source installs.
-
-[Installs](https://golang.org/doc/install) for windows, linux or mac.
+[Binary and source installs](https://golang.org/doc/install)
+for windows, linux or mac.
 
 I would not install from a package.
 
@@ -14,7 +13,7 @@ I would not install from a package.
 
 ### LINUX
 
-I place this is `.bashrc`,
+I place the following in `.bashrc`,
 
 ```bash
 PATH=$PATH:$HOME/bin
@@ -26,7 +25,7 @@ PATH=$PATH:$GOROOT/bin
 
 ### BASH ON UBUNTU ON WINDOWS
 
-I place this is `.bashrc`,
+I place the following in `.bashrc`,
 
 ```bash
 PATH=$PATH:$HOME/bin
@@ -36,13 +35,14 @@ export GOBIN=$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 ```
 
-The trick is to have a different project/working directory as
-shown with my `$GOPATH`. Do not work in the home directory.
+The trick is to have your project/working directory
+not in your home directory as shown with my `$GOPATH`.
+This is because Windows and Linux do not play well together.
 
 ### WINDOWS
 
-If you install it will automatically set the Windows environment
-variables as follows,
+If you install go on windows, it should automatically set the Windows
+environment variables as follows,
 
 ```text
 GOROOT=C:\Go\

@@ -7,19 +7,22 @@ mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
 This is a very abbreviated cheat-sheet highlighting the main
-syntax of go.
+syntax of go. I have lots go examples in my appropriately named repo
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## LETS GO
+## LET'S GO
 
 The cheat sheet is broken up into the following sections,
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/install-and-configure.md)
-  * Linux
-  * Bash on Ubuntu on Windows
-  * Windows
+  * Install
+  * Configure
+    * Linux
+    * Bash on Ubuntu on Windows
+    * Windows
 
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/basic-concepts.md)
   * Structure of Go
@@ -36,13 +39,13 @@ The cheat sheet is broken up into the following sections,
   * Derived
     * Pointer
     * Array
-    * Slice 
+    * Slice (_make_)
     * Struct
     * Union
-    * Map
-    * Function (See own Section Below)
-    * Interface (See own Section Below)
-    * Channel (See own Section Below)
+    * Map (_key:value_)
+    * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
+    * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)) 
+    * Channel (See own[Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
 
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
 
@@ -63,9 +66,9 @@ The cheat sheet is broken up into the following sections,
   * Miscellaneous
 
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/control-structure-flow-control.md)
-  * Loops (_for_)
+  * Loops (_for loop_)
   * Range
-  * Conditional Statements / Decision Making (_if_ / _else_, _switch_, _defer_)
+  * Conditional Statements / Decision Making (_if_/_else_, _switch_, _defer_, _select_)
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
