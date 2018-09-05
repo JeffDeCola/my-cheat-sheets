@@ -1,6 +1,6 @@
 # BASIC CONCEPTS
 
-Go likes to force you to use a coding style.  This is a little
+Go actually forces you to use a particular coding style.  This is a little
 painful at first, but actually good news in the long run since
 it makes everyone's code look and feel the same.
 
@@ -13,7 +13,7 @@ it makes everyone's code look and feel the same.
 * Statements and Expressions
 * Comments
 
-### BASIC SYNTAX
+## BASIC SYNTAX
 
 `Tokens` are basically the building blocks of go.  For example, `fmt.Println("Hello")` has six tokens.
 
@@ -21,7 +21,7 @@ A `Line Separator` is a statment terminator.  It's like placing a `;`.
 
 `Comments` start with `/*` and end with `*/`.
 
-`Identifiers` is a name used to identify a variable, function or user defined term,
+`Identifiers` is a name used to identify a variable, function or user defined term.
 
 `Keywords` are reserved like `func`, `for`, `if`, `return`, etc..
 
@@ -31,9 +31,9 @@ A `Line Separator` is a statment terminator.  It's like placing a `;`.
 
 Everything in go is a package.
 
-[List of go packages](http://golang.org/pkg).
+Here is a huge [list of go packages](http://golang.org/pkg).
 
-Or use go tool,
+Or use go tool to look up packages,
 
 ```bash
 go doc fmt
@@ -47,7 +47,7 @@ go doc fmt
 go run hello.go
 ```
 
-Just puts the executable in a temp location, then kills it.
+Just puts the executable in a temp location, then deletes it.
 
 ## BUILD
 
@@ -59,9 +59,9 @@ go build hello.go
 ./hello
 ```
 
-### INSTALL
+## INSTALL
 
-Compiles packages and dependencies and places in /bin and /pkg,
+Compiles packages and dependencies and places in `/bin` and `/pkg`,
 
 ```bash
 go install hello.go

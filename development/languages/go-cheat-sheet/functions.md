@@ -20,7 +20,7 @@ func add(a, b int) int {
 }
 ```
 
-Variadic Parameter List - Don't know how many parameters are being passed,
+Variadic parameter list is when you don't know how many parameters are being passed,
 
 ```go
 func add(name ...int) int {

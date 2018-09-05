@@ -9,7 +9,7 @@ Variables always has a single type and may be assigned.
 
 The basic format is,
 
-```txt
+```
 var name type
 var name type = assignment
 ```
@@ -39,7 +39,8 @@ The const keyword,
 const variable type = value;
 ```
 
-Escape Sequences (really used in formatting are considered constants). See formating.
+Escape Sequences (really used in formatting are considered constants).
+See [formating-types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md).
 
 ## TYPE INFERENCE
 
@@ -60,7 +61,7 @@ You may use the shortcut `:=`,
 x := 42
 ```
 
-this is the same as,
+This is the same as,
 
 ```go
 var x int = 42;
@@ -69,15 +70,16 @@ var x = 42;
 
 Shortcuts can not be used outside function.
 
-## GROUP YOUR VARIABLES
+## GROUPING VARIABLES
 
 ```go
 var x int = 5
 var y int = 8
 ```
 
-Group also can infer a type,
-```
+Group can also infer a type,
+
+```go
 var (
     x=5
     y=8
@@ -90,7 +92,7 @@ But even better, put it on one line,
 var x, y = 5, 8
 ```
 
-But even even better lets use shorthand
+But even, even better, lets use shorthand
 (again, only inside a function),
 
 ```go
