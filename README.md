@@ -1,5 +1,7 @@
 # my-cheat-sheets
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/316ee7f047cc7a36ba2e/maintainability)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/316ee7f047cc7a36ba2e/test_coverage)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/test_coverage)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
