@@ -12,12 +12,11 @@ The Data Types in go,
 * Numeric
 * String
 * Derived
-  * Pointer
   * Array
   * Slice 
-  * Struct
-  * Union
   * Map
+  * Struct
+  * Pointer
   * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)) 
   * Channel (See own[Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
@@ -55,6 +54,25 @@ mA := map[string]int                            // A Little database of key:valu
 	"Bob":  34,
 	"Mark": 28,
 }
+
+// STRUCT
+type Rect struct {                              // Create your struct type
+	w, h float32
+}
+var r1 Rect                                     // Declare type Rect
+r1.w = 5.5	                                    // Assign width
+r1.h = 2.2                                      // Assign height
+
+// POINTER
+????
+
+// FUNCTION
+func name (a int) {
+func name (a, b int) int32 {     
+func name (a int, b string) (c int32) {
+
+// INTERFACE
+????
 ```
 
 ## BOOLEAN
@@ -121,7 +139,7 @@ It means the decimal point floats.
 
 ## STRING
 
-`string` types are arrays of bytes or runes.
+`string` types are immutable array of bytes (or runes).
 
 A back-tick string can contain newlines.
 
@@ -130,8 +148,6 @@ A double quotes can contain special characters.
 Since they are just arrays, you can index into a string.
 
 ## DERIVED
-
-### POINTER
 
 ### ARRAY
 
@@ -218,17 +234,6 @@ Output is,
 [5 6 7]
 ```
 
-### STRUCT
-
-Elements of different types.
-
-type RECT sttuct {
-w,h,float64
-}
-
-### UNION
-
-
 ### MAP (key:value)
 
 Really key/value pairs, like a database.
@@ -242,6 +247,18 @@ ages := map[string]int{
 
 fmt.Println(ages["Jill"])
 ```
+
+### STRUCT
+
+Elements of different types and start
+with capital letter.  Because
+anything with a capital letter is exported.
+
+type Rect struct {
+    w,h,float64
+}
+
+### POINTER
 
 ### FUNCTION
 

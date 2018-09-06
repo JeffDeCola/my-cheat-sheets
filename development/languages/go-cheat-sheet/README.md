@@ -37,12 +37,11 @@ The cheat sheet is broken up into the following sections,
   * Numeric
   * String
   * Derived
-    * Pointer
     * Array
     * Slice (_make_)
-    * Struct
-    * Union
     * Map (_key:value_)
+    * Struct
+    * Pointer (_new_)
     * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
     * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)) 
     * Channel (See own[Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
