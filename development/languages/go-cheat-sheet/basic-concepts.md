@@ -41,6 +41,8 @@ go doc fmt
 
 `import "fmt"` just imports another package.
 
+Anything with a capital letter in a package is exported.
+
 ## RUN
 
 ```bash
