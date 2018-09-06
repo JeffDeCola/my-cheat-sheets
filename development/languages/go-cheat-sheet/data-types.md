@@ -13,13 +13,13 @@ The Data Types in go,
 * String
 * Derived
   * Array
-  * Slice 
+  * Slice
   * Map
   * Struct
   * Pointer
   * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
-  * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)) 
-  * Channel (See own[Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
+  * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
+  * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 ## OVERVIEW
 
@@ -33,8 +33,8 @@ vC := 3                                         // Shortcut assignment
 var gA, gB string = "hello gA", "hello gB"      // Verbose
 var gC, gD = "hello gC", "hello gD"             // Type Inference
 var (                                           // Neater Form
-	gE = "hello gE"
-	gF = "hello gF"
+    gE = "hello gE"
+    gF = "hello gF"
 )
 gG, gH := "hello gG", "hello gH"                // Group Shortcut Assignment
 
@@ -49,15 +49,15 @@ sB := []float32{3.4, 4.5}                       // Create another slice
 sB = append(sB, 5.7)                            // Append to slice
 
 // MAP
-mA := map[string]int                            // A Little database of key:value pairs
-	"Jill": 23,
-	"Bob":  34,
-	"Mark": 28,
+mA := map[string]int                            // Database of key:value pairs
+    "Jill": 23,
+    "Bob":  34,
+    "Mark": 28,
 }
 
 // STRUCT
 type Rect struct {                              // Create your struct type
-	w, h float32
+    w, h float32
 }
 var r1 Rect                                     // Declare type Rect
 r1.w = 5.5	                                    // Assign width
@@ -68,7 +68,7 @@ r1.h = 2.2                                      // Assign height
 
 // FUNCTION
 func name (a int) {
-func name (a, b int) int32 {     
+func name (a, b int) int32 {
 func name (a int, b string) (c int32) {
 
 // INTERFACE
@@ -81,16 +81,18 @@ func name (a int, b string) (c int32) {
 * `false`
 
 Boolean uses logical operators
+
 * `&&`, `||`, `!`
 
 Relational Operators returns a boolean (true or false)
+
 *  `==`, `!=`, `<`, `>`, `>=`, `<=`
 
 ## NUMERIC
 
 Integers, floating point and complex numbers.
 
-### INTEGER 
+### INTEGER
 
 Based on bit size and sign.
 
@@ -187,19 +189,19 @@ Remember a string is an array of bytes. Here is a good example,
 
 ```go
 func main() {
-	testString := "Happy Birthday Jeff"
-	fmt.Printf("The first word of testString is %s\n", firstWord(testString))
+    testString := "Happy Birthday Jeff"
+    fmt.Printf("The first word of testString is %s\n", firstWord(testString))
 }
 
 func firstWord(str string) (word []byte) {
-	for i := range str {
-		if str[i] == ' ' {
-			break
-		} else {
-			word = append(word, str[i])
-		}
-	}
-	return word
+    for i := range str {
+        if str[i] == ' ' {
+            break
+        } else {
+            word = append(word, str[i])
+        }
+    }
+    return word
 }
 ```
 
@@ -240,9 +242,9 @@ Really key/value pairs, like a database.
 
 ```go
 ages := map[string]int{
-	"Jill": 23,
-	"Bob":  34,
-	"Mark": 28,
+    "Jill": 23,
+    "Bob":  34,
+    "Mark": 28,
 }
 
 fmt.Println(ages["Jill"])

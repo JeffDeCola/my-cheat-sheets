@@ -31,12 +31,12 @@ for i < 8 {
 When we're not really sure how much in our array.
 
 myarray := [3]{3,4,5}
+
 ```
 for i := range myarray {
     avg += myarray[i]
 }
 ```
-
 
 ## CONDITIONAL STATEMENTS /  DECISION MAKING
 
@@ -65,11 +65,11 @@ if a == b {
 a, b := 4, 3
 
 if a == b {
-	fmt.Println("equal")
+    fmt.Println("equal")
 } else if a > b {
-	fmt.Println("higher")
+    fmt.Println("higher")
 } else {
-	fmt.Println("Lower")
+    fmt.Println("Lower")
 }
 ```
 
@@ -97,14 +97,13 @@ Using `switch name`,
 ```go
 switch a {
 case == b:
-	fmt.Println("equal")
+    fmt.Println("equal")
 default:
-	fmt.Println("not equal")
+    fmt.Println("not equal")
 }
 ```
 
 ### DEFER
-
 
 ### SELECT
 

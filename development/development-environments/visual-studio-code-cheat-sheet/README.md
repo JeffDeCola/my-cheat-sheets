@@ -42,7 +42,7 @@ As we know, bash home for user is `/home/<bashusername>`.
 
 This directory is actually located in Windows here,
 
-```text
+```
 C:\Users\<winusername>\AppData\Local\lxss\home\<bashusername>
 ```
 
@@ -56,9 +56,9 @@ I use the directory to keep my projects,
 
 `/mnt/c/Users/<winusername>/home/<bashusername>`
 
-Note, `/mnt/c ` in WSL is the exact same as `C:\ `,
+Note, `/mnt/c` in WSL is the exact same as `C:\ `,
 
-So, when you start Windows bash, it puts you in /home/<bashusername>,
+So, when you start Windows bash, it puts you in `/home/<bashusername>`,
 
 Bottom Line, you still have home as `/home/<bashusername>`,
 but now you edit projects in `/mnt/c/Users/<winusername>/home/<bashusername>`.

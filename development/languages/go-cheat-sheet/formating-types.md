@@ -8,10 +8,10 @@ There is a large list [here](https://golang.org/pkg/fmt/).
 
 Some of the common ones,
 
-* `%v`	all types - the value in a default format.
-* `%s`	string - the uninterpreted bytes of the string or slice.
-* `%f`	floating point - decimal point but no exponent, e.g. 123.456.
-* `%p`	slice - address of 0th element in base 16 notation, with leading 0.
+* `%v` all types - the value in a default format.
+* `%s` string - the uninterpreted bytes of the string or slice.
+* `%f` floating point - decimal point but no exponent, e.g. 123.456.
+* `%p` slice - address of 0th element in base 16 notation, with leading 0.
 
 ```go
 a := 3.14234234

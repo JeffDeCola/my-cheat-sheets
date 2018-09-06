@@ -2,7 +2,7 @@
 
 Functions stand on their own, a black box.
 
-## BASIC FORMATS 
+## BASIC FORMATS
 
 The basic format is,
 
@@ -31,10 +31,10 @@ func add(name ...int) int {
 
 Multiple returns,
 
-```go    
+```go
 func swap(a, b int) (int, int) {
-	x, y := b, a
-	return x, y
+    x, y := b, a
+    return x, y
 }
 ```
 

@@ -2,4 +2,4 @@ plugins:
   markdownlint:
     enabled: true
 exclude_patterns:
-- "docs/index.md"
+- "docs/"

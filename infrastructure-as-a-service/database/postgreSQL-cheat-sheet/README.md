@@ -119,16 +119,18 @@ sudo -u postgres createuser concourse
 
 ## CREATE A DATABASE / CONNECT TO A DATABASE
 
-Create a database
+Create a database,
 
+```bash
 sudo -u postgres createdb --owner=concourse atc
-
+```
 
 ```bash
 sudo su - postgres
 creatdb --owner=concourse <DBNAME>
 ```
-or
+
+or,
 
 ```bash
 createdb --owner=concourse <DBNAME>

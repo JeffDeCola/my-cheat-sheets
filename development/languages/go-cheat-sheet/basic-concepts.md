@@ -15,7 +15,8 @@ it makes everyone's code look and feel the same.
 
 ## BASIC SYNTAX
 
-`Tokens` are basically the building blocks of go.  For example, `fmt.Println("Hello")` has six tokens.
+`Tokens` are basically the building blocks of go.  For example,
+`fmt.Println("Hello")` has six tokens.
 
 A `Line Separator` is a statment terminator.  It's like placing a `;`.
 

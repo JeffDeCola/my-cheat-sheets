@@ -33,7 +33,7 @@ Constants refer to fixed values that the program may not alter during its execut
 
 For example, a string constant could be `"hello"`.
 
-The const keyword, 
+The const keyword,
 
 ```go
 const variable type = value;
