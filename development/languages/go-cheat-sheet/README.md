@@ -92,6 +92,7 @@ The cheat sheet is broken up into the following sections,
 ## REFERENCES / DOCUMENTATION
 
 * [golang.org](http://golang.org) - _Home base for everything._
+* [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm) _A great summary of syntax._
 * [golang.org docs](https://golang.org/doc/) _A good collection of docs._
 * [A tour of go](https://tour.golang.org/welcome/1) _A good place to start._
 * [Effective go](https://golang.org/doc/effective_go.html) _A must read to create great things._
