@@ -1,8 +1,5 @@
-engines:
+plugins:
   markdownlint:
     enabled: true
-ratings:
-  paths:
-  - "**.md"
 exclude_patterns:
 - "docs/index.md"
