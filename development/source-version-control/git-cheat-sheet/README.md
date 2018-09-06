@@ -231,7 +231,7 @@ git clone https://github.com/JeffDeCola/<REPONAME>.git
 ## GIT STATUS
 
 ```bash
-git status 
+git status
 ```
 
 Or a more shorthand,
@@ -312,6 +312,7 @@ Lets say you are on branch develop,
 ```bash
 git push origin develop
 ```
+
 As a side note, if you want to be lazy,
 configure to do origin develop for you,
 
@@ -361,6 +362,7 @@ Create a new branch develop from master,
 git checkout -b "develop" master
 git checkout -b "develop"
 ```
+
 You can create a branch off any other branch.
 
 Could also create a by,
@@ -685,7 +687,7 @@ The `--set-upstream` switch makes me lazy so I just use
 
 At github.com I go into my repo settings and add GitHub Webpage on `/docs`.
 
-I login to codeclimate and add new <REPONAME>.
+I login to codeclimate and add new REPONAME.
 
 I configure concourse,
 

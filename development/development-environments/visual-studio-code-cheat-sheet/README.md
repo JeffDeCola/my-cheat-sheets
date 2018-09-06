@@ -56,7 +56,7 @@ I use the directory to keep my projects,
 
 `/mnt/c/Users/<winusername>/home/<bashusername>`
 
-Note, `/mnt/c` in WSL is the exact same as `C:\ `,
+Note, `/mnt/c` in WSL is the exact same as `C:`,
 
 So, when you start Windows bash, it puts you in `/home/<bashusername>`,
 

@@ -19,7 +19,7 @@ View my entire list of cheat sheets on
 
 ## MY CHEAT SHEETS
 
-_All sections in alphabetical order._
+All sections in alphabetical order.
 
 ### DEVELOPMENT
 

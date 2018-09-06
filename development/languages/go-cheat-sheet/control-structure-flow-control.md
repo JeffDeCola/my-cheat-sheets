@@ -84,11 +84,11 @@ Makes `else if` easier to read,
 ```go
 switch {
 case (a == b):
-	fmt.Println("equal")
+    fmt.Println("equal")
 case (a > b):
-	fmt.Println("higher")
+    fmt.Println("higher")
 default:
-	fmt.Println("Lower")
+    fmt.Println("Lower")
 }
 ```
 
