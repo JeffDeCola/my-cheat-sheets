@@ -165,6 +165,7 @@ sudo systemctl enable concourse
 ```
 
 If you want, check how systemctl is doing,
+
 ```bash
 journalctl -f
 ```
@@ -197,6 +198,7 @@ Prompt to enter the password `concourse-password`.
 ```bash
 sudo -u postgres createdb --owner=concourse atc
 ```
+
 Or in psql,
 
 ```text
@@ -215,40 +217,10 @@ psql
 ```
 
 And list the users,
+
 ```bash
 \du
 ```
-
-
-sudo nano /etc/postgresql/9.3/main/postgresql.conf
-
-Enable or add:
-
-listen_addresses = '*'
-
-Restart the database engine:
-
-sudo service postgresql restart
-
-Also, you can check the file pg_hba.conf
-
-sudo nano /etc/postgresql/9.3/main/pg_hba.conf
-
-And add your network or host address:
-
-host    all             all             192.168.1.0/24          md5
-
-
-
-
-
-
-
-
-
-
-
-
 
 Edit,
 
@@ -256,13 +228,13 @@ Edit,
 sudo nano /etc/postgresql/<VERSION>/main/pg_hba.conf
 ```
 
-add,
+Add,
 
 ```text
  host all all 192.168.100.6/24 md5
 ```
 
-where `type database user address method`
+Where `type database user address method`.
 
 Hence we must add a user concourse,
 
