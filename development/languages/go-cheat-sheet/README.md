@@ -1,10 +1,12 @@
 # GO CHEAT SHEET
 
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
 `go` _is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
-
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 
 This is a very abbreviated cheat-sheet highlighting the main
 syntax of go. I have lots go examples in my appropriately named repo
