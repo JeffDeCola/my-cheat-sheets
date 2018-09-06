@@ -15,6 +15,7 @@ mv $HOME/Downloads/fly $HOME/bin/fly-x.x.x
 ```
 
 Make a symbolic link to your version,
+
 ```bash
 ln -s fly-x.x.x fly
 ```

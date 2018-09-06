@@ -60,7 +60,7 @@ type Rect struct {                              // Create your struct type
     w, h float32
 }
 var r1 Rect                                     // Declare type Rect
-r1.w = 5.5	                                    // Assign width
+r1.w = 5.5                                      // Assign width
 r1.h = 2.2                                      // Assign height
 
 // POINTER
@@ -86,7 +86,7 @@ Boolean uses logical operators
 
 Relational Operators returns a boolean (true or false)
 
-*  `==`, `!=`, `<`, `>`, `>=`, `<=`
+* `==`, `!=`, `<`, `>`, `>=`, `<=`
 
 ## NUMERIC
 
@@ -110,7 +110,7 @@ Based on bit size and sign.
 
 * Machine dependent types (Depends on system),
   * `int` Most popular and inferred.
-  * `uint` 
+  * `uint`
   * `uintptr`
 
 Ranges of some integer types,
