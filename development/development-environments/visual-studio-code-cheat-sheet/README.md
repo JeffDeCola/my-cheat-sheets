@@ -2,10 +2,11 @@
 
 `visual studio code` _is a code development environment._
 
-this cheat-sheet is heavy on windows and go, and I probably
-should of called it `Vs Code windows using go cheat sheet`.
+This cheat-sheet is heavy on Windows and go, and I probably
+should of called it `VS Code for Windows using go`.
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+View my entire list of cheat sheets on
+[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL ON LINUX OR WINDOWS
 
@@ -13,14 +14,13 @@ Most, if not all of the time VS Code will be
 install on Linux.  But a few crazy people like
 to use Windows as a Dev Environment.
 
-Go to the visual studio website for how to install,
-
-[code.visualstudio.com](https://code.visualstudio.com/)
+Go to [code.visualstudio.com](https://code.visualstudio.com/)
+for how to install.
 
 ## CONFIGURE - LINUX
 
-This is pretty straight forward and not sure I
-could add anything useful here.
+This is pretty straight forward and not sure how I
+could add anything else useful.
 
 ## CONFIGURE - WINDOWS VERSION OF VS CODE
 
@@ -28,7 +28,7 @@ Visual Studio Code on Windows will ALWAYS run
 on Windows.  Hence, you want to edit your
 files in Windows realm, not linux.
 
-First, in VS Code user settings, set VS Code to point to WSL bash,
+After you have installed VS Code, goto the user settings and set VS Code to point to WSL bash,
 
 ```yaml
 "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
@@ -36,9 +36,9 @@ First, in VS Code user settings, set VS Code to point to WSL bash,
 
 You now can use your linux bash shell in VS Code.
 
-Now, we want to change where you edit your files.
+Now, we want to change your working directory (where you edit your files).
 
-As we know, bash home for user is `/home/<bashusername>`.
+As we know, bash home is `/home/<bashusername>`.
 
 This directory is actually located in Windows here,
 
@@ -58,9 +58,9 @@ I use the directory to keep my projects,
 
 Note, `/mnt/c` in WSL is the exact same as `C:`,
 
-So, when you start Windows bash, it puts you in `/home/<bashusername>`,
+So when you start Windows bash, it puts you in `/home/<bashusername>`,
 
-Bottom Line, you still have home as `/home/<bashusername>`,
+Bottom Line: You still have home as `/home/<bashusername>`,
 but now you edit projects in `/mnt/c/Users/<winusername>/home/<bashusername>`.
 
 I change my workspace in VS Code to this new area,
@@ -107,13 +107,11 @@ type the following,
 
 You may need to create your workspace directory for go.
 
-When you open VS Code, install the go extension.
-
-IMPORTANT - Now here's the trick, it will use the Windows
-version of go (and git to install), NOT the go version in bash.
+When you open VS Code, install the go extension. IMPORTANT NOTE
+- VS Code will use the Windows version of go (and git to install),
+NOT the go version in bash.
 
 The go extensions will automatically be placed in
 `C:\Users\<WINDOWSNAME>\go\bin`
 
-That's it, you're good to go.  Yep, that joke has never been
-used before. :)
+That's it, you're good to go.

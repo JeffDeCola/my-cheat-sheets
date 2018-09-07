@@ -7,18 +7,17 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Vagrant mirrors production environments (by providing same OS,
-packages, users, configuration, etc...) giving devs the
-flexibility to use there own tools (browser, IDE, editor, etc...).
+Vagrant provides the same production environment (_OS,
+packages, users, configuration, etc..._) giving developers the
+flexibility to use there own tools (_browsers, IDEs, editors, etc..._).
 
-Vagrant matches the dev environment to the production environment.
-_"Well it worked on my computer"_ is a statement of the past.
+Vagrant can match the development environment to the
+production environment. _"Well it worked on my computer"_
+is a statement of the past.
 
 ## INSTALL
 
-Visit,
-
-[vagrant downloads](https://www.vagrantup.com/downloads.html)
+Visit [vagrant downloads](https://www.vagrantup.com/downloads.html).
 
 ## CHECK VERSION
 
@@ -28,8 +27,7 @@ vagrant version
 
 ## FIND BOXES
 
-Search for vagrant boxes,
-
+Search for vagrant boxes at
 [vagrant box search](https://app.vagrantup.com/boxes/search)
 
 ## VAGRANTFILE
@@ -70,5 +68,3 @@ To destroy all old boxes,
 ```bash
 vagrant box destroy
 ```
-
-

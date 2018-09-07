@@ -45,7 +45,7 @@ First check,
 groups
 ```
 
-To add,
+Add the group,
 
 ```bash
 sudo usermod --append --groups vboxsf USERNAME
@@ -54,7 +54,8 @@ reboot
 
 ## DRAG AND DROP
 
-Must have a shared folder.
+Must have a shared folder enables in vagrant box settings
+for the particular VM.
 
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
@@ -85,6 +86,9 @@ sudo systemctl restart networking.service
 systemctl status networking.service
 ```
 
+More info about `systemctl` at my cheat sheet
+[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/systemd-systemctl-cheat-sheet).
+
 Recheck your devices,
 
 ```bash
@@ -93,4 +97,5 @@ ifconfig -a
 
 You should see your new static ip address.
 
-For more information goto [network device configuration](),
+For more information about configuring network devices, goto my cheat-sheet
+[network-device-configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/operating-systems/linux/network-device-configuration-cheat-sheet).
