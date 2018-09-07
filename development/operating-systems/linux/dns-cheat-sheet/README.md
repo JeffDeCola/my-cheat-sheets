@@ -9,7 +9,21 @@ and visa versa.  Basically a large database._
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SERVER - BIND - NAME SERVER FOR LINUX
+## DNS SERVER (NAME SERVER)
+
+Keeps the list of names/IP addresses.  There are many many types
+of name servers that do many different things living on many
+different systems. I will only briefly talk about the ones
+that may live on your linux box.
+
+Some popular ones are,
+
+* BIND (Popular one)
+* NSD (Name Server Daemon)
+* djbdns (tinydns).
+* DNSmasq
+
+### BIND (A POPULAR NAME SERVER FOR LINUX)
 
 BIND (Berkley Internet Naming Daemon) is the most common
 program used for maintaining a name server on Linux.
@@ -22,21 +36,12 @@ All DNS configurations for BIND are located under `/etc/bind`.
 
 * /etc/bind/db.root -  _Describes the root name servers in the world._
 
-## SERVER - DNSmasq - LIGHTWEIGHT NAMESERVER AND DHCP FOR LINUX
+## DNS CLIENT (RESOLVER)
 
-Another name server that is simple and lightweight is
-`DNSmasq` that also does DHCP.
+The client DNS is called a DNS resolver and is your like to
+a name server.  The config file is `resolv.conf`.
 
-## SERVER - CACHING NAME SERVER
-
-Sometimes a name server will just cahce off another name server.
-
-## CLIENT / RESOLVER
-
-The client DNS is called a DNS resolver.  And the config file is
-`resolv.conf`.
-
-## CLIENT - RESOLVER CONFIGURATION (/etc/resolve.conf)
+### CONFIGURATION (/etc/resolve.conf)
 
 The configuration file for DNS resolver (the client DNS).
 
@@ -54,7 +59,7 @@ And you ssh into something like `ssh p-test`.  It will actually do,
 
 `ssh p-test.whatever.com`
 
-## CHECK THAT YOUR DNS IS WORKING PROPERLY
+### CHECK THAT YOUR DNS CLIENT IS WORKING PROPERLY
 
 ```bash
 host ubuntu.com
@@ -63,9 +68,9 @@ ping ubuntu.com
 nslookup ubuntu.com
 ```
 
-## PROGRAM - RESOLVCONF PROGRAM
+### RESOLVCONF (An App used by Ubuntu and Debian)
 
-Used by ubuntu and debian.
+Used by ubuntu and debian to "edit your resolve.conf".
 
 The service file is `/lib/systemd/system/resolvconf.service`.
 
@@ -86,7 +91,7 @@ The file is actually linked to,
 
 But there are two methods to solve this.
 
-### METHOD 1 - ADDING TO RESOLV.CONF - USE TAIL FILE
+#### METHOD 1 - ADDING TO RESOLV.CONF - USE TAIL FILE
 
 Again, when using resolvconf program, you can't edit
 `/etc/resolv.conf`, so this is method 1 to get around that.
@@ -99,7 +104,7 @@ You can restart if you want.
 
 `sudo resolveconf -u`
 
-### METHOD 2 - ADDING TO RESOLV.CONF - USE INTERFACES FILE
+#### METHOD 2 - ADDING TO RESOLV.CONF - USE INTERFACES FILE
 
 To add something like nameserver to the file edit
 
@@ -108,7 +113,7 @@ sudo nano /etc/network/interfaces
 iface lo inet loopback
     dns-nameservers 12.34.56.78 12.34.56.79
 
-## PROGRAM - NETWORK MANAGER
+### NETWORK MANAGER (An App used by Centos and Red Hat)
 
 Used by centos and red hat.
 
@@ -145,7 +150,7 @@ Configure,
 
 Now use with /etc/resolve.conf
 
-## CLIENT - TO PREVENT UPDATES FROM DHCP
+### PREVENT UPDATES FROM DHCP
 
 When dhclient runs; either on reboot or when you
 manually run it loads this script nodnsupdate.
