@@ -8,19 +8,21 @@ View my entire list of cheat sheets on
 
 ## WHAT CAN YOU DO WITH ANSIBLE
 
-* Configuration management
-* Application deployment
-* Provisioning (make availible)
-* Ochestration (automation)
-* Security
-* Continuous delivery
+* Configuration Management.
+* Application deployment.
+* Provisioning (make available).
+* Orchestration (automation).
+* Security.
+* Continuous Delivery.
 
 ## ANSIBLE USES SSH
 
 Ansible depends on SSH access to the servers you are managing.
 There is no client software needed on host your want to manage.
 
-## INSTALL macOS
+## INSTALL
+
+### macOS
 
 The control node.
 
@@ -34,7 +36,7 @@ Version,
 ansible --version
 ```
 
-## INSTALL UBUNTU
+### UBUNTU
 
 ```bash
 sudo apt-get install software-properties-common
@@ -43,7 +45,7 @@ sudo apt-get update
 sudo apt-get install ansible
 ```
 
-## SETUP ON MAC - INVENTORY FILE
+## INVENTORY FILE
 
 Ansible uses an inventory file to determine what hosts to work against.
 
@@ -100,7 +102,7 @@ Ansible’s way of abstracting certain system management or configuration tasks.
 
 Control things you automate.
 
-There are over 450 modules [here](http://docs.ansible.com/ansible/modules_by_category.html)
+There are over 450 modules [here](http://docs.ansible.com/ansible/modules_by_category.html).
 
 ## AD HOC COMMANDS
 
@@ -121,11 +123,11 @@ Playbooks can be combined with other playbooks and organized into
 Roles which allow you to define sophisticated infrastructures and
 then easily provision and manage them.
 
-* Playbooks contain plays
-* Plays contain Tasks
-* Tasks call modules
-* Tasks run sequentially
-* Handlers are triggered by taks and are run once, at the end of the plays.
+* Playbooks contain plays.
+* Plays contain tasks.
+* Tasks call modules.
+* Tasks run sequentially.
+* Handlers are triggered by tasks and are ran once, at the end of the plays.
 
 A playbook template looks like,
 
@@ -170,9 +172,9 @@ ansible-playbook test.yml
 
 ## ROLES
 
-Roles are special kind of playbook.
+Roles are a special kind of playbook.
 
-Folders are as follows:
+Folders are as follows,
 
 * `defaults`    _The default variables (lower priority variables)._
   * main.yml

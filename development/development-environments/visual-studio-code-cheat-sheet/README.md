@@ -24,26 +24,44 @@ could add anything else useful.
 
 ## CONFIGURE - WINDOWS VERSION OF VS CODE
 
-Visual Studio Code on Windows will ALWAYS run
-on Windows.  Hence, you want to edit your
-files in Windows realm, not linux.
+Visual Studio Code on Windows will ALWAYS run on Windows.
+Hence, you want to edit your files in Windows realm, not linux.
 
-After you have installed VS Code, goto the user settings and set VS Code to point to WSL bash,
+### SET YOUR INTEGRATED TERMINAL
+
+After you have installed VS Code, goto your user settings and set
+VS Code integrated terminal to point to WSL bash.
+
+For Ubuntu 14.04 on Windows,
 
 ```yaml
 "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
 ```
 
-You now can use your linux bash shell in VS Code.
+For Ubuntu 18.04 on Windows,
 
-Now, we want to change your working directory (where you edit your files).
+```yaml
+"terminal.integrated.shell.windows": "C:\\Users\\Jeff\\AppData\\Local\\Microsoft\\WindowsApps\\ubuntu1804.exe",
+```
+
+You now can use your Windows linux bash shell in VS Code.
+
+### CREATE A WORKING/PROJECT DIRECTORY
+
+Now we want to change your working directory (where you edit your files).
 
 As we know, bash home is `/home/<bashusername>`.
 
-This directory is actually located in Windows here,
+This directory is actually located for Ubuntu 14.04,
 
 ```
-C:\Users\<winusername>\AppData\Local\lxss\home\<bashusername>
+C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
+```
+
+And for Ubuntu 18.04,
+
+```
+C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
 ```
 
 DO NOT touch these files.  If you do, only edit using
@@ -52,26 +70,32 @@ a bash editor like nano.
 So if you can't edit in this area, you need
 to put your project files somewhere else.
 
-I use the directory to keep my projects,
+I created the following directory path to keep my projects/working area,
 
-`/mnt/c/Users/<winusername>/home/<bashusername>`
-
-Note, `/mnt/c` in WSL is the exact same as `C:`,
-
-So when you start Windows bash, it puts you in `/home/<bashusername>`,
-
-Bottom Line: You still have home as `/home/<bashusername>`,
-but now you edit projects in `/mnt/c/Users/<winusername>/home/<bashusername>`.
-
-I change my workspace in VS Code to this new area,
-
-```text
-C:\Users\<winusername>\home\<bashusername>
+```
+/mnt/c/Users/<winusername>/home/<bashusername>
 ```
 
-Your prompt should look like,
+Note, `/mnt/c` in WSL is the exact same as `C:` in Windows.
 
-```text
+Set the working area in VS code to open in this directory.
+
+The bottom line. Your Ubuntu home is,
+
+```
+\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
+\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
+```
+
+But your projects/working directory is,
+
+```
+/mnt/c/Users/<winusername>/home/<bashusername>
+```
+
+And your prompt should look like,
+
+```bash
 <bashusername>@<computername>:/mnt/c/Users/<winusername>/home/<bashusername>
 ```
 
@@ -107,8 +131,8 @@ type the following,
 
 You may need to create your workspace directory for go.
 
-When you open VS Code, install the go extension. IMPORTANT NOTE
-- VS Code will use the Windows version of go (and git to install),
+When you open VS Code, install the go extension. IMPORTANT NOTE:
+VS Code will use the Windows version of go (and git to install),
 NOT the go version in bash.
 
 The go extensions will automatically be placed in

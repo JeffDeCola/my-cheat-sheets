@@ -5,7 +5,7 @@
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## INSTALL 
+## INSTALL
 
 ### UBUNTU/DEBIAN
 

@@ -1,6 +1,6 @@
 # WSL - BASH ON UBUNTU ON WINDOWS CHEAT SHEET
 
-`wsl - bash on ubuntu on windows` _allows you to install linux
+`wsl (bash on ubuntu on windows)` _allows you to install linux
 on a windows machine._
 
 View my entire list of cheat sheets on
@@ -15,7 +15,7 @@ The WSL (Windows System for Linux) allows you to run linux on Windows.
 A popular distro of linux is ubuntu.  People refer to this
 as `Bash on Ubuntu on Windows`.
 
-It's actually really simple now, go to the windows store 
+It's actually really simple now, go to the windows store
 [here](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab)
 and install.
 
@@ -28,11 +28,25 @@ lsb_release -a
 If you already have it installed and want to update to latest version,
 
 ```bash
-sudo do-release-upgrade -d
+sudo do-release-upgrade
 ```
 
 I would make a restore point and System Image first before doing any
 update like this.  I've learned to never really trust Windows.
+
+Where does Windows keep the files?
+
+For Ubuntu 14.04/16.04,
+
+```
+C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
+```
+
+For Ubuntu 18.04 (From Windows Store),
+
+```
+C:\Users\<WindowsNAME>\AppData\Local\Packages\<SOMETHING>\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
+```
 
 ## SETUP CODE DEVELOPMENT ENVIRONMENT ON WINDOWS
 
