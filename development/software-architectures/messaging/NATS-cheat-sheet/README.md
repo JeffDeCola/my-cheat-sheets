@@ -1,5 +1,9 @@
 # NATS CHEAT SHEET
 
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
 `NATS` _is a messaging bus perfect for asynchronous microservice communication._
 
 View my entire list of cheat sheets on
@@ -9,16 +13,16 @@ View my entire list of cheat sheets on
 
 NATS is a Message BUS.
 
-## NATS SERVER
+## INSTALL A NATS SERVER
 
 To use NATS you can do one of the following things:
 
-1. Use the NATS Docker image
-1. Get the binaries
-1. Use the public NATS server nats://demo.nats.io:4222
-1. Build from source
+1. Use the NATS Docker image.
+1. Get the binaries.
+1. Use the public NATS server nats://demo.nats.io:4222.
+1. Build from source.
 
-To install for mac,
+As an example, to install for mac,
 
 ```bash
 brew install gnatsd

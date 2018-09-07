@@ -5,20 +5,36 @@
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## INSTALL AND CONFIGURE postgreSQL on UBUNTU/DEBIAN
+## INSTALL 
 
-Install postgresSQL Server,
+### UBUNTU/DEBIAN
+
+Install postgreSQL Server,
 
 ```bash
 sudo apt-get update
 sudo apt-get -y install postgresql postgresql-client postgresql-contrib
 ```
 
-check version,
+Check version,
 
 ```bash
 psql --version
 ```
+
+### MAC OS
+
+```bash
+brew install postgres
+```
+
+Check version,
+
+```bash
+psql --version
+```
+
+## CONFIGURE
 
 Enter postgres using psql,
 
@@ -55,21 +71,12 @@ Open `psql` as user `postgres`,
 
 ```bash
 sudo su - postgres
-```
-
-```bash
 psql
 ```
 
 Exit psql `ctrl+D`
 
 Exit postgres user `exit`.
-
-## INSTALL ON MAC OS
-
-```bash
-brew install postgres
-```
 
 ## STATE SERVER
 
@@ -149,7 +156,7 @@ Connect to a `database` as user `postgres`,
 \c <DBNAME>
 ```
 
-## CREATE TABLE
+## CREATE A TABLE
 
 Some types you can do,
 
@@ -157,7 +164,7 @@ Some types you can do,
 create table people (id int primary key not null, first_name text, last_name text);
 ```
 
-## LIST TABLE
+## LIST TABLES
 
 List all tables in a database,
 
@@ -172,7 +179,7 @@ List a table in database,
 \d+ people
 ```
 
-## LIST ROWS OF TALBE
+## LIST ROWS OF TABLE
 
 ```bash
 select * from people;

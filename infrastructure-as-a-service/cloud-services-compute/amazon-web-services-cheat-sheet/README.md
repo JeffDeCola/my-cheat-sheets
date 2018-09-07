@@ -1,6 +1,11 @@
 # AWS (AMAZON WEB SERVICES) CHEAT SHEET
 
-`(aws) amazon web services` _like [gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/compute/google-compute-engine-cheat-sheet),
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
+`(aws) amazon web services` _like
+[gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
 View my entire list of cheat sheets on
@@ -8,4 +13,4 @@ View my entire list of cheat sheets on
 
 ## TBD
 
-My placeholder, cheat sheet coming soon.
+tbd.
