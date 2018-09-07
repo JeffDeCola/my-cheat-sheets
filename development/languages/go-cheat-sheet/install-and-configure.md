@@ -35,6 +35,18 @@ export GOBIN=$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 ```
 
+For Ubuntu 14.04 and 16.04 (if upgraded)
+
+```
+C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>\.bashrc
+```
+
+For Ubuntu 18.04 from Windows Store,
+
+```
+C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>\.bashrc
+```
+
 The trick is to have your project/working directory
 not in your home directory as shown with my `$GOPATH`.
 This is because Windows and Linux do not play well together.

@@ -1,6 +1,6 @@
 # DOCKER CHEAT SHEET
 
-`docker` _is a Virtual Linux Container._ Docker Hub is an online
+`docker` _is a Virtual Linux Container. DockerHub is an online
 resource to place docker containers._
 
 [Jeff's Docker Hub Images](https://hub.docker.com/u/jeffdecola/)
@@ -17,21 +17,20 @@ and a Docker Container.
 
 Virtual Machine:
 
-* Must use a Hypervisor emulated Virtual Hardware
-* Needs a guest OS
-* Takes a lot of system resources
+* Must use a Hypervisor emulated Virtual Hardware.
+* Needs a guest OS.
+* Takes a lot of system resources.
 
 Container:
 
-* Use a shared host OS
-* You must use that OS
-* Less Recources and lightweight
+* Uses a shared host OS.
+* You must use that OS.
+* Less Resources and lightweight.
 
 ## INSTALL
 
-Goto this website to install.  Must be 64-bit machine.
-
-[docs.docker.com/install](https://docs.docker.com/install)
+Goto [docs.docker.com/install](https://docs.docker.com/install)
+to install.  Must be 64-bit machine.
 
 When you're done, check version,
 
@@ -39,7 +38,7 @@ When you're done, check version,
 docker version
 ```
 
-To mange docker as non-root, add yourself to the docker group
+To mange docker as non-root, add yourself to the docker group,
 
 ```bash
 sudo usermod -aG docker $USER
@@ -62,9 +61,8 @@ With compose, you use a .yml file to configure your application’s
 services. Then, with a single command, you create and
 start all the services from your configuration.
 
-Here is an [example](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-docker.md)
-of using docker-compose to start up concourse services using two
-docker containers.
+Here is an example of using docker-compose to
+[start up concourse services using two docker containers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/README.md).
 
 ## IMAGES
 
@@ -115,13 +113,7 @@ Run an image from Docker Hub,
 
 ```bash
 docker run jeffdecola/hello-go
-```
-
-```bash
 docker run docker/whalesay cowsay boo
-```
-
-```bash
 docker run ubuntu /bin/echo 'Hello World'
 ```
 
@@ -160,13 +152,13 @@ docker rm $(docker ps -a -q)
 
 Run an interactive container, This is cool, it gives you a tty terminal,
 
+* -t tty
+* -i interactive
+
 ```bash
 docker run -t -i ubuntu /bin/bash
 docker run -t -i jeffdecola/hello-go
 ```
-
--t tty
--i interactive
 
 Run a container as a daemon,
 
@@ -186,7 +178,7 @@ Stop a container,
 docker stop NAME
 ```
 
-## BUILD YOUR OWN IMAGE (METHOD 1) - Modify existing image
+## BUILD YOUR OWN IMAGE (METHOD 1) - Modify an Existing image
 
 Get an existing docker image and add to it,
 
@@ -207,9 +199,9 @@ docker commit -m "Added ruby" -a "Jeff DeCola" IMAGE-ID
 jeffdecola/sinatra:jeffver
 ```
 
-## BUILD YOUR OWN IMAGE (METHOD 2) - Create Dockerfile
+## BUILD YOUR OWN IMAGE (METHOD 2) - Create a Dockerfile
 
-create a Dockerfile,
+Create a Dockerfile,
 
 ```bash
 ## Test
@@ -242,7 +234,7 @@ Build the image,
 docker build -t jeffdecola/NAME .
 ```
 
--t is tag name.
+`-t` is tag name.
 
 Check your build,
 
@@ -252,8 +244,8 @@ docker images
 
 ## PUSH TO DOKERHUB
 
-To push your image to docker hub,
+To push an image to dockerhub,
 
 ```bash
-????
+docker push jeffdecola/hello-go
 ```
