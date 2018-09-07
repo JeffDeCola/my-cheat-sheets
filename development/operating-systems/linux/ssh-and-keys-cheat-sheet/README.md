@@ -1,6 +1,6 @@
 # SSH AND KEYS CHEAT SHEET
 
-`ssh and keys` _secure shell is a way to securely
+`ssh and keys` _(secure socket shell) is a way to securely
 communicate (via ssh keys) with a remote computer._
 
 View my entire list of cheat sheets on
@@ -22,9 +22,9 @@ Sequence:
 If the data went anywhere else, it would need your private
 key to decrypt.
 
-## GENERATE KEY (ssh-keygen)
+## GENERATE KEYS (ssh-keygen)
 
-A way to generate keys.
+A way to generate public and private keys.
 
 For example,
 
@@ -42,12 +42,13 @@ This will create two keys and place them in
 I'm not a fan of using a paraphrase (password), because I'll
 forget.  Its up to you if you want an extra level of protection if
 by chance someone was on your computer being mischievous or if
-someone stole your keys.  Hey, maybe you pushed to github by accident.
+someone stole your keys.  Hey, maybe you pushed your private key
+to github by accident.
 
 ## KEY FINGERPRINT (ssh-keygen)
 
 Sometimes it gets confusing with lots of keys, so you
-can check your public key fingerprint to make sure you're
+can check your public key fingerprint to make sure your
 server is using the right public key.
 
 If you public key is located in `~/.ssh/id_rsa.pub`

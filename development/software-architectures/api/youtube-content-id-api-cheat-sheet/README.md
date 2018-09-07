@@ -13,7 +13,7 @@ Content owners or Administartors will have access to their assets:
 * Ownership Information
 * Policy Information
 * Create New Assets
-* Mannage Assets
+* Manage Assets
 * Claim Content
 * Upload Videos
 
@@ -32,26 +32,11 @@ You will also see this api listed in google's API Service Manager
 
 ## AUTHENTIFICATION - CONTENT-ID USES OAuth 2.0
 
-Google uses many ways to authentificate, such as `API Key`,  `Service Account` or
+Google uses many ways to authenticate, such as `API Key`,  `Service Account` or
 `OAuth 2.0 Client ID`.
 
-Youtube's Content ID uses `OAuth 2.0 Client ID` for authentification.
+YouTube's Content ID uses `OAuth 2.0 Client ID` for authentication.
 
 Refer to [OAuth 2.0 Authorization Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/OAuth-2.0-authorization-cheat-sheet)
 for how to authenticate.
-
-## TBD
-
-TBD
-
-
-
-
-
-
-
-
-
-
-
 

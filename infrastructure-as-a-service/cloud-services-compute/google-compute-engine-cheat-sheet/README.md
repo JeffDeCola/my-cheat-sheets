@@ -1,14 +1,11 @@
 # GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
 
-`(gce) google compute engine` _part of google Cloud Platform,
-like [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/servers/compute/amazon-web-services-cheat-sheet),
+`(gce) google compute engine` _part of google Cloud Platform, like
+[aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
-[Google Cloud Platform Reference](https://cloud.google.com/sdk/gcloud/reference/)
-
-[Compute Engine Reference](https://cloud.google.com/sdk/gcloud/reference/compute/)
+* [Google Cloud Platform Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
+* [Compute Engine Reference(gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -165,14 +162,14 @@ sudo apt-get update
 sudo apt-get install default-jre
 ```
 
-STEP 1 - Start it,
+### STEP 1 - Start it
 
 ```bash
 gcloud beta emulators pubsub start \
     --data-dir="/home/jeff/.config/gcloud/emulators/pubsub"
 ```
 
-STEP 2 - Call evn-init
+### STEP 2 - Call evn-init
 
 Make your code call the API running in the local
 instance instead of the production API, hence
@@ -223,7 +220,7 @@ curl -s http://metadata.google.internal/computeMetadata/v1\
     -H "Metadata-Flavor: Google"
 ```
 
-wait for a change,
+Wait for a change,
 
 ```bash
 curl http://metadata.google.internal/computeMetadata/v1\
@@ -233,7 +230,7 @@ curl http://metadata.google.internal/computeMetadata/v1\
 
 ## SSH INTO YOUR INSTANCE
 
-You can ssh onto your instance,
+You can ssh onto your instance.
 
 Become root,
 

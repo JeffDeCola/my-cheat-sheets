@@ -1,5 +1,9 @@
 # GOOGLE CLOUD SPANNER CHEAT SHEET
 
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
 `google cloud spanner` _is a horizontally scalable relational database
 service from google._
 
@@ -8,7 +12,7 @@ View my entire list of cheat sheets on
 
 ## SCALES HORIZONATALLY (Adding machines)
 
-Nornally relational databases scale vertically
+Normally relational databases scale vertically
 (i.e. adding more power like CPU and RAM)
 But Cloud Spanner scales horizontal from one to
 thousands of nodes (i.e. adding more machines).
@@ -45,8 +49,8 @@ Where snippet.go is [here](https://github.com/GoogleCloudPlatform/golang-samples
 
 ## WRITE TO DATABASE
 
-TBD - Not finished
+TBD
 
 ## READ FROM DATABASE
 
-TBD - Not finished
+TBD

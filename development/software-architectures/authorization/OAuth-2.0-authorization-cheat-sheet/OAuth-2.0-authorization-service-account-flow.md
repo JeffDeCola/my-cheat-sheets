@@ -30,6 +30,6 @@ You will now have a Client ID and a Secret.  Obviously, keep this in a safe plac
 ## HIGH-LEVEL VIEW
 
 The following diagram illustrates how everything fits together. To
-accesss a users info they must be in your g-suite domain.
+access a users info they must be in your g-suite domain.
 
 ![IMAGE - OAuth 2.0 Service Account Authorization Flow - IMAGE](OAuth-2.0-service-account-authorization-flow.jpg)

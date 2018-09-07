@@ -4,21 +4,23 @@
 DVCS (Distributed Version Control System) It is the largest host
 of both open and private source code in the world._
 
-Typically, it lives on your local machine (local repos) and on
-GitHub.com (remote repos).
+Typically, it lives on your local machine (_local repos_) and on
+GitHub.com (_remote repos_).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL GIT LOCAL
 
-For linux,
+### LINUX
+
+Install from a package.  For example,
 
 ```bash
 sudo apt install git
 ```
 
-For Windows,
+### WINDOWS
 
 There are two main options,
 
@@ -35,7 +37,8 @@ Option 2. Open bash on ubuntu on windows and install like linux above.
 
 The global settings tell Github who you are,
 
-I also like to add the hostname/machine name so I know where it came from,
+I also like to add the hostname/machine name so I know where the
+commits came from,
 
 ```bash
 git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
@@ -58,7 +61,7 @@ cat ~/.gitconfig
 ## HTTPS ACCESS (USING .netrc)
 
 Generate a `personal access token` for your machine
-at github.com (Settings Developer -> settings).
+at github.com (_Settings Developer -> Settings_).
 
 Creating a `.netrc` file,
 
@@ -108,7 +111,7 @@ Copy your public ssh key,
 cat ~/.ssh/id_rsa.pub
 ```
 
-Goto GitHub.com and paste your public ssh key (settings -> ssh keys)
+Goto GitHub.com and paste your public ssh key (_settings -> ssh keys_)
 
 You can check the fingerprint at Github against your local public key.
 You may not need the md5 option,
@@ -349,7 +352,7 @@ git pull --rebase origin master
 
 Checkout can,
 
-* Create A Branch.
+* Create a branch.
 * Goto a branch.
 * Goto to a specific commit (version).
 * Goto to a specific file (version).
@@ -512,7 +515,7 @@ There are a few types of merges,
 * No Fast-Forward Merge (preserve branch commits).
 * Three way merge (merge commit)
 
-the format is
+The format is
 
 ```bash
 git merge SOURCE DESTINATION
@@ -642,11 +645,11 @@ fi
 This [article](https://help.github.com/articles/removing-sensitive-data-from-a-repository)
 will show you how to scrub the file permanently.
 
-## MY NOTES - HOW I CREATE A REPO
+## MY NOTES - HOW I CREATE A LOCAL/REMOTE REPO
 
-First, I create a repo on GitHub.
+First, I create my remote repo on GitHub.
 
-Then I clone the repo to my local machine and check it out,
+Then I clone the remote repo to my local machine and check it out,
 
 ```bash
 git clone https://github.com/JeffDeCola/<REPONAME>.git
@@ -689,7 +692,7 @@ At github.com I go into my repo settings and add GitHub Webpage on `/docs`.
 
 I login to codeclimate and add new REPONAME.
 
-I configure concourse,
+I configure my ci which is concourse,
 
 ```bash
 fly -t ci set-pipeline -p <REPONAME> -c ci/pipeline.yml --load-vars-from ../.credentials.yml

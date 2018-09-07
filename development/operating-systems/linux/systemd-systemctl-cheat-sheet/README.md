@@ -1,6 +1,6 @@
 # SYSTEMD SYSTEMCTL CHEAT SHEET
 
-`systemd systemctl` _controls what programs run when Linux boots up._
+`systemd systemctl` _controls what programs run when linux boots up._
 
 Note: Ubuntu 14.04 uses upstart as the init system.
 
@@ -59,11 +59,11 @@ List all services enabled (starts on linux boot),
 systemctl list-unit-files --type=service | grep enabled
 ```
 
-## CREATE, START AND STOP A SERVICE - BY WAY OF AN EXAMPLE
+## CREATE, START AND STOP A SERVICE (BY WAY OF AN EXAMPLE)
 
 Lets do this by way of creating a service that runs at boot.
-How about something that prints "Hi $USER, #",
-when linux boots
+How about something that simply prints `Hi $USER, #`,
+when linux boots.
 
 Create a shell script,
 
@@ -94,7 +94,7 @@ sh say-hi.sh
 
 May have to add permissions to run `chmod 775`.
 
-Now create a .service file with your path to `say-hi.sh`,
+Now create a `say-hi.service` file with your path to `say-hi.sh`,
 
 ```bash
 sudo nano /etc/systemd/system/say-hi.service
@@ -140,7 +140,7 @@ systemctl status say-hi
 Lets start it,
 
 ```bash
-sudo ystemctl start say-hi
+sudo systemctl start say-hi
 ```
 
 Ways to check if it working,
@@ -157,7 +157,7 @@ Lets stop it,
 sudo systemctl stop say-hi.service
 ```
 
-Check its stopped,
+Check if its stopped,
 
 ```bash
 journalctl -f
@@ -165,7 +165,7 @@ systemctl status say-hi
 systemctl is-active say-hi
 ```
 
-## ENABLE A SERVICE AT BOOT
+## ENABLE/DISABLE A SERVICE AT BOOT
 
 Now comes the meat and potatoes; getting the
 service to run at boot.
@@ -176,9 +176,9 @@ First enable the service to start at boot,
 systemctl enable say-hi
 ```
 
-Reboot your system.
+Reboot your machine.
 
-Now check the status,
+Now check the status because it should be running,
 
 ```bash
 journalctl -f
@@ -186,7 +186,7 @@ systemctl status say-hi
 systemctl is-active say-hi
 ```
 
-Disable your service from boot,
+Disable your service from starting at boot,
 
 ```bash
 sudo systemctl disable say-hi
@@ -197,6 +197,3 @@ Now stop it,
 ```bash
 sudo systemctl stop say-hi
 ```
-
-
-
