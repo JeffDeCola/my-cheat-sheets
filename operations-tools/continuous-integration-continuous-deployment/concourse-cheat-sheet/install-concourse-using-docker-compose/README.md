@@ -5,8 +5,8 @@ making it easy to run just about anywhere, especially with Docker.
 
 These are two ways to install concourse using docker.
 
-* Using `docker run IMAGENAME` (the traditional way)
-* Using `docker-compose up`
+* Using `docker run IMAGENAME` (the traditional way).
+* Using `docker-compose up`.
 
 We will use the later, `docker-compose` since its easier
 and has a configuration/provisioning file docker-compose.yml.
@@ -16,13 +16,13 @@ and has a configuration/provisioning file docker-compose.yml.
 Get the `docker-compose.yml` file above.
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/docker-compose.yml
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/docker-compose.yml
 ```
 
 Generate the keys needed,
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/generate-keys.sh
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/generate-keys.sh
 sudo sh generate-keys.sh
 ```
 
@@ -47,10 +47,11 @@ docker images
 * postgres
 * concourse/concourse
 
-I like to keep specific versions, so it doesn't
-just keep pulling and storing the latest.
+As noted in my `docker-compose.yml` file I like to keep
+specific versions so it doesn't just keep pulling
+and storing the latest.
 
-It will then create three docker containers:
+`docker-compose up` created three docker containers,
 
 ```bash
 docker ps
@@ -60,6 +61,8 @@ docker ps
 * concourse/concourse (web)
 * concourse/concourse (worker)
 
+## CHECK IT
+
 That's it, check that its working,
 
 [192.168.100.5:8080](http://192.168.100.5:8080)
@@ -67,7 +70,7 @@ That's it, check that its working,
 I could not get login as user
 `jeff` and password `test`.
 
-I just used `test` `test`.
+So I just used `test` `test`.
 
 To stop all docker containers is simple,
 

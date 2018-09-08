@@ -1,11 +1,6 @@
-# INSTALL CONCOURSE BINARY ON GOOGLE COMPUTE ENGINE
+# INSTALL CONCOURSE BINARY
 
-First get an ubuntu instance running on Google Compute Engine.
-
-Then ssh into you instance.
-
-You may also want to consider looking at this
-[repo using ansible](https://github.com/ahelal/ansible-concourse)
+Find the latest binaries here.
 
 ## CONCOURSE BINARY AND KEYS
 
@@ -15,7 +10,7 @@ Get the latest Concourse binary,
 wget https://github.com/concourse/concourse/releases/download/v2.7.3/concourse_linux_amd64
 ```
 
-mv to /usr/local/bin and chmod 775,
+mv to `/usr/local/bin` and `chmod 775`,
 
 ```bash
 sudo mv concourse_linux_amd64 /usr/local/bin/concourse
@@ -34,9 +29,9 @@ ssh-keygen -t rsa -f session_signing_key -N ''
 cp worker_key.pub authorized_worker_keys
 ```
 
-## INSTALL AND CONFIGURE POSTGRESSQL
+## INSTALL AND CONFIGURE POSTGRESQL
 
-Install postgresSQL Server,
+Install postgreSQL Server,
 
 ```bash
 sudo apt-get update
@@ -81,7 +76,7 @@ Restart postgres,
 sudo service postgresql restart
 ```
 
-Change user postgres
+Change user postgres,
 
 ```bash
 sudo su - postgres
@@ -102,11 +97,11 @@ Check that role was created correctly,
 SELECT rolname FROM pg_roles;
 ```
 
-Exit psql `ctrl+D`
+Exit psql `ctrl+D`.
 
 Exit postgres user `exit`.
 
-## START CONCOURSE WEB - SINGLE NODE
+## START CONCOURSE WEB (SINGLE NODE)
 
 Now lets start a Single node, local Postgres.
 
@@ -123,11 +118,11 @@ sudo concourse web \
   --session-signing-key session_signing_key \
   --tsa-host-key tsa_host_key \
   --tsa-authorized-keys authorized_worker_keys \
-  --external-url http://10.240.4.154:8080 \
+  --external-url http://<CONCOURSEIP> \
   --postgres-data-source postgres://concourse:admin@localhost/concourse &
 ```
 
-## START CONCOURSE WORKER - SINGLE MODE
+## START CONCOURSE WORKER (SINGLE MODE)
 
 ```bash
   sudo concourse worker \
@@ -140,7 +135,7 @@ sudo concourse web \
 Check it out in a browser,
 
 ```bash
-http://<INSTANCE_IP>:8080/
+http://<CONCOURSEIP>:8080/
 ```
 
 Check ps,
@@ -151,12 +146,12 @@ ps -aux | grep concourse
 
 ## FLY
 
-Donwload fly executable to your machine.
+Download fly executable to your machine.
 
 Login to fly using "main" team (default),
 
 ```bash
-fly -t ci login -c http://<INSTANCE_IP>:8080
+fly -t ci login -c http://<CONCOURSEIP>:8080
 ```
 
 Enter the above username and password.
