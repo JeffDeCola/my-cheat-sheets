@@ -43,9 +43,9 @@ The cheat sheet is broken up into the following sections,
 
 * [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
   * Overview
-  * Variables
+  * Variable
   * Scope Rules (Local, Global, Formal)
-  * Constants (Literals)
+  * Constant (Literals)
   * Type Inference
   * Shortcut Assignment
   * Grouping Variables
@@ -53,7 +53,7 @@ The cheat sheet is broken up into the following sections,
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md)
   * Array
   * Slice (_make_)
-  * Map (_key:value_)
+  * Map (_Key:Value_)
   * Struct
   * Pointer (_new_)
   * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
@@ -75,7 +75,7 @@ The cheat sheet is broken up into the following sections,
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
-  * Passing Parameters by Reference
+  * Passing Parameters by Reference (_Copy_)
   * Passing Parameters by Value
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
@@ -96,7 +96,7 @@ The cheat sheet is broken up into the following sections,
 ## GO SYNTAX OVERVIEW
 
 ```go
-// VARIABLES
+// VARIABLE
 
     // DECLARE                                    
     var a string
@@ -111,7 +111,7 @@ The cheat sheet is broken up into the following sections,
 
 // CONSTANT
 
-    const a float32 = 3.14                          // Must have assignment
+    const a float32 = 3.14                          // Must have Assignment
 
 // GROUPING VARIABLES
 
@@ -131,7 +131,7 @@ The cheat sheet is broken up into the following sections,
     )
     a, b := "hello a", "hello b"                    // Group Shortcut Assignment
 
-// ARRAYS
+// ARRAY
     
     // DECLARE
     var a [2]float32
@@ -203,6 +203,11 @@ The cheat sheet is broken up into the following sections,
 
 // POINTER
     
+    // CREATE
+    type Rect struct {
+        w, h float32
+    }
+
     // DECLARE
     ??
 
@@ -213,10 +218,12 @@ The cheat sheet is broken up into the following sections,
     ??
 
 // FUNCTION
-    
-    func name (a int) {
-    func name (a, b int) int32 {
-    func name (a int, b string) (c int32) {
+                                                    // PARAMETERS
+    func name(a int) {                              // 1 IN
+    func name(a, b int) int32 {                     // 2 IN, 1 RETURN
+    func name(name ...int) int {                    // Variadic IN, 1 RETURN
+    func name(a int, b string) (x int32) {          // 2 IN, 1 NAMED RETURN
+    func name(a, b int) (x int, y string) {         // 2 IN, 2 NAMED RETURN
 
 // INTERFACE
     

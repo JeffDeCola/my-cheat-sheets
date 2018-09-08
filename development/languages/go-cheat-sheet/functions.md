@@ -47,6 +47,18 @@ func swap(a, b int) (x int, y int) {
 }
 ```
 
+## PASSING PARAMETERS BY VALUE (COPY)
+
+Passes a copy of that value.
+
+So if I alter the value inside a function
+it will not change it outside.
+
+BUT woudln;t it be cool to pass by reference,
+meaning change it.
+
 ## PASSING PARAMETERS BY REFERENCE
 
-## PASSING PARAMETERS BY VALUE
+Pass the reference instead so we can change it on the poiside.
+
+func negate

@@ -3,12 +3,12 @@
 An operator is a symbol that tells the compiler to perform specific
 mathematical or logical manipulations.
 
-* Arithmetic Operators
-* Relational Operators
-* Logical Operators
-* Bitwise Operators
-* Assignment Operators
-* Miscellaneous Operators
+* Arithmetic (_Math_)
+* Relational (_Compare_)
+* Logical (_Boolean_)
+* Bitwise (_Bits_)
+* Assignment
+* Miscellaneous
 
 ## ARIMETIC (MATH)
 
