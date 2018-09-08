@@ -47,11 +47,11 @@ The cheat sheet is broken up into the following sections,
   * Pointer (_new_)
   * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (See own[Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
+  * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
 
-* [DECLARATION / ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-assignment.md)
+* [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
   * Variables
   * Scope Rules (Local, Global, Formal)
   * Constants (Literals)
@@ -94,13 +94,14 @@ The cheat sheet is broken up into the following sections,
 
 ## REFERENCES / DOCUMENTATION
 
-* [golang.org](http://golang.org) - _Home base for everything._
+* [golang.org](http://golang.org) _- Home base for everything._
 * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
-  _A great summary of syntax._
-* [golang.org docs](https://golang.org/doc/) _A good collection of docs._
-* [A tour of go](https://tour.golang.org/welcome/1) _A good place to start._
+  _- A great summary of syntax._
+* [golang.org docs](https://golang.org/doc/) _- A good collection of docs._
+* [A tour of go](https://tour.golang.org/welcome/1) _- A good place to start._
 * [Effective go](https://golang.org/doc/effective_go.html)
-  _A must read to create great things._
+  _- A must read to create great things._
 * [Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
-  _I use
-  [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet).
+  _- I use
+  [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
+  ._

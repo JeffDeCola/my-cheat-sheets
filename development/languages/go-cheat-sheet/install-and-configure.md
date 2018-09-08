@@ -35,7 +35,7 @@ export GOBIN=$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 ```
 
-For Ubuntu 14.04 and 16.04 (if upgraded)
+For Ubuntu 14.04 and 16.04 (if upgraded),
 
 ```
 C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>\.bashrc
@@ -49,11 +49,11 @@ C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWind
 
 The trick is to have your project/working directory
 not in your home directory as shown with my `$GOPATH`.
-This is because Windows and Linux do not play well together.
+This is because Windows and linux do not play well together.
 
 ### WINDOWS
 
-If you install go on windows, it should automatically set the Windows
+If you install go on Windows, it should automatically set the Windows
 environment variables as follows,
 
 ```text
@@ -64,5 +64,5 @@ Path=...\Go\bin;...%GOPATH%\bin
 
 On a side note, my cheat sheet
 [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
-explains how to setup VS Code on Windows with the Go Extensions
-and a bash terminal.  Say that ten times fast.
+explains `how to setup VS Code on Windows with the Go Extensions
+and a bash terminal`.  Say that ten times fast.
