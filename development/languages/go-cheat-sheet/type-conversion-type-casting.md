@@ -6,7 +6,7 @@ Converting one data type to another data type.
 type_name(expression)
 ```
 
-As an example
+As an example,
 
 ```go
 var sum int = 17
