@@ -38,7 +38,7 @@ The cheat sheet is broken up into the following sections,
   * Boolean
   * Numeric
   * String
- 
+
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
 
 * [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
@@ -98,7 +98,7 @@ The cheat sheet is broken up into the following sections,
 ```go
 // VARIABLE
 
-    // DECLARE                                    
+    // DECLARE                           
     var a string
 
     // ASSIGN
@@ -121,7 +121,7 @@ The cheat sheet is broken up into the following sections,
     // ASSIGN
     a = "hello a"
     b = "hello b"
-    
+
     // DECLARE & ASSIGN
     var a, b string = "hello a", "hello b"          // Verbose
     var a, b = "hello a", "hello b"                 // Type Inference
@@ -132,7 +132,7 @@ The cheat sheet is broken up into the following sections,
     a, b := "hello a", "hello b"                    // Group Shortcut Assignment
 
 // ARRAY
-    
+
     // DECLARE
     var a [2]float32
 
@@ -141,17 +141,17 @@ The cheat sheet is broken up into the following sections,
     a[2] = 2.0
 
     // DECLARE & ASSIGN
-	var a = [2]float32{1.1, 2.0}                    // Verbose
+    var a = [2]float32{1.1, 2.0}                    // Verbose
     a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
 
 // SLICE
-    
+ 
     // DECLARE
     var a []float64
 
     // ASSIGN
-    a = append(a, 5.7) 
-    
+    a = append(a, 5.7)
+
     // DECLARE & ASSIGN
     var a = []float32{1.1, 2.0}                    // Verbose
     a = append(a, 5.7)                             // Append to same slice
@@ -161,8 +161,8 @@ The cheat sheet is broken up into the following sections,
 // MAP
 
     // DECLARE
-	var a = make(map[string]int)
-	a := make(map[string]int)
+    var a = make(map[string]int)
+    a := make(map[string]int)
 
     // ASSIGN
     a["Jill"] = 23
@@ -174,7 +174,7 @@ The cheat sheet is broken up into the following sections,
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
-    }                                              
+    }                             
     a := map[string]int{                           // Array Shortcut Assignment
         "Jill": 23,
         "Bob":  34,
@@ -183,14 +183,14 @@ The cheat sheet is broken up into the following sections,
 
 // STRUCT
 
-    // CREATE 
+    // CREATE
     type Rect struct {
         w, h float32
     }
-    
+
     // DECLARE
     var r1 Rect
-    
+
     // ASSIGN
     r1.w = 6.1
     r1.h = 5.0
@@ -202,7 +202,7 @@ The cheat sheet is broken up into the following sections,
 
 
 // POINTER
-    
+
     // CREATE
     type Rect struct {
         w, h float32
@@ -226,11 +226,11 @@ The cheat sheet is broken up into the following sections,
     func name(a, b int) (x int, y string) {         // 2 IN, 2 NAMED RETURN
 
 // INTERFACE
-    
+
     ????
 
 // CHANNEL
-    
+
     ????
 ```
 

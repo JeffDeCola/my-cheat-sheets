@@ -17,7 +17,7 @@ var name type = assignment
 Here is the syntax,
 
 ```go
-    // DECLARE                                    
+    // DECLARE                               
     var a string
 
     // ASSIGN
@@ -92,7 +92,7 @@ Here is the syntax,
     // ASSIGN
     a = "hello a"
     b = "hello b"
-    
+
     // DECLARE & ASSIGN
     var a, b string = "hello a", "hello b"          // Verbose
     var a, b = "hello a", "hello b"                 // Type Inference
