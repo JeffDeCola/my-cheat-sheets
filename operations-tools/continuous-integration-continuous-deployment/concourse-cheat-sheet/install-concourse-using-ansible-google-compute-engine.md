@@ -7,8 +7,6 @@ The following ansible role repos are used,
 * [ansible-concourse](https://github.com/ahelal/ansible-concourse)
 * [postgresql](https://github.com/ANXS/postgresql)
 
-Another way to install concourse is to use the binary method shown [here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/concourse-ci-cheat-sheet/install_concourse_binary_google_compute_engine.md).
-
 ## CLONE ROLES REPOS TO /ROLE
 
 In /roles,
@@ -243,7 +241,7 @@ journalctl -f
 
 To connect your local machine to concourse goto
 [http://p-concourse-web-01:8080/](http://p-concourse-web-01:8080/)
-and donwload the `fly` executable.
+and download the `fly` executable.
 
 `fly` is your direct link to concourse and is used to
 upload your ci pipelines.

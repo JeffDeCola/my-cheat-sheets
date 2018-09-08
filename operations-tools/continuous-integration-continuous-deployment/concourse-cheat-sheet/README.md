@@ -13,9 +13,8 @@ View my entire list of cheat sheets on
 There are many ways to install concourse, here are a few,
 
 * [On VirtualBox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
-* [Standalone Binary on google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary-google-compute-engine.md)
-* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/README.md)
-* [Using BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-BOSH.md)
+* [Binary Install](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
+* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose)
 * [Ansible Roles on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
 ## INSTALL AND CONNECT FLY TO CONCOURSE
@@ -40,7 +39,7 @@ fly -t ci login -n team-jeff
 
 check `~/.flyrc` to see your new team.
 
-## BASIC STRUCTURE OF CONCOURSE CI
+## BASIC STRUCTURE OF CONCOURSE
 
 See a more detailed example at
 [my-concourse-ci-tasks](https://jeffdecola.github.io/my-concourse-ci-tasks/).

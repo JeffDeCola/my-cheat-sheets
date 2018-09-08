@@ -1,15 +1,17 @@
-# INSTALL CONCOURSE CI ON VIRTUALBOX USING VAGRANT
+# INSTALL CONCOURSE ON VIRTUALBOX USING VAGRANT
 
 This method has been depreciated at concourse, but I'm sure you can
 find vagrant files that others have made.
 
-Get vagrant for Windows,
+Get vagrant for Windows [here](https://www.vagrantup.com).
 
-[https://www.vagrantup.com](https://www.vagrantup.com)
+Search for a concourse vagrant file
+[here](https://app.vagrantup.com/boxes/search).
+This [one](https://app.vagrantup.com/concourse/boxes/lite) works,
+but is in older version of concourse.
 
-Get the Concourse Vagrant files.
-
-To run, enter vagrant directory, from Windows cmd prompt type,
+To run your vagrant box, enter vagrant directory, and from the
+Windows cmd prompt type,
 
 ```bash
 vagrant up
@@ -23,4 +25,4 @@ vagrant box prune                           # remove the old Vagrant boxes
 vagrant up
 ```
 
-Reinstal the new fly.exe for Windows and Linux.
+Reinstall the new `fly.exe`.
