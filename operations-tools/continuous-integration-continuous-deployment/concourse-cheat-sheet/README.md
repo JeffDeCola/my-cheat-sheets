@@ -1,32 +1,30 @@
 # CONCOURSE CHEAT SHEET
 
 `concourse` _is a pipelined CI (Continuous Integration) for
-Software Builds._
+Software Builds. Concourse's main goal is to run tasks_.
 
-Concourse's main goal is to run tasks.
-
-[My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+[My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## INSTALL CONCOURSE CI SERVER
+## INSTALL CONCOURSE SERVER
 
-There are a few ways to install concourse:
+There are many ways to install concourse, here are a few,
 
-* [Local VM with Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-ci-on-virtualbox-using-vagrant)
-* [Standalone Binary](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-binary-google-compute-engine.md)
-* [Docker Repository](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-docker-compose/README.md)
-* [Clusters with BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-BOSH.md)
-* [Ansible Roles](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+* [On VirtualBox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
+* [Standalone Binary on google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary-google-compute-engine.md)
+* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/README.md)
+* [Using BOSH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-BOSH.md)
+* [Ansible Roles on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
 ## INSTALL AND CONNECT FLY TO CONCOURSE
 
 Now we need a way to connect to your concourse server.
 Fly allows you to uploads/updates your files.
 
-* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-windows.md)
-* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-ci-cheat-sheet/install-fly-on-linux.md)
+* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
+* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
 
 ## CREATE A TEAM
 

@@ -111,7 +111,7 @@ All sections in alphabetical order.
   * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet-sheet)
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION
