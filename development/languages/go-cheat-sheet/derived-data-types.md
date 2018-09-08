@@ -26,7 +26,7 @@ The basic format is,
 
 ```
 name = [number]type{assignment, assignment....}
-```  
+```
 
 Here is the syntax,
 
@@ -40,7 +40,7 @@ Here is the syntax,
     a[2] = 2.0
 
     // DECLARE & ASSIGN
-	var a = [2]float32{1.1, 2.0}                    // Verbose
+    var a = [2]float32{1.1, 2.0}                    // Verbose
     a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
 ```
 
@@ -95,8 +95,8 @@ total capacity,
     var a []float64
 
     // ASSIGN
-    a = append(a, 5.7) 
-    
+    a = append(a, 5.7)
+
     // DECLARE & ASSIGN
     var a = []float32{1.1, 2.0}                    // Verbose
     a = append(a, 5.7)                             // Append to same slice
@@ -110,8 +110,8 @@ Really key/value pairs, like a database.
 
 ```go
    // DECLARE
-	var a = make(map[string]int)
-	a := make(map[string]int)
+    var a = make(map[string]int)
+    a := make(map[string]int)
 
     // ASSIGN
     a["Jill"] = 23
@@ -123,7 +123,7 @@ Really key/value pairs, like a database.
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
-    }                                              
+    }                   
     a := map[string]int{                           // Array Shortcut Assignment
         "Jill": 23,
         "Bob":  34,
@@ -138,14 +138,14 @@ with capital letter.  Because
 anything with a capital letter is exported.
 
 ```go
-    // CREATE 
+    // CREATE
     type Rect struct {
         w, h float32
     }
-    
+
     // DECLARE
     var r1 Rect
-    
+
     // ASSIGN
     r1.w = 6.1
     r1.h = 5.0
@@ -185,7 +185,7 @@ a := new(int)
 // add some "contents of" a
 *a = 9
 
-### PASS A POINTER TO A FUNCTION 
+### PASS A POINTER TO A FUNCTION
 
 ???
 
