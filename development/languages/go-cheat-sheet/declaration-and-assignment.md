@@ -1,4 +1,4 @@
-# DECLARATION / ASSIGNMENT
+# DECLARATION & ASSIGNMENT
 
 Declaration is picking a name for a data type and optionally assigning
 that data type a value.
@@ -14,7 +14,13 @@ var name type
 var name type = assignment
 ```
 
-For example,
+### DECLAIR
+
+```go
+var age int
+```
+
+### DECLARE AND ASSIGN
 
 ```go
 var greeting string = "hello, world"

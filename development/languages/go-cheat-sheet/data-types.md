@@ -3,31 +3,32 @@
 Types or data types are a classification of data,
 that tells the compiler how to use that data.
 
-Tells the computer how much space it occupies and how the bit
-pattern is stored.
+It also tells the computer how much space the data type
+occupies and how the bit pattern is stored.
 
-The Data Types in go,
+The Data Types in go are,
 
 * Boolean
 * Numeric
 * String
-* Derived (See next [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/derived-data-types.md))
+* Derived (_See next [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/derived-data-types.md)_)
   * Array
   * Slice
   * Map
   * Struct
   * Pointer
-  * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
-  * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Function (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)_)
+  * Interface (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)_)
+  * Channel (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)_)
 
 ## OVERVIEW
 
 ```go
-// VARIABLES
-var vA int32 = 1                                // Verbose
+// VARIABLES                                    // DECLAIR
+var vA string                                   // Declare
+var vA int32 = 1                                // Declare and Assign - Verbose
 var vB = 2                                      // Type Inference
-vC := 3                                         // Shortcut assignment
+vC := 3                                         // Shortcut Assignment
 
 // GROUPING VARIABLES
 var gA, gB string = "hello gA", "hello gB"      // Verbose
@@ -72,6 +73,9 @@ func name (a, b int) int32 {
 func name (a int, b string) (c int32) {
 
 // INTERFACE
+????
+
+// CHANNEL
 ????
 ```
 

@@ -27,7 +27,7 @@ The cheat sheet is broken up into the following sections,
     * Windows
 
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/basic-concepts.md)
-  * Structure of Go
+  * Basic Structure of go
   * Basic Syntax
   * Packages
   * _run_
