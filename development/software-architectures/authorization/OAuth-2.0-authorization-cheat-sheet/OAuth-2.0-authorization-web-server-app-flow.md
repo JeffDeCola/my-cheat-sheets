@@ -12,7 +12,7 @@ The following diagram illustrates how everything fits for
 Web Server-Side Flow. To access a users info they must be
 in your g-suite domain.
 
-![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../docs/pics/OAuth-2.0-service-account-authorization-flow.jpg/OAuth-2.0-web-server-app-authorization-flow.jpg)
+![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../../docs/pics/OAuth-2.0-web-server-app-authorization-flow.jpg)
 
 ## THE STEPS TO LOG IN
 
