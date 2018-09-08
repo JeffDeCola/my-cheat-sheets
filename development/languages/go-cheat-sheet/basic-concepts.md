@@ -4,14 +4,14 @@ Go actually forces you to use a particular coding style.  This is a little
 painful at first, but actually good news in the long run since
 it makes everyone's code look and feel the same.
 
-## STRUCTURE OF GO
+## BASIC STRUCTURE OF GO
 
-* Package Declaration
-* Import Packages
-* Functions
-* Variables
-* Statements and Expressions
-* Comments
+* Package Declaration.
+* Import Packages.
+* Functions.
+* Variables.
+* Statements and Expressions.
+* Comments.
 
 ## BASIC SYNTAX
 
@@ -34,7 +34,7 @@ Everything in go is a package.
 
 Here is a huge [list of go packages](http://golang.org/pkg).
 
-Or use go tool to look up packages,
+Or use a go tool to look up packages,
 
 ```bash
 go doc fmt
