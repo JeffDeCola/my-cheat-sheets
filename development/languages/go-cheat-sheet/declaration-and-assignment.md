@@ -3,9 +3,9 @@
 Declaration is picking a name for a data type and optionally assigning
 that data type a value.
 
-## VARIABLES
+## VARIABLE
 
-Variables always has a single type and may be assigned.
+A variable always has a single type and may be assigned.
 
 The basic format is,
 
@@ -14,17 +14,19 @@ var name type
 var name type = assignment
 ```
 
-Declare,
+Here is the syntax,
 
 ```go
-var age int
-```
+    // DECLARE                                    
+    var a string
 
-Declare & Assign,
+    // ASSIGN
+    a = "happy"
 
-```go
-var greeting string = "hello, world"
-var pi float32 = 3.14
+    // DECLARE & ASSIGN
+    var a int32 = 22                                // Verbose
+    var a = 22                                      // Type Inference
+    a := 32                                         // Shortcut Assignment
 ```
 
 ## SCOPE RULES
@@ -33,7 +35,7 @@ var pi float32 = 3.14
 * Global _- Outside function._
 * Formal _- In definition of function._
 
-## CONSTANTS (LITERALS)
+## CONSTANT (LITERAL)
 
 Constants refer to fixed values that the program may not alter during its execution.
 
@@ -77,28 +79,26 @@ Shortcuts can not be used outside a function.
 ## GROUPING VARIABLES
 
 ```go
-var x int = 5
-var y int = 8
+var a string = "hello a"
+var b string = "hello b"
 ```
 
-A group can also infer a type,
+Here is the syntax,
 
 ```go
-var (
-    x=5
-    y=8
-)
-```
+    // DECLARE
+    var a, b string
 
-But even better, put it on one line,
-
-```go
-var x, y = 5, 8
-```
-
-But even, even better, lets use shorthand
-(again, only inside a function),
-
-```go
-x, y := 5, 8
+    // ASSIGN
+    a = "hello a"
+    b = "hello b"
+    
+    // DECLARE & ASSIGN
+    var a, b string = "hello a", "hello b"          // Verbose
+    var a, b = "hello a", "hello b"                 // Type Inference
+    var (                                           // Parenthesis
+        a = "hello a"
+        b = "hello b"
+    )
+    a, b := "hello a", "hello b"                    // Group Shortcut Assignment
 ```
