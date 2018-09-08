@@ -14,13 +14,13 @@ var name type
 var name type = assignment
 ```
 
-### DECLAIR
+Declare,
 
 ```go
 var age int
 ```
 
-### DECLARE AND ASSIGN
+Declare & Assign,
 
 ```go
 var greeting string = "hello, world"
@@ -29,17 +29,15 @@ var pi float32 = 3.14
 
 ## SCOPE RULES
 
-* Local - Inside Function
-* Global - Outside Function
-* Formal - In definition of function
+* Local _- Inside function._
+* Global _- Outside function._
+* Formal _- In definition of function._
 
 ## CONSTANTS (LITERALS)
 
 Constants refer to fixed values that the program may not alter during its execution.
 
 For example, a string constant could be `"hello"`.
-
-The const keyword,
 
 ```go
 const variable type = value;
@@ -74,7 +72,7 @@ var x int = 42;
 var x = 42;
 ```
 
-Shortcuts can not be used outside function.
+Shortcuts can not be used outside a function.
 
 ## GROUPING VARIABLES
 
@@ -83,7 +81,7 @@ var x int = 5
 var y int = 8
 ```
 
-Group can also infer a type,
+A group can also infer a type,
 
 ```go
 var (

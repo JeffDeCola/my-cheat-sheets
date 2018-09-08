@@ -39,6 +39,17 @@ The cheat sheet is broken up into the following sections,
   * Numeric
   * String
  
+* [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
+
+* [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
+  * Overview
+  * Variables
+  * Scope Rules (Local, Global, Formal)
+  * Constants (Literals)
+  * Type Inference
+  * Shortcut Assignment
+  * Grouping Variables
+
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md)
   * Array
   * Slice (_make_)
@@ -49,21 +60,11 @@ The cheat sheet is broken up into the following sections,
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
-* [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
-
-* [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
-  * Variables
-  * Scope Rules (Local, Global, Formal)
-  * Constants (Literals)
-  * Type Inference
-  * Shortcut Assignment
-  * Grouping Variables
-
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/operators.md)
-  * Arithmetic
-  * Relational
-  * Logical
-  * Bitwise
+  * Arithmetic (_Math_)
+  * Relational (_Compare_)
+  * Logical (_Boolean_)
+  * Bitwise (_Bits_)
   * Assignment
   * Miscellaneous
 
@@ -91,6 +92,140 @@ The cheat sheet is broken up into the following sections,
 * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md)
   * Format Specifiers
   * Escape Sequences
+
+## GO SYNTAX OVERVIEW
+
+```go
+// VARIABLES
+
+    // DECLARE                                    
+    var a string
+
+    // ASSIGN
+    a = "happy"
+
+    // DECLARE & ASSIGN
+    var a int32 = 22                                // Verbose
+    var a = 22                                      // Type Inference
+    a := 32                                         // Shortcut Assignment
+
+// CONSTANT
+
+    const a float32 = 3.14                          // Must have assignment
+
+// GROUPING VARIABLES
+
+    // DECLARE
+    var a, b string
+
+    // ASSIGN
+    a = "hello a"
+    b = "hello b"
+    
+    // DECLARE & ASSIGN
+    var a, b string = "hello a", "hello b"          // Verbose
+    var a, b = "hello a", "hello b"                 // Type Inference
+    var (                                           // Parenthesis
+        a = "hello a"
+        b = "hello b"
+    )
+    a, b := "hello a", "hello b"                    // Group Shortcut Assignment
+
+// ARRAYS
+    
+    // DECLARE
+    var a [2]float32
+
+    // ASSIGN
+    a[1] = 1.1
+    a[2] = 2.0
+
+    // DECLARE & ASSIGN
+	var a = [2]float32{1.1, 2.0}                    // Verbose
+    a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
+
+// SLICE
+    
+    // DECLARE
+    var a []float64
+
+    // ASSIGN
+    a = append(a, 5.7) 
+    
+    // DECLARE & ASSIGN
+    var a = []float32{1.1, 2.0}                    // Verbose
+    a = append(a, 5.7)                             // Append to same slice
+    a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
+    b := append(a, 5.7)                            // Append to different slice
+
+// MAP
+
+    // DECLARE
+	var a = make(map[string]int)
+	a := make(map[string]int)
+
+    // ASSIGN
+    a["Jill"] = 23
+    a["Bob"] = 34
+    a["Mark"] = 28
+
+    // DECLARE & ASSIGN
+    var a = map[string]int{                        // Verbose
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }                                              
+    a := map[string]int{                           // Array Shortcut Assignment
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+
+// STRUCT
+
+    // CREATE 
+    type Rect struct {
+        w, h float32
+    }
+    
+    // DECLARE
+    var r1 Rect
+    
+    // ASSIGN
+    r1.w = 6.1
+    r1.h = 5.0
+
+    // DECLARE & ASSIGN
+    var r Rect = Rect{6.1, 5.0}                     // Verbose
+    var r = Rect{6.1, 5.0}                          // Type Inference
+    r := Rect{6.1, 5.0}                             // Shortcut Assignment
+
+
+// POINTER
+    
+    // DECLARE
+    ??
+
+    // ASSIGN
+    ??
+
+    // DECLARE & ASSIGN
+    ??
+
+// FUNCTION
+    
+    func name (a int) {
+    func name (a, b int) int32 {
+    func name (a int, b string) (c int32) {
+
+// INTERFACE
+    
+    ????
+
+// CHANNEL
+    
+    ????
+```
 
 ## REFERENCES / DOCUMENTATION
 

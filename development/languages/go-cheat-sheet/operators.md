@@ -10,7 +10,7 @@ mathematical or logical manipulations.
 * Assignment Operators
 * Miscellaneous Operators
 
-## ARIMETIC
+## ARIMETIC (MATH)
 
 * `+`
 * `-`
@@ -20,7 +20,7 @@ mathematical or logical manipulations.
 * `++`
 * `--`
 
-## RELATIONAL
+## RELATIONAL (COMPARE)
 
 Returns a boolean type,
 
@@ -31,7 +31,7 @@ Returns a boolean type,
 * `>=`
 * `<=`
 
-## LOGICAL
+## LOGICAL (BOOLEAN)
 
 Used on boolean types,
 
@@ -39,7 +39,7 @@ Used on boolean types,
 * `||`
 * `!`
 
-## BITWISE
+## BITWISE (BITS)
 
 * `&`
 * `|`

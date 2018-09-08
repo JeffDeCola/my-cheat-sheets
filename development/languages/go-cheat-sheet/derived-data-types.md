@@ -1,10 +1,7 @@
-# DERVIED DATA TYPES
+# DERIVED DATA TYPES
 
-Types or data types are a classification of data,
-that tells the compiler how to use that data.
-
-Tells the computer how much space it occupies and how the bit
-pattern is stored.
+The derived data types are built on the basic three data types
+(Boolean, Numeric and String).
 
 The Data Types in go,
 
@@ -23,12 +20,21 @@ The Data Types in go,
 
 ## ARRAY
 
-Really just an array of a variable, a data structure.
+Really just an array of a variable; a data structure.
 
 The basic format is,
 
 ```
 name = [number]type{assignment, assignment....}
+```  
+
+Declare,
+
+students := []string{}
+
+Assign
+
+```
 testscores := [3]float64{78.3, 98.9, 85.4}
 ```
 
@@ -45,7 +51,7 @@ fmt.Printf("a is %v\n", testscores[:3])
 fmt.Printf("a is %v\n", testscores[2:])
 ```
 
-And output is,
+The output is,
 
 ```go
 a is [78.3 98.9 85.4]
@@ -132,5 +138,10 @@ type Rect struct {
 
 ## POINTER
 
+A pointer is just a variable that holds the address (of memory)
+of a value.
+
+`*` is the contents of operator
+`&` is address of operator.
 
 

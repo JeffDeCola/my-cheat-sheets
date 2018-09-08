@@ -21,64 +21,6 @@ The Data Types in go are,
   * Interface (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)_)
   * Channel (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)_)
 
-## OVERVIEW
-
-```go
-// VARIABLES                                    // DECLAIR
-var vA string                                   // Declare
-var vA int32 = 1                                // Declare and Assign - Verbose
-var vB = 2                                      // Type Inference
-vC := 3                                         // Shortcut Assignment
-
-// GROUPING VARIABLES
-var gA, gB string = "hello gA", "hello gB"      // Verbose
-var gC, gD = "hello gC", "hello gD"             // Type Inference
-var (                                           // Neater Form
-    gE = "hello gE"
-    gF = "hello gF"
-)
-gG, gH := "hello gG", "hello gH"                // Group Shortcut Assignment
-
-// ARRAYS
-aA := [2]float32{1.1, 2.0}                      // Assign
-
-// SLICE
-sA := make([]int, 5, 10)                        // Make
-sA[0] = 3                                       // Assign
-sA = append(sA, 5, 6)                           // Append to slice
-sB := []float32{3.4, 4.5}                       // Create another slice
-sB = append(sB, 5.7)                            // Append to slice
-
-// MAP
-mA := map[string]int                            // Database of key:value pairs
-    "Jill": 23,
-    "Bob":  34,
-    "Mark": 28,
-}
-
-// STRUCT
-type Rect struct {                              // Create your struct type
-    w, h float32
-}
-var r1 Rect                                     // Declare type Rect
-r1.w = 5.5                                      // Assign width
-r1.h = 2.2                                      // Assign height
-
-// POINTER
-????
-
-// FUNCTION
-func name (a int) {
-func name (a, b int) int32 {
-func name (a int, b string) (c int32) {
-
-// INTERFACE
-????
-
-// CHANNEL
-????
-```
-
 ## BOOLEAN
 
 * `true`
