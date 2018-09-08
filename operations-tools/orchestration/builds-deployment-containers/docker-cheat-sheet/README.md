@@ -178,7 +178,9 @@ Stop a container,
 docker stop NAME
 ```
 
-## BUILD YOUR OWN IMAGE (METHOD 1) - Modify an Existing image
+## BUILD AN IMAGE
+
+### METHOD 1 - Modify an Existing image
 
 Get an existing docker image and add to it,
 
@@ -199,7 +201,7 @@ docker commit -m "Added ruby" -a "Jeff DeCola" IMAGE-ID
 jeffdecola/sinatra:jeffver
 ```
 
-## BUILD YOUR OWN IMAGE (METHOD 2) - Create a Dockerfile
+### METHOD 2 - Create a Dockerfile
 
 Create a Dockerfile,
 

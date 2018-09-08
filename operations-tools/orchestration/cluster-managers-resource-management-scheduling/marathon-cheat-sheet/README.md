@@ -1,5 +1,9 @@
 # MARATHON CHEAT SHEET
 
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
 `marathon` _tbd._
 
 View my entire list of cheat sheets on
@@ -7,4 +11,4 @@ View my entire list of cheat sheets on
 
 ## TBD
 
-My placeholder, cheat sheet coming soon.
+Cheat sheet coming soon.
