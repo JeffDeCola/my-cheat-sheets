@@ -177,7 +177,7 @@ b := &a                                         // b is the "address of" a
 // a == *b (both are 5)                         // "Contents of" b is a
 ```
 
-![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
+![IMAGE - go pointers - IMAGE](../../../docs/pics/go-pointers.jpg)
 
 Cool uses for pointers are,
 

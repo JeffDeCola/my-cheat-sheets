@@ -48,7 +48,7 @@ func swap(a, b int) (x int, y int) {
 ```
 ## PASSING PARAMETERS
 
-![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
+![IMAGE - go function passing by reference and value - IMAGE](../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
 
 ### PASSING PARAMETERS BY VALUE (COPY)
 
