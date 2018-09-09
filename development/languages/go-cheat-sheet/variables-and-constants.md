@@ -1,6 +1,9 @@
-# DECLARATION & ASSIGNMENT
+# VARIABLES AND CONSTANTS
 
-* Declaration is picking a `name for a data type` and optionally `assigning a value`.
+## DECLARE TYPE AND ASSIGN VALUE
+
+* Declaration is picking a `name for a data type`.
+* Assignment is `assigning a value`.
 
 ## VARIABLE
 
@@ -27,16 +30,10 @@ var a = 22                                      // Type Inference
 a := 32                                         // Shortcut Assignment
 ```
 
-## SCOPE RULES
+## CONSTANT / LITERAL
 
-* Local _- Inside function._
-* Global _- Outside function._
-* Formal _- In definition of function._
-
-## CONSTANT (LITERAL)
-
-Constants refer to fixed values that the program may
-not alter during its execution.
+Constants (or Literal) refer to fixed values that the
+program may not alter during its execution.
 
 The basic verbose format is,
 
@@ -53,6 +50,12 @@ const a = 22                                    // Type Inference
 
 Escape Sequences (really used in formatting are considered constants).
 See [formating-types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md).
+
+## SCOPE RULES
+
+* Local _- Inside function._
+* Global _- Outside function._
+* Formal _- In definition of function._
 
 ## TYPE INFERENCE
 

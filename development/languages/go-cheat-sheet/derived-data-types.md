@@ -1,7 +1,10 @@
 # DERIVED DATA TYPES
 
-The derived data types are built on the basic three data types
+I like to think of derived data types as
+special variables built on the basic three data types
 (Boolean, Numeric and String).
+
+So you still need to declare type and assign value.
 
 The Data Types in go,
 
@@ -85,7 +88,7 @@ func firstWord(str string) (word []byte) {
 }
 ```
 
-## SLICE (ARRAY SUB TYPE) (make)
+## SLICE (ARRAY SUB TYPE)
 
 Making an initial array of n length long out of a
 total capacity.

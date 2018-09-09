@@ -41,21 +41,22 @@ The cheat sheet is broken up into the following sections,
 
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
 
-* [DECLARATION & ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/declaration-and-assignment.md)
-  * Overview
+* [VARIABLES & CONSTANTS]
+(https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/variables-and-constants.md)
+  * Declare Type and Assign Value
   * Variable
+  * Constant / Literal
   * Scope Rules (Local, Global, Formal)
-  * Constant (Literals)
   * Type Inference
   * Shortcut Assignment
   * Grouping Variables
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/derived-data-types.md)
   * Array
-  * Slice (_make_)
-  * Map (_Key:Value_)
+  * Slice
+  * Map
   * Struct
-  * Pointer (_new_)
+  * Pointer
   * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
@@ -100,8 +101,20 @@ The cheat sheet is broken up into the following sections,
 // DATA TYPES
 
     // Boolean
+        // true, false
     // Numeric
+        // singed - int8, int16, int32, int64
+        // unsigned - uint8 (byte), uint16, uint32 (rune) uint64
+        // machine - int, uint, uintptr
+        // float - float32, float64
+        // complex - complex64, complex128
     // String
+        // string
+
+// TYPE CONVERSION /  TYPE CASTING
+
+    a:= 33
+    nowAFloat = float32(a)                          // int to float
 
 // VARIABLE
 
@@ -116,7 +129,7 @@ The cheat sheet is broken up into the following sections,
     var a = 22                                      // Type Inference
     a := 32                                         // Shortcut Assignment
 
-// CONSTANT (LITERAL)
+// CONSTANT / LITERAL
 
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
