@@ -32,16 +32,16 @@ Here is the syntax,
 
 ```go
 
-    // DECLARE
-    var a [2]float32
+// DECLARE
+var a [2]float32
 
-    // ASSIGN
-    a[1] = 1.1
-    a[2] = 2.0
+// ASSIGN
+a[1] = 1.1
+a[2] = 2.0
 
-    // DECLARE & ASSIGN
-    var a = [2]float32{1.1, 2.0}                    // Verbose
-    a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
+// DECLARE & ASSIGN
+var a = [2]float32{1.1, 2.0}                    // Verbose
+a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
 ```
 
 Here is printing an array,
@@ -91,17 +91,17 @@ Making an initial array of n length long out of a
 total capacity,
 
 ```go
-    // DECLARE
-    var a []float64
+// DECLARE
+var a []float64
 
-    // ASSIGN
-    a = append(a, 5.7)
+// ASSIGN
+a = append(a, 5.7)
 
-    // DECLARE & ASSIGN
-    var a = []float32{1.1, 2.0}                    // Verbose
-    a = append(a, 5.7)                             // Append to same slice
-    a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
-    b := append(a, 5.7)                            // Append to different slice
+// DECLARE & ASSIGN
+var a = []float32{1.1, 2.0}                    // Verbose
+a = append(a, 5.7)                             // Append to same slice
+a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
+b := append(a, 5.7)                            // Append to different slice
 ```
 
 ## MAP (key:value)
@@ -109,26 +109,26 @@ total capacity,
 Really key/value pairs, like a database.
 
 ```go
-   // DECLARE
-    var a = make(map[string]int)
-    a := make(map[string]int)
+// DECLARE
+var a = make(map[string]int)
+a := make(map[string]int)
 
-    // ASSIGN
-    a["Jill"] = 23
-    a["Bob"] = 34
-    a["Mark"] = 28
+// ASSIGN
+a["Jill"] = 23
+a["Bob"] = 34
+a["Mark"] = 28
 
-    // DECLARE & ASSIGN
-    var a = map[string]int{                        // Verbose
-        "Jill": 23,
-        "Bob":  34,
-        "Mark": 28,
-    }                   
-    a := map[string]int{                           // Array Shortcut Assignment
-        "Jill": 23,
-        "Bob":  34,
-        "Mark": 28,
-    }
+// DECLARE & ASSIGN
+var a = map[string]int{                        // Verbose
+    "Jill": 23,
+    "Bob":  34,
+    "Mark": 28,
+}
+a := map[string]int{                           // Array Shortcut Assignment
+    "Jill": 23,
+    "Bob":  34,
+    "Mark": 28,
+}
 ```
 
 ## STRUCT
@@ -138,22 +138,22 @@ with capital letter.  Because
 anything with a capital letter is exported.
 
 ```go
-    // CREATE
-    type Rect struct {
-        w, h float32
-    }
+// CREATE
+type Rect struct {
+    w, h float32
+}
 
-    // DECLARE
-    var r1 Rect
+// DECLARE
+var r1 Rect
 
-    // ASSIGN
-    r1.w = 6.1
-    r1.h = 5.0
+// ASSIGN
+r1.w = 6.1
+r1.h = 5.0
 
-    // DECLARE & ASSIGN
-    var r Rect = Rect{6.1, 5.0}                     // Verbose
-    var r = Rect{6.1, 5.0}                          // Type Inference
-    r := Rect{6.1, 5.0}                             // Shortcut Assignment
+// DECLARE & ASSIGN
+var r Rect = Rect{6.1, 5.0}                     // Verbose
+var r = Rect{6.1, 5.0}                          // Type Inference
+r := Rect{6.1, 5.0}                             // Shortcut Assignment
 ```
 
 ## POINTER
@@ -164,43 +164,22 @@ of a value.
 `*` is the "contents of"
 `&` is "address of"
 
-Very simply,
-
-```
-a:= 5                   // If we have a variable int 5.
-b:= &a                  // And b is the address of a
-// a== *b (both are 5)  // Then the contents of b is a
-```
-
-Cool users for pointers
-
-* Allocate space for a variable, we get a ref to that (a pointer)
-* Pass a to a function to change parameters value outside function.
-
-### ALLOCATE SPACE FOR A VARIABLE
-
-// Create a pointer to an int.
-a := new(int)
-
-// add some "contents of" a
-*a = 9
-
-### PASS A POINTER TO A FUNCTION
-
-???
-
-
+You can,
 
 ```go
-    // DECLARE                                    
-    var a string
+// CREATE A POINTER TYPE AND ASSIGN
+a := new(int)                                   // Create int pointer type
+*a = 9                                          // "Contents of a is 9"
 
-    // ASSIGN
-    a = "happy"
-
-    // DECLARE & ASSIGN
-    var a int32 = 22                                // Verbose
-    var a = 22                                      // Type Inference
-    a := 32                                         // Shortcut Assignment
+// ASSIGN A POINTER TO A TYPE
+a := 5                                          // If we have a var int 5
+b := &a                                         // b is the "address of" a
+// a == *b (both are 5)                         // "Contents of" b is a
 ```
 
+![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
+
+Cool uses for pointers are,
+
+* Allocate space for a variable.
+* Pass by reference to a function to change parameters value outside function.

@@ -46,19 +46,37 @@ func swap(a, b int) (x int, y int) {
     return
 }
 ```
+## PASSING PARAMETERS
 
-## PASSING PARAMETERS BY VALUE (COPY)
+![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
+
+### PASSING PARAMETERS BY VALUE (COPY)
 
 Passes a copy of that value.
 
 So if I alter the value inside a function
-it will not change it outside.
+it will not change it outside the function.
 
-BUT woudln;t it be cool to pass by reference,
-meaning change it.
 
-## PASSING PARAMETERS BY REFERENCE
+```go
+a := 33
+a = negateValue(a)
 
-Pass the reference instead so we can change it on the poiside.
+func negateValue(i int) int {
+    return i * -1
+}
+```
 
-func negate
+### PASSING PARAMETERS BY REFERENCE (POINTER)
+
+Passes the reference (pointer) instead
+so we can change the type in the function.
+
+```go
+a := 33
+negateReference(&a)
+
+func negateReference(i *int) {
+    *i = *i * -1
+}
+```

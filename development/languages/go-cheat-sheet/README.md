@@ -98,7 +98,7 @@ The cheat sheet is broken up into the following sections,
 ```go
 // VARIABLE
 
-    // DECLARE                           
+    // DECLARE                
     var a string
 
     // ASSIGN
@@ -145,7 +145,7 @@ The cheat sheet is broken up into the following sections,
     a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
 
 // SLICE
- 
+
     // DECLARE
     var a []float64
 
@@ -174,7 +174,7 @@ The cheat sheet is broken up into the following sections,
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
-    }                             
+    }     
     a := map[string]int{                           // Array Shortcut Assignment
         "Jill": 23,
         "Bob":  34,
@@ -203,27 +203,22 @@ The cheat sheet is broken up into the following sections,
 
 // POINTER
 
-    // CREATE
-    type Rect struct {
-        w, h float32
-    }
+    // CREATE A POINTER TYPE AND ASSIGN
+    a := new(int)                                   // Create int pointer type
+    *a = 9                                          // "Contents of a is 9"
 
-    // DECLARE
-    ??
-
-    // ASSIGN
-    ??
-
-    // DECLARE & ASSIGN
-    ??
+    // ASSIGN A POINTER TO A TYPE
+    a := 5                                          // If we have a var int 5
+    b := &a                                         // b is the "address of" a
+    // a == *b (both are 5)                         // "Contents of" b is a
 
 // FUNCTION
                                                     // PARAMETERS
-    func name(a int) {                              // 1 IN
-    func name(a, b int) int32 {                     // 2 IN, 1 RETURN
-    func name(name ...int) int {                    // Variadic IN, 1 RETURN
-    func name(a int, b string) (x int32) {          // 2 IN, 1 NAMED RETURN
-    func name(a, b int) (x int, y string) {         // 2 IN, 2 NAMED RETURN
+    func name(a int) {                              // 1 in
+    func name(a, b int) int32 {                     // 2 in, 1 return
+    func name(name ...int) int {                    // Variadic in, 1 return
+    func name(a int, b string) (x int32) {          // 2 in, 1 NAMED return
+    func name(a, b int) (x int, y string) {         // 2 in, 2 NAMED return
 
 // INTERFACE
 
