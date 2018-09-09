@@ -17,7 +17,7 @@ var name type = assignment
 Here is the syntax,
 
 ```go
-    // DECLARE                               
+    // DECLARE             
     var a string
 
     // ASSIGN
