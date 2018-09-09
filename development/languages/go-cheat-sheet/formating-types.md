@@ -2,6 +2,32 @@
 
 How to make the output look pretty.
 
+## FORMAT INPUT (bufio.NewReader PACKAGE)
+
+Get an enter string as input,
+
+```go
+reader := bufio.NewReader(os.Stdin)
+fmt.Print("Enter a String")
+str, err := reader.ReadString('\n')
+if err != nil {
+	panic("error: newline not found")
+}
+
+fmt.Println(str)
+```
+
+## FORMAT INPUT (fmt.Scan PACKAGE)
+
+```go
+word1, word2 := "", ""
+count, err := fmt.Scan(&word1, &word2)
+if err != nil {
+    panic(err)
+}
+fmt.Printf("You entered %v.  There are %v words. \n", word1+" "+word2, count)
+```
+
 ## FORMAT SPECIFIERS
 
 There is a large list [here](https://golang.org/pkg/fmt/).
@@ -29,7 +55,7 @@ fmt.Printf("%s\n", c) ??????????????????????????
 
 These are really constants, but I put them here because they are mainly used in formatting.
 
-Popular ones
+Popular ones,
 
 * `\n` newline.
 * `\?` The ? character.

@@ -50,7 +50,7 @@ The cheat sheet is broken up into the following sections,
   * Shortcut Assignment
   * Grouping Variables
 
-* [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md)
+* [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/derived-data-types.md)
   * Array
   * Slice (_make_)
   * Map (_Key:Value_)
@@ -75,8 +75,8 @@ The cheat sheet is broken up into the following sections,
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
-  * Passing Parameters by Reference (_Copy_)
-  * Passing Parameters by Value
+  * Passing Parameters by Value (_Copy_)
+  * Passing Parameters by Reference (_Pointer_)
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
@@ -96,12 +96,19 @@ The cheat sheet is broken up into the following sections,
 ## GO SYNTAX OVERVIEW
 
 ```go
+
+// DATA TYPES
+
+    // Boolean
+    // Numeric
+    // String
+
 // VARIABLE
 
-    // DECLARE                
+    // DECLARE TYPE
     var a string
 
-    // ASSIGN
+    // ASSIGN VALUE
     a = "happy"
 
     // DECLARE & ASSIGN
@@ -109,16 +116,17 @@ The cheat sheet is broken up into the following sections,
     var a = 22                                      // Type Inference
     a := 32                                         // Shortcut Assignment
 
-// CONSTANT
+// CONSTANT (LITERAL)
 
     const a float32 = 3.14                          // Must have Assignment
+    const a = 22                                    // Type Inference
 
 // GROUPING VARIABLES
 
-    // DECLARE
+    // DECLARE TYPE
     var a, b string
 
-    // ASSIGN
+    // ASSIGN VALUE
     a = "hello a"
     b = "hello b"
 
@@ -133,10 +141,10 @@ The cheat sheet is broken up into the following sections,
 
 // ARRAY
 
-    // DECLARE
+    // DECLARE TYPE
     var a [2]float32
 
-    // ASSIGN
+    // ASSIGN VALUE
     a[1] = 1.1
     a[2] = 2.0
 
@@ -146,25 +154,26 @@ The cheat sheet is broken up into the following sections,
 
 // SLICE
 
-    // DECLARE
+    // DECLARE TYPE
     var a []float64
 
-    // ASSIGN
+    // ASSIGN VALUE / ADD TO SLICE
     a = append(a, 5.7)
 
     // DECLARE & ASSIGN
     var a = []float32{1.1, 2.0}                    // Verbose
-    a = append(a, 5.7)                             // Append to same slice
     a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
-    b := append(a, 5.7)                            // Append to different slice
+
+    // ADD TO SLICE
+    a := append(a, 5.7)                            // Append to different slice
 
 // MAP
 
-    // DECLARE
+    // DECLARE TYPES
     var a = make(map[string]int)
     a := make(map[string]int)
 
-    // ASSIGN
+    // ASSIGN KEY:VALUE
     a["Jill"] = 23
     a["Bob"] = 34
     a["Mark"] = 28
@@ -183,15 +192,15 @@ The cheat sheet is broken up into the following sections,
 
 // STRUCT
 
-    // CREATE
+    // CREATE STRUCT TYPE
     type Rect struct {
         w, h float32
     }
 
-    // DECLARE
+    // DECLARE TYPE
     var r1 Rect
 
-    // ASSIGN
+    // ASSIGN VALUE
     r1.w = 6.1
     r1.h = 5.0
 
@@ -200,17 +209,16 @@ The cheat sheet is broken up into the following sections,
     var r = Rect{6.1, 5.0}                          // Type Inference
     r := Rect{6.1, 5.0}                             // Shortcut Assignment
 
-
 // POINTER
 
     // CREATE A POINTER TYPE AND ASSIGN
     a := new(int)                                   // Create int pointer type
-    *a = 9                                          // "Contents of a is 9"
+    *a = 9                                          // "contents of a is 9"
 
     // ASSIGN A POINTER TO A TYPE
     a := 5                                          // If we have a var int 5
     b := &a                                         // b is the "address of" a
-    // a == *b (both are 5)                         // "Contents of" b is a
+    // a == *b (both are 5)                         // "contents of" b is a
 
 // FUNCTION
                                                     // PARAMETERS
@@ -219,6 +227,9 @@ The cheat sheet is broken up into the following sections,
     func name(name ...int) int {                    // Variadic in, 1 return
     func name(a int, b string) (x int32) {          // 2 in, 1 NAMED return
     func name(a, b int) (x int, y string) {         // 2 in, 2 NAMED return
+
+// METHOD
+
 
 // INTERFACE
 
