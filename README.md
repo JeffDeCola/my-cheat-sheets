@@ -32,10 +32,10 @@ All sections in alphabetical order.
 
 * LANGUAGES
 
-  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet)
-    ([my go examples](https://github.com/JeffDeCola/my-go-examples))
-  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/python-cheat-sheet)
-    ([my python examples](https://github.com/JeffDeCola/my-python-examples))
+  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet),
+    [my go examples](https://github.com/JeffDeCola/my-go-examples)
+  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/python-cheat-sheet),
+    [my python examples](https://github.com/JeffDeCola/my-python-examples)
   * [my php examples](https://github.com/JeffDeCola/my-php-containers)
 
 * OPERATING SYSTEMS

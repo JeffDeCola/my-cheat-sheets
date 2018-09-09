@@ -563,7 +563,7 @@ git merge <BRANCH>
 git branch -d < BRANCH>
 ```
 
-## MERGE CONFLICTS
+### MERGE CONFLICTS
 
 Very simply, if you get conflicts,
 you can just manually edit each file.
@@ -581,6 +581,31 @@ nice for collaboration.
 ```bash
 git reset —hard <VERSION>
 git push —force
+```
+
+## TAGGING
+
+### LIGHTWEIGHT TAG
+
+Create a tag on latest commit,
+
+```bash
+git tag tagname
+```
+
+List all tags,
+
+```bash
+git tag
+git show tagname
+```
+
+### ANNOTATED TAG
+
+Has a lot more info associated with tag,
+
+```go
+git tag -a tagname -m "realease version 1.9"
 ```
 
 ## TO GET ALL CAUGHT UP

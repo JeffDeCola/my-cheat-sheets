@@ -8,7 +8,7 @@ The Data Types in go,
 * Boolean (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
 * Numeric (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
 * String (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
-* Derived
+* Derived (This Section Below)
   * Array
   * Slice
   * Map
@@ -22,20 +22,20 @@ The Data Types in go,
 
 Really just an array of a variable; a data structure.
 
-The basic format is,
+The basic verbose format is,
 
 ```
-name = [number]type{assignment, assignment....}
+var name = [number]type{value, value....}
 ```
 
 Here is the syntax,
 
 ```go
 
-// DECLARE
+// DECLARE TYPE
 var a [2]float32
 
-// ASSIGN
+// ASSIGN VALUE
 a[1] = 1.1
 a[2] = 2.0
 
@@ -88,20 +88,29 @@ func firstWord(str string) (word []byte) {
 ## SLICE (ARRAY SUB TYPE) (make)
 
 Making an initial array of n length long out of a
-total capacity,
+total capacity.
+
+The basic verbose format is,
+
+```
+var name = []type{value, value....}
+```
+
+Here is the syntax,
 
 ```go
-// DECLARE
+// DECLARE TYPE
 var a []float64
 
-// ASSIGN
+// ASSIGN VALUE / ADD TO SLICE
 a = append(a, 5.7)
 
 // DECLARE & ASSIGN
 var a = []float32{1.1, 2.0}                    // Verbose
-a = append(a, 5.7)                             // Append to same slice
 a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
-b := append(a, 5.7)                            // Append to different slice
+
+// ADD TO SLICE
+a := append(a, 5.7)                            // Append to different slice
 ```
 
 ## MAP (key:value)
@@ -109,11 +118,11 @@ b := append(a, 5.7)                            // Append to different slice
 Really key/value pairs, like a database.
 
 ```go
-// DECLARE
+// DECLARE TYPES
 var a = make(map[string]int)
 a := make(map[string]int)
 
-// ASSIGN
+// ASSIGN KEY:VALUE
 a["Jill"] = 23
 a["Bob"] = 34
 a["Mark"] = 28
@@ -133,20 +142,19 @@ a := map[string]int{                           // Array Shortcut Assignment
 
 ## STRUCT
 
-Elements of different types and start
-with capital letter.  Because
-anything with a capital letter is exported.
+Elements of different types and start with capital letter.
+Because anything with a capital letter is exported.
 
 ```go
-// CREATE
+// CREATE STRUCT TYPE
 type Rect struct {
     w, h float32
 }
 
-// DECLARE
+// DECLARE TYPE
 var r1 Rect
 
-// ASSIGN
+// ASSIGN VALUE
 r1.w = 6.1
 r1.h = 5.0
 
@@ -161,20 +169,20 @@ r := Rect{6.1, 5.0}                             // Shortcut Assignment
 A pointer is just a variable that holds the address (of memory)
 of a value.
 
-`*` is the "contents of"
-`&` is "address of"
+`*` is the `"contents of"`
+`&` is `"address of"`
 
 You can,
 
 ```go
 // CREATE A POINTER TYPE AND ASSIGN
 a := new(int)                                   // Create int pointer type
-*a = 9                                          // "Contents of a is 9"
+*a = 9                                          // "contents of a is 9"
 
 // ASSIGN A POINTER TO A TYPE
 a := 5                                          // If we have a var int 5
 b := &a                                         // b is the "address of" a
-// a == *b (both are 5)                         // "Contents of" b is a
+// a == *b (both are 5)                         // "contents of" b is a
 ```
 
 ![IMAGE - go pointers - IMAGE](../../../docs/pics/go-pointers.jpg)

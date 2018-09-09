@@ -1,32 +1,30 @@
 # DECLARATION & ASSIGNMENT
 
-Declaration is picking a name for a data type and optionally assigning
-that data type a value.
+* Declaration is picking a `name for a data type` and optionally `assigning a value`.
 
 ## VARIABLE
 
 A variable always has a single type and may be assigned.
 
-The basic format is,
+The basic verbose format is,
 
 ```
-var name type
-var name type = assignment
+var name type = value
 ```
 
 Here is the syntax,
 
 ```go
-    // DECLARE             
-    var a string
+// DECLARE TYPE             
+var a string
 
-    // ASSIGN
-    a = "happy"
+// ASSIGN VALUE
+a = "happy"
 
-    // DECLARE & ASSIGN
-    var a int32 = 22                                // Verbose
-    var a = 22                                      // Type Inference
-    a := 32                                         // Shortcut Assignment
+// DECLARE & ASSIGN
+var a int32 = 22                                // Verbose
+var a = 22                                      // Type Inference
+a := 32                                         // Shortcut Assignment
 ```
 
 ## SCOPE RULES
@@ -37,12 +35,20 @@ Here is the syntax,
 
 ## CONSTANT (LITERAL)
 
-Constants refer to fixed values that the program may not alter during its execution.
+Constants refer to fixed values that the program may
+not alter during its execution.
 
-For example, a string constant could be `"hello"`.
+The basic verbose format is,
+
+```
+const name type = value
+```
+
+Here is the syntax,
 
 ```go
-const variable type = value;
+const a float32 = 3.14                          // Must have Assignment
+const a = 22                                    // Type Inference
 ```
 
 Escape Sequences (really used in formatting are considered constants).
@@ -50,55 +56,57 @@ See [formating-types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/
 
 ## TYPE INFERENCE
 
-The compile will infer a type if none is giving
-based on your assignment.
+As seen above, the compile will infer a type (if none is giving)
+based on your assignment value.
 
 ```go
-var age = 42         // will infer an int
-var pi = 3.14        // Will infer a float64
-var cNum = 3 + 5i    // will infer a complex128
+var age = 42                                    // Will infer an int
+var pi = 3.14                                   // Will infer a float64
+var cNum = 3 + 5i                               // Will infer a complex128
 ```
 
 ## SHORTCUT ASSIGNMENT
 
-You may use the shortcut `:=`,
+Also, as seen above, you may use the shortcut `:=`
+the both infers a type and assigns a value,
 
 ```go
-x := 42
+x := 42                                         // Shortcut Assignment
 ```
 
-This is the same as,
+And to beat the dead horse, this is the same as,
 
 ```go
-var x int = 42;
-var x = 42;
+var x int = 42;                                 // Verbose
+var x = 42;                                     // Type Inference 
 ```
 
 Shortcuts can not be used outside a function.
 
 ## GROUPING VARIABLES
 
+The basic verbose format is,
+
 ```go
-var a string = "hello a"
-var b string = "hello b"
+var name1, name 2 ... type = value1, value2 ...
 ```
 
 Here is the syntax,
 
 ```go
-    // DECLARE
-    var a, b string
+// DECLARE TYPE             
+var a, b string
 
-    // ASSIGN
+// ASSIGN VALUE
+a = "hello a"
+b = "hello b"
+
+// DECLARE & ASSIGN
+var a, b string = "hello a", "hello b"          // Verbose
+var a, b = "hello a", "hello b"                 // Type Inference
+var (                                           // Parenthesis
     a = "hello a"
     b = "hello b"
-
-    // DECLARE & ASSIGN
-    var a, b string = "hello a", "hello b"          // Verbose
-    var a, b = "hello a", "hello b"                 // Type Inference
-    var (                                           // Parenthesis
-        a = "hello a"
-        b = "hello b"
-    )
-    a, b := "hello a", "hello b"                    // Group Shortcut Assignment
+)
+a, b := "hello a", "hello b"                    // Group Shortcut Assignment
 ```

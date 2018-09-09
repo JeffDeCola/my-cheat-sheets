@@ -6,3 +6,5 @@ are attached to data.
 ## BASIC FORMATS
 
 Using function as methods of structures?
+
+type
