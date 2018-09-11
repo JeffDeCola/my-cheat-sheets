@@ -36,7 +36,7 @@ Here is the syntax,
 ```go
 
 // DECLARE TYPE
-var a [2]float32
+var a [2]float32{}
 
 // ASSIGN VALUE
 a[1] = 1.1
@@ -162,9 +162,9 @@ r1.w = 6.1
 r1.h = 5.0
 
 // DECLARE & ASSIGN
-var r Rect = Rect{6.1, 5.0}                     // Verbose
-var r = Rect{6.1, 5.0}                          // Type Inference
-r := Rect{6.1, 5.0}                             // Shortcut Assignment
+var r1 Rect = Rect{6.1, 5.0}                    // Verbose
+var r1 = Rect{6.1, 5.0}                         // Type Inference
+r1 := Rect{6.1, 5.0}                            // Shortcut Assignment
 ```
 
 ## POINTER
@@ -186,6 +186,11 @@ a := new(int)                                   // Create int pointer type
 a := 5                                          // If we have a var int 5
 b := &a                                         // b is the "address of" a
 // a == *b (both are 5)                         // "contents of" b is a
+
+// ASSIGN A POINTER TO A STRUCT
+b := &r1                                        // From struct Rect above
+r1.w = 6.1                                      // I feel it should be *r1.w
+r1.h = 5.0                                      // I feel it should be *r1.h
 ```
 
 ![IMAGE - go pointers - IMAGE](../../../docs/pics/go-pointers.jpg)

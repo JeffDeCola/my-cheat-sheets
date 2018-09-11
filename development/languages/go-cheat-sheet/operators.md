@@ -10,7 +10,7 @@ mathematical or logical manipulations.
 * Assignment
 * Miscellaneous
 
-## ARIMETIC (MATH)
+## ARITHMETIC (MATH)
 
 * `+`
 * `-`

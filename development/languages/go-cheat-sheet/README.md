@@ -41,8 +41,7 @@ The cheat sheet is broken up into the following sections,
 
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
 
-* [VARIABLES & CONSTANTS]
-(https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/variables-and-constants.md)
+* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/variables-and-constants.md)
   * Declare Type and Assign Value
   * Variable
   * Constant / Literal
@@ -61,6 +60,22 @@ The cheat sheet is broken up into the following sections,
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
+* [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
+  * Basic Format
+  * Passing Parameters by Value (_Copy_) - - PARAMETER NOT CHANGED
+  * Passing Parameters by Reference (_Pointer_) - PARAMETER CHANGED
+
+* [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
+  * Basic Format
+  * Passing Struct by Value (_Copy_) - STRUCT NOT CHANGED
+  * Passing Struct by Reference (_Pointer_) - STRUCT CHANGED
+
+* [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)
+  * Basic Format
+
+* [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
+  * _goroutines_
+
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/operators.md)
   * Arithmetic (_Math_)
   * Relational (_Compare_)
@@ -74,20 +89,6 @@ The cheat sheet is broken up into the following sections,
   * Range
   * Conditional Statements / Decision Making (_if_/_else_, _switch_, _defer_, _select_)
 
-* [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
-  * Basic Format
-  * Passing Parameters by Value (_Copy_)
-  * Passing Parameters by Reference (_Pointer_)
-
-* [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
-  * Basic Format
-
-* [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)
-  * Basic Format
-
-* [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
-  * _goroutines_
-
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/error-handling.md)
 
 * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md)
@@ -100,15 +101,17 @@ The cheat sheet is broken up into the following sections,
 
 // DATA TYPES
 
-    // Boolean
+    // BOOLEAN
         // true, false
-    // Numeric
+
+    // NUMERIC
         // singed - int8, int16, int32, int64
         // unsigned - uint8 (byte), uint16, uint32 (rune) uint64
         // machine - int, uint, uintptr
         // float - float32, float64
         // complex - complex64, complex128
-    // String
+
+    // STRING
         // string
 
 // TYPE CONVERSION /  TYPE CASTING
@@ -155,7 +158,7 @@ The cheat sheet is broken up into the following sections,
 // ARRAY
 
     // DECLARE TYPE
-    var a [2]float32
+    var a [2]float32{}
 
     // ASSIGN VALUE
     a[1] = 1.1
@@ -218,9 +221,9 @@ The cheat sheet is broken up into the following sections,
     r1.h = 5.0
 
     // DECLARE & ASSIGN
-    var r Rect = Rect{6.1, 5.0}                     // Verbose
-    var r = Rect{6.1, 5.0}                          // Type Inference
-    r := Rect{6.1, 5.0}                             // Shortcut Assignment
+    var r1 Rect = Rect{6.1, 5.0}                    // Verbose
+    var r1 = Rect{6.1, 5.0}                         // Type Inference
+    r1 := Rect{6.1, 5.0}                            // Shortcut Assignment
 
 // POINTER
 
@@ -232,17 +235,54 @@ The cheat sheet is broken up into the following sections,
     a := 5                                          // If we have a var int 5
     b := &a                                         // b is the "address of" a
     // a == *b (both are 5)                         // "contents of" b is a
+    
+    // ASSIGN A POINTER TO A STRUCT
+    b := &r1                                        // From struct Rect above
+    r1.w = 6.1                                      // I wish it was *r1.w
+    r1.h = 5.0                                      // I wish it was *r1.h
 
 // FUNCTION
-                                                    // PARAMETERS
-    func name(a int) {                              // 1 in
-    func name(a, b int) int32 {                     // 2 in, 1 return
-    func name(name ...int) int {                    // Variadic in, 1 return
-    func name(a int, b string) (x int32) {          // 2 in, 1 NAMED return
-    func name(a, b int) (x int, y string) {         // 2 in, 2 NAMED return
+
+    // PASSING PARAMETERS BY VALUE (COPY) - PARAMETER NOT CHANGED
+        func name(a int) {                          // 1 in - You would never d
+        func name(a, b int) int32 {                 // 2 in, 1 return
+        func name(name ...int) int {                // Variadic in, 1 return
+        func name(a int, b string) (x int32) {      // 2 in, 1 NAMED return
+        func name(a, b int) (x int, y string) {     // 2 in, 2 NAMED return
+
+    // PASSING PARAMETERS BY REFERENCE (POINTER) - PARAMETER CHANGED
+        func name (a *int) {                        // In is a pointer, 0 return
+        func name (a *int) float32 {                // In is a pointer, 1 return
 
 // METHOD
 
+    // PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED
+        // Return area
+       func (r Rect) area() float32 {               // 0 in, 1 Return
+            return r.w * r.h
+        }
+        // Return scaled area
+        func (r Rect) scaleArea(s int) float32 {    // 1 in, 1 Return
+            return (r.w * r.h * float32(s))
+        }
+
+    // PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED
+        // Scale the struct by 2                    // 0 in, 0 return
+        func (r *Rect) scaleByTwo() {               
+            r.w = r.w * 2.0                         // I wish it was *r1.w
+            r.h = r.h * 2.0                         // I wish it was *r1.h
+        }
+        // Scale the struct by s                    // 1 in, 0 return
+        func (r *Rect) scaleStruct(s float64) {
+            r.w = r.w * float32(s)
+            r.h = r.h * float32(s)
+        }
+        // Scale the struct by s and return area    // 1 in, 1 return
+        func (r *Rect) scaleStructArea(s float64) float32 { 
+            r.w = r.w * float32(s)
+            r.h = r.h * float32(s)
+            return r.w * r.h
+        }
 
 // INTERFACE
 
@@ -251,6 +291,75 @@ The cheat sheet is broken up into the following sections,
 // CHANNEL
 
     ????
+
+// OPERATORS
+
+    // ARITHMETIC (MATH)
+        // +, i, *, /, %,  ++, --
+
+    // RELATIONAL (COMPARE)
+        // ==, !=, >, <, >=, <=
+
+    // LOGICAL (BOOLEAN)
+        // &&, ||, ! 
+
+    // BITWISE (BITS)
+        // &, |, ^, <<, >>
+
+    // ASSIGNMENT
+        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |= 
+
+    // MISCELLANEOUS
+        // &, *
+
+// CONTROL STRUCTURE / FLOW CONTROL
+
+    // LOOP
+
+    // IF
+
+
+// ERROR HANDLING
+
+
+// FORMAT SPECIFIERS
+
+    // VALUE OF DEFAULT FORMAT
+        // %v
+            // %t                                   // boolean
+            // %d                                   // signed
+            // %d                                   // unsigned
+            // %g                                   // float
+            // %g                                   // complex
+            // %s                                   // string
+            // %p                                   // pointer
+            // %p                                   // channel
+        // %#v                                      // Rep of the value
+        // %T                                       // Rep of the type of the value
+        // %%	                                    // a literal percent sign
+
+    // BOOLEAN
+        // %t
+    
+    // NUMERIC
+        // %b, %c, %d, %o, %q, %x, %V, %U           // signed, unsigned, machine
+        // %b, %e, %E, %f, %F, %g, %G               // float, complex
+        
+    // STRING
+        // $s, %q, %x, %X
+
+    // SLICE
+        // %p
+
+    // POINTER
+        // %p
+
+// ESCAPE SEQUENCES
+
+    // \n                                           // newline.
+    // \?                                           // The ? character.
+    // \b                                           // backspace.
+    // \"                                           // The " character.
 ```
 
 ## REFERENCES / DOCUMENTATION
