@@ -68,6 +68,9 @@ The cheat sheet is broken up into the following sections,
 
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)
   * Basic Format
+  * Making your code cleaner
+    * Without Interface
+    * With Interface
 
 * [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)
   * _goroutines_
@@ -292,7 +295,19 @@ The cheat sheet is broken up into the following sections,
 
 // INTERFACE
 
-    ????
+    type Describer interface {
+        describe()
+
+    type Cylinder struct {
+        radius float64
+        height float64
+    }
+
+    func (c Circle) describe() (area float64, circ float64) {
+        area = math.Pi * math.Pow(c.radius, 2)
+        circ = 2 * math.Pi * c.radius
+        return
+    }
 
 // CHANNEL
 
@@ -321,11 +336,25 @@ The cheat sheet is broken up into the following sections,
 // CONTROL STRUCTURE / FLOW CONTROL
 
     // LOOPS
+        // FOR LOOP
+        for i:=0; i < 8; i++ {
+            do something
+        }
+        // AS A WHILE LOOP
+        i :=0
+        for i < 8 {
+            do something
+            i++
+        }
 
     // RANGE
+    myarray := [3]{3,4,5}
+    for i := range myarray {
+        avg += myarray[i]
+    }
 
     // CONDITIONAL
-    
+
         // IF, IF / ELSE, NESTED IF
         if a == b {                                 // Relational / Compare operator
             fmt.Println("equal")
@@ -400,23 +429,44 @@ The cheat sheet is broken up into the following sections,
 
 ## REFERENCES / DOCUMENTATION
 
+### SYNTAX
+
 * [golang.org](http://golang.org)
   _- Home base for everything._
-* [The go playground](https://play.golang.org/)
-  _Lets you write, compile and share code.  Just awesome._
-* [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
-  _- A great summary of syntax._
 * [golang.org docs](https://golang.org/doc/)
   _- A good collection of docs._
-* [A tour of go](https://tour.golang.org/welcome/1)
+* [golang.org spec](https://golang.org/ref/spec)
+  _I'll be honest, way to much stuff to make your head spin._
+
+### RUNNING CODE
+
+* [golang.org go playground](https://play.golang.org/)
+  _Lets you write, compile and share code.  Just awesome._
+
+### TUTORIALS
+
+* [golang.org tour of go](https://tour.golang.org/welcome/1)
   _- A good place to start._
-* [Effective go](https://golang.org/doc/effective_go.html)
+* [golang.org effective go](https://golang.org/doc/effective_go.html)
   _- A must read to create great things._
+* [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
+  _- A great summary of syntax._
+* [gobyexample.com](https://gobyexample.com/)
+  _The title says it all._
+
+### PACKAGES
+
+* [godoc.org](https://godoc.org/)
+  _- Both standard and user packages._
+* [golang.org] https://golang.org/pkg/
+  _-Just official standard packages._
+
+### OTHER STUFF
+
 * [Go Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
   _- My cheat sheet on setting up
   [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
   with go._
-* [Go By Example](https://gobyexample.com/)
-  _The title says it all._
-* [The official spec](https://golang.org/ref/spec)
-  _I'll be honest, way to much stuff to make your head spin._
+
+
+
