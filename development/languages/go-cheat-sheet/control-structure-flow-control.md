@@ -42,14 +42,14 @@ for i := range myarray {
 
 Make decisions using boolean relational operators.
 
-* `if`
-* `if...else`
-* `nested if`
-* `switch`
+* `if`, `if / else`, `nested if`
+* `switch (case)`
 * `defer`
 * `select`
 
-### IF
+### IF, IF ELSE, NESTED IF
+
+Basic syntax is,
 
 ```go
 a, b := 2,2
@@ -59,7 +59,7 @@ if a == b {
 }
 ```
 
-### IF ELSE
+if else,
 
 ```go
 a, b := 4, 3
@@ -73,11 +73,9 @@ if a == b {
 }
 ```
 
-### NESTED IF
+Nested if is just putting an if in an if.
 
-Put if in an if.
-
-### SWTICH
+### SWITCH (CASE)
 
 Makes `else if` easier to read,
 
@@ -118,4 +116,3 @@ func main() {
 Useful if opening a file, you can put the cleanup first, before you do stuff.
 
 ### SELECT
-

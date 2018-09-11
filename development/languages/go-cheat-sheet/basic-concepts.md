@@ -1,10 +1,14 @@
 # BASIC CONCEPTS
 
 Go actually forces you to use a particular coding style.  This is a little
-painful at first, but actually good news in the long run since
+painful at first, but actually very good news in the long run since
 it makes everyone's code look and feel the same.
 
+Its also very fun to code.
+
 ## BASIC STRUCTURE OF GO
+
+A go program usually has the following things,
 
 * Package Declaration.
 * Import Packages.
@@ -20,7 +24,7 @@ it makes everyone's code look and feel the same.
 
 A `Line Separator` is a statment terminator.  It's like placing a `;`.
 
-`Comments` start with `/*` and end with `*/`.
+`Comments` start with `/*` and end with `*/` or use '//'.
 
 `Identifiers` is a name used to identify a variable, function or user defined term.
 

@@ -18,7 +18,7 @@ var name type = value
 Here is the syntax,
 
 ```go
-// DECLARE TYPE             
+// DECLARE TYPE
 var a string
 
 // ASSIGN VALUE
@@ -49,7 +49,7 @@ const a = 22                                    // Type Inference
 ```
 
 Escape Sequences (really used in formatting are considered constants).
-See [formating-types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md).
+See [formating types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md).
 
 ## SCOPE RULES
 
@@ -81,7 +81,7 @@ And to beat the dead horse, this is the same as,
 
 ```go
 var x int = 42;                                 // Verbose
-var x = 42;                                     // Type Inference 
+var x = 42;                                     // Type Inference
 ```
 
 Shortcuts can not be used outside a function.
@@ -97,7 +97,7 @@ var name1, name 2 ... type = value1, value2 ...
 Here is the syntax,
 
 ```go
-// DECLARE TYPE             
+// DECLARE TYPE
 var a, b string
 
 // ASSIGN VALUE

@@ -1,9 +1,5 @@
 # GO CHEAT SHEET
 
-```
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 `go` _is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
@@ -56,9 +52,9 @@ The cheat sheet is broken up into the following sections,
   * Map
   * Struct
   * Pointer
-  * Function /  Closure
-  * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Function Type /  Closure
+  * Interface Type
+  * Channel Type
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
@@ -92,8 +88,8 @@ The cheat sheet is broken up into the following sections,
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/error-handling.md)
 
 * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md)
-  * FORMAT INPUT (bufio.NewReader PACKAGE)
-  * FORMAT INPUT (fmt.Scan PACKAGE)
+  * Read Input (bufio.NewReader Package)
+  * Scan Input (fmt.Scan Package)
   * Format Specifiers
   * Escape Sequences
 
@@ -203,7 +199,7 @@ The cheat sheet is broken up into the following sections,
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
-    }     
+    }
     a := map[string]int{                           // Array Shortcut Assignment
         "Jill": 23,
         "Bob":  34,
@@ -239,11 +235,17 @@ The cheat sheet is broken up into the following sections,
     a := 5                                          // If we have a var int 5
     b := &a                                         // b is the "address of" a
     // a == *b (both are 5)                         // "contents of" b is a
-    
+
     // ASSIGN A POINTER TO A STRUCT
     b := &r1                                        // From struct Rect above
     r1.w = 6.1                                      // I wish it was *r1.w
     r1.h = 5.0                                      // I wish it was *r1.h
+
+// FUNCTION / CLOSURE TYPE
+
+// INTERFACE TYPE
+
+// CHANNEL TYPE
 
 // FUNCTION
 
@@ -272,7 +274,7 @@ The cheat sheet is broken up into the following sections,
 
     // PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED
         // Scale the struct by 2                    // 0 in, 0 return
-        func (r *Rect) scaleByTwo() {               
+        func (r *Rect) scaleByTwo() {
             r.w = r.w * 2.0                         // I wish it was *r1.w
             r.h = r.h * 2.0                         // I wish it was *r1.h
         }
@@ -282,7 +284,7 @@ The cheat sheet is broken up into the following sections,
             r.h = r.h * float32(s)
         }
         // Scale the struct by s and return area    // 1 in, 1 return
-        func (r *Rect) scaleStructArea(s float64) float32 { 
+        func (r *Rect) scaleStructArea(s float64) float32 {
             r.w = r.w * float32(s)
             r.h = r.h * float32(s)
             return r.w * r.h
@@ -305,13 +307,13 @@ The cheat sheet is broken up into the following sections,
         // ==, !=, >, <, >=, <=
 
     // LOGICAL (BOOLEAN)
-        // &&, ||, ! 
+        // &&, ||, !
 
     // BITWISE (BITS)
         // &, |, ^, <<, >>
 
     // ASSIGNMENT
-        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |= 
+        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |=
 
     // MISCELLANEOUS
         // &, *
@@ -322,16 +324,36 @@ The cheat sheet is broken up into the following sections,
 
     // RANGE
 
-    // IF
+    // CONDITIONAL
+    
+        // IF, IF / ELSE, NESTED IF
+        if a == b {                                 // Relational / Compare operator
+            fmt.Println("equal")
+        } else if a > b {
+            fmt.Println("higher")
+        } else {
+            fmt.Println("Lower")
+        }
 
-    // DEFER
-    func main() {
-        defer fmt.Println("world")
-        fmt.Println("hello")
-    }
+        // SWITCH (CASE)
+        switch {
+        case (a == b):
+            fmt.Println("equal")
+        case (a > b):
+            fmt.Println("higher")
+        default:
+            fmt.Println("Lower")
+        }
+
+        // DEFER
+        func main() {
+            defer fmt.Println("world")
+            fmt.Println("hello")
+        }
+
+        // SELECT
 
 // ERROR HANDLING
-
 
 // FORMAT SPECIFIERS
 
@@ -347,15 +369,15 @@ The cheat sheet is broken up into the following sections,
             // %p                                   // channel
         // %#v                                      // Rep of the value
         // %T                                       // Rep of the type of the value
-        // %%	                                    // a literal percent sign
+        // %%                                       // a literal percent sign
 
     // BOOLEAN
         // %t
-    
+
     // NUMERIC
         // %b, %c, %d, %o, %q, %x, %V, %U           // signed, unsigned, machine
         // %b, %e, %E, %f, %F, %g, %G               // float, complex
-        
+
     // STRING
         // $s, %q, %x, %X
 
@@ -380,6 +402,8 @@ The cheat sheet is broken up into the following sections,
 
 * [golang.org](http://golang.org)
   _- Home base for everything._
+* [The go playground](https://play.golang.org/)
+  _Lets you write, compile and share code.  Just awesome._
 * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
   _- A great summary of syntax._
 * [golang.org docs](https://golang.org/doc/)
@@ -395,4 +419,4 @@ The cheat sheet is broken up into the following sections,
 * [Go By Example](https://gobyexample.com/)
   _The title says it all._
 * [The official spec](https://golang.org/ref/spec)
-  _ I'll be honest, way to much stuff to make your head spin._
+  _I'll be honest, way to much stuff to make your head spin._

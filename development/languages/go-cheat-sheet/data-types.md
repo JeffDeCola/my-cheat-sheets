@@ -2,11 +2,10 @@
 
 Types or data types are a classification of data,
 that tells the compiler how to use that data.
-
 It also tells the computer how much space the data type
 occupies and how the bit pattern is stored.
 
-The Data Types in go are,
+The data types in go are,
 
 * Boolean
 * Numeric
@@ -17,20 +16,21 @@ The Data Types in go are,
   * Map
   * Struct
   * Pointer
-  * Function (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)_)
-  * Interface (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)_)
-  * Channel (_See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md)_)
+  * Function Type
+  * Interface Type
+  * Channel Type
 
 ## BOOLEAN
 
 * `true`
 * `false`
 
-Boolean uses logical operators
+Boolean uses [logical operators](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/operators.md#logical-boolean).
 
 * `&&`, `||`, `!`
 
-Relational Operators returns a boolean (true or false)
+[Relational operators](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/operators.md#relational-compare)
+returns a boolean (true or false).
 
 * `==`, `!=`, `<`, `>`, `>=`, `<=`
 

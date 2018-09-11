@@ -9,7 +9,7 @@ View my entire list of cheat sheets on
 ## INSTALL METHODS
 
 There are four basic methods to install software, each having
-their own strengths and drawbacks,
+their own strengths and weaknesses,
 
 * [SOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#source)
 * [BINARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/software-install-methods-cheat-sheet#binary)
@@ -42,10 +42,14 @@ since they are much more then just installation (e.g. _BOSH and
 Linux systems use packages, that contains everything a particular
 program needs to run. (e.g. _`apt-get` is used in ubuntu_).
 
-## VIRTUAL MACHINES / CONTAINERS
+## VIRTUAL MACHINE / CONTAINER
 
 Sometimes its easier just to grab a virtual machine or container
-where someone who has already done all the work.
+where someone has already done all, if not most of the work.
+
+This solution is good for a quick startup to get yourself going, but
+not really good for a long term solution since software updates,
+provisioning can be really tricky.
 
 For example, [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/vagrant-cheat-sheet)
 will allow you to quickly fire up a VM.

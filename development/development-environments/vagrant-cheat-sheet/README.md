@@ -28,7 +28,7 @@ vagrant version
 ## FIND BOXES
 
 Search for vagrant boxes at
-[vagrant box search](https://app.vagrantup.com/boxes/search)
+[vagrant box search](https://app.vagrantup.com/boxes/search).
 
 ## VAGRANTFILE
 
