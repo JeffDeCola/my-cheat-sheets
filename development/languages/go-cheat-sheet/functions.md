@@ -7,7 +7,7 @@ Functions stand on their own, a black box.
 The basic format is,
 
 ```txt
-func name(parameter list - optional)(return type - optional) {
+func name(parameter list optional) return type optional {
     stuff
 }
 ```
@@ -38,7 +38,7 @@ func swap(a, b int) (int, int) {
 }
 ```
 
-Name your returned parameters,
+Named returns,
 
 ```go
 func swap(a, b int) (x int, y int) {
@@ -50,13 +50,11 @@ func swap(a, b int) (x int, y int) {
 
 ![IMAGE - go function passing by reference and value - IMAGE](../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
 
-### PASSING PARAMETERS BY VALUE (COPY)
+### PASSING PARAMETERS BY VALUE (COPY) - PARAMETER NOT CHANGED
 
-Passes a copy of that value.
+Passes a copy of the parameter's value and gets something back (return).
 
-So if I alter the value inside a function
-it will not change it outside the function.
-
+Will not change the value of the parameter that was passed.
 
 ```go
 a := 33
@@ -67,10 +65,10 @@ func negateValue(i int) int {
 }
 ```
 
-### PASSING PARAMETERS BY REFERENCE (POINTER)
+### PASSING PARAMETERS BY REFERENCE (POINTER) - PARAMETER CHANGED
 
-Passes the reference (pointer) instead
-so we can change the type in the function.
+Passes the reference (pointer) of the parameter so we can change
+the value of the parameter itself (return not necessary),
 
 ```go
 a := 33

@@ -34,7 +34,15 @@ There is a large list [here](https://golang.org/pkg/fmt/).
 
 Some of the common ones,
 
-* `%v` all types - the value in a default format.
+* `%v` Default format.
+  * boolean - %t
+  * signed - %d
+  * unsigned - %d
+  * float -%g
+  * complex - %g
+  * string - %s
+  * pointer - %p
+  * channel - %p
 * `%s` string - the uninterpreted bytes of the string or slice.
 * `%f` floating point - decimal point but no exponent, e.g. 123.456.
 * `%p` slice - address of 0th element in base 16 notation, with leading 0.
