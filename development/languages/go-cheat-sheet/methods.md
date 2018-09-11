@@ -5,14 +5,14 @@ are attached to data.
 
 A method is a function with a special receiver argument.
 
-That's great definitions, but I like to think of methods as
-`doing something with (pass value) or to (pass reference) structs data`.
+That's a great definitions, but I like to think of methods as
+`doing something with (pass value) or to (pass reference) a structs data`.
 
 ## BASIC FORMATS
 
 The basic format is,
 
-```txt
+```
 func (receiver) name(parameter list optional) return type optional {
     stuff
 }
@@ -20,8 +20,7 @@ func (receiver) name(parameter list optional) return type optional {
 
 ## PASSING PARAMETERS
 
-As with functions, you can still pass the struct
-by value or reference.
+As with functions, you can pass the struct by value or reference.
 
 Giving this struct,
 
@@ -55,8 +54,8 @@ func (r Rect) scaleArea(s int) float32 {
 Passes the reference (pointer) of the struct so we can change
 the values of the struct itself (return not necessary),
 
-NOTE: WITH STRUCT POINTERS, YOU DO NOT NEED TO HAVE
-SYNTAX *r.w or *r.h.  I'm not sure I like this since
+NOTE: For some reason, struct pointer don't need to use the syntax
+`*r.w` or `*r.h`.  I'm not sure I like this since
 I like to know I'm working on the "contents of" a pointer.
 
 ```go

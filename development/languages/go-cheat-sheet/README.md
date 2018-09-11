@@ -62,13 +62,13 @@ The cheat sheet is broken up into the following sections,
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
-  * Passing Parameters by Value (_Copy_) - - PARAMETER NOT CHANGED
-  * Passing Parameters by Reference (_Pointer_) - PARAMETER CHANGED
+  * Passing Parameters by Value (_Copy_) - Parameter not Changed
+  * Passing Parameters by Reference (_Pointer_) - Parameter Changed
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
-  * Passing Struct by Value (_Copy_) - STRUCT NOT CHANGED
-  * Passing Struct by Reference (_Pointer_) - STRUCT CHANGED
+  * Passing Struct by Value (_Copy_) - Struct not Changed
+  * Passing Struct by Reference (_Pointer_) - Struct Changed
 
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)
   * Basic Format
