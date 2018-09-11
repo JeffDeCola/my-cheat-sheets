@@ -30,9 +30,9 @@ for i < 8 {
 
 When we're not really sure how much in our array.
 
+```go
 myarray := [3]{3,4,5}
 
-```
 for i := range myarray {
     avg += myarray[i]
 }
@@ -103,13 +103,13 @@ default:
 
 ### DEFER
 
-
-A defer statement defers the execution of a function until the surrounding function returns.
+A defer statement defers the execution of a function until the surrounding
+function returns.
 
 ```go
 func main() {
-	defer fmt.Println("world")
-	fmt.Println("hello")
+    defer fmt.Println("world")
+    fmt.Println("hello")
 }
 ```
 

@@ -11,7 +11,7 @@ reader := bufio.NewReader(os.Stdin)
 fmt.Print("Enter a String")
 str, err := reader.ReadString('\n')
 if err != nil {
-	panic("error: newline not found")
+    panic("error: newline not found")
 }
 
 fmt.Println(str)

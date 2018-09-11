@@ -7,7 +7,7 @@ Implementing the same verb in a different way.
 
 It makes your code cleaner.
 
-## BASIC FORMATS
+## BASIC FORMAT
 
 End interface names with `er`.
 
@@ -20,13 +20,90 @@ type name interface {
 
 ## MAKING YOUR CODE CLEANER
 
-![IMAGE - go function passing by reference and value - IMAGE](../../../docs/pics/go-with-and-without-interfaces.jpg)
+Giving the following structs,
 
-## WITHOUT INTERFACE
+```go
+type Circle struct {
+	radius float64
+}
 
-## WITH INTERFACE
+type Cylinder struct {
+	radius float64
+	height float64
+}
+```
 
+### WITHOUT INTERFACE
 
+You would make a method for each thing you wanted
+to do with the data (e.g. area, volume, circumference, etc...)
 
+```go
+// Return circle area
+func (c Circle) areaCircle() float64 {
+	return math.Pi * math.Pow(c.radius, 2)
+}
 
+// Return circle circumference
+func (c Circle) circCircle() float64 {
+	return 2 * math.Pi * c.radius
+}
 
+// Return cylinder volume
+func (c Cylinder) volCylinder() float64 {
+	return math.Pi * math.Pow(c.radius, 2) * c.height
+}
+
+// Return cylinder circumference
+func (c Cylinder) circCylinder() float64 {
+	return 2 * math.Pi * c.radius
+}
+```
+
+And use them as,
+
+```go
+	myCircle := Circle{5}
+	myCylinder := Cylinder{5, 3}
+
+	areaCircle := myCircle.areaCircle()
+	circCircle := myCircle.circCircle()
+	volCylinder := myCylinder.volCylinder()
+	circCylinder := myCylinder.circCylinder()
+```
+
+### WITH INTERFACE
+
+But we can make the code neater if we make an interface,
+
+```go
+type Describer interface {
+	describe()
+}
+```
+
+And create the methods attached to the interface as,
+
+```go
+func (c Circle) describe() (area float64, circ float64) {
+	area = math.Pi * math.Pow(c.radius, 2)
+	circ = 2 * math.Pi * c.radius
+	return
+}
+
+func (c Cylinder) describe() (volume float64, circ float64) {
+	volume = math.Pi * math.Pow(c.radius, 2) * c.height
+	circ = 2 * math.Pi * c.radius
+	return
+}
+```
+
+And use them as,
+
+```go
+myCircle := Circle{5}
+myCylinder := Cylinder{5, 3}
+
+areaCircle, circCircle := myCircle.describe()
+volCylinder, circCylinder := myCylinder.describe()
+```

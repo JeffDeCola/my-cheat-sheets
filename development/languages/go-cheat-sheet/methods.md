@@ -6,6 +6,7 @@ are attached to data (struct).
 A method is a function with a special receiver argument.
 
 These are great definitions, but I like to think of methods as,
+
 * Doing something with (pass value) a structs data.
 * Doing something to (pass reference) a structs data.
 
