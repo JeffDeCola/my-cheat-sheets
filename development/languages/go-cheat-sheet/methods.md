@@ -1,12 +1,13 @@
 # METHODS
 
 Methods, unlike functions which stand on their own,
-are attached to data. 
+are attached to data (struct).
 
 A method is a function with a special receiver argument.
 
-That's a great definitions, but I like to think of methods as
-`doing something with (pass value) or to (pass reference) a structs data`.
+These are great definitions, but I like to think of methods as,
+* Doing something with (pass value) a structs data.
+* Doing something to (pass reference) a structs data.
 
 ## BASIC FORMATS
 
@@ -27,7 +28,7 @@ Giving this struct,
 ```go
 // Rect is a rectangle
 type Rect struct {
-	w, h float32
+    w, h float32
 }
 ```
 
@@ -42,12 +43,12 @@ Get something back (return),
 ```go
 // Return area
 func (r Rect) area() float32 {
-	return r.w * r.h
+    return r.w * r.h
 }
 
 // Return scaled area
 func (r Rect) scaleArea(s int) float32 {
-	return (r.w * r.h * float32(s))
+    return (r.w * r.h * float32(s))
 }
 ```
 
@@ -78,21 +79,21 @@ I like to know I'm working on the "contents of" a pointer.
 ```go
 // Scale the struct by 2
 func (r *Rect) scaleByTwo() {
-	r.w = r.w * 2.0
-	r.h = r.h * 2.0
+    r.w = r.w * 2.0                                     // I wish this was *r.w
+    r.h = r.h * 2.0                                     // I wish this was *r.h
 }
 
 // Scale the struct by s
 func (r *Rect) scaleStruct(s float64) {
-	r.w = r.w * float32(s)
-	r.h = r.h * float32(s)
+    r.w = r.w * float32(s)
+    r.h = r.h * float32(s)
 }
 
 // Scale the struct by s and return the area
 func (r *Rect) scaleStructArea(s float64) float32 {
-	r.w = r.w * float32(s)
-	r.h = r.h * float32(s)
-	return r.w * r.h
+    r.w = r.w * float32(s)
+    r.h = r.h * float32(s)
+    return r.w * r.h
 }
 ```
 

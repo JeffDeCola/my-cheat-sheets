@@ -6,20 +6,20 @@ special variables built on the basic three data types
 
 So you still need to declare type and assign value.
 
-The Data Types in go,
+The data types in go,
 
 * Boolean (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
 * Numeric (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
 * String (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/data-types.md))
-* Derived (This Section Below)
+* Derived (This Section)
   * Array
   * Slice
   * Map
   * Struct
   * Pointer
-  * Function
-  * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Function Type
+  * Interface Type
+  * Channel Type
 
 ## ARRAY
 
@@ -146,7 +146,7 @@ a := map[string]int{                           // Array Shortcut Assignment
 ## STRUCT
 
 Elements of different types and start with capital letter.
-Because anything with a capital letter is exported.
+Anything with a capital letter is exported.
 
 ```go
 // CREATE STRUCT TYPE
@@ -200,10 +200,10 @@ Cool uses for pointers are,
 * Allocate space for a variable.
 * Pass by reference to a function to change parameters value outside function.
 
-## FUNCTION / CLOSURE
+## FUNCTION / CLOSURE TYPE
 
 When used in a function, acts just like a type.
-So I can use the variables int the fnction it lives.
+So I can use the variables int the function it lives.
 
 ```go
 
@@ -213,3 +213,7 @@ add := func() int {
     return a + b
 }
 ```
+
+## INTERFACE TYPE
+
+## CHANNEL TYPE

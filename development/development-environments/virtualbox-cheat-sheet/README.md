@@ -54,8 +54,9 @@ reboot
 
 ## DRAG AND DROP
 
-Must have a shared folder enables in vagrant box settings
-for the particular VM.
+Must have a shared folder enabled in vagrant box settings
+for your particular VM.  Also, you must have guess additions
+installed.
 
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
@@ -65,7 +66,7 @@ See your network devices and their configurations,
 ifconfig -a
 ```
 
-Note, that newer version of ubuntu have changed `eth0` / `eth1`
+Note, that newer versions of ubuntu have changed `eth0` / `eth1`
 to interface names like `enp0s3`.
 
 Configure your network configuration file

@@ -2,7 +2,7 @@
 
 How to make the output look pretty.
 
-## FORMAT INPUT (bufio.NewReader PACKAGE)
+## READ INPUT (bufio.NewReader PACKAGE)
 
 Get an enter string as input,
 
@@ -17,7 +17,7 @@ if err != nil {
 fmt.Println(str)
 ```
 
-## FORMAT INPUT (fmt.Scan PACKAGE)
+## SCAN INPUT (fmt.Scan PACKAGE)
 
 ```go
 word1, word2 := "", ""
