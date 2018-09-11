@@ -105,5 +105,17 @@ default:
 
 ### DEFER
 
+
+A defer statement defers the execution of a function until the surrounding function returns.
+
+```go
+func main() {
+	defer fmt.Println("world")
+	fmt.Println("hello")
+}
+```
+
+Useful if opening a file, you can put the cleanup first, before you do stuff.
+
 ### SELECT
 
