@@ -17,7 +17,7 @@ The Data Types in go,
   * Map
   * Struct
   * Pointer
-  * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
+  * Function
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
@@ -199,3 +199,17 @@ Cool uses for pointers are,
 
 * Allocate space for a variable.
 * Pass by reference to a function to change parameters value outside function.
+
+## FUNCTION / CLOSURE
+
+When used in a function, acts just like a type.
+So I can use the variables int the fnction it lives.
+
+```go
+
+a, b := 3, 9
+
+add := func() int {
+    return a + b
+}
+```

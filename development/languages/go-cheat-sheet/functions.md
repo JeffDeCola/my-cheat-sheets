@@ -50,7 +50,7 @@ func swap(a, b int) (x int, y int) {
 
 ![IMAGE - go function passing by reference and value - IMAGE](../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
 
-### PASSING PARAMETERS BY VALUE (COPY) - PARAMETER NOT CHANGED
+### PASSING PARAMETERS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED
 
 Passes a copy of the parameter's value and gets something back (return).
 
@@ -65,7 +65,7 @@ func negateValue(i int) int {
 }
 ```
 
-### PASSING PARAMETERS BY REFERENCE (POINTER) - PARAMETER CHANGED
+### PASSING PARAMETERS TO FUNCTION BY REFERENCE (POINTER) - PARAMETER CHANGED
 
 Passes the reference (pointer) of the parameter so we can change
 the value of the parameter itself (return not necessary),

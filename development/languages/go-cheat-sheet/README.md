@@ -29,7 +29,7 @@ The cheat sheet is broken up into the following sections,
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/basic-concepts.md)
   * Basic Structure of go
   * Basic Syntax
-  * Packages
+  * Packages (Also see own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/packages.md))
   * _run_
   * _build_
   * _install_
@@ -56,19 +56,19 @@ The cheat sheet is broken up into the following sections,
   * Map
   * Struct
   * Pointer
-  * Function (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md))
+  * Function /  Closure
   * Interface (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (See own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
-  * Passing Parameters by Value (_Copy_) - Parameter not Changed
-  * Passing Parameters by Reference (_Pointer_) - Parameter Changed
+  * Passing Parameters to Function by Value (_Copy_) - Parameter not Changed
+  * Passing Parameters to Function by Reference (_Pointer_) - Parameter Changed
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
-  * Passing Struct by Value (_Copy_) - Struct not Changed
-  * Passing Struct by Reference (_Pointer_) - Struct Changed
+  * Passing Struct to Method by Value (_Copy_) - Struct not Changed
+  * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
 
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/interfaces.md)
   * Basic Format
@@ -92,8 +92,12 @@ The cheat sheet is broken up into the following sections,
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/error-handling.md)
 
 * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/formating-types.md)
+  * FORMAT INPUT (bufio.NewReader PACKAGE)
+  * FORMAT INPUT (fmt.Scan PACKAGE)
   * Format Specifiers
   * Escape Sequences
+
+* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/languages/go-cheat-sheet/packages.md)
 
 ## GO SYNTAX OVERVIEW
 
@@ -314,10 +318,17 @@ The cheat sheet is broken up into the following sections,
 
 // CONTROL STRUCTURE / FLOW CONTROL
 
-    // LOOP
+    // LOOPS
+
+    // RANGE
 
     // IF
 
+    // DEFER
+    func main() {
+        defer fmt.Println("world")
+        fmt.Println("hello")
+    }
 
 // ERROR HANDLING
 
@@ -360,18 +371,28 @@ The cheat sheet is broken up into the following sections,
     // \?                                           // The ? character.
     // \b                                           // backspace.
     // \"                                           // The " character.
+
+// PACKAGES
+
 ```
 
 ## REFERENCES / DOCUMENTATION
 
-* [golang.org](http://golang.org) _- Home base for everything._
+* [golang.org](http://golang.org)
+  _- Home base for everything._
 * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
   _- A great summary of syntax._
-* [golang.org docs](https://golang.org/doc/) _- A good collection of docs._
-* [A tour of go](https://tour.golang.org/welcome/1) _- A good place to start._
+* [golang.org docs](https://golang.org/doc/)
+  _- A good collection of docs._
+* [A tour of go](https://tour.golang.org/welcome/1)
+  _- A good place to start._
 * [Effective go](https://golang.org/doc/effective_go.html)
   _- A must read to create great things._
-* [Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
-  _- I use
+* [Go Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
+  _- My cheat sheet on setting up
   [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
-  ._
+  with go._
+* [Go By Example](https://gobyexample.com/)
+  _The title says it all._
+* [The official spec](https://golang.org/ref/spec)
+  _ I'll be honest, way to much stuff to make your head spin._
