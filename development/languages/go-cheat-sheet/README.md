@@ -458,15 +458,15 @@ The cheat sheet is broken up into the following sections,
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages._
-* [golang.org] https://golang.org/pkg/
+* [golang.org](https://golang.org/pkg/)
   _-Just official standard packages._
 
 ### OTHER STUFF
 
 * [Go Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
   _- My cheat sheet on setting up
-  [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
-  with go._
+  [setting up visual studio code with go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
+  ._
 
 
 

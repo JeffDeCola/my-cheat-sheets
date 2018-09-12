@@ -59,7 +59,7 @@ Just puts the executable in a temp location, then deletes it.
 ## BUILD
 
 Compiles packages and dependencies (does not install results)
-and saves your binary,
+and saves your binary in current directory,
 
 ```bash
 go build hello.go
