@@ -56,7 +56,7 @@ The following diagram illustrates compase running a task called seach-and-replac
 
 If you want to store 'state', use a resource to send it offsite.
 
-![IMAGE - concourse cheat sheet structure - IMAGE](../../../docs/pics/Concourse-structure.jpg)
+![IMAGE - concourse cheat sheet structure - IMAGE](../../../../docs/pics/Concourse-structure.jpg)
 
 ## CREATING YOUR FIRST PIPELINE
 
