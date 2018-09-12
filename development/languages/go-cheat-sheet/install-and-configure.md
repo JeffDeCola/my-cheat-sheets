@@ -66,3 +66,11 @@ On a side note, my cheat sheet
 [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/development-environments/visual-studio-code-cheat-sheet)
 explains `how to setup VS Code on Windows with the Go Extensions
 and a bash terminal`.  Say that ten times fast.
+
+## CHECK
+
+Check your go paths,
+
+```bash
+go env
+```

@@ -4,9 +4,15 @@
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
-for various Apps and tools for the goal of creating a service._
+on Hardware and Software for various Apps and tools
+for the goal of creating a service._
 
-I organized everything into three main sections,
+I organized the hardware in two sections,
+
+* DEVELOPMENT
+* TOOLS
+
+I organized the software into three sections,
 
 * DEVELOPMENT
 * INFRASTRUCTURE AS A SERVICE (IaaS)
@@ -17,9 +23,33 @@ These cheat sheets contain info I gathered from other sources.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## MY CHEAT SHEETS
+## HARDWARE CHEAT SHEETS
 
-All sections in alphabetical order.
+### DEVELOPMENT
+
+* HARDWARE ARCHITECTURES
+
+  * coming soon
+
+* LANGUAGES
+
+  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/development/hardware-languages/system-verilog-cheat-sheet)
+
+### TOOLS
+
+* SIMULATION
+
+  * Coming soon
+
+* SYNTHESIS
+
+  * coming soon
+
+* TIMING
+
+  * coming soon
+
+## SOFTWARE CHEAT SHEETS
 
 ### DEVELOPMENT
 
@@ -123,7 +153,7 @@ All sections in alphabetical order.
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/operations-tools/telemetry/stackdriver-cheat-sheet)
 
-## VISUAL OVERVIEW
+### VISUAL OVERVIEW OF SOFTWARE CREATING A SERVICE
 
 Here is my concept on how various Apps and tools fit together
 for the goal of creating a service.

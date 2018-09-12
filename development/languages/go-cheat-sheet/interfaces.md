@@ -24,12 +24,12 @@ Giving the following structs,
 
 ```go
 type Circle struct {
-	radius float64
+    radius float64
 }
 
 type Cylinder struct {
-	radius float64
-	height float64
+    radius float64
+    height float64
 }
 ```
 
@@ -41,35 +41,35 @@ to do with the data (e.g. area, volume, circumference, etc...)
 ```go
 // Return circle area
 func (c Circle) areaCircle() float64 {
-	return math.Pi * math.Pow(c.radius, 2)
+    return math.Pi * math.Pow(c.radius, 2)
 }
 
 // Return circle circumference
 func (c Circle) circCircle() float64 {
-	return 2 * math.Pi * c.radius
+    return 2 * math.Pi * c.radius
 }
 
 // Return cylinder volume
 func (c Cylinder) volCylinder() float64 {
-	return math.Pi * math.Pow(c.radius, 2) * c.height
+    return math.Pi * math.Pow(c.radius, 2) * c.height
 }
 
 // Return cylinder circumference
 func (c Cylinder) circCylinder() float64 {
-	return 2 * math.Pi * c.radius
+    return 2 * math.Pi * c.radius
 }
 ```
 
 And use them as,
 
 ```go
-	myCircle := Circle{5}
-	myCylinder := Cylinder{5, 3}
+    myCircle := Circle{5}
+    myCylinder := Cylinder{5, 3}
 
-	areaCircle := myCircle.areaCircle()
-	circCircle := myCircle.circCircle()
-	volCylinder := myCylinder.volCylinder()
-	circCylinder := myCylinder.circCylinder()
+    areaCircle := myCircle.areaCircle()
+    circCircle := myCircle.circCircle()
+    volCylinder := myCylinder.volCylinder()
+    circCylinder := myCylinder.circCylinder()
 ```
 
 ### WITH INTERFACE
@@ -78,7 +78,7 @@ But we can make the code neater if we make an interface,
 
 ```go
 type Describer interface {
-	describe()
+    describe()
 }
 ```
 
@@ -86,15 +86,15 @@ And create the methods attached to the interface as,
 
 ```go
 func (c Circle) describe() (area float64, circ float64) {
-	area = math.Pi * math.Pow(c.radius, 2)
-	circ = 2 * math.Pi * c.radius
-	return
+    area = math.Pi * math.Pow(c.radius, 2)
+    circ = 2 * math.Pi * c.radius
+    return
 }
 
 func (c Cylinder) describe() (volume float64, circ float64) {
-	volume = math.Pi * math.Pow(c.radius, 2) * c.height
-	circ = 2 * math.Pi * c.radius
-	return
+    volume = math.Pi * math.Pow(c.radius, 2) * c.height
+    circ = 2 * math.Pi * c.radius
+    return
 }
 ```
 
