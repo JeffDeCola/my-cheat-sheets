@@ -17,9 +17,9 @@ The data types in go,
   * Map
   * Struct
   * Pointer
-  * Function Type
-  * Interface Type
-  * Channel Type
+  * Function (as a type)
+  * Interface
+  * Channel
 
 ## ARRAY
 
@@ -44,7 +44,7 @@ a[2] = 2.0
 
 // DECLARE & ASSIGN
 var a = [2]float32{1.1, 2.0}                    // Verbose
-a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
+a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
 ```
 
 Here is printing an array,
@@ -108,7 +108,7 @@ var a []float64
 // ASSIGN VALUE / ADD TO SLICE
 a = append(a, 5.7)
 
-// DECLARE & ASSIGN
+// DECLARE & ASSIGN (INITIALIZE)
 var a = []float32{1.1, 2.0}                    // Verbose
 a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
 
@@ -122,25 +122,28 @@ Really key/value pairs, like a database.
 
 ```go
 // DECLARE TYPES
-var a = make(map[string]int)
-a := make(map[string]int)
+var m1 = make(map[string]int)
+m2 := make(map[string]int)
 
 // ASSIGN KEY:VALUE
-a["Jill"] = 23
-a["Bob"] = 34
-a["Mark"] = 28
+m1["Jill"] = 23
+m1["Bob"] = 34
+m1["Mark"] = 28
+m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
 // DECLARE & ASSIGN
-var a = map[string]int{                        // Verbose
+var m3 = map[string]int{                        // Verbose
     "Jill": 23,
-    "Bob":  34,
-    "Mark": 28,
+	"Bob":  34,
+	"Mark": 28,
 }
-a := map[string]int{                           // Array Shortcut Assignment
-    "Jill": 23,
-    "Bob":  34,
-    "Mark": 28,
+m4 := map[string]int{                           // Array Shortcut Assignment
+	"Jill": 23,
+	"Bob":  34,
+	"Mark": 28,
 }
+
+fmt.Println(m1, m2, m3, m4)
 ```
 
 ## STRUCT
@@ -156,15 +159,20 @@ type Rect struct {
 
 // DECLARE TYPE
 var r1 Rect
+r2 := new(Rect)                                 // Returns Pointer
 
-// ASSIGN VALUE
+// ASSIGN VALUE TO FIELDS
 r1.w = 6.1
 r1.h = 5.0
+r2.w, r2.h = 6.1, 6.0
 
-// DECLARE & ASSIGN
-var r1 Rect = Rect{6.1, 5.0}                    // Verbose
-var r1 = Rect{6.1, 5.0}                         // Type Inference
-r1 := Rect{6.1, 5.0}                            // Shortcut Assignment
+// DECLARE & ASSIGN (INITIALIZE)
+var r3 Rect = Rect{6.1, 5.0}                    // Verbose
+var r4 = Rect{6.1, 5.0}                         // Type Inference
+r5 := Rect{w: 6.1, h: 5.0}                      // Shortcut Assignment
+r6 := Rect{6.1, 5.0}                            // Shortcut Assignment
+
+fmt.Println(r1, *r2, r3, r4, r5, r6)
 ```
 
 ## POINTER
@@ -185,6 +193,7 @@ a := new(int)                                   // Create int pointer type
 // ASSIGN A POINTER TO A TYPE
 a := 5                                          // If we have a var int 5
 b := &a                                         // b is the "address of" a
+// var b *int = &a                              // Long form way to write this
 // a == *b (both are 5)                         // "contents of" b is a
 
 // ASSIGN A POINTER TO A STRUCT
@@ -200,7 +209,25 @@ Cool uses for pointers are,
 * Allocate space for a variable.
 * Pass by reference to a function to change parameters value outside function.
 
-## FUNCTION / CLOSURE TYPE
+Another example, 
+
+```go
+a := 43
+fmt.Println(a)  // 43
+fmt.Println(&a) // Ox333333
+
+// b is a pointer
+// var b *int = &a
+b := &a
+fmt.Println(b)  // Ox333333
+fmt.Println(*b) // 43
+
+// Make the "contents of" what I'm Pointer to 33
+*b = 33
+fmt.Println(a) //33
+```
+
+## FUNCTION TYPE (FUNC EXPRESSION AND ANONYMOUS FUNC)
 
 When used in a function, acts just like a type.
 So I can use the variables int the function it lives.
@@ -214,6 +241,31 @@ add := func() int {
 }
 ```
 
+This is also called func expression.
+
+The func does not have a name and that is called
+anonymous func.
+
 ## INTERFACE TYPE
 
+Syntactic way to have multiple strucs do the same thing differently,
+
+```go
+// CREATE INTERFACE TYPE
+type Name interface {
+    methodName()
+    ...
+}
+```
+
+See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
+
 ## CHANNEL TYPE
+
+Basic Format,
+
+```go
+tbd
+```
+
+See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).

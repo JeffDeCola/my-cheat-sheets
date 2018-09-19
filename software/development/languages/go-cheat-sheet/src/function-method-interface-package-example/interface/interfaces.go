@@ -1,135 +1,3 @@
-# INTERFACES
-
-Interfaces are verbs, they do something.
-
-Syntactic way to have multiple structs do the same thing differently.
-Implementing the same verb in a different way.
-
-It makes your code cleaner.
-
-## BASIC FORMAT
-
-End interface names with `er`.
-
-```go
-// CREATE INTERFACE TYPE
-type namer interface {
-    methodName()
-    ...
-}
-```
-
-## MAKING YOUR CODE CLEANER
-
-Giving the following structs,
-
-```go
-type Circle struct {
-    radius float64
-}
-
-type Cylinder struct {
-    radius float64
-    height float64
-}
-```
-
-### WITHOUT INTERFACE
-
-Make a method for each property of the shape you wanted
-(e.g. area, volume, circumference, etc...)
-
-```go
-// Circle area
-func (c Circle) areaCircle() float64 {
-	return math.Pi * math.Pow(c.radius, 2)
-}
-
-// Circle circumference
-func (c Circle) circCircle() float64 {
-	return 2 * math.Pi * c.radius
-}
-
-// Cylinder volume
-func (c Cylinder) volCylinder() float64 {
-	return math.Pi * math.Pow(c.radius, 2) * c.height
-}
-
-// Cylinder surface
-func (c Cylinder) surfaceCylinder() float64 {
-	return (2 * math.Pi * c.radius * c.height) + (2 * math.Pi * math.Pow(c.radius, 2))
-}
-```
-
-And assign values to them as,
-
-```go
-	// Declare and assign
-	circle1 := Circle{5}
-	cylinder1 := Cylinder{5, 3}
-
-	// Get properties of shapes
-	areaCircle1 := circle1.areaCircle()
-	circCircle1 := circle1.circCircle()
-	volumeCylinder1 := cylinder1.volCylinder()
-	surfaceCylinder1 := cylinder1.surfaceCylinder()
-
-	fmt.Println(circle1.radius, areaCircle1, circCircle1)
-	fmt.Println(cylinder1.radius, cylinder1.height, volumeCylinder1, surfaceCylinder1)
-```
-
-### WITH INTERFACE
-
-But we can make the code neater if we make an interface,
-
-```go
-// CREATE INTERFACE TYPE
-type Describer interface {
-    describe()
-}
-```
-
-And create the methods attached to the interface as,
-
-```go
-func (c Circle) describe() (area float64, circ float64) {
-    area = math.Pi * math.Pow(c.radius, 2)
-    circ = 2 * math.Pi * c.radius
-    return
-}
-
-func (c Cylinder) describe() (volume float64, circ float64) {
-    volume = math.Pi * math.Pow(c.radius, 2) * c.height
-    circ = 2 * math.Pi * c.radius
-    return
-}
-```
-
-And assign values to them as,
-
-```go
-myCircle := Circle{5}
-myCylinder := Cylinder{5, 3}
-
-areaCircle, circCircle := myCircle.describe()
-volCylinder, circCylinder := myCylinder.describe()
-
-
-```
-
-## EXAMPLE - SHAPES
-
-This example will be used for function, method,
-interface and package sections.
-
-Print the area, volume, circumference, perimeter, surface volume of
-shapes such as circles, rectangles, triangles and cylinders.
-
-Notice there are two interfaces, one for 2D object and one
-for 3D objects. We declare the interface and assign the proper struct.
-e.g. `var triangle1er Describe2Der = Triangle{3, 4, 5}`
-
-```go
 package main
 
 import (
@@ -224,7 +92,7 @@ func main() {
 	// triangle1 := Triangle{4, 5, 6}
 	// cylinder1 := Cylinder{5, 3}
 
-	// Lets declare an interface and assign the proper struct
+	// Lets declair an interface and assign the proper struct
 	var circle1er Describe2Der = circle1
 	var rectangle1er Describe2Der = rectangle1
 	var triangle1er Describe2Der = Triangle{3, 4, 5}
@@ -259,4 +127,3 @@ func main() {
 
 	fmt.Sprintf("%v", circle1er["radius"])
 }
-```
