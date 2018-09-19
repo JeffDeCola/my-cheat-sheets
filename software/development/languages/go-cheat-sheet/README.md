@@ -41,9 +41,10 @@ The cheat sheet is broken up into the following sections,
   * Declare Type and Assign Value
   * Variable
   * Constant / Literal
-  * Scope Rules (Local, Global, Formal)
+  * IOTA
+  * Scope Rules (Universe, Package, File, Block)
   * Type Inference
-  * Shortcut Assignment
+  * Shorthand Assignment
   * Grouping Variables
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
@@ -52,14 +53,15 @@ The cheat sheet is broken up into the following sections,
   * Map
   * Struct
   * Pointer
-  * Function Type /  Closure
-  * Interface Type
-  * Channel Type
+  * Function Type
+  * Interface (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
+  * Channel (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
   * Basic Format
-  * Passing Parameters to Function by Value (_Copy_) - Parameter not Changed
-  * Passing Parameters to Function by Reference (_Pointer_) - Parameter Changed
+  * Function in a function (func expression and anonynous func)
+  * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
+  * Passing Arguments to Function by Reference (_Pointer_) - Parameter Changed
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
@@ -84,8 +86,7 @@ The cheat sheet is broken up into the following sections,
   * Miscellaneous
 
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md)
-  * Loops (_for loop_)
-  * Range
+  * Loops (_for, while, infinite loops, range, break continue_)
   * Conditional Statements / Decision Making (_if_/_else_, _switch_, _defer_, _select_)
 
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/error-handling.md)
@@ -130,10 +131,10 @@ The cheat sheet is broken up into the following sections,
     // ASSIGN VALUE
     a = "happy"
 
-    // DECLARE & ASSIGN
+    // DECLARE & ASSIGN (INITIALIZE)
     var a int32 = 22                                // Verbose
     var a = 22                                      // Type Inference
-    a := 32                                         // Shortcut Assignment
+    a := 32                                         // Shorthand Assignment
 
 // CONSTANT / LITERAL
 
@@ -149,14 +150,14 @@ The cheat sheet is broken up into the following sections,
     a = "hello a"
     b = "hello b"
 
-    // DECLARE & ASSIGN
+    // DECLARE & ASSIGN (INITIALIZE)
     var a, b string = "hello a", "hello b"          // Verbose
     var a, b = "hello a", "hello b"                 // Type Inference
     var (                                           // Parenthesis
         a = "hello a"
         b = "hello b"
     )
-    a, b := "hello a", "hello b"                    // Group Shortcut Assignment
+    a, b := "hello a", "hello b"                    // Group Shorthand Assignment
 
 // ARRAY
 
@@ -167,9 +168,9 @@ The cheat sheet is broken up into the following sections,
     a[1] = 1.1
     a[2] = 2.0
 
-    // DECLARE & ASSIGN
+    // DECLARE & ASSIGN (INITIALIZE)
     var a = [2]float32{1.1, 2.0}                    // Verbose
-    a := [2]float32{1.1, 2.0}                       // Array Shortcut Assignment
+    a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
 
 // SLICE
 
@@ -179,54 +180,62 @@ The cheat sheet is broken up into the following sections,
     // ASSIGN VALUE / ADD TO SLICE
     a = append(a, 5.7)
 
-    // DECLARE & ASSIGN
+    // DECLARE & ASSIGN (INITIALIZE)
     var a = []float32{1.1, 2.0}                    // Verbose
-    a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
+    a := []float32{3.4, 4.5}                       // Array Shorthand Assignment
 
     // ADD TO SLICE
     a := append(a, 5.7)                            // Append to different slice
 
 // MAP
 
-    // DECLARE TYPES
-    var a = make(map[string]int)
-    a := make(map[string]int)
+	// DECLARE TYPES
+	var m1 = make(map[string]int)
+	m2 := make(map[string]int)
 
-    // ASSIGN KEY:VALUE
-    a["Jill"] = 23
-    a["Bob"] = 34
-    a["Mark"] = 28
+	// ASSIGN KEY:VALUE
+	m1["Jill"] = 23
+	m1["Bob"] = 34
+	m1["Mark"] = 28
+	m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
-    // DECLARE & ASSIGN
-    var a = map[string]int{                        // Verbose
-        "Jill": 23,
-        "Bob":  34,
-        "Mark": 28,
-    }
-    a := map[string]int{                           // Array Shortcut Assignment
-        "Jill": 23,
-        "Bob":  34,
-        "Mark": 28,
-    }
+	// DECLARE & ASSIGN (INITIALIZE)
+	var m3 = map[string]int{                        // Verbose
+		"Jill": 23,
+		"Bob":  34,
+		"Mark": 28,
+	}
+	m4 := map[string]int{                           // Array Shorthand Assignment
+		"Jill": 23,
+		"Bob":  34,
+		"Mark": 28,
+	}
+
+	fmt.Println(m1, m2, m3, m4)
 
 // STRUCT
 
     // CREATE STRUCT TYPE
     type Rect struct {
         w, h float32
-    }
+        }
 
     // DECLARE TYPE
     var r1 Rect
+    r2 := new(Rect)                                 // Returns Pointer
 
-    // ASSIGN VALUE
+    // ASSIGN VALUE TO FIELDS
     r1.w = 6.1
     r1.h = 5.0
+    r2.w, r2.h = 6.1, 6.0
 
-    // DECLARE & ASSIGN
-    var r1 Rect = Rect{6.1, 5.0}                    // Verbose
-    var r1 = Rect{6.1, 5.0}                         // Type Inference
-    r1 := Rect{6.1, 5.0}                            // Shortcut Assignment
+    // DECLARE & ASSIGN (INITIALIZE)
+    var r3 Rect = Rect{6.1, 5.0}                    // Verbose
+    var r4 = Rect{6.1, 5.0}                         // Type Inference
+    r5 := Rect{w: 6.1, h: 5.0}                      // Shorthand Assignment
+    r6 := Rect{6.1, 5.0}                            // Shorthand Assignment
+
+    fmt.Println(r1, *r2, r3, r4, r5, r6)
 
 // POINTER
 
@@ -244,22 +253,26 @@ The cheat sheet is broken up into the following sections,
     r1.w = 6.1                                      // I wish it was *r1.w
     r1.h = 5.0                                      // I wish it was *r1.h
 
-// FUNCTION / CLOSURE TYPE
+// FUNCTION TYPE
 
-// INTERFACE TYPE
-
-// CHANNEL TYPE
+    // FUNCTION AS A TYPE
+	a, b := 4, 4
+	var add = func() int {
+		return a + b
+	}
+	fmt.Println(add())
 
 // FUNCTION
 
-    // PASSING PARAMETERS BY VALUE (COPY) - PARAMETER NOT CHANGED
+    // PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
         func name(a int) {                          // 1 in - You would never d
         func name(a, b int) int32 {                 // 2 in, 1 return
         func name(name ...int) int {                // Variadic in, 1 return
+        // Not a fan of Named returns
         func name(a int, b string) (x int32) {      // 2 in, 1 NAMED return
         func name(a, b int) (x int, y string) {     // 2 in, 2 NAMED return
 
-    // PASSING PARAMETERS BY REFERENCE (POINTER) - PARAMETER CHANGED
+    // PASSING ARGUMENTS BY REFERENCE (POINTER) - ARGUMENT CHANGED
         func name (a *int) {                        // In is a pointer, 0 return
         func name (a *int) float32 {                // In is a pointer, 1 return
 
@@ -295,6 +308,7 @@ The cheat sheet is broken up into the following sections,
 
 // INTERFACE
 
+    // CREATE INTERFACE TYPE
     type Describer interface {
         describe()
 
@@ -303,6 +317,7 @@ The cheat sheet is broken up into the following sections,
         height float64
     }
 
+    // ATTACH TO A METHOD
     func (c Circle) describe() (area float64, circ float64) {
         area = math.Pi * math.Pow(c.radius, 2)
         circ = 2 * math.Pi * c.radius
@@ -337,6 +352,7 @@ The cheat sheet is broken up into the following sections,
 
     // LOOPS
         // FOR LOOP
+        for inti; condition; post {
         for i:=0; i < 8; i++ {
             do something
         }
@@ -453,6 +469,8 @@ The cheat sheet is broken up into the following sections,
   _- A great summary of syntax._
 * [gobyexample.com](https://gobyexample.com/)
   _The title says it all._
+* [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
+  _Exactly that._
 
 ### PACKAGES
 
@@ -468,5 +486,8 @@ The cheat sheet is broken up into the following sections,
   [setting up visual studio code with go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
   ._
 
+### HELP
+
+*  [Go forum](https://forum.golangbridge.org/)
 
 

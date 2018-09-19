@@ -4,17 +4,35 @@ A control structure analyzes variables and chooses a direction
 in which to go based on given parameters.
 `for` Loops and `if`, `then`, `else` statements are perfect examples.
 
+
+Control flow / Flow Control is basically,
+
+* Sequential 
+* Loops
+* Conditionals
+
 ## LOOPS
 
 Go only has for loops.
 
 For loop basic format,
+```go
+for init; condition; post {}        // normal
+for condition {}                    // while
+for {}                              // infinite
+```
+
+### FOR LOOP
+
+As an example, 
 
 ```go
 for i:=0; i < 8; i++ {
     do something
 }
 ```
+
+### WHILE LOOP
 
 For loop being a while loop,
 
@@ -26,7 +44,15 @@ for i < 8 {
 }
 ```
 
-## RANGE
+### INFINITE LOOP
+
+```go
+for {
+    do something
+}
+```
+
+### RANGE
 
 When we're not really sure how much in our array.
 
@@ -35,6 +61,25 @@ myarray := [3]{3,4,5}
 
 for i := range myarray {
     avg += myarray[i]
+}
+```
+
+### BREAK / CONTINUE
+
+Breaks, breaks out of the loop, and continue just starts
+the loop at the start.
+
+```go
+// Print even numbers from 1-100
+for {
+    x++
+    if x%2 == 1 {
+        continue
+    }
+    if x >= 100 {
+        break
+    }
+    fmt.Println(x)
 }
 ```
 
@@ -101,6 +146,22 @@ default:
 }
 ```
 
+Using fallthrough,
+
+```go
+switch {
+case (0 == a%2):
+    fmt.Println("a is an even number")
+    fallthrough
+case (a == b):
+    fmt.Println("equal")
+case (a > b):
+    fmt.Println("higher")
+default:
+    fmt.Println("lower")
+}
+```
+
 ### DEFER
 
 A defer statement defers the execution of a function until the surrounding
@@ -116,3 +177,5 @@ func main() {
 Useful if opening a file, you can put the cleanup first, before you do stuff.
 
 ### SELECT
+
+

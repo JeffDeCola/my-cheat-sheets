@@ -33,7 +33,8 @@ View my entire list of cheat sheets on
 
 * LANGUAGES
 
-  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
+  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet),
+    [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
 
 ### TOOLS
 
@@ -63,9 +64,9 @@ View my entire list of cheat sheets on
 * LANGUAGES
 
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
-    [my go examples](https://github.com/JeffDeCola/my-go-examples)
+    [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
-    [my python examples](https://github.com/JeffDeCola/my-python-examples)
+    [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
   * [my php examples](https://github.com/JeffDeCola/my-php-containers)
 
 * OPERATING SYSTEMS
@@ -114,6 +115,7 @@ View my entire list of cheat sheets on
 
   * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
   * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
+  * [microsoft azure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)
 
 * DATABASE
 

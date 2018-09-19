@@ -2,6 +2,8 @@
 
 `(gce) google compute engine` _part of google Cloud Platform, like
 [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
+or
+[microsoft-azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
 * [Google Cloud Platform Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)

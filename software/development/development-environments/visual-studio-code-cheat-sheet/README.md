@@ -104,9 +104,13 @@ And your prompt should look like,
 That is a mouthful and the setup took me a minute to
 figure out because you actually need two versions of go.
 
-Here's a diagram that might help explain what's going on,
+### DIAGRAM
+
+Here's a diagram that might help explain what's going on
 
 ![IMAGE - USING GO with WINDOWS VS CODE and BASH WSL TERMINAL - IMAGE](../../../../docs/pics/using-go-with-windows-vs-code-and-bash-wsl-terminal.jpg)
+
+### WHAT YOU NEED ON WINDOWS
 
 You will need to install the following on windows,
 
@@ -121,6 +125,8 @@ GOROOT=C:\Go\
 GOPATH C:\Users\<WINDOWSNAME>\go
 Path=...\Go\bin;...%GOPATH%\bin
 ```
+You may need to create your workspace directory for Windows go
+if it didn't do it automatically.
 
 To check everything, open a windows command prompt and
 type the following,
@@ -129,13 +135,41 @@ type the following,
 * `go version`
 * `git version`
 
-You may need to create your workspace directory for go.
+### TWO VERSION OF GO (VS CODE and TERMINAL)
 
-When you open VS Code, install the go extension. IMPORTANT NOTE:
-VS Code will use the Windows version of go (and git to install),
-NOT the go version in bash.
+As I mentioned, their are two versions of go, one for Windows and
+one for your WSL bash.  And each have their own paths.
 
-The go extensions will automatically be placed in
+#### INSTALLING GO EXTENTION
+
+So when you open VS Code, and install the go extension, it will
+install in the windows area of go. The go extensions will
+automatically be placed in
+
 `C:\Users\<WINDOWSNAME>\go\bin`
 
+#### USING PACKAGES
+
+Usually you would do something like
+
+```go
+import "github.com/JeffDeCola/package/path"
+```
+
+For the go extension it's looking in its GOPATH and
+the terminal bash is looking in its own GOPATH.
+
+I solve this by copying the package from my bash GOPATH to
+my Windows GOPATH.
+
+As an example,
+
+```go
+cp <YOURPACKAGE>.go /mnt/c/Users/Jeff/go/src/github.com/JeffDeCola/package/path/.
+```
+
+I'm sure there is a better solution, but this works for me.
+
 That's it, you're good to go.
+
+
