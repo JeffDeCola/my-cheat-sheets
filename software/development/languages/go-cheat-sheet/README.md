@@ -49,19 +49,24 @@ The cheat sheet is broken up into the following sections,
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
   * Array
-  * Slice
-  * Map
+  * Slice (Reference Type) (_make_)
+  * Map (Reference Type) (_make_)
   * Struct
   * Pointer
   * Function Type
   * Interface (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Channel (Reference Type) (_make_) (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
-  * Basic Format
-  * Function in a function (func expression and anonynous func)
-  * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
-  * Passing Arguments to Function by Reference (_Pointer_) - Parameter Changed
+  * Basic Formats
+  * Variadic Functions
+  * Closure (func expression and anonymous func)
+  * Returning a function from a function
+  * Passing a function (as an argument) to a function - callback
+  * PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
+    * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
+    * Passing Arguments to Function by "Reference" (_Pointer_) - Parameter Changed
+  * Recursion (function calling itself)
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
@@ -172,46 +177,55 @@ The cheat sheet is broken up into the following sections,
     var a = [2]float32{1.1, 2.0}                    // Verbose
     a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
 
-// SLICE
+// SLICE (Reference Type) (_make_)
 
-    // DECLARE TYPE
+    // DECLARE TYPE - NO SIZE
     var a []float64
 
-    // ASSIGN VALUE / ADD TO SLICE
+    // ASSIGN VALUE - ADD LENGTH TO SLICE
     a = append(a, 5.7)
 
+    // DECLARE TYPE - WITH SIZE (make)
+    m := make([]string, 1, 25)
+
+    // ASSIGN VALUE
+    m[0] = "hello"
+
     // DECLARE & ASSIGN (INITIALIZE)
-    var a = []float32{1.1, 2.0}                    // Verbose
-    a := []float32{3.4, 4.5}                       // Array Shorthand Assignment
+    var a = []float32{1.1, 2.0}                     // Verbose
+    a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
-    // ADD TO SLICE
-    a := append(a, 5.7)                            // Append to different slice
+    // ADD TO ANY SLICE
+    a := append(a, 5.7)                             // Append to different slice
 
-// MAP
+// MAP (Reference Type) (_make_)
 
-	// DECLARE TYPES
-	var m1 = make(map[string]int)
-	m2 := make(map[string]int)
+    // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+    var a map[string]int
 
-	// ASSIGN KEY:VALUE
-	m1["Jill"] = 23
-	m1["Bob"] = 34
-	m1["Mark"] = 28
-	m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
+    // DECLARE TYPES (make)
+    var m1 = make(map[string]int)
+    m2 := make(map[string]int)
 
-	// DECLARE & ASSIGN (INITIALIZE)
-	var m3 = map[string]int{                        // Verbose
-		"Jill": 23,
-		"Bob":  34,
-		"Mark": 28,
-	}
-	m4 := map[string]int{                           // Array Shorthand Assignment
-		"Jill": 23,
-		"Bob":  34,
-		"Mark": 28,
-	}
+    // ASSIGN KEY:VALUE
+    m1["Jill"] = 23
+    m1["Bob"] = 34
+    m1["Mark"] = 28
+    m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
-	fmt.Println(m1, m2, m3, m4)
+    // DECLARE & ASSIGN  (INITIALIZE)
+    var m3 = map[string]int{                        // Verbose
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+    m4 := map[string]int{                           // Array Shortcut Assignment
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+
+    fmt.Println(m1, m2, m3, m4)
 
 // STRUCT
 
@@ -272,7 +286,7 @@ The cheat sheet is broken up into the following sections,
         func name(a int, b string) (x int32) {      // 2 in, 1 NAMED return
         func name(a, b int) (x int, y string) {     // 2 in, 2 NAMED return
 
-    // PASSING ARGUMENTS BY REFERENCE (POINTER) - ARGUMENT CHANGED
+    // PASSING ARGUMENTS BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
         func name (a *int) {                        // In is a pointer, 0 return
         func name (a *int) float32 {                // In is a pointer, 1 return
 
@@ -306,7 +320,7 @@ The cheat sheet is broken up into the following sections,
             return r.w * r.h
         }
 
-// INTERFACE
+// INTERFACE (Reference Type)
 
     // CREATE INTERFACE TYPE
     type Describer interface {

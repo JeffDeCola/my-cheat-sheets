@@ -33,7 +33,7 @@ Returns a boolean type,
 
 ## LOGICAL (BOOLEAN)
 
-Used on boolean types,
+Used on boolean types (true, false),
 
 * `&&`
 * `||`

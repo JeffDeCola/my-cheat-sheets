@@ -11,8 +11,14 @@ Just a note,
 
 The basic format is,
 
-```txt
-func name(parameter list optional) return type optional {
+```
+func receiver identifier parameters returns
+```
+
+or,
+
+```
+func receiver name(parameter list) (return type) {
     stuff
 }
 ```
@@ -22,23 +28,6 @@ As an example,
 ```go
 func add(a, b int) int {
     return a + b
-}
-```
-Variadic arguments lists when you don't know how many arguments to pass.
-Variadic parameter list is when you don't know how many parameters are being passed.
-
-```go
-func average(n ...float64) float64 {
-	total := 0.0
-	for _, f := range n {
-		total += f
-	}
-	return total / float64(len(n))
-}
-
-func main() {
-	data := []float64{43, 44, 55, 66, 77, 88}
-	fmt.Println("Average of", data, "is", average(data...))
 }
 ```
 
@@ -60,6 +49,27 @@ func swap(a, b int) (x int, y int) {
 }
 ```
 
+## VARIADIC FUCTIONS
+
+Variadic arguments lists when you don't know how many arguments to pass.
+Variadic parameter list is when you don't know how many parameters are
+being passed.
+
+```go
+func average(n ...float64) float64 {
+	total := 0.0
+	for _, f := range n {
+		total += f
+	}
+	return total / float64(len(n))
+}
+
+func main() {
+	data := []float64{43, 44, 55, 66, 77, 88}
+	fmt.Println("Average of", data, "is", average(data...))
+}
+```
+
 ## CLOSURE (FUNC EXPRESSION AND ANONYMOUS FUNC)
 
 A `func expression` is when a function is assigned to variable.
@@ -71,39 +81,113 @@ This example is also used to look at `scopes` and `closure`.
 The returned function closes over the variable x to
 form a closure. So increment will have its own value of x.
 
+Basically, one scope enclosing another scope.
+
 ```go
-func wrapper() func() int {
-	x := 0
-	return func() int {
-		x++
-		return x
-	}
+// Passing a function
+func math(number int) func() int {
+    total := 0
+    // What gets sent back and used in main over-and-over
+    // total := 0 only used first time.
+    return func() int {
+        total = total + number
+        return total
+    }
 }
 
 func main() {
-	increment := wrapper()
-	fmt.Println(increment())
-	fmt.Println(increment())
+    
+    number := 3
+
+    // Returning a function from a function
+    // total is the returned function
+    total := math(number)
+
+    // Now lets use the returned function total()
+    fmt.Println(total()) // will print 3
+    // The scope is still here if we call it again
+    fmt.Println(total()) // will print 6
+    fmt.Println(total()) // will print 9
 }
 ```
 
-## RETURNING A FUNCTION
+## RETURNING A FUNCTION FROM A FUNCTION (func expression)
 
 Returning a function from a function.
 
 ```go
+// Is the integer even or not
+func even() func(int) bool {
+	return func(n int) bool {
+		return n%2 == 0
+	}
+}
 
+func main() {
+
+	n := []int{1, 2, 3, 4, 5}
+
+	// r is the returned function
+	r := even()
+
+	for _, s := range n {
+		fmt.Println(s, r(s))
+	}
+}
 ```
 
-## PASSING A FUNCTION - CALLBACK
-
-Passing a function as an argument to a function.
+It really looks like this (a func expression),
 
 ```go
+func main() {
 
+	n := []int{1, 2, 3, 4, 5}
+
+	// r is the returned function
+    // Is the integer even or not
+    // This is a func expression
+	returned := func(n int) bool {
+		return n%2 == 0
+	}
+
+	for _, s := range n {
+		fmt.Println(s, returned(s))
+	}
+}
 ```
 
-## PASSING ARGUMENTS
+## PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK
+
+Passing a function (as an argument) to a function.
+
+Callback means call back the function you passed in.
+Calling back home.
+
+```go
+// Receiving a function
+func math(numbers []int, callback func(int)) {
+    for _, n := range numbers {
+        callback(n)
+    }
+}
+
+func main() {
+    numbers := []int{1, 2, 3, 4, 5, 6, 7}
+
+    // Passing a function (as an argument) to a function - callback
+    math(numbers, func(x int) {
+        fmt.Println("I've been called", x)
+    })
+}
+```
+
+Another example is in
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/blob/master/basic-programming/callback/callback.go).
+
+Why would you do this? Not very popular in go. You
+don't want complexity in go or being too clever.
+
+## PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
 
 ![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
 
@@ -125,7 +209,9 @@ func negateValue(i int) int {
 }
 ```
 
-### PASSING ARGUMENTS TO FUNCTION BY REFERENCE (POINTER) - PARAMETER CHANGED
+### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED
+
+This is still just passing by value, which is just a pointer.
 
 Passes the reference (pointer) of the parameter so we can change
 the value of the parameter itself (return not necessary),
@@ -136,6 +222,46 @@ negateReference(&a)
 
 func negateReference(i *int) {
     *i = *i * -1
+}
+```
+
+## RECURSION - FUNCTION CALLING ITSELF
+
+This is very straightforward.
+
+Using recursion to get a factorial.
+
+Giving a number x
+
+total = x*x-1*x-2...till x is 1.
+
+```go
+func factorial(n int) int {
+    if n == 0 {
+        return 1
+    }
+    return n * factorial(n-1)
+}
+
+func main() {
+    var n int
+    fmt.Scanf("%d\n", &n)
+    fmt.Println(factorial(n))
+}
+```
+
+Another example is in
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/blob/master/basic-programming/recursion/recursion.go).
+
+## ANONYMOUS SELF EXECUTING FUNCTION
+
+Simply a function that executes in your code.
+
+```go
+func main() {
+	func() {
+		fmt.Println("hi")
+	}()
 }
 ```
 
