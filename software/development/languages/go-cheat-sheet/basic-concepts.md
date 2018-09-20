@@ -20,6 +20,12 @@ A go program usually has the following things,
 * Statements and Expressions.
 * Comments.
 
+A statement is an action (print, if, calling a func) and
+mostly vertical in your code.
+
+An expression produces a value (x == 2) and is mostly horizontal
+in your code.
+
 ## BASIC SYNTAX
 
 `Tokens` are basically the building blocks of go.  For example,

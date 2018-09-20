@@ -15,8 +15,9 @@ These are great definitions, but I like to think of methods as,
 The basic format is,
 
 ```
-func (receiver) name(parameter list optional) return type optional {
-    stuff
+func (receiver) name(parameter list) return type {
+func receiver identifier parameters returns
+```
 }
 ```
 

@@ -13,17 +13,28 @@ The data types in go,
 * String (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
 * Derived (This Section)
   * Array
-  * Slice
-  * Map
+  * Slice (Reference Type) (_make_)
+  * Map (Reference Type) (_make_)
   * Struct
-  * Pointer
+  * Pointer 
   * Function (as a type)
-  * Interface
-  * Channel
+  * Interface 
+  * Channel (Reference Type) (_make_)
+
+Note: Slice, map, and channel are reference types
+meaning they are passed by reference/address.
+Also must use make to initialize before use.
+
+Also note, data structures are array, slice, map and struct.  They
+are types that allow us to store data.
 
 ## ARRAY
 
-Really just an array of a variable; a data structure.
+Arrays are,
+
+* A data structure (holds data)
+* Do not change in size
+* A numbers sequence of elements of a single type
 
 The basic verbose format is,
 
@@ -88,10 +99,17 @@ func firstWord(str string) (word []byte) {
 }
 ```
 
-## SLICE (ARRAY SUB TYPE)
+## SLICE (ARRAY SUB TYPE) - REFERENCE TYPE
 
-Making an initial array of n length long out of a
-total capacity.
+Slices are,
+
+* A data structure (holds data)
+* A reference type (pass by "reference")
+* Changes in size
+* Has length and capacity
+* A descriptor for a contiguous segment of an underlying array.
+  Making an initial array of n length long out of a total capacity.
+* Value of uninitialized slice is nil.
 
 The basic verbose format is,
 
@@ -102,26 +120,76 @@ var name = []type{value, value....}
 Here is the syntax,
 
 ```go
-// DECLARE TYPE
+// DECLARE TYPE - NO SIZE
 var a []float64
 
-// ASSIGN VALUE / ADD TO SLICE
+// ASSIGN VALUE - ADD LENGTH TO SLICE
 a = append(a, 5.7)
 
-// DECLARE & ASSIGN (INITIALIZE)
-var a = []float32{1.1, 2.0}                    // Verbose
-a := []float32{3.4, 4.5}                       // Array Shortcut Assignment
+// DECLARE TYPE - WITH SIZE (make)
+m := make([]string, 1, 25)
 
-// ADD TO SLICE
-a := append(a, 5.7)                            // Append to different slice
+// ASSIGN VALUE
+m[0] = "hello"
+
+// DECLARE & ASSIGN (INITIALIZE)
+var a = []float32{1.1, 2.0}                     // Verbose
+a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
+
+// ADD TO ANY SLICE
+a := append(a, 5.7)                             // Append to different slice
 ```
 
-## MAP (key:value)
-
-Really key/value pairs, like a database.
+Like maps and channels, slices are reference types, meaning
+slices are always passed by reference/address.
 
 ```go
-// DECLARE TYPES
+func change(a []string) {
+    a[0] = "goodbye"
+}
+func main() {
+    m := []string{"hello"}
+    fmt.Println(m) // ["hello"]
+    change(m)
+    fmt.Println(m) // ["goodbye"]
+}
+```
+
+Slices are used in variadic parameters
+
+```go
+func sum(n ...int) int {
+	total := 0
+	for _, f := range n {
+		total += f
+	}
+	return total
+}
+
+func main() {
+	data := []int{43, 44, 55, 66}
+	fmt.Println(sum(data...))
+}
+```
+
+## MAP (key:value) - REFERENCE TYPE
+
+Maps are,
+
+* A data structure (holds data)
+* A reference type (pass by "reference")
+* key/value storage (like a data base) (dictionary)
+* Unordered group of elements of the same type.
+* Value of uninitialized map is nil.
+
+Really key/value pairs, like a database. This is
+a data structure.
+
+```go
+// DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+var a map[string]int
+
+// DECLARE TYPES (make)
 var m1 = make(map[string]int)
 m2 := make(map[string]int)
 
@@ -131,7 +199,7 @@ m1["Bob"] = 34
 m1["Mark"] = 28
 m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
-// DECLARE & ASSIGN
+// DECLARE & ASSIGN  (INITIALIZE)
 var m3 = map[string]int{                        // Verbose
     "Jill": 23,
 	"Bob":  34,
@@ -146,10 +214,32 @@ m4 := map[string]int{                           // Array Shortcut Assignment
 fmt.Println(m1, m2, m3, m4)
 ```
 
+Like slices and channels, maps are reference types, meaning
+maps are always passed by reference/address.
+
+```go
+func change(a map[int]string) {
+    a[1] = "happy"
+    a[2] = "birthday"
+}
+func main() {
+    m := map[int]string{1: "hello", 2: "goodbye"}
+    fmt.Println(m) // map[1:hello 2:goodbye]
+    change(m)
+    fmt.Println(m) // map[1:happy 2:birthday]
+}
+```
+
 ## STRUCT
+
+* A data structure (holds data)
+* A reference type (pass by "reference")
+* May contain different types.
 
 Elements of different types and start with capital letter.
 Anything with a capital letter is exported.
+
+A struct is a data structure.
 
 ```go
 // CREATE STRUCT TYPE
@@ -260,12 +350,15 @@ type Name interface {
 
 See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
 
-## CHANNEL TYPE
+## CHANNEL TYPE - REFERENCE TYPE
 
 Basic Format,
 
 ```go
 tbd
 ```
+
+Like slices and maps, channels are reference types, meaning
+channels are always passed by reference/address.
 
 See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
