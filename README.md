@@ -115,7 +115,7 @@ View my entire list of cheat sheets on
 
   * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
   * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
-  * [microsoft azure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)
+  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)
 
 * DATABASE
 
@@ -158,7 +158,7 @@ View my entire list of cheat sheets on
 ### VISUAL OVERVIEW OF SOFTWARE CREATING A SERVICE
 
 Here is my concept on how various Apps and tools fit together
-for the goal of creating a service.
+for the goal of creating a service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
@@ -170,7 +170,7 @@ the changes via repo status and slack.
 
 The update is accomplished this by copying and editing
 this `README.md` file to `/docs/_includes/README.md`.
-You can see the concourse task (a shell script)
+You can see the concourse task (a shell script) that does this
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
 
 A pipeline file [pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/pipeline.yml)

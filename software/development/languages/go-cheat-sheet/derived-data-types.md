@@ -8,10 +8,10 @@ So you still need to declare type and assign values (initialize).
 
 All the data types in go,
 
-* Boolean (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* Numeric (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* String (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* Derived (This Section)
+* Boolean (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* Numeric (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* String (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* Derived (This Cheat sheet)
   * Array (Data structure) (_new_)
   * Slice (Data Structure) (Reference Type) (_make_)
   * Map (Data Structure) (Reference Type) (_make_)
@@ -31,7 +31,7 @@ before use.
 `Data structures` are arrays, slices, maps and structs.  They
 are types that allow us to store data.
 
-## ARRAY
+## ARRAY - DATA STRUUTRE
 
 Arrays are,
 
@@ -48,7 +48,7 @@ They are really not used that much.
 The basic verbose format is,
 
 ```
-var name = [number]type{value, value....}
+var name = [number]type{value, value...}
 ```
 
 Here is the syntax,
@@ -71,21 +71,11 @@ Here is printing an array,
 
 ```go
 testscores := [3]float64{78.3, 98.9, 85.4}
-fmt.Printf("a is %v\n", testscores)
-fmt.Printf("a is %v\n", testscores[1])
-fmt.Printf("a is %v\n", testscores[1:2])
-fmt.Printf("a is %v\n", testscores[:3])
-fmt.Printf("a is %v\n", testscores[2:])
-```
-
-The output is,
-
-```go
-a is [78.3 98.9 85.4]
-a is 98.9
-a is [98.9]
-a is [78.3 98.9 85.4]
-a is [85.4]
+fmt.Printf("a is %v\n", testscores)             // [78.3 98.9 85.4]
+fmt.Printf("a is %v\n", testscores[1])          // 98.9
+fmt.Printf("a is %v\n", testscores[1:2])        // [98.9]
+fmt.Printf("a is %v\n", testscores[:3])         // [78.3 98.9 85.4]
+fmt.Printf("a is %v\n", testscores[2:])         // [85.4]
 ```
 
 Remember a string is an array of bytes. Here is a good example,
@@ -108,19 +98,21 @@ func firstWord(str string) (word []byte) {
 }
 ```
 
-find length,
+Find length,
 
 ```go
 len(name)
 ```
 
-find capacity of array,
+Find capacity of array,
 
 ```go
 cap(name)
 ```
 
-## SLICE (ARRAY SUB TYPE) - REFERENCE TYPE
+These will be the same in an array.
+
+## SLICE (BUILT ON ARRAY) - - DATA STRUUTRE - REFERENCE TYPE
 
 Slices are for lists,
 
@@ -134,6 +126,8 @@ Slices are for lists,
   new arrays will be added (will double the size of capacity).
 * A list/collection identified by an index.
 * Value of uninitialized slice is nil.
+
+### BASIC FORMAT
 
 The basic verbose format is,
 
@@ -169,6 +163,7 @@ a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 a := append(a, 5.7)                             // Append to different slice
 ```
 
+### SLICES ARE REFERENCE TYPES
 Like maps and channels, slices are reference types, meaning
 slices are always passed by reference/address.
 
@@ -183,6 +178,8 @@ func main() {
     fmt.Println(m) // ["goodbye"]
 }
 ```
+
+### BUILT ON ARRAYS - make
 
 Make makes a slice of length x and capacity (the underlying array) y,
 
@@ -203,6 +200,8 @@ You could actually make a slice form an array,
 	n := new([18]int)[0:10]
 ```
 
+### VARIADIC PARAMETERS
+
 Slices are used in variadic parameters,
 
 ```go
@@ -219,6 +218,8 @@ func main() {
 	fmt.Println(sum(data...))
 }
 ```
+
+### LENGTH AND CAPACITTY
 
 Find length,
 
@@ -256,7 +257,7 @@ is 16 in second example.  That's so cool.
 }
 ```
 
-## MAP (key:value) - REFERENCE TYPE
+## MAP (key:value) - - DATA STRUUTRE - REFERENCE TYPE
 
 Maps are,
 
@@ -268,6 +269,7 @@ Maps are,
 * Value of uninitialized map is nil.
 * Map is build on a hash table.
 
+### BASIC FORMAT
 
 ```go
 // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS - NO APPEND
@@ -299,6 +301,8 @@ m4 := map[string]int{                           // Array Shortcut Assignment
 fmt.Println(m1, m2, m3, m4)
 ```
 
+### MAPS ARE REFERENCE TYPES
+
 Like slices and channels, maps are reference types, meaning
 maps are always passed by reference/address.
 
@@ -315,13 +319,15 @@ func main() {
 }
 ```
 
+### DELETE
+
 Delete a key/value,
 
 ```go
 delete(a,1)
 ```
 
-## STRUCT
+## STRUCT - DATA STRUUTRE
 
 * A data structure (holds data).
 * A reference type (pass by "reference").
@@ -330,6 +336,8 @@ delete(a,1)
 
 Elements of different types and start with capital letter.
 Anything with a capital letter is exported.
+
+### BASIC FORMAT
 
 A struct is a data structure.
 
@@ -365,6 +373,9 @@ of a value.
 `*` is the `"contents of"`
 `&` is `"address of"`
 
+### BASIC FORMAT
+
+
 You can,
 
 ```go
@@ -385,6 +396,8 @@ r1.h = 5.0                                      // I feel it should be *r1.h
 ```
 
 ![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
+
+###P POINTER USES
 
 Cool uses for pointers are,
 
@@ -409,28 +422,35 @@ fmt.Println(*b) // 43
 fmt.Println(a) //33
 ```
 
-## FUNCTION TYPE (FUNC EXPRESSION AND ANONYMOUS FUNC)
+## FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)
 
-When used in a function, acts just like a type.
-So I can use the variables int the function it lives.
+Functions act just like a type. So like types, I can use
+the variables the function it lives.
+
+### BASIC FORMAT
 
 ```go
 
 a, b := 3, 9
 
-add := func() int {
+add := func() int {  // func expression and anonymous func (no name)
     return a + b
 }
 ```
 
-This is also called func expression.
+The function can use a and b even though they are outside its scope.
 
-The func does not have a name and that is called
-anonymous func.
+* `func expression` is assigning to a variable (just like a type).
+* `Anonymous functions` or `function literals` do not have names.
 
-## INTERFACE TYPE
+This assignment of an anonymous function (function literal) to a variable is `closure`.
 
-Syntactic way to have multiple strucs do the same thing differently,
+## INTERFACE
+
+### BASIC FORMAT
+
+
+Syntactic way to have multiple structs do the same thing differently,
 
 ```go
 // CREATE INTERFACE TYPE
@@ -440,9 +460,11 @@ type Name interface {
 }
 ```
 
-See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
+See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
 
-## CHANNEL TYPE - REFERENCE TYPE
+## CHANNEL (REFERENCE TYPE)
+
+### BASIC FORMAT
 
 Basic Format,
 
@@ -453,4 +475,4 @@ tbd
 Like slices and maps, channels are reference types, meaning
 channels are always passed by reference/address.
 
-See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
+See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).

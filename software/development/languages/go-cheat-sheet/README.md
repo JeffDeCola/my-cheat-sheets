@@ -13,23 +13,24 @@ View my entire list of cheat sheets on
 
 ## LET'S GO
 
-The cheat sheet is broken up into the following sections,
+This cheat sheet is broken up into the following sections,
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
   * Install
   * Configure
     * Linux
-    * Bash on Ubuntu on Windows
+    * Bash on Ubuntu on Windows (Windows System for Linux)
     * Windows
   * Check
 
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
   * Basic Structure of go
   * Basic Syntax
-  * Packages (Also see own [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md))
+  * Packages (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md))
   * _run_
   * _build_
   * _install_
+  * The Object Side of go
 
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md)
   * Boolean
@@ -37,6 +38,7 @@ The cheat sheet is broken up into the following sections,
   * String
 
 * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
+  * Basic Format
 
 * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
   * Declare Type and Assign Value
@@ -45,7 +47,7 @@ The cheat sheet is broken up into the following sections,
   * IOTA
   * Scope Rules (Universe, Package, File, Block)
   * Type Inference
-  * Shorthand Assignment
+  * Shorthand Assignment (Preferred Method)
   * Grouping Variables
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
@@ -55,8 +57,8 @@ The cheat sheet is broken up into the following sections,
   * Struct (Data Structure)
   * Pointer 
   * Function (as a Type)
-  * Interface (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (Reference Type) (_make_) (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Interface (See own [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
+  * Channel (Reference Type) (_make_) (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
   * Basic Formats
@@ -467,12 +469,12 @@ The cheat sheet is broken up into the following sections,
 * [golang.org docs](https://golang.org/doc/)
   _- A good collection of docs._
 * [golang.org spec](https://golang.org/ref/spec)
-  _I'll be honest, way to much stuff to make your head spin._
+  _- I'll be honest, way to much stuff to make your head spin._
 
 ### RUNNING CODE
 
 * [golang.org go playground](https://play.golang.org/)
-  _Lets you write, compile and share code.  Just awesome._
+  _- Lets you write, compile and share code.  Just awesome._
 
 ### TUTORIALS
 
@@ -483,16 +485,16 @@ The cheat sheet is broken up into the following sections,
 * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
   _- A great summary of syntax._
 * [gobyexample.com](https://gobyexample.com/)
-  _The title says it all._
+  _- The title says it all._
 * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
-  _Exactly that._
+  _- Exactly that._
 
 ### PACKAGES
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages._
 * [golang.org](https://golang.org/pkg/)
-  _-Just official standard packages._
+  _- Just official standard packages._
 
 ### OTHER STUFF
 
@@ -504,5 +506,6 @@ The cheat sheet is broken up into the following sections,
 ### HELP
 
 *  [Go forum](https://forum.golangbridge.org/)
+   _- Community forum._
 
 

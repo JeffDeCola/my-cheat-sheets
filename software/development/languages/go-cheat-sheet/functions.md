@@ -72,43 +72,75 @@ func main() {
 
 ## CLOSURE (FUNC EXPRESSION AND ANONYMOUS FUNC)
 
-A `func expression` is when a function is assigned to variable.
+A closure is a function value that references variables from outside its body.
 
-Also, a func that does not have a name and that is called
-`anonymous func`.
+Helps us limit the scope of variables used by multiple functions.
+Without closure, for two or more functions to have access to the same variable,
+that variable would need to be at the package scope.
 
-This example is also used to look at `scopes` and `closure`.
-The returned function closes over the variable x to
-form a closure. So increment will have its own value of x.
+There are two methods as follows.
 
-Basically, one scope enclosing another scope.
+### ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+
+Here is an example of closure, assigning an anonymous function
+(also called func literal) to a variable.
+
+This is called closure because the function captures (enclose)
+the surrounding environment and can use it.
 
 ```go
-// Passing a function
-func math(number int) func() int {
-    total := 0
-    // What gets sent back and used in main over-and-over
-    // total := 0 only used first time.
-    return func() int {
-        total = total + number
-        return total
-    }
+// This is also called a func literal.
+increment1 := func() int { // Got x = 5
+    x++
+    return x
 }
 
-func main() {
-    
-    number := 3
+// When you call function increment1, it uses x, which is outside function.
+fmt.Println(increment1()) // 6
+fmt.Println(increment1()) // 7
+fmt.Println(x)            // 7
+fmt.Println(increment1()) // 8
+x = 30
+fmt.Println(x)            // 30
+fmt.Println(increment1()) // 31 <- NOTE THIS
+fmt.Println(x)            // 31
+```
 
-    // Returning a function from a function
-    // total is the returned function
-    total := math(number)
+Just think/treat the function as a variable and closure makes sense.
+People try to make this too complicated, like I did above but its just
+treating the function `ince(x)` as a variable `increment2`.  Simple.
 
-    // Now lets use the returned function total()
-    fmt.Println(total()) // will print 3
-    // The scope is still here if we call it again
-    fmt.Println(total()) // will print 6
-    fmt.Println(total()) // will print 9
-}
+### RETURN A FUNCTION TO A FUNCTION
+
+Same program as above, but with function outside main.
+
+but this acts like a variable where once increment2 or increment3
+is declared and assigned, x is set.
+
+```go
+// CLOSURE METHOD TWO - Return a function to a function
+// This is different because now the value is bound to the variable.
+// The function captures the scope it is in
+// Think of it as an assigned variable, BECAUSE it is.
+increment2 := inc(x) // Got x = 31
+increment3 := inc(x) // Got x = 31
+
+// When you call function increment2, it uses x, which is outside function.
+fmt.Println(increment2()) // 32
+fmt.Println(increment2()) // 33
+fmt.Println(increment2()) // 34
+fmt.Println(x)            // 31
+
+// increment2 has its own value of x
+// Treat the function like a variable, because it is.
+fmt.Println(increment3()) // 32
+fmt.Println(increment3()) // 33
+fmt.Println(increment3()) // 34
+x = 20
+fmt.Println(x) // 20
+// Nothing to do with x because we assigned inc() to to increment3
+fmt.Println(increment3()) // 35
+fmt.Println(increment3()) // 36
 ```
 
 ## RETURNING A FUNCTION FROM A FUNCTION (func expression)
