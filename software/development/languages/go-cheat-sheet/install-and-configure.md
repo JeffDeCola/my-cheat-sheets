@@ -4,12 +4,14 @@ OK, lets get go...ing.  Yep, that just happened.
 
 ## INSTALL
 
-[Binary and source installs](https://golang.org/doc/install)
-for windows, linux or mac.
+[Binary and source installs](https://golang.org/doc/install) are
+located there for windows, linux or mac.
 
 I would not install from a package.
 
 ## CONFIGURE
+
+Let's set up the paths.
 
 ### LINUX
 
@@ -22,6 +24,9 @@ export GOPATH=$HOME
 export GOBIN=$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 ```
+
+You probably don't need the GOBIN path, but I
+use VS Code and it just makes it clear.
 
 ### BASH ON UBUNTU ON WINDOWS
 

@@ -86,3 +86,17 @@ Compiles packages and dependencies and places in `/bin` and `/pkg`,
 go install hello.go
 $GOPATH/bin/hello
 ```
+
+## THE OBJECT SIDE OF GO
+
+Simply put object oriented programing are,
+
+*properties - what it knows
+*methods - what it does
+
+Go is similar,
+
+* Structs - the data structure of the properties.
+  What we know.
+* Methods -  a special function (with a receiver type)
+  that does something with the properties.
