@@ -1,11 +1,11 @@
 # BASIC CONCEPTS
 
 Go actually forces you to use a particular coding style.  This is a little
-painful at first, but actually very good news in the long run since
+painful at first, but actually great in the long run since
 it makes everyone's code look and feel the same.
 
-It also will not allow pollution in your code, meaning things you
-don't use.  Makes lean readable code.
+It also will not allow pollution in your code (things you
+don't use).
 
 Its also very fun to code.
 
@@ -13,17 +13,17 @@ Its also very fun to code.
 
 A go program usually has the following things,
 
-* Package Declaration.
-* Import Packages.
-* Functions.
-* Variables.
-* Statements and Expressions.
-* Comments.
+* Package Declaration
+* Import Packages
+* Functions
+* Variables
+* Statements and Expressions
+* Comments
 
-A statement is an action (print, if, calling a func) and
+A statement is an action (_print, if, calling a func_) and
 mostly vertical in your code.
 
-An expression produces a value (x == 2) and is mostly horizontal
+An expression produces a value (_x == 2_) and is mostly horizontal
 in your code.
 
 ## BASIC SYNTAX
@@ -33,7 +33,7 @@ in your code.
 
 A `Line Separator` is a statement terminator.  It's like placing a `;`.
 
-`Comments` start with `/*` and end with `*/` or use '//'.
+`Comments` start with `/*` and end with `*/` or use `//` for lines.
 
 `Identifiers` is a name used to identify a variable, function or user defined term.
 
@@ -57,7 +57,7 @@ go doc fmt
 
 Anything with a capital letter in a package is exported.
 
-Refer to the section on packages
+Refer to my cheat sheet on packages
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md).
 
 ## GO RUN
@@ -89,14 +89,14 @@ $GOPATH/bin/hello
 
 ## THE OBJECT SIDE OF GO
 
-Simply put object oriented programing are,
+Object oriented programing is,
 
-*properties - what it knows
-*methods - what it does
+* Properties - What it knows.
+* Methods - What it does.
 
 Go is similar,
 
-* Structs - the data structure of the properties.
+* Structs - The data structure of the properties.
   What we know.
-* Methods -  a special function (with a receiver type)
-  that does something with the properties.
+* Methods -  A special function (with a receiver type)
+  that does something with the struct (properties).

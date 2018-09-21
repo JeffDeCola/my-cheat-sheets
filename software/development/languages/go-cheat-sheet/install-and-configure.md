@@ -28,7 +28,7 @@ PATH=$PATH:$GOROOT/bin
 You probably don't need the GOBIN path, but I
 use VS Code and it just makes it clear.
 
-### BASH ON UBUNTU ON WINDOWS
+### BASH ON UBUNTU ON WINDOWS (Windows System for Linux)
 
 I place the following in `.bashrc`,
 
@@ -58,8 +58,9 @@ This is because Windows and linux do not play well together.
 
 ### WINDOWS
 
-If you install go on Windows, it should automatically set the Windows
-environment variables as follows,
+Do not get confused, this is not being installed on WSL (Windows System for Linux),
+this is being installed on Windows OS. The installation should automatically
+set the Windows environment variables as follows,
 
 ```text
 GOROOT=C:\Go\
@@ -72,10 +73,11 @@ On a side note, my cheat sheet
 explains `how to setup VS Code on Windows with the Go Extensions
 and a bash terminal`.  Say that ten times fast.
 
-## CHECK
+## CHECK YOUR INSTALL
 
-Check your go paths,
+Check your go paths and version,
 
 ```bash
 go env
+go version
 ```
