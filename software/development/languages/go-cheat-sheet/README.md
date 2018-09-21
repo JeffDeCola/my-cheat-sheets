@@ -21,6 +21,7 @@ The cheat sheet is broken up into the following sections,
     * Linux
     * Bash on Ubuntu on Windows
     * Windows
+  * Check
 
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
   * Basic Structure of go
@@ -48,12 +49,12 @@ The cheat sheet is broken up into the following sections,
   * Grouping Variables
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
-  * Array
-  * Slice (Reference Type) (_make_)
-  * Map (Reference Type) (_make_)
-  * Struct
-  * Pointer
-  * Function Type
+  * Array (Data structure) (_new_)
+  * Slice (Data Structure) (Reference Type) (_make_)
+  * Map (Data Structure) (Reference Type) (_make_)
+  * Struct (Data Structure)
+  * Pointer 
+  * Function (as a Type)
   * Interface (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (Reference Type) (_make_) (See own [section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 

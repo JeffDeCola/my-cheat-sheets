@@ -4,37 +4,46 @@ I like to think of derived data types as
 special variables built on the basic three data types
 (Boolean, Numeric and String).
 
-So you still need to declare type and assign value.
+So you still need to declare type and assign values (initialize).
 
-The data types in go,
+All the data types in go,
 
 * Boolean (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
 * Numeric (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
 * String (See previous [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
 * Derived (This Section)
-  * Array
-  * Slice (Reference Type) (_make_)
-  * Map (Reference Type) (_make_)
-  * Struct
+  * Array (Data structure) (_new_)
+  * Slice (Data Structure) (Reference Type) (_make_)
+  * Map (Data Structure) (Reference Type) (_make_)
+  * Struct (Data Structure)
   * Pointer 
-  * Function (as a type)
+  * Function (as a Type)
   * Interface 
   * Channel (Reference Type) (_make_)
 
-Note: Slice, map, and channel are reference types
+`Reference types` are slice, map and channel,
 meaning they are passed by reference/address.
-Also must use make to initialize before use.
+Reference types are build upon an underlining `data structure`
+(stores data). We are passing the address of these underlying
+data structures. Also can use use _make_ to initialize reference type
+before use.
 
-Also note, data structures are array, slice, map and struct.  They
+`Data structures` are arrays, slices, maps and structs.  They
 are types that allow us to store data.
 
 ## ARRAY
 
 Arrays are,
 
-* A data structure (holds data)
-* Do not change in size
-* A numbers sequence of elements of a single type
+* A data structure (holds data).
+* Do not change in size (not dynamic).
+* A numbers sequence of elements of a single type.
+* A list/collection identified by an index.
+* Zero-based indexes.
+
+They are really not used that much.
+
+### BASIC FORMAT
 
 The basic verbose format is,
 
@@ -99,16 +108,31 @@ func firstWord(str string) (word []byte) {
 }
 ```
 
+find length,
+
+```go
+len(name)
+```
+
+find capacity of array,
+
+```go
+cap(name)
+```
+
 ## SLICE (ARRAY SUB TYPE) - REFERENCE TYPE
 
-Slices are,
+Slices are for lists,
 
-* A data structure (holds data)
-* A reference type (pass by "reference")
-* Changes in size
-* Has length and capacity
-* A descriptor for a contiguous segment of an underlying array.
-  Making an initial array of n length long out of a total capacity.
+* A data structure (holds data).
+* A reference type (pass by "reference").
+* Must use _make_ to initialize reference type.
+* Dynamic - Changes in size.
+* Has length and capacity.
+* Built on an `underlying array`.
+  If you add things (append), a performance is hit because
+  new arrays will be added (will double the size of capacity).
+* A list/collection identified by an index.
 * Value of uninitialized slice is nil.
 
 The basic verbose format is,
@@ -117,17 +141,22 @@ The basic verbose format is,
 var name = []type{value, value....}
 ```
 
+The most common way is,
+```go
+m := make([]int, 25)
+```
+
 Here is the syntax,
 
 ```go
-// DECLARE TYPE - NO SIZE
+// DECLARE TYPE - NO SIZE (must use append)
 var a []float64
 
 // ASSIGN VALUE - ADD LENGTH TO SLICE
 a = append(a, 5.7)
 
-// DECLARE TYPE - WITH SIZE (make)
-m := make([]string, 1, 25)
+// DECLARE TYPE - WITH SIZE (make) - Shows length and capacity, both 25.
+m := make([]string, 25)                         // Best way
 
 // ASSIGN VALUE
 m[0] = "hello"
@@ -155,7 +184,26 @@ func main() {
 }
 ```
 
-Slices are used in variadic parameters
+Make makes a slice of length x and capacity (the underlying array) y,
+
+```go
+m := make([]string, length, capacity)
+```
+
+Both length and capacity are the same (100),
+
+```go
+m := make([]string, 100) // same as above
+```
+
+You could actually make a slice form an array,
+
+```go
+	n := make([]int, 10, 18) // same as
+	n := new([18]int)[0:10]
+```
+
+Slices are used in variadic parameters,
 
 ```go
 func sum(n ...int) int {
@@ -172,26 +220,63 @@ func main() {
 }
 ```
 
+Find length,
+
+```go
+len(name)
+```
+
+Find capacity of array,
+
+```go
+cap(name)
+```
+
+Last example, these are all the same. Note capacity of array used for slice
+is 16 in second example.  That's so cool.
+
+```go
+	var x [10]int
+	for i := 0; i < len(x); i++ {
+		x[i] = i + 20
+	}
+	fmt.Println(x, len(x), cap(x)) // [21 22 23 24 25 26 27 28 29 30] 10 10
+
+	var y []int
+	for i := 0; i < 10; i++ {
+		y = append(y, i+20)
+	}
+	fmt.Println(y, len(y), cap(y)) // [21 22 23 24 25 26 27 28 29 30] 10 16
+
+	z := make([]int, 10)
+	for i := 0; i < 10; i++ {
+		z[i] = i + 20
+	}
+	fmt.Println(z, len(z), cap(z)) // [21 22 23 24 25 26 27 28 29 30] 10 10
+}
+```
+
 ## MAP (key:value) - REFERENCE TYPE
 
 Maps are,
 
-* A data structure (holds data)
-* A reference type (pass by "reference")
-* key/value storage (like a data base) (dictionary)
+* A data structure (holds data).
+* A reference type (pass by "reference").
+* Must use _make_ to initialize reference type.
+* key/value storage (like a data base) (dictionary).
 * Unordered group of elements of the same type.
 * Value of uninitialized map is nil.
+* Map is build on a hash table.
 
-Really key/value pairs, like a database. This is
-a data structure.
 
 ```go
-// DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+// DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS - NO APPEND
 var a map[string]int
 
 // DECLARE TYPES (make)
 var m1 = make(map[string]int)
 m2 := make(map[string]int)
+m3 := map[string]int{}
 
 // ASSIGN KEY:VALUE
 m1["Jill"] = 23
@@ -230,11 +315,18 @@ func main() {
 }
 ```
 
+Delete a key/value,
+
+```go
+delete(a,1)
+```
+
 ## STRUCT
 
-* A data structure (holds data)
-* A reference type (pass by "reference")
-* May contain different types.
+* A data structure (holds data).
+* A reference type (pass by "reference").
+* Must use _make_ to initialize reference type.
+* Composite types..
 
 Elements of different types and start with capital letter.
 Anything with a capital letter is exported.

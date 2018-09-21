@@ -11,14 +11,14 @@ The data types in go are,
 * Numeric
 * String
 * Derived (_See next [Section](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)_)
-  * Array
-  * Slice
-  * Map
-  * Struct
-  * Pointer
-  * Function Type
-  * Interface Type
-  * Channel Type
+  * Array (Data structure) (_new_)
+  * Slice (Data Structure) (Reference Type) (_make_)
+  * Map (Data Structure) (Reference Type) (_make_)
+  * Struct (Data Structure)
+  * Pointer 
+  * Function (as a Type)
+  * Interface 
+  * Channel (Reference Type) (_make_)
 
 ## BOOLEAN
 
