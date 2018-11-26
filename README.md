@@ -5,20 +5,30 @@
 
 `my-cheat-sheets` _is a place to keep all my cheat sheets
 on everything you need for the complete development of
-Hardware or Software._
+ASIC Hardware or a Software service._
 
 The folder structures are organized alphabetically as follows:
 
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
+  for the goal of creating an ASIC.
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+  for the goal of creating a service.
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
-  * [INFRASTRUCTURE AS A SERVICE](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas) (ISSA)
+  * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
+
+I also added a new random section for other things I'm interested in:
+
+* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)
+
+  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
+  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
+  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
 These cheat sheets contain info I gathered from other sources and
 figured out over time.
@@ -28,6 +38,8 @@ View my entire list of cheat sheets on
 
 ## HARDWARE CHEAT SHEETS
 
+_Various Apps and tools for the goal of creating an ASIC._
+
 ### DEVELOPMENT
 
 * HARDWARE ARCHITECTURES
@@ -36,7 +48,7 @@ View my entire list of cheat sheets on
 
 * LANGUAGES
 
-  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet),
+  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
     ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples) Repo)
 
 ### TOOLS
@@ -55,6 +67,8 @@ View my entire list of cheat sheets on
 
 ## SOFTWARE CHEAT SHEETS
 
+_Various Apps and tools for the goal of creating a service._
+
 ### DEVELOPMENT
 
 * DEVELOPMENT ENVIRONMENTS
@@ -66,11 +80,11 @@ View my entire list of cheat sheets on
 
 * LANGUAGES
 
-  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
+  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet)
     ([my-go-examples](https://github.com/JeffDeCola/my-go-examples) Repo)
-  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
+  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
     ([my-python-example](https://github.com/JeffDeCola/my-python-examples) Repo)
-  * ([my php examples](https://github.com/JeffDeCola/my-php-containers) Repo)
+  * ([my-php-examples](https://github.com/JeffDeCola/my-php-containers) Repo)
 
 * OPERATING SYSTEMS
 
@@ -158,12 +172,48 @@ View my entire list of cheat sheets on
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
 
-### VISUAL OVERVIEW OF SOFTWARE CREATING A SERVICE
+### VISUAL OVERVIEW OF CREATING A SERVICE
 
 Here is my concept on how various Apps and tools fit together
 for the goal of creating a service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
+
+## OTHER CHEAT SHEETS
+
+_Random other things I'm interested in._
+
+### COMPUTER HARDWARE
+
+* DESKTOP
+
+  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/cpu-cheat-sheet)
+  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/hard-drives-cheat-sheet)
+  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/monitors-cheat-sheet)
+  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/ram-cheat-sheet)
+
+### NETWORKS
+
+* CELLULAR
+
+    * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/cellular/telecommunications-standards-cheat-sheet)
+
+* WAN / LAN
+
+    * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/wan-lan/ethernet-wan-lan-cheat-sheet)
+    * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/wan-lan/wireless-lan-cheat-sheet)
+
+### SINGLE BOARD COMPUTERS (SBC)
+
+* HUMMINGBOARD
+
+  * [install and configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+
+* RASPBERRY PI (RasPi)
+
+  * [install and configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
