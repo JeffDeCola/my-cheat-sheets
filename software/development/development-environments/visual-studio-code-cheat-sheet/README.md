@@ -98,6 +98,19 @@ And your prompt should look like,
 ```bash
 <bashusername>@<computername>:/mnt/c/Users/<winusername>/home/<bashusername>
 ```
+### FIX EOL (END-Of-LINE) CRLF TO LF
+
+Since windows will like uses CRLF at eol (end of line), and linux uses LF,
+you need to force your windows VS Code to always use LF.
+
+Set this in your preferences.
+
+```json
+"files.eol": "\n"
+```
+
+You can check it worked by looking in the bottom left of your VS Code
+and you will see LF.
 
 ## USING GO with WINDOWS VS CODE and BASH WSL TERMINAL
 

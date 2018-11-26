@@ -4,8 +4,7 @@
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
 `my-cheat-sheets` _is a place to keep my cheat sheets
-on Hardware and Software for various Apps and tools
-for the goal of creating a service._
+on tools and development for both Hardware and Software._
 
 I organized the hardware in two sections,
 
@@ -18,7 +17,8 @@ I organized the software into three sections,
 * INFRASTRUCTURE AS A SERVICE (IaaS)
 * OPERATIONS TOOLS
 
-These cheat sheets contain info I gathered from other sources.
+These cheat sheets contain info I gathered from other sources and
+figured out over time.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

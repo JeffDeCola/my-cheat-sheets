@@ -1,16 +1,34 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// Returns a function
-func inc(x int) func() int {
-	return func() int {
-		x++
-		return x
-	}
+type ifacer interface {
+	getSomeField() string
+	setSomeField(string)
+}
+
+type myStruct struct {
+	someField string
+}
+
+func (i myStruct) getSomeField() string {
+	return i.someField
+}
+
+func (i *myStruct) setSomeField(newValue string) {
+	i.someField = newValue
 }
 
 func main() {
-	a := [2]float32{1.1, 2.0} // Array Shorthand Assignment
-	fmt.Println(a, len(a), cap(a))
+
+	// DECLARE & ASSIGN (INITIALIZE)
+	i := myStruct{"Hello"}
+	// Initialize the interface -  Declare and assign the proper struct
+	var a ifacer = &i
+
+	// Using the interface
+	a.setSomeField("World")
+	fmt.Println(a.getSomeField())
 }

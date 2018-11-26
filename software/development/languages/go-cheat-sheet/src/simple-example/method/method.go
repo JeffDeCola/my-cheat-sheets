@@ -1,66 +1,55 @@
+/*
+- Added struct type rect
+- Added receiver to functions (methods)
+*/
+
 package main
 
 import (
 	"fmt"
+	"math"
 )
 
-// Rect - CREATE STRUCT TYPE
+// Rect - Rectangle
 type rect struct {
-	w, h float32
+	w, h float64
 }
 
 // PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED
-
-// Return area of rectangle
-func (r Rect) area() float32 {
+// areaRec - Return area of Rectangle
+func (r rect) areaRec() float64 {
 	return r.w * r.h
 }
 
-// Return scaled area of rectangle
-func (r Rect) scaleArea(s int) float32 {
-	return (r.w * r.h * float32(s))
+// scaleAreaRec - Return scaled area of Rectangle
+func (r rect) scaleAreaRec(s float64) float64 {
+	return r.w * r.h * s
 }
 
-// PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED
-
-// Scale the struct by 2
-func (r *Rect) scaleAreasByTwo() {
-	s := 2
-	r.w = ((r.w * r.h * float32(s)) / r.h)
-	r.h = ((r.w * r.h * float32(s)) / r.w)
-}
-
-// Scale the struct by s of rectangle
-func (r *Rect) scaleAreaByS(s float64) {
-	r.w = ((r.w * r.h * float32(s)) / r.h)
-	r.h = ((r.w * r.h * float32(s)) / r.w)
-}
-
-// Scale the struct by s and return area    // 1 in, 1 return
-func (r *Rect) scaleAreaReturn(s float64) float32 {
-	r.w = ((r.w * r.h * float32(s)) / r.h)
-	r.h = ((r.w * r.h * float32(s)) / r.w)
-	return r.w * r.h
+// PASSING STRUCT BY "REFERENCE" (POINTER) -  STRUCT CHANGED
+// scaleAreaRecRef - scaled sides of Rectangle
+func (r *rect) scaleAreaRecRef(s float64) {
+	r.w = r.w * math.Sqrt(s)
+	r.h = r.h * math.Sqrt(s)
 }
 
 func main() {
 
-	// DECLARE & ASSIGN
-	r1 := Rect{2.0, 3.0} // Shortcut Assignment
-	fmt.Println("The Rect struct:         ", r1)
+	// DECLARE & ASSIGN (INITIALIZE)
+	r := rect{3.0, 4.0}
+	s := 3.0
 
 	// PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED
 	fmt.Println("PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED")
-	fmt.Println("   area():               ", r1.area())
-	fmt.Println("   scaleArea(3):         ", r1.scaleArea(3))
-	fmt.Println("   area() not changed:   ", r1.area())
+	fmt.Printf("   The area of the rectangle        (%6.2f * %6.2f)         is %6.2f\n", r.w, r.h, r.areaRec())
+	fmt.Printf("   The scaled area of the rectangle (%6.2f * %6.2f) * %5.2f is %6.2f\n", r.w, r.h, s, r.scaleAreaRec(s))
+	fmt.Printf("   The area of the rectangle        (%6.2f * %6.2f)         is %6.2f <- STRUCT NOT CHANGED\n", r.w, r.h, r.areaRec())
 
-	// PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED
-	fmt.Println("PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED")
-	r1.scaleAreasByTwo()
-	fmt.Println("    scaleAreasByTwo():    ", r1.area())
-	r1.scaleAreaByS(3)
-	fmt.Println("    scaleAreaByS(3):      ", r1.area())
-	fmt.Println("    scaleAreaReturn(4):   ", r1.scaleAreaReturn(4)) // It has a return
-	fmt.Println("    area():               ", r1.area())
+	// PASSING STRUCT BY "REFERENCE" (POINTER) -  STRUCT CHANGED
+	fmt.Println(`PASSING STRUCT BY "REFERENCE" (POINTER) -  STRUCT CHANGED`)
+	fmt.Printf("   The area of the rectangle        (%6.2f * %6.2f)         is %6.2f\n", r.w, r.h, r.areaRec())
+	fmt.Printf("   Scale by %v\n", s)
+	r.scaleAreaRecRef(s)
+	fmt.Printf("   The scaled area of the rectangle (%6.2f * %6.2f)         is %6.2f <- STRUCT CHANGED\n", r.w, r.h, r.areaRec())
+
 }

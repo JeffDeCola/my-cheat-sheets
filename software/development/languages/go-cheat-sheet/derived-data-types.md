@@ -62,7 +62,7 @@ var a [2]float32{}
 a[1] = 1.1
 a[2] = 2.0
 
-// DECLARE & ASSIGN
+// DECLARE & ASSIGN  (INITIALIZE)
 var a = [2]float32{1.1, 2.0}                    // Verbose
 a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
 ```
@@ -98,21 +98,14 @@ func firstWord(str string) (word []byte) {
 }
 ```
 
-Find length,
+Find length and capacity. They will be the same in an array,
 
 ```go
 len(name)
-```
-
-Find capacity of array,
-
-```go
 cap(name)
 ```
 
-These will be the same in an array.
-
-## SLICE (BUILT ON ARRAY) - - DATA STRUUTRE - REFERENCE TYPE
+## SLICE (BUILT ON ARRAY) - DATA STRUUTRE - REFERENCE TYPE
 
 Slices are for lists,
 
@@ -123,7 +116,7 @@ Slices are for lists,
 * Has length and capacity.
 * Built on an `underlying array`.
   If you add things (append), a performance is hit because
-  new arrays will be added (will double the size of capacity).
+  new arrays will be added (will double the size of the capacity).
 * A list/collection identified by an index.
 * Value of uninitialized slice is nil.
 
@@ -135,7 +128,8 @@ The basic verbose format is,
 var name = []type{value, value....}
 ```
 
-The most common way is,
+The preferred method is as follows (where length and capacity are both at 25),
+
 ```go
 m := make([]int, 25)
 ```
@@ -149,8 +143,9 @@ var a []float64
 // ASSIGN VALUE - ADD LENGTH TO SLICE
 a = append(a, 5.7)
 
-// DECLARE TYPE - WITH SIZE (make) - Shows length and capacity, both 25.
-m := make([]string, 25)                         // Best way
+// DECLARE TYPE - WITH SIZE (make)
+// Length and capacity both at 25.
+m := make([]string, 25)                         // Preferred way
 
 // ASSIGN VALUE
 m[0] = "hello"
@@ -160,12 +155,13 @@ var a = []float32{1.1, 2.0}                     // Verbose
 a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
 // ADD TO ANY SLICE
-a := append(a, 5.7)                             // Append to different slice
+a := append(a, 5.7)                             // Append to a slice
 ```
 
 ### SLICES ARE REFERENCE TYPES
+
 Like maps and channels, slices are reference types, meaning
-slices are always passed by reference/address.
+slices are always passed by "reference/address".
 
 ```go
 func change(a []string) {
@@ -181,7 +177,8 @@ func main() {
 
 ### BUILT ON ARRAYS - make
 
-Make makes a slice of length x and capacity (the underlying array) y,
+Make makes a slice of length x and capacity (which is the length of the
+underlying array) y,
 
 ```go
 m := make([]string, length, capacity)
@@ -196,13 +193,13 @@ m := make([]string, 100) // same as above
 You could actually make a slice form an array,
 
 ```go
-	n := make([]int, 10, 18) // same as
-	n := new([18]int)[0:10]
+n := make([]int, 10, 18)
+n := new([18]int)[0:10]
 ```
 
 ### VARIADIC PARAMETERS
 
-Slices are used in variadic parameters,
+Slices are used with variadic parameters,
 
 ```go
 func sum(n ...int) int {
@@ -267,7 +264,7 @@ Maps are,
 * key/value storage (like a data base) (dictionary).
 * Unordered group of elements of the same type.
 * Value of uninitialized map is nil.
-* Map is build on a hash table.
+* Map are build on a hash table.
 
 ### BASIC FORMAT
 
@@ -319,7 +316,7 @@ func main() {
 }
 ```
 
-### DELETE
+### DELETE A KEY/VALUE
 
 Delete a key/value,
 
@@ -331,11 +328,10 @@ delete(a,1)
 
 * A data structure (holds data).
 * A reference type (pass by "reference").
-* Must use _make_ to initialize reference type.
 * Composite types..
 
 Elements of different types and start with capital letter.
-Anything with a capital letter is exported.
+Anything with a capital letter is exported from package.
 
 ### BASIC FORMAT
 
@@ -370,13 +366,12 @@ fmt.Println(r1, *r2, r3, r4, r5, r6)
 A pointer is just a variable that holds the address (of memory)
 of a value.
 
-`*` is the `"contents of"`
-`&` is `"address of"`
+* `*` is the `"contents of"`
+* `&` is `"address of"`
 
 ### BASIC FORMAT
 
-
-You can,
+Here is an example,
 
 ```go
 // CREATE A POINTER TYPE AND ASSIGN
@@ -397,12 +392,12 @@ r1.h = 5.0                                      // I feel it should be *r1.h
 
 ![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
 
-###P POINTER USES
+### POINTER USES
 
 Cool uses for pointers are,
 
 * Allocate space for a variable.
-* Pass by reference to a function to change parameters value outside function.
+* Pass by "reference" to a function to change parameters value outside function.
 
 Another example, 
 
@@ -424,33 +419,63 @@ fmt.Println(a) //33
 
 ## FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)
 
-Functions act just like a type. So like types, I can use
-the variables the function it lives.
+Functions can be a type. So like types, I can use
+the variables (the scope) the function lives in.
 
-### BASIC FORMAT
+There is a better explanation of this on the cheat sheet
+[closures](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#closure-func-expression-and-anonymous-func).
+
+But here are two methods that can be used,
+
+### ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
 
 ```go
-
 a, b := 3, 9
 
-add := func() int {  // func expression and anonymous func (no name)
+add := func() int {  // anonymous func (no name)
     return a + b
+}
+
+fmt.Println(add()) // 12
+a = 9
+fmt.Println(add()) // 18 <- NOTE THIS
+```
+
+The anonymous function (function literal) has use of `a` and `b` because
+of the scope.  This assignment of an anonymous function (function literal)
+to a variable is called `closure`.
+
+### RETURN A FUNCTION TO A FUNCTION
+
+In this method, the function scope acts just like an assigned variable.
+Think of the function like a variable, because that's what is really is,
+
+```go
+// Returns a function
+func addThis(a, b int) func() int {
+	return func() int {
+		return a + b
+	}
+}
+
+func main() {
+	a, b := 3, 9
+
+	add := addThis(a, b)  // Think of the func add like a variable
+
+	fmt.Println(add()) // 12
+	a = 9
+	fmt.Println(add()) // 12 <- NOTE THIS
 }
 ```
 
-The function can use a and b even though they are outside its scope.
-
-* `func expression` is assigning to a variable (just like a type).
-* `Anonymous functions` or `function literals` do not have names.
-
-This assignment of an anonymous function (function literal) to a variable is `closure`.
-
 ## INTERFACE
+
+Syntactic way to have multiple structs do the same thing differently,
 
 ### BASIC FORMAT
 
-
-Syntactic way to have multiple structs do the same thing differently,
+Basic format,
 
 ```go
 // CREATE INTERFACE TYPE
@@ -460,9 +485,11 @@ type Name interface {
 }
 ```
 
-See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
+See the interface [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
 
 ## CHANNEL (REFERENCE TYPE)
+
+tbd
 
 ### BASIC FORMAT
 
@@ -475,4 +502,4 @@ tbd
 Like slices and maps, channels are reference types, meaning
 channels are always passed by reference/address.
 
-See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
+See channel [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
