@@ -4,8 +4,8 @@ Functions stand on their own, a black box.
 
 Just a note,
 
-* Parameters are where you declare parameters
-* Arguments are passed to functions
+* `Parameters` are where you declare parameters
+* `Arguments` are passed to functions
 
 ## BASIC FORMATS
 
@@ -70,7 +70,7 @@ func main() {
 }
 ```
 
-## CLOSURE (FUNC EXPRESSION AND ANONYMOUS FUNC)
+## CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)
 
 A closure is a function value that references variables from outside its body.
 
@@ -108,13 +108,13 @@ fmt.Println(x)            // 31
 
 Just think/treat the function as a variable and closure makes sense.
 People try to make this too complicated, like I did above but its just
-treating the function `ince(x)` as a variable `increment2`.  Simple.
+treating the function `inc(x)` as a variable `increment2`.  Simple.
 
-### RETURN A FUNCTION TO A FUNCTION
+### RETURN A FUNCTION TO A FUNCTION - CLOSURE
 
 Same program as above, but with function outside main.
 
-but this acts like a variable where once increment2 or increment3
+But this acts like a variable where once increment2 or increment3
 is declared and assigned, x is set.
 
 ```go
@@ -143,9 +143,7 @@ fmt.Println(increment3()) // 35
 fmt.Println(increment3()) // 36
 ```
 
-## RETURNING A FUNCTION FROM A FUNCTION (func expression)
-
-Returning a function from a function.
+Some more examples,
 
 ```go
 // Is the integer even or not
@@ -228,9 +226,9 @@ don't want complexity in go or being too clever.
 Passes a "copy" of the parameter's value and gets something back (return).
 Take the word copy with a grain of salt.
 
-Really passing a value and assigning it to the parameter.
+Really passing a value (the argument) and assigning it to the function's parameter.
 
-Will not change the value of the parameter that was passed.
+Will not change the value of the argument that was passed.  Because of scope.
 
 ```go
 a := 33
@@ -243,10 +241,10 @@ func negateValue(i int) int {
 
 ### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED
 
-This is still just passing by value, which is just a pointer.
+Go only passes by value, hence the quotes on "reference".
 
-Passes the reference (pointer) of the parameter so we can change
-the value of the parameter itself (return not necessary),
+Passes the reference (pointer) (the argument) to the function parameter
+so we can change the value of the argument itself (return not necessary),
 
 ```go
 a := 33
@@ -256,6 +254,8 @@ func negateReference(i *int) {
     *i = *i * -1
 }
 ```
+Again you do this because you want to actually modify whatever you're passing
+(“read/write” as opposed to just “read”)
 
 ## RECURSION - FUNCTION CALLING ITSELF
 
@@ -263,9 +263,7 @@ This is very straightforward.
 
 Using recursion to get a factorial.
 
-Giving a number x
-
-total = x*x-1*x-2...till x is 1.
+Giving a number x, total = x*x-1*x-2...till x is 1.
 
 ```go
 func factorial(n int) int {

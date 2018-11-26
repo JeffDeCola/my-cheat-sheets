@@ -1,29 +1,27 @@
 # METHODS
 
+A method is a function with a special receiver argument.
+
 Methods, unlike functions which stand on their own,
 are attached to data (struct).
 
-A method is a function with a special receiver argument.
-
 These are great definitions, but I like to think of methods as,
 
-* Doing something with (pass value) a structs data.
-* Doing something to (pass reference) a structs data.
+* Doing something with (pass by value) a structs data.
+* Doing something to (pass by "reference") a structs data.
 
-## BASIC FORMATS
+## BASIC FORMAT
 
 The basic format is,
 
 ```
 func (receiver) name(parameter list) return type {
-func receiver identifier parameters returns
-```
-}
+func receiver identifier parameters returns 
 ```
 
 ## PASSING PARAMETERS
 
-As with functions, you can pass the struct by value or reference.
+As with functions, you can pass the struct by value or "reference".
 
 Giving this struct,
 
@@ -67,7 +65,9 @@ fmt.Println("The area of", r1.w, "and", r1.h, "is", r1.area())
 fmt.Println("The area of", r1.w, "and", r1.h, "scaled by 3 is", r1.scaleArea(3))
 ```
 
-### PASSING STRUCT TO METHOD BY REFERENCE (POINTER) - STRUCT CHANGED
+### PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED
+
+Again, go only passes by value, hence the quotes on "reference".
 
 Passes the reference (pointer) of the struct so we can change
 the values of the struct itself (return not necessary),
@@ -117,6 +117,9 @@ fmt.Println("The area of", r1.w, "and", r1.h, "is", r1.area())
 area := r1.scaleStructArea(2.0)
 fmt.Println("The area of", r1.w, "and", r1.h, "is", area)
 ```
+
+Again you do this because you want to actually modify whatever you're passing
+(the receiver) (“read/write” as opposed to just “read”)
 
 ## EXAMPLE - SHAPES
 

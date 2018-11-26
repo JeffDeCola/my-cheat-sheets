@@ -7,6 +7,22 @@ Implementing the same verb in a different way.
 
 It makes your code cleaner.
 
+From using methods like,
+
+```go
+r.areaRectangle()
+t.areaTriangle()
+c.areaCircle()
+```
+
+To a lot cleaner code,
+
+```go
+r.area()
+t.area()
+c.area()
+```
+
 ## BASIC FORMAT
 
 End interface names with `er`.
@@ -18,6 +34,8 @@ type namer interface {
     ...
 }
 ```
+
+Should end in `er` so you know its an interface.
 
 ## MAKING YOUR CODE CLEANER
 

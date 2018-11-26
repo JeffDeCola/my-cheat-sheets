@@ -63,16 +63,19 @@ This cheat sheet is broken up into the following sections,
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
   * Basic Formats
   * Variadic Functions
-  * Closure (func expression and anonymous func)
-  * Returning a function from a function
-  * Passing a function (as an argument) to a function - callback
-  * PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
+  * Closure (func expression & anonymous function)
+    * Assign anonymous Function (func Literal) to a Variable
+    * Return a Function to a Function - Closure
+  * Passing a function (as an argument) to a Function - Callback
+  * Passing Arguments - Go Passes by Value Only
     * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
     * Passing Arguments to Function by "Reference" (_Pointer_) - Parameter Changed
   * Recursion (function calling itself)
+  * Anonymous Self Executing Function
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md)
   * Basic Format
+  * Passing Parameters
   * Passing Struct to Method by Value (_Copy_) - Struct not Changed
   * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
 
