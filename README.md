@@ -3,19 +3,27 @@
 [![CodeClimate Issues](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-cheat-sheets` _is a place to keep my cheat sheets
-on tools and development for both Hardware and Software._
+`my-cheat-sheets` _is a place to keep all my cheat sheets
+on everything you need for the complete development of
+Hardware or Software._
 
-I organized the hardware in two sections,
+The folder structures are organized alphabetically as follows:
 
-* DEVELOPMENT
-* TOOLS
+* [HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
 
-I organized the software into three sections,
+  * [DEVELOPMENT]
+    (https://github.com/JeffDeCola/my-cheat-sheets#development)
+  * [TOOLS]
+    (https://github.com/JeffDeCola/my-cheat-sheets#tools)
 
-* DEVELOPMENT
-* INFRASTRUCTURE AS A SERVICE (IaaS)
-* OPERATIONS TOOLS
+* [SOFTWARE](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+
+  * [DEVELOPMENT]
+    (https://github.com/JeffDeCola/my-cheat-sheets#development-1)
+  * [INFRASTRUCTURE AS A SERVICE] 
+    (https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas) (ISSA)
+  * [OPERATIONS TOOLS]
+    (https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
 
 These cheat sheets contain info I gathered from other sources and
 figured out over time.
@@ -34,7 +42,9 @@ View my entire list of cheat sheets on
 * LANGUAGES
 
   * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet),
+    Check out
     [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+    REPO
 
 ### TOOLS
 
@@ -64,10 +74,16 @@ View my entire list of cheat sheets on
 * LANGUAGES
 
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
+    Check out
     [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+    REPO
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
-    [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
-  * [my php examples](https://github.com/JeffDeCola/my-php-containers)
+    Check out
+    [my-python-example](https://github.com/JeffDeCola/my-python-examples)
+    REPO
+  * Check out
+    [my php examples](https://github.com/JeffDeCola/my-php-containers)
+    REPO
 
 * OPERATING SYSTEMS
 
