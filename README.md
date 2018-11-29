@@ -196,23 +196,23 @@ _Random other things I'm interested in._
 
 * CELLULAR
 
-    * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/cellular/telecommunications-standards-cheat-sheet)
+    * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunications-standards-cheat-sheet)
 
 * WAN / LAN
 
-    * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/wan-lan/ethernet-wan-lan-cheat-sheet)
-    * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networking/wan-lan/wireless-lan-cheat-sheet)
+    * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
+    * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
 
 ### SINGLE BOARD COMPUTERS (SBC)
 
 * HUMMINGBOARD
 
-  * [install and configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-cheat-sheet)
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
   * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
 
 * RASPBERRY PI (RasPi)
 
-  * [install and configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-cheat-sheet)
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
   * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE

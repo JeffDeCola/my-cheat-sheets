@@ -1,10 +1,6 @@
 # INSTALL AND CONFIGURE CHEAT SHEET
 
-```
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
-`install and configure` _tbd._
+`install and configure` _a distribution on your Raspberry Pi._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
