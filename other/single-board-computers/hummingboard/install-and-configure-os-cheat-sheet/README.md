@@ -29,11 +29,12 @@ You must have your hummingboard connected to the internet
 
 `Ignition` will look at
 [SolidRun's GitHub Repo](https://github.com/SolidRun/ignition-imx6)
-for imx.6 OS distribution `ignition installer scripts`.
+for `imx.6` OS distribution `ignition installer scripts`.
 
 Choose a distro such as:
 
-* Debian
+* Debian (Manual installation of debian
+[here](https://images.solid-build.xyz/IMX6/Debian)
 * GeexBoX
 * LibreELEC
 * OpenELEC.tv
@@ -47,11 +48,6 @@ like I did.
 
 Note, depending on your hummingboard version, not all OS
 distributions will work.
-
-## DEBIAN IMAGES for i.MX6
-
-Some debian images are listed
-[here](https://images.solid-build.xyz/IMX6/Debian).
 
 ## FULL LIST OF DISTRIBUTIONS FROM SOLIDRUN
 
