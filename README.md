@@ -192,6 +192,10 @@ _Random other things I'm interested in._
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/monitors-cheat-sheet)
   * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/ram-cheat-sheet)
 
+* APPLE
+
+  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
+ 
 ### NETWORKS
 
 * CELLULAR
