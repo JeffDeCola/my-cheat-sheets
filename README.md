@@ -189,8 +189,10 @@ _Random other things I'm interested in._
 
   * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/cpu-cheat-sheet)
   * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/hard-drives-cheat-sheet)
+  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/microSD-cards-cheat-sheet)
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/monitors-cheat-sheet)
   * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/ram-cheat-sheet)
+  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/usb-cheat-sheet)
 
 * APPLE
 
