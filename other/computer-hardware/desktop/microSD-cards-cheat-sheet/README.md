@@ -29,6 +29,7 @@ The current SDHC specification defines Class 2, 4, 6, 8 and 10 as follows:
 
 UHS SPEED CLASS
 
+|       |                  |                  |                  |
 |------:|-----------------:|-----------------:|-----------------:|
 |    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
 |    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
