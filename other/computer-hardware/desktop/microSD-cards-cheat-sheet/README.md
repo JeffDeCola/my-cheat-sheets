@@ -19,19 +19,19 @@ as µSD or uSD.
 ## SPEED CLASS
 
 
-    | CLASS |  MIN WRITE SPEED |         BUS TYPE |             USES |
-    |------:|-----------------:|-----------------:|-----------------:|
-    |     2 |           2 MB/s |          DEFAULT |               SD |
-    |     4 |           4 MB/s |          DEFAULT |               SD |
-    |     6 |           6 MB/s |          DEFAULT |               SD |
-    |       |                  |                  |                  |
-    |    10 |          10 MB/s |       HIGH SPEED |       Full 1080p |
-    |       |                  |                  |                  |
-    |    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
-    |    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
-    |       |                  |                  |                  |
-    |    V6 |           6 MB/s |               V6 |                  |
-    |   V10 |          10 MB/s |              V10 |       Full 1080p |
-    |   V30 |          30 MB/s |              V30 |         2K or 4K |
-    |   V60 |          60 MB/s |              V60 |               8K |
-    |   V90 |          90 MB/s |              V90 |               8K |
+| CLASS |  MIN WRITE SPEED |         BUS TYPE |             USES |
+|------:|-----------------:|-----------------:|-----------------:|
+|     2 |           2 MB/s |          DEFAULT |               SD |
+|     4 |           4 MB/s |          DEFAULT |               SD |
+|     6 |           6 MB/s |          DEFAULT |               SD |
+|       |                  |                  |                  |
+|    10 |          10 MB/s |       HIGH SPEED |       Full 1080p |
+|       |                  |                  |                  |
+|    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
+|    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
+|       |                  |                  |                  |
+|    V6 |           6 MB/s |               V6 |                  |
+|   V10 |          10 MB/s |              V10 |       Full 1080p |
+|   V30 |          30 MB/s |              V30 |         2K or 4K |
+|   V60 |          60 MB/s |              V60 |               8K |
+|   V90 |          90 MB/s |              V90 |               8K |
