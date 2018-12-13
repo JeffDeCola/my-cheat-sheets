@@ -31,14 +31,15 @@ SDHC SPEED CLASS
 
 UHS SPEED CLASS
 
-|    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
 |------:|-----------------:|-----------------:|-----------------:|
+|    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
 |    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
 
 VIDEO SPEED CLASS
 
-|    V6 |           6 MB/s |               V6 |                  |
+| CLASS |  MIN WRITE SPEED |         BUS TYPE |             USES |
 |------:|-----------------:|-----------------:|-----------------:|
+|    V6 |           6 MB/s |               V6 |                  |
 |   V10 |          10 MB/s |              V10 |       Full 1080p |
 |   V30 |          30 MB/s |              V30 |         2K or 4K |
 |   V60 |          60 MB/s |              V60 |               8K |
