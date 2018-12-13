@@ -11,14 +11,16 @@ View my entire list of cheat sheets on
 SD is an abbreviation of Secure Digital, and `microSD` cards are sometimes referred to
 as µSD or uSD.
 
-* STORAGE CAPACITY
+## STORAGE CAPACITY
   
-  * `SDHC` Secure Digital High Capacity	4-32GB (FAT32)
-  * `SDXC` Secure Digital eXtended Capacity	64-2TB (exFAT)
+* `SDHC` Secure Digital High Capacity	4-32GB (FAT32)
+* `SDXC` Secure Digital eXtended Capacity	64-2TB (exFAT)
 
 ## SPEED CLASS
 
-The current SDHC specification defines Class 2, 4, 6, 8 and 10 as follows:
+Speed Class is a minimum speed based on a worst case scenario test. 
+
+SDHC SPEED CLASS
 
 | CLASS |  MIN WRITE SPEED |         BUS TYPE |             USES |
 |------:|-----------------:|-----------------:|-----------------:|
@@ -29,14 +31,14 @@ The current SDHC specification defines Class 2, 4, 6, 8 and 10 as follows:
 
 UHS SPEED CLASS
 
-|       |                  |                  |                  |
-|------:|-----------------:|-----------------:|-----------------:|
 |    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
+|------:|-----------------:|-----------------:|-----------------:|
 |    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
-|                                                                |
-| VIDEO SPEED CLASS                                              |
-|                                                                |
+
+VIDEO SPEED CLASS
+
 |    V6 |           6 MB/s |               V6 |                  |
+|------:|-----------------:|-----------------:|-----------------:|
 |   V10 |          10 MB/s |              V10 |       Full 1080p |
 |   V30 |          30 MB/s |              V30 |         2K or 4K |
 |   V60 |          60 MB/s |              V60 |               8K |
