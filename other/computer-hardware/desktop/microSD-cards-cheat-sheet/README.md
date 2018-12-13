@@ -1,6 +1,6 @@
 # microSD CARDS CHEAT SHEET
 
-`microSD cards` are removable flash memory._
+`microSD cards` _are removable flash memory._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -22,7 +22,7 @@ Speed Class is a minimum speed based on a worst case scenario test.
 
 SDHC SPEED CLASS
 
-| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |             USES |
+| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |      APPLICATION |
 |------:|-----------------:|-----------------:|-----------------:|
 |     2 |           2 MB/s |          DEFAULT |               SD |
 |     4 |           4 MB/s |          DEFAULT |               SD |
@@ -31,14 +31,14 @@ SDHC SPEED CLASS
 
 UHS SPEED CLASS
 
-| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |             USES |
+| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |      APPLICATION |
 |------:|-----------------:|-----------------:|-----------------:|
 |    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
 |    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
 
 VIDEO SPEED CLASS
 
-| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |             USES |
+| CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |      APPLICATION |
 |------:|-----------------:|-----------------:|-----------------:|
 |    V6 |           6 MB/s |               V6 |                  |
 |   V10 |          10 MB/s |              V10 |       Full 1080p |
