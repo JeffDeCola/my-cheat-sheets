@@ -185,19 +185,22 @@ _Random other things I'm interested in._
 
 ### COMPUTER HARDWARE
 
-* DESKTOP
-
-  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/cpu-cheat-sheet)
-  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/hard-drives-cheat-sheet)
-  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/microSD-cards-cheat-sheet)
-  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/monitors-cheat-sheet)
-  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/ram-cheat-sheet)
-  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/desktop/usb-cheat-sheet)
-
 * APPLE
 
   * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
- 
+
+* PC
+
+  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
+  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
+
+* TECHNOLOGIES
+
+  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
+  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
+  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
+  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
+
 ### NETWORKS
 
 * CELLULAR
