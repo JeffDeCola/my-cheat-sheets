@@ -1,6 +1,6 @@
 // .codeclimate.json
 
-- version: "2"
+- version: "4"
 
 // - prepare: Actions to perform before analysis begins
 //   - fetch: Remote files to fetch (files are placed relative to the repo's root directory)
