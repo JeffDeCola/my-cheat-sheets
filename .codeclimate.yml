@@ -1,5 +1,0 @@
-plugins:
-  markdownlint:
-    enabled: true
-exclude_patterns:
-- "docs/"
