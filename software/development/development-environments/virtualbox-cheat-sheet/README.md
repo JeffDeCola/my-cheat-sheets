@@ -27,7 +27,26 @@ sudo mkdir -p /media/cdrom
 sudo mount /dev/cdrom /media/cdrom
 sudo apt install -y dkms build-essential linux-headers-generic \
   linux-headers-$(uname -r)
-sudo sh /media/cdrom/VBoxLinuxAdditions.run
+sudo /media/cdrom/VBoxLinuxAdditions.run
+reboot
+```
+
+You could also do it via the shared folder,
+
+When you update Virtualbox it automatically puts the updated disk image here:
+'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso'
+
+Copy 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' to shared
+VM folder
+
+```bash
+sudo mkdir /media/cdrom
+sudo mkdir /media/temp
+sudo cp /media/<sharedfolder>/VBoxGuestAdditions.iso /media/temp
+sudo chmod 775 /media/temp/VBoxGuestAdditions.iso
+
+sudo mount -o loop /media/temp/VBoxGuestAdditions.iso /media/cdrom
+sudo /media/cdrom/VBoxLinuxAdditions.run
 reboot
 ```
 
@@ -52,11 +71,14 @@ sudo usermod --append --groups vboxsf USERNAME
 reboot
 ```
 
-## DRAG AND DROP
+## SHARED CLIPBOARD & DRAG AND DROP
 
-Must have a shared folder enabled in vagrant box settings
-for your particular VM.  Also, you must have guess additions
-installed.
+The following is required to use these features:
+
+* Shared folder enabled.
+* Guest Additions installed.
+* Desktop like GNOME.
+
 
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
