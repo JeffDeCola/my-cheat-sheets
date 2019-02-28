@@ -707,11 +707,13 @@ I create a `develop` branch since I would never work on master,
 
 ```bash
 git checkout -b "develop" master
-git push --set-upstream origin develop
+git branch -u origin/develop
+git push
 ```
 
-The `--set-upstream` switch makes me lazy so I just use
-`git push` rather then `git push origin master`.
+The `branch -u origin/develop` sets the default remote branch
+for the current local branch.  Only need to do a "git push"
+from local branch.
 
 At github.com I go into my repo settings and add GitHub Webpage on `/docs`.
 
