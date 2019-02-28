@@ -1,3 +1,5 @@
+// .codeclimate.json
+
 plugins:
   markdownlint:
     enabled: true
