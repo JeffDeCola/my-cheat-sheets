@@ -1,7 +1,28 @@
 // .codeclimate.json
 
+- version: "3"
+
+// - prepare: Actions to perform before analysis begins
+//   - fetch: Remote files to fetch (files are placed relative to the repo's root directory)
+//     - url: url to fetch
+//       path: destination relative to repo's root directory
+
+// - checks: Configuration of maintainability checks
+//   - <name>
+//     - enabled: true|false
+//     - config: check configuration
+
+// - plugins: Enable optional engines to run in addition to your analysis
+//   - <name>
+//     - enabled: true|false
+//     - channel: alternate channel to use (stable is default)
+//     - config: plugin configuration
 plugins:
   markdownlint:
     enabled: true
-exclude_patterns:
-- "docs/"
+
+// - exclude_patterns: Exclude files and/or directories from analysis
+//   - <pattern>
+//   - <pattern>
+- exclude_patterns:
+  - "docs/"
