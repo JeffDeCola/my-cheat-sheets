@@ -5,5 +5,3 @@ plugins:
     enabled: true
 exclude_patterns:
 - "docs/"
-
-//test
