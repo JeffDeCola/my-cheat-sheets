@@ -19,7 +19,7 @@ version: "2"
 plugins:
   markdownlint:
     enabled: true
-  ShellCheck:
+  shellcheck:
     enabled: true
 
 # exclude_patterns: Exclude files and/or directories from analysis
