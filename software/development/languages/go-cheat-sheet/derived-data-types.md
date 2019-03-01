@@ -203,16 +203,16 @@ Slices are used with variadic parameters,
 
 ```go
 func sum(n ...int) int {
-	total := 0
-	for _, f := range n {
-		total += f
-	}
-	return total
+    total := 0
+    for _, f := range n {
+        total += f
+    }
+    return total
 }
 
 func main() {
-	data := []int{43, 44, 55, 66}
-	fmt.Println(sum(data...))
+    data := []int{43, 44, 55, 66}
+    fmt.Println(sum(data...))
 }
 ```
 
@@ -234,23 +234,23 @@ Last example, these are all the same. Note capacity of array used for slice
 is 16 in second example.  That's so cool.
 
 ```go
-	var x [10]int
-	for i := 0; i < len(x); i++ {
-		x[i] = i + 20
-	}
-	fmt.Println(x, len(x), cap(x)) // [21 22 23 24 25 26 27 28 29 30] 10 10
+    var x [10]int
+    for i := 0; i < len(x); i++ {
+        x[i] = i + 20
+    }
+    fmt.Println(x, len(x), cap(x)) // [21 22 23 24 25 26 27 28 29 30] 10 10
 
-	var y []int
-	for i := 0; i < 10; i++ {
-		y = append(y, i+20)
-	}
-	fmt.Println(y, len(y), cap(y)) // [21 22 23 24 25 26 27 28 29 30] 10 16
+    var y []int
+    for i := 0; i < 10; i++ {
+        y = append(y, i+20)
+    }
+    fmt.Println(y, len(y), cap(y)) // [21 22 23 24 25 26 27 28 29 30] 10 16
 
-	z := make([]int, 10)
-	for i := 0; i < 10; i++ {
-		z[i] = i + 20
-	}
-	fmt.Println(z, len(z), cap(z)) // [21 22 23 24 25 26 27 28 29 30] 10 10
+    z := make([]int, 10)
+    for i := 0; i < 10; i++ {
+        z[i] = i + 20
+    }
+    fmt.Println(z, len(z), cap(z)) // [21 22 23 24 25 26 27 28 29 30] 10 10
 }
 ```
 
@@ -286,13 +286,13 @@ m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 // DECLARE & ASSIGN  (INITIALIZE)
 var m3 = map[string]int{                        // Verbose
     "Jill": 23,
-	"Bob":  34,
-	"Mark": 28,
+    "Bob":  34,
+    "Mark": 28,
 }
 m4 := map[string]int{                           // Array Shortcut Assignment
-	"Jill": 23,
-	"Bob":  34,
-	"Mark": 28,
+    "Jill": 23,
+    "Bob":  34,
+    "Mark": 28,
 }
 
 fmt.Println(m1, m2, m3, m4)
@@ -453,19 +453,19 @@ Think of the function like a variable, because that's what is really is,
 ```go
 // Returns a function
 func addThis(a, b int) func() int {
-	return func() int {
-		return a + b
-	}
+    return func() int {
+        return a + b
+    }
 }
 
 func main() {
-	a, b := 3, 9
+    a, b := 3, 9
 
-	add := addThis(a, b)  // Think of the func add like a variable
+    add := addThis(a, b)  // Think of the func add like a variable
 
-	fmt.Println(add()) // 12
-	a = 9
-	fmt.Println(add()) // 12 <- NOTE THIS
+    fmt.Println(add()) // 12
+    a = 9
+    fmt.Println(add()) // 12 <- NOTE THIS
 }
 ```
 
