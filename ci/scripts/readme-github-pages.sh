@@ -4,7 +4,7 @@
 set -e -x
 
 # The code is located in /my-cheat-sheets
-echo "pwd is: " $PWD
+echo "pwd is: $PWD"
 echo "List whats in the current directory"
 ls -lat 
 
