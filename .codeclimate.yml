@@ -17,7 +17,9 @@ version: "2"
 #     channel: alternate channel to use (stable is default)
 #     config: plugin configuration
 plugins:
- markdownlint:
+  markdownlint:
+    enabled: true
+  ShellCheck:
     enabled: true
 
 # exclude_patterns: Exclude files and/or directories from analysis
