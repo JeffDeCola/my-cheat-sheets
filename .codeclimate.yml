@@ -1,4 +1,4 @@
-# .codeclimate.json
+# .codeclimate.yml
 
 version: "2"
 # prepare: Actions to perform before analysis begins
