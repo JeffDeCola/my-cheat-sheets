@@ -44,6 +44,7 @@ commits came from,
 git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
+git config --global push.default simple
 ```
 
 Check your configuration,
@@ -56,6 +57,16 @@ Or check the config file,
 
 ```bash
 cat ~/.gitconfig
+```
+
+```text
+[user]
+        name = Jeff DeCola (<HOSTNAME / MACHINE NAME>)
+        email =  <YOUR-EMAIL>
+[core]
+        editor = nano
+[push]
+        default = simple
 ```
 
 ## HTTPS ACCESS (USING .netrc)
@@ -703,15 +714,20 @@ git remote set-url origin git@github.com:JeffDeCola/<REPONAME>.git
 git push origin master
 ```
 
-I create a `develop` branch since I would never work on master,
+You probably don't need to `set-url` since it should be the default.
+
+I then create a `develop` branch since I would never work on master,
 
 ```bash
-git checkout -b "develop" master
 git push --set-upstream origin develop
+git push
 ```
 
-The `--set-upstream` switch makes me lazy so I just use
-`git push` rather then `git push origin master`.
+I check my git configuration,
+
+```bash
+git config --list
+```
 
 At github.com I go into my repo settings and add GitHub Webpage on `/docs`.
 
