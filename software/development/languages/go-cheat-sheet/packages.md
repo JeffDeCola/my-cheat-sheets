@@ -37,5 +37,4 @@ We will call the package shapes.  Hence the folder name must be called shapes.
     circle.shapes.area()
     rectangle.shapes.area()
 
-
 In shapes I will put methods.

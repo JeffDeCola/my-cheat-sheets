@@ -98,6 +98,7 @@ And your prompt should look like,
 ```bash
 <bashusername>@<computername>:/mnt/c/Users/<winusername>/home/<bashusername>
 ```
+
 ### FIX EOL (END-Of-LINE) CRLF TO LF
 
 Since windows will like uses CRLF at eol (end of line), and linux uses LF,
@@ -138,6 +139,7 @@ GOROOT=C:\Go\
 GOPATH C:\Users\<WINDOWSNAME>\go
 Path=...\Go\bin;...%GOPATH%\bin
 ```
+
 You may need to create your workspace directory for Windows go
 if it didn't do it automatically.
 
