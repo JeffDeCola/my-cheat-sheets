@@ -1,13 +1,13 @@
-# GCE (GOOGLE COMPUTE ENGINE) CLI CHEAT SHEET
+# GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
-`(gce) google compute engine` _part of google Cloud Platform, like
-[aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
+`google compute engine (gce)` _part of google Cloud Platform, like
+[amazon web services(aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
 or
 [microsoft-azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
 * [Google Cloud Platform Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
-* [Compute Engine Reference(gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+* [Compute Engine Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
