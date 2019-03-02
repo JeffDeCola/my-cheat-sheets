@@ -508,7 +508,6 @@ This cheat sheet is broken up into the following sections,
 
 ### HELP
 
-*  [Go forum](https://forum.golangbridge.org/)
-   _- Community forum._
-
+* [Go forum](https://forum.golangbridge.org/)
+  - Community forum._
 
