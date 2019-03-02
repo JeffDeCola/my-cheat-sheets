@@ -12,5 +12,5 @@ View my entire list of cheat sheets on
 The hummingboard is composed of twop parts
 
 * Carrier Board
-* SoM (System on a module).## 
+* SoM (System on a module).##
 tbd

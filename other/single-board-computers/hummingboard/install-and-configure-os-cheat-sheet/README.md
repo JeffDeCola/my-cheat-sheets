@@ -14,7 +14,7 @@ To use this, it must be burned on a microSD card.
 
 * Download the `Ignition` image
   [here](https://www.solid-run.com/downloads/ignition).
-* Get a way to get the image on a microSD 
+* Get a way to get the image on a microSD
   [Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
 * With your computer, use `Win32DiskImager`
   to burn the image on a microSD card.
