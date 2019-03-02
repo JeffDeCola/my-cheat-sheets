@@ -55,7 +55,7 @@ This cheat sheet is broken up into the following sections,
   * Slice (Data Structure) (Reference Type) (_make_)
   * Map (Data Structure) (Reference Type) (_make_)
   * Struct (Data Structure)
-  * Pointer 
+  * Pointer
   * Function (as a Type)
   * Interface (See own [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
   * Channel (Reference Type) (_make_) (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
@@ -276,11 +276,11 @@ This cheat sheet is broken up into the following sections,
 // FUNCTION TYPE
 
     // FUNCTION AS A TYPE
-	a, b := 4, 4
-	var add = func() int {
-		return a + b
-	}
-	fmt.Println(add())
+    a, b := 4, 4
+    var add = func() int {
+        return a + b
+    }
+    fmt.Println(add())
 
 // FUNCTION
 

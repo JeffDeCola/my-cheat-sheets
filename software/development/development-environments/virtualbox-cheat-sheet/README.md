@@ -79,7 +79,6 @@ The following is required to use these features:
 * Guest Additions installed.
 * Desktop like GNOME.
 
-
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
 See your network devices and their configurations,

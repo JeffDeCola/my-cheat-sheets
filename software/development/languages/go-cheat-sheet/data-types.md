@@ -15,9 +15,9 @@ The data types in go are,
   * Slice (Data Structure) (Reference Type) (_make_)
   * Map (Data Structure) (Reference Type) (_make_)
   * Struct (Data Structure)
-  * Pointer 
+  * Pointer
   * Function (as a Type)
-  * Interface 
+  * Interface
   * Channel (Reference Type) (_make_)
 
 ## BOOLEAN
