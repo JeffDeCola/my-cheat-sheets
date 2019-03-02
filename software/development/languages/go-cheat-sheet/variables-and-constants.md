@@ -65,9 +65,9 @@ Really means just a little bit.
 
 ```go
 const (
-	c = iota
-	d = iota
-	e = iota
+    c = iota
+    d = iota
+    e = iota
 )
 ```
 

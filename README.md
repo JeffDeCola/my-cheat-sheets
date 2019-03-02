@@ -6,7 +6,7 @@
 
 `my-cheat-sheets` _is a place to keep all my cheat sheets
 on everything you need for the complete development of
-ASIC hardware or a Software service._
+ASIC hardware or a software service._
 
 The folder structures are organized alphabetically as follows:
 
@@ -253,5 +253,3 @@ shows the entire ci flow. Visually, it looks like,
 
 For more information on using concourse for continuous integration,
 refer to my cheat sheet on [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet).
-
-
