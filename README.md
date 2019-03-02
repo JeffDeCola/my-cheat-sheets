@@ -6,7 +6,7 @@
 
 `my-cheat-sheets` _is a place to keep all my cheat sheets
 on everything you need for the complete development of
-ASIC Hardware or a Software service._
+ASIC hardware or a Software service._
 
 The folder structures are organized alphabetically as follows:
 
@@ -39,7 +39,7 @@ View my entire list of cheat sheets on
 
 ## HARDWARE CHEAT SHEETS
 
-_Various Apps and tools for the goal of creating an ASIC._
+Various Apps and tools for the goal of creating an ASIC.
 
 ### DEVELOPMENT
 
@@ -50,7 +50,7 @@ _Various Apps and tools for the goal of creating an ASIC._
 * LANGUAGES
 
   * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples) Repo)
+    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
 
 ### TOOLS
 
@@ -68,7 +68,7 @@ _Various Apps and tools for the goal of creating an ASIC._
 
 ## SOFTWARE CHEAT SHEETS
 
-_Various Apps and tools for the goal of creating a service._
+Various Apps and tools for the goal of creating a service.
 
 ### DEVELOPMENT
 
@@ -82,10 +82,11 @@ _Various Apps and tools for the goal of creating a service._
 * LANGUAGES
 
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet)
-    ([my-go-examples](https://github.com/JeffDeCola/my-go-examples) Repo)
+    ([my-go-examples](https://github.com/JeffDeCola/my-go-examples))
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
-    ([my-python-example](https://github.com/JeffDeCola/my-python-examples) Repo)
-  * ([my-php-examples](https://github.com/JeffDeCola/my-php-containers) Repo)
+    ([my-python-example](https://github.com/JeffDeCola/my-python-examples))
+  * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet)
+    ([my-php-examples](https://github.com/JeffDeCola/my-php-containers))
 
 * OPERATING SYSTEMS
 
@@ -96,11 +97,17 @@ _Various Apps and tools for the goal of creating a service._
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
     * [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
 
+  * LINUX DISTRIBUTIONS
+
+    * _coming soon_
+
   * WINDOWS
 
     * [wsl (bash on ubuntu on windows)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl-bash-on-ubuntu-on-windows-cheat-sheet)
 
   * MAC OS
+
+    * _coming soon_
 
 * SOFTWARE ARCHITECTURES
 
@@ -131,8 +138,8 @@ _Various Apps and tools for the goal of creating a service._
 
 * CLOUD SERVICES / COMPUTE
 
-  * [aws (amazon web services)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
-  * [gce (google compute engine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
+  * [amazon web services(aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
+  * [google compute engine(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
   * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)
 
 * DATABASE
@@ -173,16 +180,9 @@ _Various Apps and tools for the goal of creating a service._
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
 
-### VISUAL OVERVIEW OF CREATING A SERVICE
-
-Here is my concept on how various Apps and tools fit together
-for the goal of creating a service,
-
-![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
-
 ## OTHER CHEAT SHEETS
 
-_Random other things I'm interested in._
+Random other things I'm interested in.
 
 ### COMPUTER HARDWARE
 
@@ -224,6 +224,17 @@ _Random other things I'm interested in._
 
   * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
   * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+
+## VISUAL OVERVIEW OF CREATING AN ASIC
+
+This illustration coming soon.
+
+## VISUAL OVERVIEW OF CREATING A SERVICE
+
+Here is my illustration on how various Apps and tools fit together
+for the goal of creating a service,
+
+![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
