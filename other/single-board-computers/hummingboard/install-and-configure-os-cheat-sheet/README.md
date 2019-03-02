@@ -13,11 +13,11 @@ your OS distribution of choice.
 To use this, it must be burned on a microSD card.
 
 * Download the `Ignition` image
-[here](https://www.solid-run.com/downloads/ignition).
+  [here](https://www.solid-run.com/downloads/ignition).
 * Get a way to get the image on a microSD 
-[Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
+  [Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
 * With your computer, use `Win32DiskImager`
-to burn the image on a microSD card.
+  to burn the image on a microSD card.
 
 I would label this card since its easy to forget.
 
@@ -34,7 +34,7 @@ for `imx.6` OS distribution `ignition installer scripts`.
 Choose a distro such as:
 
 * Debian (Manual installation of debian
-[here](https://images.solid-build.xyz/IMX6/Debian)
+  [here](https://images.solid-build.xyz/IMX6/Debian)
 * GeexBoX
 * LibreELEC
 * OpenELEC.tv

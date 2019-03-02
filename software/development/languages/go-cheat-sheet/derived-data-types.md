@@ -16,9 +16,9 @@ All the data types in go,
   * Slice (Data Structure) (Reference Type) (_make_)
   * Map (Data Structure) (Reference Type) (_make_)
   * Struct (Data Structure)
-  * Pointer 
+  * Pointer
   * Function (as a Type)
-  * Interface 
+  * Interface
   * Channel (Reference Type) (_make_)
 
 `Reference types` are slice, map and channel,
@@ -399,7 +399,7 @@ Cool uses for pointers are,
 * Allocate space for a variable.
 * Pass by "reference" to a function to change parameters value outside function.
 
-Another example, 
+Another example,
 
 ```go
 a := 43

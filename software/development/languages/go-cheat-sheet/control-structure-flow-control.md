@@ -4,10 +4,9 @@ A control structure analyzes variables and chooses a direction
 in which to go based on given parameters.
 `for` Loops and `if`, `then`, `else` statements are perfect examples.
 
-
 Control flow / Flow Control is basically,
 
-* Sequential 
+* Sequential
 * Loops
 * Conditionals
 
@@ -16,6 +15,7 @@ Control flow / Flow Control is basically,
 Go only has for loops.
 
 For loop basic format,
+
 ```go
 for init; condition; post {}        // normal
 for condition {}                    // while
@@ -24,7 +24,7 @@ for {}                              // infinite
 
 ### FOR LOOP
 
-As an example, 
+As an example,
 
 ```go
 for i:=0; i < 8; i++ {
