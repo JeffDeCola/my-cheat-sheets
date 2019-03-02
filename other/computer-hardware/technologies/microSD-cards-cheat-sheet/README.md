@@ -7,18 +7,18 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-`microSD` cards are a type of removable flash memory card used for storing information.
-SD is an abbreviation of Secure Digital, and `microSD` cards are sometimes referred to
-as µSD or uSD.
+`microSD` cards are a type of removable flash memory card used for storing
+information.  SD is an abbreviation of Secure Digital, and `microSD` cards
+are sometimes referred to as µSD or uSD.
 
 ## STORAGE CAPACITY
-  
-* `SDHC` Secure Digital High Capacity	4-32GB (FAT32)
-* `SDXC` Secure Digital eXtended Capacity	64-2TB (exFAT)
+
+* `SDHC` Secure Digital High Capacity       4-32GB (FAT32)
+* `SDXC` Secure Digital eXtended Capacity   64-2TB (exFAT)
 
 ## SPEED CLASS
 
-Speed Class is a minimum speed based on a worst case scenario test. 
+Speed Class is a minimum speed based on a worst case scenario test.
 
 SDHC SPEED CLASS
 
