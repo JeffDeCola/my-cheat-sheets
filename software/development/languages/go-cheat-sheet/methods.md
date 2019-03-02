@@ -16,7 +16,7 @@ The basic format is,
 
 ```
 func (receiver) name(parameter list) return type {
-func receiver identifier parameters returns 
+func receiver identifier parameters returns
 ```
 
 ## PASSING PARAMETERS
