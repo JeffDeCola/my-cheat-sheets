@@ -681,6 +681,10 @@ fi
 This [article](https://help.github.com/articles/removing-sensitive-data-from-a-repository)
 will show you how to scrub the file permanently.
 
+## MIGRATE FROM BITBUCKET TO GITHUB
+
+Simply use the import feature at github.
+
 ## MY NOTES - HOW I CREATE A LOCAL/REMOTE REPO
 
 First, I create my remote repo on GitHub.
