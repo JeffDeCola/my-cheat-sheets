@@ -99,7 +99,7 @@ And your prompt should look like,
 <bashusername>@<computername>:/mnt/c/Users/<winusername>/home/<bashusername>
 ```
 
-### FIX EOL (END-Of-LINE) CRLF TO LF
+### FIX EOL (END-Of-LINE) CRLF TO LF FOR WINDOWS
 
 Since windows will like uses CRLF at eol (end of line), and linux uses LF,
 you need to force your windows VS Code to always use LF.
@@ -112,6 +112,23 @@ Set this in your preferences.
 
 You can check it worked by looking in the bottom left of your VS Code
 and you will see LF.
+
+## INSTALLING EXTENSIONS
+
+Most extensions are standalone and they live in the following directories:
+
+* Windows Users\Jeff\vscode\extensions
+* macOS ~/.vscode/extensions
+* Linux ~/.vscode/extensions
+
+Some extensions, like `go` and `python` use existing Apps/Tools.
+
+For example, to get the extension `shellcheck` to run on Windows, you
+would bring up settings.json (press F1) and add the path to the program,
+
+```yaml
+    "shellcheck.executablePath": "C:\\Users\\Jeff\\AppData\\Local\\Programs\\shellcheck\\shellcheck-stable.exe",
+```
 
 ## USING GO with WINDOWS VS CODE and BASH WSL TERMINAL
 
@@ -155,7 +172,7 @@ type the following,
 As I mentioned, their are two versions of go, one for Windows and
 one for your WSL bash.  And each have their own paths.
 
-#### INSTALLING GO EXTENTION
+#### INSTALLING THE GO EXTENTION
 
 So when you open VS Code, and install the go extension, it will
 install in the windows area of go. The go extensions will

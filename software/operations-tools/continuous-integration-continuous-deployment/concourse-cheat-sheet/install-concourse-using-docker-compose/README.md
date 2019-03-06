@@ -65,7 +65,7 @@ docker ps
 
 That's it, check that its working,
 
-[192.168.100.5:8080](http://192.168.100.5:8080)
+[192.168.100.6:8080](http://192.168.100.6:8080)
 
 I could not get login as user
 `jeff` and password `test`.
@@ -89,7 +89,7 @@ Remember to match the static IP to what's in your
 `docker-compose.yml` file,
 
 ```text
-    - CONCOURSE_EXTERNAL_URL=http://192.168.100.5:8080
+    - CONCOURSE_EXTERNAL_URL=http://192.168.100.6:8080
 ```
 
 ## IF YOU GET AN IMAGE ERROR
