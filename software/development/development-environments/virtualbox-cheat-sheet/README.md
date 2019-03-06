@@ -121,3 +121,24 @@ You should see your new static ip address.
 
 For more information about configuring network devices, goto my cheat-sheet
 [network-device-configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet).
+
+## ALLOW HOST ACCESS TO VM
+
+Create a VirtualBox Host-Only Ethernet Adapter and configure
+the VM,
+
+```txt
+Settings -> Network - Adapter -> Host-Only Adapter.
+```
+
+When you add a static IP, your Host will be able to access the VM.
+
+## ALLOW LOCAL NETWORK ACCESS TO VM
+
+You use a bridged adapter,
+
+```txt
+Settings -> Network - Adapter -> Bridged Adapter.
+```
+
+I did not explore this feature yet.

@@ -30,7 +30,7 @@ Fly allows you to uploads/updates your files.
 You are now logged in to concourse with team `main`.
 You can check `~/.flyrc` to see this.
 
-To creat a new team,
+To create a new team,
 
 ```bash
 fly -t ci set-team --team-name team-jeff --local-user test
