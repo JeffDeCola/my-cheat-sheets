@@ -44,7 +44,7 @@ Various Apps and tools for the goal of creating an ASIC.
 
 * HARDWARE ARCHITECTURES
 
-  * _coming soon_
+  * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
 
 * LANGUAGES
 
