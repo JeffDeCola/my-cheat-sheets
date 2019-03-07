@@ -1,6 +1,6 @@
 # MACBOOK PRO MODELS CHEAT SHEET
 
-`macbook pro models` _are the part numbers for the various macbook pros._
+`macbook pro models` _are the part numbers for the various Macbook Pros._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
