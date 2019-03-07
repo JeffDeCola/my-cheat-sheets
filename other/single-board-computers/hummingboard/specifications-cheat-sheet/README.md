@@ -1,17 +1,54 @@
 # SPECIFICATIONS CHEAT SHEET
 
-`specifications` _of Hummingboards._
+`specifications` _of SolidRun's Hummingboard._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## SOLIDRUN
 
+A company that makes the hummingboard.
+
 ## HUMMINGBOARD PRODUCT LIST
 
-The hummingboard is composed of twop parts
+The hummingboard is composed of two parts,
 
 * Carrier Board
 * SoM (System on a module).
 
-tbd
+SolidRun’s Hummingboard-i4 Single Board Computer (SBC) uses Freescale's SoC
+Quad Core ARMv7 CPU (based on ARM cortex A9).
+The Hummingboard is a development board composed of two smaller boards: 
+a Carrier Board and a Micro-SOM (System on Modules) Board.
+It requires 5V, 2A microUSB power.
+
+## CARRIER BOARD OPTIONS & SPECS
+
+|            |   mSATA II |        RTC | ANALOG AUD |
+|:-----------|-----------:|-----------:|-----------:|
+| BASE       |         No |         No |         No |
+| PRO        |        yes |        Yes |        Yes |
+
+* Carrier Board (Pro)
+  * Model          Hummingboard Pro.
+  * OS             Arch Linux ARM or Debian (linux distro for embedded system).
+  * Linux Kernel   3.14.x.
+  * HDMI           1.4.
+  * USB            2 External ports. 2 Internal.
+  * Boot Up        Boots from microSD (4GB).
+  * Power          microUSB.
+  * Ethernet       10/100/1000.
+  * mSATA II       512GB mSATA SSD.
+  * RTC Chip       NXO PCF8523 (external battery (CR1620) using 2 pin header)
+  * GPIO           26 pin - Same configuration as Raspberry Pi.
+  * Audio          Analog Stereo and MIC in.
+
+## MICRO-SOM (SYSTEM ON MODULE) OPTIONS
+
+|      | SoC i.MX6 |                     RAM |         3D GPU |  WiFi |
+|:-----|----------:|------------------------:|---------------:|------:|
+|   i1 |      Solo |  32-bit ,512MB, 800Mbps |  Vivante GC880 |    No |   
+|   i2 | Dual-Lite |    64-bit ,1GB, 800Mbps |  Vivante GC880 |    No |    
+| i2eX |      Dual |    64-bit ,1GB, 800Mbps | Vivante GC2000 |   Yes |
+|   i4 |      Quad |   64-bit ,2GB, 1066Mbps | Vivante GC2000 |   Yes |
+| i4x4 |      Quad |   64-bit ,4GB, 1066Mbps | Vivante GC2000 |   Yes |
