@@ -74,3 +74,7 @@ PPI based on 27".
 |              |       |       |         |        |        |     |     |     |
 | 480p/DVD     |   720 |   480 |    .34M |  32.05 |  16:9  |   X |   X |     |     
 |              |       |       |         |        |        |     |     |     |
+
+
+![IMAGE - monitor-resolutions - IMAGE](../../../../docs/pics/monitor-resolutions.jpg)
+
