@@ -91,7 +91,7 @@ Random other things I'm interested in.
 
 * CELLULAR
 
-  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunications-standards-cheat-sheet)
+  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
 
 * WAN / LAN
 
@@ -118,7 +118,7 @@ Various Apps and tools for the goal of creating a service.
 
 * DEVELOPMENT ENVIRONMENTS
 
-  * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/software/development/development-environments/software-install-methods-cheat-sheet)
+  * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/software-install-methods-cheat-sheet)
   * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
@@ -128,7 +128,7 @@ Various Apps and tools for the goal of creating a service.
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet)
     ([my-go-examples](https://github.com/JeffDeCola/my-go-examples))
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
-    ([my-python-example](https://github.com/JeffDeCola/my-python-examples))
+    ([my-python-examples](https://github.com/JeffDeCola/my-python-examples))
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet)
     ([my-php-examples](https://github.com/JeffDeCola/my-php-containers))
 
@@ -183,8 +183,8 @@ Various Apps and tools for the goal of creating a service.
 
 * CLOUD SERVICES / COMPUTE
 
-  * [amazon web services(aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
-  * [google compute engine(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
+  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet)
   * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)
 
 * DATABASE
