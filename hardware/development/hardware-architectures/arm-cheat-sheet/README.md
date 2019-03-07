@@ -23,7 +23,6 @@ the ARM7 distro.
 
 This highlights the main cores and the architecture used.
 
-| INSTRUCTION SET/ |                           |                        |
 | ARM ARCHITECTURE |      ARM HOLDINGS IP CORE |       THIRD PARTY CHIP |
 |:-----------------|--------------------------:|-----------------------:|
 | ARMv1            |                      ARM1 |                        |
