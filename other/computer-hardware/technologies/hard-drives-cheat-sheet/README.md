@@ -11,15 +11,11 @@ View my entire list of cheat sheets on
 * NAS (Network-Attached Storage) - BETTER
 * ENTERPRISE NAS - BEST
 
-## RAID
+## RAID 0, 1, 5,6
 
 Redundant array of Inexpensive Disks.
 
 As an example, assume each disk is a 1 TB drive.
-
-Note that RAID 10 is Really RAID 1 and RAID 0 combined.
-Hence Raid 50 is Raid 5 and RAID 0 combined.
-
 
 | # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
 |--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
@@ -56,20 +52,29 @@ Hence Raid 50 is Raid 5 and RAID 0 combined.
 |   | A5 | A6 | A7 |  P |  P | A8 |    |    |      |     |  Striping 2 Parity |
 |   |    |    |    |    |    |    |    |    |      |     |                    |
 
-RAID COBINATIONS
+## RAID 10, 50
 
+You can combine the above raid combinations.
+
+RAID 10 is Really RAID 1 and RAID 0 combined.
+Raid 50 is Raid 5 and RAID 0 combined.
 
 | # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
 |--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
 |   |    |    |    |    |    |    |    |    |      |     |                    |
-|   |       RAID 0      |    |    |    |    |      |     |           Striping |
-|   |    ------------   |    |    |    |    |      |     |                    |
-|   |  RAID 1    RAID 1 |    |    |    |    |      |     |             Mirror |
-|   | ------- | ------- |    |    |    |    |      |     |                    |
 |10 | A1 | A1 | A2 | A2 |    |    |    |    | 2 TB |  50 | Perform / Reliable |
-|   | A3 | A3 | A4 | A4 |    |    |    |    |      |     |            loose 2 |
+|   | A3 | A3 | A4 | A4 |    |    |    |    |      |     |  Striping / Mirror |
 |   |    |    |    |    |    |    |    |    |      |     |                    |
-
-
-
+|   |    |    |    |    |    |    |    |    |      |     |                    |
+|10 | A1 | A1 | A2 | A2 | A3 | A3 |    |    | 3 TB |  50 | Perform / Reliable |
+|   | A4 | A4 | A5 | A5 | A6 | A6 |    |    |      |     |  Striping / Mirror |
+|   |    |    |    |    |    |    |    |    |      |     |                    |
+|50 | A1 | A2 |  P | A3 | A4 |  P |    |    | 4 TB |  66 | Perform / Reliable |
+|   | A5 |  P | A6 | A7 |  P | A8 |    |    |      |     |  Striping 2 Parity |
+|   |    |    |    |    |    |    |    |    |      |     |             Mirror |
+|   |    |    |    |    |    |    |    |    |      |     |                    |
+|50 | A1 | A2 | A3 |  P | A4 | A5 | A6 | P  | 6 TB |  75 | Perform / Reliable |
+|   | A7 | A8 |  P | A9 | A10| A11|  P | A12|      |     |  Striping 2 Parity |
+|   |    |    |    |    |    |    |    |    |      |     |             Mirror |
+|   |    |    |    |    |    |    |    |    |      |     |                    |
 
