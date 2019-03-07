@@ -15,7 +15,11 @@ View my entire list of cheat sheets on
 
 Redundant array of Inexpensive Disks.
 
-As an example, assume each disk is a 1TB drive.
+As an example, assume each disk is a 1 TB drive.
+
+Note that RAID 10 is Really RAID 1 and RAID 0 combined.
+Hence Raid 50 is Raid 5 and RAID 0 combined.
+
 
 | # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
 |--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
@@ -52,6 +56,19 @@ As an example, assume each disk is a 1TB drive.
 |   | A5 | A6 | A7 |  P |  P | A8 |    |    |      |     |  Striping 2 Parity |
 |   |    |    |    |    |    |    |    |    |      |     |                    |
 
+RAID COBINATIONS
+
+
+| # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
+|--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
+|   |    |    |    |    |    |    |    |    |      |     |                    |
+|   |       RAID 0      |    |    |    |    |      |     |           Striping |
+|   |    ------------   |    |    |    |    |      |     |                    |
+|   |  RAID 1    RAID 1 |    |    |    |    |      |     |             Mirror |
+|   | ------- | ------- |    |    |    |    |      |     |                    |
+|10 | A1 | A1 | A2 | A2 |    |    |    |    | 2 TB |  50 | Perform / Reliable |
+|   | A3 | A3 | A4 | A4 |    |    |    |    |      |     |            loose 2 |
+|   |    |    |    |    |    |    |    |    |      |     |                    |
 
 
 
