@@ -17,7 +17,7 @@ Redundant array of Inexpensive Disks.
 
 As an example, assume each disk is a 1 TB drive.
 
-| # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
+| # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |
 |--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
 |   |    |    |    |    |    |    |    |    |      |     |                    |
 | 0 | A1 | A2 |    |    |    |    |    |    | 2 TB | 100 |        Performance |
@@ -59,7 +59,7 @@ You can combine the above raid combinations.
 RAID 10 is Really RAID 1 and RAID 0 combined.
 Raid 50 is Raid 5 and RAID 0 combined.
 
-| # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |             
+| # | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 |  TOT |   % |            COMMENT |
 |--:|---:|---:|---:|---:|---:|---:|---:|---:|-----:|----:|-------------------:|
 |   |    |    |    |    |    |    |    |    |      |     |                    |
 |10 | A1 | A1 | A2 | A2 |    |    |    |    | 2 TB |  50 | Perform / Reliable |

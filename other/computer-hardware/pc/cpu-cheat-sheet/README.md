@@ -8,14 +8,14 @@ View my entire list of cheat sheets on
 ## DESKTOP INTEL I7
 
 ### 2018 - COFFEE LAKE (8th/9th GEN)
-	
+
 * Coffee Lake-S
   * FREQ: 6-8 Cores, 3.2-4 GHz, DirectX 12.0
   * SIZE: 14nm, not sure billion transistors
   * SOCKET - LGA 1151
 
 ### 2017 - KABY LAKE (7th GEN)
-	
+
 * Kaby Lake-S
   * FREQ: 4 Cores, 2.9-4.2 GHz, DirectX 12.0
   * SIZE: 14nm, not sure billion transistors
@@ -27,7 +27,7 @@ View my entire list of cheat sheets on
   * SOCKET - LGA 2066
 
 ### 2015/2016 - SKYLAKE (6th GEN)
-	
+
 * Skylake-S
   * FREQ: 4 Cores, 2.4-3.4 GHz, DirectX 12.0
   * SIZE: 14nm, not sure billion transistors
@@ -57,7 +57,7 @@ View my entire list of cheat sheets on
   * SOCKET - LGA 2011-3
 
 ### 2013/2014 - HASWELL (4th GEN)
-	
+
 * Haswell-DT
   * FREQ: 4 Cores, 2.2-4 GHz, DirectX 11.1
   * SIZE: 22nm, 1.4 billion transistors
