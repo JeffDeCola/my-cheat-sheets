@@ -46,7 +46,7 @@ sudo usermod -aG docker $USER
 
 ## DOCKER RUN (RUN A SINGLE CONTAINER)
 
-To run a simple docker comtainer just use `docker run`,
+To run a simple docker container just use `docker run`,
 
 ```bash
 docker run jeffdecola/hello-go
@@ -99,7 +99,7 @@ Check you got it,
 docker images
 ```
 
-## CONTAINERS - RUNNING IMAGES
+## CONTAINERS - A RUNNING IMAGE
 
 A container is a running image.
 
@@ -108,6 +108,8 @@ List of Running Containers
 ```bash
 docker ps
 ```
+
+### START/STOP A CONTAINER
 
 Run an image from Docker Hub,
 
@@ -120,7 +122,7 @@ docker run ubuntu /bin/echo 'Hello World'
 The docker command looks for it on your local system.
 If the image isn’t there, docker gets it.
 
-Stop a runing container,
+Stop a running container,
 
 ```bash
 docker stop IMAGE-ID
@@ -132,11 +134,13 @@ Find the switches you can use with a container,
 docker run IMAGENAME --help
 ```
 
-List old containers you have lying around (casched),
+List old containers you have lying around (cached),
 
 ```bash
 docker ps -a
 ```
+
+### DELETE A CONTAINER
 
 Delete a container,
 
@@ -149,6 +153,8 @@ Delete all containers,
 ```bash
 docker rm $(docker ps -a -q)
 ```
+
+### START INTERACTIVE CONTAINER
 
 Run an interactive container, This is cool, it gives you a tty terminal,
 
@@ -172,11 +178,15 @@ Now see what the docker container daemon is doing,
 docker logs NAME
 ```
 
-Stop a container,
+## GET A SHELL PROMPT INSIDE A RUNNING CONTAINER
+
+To get inside a running container,
 
 ```bash
-docker stop NAME
+docker exec -t -i <container ID or PORT NAME> 
 ```
+
+Use `docker ps` to get the container ID or PORT NAME.
 
 ## BUILD AN IMAGE
 
@@ -225,7 +235,7 @@ And another one,
 ```bash
 #Test
 FROM ubuntu:14.04
-MAINTAINER Jeff DeCola
+LABEL Jeff DeCola
 COPY whatever /
 CMD echo "Hi Jeff"
 ```
