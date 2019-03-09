@@ -50,12 +50,11 @@ It requires 5V, 2A microUSB power.
 
 |      | SoC i.MX6 |                     RAM |         3D GPU |  WiFi |
 |:-----|----------:|------------------------:|---------------:|------:|
-|   i1 |      Solo |  32-bit ,512MB, 800Mbps |  Vivante GC880 |    No |   
-|   i2 | Dual-Lite |    64-bit ,1GB, 800Mbps |  Vivante GC880 |    No |    
+|   i1 |      Solo |  32-bit ,512MB, 800Mbps |  Vivante GC880 |    No |
+|   i2 | Dual-Lite |    64-bit ,1GB, 800Mbps |  Vivante GC880 |    No |
 | i2eX |      Dual |    64-bit ,1GB, 800Mbps | Vivante GC2000 |   Yes |
 |   i4 |      Quad |   64-bit ,2GB, 1066Mbps | Vivante GC2000 |   Yes |
 | i4x4 |      Quad |   64-bit ,4GB, 1066Mbps | Vivante GC2000 |   Yes |
-
 
 ### i4
 
@@ -71,7 +70,7 @@ It requires 5V, 2A microUSB power.
 * RAM                  2GB DDR3 (1066MHz).
 
 ### i2eX
-    
+
 * Model                i2eX.
 * SoC                  Freescale’s i.MX6 Dual.
   * CORE               Dual Core (2) – ARM Cortex A9 (ARMv7 Instruction Set).
