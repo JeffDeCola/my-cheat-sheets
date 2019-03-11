@@ -685,6 +685,25 @@ will show you how to scrub the file permanently.
 
 Simply use the import feature at github.
 
+## FILE PERMISSIONS
+
+Git maintains a special "mode" for each file in its internal storage:
+
+* 644 for regular files
+* 755 for executable ones
+
+To check the permissions,
+
+```bash
+git ls-files --stage
+```
+
+To change the permissions,
+
+```bash
+git update-index --chmod=+x path/to/file
+```
+
 ## MY NOTES - HOW I CREATE A LOCAL/REMOTE REPO
 
 First, I create my remote repo on GitHub.

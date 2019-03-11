@@ -127,6 +127,25 @@ Show all teams,
 fly -t ci teams
 ```
 
+## FILE PERMISSIONS
+
+Git maintains a special "mode" for each file in its internal storage:
+
+* 644 for regular files
+* 755 for executable ones
+
+To check the permissions,
+
+```bash
+git ls-files --stage
+```
+
+To change the permissions,
+
+```bash
+git update-index --chmod=+x path/to/file
+```
+
 ## PASSING SECRETS TO USE IN YOUR SCRIPT (via env)
 
 To pass secrets (files and variables) to your concourse script,
