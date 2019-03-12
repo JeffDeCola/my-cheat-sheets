@@ -125,7 +125,8 @@ Various Apps and tools for the goal of creating a service.
 
 * LANGUAGES
 
-  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet)
+  * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
+    [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet)
     ([my-go-examples](https://github.com/JeffDeCola/my-go-examples))
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
     ([my-python-examples](https://github.com/JeffDeCola/my-python-examples))
