@@ -1,10 +1,6 @@
 # GO TOOLS CHEAT SHEET
 
-```
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
-`go-tools` _are many tools that can be used with go._
+`go-tools` _are tools that can be used with go._
 
 The tools are organized alphabetically as follows:
 
@@ -17,7 +13,7 @@ View my entire list of cheat sheets on
 
 Automatically generates tests.
 
-Install or update,
+Use go get to install and update,
 
 ```bash
 go get github.com/cweill/gotests/...
@@ -30,6 +26,9 @@ Generate test file `filename_test.go`,
 ```bash
 gotests -w -all filename.go
 ```
+
+* -w writes to test file
+* -all generate test for all functions and methods.
 
 Run,
 
