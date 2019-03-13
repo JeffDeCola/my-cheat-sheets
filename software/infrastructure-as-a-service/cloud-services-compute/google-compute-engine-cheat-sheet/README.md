@@ -62,7 +62,7 @@ Then submit your billing information.
 
 Here is an illustration of GCE.
 
-![IMAGE -  google compute engine overview - IMAGE](../../../../../docs/pics/google-computer-engine-overview.jpg)
+![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
 
 There are 4 main section of gce:
 
