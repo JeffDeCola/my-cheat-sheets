@@ -159,7 +159,7 @@ There is a free `f1-micro` tier as follows,
 
 Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
 
-## INSTALL GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
+## INSTALL AND CONFIGURE GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
 
 `gcloud` SDK is a set of tools for Cloud Platform. It contains `gcloud`,
 `gsutil`, and `bq` command-line tools, which you can use to access Google Compute Engine,
@@ -169,13 +169,32 @@ and services from the command-line.
 There is great documentation online to install the SDK on your platform
 [here](https://cloud.google.com/sdk/)
 
-You will be asked to attached to a project.
+After installation lets configure,
 
+```bash
+gcloud init
+```
+
+You will be asked to attached a project and a default compute region.
 When complete, check your active configuration,
 
 ```bash
 gcloud config list
+gcloud auth list
+gcloud info
 ```
+
+Your configuration is loacted in `~/.boto` file.
+
+To change your default region/zone,
+
+```bash
+gcloud config set compute/region NAME
+gcloud config set compute/zone NAME
+```
+
+For more information on the configuration .boto file go
+[here](https://cloud.google.com/storage/docs/gsutil/commands/config).
 
 ## BASIC GCP COMMANDS
 
@@ -185,18 +204,44 @@ GCP Help,
 gcloud help
 ```
 
-Version information for GCP SDK Components,
+Version,
 
 ```bash
-gcloud config list
+gcloud -v
 ```
 
-See your active configuration,
+## BASIC GCE COMMANDS
+
+GCE Help,
 
 ```bash
-gcloud config list
+gcloud help compute
 ```
 
+List of Machines Types per zone,
+
+```bash
+gcloud compute machine-types list
+```
+
+List zones,
+
+```bash
+gcloud compute zones list
+```
+
+## TO CREATE AN IMAGE, INSTANCE-TEMPLATE, INSTANCE GROUP OR INSTANCE/VM
+
+Outside the scope of this cheat-sheet, but this will point you
+in the right direction,
+
+```bash
+gcloud help compute images create
+gcloud help compute instance-templates create
+gcloud help compute instance-groups managed create
+gcloud help compute instance-groups unmanaged create
+gcloud help compute instances create
+```
 
 ## BASIC GCE COMMANDS RELATING TO YOUR VMs
 
@@ -217,7 +262,7 @@ List your instance groups,
 ```bash
 gcloud compute instance-groups list
 gcloud compute instance-groups managed list
-gcloud compute instance-groups unmanged list
+gcloud compute instance-groups unmanaged list
 ```
 
 List your instances/VMs,
@@ -225,8 +270,6 @@ List your instances/VMs,
 ```bash
 gcloud compute instances list
 ```
-
-
 
 ## GCE HEALTH CHECK COMMANDS
 
@@ -265,41 +308,6 @@ Listing static external IP addresses,
 gcloud compute addresses list
 ```
 
-gcloud compute addresses list
-
-## OTHER BASIC GCE COMMANDS
-
-GCE Help,
-
-```bash
-gcloud help compute
-```
-
-List of Machines Types per zone,
-
-```bash
-gcloud compute machine-types list
-```
-
-List zones,
-
-```bash
-gcloud compute zones list
-```
-
-## TO CREATE AN IMAGE, INSTANCE-TEMPLATE, INSTANCE GROUP OR INSTANCE/VM
-
-Outside the scope of this cheat-sheet, but this will point you
-in the right direction,
-
-```bash
-gcloud help compute images create
-gcloud help compute instance-templates create
-gcloud help compute instance-groups managed create
-gcloud help compute instance-groups unmanaged create
-gcloud help compute instances create
-```
-
 ## GCLOUD BETA - PUBSUB
 
 Beta versions of gcloud commands such as ones for pubsub.
@@ -321,38 +329,6 @@ This lists everything, so it can be a long list.
 
 ```bash
 gcloud beta pubsub subscriptions list
-```
-
-## PUB/SUB LOCAL EMULATOR
-
-[Local pub/Sub Install](https://cloud.google.com/pubsub/docs/emulator)
-
-Must install Java JRE
-
-```bash
-sudo apt-get update
-sudo apt-get install default-jre
-```
-
-### STEP 1 - Start it
-
-```bash
-gcloud beta emulators pubsub start \
-    --data-dir="/home/jeff/.config/gcloud/emulators/pubsub"
-```
-
-### STEP 2 - Call evn-init
-
-Make your code call the API running in the local
-instance instead of the production API, hence
-run the env-init command in another terminal,
-
-$(gcloud beta emulators pubsub env-init)
-
-To see command line arguments,
-
-```bash
-gcloud beta emulators pubsub --help
 ```
 
 ## METADATA SERVER QUERY
