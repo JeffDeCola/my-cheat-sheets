@@ -1,18 +1,183 @@
 # GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
 `google compute engine (gce)` _part of google Cloud Platform, like
-[amazon web services(aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
+[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
 or
 [microsoft-azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
 provides high performance scalable VMs (Virtual Machines)._
 
-* [Google Cloud Platform Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
-* [Compute Engine Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+gcp info,
+
+* [Google Cloud Platform Documentation](https://cloud.google.com/docs)
+* [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
+
+gce info,
+
+* [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
+* [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## BASIC GCP (GOOGLE CLOUD PLATFORM) COMMANDS
+## GOOGLE CLOUD PLATFORM (GCP) OVERVIEW
+
+Google Cloud Platform is absolutely massive with a host of
+hundreds of powerful products from storage to compute to
+data analytics.
+
+Here are some highlights of gcp,
+
+* AI and Machine Learning
+* API Management
+* Cloud Services Platform
+* Compute (Focus of this cheat sheet)
+* Data Analytics
+* Databases
+* Developers Tools
+* Internet of Things (IoT)
+* Management Tools
+* Media
+* Migration
+* Networking
+* Security
+* Storage
+
+This cheat sheet will focus on Google Compute Engine (gce),
+scalable, high-performance VMs.
+
+## GET ACCOUNT AT GOOGLE CLOUD PLATFORM
+
+First setup a
+[google cloud platform](https://cloud.google.com/)
+account.
+
+Create a Project which will have a name and ID.
+Then submit your billing information.
+
+* [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
+* [Dashboard](https://console.cloud.google.com/home/dashboard)
+
+## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
+
+Here is an illustration of GCE.
+
+![IMAGE -  google compute engine overview - IMAGE](../../../../../docs/pics/google-computer-engine-overview.jpg)
+
+There are 4 main section of gce:
+
+* Images
+* Instance Templates
+* Instance Groups
+* Instances
+
+## GCE REGIONS AND ZONES
+
+Compute is located in regions across the globe.
+
+* ASIA
+  * asia-east1 (Taiwan)
+  * asia-east2 (Hong Kong)
+  * asia-northeast1 (Tokyo)
+  * asia-south1 (Mumbai)
+  * asia-southeast1 (Singapore)
+* AUSTRALIA
+  * australia-southeast1 (Sydney)
+* EUROPE
+  * europe-north1 (Finland)
+  * europe-west1 (Belgium)
+  * europe-west2 (London)
+  * europe-west3 (Frankfurt)
+  * europe-west4 (Netherlands)
+  * europe-west6 (Zurich)
+* NORTH AMERICA
+  * northamerica-northeast1 (Montreal)
+* SOUTH AMERICA
+  * southamerica-east1 (Sao Paulo)
+* UNITED STATES
+  * us-central1 (Iowa)
+  * us-east1 (South Carolina)
+  * us-east4 (Northern Virginia)
+  * us-west1 (Oregon)
+  * us-west2 (Los Angeles)
+
+Then each region may have a few zones.
+
+## GCE MACHINE TYPES, PRICING & REGIONS
+
+To get an idea on pricing, here are some predefined standard machine 
+types, These prices also vary by region.
+
+| MACHINE TYPE    | V. CPUs |   MEMORY |  PRICE/MONTH |  PREEMPTIBLE |
+|:----------------|--------:|---------:|-------------:|-------------:|  
+| n1-standard-1   |       1 |   3.75GB |         ~$25 |          ~$8 |
+| n1-standard-2   |       2 |    7.5GB |         ~$58 |         ~$17 |
+| n1-standard-8   |       8 |     30GB |        ~$233 |         ~$70 |
+| n1-standard-64  |      64 |    240GB |      ~$1,867 |        ~$561 |
+|                 |         |          |              |              |
+| n1-highmem-2    |       2 |     13GB |         ~$72 |         ~$21 |
+| n1-highmem-4    |       4 |     26GB |        ~$145 |         ~$43 |
+| n1-highmem-8    |       8 |     52GB |        ~$290 |         ~$87 |
+| n1-highmem-64   |      64 |    416GB |      ~$2,323 |        ~$699 |
+|                 |         |          |              |              |
+| n1-highcpu-2    |       2 |    1.8GB |         ~$43 |         ~$13 |
+| n1-highcpu-4    |       4 |    3.6GB |         ~$86 |         ~$26 |
+| n1-highcpu-8    |       8 |    7.2GB |        ~$173 |         ~$52 |
+| n1-highcpu-64   |      64 |     57GB |      ~$1,391 |        ~$418 |
+|                 |         |          |              |              |
+| f1-micro        |       1 |    0.6GB |       ~$4.65 |          ~$3 |
+| g1-small        |       1 |    1.7GB |      ~$15.74 |          ~$6 |
+|                 |         |          |              |              |
+
+`f1-micro` and `g1-small` machine types offer bursting capabilities that
+allow instances to use additional physical CPU for short periods of time.
+
+There are many other models depending on what you need.
+
+* [pricing](https://cloud.google.com/compute/pricing)
+
+## GCE FREE TIER (f1-micro)
+
+There is a free `f1-micro` tier as follows,
+
+* 1 non-preemptible `f1-micro` VM instance per month in one of the following US regions:
+  * Oregon: us-west1
+  * Iowa: us-central1
+  * South Carolina: us-east1
+* 30 GB of `Standard persistent disk storage` per month.
+* 5 GB of `snapshot storage per month`. Limited to the following regions:
+  * Oregon: us-west1
+  * Iowa: us-central1
+  * South Carolina: us-east1
+  * Taiwan: asia-east1
+  * Belgium: europe-west1
+* Network Traffic Limits:
+  * You must use Premium Tier. You cannot use Standard Tier.
+  * Traffic must be sent from a GCP region in North America.
+  * You can send up to 1GB of egress traffic, in aggregate,
+    to regions except for those in Oceania and China.
+
+Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
+
+## INSTALL GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
+
+`gcloud` SDK is a set of tools for Cloud Platform. It contains `gcloud`,
+`gsutil`, and `bq` command-line tools, which you can use to access Google Compute Engine,
+Google Cloud Storage, Google BigQuery, and other products
+and services from the command-line.
+
+There is great documentation online to install the SDK on your platform
+[here](https://cloud.google.com/sdk/)
+
+You will be asked to attached to a project.
+
+When complete, check your active configuration,
+
+```bash
+gcloud config list
+```
+
+## BASIC GCP COMMANDS
 
 GCP Help,
 
@@ -31,6 +196,7 @@ See your active configuration,
 ```bash
 gcloud config list
 ```
+
 
 ## BASIC GCE COMMANDS RELATING TO YOUR VMs
 
@@ -60,6 +226,8 @@ List your instances/VMs,
 gcloud compute instances list
 ```
 
+
+
 ## GCE HEALTH CHECK COMMANDS
 
 List your health checks at GCE,
@@ -86,6 +254,8 @@ gcloud beta compute instance-groups managed set-autohealing [IMAGE_NAME] \
     --initial-delay 120 \
    --zone [ZONE]
 ```
+
+* [Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 
 ## SHOW EXTERNAL IPs FOR PROJECT
 
