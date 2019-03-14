@@ -2,9 +2,9 @@
 
 `google cloud pub sub` _is a fully-managed real-time messaging
 service that allows you to send and receive messages between
-independent applications. ._
+independent applications._
 
-Documentation,
+Documentation and reference,
 
 * [Google Cloud Pub/Sub Documentation](https://cloud.google.com/pubsub/docs/)
 * [Quickstart using console](https://cloud.google.com/pubsub/docs/quickstart-console)
@@ -14,9 +14,17 @@ Documentation,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## LOCAL PUB SUB INSTALL
+## PUB/SUB FREE TIER
 
-[Local pub/Sub Install](https://cloud.google.com/pubsub/docs/emulator)
+The pub/sub free tier is,
+
+* 10GB of messages per month.
+
+Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
+
+## LOCAL PUB/SUB INSTALL
+
+[Local Pub/Sub Install](https://cloud.google.com/pubsub/docs/emulator)
 
 Must install Java JRE
 
@@ -46,7 +54,7 @@ To see command line arguments,
 gcloud beta emulators pubsub --help
 ```
 
-## GCLOUD BETA - PUBSUB
+## GCLOUD BETA - PUB/SUB
 
 Beta versions of gcloud commands such as ones for pubsub.
 

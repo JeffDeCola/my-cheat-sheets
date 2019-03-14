@@ -3,7 +3,7 @@
 `google compute engine (gce)` _provides high performance
 scalable VMs (Virtual Machines)._
 
-Documentation,
+Documentation and reference,
 
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
@@ -11,6 +11,31 @@ Documentation,
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+
+## FREE RESOURCE (f1-micro)
+
+There is a free `f1-micro` resource is as follows,
+
+* 1 non-preemptible `f1-micro` VM instance per month in one of the following US regions:
+  * Oregon: us-west1
+  * Iowa: us-central1
+  * South Carolina: us-east1
+* 30 GB of HDD `Standard persistent disk storage` per month.
+* 5 GB of `snapshot storage per month`. Limited to the following regions:
+  * Oregon: us-west1
+  * Iowa: us-central1
+  * South Carolina: us-east1
+  * Taiwan: asia-east1
+  * Belgium: europe-west1
+* Network Traffic Limits:
+  * You must use Premium Tier. You cannot use Standard Tier.
+  * Traffic must be sent from a GCP region in North America.
+  * You can send up to `1GB of egress traffic`, in aggregate,
+    to regions except for those in Oceania and China.
+
+Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
+
+Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
 ## GCE REGIONS AND ZONES
 
@@ -76,29 +101,6 @@ allow instances to use additional physical CPU for short periods of time.
 There are many other models depending on what you need.
 
 * [pricing](https://cloud.google.com/compute/pricing)
-
-## GCE FREE TIER (f1-micro)
-
-There is a free `f1-micro` tier as follows,
-
-* 1 non-preemptible `f1-micro` VM instance per month in one of the following US regions:
-  * Oregon: us-west1
-  * Iowa: us-central1
-  * South Carolina: us-east1
-* 30 GB of `Standard persistent disk storage` per month.
-* 5 GB of `snapshot storage per month`. Limited to the following regions:
-  * Oregon: us-west1
-  * Iowa: us-central1
-  * South Carolina: us-east1
-  * Taiwan: asia-east1
-  * Belgium: europe-west1
-* Network Traffic Limits:
-  * You must use Premium Tier. You cannot use Standard Tier.
-  * Traffic must be sent from a GCP region in North America.
-  * You can send up to 1GB of egress traffic, in aggregate,
-    to regions except for those in Oceania and China.
-
-Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
 
 ## BASIC GCE COMMANDS
 

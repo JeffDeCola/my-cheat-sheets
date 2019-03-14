@@ -1,11 +1,11 @@
 # GOOGLE CLOUD PLATFORM (GCP) CHEAT SHEET
 
 `google cloud platform (gcp)` _is a massive suite of cloud computing services like
-[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
+[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
 or
-[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet).
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)._
 
-GCP Documentation and reference,
+Documentation and reference,
 
 * [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
 * [Google Cloud Platform Documentation](https://cloud.google.com/docs)
@@ -25,6 +25,12 @@ Here are my GCP cheat sheets so far,
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
   * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
   * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+
+## GCP FREE RESOURCES
+
+Three are a lot of
+[free resources](https://cloud.google.com/free/docs/gcp-free-tier)
+across gcp.
 
 ## GOOGLE CLOUD PLATFORM (GCP) OVERVIEW
 
@@ -84,7 +90,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud SQL (MySQL)
   * cloud SQL (Postgres)
 * Developer Tools
-  * cloud SDK
+  * cloud SDK                         https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet#google-cloud-sdk
   * cloud build
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
   * cloud tools for IntelliJ
@@ -161,7 +167,7 @@ Then submit your billing information.
 * [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
 * [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
 
-## GOOGLE CLOUD SDK
+## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
 
 [Cloud SDK](https://cloud.google.com/sdk/docs/)
 is a command-line interface for Google Cloud
@@ -181,12 +187,12 @@ These include,
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool), 
   is the command-line tool for BigQuery.
 
-## INSTALL AND CONFIGURE GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
+## INSTALL AND CONFIGURE THE gcloud SOFTWARE DEVELOPMENT KIT (SDK)
 
 There is great documentation online to install the SDK on your
 particular platform [here](https://cloud.google.com/sdk/).
 
-After installation lets configure,
+After installation configure,
 
 ```bash
 gcloud init
@@ -210,7 +216,7 @@ gcloud config set compute/region NAME
 gcloud config set compute/zone NAME
 ```
 
-For more information on the configuration .boto file go
+For more information on the configuration file `.boto` go
 [here](https://cloud.google.com/storage/docs/gsutil/commands/config).
 
 ## SOME BASIC GCP COMMANDS
