@@ -25,7 +25,7 @@ The free resources are,
 * 5000 Class A Operations per month
 * 50000 Class B Operations per month
 * 1 GB network egress from North America to all region destinations per month (excluding China and Australia)
-* Only Available on,
+* Only Available on following US regions:
   * Oregon: us-west1
   * Iowa: us-central1
   * South Carolina: us-east1
