@@ -1,75 +1,16 @@
 # GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
-`google compute engine (gce)` _part of google Cloud Platform, like
-[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
-or
-[microsoft-azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
-provides high performance scalable VMs (Virtual Machines)._
+`google compute engine (gce)` _provides high performance
+scalable VMs (Virtual Machines)._
 
-gcp info,
-
-* [Google Cloud Platform Documentation](https://cloud.google.com/docs)
-* [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
-
-gce info,
+Documentation,
 
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
+* [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
-
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
-
-## GOOGLE CLOUD PLATFORM (GCP) OVERVIEW
-
-Google Cloud Platform is absolutely massive with a host of
-hundreds of powerful products from storage to compute to
-data analytics.
-
-Here are some highlights of gcp,
-
-* AI and Machine Learning
-* API Management
-* Cloud Services Platform
-* Compute (Focus of this cheat sheet)
-* Data Analytics
-* Databases
-* Developers Tools
-* Internet of Things (IoT)
-* Management Tools
-* Media
-* Migration
-* Networking
-* Security
-* Storage
-
-This cheat sheet will focus on Google Compute Engine (gce),
-scalable, high-performance VMs.
-
-## GET ACCOUNT AT GOOGLE CLOUD PLATFORM
-
-First setup a
-[google cloud platform](https://cloud.google.com/)
-account.
-
-Create a Project which will have a name and ID.
-Then submit your billing information.
-
-* [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
-* [Dashboard](https://console.cloud.google.com/home/dashboard)
-
-## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
-
-Here is an illustration of GCE.
-
-![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
-
-There are 4 main section of gce:
-
-* Images
-* Instance Templates
-* Instance Groups
-* Instances
 
 ## GCE REGIONS AND ZONES
 
@@ -159,57 +100,6 @@ There is a free `f1-micro` tier as follows,
 
 Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
 
-## INSTALL AND CONFIGURE GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
-
-`gcloud` SDK is a set of tools for Cloud Platform. It contains `gcloud`,
-`gsutil`, and `bq` command-line tools, which you can use to access Google Compute Engine,
-Google Cloud Storage, Google BigQuery, and other products
-and services from the command-line.
-
-There is great documentation online to install the SDK on your platform
-[here](https://cloud.google.com/sdk/)
-
-After installation lets configure,
-
-```bash
-gcloud init
-```
-
-You will be asked to attached a project and a default compute region.
-When complete, check your active configuration,
-
-```bash
-gcloud config list
-gcloud auth list
-gcloud info
-```
-
-Your configuration is loacted in `~/.boto` file.
-
-To change your default region/zone,
-
-```bash
-gcloud config set compute/region NAME
-gcloud config set compute/zone NAME
-```
-
-For more information on the configuration .boto file go
-[here](https://cloud.google.com/storage/docs/gsutil/commands/config).
-
-## BASIC GCP COMMANDS
-
-GCP Help,
-
-```bash
-gcloud help
-```
-
-Version,
-
-```bash
-gcloud -v
-```
-
 ## BASIC GCE COMMANDS
 
 GCE Help,
@@ -230,10 +120,24 @@ List zones,
 gcloud compute zones list
 ```
 
-## TO CREATE AN IMAGE, INSTANCE-TEMPLATE, INSTANCE GROUP OR INSTANCE/VM
+Listing static external IP addresses,
 
-Outside the scope of this cheat-sheet, but this will point you
-in the right direction,
+```bash
+gcloud compute addresses list
+```
+
+Lists,
+
+```bash
+gcloud compute images list
+gcloud compute instance-templates list
+gcloud compute instance-groups list
+gcloud compute instance-groups managed list
+gcloud compute instance-groups unmanaged list
+gcloud compute instances list
+```
+
+Help,
 
 ```bash
 gcloud help compute images create
@@ -243,7 +147,20 @@ gcloud help compute instance-groups unmanaged create
 gcloud help compute instances create
 ```
 
-## BASIC GCE COMMANDS RELATING TO YOUR VMs
+## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
+
+Here is an illustration of GCE.
+
+![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
+
+There are 4 main section of gce:
+
+* IMAGES
+* INSTANCE TEMPLATES
+* INSTANCE GROUPS
+* INSTANCES
+
+## IMAGES
 
 List your images,
 
@@ -251,11 +168,15 @@ List your images,
 gcloud compute images list
 ```
 
+## INSTANCE TEMPLATES
+
 List your instance templates,
 
 ```bash
 gcloud compute instance-templates list
 ```
+
+## INSTANCE GROUPS
 
 List your instance groups,
 
@@ -265,76 +186,18 @@ gcloud compute instance-groups managed list
 gcloud compute instance-groups unmanaged list
 ```
 
+## INSTANCES
+
 List your instances/VMs,
 
 ```bash
 gcloud compute instances list
 ```
 
-## GCE HEALTH CHECK COMMANDS
-
-List your health checks at GCE,
-
-```bash
-gcloud compute health-checks list
-gcloud compute http-health-checks list
-```
-
-Describe the health check settings,
-
-```bash
-gcloud compute health-checks describe general-http-healthcheck-8080
-gcloud compute http-health-checks describe p-jeff-test
-```
-
-Add your instance group to an existing GCE Health Check,
-
-You can go into the browser and do it, or via CLI using,
-
-```bash
-gcloud beta compute instance-groups managed set-autohealing [IMAGE_NAME] \
-    --http-health-check [HEALTHCHECK_NAME] \
-    --initial-delay 120 \
-   --zone [ZONE]
-```
-
-* [Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
-
-## SHOW EXTERNAL IPs FOR PROJECT
-
-Listing static external IP addresses,
-
-```bash
-gcloud compute addresses list
-```
-
-## GCLOUD BETA - PUBSUB
-
-Beta versions of gcloud commands such as ones for pubsub.
-
-List whats available
-
-```bash
-gcloud help beta
-```
-
-List pubsub topics,
-
-```bash
-gcloud beta pubsub topics list
-```
-
-List pubsub subscriptions,
-This lists everything, so it can be a long list.
-
-```bash
-gcloud beta pubsub subscriptions list
-```
-
-## METADATA SERVER QUERY
+## INSTANCES - METADATA SERVER QUERY
 
 Every instance stores its metadata on the metadata server.
-You can query this metadata server programmatically for information such as,
+You can query this metadata server pro grammatically for information such as,
 
 * The instance's host name
 * Instance ID
@@ -376,7 +239,7 @@ curl http://metadata.google.internal/computeMetadata/v1\
     -H 'Metadata-Flavor: Google'
 ```
 
-## SSH INTO YOUR INSTANCE
+## INSTANCES - SSH INTO YOUR INSTANCE
 
 You can ssh onto your instance.
 
@@ -384,4 +247,31 @@ Become root,
 
 ```bash
 sudo su -
+```
+
+## GCE HEALTH CHECK COMMANDS
+
+List your health checks at GCE,
+
+```bash
+gcloud compute health-checks list
+gcloud compute http-health-checks list
+```
+
+Describe the health check settings,
+
+```bash
+gcloud compute health-checks describe general-http-healthcheck-8080
+gcloud compute http-health-checks describe p-jeff-test
+```
+
+Add your instance group to an existing GCE Health Check,
+
+You can go into the browser and do it, or via CLI using,
+
+```bash
+gcloud beta compute instance-groups managed set-autohealing [IMAGE_NAME] \
+    --http-health-check [HEALTHCHECK_NAME] \
+    --initial-delay 120 \
+   --zone [ZONE]
 ```
