@@ -1,15 +1,15 @@
 # GOOGLE CLOUD PLATFORM (GCP) CHEAT SHEET
 
-`google cloud platform (gcp)` _part is a suite of cloud computing services like
+`google cloud platform (gcp)` _is a massive suite of cloud computing services like
 [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
 or
-[microsoft-azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet).
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet).
 
 GCP Documentation and reference,
 
 * [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
 * [Google Cloud Platform Documentation](https://cloud.google.com/docs)
-* [Google Cloud Platform SDK Documentation (gcloud, gsutil, bg )](https://cloud.google.com/sdk/docs/)
+* [Google Cloud Platform SDK Documentation (gcloud, gsutil, bg)](https://cloud.google.com/sdk/docs/)
 * [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
 
 View my entire list of cheat sheets on
@@ -176,17 +176,12 @@ These include,
 * `gsutils`
   [doc](https://cloud.google.com/storage/docs/gsutil), 
   is hte command-line tool for
-  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md).
+  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
 * `bg` 
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool), 
   is the command-line tool for BigQuery.
 
 ## INSTALL AND CONFIGURE GCLOUD SOFTWARE DEVELOPMENT KIT (SDK)
-
-`gcloud` SDK is a set of tools for Cloud Platform. It contains `gcloud`,
-`gsutil`, and `bq` command-line tools, which you can use to access Google Compute Engine,
-Google Cloud Storage, Google BigQuery, and other products
-and services from the command-line.
 
 There is great documentation online to install the SDK on your
 particular platform [here](https://cloud.google.com/sdk/).
