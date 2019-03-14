@@ -1,6 +1,7 @@
 # GOOGLE SOURCE REPOSITORIES (GIT) CHEAT SHEET
 
-`google source repositories (git)` _once set up, you can use
+`google source repositories (git)` _fully-featured, private git
+repositories hosted on Google Cloud Platform. Once set up, you can use
 as a standard git repository (push, pull, clone and log)._
 
 Documentation and reference,

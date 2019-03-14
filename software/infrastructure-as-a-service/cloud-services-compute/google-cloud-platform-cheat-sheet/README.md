@@ -20,6 +20,7 @@ View my entire list of cheat sheets on
 Here are my GCP cheat sheets so far,
 
   * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * [google app engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
   * [google cloud pub sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
@@ -66,7 +67,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * private catalog
 * COMPUTE
   * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  * App engine
+  * [google app engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * kubernetes engine
   * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
   * shielded VMs
@@ -90,7 +91,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud SQL (MySQL)
   * cloud SQL (Postgres)
 * Developer Tools
-  * cloud SDK                         https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet#google-cloud-sdk
+  * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
   * cloud build
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
   * cloud tools for IntelliJ
@@ -113,7 +114,6 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * stackdriver error reporting
   * stackdriver logging
   * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-  * stackdriver monitoring
   * stackdriver profiler
   * stackdriver trace
 * MEDIA SOLUTIONS

@@ -14,9 +14,9 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## PUB/SUB FREE TIER
+## FREE RESOURCE
 
-The pub/sub free tier is,
+The free resources are,
 
 * 10GB of messages per month.
 
