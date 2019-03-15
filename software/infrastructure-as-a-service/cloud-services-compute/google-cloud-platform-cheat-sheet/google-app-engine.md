@@ -10,6 +10,8 @@ Documentation and reference,
 * [Quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
 * [Google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
 
+My Repo example is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).  
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -31,9 +33,9 @@ The free tier is available only for the `Standard Environment`.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## DIFFERENCE BETWEEN GCE & GAE
+## DIFFERENCE BETWEEN GCE
 
-Some main differences between `gae` and `gce`.
+Some main differences between `google compute engine`,
 
 * `google app engine (gae)`
   * PaaS
