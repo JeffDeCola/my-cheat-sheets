@@ -5,9 +5,12 @@ scalable VMs (Virtual Machines)._
 
 Documentation and reference,
 
+* [Your Instances](https://console.cloud.google.com/compute/instances)
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+
+My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).  
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -41,18 +44,18 @@ Preemptible VM instances are not included in the Google Cloud Platform Free Tier
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## DIFFERENCE BETWEEN GCE & GAE
+## DIFFERENCE BETWEEN GAE
 
-Some main differences between `gae` and `gce`.
+Some main differences between `google apps engine`,
 
-* `google app engine (gae)`
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * PaaS
   * A higher level of abstraction
   * Simply deploy your code and platform does the rest
   * App engine will create more instances as needed
   * You don't manage/update/etc... the OS 
   * Just upload code and gae does the rest
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+* google compute engine (gce)
   * IaaS
   * You have full control/responsibility for server
   * You create and configure your own virtual machine instances

@@ -6,6 +6,7 @@ objects, blobs, and other unstructured data._
 
 Documentation and reference,
 
+* [Your Buckets](https://console.cloud.google.com/storage/browser)
 * [Google Cloud Storage Documentation](https://cloud.google.com/storage/docs/)
 * [Quickstart using console](https://cloud.google.com/storage/docs/quickstart-console)
 * [Quickstart using gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil)
@@ -20,6 +21,8 @@ Cloud Storage allows world-wide storage and retrieval
 of any amount of data at any time.
 
 Really just a place to keep your junk, I mean stuff.
+
+Your stuff is placed in buckets.
 
 `gsutil` is a Python application that lets you access
 Cloud Storage from the command line.
@@ -41,14 +44,15 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 
 ## CREATE A BUCKET VIA CLI
 
-You must choose your own, globally-unique, bucket name.
+Your stuff is placed in a bucket. You must choose your own,
+globally-unique, bucket name.
 
 ```bash
 gsutil mb -l us-west1 gs://my-awesome-bucket/
 ```
-
 * `mb` is make bucket.
 * `-l` is location.
+* `gs` I assume means google storage.
 
 list all your buckets,
 
@@ -56,7 +60,7 @@ list all your buckets,
 gsutil ls
 ```
 
-## FILES & FOLDERS
+## UPLOAD/DOWNLOAD FILES/FOLDERS TO/FROM BUCKET
 
 Upload file,
 
