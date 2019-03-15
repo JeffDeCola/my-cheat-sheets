@@ -6,7 +6,7 @@
 
 `my-cheat-sheets` _is a place to keep all my cheat sheets
 on everything you need for the complete development of
-ASIC hardware or a software service._
+ASIC hardware or a software app/service._
 
 The folder structures are organized alphabetically as follows:
 
@@ -24,7 +24,7 @@ The folder structures are organized alphabetically as follows:
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-  for the goal of creating a service.
+  for the goal of creating a app/service.
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
@@ -112,7 +112,7 @@ Random other things I'm interested in.
 
 ## SOFTWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating a service.
+Various Apps and tools for the goal of creating a app/service.
 
 ### DEVELOPMENT
 
@@ -237,10 +237,10 @@ Various Apps and tools for the goal of creating a service.
 
 This illustration coming soon.
 
-## VISUAL OVERVIEW OF CREATING A SERVICE
+## VISUAL OVERVIEW OF CREATING A APP/SERVICE
 
 Here is my illustration on how various Apps and tools fit together
-for the goal of creating a service,
+for the goal of creating a app/service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 

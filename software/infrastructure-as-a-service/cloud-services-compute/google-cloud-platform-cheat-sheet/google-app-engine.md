@@ -1,6 +1,6 @@
-# GOOGLE APP ENGINE CHEAT SHEET
+# GOOGLE APP ENGINE (GAE) CHEAT SHEET
 
-`google app engine` _provides serverless application platform
+`google app engine (gae)` _provides serverless application platform
 for apps and backends._
 
 Documentation and reference,
@@ -13,11 +13,13 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## OVERVIEW
+
 ## FREE RESOURCE (standard environment only)
 
-The free resources are,
+As of my last update, the free resources are,
 
-* 28 frontend instance hours per day,
+* 28 frontend instance hours per day
 * 9 backend instance hours per day
 * 5 GB Cloud Storage
 * 1 GB of egress per day
@@ -28,3 +30,24 @@ The free resources are,
 The free tier is available only for the `Standard Environment`. 
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
+
+## DIFFERENCE BETWEEN GCE & GAE
+
+Some main differences between `gae` and `gce`.
+
+* `google app engine (gae)`
+  * PaaS
+  * A higher level of abstraction
+  * Simply deploy your code and platform does the rest
+  * App engine will create more instances as needed
+  * You don't manage/update/etc... the OS 
+  * Just upload code and gae does the rest
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * IaaS
+  * You have full control/responsibility for server
+  * You create and configure your own virtual machine instances
+  * Direct access to OS
+  * Manage OS and updates as needed
+
+
+

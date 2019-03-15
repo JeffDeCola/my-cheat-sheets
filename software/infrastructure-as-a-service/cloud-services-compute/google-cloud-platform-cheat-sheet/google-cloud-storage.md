@@ -4,9 +4,6 @@
 and cost-efficient object / blob store. Used for pictures, videos,
 objects, blobs, and other unstructured data._
 
-`gsutil` is a Python application that lets you access
-Cloud Storage from the command line.
-
 Documentation and reference,
 
 * [Google Cloud Storage Documentation](https://cloud.google.com/storage/docs/)
@@ -17,9 +14,14 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## OVERVIEW
+
+`gsutil` is a Python application that lets you access
+Cloud Storage from the command line.
+
 ## FREE RESOURCE
 
-The free resources are,
+As of my last update, the free resources are,
 
 * 5 GB-months of Regional Storage (US regions only)
 * 5000 Class A Operations per month

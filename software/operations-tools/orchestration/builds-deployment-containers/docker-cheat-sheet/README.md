@@ -183,7 +183,7 @@ docker logs NAME
 To get inside a running container,
 
 ```bash
-docker exec -t -i <container ID or PORT NAME> 
+docker exec -t -i <container ID or PORT NAME>
 ```
 
 Use `docker ps` to get the container ID or PORT NAME.
