@@ -67,9 +67,12 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * private catalog
 * COMPUTE
   * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+    cheat sheet
   * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+    cheat sheet
   * kubernetes engine
   * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+    cheat sheet
   * shielded VMs
   * cloud functions
 * DATA AND ANALYTICS
@@ -79,6 +82,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud dataprep
   * cloud dataproc
   * [google cloud pub sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+    cheat sheet
   * google bigquery
   * google data studio
   * google genomics
@@ -94,6 +98,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
   * cloud build
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+    cheat sheet
   * cloud tools for IntelliJ
   * cloud tools for powershell
   * cloud tools for visual studio
@@ -114,6 +119,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * stackdriver error reporting
   * stackdriver logging
   * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+    cheat sheet
   * stackdriver profiler
   * stackdriver trace
 * MEDIA SOLUTIONS
@@ -150,6 +156,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * vpc service controls
 * STORAGE
   * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+    cheat sheet
   * cloud storage nearline
   * cloud storage coldline
   * persistent disk

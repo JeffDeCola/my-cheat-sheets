@@ -1,6 +1,6 @@
 # GOOGLE CLOUD PUB SUB CHEAT SHEET
 
-`google cloud pub sub` _is a fully-managed real-time messaging
+`google cloud pub/sub` _is a fully-managed real-time messaging
 service that allows you to send and receive messages between
 independent applications._
 
@@ -67,13 +67,13 @@ List whats available
 gcloud help beta
 ```
 
-List pubsub topics,
+List pub/sub topics,
 
 ```bash
 gcloud beta pubsub topics list
 ```
 
-List pubsub subscriptions,
+List pub/sub subscriptions,
 This lists everything, so it can be a long list.
 
 ```bash
