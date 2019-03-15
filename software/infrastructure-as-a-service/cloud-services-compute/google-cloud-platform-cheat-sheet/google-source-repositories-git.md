@@ -66,6 +66,12 @@ gcloud source repos clone <your-repo-name>
 
 Now you can push/pull to this repo and that's about it.
 
+To list your repos,
+
+```bash
+gcloud source repos list
+```
+
 As stated above, google git is extremely limited. Its basically just to push
 code to a repo. There are no pull requests or ability to
 merge branches at google.  So you must do everything local.
