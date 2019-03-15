@@ -75,7 +75,7 @@ Random other things I'm interested in.
 
 ## SOFTWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating a service.
+Various Apps and tools for the goal of creating a app/service.
 
 ### DEVELOPMENT
 
@@ -200,10 +200,10 @@ Various Apps and tools for the goal of creating a service.
 
 This illustration coming soon.
 
-## VISUAL OVERVIEW OF CREATING A SERVICE
+## VISUAL OVERVIEW OF CREATING A APP/SERVICE
 
 Here is my illustration on how various Apps and tools fit together
-for the goal of creating a service,
+for the goal of creating a app/service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](pics/Creating-Services-Environment-Overview.jpg)
 
