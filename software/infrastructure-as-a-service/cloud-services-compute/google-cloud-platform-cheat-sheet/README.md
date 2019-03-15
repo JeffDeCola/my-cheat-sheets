@@ -188,9 +188,9 @@ These include,
   [doc](https://cloud.google.com/sdk/gcloud/),
   [reference](https://cloud.google.com/sdk/gcloud/reference/)
   provides the primary command-line tool for Google Cloud Platform.
-* `gsutils`
+* `gsutil`
   [doc](https://cloud.google.com/storage/docs/gsutil), 
-  is hte command-line tool for
+  is the command-line tool for
   [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
 * `bg`
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
