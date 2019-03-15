@@ -14,9 +14,12 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## OVERVIEW
+
+
 ## FREE RESOURCE
 
-The free resources are,
+As of my last update, the free resources are,
 
 * 10GB of messages per month.
 

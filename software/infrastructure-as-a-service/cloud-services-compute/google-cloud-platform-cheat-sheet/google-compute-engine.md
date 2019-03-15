@@ -12,9 +12,13 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## OVERVIEW
+
+
 ## FREE RESOURCE (f1-micro)
 
-There is a free `f1-micro` resource is as follows,
+As of my last update, there is a free
+`f1-micro` resource is as follows,
 
 * 1 non-preemptible `f1-micro` VM instance per month in one of the following US regions:
   * Oregon: us-west1
@@ -36,6 +40,24 @@ There is a free `f1-micro` resource is as follows,
 Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
+
+## DIFFERENCE BETWEEN GCE & GAE
+
+Some main differences between `gae` and `gce`.
+
+* `google app engine (gae)`
+  * PaaS
+  * A higher level of abstraction
+  * Simply deploy your code and platform does the rest
+  * App engine will create more instances as needed
+  * You don't manage/update/etc... the OS 
+  * Just upload code and gae does the rest
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * IaaS
+  * You have full control/responsibility for server
+  * You create and configure your own virtual machine instances
+  * Direct access to OS
+  * Manage OS and updates as needed
 
 ## GCE REGIONS AND ZONES
 
@@ -71,11 +93,11 @@ Then each region may have a few zones.
 
 ## GCE MACHINE TYPES, PRICING & REGIONS
 
-To get an idea on pricing, here are some predefined standard machine 
+To get an idea on pricing, here are some predefined standard machine
 types, These prices also vary by region.
 
 | MACHINE TYPE    | V. CPUs |   MEMORY |  PRICE/MONTH |  PREEMPTIBLE |
-|:----------------|--------:|---------:|-------------:|-------------:|  
+|:----------------|--------:|---------:|-------------:|-------------:|
 | n1-standard-1   |       1 |   3.75GB |         ~$25 |          ~$8 |
 | n1-standard-2   |       2 |    7.5GB |         ~$58 |         ~$17 |
 | n1-standard-8   |       8 |     30GB |        ~$233 |         ~$70 |
@@ -170,6 +192,11 @@ List your images,
 gcloud compute images list
 ```
 
+```bash
+gcloud help compute images create
+???
+```
+
 ## INSTANCE TEMPLATES
 
 List your instance templates,
@@ -178,7 +205,16 @@ List your instance templates,
 gcloud compute instance-templates list
 ```
 
+Create your instance,
+
+```bash
+gcloud help compute instance-templates create
+???
+```
+
 ## INSTANCE GROUPS
+
+A manged machine...???
 
 List your instance groups,
 
@@ -188,12 +224,23 @@ gcloud compute instance-groups managed list
 gcloud compute instance-groups unmanaged list
 ```
 
+```bash
+gcloud help compute instance-groups managed create
+gcloud help compute instance-groups unmanaged create
+???
+```
+
 ## INSTANCES
 
 List your instances/VMs,
 
 ```bash
 gcloud compute instances list
+```
+
+```bash
+gcloud help compute instances create
+???
 ```
 
 ## INSTANCES - METADATA SERVER QUERY
