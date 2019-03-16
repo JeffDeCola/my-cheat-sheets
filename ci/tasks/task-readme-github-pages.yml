@@ -16,3 +16,4 @@ outputs:
 
 run:
   path: ./my-cheat-sheets/ci/scripts/readme-github-pages.sh
+  # args: [-debug]
