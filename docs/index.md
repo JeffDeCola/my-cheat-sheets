@@ -2,7 +2,7 @@
 layout: default
 title: JeffDeCola/my-cheat-sheets
 projectname : my-cheat-sheets
-summary: Aplace to keep my cheat sheets on tools and development for both Hardware and Software.
+summary: A place to keep all my cheat sheets on everything you need for the complete development of ASIC hardware or a software app/service.
 ---
 
 {% include README.md %}

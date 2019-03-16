@@ -24,7 +24,7 @@ Really just a place to keep your junk, I mean stuff.
 
 Your stuff is placed in buckets.
 
-`gsutil` is a Python application that lets you access
+`gsutil` is a python application that lets you access
 Cloud Storage from the command line.
 
 ## FREE RESOURCE
@@ -43,7 +43,7 @@ As of my last update, the free resources are,
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## CREATE A BUCKET VIA CLI
+## CREATE A BUCKET USING gsutil
 
 Your stuff is placed in a bucket. You must choose your own,
 globally-unique, bucket name.

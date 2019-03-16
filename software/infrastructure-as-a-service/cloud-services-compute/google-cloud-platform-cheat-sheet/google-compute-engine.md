@@ -52,7 +52,7 @@ Some main differences between `google apps engine`,
   * A higher level of abstraction
   * Simply deploy your code and platform does the rest
   * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS 
+  * You don't manage/update/etc... the OS
   * Just upload code and gae does the rest
 * google compute engine (gce)
   * IaaS
@@ -100,6 +100,9 @@ types, These prices also vary by region.
 
 | MACHINE TYPE    | V. CPUs |   MEMORY |  PRICE/MONTH |  PREEMPTIBLE |
 |:----------------|--------:|---------:|-------------:|-------------:|
+| f1-micro        |       1 |    0.6GB |       ~$4.65 |          ~$3 |
+| g1-small        |       1 |    1.7GB |      ~$15.74 |          ~$6 |
+|                 |         |          |              |              |
 | n1-standard-1   |       1 |   3.75GB |         ~$25 |          ~$8 |
 | n1-standard-2   |       2 |    7.5GB |         ~$58 |         ~$17 |
 | n1-standard-8   |       8 |     30GB |        ~$233 |         ~$70 |
@@ -115,16 +118,12 @@ types, These prices also vary by region.
 | n1-highcpu-8    |       8 |    7.2GB |        ~$173 |         ~$52 |
 | n1-highcpu-64   |      64 |     57GB |      ~$1,391 |        ~$418 |
 |                 |         |          |              |              |
-| f1-micro        |       1 |    0.6GB |       ~$4.65 |          ~$3 |
-| g1-small        |       1 |    1.7GB |      ~$15.74 |          ~$6 |
-|                 |         |          |              |              |
 
 `f1-micro` and `g1-small` machine types offer bursting capabilities that
 allow instances to use additional physical CPU for short periods of time.
 
-There are many other models depending on what you need.
-
-* [pricing](https://cloud.google.com/compute/pricing)
+There are many other models depending on what you need. Check out the
+latest machines and [pricing](https://cloud.google.com/compute/pricing).
 
 ## BASIC GCE COMMANDS
 
@@ -138,6 +137,7 @@ List of Machines Types per zone,
 
 ```bash
 gcloud compute machine-types list
+gcloud compute machine-types list | grep us-west1
 ```
 
 List zones,
@@ -175,10 +175,6 @@ gcloud help compute instances create
 
 ## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
 
-Here is an illustration of GCE.
-
-![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
-
 There are 4 main section of gce:
 
 * IMAGES
@@ -186,7 +182,9 @@ There are 4 main section of gce:
 * INSTANCE GROUPS
 * INSTANCES
 
-## IMAGES
+![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
+
+### IMAGES
 
 List your images,
 
@@ -199,7 +197,7 @@ gcloud help compute images create
 ???
 ```
 
-## INSTANCE TEMPLATES
+### INSTANCE TEMPLATES
 
 List your instance templates,
 
@@ -214,7 +212,7 @@ gcloud help compute instance-templates create
 ???
 ```
 
-## INSTANCE GROUPS
+### INSTANCE GROUPS
 
 A manged machine...???
 
@@ -232,7 +230,7 @@ gcloud help compute instance-groups unmanaged create
 ???
 ```
 
-## INSTANCES
+### INSTANCES
 
 List your instances/VMs,
 
@@ -245,7 +243,7 @@ gcloud help compute instances create
 ???
 ```
 
-## INSTANCES - METADATA SERVER QUERY
+### INSTANCES - METADATA SERVER QUERY
 
 Every instance stores its metadata on the metadata server.
 You can query this metadata server pro grammatically for information such as,
@@ -290,7 +288,7 @@ curl http://metadata.google.internal/computeMetadata/v1\
     -H 'Metadata-Flavor: Google'
 ```
 
-## INSTANCES - SSH INTO YOUR INSTANCE
+### INSTANCES - SSH INTO YOUR INSTANCE
 
 You can ssh onto your instance.
 

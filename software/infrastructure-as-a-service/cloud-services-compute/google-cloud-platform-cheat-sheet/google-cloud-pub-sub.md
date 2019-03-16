@@ -1,4 +1,4 @@
-# GOOGLE CLOUD PUB SUB CHEAT SHEET
+# GOOGLE CLOUD PUB/SUB CHEAT SHEET
 
 `google cloud pub/sub` _is a fully-managed real-time messaging
 service that allows you to send and receive messages between
@@ -15,7 +15,6 @@ View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
-
 
 ## FREE RESOURCE
 

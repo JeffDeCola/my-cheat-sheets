@@ -21,5 +21,5 @@ View my entire list of cheat sheets on
 |               |           |           |           |           |           |
 | SWITCHING     |   Circuit |   Circuit |    Packet |All Packet |All Packet |
 |               |           |           |           |           |           |
-| CORE NETWORK  |      PSTN |      PSTN |    Packet |  Internet |  Internet |  
+| CORE NETWORK  |      PSTN |      PSTN |    Packet |  Internet |  Internet |
 |               |           |           |           |           |           |
