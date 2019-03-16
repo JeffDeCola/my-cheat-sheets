@@ -13,7 +13,7 @@ Documentation and reference,
 
 * [Amazon Web Services Documentation](https://aws.amazon.com/)
 
-My Repo example is [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws).  
+My Repo example is [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

@@ -13,7 +13,7 @@ Documentation and reference,
 
 * [Microsoft Azure Documentation](https://azure.microsoft.com/)
 
-My Repo example is [hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure).  
+My Repo example is [hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

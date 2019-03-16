@@ -15,13 +15,10 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-
 ## FREE RESOURCE
 
-No cluster management fee for clusters of all sizes. Each user node is charged at standard Compute Engine pricing.
+No cluster management fee for clusters of all sizes. Each user node is charged at
+standard Compute Engine pricing.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## OVERVIEW
-
-tbd

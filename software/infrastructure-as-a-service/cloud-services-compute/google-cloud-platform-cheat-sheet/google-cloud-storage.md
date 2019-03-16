@@ -34,7 +34,8 @@ As of my last update, the free resources are,
 * 5 GB-months of Regional Storage (US regions only)
 * 5000 Class A Operations per month
 * 50000 Class B Operations per month
-* 1 GB network egress from North America to all region destinations per month (excluding China and Australia)
+* 1 GB network egress from North America to all region destinations per month
+  (excluding China and Australia)
 * Only Available on following US regions:
   * Oregon: us-west1
   * Iowa: us-central1
@@ -50,6 +51,7 @@ globally-unique, bucket name.
 ```bash
 gsutil mb -l us-west1 gs://my-awesome-bucket/
 ```
+
 * `mb` is make bucket.
 * `-l` is location.
 * `gs` I assume means google storage.

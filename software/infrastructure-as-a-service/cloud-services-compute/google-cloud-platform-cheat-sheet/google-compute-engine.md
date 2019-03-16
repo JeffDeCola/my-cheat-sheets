@@ -10,13 +10,12 @@ Documentation and reference,
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 
-My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).  
+My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
-
 
 ## FREE RESOURCE (f1-micro)
 
