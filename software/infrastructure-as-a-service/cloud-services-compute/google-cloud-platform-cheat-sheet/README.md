@@ -17,11 +17,11 @@ View my entire list of cheat sheets on
 
 ## MY GCP CHEAT SHEETS
 
-Here are my GCP cheat sheets so far,
+Here are my gcp cheat sheets so far,
 
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
   ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md),
   ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))
 * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
 * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
@@ -83,7 +83,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud datalab
   * cloud dataprep
   * cloud dataproc
-  * [google cloud pub sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     cheat sheet
   * google bigquery
   * google data studio
@@ -174,7 +174,7 @@ Create a Project which will have a name and ID.
 Then submit your billing information.
 
 * [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
-* [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
+* [Your gcp Dashboard](https://console.cloud.google.com/home/dashboard)
 
 ## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
 
