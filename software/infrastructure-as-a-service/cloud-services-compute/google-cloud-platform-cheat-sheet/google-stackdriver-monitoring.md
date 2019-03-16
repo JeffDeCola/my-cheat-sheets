@@ -14,7 +14,6 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-
 ## FREE RESOURCE
 
 I believe this is always free.

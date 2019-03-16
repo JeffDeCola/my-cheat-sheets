@@ -9,7 +9,7 @@ View my entire list of cheat sheets on
 
 Released in 1996, the USB standard is currently maintained by the USB
 Implementers Forum (USB IF). There have been three generations of USB
-specifications: USB 1.x, USB 2.0, USB 3.x. 
+specifications: USB 1.x, USB 2.0, USB 3.x.
 
 ## USB
 

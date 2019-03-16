@@ -18,7 +18,7 @@ The hummingboard is composed of two parts,
 
 SolidRun’s Hummingboard-i4 Single Board Computer (SBC) uses Freescale's SoC
 Quad Core ARMv7 CPU (based on ARM cortex A9).
-The Hummingboard is a development board composed of two smaller boards: 
+The Hummingboard is a development board composed of two smaller boards:
 a Carrier Board and a Micro-SOM (System on Modules) Board.
 It requires 5V, 2A microUSB power.
 

@@ -20,9 +20,9 @@ View my entire list of cheat sheets on
 Here are my GCP cheat sheets so far,
 
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))  
+  ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))  
+  ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))
 * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
 * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
 * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
@@ -189,7 +189,7 @@ These include,
   [reference](https://cloud.google.com/sdk/gcloud/reference/)
   provides the primary command-line tool for Google Cloud Platform.
 * `gsutil`
-  [doc](https://cloud.google.com/storage/docs/gsutil), 
+  [doc](https://cloud.google.com/storage/docs/gsutil),
   is the command-line tool for
   [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
 * `bg`

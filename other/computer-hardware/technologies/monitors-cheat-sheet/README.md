@@ -43,14 +43,13 @@ They come in glossy or matte.
 |       |    2.39:1 |                        4K DCI (CinemaScope) |
 |       |           |                                             |
 
-
 ## OLDER RESOLUTIONS
 
 | NAME         |   W   |     H |  PIXELS |    PPI |  RATIO | MON |  TV |
 |:-------------|------:|------:|--------:|-------:|-------:|----:|----:|
 |              |       |       |         |        |        |     |     |
 | VGA          |   640 |   480 |    .30M |        |   4:3  |   X |     |
-| 480p/DVD     |   720 |   480 |    .34M |        |  16:9  |   X |   X |         
+| 480p/DVD     |   720 |   480 |    .34M |        |  16:9  |   X |   X |
 | SVGA         |   800 |   600 |    .48M |        |   4:3  |   X |     |
 | WSVGA        |  1024 |   600 |    .61M |        |  17:10 |   X |     |
 | XGA          |  1024 |   768 |    .78M |        |   4:3  |   X |     |

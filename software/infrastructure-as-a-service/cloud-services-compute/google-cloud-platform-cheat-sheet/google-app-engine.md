@@ -10,7 +10,7 @@ Documentation and reference,
 * [Quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
 * [Google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
 
-My Repo example is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).  
+My Repo example is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -29,7 +29,7 @@ As of my last update, the free resources are,
 * 1000 search operations per day, 10 MB search indexing
 * 100 emails per day
 
-The free tier is available only for the `Standard Environment`. 
+The free tier is available only for the `Standard Environment`.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
@@ -42,7 +42,7 @@ Some main differences between `google compute engine`,
   * A higher level of abstraction
   * Simply deploy your code and platform does the rest
   * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS 
+  * You don't manage/update/etc... the OS
   * Just upload code and gae does the rest
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
   * IaaS
