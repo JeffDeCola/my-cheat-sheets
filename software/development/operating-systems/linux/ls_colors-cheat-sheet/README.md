@@ -3,6 +3,9 @@
 `LS_COLORS` _is an environment variable used to set different colors
 for different kinds of files when using the `ls` command._
 
+Setting `ls` color for macOS is
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
+ 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -116,9 +119,11 @@ echo $LS_COLORS
 env | grep LS_COLORS
 ```
 
+I modified this file with the few things explained above.
+
 ### MY SETTINGS IN .BASH
 
-I use the following in my `.bashrc` file,
+I use the following code in my `.bashrc` file,
 
 ```bash
 # enable color support of ls and also add handy aliases
@@ -135,9 +140,12 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 ```
 
+Then I created a `.directories` file and updated
+a few things as explained above.
+
 ## SETTINGS
 
-Some settings for LS_COLOR.
+Some settings for LS_COLORS.
 
 * FILE TYPES
   * bd  = (BLOCK, BLK)   Block device (buffered) special file
