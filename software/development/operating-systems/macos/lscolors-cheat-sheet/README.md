@@ -22,33 +22,33 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 Settings for LSCOLORS.
 
-* FILE TYPES (Foreground background)
-  * directory    e    x
-  * symbolic     f    x
-  * socket       c    x
-  * pipe         d    x
-  * executable   b    x
-  * block        e    g
-  * character    e    d
-  * executable   a    b
-  * executable   a    g
-  * directory    a    c
-  * directory    a    d
+* FILE TYPES (Foreground, background)
+  * directory = e, x
+  * symbolic = f, x
+  * socket = c, x
+  * pipe = d, x
+  * executable = b, x
+  * block = e, g
+  * character = e, d
+  * executable = a, b
+  * executable = a, g
+  * directory = a, c
+  * directory = a, d
 * COLORS
-  * a    Black
-  * b    Red
-  * c    Green
-  * d    Brown
-  * e    Blue
-  * f    Magenta
-  * g    Cyan
-  * h    Light grey
-  * A    Bold black, usually shows up as dark grey
-  * B    Bold red
-  * C    Bold green
-  * D    Bold brown, usually shows up as yellow
-  * E    Bold blue
-  * F    Bold magenta
-  * G    Bold cyan
-  * H    Bold light grey; looks like bright white
-  * x    Default foreground or background
+  * a = Black
+  * b = Red
+  * c = Green
+  * d = Brown
+  * e = Blue
+  * f = Magenta
+  * g = Cyan
+  * h = Light grey
+  * A = Bold black, usually shows up as dark grey
+  * B = Bold red
+  * C = Bold green
+  * D = Bold brown, usually shows up as yellow
+  * E = Bold blue
+  * F = Bold magenta
+  * G = Bold cyan
+  * H = Bold light grey; looks like bright white
+  * x = Default foreground or background
