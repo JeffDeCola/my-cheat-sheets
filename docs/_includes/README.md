@@ -117,7 +117,7 @@ Various Apps and tools for the goal of creating a app/service.
 
   * MAC OS
 
-    * _coming soon_
+    * [LSCOLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
 
 * SOFTWARE ARCHITECTURES
 
