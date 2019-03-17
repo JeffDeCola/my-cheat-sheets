@@ -137,6 +137,8 @@ Various Apps and tools for the goal of creating a app/service.
 
   * LINUX
 
+
+    * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
@@ -268,7 +270,7 @@ The `jobs` and `tasks` are,
 * `job-readme-github-pages` runs task
   [readme-github-pages.sh](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh).
 
-The concourse `resources type` are,
+The concourse `resources types` are,
 
 * `my-cheat-sheets` uses a resource type
   [docker-image](https://hub.docker.com/r/concourse/git-resource/)
