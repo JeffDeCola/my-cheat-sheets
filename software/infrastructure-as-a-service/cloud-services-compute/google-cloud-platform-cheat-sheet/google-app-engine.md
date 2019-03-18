@@ -1,7 +1,8 @@
 # GOOGLE APP ENGINE (GAE) CHEAT SHEET
 
-`google app engine (gae)` _provides serverless application platform
-for apps and backends._
+`google app engine (gae)` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+provides a serverless application platform for apps and backends._
 
 Documentation and reference,
 

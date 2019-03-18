@@ -1,8 +1,8 @@
 # GOOGLE KUBERNETES ENGINE CHEAT SHEET
 
-`google kubernetes engine` _alows you to deploy, manage,
-and scale containerized applications on Kubernetes, powered
-by Google Cloud._
+`google kubernetes engine` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+_alows you to deploy, manage, and scale containerized applications on Kubernetes._
 
 Documentation and reference,
 

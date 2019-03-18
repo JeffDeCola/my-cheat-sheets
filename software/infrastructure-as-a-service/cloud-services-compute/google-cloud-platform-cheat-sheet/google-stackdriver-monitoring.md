@@ -1,8 +1,9 @@
 # GOOGLE STACKDRIVER MONITORING CHEAT SHEET
 
-`google stackdriver monitoring` _provides visibility
-into the performance, uptime, and overall health of cloud-powered
-applications._
+`google stackdriver monitoring` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+_provides visibility into the performance, uptime, and overall
+health of cloud-powered applications._
 
 Documentation and reference,
 

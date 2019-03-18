@@ -1,8 +1,10 @@
 # GOOGLE CLOUD STORAGE CHEAT SHEET
 
-`google cloud storage` _is a scalable, fully managed, highly reliable,
-and cost-efficient object/blob store. Used for pictures, videos,
-objects, blobs, and other unstructured data._
+`google cloud storage` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+_is a scalable, fully managed, highly reliable, and cost-efficient
+object/blob store. Used for pictures, videos, objects, blobs,
+and other unstructured data._
 
 Documentation and reference,
 
