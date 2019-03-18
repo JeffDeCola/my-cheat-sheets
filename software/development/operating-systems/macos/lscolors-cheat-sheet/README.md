@@ -3,13 +3,16 @@
 `LSCOLORS` _is an environment variable used to set different colors
 for different kinds of files when using the `ls` command._
 
+The `ls` that comes with macOS is from `BSD`, and lacks some
+of the features of its GNU sibling.
+
 Setting `ls` color for linux is
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SET LSCOLORS ENV VARIABLE
+## BSD - SET LSCOLORS ENV VARIABLE
 
 Its pretty simple,
 
@@ -18,7 +21,17 @@ export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 ```
 
-## SETTINGS
+For grep add,
+
+```bash
+export GREP_OPTIONS='--color=always'
+export GREP_COLOR='01;31'
+```
+
+A limitation is that you can't set different file
+extensions like .gz.
+
+## BSD - SETTINGS
 
 Settings for LSCOLORS.
 
