@@ -1,11 +1,16 @@
 # GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
-`google compute engine (gce)` _provides high performance
-scalable VMs (Virtual Machines)._
+`google compute engine (gce)` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+provides high performance scalable VMs (Virtual Machines)._
 
 Documentation and reference,
 
-* [Your Instances](https://console.cloud.google.com/compute/instances)
+* Your 
+  [Images](https://console.cloud.google.com/compute/images),
+  [Instances Templates](https://console.cloud.google.com/compute/instanceTemplates),
+  [Instances Groups](https://console.cloud.google.com/compute/instanceGroups) and
+  [Instances](https://console.cloud.google.com/compute/instances)
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
