@@ -22,6 +22,11 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
+gce lets you create and run virtual machines. 
+Compute Engine offers scale, performance, and value that allows
+you to easily launch large compute clusters on Google's infrastructure.
+There are no upfront investments.  Pay what you use.
+
 ## FREE RESOURCE (f1-micro)
 
 As of my last update, there is a free
@@ -178,6 +183,12 @@ gcloud help compute instance-groups unmanaged create
 gcloud help compute instances create
 ```
 
+ssh onto a instance `hello-go` in zone `us-west1-a`,
+
+```bash
+gcloud compute --project "<project-name>" ssh --zone "us-west1-a" "hello-go"
+```
+
 ## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
 
 There are 4 main section of gce:
@@ -187,9 +198,26 @@ There are 4 main section of gce:
 * INSTANCE GROUPS
 * INSTANCES
 
+We will go over each section below.
+
 ![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
 
 ### IMAGES
+
+As shown in the illustration, images are used to create your instance.
+
+There are two types of images,
+
+* `Public images` are provided and maintained by Google,
+  open-source communities, and third-party vendors.
+* `Custom images` are available only to your project.
+  You can create a custom image from boot disks and other images.
+  Then, use the custom image to create an instance.
+
+Refer to these cheat for `creating custom images` (packer is easier and recommended),
+
+* [create custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
+* [create custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md)
 
 List your images,
 
@@ -197,12 +225,15 @@ List your images,
 gcloud compute images list
 ```
 
+Delete an image,
+
 ```bash
-gcloud help compute images create
-???
+gcloud compute images delete <IMAGENAME>
 ```
 
 ### INSTANCE TEMPLATES
+
+Instance templates are ???
 
 List your instance templates,
 
@@ -218,6 +249,8 @@ gcloud help compute instance-templates create
 ```
 
 ### INSTANCE GROUPS
+
+Instance groups are ????
 
 A manged machine...???
 
@@ -236,6 +269,8 @@ gcloud help compute instance-groups unmanaged create
 ```
 
 ### INSTANCES
+
+Instance are ???
 
 List your instances/VMs,
 
