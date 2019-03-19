@@ -127,11 +127,11 @@ Various Apps and tools for the goal of creating a app/service.
 
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
     [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet),
-    ([my-go-examples](https://github.com/JeffDeCola/my-go-examples))
+    [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
-    ([my-python-examples](https://github.com/JeffDeCola/my-python-examples))
+    [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet),
-    ([my-php-examples](https://github.com/JeffDeCola/my-php-containers))
+    [my-php-examples](https://github.com/JeffDeCola/my-php-containers)
 
 * OPERATING SYSTEMS
 
@@ -187,19 +187,19 @@ Various Apps and tools for the goal of creating a app/service.
 * CLOUD SERVICES / COMPUTE
 
   * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
-    ([hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws))
+    [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws)
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
     * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
-      ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))
+      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
     * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md),
-      ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))
+      [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
     * [google kubernetes engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
     * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
     * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
     * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
   * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
-    ([hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure))
+    [hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure)
 
 * DATABASE
 
@@ -228,7 +228,7 @@ Various Apps and tools for the goal of creating a app/service.
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
     * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet),
-      ([hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon))
+      [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon)
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION
