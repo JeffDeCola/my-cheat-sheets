@@ -162,7 +162,8 @@ An extensive list is [here](https://cloud.google.com/docs/).
     cheat sheet
   * cloud storage nearline
   * cloud storage coldline
-  * persistent disk
+  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+    cheat sheet
   * cloud firestore
 
 ## GET AN ACCOUNT AT GOOGLE CLOUD PLATFORM

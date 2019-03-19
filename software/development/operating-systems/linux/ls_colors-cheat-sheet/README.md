@@ -5,7 +5,7 @@ for different kinds of files when using the `ls` command._
 
 Setting `ls` color for macOS is
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
- 
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -148,25 +148,31 @@ a few things as explained above.
 Some settings for LS_COLORS.
 
 * FILE TYPES
-  * bd  = (BLOCK, BLK)   Block device (buffered) special file
-  * cd  = (CHAR, CHR)    Character device (unbuffered) special file
+  * bd  = (BLOCK, BLK) Block device (buffered) special file
+  * cd  = (CHAR, CHR) Character device (unbuffered) special file
   * di  = (DIR)  Directory
   * do  = (DOOR) [Door][1]
   * ex  = (EXEC) Executable file (ie. has 'x' set in permissions)
   * fi  = (FILE) Normal file
-  * ln  = (SYMLINK, LINK, LNK)   Symbolic link. If you set this to ‘target’ instead of a numerical value, the color is as for the file pointed to.
-  * mi  = (MISSING)  Non-existent file pointed to by a symbolic link (visible when you type ls -l)
-  * no  = (NORMAL, NORM) Normal (non-filename) text. Global default, although everything should be something
+  * ln  = (SYMLINK, LINK, LNK)   Symbolic link. If you set this to
+    'target' instead of a numerical value, the color is as for the file pointed to.
+  * mi  = (MISSING)  Non-existent file pointed to by a symbolic link
+    (visible when you type ls -l)
+  * no  = (NORMAL, NORM) Normal (non-filename) text. Global default,
+    although everything should be something
   * or  = (ORPHAN)   Symbolic link pointing to an orphaned non-existent file
-  * ow  = (OTHER_WRITABLE)   Directory that is other-writable (o+w) and not sticky
+  * ow  = (OTHER_WRITABLE)   Directory that is other-writable (o+w) and not
+    sticky
   * pi  = (FIFO, PIPE)   Named pipe (fifo file)
-  * sg  = (SETGID)   File that is setgid (g+s)
+  * sg  = (SETGID) File that is setgid (g+s)
   * so  = (SOCK) Socket file
-  * st  = (STICKY)   Directory with the sticky bit set (+t) and not other-writable
-  * su  = (SETUID)   File that is setuid (u+s)
-  * tw  = (STICKY_OTHER_WRITABLE)    Directory that is sticky and other-writable (+t,o+w)
+  * st  = (STICKY) Directory with the sticky bit set (+t) and not other-writable
+  * su  = (SETUID) File that is setuid (u+s)
+  * tw  = (STICKY_OTHER_WRITABLE)    Directory that is sticky and other-writable
+    (+t,o+w)
 * EXTENSIONS
-  * `*.extension` =   Every file using this extension e.g. *.rpm = files with the ending .rpm
+  * `*.extension` = Every file using this extension e.g. *.rpm = files with
+    the ending .rpm
 * COLORS
   * 31  = red
   * 32  = green
