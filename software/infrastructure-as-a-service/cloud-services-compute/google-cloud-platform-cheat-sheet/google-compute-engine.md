@@ -3,7 +3,7 @@
 `google compute engine (gce)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
 provides high performance scalable Virtual Machine (VM) instances
-that you can use to run a App/service._
+that you can use to run an App/service._
 
 Documentation and reference,
 
@@ -17,7 +17,7 @@ Documentation and reference,
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 * A list of
-  [Basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet#basic-gce-commands)
+  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-basic-gcloud-commands)
   I like.
 
 My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
@@ -54,13 +54,15 @@ As of my last update, there is a free
   * You can send up to `1GB of egress traffic`, in aggregate,
     to regions except for those in Oceania and China.
 
-Preemptible VM instances are not included in the Google Cloud Platform Free Tier.
+Preemptible VM instances (VMs that can be shut down by google at any moment)
+are not included in the Free Tier.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
 ## DIFFERENCE BETWEEN GAE
 
-Some main differences between `google apps engine`,
+Some main differences between `google app engine`
+and `google compute engine`,
 
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * PaaS
@@ -151,16 +153,17 @@ There are four main section of gce:
 * `INSTANCE GROUPS` - Deploys and scales VM instances.
 * `INSTANCES` (DISKS) - A deployed `image` (your VM instance).
 
-The goal is to deploy an `image` to make a running VM instance(s)
+The goal is to deploy an `image` that creates a VM instance(s)
 (That contains your App/service).
 
-As a high level view, this illustration show how an
-App/service may be running on `gce`.  It shows
-that `instance templates` (deploy and scale VMs) control the show.
+The following illustration shows a high level view on how an
+App/service may be running on `gce`.  AS you can see in this example,
+the VM instances contain services.  It also shows
+`instance groups` control the show (They deploy and scale VM instances).
 
 ![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-app-service-view.jpg)
 
-The following illustration is a more detailed view of,
+The following illustration is a more detailed view of gce,
 
 * The creation of a custom image `jeff-hello-go-image-ver`
   that contains you App/service.
@@ -181,7 +184,7 @@ There are two types of images,
 * `Public images` are provided and maintained by Google,
   open-source communities, and third-party vendors.
 * `Custom images` are available only to your project.
-  You can create a custom image from boot disks or other images.
+  You can create a custom image from `boot disks` or other `images`.
 
 Refer to these cheat sheets for creating a custom image
 (I recommended
