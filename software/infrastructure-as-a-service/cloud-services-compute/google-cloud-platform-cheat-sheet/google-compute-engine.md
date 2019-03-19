@@ -11,9 +11,13 @@ Documentation and reference,
   [Instances Templates](https://console.cloud.google.com/compute/instanceTemplates),
   [Instances Groups](https://console.cloud.google.com/compute/instanceGroups) and
   [Instances](https://console.cloud.google.com/compute/instances)
+  ([boot disks](https://console.cloud.google.com/compute/disks))
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+* A list of
+  [Basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-compute-engine-cheat-sheet#basic-gce-commands)
+  I like.
 
 My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
@@ -23,7 +27,7 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 gce lets you create and run virtual machines. 
-Compute Engine offers scale, performance, and value that allows
+It offers scale, performance, and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
 
@@ -135,7 +139,222 @@ allow instances to use additional physical CPU for short periods of time.
 There are many other models depending on what you need. Check out the
 latest machines and [pricing](https://cloud.google.com/compute/pricing).
 
-## BASIC GCE COMMANDS
+## GOOGLE COMPUTE ENGINE (GCE) MAIN SECTIONS
+
+There are four main section of gce:
+
+* IMAGES
+* INSTANCE TEMPLATES
+* INSTANCE GROUPS
+* INSTANCES (DISKS)
+
+The goal is to have a running instance(s)
+(your service or App) deployed from your image.
+
+As a high level view, this illustration show how an
+app / service may be running on gce.  It shows
+that `instance templates` (launch and scale VMs) control the show.
+
+![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-app-service-view.jpg)
+
+The following illustration is a more detailed view of,
+
+* The creation of a custom image `jeff-hello-go-image-ver`.
+* The deployment of an image `jeff-hello-go-instance-ver`
+  that runs your service or App.
+
+We will go over each section below.
+
+![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
+
+### IMAGES
+
+As shown in the above illustration, images are used for deploying
+your instance.
+
+There are two types of images,
+
+* `Public images` are provided and maintained by Google,
+  open-source communities, and third-party vendors.
+* `Custom images` are available only to your project.
+  You can create a custom image from boot disks or other images.
+
+Refer to these cheat sheets for creating a custom image
+(I recommended
+[packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
+),
+
+* [create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
+  Do this one.  Your best option.
+* [create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md)
+* create a custom image using console - Just click a few buttons.
+
+List your images,
+
+```bash
+gcloud compute images list
+```
+
+Delete an image,
+
+```bash
+gcloud compute images delete <IMAGENAME>
+```
+
+### INSTANCE TEMPLATES
+
+Instance template perform the following functions,
+
+* The HW resources your instance needs to run the image.
+
+You specify,
+
+* The image
+* CPUs and RAM sizes
+* Boot Disk Size (standard persistent disk)
+* http/https on or off
+
+In the above illustration the `hello-go`
+needs 1CPU and 0.6GB RAM on a 10GB boot disk.
+This is because the image needs at least 10GB.
+
+A `standard persistent` disk is a fancy way
+to say VM boot disk; the disk used
+to start your instance.
+
+List your instance templates,
+
+```bash
+gcloud compute instance-templates list
+```
+
+Create your instance template help,
+
+```bash
+gcloud help compute instance-templates create
+```
+
+As a side note, I would of called this `instance resources`
+rather than `instance templates`. Just my 2 cents.
+
+### INSTANCE GROUPS
+
+Instance groups perform the following functions,
+
+* Launches your VM instance
+* Scales your VM instances as needed
+
+You specify,
+
+* The image template
+* Region and zone
+* Managed or unmanaged group
+* Scaling or no scaling
+* Preemptible or non-preemptible instance
+
+`Managed instance groups` are intended to support stateless
+applications that aren't dependent on the specific state
+of the underlying VM instances to run. 
+This allows for features like autoscaling.  
+
+An `unmanaged instance group` are collections of instances
+that are not necessarily identical and do not share a
+common instance template.
+
+Scaling can be set to scale your instances as you hit
+certain thresholds.
+
+A `preemptible instance` means that google could shut down the instance
+as its shifting its HW resources around.  It could fail at any moment.
+These are a lot cheaper to use.
+
+List your instance groups,
+
+```bash
+gcloud compute instance-groups list
+gcloud compute instance-groups managed list
+gcloud compute instance-groups unmanaged list
+```
+
+Create your instance group help,
+
+```bash
+gcloud help compute instance-groups managed create
+gcloud help compute instance-groups unmanaged create
+```
+
+As a side note, I would of called this `instance control`
+rather than `instance groups`. Just my 2 cents.
+
+### INSTANCES
+
+Yeah, you made it. Instance are running Virtual Machine.
+Obviously, this is your ultimate goal.
+
+A VM can contain,
+
+* Services
+* Containers
+* Your app
+
+List your instances/VMs,
+
+```bash
+gcloud compute instances list
+```
+
+Create your instance help,
+
+```bash
+gcloud help compute instances create
+```
+
+### INSTANCES - METADATA SERVER QUERY
+
+Every instance stores its metadata on the metadata server.
+You can query this metadata server pro grammatically for information such as,
+
+* The instance's host name
+* Instance ID
+* Startup scripts, and
+* Custom metadata
+
+ssh onto your instance and perform the following,
+
+Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
+
+```bash
+curl -s http://metadata.google.internal/computeMetadata/v1/\
+project/project-id \
+-H "Metadata-Flavor: Google"
+```
+
+Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
+
+```bash
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/hostname \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/machine-type \
+    -H "Metadata-Flavor: Google"
+curl -s http://metadata.google.internal/computeMetadata/v1\
+/instance/scheduling/preemptible \
+    -H "Metadata-Flavor: Google"
+```
+
+Wait for a change,
+
+```bash
+curl http://metadata.google.internal/computeMetadata/v1\
+/instance/maintenance-event?wait_for_change=true \
+    -H 'Metadata-Flavor: Google'
+```
+
+## GCE BASIC GCLOUD COMMANDS
 
 GCE Help,
 
@@ -173,7 +392,7 @@ gcloud compute instance-groups unmanaged list
 gcloud compute instances list
 ```
 
-Help,
+Help on creating,
 
 ```bash
 gcloud help compute images create
@@ -189,156 +408,7 @@ ssh onto a instance `hello-go` in zone `us-west1-a`,
 gcloud compute --project "<project-name>" ssh --zone "us-west1-a" "hello-go"
 ```
 
-## GOOGLE COMPUTE ENGINE (GCE) OVERVIEW
-
-There are 4 main section of gce:
-
-* IMAGES
-* INSTANCE TEMPLATES
-* INSTANCE GROUPS
-* INSTANCES
-
-We will go over each section below.
-
-![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
-
-### IMAGES
-
-As shown in the illustration, images are used to create your instance.
-
-There are two types of images,
-
-* `Public images` are provided and maintained by Google,
-  open-source communities, and third-party vendors.
-* `Custom images` are available only to your project.
-  You can create a custom image from boot disks and other images.
-  Then, use the custom image to create an instance.
-
-Refer to these cheat for `creating custom images` (packer is easier and recommended),
-
-* [create custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
-* [create custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md)
-
-List your images,
-
-```bash
-gcloud compute images list
-```
-
-Delete an image,
-
-```bash
-gcloud compute images delete <IMAGENAME>
-```
-
-### INSTANCE TEMPLATES
-
-Instance templates are ???
-
-List your instance templates,
-
-```bash
-gcloud compute instance-templates list
-```
-
-Create your instance,
-
-```bash
-gcloud help compute instance-templates create
-???
-```
-
-### INSTANCE GROUPS
-
-Instance groups are ????
-
-A manged machine...???
-
-List your instance groups,
-
-```bash
-gcloud compute instance-groups list
-gcloud compute instance-groups managed list
-gcloud compute instance-groups unmanaged list
-```
-
-```bash
-gcloud help compute instance-groups managed create
-gcloud help compute instance-groups unmanaged create
-???
-```
-
-### INSTANCES
-
-Instance are ???
-
-List your instances/VMs,
-
-```bash
-gcloud compute instances list
-```
-
-```bash
-gcloud help compute instances create
-???
-```
-
-### INSTANCES - METADATA SERVER QUERY
-
-Every instance stores its metadata on the metadata server.
-You can query this metadata server pro grammatically for information such as,
-
-* The instance's host name
-* Instance ID
-* Startup scripts, and
-* Custom metadata
-
-ssh onto your instance and perform the following
-
-Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
-
-```bash
-curl -s http://metadata.google.internal/computeMetadata/v1/\
-project/project-id \
--H "Metadata-Flavor: Google"
-```
-
-Relative to `http://metadata.google.internal/computeMetadata/v1/instance/`
-
-```bash
-curl -s http://metadata.google.internal/computeMetadata/v1\
-/instance \
-    -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1\
-/instance/hostname \
-    -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1\
-/instance/machine-type \
-    -H "Metadata-Flavor: Google"
-curl -s http://metadata.google.internal/computeMetadata/v1\
-/instance/scheduling/preemptible \
-    -H "Metadata-Flavor: Google"
-```
-
-Wait for a change,
-
-```bash
-curl http://metadata.google.internal/computeMetadata/v1\
-/instance/maintenance-event?wait_for_change=true \
-    -H 'Metadata-Flavor: Google'
-```
-
-### INSTANCES - SSH INTO YOUR INSTANCE
-
-You can ssh onto your instance.
-
-Become root,
-
-```bash
-sudo su -
-```
-
-## GCE HEALTH CHECK COMMANDS
+## GCE HEALTH CHECK GCLOUD COMMANDS
 
 List your health checks at GCE,
 
