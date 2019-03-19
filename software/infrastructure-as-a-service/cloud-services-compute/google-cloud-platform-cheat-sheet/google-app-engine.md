@@ -42,7 +42,8 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 
 ## DIFFERENCE BETWEEN GCE
 
-Some main differences between `google compute engine`,
+Some main differences between `google app engine`
+and `google compute engine`,
 
 * `google app engine (gae)`
   * PaaS
