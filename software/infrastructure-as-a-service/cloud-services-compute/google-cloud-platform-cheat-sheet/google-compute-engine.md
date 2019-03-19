@@ -2,16 +2,17 @@
 
 `google compute engine (gce)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-provides high performance scalable Virtual Machine (VM) instances that you can use to run a service / App._
+provides high performance scalable Virtual Machine (VM) instances
+that you can use to run a App/service._
 
 Documentation and reference,
 
-* Your 
+* Your
   [Images](https://console.cloud.google.com/compute/images),
   [Instances Templates](https://console.cloud.google.com/compute/instanceTemplates),
   [Instances Groups](https://console.cloud.google.com/compute/instanceGroups) and
   [Instances](https://console.cloud.google.com/compute/instances)
-  ([boot disks](https://console.cloud.google.com/compute/disks))
+  ([VM boot disks](https://console.cloud.google.com/compute/disks))
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
@@ -26,7 +27,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-`gce` lets you create and run VM instances. 
+`gce` lets you create and run VM instances.
 It offers scale, performance, and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
@@ -145,16 +146,16 @@ Google [pricing calculator](https://cloud.google.com/products/calculator/).
 
 There are four main section of gce:
 
-* `IMAGES` - Boot disk image (contains your service / App). 
+* `IMAGES` - Boot disk image (contains your App/service).
 * `INSTANCE TEMPLATES` - The HW resources you need to deploy an `image`.
-* `INSTANCE GROUPS` - Deploys and scales VM `instances`.
+* `INSTANCE GROUPS` - Deploys and scales VM instances.
 * `INSTANCES` (DISKS) - A deployed `image` (your VM instance).
 
-The goal is to deploy an `image` to make a running VM `instance(s)`
-(That contains your service / App).
+The goal is to deploy an `image` to make a running VM instance(s)
+(That contains your App/service).
 
 As a high level view, this illustration show how an
-service / App may be running on `gce`.  It shows
+App/service may be running on `gce`.  It shows
 that `instance templates` (deploy and scale VMs) control the show.
 
 ![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-app-service-view.jpg)
@@ -162,9 +163,9 @@ that `instance templates` (deploy and scale VMs) control the show.
 The following illustration is a more detailed view of,
 
 * The creation of a custom image `jeff-hello-go-image-ver`
-  that contains you service / App.
+  that contains you App/service.
 * The deployment of an image `jeff-hello-go-instance-ver`
-  that runs your service / App.
+  that runs your App/service.
 
 We will go over each section below.
 
@@ -257,8 +258,8 @@ You specify,
 
 `Managed instance groups` are intended to support stateless
 applications that aren't dependent on the specific state
-of the underlying VM instances to run. 
-This allows for features like autoscaling.  
+of the underlying VM instances to run.
+This allows for features like autoscaling.
 
 An `unmanaged instance group` are collections of VM instances
 that are not necessarily identical and do not share a
@@ -291,18 +292,18 @@ rather than `instance groups`. Just my 2 cents.
 
 ### INSTANCES (DISKS)
 
-For clarity, an `instance` is a VM on GCP.  So you can
-use those terms interchangeably.
+For clarity, an `instance` is a VM on GCP.
+I like to use the term VM instance.
 
-Yeah, you made it. Your `image` has been loaded
+So now, your `image` has been loaded
 onto a boot disk (standard persistent disk) and
-now is running as a VM `instance`.
+is running as a VM instance.
 
-A VM `instance can` contain,
+A VM instance can contain,
 
 * Services
 * Containers
-* Your App
+* An App
 
 List your VM instances,
 
@@ -322,7 +323,7 @@ Every VM instance stores its metadata on the metadata server.
 You can query this metadata server pro grammatically for information such as,
 
 * The VM instance's host name
-* VM Instance ID
+* VM instance ID
 * Startup scripts, and
 * Custom metadata
 
