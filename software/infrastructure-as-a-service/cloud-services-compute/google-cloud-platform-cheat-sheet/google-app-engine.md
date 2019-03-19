@@ -2,7 +2,7 @@
 
 `google app engine (gae)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-provides a serverless application platform for apps and backends._
+provides a serverless application platform that you can use to run a App._
 
 Documentation and reference,
 
@@ -17,6 +17,12 @@ View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
+
+GCE requires a lot of setup.  But what if you just don't really care about
+the guts (infrastructure) and just want to deploy and App.  Well GCA is for you.
+
+On a side note, can GAE run a service.  I would say yes.  But that's
+not really the point of GAE.
 
 ## FREE RESOURCE (standard environment only)
 
