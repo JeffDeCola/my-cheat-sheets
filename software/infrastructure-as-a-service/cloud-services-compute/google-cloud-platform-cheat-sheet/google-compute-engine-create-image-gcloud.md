@@ -1,6 +1,6 @@
-# CREATE IMAGE USING GCLOUD CHEAT SHEET
+# CREATE A CUSTOM IMAGE USING GCLOUD CHEAT SHEET
 
-`create custom image using gcloud` _is one of two ways
+`create a custom image using gcloud` _is a way
 to create a custom image on `gce`._
 
 View my entire list of cheat sheets on
@@ -9,18 +9,25 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 I personally do not like this way since it requires a
-lot of steps that are not script friendly.
+lot of steps that are not that script friendly.
 
 Use 
 [create custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
 instead.
 
-But as a high level overview,
+But for completeness, as a high level overview,
 
 * Start up an `instance` using an existing `image`.
-* ssh into that instance and add whatever you want (ugly).
-* When you are happy, stop the `instance` so that it can shut down
-  and stop writing any data to the `persistent disk`.
-* Create `image` from instance's `persistent disk` or `snapshot`.
+  As a side note, no instance template or instance group are needed.
+* ssh into your new instance and add whatever you want -
+  installs, docker, etc...(this is a little ugly).
+* When you're happy, stop the `instance` so that it can shut down
+  and stop writing the data to the `persistent boot disk`.
+* Create `image` from the `persistent boot disk`.
 
-You can script this, but I don't like the process.
+To perform the above steps, you can use the console/ssh or write scripts using `gcloud`.
+
+Again, I understand I didn't get into details and didn't write
+any scripts to do this.  Its because I find
+[create custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
+much more elegant.
