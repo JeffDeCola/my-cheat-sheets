@@ -11,6 +11,7 @@ Documentation and reference,
 * [Google Cloud Platform Documentation](https://cloud.google.com/docs)
 * [Google Cloud Platform SDK Documentation (gcloud, gsutil, bg)](https://cloud.google.com/sdk/docs/)
 * [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
+* [go on google cloud platform](https://cloud.google.com/go/docs/)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

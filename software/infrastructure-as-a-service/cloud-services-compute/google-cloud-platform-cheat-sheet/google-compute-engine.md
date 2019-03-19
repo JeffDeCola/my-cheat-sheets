@@ -2,7 +2,7 @@
 
 `google compute engine (gce)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-provides high performance scalable VMs (Virtual Machines)._
+provides high performance scalable Virtual Machine (VM) instances that you can use to run a service / App._
 
 Documentation and reference,
 
@@ -26,7 +26,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-gce lets you create and run virtual machines. 
+`gce` lets you create and run VM instances. 
 It offers scale, performance, and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
@@ -71,7 +71,7 @@ Some main differences between `google apps engine`,
 * google compute engine (gce)
   * IaaS
   * You have full control/responsibility for server
-  * You create and configure your own virtual machine instances
+  * You create and configure your own VM instances
   * Direct access to OS
   * Manage OS and updates as needed
 
@@ -134,34 +134,37 @@ types, These prices also vary by region.
 |                 |         |          |              |              |
 
 `f1-micro` and `g1-small` machine types offer bursting capabilities that
-allow instances to use additional physical CPU for short periods of time.
+allow VM instances to use additional physical CPU for short periods of time.
 
 There are many other models depending on what you need. Check out the
 latest machines and [pricing](https://cloud.google.com/compute/pricing).
+
+Google [pricing calculator](https://cloud.google.com/products/calculator/).
 
 ## GOOGLE COMPUTE ENGINE (GCE) MAIN SECTIONS
 
 There are four main section of gce:
 
-* IMAGES
-* INSTANCE TEMPLATES
-* INSTANCE GROUPS
-* INSTANCES (DISKS)
+* `IMAGES` - Boot disk image (contains your service / App). 
+* `INSTANCE TEMPLATES` - The HW resources you need to deploy an `image`.
+* `INSTANCE GROUPS` - Deploys and scales VM `instances`.
+* `INSTANCES` (DISKS) - A deployed `image` (your VM instance).
 
-The goal is to have a running instance(s)
-(your service or App) deployed from your image.
+The goal is to deploy an `image` to make a running VM `instance(s)`
+(That contains your service / App).
 
 As a high level view, this illustration show how an
-app / service may be running on gce.  It shows
-that `instance templates` (launch and scale VMs) control the show.
+service / App may be running on `gce`.  It shows
+that `instance templates` (deploy and scale VMs) control the show.
 
 ![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-app-service-view.jpg)
 
 The following illustration is a more detailed view of,
 
-* The creation of a custom image `jeff-hello-go-image-ver`.
+* The creation of a custom image `jeff-hello-go-image-ver`
+  that contains you service / App.
 * The deployment of an image `jeff-hello-go-instance-ver`
-  that runs your service or App.
+  that runs your service / App.
 
 We will go over each section below.
 
@@ -170,7 +173,7 @@ We will go over each section below.
 ### IMAGES
 
 As shown in the above illustration, images are used for deploying
-your instance.
+your VM instance.
 
 There are two types of images,
 
@@ -250,21 +253,21 @@ You specify,
 * Region and zone
 * Managed or unmanaged group
 * Scaling or no scaling
-* Preemptible or non-preemptible instance
+* Preemptible or non-preemptible VM instance
 
 `Managed instance groups` are intended to support stateless
 applications that aren't dependent on the specific state
 of the underlying VM instances to run. 
 This allows for features like autoscaling.  
 
-An `unmanaged instance group` are collections of instances
+An `unmanaged instance group` are collections of VM instances
 that are not necessarily identical and do not share a
 common instance template.
 
-Scaling can be set to scale your instances as you hit
+Scaling can be set to scale your VM instances as you hit
 certain thresholds.
 
-A `preemptible instance` means that google could shut down the instance
+A `preemptible instance` means that google could shut down the VM instance
 as its shifting its HW resources around.  It could fail at any moment.
 These are a lot cheaper to use.
 
@@ -286,24 +289,28 @@ gcloud help compute instance-groups unmanaged create
 As a side note, I would of called this `instance control`
 rather than `instance groups`. Just my 2 cents.
 
-### INSTANCES
+### INSTANCES (DISKS)
 
-Yeah, you made it. Instance are running Virtual Machine.
-Obviously, this is your ultimate goal.
+For clarity, an `instance` is a VM on GCP.  So you can
+use those terms interchangeably.
 
-A VM can contain,
+Yeah, you made it. Your `image` has been loaded
+onto a boot disk (standard persistent disk) and
+now is running as a VM `instance`.
+
+A VM `instance can` contain,
 
 * Services
 * Containers
-* Your app
+* Your App
 
-List your instances/VMs,
+List your VM instances,
 
 ```bash
 gcloud compute instances list
 ```
 
-Create your instance help,
+Create your VM instance help,
 
 ```bash
 gcloud help compute instances create
@@ -311,11 +318,11 @@ gcloud help compute instances create
 
 ### INSTANCES - METADATA SERVER QUERY
 
-Every instance stores its metadata on the metadata server.
+Every VM instance stores its metadata on the metadata server.
 You can query this metadata server pro grammatically for information such as,
 
-* The instance's host name
-* Instance ID
+* The VM instance's host name
+* VM Instance ID
 * Startup scripts, and
 * Custom metadata
 
@@ -325,7 +332,7 @@ Relative to `http://metadata.google.internal/computeMetadata/v1/project/`
 
 ```bash
 curl -s http://metadata.google.internal/computeMetadata/v1/\
-project/project-id \
+project/<PROJECT-ID> \
 -H "Metadata-Flavor: Google"
 ```
 
@@ -402,7 +409,7 @@ gcloud help compute instance-groups unmanaged create
 gcloud help compute instances create
 ```
 
-ssh onto a instance `hello-go` in zone `us-west1-a`,
+ssh onto a VM instance `hello-go` in zone `us-west1-a`,
 
 ```bash
 gcloud compute --project "<project-name>" ssh --zone "us-west1-a" "hello-go"
