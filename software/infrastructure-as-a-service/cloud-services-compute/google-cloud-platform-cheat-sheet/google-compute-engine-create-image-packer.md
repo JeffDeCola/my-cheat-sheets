@@ -5,8 +5,10 @@ to create a custom image on `gce`._
 
 My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
-My cheat sheet on
-[packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet).
+Documentation and reference,
+* [gce template file reference](https://www.packer.io/docs/builders/googlecompute.html)
+* My cheat sheet on
+  [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -19,17 +21,52 @@ This is exactly what we want to do.
 The following illustration shows how `packer` controls the automation of building an `image`.
 As you can see, it all stems from one configuration file `gce-packer-template.json`.
 
-![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-create-custom-image-packer.jpg)
+![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
 
-## GCE PACKER TEMPLATE FILE
+## AUTHENTICATION
 
-## VARIABLES
+Packer needs to be authorized to use your `gce` account.
+This is done using a google service account file. We already setup an env
+variable `$GOOGLE_APPLICATION_CREDENTIALS` that points to the
+location of the service account file.
 
-Got `gce` we use the env variable `$GOOGLE_APPLICATION_CREDENTIALS` that you already setup.
-This will allow `packer` running on your local machine authorization to access your `gce` account.
 For information how to set this up checkout my cheat sheet 
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-service-account-key)
 
-### BUILDRS
+## BASIC GCE PACKER TEMPLATE FILE
+ 
+A bare bones template file to build a custom image from an image would look like this,
 
-### PROVISIONERS
+```json
+{
+    "variables": {
+        "zone": "us-central1-a",
+    },
+
+    "builders": [
+        {   
+            "type": "googlecompute",
+            "account_file": "account.json",
+            "project_id": "my project",
+            "source_image": "debian-7-wheezy-v20150127",
+            "ssh_username": "packer",
+            "zone": "{{user `zone`}}"
+        }
+    ],
+
+    "provisioners": [
+        {
+            "type": "file",
+            "source": "./welcome.txt",
+            "destination": "/home/ubuntu/"
+        },
+        {
+            "type": "shell",
+            "script": "./example.sh"
+        }
+    ]
+}
+```
+
+To see a real working example, go to my repo
+[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).

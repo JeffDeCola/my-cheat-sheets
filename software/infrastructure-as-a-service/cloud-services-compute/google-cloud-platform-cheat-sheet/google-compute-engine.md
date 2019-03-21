@@ -56,7 +56,7 @@ $HOME/.config/gcloud/<name>.json
 Set an environment variable in `~/.bashrc` to point to your credentials file,
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS='$HOME/.config/gcloud/<name>.json'
+export GOOGLE_APPLICATION_CREDENTIALS='/home/jeff/.config/gcloud/<name>.json'
 ```
 
 Check that its all setup,
@@ -196,7 +196,7 @@ App/service may be running on `gce`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `instance groups` control the show (They deploy and scale VM instances).
 
-![IMAGE -  google compute engine app / service view - IMAGE](../../../../docs/pics/google-compute-engine-app-service-view.jpg)
+![IMAGE -  google compute engine app service view instance groups / service view - IMAGE](../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
 
 The following illustration is a more detailed view of gce,
 
@@ -207,7 +207,7 @@ The following illustration is a more detailed view of gce,
 
 We will go over each section below.
 
-![IMAGE -  google compute engine overview - IMAGE](../../../../docs/pics/google-compute-engine-overview.jpg)
+![IMAGE -  google compute engine overview creating deploying custom image - IMAGE](../../../../docs/pics/gce-overview-creating-deploying-custom-image.jpg)
 
 ### IMAGES
 

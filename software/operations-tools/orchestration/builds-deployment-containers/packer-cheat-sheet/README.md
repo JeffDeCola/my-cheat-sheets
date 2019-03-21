@@ -6,11 +6,10 @@ configuration file._
 
 My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
-My cheat sheet on
-[create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
-
 Documentation and reference,
 
+* My cheat sheet,
+  [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
 * [Packer Documentation](https://www.packer.io/)
 
 View my entire list of cheat sheets on
@@ -37,12 +36,12 @@ VirtualBox, VMware, and more.
 
 Here is a high level view of packer,
 
-![IMAGE -  packer high level view - IMAGE](../../../../docs/pics/packer-high-level-view.jpg)
+![IMAGE -  packer high level view - IMAGE](../../../../../docs/pics/packer-high-level-view.jpg)
 
 ## INSTALL
 
-Goto this website [https://www.packer.io/downloads.html](https://www.packer.io/downloads.html)
-to install.  Must be 64-bit machine.
+Go [here](https://www.packer.io/downloads.html)
+to install.  Must use a 64-bit machine.
 
 For Linux, its actually really simple to install
 the binary, just download, unzip and place in `/usr/bin`.
@@ -64,22 +63,28 @@ It is called a template in packer terminology.
 It has three main sections,
 
 * `variables` - Just variables to make your life easier.
-* `builders` - ???
+* `builders` - Define and configure your builders (e.g. gce, aws, azure etc...)
 * `provisioners` - This is the magic, where you add/install stuff.
 
 ### BASIC FORMAT OF A TEMPLATE FILE
 
-As an example a `gce` template file can look like,
+By way of example, here is a very simple template file used
+to build a simple image at `gce`,
 
 ```json
 {
     "variables": {
-        ...
+        "zone": "us-central1-a",
     },
 
     "builders": [
-        {
-            ...
+        {   
+            "type": "googlecompute",
+            "account_file": "account.json",
+            "project_id": "my project",
+            "source_image": "debian-7-wheezy-v20150127",
+            "ssh_username": "packer",
+            "zone": "{{user `zone`}}"
         }
     ],
 
@@ -91,13 +96,6 @@ As an example a `gce` template file can look like,
         },
         {
             "type": "shell",
-            "inline":[
-                "ls -la /home/ubuntu",
-                "cat /home/ubuntu/welcome.txt"
-            ]
-        },
-        {
-            "type": "shell",
             "script": "./example.sh"
         }
     ]
@@ -106,35 +104,57 @@ As an example a `gce` template file can look like,
 
 ### VARIABLES
 
-Variables are just that, variables. Things like credentials, project names.
+Variables are just that, variables. It makes life easier.
+they are used in the builder section.
 
+You can also pass in variables to packer via
+the packer command line interface.
 
 ### BUILDERS
 
-tbd
+* Defines the builders that will be used to create machine `images`
+  For example `gce`, `aws`, etc...
+* Configures each of those builders
 
 ### PROVISIONERS (ADD YOUR STUFF)
 
-The real utility of Packer comes from being
-able to install and configure software into the
-images as well. This stage is also known as the provision step. 
+Install and configure software.  This stage is also known
+as the provision step.
 
 ## VALIDATE THE TEMPLATE FILE
 
-Before you kick off a build validate this file,
+Before you kick off a build, validate the template file,
 
 ```bash
-packer validate gce-packer-template.json
+packer validate packer-template-file.json
 ```
 
 ## RUN THE TEMPLATE FILE (LETS BUILD OUR IMAGE)
 
-Lets build our custom machine image on gce,
+Lets build our custom machine image,
 
 ```bash
-packer build gce-packer-template.json
+packer build -force packer-template-file.json
+```
+
+`-force` removes artifacts from previous build.
+
+You can pass in variables to `packer`
+if you don't want to keep them in your
+template file.
+
+For example,
+
+```bash
+packer build -force \
+    -var 'region=us-central1' \
+    -var 'zone=us-central1-b' \
+    packer-template-file.json
 ```
 
 There are also lots of command line switches,
 but I like to keep everything in my
 template file.
+
+Again, to see a working example, go to my repo
+[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
