@@ -27,10 +27,45 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-`gce` lets you create and run VM instances.
-It offers scale, performance, and value that allows
+In a nutshell, `gce` you deploy a VM instance from an `image`.
+And you VM instance can contain Apps, services, containers, etc... 
+
+`gce` offers scale, performance, and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
+
+## GCE SERVICE ACCOUNT KEY
+
+To allow your applications (e.g. `packer`) to use `gce` you can
+create a credentials file that contains your `service account key`.
+
+These are the steps,
+
+* In Google Developers Console select a project.
+* Under the "API & Services" section, click "Credentials".
+* Click the "Create credentials" button, select "Service account key".
+* Choose JSON as the Key type and gce as service account and click "Create".
+* A JSON file will be downloaded automatically. This is your account file.
+
+I would put the credentials file here,
+
+```bash
+$HOME/.config/gcloud/<name>.json
+```
+
+Set an environment variable in `~/.bashrc` to point to your credentials file,
+
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS='$HOME/.config/gcloud/<name>.json'
+```
+
+Check that its all setup,
+
+```bash
+env | grep GOOGLE
+```
+
+Now programs like `packer` can have access to your  `gce` account.
 
 ## FREE RESOURCE (f1-micro)
 
@@ -148,7 +183,7 @@ Google [pricing calculator](https://cloud.google.com/products/calculator/).
 
 There are four main section of gce:
 
-* `IMAGES` - Boot disk image (contains your App/service).
+* `IMAGES` - Boot disk image / machine image (contains your App/service).
 * `INSTANCE TEMPLATES` - The HW resources you need to deploy an `image`.
 * `INSTANCE GROUPS` - Deploys and scales VM instances.
 * `INSTANCES` (DISKS) - A deployed `image` (your VM instance).
@@ -179,7 +214,11 @@ We will go over each section below.
 As shown in the above illustration, images are used for deploying
 your VM instance.
 
-There are two types of images,
+A machine `image` is a single static unit that contains
+a pre-configured operating system and installed software which
+is used to quickly create new running machines.
+
+There are two types of `gce` `images`,
 
 * `Public images` are provided and maintained by Google,
   open-source communities, and third-party vendors.
