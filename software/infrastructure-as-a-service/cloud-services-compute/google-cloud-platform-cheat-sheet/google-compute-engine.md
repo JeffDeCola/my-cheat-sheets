@@ -13,9 +13,11 @@ Documentation and reference,
   [Instances Groups](https://console.cloud.google.com/compute/instanceGroups) and
   [Instances](https://console.cloud.google.com/compute/instances)
   ([VM boot disks](https://console.cloud.google.com/compute/disks))
+  via the console.
 * [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
 * [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+* [go api / compute engine client libraries](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
 * A list of
   [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-basic-gcloud-commands)
   I like.

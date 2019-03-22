@@ -178,6 +178,15 @@ Then submit your billing information.
 * [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
 * [Your gcp Dashboard](https://console.cloud.google.com/home/dashboard)
 
+## CONTROLLING GCP
+
+There are a few ways to interact with `gcp`,
+
+* Using the gui/console.
+* Using the SDK cli (e.g. `gcloud`). See below.
+* Using Google Cloud Client Libraries / API
+  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
+
 ## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
 
 [Cloud SDK](https://cloud.google.com/sdk/docs/)
