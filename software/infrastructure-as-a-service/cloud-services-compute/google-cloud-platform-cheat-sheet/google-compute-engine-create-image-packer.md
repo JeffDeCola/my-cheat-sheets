@@ -23,7 +23,7 @@ As you can see, it all stems from one configuration file `gce-packer-template.js
 
 ![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
 
-## AUTHENTICATION
+## GIVE PACKER AUTHENTICATION
 
 Packer needs to be authorized to use your `gce` account.
 This is done using a google service account file. We already setup an env
@@ -33,23 +33,60 @@ location of the service account file.
 For information how to set this up checkout my cheat sheet 
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-service-account-key)
 
-## BASIC GCE PACKER TEMPLATE FILE
+## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
  
-A bare bones template file to build a custom image from an image would look like this,
+A good place to start is this template file.
+
+This build will,
+
+* Authorize Packer with `gce`.
+  * Verify the credential via `$GOOGLE_APPLICATION_CREDENTIALS` env variable.
+  * Use Project `$GOOGLE_JEFFS_PROJECT_ID` env variable.
+* Starts up a temporary VM `instance`  and temporary `boot disk`
+  from a source `image`.
+  * Use source gce machine `image` `ubuntu-1604-xenial-v20190306`.
+* Provisions (Configures and Installs) whatever you want on
+  this VM `instance`.
+  * Copy a welcome file to /tmp.
+  * Add a user named `jeff` via `useradd` command.
+    This is done in the script `add-user-jeff.sh`
+  * Move the welcome file from /tmp to /home/jeff.
+    this is done in script `move-welcome-file.sh`.
+* Deletes the temporary VM `instance`.
+* Creates the custom `image` based on `boot disk`.
+* Deletes the `boot disk`.
+
+The packer command would be,
+
+```bash
+packer build -force \
+    -var "account_file=$GOOGLE_APPLICATION_CREDENTIALS" \
+    -var "project_id=$GOOGLE_JEFFS_PROJECT_ID" \
+    gce-packer-template.json
+```
+
+And the template file `gce-packer-template.json` would be,
 
 ```json
 {
     "variables": {
-        "zone": "us-central1-a",
+        "account_file": "",
+        "project_id": "",
+        "source_image": "ubuntu-1604-xenial-v20190306",
+        "image_name": "hello-go-{{isotime \"20060102\"}}",
+        "ssh_username": "packer",
+        "zone": "us-west1-a"
     },
 
     "builders": [
         {   
             "type": "googlecompute",
-            "account_file": "account.json",
-            "project_id": "my project",
-            "source_image": "debian-7-wheezy-v20150127",
-            "ssh_username": "packer",
+            "ssh_timeout": "10m",
+            "account_file":"{{user `account_file`}}",
+            "project_id": "{{user `project_id`}}",
+            "source_image": "{{user `source_image`}}",
+            "image_name": "{{user `image_name`}}",
+            "ssh_username": "{{user `ssh_username`}}",
             "zone": "{{user `zone`}}"
         }
     ],
@@ -57,16 +94,30 @@ A bare bones template file to build a custom image from an image would look like
     "provisioners": [
         {
             "type": "file",
-            "source": "./welcome.txt",
-            "destination": "/home/ubuntu/"
+            "source": "./install-scripts/welcome.txt",
+            "destination": "/tmp/welcome.txt"
         },
         {
             "type": "shell",
-            "script": "./example.sh"
+            "pause_before": "10s",
+            "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E {{ .Path }}",
+            "scripts": [
+                "./install-scripts/add-user-jeff.sh",
+                "./install-scripts/move-welcome-file.sh"
+            ]
         }
     ]
 }
 ```
 
-To see a real working example, go to my repo
+Some quicks notes,
+
+The ssh_username is `packer`.  That's how packer can ssh
+into your temporary VM instance.
+
+The `execute_command` `sudo -E` indicates to the security
+policy that the user wishes to preserve their existing
+environment variables. 
+
+To see this template working in a real example, go to my repo
 [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
