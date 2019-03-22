@@ -178,7 +178,7 @@ Then submit your billing information.
 * [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
 * [Your gcp Dashboard](https://console.cloud.google.com/home/dashboard)
 
-## CONTROLLING GCP
+## INTERACTING WITH GCP
 
 There are a few ways to interact with `gcp`,
 
