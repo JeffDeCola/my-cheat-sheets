@@ -181,6 +181,17 @@ latest machines and [pricing](https://cloud.google.com/compute/pricing).
 
 Google [pricing calculator](https://cloud.google.com/products/calculator/).
 
+## INTERACTING WITH GCE
+
+There are a few ways to interact with `gce`,
+
+* Using the gui/console.
+* Using the SDK cli (e.g. `gcloud`). See below.
+* Using Google Cloud Client Libraries / API
+  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
+
+This cheat sheet will be focused on the SDK/gcloud.
+
 ## GOOGLE COMPUTE ENGINE (GCE) MAIN SECTIONS
 
 There are four main section of gce:
@@ -270,6 +281,26 @@ A `standard persistent` disk is a fancy way
 to say VM boot disk; the disk used
 to start your instance.
 
+Hence, the command may look like,
+
+```bash
+gcloud compute \
+    --project "$GOOGLE_JEFFS_PROJECT_ID" \
+     instance-templates create "$PREFIX-$SERVICE-instance-template-$POSTFIX" \
+    --machine-type "f1-micro" \
+    --network "default" \
+    --maintenance-policy "TERMINATE" \
+    --tags "jeff-test" \
+    --image "$IMAGENAME" \
+    --boot-disk-size "10" \
+    --boot-disk-type "pd-standard" \
+    --boot-disk-device-name "$PREFIX-$SERVICE-disk-$POSTFIX" \
+    --description "hello-go from Jeffs Repo hello-go-deploy-gce" \
+    --region "us-west1"
+    # --service-account=SERVICE_ACCOUNT
+    # --preemptible \
+```
+
 List your instance templates,
 
 ```bash
@@ -281,6 +312,8 @@ Create your instance template help,
 ```bash
 gcloud help compute instance-templates create
 ```
+
+Online docs [here](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create).
 
 As a side note, I would of called this `instance resources`
 rather than `instance templates`. Just my 2 cents.
@@ -316,6 +349,19 @@ A `preemptible instance` means that google could shut down the VM instance
 as its shifting its HW resources around.  It could fail at any moment.
 These are a lot cheaper to use.
 
+Hence a command may look like,
+
+```bash
+gcloud compute \
+    --project "$GOOGLE_JEFFS_PROJECT_ID" \
+    instance-groups managed create "$PREFIX-$SERVICE-instance-group-$POSTFIX" \
+    --size "1" \
+    --template "$TEMPLATENAME" \
+    --base-instance-name "$PREFIX-$SERVICE-instance-$POSTFIX" \
+    --zone "us-west1-a" \
+    --description "hello-go from Jeffs Repo hello-go-deploy-gce"
+```
+
 List your instance groups,
 
 ```bash
@@ -330,6 +376,9 @@ Create your instance group help,
 gcloud help compute instance-groups managed create
 gcloud help compute instance-groups unmanaged create
 ```
+
+Online docs to create [managed](https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/create)
+or [unmanaged](https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/create].
 
 As a side note, I would of called this `instance control`
 rather than `instance groups`. Just my 2 cents.
