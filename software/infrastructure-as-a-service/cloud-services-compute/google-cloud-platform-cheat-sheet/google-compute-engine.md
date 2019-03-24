@@ -5,6 +5,15 @@
 provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
+Part of three compute engines at GCP,
+
+* Compute engine (gce)
+* Container engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+* App engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+
+
 Documentation and reference,
 
 * Your
@@ -313,25 +322,30 @@ Create your instance template help,
 gcloud help compute instance-templates create
 ```
 
-Online docs [here](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create).
+Online docs [here](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create)
+to create instance template.
 
 As a side note, I would of called this `instance resources`
 rather than `instance templates`. Just my 2 cents.
 
 ### INSTANCE GROUPS
 
-Instance groups perform the following functions,
+Instance groups manages your VMs.
+It can provides the following management functions,
 
-* Launches your VM instance
-* Scales your VM instances as needed
+* AUTOHEALING - App / Service Heath checks.
+* DEPLOYMENT - Launches your VM `instance`.
+* LOAD BALANCING - Distributes traffic.
+* AUTOSCALING - Scales your VM instances as needed.
+* AUTO-UPDATING - Updates your services.
 
 You specify,
 
-* The image template
+* The `image template`
 * Region and zone
 * Managed or unmanaged group
 * Scaling or no scaling
-* Preemptible or non-preemptible VM instance
+* Preemptible or non-preemptible VM `instance`
 
 `Managed instance groups` are intended to support stateless
 applications that aren't dependent on the specific state

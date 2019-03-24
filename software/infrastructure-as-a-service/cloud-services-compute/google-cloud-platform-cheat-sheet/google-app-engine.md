@@ -4,6 +4,15 @@
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
 provides a serverless application platform that you can use to run a App._
 
+Part of three compute engines at GCP,
+
+* Compute engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+* Container engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+* App engine (gae)
+
+
 Documentation and reference,
 
 * [Google App Engine Documentation](https://cloud.google.com/appengine/docs)
