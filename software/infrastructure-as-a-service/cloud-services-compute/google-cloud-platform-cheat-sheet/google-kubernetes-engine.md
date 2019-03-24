@@ -1,8 +1,16 @@
 # GOOGLE KUBERNETES ENGINE CHEAT SHEET
 
-`google kubernetes engine` _which is part of
+`google kubernetes engine (gke)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
 _alows you to deploy, manage, and scale containerized applications on Kubernetes._
+
+Part of three compute engines at GCP,
+
+* Compute engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+* Container engine (gke)
+* App engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
 
 Documentation and reference,
 
