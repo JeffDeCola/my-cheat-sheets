@@ -57,4 +57,4 @@ and `google app engine` are,
 
 Here is a high-level illustration,
 
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
