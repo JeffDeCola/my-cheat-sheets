@@ -104,7 +104,7 @@ git remote -v
 
 This is an illustration on how everything fits together,
 
-![IMAGE -  ssh keys github overview - IMAGE](../../../../../docs/pics/ssh-keys-github-overview.jpg)
+![IMAGE -  ssh keys github overview - IMAGE](../../../../docs/pics/ssh-keys-github-overview.jpg)
 
 
 Generate public and private keys,
