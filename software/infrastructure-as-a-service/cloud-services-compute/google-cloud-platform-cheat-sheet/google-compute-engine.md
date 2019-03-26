@@ -5,14 +5,13 @@
 provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
-Part of three compute engines at GCP,
+Part of three compute engines at `gcp`,
 
 * Compute engine (gce)
 * Container engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
 * App engine
   [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-
 
 Documentation and reference,
 
@@ -44,6 +43,31 @@ And you VM instance can contain Apps, services, containers, etc...
 `gce` offers scale, performance, and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
+
+## GCE, GKE & GAE
+
+Main differences between `google compute engine`, `google kubernetes engine`
+and `google app engine` are,
+
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  * PaaS
+  * A higher level of abstraction
+  * Simply deploy your code and platform does the rest
+  * App engine will create more instances as needed
+  * You don't manage/update/etc... the OS
+  * Just upload code and gae does the rest
+* [google compute engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  * Containers
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * IaaS
+  * You have full control/responsibility for server
+  * You create and configure your own virtual machine instances
+  * Direct access to OS
+  * Manage OS and updates as needed
+
+Here is a high-level illustration,
+
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## GCE SERVICE ACCOUNT KEY
 
@@ -208,7 +232,7 @@ There are four main section of gce:
 * `IMAGES` - Boot disk image / machine image (contains your App/service).
 * `INSTANCE TEMPLATES` - The HW resources you need to deploy an `image`.
 * `INSTANCE GROUPS` - Deploys and scales VM instances.
-* `INSTANCES` (DISKS) - A deployed `image` (your VM instance).
+* `INSTANCES` (AND BOOT DISKS) - A deployed `image` (your VM instance).
 
 The goal is to deploy an `image` that creates a VM instance(s)
 (That contains your App/service).
@@ -397,7 +421,7 @@ or [unmanaged](https://cloud.google.com/sdk/gcloud/reference/compute/instance-gr
 As a side note, I would of called this `instance control`
 rather than `instance groups`. Just my 2 cents.
 
-### INSTANCES (DISKS)
+### INSTANCES
 
 For clarity, an `instance` is a VM on GCP.
 I like to use the term VM instance.
@@ -468,6 +492,23 @@ curl http://metadata.google.internal/computeMetadata/v1\
 /instance/maintenance-event?wait_for_change=true \
     -H 'Metadata-Flavor: Google'
 ```
+
+## INSTANCES - GCE METADATA - STARTUP SCRIPTS
+
+You can perform a startup script on instances you create.
+google calls this metadata.
+
+One thing you can do is organize your ssh keys.
+
+The end results allows you to,
+
+* ssh into an `instance` from your machine.
+* `git clone` private repos from github into your
+  VM `instance`.
+
+Here is an illustration of ssh keys are on your VM instance,
+
+![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
 
 ## GCE BASIC GCLOUD COMMANDS
 

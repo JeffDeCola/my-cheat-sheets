@@ -2,16 +2,15 @@
 
 `google app engine (gae)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-provides a serverless application platform that you can use to run a App._
+provides a serverless application platform that you can use to run an App._
 
-Part of three compute engines at GCP,
+Part of three compute engines at `gcp`,
 
 * Compute engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
 * Container engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
 * App engine (gae)
-
 
 Documentation and reference,
 
@@ -28,10 +27,11 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 GCE requires a lot of setup.  But what if you just don't really care about
-the guts (infrastructure) and just want to deploy and App.  Well GCA is for you.
+the guts (infrastructure) and just want to deploy and App.  Well `gae`
+is for you.
 
-On a side note, can GAE run a service.  I would say yes.  But that's
-not really the point of GAE.
+On a side note, can `gae` run a service.  I would say yes.  But that's
+not really the point of `gae`.
 
 ## FREE RESOURCE (standard environment only)
 
@@ -49,18 +49,20 @@ The free tier is available only for the `Standard Environment`.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## DIFFERENCE BETWEEN GCE
+## GCE, GKE & GAE
 
-Some main differences between `google app engine`
-and `google compute engine`,
+Main differences between `google compute engine`, `google kubernetes engine`
+and `google app engine` are,
 
-* `google app engine (gae)`
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * PaaS
   * A higher level of abstraction
   * Simply deploy your code and platform does the rest
   * App engine will create more instances as needed
   * You don't manage/update/etc... the OS
   * Just upload code and gae does the rest
+* [google compute engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  * Containers
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
   * IaaS
   * You have full control/responsibility for server
@@ -68,5 +70,6 @@ and `google compute engine`,
   * Direct access to OS
   * Manage OS and updates as needed
 
+Here is a high-level illustration,
 
-
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)

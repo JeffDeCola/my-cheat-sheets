@@ -26,6 +26,10 @@ Sequence:
 If the data went anywhere else, it would need your private
 key to decrypt.
 
+Here is an illustration using ssh for github,
+
+![IMAGE -  ssh keys github overview - IMAGE](../../../../../docs/pics/ssh-keys-github-overview.jpg)
+
 ### GENERATE KEYS (ssh-keygen)
 
 A way to generate public and private keys.
