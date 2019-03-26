@@ -508,7 +508,7 @@ The end results allows you to,
 
 Here is an illustration of ssh keys are on your VM instance,
 
-![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
+![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
 
 ## GCE BASIC GCLOUD COMMANDS
 
