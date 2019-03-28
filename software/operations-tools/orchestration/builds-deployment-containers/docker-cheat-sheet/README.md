@@ -115,6 +115,7 @@ Run an image from Docker Hub,
 
 ```bash
 docker run jeffdecola/hello-go
+docker run --name hello-go jeffdecola/hello-go
 docker run docker/whalesay cowsay boo
 docker run ubuntu /bin/echo 'Hello World'
 ```
@@ -183,12 +184,18 @@ docker logs NAME
 To get inside a running container,
 
 ```bash
-docker exec -t -i <container ID or PORT NAME>
+docker exec -t -i <container ID or PORT NAME> /bin/bash
 ```
 
 Use `docker ps` to get the container ID or PORT NAME.
 
-## BUILD AN IMAGE
+## CHECK THE STDOUT OF A RUNNING CONTAINER
+
+```bash
+docker logs -f <container_name>
+```
+
+`-f` switch is check forever.
 
 ### METHOD 1 - Modify an Existing image
 

@@ -44,31 +44,6 @@ And you VM instance can contain Apps, services, containers, etc...
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
 
-## GCE, GKE & GAE
-
-Main differences between `google compute engine`, `google kubernetes engine`
-and `google app engine` are,
-
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  * PaaS
-  * A higher level of abstraction
-  * Simply deploy your code and platform does the rest
-  * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS
-  * Just upload code and gae does the rest
-* [google compute engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  * Containers
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  * IaaS
-  * You have full control/responsibility for server
-  * You create and configure your own virtual machine instances
-  * Direct access to OS
-  * Manage OS and updates as needed
-
-Here is a high-level illustration,
-
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
-
 ## GCE SERVICE ACCOUNT KEY
 
 To allow your applications (e.g. `packer`) to use `gce` you can
@@ -129,24 +104,16 @@ are not included in the Free Tier.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## DIFFERENCE BETWEEN GAE
+## GCE, GKE & GAE
 
-Some main differences between `google app engine`
-and `google compute engine`,
+Main differences between `google compute engine`, `google kubernetes engine`
+and `google app engine` are,
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  * PaaS
-  * A higher level of abstraction
-  * Simply deploy your code and platform does the rest
-  * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS
-  * Just upload code and gae does the rest
-* google compute engine (gce)
-  * IaaS
-  * You have full control/responsibility for server
-  * You create and configure your own VM instances
-  * Direct access to OS
-  * Manage OS and updates as needed
+--- COPY/PASTE THIS AREA FROM GAE ---
+
+Here is a high-level illustration,
+
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## GCE REGIONS AND ZONES
 
@@ -499,6 +466,7 @@ You can perform a startup script on instances you create.
 google calls this metadata.
 
 One thing you can do is organize your ssh keys.
+You can do this from the metadata section in the online console.
 
 The end results allows you to,
 

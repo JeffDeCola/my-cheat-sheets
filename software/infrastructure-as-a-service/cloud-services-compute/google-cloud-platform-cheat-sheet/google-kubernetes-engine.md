@@ -39,21 +39,7 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 Main differences between `google compute engine`, `google kubernetes engine`
 and `google app engine` are,
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  * PaaS
-  * A higher level of abstraction
-  * Simply deploy your code and platform does the rest
-  * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS
-  * Just upload code and gae does the rest
-* [google compute engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  * Containers
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  * IaaS
-  * You have full control/responsibility for server
-  * You create and configure your own virtual machine instances
-  * Direct access to OS
-  * Manage OS and updates as needed
+--- COPY/PASTE THIS AREA FROM GAE ---
 
 Here is a high-level illustration,
 
