@@ -120,6 +120,12 @@ docker run docker/whalesay cowsay boo
 docker run ubuntu /bin/echo 'Hello World'
 ```
 
+I like to use,
+
+```bash
+docker run --name hello-go -dit jeffdecola/hello-go
+```
+
 The docker command looks for it on your local system.
 If the image isn’t there, docker gets it.
 
@@ -155,7 +161,7 @@ Delete all containers,
 docker rm $(docker ps -a -q)
 ```
 
-### START INTERACTIVE CONTAINER
+### RUN INTERACTIVE CONTAINER
 
 Run an interactive container, This is cool, it gives you a tty terminal,
 
@@ -184,10 +190,10 @@ docker logs NAME
 To get inside a running container,
 
 ```bash
-docker exec -t -i <container ID or PORT NAME> /bin/bash
+docker exec -t -i <container ID> /bin/bash
 ```
 
-Use `docker ps` to get the container ID or PORT NAME.
+Use `docker ps` to get the container ID.
 
 ## CHECK THE STDOUT OF A RUNNING CONTAINER
 
@@ -196,6 +202,12 @@ docker logs -f <container_name>
 ```
 
 `-f` switch is check forever.
+
+## CHECK THE HISTORY OF AN IMAGE
+
+```bash
+docker history jeffdecola/hello-go-deploy-gce
+```
 
 ### METHOD 1 - Modify an Existing image
 
