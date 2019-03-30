@@ -12,3 +12,11 @@ View my entire list of cheat sheets on
 ## TBD
 
 coming soon.
+
+## FEATURES
+
+* MONITORING
+* LOGGING
+* ERROR REPORTING
+* DEBUGGING
+* TRACE
