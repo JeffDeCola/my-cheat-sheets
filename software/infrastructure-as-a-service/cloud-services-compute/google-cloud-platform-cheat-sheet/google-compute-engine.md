@@ -11,7 +11,7 @@ Part of three compute engines at `gcp`,
 * Container engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
 * App engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
 
 Documentation and reference,
 
@@ -209,7 +209,7 @@ App/service may be running on `gce`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `instance groups` control the show (They deploy and scale VM instances).
 
-![IMAGE -  google compute engine app service view instance groups / service view - IMAGE](../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
+![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
 
 The following illustration is a more detailed view of gce,
 

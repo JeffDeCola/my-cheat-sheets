@@ -26,11 +26,12 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-GCE requires a lot of setup.  But what if you just don't really care about
+`gce` requires a lot, I mean a lot of setup.
+But what if you just don't really care about
 the guts (infrastructure) and just want to deploy and App.  Well `gae`
-is for you.
+is for you.  You bring the code, they handle the rest.
 
-On a side note, can `gae` run a service.  I would say yes.  But that's
+On a side note, can `gae` run a service?  I would say yes.  But that's
 not really the point of `gae`.
 
 ## FREE RESOURCE (standard environment only)
@@ -56,21 +57,79 @@ and `google app engine` are,
 
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * PaaS
-  * A higher level of abstraction
+  * A higher level of abstraction, Focus is on App.
+  * It auto scales for you
+  * Google worries about infrastructure, you worry about code.
   * Simply deploy your code and platform does the rest
   * App engine will create more instances as needed
   * You don't manage/update/etc... the OS
   * Just upload code and gae does the rest
-* [google compute engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
   * Containers
   * Immutable OS (Unable to be changed - Do not modify the OS)
+  * Autoscaling
+  * GCE Resources integrated
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
   * IaaS
   * You have full control/responsibility for server
-  * You create and configure your own virtual machine instances
+  * Custom machine types - You create and configure your own virtual machine instances
   * Direct access to OS
   * Manage OS and updates as needed
+
+Good for,
+
+*gae
+  * Small services
+  * Larger scale high performance service
+*gke
+  * Micro services
+  * Container services 
+  * Plan to cross cloud
+*gae
+ * Web services with large scaling
+ * Quick scaling
 
 Here is a high-level illustration,
 
 ![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+
+## TWO ENVIRONMENTS
+
+* STANDARD ENVIRONMENT
+  * Based on container instances running on Google's infrastructure.
+  * Containers are preconfigured with one of several available runtimes.
+* FLEXIBLE ENVIRONMENT
+  * The App Engine flexible environment automatically scales your app up and down while balancing the load.
+  * Allows you to customize the runtime and even the operating system of your virtual machine using Dockerfiles
+
+## INSTALL
+
+Must install the app-engine for gcloud,
+
+```bash
+gcloud components update
+```
+
+## STEP 1 - TEST (ON  LOCAL DEV SERVER)
+
+Test on the local development server
+
+```bash
+dev_appserver.py app.yaml
+```
+
+```bash
+http://localhost:8080/
+```
+
+## STEP 2 - DEPLOY
+
+```bash
+gcloud app deploy
+```
+
+## STEP 3 - VIEW
+
+```bash
+gcloud app browse
+```

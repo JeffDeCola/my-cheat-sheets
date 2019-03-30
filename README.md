@@ -29,6 +29,7 @@ The folder structures are organized alphabetically as follows:
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
+  * [PLATFORM AS A SERVICE (PaaS)](https://github.com/JeffDeCola/my-cheat-sheets#platform-as-a-service-paas)
 
 These cheat sheets contain info I gathered from other sources and
 figured out over time.
@@ -192,8 +193,7 @@ Various Apps and tools for the goal of creating a App/service.
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
     * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
       [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-    * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md),
-      [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+    * google app engine (gae) - Refer to PaaS below
     * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
       [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
     * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
@@ -241,6 +241,14 @@ Various Apps and tools for the goal of creating a App/service.
 
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
+
+### PLATFORM AS A SERVICE (PaaS)
+
+* CLOUD SERVICES / APP
+
+  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet)
+    * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md),
+      [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
 
 ## VISUAL OVERVIEW OF CREATING AN ASIC
 
