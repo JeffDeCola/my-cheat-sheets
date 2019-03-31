@@ -106,30 +106,85 @@ Here is a high-level illustration,
 
 Must install the app-engine for gcloud,
 
+First see if you got it,
+
 ```bash
-gcloud components update
+gcloud components list
 ```
 
-## STEP 1 - TEST (ON  LOCAL DEV SERVER)
+If you don't install it,
 
-Test on the local development server
+```bash
+gcloud components update
+gcloud components install app-engine-go
+```
+
+## A SIMPLE EXAMPLE USING GO
+
+Here is a very simple example to test everything is working.
+
+### STEP 1 - MAKE TWO FILE
+
+Make a directory and make two files,
+
+* app.yaml
+* main.go
+
+main.go,
+
+```go
+```
+
+app.yaml,
+
+```yaml
+```
+
+### STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER
+
+Test on the local development server,
 
 ```bash
 dev_appserver.py app.yaml
 ```
 
+Check the results,
+
 ```bash
 http://localhost:8080/
 ```
 
-## STEP 2 - DEPLOY
+### STEP 3 - EDIT CODE AND SEE RESULTS
+
+Edit "hello world" to something else.
+
+refresh,
+
+```bash
+http://localhost:8080/
+```
+
+### STEP 4 - DEPLOY TO GAE
 
 ```bash
 gcloud app deploy
 ```
 
-## STEP 3 - VIEW
+### STEP 5 - VIEW AT GAE
 
 ```bash
 gcloud app browse
 ```
+
+## STRUCTURE
+
+* <NAME>-app/: Project root directory.
+  * app.yaml: Configuration settings for your App Engine application.
+  * main.go: Your application code.
+  * index.html: Static HTML file to display your homepage.
+  * static/: Directory to store your static files.
+    * style.css
+    * my-pic.jpg: Gopher image.
+
+## APP.YAML FILE
+

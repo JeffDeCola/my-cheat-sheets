@@ -227,6 +227,12 @@ gcloud auth list
 gcloud info
 ```
 
+See what components you have installed,
+
+```bash
+gcloud components list
+```
+
 Your configuration file is located `~/.boto`.
 
 To change your default region/zone,

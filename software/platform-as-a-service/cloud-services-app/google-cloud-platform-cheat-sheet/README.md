@@ -8,6 +8,6 @@ or
 Refer to `gcp` cheat sheet in IaaS
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet).
 
-## SERVICES
+## GCP PaaS SERVICES
 
   * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
