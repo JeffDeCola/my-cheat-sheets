@@ -30,6 +30,7 @@ The folder structures are organized alphabetically as follows:
   * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
   * [PLATFORM AS A SERVICE (PaaS)](https://github.com/JeffDeCola/my-cheat-sheets#platform-as-a-service-paas)
+  * [SOFTWARE AS A SERVICE (SaaS)](https://github.com/JeffDeCola/my-cheat-sheets#software-as-a-service-saas)
 
 These cheat sheets contain info I gathered from other sources and
 figured out over time.
@@ -249,6 +250,10 @@ Various Apps and tools for the goal of creating a App/service.
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet)
     * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md),
       [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+
+### SOFTWARE AS A SERVICE (SaaS)
+
+  * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/slack-as-a-service/slack-cheat-sheet)
 
 ## VISUAL OVERVIEW OF CREATING AN ASIC
 
