@@ -55,6 +55,11 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 Main differences between `google compute engine`, `google kubernetes engine`
 and `google app engine` are,
 
+Compute Engine allows you to create your own virtual machine by allocating hardware specific resources e.g. RAM, CPU, Storage. It is also very hands on and low level. 
+Kubernetes Engine Is a step up from Compute Engine, and allows you to use Kubernetes and Containers to manage your application, allowing it to scale when need be.
+App Engine Is a step up from Kubernetes Engine and allows you to focus only on your code, whilst Google handles all the underlying platform requirements.
+
+
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
   * PaaS
   * A higher level of abstraction, Focus is on App.
@@ -119,25 +124,42 @@ gcloud components update
 gcloud components install app-engine-go
 ```
 
-## A SIMPLE EXAMPLE USING GO
+## EXAMPLE 1 - A SIMPLE EXAMPLE USING GO
 
 Here is a very simple example to test everything is working.
 
-### STEP 1 - MAKE TWO FILE
+### STEP 1 - CREATE TWO FILES IN A DIRECTORY
 
-Make a directory and make two files,
-
-* app.yaml
-* main.go
+Make a directory and create the following two files,
 
 main.go,
 
 ```go
+package main
+
+import (
+	"fmt"
+	"net/http"
+
+	"google.golang.org/appengine"
+)
+
+func main() {
+
+	http.HandleFunc("/", handle)
+	appengine.Main()
+
+}
+
+func handle(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Hello, world!")
+}
 ```
 
 app.yaml,
 
 ```yaml
+runtime: go111
 ```
 
 ### STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER
@@ -154,11 +176,11 @@ Check the results,
 http://localhost:8080/
 ```
 
-### STEP 3 - EDIT CODE AND SEE RESULTS
+### STEP 3 - EDIT CODE ON THE FLY AND SEE RESULTS
 
 Edit "hello world" to something else.
 
-refresh,
+Refresh,
 
 ```bash
 http://localhost:8080/
@@ -167,10 +189,12 @@ http://localhost:8080/
 ### STEP 4 - DEPLOY TO GAE
 
 ```bash
-gcloud app deploy
+gcloud app deploy app.yaml
 ```
 
 ### STEP 5 - VIEW AT GAE
+
+Head to console or,
 
 ```bash
 gcloud app browse
@@ -187,4 +211,8 @@ gcloud app browse
     * my-pic.jpg: Gopher image.
 
 ## APP.YAML FILE
+
+Google app.yaml file [reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref]
+
+
 
