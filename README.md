@@ -253,13 +253,13 @@ Various Apps and tools for the goal of creating a App/service.
 
 ### SOFTWARE AS A SERVICE (SaaS)
 
-  * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/slack-as-a-service/slack-cheat-sheet)
+  * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/software-as-a-service/slack-cheat-sheet)
 
 ## VISUAL OVERVIEW OF CREATING AN ASIC
 
 This illustration coming soon.
 
-## VISUAL OVERVIEW OF CREATING A APP/SERVICE
+## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
 Here is my illustration on how various Apps and tools fit together
 for the goal of creating a App/service,
