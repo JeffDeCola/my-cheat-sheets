@@ -40,10 +40,10 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-In a nutshell, `gce` you deploy a VM instance from an `image`.
-And you VM instance can contain Apps, services, containers, etc...
+In a nutshell, `gce` allows you to deploy a VM instance from an `image`.
+And your VM instance can contain Apps, services, containers, etc...
 
-`gce` offers scale, performance, and value that allows
+`gce` offers scale, performance and value that allows
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
 
@@ -112,7 +112,7 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 What are the main differences between `google app engine`, 
 `google kubernetes engine` and `google compute engine`?
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
   PaaS
   * A higher level of abstraction. Serverless. Focus is on your code.
   * Auto scales for you. Will create more instances as needed.
@@ -125,8 +125,7 @@ What are the main differences between `google app engine`,
   * Immutable OS (Unable to be changed - Can't modify the OS).
   * Autoscaling.
   * GCE Resources integrated. Kubernetes runs on `gce`.
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  IaaS.
+* google compute engine (gce) IaaS.
   * You have full control/responsibility for server.
   * Create your own VM instance by allocating hardware specific resources
     (e.g. RAM, CPU, Storage).
@@ -180,12 +179,12 @@ Compute is located in regions across the globe.
   * us-west1 (Oregon)
   * us-west2 (Los Angeles)
 
-Then each region may have a few zones.
+Each region may have a few zones.
 
 ## GCE MACHINE TYPES, PRICING & REGIONS
 
 To get an idea on pricing, here are some predefined standard machine
-types, These prices also vary by region.
+types. These prices also vary by region.
 
 | MACHINE TYPE    | V. CPUs |   MEMORY |  PRICE/MONTH |  PREEMPTIBLE |
 |:----------------|--------:|---------:|-------------:|-------------:|
@@ -283,10 +282,10 @@ Refer to these cheat sheets for creating a custom image
 [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
 ),
 
-* [create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
+* [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md).
   Do this one.  Your best option.
-* [create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md)
-* create a custom image using console - Just click a few buttons.
+* [Create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md).
+* Create a custom image using console - Just click a few buttons.
 
 List your images,
 
@@ -353,7 +352,7 @@ Create your instance template help,
 gcloud help compute instance-templates create
 ```
 
-Online docs [here](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create)
+[Online docs](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create)
 to create instance template.
 
 As a side note, I would of called this `instance resources`
@@ -364,11 +363,11 @@ rather than `instance templates`. Just my 2 cents.
 Instance groups manages your VMs.
 It can provides the following management functions,
 
-* AUTOHEALING - App / Service Heath checks.
-* DEPLOYMENT - Launches your VM `instance`.
-* LOAD BALANCING - Distributes traffic.
-* AUTOSCALING - Scales your VM instances as needed.
-* AUTO-UPDATING - Updates your services.
+* AUTOHEALING - App / Service Heath checks
+* DEPLOYMENT - Launches your VM `instance`
+* LOAD BALANCING - Distributes traffic
+* AUTOSCALING - Scales your VM instances as needed
+* AUTO-UPDATING - Updates your services
 
 You specify,
 
@@ -462,7 +461,7 @@ You can query this metadata server pro grammatically for information such as,
 
 * The VM instance's host name
 * VM instance ID
-* Startup scripts, and
+* Startup scripts
 * Custom metadata
 
 ssh onto your instance and perform the following,
@@ -503,7 +502,7 @@ curl http://metadata.google.internal/computeMetadata/v1\
 ## INSTANCES - GCE METADATA - STARTUP SCRIPTS
 
 You can perform a startup script on instances you create.
-google calls this metadata.
+Google calls this metadata.
 
 One thing you can do is organize your ssh keys.
 You can do this from the metadata section in the online console.

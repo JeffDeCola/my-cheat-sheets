@@ -9,7 +9,7 @@ Documentation and reference,
 
 * [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
 * [Google Cloud Platform Documentation](https://cloud.google.com/docs)
-* [Google Cloud Platform SDK Documentation (gcloud, gsutil, bg)](https://cloud.google.com/sdk/docs/)
+* [Google Cloud Platform SDK Documentation (gcloud, gsutil, bq)](https://cloud.google.com/sdk/docs/)
 * [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
 * [go on google cloud platform](https://cloud.google.com/go/docs/)
 
@@ -185,7 +185,7 @@ There are a few ways to interact with `gcp`,
 * Using the gui/console.
 * Using the SDK cli (e.g. `gcloud`). See below.
 * Using Google Cloud Client Libraries / API
-  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
+  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
 
 ## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
 
@@ -203,7 +203,7 @@ These include,
   [doc](https://cloud.google.com/storage/docs/gsutil),
   is the command-line tool for
   [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
-* `bg`
+* `bq`
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
   is the command-line tool for BigQuery.
 
