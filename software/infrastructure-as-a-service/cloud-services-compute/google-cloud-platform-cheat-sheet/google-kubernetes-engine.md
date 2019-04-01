@@ -8,9 +8,12 @@ Part of three compute engines at `gcp`,
 
 * Compute engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  - IaaS
 * Container engine (gke)
+  - IaaS/PaaS
 * App engine
   [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  - PaaS
 
 Documentation and reference,
 
@@ -18,7 +21,7 @@ Documentation and reference,
 * [Quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
 * [Google Cloud Container SDK Reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
 
-My Repo example is [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke).
+My Repo example using `gke` is [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

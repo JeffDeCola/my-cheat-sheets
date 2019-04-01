@@ -70,12 +70,11 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * private catalog
 * COMPUTE
   * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-    cheat sheet
+    cheat sheet (IaaS)
   * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
-    cheat sheet
-  * kubernetes engine
+    cheat sheet (PaaS)
   * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-    cheat sheet
+    cheat sheet (IaaS/PaaS)
   * shielded VMs
   * cloud functions
 * DATA AND ANALYTICS
