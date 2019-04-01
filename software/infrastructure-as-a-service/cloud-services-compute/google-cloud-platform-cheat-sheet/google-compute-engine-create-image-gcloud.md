@@ -11,7 +11,7 @@ View my entire list of cheat sheets on
 I personally do not like this way since it requires a
 lot of steps that are not that script friendly.
 
-Use 
+Use
 [create custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
 instead.
 
