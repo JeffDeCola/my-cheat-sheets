@@ -17,7 +17,7 @@ View my entire list of cheat sheets on
 
 ## AUTOMATES MACHINE IMAGE BUILDS
 
-A machine `image` is a single static unit that contains a 
+A machine `image` is a single static unit that contains a
 pre-configured operating system and installed software
 which is used to quickly create new running machines.
 
@@ -97,7 +97,7 @@ to build a simple image at using `gce` as a platform,
     },
 
     "builders": [
-        {   
+        {
             "type": "googlecompute",
             "ssh_timeout": "10m",
             "account_file":"{{user `account_file`}}",
@@ -163,7 +163,7 @@ Things like,
 * Adding files
 * Downloading application code
 
-In the template file above, 
+In the template file above,
 
 * Using `"type": "file"` a welcome.txt file was added to the `/tmp/` directory.
 * Using `"type": "shell"` a script added user jeff.
