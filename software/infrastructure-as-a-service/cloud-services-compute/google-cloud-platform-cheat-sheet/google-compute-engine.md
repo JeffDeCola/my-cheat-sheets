@@ -8,10 +8,13 @@ that you can use to run an App/service._
 Part of three compute engines at `gcp`,
 
 * Compute engine (gce)
+  - IaaS
 * Container engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  - IaaS/PaaS
 * App engine
   [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  - PaaS
 
 Documentation and reference,
 
@@ -30,7 +33,7 @@ Documentation and reference,
   [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-basic-gcloud-commands)
   I like.
 
-My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
+My Repo example using `gce` is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -154,8 +157,8 @@ types, These prices also vary by region.
 
 | MACHINE TYPE    | V. CPUs |   MEMORY |  PRICE/MONTH |  PREEMPTIBLE |
 |:----------------|--------:|---------:|-------------:|-------------:|
-| f1-micro        |       1 |    0.6GB |       ~$4.65 |          ~$3 |
-| g1-small        |       1 |    1.7GB |      ~$15.74 |          ~$6 |
+| f1-micro        |       1 |    0.6GB |          ~$4 |          ~$3 |
+| g1-small        |       1 |    1.7GB |         ~$14 |          ~$6 |
 |                 |         |          |              |              |
 | n1-standard-1   |       1 |   3.75GB |         ~$25 |          ~$8 |
 | n1-standard-2   |       2 |    7.5GB |         ~$58 |         ~$17 |
@@ -172,6 +175,12 @@ types, These prices also vary by region.
 | n1-highcpu-8    |       8 |    7.2GB |        ~$173 |         ~$52 |
 | n1-highcpu-64   |      64 |     57GB |      ~$1,391 |        ~$418 |
 |                 |         |          |              |              |
+| n1-ultramem-40  |      40 |    961GB |      ~ 3,221 |       ~$ 971 |
+| n1-ultramem-80  |      80 |   1922GB |      ~ 6,442 |     ~$ 1,943 |
+| n1-ultramem-160 |     160 |   3844GB |      ~12,885 |     ~$ 3,886 |
+|                 |         |          |              |              |
+| n1-megamem-96   |      96 |   1433GB |      ~$5,454 |      ~$1,649 |
+
 
 `f1-micro` and `g1-small` machine types offer bursting capabilities that
 allow VM instances to use additional physical CPU for short periods of time.

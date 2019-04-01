@@ -8,9 +8,12 @@ Part of three compute engines at `gcp`,
 
 * Compute engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  - IaaS
 * Container engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  - IaaS/PaaS
 * App engine (gae)
+  - PaaS
 
 Documentation and reference,
 
@@ -18,17 +21,18 @@ Documentation and reference,
 * [Quickstart standard environment using go](https://cloud.google.com/appengine/docs/standard/go/)
 * [Quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
 * [Google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
+* [Google app.yaml file reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref)
 
-My Repo example is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
+My Repo example using `gae` is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
-`gce` requires a lot, I mean a lot of setup.
-But what if you just don't really care about
-the guts (infrastructure) and just want to deploy and App.  Well `gae`
+What if you just don't really care about
+the guts or configurations (infrastructure) and just want to
+deploy and App.  Well `gae`
 is for you.  You bring the code, they handle the rest.
 
 On a side note, can `gae` run a service?  I would say yes.  But that's
@@ -50,49 +54,44 @@ The free tier is available only for the `Standard Environment`.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## GCE, GKE & GAE
+## GCE, GKE & GAE (THE ENGINES ON GCP)
 
-Main differences between `google compute engine`, `google kubernetes engine`
-and `google app engine` are,
-
-Compute Engine allows you to create your own virtual machine by allocating hardware specific resources e.g. RAM, CPU, Storage. It is also very hands on and low level. 
-Kubernetes Engine Is a step up from Compute Engine, and allows you to use Kubernetes and Containers to manage your application, allowing it to scale when need be.
-App Engine Is a step up from Kubernetes Engine and allows you to focus only on your code, whilst Google handles all the underlying platform requirements.
-
+What are the main differences between `google app engine`, 
+`google kubernetes engine` and `google compute engine`?
 
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  * PaaS
-  * A higher level of abstraction, Focus is on App.
-  * It auto scales for you
+  * PaaS.
+  * A higher level of abstraction, Focus is on your code.
+  * Auto scales for you - App engine will create more instances as needed.
   * Google worries about infrastructure, you worry about code.
-  * Simply deploy your code and platform does the rest
-  * App engine will create more instances as needed
-  * You don't manage/update/etc... the OS
-  * Just upload code and gae does the rest
+    Simply deploy your code and platform does the rest
+  * You don't manage or update the OS.
 * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  * Containers
-  * Immutable OS (Unable to be changed - Do not modify the OS)
-  * Autoscaling
-  * GCE Resources integrated
+  * IaaS/PaaS
+  * A step up from gae that uses Containers to mange your App.
+  * Immutable OS (Unable to be changed - Do not modify the OS).
+  * Autoscaling.
+  * GCE Resources integrated - Kubernetes runs on gce.
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  * IaaS
-  * You have full control/responsibility for server
-  * Custom machine types - You create and configure your own virtual machine instances
-  * Direct access to OS
-  * Manage OS and updates as needed
+  * IaaS.
+  * You have full control/responsibility for server.
+  * Create your own VM instance by allocating hardware specific resources
+    e.g. RAM, CPU, Storage.
+  * Direct access to OS.
+  * Manage OS and updates as needed.
 
-Good for,
+So what is this all good for,
 
-*gae
-  * Small services
-  * Larger scale high performance service
-*gke
-  * Micro services
-  * Container services 
-  * Plan to cross cloud
-*gae
- * Web services with large scaling
- * Quick scaling
+* gae
+ * Web services with large scaling.
+ * Quick scaling.
+* gke
+  * Micro services.
+  * Container services .
+  * Plan to cross cloud.
+* gce
+  * Small services.
+  * Larger scale high performance service.
 
 Here is a high-level illustration,
 
@@ -126,7 +125,11 @@ gcloud components install app-engine-go
 
 ## EXAMPLE 1 - A SIMPLE EXAMPLE USING GO
 
-Here is a very simple example to test everything is working.
+Here is a very simple example using two file to test everything
+is working.
+
+You can pull the example I placed in my repo
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-01-app).
 
 ### STEP 1 - CREATE TWO FILES IN A DIRECTORY
 
@@ -164,13 +167,20 @@ runtime: go111
 
 ### STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER
 
-Test on the local development server,
+Test on the local development server using google's local
+App server `dev_appserver.py`,
 
 ```bash
 dev_appserver.py app.yaml
 ```
 
 Check the results,
+
+```bash
+http://localhost:8080/
+```
+
+You can check out the App interface,
 
 ```bash
 http://localhost:8080/
@@ -194,13 +204,20 @@ gcloud app deploy app.yaml
 
 ### STEP 5 - VIEW AT GAE
 
-Head to console or,
+Head to the console or,
 
 ```bash
 gcloud app browse
 ```
 
-## STRUCTURE
+## EXAMPLE 2 - LETS ADD A LITTLE STRUCTURE
+
+Lets use google cloud to add some static web pages.
+
+You can pull the example I placed in my repo
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).
+
+## FILE/DIRECTOR STRUCTURE
 
 * <NAME>-app/: Project root directory.
   * app.yaml: Configuration settings for your App Engine application.
@@ -210,9 +227,8 @@ gcloud app browse
     * style.css
     * my-pic.jpg: Gopher image.
 
-## APP.YAML FILE
 
-Google app.yaml file [reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref]
+
 
 
 
