@@ -100,10 +100,10 @@ Various Apps and tools for the goal of creating a App/service.
 
   * LINUX
 
-
     * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
+    * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
     * [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
 
@@ -152,12 +152,11 @@ Various Apps and tools for the goal of creating a App/service.
   * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
     [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws)
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
-      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-    * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md),
-      [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+    * google app engine (gae) - Refer to PaaS below
     * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
       [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
+      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
     * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
     * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
@@ -204,11 +203,23 @@ Various Apps and tools for the goal of creating a App/service.
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
 
+### PLATFORM AS A SERVICE (PaaS)
+
+* CLOUD SERVICES / APP
+
+  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet)
+    * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md),
+      [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+
+### SOFTWARE AS A SERVICE (SaaS)
+
+* [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/software-as-a-service/slack-cheat-sheet)
+
 ## VISUAL OVERVIEW OF CREATING AN ASIC
 
 This illustration coming soon.
 
-## VISUAL OVERVIEW OF CREATING A APP/SERVICE
+## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
 Here is my illustration on how various Apps and tools fit together
 for the goal of creating a App/service,
