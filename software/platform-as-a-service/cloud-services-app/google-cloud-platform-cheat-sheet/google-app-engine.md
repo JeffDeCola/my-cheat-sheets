@@ -12,7 +12,7 @@ Part of three compute engines at `gcp`,
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
   IaaS/PaaS or CaaS
 * Compute engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
   IaaS
 
 Documentation and reference,
@@ -64,8 +64,7 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 What are the main differences between `google app engine`, 
 `google kubernetes engine` and `google compute engine`?
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  PaaS
+* google app engine (gae) PaaS
   * A higher level of abstraction. Serverless. Focus is on your code.
   * Auto scales for you. Will create more instances as needed.
   * Google worries about infrastructure, you worry about code.
@@ -124,7 +123,7 @@ First see if you got it,
 gcloud components list
 ```
 
-If you don't install it,
+If you don't see it,
 
 ```bash
 gcloud components update
@@ -231,7 +230,9 @@ gcloud app browse
 
 ## EXAMPLE 2 - LETS ADD A LITTLE STRUCTURE
 
-Lets use google cloud to add some static web pages.
+Lets use
+[google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+to add some static web pages.
 
 You can look at or pull the example I placed in my repo
 [here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).

@@ -12,7 +12,7 @@ Part of three compute engines at `gcp`,
 * Container/Kubernetes engine (gke)
   IaaS/PaaS or CaaS
 * Compute engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
   IaaS
 
 Documentation and reference,
@@ -53,15 +53,14 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 What are the main differences between `google app engine`, 
 `google kubernetes engine` and `google compute engine`?
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
   PaaS
   * A higher level of abstraction. Serverless. Focus is on your code.
   * Auto scales for you. Will create more instances as needed.
   * Google worries about infrastructure, you worry about code.
     Simply deploy your code and platform does the rest.
   * You don't manage or update the OS.
-* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  IaaS/PaaS or CaaS
+* google kubernetes engine (gke) IaaS/PaaS or CaaS
   * A step up from `gce` that uses Containers to manage your App.
   * Immutable OS (Unable to be changed - Can't modify the OS).
   * Autoscaling.

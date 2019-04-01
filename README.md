@@ -191,11 +191,11 @@ Various Apps and tools for the goal of creating a App/service.
   * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
     [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws)
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
-      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
     * google app engine (gae) - Refer to PaaS below
     * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
       [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
+      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
     * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
     * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
