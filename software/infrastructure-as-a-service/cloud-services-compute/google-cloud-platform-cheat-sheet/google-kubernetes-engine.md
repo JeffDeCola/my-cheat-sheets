@@ -6,14 +6,14 @@ _alows you to deploy, manage, and scale containerized applications on Kubernetes
 
 Part of three compute engines at `gcp`,
 
-* Compute engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  - IaaS
-* Container engine (gke)
-  - IaaS/PaaS
 * App engine
   [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  - PaaS
+  PaaS
+* Container/Kubernetes engine (gke)
+  IaaS/PaaS or CaaS
+* Compute engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  IaaS
 
 Documentation and reference,
 
@@ -28,8 +28,19 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-tbd
+This really sits in the middle of IaaS and PaaS. Some people like to say
+Container as a Service (CaaS).  I find this a little unnecessary, I think
+we have enough acronyms in this space.
 
+Really great for runing docker containeers in a manage Kubernetes environment.
+
+Kubernetes performs the 
+* automation, 
+* orchestration, 
+* management and 
+* deployment 
+
+of your containers. More information here.
 ## FREE RESOURCE
 
 No cluster management fee for clusters of all sizes. Each user node is charged at
@@ -37,13 +48,47 @@ standard Compute Engine pricing.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## GCE, GKE & GAE
+## GCE, GKE & GAE (THE ENGINES ON GCP)
 
-Main differences between `google compute engine`, `google kubernetes engine`
-and `google app engine` are,
+What are the main differences between `google app engine`, 
+`google kubernetes engine` and `google compute engine`?
 
---- COPY/PASTE THIS AREA FROM GAE ---
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  PaaS
+  * A higher level of abstraction. Serverless. Focus is on your code.
+  * Auto scales for you. Will create more instances as needed.
+  * Google worries about infrastructure, you worry about code.
+    Simply deploy your code and platform does the rest.
+  * You don't manage or update the OS.
+* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  IaaS/PaaS or CaaS
+  * A step up from `gce` that uses Containers to manage your App.
+  * Immutable OS (Unable to be changed - Can't modify the OS).
+  * Autoscaling.
+  * GCE Resources integrated. Kubernetes runs on `gce`.
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  IaaS.
+  * You have full control/responsibility for server.
+  * Create your own VM instance by allocating hardware specific resources
+    (e.g. RAM, CPU, Storage).
+  * Direct access to OS.
+  * Manage OS and updates as needed.
+
+So what is this all good for,
+
+* `gae`
+  * Web services with large scaling.
+  * Quick scaling.
+* `gke`
+  * Micro services.
+  * Container services.
+  * Plan to cross cloud.
+* `gce`
+  * Small services.
+  * Larger scale high performance service.
 
 Here is a high-level illustration,
 
 ![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+
+

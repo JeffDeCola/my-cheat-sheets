@@ -6,14 +6,14 @@ provides a serverless application platform that you can use to run an App._
 
 Part of three compute engines at `gcp`,
 
-* Compute engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  - IaaS
-* Container engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  - IaaS/PaaS
 * App engine (gae)
-  - PaaS
+  PaaS
+* Container/Kubernetes engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
+  IaaS/PaaS or CaaS
+* Compute engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  IaaS
 
 Documentation and reference,
 
@@ -34,6 +34,11 @@ What if you just don't really care about
 the guts or configurations (infrastructure) and just want to
 deploy and App.  Well `gae`
 is for you.  You bring the code, they handle the rest.
+
+`gae` is really used for web applications, and can be used with
+google firebase for mobile apps.
+
+![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/gae-app-service-view.jpg)
 
 On a side note, can `gae` run a service?  I would say yes.  But that's
 not really the point of `gae`.
@@ -59,37 +64,37 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 What are the main differences between `google app engine`, 
 `google kubernetes engine` and `google compute engine`?
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
-  * PaaS.
-  * A higher level of abstraction, Focus is on your code.
-  * Auto scales for you - App engine will create more instances as needed.
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  PaaS
+  * A higher level of abstraction. Serverless. Focus is on your code.
+  * Auto scales for you. Will create more instances as needed.
   * Google worries about infrastructure, you worry about code.
-    Simply deploy your code and platform does the rest
+    Simply deploy your code and platform does the rest.
   * You don't manage or update the OS.
 * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  * IaaS/PaaS
-  * A step up from gae that uses Containers to mange your App.
-  * Immutable OS (Unable to be changed - Do not modify the OS).
+  IaaS/PaaS or CaaS
+  * A step up from `gce` that uses Containers to manage your App.
+  * Immutable OS (Unable to be changed - Can't modify the OS).
   * Autoscaling.
-  * GCE Resources integrated - Kubernetes runs on gce.
+  * GCE Resources integrated. Kubernetes runs on `gce`.
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  * IaaS.
+  IaaS.
   * You have full control/responsibility for server.
   * Create your own VM instance by allocating hardware specific resources
-    e.g. RAM, CPU, Storage.
+    (e.g. RAM, CPU, Storage).
   * Direct access to OS.
   * Manage OS and updates as needed.
 
 So what is this all good for,
 
-* gae
- * Web services with large scaling.
- * Quick scaling.
-* gke
+* `gae`
+  * Web services with large scaling.
+  * Quick scaling.
+* `gke`
   * Micro services.
-  * Container services .
+  * Container services.
   * Plan to cross cloud.
-* gce
+* `gce`
   * Small services.
   * Larger scale high performance service.
 
@@ -101,10 +106,13 @@ Here is a high-level illustration,
 
 * STANDARD ENVIRONMENT
   * Based on container instances running on Google's infrastructure.
-  * Containers are preconfigured with one of several available runtimes.
+  * Containers are preconfigured with one of several available runtimes
+    (i.e. go, python, etc...).
 * FLEXIBLE ENVIRONMENT
-  * The App Engine flexible environment automatically scales your app up and down while balancing the load.
-  * Allows you to customize the runtime and even the operating system of your virtual machine using Dockerfiles
+  * The App Engine flexible environment automatically scales your app up and
+    down while balancing the load.
+  * Allows you to customize the runtime (i.e. go, python, etc...) and even
+    the operating system of your virtual machine using Dockerfiles
 
 ## INSTALL
 
@@ -122,6 +130,16 @@ If you don't install it,
 gcloud components update
 gcloud components install app-engine-go
 ```
+
+## LOCAL APP SERVER & CONSOLE
+
+You kick off your app using the local app server `dev_appserver.py`.
+
+And you monitor your local app in the interactive console,
+
+[http://localhost:8000/console](http://localhost:8000/console)
+
+Lets check this out by way of an example,
 
 ## EXAMPLE 1 - A SIMPLE EXAMPLE USING GO
 
@@ -141,21 +159,21 @@ main.go,
 package main
 
 import (
-	"fmt"
-	"net/http"
+    "fmt"
+    "net/http"
 
-	"google.golang.org/appengine"
+    "google.golang.org/appengine"
 )
 
 func main() {
 
-	http.HandleFunc("/", handle)
-	appengine.Main()
+    http.HandleFunc("/", handle)
+    appengine.Main()
 
 }
 
 func handle(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello, world!")
+    fmt.Fprintln(w, "Hello, world!")
 }
 ```
 
@@ -163,12 +181,18 @@ app.yaml,
 
 ```yaml
 runtime: go111
+
+service: example-01-app
+
+handlers:
+- url: /.*
+  script: auto
 ```
 
 ### STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER
 
-Test on the local development server using google's local
-App server `dev_appserver.py`,
+Test on the local development server using google's Local
+App Server `dev_appserver.py`,
 
 ```bash
 dev_appserver.py app.yaml
@@ -176,15 +200,12 @@ dev_appserver.py app.yaml
 
 Check the results,
 
-```bash
-http://localhost:8080/
-```
+[http://localhost:8080](http://localhost:8080)
 
-You can check out the App interface,
+Check the interactive local console,
 
-```bash
-http://localhost:8080/
-```
+[http://localhost:8000/console](http://localhost:8000/console)
+
 
 ### STEP 3 - EDIT CODE ON THE FLY AND SEE RESULTS
 
@@ -192,9 +213,7 @@ Edit "hello world" to something else.
 
 Refresh,
 
-```bash
-http://localhost:8080/
-```
+[http://localhost:8080](http://localhost:8080)
 
 ### STEP 4 - DEPLOY TO GAE
 
@@ -214,21 +233,27 @@ gcloud app browse
 
 Lets use google cloud to add some static web pages.
 
-You can pull the example I placed in my repo
+You can look at or pull the example I placed in my repo
 [here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).
 
 ## FILE/DIRECTOR STRUCTURE
 
-* <NAME>-app/: Project root directory.
-  * app.yaml: Configuration settings for your App Engine application.
-  * main.go: Your application code.
-  * index.html: Static HTML file to display your homepage.
-  * static/: Directory to store your static files.
+For example 2, lets get a little more structured with some static web pages.
+
+* example-02-app/
+  * app.yaml
+  * main.go (Your App code)
+  * index.html (Static HTML file)
+  * opps.html (Wrong URL)
+  * static/ (Directory to store your static files)
     * style.css
-    * my-pic.jpg: Gopher image.
+    * go-logo.png (Picture of gopher)
+  * bucket-gcs/ (Directory to store your static files on google cloud storage)
+    * gae-logo.jpg
 
+You can look at or pull the example I placed in my repo
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).
 
+## EXAMPLE 3 - LETS ADD A SERVICE
 
-
-
-
+Lets do something.

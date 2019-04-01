@@ -6,6 +6,7 @@ to create a custom image on `gce`._
 My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
 Documentation and reference,
+
 * [gce template file reference](https://www.packer.io/docs/builders/googlecompute.html)
 * My cheat sheet on
   [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet).
@@ -15,11 +16,12 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Packer's entire deal is to create custom machine `images`. 
+Packer's entire deal is to create custom machine `images`.
 This is exactly what we want to do.
 
-The following illustration shows how `packer` controls the automation of building an `image`.
-As you can see, it all stems from one configuration file `gce-packer-template.json`.
+The following illustration shows how `packer` controls the automation of
+building an `image`.  As you can see, it all stems from one
+configuration file `gce-packer-template.json`.
 
 ![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
 
@@ -30,11 +32,11 @@ This is done using a google service account file. We already setup an env
 variable `$GOOGLE_APPLICATION_CREDENTIALS` that points to the
 location of the service account file.
 
-For information how to set this up checkout my cheat sheet 
+For information how to set this up checkout my cheat sheet
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-service-account-key)
 
 ## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
- 
+
 A good place to start is this template file.
 
 This build will,

@@ -9,10 +9,9 @@ View my entire list of cheat sheets on
 
 I copied this table from stack exchange.
 
-The first stdOut/StdErr pair are visible in terminal, and the second pair
+The first StdOut/StdErr pair are visible in terminal, and the second pair
 is visible in file.
-  
-   
+
 |  Syntax   |  StdOut  |  StdErr  |  StdOut  |  StdErr  | existing file |
 |-----------|----------|----------|----------|----------|---------------|
 |     >     |    no    |   yes    |   yes    |    no    |  overwrite    |
