@@ -61,7 +61,7 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 
 ## GCE, GKE & GAE (THE ENGINES ON GCP)
 
-What are the main differences between `google app engine`, 
+What are the main differences between `google app engine`,
 `google kubernetes engine` and `google compute engine`?
 
 * google app engine (gae) PaaS
@@ -204,7 +204,6 @@ Check the results,
 Check the interactive local console,
 
 [http://localhost:8000/console](http://localhost:8000/console)
-
 
 ### STEP 3 - EDIT CODE ON THE FLY AND SEE RESULTS
 

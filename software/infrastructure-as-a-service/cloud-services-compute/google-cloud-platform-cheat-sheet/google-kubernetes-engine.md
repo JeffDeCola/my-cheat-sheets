@@ -34,13 +34,15 @@ we have enough acronyms in this space.
 
 Really great for runing docker containeers in a manage Kubernetes environment.
 
-Kubernetes performs the 
-* automation, 
-* orchestration, 
-* management and 
-* deployment 
+Kubernetes performs the,
+
+* automation
+* orchestration
+* management and
+* deployment
 
 of your containers. More information here.
+
 ## FREE RESOURCE
 
 No cluster management fee for clusters of all sizes. Each user node is charged at
@@ -50,7 +52,7 @@ Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tie
 
 ## GCE, GKE & GAE (THE ENGINES ON GCP)
 
-What are the main differences between `google app engine`, 
+What are the main differences between `google app engine`,
 `google kubernetes engine` and `google compute engine`?
 
 * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)

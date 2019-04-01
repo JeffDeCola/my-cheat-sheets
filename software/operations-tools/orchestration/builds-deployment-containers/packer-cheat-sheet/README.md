@@ -138,7 +138,7 @@ the packer command line interface.
 
 ### BUILDERS
 
-Quite simply, what platform are you going to use? 
+Quite simply, what platform are you going to use?
 `gce`, `aws`, etc..
 
 In the template example above, the platform `gce` platform is

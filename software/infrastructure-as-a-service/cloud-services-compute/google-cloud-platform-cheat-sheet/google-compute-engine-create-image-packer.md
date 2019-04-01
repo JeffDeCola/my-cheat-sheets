@@ -81,7 +81,7 @@ And the template file `gce-packer-template.json` would be,
     },
 
     "builders": [
-        {   
+        {
             "type": "googlecompute",
             "ssh_timeout": "10m",
             "account_file":"{{user `account_file`}}",
@@ -119,7 +119,7 @@ into your temporary VM instance.
 
 The `execute_command` `sudo -E` indicates to the security
 policy that the user wishes to preserve their existing
-environment variables. 
+environment variables.
 
 To see this template working in a real example, go to my repo
 [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
