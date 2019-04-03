@@ -142,3 +142,42 @@ Settings -> Network - Adapter -> Bridged Adapter.
 ```
 
 I did not explore this feature yet.
+
+## INCREASE YOUR VIDEO MEMORY TO 256MB
+
+```bash
+VBoxManage modifyvm "Name of VM" --vram 256
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe"  modifyvm "Name of VM" --vram 256
+```
+
+## INCREASE THE SIZE OF YOUR VIRTUAL DISK
+
+Let's say you run `df -h` and you're running out of room.
+
+The increase is in MB, so if you want to increase 10GB or ~10,000MB
+you pick a number that is a power of 2. 2 to the power of 13 is 8192.
+2 to the power of 14 is 16384.  Lets use the latter.
+
+Step 1 - Make a backup (clone).
+
+Step 2 - Create new virtual Machine that is bigger.
+
+Step 3 - Find UUID of your old and new VM.
+
+```bash
+VBoxManage list hdds
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" list hdds
+```
+
+Step 4 - run VBoxManage clonemedium.
+
+```bash
+VBoxManage clonemedium <source-guid> <destinatin-guid> --existing
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" clonemedium b1e21e90-xxx 391354e8-xxx --existing
+```
+
+Step 5 - Download gparted-live*.iso
+
+Insert .iso into the new virtual machine and reboot it.
+Grow your partition and save changes.
+You may have to delete partitions (swap and /dev/sd2) to grow `/dev/sda1`.

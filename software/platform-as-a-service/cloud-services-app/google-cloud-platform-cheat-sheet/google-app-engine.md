@@ -32,16 +32,20 @@ View my entire list of cheat sheets on
 
 What if you just don't really care about
 the guts or configurations (infrastructure) and just want to
-deploy and App.  Well `gae`
-is for you.  You bring the code, they handle the rest.
+deploy and App.  Well `gae` is for you.
+You bring the code, they handle the rest.
 
 `gae` is really used for web applications, and can be used with
 google firebase for mobile apps.
 
+An App Engine app is made up of a single application resource that consists of one or
+more services. Each service can be configured to use different runtimes and to operate
+with different performance settings. Within each service, you deploy versions
+of that service. Each version then runs within one or more instances, depending on
+how much traffic you configured it to handle.
+
 ![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/gae-app-service-view.jpg)
 
-On a side note, can `gae` run a service?  I would say yes.  But that's
-not really the point of `gae`.
 
 ## FREE RESOURCE (standard environment only)
 
@@ -188,6 +192,20 @@ handlers:
   script: auto
 ```
 
+You will have to get the go package,
+
+```bash
+go get google.golang.org/appengine
+```
+
+You also may have to,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+```
+
 ### STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER
 
 Test on the local development server using google's Local
@@ -256,4 +274,8 @@ You can look at or pull the example I placed in my repo
 
 ## EXAMPLE 3 - LETS ADD A SERVICE
 
-Lets do something.
+Lets do something dynamic.  How about a Webpage that 
+displays a running count.
+
+You can look at or pull the example I placed in my repo
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-03-app).

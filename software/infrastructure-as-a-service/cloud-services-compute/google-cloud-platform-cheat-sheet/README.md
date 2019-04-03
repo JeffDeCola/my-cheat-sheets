@@ -233,6 +233,14 @@ See what components you have installed,
 gcloud components list
 ```
 
+You can add components as needed. For example,
+to add `gae` go extensions,
+
+```bash
+gcloud components update
+gcloud components install app-engine-go
+```
+
 Your configuration file is located `~/.boto`.
 
 To change your default region/zone,
