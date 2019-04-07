@@ -253,15 +253,25 @@ gcloud config set compute/zone NAME
 For more information on the configuration file `.boto` go
 [here](https://cloud.google.com/storage/docs/gsutil/commands/config).
 
-## AUTHORIZATION FOR APPS & USERS - SERVICE ACCOUNTS
+## CLOUD IAM - CLOUD IDENTITY AND ACCESS MANAGEMENT - SERVICE ACCOUNTS
 
 Allowing Apps & users access & rights via service accounts.
 
 As an illustration,
 
-![IMAGE -  gcp-authorization-for-apps-and-users- IMAGE](../../../../docs/pics/gcp-authorization-for-apps-and-users.jpg)
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
 
 You create service account and define the roles those users or Apps can do.
+
+The big roles are the project roles,
+
+* Owner
+* Editor
+* Viewer
+* Browser
+
+But you can fine tune roles to only a access certain services like
+`gce`, `gae` etc....
 
 To see what service accounts you have access too on your local machine,
 
@@ -278,7 +288,13 @@ gcloud auth activate-service-account --key-file=credential_key.json
 You can switch accounts on your local machine,
 
 ```bash
-gcloud config set account `ACCOUNT`
+gcloud config set account <ACCOUNT>
+```
+
+Or switch projects on your local machine,
+
+```bash
+gcloud config set project <my_project>
 ```
 
 ## SOME BASIC GCP COMMANDS
