@@ -252,7 +252,7 @@ Lets use
 to add some static web pages.
 
 You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-gae).
 
 ## FILE/DIRECTOR STRUCTURE
 
@@ -270,7 +270,7 @@ For example 2, lets get a little more structured with some static web pages.
     * gae-logo.jpg
 
 You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-app).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-gae).
 
 ## EXAMPLE 3 - LETS ADD A SERVICE
 
@@ -278,4 +278,4 @@ Lets do something dynamic.  How about a Webpage that
 displays a running count.
 
 You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-03-app).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-03-gae).
