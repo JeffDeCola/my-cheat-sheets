@@ -1,10 +1,10 @@
-# AZURE FUNCTIONS CHEAT SHEET
+# MICROSOFT AZURE FUNCTIONS CHEAT SHEET
 
 ```
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`azure functions` _tbd_
+`microsoft azure functions` _tbd_
 
 Documentation and reference,
 

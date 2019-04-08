@@ -4,16 +4,16 @@
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
 provides a serverless application platform that you can use to run an App._
 
-Part of three compute engines at `gcp`,
+Part of Four Compute Engines at `gcp`,
 
-* App engine (gae)
-  PaaS
-* Container/Kubernetes engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  IaaS/PaaS or CaaS
-* Compute engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  IaaS
+* FaaS - Google Cloud Functions
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+* PaaS - Google App Engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/platform-as-a-service/google-app-engine-cheat-sheet)
+* CaaS - Google Kubernetes Engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* IaaS - Google Compute Engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/infrastructure-as-a-service/compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
 
 Documentation and reference,
 
