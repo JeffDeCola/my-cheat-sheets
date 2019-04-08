@@ -271,7 +271,7 @@ The big roles are the project roles,
 * Browser
 
 But you can fine tune roles to only a access certain services like
-`gce`, `gae` etc....
+`gce`, `gae`, etc....
 
 To see what service accounts you have access too on your local machine,
 

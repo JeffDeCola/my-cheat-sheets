@@ -27,10 +27,14 @@ The folder structures are organized alphabetically as follows:
   for the goal of creating a App/service.
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
-  * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
-  * [PLATFORM AS A SERVICE (PaaS)](https://github.com/JeffDeCola/my-cheat-sheets#platform-as-a-service-paas)
-  * [SOFTWARE AS A SERVICE (SaaS)](https://github.com/JeffDeCola/my-cheat-sheets#software-as-a-service-saas)
+  * [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
+
+    * [SOFTWARE AS A SERVICE (SaaS)](https://github.com/JeffDeCola/my-cheat-sheets#software-as-a-service-saas)
+    * [FUNCTIONS AS A SERVICE (FaaS)](https://github.com/JeffDeCola/my-cheat-sheets#functions-as-a-service-saas)
+    * [PLATFORM AS A SERVICE (PaaS)](https://github.com/JeffDeCola/my-cheat-sheets#platform-as-a-service-paas)
+    * [CONTAINERS AS A SERVICE (CaaS)](https://github.com/JeffDeCola/my-cheat-sheets#containers-as-a-service-saas)
+    * [INFRASTRUCTURE AS A SERVICE (IaaS)](https://github.com/JeffDeCola/my-cheat-sheets#infrastructure-as-a-service-iaas)
 
 These cheat sheets contain info I gathered from other sources and
 figured out over time.
@@ -184,30 +188,6 @@ Various Apps and tools for the goal of creating a App/service.
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
 
-### INFRASTRUCTURE AS A SERVICE (IaaS)
-
-* CLOUD SERVICES / COMPUTE
-
-  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
-    [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws)
-  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
-    * google app engine (gae) - Refer to PaaS below
-    * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
-      [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
-      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-    * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-    * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-    * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-    * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
-  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
-    [hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure)
-
-* DATABASE
-
-  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/google-cloud-spanner-cheat-sheet)
-  * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
-
 ### OPERATIONS TOOLS
 
 * CONFIGURATION MANAGEMENT
@@ -242,17 +222,49 @@ Various Apps and tools for the goal of creating a App/service.
   * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
   * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
 
-### PLATFORM AS A SERVICE (PaaS)
+### SERVICE ARCHITECTURES
 
-* CLOUD SERVICES / APP
+* SOFTWARE AS A SERVICE (SaaS)
+
+  * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/software-as-a-service/slack-cheat-sheet)
+
+* FUNCTIONS AS A SERVICE (FaaS)
+
+* PLATFORM AS A SERVICE (PaaS)
 
   * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet)
     * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md),
       [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
 
-### SOFTWARE AS A SERVICE (SaaS)
+* CONTAINERS AS A SERVICE (CaaS)
 
-* [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/software-as-a-service/slack-cheat-sheet)
+  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet)
+    * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
+      [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+
+* INFRASTRUCTURE AS A SERVICE (IaaS)
+
+  * CLOUD SERVICES / COMPUTE
+
+    * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet),
+      [hello-go-deploy-aws](https://github.com/JeffDeCola/hello-go-deploy-aws)
+    * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+      * google app engine (gae) - Refer to PaaS below
+      * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
+        [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+      * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
+        [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
+      * [google pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+      * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+      * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+      * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+    * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet),
+      [hello-go-deploy-azure](https://github.com/JeffDeCola/hello-go-deploy-azure)
+
+  * DATABASE
+
+    * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/google-cloud-spanner-cheat-sheet)
+    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
 
 ## VISUAL OVERVIEW OF CREATING AN ASIC
 
