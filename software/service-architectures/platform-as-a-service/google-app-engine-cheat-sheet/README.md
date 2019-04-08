@@ -4,7 +4,7 @@
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 provides a serverless application platform that you can use to run an App._
 
-Part of four compute engines at `gcp`,
+Part of four main compute engines at `gcp`,
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
@@ -108,7 +108,7 @@ Here is a very simple example using two file to test everything
 is working.
 
 You can pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-01-app).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-01-gae).
 
 ### STEP 1 - CREATE TWO FILES IN A DIRECTORY
 
@@ -206,11 +206,8 @@ gcloud app browse
 ## EXAMPLE 2 - LETS ADD A LITTLE STRUCTURE
 
 Lets use
-[google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+[google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 to add some static web pages.
-
-You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-gae).
 
 ## FILE/DIRECTOR STRUCTURE
 

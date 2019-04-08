@@ -5,7 +5,7 @@
 provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
-Part of four compute engines at `gcp`,
+Part of four main compute engines at `gcp`,
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)

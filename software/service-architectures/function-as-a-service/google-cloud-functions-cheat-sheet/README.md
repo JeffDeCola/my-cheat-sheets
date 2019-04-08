@@ -8,7 +8,7 @@
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 provides functions._
 
-Part of four compute engines at `gcp`,
+Part of four main compute engines at `gcp`,
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
