@@ -30,7 +30,7 @@ Documentation and reference,
 * [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 * [go api / compute engine client libraries](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
 * A list of
-  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-basic-gcloud-commands)
+  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
   I like.
 
 My repo example using `gce` is
@@ -174,7 +174,7 @@ App/service may be running on `gce`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `instance groups` control the show (They deploy and scale VM instances).
 
-![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
+![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../docs/pics/gce-app-service-view-instance-groups.jpg)
 
 The following illustration is a more detailed view of gce,
 
@@ -185,7 +185,7 @@ The following illustration is a more detailed view of gce,
 
 We will go over each section below.
 
-![IMAGE -  google compute engine overview creating deploying custom image - IMAGE](../../../../docs/pics/gce-overview-creating-deploying-custom-image.jpg)
+![IMAGE -  google compute engine overview creating deploying custom image - IMAGE](../../../docs/pics/gce-overview-creating-deploying-custom-image.jpg)
 
 ### IMAGES
 
@@ -204,13 +204,12 @@ There are two types of `gce` `images`,
   You can create a custom image from `boot disks` or other `images`.
 
 Refer to these cheat sheets for creating a custom image
-(I recommended
-[packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
-),
+(I recommended using
+[packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)),
 
-* [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md).
+* [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md).
   Do this one.  Your best option.
-* [Create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-gcloud.md).
+* [Create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet/google-compute-engine-create-image-gcloud.md).
 * Create a custom image using console - Just click a few buttons.
 
 List your images,
@@ -441,7 +440,7 @@ The end results allows you to,
 
 Here is an illustration of ssh keys are on your VM instance,
 
-![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
+![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
 
 ## GCE BASIC GCLOUD COMMANDS
 

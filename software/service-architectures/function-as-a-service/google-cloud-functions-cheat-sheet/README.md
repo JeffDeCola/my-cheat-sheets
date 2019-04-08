@@ -1,5 +1,9 @@
 # GOOGLE CLOUD FUNCTIONS (GCF) CHEAT SHEET
 
+```
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
 `google compute engine (gce)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 provides functions._
