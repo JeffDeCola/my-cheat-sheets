@@ -278,7 +278,7 @@ Various Apps and tools for the goal of creating a App/service.
       [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
     * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
       [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-    * [microsoft azure virtual machines](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-virtual-machines-cheat-sheet),
+    * [microsoft azure virtual machines (vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-virtual-machines-cheat-sheet),
       [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
 
 ## VISUAL OVERVIEW OF CREATING AN ASIC
