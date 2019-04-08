@@ -8,7 +8,7 @@
 
 Documentation and reference,
 
-* [Amazon Web Services Documentation](https://aws.amazon.com/)
+* [Amazon Lambda Documentation](https://aws.amazon.com/lambda/)
 
 My Repo example is [hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda).
 
