@@ -252,7 +252,7 @@ Various Apps and tools for the goal of creating a App/service.
 
 * CaaS - CONTAINERS AS A SERVICE
 
-  * [aws elastic container service](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/elastic-container-service-cheat-sheet),
+  * [amazon elastic container service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet),
     [hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
   * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
     [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
