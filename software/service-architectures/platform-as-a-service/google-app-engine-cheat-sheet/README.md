@@ -1,10 +1,10 @@
 # GOOGLE APP ENGINE (GAE) CHEAT SHEET
 
 `google app engine (gae)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 provides a serverless application platform that you can use to run an App._
 
-Part of Four Compute Engines at `gcp`,
+Part of four compute engines at `gcp`,
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/fuction-as-a-service/google-cloud-functions-cheat-sheet)
@@ -13,7 +13,7 @@ Part of Four Compute Engines at `gcp`,
 * CaaS - Google Kubernetes Engine
   [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
 * IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/infrastructure-as-a-service/compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
 
 Documentation and reference,
 
@@ -23,7 +23,8 @@ Documentation and reference,
 * [Google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
 * [Google app.yaml file reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref)
 
-My Repo example using `gae` is [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
+My repo example using `gae` is
+[hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -46,8 +47,7 @@ how much traffic you configured it to handle.
 
 ![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/gae-app-service-view.jpg)
 
-
-## FREE RESOURCE (standard environment only)
+## FREE RESOURCE (STANDARD ENVIRONMENT ONLY)
 
 As of my last update, the free resources are,
 
@@ -62,48 +62,6 @@ As of my last update, the free resources are,
 The free tier is available only for the `Standard Environment`.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
-
-## GCE, GKE & GAE (THE ENGINES ON GCP)
-
-What are the main differences between `google app engine`,
-`google kubernetes engine` and `google compute engine`?
-
-* google app engine (gae) PaaS
-  * A higher level of abstraction. Serverless. Focus is on your code.
-  * Auto scales for you. Will create more instances as needed.
-  * Google worries about infrastructure, you worry about code.
-    Simply deploy your code and platform does the rest.
-  * You don't manage or update the OS.
-* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-  IaaS/PaaS or CaaS
-  * A step up from `gce` that uses Containers to manage your App.
-  * Immutable OS (Unable to be changed - Can't modify the OS).
-  * Autoscaling.
-  * GCE Resources integrated. Kubernetes runs on `gce`.
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
-  IaaS.
-  * You have full control/responsibility for server.
-  * Create your own VM instance by allocating hardware specific resources
-    (e.g. RAM, CPU, Storage).
-  * Direct access to OS.
-  * Manage OS and updates as needed.
-
-So what is this all good for,
-
-* `gae`
-  * Web services with large scaling.
-  * Quick scaling.
-* `gke`
-  * Micro services.
-  * Container services.
-  * Plan to cross cloud.
-* `gce`
-  * Small services.
-  * Larger scale high performance service.
-
-Here is a high-level illustration,
-
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## TWO ENVIRONMENTS
 
