@@ -235,11 +235,11 @@ Various Apps and tools for the goal of creating a App/service.
 * FaaS - FUNCTION AS A SERVICE
  
   * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
-    [hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda)
+    _hello-go-deploy-aws-lambda repo coming soon_
   * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
-    [hello-go-deploy-gcf](https://github.com/JeffDeCola/hello-go-deploy-gcf)
+    _hello-go-deploy-gcf repo coming soon_
   * [microsoft azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet),
-    [hello-go-deploy-azure-functions](https://github.com/JeffDeCola/hello-go-deploy-azure-fuctions)
+    _hello-go-deploy-azure-functions repo coming soon_
 
 * PaaS - PLATFORM AS A SERVICE
 

@@ -24,7 +24,7 @@ Documentation and reference,
 * [AWS Lambda Documentation](https://aws.amazon.com/lambda/)
 
 My repo example using `aws lambda` is
-[hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda).
+hello-go-deploy-aws-lambda (coming soon).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

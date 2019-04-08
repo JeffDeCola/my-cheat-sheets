@@ -24,7 +24,7 @@ Documentation and reference,
 * [Microsoft Azure Functions Documentation](https://docs.microsoft.com/en-us/azure/azure-functions/)
 
 My repo example using `azure functions` is
-[hello-go-deploy-azure-functions](https://github.com/JeffDeCola/hello-go-deploy-azure-functions).
+hello-go-deploy-azure-functions (coming soon).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
