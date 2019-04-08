@@ -70,7 +70,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * gcp marketplace
   * private catalog
 * COMPUTE
-  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
     cheat sheet (FaaS)
   * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
     cheat sheet (PaaS)

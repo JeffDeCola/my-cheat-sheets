@@ -1,12 +1,12 @@
-# AMAZON ELASTIC COMPUTE CLOUD (EC2) CHEAT SHEET
+# AMAZON ELASTIC CONTAINER SERVICE (ECS) CHEAT SHEET
 
 ```
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`amazon elastic compute cloud` _which is part of
+`amazon elastic container service` _which is part of
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
-provides IaaS._
+provides CaaS._
 
 Part of four main compute engines at `aws`,
 
@@ -21,10 +21,10 @@ Part of four main compute engines at `aws`,
 
 Documentation and reference,
 
-* [Amazon EC2 Documentation](https://aws.amazon.com/ec2/)
+* [Amazon ECS Documentation](https://aws.amazon.com/ecs/)
 
-My repo example using `amazon ec2` is
-[hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2).
+My repo example using `amazon ecs` is
+[hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
