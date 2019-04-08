@@ -1,7 +1,7 @@
 # GOOGLE CLOUD PUB/SUB CHEAT SHEET
 
 `google cloud pub/sub` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 is a fully-managed real-time messaging service that allows you to
 send and receive messages between independent applications._
 
@@ -16,6 +16,9 @@ View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
+
+Cloud Pub/Sub is a fully-managed real-time messaging service that allows you
+to send and receive messages between independent applications.
 
 ## FREE RESOURCE
 
