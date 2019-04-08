@@ -1,9 +1,9 @@
 # GOOGLE CLOUD PLATFORM (GCP) CHEAT SHEET
 
 `google cloud platform (gcp)` _is a massive suite of cloud computing services like
-[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/amazon-web-services-cheat-sheet)
+[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
 or
-[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/microsoft-azure-cheat-sheet)._
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/microsoft-azure-cheat-sheet)._
 
 Documentation and reference,
 
@@ -20,16 +20,16 @@ View my entire list of cheat sheets on
 
 Here are my gcp cheat sheets so far,
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md),
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet),
   [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
-* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md),
+* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
   [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md),
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
   [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-* [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-* [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-* [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+* [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+* [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+* [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 
 ## GCP FREE RESOURCES
 
@@ -70,21 +70,22 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * gcp marketplace
   * private catalog
 * COMPUTE
-  * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
+  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+    cheat sheet (FaaS)
+  * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
     cheat sheet (PaaS)
-  * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-kubernetes-engine.md)
-    cheat sheet (IaaS/PaaS or CaaS)
-  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+    cheat sheet (CaaS)
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-cheat-sheet)
     cheat sheet (IaaS)
   * shielded VMs
-  * cloud functions
 * DATA AND ANALYTICS
   * cloud composer
   * cloud dataflow
   * cloud datalab
   * cloud dataprep
   * cloud dataproc
-  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     cheat sheet
   * google bigquery
   * google data studio
@@ -98,9 +99,9 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud SQL (MySQL)
   * cloud SQL (Postgres)
 * Developer Tools
-  * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
+  * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
   * cloud build
-  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
     cheat sheet
   * cloud tools for IntelliJ
   * cloud tools for powershell
@@ -121,7 +122,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * stackdriver debugger
   * stackdriver error reporting
   * stackdriver logging
-  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
     cheat sheet
   * stackdriver profiler
   * stackdriver trace
@@ -158,13 +159,62 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * security key enforcement
   * vpc service controls
 * STORAGE
-  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
     cheat sheet
   * cloud storage nearline
   * cloud storage coldline
-  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md)
+  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/service-architectures/software/infrastructure-as-a-service/cloud-services/google-compute-engine-cheat-sheet)
     cheat sheet
   * cloud firestore
+
+## GCF, GAE, GKE & GCE (THE ENGINES ON GCP)
+
+What are the main differences between `google cloud functions`,
+`google app engine`, `google kubernetes engine` and
+`google compute engine`?
+
+* FaaS - Google Cloud Functions
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+  * Events.
+* PaaS - Google App Engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+  * A higher level of abstraction. Serverless. Focus is on your code.
+  * Auto scales for you. Will create more instances as needed.
+  * Google worries about infrastructure, you worry about code.
+    Simply deploy your code and platform does the rest.
+  * You don't manage or update the OS.
+* CaaS - Google Kubernetes Engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+  * A step up from `gce` that uses Containers to manage your App.
+  * Immutable OS (Unable to be changed - Can't modify the OS).
+  * Autoscaling.
+  * GCE Resources integrated. Kubernetes runs on `gce`.
+* IaaS - Google Compute Engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  * You have full control/responsibility for server.
+  * Create your own VM instance by allocating hardware specific resources
+    (e.g. RAM, CPU, Storage).
+  * Direct access to OS.
+  * Manage OS and updates as needed.
+
+So what is this all good for?
+
+* `gcf`
+  * Web.
+* `gae`
+  * Web services with large scaling.
+  * Quick scaling.
+* `gke`
+  * Micro services.
+  * Container services.
+  * Plan to cross cloud.
+* `gce`
+  * Small services.
+  * Larger scale high performance service.
+
+Here is a high-level illustration,
+
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## GET AN ACCOUNT AT GOOGLE CLOUD PLATFORM
 
@@ -296,6 +346,31 @@ Or switch projects on your local machine,
 ```bash
 gcloud config set project <my_project>
 ```
+
+## CREATE A SERVICE ACCOUNT KEY
+
+These are the steps,
+
+* In Google Developers Console select a project.
+* Under the "API & Services" section, click "Credentials".
+* Click the "Create credentials" button, select "Service account key".
+* Choose JSON as the Key type and gce as service account and click "Create".
+* A JSON file will be downloaded automatically. This is your account file.
+
+I would put the credentials file here,
+
+```bash
+$HOME/.config/gcloud/<name>.json
+```
+
+Set an environment variable in `~/.bashrc` to point to your service account file,
+
+```bash
+export GCP_SERVICE_ACCOUNT_KEY_PATH='/home/jeff/.config/gcloud/<name>.json'
+```
+
+Then you can use this env variables in your deployments and
+it is kept secret on your local machine.
 
 ## SOME BASIC GCP COMMANDS
 
