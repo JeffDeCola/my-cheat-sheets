@@ -27,9 +27,9 @@ Here are my gcp cheat sheets so far,
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
   [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
 * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 
 ## GCP FREE RESOURCES
 
@@ -76,7 +76,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
     cheat sheet (PaaS)
   * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
     cheat sheet (CaaS)
-  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-cheat-sheet)
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
     cheat sheet (IaaS)
   * shielded VMs
 * DATA AND ANALYTICS
@@ -163,7 +163,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
     cheat sheet
   * cloud storage nearline
   * cloud storage coldline
-  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/service-architectures/software/infrastructure-as-a-service/cloud-services/google-compute-engine-cheat-sheet)
+  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
     cheat sheet
   * cloud firestore
 
@@ -173,24 +173,24 @@ What are the main differences between `google cloud functions`,
 `google app engine`, `google kubernetes engine` and
 `google compute engine`?
 
-* FaaS - Google Cloud Functions
-  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+* FaaS -
+  [Google Cloud Functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
   * Events.
-* PaaS - Google App Engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+* PaaS -
+  [Google App Engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
   * A higher level of abstraction. Serverless. Focus is on your code.
   * Auto scales for you. Will create more instances as needed.
   * Google worries about infrastructure, you worry about code.
     Simply deploy your code and platform does the rest.
   * You don't manage or update the OS.
-* CaaS - Google Kubernetes Engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* CaaS -
+  [Google Kubernetes Engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
   * A step up from `gce` that uses Containers to manage your App.
   * Immutable OS (Unable to be changed - Can't modify the OS).
   * Autoscaling.
   * GCE Resources integrated. Kubernetes runs on `gce`.
-* IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+* IaaS -
+  [Google Compute Engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
   * You have full control/responsibility for server.
   * Create your own VM instance by allocating hardware specific resources
     (e.g. RAM, CPU, Storage).
@@ -214,7 +214,7 @@ So what is this all good for?
 
 Here is a high-level illustration,
 
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## GET AN ACCOUNT AT GOOGLE CLOUD PLATFORM
 
@@ -252,7 +252,7 @@ These include,
 * `gsutil`
   [doc](https://cloud.google.com/storage/docs/gsutil),
   is the command-line tool for
-  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
+  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
 * `bq`
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
   is the command-line tool for BigQuery.
@@ -309,7 +309,7 @@ Allowing Apps & users access & rights via service accounts.
 
 As an illustration,
 
-![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
 
 You create service account and define the roles those users or Apps can do.
 
