@@ -11,6 +11,6 @@ Refer to my `gcp` cheat sheet located in IaaS
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## GCP PaaS SERVICES
+## GCP FaaS
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/platform-as-a-service/cloud-services-app/google-cloud-platform-cheat-sheet/google-app-engine.md)
+* [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-platform-cheat-sheet/google-cloud-functions.md)

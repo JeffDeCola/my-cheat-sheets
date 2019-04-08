@@ -1,21 +1,16 @@
 # AMAZON WEB SERVICES (AWS) CHEAT SHEET
 
-```
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 `amazon web services (aws)` _is a massive suite of cloud computing services like
-[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-cheat-sheet)
-or
 [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-cloud-platform-cheat-sheet)._
+or
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-cheat-sheet)
 
-Documentation and reference,
-
-* [Amazon Web Services Documentation](https://aws.amazon.com/)
+Refer to my `aws` cheat sheet located in IaaS
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-web-services-cheat-sheet).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## OVERVIEW
+## AWS FaaS
 
-tbd
+* [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/amazon-web-services-cheat-sheet/aws-lambda.md)
