@@ -9,7 +9,7 @@ Documentation and reference,
 
 * [gce template file reference](https://www.packer.io/docs/builders/googlecompute.html)
 * My cheat sheet on
-  [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet).
+  [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -23,17 +23,17 @@ The following illustration shows how `packer` controls the automation of
 building an `image`.  As you can see, it all stems from one
 configuration file `gce-packer-template.json`.
 
-![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
+![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../../../docs/pics/gce-create-custom-image-packer.jpg)
 
 ## GIVE PACKER AUTHENTICATION
 
 Packer needs to be authorized to use your `gce` account.
 This is done using a google service account file. We already setup an env
-variable `$GOOGLE_APPLICATION_CREDENTIALS` that points to the
+variable `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` that points to the
 location of the service account file.
 
 For information how to set this up checkout my cheat sheet
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine.md#gce-service-account-key)
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet#create-a-service-account-key)
 
 ## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
 
@@ -42,8 +42,8 @@ A good place to start is this template file.
 This build will,
 
 * Authorize Packer with `gce`.
-  * Verify the credential via `$GOOGLE_APPLICATION_CREDENTIALS` env variable.
-  * Use Project `$GOOGLE_JEFFS_PROJECT_ID` env variable.
+  * Verify the credential via `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` env variable.
+  * Use Project `$GCP_JEFFS_PROJECT_ID` env variable.
 * Starts up a temporary VM `instance`  and temporary `boot disk`
   from a source `image`.
   * Use source gce machine `image` `ubuntu-1604-xenial-v20190306`.
@@ -62,8 +62,8 @@ The packer command would be,
 
 ```bash
 packer build -force \
-    -var "account_file=$GOOGLE_APPLICATION_CREDENTIALS" \
-    -var "project_id=$GOOGLE_JEFFS_PROJECT_ID" \
+    -var "account_file=$GCP_JEFFS_SERVICE_ACCOUNT_PATH" \
+    -var "project_id=$GCP_JEFFS_PROJECT_ID" \
     gce-packer-template.json
 ```
 
