@@ -230,15 +230,12 @@ Various Apps and tools for the goal of creating a App/service.
 
 * FaaS - FUNCTION AS A SERVICE
  
-  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/amazon-web-services-cheat-sheet)
-    * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/amazon-web-services-cheat-sheet/aws-lambda.md),
-      [hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda)
-  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-platform-cheat-sheet)
-    * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-platform-cheat-sheet/google-cloud-functions.md),
-      [hello-go-deploy-gcf](https://github.com/JeffDeCola/hello-go-deploy-gcf)
-  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-cheat-sheet),
-    * [azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsfot-azure-cheat-sheet/azure-functions.md),
-      [hello-go-deploy-azure-functions](https://github.com/JeffDeCola/hello-go-deploy-azure-fuctions)
+  * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
+    [hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda)
+  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
+    [hello-go-deploy-gcf](https://github.com/JeffDeCola/hello-go-deploy-gcf)
+  * [microsoft azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet),
+    [hello-go-deploy-azure-functions](https://github.com/JeffDeCola/hello-go-deploy-azure-fuctions)
 
 * PaaS - PLATFORM AS A SERVICE
 

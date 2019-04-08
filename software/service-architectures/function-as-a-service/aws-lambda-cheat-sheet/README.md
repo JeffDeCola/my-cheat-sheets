@@ -4,7 +4,7 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`aws lamda` _tbd_
+`aws lambda` _tbd_
 
 Documentation and reference,
 
