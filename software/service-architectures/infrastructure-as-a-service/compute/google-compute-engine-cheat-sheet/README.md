@@ -8,13 +8,13 @@ that you can use to run an App/service._
 Part of four compute engines at `gcp`,
 
 * FaaS - Google Cloud Functions
-  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/fuction-as-a-service/google-cloud-functions-cheat-sheet)
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
 * PaaS - Google App Engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/platform-as-a-service/google-app-engine-cheat-sheet)
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
 * CaaS - Google Kubernetes Engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
 * IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectues/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
 
 Documentation and reference,
 
