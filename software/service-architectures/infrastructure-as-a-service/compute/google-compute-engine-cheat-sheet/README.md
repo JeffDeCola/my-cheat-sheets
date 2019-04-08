@@ -174,7 +174,7 @@ App/service may be running on `gce`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `instance groups` control the show (They deploy and scale VM instances).
 
-![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../docs/pics/gce-app-service-view-instance-groups.jpg)
+![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
 
 The following illustration is a more detailed view of gce,
 
@@ -185,7 +185,7 @@ The following illustration is a more detailed view of gce,
 
 We will go over each section below.
 
-![IMAGE -  google compute engine overview creating deploying custom image - IMAGE](../../../docs/pics/gce-overview-creating-deploying-custom-image.jpg)
+![IMAGE -  google compute engine overview creating deploying custom image - IMAGE](../../../../../docs/pics/gce-overview-creating-deploying-custom-image.jpg)
 
 ### IMAGES
 
@@ -440,7 +440,7 @@ The end results allows you to,
 
 Here is an illustration of ssh keys are on your VM instance,
 
-![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
+![IMAGE -  ssh-keys-for-gce-vm-instance - IMAGE](../../../../../docs/pics/ssh-keys-for-gce-vm-instance.jpg)
 
 ## GCE BASIC GCLOUD COMMANDS
 
