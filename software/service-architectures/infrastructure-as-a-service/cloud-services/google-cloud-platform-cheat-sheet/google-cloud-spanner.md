@@ -4,13 +4,31 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`google cloud spanner` _is a horizontally scalable relational database
+`google cloud spanner` _which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+is a horizontally scalable relational database
 service from google._
+
+Documentation and reference,
+
+* [Cloud Spanner Documentation](https://cloud.google.com/spanner/docs/)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SCALES HORIZONATALLY (Adding machines)
+## OVERVIEW
+
+Cloud Spanner is a fully managed, mission-critical, relational database service
+that offers transactional consistency at global scale, schemas, SQL (ANSI 2011 with extensions),
+and automatic, synchronous replication for high availability.
+
+## FREE RESOURCE
+
+Not sure of any.
+
+Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
+
+## SCALES HORIZONTALLY (Adding machines)
 
 Normally relational databases scale vertically
 (i.e. adding more power like CPU and RAM)
