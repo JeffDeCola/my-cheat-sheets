@@ -24,7 +24,7 @@ Documentation and reference,
 * [Google Cloud Functions Documentation](https://cloud.google.com/functions/)
 
 My repo example using `gcf` is
-[hello-go-deploy-gcf](https://github.com/JeffDeCola/hello-go-deploy-gcf).
+hello-go-deploy-gcf (coming soon).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
