@@ -4,7 +4,7 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`amazon elastic compute cloud` _which is part of
+`amazon elastic compute cloud (ec2)` _which is part of
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
 provides IaaS._
 
