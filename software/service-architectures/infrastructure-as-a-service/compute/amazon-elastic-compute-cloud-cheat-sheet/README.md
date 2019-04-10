@@ -4,11 +4,11 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`amazon elastic compute cloud` _which is part of
+`amazon elastic compute cloud (ec2)` _which is part of
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
 provides IaaS._
 
-Part of four main compute engines at `aws`,
+Part of five main compute engines at `aws`,
 
 * FaaS - AWS Lambda
   [(aws lambda)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
@@ -16,6 +16,7 @@ Part of four main compute engines at `aws`,
   [(aws elastic beanstalk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/aws-elastic-beanstalk-cheat-sheet)
 * CaaS - Amazon Elastic Container Service
   [(amazon ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
+  [(amazon eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
 * IaaS - Amazon Elastic Compute Cloud
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet)
 
