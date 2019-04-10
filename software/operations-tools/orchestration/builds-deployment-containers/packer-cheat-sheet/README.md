@@ -4,13 +4,14 @@
 of custom machine `images` (for multiple platforms) from a single
 configuration file._
 
-My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
-
 Documentation and reference,
 
 * My cheat sheet,
   [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
 * [Packer Documentation](https://www.packer.io/)
+
+My Repo example using packer is
+[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

@@ -1,12 +1,12 @@
-# AWS LAMBDA CHEAT SHEET
+# AMAZON ELASTIC CONTAINER SERVICE FOR KUBERNETES (EKS) CHEAT SHEET
 
 ```
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`aws lambda` _which is part of
+`amazon elastic container service for kubernetes` _which is part of
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
-provides FaaS._
+provides CaaS._
 
 Part of five main compute engines at `aws`,
 
@@ -22,10 +22,10 @@ Part of five main compute engines at `aws`,
 
 Documentation and reference,
 
-* [AWS Lambda Documentation](https://aws.amazon.com/lambda/)
+* [Amazon EKS Documentation](https://aws.amazon.com/eks/)
 
-My repo example using `aws lambda` is
-hello-go-deploy-aws-lambda (coming soon).
+My repo example using `amazon eks` is
+[hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
