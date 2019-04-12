@@ -16,7 +16,7 @@ My Repo examples are
 and
 [hello-go-deploy-aks](https://github.com/JeffDeCola/hello-go-deploy-aks)
 and
-[hello-go-deploy-eks](https://github.com/JeffDeCola/hello-go-deploy-eks).
+[hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

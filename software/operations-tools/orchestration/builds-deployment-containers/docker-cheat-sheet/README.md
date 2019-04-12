@@ -1,25 +1,26 @@
 # DOCKER CHEAT SHEET
 
-`docker` _is a Virtual Linux Container. DockerHub is an online
-resource to place docker containers._
+`docker` _is a virtual linux container. DockerHub is an online
+resource to keep docker images (that you can pull)._
 
-[Jeff's Docker Hub Images](https://hub.docker.com/u/jeffdecola/)
+[Jeff's images at DockerHub](https://hub.docker.com/u/jeffdecola/)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## A VIRTUAL MACHINE VS DOCKER CONTAINER
+## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
 
-The following diagram shows the difference betwenn a Virtual Machine
+The following diagram shows the difference between a Virtual Machine
 and a Docker Container.
 
-![IMAGE - Virtual-Machine-vs-Docker - IMAGE](../../../../../docs/pics/Virtual-Machine-vs-Docker.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
 Virtual Machine:
 
 * Must use a Hypervisor emulated Virtual Hardware.
 * Needs a guest OS.
 * Takes a lot of system resources.
+* Takes up a lot of memory.
 
 Container:
 
@@ -50,7 +51,13 @@ To run a simple docker container just use `docker run`,
 
 ```bash
 docker run jeffdecola/hello-go
+docker run --name hello-go -dit jeffdecola/hello-go
 ```
+
+* `-d` Run container in background.
+* `-t` or `-tty` terminal. 
+* `-i` interactive container, Keep STDIN open even if
+  not attached.
 
 ## DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)
 
@@ -87,6 +94,8 @@ docker rmi $(docker images -q)
 docker rmi -f $(docker images -q)
 ```
 
+### PULL IMAGES
+
 Get an image from [hub.docker.com](https://hub.docker.com/explore/),
 
 ```bash
@@ -99,7 +108,77 @@ Check you got it,
 docker images
 ```
 
-## CONTAINERS - A RUNNING IMAGE
+### CHECK THE HISTORY OF AN IMAGE
+
+```bash
+docker history jeffdecola/hello-go-deploy-gce
+```
+
+### CREATE IMAGE USING DOCKERFILE
+
+Create a Dockerfile,
+
+```bash
+## Test
+FROM ubuntu:14.04
+MAINTAINER Jeff DeCola
+CMD echo "Hi Jeff"
+```
+
+Another example,
+
+```bash
+FROM docker/whalesay:latest
+RUN apt-get -y update && apt-get install -y fortunes
+CMD /usr/games/fortune -a | cowsay
+```
+
+And another one,
+
+```bash
+#Test
+FROM ubuntu:14.04
+LABEL Jeff DeCola
+COPY whatever /
+CMD echo "Hi Jeff"
+```
+
+Build the image,
+
+```bash
+docker build -t jeffdecola/NAME .
+```
+
+`-t` is tag name.
+
+Check your build,
+
+```bash
+docker images
+```
+
+### COMPILE YOUR CODE INSIDE CREATE IMAGE
+
+When creating a docker image, your image must match the base docker image.
+
+Hence, you should compile your code in the base image during build.
+
+Here is an illustration why,
+
+![IMAGE - compile-code-in-docker-base-image - IMAGE](../../../../../docs/pics/compile-code-in-docker-base-image.jpg)
+
+For an example, refer to my repo
+[here](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master/example-01/build-push).
+
+## PUSH IMAGE TO DOKERHUB
+
+To push an image to dockerhub,
+
+```bash
+docker push jeffdecola/hello-go
+```
+
+## CONTAINERS
 
 A container is a running image.
 
@@ -185,7 +264,7 @@ Now see what the docker container daemon is doing,
 docker logs NAME
 ```
 
-## GET A SHELL PROMPT INSIDE A RUNNING CONTAINER
+### GET A SHELL PROMPT INSIDE A RUNNING CONTAINER
 
 To get inside a running container,
 
@@ -195,88 +274,10 @@ docker exec -t -i <container ID> /bin/bash
 
 Use `docker ps` to get the container ID.
 
-## CHECK THE STDOUT OF A RUNNING CONTAINER
+### CHECK THE STDOUT OF A RUNNING CONTAINER
 
 ```bash
 docker logs -f <container_name>
 ```
 
 `-f` switch is check forever.
-
-## CHECK THE HISTORY OF AN IMAGE
-
-```bash
-docker history jeffdecola/hello-go-deploy-gce
-```
-
-### METHOD 1 - Modify an Existing image
-
-Get an existing docker image and add to it,
-
-```bash
-docker run -t -i training/sinatra /bin/bash
-```
-
-Now add something to it,
-
-```bash
-root@ IMAGE-ID:/# apt-get install -y ruby2.0-dev
-```
-
-Exit,
-
-```bash
-docker commit -m "Added ruby" -a "Jeff DeCola" IMAGE-ID
-jeffdecola/sinatra:jeffver
-```
-
-### METHOD 2 - Create a Dockerfile
-
-Create a Dockerfile,
-
-```bash
-## Test
-FROM ubuntu:14.04
-MAINTAINER Jeff DeCola
-CMD echo "Hi Jeff"
-```
-
-Another example,
-
-```bash
-FROM docker/whalesay:latest
-RUN apt-get -y update && apt-get install -y fortunes
-CMD /usr/games/fortune -a | cowsay
-```
-
-And another one,
-
-```bash
-#Test
-FROM ubuntu:14.04
-LABEL Jeff DeCola
-COPY whatever /
-CMD echo "Hi Jeff"
-```
-
-Build the image,
-
-```bash
-docker build -t jeffdecola/NAME .
-```
-
-`-t` is tag name.
-
-Check your build,
-
-```bash
-docker images
-```
-
-## PUSH TO DOKERHUB
-
-To push an image to dockerhub,
-
-```bash
-docker push jeffdecola/hello-go
-```
