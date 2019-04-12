@@ -157,7 +157,7 @@ Check your build,
 docker images
 ```
 
-### COMPILE YOUR CODE INSIDE CREATE IMAGE
+### COMPILE YOUR CODE INSIDE BASE IMAGE
 
 When creating a docker image, your image must match the base docker image.
 
@@ -167,10 +167,18 @@ Here is an illustration why,
 
 ![IMAGE - compile-code-in-docker-base-image - IMAGE](../../../../../docs/pics/compile-code-in-docker-base-image.jpg)
 
+
+### PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)
+
+Now that you compiled your code and created an image its just too big.
+You can use multi-stage to place your app/service in a smaller image ~`13MB`,
+
+![IMAGE - multi-stage-build-to-keep-image-small - IMAGE](../../../../../docs/pics/multi-stage-build-to-keep-image-small.jpg)
+
 For an example, refer to my repo
 [here](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master/example-01/build-push).
 
-## PUSH IMAGE TO DOKERHUB
+### PUSH IMAGE TO DOKERHUB
 
 To push an image to dockerhub,
 
