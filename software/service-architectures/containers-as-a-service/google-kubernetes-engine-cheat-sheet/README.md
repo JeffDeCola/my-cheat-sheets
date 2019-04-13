@@ -37,16 +37,18 @@ This really sits in the middle of IaaS and PaaS. Some people like to say
 Container as a Service (CaaS).  I find this a little unnecessary, I think
 we have enough acronyms in this space.
 
-Really great for runing docker containeers in a manage Kubernetes environment.
+Really great for running docker containers in a manage Kubernetes environment.
 
-Kubernetes performs the,
+Kubernetes performs the following on your containers,
 
-* automation
-* orchestration
-* management and
-* deployment
+* Deployment
+* Automation
+* Orchestration
+* Management
 
-of your containers. More information here.
+Here is a nigh level view,
+
+![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../docs/pics/kubernetes-cluster-architecture.jpg)
 
 ## FREE RESOURCE
 
