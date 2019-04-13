@@ -21,6 +21,7 @@ Part of four main compute engines at `microsoft azure`,
 
 Documentation and reference,
 
+* [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 * [Microsoft AKS Documentation](https://docs.microsoft.com/en-us/azure/aks/)
 
 My repo example using `aks` is
@@ -31,7 +32,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-tbd
+Microsoft Azure Kubernetes service....
 
 ## FREE RESOURCE
 
