@@ -22,6 +22,7 @@ Part of five main compute engines at `aws`,
 
 Documentation and reference,
 
+* [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 * [Amazon EKS Documentation](https://aws.amazon.com/eks/)
 
 My repo example using `amazon eks` is
@@ -32,7 +33,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-tbd
+Amazon Elastic Container Service for Kubernetes...
 
 ## FREE RESOURCE
 

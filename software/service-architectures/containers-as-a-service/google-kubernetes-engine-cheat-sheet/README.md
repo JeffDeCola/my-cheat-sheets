@@ -1,9 +1,5 @@
 # GOOGLE KUBERNETES ENGINE (GKE) CHEAT SHEET
 
-```
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 `google kubernetes engine (gke)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
 _alows you to deploy, manage, and scale containerized applications on Kubernetes._
@@ -21,6 +17,7 @@ Part of four main compute engines at `gcp`,
 
 Documentation and reference,
 
+* [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 * [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/)
 * [Quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
 * [Google Cloud Container SDK Reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
@@ -33,22 +30,8 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-This really sits in the middle of IaaS and PaaS. Some people like to say
-Container as a Service (CaaS).  I find this a little unnecessary, I think
-we have enough acronyms in this space.
+Google Kubernetes...
 
-Really great for running docker containers in a manage Kubernetes environment.
-
-Kubernetes performs the following on your containers,
-
-* Deployment
-* Automation
-* Orchestration
-* Management
-
-Here is a nigh level view,
-
-![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../docs/pics/kubernetes-cluster-architecture.jpg)
 
 ## FREE RESOURCE
 
