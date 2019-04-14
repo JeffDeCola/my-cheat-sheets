@@ -64,7 +64,7 @@ I like to script, so I'm using gcloud,
 ```bash
 gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
     clusters create jeffs-gke-cluster-hello-go-deploy-gke \
-    --addons HorizontalPodAutoscaling,HttpLoadBalancing \
+    --addons HorizontalPodAutoscaling,HttpLoadBalancing,KubernetesDashboard \
     --disk-size "10" \
     --disk-type "pd-standard" \
     --enable-autorepair \
@@ -88,6 +88,8 @@ To destroy your Kubernetes Cluster,
 gcloud container clusters delete jeffs-gke-cluster
 ```
 
+Reference for this gcloud SDK command [here](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
+
 ## STEP 2 - CONNECT TO CLUSTER 
 
 To interact with the cluster, you need to hook it up to kubectl.
@@ -103,7 +105,7 @@ gcloud container clusters get-credentials jeffs-gke-cluster-hello-go-deploy-gke 
 
 This will make a `~/.kube` configuration folder.
 
-## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER
+## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER (CREATE WORKLOAD)
 
 Lets use a docker image (that has port 8080 exposed) from Dockerhub.
 
@@ -118,17 +120,12 @@ kubectl run jeffs-web-counter \
 
 The deployment will run in a pod in one of the nodes.
 
-`gke` likes to call this a workload.  You can deploy as many as you want.
+`gke` likes to call this a `workload`.  You can deploy as many `workloads` as you want.
 
-Delete your image/service,
+## STEP 4 - EXPOSE CONTAINER TO THE WORLD (CREATE SERVICE)
 
-```bash
-kubectl delete service jeffs-web-counter
-```
-
-## STEP 4 - EXPOSE SERVICE TO THE WORLD
-
-Using a `gke` load balancer,
+Using a `gke` load balancer you can expose your container to the word,
+Google calls this a `service`.
 
 ```bash
 kubectl expose deployment jeffs-web-counter \
@@ -137,12 +134,36 @@ kubectl expose deployment jeffs-web-counter \
     --target-port 8080
 ```
 
-## STEP 5 - INSPECT SERVICE
-
 Inspect your service,
 
 ```bash
 kubectl get service jeffs-web-counter
 ```
 
+Delete your service,
 
+```bash
+kubectl delete service jeffs-web-counter
+```
+
+This will not delete the `workload`, just the `service`.
+
+## KUBERNETES DASHBOARD (THIS IS NICE)
+
+If you noticed we used the addon KubernetesDashboard when we created our cluster.
+
+To use, first get a secret token,
+
+```bash
+gcloud config config-helper --format=json | jq -r '.credential.access_token'
+```
+
+Then run a proxy,
+
+```bash
+kubectl proxy
+```
+
+And open in a browser,
+
+[localhost:8001](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy)
