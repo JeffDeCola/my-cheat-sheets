@@ -21,7 +21,7 @@ Documentation and reference,
 * [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/)
 * [Quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
 * [Google Cloud Container SDK Reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
-* [kubectl is Kubernetes cli](https://kubernetes.io/docs/reference/kubectl/overview/)
+* [kubectl (Kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
 
 My repo example using `gke` is
 [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke).
@@ -35,7 +35,7 @@ Each node is a VM instance on `gce`.
 
 A node pool is a “pool,” of machines with the same configuration.
 
-At `gke`, you are not charged for the master node.
+At `gke` you are not charged for the master node.
 
 Refer to my
 [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
@@ -45,21 +45,20 @@ for more information about Kubernetes.
 
 No cluster management fee for clusters of all sizes. 
 
-Each user node is charged at standard `gce` pricing.
+Each user node is charged the standard `gce` pricing.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
 ## STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON GKE
 
-Since each node Each node is a VM instance on `gce`, to keep costs down we
-would create one node.
+Since each node is a VM instance on `gce`, to keep costs down we'll
+create one node.
 
-I would use preemptible disk to keeps the costs even lower.
+Lets also use a preemptible disk to keeps the costs even lower.
 
-`gke` will not charge you for the master node.
+As stated above `gke` will not charge you for the master node.
 
-You can use the console or gcloud to create a cluster.
-
+You can use the console or gcloud to create a Kubernetes Cluster.
 I like to script, so I'm using gcloud,
 
 ```bash
@@ -83,7 +82,7 @@ gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
 
 You should see 3 instance in `gce`.
 
-To destroy,
+To destroy your Kubernetes Cluster,
 
 ```bash
 gcloud container clusters delete jeffs-gke-cluster
@@ -91,7 +90,7 @@ gcloud container clusters delete jeffs-gke-cluster
 
 ## STEP 2 - CONNECT TO CLUSTER 
 
-To interact with the cluster, you need to authenticate. Run the following command:
+To interact with the cluster, you need to hook it up to kubectl.
 
 This following command configures `kubectl` to use the
 cluster you created.
@@ -106,7 +105,10 @@ This will make a `~/.kube` configuration folder.
 
 ## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER
 
-Lets deploy from a docker image (that has port 8080) at Dockerhub,
+Lets use a docker image (that has port 8080 exposed) from Dockerhub.
+
+I made a docker image `hello-go-deploy-gke` from my repo
+[hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke),
 
 ```bash
 kubectl run jeffs-web-counter \
@@ -116,18 +118,26 @@ kubectl run jeffs-web-counter \
 
 The deployment will run in a pod in one of the nodes.
 
-## STEP 4 - EXPOSE TO THE WORLD
+`gke` likes to call this a workload.  You can deploy as many as you want.
+
+Delete your image/service,
+
+```bash
+kubectl delete service jeffs-web-counter
+```
+
+## STEP 4 - EXPOSE SERVICE TO THE WORLD
 
 Using a `gke` load balancer,
 
 ```bash
-kubectl expose deployment hello-server
+kubectl expose deployment jeffs-web-counter \
     --type LoadBalancer \
     --port 80 \
     --target-port 8080
 ```
 
-## STEP 5 - INSPECT AND DELETE
+## STEP 5 - INSPECT SERVICE
 
 Inspect your service,
 
@@ -135,8 +145,4 @@ Inspect your service,
 kubectl get service jeffs-web-counter
 ```
 
-Delete your service,
 
-```bash
-kubectl delete service jeffs-web-counter
-```
