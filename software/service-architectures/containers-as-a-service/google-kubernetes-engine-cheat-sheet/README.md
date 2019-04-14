@@ -2,7 +2,7 @@
 
 `google kubernetes engine (gke)` _which is part of
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
-_alows you to deploy, manage, and scale containerized applications on Kubernetes._
+allows you to deploy, manage and scale containerized applications on Kubernetes._
 
 Part of four main compute engines at `gcp`,
 
@@ -31,62 +31,112 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-A node is simply a Virtual Machine running on the cluster.
+Each node is a VM instance on `gce`.
 
-A node pool is simply a “pool,” of machines with the same configuration.
+A node pool is a “pool,” of machines with the same configuration.
 
-All GKE clusters come with a default pool, and the default and
-the minimum number of nodes in a pool is 3.
+At `gke`, you are not charged for the master node.
 
-At gke, you are not charged for the master node.
+Refer to my
+[My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+for more information about Kubernetes.
 
 ## FREE RESOURCE
 
-No cluster management fee for clusters of all sizes. Each user node is charged at
-standard Compute Engine pricing.
+No cluster management fee for clusters of all sizes. 
+
+Each user node is charged at standard `gce` pricing.
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
-## CREATE A 1-NODE KUBERNETES CLUSTER ON GCE
+## STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON GKE
 
-Kubernetes clusters nodes will be put on `gce` VM instance.
+Since each node Each node is a VM instance on `gce`, to keep costs down we
+would create one node.
 
-### STEP 1 - USE gcloud TO CREATE YOUR CLUSTER
+I would use preemptible disk to keeps the costs even lower.
 
-I'm going to spark up an affordable 1 node pool.
-I did this via the console.
+`gke` will not charge you for the master node.
 
-* g1-small
-* 1 node
-* us-west1-a
-* Boot 10GB
-* preemptible
+You can use the console or gcloud to create a cluster.
 
-Should be around $5 per month.
-
-In addition to setting up GKE we need to add a couple firewall rules to
-allow the outside world to hit HTTP ports on our nodes.
+I like to script, so I'm using gcloud,
 
 ```bash
-gcloud container clusters create jeffs-3-node-cluster \
---disk-size=10
---disk-type=pd-standard
---
+gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
+    clusters create jeffs-gke-cluster-hello-go-deploy-gke \
+    --addons HorizontalPodAutoscaling,HttpLoadBalancing \
+    --disk-size "10" \
+    --disk-type "pd-standard" \
+    --enable-autorepair \
+    --enable-autoupgrade \
+    --enable-cloud-logging \
+    --enable-cloud-monitoring \
+    --image-type "COS" \
+    --machine-type "f1-micro" \
+    --no-enable-ip-alias \
+    --num-nodes "3" \
+    --preemptible \
+    --username "admin" \
+    --zone "us-west1-a" 
 ```
 
-You should see 3 instances in `gce`.
+You should see 3 instance in `gce`.
 
-### AUTHENTIFICATE 
+To destroy,
+
+```bash
+gcloud container clusters delete jeffs-gke-cluster
+```
+
+## STEP 2 - CONNECT TO CLUSTER 
 
 To interact with the cluster, you need to authenticate. Run the following command:
 
+This following command configures `kubectl` to use the
+cluster you created.
+
 ```bash
-gcloud container clusters get-credentials jeffs-3-node-cluster --zone us-west1-a --project jeffs-project-174816
+gcloud container clusters get-credentials jeffs-gke-cluster-hello-go-deploy-gke \
+    --zone us-west1-a \
+    --project $GCP_JEFFS_PROJECT_ID
 ```
 
 This will make a `~/.kube` configuration folder.
 
+## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER
 
+Lets deploy from a docker image (that has port 8080) at Dockerhub,
 
+```bash
+kubectl run jeffs-web-counter \
+    --image "jeffdecola/hello-go-deploy-gke:latest" \
+    --port "8080"
+```
 
+The deployment will run in a pod in one of the nodes.
 
+## STEP 4 - EXPOSE TO THE WORLD
+
+Using a `gke` load balancer,
+
+```bash
+kubectl expose deployment hello-server
+    --type LoadBalancer \
+    --port 80 \
+    --target-port 8080
+```
+
+## STEP 5 - INSPECT AND DELETE
+
+Inspect your service,
+
+```bash
+kubectl get service jeffs-web-counter
+```
+
+Delete your service,
+
+```bash
+kubectl delete service jeffs-web-counter
+```

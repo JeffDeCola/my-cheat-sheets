@@ -35,6 +35,6 @@ Here is a high level view of a Kubernetes Cluster,
 
 ## KUBECTL
 
-`kubestl` is a cli for running kubernetes commands.
+`kubectl` is a cli for running kubernetes commands.
 
 Install from [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
