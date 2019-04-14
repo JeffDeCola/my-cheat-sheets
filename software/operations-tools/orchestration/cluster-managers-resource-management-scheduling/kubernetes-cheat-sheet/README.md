@@ -6,8 +6,9 @@ Automating the deployment, scaling and management of containers._
 Documentation and reference,
 
 * [Kubernetes Documentation](https://dcos.io/)
+* [kubectl is Kubernetes cli](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-My CaaS cheat sheets and Repo are,
+My CaaS cheat sheets and repos are,
 
   * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet),
     [hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks)
@@ -28,6 +29,12 @@ automates the following on your containers,
 * Scaling
 * Management
 
-Here is a high level view of a Kubernetes cluster,
+Here is a high level view of a Kubernetes Cluster,
 
-![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../docs/pics/kubernetes-cluster-architecture.jpg)
+![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../../../docs/pics/kubernetes-cluster-architecture.jpg)
+
+## KUBECTL
+
+`kubestl` is a cli for running kubernetes commands.
+
+Install from [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
