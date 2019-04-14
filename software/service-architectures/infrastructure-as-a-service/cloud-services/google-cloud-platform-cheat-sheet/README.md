@@ -98,7 +98,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud spanner
   * cloud SQL (MySQL)
   * cloud SQL (Postgres)
-* Developer Tools
+* DEVELOPER TOOLS
   * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
   * cloud build
   * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
@@ -175,6 +175,7 @@ What are the main differences between `google cloud functions`,
 
 * FaaS -
   [Google Cloud Functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
+  * Severless
   * Events.
 * PaaS -
   [Google App Engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)

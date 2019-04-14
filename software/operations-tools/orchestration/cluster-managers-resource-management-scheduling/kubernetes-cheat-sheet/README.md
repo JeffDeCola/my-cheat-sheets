@@ -35,7 +35,7 @@ Here is a high level view of a Kubernetes Cluster,
 
 ## INSTALL KUBERNETES CLUSTER
 
-I use CaaS to create Kubernetes Clusters,
+I use CaaS to create my Kubernetes Clusters,
 
 * [Amazon eks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
 * [Google gke](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
