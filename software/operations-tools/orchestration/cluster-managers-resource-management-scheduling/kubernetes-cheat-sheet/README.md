@@ -37,9 +37,9 @@ Here is a high level view of a Kubernetes Cluster,
 
 I use CaaS to create Kubernetes Clusters,
 
-* [Amazon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
-* [Google](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
-* [Microsoft](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
+* [Amazon eks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
+* [Google gke](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* [Microsoft aks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
 
 ## KUBECTL
 
@@ -49,26 +49,61 @@ Install from [here](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
 ## BASIC KUBECTL COMMANDS
 
-Run(deploy)/delete a docker image from Dockerhub,
+Some basic commands I like and use.
+
+### NODES
+
+List nodes in a cluster,
+
+```bash
+kubectl get nodes
+```
+
+### PODS
+
+How many pods you have,
+
+```bash
+kubectl get pod
+```
+
+What pods are on what nodes,
+
+```bash
+kubectl get pods -o wide
+```
+
+### DEPLOY
+
+Run/deploy a docker image from Dockerhub to gke (A `workload`),
 
 ```bash
 kubectl run jeffs-web-counter \
     --image "jeffdecola/hello-go-deploy-gke:latest" \
     --port "8080"
-kubectl delete service jeffs-web-counter
 ```
 
-Inspect a running service,
+This will make a container in a pod.
 
-```bash
-kubectl get service jeffs-web-counter
-```
+### SERVICE
 
-Expose port with a load balancer,
+Create a `service` - Expose a port with a load balancer,
 
 ```bash
 kubectl expose deployment jeffs-web-counter
     --type LoadBalancer \
     --port 80 \
     --target-port 8080
+```
+
+Delete a `service`,
+
+```bash
+kubectl delete service jeffs-web-counter
+```
+
+Inspect a `service`,
+
+```bash
+kubectl get service jeffs-web-counter
 ```
