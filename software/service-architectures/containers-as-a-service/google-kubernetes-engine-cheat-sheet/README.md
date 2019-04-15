@@ -72,20 +72,22 @@ gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
     --enable-cloud-logging \
     --enable-cloud-monitoring \
     --image-type "COS" \
-    --machine-type "f1-micro" \
+    --machine-type "$MACHINE_TYPE" \
     --no-enable-ip-alias \
-    --num-nodes "3" \
+    --num-nodes "$NUM_NODES" \
     --preemptible \
     --username "admin" \
     --zone "us-west1-a" 
 ```
 
-You should see 3 instance in `gce`.
+You should see N instance in `gce`.
 
 To destroy your Kubernetes Cluster,
 
 ```bash
-gcloud container clusters delete jeffs-gke-cluster
+gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
+    clusters delete jeffs-gke-cluster-hello-go-deploy-gke \
+    --zone "us-west1-a" 
 ```
 
 Reference for this gcloud SDK command [here](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
@@ -105,22 +107,59 @@ gcloud container clusters get-credentials jeffs-gke-cluster-hello-go-deploy-gke 
 
 This will make a `~/.kube` configuration folder.
 
-## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER (CREATE WORKLOAD)
+## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER
+
+To deploy you can use a kubectl command (see below) or a yaml file.
+I like using a yaml file.
 
 Lets use a docker image (that has port 8080 exposed) from Dockerhub.
-
-I made a docker image `hello-go-deploy-gke` from my repo
+I'm using docker image `hello-go-deploy-gke` from my repo
 [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke),
 
 ```bash
-kubectl run jeffs-web-counter \
-    --image "jeffdecola/hello-go-deploy-gke:latest" \
-    --port "8080"
+kubectl create -f deploy.yaml
+```
+
+This is your yaml file,
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jeffs-web-counter-deployment
+spec:
+  selector:
+    matchLabels:
+      app: jeffs-web-counter
+  replicas: 2 # How many pods I want to create (Default 1 container per pod)
+  template:
+    metadata:
+      labels:
+        app: jeffs-web-counter
+    spec:
+      containers:
+      - name: jeffs-web-counter
+        image: jeffdecola/hello-go-deploy-gke:latest
+        ports:
+        - containerPort: 8080
 ```
 
 The deployment will run in a pod in one of the nodes.
 
-`gke` likes to call this a `workload`.  You can deploy as many `workloads` as you want.
+`gke` likes to call this a `workload`.
+
+Inspect your deployment,
+
+```bash
+kubectl get deployments
+kubectl get deployment jeffs-web-counter-deployment
+```
+
+Delete your deployment,
+
+```bash
+kubectl delete deployment jeffs-web-counter-deployment
+```
 
 ## STEP 4 - EXPOSE CONTAINER TO THE WORLD (CREATE SERVICE)
 
@@ -128,15 +167,31 @@ Using a `gke` load balancer you can expose your container to the word,
 Google calls this a `service`.
 
 ```bash
-kubectl expose deployment jeffs-web-counter \
-    --type LoadBalancer \
-    --port 80 \
-    --target-port 8080
+kubectl create -f service.yaml
+```
+
+This is your yaml file,
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: jeffs-web-counter-service
+spec:
+  selector:
+    app: jeffs-web-counter
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 31000
+  type: LoadBalancer
 ```
 
 Inspect your service,
 
 ```bash
+kubectl get services
 kubectl get service jeffs-web-counter
 ```
 
@@ -145,8 +200,6 @@ Delete your service,
 ```bash
 kubectl delete service jeffs-web-counter
 ```
-
-This will not delete the `workload`, just the `service`.
 
 ## KUBERNETES DASHBOARD (THIS IS NICE)
 
