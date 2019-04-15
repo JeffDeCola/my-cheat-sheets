@@ -102,7 +102,7 @@ cluster you created.
 ```bash
 gcloud container clusters get-credentials jeffs-gke-cluster-hello-go-deploy-gke \
     --zone us-west1-a \
-    --project $GCP_JEFFS_PROJECT_ID
+    --project "$GCP_JEFFS_PROJECT_ID"
 ```
 
 This will make a `~/.kube` configuration folder.
@@ -162,6 +162,8 @@ kubectl delete deployment jeffs-web-counter-deployment
 ```
 
 ## STEP 4 - EXPOSE CONTAINER TO THE WORLD (CREATE SERVICE)
+
+Services are endpoints that export ports to the outside world.
 
 Using a `gke` load balancer you can expose your container to the word,
 Google calls this a `service`.

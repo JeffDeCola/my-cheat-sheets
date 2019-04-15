@@ -1,6 +1,6 @@
 # KUBERNETES CHEAT SHEET
 
-`kubernetes` _is a container orchestration platform.
+`kubernetes` _(aka k8s) is a container orchestration platform.
 Automating the deployment, scaling and management of containers._
 
 Documentation and reference,
@@ -92,6 +92,8 @@ spec:
 ```
 
 ## SERVICES
+
+Services are endpoints that export ports to the outside world.
 
 To create a service you can use a kubectl command (see below)
 or a yaml file.
