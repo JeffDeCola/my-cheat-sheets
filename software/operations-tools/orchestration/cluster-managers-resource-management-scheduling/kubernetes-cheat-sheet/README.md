@@ -29,9 +29,27 @@ automates the following on your containers,
 * Scaling
 * Management
 
+Its a perfect solution for microservices.
+
 Here is a high level view of a Kubernetes Cluster,
 
 ![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../../../docs/pics/kubernetes-cluster-architecture.jpg)
+
+Solve the problems of,
+
+* Monitoring your services
+* Scaling base on load
+* Managing containers on multiple servers
+* Manual intervention
+
+## FEATURES
+
+* Managing multiple containers
+* Health checks (Redeploy)
+* Load balancing
+* Networking (Could be 100s of nodes but communication as if on one machine)
+* Rolling updates
+* Resource Usage Monitoring (Scaling)
 
 ## INSTALL KUBERNETES CLUSTER
 
@@ -40,6 +58,65 @@ I use CaaS to create my Kubernetes Clusters,
 * [Amazon eks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
 * [Google gke](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
 * [Microsoft aks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
+
+## DEPLOYMENT
+
+To deploy you can use a kubectl command (see below) or a yaml file.
+
+```bash
+kubectl create -f deploy.yaml
+```
+
+This is your yaml file,
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jeffs-web-counter-deployment
+spec:
+  selector:
+    matchLabels:
+      app: jeffs-web-counter
+  replicas: 2 # How many pods I want to create (Default 1 container per pod)
+  template:
+    metadata:
+      labels:
+        app: jeffs-web-counter
+    spec:
+      containers:
+      - name: jeffs-web-counter
+        image: jeffdecola/hello-go-deploy-gke:latest
+        ports:
+        - containerPort: 8080
+```
+
+## SERVICES
+
+To create a service you can use a kubectl command (see below)
+or a yaml file.
+
+```bash
+kubectl create -f service.yaml
+```
+
+This is your yaml file,
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: jeffs-web-counter-service
+spec:
+  selector:
+    app: jeffs-web-counter
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 31000
+  type: LoadBalancer
+```
 
 ## KUBECTL
 
@@ -73,37 +150,56 @@ What pods are on what nodes,
 kubectl get pods -o wide
 ```
 
-### DEPLOY
+### DEPLOY A CONTAINER
 
 Run/deploy a docker image from Dockerhub to gke (A `workload`),
 
 ```bash
-kubectl run jeffs-web-counter \
+kubectl run jeffs-web-counter-deployment \
+    --replicas 2 \
     --image "jeffdecola/hello-go-deploy-gke:latest" \
     --port "8080"
 ```
 
-This will make a container in a pod.
+This will make one container in a pod.
+I like to use yaml files to deploy rather than this command.
 
-### SERVICE
+Inspect your deployment,
+
+```bash
+kubectl get deployments
+kubectl get deployment jeffs-web-counter-deployment
+```
+
+Delete your deployment,
+
+```bash
+kubectl delete deployment jeffs-web-counter-deployment
+```
+
+### SERVICE (A LOAD BALANCER)
+
+How a user accesses a container.
 
 Create a `service` - Expose a port with a load balancer,
 
 ```bash
-kubectl expose deployment jeffs-web-counter
+kubectl expose deployment jeffs-web-counter-deployment \
+    --name jeffs-web-counter-service \
     --type LoadBalancer \
     --port 80 \
     --target-port 8080
 ```
 
-Delete a `service`,
+Inspect your service,
+
+```bash
+kubectl get services
+kubectl get service jeffs-web-counter
+```
+
+Delete your service,
 
 ```bash
 kubectl delete service jeffs-web-counter
-```
-
-Inspect a `service`,
-
-```bash
-kubectl get service jeffs-web-counter
 ```
