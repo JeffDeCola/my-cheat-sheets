@@ -83,13 +83,13 @@ An extensive list is
 
 * STORAGE
 
-## GET AN ACCOUNT AT GOOGLE CLOUD PLATFORM
+## GET AN ACCOUNT AT AWS
 
 First setup a
 [aws](https://aws.amazon.com/)
 account.
 
-## INTERACTING WITH GCP
+## INTERACTING WITH AWS???
 
 There are a few ways to interact with `gcp`,
 
@@ -98,12 +98,15 @@ There are a few ways to interact with `gcp`,
 * Using Google Cloud Client Libraries / API
   (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
 
-## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
+## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK) ???
 
 [Cloud SDK](https://cloud.google.com/sdk/docs/)
 is a command-line interface for Google Cloud
 Platform products and services.
 
 
+## IAM???
 
+
+## SERVICE ACCCOUNT KEY???
 
