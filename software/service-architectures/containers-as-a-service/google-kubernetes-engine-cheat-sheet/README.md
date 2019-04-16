@@ -15,6 +15,12 @@ Part of four main compute engines at `gcp`,
 * IaaS - Google Compute Engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
 
+Other CaaS solutions are,
+
+* [Amazon Elastic Container Service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
+* [Amazon Elastic Container Service for Kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
+* [Microsoft Azure Kubernetes Service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
+
 Documentation and reference,
 
 * [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
@@ -92,7 +98,7 @@ gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
 
 Reference for this gcloud SDK command [here](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)
 
-## STEP 2 - CONNECT TO CLUSTER 
+## STEP 2 - CONNECT TO CLUSTER
 
 To interact with the cluster, you need to hook it up to kubectl.
 
@@ -107,7 +113,7 @@ gcloud container clusters get-credentials jeffs-gke-cluster-hello-go-deploy-gke 
 
 This will make a `~/.kube` configuration folder.
 
-## STEP 3 - DEPLOY A DOCKER IMAGE TO GKE CLUSTER
+## STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)
 
 To deploy you can use a kubectl command (see below) or a yaml file.
 I like using a yaml file.
@@ -161,7 +167,7 @@ Delete your deployment,
 kubectl delete deployment jeffs-web-counter-deployment
 ```
 
-## STEP 4 - EXPOSE CONTAINER TO THE WORLD (CREATE SERVICE)
+## STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)
 
 Services are endpoints that export ports to the outside world.
 
@@ -203,7 +209,7 @@ Delete your service,
 kubectl delete service jeffs-web-counter
 ```
 
-## KUBERNETES DASHBOARD (THIS IS NICE)
+## KUBERNETES DASHBOARD
 
 If you noticed we used the addon KubernetesDashboard when we created our cluster.
 

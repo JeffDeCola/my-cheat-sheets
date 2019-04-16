@@ -1,6 +1,6 @@
 # KUBERNETES CHEAT SHEET
 
-`kubernetes` _(aka k8s) is a container orchestration platform.
+`kubernetes` _(aka k8s) is an open source container orchestration platform.
 Automating the deployment, scaling and management of containers._
 
 Documentation and reference,
@@ -35,12 +35,17 @@ Here is a high level view of a Kubernetes Cluster,
 
 ![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../../../docs/pics/kubernetes-cluster-architecture.jpg)
 
-Solve the problems of,
+* Master Node
+  * The brains of the cluster
+  * API Server: Entry point for REST/kubectl.
+  * Scheduler: Schedules pods to nodes.
+  * Controller-Manager: Evaluating current and desired state.
+  * etcd: Key/Value Store.
 
-* Monitoring your services
-* Scaling base on load
-* Managing containers on multiple servers
-* Manual intervention
+* Worker Nodes
+  * Runs the containers
+  * kubelet: API for node.
+  * kube-proxy: Manages IP and routing
 
 ## FEATURES
 
@@ -50,6 +55,13 @@ Solve the problems of,
 * Networking (Could be 100s of nodes but communication as if on one machine)
 * Rolling updates
 * Resource Usage Monitoring (Scaling)
+
+Kubernetes solves the problems of,
+
+* Monitoring your services
+* Scaling base on load
+* Managing containers on multiple servers
+* Manual intervention
 
 ## INSTALL KUBERNETES CLUSTER
 
