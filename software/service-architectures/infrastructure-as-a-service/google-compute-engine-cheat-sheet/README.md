@@ -1,7 +1,7 @@
 # GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
 `google compute engine (gce)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
@@ -59,7 +59,7 @@ In order to use `gce` you will need,
 * CONNECT TO VM - ssh keys ($HOME/.ssh/gcp-ssh-key.pub and gcp-ssh-key (pair)).
 
 Refer to
-[google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+[google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 to get all this set up.
 
 ## FREE RESOURCE (f1-micro)

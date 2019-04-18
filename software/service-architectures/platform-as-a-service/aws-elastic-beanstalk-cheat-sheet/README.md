@@ -5,7 +5,7 @@
 ```
 
 `aws elastic beanstalk` _which is part of
-[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
+[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
 provides PaaS._
 
 Part of five main compute engines at `aws`,

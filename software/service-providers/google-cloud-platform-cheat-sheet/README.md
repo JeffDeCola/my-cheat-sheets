@@ -1,9 +1,9 @@
 # GOOGLE CLOUD PLATFORM (GCP) CHEAT SHEET
 
 `google cloud platform (gcp)` _is a massive suite of cloud computing services like
-[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
+[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
 or
-[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/microsoft-azure-cheat-sheet)._
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)._
 
 Documentation and reference,
 
@@ -26,10 +26,10 @@ Here are my gcp cheat sheets so far,
   [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
 * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
   [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-* [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
-* [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-* [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+* [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+* [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+* [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+* [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
 
 ## GCP FREE RESOURCES
 
@@ -85,7 +85,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud datalab
   * cloud dataprep
   * cloud dataproc
-  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
     cheat sheet
   * google bigquery
   * google data studio
@@ -99,9 +99,9 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * cloud SQL (MySQL)
   * cloud SQL (Postgres)
 * DEVELOPER TOOLS
-  * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
+  * [cloud SDK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#google-cloud-software-development-kit-sdk)
   * cloud build
-  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
     cheat sheet
   * cloud tools for IntelliJ
   * cloud tools for powershell
@@ -122,7 +122,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * stackdriver debugger
   * stackdriver error reporting
   * stackdriver logging
-  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
     cheat sheet
   * stackdriver profiler
   * stackdriver trace
@@ -159,7 +159,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
   * security key enforcement
   * vpc service controls
 * STORAGE
-  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
     cheat sheet
   * cloud storage nearline
   * cloud storage coldline
@@ -323,7 +323,7 @@ These include,
 * `gsutil`
   [doc](https://cloud.google.com/storage/docs/gsutil),
   is the command-line tool for
-  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
+  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
 * `bq`
   [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
   is the command-line tool for BigQuery.

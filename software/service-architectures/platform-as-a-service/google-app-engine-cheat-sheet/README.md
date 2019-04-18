@@ -1,7 +1,7 @@
 # GOOGLE APP ENGINE (GAE) CHEAT SHEET
 
 `google app engine (gae)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 provides a serverless application platform that you can use to run an App._
 
 Part of four main compute engines at `gcp`,
@@ -206,7 +206,7 @@ gcloud app browse
 ## EXAMPLE 2 - LETS ADD A LITTLE STRUCTURE
 
 Lets use
-[google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+[google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 to add some static web pages.
 
 ## FILE/DIRECTOR STRUCTURE

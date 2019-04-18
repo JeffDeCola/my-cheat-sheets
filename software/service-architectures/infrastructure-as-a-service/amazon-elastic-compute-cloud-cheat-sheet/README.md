@@ -1,7 +1,7 @@
 # AMAZON ELASTIC COMPUTE CLOUD (EC2) CHEAT SHEET
 
 `amazon elastic compute cloud (ec2)` _which is part of
-[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
+[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
 provides IaaS._
 
 Part of five main compute engines at `aws`,
@@ -52,7 +52,7 @@ In order to use `ec2`, you will need,
 * CONNECT TO VM - ssh keys ($HOME/.ssh/jeffs-aws-ssh-keys.pem).
 
 Refer to
-[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
+[amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
 to get all this set up.
 
 ## FREE RESOURCE (t2.micro)
