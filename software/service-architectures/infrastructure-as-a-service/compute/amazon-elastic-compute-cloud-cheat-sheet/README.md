@@ -199,7 +199,7 @@ This cheat sheet will focus on `aws`.
 
 ## ELASTIC COMPUTE CLOUD (EC2) MAIN SECTIONS
 
-There are ??  main section of gce:
+There are ??  main section of ec2:
 
 *
 *
@@ -214,9 +214,38 @@ App/service may be running on `ec2`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `????` control the show (They deploy and scale VM instances).
 
-![IMAGE -  amazon elastic compute cloud app service view - IMAGE](../../../../../docs/pics/ec2-app-service-view.jpg)
+![IMAGE -  ec2-architecture-view - IMAGE](../../../../../docs/pics/ec2-architecture-view.jpg)
 
 ### IMAGES
+
+As shown in the above illustration, images are used for deploying
+your VM instance.
+
+A machine `image` is a single static unit that contains
+a pre-configured operating system and installed software which
+is used to quickly create new running machines.
+
+There are two basic types of `ec2` `images`,
+
+* Amazon Machine Images (AMI) are provided and maintained by Amazon,
+  open-source communities, and third-party vendors.
+* `Custom AMI` are available only to your project.
+  You can create a custom image from `boot disks` or other `images`.
+
+* [Create a custom ami using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
+  Do this one.  Your best option.
+
+List your images,
+
+```bash
+list
+```
+
+Delete an image,
+
+```bash
+???? delete <IMAGENAME>
+```
 
 ### ???
 
