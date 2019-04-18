@@ -217,7 +217,7 @@ Here is a high-level illustration,
 
 ![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
-## GET AN ACCOUNT AT GOOGLE CLOUD PLATFORM
+## GET AN ACCOUNT AT GCP
 
 First setup a
 [google cloud platform](https://cloud.google.com/)
@@ -229,82 +229,7 @@ Then submit your billing information.
 * [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
 * [Your gcp Dashboard](https://console.cloud.google.com/home/dashboard)
 
-## INTERACTING WITH GCP
-
-There are a few ways to interact with `gcp`,
-
-* Using the gui/console.
-* Using the SDK cli (e.g. `gcloud`). See below.
-* Using Google Cloud Client Libraries / API
-  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
-
-## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK)
-
-[Cloud SDK](https://cloud.google.com/sdk/docs/)
-is a command-line interface for Google Cloud
-Platform products and services.
-
-These include,
-
-* `gcloud`
-  [doc](https://cloud.google.com/sdk/gcloud/),
-  [reference](https://cloud.google.com/sdk/gcloud/reference/)
-  provides the primary command-line tool for Google Cloud Platform.
-* `gsutil`
-  [doc](https://cloud.google.com/storage/docs/gsutil),
-  is the command-line tool for
-  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
-* `bq`
-  [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
-  is the command-line tool for BigQuery.
-
-## INSTALL AND CONFIGURE THE gcloud SOFTWARE DEVELOPMENT KIT (SDK)
-
-There is great documentation online to install the SDK on your
-particular platform [here](https://cloud.google.com/sdk/).
-
-After installation configure,
-
-```bash
-gcloud init
-```
-
-You will be asked to attached a GCP project and a default compute region.
-When complete, check your active configuration,
-
-```bash
-gcloud config list
-gcloud auth list
-gcloud info
-```
-
-See what components you have installed,
-
-```bash
-gcloud components list
-```
-
-You can add components as needed. For example,
-to add `gae` go extensions,
-
-```bash
-gcloud components update
-gcloud components install app-engine-go
-```
-
-Your configuration file is located `~/.boto`.
-
-To change your default region/zone,
-
-```bash
-gcloud config set compute/region NAME
-gcloud config set compute/zone NAME
-```
-
-For more information on the configuration file `.boto` go
-[here](https://cloud.google.com/storage/docs/gsutil/commands/config).
-
-## CLOUD IAM - CLOUD IDENTITY AND ACCESS MANAGEMENT - SERVICE ACCOUNTS
+## IDENTITY & ACCESS MANAGEMENT (IAM) - SERVICE ACCOUNTS
 
 Allowing Apps & users access & rights via service accounts.
 
@@ -348,7 +273,7 @@ Or switch projects on your local machine,
 gcloud config set project <my_project>
 ```
 
-## CREATE A SERVICE ACCOUNT KEY
+To create a service account key,
 
 These are the steps,
 
@@ -372,6 +297,82 @@ export GCP_SERVICE_ACCOUNT_KEY_PATH='/home/jeff/.config/gcloud/<name>.json'
 
 Then you can use this env variables in your deployments and
 it is kept secret on your local machine.
+
+## INTERACTING WITH GCP
+
+There are a few ways to interact with `gcp`,
+
+* Using the gui/console.
+* Using the SDK cli (e.g. `gcloud`). See below.
+* Using Google Cloud Client Libraries / API
+  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
+  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/google-gcp).
+
+## GCLOUD CLI
+
+[Cloud SDK](https://cloud.google.com/sdk/docs/)
+is a command-line interface for Google Cloud
+Platform products and services.
+
+These include,
+
+* `gcloud`
+  [doc](https://cloud.google.com/sdk/gcloud/),
+  [reference](https://cloud.google.com/sdk/gcloud/reference/)
+  provides the primary command-line tool for Google Cloud Platform.
+* `gsutil`
+  [doc](https://cloud.google.com/storage/docs/gsutil),
+  is the command-line tool for
+  [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md).
+* `bq`
+  [doc](https://cloud.google.com/bigquery/docs/bq-command-line-tool),
+  is the command-line tool for BigQuery.
+
+### GCLOUD CLI - INSTALL
+
+There is great documentation online to install the SDK on your
+particular platform [here](https://cloud.google.com/sdk/).
+
+### GCLOUD CLI - CONFIGURE
+
+```bash
+gcloud init
+```
+
+You will be asked to attached a GCP project and a default compute region.
+When complete, check your active configuration,
+
+```bash
+gcloud config list
+gcloud auth list
+gcloud info
+```
+
+See what components you have installed,
+
+```bash
+gcloud components list
+```
+
+You can add components as needed. For example,
+to add `gae` go extensions,
+
+```bash
+gcloud components update
+gcloud components install app-engine-go
+```
+
+Your configuration file is located `~/.boto`.
+
+To change your default region/zone,
+
+```bash
+gcloud config set compute/region NAME
+gcloud config set compute/zone NAME
+```
+
+For more information on the configuration file `.boto` go
+[here](https://cloud.google.com/storage/docs/gsutil/commands/config).
 
 ## SOME BASIC GCP COMMANDS
 
