@@ -1,7 +1,7 @@
 # GOOGLE SOURCE REPOSITORIES (GIT) CHEAT SHEET
 
 `google source repositories (git)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 _is a private git repositories hosted on Google Cloud Platform
 that has a lot of limitations._
 

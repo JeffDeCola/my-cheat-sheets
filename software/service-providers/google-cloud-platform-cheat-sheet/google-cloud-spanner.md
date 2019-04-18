@@ -5,7 +5,7 @@
 ```
 
 `google cloud spanner` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 is a horizontally scalable relational database
 service from google._
 

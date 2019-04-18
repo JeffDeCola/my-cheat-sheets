@@ -5,7 +5,7 @@
 ```
 
 `microsoft azure app service` _which is part of
-[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/microsoft-azure-cheat-sheet)
+[microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 provides FaaS._
 
 Part of four main compute engines at `microsoft azure`,

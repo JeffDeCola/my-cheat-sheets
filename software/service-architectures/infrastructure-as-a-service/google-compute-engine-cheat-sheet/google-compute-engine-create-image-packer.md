@@ -33,7 +33,7 @@ variable `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` that points to the
 location of the service account file.
 
 For information how to set this up checkout my cheat sheet
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet#create-a-service-account-key)
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#create-a-service-account-key)
 
 ## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
 
