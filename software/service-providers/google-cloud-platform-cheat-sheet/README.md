@@ -24,7 +24,7 @@ Here are my gcp cheat sheets so far,
   [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
 * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
   [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet),
   [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
 * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
@@ -76,7 +76,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
     cheat sheet (PaaS)
   * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
     cheat sheet (CaaS)
-  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
     cheat sheet (IaaS)
   * shielded VMs
 * DATA AND ANALYTICS
@@ -163,7 +163,7 @@ An extensive list is [here](https://cloud.google.com/docs/).
     cheat sheet
   * cloud storage nearline
   * cloud storage coldline
-  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  * [persistent disk (VM boot disk)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
     cheat sheet
   * cloud firestore
 
@@ -191,7 +191,7 @@ What are the main differences between `google cloud functions`,
   * Autoscaling.
   * GCE Resources integrated. Kubernetes runs on `gce`.
 * IaaS -
-  [Google Compute Engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet)
+  [Google Compute Engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
   * You have full control/responsibility for server.
   * Create your own VM instance by allocating hardware specific resources
     (e.g. RAM, CPU, Storage).
@@ -215,7 +215,7 @@ So what is this all good for?
 
 Here is a high-level illustration,
 
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../docs/pics/gce-vs-gke-vs-gae.jpg)
 
 ## GET AN ACCOUNT AT GCP
 
@@ -235,7 +235,7 @@ Allowing Apps & users access & rights via service accounts.
 
 As an illustration,
 
-![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
 
 You create service account and define the roles those users or Apps can do.
 

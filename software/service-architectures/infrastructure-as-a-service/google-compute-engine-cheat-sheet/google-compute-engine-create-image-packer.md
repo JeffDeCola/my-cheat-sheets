@@ -23,7 +23,7 @@ The following illustration shows how `packer` controls the automation of
 building an `image`.  As you can see, it all stems from one
 configuration file `gce-packer-template.json`.
 
-![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../../docs/pics/gce-create-custom-image-packer.jpg)
+![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
 
 ## GIVE PACKER AUTHENTICATION
 
