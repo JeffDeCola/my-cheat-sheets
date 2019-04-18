@@ -189,7 +189,7 @@ App/service may be running on `gce`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `instance groups` control the show (They deploy and scale VM instances).
 
-![IMAGE -  google compute engine app service view instance groups - IMAGE](../../../../../docs/pics/gce-app-service-view-instance-groups.jpg)
+![IMAGE -  gce-architecture-view - IMAGE](../../../../../docs/pics/gce-architecture-view.jpg)
 
 The following illustration is a more detailed view of gce,
 
