@@ -17,7 +17,7 @@ Part of four main compute engines at `microsoft azure`,
 * CaaS - Microsoft Azure Kubernetes Service
   [(aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
 * IaaS - Microsoft Azure Virtual Machines
-  [(azure vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-virtual-machines-cheat-sheet)
+  [(azure vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet)
 
 Documentation and reference,
 

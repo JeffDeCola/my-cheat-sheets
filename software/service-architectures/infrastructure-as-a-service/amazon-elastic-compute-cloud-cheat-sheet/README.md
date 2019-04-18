@@ -14,7 +14,7 @@ Part of five main compute engines at `aws`,
   [(amazon ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
   [(amazon eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
 * IaaS - Amazon Elastic Compute Cloud
-  [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet)
+  [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
 Documentation and reference,
 * Your
@@ -214,7 +214,7 @@ App/service may be running on `ec2`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `????` control the show (They deploy and scale VM instances).
 
-![IMAGE -  ec2-architecture-view - IMAGE](../../../../../docs/pics/ec2-architecture-view.jpg)
+![IMAGE -  ec2-architecture-view - IMAGE](../../../../docs/pics/ec2-architecture-view.jpg)
 
 ### IMAGES
 
@@ -232,7 +232,7 @@ There are two basic types of `ec2` `images`,
 * `Custom AMI` are available only to your project.
   You can create a custom image from `boot disks` or other `images`.
 
-* [Create a custom ami using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
+* [Create a custom ami using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
   Do this one.  Your best option.
 
 List your images,

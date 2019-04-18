@@ -68,7 +68,7 @@ An extensive list is
     cheat sheet (CaaS)
   * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
     cheat sheet (CaaS)
-  * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet)
+  * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
     cheat sheet (IaaS)
   * batch
   * ecr
@@ -251,7 +251,7 @@ Where Users have groups & policies and Roles (apps) have just policies.
 
 As an illustration,
 
-![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
 
 Refer to the console
 [here](https://console.aws.amazon.com/iam/home#/home)
