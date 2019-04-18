@@ -48,6 +48,20 @@ And your VM instance can contain Apps, services, containers, etc...
 you to easily launch large compute clusters on Google's infrastructure.
 There are no upfront investments.  Pay what you use.
 
+## WHAT YOU NEED IN ORDER TO USE GCE
+
+In order to use `gce` you will need,
+
+* ACCOUNT - GCP Account (with billing).
+* CREDENTIALS - Service Account ($HOME/.config/gcloud/<name>.json).
+* API - `gcloud` cli or client libraries.
+* YOUR WORLD AT GOOGLE - Project at google.
+* CONNECT TO VM - ssh keys ($HOME/.ssh/gcp-ssh-key.pub and gcp-ssh-key (pair)).
+
+Refer to
+[google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
+to get all this set up.
+
 ## FREE RESOURCE (f1-micro)
 
 As of my last update, there is a free
@@ -153,9 +167,10 @@ There are a few ways to interact with `gce`,
 * Using the gui/console.
 * Using the SDK cli (e.g. `gcloud`). See below.
 * Using Google Cloud Client Libraries / API
-  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
+  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
+  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/google-gcp).
 
-This cheat sheet will be focused on the SDK/gcloud.
+This cheat sheet will be focused on the `gcloud`.
 
 ## GOOGLE COMPUTE ENGINE (GCE) MAIN SECTIONS
 
@@ -424,7 +439,7 @@ curl http://metadata.google.internal/computeMetadata/v1\
     -H 'Metadata-Flavor: Google'
 ```
 
-## INSTANCES - GCE METADATA - STARTUP SCRIPTS
+### INSTANCES - GCE METADATA - STARTUP SCRIPTS
 
 You can perform a startup script on instances you create.
 Google calls this metadata.

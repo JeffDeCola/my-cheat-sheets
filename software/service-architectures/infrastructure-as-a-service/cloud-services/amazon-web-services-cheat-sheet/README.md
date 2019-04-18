@@ -16,7 +16,7 @@ View my entire list of cheat sheets on
 ## AWS FREE RESOURCES
 
 There are a lot of
-[free resources](???????????????)
+[free resources](https://aws.amazon.com/free/)
 across aws.
  
 ## AMAZON WEB SERVICES (AWS) OVERVIEW
@@ -65,6 +65,7 @@ An extensive list is
   * [aws elastic beanstalk](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/aws-elastic-beanstalk-cheat-sheet)
     cheat sheet (PaaS)
   * [amazon elastic container service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
+    cheat sheet (CaaS)
   * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
     cheat sheet (CaaS)
   * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet)
@@ -237,24 +238,125 @@ First setup a
 [aws](https://aws.amazon.com/)
 account.
 
-## INTERACTING WITH AWS???
+## IDENTITY & ACCESS MANAGEMENT (IAM) - ACCESS KEYS
 
-There are a few ways to interact with `gcp`,
+AWS makes access easy via access keys.
+
+There are two basic types,
+
+* Users
+* Roles (for apps)
+
+Where Users have groups & policies and Roles (apps) have just policies.
+
+As an illustration,
+
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+
+Refer to the console
+[here](https://console.aws.amazon.com/iam/home#/home)
+
+Its pretty straightforward to create an access key for a app or a user.
+
+Use `awc` cli to create your local ~/.aws credential files (see below).
+
+## VIRTUAL PRIVATE CLOUD
+
+Amazon Virtual Private Cloud (Amazon VPC) enables you to launch
+Amazon Web Services (AWS) resources into a virtual network that
+you've defined. This virtual network closely resembles a traditional
+network that you'd operate in your own data center, with the benefits
+of using the scalable infrastructure of AWS.
+
+I'm assuming this is like projects in `gcp`.
+
+You will need one, so go
+[here](https://us-west-1.console.aws.amazon.com/vpc/home?region=us-west-1)
+to make one.
+
+## INTERACTING WITH AWS
+
+There are a few ways to interact with `aws`,
 
 * Using the gui/console.
-* Using the SDK cli (e.g. `gcloud`). See below.
-* Using Google Cloud Client Libraries / API
-  (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
+* Using the aws cli (e.g. `aws`). See below.
+* Using aws SDK Client Libraries / API
+  (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)). 
+  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/amazon-aws).
 
-## GOOGLE CLOUD SOFTWARE DEVELOPMENT KIT (SDK) ???
+This cheat sheet will focus on `aws`.
 
-[Cloud SDK](https://cloud.google.com/sdk/docs/)
-is a command-line interface for Google Cloud
-Platform products and services.
+## AWS CLI
 
+[aws cli](https://aws.amazon.com/cli/)
+is a command-line interface for aws
+products and services.
 
-## IAM???
+### AWS CLI - INSTALL
 
+Install using pip,
 
-## SERVICE ACCCOUNT KEY???
+```python
+pip3 install awscli --upgrade --user
+```
 
+On my macbook it placed the binary in,
+
+```txt
+~/Library/Python/3.7/bin
+```
+
+On ubuntu it places in,
+
+```txt
+~/.local/bin
+```
+
+Update your path in ~/.bashrc
+
+```bash
+export PATH=~/Library/Python/3.7/bin:$PATH
+export PATH=~/.local/bin:$PATH
+```
+
+See the version,
+
+```bash
+aws --version
+```
+
+### AWS CLI - CONFIGURE
+
+```bash
+aws configure
+```
+
+It will ask you to enter,
+
+```bash
+AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXXXXX
+AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Default region name [None]: us-west-1
+Default output format [None]: json
+```
+
+It will place a configuration & configuration in,
+
+```txt
+~/.aws/config
+~/.aws/credentials
+```
+
+## SOME BASIC AWS COMMANDS
+
+GCP Help,
+
+```bash
+aws help
+```
+
+Version,
+
+```bash
+aws --v
+```
