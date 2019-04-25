@@ -1,13 +1,13 @@
 # CREATE A CUSTOM IMAGE USING PACKER CHEAT SHEET
 
 `create a custom image using packer` _is a way
-to create a custom image on `gce`._
+to create a custom image on `ec2`._
 
-My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
+My Repo example is [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2).
 
 Documentation and reference,
 
-* [gce template file reference](https://www.packer.io/docs/builders/googlecompute.html)
+* [ec2 template file reference](https://www.packer.io/docs/builders/amazon.html)
 * My cheat sheet on
   [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
 
@@ -21,19 +21,19 @@ This is exactly what we want to do.
 
 The following illustration shows how `packer` controls the automation of
 building an `image`.  As you can see, it all stems from one
-configuration file `gce-packer-template.json`.
+configuration file `ec2-packer-template.json`.
 
-![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
+![IMAGE -  amazon elastic compute cloud create custom image packer - IMAGE](../../../../docs/pics/ec2-create-custom-image-packer.jpg)
 
 ## GIVE PACKER AUTHENTICATION
 
 Packer needs to be authorized to use your `gce` account.
-This is done using a google service account file. We already setup an env
-variable `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` that points to the
-location of the service account file.
+This is done using a key access file. We already setup an env ??
+variable `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` that points to the ??
+location of the service account file. ??
 
 For information how to set this up checkout my cheat sheet
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#identity--access-management-iam---service-accounts)
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#identity--access-management-iam---access-keys)
 
 ## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
 

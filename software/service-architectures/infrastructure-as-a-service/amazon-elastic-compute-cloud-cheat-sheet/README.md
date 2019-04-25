@@ -232,8 +232,14 @@ There are two basic types of `ec2` `images`,
 * `Custom AMI` are available only to your project.
   You can create a custom image from `boot disks` or other `images`.
 
-* [Create a custom ami using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
+Refer to these cheat sheets for creating a custom image
+(I recommended using
+[packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)),
+
+* [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
   Do this one.  Your best option.
+* [Create a custom image using aws cli](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-aws-cli.md).
+* Create a custom image using console - Just click a few buttons.
 
 List your images,
 
