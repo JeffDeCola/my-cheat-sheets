@@ -30,6 +30,24 @@ Vagrant can run on providers such as,
 
 ![IMAGE - vagrant-overview - IMAGE](../../../../docs/pics/vagrant-overview.jpg)
 
+## HOW DOES WORK?
+
+The process is pretty simple,
+
+* STEP 1 - GET BASE BOX/IMAGE
+  * Starts with a box/image (for a particular provider) that contains the base operating system.
+* STEP 2 - CONFIGURE ON PROVIDER
+  * Based on your configuration for your provider, fires up a VM/Container.
+* STEP 3 PROVISION
+  * Provisions it.
+
+All of this information is neatly contained within the Vagrantfile (see below).
+
+## WHAT IS A VAGRANT BOX
+
+The vagrant box is basically all the info needed to
+fire up a VM/container on a provider.  Vagrant packages it as such.
+
 ## INSTALL
 
 Visit [vagrant downloads](https://www.vagrantup.com/downloads.html).
@@ -50,11 +68,26 @@ Search for vagrant boxes at
 Vagrants uses a declarative config file which describes your
 software requirements, packages, OS configuration, users, etc..
 
-A simple Vagrantfile will look like,
+A simple Vagrantfile for firing up a VirtualBox VM on Windows may look like,
 
 ```bash
 Vagrant.configure("2") do |config|
-  config.vm.box = "ubuntu/xenial64"
+
+  # STEP 1 - GET BASE BOX
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_version = "latest"
+
+  # STEP 2 - CONFIGURE ON PROVIDER (WINDOWS VIRTUALBOX)
+  config.vm.provider "virtualbox" do |vb|
+        vb.name = 'ubuntu-1604-virtualbox-vm'
+        vb.gui = true
+        vb.memory = 8192
+        vb.cpus = 2
+  end
+
+  # STEP 3 - PROVISION
+  config.vm.provision "shell", inline: "sudo apt-get install htop"
+
 end
 ```
 
