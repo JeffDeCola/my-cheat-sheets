@@ -6,25 +6,28 @@
 
 `my-cheat-sheets` _is a place to keep all my cheat sheets
 on everything you need for the complete development of
-ASIC hardware or a software App/service._
+ASIC hardware or a software App/Service._
 
-The folder structures are organized alphabetically as follows:
+These cheat sheets contain info I gathered from other sources and
+figured out over time.
 
-* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
-  for the goal of creating an ASIC.
+The folder structures are organized alphabetically as follows,
+
+* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) - 
+  For the goal of creating an ASIC
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
 
-* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)
-  are random things I'm interested in.
+* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
+  Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
-* [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-  for the goal of creating a App/service.
+* [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets) -
+  For the goal of creating a App/Service
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
@@ -41,9 +44,6 @@ The folder structures are organized alphabetically as follows:
     * AMAZON AWS
     * GOOGLE GCP
     * MICROSOFT AZURE
-
-These cheat sheets contain info I gathered from other sources and
-figured out over time.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -124,14 +124,15 @@ Random other things I'm interested in.
 
 ## SOFTWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating a App/service.
+Various Apps and tools for the goal of creating a App/Service.
 
 ### DEVELOPMENT
 
 * DEVELOPMENT ENVIRONMENTS
 
   * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/software-install-methods-cheat-sheet)
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet),
+    [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
 
@@ -212,7 +213,8 @@ Various Apps and tools for the goal of creating a App/service.
 
   * BUILDS / DEPLOYMENT / CONTAINERS
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet),
+      [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
@@ -293,8 +295,8 @@ This illustration coming soon.
 
 ## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
-Here is my illustration on how various Apps and tools fit together
-for the goal of creating a App/service,
+This illustration shows how various Apps and tools fit together
+for the goal of creating a App/Service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 

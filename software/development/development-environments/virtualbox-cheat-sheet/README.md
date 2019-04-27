@@ -2,7 +2,8 @@
 
 `virtualbox` _a "virtualization" product, allows you to
 run an operating system (guest) on top of your existing
-operating system (host)_.
+operating system (host).  You can think of it as a sandbox of an OS
+running on your computer_.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

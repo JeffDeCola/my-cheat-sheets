@@ -33,3 +33,9 @@ This highlights the main cores and the architecture used.
 | ARMv8-A          |            ARM Cortex-A53 |       Broadcom BCM2837 |
 | ARMv8.2-A        |            ARM Cortex-A55 |                        |
 
+SolidRun's
+[Hummingboard SBC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+uses Freescale's i.MX6 chip.
+
+[Raspberry Pi 3 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+uses a Broadcom BCM2837 chip.

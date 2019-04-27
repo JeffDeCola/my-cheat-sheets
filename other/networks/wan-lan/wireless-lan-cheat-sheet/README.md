@@ -6,9 +6,13 @@ local area networking of devices based on the IEEE 802.11 standards._
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## WHY IS IT CALLED WI-FI
+
+Who knows.  I would guess because it sounds cool.
+
 ## VERSIONS
 
-These are approximations,
+These are pretty big approximations,
 
 |  Ver |  ANTENNAS |  FREQ (GHz)|  DATA RATE (Mbps) |
 |-----:|----------:|-----------:|------------------:|

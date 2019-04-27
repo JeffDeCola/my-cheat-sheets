@@ -19,7 +19,7 @@ To use this, it must be burned on a microSD card.
 * With your computer, use `Win32DiskImager`
   to burn the image on a microSD card.
 
-I would label this card since its easy to forget.
+I would label this microSD card since its easy to forget.
 
 ## USE "IGNITION" TO INSTALL AN OS ON A microSD TO USE FOR YOUR HUMMINGBOARD
 
@@ -43,8 +43,8 @@ Choose a distro such as:
 * Android-kitkat 4.4.4
 
 Place another microSD card in your hummingboard and install
-your image.  Do not write over the `Ignition` microSD card,
-like I did.
+your image.  Do not write over the `Ignition` microSD card
+(like I did).
 
 Note, depending on your hummingboard version, not all OS
 distributions will work.
