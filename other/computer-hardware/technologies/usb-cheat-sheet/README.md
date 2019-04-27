@@ -24,7 +24,7 @@ specifications: USB 1.x, USB 2.0, USB 3.x.
 
 ss is superspeed.
 
-## APPLE'S THUNDERBOLT
+## APPLE THUNDERBOLT
 
 |  VER      | RELEASE | MAX DATA |        PORT TYPE |
 |----------:|--------:|---------:|-----------------:|

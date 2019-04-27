@@ -1,13 +1,13 @@
 # SPECIFICATIONS CHEAT SHEET
 
-`specifications` _of Raspberry Pi models 1, 2 and 3._
+`specifications` _of Raspberry Pi models 1, 2 and 3 SBCs._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SPECIFICATIONS
+## SPECIFICATIONS FOR VARIOUS MODELS
 
-Not listing the Rasp Pi Zero.
+Not listed is the Rasp Pi Zero.
 
 |               |  Rasp Pi Model B+ | Rasp Pi 2 Model B | Rasp Pi 3 Model B |
 |:--------------|------------------:|------------------:|------------------:|
@@ -25,3 +25,6 @@ Not listing the Rasp Pi Zero.
 | Video Out     |   HDMI/Composite  |    HDMI/Composite |    HDMI/Composite |
 | Audio Out     |   HDMI/Headphone  |    HDMI/Headphone |    HDMI/Headphone |
 | GPIO          |                40 |                40 |                40 |
+
+BCM chips are from Broadcom. Refer to my cheat sheet on
+[ARM architectures](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet).
