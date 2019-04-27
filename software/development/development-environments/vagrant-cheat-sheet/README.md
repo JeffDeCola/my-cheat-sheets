@@ -1,6 +1,6 @@
 # VAGRANT CHEAT SHEET
 
-`vagrant` _creates and configures (manages) portable development environments._
+`vagrant` _is a tool from HashiCorp that creates and configures (manages) portable development environments._
 
 Check out my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes).
 
@@ -8,6 +8,8 @@ View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
+
+Put simple, the goal is to create a common development environment.
 
 Vagrant provides the same production environment (_OS,
 packages, users, configuration, etc..._) giving developers the
@@ -48,72 +50,29 @@ Search for vagrant boxes at
 Vagrants uses a declarative config file which describes your
 software requirements, packages, OS configuration, users, etc..
 
-Lets say we want to kick off a vagrant box on docker. I found a
-box for ubuntu-16.04 called `tknerr/baseimage-ubuntu-16.04`. 
+A simple Vagrantfile will look like,
 
-So my vagrant file could look life the following,
-
-```code
+```bash
 Vagrant.configure("2") do |config|
-  config.vm.box = "tknerr/baseimage-ubuntu-16.04"
-  config.vm.box_version = "1.0.0"
+  config.vm.box = "ubuntu/xenial64"
 end
 ```
 
-##  EXAMPLE - KICK OFF A DOCKER CONTAINER UBUNTU 16.04
+To see a few example goto my repo
+[my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes).
 
-Lets get the vagrant box `tknerr/baseimage-ubuntu-16.04`,
+## START IT
 
-```bash
-vagrant box add tknerr/baseimage-ubuntu-16.04
-```
-
-Initialize,
-
-```bash
-vagrant init tknerr/baseimage-ubuntu-16.04
-```
-
-List boxes on your machine,
-
-```bash
-vagrant box list
-```
-
-Within the directory with your vagrantfile
+Simple type,
 
 ```bash
 vagrant up
 ```
 
-## YOUR LOCAL VAGRANT BOXES
+##  SOME BASIC COMMANDS
 
-To list boxes on your machine,
+List boxes on your machine,
 
 ```bash
 vagrant box list
-```
-
-To add a box (e.g. ubuntu/trusty64),
-
-```bash
-vagrant box add ubuntu/trusty64
-```
-
-To update all boxes,
-
-```bash
-vagrant box update
-```
-
-To update a particular box,
-
-```bash
-vagrant box update --box NAME
-```
-
-To destroy all old boxes,
-
-```bash
-vagrant box destroy
 ```
