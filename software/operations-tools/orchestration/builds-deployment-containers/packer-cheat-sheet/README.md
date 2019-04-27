@@ -30,10 +30,18 @@ The beauty is, it automates the building of your custom machine `image`
 And once set up, you can generate different machine `images` for
 different platforms.
 
-Packer supports building `images` for
-Amazon EC2, CloudStack, DigitalOcean, Docker,
-Google Compute Engine, Microsoft Azure, QEMU,
-VirtualBox, VMware, and more.
+Packer supports building `images` for,
+
+* Amazon EC2
+* CloudStack
+* DigitalOcean
+* Docker
+* Google Compute Engine
+* Microsoft Azure
+* QEMU
+* VirtualBox
+* VMware
+* and more
 
 Here is a high level view of packer,
 
