@@ -102,6 +102,11 @@ Simple type,
 vagrant up
 ```
 
+## CREATING A VAGRANT BOX
+
+Refer to my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
+that has an example.
+
 ##  SOME BASIC COMMANDS
 
 List boxes on your machine,
