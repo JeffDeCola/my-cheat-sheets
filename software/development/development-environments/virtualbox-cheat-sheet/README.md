@@ -8,6 +8,26 @@ running on your computer_.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
+
+The following diagram shows the difference between a Virtual Machine
+and a Docker Container.
+
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+
+Virtual Machine:
+
+* Must use a Hypervisor emulated Virtual Hardware.
+* Needs a guest OS.
+* Takes a lot of system resources.
+* Takes up a lot of memory.
+
+Container:
+
+* Uses a shared host OS.
+* You must use that OS.
+* Less Resources and lightweight.
+
 ## INSTALL ON WINDOWS
 
 Download and install from [virtualbox](https://www.virtualbox.org/).
