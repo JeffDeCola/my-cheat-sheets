@@ -13,7 +13,7 @@ View my entire list of cheat sheets on
 The following diagram shows the difference between a Virtual Machine
 and a Docker Container.
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
 Virtual Machine:
 
