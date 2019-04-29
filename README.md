@@ -185,7 +185,7 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * DATABASE
 
-    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
+    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgreSQL-cheat-sheet)
 
   * MESSAGING
 
