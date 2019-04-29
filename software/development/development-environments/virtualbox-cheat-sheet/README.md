@@ -15,18 +15,18 @@ and a Docker Container.
 
 ![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
-Virtual Machine:
+Virtual Machine,
 
-* Must use a Hypervisor emulated Virtual Hardware.
-* Needs a guest OS.
-* Takes a lot of system resources.
-* Takes up a lot of memory.
+* Must use a Hypervisor emulated Virtual Hardware
+* Needs a guest OS
+* Takes a lot of system resources
+* Takes up a lot of memory
 
-Container:
+Container,
 
-* Uses a shared host OS.
-* You must use that OS.
-* Less Resources and lightweight.
+* Uses a shared host OS
+* You must use that OS
+* Less resources and lightweight
 
 ## INSTALL ON WINDOWS
 
