@@ -1,7 +1,7 @@
 # OAuth 2.0 WEB SERVER APP AUTHORIZATION CHEAT SHEET
 
-`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authenticate themselfs
-in order for an APP to gain access to their information via an API._
+`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authenticate
+themselves in order for an APP to gain access to their information via an API._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -9,10 +9,9 @@ View my entire list of cheat sheets on
 ## HIGH-LEVEL VIEW
 
 The following diagram illustrates how everything fits for
-Web Server-Side Flow. To access a users info they must be
-in your g-suite domain.
+Web Server-Side Flow,
 
-![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../../docs/pics/OAuth-2.0-web-server-app-authorization-flow.jpg)
+![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../../../docs/pics/OAuth-2.0-web-server-app-authorization-flow.jpg)
 
 ## THE STEPS TO LOG IN
 
