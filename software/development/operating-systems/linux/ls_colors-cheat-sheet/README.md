@@ -42,10 +42,10 @@ colors based on the setting of the `LS_COLORS` env variable.
 
 So with this example,
 
-* Directories will be bold purple with a dark grey background.
-* Files will be orange.
-* Executables will be yellow.
-* `*.monkey` will be red.
+* Directories will be bold purple with a dark grey background
+* Files will be orange
+* Executables will be yellow
+* `*.monkey` will be red
 
 Do a `ls` and you should see your changes.
 

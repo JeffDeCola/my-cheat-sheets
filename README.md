@@ -27,7 +27,7 @@ The folder structures are organized alphabetically as follows,
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets) -
-  For the goal of creating a App/Service
+  For the goal of creating an App/Service
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
@@ -124,7 +124,7 @@ Random other things I'm interested in.
 
 ## SOFTWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating a App/Service.
+Various Apps and tools for the goal of creating an App/Service.
 
 ### DEVELOPMENT
 
@@ -150,8 +150,8 @@ Various Apps and tools for the goal of creating a App/Service.
 
   * LINUX
 
-    * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
+    * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
     * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
@@ -296,7 +296,7 @@ This illustration coming soon.
 ## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
 This illustration shows how various Apps and tools fit together
-for the goal of creating a App/Service,
+for the goal of creating an App/Service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
 
