@@ -29,7 +29,8 @@ Hence, you want to edit your files in Windows realm, not linux.
 
 ### SET YOUR INTEGRATED TERMINAL
 
-After you have installed VS Code, goto your user settings and set
+After you have installed VS Code, goto your user
+settings.json (press F1) and set
 VS Code integrated terminal to point to WSL bash.
 
 For Ubuntu 14.04 on Windows,
@@ -104,22 +105,22 @@ And your prompt should look like,
 Since windows will like uses CRLF at eol (end of line), and linux uses LF,
 you need to force your windows VS Code to always use LF.
 
-Set this in your preferences.
+Set this in your preferences settings.json (press F1),
 
 ```json
 "files.eol": "\n"
 ```
 
-You can check it worked by looking in the bottom left of your VS Code
+You can check it worked by looking in the bottom right of your VS Code
 and you will see LF.
 
 ## INSTALLING EXTENSIONS
 
-Most extensions are standalone and they live in the following directories:
+Most extensions are standalone and they live in the following directories,
 
-* Windows Users\Jeff\vscode\extensions
-* macOS ~/.vscode/extensions
-* Linux ~/.vscode/extensions
+* Windows `Users\Jeff\vscode\extensions`
+* macOS `~/.vscode/extensions`
+* Linux `~/.vscode/extensions`
 
 Some extensions, like `go` and `python` use existing Apps/Tools.
 
@@ -145,7 +146,7 @@ Here's a diagram that might help explain what's going on
 
 You will need to install the following on windows,
 
-* [go](https://golang.org/doc/install).
+* [go](https://golang.org/doc/install)
 * [git for windows](https://git-scm.com/downloads)
 * Obviously VS Code.
 
@@ -163,7 +164,7 @@ if it didn't do it automatically.
 To check everything, open a windows command prompt and
 type the following,
 
-* `set` Check the go paths above.
+* `set` check the go paths above
 * `go version`
 * `git version`
 

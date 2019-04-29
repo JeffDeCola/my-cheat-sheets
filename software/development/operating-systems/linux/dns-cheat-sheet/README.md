@@ -41,7 +41,7 @@ All DNS configurations for BIND are located under `/etc/bind`.
 The client DNS is called a DNS resolver and is your like to
 a name server.  The config file is `resolv.conf`.
 
-### CONFIGURATION (/etc/resolve.conf)
+### CONFIGURATION (/etc/resolv.conf)
 
 The configuration file for DNS resolver (the client DNS).
 

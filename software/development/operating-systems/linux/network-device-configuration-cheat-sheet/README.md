@@ -5,8 +5,8 @@ your network devices._
 
 There are two methods we will go over,
 
-* ifupdown
-* netplan
+* [ifupdown](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#ifupdown-method)
+* [netplan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#netplan-method)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -28,7 +28,11 @@ The files are located here,
 Note, that newer version of ubuntu have changed `eth0` / `eth1`
 to interface names like `enp0s3`.
 
-## ifupdown METHOD - CONFIGURE YOUR NETWORK DEVICE
+## ifupdown METHOD
+
+An older method to configure network interfaces.
+
+### CONFIGURE YOUR NETWORK DEVICE
 
 Edit this file,
 
@@ -46,7 +50,7 @@ iface eth1 inet static
     netmask 255.255.255.0
 ```
 
-## ifupdown METHOD - START/STOP networking.service
+### START/STOP networking.service
 
 The file,
 
@@ -72,7 +76,11 @@ You should see your new static ip address.
 For more information on services refer to my cheat sheet
 [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet).
 
-## netplan METHOD - CONFIGURE YOUR NETWORK DEVICE
+## netplan METHOD
+
+A newer method to configure network interfaces.
+
+### CONFIGURE YOUR NETWORK DEVICE
 
 Edit this .yaml file,
 
@@ -97,13 +105,13 @@ network:
         ...
 ```
 
-you can check it,
+You can check it,
 
 ```bash
 netplan --debug generate.
 ```
 
-## netplan METHOD - netplan apply
+### netplan apply
 
 ```bash
 sudo netplan apply

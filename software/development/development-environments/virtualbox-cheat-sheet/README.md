@@ -96,9 +96,9 @@ reboot
 
 The following is required to use these features:
 
-* Shared folder enabled.
-* Guest Additions installed.
-* Desktop like GNOME.
+* Shared folder enabled
+* Guest Additions installed
+* Desktop like GNOME
 
 ## CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX
 
@@ -149,7 +149,7 @@ Create a VirtualBox Host-Only Ethernet Adapter and configure
 the VM,
 
 ```txt
-Settings -> Network - Adapter -> Host-Only Adapter.
+Settings -> Network - Adapter -> Host-Only Adapter
 ```
 
 When you add a static IP, your Host will be able to access the VM.
@@ -159,7 +159,7 @@ When you add a static IP, your Host will be able to access the VM.
 You use a bridged adapter,
 
 ```txt
-Settings -> Network - Adapter -> Bridged Adapter.
+Settings -> Network - Adapter -> Bridged Adapter
 ```
 
 I did not explore this feature yet.
