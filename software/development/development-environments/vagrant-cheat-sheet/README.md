@@ -114,3 +114,15 @@ List boxes on your machine,
 ```bash
 vagrant box list
 ```
+
+Add box on your machine,
+
+```bash
+vagrant box add --name "ubuntu/jeffs-ubuntu" --force ubuntu-box.box
+```
+
+Destroy box on your machine,
+
+```bash
+vagrant box remove ubuntu/jeffs-ubuntu
+```
