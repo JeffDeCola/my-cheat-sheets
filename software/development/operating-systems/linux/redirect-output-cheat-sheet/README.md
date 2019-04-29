@@ -9,8 +9,8 @@ View my entire list of cheat sheets on
 
 I copied this table from stack exchange.
 
-The first StdOut/StdErr pair are visible in terminal, and the second pair
-is visible in file.
+The first StdOut/StdErr pair is visible in the terminal, and the
+second StdOut/StdErr pair is visible in the file.
 
 |  Syntax   |  StdOut  |  StdErr  |  StdOut  |  StdErr  | existing file |
 |-----------|----------|----------|----------|----------|---------------|
@@ -31,3 +31,23 @@ is visible in file.
 |           |          |          |          |          |               |
 | |& tee    |   yes    |   yes    |   yes    |   yes    |  overwrite    |
 | |& tee -a |   yes    |   yes    |   yes    |   yes    |   append      |
+
+For example,
+
+File will contain jeff, but not on terminal,
+
+```bash
+echo "jeff" > test.txt
+```
+
+On terminal but the file will be empty,
+
+```bash
+echo "jeff" 2> test.txt
+```
+
+Both on terminal and in the file,
+
+```bash
+echo "jeff" | tee test.txt
+```
