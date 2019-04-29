@@ -171,6 +171,7 @@ Various Apps and tools for the goal of creating an App/Service.
 
 * SOFTWARE ARCHITECTURES
 
+
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/RESTful-cheat-sheet)

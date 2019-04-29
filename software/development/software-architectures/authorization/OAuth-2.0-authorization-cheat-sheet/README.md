@@ -1,6 +1,6 @@
 # OAuth 2.0 AUTHORIZATION CHEAT SHEET
 
-`OAuth 2.0 authorization` makes it much more convenient to log in to your App;
+`OAuth 2.0 authorization` makes it much more convenient to log in to your App
 because the user can log in with one of the many accounts they already have.
 
 View my entire list of cheat sheets on
