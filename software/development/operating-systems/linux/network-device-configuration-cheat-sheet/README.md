@@ -6,7 +6,9 @@ your network devices._
 There are two methods we will go over,
 
 * [ifupdown](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#ifupdown-method)
+  (older method)
 * [netplan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#netplan-method)
+  (newer method)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
