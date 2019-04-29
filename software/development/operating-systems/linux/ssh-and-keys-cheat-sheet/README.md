@@ -136,3 +136,10 @@ ssh username@<IP>
 ```
 
 Again, no password is needed.
+
+In this example I am using a particular private key and port.
+This is useful to ssh on a vagrant made virtualbox VM.
+
+```bash
+ssh -i ~/.vagrant.d/insecure_private_key -p 2222 vagrant@127.0.0.1
+```
