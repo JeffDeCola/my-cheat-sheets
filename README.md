@@ -128,7 +128,7 @@ _This entire sections is a massive work in progress, it will take me quite a few
 
   * FOUNDATIONS
 
-    * [category-theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
+    * [category theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
     * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/fundamental-rules-cheat-sheet)
     * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/mathematics-logic-cheat-sheet)
     * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/set-theory-cheat-sheet)
