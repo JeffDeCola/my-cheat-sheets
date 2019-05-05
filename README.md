@@ -23,7 +23,7 @@ The folder structures are organized alphabetically as follows,
   Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
-  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
+  * [mathematicsEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematicsematics)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
@@ -101,64 +101,64 @@ Random other things I'm interested in.
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
 
-### MATHEMATICS
+### mathematicsEMATICS
 
 _This entire sections is a massive work in progress, it will take me quite a few years to finish._
 
 * APPLIED
 
    * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/control-theory-cheat-sheet)
-   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/cryptography-cheat-sheet)
-   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/electrical-engineering-cheat-sheet)
-   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/game-theory-cheat-sheet)
-   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/optimization-cheat-sheet)
+   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
+   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
+   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
+   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
+   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
    * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
-   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/probability-and-statistics-cheat-sheet)
+   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
 
 * PURE
 
   * CHANGES
 
-    * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/changes/calculus-cheat-sheet)
-    * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/changes/chaos-theory-cheat-sheet)
-    * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/changes/complex-analysis-cheat-sheet)
-    * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/changes/dynamical-systems-cheat-sheet)
-    * [vector calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/changes/vector-calculus-cheat-sheet)
-
-  * NUMBER SYSTEMS
-
-    * [complex numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/number-systems/complex-numbers-cheat-sheet)
-    * [integers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/number-systems/integers-cheat-sheet)
-    * [natural numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/number-systems/natural-numbers-cheat-sheet)
-    * [prime numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/number-systems/prime-numbers-cheat-sheet)
-    * [real numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/number-systems/real-numbers-cheat-sheet)
-
-  * SPACES
-
-    * [differential geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/differential-geometry-cheat-sheet)
-    * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/fractal-geometry-cheat-sheet)
-    * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/geometry-cheat-sheet)
-    * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/measure-theory-cheat-sheet)
-    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/trigonometry-cheat-sheet)
-    * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/spaces/topology-cheat-sheet)
-
-  * STRUCTURES
-
-    * [algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/algebra-cheat-sheet)
-    * [combinations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/combinations-cheat-sheet)
-    * [group theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/group-theory-cheat-sheet)
-    * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/linear-algebra-cheat-sheet)
-    * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/number-theory-cheat-sheet)
-    * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/structures/order-theory-cheat-sheet)
+    * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/calculus-cheat-sheet)
+    * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/chaos-theory-cheat-sheet)
+    * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/complex-analysis-cheat-sheet)
+    * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/dynamical-systems-cheat-sheet)
+    * [vector calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/vector-calculus-cheat-sheet)
 
   * FOUNDATIONS
 
-    * [category-theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/category-theory-cheat-sheet)
-    * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/fundamental-rules-cheat-sheet)
-    * [mathematical logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/mathematical-logic-cheat-sheet)
-    * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/set-theory-cheat-sheet)
-    * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
+    * [category-theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
+    * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/fundamental-rules-cheat-sheet)
+    * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/mathematics-logic-cheat-sheet)
+    * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/set-theory-cheat-sheet)
+    * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
+
+  * NUMBER SYSTEMS
+
+    * [complex numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/complex-numbers-cheat-sheet)
+    * [integers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/integers-cheat-sheet)
+    * [natural numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/natural-numbers-cheat-sheet)
+    * [prime numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/prime-numbers-cheat-sheet)
+    * [real numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/real-numbers-cheat-sheet)
+
+  * SPACES
+
+    * [differential geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/differential-geometry-cheat-sheet)
+    * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/fractal-geometry-cheat-sheet)
+    * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/geometry-cheat-sheet)
+    * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/measure-theory-cheat-sheet)
+    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
+    * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/topology-cheat-sheet)
+
+  * STRUCTURES
+
+    * [algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet)
+    * [combinations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/combinations-cheat-sheet)
+    * [group theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/group-theory-cheat-sheet)
+    * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/linear-algebra-cheat-sheet)
+    * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/number-theory-cheat-sheet)
+    * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/order-theory-cheat-sheet)
 
 ### NETWORKS
 
