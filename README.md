@@ -105,6 +105,17 @@ Random other things I'm interested in.
 
 _This entire sections is a massive work in progress, it will take me quite a few years to finish._
 
+* APPLIED
+
+   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/control-theory-cheat-sheet)
+   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/cryptography-cheat-sheet)
+   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/electrical-engineering-cheat-sheet)
+   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/game-theory-cheat-sheet)
+   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/optimization-cheat-sheet)
+   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/probability-and-statistics-cheat-sheet)
+
 * PURE
 
   * CHANGES
@@ -148,17 +159,6 @@ _This entire sections is a massive work in progress, it will take me quite a few
     * [mathematical logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/mathematical-logic-cheat-sheet)
     * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/set-theory-cheat-sheet)
     * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
-
-* APPLIED
-
-   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/control-theory-cheat-sheet)
-   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/cryptography-cheat-sheet)
-   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/electrical-engineering-cheat-sheet)
-   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/game-theory-cheat-sheet)
-   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/optimization-cheat-sheet)
-   * [physical sciences (physics & chemistry)](https://github.com/JeffDeCola/my-cheat-sheets#science)
-   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/math/applied/probability-and-statistics-cheat-sheet)
 
 ### NETWORKS
 
