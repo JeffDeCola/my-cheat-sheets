@@ -23,7 +23,7 @@ The folder structures are organized alphabetically as follows,
   Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
-  * [mathematicsEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematicsematics)
+  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematicsematics)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
@@ -101,7 +101,7 @@ Random other things I'm interested in.
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
 
-### mathematicsEMATICS
+### MATHEMATICS
 
 _This entire sections is a massive work in progress, it will take me quite a few years to finish._
 
@@ -148,8 +148,8 @@ _This entire sections is a massive work in progress, it will take me quite a few
     * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/fractal-geometry-cheat-sheet)
     * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/geometry-cheat-sheet)
     * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/measure-theory-cheat-sheet)
-    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
     * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/topology-cheat-sheet)
+    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
 
   * STRUCTURES
 
@@ -173,14 +173,14 @@ _This entire sections is a massive work in progress, it will take me quite a few
 
 ### SCIENCE
 
-* EARTH & SPACE SCIENCE
-    
-  * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
-
 * BIOLOGICAL / LIFE SCIENCE
 
   * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-sciences/biology-cheat-sheet)
   * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-sciences/social-cheat-sheet)
+
+* EARTH & SPACE SCIENCE
+    
+  * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
 
 * PHYSICAL SCIENCE
 
