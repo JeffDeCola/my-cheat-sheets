@@ -23,7 +23,7 @@ The folder structures are organized alphabetically as follows,
   Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
-  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematicsematics)
+  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
@@ -175,8 +175,8 @@ _This entire sections is a massive work in progress, it will take me quite a few
 
 * BIOLOGICAL / LIFE SCIENCE
 
-  * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-sciences/biology-cheat-sheet)
-  * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-sciences/social-cheat-sheet)
+  * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/biology-cheat-sheet)
+  * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
 
 * EARTH & SPACE SCIENCE
     
