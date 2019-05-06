@@ -13,21 +13,6 @@ figured out over time.
 
 The folder structures are organized alphabetically as follows,
 
-* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) - 
-  For the goal of creating an ASIC
-
-  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
-  * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
-
-* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
-  Random things I'm interested in
-
-  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
-  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
-  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
-  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
-  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
-
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets) -
   For the goal of creating an App/Service
 
@@ -47,157 +32,25 @@ The folder structures are organized alphabetically as follows,
     * GOOGLE GCP
     * MICROSOFT AZURE
 
+Here are some other works I am working on,
+
+* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) - 
+  For the goal of creating an ASIC
+
+  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
+  * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
+
+* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
+  Random things I'm interested in
+
+  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
+  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
+  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
+  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
+  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
-
-## HARDWARE CHEAT SHEETS
-
-Various Apps and tools for the goal of creating an ASIC.
-
-### DEVELOPMENT
-
-* HARDWARE ARCHITECTURES
-
-  * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
-
-* LANGUAGES
-
-  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
-
-### TOOLS
-
-* SIMULATION
-
-  * _coming soon_
-
-* SYNTHESIS
-
-  * _coming soon_
-
-* TIMING
-
-  * _coming soon_
-
-## OTHER CHEAT SHEETS
-
-Random other things I'm interested in.
-
-### COMPUTER HARDWARE
-
-* APPLE
-
-  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
-
-* PC
-
-  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
-  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
-
-* TECHNOLOGIES
-
-  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
-  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
-  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
-  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
-
-### MATHEMATICS
-
-_This entire sections is a massive work in progress, it will take me quite a few years to finish._
-
-* APPLIED
-
-   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
-   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
-   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
-   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
-   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
-   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
-   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
-
-* PURE
-
-  * CHANGES
-
-    * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/calculus-cheat-sheet)
-    * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/chaos-theory-cheat-sheet)
-    * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/complex-analysis-cheat-sheet)
-    * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/dynamical-systems-cheat-sheet)
-    * [vector calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/vector-calculus-cheat-sheet)
-
-  * FOUNDATIONS
-
-    * [category theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
-    * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/fundamental-rules-cheat-sheet)
-    * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/mathematics-logic-cheat-sheet)
-    * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/set-theory-cheat-sheet)
-    * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
-
-  * NUMBER SYSTEMS
-
-    * [complex numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/complex-numbers-cheat-sheet)
-    * [integers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/integers-cheat-sheet)
-    * [natural numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/natural-numbers-cheat-sheet)
-    * [prime numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/prime-numbers-cheat-sheet)
-    * [real numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/real-numbers-cheat-sheet)
-
-  * SPACES
-
-    * [differential geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/differential-geometry-cheat-sheet)
-    * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/fractal-geometry-cheat-sheet)
-    * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/geometry-cheat-sheet)
-    * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/measure-theory-cheat-sheet)
-    * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/topology-cheat-sheet)
-    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
-
-  * STRUCTURES
-
-    * [algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet)
-    * [combinations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/combinations-cheat-sheet)
-    * [group theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/group-theory-cheat-sheet)
-    * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/linear-algebra-cheat-sheet)
-    * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/number-theory-cheat-sheet)
-    * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/order-theory-cheat-sheet)
-
-### NETWORKS
-
-* CELLULAR
-
-  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
-
-* WAN / LAN
-
-  * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
-  * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
-
-### SCIENCE
-
-* BIOLOGICAL / LIFE SCIENCE
-
-  * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/biology-cheat-sheet)
-  * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
-
-* EARTH & SPACE SCIENCE
-    
-  * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
-
-* PHYSICAL SCIENCE
-
-  * [chemistry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/chemistry-cheat-sheet)
-  * [physics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet)
-
-### SINGLE BOARD COMPUTERS (SBC)
-
-* HUMMINGBOARD
-
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
-
-* RASPBERRY PI (RasPi)
-
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
 ## SOFTWARE CHEAT SHEETS
 
@@ -367,16 +220,165 @@ Various Apps and tools for the goal of creating an App/Service.
     * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
   * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
-## VISUAL OVERVIEW OF CREATING AN ASIC
-
-This illustration coming soon.
-
-## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
+### VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
 This illustration shows how various Apps and tools fit together
 for the goal of creating an App/Service,
 
 ![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
+
+## HARDWARE CHEAT SHEETS
+
+Various Apps and tools for the goal of creating an ASIC.
+
+### DEVELOPMENT
+
+* HARDWARE ARCHITECTURES
+
+  * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
+
+* LANGUAGES
+
+  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
+    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
+
+### TOOLS
+
+* SIMULATION
+
+  * _coming soon_
+
+* SYNTHESIS
+
+  * _coming soon_
+
+* TIMING
+
+  * _coming soon_
+
+### VISUAL OVERVIEW OF CREATING AN ASIC
+
+This illustration coming soon.
+
+## OTHER CHEAT SHEETS
+
+Random other things I'm interested in.
+
+### COMPUTER HARDWARE
+
+* APPLE
+
+  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
+
+* PC
+
+  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
+  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
+
+* TECHNOLOGIES
+
+  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
+  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
+  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
+  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
+
+### MATHEMATICS
+
+_This entire sections is a massive work in progress, it will take me quite a few years to finish._
+
+* APPLIED
+
+   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
+   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
+   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
+   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
+   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
+   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+
+* PURE
+
+  * CHANGES
+
+    * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/calculus-cheat-sheet)
+    * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/chaos-theory-cheat-sheet)
+    * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/complex-analysis-cheat-sheet)
+    * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/dynamical-systems-cheat-sheet)
+    * [vector calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/vector-calculus-cheat-sheet)
+
+  * FOUNDATIONS
+
+    * [category theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
+    * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/fundamental-rules-cheat-sheet)
+    * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/mathematics-logic-cheat-sheet)
+    * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/set-theory-cheat-sheet)
+    * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
+
+  * NUMBER SYSTEMS
+
+    * [complex numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/complex-numbers-cheat-sheet)
+    * [integers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/integers-cheat-sheet)
+    * [natural numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/natural-numbers-cheat-sheet)
+    * [prime numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/prime-numbers-cheat-sheet)
+    * [real numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/real-numbers-cheat-sheet)
+
+  * SPACES
+
+    * [differential geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/differential-geometry-cheat-sheet)
+    * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/fractal-geometry-cheat-sheet)
+    * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/geometry-cheat-sheet)
+    * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/measure-theory-cheat-sheet)
+    * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/topology-cheat-sheet)
+    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
+
+  * STRUCTURES
+
+    * [algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet)
+    * [combinations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/combinations-cheat-sheet)
+    * [group theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/group-theory-cheat-sheet)
+    * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/linear-algebra-cheat-sheet)
+    * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/number-theory-cheat-sheet)
+    * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/order-theory-cheat-sheet)
+
+### NETWORKS
+
+* CELLULAR
+
+  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
+
+* WAN / LAN
+
+  * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
+  * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
+
+### SCIENCE
+
+* BIOLOGICAL / LIFE SCIENCE
+
+  * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/biology-cheat-sheet)
+  * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
+
+* EARTH & SPACE SCIENCE
+    
+  * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
+
+* PHYSICAL SCIENCE
+
+  * [chemistry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/chemistry-cheat-sheet)
+  * [physics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet)
+
+### SINGLE BOARD COMPUTERS (SBC)
+
+* HUMMINGBOARD
+
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+
+* RASPBERRY PI (RasPi)
+
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
