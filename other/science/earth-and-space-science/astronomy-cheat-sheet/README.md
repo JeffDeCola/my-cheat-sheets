@@ -87,3 +87,43 @@ Apple falling from tree is a fairy tail he made up.
 * Helped pave the way for calculus
 * Worked with Halley studying a comet (Halley's comet) and
   predicted when it would come back
+
+## HOW TO MODEL THE STARS FROM EARTH
+
+`Celestial sphere` is a sphere around the earth that make the
+stars appear to occupy fixed positions relative to each other.
+The north pole is the north of the sphere. Its a good model.
+There is a `celestial equator`.
+
+The `zenith` is the point directly above the observer.
+90&deg; from any point on horizon.
+
+The `Meridian` passes through the `zenith` and both
+`celestial sphere` poles. Perpendicular to `celestial equator`.
+
+`Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
+Plane of our solar system.
+
+## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
+
+You need two coordinated to find a star, declination
+and right ascension.
+
+`Declination` is like latitude on earth.
+The angle of the star form the celestial equator.
+The north star would be 90&deg;.
+
+It would be written like,
+
+ `-2&deg; 49' 11"` 
+
+Degrees, arc minutes and arc seconds.
+
+`Right ascension` is like longitude on the earth. The zero
+point is the spring equinox.
+
+It would be written like,
+
+`5h 41m 28s`
+
+Hours, minutes and seconds.
