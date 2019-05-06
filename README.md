@@ -32,9 +32,9 @@ The folder structures are organized alphabetically as follows,
     * GOOGLE GCP
     * MICROSOFT AZURE
 
-Here are some other works I am working on,
+Some other cheat sheets I'm working on,
 
-* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) - 
+* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) -
   For the goal of creating an ASIC
 
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
@@ -100,7 +100,6 @@ Various Apps and tools for the goal of creating an App/Service.
     * [LSCOLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
 
 * SOFTWARE ARCHITECTURES
-
 
   * API
 
@@ -172,7 +171,7 @@ Various Apps and tools for the goal of creating an App/Service.
   * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet)
 
 * FaaS - FUNCTION AS A SERVICE
- 
+
   * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
     _hello-go-deploy-aws-lambda repo coming soon_
   * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
@@ -211,14 +210,14 @@ Various Apps and tools for the goal of creating an App/Service.
 
 ### SERVICE PROVIDERS
    
-  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-    * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-    * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
-    * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
-    * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-    * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
+* [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
+* [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
+  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+* [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
 ### VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
@@ -288,14 +287,14 @@ _This entire sections is a massive work in progress, it will take me quite a few
 
 * APPLIED
 
-   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
-   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
-   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
-   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
-   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
-   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
-   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+  * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+  * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
+  * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
+  * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
+  * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
+  * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
+  * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+  * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
 
 * PURE
 
@@ -360,7 +359,7 @@ _This entire sections is a massive work in progress, it will take me quite a few
   * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
 
 * EARTH & SPACE SCIENCE
-    
+
   * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
 
 * PHYSICAL SCIENCE
