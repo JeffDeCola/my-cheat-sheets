@@ -7,8 +7,7 @@ or
 
 Documentation and reference,
 
-* [Amazon Web Services Documentation](    cheat sheet (CaaS)
-)
+* [Amazon Web Services Documentation](https://aws.amazon.com)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

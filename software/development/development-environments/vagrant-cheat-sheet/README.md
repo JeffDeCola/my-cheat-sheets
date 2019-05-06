@@ -1,6 +1,7 @@
 # VAGRANT CHEAT SHEET
 
-`vagrant` _is a tool from HashiCorp that creates and configures (manages) portable development environments._
+`vagrant` _is a tool from HashiCorp that creates and configures (manages)
+portable development environments._
 
 Check out my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes).
 
@@ -30,12 +31,13 @@ Vagrant can run on providers such as,
 
 ![IMAGE - vagrant-overview - IMAGE](../../../../docs/pics/vagrant-overview.jpg)
 
-## HOW DOES WORK?
+## HOW DOES IT WORK
 
 The process is pretty simple,
 
 * STEP 1 - GET BASE BOX/IMAGE
-  * Starts with a box/image (for a particular provider) that contains the base operating system.
+  * Starts with a box/image (for a particular provider) that contains the
+    base operating system.
 * STEP 2 - CONFIGURE ON PROVIDER
   * Based on your configuration for your provider, fires up a VM/Container.
 * STEP 3 PROVISION
@@ -107,7 +109,7 @@ vagrant up
 Refer to my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
 that has an example.
 
-##  SOME BASIC COMMANDS
+## SOME BASIC COMMANDS
 
 List boxes on your machine,
 

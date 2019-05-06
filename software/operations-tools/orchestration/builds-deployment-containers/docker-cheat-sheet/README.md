@@ -58,7 +58,7 @@ docker run --name hello-go -dit jeffdecola/hello-go
 ```
 
 * `-d` Run container in background.
-* `-t` or `-tty` terminal. 
+* `-t` or `-tty` terminal.
 * `-i` interactive container, Keep STDIN open even if
   not attached.
 
@@ -169,7 +169,6 @@ Hence, you should compile your code in the base image during build.
 Here is an illustration why,
 
 ![IMAGE - compile-code-in-docker-base-image - IMAGE](../../../../../docs/pics/compile-code-in-docker-base-image.jpg)
-
 
 ### PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)
 
