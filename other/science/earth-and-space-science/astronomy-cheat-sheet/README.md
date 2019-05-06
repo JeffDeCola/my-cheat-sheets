@@ -88,9 +88,9 @@ Apple falling from tree is a fairy tail he made up.
 * Worked with Halley studying a comet (Halley's comet) and
   predicted when it would come back
 
-## HOW TO MODEL THE STARS FROM EARTH
+## CELESTIAL SPHERE - MODEL THE STARS FROM EARTH
 
-The `Celestial sphere` is a sphere around the earth that make the
+The `Celestial Sphere` is a sphere around the earth that make the
 stars appear to occupy fixed positions relative to each other.
 The north pole is the north of the sphere. Its a good model.
 There is a `celestial equator`.
@@ -104,10 +104,12 @@ The `Meridian` passes through the `zenith` and both
 The `Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
 Plane of our solar system.
 
+![IMAGE - Celestial Sphere - IMAGE](../../../docs/pics/celestial-sphere.jpg)
+
 ## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
 
-You need two coordinated to find a star, declination
-and right ascension.
+You need two coordinated to find a star, `declination`
+and `right ascension`.
 
 `Declination` is like latitude on earth.
 The angle of the star form the celestial equator.
