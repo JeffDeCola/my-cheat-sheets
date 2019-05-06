@@ -36,3 +36,10 @@ $$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
 and
 
 $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+and
+
+$$
+\cos (2\theta) = \cos^2 \theta - \sin^2 \theta
+$$
+
