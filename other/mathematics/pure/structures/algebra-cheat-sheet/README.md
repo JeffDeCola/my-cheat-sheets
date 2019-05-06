@@ -55,6 +55,9 @@ Here's a display level formula
 
 > It is well known that if <img alt="$ax^2 + bx + c =0$" src="svgs/162f63774d8a882cc15ae1301cfd8ac0.png?invert_in_darkmode" align=middle width="119.01186pt" height="26.70657pt"/>, then <img alt="$x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$" src="svgs/584fa2612b78129d140fb208e9d76ae9.png?invert_in_darkmode" align=middle width="112.3584pt" height="33.20526pt"/>.
 
+This math is inline $`a^2+b^2=c^2`$.
+
+This is on a separate line
 ```math
-SE = \frac{\sigma}{\sqrt{n}}
+a^2+b^2=c^2
 ```
