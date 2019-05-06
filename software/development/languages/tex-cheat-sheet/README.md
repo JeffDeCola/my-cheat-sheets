@@ -7,6 +7,7 @@ Documentation and reference,
 
 * [LaTeX Math function Overview](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [KaTeX Overview](https://katex.org/docs/supported.html)
+* [TeXify - Using Latex with github markdown](https://github.com/apps/texify)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -43,3 +44,4 @@ Typesetting mathematics is one of LaTeX's greatest strengths.
 ## KaTeX
 
 Displays mathematical notation in web browsers.
+
