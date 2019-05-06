@@ -285,7 +285,7 @@ Random other things I'm interested in.
 ### MATHEMATICS
 
 _This entire sections is a massive work in progress, it will take me quite a few years to finish.
-I am using [TeXify](https://github.com/apps/texify) to render my LaTeX to .svg images at github._
+I am using the GitHub server App [TeXify](https://github.com/apps/texify) to render my LaTeX to .svg images at github._
 
 * APPLIED
 

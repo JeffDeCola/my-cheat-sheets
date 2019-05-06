@@ -7,7 +7,8 @@ Documentation and reference,
 
 * [LaTeX Math function Overview](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [KaTeX Overview](https://katex.org/docs/supported.html)
-* [TeXify - Using Latex with github markdown](https://github.com/apps/texify)
+* The GitHub App [TeXify](https://github.com/apps/texify) automatically renders
+  your Latex to images (powered by [readme2tex](https://github.com/leegao/readme2tex))
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -44,4 +45,29 @@ Typesetting mathematics is one of LaTeX's greatest strengths.
 ## KaTeX
 
 Displays mathematical notation in web browsers.
+
+## TeXify - RENDER LaTeX TO IMAGES ON GITHUB
+
+You write README.text.md.
+
+At github, it will convert your LaTeX to `/tex/*.svg` images and
+created a `README.md` file with links to those images.
+
+It is awesome.
+
+As a simple example,
+
+Here's a display level formula
+<p align="center"><img alt="$$&#10;\frac{n!}{k!(n-k)!} = {n \choose k}&#10;$$" src="svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.png?invert_in_darkmode" align=middle width="127.89183pt" height="39.30498pt"/></p>
+
+The code that was used to render this formula is just
+
+    $$
+    \frac{n!}{k!(n-k)!} = {n \choose k}
+    $$
+
+
+
+
+
 
