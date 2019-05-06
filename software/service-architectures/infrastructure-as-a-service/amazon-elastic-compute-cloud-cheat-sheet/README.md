@@ -17,6 +17,7 @@ Part of five main compute engines at `aws`,
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
 Documentation and reference,
+
 * Your
   [Images](??),
   [Instances Templates](??),
@@ -94,8 +95,8 @@ Each region may have a few zones.
 
 ## GCE MACHINE TYPES, PRICING & REGIONS
 
-At amazon there are a lot of [instance types](https://aws.amazon.com/ec2/instance-types/) and
-ways to pay for those instances.
+At amazon there are a lot of [instance types](https://aws.amazon.com/ec2/instance-types/)
+and ways to pay for those instances.
 
 The following will be a very very high level look.
 
@@ -144,7 +145,7 @@ The format is CPU and RAM.
     * t3a.medium 2, 4
     * t3a.2xlarge 8, 32
 
-A note that accelerated computing offers F1 instances which are 
+A note that accelerated computing offers F1 instances which are
 customizable hardware acceleration with field programmable gate arrays
 (FPGAs).
 
@@ -192,7 +193,7 @@ There are a few ways to interact with `ec2`,
 * Using the gui/console.
 * Using the aws cli (e.g. `aws`). See below.
 * Using aws SDK Client Libraries / API
-  (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)). 
+  (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)).
   My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/amazon-aws).
 
 This cheat sheet will focus on `aws`.
@@ -253,7 +254,7 @@ Delete an image,
 ???? delete <IMAGENAME>
 ```
 
-### ???
+### TBD
 
 ### INSTANCES
 

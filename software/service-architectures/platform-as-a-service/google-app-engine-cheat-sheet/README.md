@@ -39,10 +39,11 @@ You bring the code, they handle the rest.
 `gae` is really used for web applications, and can be used with
 google firebase for mobile apps.
 
-An App Engine app is made up of a single application resource that consists of one or
-more services. Each service can be configured to use different runtimes and to operate
-with different performance settings. Within each service, you deploy versions
-of that service. Each version then runs within one or more instances, depending on
+An App Engine app is made up of a single application resource
+that consists of one or more services. Each service can be configured
+to use different runtimes and to operate with different performance settings.
+Within each service, you deploy versions of that service.
+Each version then runs within one or more instances, depending on
 how much traffic you configured it to handle.
 
 ![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/gae-app-service-view.jpg)
@@ -229,7 +230,7 @@ You can look at or pull the example I placed in my repo
 
 ## EXAMPLE 3 - LETS ADD A SERVICE
 
-Lets do something dynamic.  How about a Webpage that 
+Lets do something dynamic.  How about a Webpage that
 displays a running count.
 
 You can look at or pull the example I placed in my repo

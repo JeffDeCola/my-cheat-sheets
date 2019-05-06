@@ -49,7 +49,7 @@ for more information about Kubernetes.
 
 ## FREE RESOURCE
 
-No cluster management fee for clusters of all sizes. 
+No cluster management fee for clusters of all sizes.
 
 Each user node is charged the standard `gce` pricing.
 
@@ -83,7 +83,7 @@ gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
     --num-nodes "$NUM_NODES" \
     --preemptible \
     --username "admin" \
-    --zone "us-west1-a" 
+    --zone "us-west1-a"
 ```
 
 You should see N instance in `gce`.
@@ -93,7 +93,7 @@ To destroy your Kubernetes Cluster,
 ```bash
 gcloud container --project "$GCP_JEFFS_PROJECT_ID" \
     clusters delete jeffs-gke-cluster-hello-go-deploy-gke \
-    --zone "us-west1-a" 
+    --zone "us-west1-a"
 ```
 
 Reference for this gcloud SDK command [here](https://cloud.google.com/sdk/gcloud/reference/container/clusters/create)

@@ -20,10 +20,10 @@ his entire life because he worked for the church.
 Using just his eyes he watched the sky and determined
 the sun was the center (heliocentric) of the universe of the time.
 His book `On the Revolutions of the Celestial Spheres` was published
-just before his death in 1543.  The book/work was denounced 
+just before his death in 1543.  The book/work was denounced
 by the church in 1616.
 
-His major contributions are, 
+His major contributions are,
 
 * All sphere revolve around sun
 * Distance earth sun small comparison to stars
@@ -43,7 +43,7 @@ tied to the church.
 #### JOHANNES KEPLER (1571-1630) GERMAN
 
 Sick a frail child. Math teacher. Very religious.
-Wanted to find gods work. Worked for Brahe to 
+Wanted to find gods work. Worked for Brahe to
 actually predict where Mars would be in the sky at
 any giving time.  Wrote his masterpiece `Astronomia Nova`
 on his work.
@@ -68,7 +68,7 @@ Father of observational astronomy and physics
 and father of scientific method and modern science.
 He was arrogant. His book
 `Dialog Concerning the Two Chief World Systems` got him arrested.
-Banned until 1718. 
+Banned until 1718.
 
 * Used and built primitive telescope
 * Found Jupiter moons. Observational evidence.
