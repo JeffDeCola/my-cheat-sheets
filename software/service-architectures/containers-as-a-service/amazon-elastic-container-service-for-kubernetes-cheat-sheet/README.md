@@ -42,13 +42,13 @@ Refer to my
 [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 for more information about Kubernetes.
 
-## FREE RESOURCE ??
+## FREE RESOURCE
 
 tbd
 
 Full list of [free aws services](https://aws.amazon.com/free/).
 
-## STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON EKS ??
+## STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON EKS
 
 Since each node is a VM instance on `ec2`, to keep costs down we'll
 create a few nodes as needed.

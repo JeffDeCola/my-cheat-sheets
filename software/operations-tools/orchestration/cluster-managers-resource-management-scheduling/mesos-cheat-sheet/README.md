@@ -24,7 +24,7 @@ View my entire list of cheat sheets on
 `Mesos` is a project by Apache that gives you the
 ability to run both containerized, and non-containerized
 workloads in a distributed manner.
-mesos is complicated and hard to manage, so mesosphere 
+mesos is complicated and hard to manage, so mesosphere
 tries to make mesos into something understandable.
 
 `Mesosphere` has a marathon “plugin” to mesos, which is an
