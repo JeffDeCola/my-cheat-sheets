@@ -9,11 +9,11 @@ Documentation and reference,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-##OVERVIEW
+## OVERVIEW
 
 PostgreSQL is an object-relational database management system
 (ORDBMS) based on POSTGRES, Version 4.2, developed at the
-University of California at Berkeley Computer Science Department. 
+University of California at Berkeley Computer Science Department.
 
 The origins of PostgreSQL date back to 1986 as part of the POSTGRES
 project at the University of California at Berkeley and has more than
