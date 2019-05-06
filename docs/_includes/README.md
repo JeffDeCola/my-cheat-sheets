@@ -1,88 +1,15 @@
 
-# HARDWARE CHEAT SHEETS
+# SOFTWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating an ASIC.
-
-### DEVELOPMENT
-
-* HARDWARE ARCHITECTURES
-
-  * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
-
-* LANGUAGES
-
-  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
-
-### TOOLS
-
-* SIMULATION
-
-  * _coming soon_
-
-* SYNTHESIS
-
-  * _coming soon_
-
-* TIMING
-
-  * _coming soon_
-
-## OTHER CHEAT SHEETS
-
-Random other things I'm interested in.
-
-### COMPUTER HARDWARE
-
-* APPLE
-
-  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
-
-* PC
-
-  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
-  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
-
-* TECHNOLOGIES
-
-  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
-  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
-  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
-  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
-
-### NETWORKS
-
-* CELLULAR
-
-  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
-
-* WAN / LAN
-
-  * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
-  * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
-
-### SINGLE BOARD COMPUTERS (SBC)
-
-* HUMMINGBOARD
-
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
-
-* RASPBERRY PI (RasPi)
-
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
-
-## SOFTWARE CHEAT SHEETS
-
-Various Apps and tools for the goal of creating a App/service.
+Various Apps and tools for the goal of creating an App/Service.
 
 ### DEVELOPMENT
 
 * DEVELOPMENT ENVIRONMENTS
 
   * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/software-install-methods-cheat-sheet)
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet),
+    [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
 
@@ -100,8 +27,8 @@ Various Apps and tools for the goal of creating a App/service.
 
   * LINUX
 
-    * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
+    * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
     * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
@@ -121,6 +48,7 @@ Various Apps and tools for the goal of creating a App/service.
 
 * SOFTWARE ARCHITECTURES
 
+
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/RESTful-cheat-sheet)
@@ -134,7 +62,7 @@ Various Apps and tools for the goal of creating a App/service.
 
   * DATABASE
 
-    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/database/postgreSQL-cheat-sheet)
+    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgreSQL-cheat-sheet)
 
   * MESSAGING
 
@@ -163,7 +91,8 @@ Various Apps and tools for the goal of creating a App/service.
 
   * BUILDS / DEPLOYMENT / CONTAINERS
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet),
+      [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
@@ -192,11 +121,11 @@ Various Apps and tools for the goal of creating a App/service.
 * FaaS - FUNCTION AS A SERVICE
  
   * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
-    [hello-go-deploy-aws-lambda](https://github.com/JeffDeCola/hello-go-deploy-aws-lambda)
+    _hello-go-deploy-aws-lambda repo coming soon_
   * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
-    [hello-go-deploy-gcf](https://github.com/JeffDeCola/hello-go-deploy-gcf)
+    _hello-go-deploy-gcf repo coming soon_
   * [microsoft azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet),
-    [hello-go-deploy-azure-functions](https://github.com/JeffDeCola/hello-go-deploy-azure-fuctions)
+    _hello-go-deploy-azure-functions repo coming soon_
 
 * PaaS - PLATFORM AS A SERVICE
 
@@ -211,6 +140,8 @@ Various Apps and tools for the goal of creating a App/service.
 
   * [amazon elastic container service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet),
     [hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
+  * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet),
+    [hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks)
   * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
     [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
   * [microsoft azure kubernetes service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet),
@@ -218,36 +149,183 @@ Various Apps and tools for the goal of creating a App/service.
 
 * IaaS - INFRASTRUCTURE AS A SERVICE
 
-  * CLOUD SERVICES
+  * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet),
+    [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet),
+    [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
+  * [microsoft azure virtual machines (vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet),
+    [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
+
+### SERVICE PROVIDERS
    
-    * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/amazon-web-services-cheat-sheet)
-    * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet)
-      * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-      * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
-      * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
-      * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-      * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-    * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/microsoft-azure-cheat-sheet)
+  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
+  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+    * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+    * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
+    * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+    * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+    * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
-  * COMPUTE
+### VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
-    * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/amazon-elastic-compute-cloud-cheat-sheet),
-      [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
-    * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/google-compute-engine-cheat-sheet),
-      [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-    * [microsoft azure virtual machines (vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/compute/microsoft-azure-virtual-machines-cheat-sheet),
-      [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
+This illustration shows how various Apps and tools fit together
+for the goal of creating an App/Service,
 
-## VISUAL OVERVIEW OF CREATING AN ASIC
+![IMAGE - Creating Services Environment Overview - IMAGE](pics/Creating-Services-Environment-Overview.jpg)
+
+## HARDWARE CHEAT SHEETS
+
+Various Apps and tools for the goal of creating an ASIC.
+
+### DEVELOPMENT
+
+* HARDWARE ARCHITECTURES
+
+  * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
+
+* LANGUAGES
+
+  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
+    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
+
+### TOOLS
+
+* SIMULATION
+
+  * _coming soon_
+
+* SYNTHESIS
+
+  * _coming soon_
+
+* TIMING
+
+  * _coming soon_
+
+### VISUAL OVERVIEW OF CREATING AN ASIC
 
 This illustration coming soon.
 
-## VISUAL OVERVIEW OF CREATING AN APP/SERVICE
+## OTHER CHEAT SHEETS
 
-Here is my illustration on how various Apps and tools fit together
-for the goal of creating a App/service,
+Random other things I'm interested in.
 
-![IMAGE - Creating Services Environment Overview - IMAGE](pics/Creating-Services-Environment-Overview.jpg)
+### COMPUTER HARDWARE
+
+* APPLE
+
+  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
+
+* PC
+
+  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
+  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
+
+* TECHNOLOGIES
+
+  * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
+  * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
+  * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
+  * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
+
+### MATHEMATICS
+
+_This entire sections is a massive work in progress, it will take me quite a few years to finish._
+
+* APPLIED
+
+   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
+   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
+   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
+   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
+   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
+   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+
+* PURE
+
+  * CHANGES
+
+    * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/calculus-cheat-sheet)
+    * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/chaos-theory-cheat-sheet)
+    * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/complex-analysis-cheat-sheet)
+    * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/dynamical-systems-cheat-sheet)
+    * [vector calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/changes/vector-calculus-cheat-sheet)
+
+  * FOUNDATIONS
+
+    * [category theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/category-theory-cheat-sheet)
+    * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/fundamental-rules-cheat-sheet)
+    * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/mathematics-logic-cheat-sheet)
+    * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/set-theory-cheat-sheet)
+    * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
+
+  * NUMBER SYSTEMS
+
+    * [complex numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/complex-numbers-cheat-sheet)
+    * [integers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/integers-cheat-sheet)
+    * [natural numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/natural-numbers-cheat-sheet)
+    * [prime numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/prime-numbers-cheat-sheet)
+    * [real numbers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/number-systems/real-numbers-cheat-sheet)
+
+  * SPACES
+
+    * [differential geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/differential-geometry-cheat-sheet)
+    * [fractal geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/fractal-geometry-cheat-sheet)
+    * [geometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/geometry-cheat-sheet)
+    * [measure theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/measure-theory-cheat-sheet)
+    * [topology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/topology-cheat-sheet)
+    * [trigonometry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/spaces/trigonometry-cheat-sheet)
+
+  * STRUCTURES
+
+    * [algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet)
+    * [combinations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/combinations-cheat-sheet)
+    * [group theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/group-theory-cheat-sheet)
+    * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/linear-algebra-cheat-sheet)
+    * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/number-theory-cheat-sheet)
+    * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/order-theory-cheat-sheet)
+
+### NETWORKS
+
+* CELLULAR
+
+  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
+
+* WAN / LAN
+
+  * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
+  * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
+
+### SCIENCE
+
+* BIOLOGICAL / LIFE SCIENCE
+
+  * [biology](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/biology-cheat-sheet)
+  * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
+
+* EARTH & SPACE SCIENCE
+    
+  * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
+
+* PHYSICAL SCIENCE
+
+  * [chemistry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/chemistry-cheat-sheet)
+  * [physics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet)
+
+### SINGLE BOARD COMPUTERS (SBC)
+
+* HUMMINGBOARD
+
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+
+* RASPBERRY PI (RasPi)
+
+  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
+  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
 ## MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
 
