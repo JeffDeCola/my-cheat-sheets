@@ -104,7 +104,7 @@ The `Meridian` passes through the `zenith` and both
 The `Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
 Plane of our solar system.
 
-![IMAGE - Celestial Sphere - IMAGE](../../../docs/pics/celestial-sphere.jpg)
+![IMAGE - Celestial Sphere - IMAGE](../../../../docs/pics/celestial-sphere.jpg)
 
 ## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
 
@@ -121,3 +121,44 @@ The north star would be 90&deg;.  It would be written like,
 point is the spring equinox. It would be written like,
 
 `5h 41m 28s` (hours, minutes and seconds).
+
+## STAR MAGNITUDE
+
+When viewing stars lets talk about magnitude.
+The relative brightness of a star as seen from earth.
+
+* APPARENT - How luminous the star looks on earth. Intrinsix.
+* ABSOLUTE - How luminous a start is from a standard distance.
+
+The lower the number, the brighter the star is.
+
+* Jupiter is -2.7 (Brighter then any star).
+* Sirius (brightest star in sky) is -1.46.
+* Polaris is 1.97
+
+## CONSTELLATIONS & STARS (POLARIS THE NORTH STAR)
+
+Constellations are good for orienting yourself with the night sky.
+
+* Ursa Major - great bear. Bigger dipper.
+* Ursa Minor - Little bear. Little dipper. 
+
+## NORTH AND SOUTH STAR
+
+For the northern hemisphere Polaris is currently the north star and is
+at is end of little dipper.
+
+But the southern hemisphere doesn't really have a south pole star.
+
+## NOTABLE STARS
+
+Here are some notable stars,
+
+* `Betelgeuse` - Betelgeuse is the brightest star in the night sky. Its
+  ready to blow in the next million years. 430 light years away.
+* `Sirius` brightest star in the sky and only 8.6
+  light years away. Sirius comes from the Greek word Seirius,
+  meaning, "searing" or "scorching.
+* `Rigel` - Blue color. 7th brightest star in the Constellation of orion.
+  864 lights years away.
+
