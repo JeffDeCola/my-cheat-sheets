@@ -11,9 +11,28 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-tbd
+$$[ x^n + y^n = z^n]$$
 
-Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
+and 
 
-"Let $\text{S}1(N) = \sum{p=1}^N \text{E}(p)$"
+$$E=mc^2$$
 
+and
+
+$$E=mc^2 + \int_a^a x\, dx$$
+
+and
+
+$$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$$
+
+and
+
+$$\text{S}1(N) = \sum{p=1}^N \text{E}(p)$$
+
+and
+
+$$f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi$$
+
+and
+
+$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
