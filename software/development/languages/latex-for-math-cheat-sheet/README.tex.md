@@ -21,20 +21,16 @@ text and in displaying mathematical formula.
 
 ## LaTeX
 
-A set of macros built on top of Tex. Built back in the 80s.
+`LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
 LaTeX is designed for the content, not the look of the document.
 A LaTeX editor is an app which enables you to write,
 edit and publish your paper in LaTeX.
 
-```
+```txt
 \documentclass{article}
 \title{Cartesian closed categories and the price of eggs}
 \author{Jane Doe}
 \date{September 1994}
-\begin{document}
-   \maketitle
-   Hello world!
-\end{document}
 ```
 
 But I don't do any of this, I'm only interested in
@@ -45,6 +41,7 @@ is one of LaTeX's greatest strengths.
 
 I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
+These are not shown.
 
 Display Mode,
 
@@ -58,18 +55,18 @@ $$
 E=mc^2
 $$
 
-Inline Mode,
+Inline Mode using,
 
 ```txt
 Einstein's equation
-$E=mc^2$
+E=mc^2
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
 You will get,
 
 Einstein's equation
-$E=mc^2$
+E=mc^2
 represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
@@ -139,9 +136,7 @@ $$
 Brackets,
 
 ```txt
-$$
 \left( \frac{x}{y} \right)
-$$ (7)
 ```
 
 $$
