@@ -41,16 +41,16 @@ But I don't do any of this, I'm only interested in
 the mathematical formulas. Typesetting mathematics
 is one of LaTeX's greatest strengths.
 
-## LaTeX for MATH (INLINE & DISPLAY MODE)
+## LaTeX for MATH (DISPLAY & INLINE MODE)
 
-I only use LaTeX math capabilities. In order to use with markdown
-you need a delimiter, I like to use the dollar sign.
+I only use LaTeX math capabilities. In order to use LaTeX
+with markdown you need a delimiter, I like to use the dollar sign.
 
-Display level,
+Display Mode,
 
-\$\$
+```txt
 E=mc^2
-
+```
 
 You will get,
 
@@ -58,23 +58,13 @@ $$
 E=mc^2
 $$
 
-Display level with numbering,
+Inline Mode,
 
-\$\$
-E=mc^2
-\$\$ (1)
-
-You will get,
-
-$$
-E=mc^2
-$$(1)
-
-For inline,
-
+```txt
 Einstein's equation
 \$E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
+```
 
 You will get,
 
@@ -84,77 +74,67 @@ represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
 
+Note, dollar sign delimiters not shown,
+
 Einsteins famous equation,
 
 ```txt
-$$
 E=mc^2
-$$ (1)
 ```
 
 $$
 E=mc^2
-$$ (1)
+$$
 
 Pythagorean theorem,
 
 ```txt
-$$
 x^n + y^n = z^n
-$$ (2)
 ```
 
 $$
 x^n + y^n = z^n
-$$ (2)
+$$
 
 A sample Integral,
 
 ```txt
-$$
 \int_{a}^{b} x^2 dx
-$$ (3)
 ```
 
 $$
 \int_{a}^{b} x^2 dx
-$$ (3)
+$$
 
 Limits,
 
 ```txt
-$$
 \lim_{x\to\infty} f(x)
-$$ (4)
 ```
 
 $$
 \lim_{x\to\infty} f(x)
-$$ (4)
+$$
 
 Some trigonometry,
 
 ```txt
-$$
 \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
-$$ (5)
 ```
 
 $$
 \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
-$$ (5)
+$$
 
 Fractions (binomial coefficients),
 
 ```txt
-$$
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
-$$ (6)
 ```
 
 $$
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
-$$ (6)
+$$
 
 Brackets,
 
@@ -166,12 +146,11 @@ $$ (7)
 
 $$
 \left( \frac{x}{y} \right)
-$$ (7)
+$$
 
 Arrays in Brackets with spacing (\qquad),
 
 ```txt
-$$
 \left(
 \begin{array}{ccc}
 1 & 2 & 3\\
@@ -189,7 +168,6 @@ $$
   3 & 3 & -8
   \end{array}
 \right\}
-$$ (8)
 ```
 
 $$
@@ -210,7 +188,7 @@ $$
   3 & 3 & -8
   \end{array}
 \right\}
-$$ (8)
+$$
 
 ## LaTeX APPS
 
