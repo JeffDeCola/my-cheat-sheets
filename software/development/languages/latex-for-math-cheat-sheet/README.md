@@ -139,7 +139,7 @@ Arrays in Brackets with spacing (\qquad),
 \right\}
 ```
 
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b5d5435cc73a6296e41ab39453314d7e.svg?invert_in_darkmode&sanitize=true" align=middle width=250.685226pt height=59.178683850000006pt/></p>
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/4a59e94ce344d80400cb31c8cfa777a5.svg?invert_in_darkmode&sanitize=true" align=middle width=383.24212574999996pt height=131.50802115pt/></p>
 
 ## LaTeX APPS
 
