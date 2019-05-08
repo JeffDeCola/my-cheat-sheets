@@ -5,8 +5,8 @@ an advanced typesetting system._
 
 Documentation and reference,
 
-* [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [Another great website for LaTeX math](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
 View my entire list of cheat sheets on
@@ -62,7 +62,7 @@ Inline Mode,
 
 ```txt
 Einstein's equation
-\$E=mc^2\$
+$E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -158,9 +158,7 @@ Arrays in Brackets with spacing (\qquad),
 1 & -8 & 2
 \end{array}
 \right)
-
 \qquad
-
 \left\{
   \begin{array}{ccc}
   1 & 5 & 8\\
@@ -178,9 +176,7 @@ $$
 1 & -8 & 2
 \end{array}
 \right)
-
-\qquad
-
+\quad
 \left\{
   \begin{array}{ccc}
   1 & 5 & 8\\
@@ -196,26 +192,27 @@ Some cool LaTeX apps I use.
 
 ### VISUAL STUDIO CODE APP - MARKDOWN + MATH
 
-View your LaTeX in your markdown file in a preview window.
+View LaTeX math formulas in Visual Studio Code preview window.
 
-[VS Code Display Latex Preview](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
 
-### BROWSER APP - KaTeX
+### BROWSER SUPPORT - KaTeX
 
 Displays mathematical notation in web browsers.
 
-[KaTeX Overview](https://katex.org/docs/supported.html).
+[KaTeX](https://katex.org/docs/supported.html).
 
-### BROWSER WEBSITE - mathurl.com
+### BROWSER SANDBOX - mathurl.com
+
+Sandbox to create your LaTeX math formulas online.
 
 [mathurl.com](http://mathurl.com/)
-will help you create your equations.
 
 ### GITHUB APP - TeXify
 
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
-It is built on
+Its built on
 [readme2tex](https://github.com/leegao/readme2tex)
 
 You write `README.text.md` and push.

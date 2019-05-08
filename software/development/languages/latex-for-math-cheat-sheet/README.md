@@ -5,8 +5,8 @@ an advanced typesetting system._
 
 Documentation and reference,
 
-* [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [Another great website for LaTeX math](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
 View my entire list of cheat sheets on
@@ -57,7 +57,7 @@ Inline Mode,
 
 ```txt
 Einstein's equation
-\$E=mc^2\$
+<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -133,9 +133,7 @@ Arrays in Brackets with spacing (\qquad),
 \left(
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/fad1567bea2d5ab998f847f43139ed1c.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31975444999999pt height=51.41553615pt/></p>
 \right)
-
 \qquad
-
 \left\{
   <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/aa47c680e25b233a2e859fe52c1906a9.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31976105pt height=51.41553615pt/></p>
 \right\}
@@ -149,26 +147,27 @@ Some cool LaTeX apps I use.
 
 ### VISUAL STUDIO CODE APP - MARKDOWN + MATH
 
-View your LaTeX in your markdown file in a preview window.
+View LaTeX math formulas in Visual Studio Code preview window.
 
-[VS Code Display Latex Preview](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
 
-### BROWSER APP - KaTeX
+### BROWSER SUPPORT - KaTeX
 
 Displays mathematical notation in web browsers.
 
-[KaTeX Overview](https://katex.org/docs/supported.html).
+[KaTeX](https://katex.org/docs/supported.html).
 
-### BROWSER WEBSITE - mathurl.com
+### BROWSER SANDBOX - mathurl.com
+
+Sandbox to create your LaTeX math formulas online.
 
 [mathurl.com](http://mathurl.com/)
-will help you create your equations.
 
 ### GITHUB APP - TeXify
 
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
-It is built on
+Its built on
 [readme2tex](https://github.com/leegao/readme2tex)
 
 You write `README.text.md` and push.
