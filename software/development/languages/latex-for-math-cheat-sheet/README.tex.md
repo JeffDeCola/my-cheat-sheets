@@ -15,7 +15,8 @@ View my entire list of cheat sheets on
 ## TeX
 
 `TeX` is an advanced typesetting system which was
-developed by Donald Knuth in 1978. TeX is mainly popular
+developed by Donald Knuth in 1978. It is a markup language
+for describing a document. TeX is mainly popular
 because of its ability to handle complex technical
 text and in displaying mathematical formula.
 
@@ -238,3 +239,27 @@ At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
 
 This cheat sheet is using this tool.
+
+### GITHUB APP - readme2tex
+
+[readme2tex](https://github.com/leegao/readme2tex).
+
+You need Python 2.7 or above and pip installed.
+
+Install latex, latex geometry package, and dvisvgm,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install texlive-full
+sudo apt install texlive-extra-utils
+```
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+sudo python setup.py develop
+```
+
+I do not want to install the entire thing (3 gigs), but can't
+figure out how to install latex and just the geometry package.
