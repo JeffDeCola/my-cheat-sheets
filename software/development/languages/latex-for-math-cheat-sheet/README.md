@@ -46,7 +46,17 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
-\$<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cac45eaab30ffc579cb1c9f1f7a944a0.svg?invert_in_darkmode&sanitize=true" align=middle width=80.35959195pt height=15.1160328pt/></p><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/0cb5074e9fe8a7b920b059569d3dd6f0.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=24.65753399999998pt/>
+\$
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
+\$
+```
+
+take 2
+
+```txt
+\$
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/e0b4e8ecb9222f75ba05c090e47963d1.svg?invert_in_darkmode&sanitize=true" align=middle width=80.35959195pt height=15.1160328pt/></p>
+\$
 ```
 
 You will get,
@@ -74,7 +84,9 @@ Note, dollar sign delimiters not shown,
 Einsteins famous equation,
 
 ```txt
-\$<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>\$
+\$
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
+\$
 ```
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
