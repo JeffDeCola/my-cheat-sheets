@@ -45,37 +45,9 @@ you need a delimiter, I like to use the dollar sign.
 
 Display level,
 
-\$
-```txt
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
-```
-\$
-
-You will get,
-
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
-
-Display level with numbering,
-
-\$
-```txt
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
-```
-\$
-
-You will get,
-
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
-
-For inline,
-
-\$
-```txt
-Einstein's equation
-<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc30afed64196658375c08d08281d85c.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2ce1efb0991e67d23673d5002c38d5f4.svg?invert_in_darkmode&sanitize=true" align=middle width=80.36550059999999pt height=45.84475499999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d2093797fcacf890acecdc17bc808f86.svg?invert_in_darkmode&sanitize=true" align=middle width=206.75854649999997pt height=78.90410879999997pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/c2bcba031495fb258907755cfd89ba9d.svg?invert_in_darkmode&sanitize=true" align=middle width=83.10521009999998pt height=45.84475500000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8e17eefb9686f8a4505a723255a858d1.svg?invert_in_darkmode&sanitize=true" align=middle width=182.14661685pt height=85.29680940000001pt/>E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
-\$
 
 You will get,
 
