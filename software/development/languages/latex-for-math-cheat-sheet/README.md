@@ -47,7 +47,7 @@ Display level,
 
 \$\$
 E=mc^2
-\$\$
+
 
 You will get,
 
@@ -55,23 +55,19 @@ You will get,
 
 Display level with numbering,
 
-```txt
 \$\$
 E=mc^2
 \$\$ (1)
-```
 
 You will get,
 
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>(1)
 
 For inline,
 
-```txt
 Einstein's equation
 \$E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
-```
 
 You will get,
 
