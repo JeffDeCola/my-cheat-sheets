@@ -55,10 +55,6 @@ $$
 E=mc^2
 $$
 
-$$
-E=Rc^2
-$$
-
 Inline Mode using,
 
 ```txt
