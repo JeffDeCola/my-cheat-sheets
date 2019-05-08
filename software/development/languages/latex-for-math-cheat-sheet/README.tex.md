@@ -147,19 +147,19 @@ Arrays in Brackets with spacing (\qquad),
 
 ```txt
 \left(
- \begin{array}{ccc}
+ \$\begin{array}{ccc}
   1 & 2 & 3\\
   4 & 5 & 9\\
   1 & -8 & 2
- \end{array}
+ \$\end{array}
 \right)
 \quad
 \left\{
-  \begin{array}{ccc}
+  \$\begin{array}{ccc}
   1 & 5 & 8\\
   0 & 2 & 4\\
   3 & 3 & -8
-  \end{array}
+  \$\end{array}
 \right\}
 ```
 
@@ -179,16 +179,6 @@ $$
   3 & 3 & -8
   \end{array}
 \right\}
-$$
-
-$$
-A_{m,n} = 
- \begin{pmatrix}
-  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-  \vdots  & \vdots  & \ddots & \vdots  \\
-  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
- \end{pmatrix}
 $$
 
 ## LaTeX APPS
