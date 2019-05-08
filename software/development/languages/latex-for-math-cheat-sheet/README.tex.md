@@ -146,7 +146,7 @@ $$
 Bracket array,
 
 ```txt
-\$$
+\$\$
 \left(
  \begin{array}{ccc}
   1 & 2 & 3\\
@@ -154,7 +154,7 @@ Bracket array,
   1 & -8 & 2
  \end{array}
 \right)
-\$$
+\$\$
 ```
 
 $$
@@ -170,6 +170,7 @@ $$
 Arrays in Brackets with spacing (\qquad),
 
 ```txt
+\$\$
 \left(
  \\begin{array}{ccc}
   1 & 2 & 3\\
@@ -185,6 +186,7 @@ Arrays in Brackets with spacing (\qquad),
   3 & 3 & -8
   \end{array}
 \right\}
+\$\$
 ```
 
 $$
