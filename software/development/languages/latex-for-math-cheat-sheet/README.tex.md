@@ -48,9 +48,13 @@ you need a delimiter, I like to use the dollar sign.
 
 Display level,
 
-\$$
+```txt
+\$
+$$
 E=mc^2
-\$$
+$$
+\$
+```
 
 You will get,
 
@@ -60,10 +64,13 @@ $$
 
 Display level with numbering,
 
-\$$
+```txt
+\$
+$$
 E=mc^2
-\$$ (1)
-
+$$ (1)
+\$
+```
 You will get,
 
 $$
@@ -72,10 +79,12 @@ $$ (1)
 
 For inline,
 
-```text
+```txt
+\$
 Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
+\$
 ```
 
 You will get,
@@ -239,9 +248,13 @@ will help you create your equations.
 
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
+It is built on
+[readme2tex](https://github.com/leegao/readme2tex)
 
 You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
+
+Use \$ and \$$ so it does not render.
 
 This cheat sheet is using this tool.
