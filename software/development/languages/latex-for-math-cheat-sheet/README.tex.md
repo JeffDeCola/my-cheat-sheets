@@ -46,9 +46,23 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
-\$$$\$
+\$
+$$
 E=mc^2
-\$$$\$
+$$
+\$
+```
+
+take 2
+
+```txt
+\$
+$$
+\$
+E=mc^2
+\$
+$$
+\$
 ```
 
 You will get,
@@ -78,9 +92,11 @@ Note, dollar sign delimiters not shown,
 Einsteins famous equation,
 
 ```txt
-\$$$
+\$
+$$
 E=mc^2
-$$\$
+$$
+\$
 ```
 
 $$
