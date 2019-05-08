@@ -246,7 +246,8 @@ This cheat sheet is using this tool.
 
 You need Python 2.7 or above and pip installed.
 
-Install latex, latex geometry package, and dvisvgm,
+Install full latex (I really only wanted latex and
+latex geometry package) and dvisvgm,
 
 ```bash
 sudo apt-get update
@@ -255,11 +256,28 @@ sudo apt-get install texlive-full
 sudo apt install texlive-extra-utils
 ```
 
+Install cairocffi and other dependencies you may need,
+
+```bash
+sudo apt-get install libffi6 libffi-dev
+pip install --user cairocffi
+pip install 'setuptools<36'
+```
+
+Now install readme2tex,
+
 ```bash
 git clone https://github.com/leegao/readme2tex
 cd readme2tex
 sudo python setup.py develop
 ```
 
-I do not want to install the entire thing (3 gigs), but can't
-figure out how to install latex and just the geometry package.
+Again, I do not want to install the full version of latex
+(3 gigs), but can't figure out how to install latex
+and just the geometry package.
+
+Usage,
+
+```bash
+python -m readme2tex --output README.md README.tex.md
+```
