@@ -46,7 +46,9 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
+\$$
 E=mc^2
+$$
 ```
 
 You will get,
@@ -143,16 +145,39 @@ $$
 \left( \frac{x}{y} \right)
 $$
 
-Arrays in Brackets with spacing (\qquad),
+Bracket array,
 
 ```txt
-\$\$
+\$$
 \left(
  \begin{array}{ccc}
   1 & 2 & 3\\
   4 & 5 & 9\\
   1 & -8 & 2
  \end{array}
+\right)
+$$
+```
+
+$$
+\left(
+ \begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 5 & 9\\
+  1 & -8 & 2
+ \end{array}
+\right)
+$$
+
+Arrays in Brackets with spacing (\qquad),
+
+```txt
+\left(
+ \\begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 5 & 9\\
+  1 & -8 & 2
+ \\end{array}
 \right)
 \quad
 \left\{
@@ -162,7 +187,6 @@ Arrays in Brackets with spacing (\qquad),
   3 & 3 & -8
   \end{array}
 \right\}
-\$\$
 ```
 
 $$
