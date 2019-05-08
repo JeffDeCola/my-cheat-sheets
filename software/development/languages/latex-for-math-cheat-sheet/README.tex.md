@@ -249,6 +249,4 @@ You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
 
-Use \$ and \$$ so it does not render.
-
 This cheat sheet is using this tool.
