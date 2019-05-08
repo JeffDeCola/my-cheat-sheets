@@ -1,6 +1,6 @@
 # ALGEBRA CHEAT SHEET
 
-```
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
@@ -16,6 +16,14 @@ $$[ x^n + y^n = z^n]$$
 and 
 
 $$E=mc^2$$
+
+and
+
+```text
+$$
+E=mc^2
+$$
+```
 
 and
 
@@ -49,11 +57,7 @@ $$
   \int_{-\infty}^\infty e^{-x^2/2} dx = \sqrt{2\pi}
 $$
 
-
 Here's a display level formula
-<p align="center"><img alt="$$&#10;\frac{n!}{k!(n-k)!} = {n \choose k}&#10;$$" src="svgs/32737e0a8d5a4cf32ba3ab1b74902ab7.png?invert_in_darkmode" align=middle width="127.89183pt" height="39.30498pt"/></p>
-
-> It is well known that if <img alt="$ax^2 + bx + c =0$" src="svgs/162f63774d8a882cc15ae1301cfd8ac0.png?invert_in_darkmode" align=middle width="119.01186pt" height="26.70657pt"/>, then <img alt="$x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$" src="svgs/584fa2612b78129d140fb208e9d76ae9.png?invert_in_darkmode" align=middle width="112.3584pt" height="33.20526pt"/>.
 
 This math is inline $`a^2+b^2=c^2`$.
 
@@ -61,7 +65,6 @@ This is on a separate line
 ```math
 a^2+b^2=c^2
 ```
-
 
 # fractals
 Mandelbulb fractal 3D in pure Javascript based on [GPU.JS](https://github.com/gpujs/gpu.js)
@@ -77,8 +80,6 @@ Input parameters ([left-handed coordinate system](https://en.wikipedia.org/wiki/
 * $\theta \in [0,\pi)$ - field of view (slacar value, for human eye $\approx 90^\circ$)
 * $k$ - number of pixels on screen width 
 * $m$ - number of pixels screen in height 
-
-<p align="center"><img src="/tex/raysMatrix.png" align=middle /></p>
 
 **IDEA**: lets find position of center of each pixel $P_{ij}$ which allows us to easily find ray which starts at $E$ and go thought that pixel. To do it we find first $P_{1m}$ and find others by move on vievports plane.
 
@@ -106,6 +107,146 @@ p_{1m} = t_n d - g_xb_n - g_yv_n$$
 
 **CALCULATIONS**: notice that $P_{ij} = E + p_{ij}$ and ray $R_{ij} = P_{ij} -E = p_{ij}$ so normalized ray $r_{ij}$ is 
 
-$$ p_{ij} = p_{1m} + q_x(i-1) + q_y(j-1)$$
-$$ r_{ij} = \frac{p_{ij}}{||p_{ij}||} $$
+$$ p_{ij} = p_{1m} + q_x(i-1) + q_y(j-1)$$ (1)
+$$ r_{ij} = \frac{p_{ij}}{||p_{ij}||} $$ (2)
 
+
+and,
+
+```math
+\cos (2\theta) = \cos^2 \theta - \sin^2 \theta
+```
+## COMMON MATH EQUATIONS
+
+Note, dollar sign delimiters not shown,
+
+Einsteins famous equation,
+
+```txt
+E=mc^2
+```
+
+$$
+E=mc^2
+$$
+
+Pythagorean theorem,
+
+```txt
+x^n + y^n = z^n
+```
+
+$$
+x^n + y^n = z^n
+$$
+
+A sample Integral,
+
+```txt
+\int_{a}^{b} x^2 dx
+```
+
+$$
+\int_{a}^{b} x^2 dx
+$$
+
+Limits,
+
+```txt
+\lim_{x\to\infty} f(x)
+```
+
+$$
+\lim_{x\to\infty} f(x)
+$$
+
+Some trigonometry,
+
+```txt
+\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
+```
+
+$$
+\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
+$$
+
+Fractions (binomial coefficients),
+
+```txt
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+```
+
+$$
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+$$
+
+Brackets,
+
+```txt
+\left( \frac{x}{y} \right)
+```
+
+$$
+\left( \frac{x}{y} \right)
+$$
+
+Bracket array,
+
+```txt
+\left(
+ \begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 4 & 9\\
+  1 & -8 & 2
+ \end{array}
+\right)
+```
+
+$$
+\left(
+ \begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 4 & 9\\
+  1 & -8 & 2
+ \end{array}
+\right)
+$$
+
+Arrays in Brackets with spacing (\qquad),
+
+```txt
+\left(
+ \\begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 5 & 9\\
+  1 & -8 & 2
+ \\end{array}
+\right)
+\quad
+\left\{
+  \begin{array}{ccc}
+  1 & 5 & 8\\
+
+  0 & 2 & 4\\
+  3 & 3 & -8
+  \end{array}
+\right\}
+```
+
+$$
+\left(
+ \begin{array}{ccc}
+  1 & 2 & 3\\
+  4 & 5 & 9\\
+  1 & -8 & 2
+ \end{array}
+\right)
+\quad
+\left\{
+  \begin{array}{ccc}
+  1 & 5 & 8\\
+  0 & 2 & 4\\
+  3 & 3 & -8
+  \end{array}
+\right\}
+$$
