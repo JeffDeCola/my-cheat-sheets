@@ -177,11 +177,13 @@ You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
 
-This cheat sheet is using this tool.
+This app is not that stable.
 
-### GITHUB APP - readme2tex
+### APP - readme2tex
 
 [readme2tex](https://github.com/leegao/readme2tex).
+
+This cheat sheet is using this app.
 
 You need Python 2.7 or above and pip installed.
 
