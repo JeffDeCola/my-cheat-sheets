@@ -55,6 +55,10 @@ $$
 E=mc^2
 $$
 
+$$
+E=dsdfsdf^2
+$$
+
 Inline Mode using,
 
 ```txt
