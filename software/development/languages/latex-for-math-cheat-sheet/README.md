@@ -131,7 +131,13 @@ Brackets,
 Bracket array,
 
 ```txt
-TBD
+    \left(
+     \begin{array}{ccc}
+      1 & 2 & 3\\
+      4 & 4 & 9\\
+      1 & -8 & 2
+     \end{array}
+    \right)
 ```
 
 <p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 4 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;$$" src="svgs/239df225910aa3c7dccfe23cef3e1681.svg" align="middle" width="115.47162pt" height="59.068185pt"/></p>
@@ -139,10 +145,24 @@ TBD
 Arrays in Brackets with spacing (\qquad),
 
 ```txt
-TBD
+    \left(
+     \begin{array}{ccc}
+      1 & 2 & 3\\
+      4 & 5 & 9\\
+      1 & -8 & 2
+     \end{array}
+    \right)
+    \quad
+    \left\{
+     \begin{array}{ccc}
+      1 & 5 & 8\\
+      0 & 2 & 4\\
+      3 & 3 & -8
+     \end{array}
+    \right\}
 ```
 
-<p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 5 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;\quad&#10;\left\{&#10;  \begin{array}{ccc}&#10;  1 &amp; 5 &amp; 8\\&#10;  0 &amp; 2 &amp; 4\\&#10;  3 &amp; 3 &amp; -8&#10;  \end{array}&#10;\right\}&#10;$$" src="svgs/8e653c22e26b54bf3d59ac7699ce9318.svg" align="middle" width="250.63005pt" height="59.12346pt"/></p>
+<p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 5 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;\quad&#10;\left\{&#10; \begin{array}{ccc}&#10;  1 &amp; 5 &amp; 8\\&#10;  0 &amp; 2 &amp; 4\\&#10;  3 &amp; 3 &amp; -8&#10; \end{array}&#10;\right\}&#10;$$" src="svgs/e06d67a1b391498c04eb180b57d406b1.svg" align="middle" width="250.63005pt" height="59.12346pt"/></p>
 
 ## LaTeX APPS
 
