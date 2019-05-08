@@ -48,13 +48,9 @@ you need a delimiter, I like to use the dollar sign.
 
 Display level,
 
-\$
-```txt
-$$
+\$$
 E=mc^2
-$$
-```
-\$
+\$$
 
 You will get,
 
@@ -64,13 +60,11 @@ $$
 
 Display level with numbering,
 
-\$
 ```txt
 $$
 E=mc^2
 $$ (1)
 ```
-\$
 
 You will get,
 
@@ -80,13 +74,11 @@ $$ (1)
 
 For inline,
 
-\$
 ```txt
 Einstein's equation
-$E=mc^2$
+\$E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
-\$
 
 You will get,
 
