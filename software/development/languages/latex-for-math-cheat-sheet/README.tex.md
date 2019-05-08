@@ -15,7 +15,8 @@ View my entire list of cheat sheets on
 ## TeX
 
 `TeX` is an advanced typesetting system which was
-developed by Donald Knuth in 1978. TeX is mainly popular
+developed by Donald Knuth in 1978. It is a markup language
+for describing a document. TeX is mainly popular
 because of its ability to handle complex technical
 text and in displaying mathematical formula.
 
@@ -53,10 +54,6 @@ You will get,
 
 $$
 E=mc^2
-$$
-
-$$
-E=Rc^2
 $$
 
 Inline Mode using,
@@ -150,13 +147,7 @@ $$
 Bracket array,
 
 ```txt
-\left(
- \begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 4 & 9\\
-  1 & -8 & 2
- \end{array}
-\right)
+INSERT
 ```
 
 $$
@@ -171,24 +162,9 @@ $$
 
 Arrays in Brackets with spacing (\qquad),
 
-\$\$
-\left(
- \\begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 5 & 9\\
-  1 & -8 & 2
- \\end{array}
-\right)
-\quad
-\left\{
-  \begin{array}{ccc}
-  1 & 5 & 8\\
-
-  0 & 2 & 4\\
-  3 & 3 & -8
-  \end{array}
-\right\}
-\$\$
+```txt
+INSERT
+```
 
 $$
 \left(
@@ -242,3 +218,45 @@ At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
 
 This cheat sheet is using this tool.
+
+### GITHUB APP - readme2tex
+
+[readme2tex](https://github.com/leegao/readme2tex).
+
+You need Python 2.7 or above and pip installed.
+
+Install full latex (I really only wanted latex and
+latex geometry package) and dvisvgm,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install texlive-full
+sudo apt install texlive-extra-utils
+```
+
+Install cairocffi and other dependencies you may need,
+
+```bash
+sudo apt-get install libffi6 libffi-dev
+pip install --user cairocffi
+pip install 'setuptools<36'
+```
+
+Now install readme2tex,
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+sudo python setup.py develop
+```
+
+Again, I do not want to install the full version of latex
+(3 gigs), but can't figure out how to install latex
+and just the geometry package.
+
+Usage,
+
+```bash
+python -m readme2tex --output README.md README.tex.md
+```
