@@ -52,9 +52,7 @@ E=mc^2
 
 You will get,
 
-$$
-E=mc^2
-$$
+<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
 Inline Mode using,
 
@@ -67,7 +65,7 @@ represent energy is equal to matter multiplied by the speed of light squared.
 You will get,
 
 Einstein's equation
-$E=mc^2$
+<img alt="$E=mc^2$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
 represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
@@ -80,9 +78,7 @@ Einsteins famous equation,
 E=mc^2
 ```
 
-$$
-E=mc^2
-$$
+<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
 Pythagorean theorem,
 
@@ -90,9 +86,7 @@ Pythagorean theorem,
 x^n + y^n = z^n
 ```
 
-$$
-x^n + y^n = z^n
-$$
+<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
 
 A sample Integral,
 
@@ -100,9 +94,7 @@ A sample Integral,
 \int_{a}^{b} x^2 dx
 ```
 
-$$
-\int_{a}^{b} x^2 dx
-$$
+<p align="center"><img alt="$$&#10;\int_{a}^{b} x^2 dx&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/7434eb168b5dfced915545b6a422e7b8.svg" align="middle" width="60.399075pt" height="41.24901pt"/></p>
 
 Limits,
 
@@ -110,9 +102,7 @@ Limits,
 \lim_{x\to\infty} f(x)
 ```
 
-$$
-\lim_{x\to\infty} f(x)
-$$
+<p align="center"><img alt="$$&#10;\lim_{x\to\infty} f(x)&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/b7ecb947fb5547679f1c7ab9a546d2ce.svg" align="middle" width="68.289045pt" height="22.14564pt"/></p>
 
 Some trigonometry,
 
@@ -120,9 +110,7 @@ Some trigonometry,
 \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
 ```
 
-$$
-\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
-$$
+<p align="center"><img alt="$$&#10;\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/85b567a60b6ab8fbc319c720f66f8ae2.svg" align="middle" width="282.74565pt" height="16.376943pt"/></p>
 
 Fractions (binomial coefficients),
 
@@ -130,9 +118,7 @@ Fractions (binomial coefficients),
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
 
-$$
-\binom{n}{k} = \frac{n!}{k!(n-k)!}
-$$
+<p align="center"><img alt="$$&#10;\binom{n}{k} = \frac{n!}{k!(n-k)!}&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/9cc892f15c1314868714ad2b49649eb5.svg" align="middle" width="127.93704pt" height="39.30498pt"/></p>
 
 Brackets,
 
@@ -140,70 +126,23 @@ Brackets,
 \left( \frac{x}{y} \right)
 ```
 
-$$
-\left( \frac{x}{y} \right)
-$$
+<p align="center"><img alt="$$&#10;\left( \frac{x}{y} \right)&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/2beb7431726139ffb37413b4031f73c1.svg" align="middle" width="37.49592pt" height="39.30498pt"/></p>
 
 Bracket array,
 
 ```txt
-\left(
- \begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 4 & 9\\
-  1 & -8 & 2
- \end{array}
-\right)
+INSERT
 ```
 
-$$
-\left(
- \begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 4 & 9\\
-  1 & -8 & 2
- \end{array}
-\right)
-$$
+<p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 4 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/239df225910aa3c7dccfe23cef3e1681.svg" align="middle" width="115.47162pt" height="59.068185pt"/></p>
 
 Arrays in Brackets with spacing (\qquad),
 
 ```txt
-\left(
- \\begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 5 & 9\\
-  1 & -8 & 2
- \\end{array}
-\right)
-\quad
-\left\{
-  \begin{array}{ccc}
-  1 & 5 & 8\\
-
-  0 & 2 & 4\\
-  3 & 3 & -8
-  \end{array}
-\right\}
+INSERT
 ```
 
-$$
-\left(
- \begin{array}{ccc}
-  1 & 2 & 3\\
-  4 & 5 & 9\\
-  1 & -8 & 2
- \end{array}
-\right)
-\quad
-\left\{
-  \begin{array}{ccc}
-  1 & 5 & 8\\
-  0 & 2 & 4\\
-  3 & 3 & -8
-  \end{array}
-\right\}
-$$
+<p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 5 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;\quad&#10;\left\{&#10;  \begin{array}{ccc}&#10;  1 &amp; 5 &amp; 8\\&#10;  0 &amp; 2 &amp; 4\\&#10;  3 &amp; 3 &amp; -8&#10;  \end{array}&#10;\right\}&#10;$$" src="https://rawgit.com/in	git@github.com:JeffDeCola/my-cheat-sheets/develop/svgs/8e653c22e26b54bf3d59ac7699ce9318.svg" align="middle" width="250.63005pt" height="59.12346pt"/></p>
 
 ## LaTeX APPS
 
