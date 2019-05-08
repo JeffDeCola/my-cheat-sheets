@@ -21,17 +21,16 @@ text and in displaying mathematical formula.
 
 ## LaTeX
 
-A set of macros built on top of Tex. Built back in the 80s.
+`LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
 LaTeX is designed for the content, not the look of the document.
 A LaTeX editor is an app which enables you to write,
 edit and publish your paper in LaTeX.
 
-```
+```txt
 \documentclass{article}
 \title{Cartesian closed categories and the price of eggs}
 \author{Jane Doe}
 \date{September 1994}
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/66dd1a7ac77fae198f6e52d61c7ad992.svg?invert_in_darkmode&sanitize=true" align=middle width=377.25063585pt height=26677.47928725pt/></p>
 ```
 
 But I don't do any of this, I'm only interested in
@@ -42,6 +41,7 @@ is one of LaTeX's greatest strengths.
 
 I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
+These are not shown.
 
 Display Mode,
 
@@ -53,18 +53,18 @@ You will get,
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
 
-Inline Mode,
+Inline Mode using,
 
 ```txt
 Einstein's equation
-<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+E=mc^2
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
 You will get,
 
 Einstein's equation
-<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+E=mc^2
 represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
@@ -122,7 +122,7 @@ Fractions (binomial coefficients),
 Brackets,
 
 ```txt
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2beb7431726139ffb37413b4031f73c1.svg?invert_in_darkmode&sanitize=true" align=middle width=37.5411861pt height=39.452455349999994pt/></p> (7)
+\left( \frac{x}{y} \right)
 ```
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2beb7431726139ffb37413b4031f73c1.svg?invert_in_darkmode&sanitize=true" align=middle width=37.5411861pt height=39.452455349999994pt/></p>
