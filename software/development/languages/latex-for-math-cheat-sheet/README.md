@@ -45,7 +45,108 @@ you need a delimiter, I like to use the dollar sign.
 
 Display level,
 
-\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc30afed64196658375c08d08281d85c.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2ce1efb0991e67d23673d5002c38d5f4.svg?invert_in_darkmode&sanitize=true" align=middle width=80.36550059999999pt height=45.84475499999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/bd5f1fc18a8b9b4854e23dcf3ff958da.svg?invert_in_darkmode&sanitize=true" align=middle width=202.42064039999997pt height=80.73058619999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc30afed64196658375c08d08281d85c.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/16c2dd4f8c8823432e917ec3ee46b834.svg?invert_in_darkmode&sanitize=true" align=middle width=83.10521009999998pt height=45.84475500000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d66cbc219bd990c38840a44db5882a3b.svg?invert_in_darkmode&sanitize=true" align=middle width=175.75391955pt height=85.29680940000001pt/>E=mc^2<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3e53e9ec9786c3ceb2487c6b0c97125b.svg?invert_in_darkmode&sanitize=true" align=middle width=519.6506403000001pt height=85.29681270000002pt/>E=mc^2<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ada56633e7d127c258a3b62db6133540.svg?invert_in_darkmode&sanitize=true" align=middle width=506.86520609999997pt height=118.35616650000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/52e1b7d8fbf100b6ab544bc7277c424b.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ad520cdb539a7ea4806437cae85330c2.svg?invert_in_darkmode&sanitize=true" align=middle width=151.46167409999998pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/40ccbe23c37b17b9420161290990114d.svg?invert_in_darkmode&sanitize=true" align=middle width=94.44253334999998pt height=21.839370299999988pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/74915535a2086a3a98dd40c7c8c963ef.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/40ccbe23c37b17b9420161290990114d.svg?invert_in_darkmode&sanitize=true" align=middle width=94.44253334999998pt height=21.839370299999988pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8f25bfee3080e4a289bc2e814b483a7f.svg?invert_in_darkmode&sanitize=true" align=middle width=124.79483609999997pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/43d7757d0d60343fbb85822e151b62ba.svg?invert_in_darkmode&sanitize=true" align=middle width=55.02170354999999pt height=34.33813679999997pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d55df2879e2f846ccd6dc419dd91df86.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/43d7757d0d60343fbb85822e151b62ba.svg?invert_in_darkmode&sanitize=true" align=middle width=55.02170354999999pt height=34.33813679999997pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/61a784cf76abb8c2a8570c3e57935fb9.svg?invert_in_darkmode&sanitize=true" align=middle width=42.328888799999994pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/66b3b5a41454e9e2ab425bdc45bdae35.svg?invert_in_darkmode&sanitize=true" align=middle width=92.05499819999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/abd406b1a35cc15e27c30e902aac2595.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/66b3b5a41454e9e2ab425bdc45bdae35.svg?invert_in_darkmode&sanitize=true" align=middle width=92.05499819999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/4dbfe0df971d9928bbba4eb045586200.svg?invert_in_darkmode&sanitize=true" align=middle width=132.51183495pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b1e111e2bec6d465fbdca63c8d20c3ec.svg?invert_in_darkmode&sanitize=true" align=middle width=283.3047161999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b639e2925e992dc813dadde3742ec7dc.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b1e111e2bec6d465fbdca63c8d20c3ec.svg?invert_in_darkmode&sanitize=true" align=middle width=283.3047161999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/99fe3f0f6da5a8301f9d9670f16b0e77.svg?invert_in_darkmode&sanitize=true" align=middle width=226.02805829999994pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/a73ffd873457b2b1ee31438473dac8c9.svg?invert_in_darkmode&sanitize=true" align=middle width=97.7339319pt height=28.92634470000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d49aca806d34d258a82c5d2db5de5d57.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/a73ffd873457b2b1ee31438473dac8c9.svg?invert_in_darkmode&sanitize=true" align=middle width=97.7339319pt height=28.92634470000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3031cfb8c606c74d643845468309ef7f.svg?invert_in_darkmode&sanitize=true" align=middle width=57.89972099999999pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ddbe1219e3386edf31ef3d9b33d62301.svg?invert_in_darkmode&sanitize=true" align=middle width=31.03429229999999pt height=37.80850590000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d7b6feef75d24ae4ab3999c7646d6f1d.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ddbe1219e3386edf31ef3d9b33d62301.svg?invert_in_darkmode&sanitize=true" align=middle width=31.03429229999999pt height=37.80850590000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/e513e592bc2512a2bc26638dfe6bbde8.svg?invert_in_darkmode&sanitize=true" align=middle width=277.80892094999996pt height=78.90410880000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/e4cd28f441e7dcd26683cb3a104c1160.svg?invert_in_darkmode&sanitize=true" align=middle width=115.5253011pt height=175.89216810000002pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cdd5bec360fea954f06b261f65333bea.svg?invert_in_darkmode&sanitize=true" align=middle width=33.79007609999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/e4cd28f441e7dcd26683cb3a104c1160.svg?invert_in_darkmode&sanitize=true" align=middle width=115.5253011pt height=175.89216810000002pt/>$ (8)
+```txt
+\$
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
+\$
+```
+
+You will get,
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
+
+Display level with numbering,
+
+```txt
+\$
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
+\$
+```
+You will get,
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
+
+For inline,
+
+```txt
+\$
+Einstein's equation
+<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+represent energy is equal to matter multiplied by the speed of light squared.
+\$
+```
+
+You will get,
+
+Einstein's equation
+<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+represent energy is equal to matter multiplied by the speed of light squared.
+
+## COMMON MATH EQUATIONS
+
+Einsteins famous equation,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
+
+Pythagorean theorem,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/238cd7abcefb8a6a256d0bec59744770.svg?invert_in_darkmode&sanitize=true" align=middle width=94.44253334999999pt height=14.937954899999998pt/></p> (2)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/238cd7abcefb8a6a256d0bec59744770.svg?invert_in_darkmode&sanitize=true" align=middle width=94.44253334999999pt height=14.937954899999998pt/></p> (2)
+
+A sample Integral,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7434eb168b5dfced915545b6a422e7b8.svg?invert_in_darkmode&sanitize=true" align=middle width=60.50117205pt height=41.27894265pt/></p> (3)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7434eb168b5dfced915545b6a422e7b8.svg?invert_in_darkmode&sanitize=true" align=middle width=60.50117205pt height=41.27894265pt/></p> (3)
+
+Limits,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b7ecb947fb5547679f1c7ab9a546d2ce.svg?invert_in_darkmode&sanitize=true" align=middle width=68.4019611pt height=22.1917806pt/></p> (4)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b7ecb947fb5547679f1c7ab9a546d2ce.svg?invert_in_darkmode&sanitize=true" align=middle width=68.4019611pt height=22.1917806pt/></p> (4)
+
+Some trigonometry,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/85b567a60b6ab8fbc319c720f66f8ae2.svg?invert_in_darkmode&sanitize=true" align=middle width=283.3047162pt height=16.438356pt/></p> (5)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/85b567a60b6ab8fbc319c720f66f8ae2.svg?invert_in_darkmode&sanitize=true" align=middle width=283.3047162pt height=16.438356pt/></p> (5)
+
+Fractions (binomial coefficients),
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/9cc892f15c1314868714ad2b49649eb5.svg?invert_in_darkmode&sanitize=true" align=middle width=127.98480255pt height=39.452455349999994pt/></p> (6)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/9cc892f15c1314868714ad2b49649eb5.svg?invert_in_darkmode&sanitize=true" align=middle width=127.98480255pt height=39.452455349999994pt/></p> (6)
+
+Brackets,
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2beb7431726139ffb37413b4031f73c1.svg?invert_in_darkmode&sanitize=true" align=middle width=37.5411861pt height=39.452455349999994pt/></p> (7)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/2beb7431726139ffb37413b4031f73c1.svg?invert_in_darkmode&sanitize=true" align=middle width=37.5411861pt height=39.452455349999994pt/></p> (7)
+
+Arrays in Brackets with spacing (\qquad),
+
+```txt
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/4a59e94ce344d80400cb31c8cfa777a5.svg?invert_in_darkmode&sanitize=true" align=middle width=383.24212574999996pt height=131.50802115pt/></p> (8)
+```
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/4a59e94ce344d80400cb31c8cfa777a5.svg?invert_in_darkmode&sanitize=true" align=middle width=383.24212574999996pt height=131.50802115pt/></p> (8)
 
 ## LaTeX APPS
 
@@ -72,9 +173,13 @@ will help you create your equations.
 
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
+It is built on
+[readme2tex](https://github.com/leegao/readme2tex)
 
 You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
+
+Use \$ and \$$ so it does not render.
 
 This cheat sheet is using this tool.
