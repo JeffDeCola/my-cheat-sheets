@@ -130,7 +130,7 @@ Brackets,
 Arrays in Brackets with spacing (\qquad),
 
 ```txt
-\$
+\$\$
 \left(
  <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7bdf21053eacbc99127168d4cf1eef77.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31975444999999pt height=51.41553615pt/></p>
 \right)
@@ -138,7 +138,7 @@ Arrays in Brackets with spacing (\qquad),
 \left\{
   <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/aa47c680e25b233a2e859fe52c1906a9.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31976105pt height=51.41553615pt/></p>
 \right\}
-\$
+\$\$
 ```
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8e653c22e26b54bf3d59ac7699ce9318.svg?invert_in_darkmode&sanitize=true" align=middle width=250.685226pt height=59.178683850000006pt/></p>
