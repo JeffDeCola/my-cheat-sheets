@@ -5,8 +5,8 @@ an advanced typesetting system._
 
 Documentation and reference,
 
-* [Math with LaTeX](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [Another great website for Math with LaTeX](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [Another great website for LaTeX math](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
 View my entire list of cheat sheets on
@@ -48,11 +48,9 @@ you need a delimiter, I like to use the dollar sign.
 
 Display level,
 
-```txt
-$$
+\$$
 E=mc^2
-$$
-```
+\$$
 
 You will get,
 
@@ -62,11 +60,9 @@ $$
 
 Display level with numbering,
 
-```txt
-$$
+\$$
 E=mc^2
-$$ (1)
-```
+\$$ (1)
 
 You will get,
 
