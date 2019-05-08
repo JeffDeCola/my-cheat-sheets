@@ -79,15 +79,16 @@ E=mc^2
 \$\$
 ```
 
-You will get,
-
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
-
-Inline Mode using,
+take 6
 
 ```txt
-Einstein's equation
-\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>\$
+\$ \$ E=mc^2 \$ \$
+```
+
+take 7
+
+```txt
+\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d819d3753f86e163e77363f5079cadc0.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7859e6acd637fba0f838e2e65303cb64.svg?invert_in_darkmode&sanitize=true" align=middle width=41.552647949999994pt height=80.7305862pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/454f8b069f4ab503e98d641c001242ce.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc134895ac03a6a5d70a127e3b652e88.svg?invert_in_darkmode&sanitize=true" align=middle width=83.10521009999998pt height=45.84475500000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/19044c3f40b5a0ec641fe8ae52d96663.svg?invert_in_darkmode&sanitize=true" align=middle width=184.42974494999999pt height=85.29680939999997pt/>E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -163,15 +164,17 @@ Arrays in Brackets with spacing (\qquad),
 
 ```txt
 \left(
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/fad1567bea2d5ab998f847f43139ed1c.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31975444999999pt height=51.41553615pt/></p>
+ <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7bdf21053eacbc99127168d4cf1eef77.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31975444999999pt height=51.41553615pt/></p>
 \right)
-\qquad
+\quad
 \left\{
   <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/aa47c680e25b233a2e859fe52c1906a9.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31976105pt height=51.41553615pt/></p>
 \right\}
 ```
 
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/b5d5435cc73a6296e41ab39453314d7e.svg?invert_in_darkmode&sanitize=true" align=middle width=250.685226pt height=59.178683850000006pt/></p>
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8e653c22e26b54bf3d59ac7699ce9318.svg?invert_in_darkmode&sanitize=true" align=middle width=250.685226pt height=59.178683850000006pt/></p>
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7b07d6ad4c70107c43654110adf92500.svg?invert_in_darkmode&sanitize=true" align=middle width=255.23435849999998pt height=88.76800184999999pt/></p>
 
 ## LaTeX APPS
 
