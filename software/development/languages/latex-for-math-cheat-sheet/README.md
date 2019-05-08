@@ -46,49 +46,18 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
-\$
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
-\$
-```
-
-take 2
-
-```txt
-\$
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/e0b4e8ecb9222f75ba05c090e47963d1.svg?invert_in_darkmode&sanitize=true" align=middle width=80.35959195pt height=15.1160328pt/></p>
-\$
-```
-
-take 3
-
-```txt
-\$ <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/f279645914bcb351fad46fde774d890b.svg?invert_in_darkmode&sanitize=true" align=middle width=80.35959195pt height=15.1160328pt/></p> \$
-```
-
-take 4
-
-```txt
-\$ <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> \$
-```
-
-take 5
-
-```txt
-\$\$
 E=mc^2
-\$\$
 ```
 
-take 6
+You will get,
+
+<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
+
+Inline Mode using,
 
 ```txt
-\$ \$ E=mc^2 \$ \$
-```
-
-take 7
-
-```txt
-\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/d819d3753f86e163e77363f5079cadc0.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/7859e6acd637fba0f838e2e65303cb64.svg?invert_in_darkmode&sanitize=true" align=middle width=41.552647949999994pt height=80.7305862pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/454f8b069f4ab503e98d641c001242ce.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc134895ac03a6a5d70a127e3b652e88.svg?invert_in_darkmode&sanitize=true" align=middle width=83.10521009999998pt height=45.84475500000001pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/19044c3f40b5a0ec641fe8ae52d96663.svg?invert_in_darkmode&sanitize=true" align=middle width=184.42974494999999pt height=85.29680939999997pt/>E=mc^2\$
+Einstein's equation
+E=mc^2
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -105,9 +74,7 @@ Note, dollar sign delimiters not shown,
 Einsteins famous equation,
 
 ```txt
-\$
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
-\$
+E=mc^2
 ```
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
