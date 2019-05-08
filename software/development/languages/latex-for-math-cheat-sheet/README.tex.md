@@ -41,12 +41,14 @@ is one of LaTeX's greatest strengths.
 
 I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
-These are not shown.
+Delimiters are not shown.
 
 Display Mode,
 
 ```txt
+/$$$/$
 E=mc^2
+/$$$/$
 ```
 
 You will get,
@@ -59,14 +61,14 @@ Inline Mode using,
 
 ```txt
 Einstein's equation
-E=mc^2
+/$$E=mc^2$/$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
 You will get,
 
 Einstein's equation
-E=mc^2
+$E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
@@ -189,13 +191,13 @@ Some cool LaTeX apps I use.
 
 View LaTeX math formulas in Visual Studio Code preview window.
 
-[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
 
 ### BROWSER SUPPORT - KaTeX
 
 Displays mathematical notation in web browsers.
 
-[KaTeX](https://katex.org/docs/supported.html).
+[KaTeX](https://katex.org/docs/supported.html)
 
 ### BROWSER SANDBOX - mathurl.com
 
@@ -208,7 +210,7 @@ Sandbox to create your LaTeX math formulas online.
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
 Its built on
-[readme2tex](https://github.com/leegao/readme2tex)
+[readme2tex](https://github.com/leegao/readme2tex).
 
 You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
