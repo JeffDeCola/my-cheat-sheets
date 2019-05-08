@@ -145,7 +145,6 @@ $$
 
 Bracket array,
 
-```txt
 \left(
  \begin{array}{ccc}
   1 & 2 & 3\\
@@ -153,7 +152,6 @@ Bracket array,
   1 & -8 & 2
  \end{array}
 \right)
-```
 
 $$
 \left(
