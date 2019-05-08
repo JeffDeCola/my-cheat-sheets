@@ -41,12 +41,12 @@ is one of LaTeX's greatest strengths.
 
 I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
-These are not shown.
+Delimiters are not shown.
 
 Display Mode,
 
 ```txt
-E=mc^2
+\$<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cac45eaab30ffc579cb1c9f1f7a944a0.svg?invert_in_darkmode&sanitize=true" align=middle width=80.35959195pt height=15.1160328pt/></p><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/0cb5074e9fe8a7b920b059569d3dd6f0.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=24.65753399999998pt/>
 ```
 
 You will get,
@@ -57,14 +57,14 @@ Inline Mode using,
 
 ```txt
 Einstein's equation
-E=mc^2
+\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>\$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
 You will get,
 
 Einstein's equation
-E=mc^2
+<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
 represent energy is equal to matter multiplied by the speed of light squared.
 
 ## COMMON MATH EQUATIONS
@@ -74,7 +74,7 @@ Note, dollar sign delimiters not shown,
 Einsteins famous equation,
 
 ```txt
-E=mc^2
+\$<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>\$
 ```
 
 <p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p>
@@ -149,13 +149,13 @@ Some cool LaTeX apps I use.
 
 View LaTeX math formulas in Visual Studio Code preview window.
 
-[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
 
 ### BROWSER SUPPORT - KaTeX
 
 Displays mathematical notation in web browsers.
 
-[KaTeX](https://katex.org/docs/supported.html).
+[KaTeX](https://katex.org/docs/supported.html)
 
 ### BROWSER SANDBOX - mathurl.com
 
@@ -168,7 +168,7 @@ Sandbox to create your LaTeX math formulas online.
 [TeXify](https://github.com/apps/texify)
 is a github app (on github) that Renders LateX to images in markdown.
 Its built on
-[readme2tex](https://github.com/leegao/readme2tex)
+[readme2tex](https://github.com/leegao/readme2tex).
 
 You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
