@@ -58,22 +58,8 @@ You will get,
 Display level with numbering,
 
 ```txt
-\$
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
-\$
-```
-You will get,
-
-<p align="center"><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/3abb8c75967ebfdd6439c56912f3d75a.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=14.202794099999998pt/></p> (1)
-
-For inline,
-
-```txt
-\$
-Einstein's equation
-<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+\$<img src="/software/development/languages/latex-for-math-cheat-sheet/tex/cc30afed64196658375c08d08281d85c.svg?invert_in_darkmode&sanitize=true" align=middle width=72.14038259999998pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8211ad33b6c9731914f2d3744dbe740c.svg?invert_in_darkmode&sanitize=true" align=middle width=119.28235769999999pt height=24.65753399999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/ac751974109f8cb69488a0604e3c38e6.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/><img src="/software/development/languages/latex-for-math-cheat-sheet/tex/8e17eefb9686f8a4505a723255a858d1.svg?invert_in_darkmode&sanitize=true" align=middle width=182.14661685pt height=85.29680940000001pt/>E=mc^2\$
 represent energy is equal to matter multiplied by the speed of light squared.
-\$
 ```
 
 You will get,
