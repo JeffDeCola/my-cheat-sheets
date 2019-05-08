@@ -46,9 +46,9 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
-/$$$/$
+\$$$\$
 E=mc^2
-/$$$/$
+\$$$\$
 ```
 
 You will get,
@@ -61,7 +61,7 @@ Inline Mode using,
 
 ```txt
 Einstein's equation
-/$$E=mc^2$/$
+\$$E=mc^2$\$
 represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -78,7 +78,9 @@ Note, dollar sign delimiters not shown,
 Einsteins famous equation,
 
 ```txt
+\$$$
 E=mc^2
+$$\$
 ```
 
 $$
