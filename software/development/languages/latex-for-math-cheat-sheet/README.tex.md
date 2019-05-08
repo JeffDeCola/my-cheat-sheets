@@ -46,9 +46,7 @@ Delimiters are not shown.
 Display Mode,
 
 ```txt
-\$$
 E=mc^2
-$$
 ```
 
 You will get,
@@ -156,7 +154,7 @@ Bracket array,
   1 & -8 & 2
  \end{array}
 \right)
-$$
+\$$
 ```
 
 $$
