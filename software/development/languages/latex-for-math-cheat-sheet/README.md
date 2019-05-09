@@ -9,6 +9,11 @@ Documentation and reference,
 * [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
+Which math functions can I do,
+
+* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
+* [KaTeX Support Table](https://katex.org/docs/support_table.html)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -38,11 +43,37 @@ But I don't do any of this, I'm only interested in
 the mathematical formulas. Typesetting mathematics
 is one of LaTeX's greatest strengths.
 
+## HOW I CREATED THIS README.md
+
+I use a program called [readme2tex](https://github.com/leegao/readme2tex).
+I run everything on my local machine.
+
+It works by taking your LaTeX math formula, rendering an image and
+referencing that image using HTML.
+
+First, I created and edit in README.tex.md.
+I have my LaTeX for math markdown in there delimited by dollar signs.
+
+Second, I run `readme2tex`. This will,
+
+* Create a new README.md file.
+* Creates *.svg images for each of the LateX for math formulas.
+* Add those image links automatically in your README.md file.
+
+It created the images using the latex program and geometry package you
+must install on your machine.  See the end of this cheat sheet for how I installed.
+
+I used to use a github app called
+[TeXify](https://github.com/apps/texify),
+but it is not that reliable and I don't like
+other programs having write access to my repo.  I feel
+like i loose control.
+
 ## LaTeX for MATH (DISPLAY & INLINE MODE)
 
-I only use LaTeX math capabilities. In order to use LaTeX
+As mentioned, I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
-Delimiters are not shown.
+Delimiters are not shown for simplicity.
 
 Display Mode,
 
@@ -68,9 +99,16 @@ Einstein's equation
 <img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
 represent energy is equal to matter multiplied by the speed of light squared.
 
-## COMMON MATH EQUATIONS
+## COMMON LaTeX MATH EQUATIONS
 
-Note, dollar sign delimiters not shown,
+Note, dollar sign delimiters not shown.  Also, you can't use begin{equation}
+because that is not part of LateX for math.  You are now getting into LaTeX
+typesetting capabilities.
+
+You can use,
+
+* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
+* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
 
 Einsteins famous equation,
 
@@ -88,7 +126,51 @@ x^n + y^n = z^n
 
 <p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
 
-A sample Integral,
+Pythagorean theorem (numbered),
+
+```txt
+x^n + y^n = z^n
+```
+
+<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p> (1)
+
+Pythagorean theorem (with box),
+
+```txt
+\boxed{x^n + y^n = z^n}
+```
+
+<p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
+
+Alignment (on equal sign),
+
+```txt
+    \begin{aligned}
+    a&=b+c \\
+    d+e&=f
+    \end{aligned}
+```
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;   a&amp;=b+c \\&#10;   d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/617c0c332b689e177d1befc39bbbc93d.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
+
+Alignment and spacing (on equal sign),
+
+```txt
+    \begin{aligned}
+    f(x) =& x^2\! +3x\! +2 \\
+    f(x) =& x^2+3x+2 \\
+    f(x) =& x^2\, +3x\, +2 \\
+    f(x) =& x^2\: +3x\: +2 \\
+    f(x) =& x^2\; +3x\; +2 \\
+    f(x) =& x^2\ +3x\ +2 \\
+    f(x) =& x^2\quad +3x\quad +2 \\
+    f(x) =& x^2\qquad +3x\qquad +2
+    \end{aligned}
+```
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;f(x) =&amp; x^2\! +3x\! +2 \\&#10;f(x) =&amp; x^2+3x+2 \\&#10;f(x) =&amp; x^2\, +3x\, +2 \\&#10;f(x) =&amp; x^2\: +3x\: +2 \\&#10;f(x) =&amp; x^2\; +3x\; +2 \\&#10;f(x) =&amp; x^2\ +3x\ +2 \\&#10;f(x) =&amp; x^2\quad +3x\quad +2 \\&#10;f(x) =&amp; x^2\qquad +3x\qquad +2&#10;\end{aligned}&#10;$$" src="svgs/2656ac5cb6616c9beb5fdb13f85f9d5e.svg" align="middle" width="197.66175pt" height="205.1412pt"/></p>
+
+An integral,
 
 ```txt
 \int_{a}^{b} x^2 dx
@@ -163,6 +245,27 @@ Arrays in Brackets with spacing (\qquad),
 ```
 
 <p align="center"><img alt="$$&#10;\left(&#10; \begin{array}{ccc}&#10;  1 &amp; 2 &amp; 3\\&#10;  4 &amp; 5 &amp; 9\\&#10;  1 &amp; -8 &amp; 2&#10; \end{array}&#10;\right)&#10;\quad&#10;\left\{&#10; \begin{array}{ccc}&#10;  1 &amp; 5 &amp; 8\\&#10;  0 &amp; 2 &amp; 4\\&#10;  3 &amp; 3 &amp; -8&#10; \end{array}&#10;\right\}&#10;$$" src="svgs/e06d67a1b391498c04eb180b57d406b1.svg" align="middle" width="250.63005pt" height="59.12346pt"/></p>
+
+Some cool arrows,
+
+```txt
+    A \xleftarrow{\text{this way}} B 
+     \xrightarrow[\text{or that way}]{ } C
+```
+
+<p align="center"><img alt="$$&#10; A \xleftarrow{\text{this way}} B &#10;  \xrightarrow[\text{or that way}]{ } C&#10;$$" src="svgs/918821c30b0c5fab7d439d169aeb27b4.svg" align="middle" width="192.2844pt" height="31.01538pt"/></p>
+
+Cases,
+
+```txt
+    u(x) = 
+     \begin{cases} 
+      \exp{x} & \text{if } x \geq 0 \\
+      1       & \text{if } x < 0
+     \end{cases}
+```
+
+<p align="center"><img alt="$$&#10; u(x) = &#10;  \begin{cases} &#10;   \exp{x} &amp; \text{if } x \geq 0 \\&#10;   1       &amp; \text{if } x &lt; 0&#10;  \end{cases}&#10;$$" src="svgs/7ece3ca3a971e04277b69433db754ff9.svg" align="middle" width="174.7581pt" height="49.13139pt"/></p>
 
 ## LaTeX APPS
 

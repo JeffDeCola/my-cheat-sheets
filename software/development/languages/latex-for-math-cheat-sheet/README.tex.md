@@ -9,6 +9,11 @@ Documentation and reference,
 * [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
+Which math functions can I do,
+
+* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
+* [KaTeX Support Table](https://katex.org/docs/support_table.html)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -38,11 +43,37 @@ But I don't do any of this, I'm only interested in
 the mathematical formulas. Typesetting mathematics
 is one of LaTeX's greatest strengths.
 
+## HOW I CREATED THIS README.md
+
+I use a program called [readme2tex](https://github.com/leegao/readme2tex).
+I run everything on my local machine.
+
+It works by taking your LaTeX math formula, rendering an image and
+referencing that image using HTML.
+
+First, I created and edit in README.tex.md.
+I have my LaTeX for math markdown in there delimited by dollar signs.
+
+Second, I run `readme2tex`. This will,
+
+* Create a new README.md file.
+* Creates *.svg images for each of the LateX for math formulas.
+* Add those image links automatically in your README.md file.
+
+It created the images using the latex program and geometry package you
+must install on your machine.  See the end of this cheat sheet for how I installed.
+
+I used to use a github app called
+[TeXify](https://github.com/apps/texify),
+but it is not that reliable and I don't like
+other programs having write access to my repo.  I feel
+like i loose control.
+
 ## LaTeX for MATH (DISPLAY & INLINE MODE)
 
-I only use LaTeX math capabilities. In order to use LaTeX
+As mentioned, I only use LaTeX math capabilities. In order to use LaTeX
 with markdown you need a delimiter, I like to use the dollar sign.
-Delimiters are not shown.
+Delimiters are not shown for simplicity.
 
 Display Mode,
 
@@ -70,9 +101,16 @@ Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
 
-## COMMON MATH EQUATIONS
+## COMMON LaTeX MATH EQUATIONS
 
-Note, dollar sign delimiters not shown,
+Note, dollar sign delimiters not shown.  Also, you can't use begin{equation}
+because that is not part of LateX for math.  You are now getting into LaTeX
+typesetting capabilities.
+
+You can use,
+
+* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
+* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
 
 Einsteins famous equation,
 
@@ -94,7 +132,71 @@ $$
 x^n + y^n = z^n
 $$
 
-A sample Integral,
+Pythagorean theorem (numbered),
+
+```txt
+x^n + y^n = z^n
+```
+
+$$
+x^n + y^n = z^n
+$$ (1)
+
+Pythagorean theorem (with box),
+
+```txt
+\boxed{x^n + y^n = z^n}
+```
+
+$$
+\boxed{x^n + y^n = z^n}
+$$
+
+Alignment (on equal sign),
+
+```txt
+    \begin{aligned}
+    a&=b+c \\
+    d+e&=f
+    \end{aligned}
+```
+
+$$
+\begin{aligned}
+   a&=b+c \\
+   d+e&=f
+\end{aligned}
+$$
+
+Alignment and spacing (on equal sign),
+
+```txt
+    \begin{aligned}
+    f(x) =& x^2\! +3x\! +2 \\
+    f(x) =& x^2+3x+2 \\
+    f(x) =& x^2\, +3x\, +2 \\
+    f(x) =& x^2\: +3x\: +2 \\
+    f(x) =& x^2\; +3x\; +2 \\
+    f(x) =& x^2\ +3x\ +2 \\
+    f(x) =& x^2\quad +3x\quad +2 \\
+    f(x) =& x^2\qquad +3x\qquad +2
+    \end{aligned}
+```
+
+$$
+\begin{aligned}
+f(x) =& x^2\! +3x\! +2 \\
+f(x) =& x^2+3x+2 \\
+f(x) =& x^2\, +3x\, +2 \\
+f(x) =& x^2\: +3x\: +2 \\
+f(x) =& x^2\; +3x\; +2 \\
+f(x) =& x^2\ +3x\ +2 \\
+f(x) =& x^2\quad +3x\quad +2 \\
+f(x) =& x^2\qquad +3x\qquad +2
+\end{aligned}
+$$
+
+An integral,
 
 ```txt
 \int_{a}^{b} x^2 dx
@@ -202,6 +304,36 @@ $$
   3 & 3 & -8
  \end{array}
 \right\}
+$$
+
+Some cool arrows,
+
+```txt
+    A \xleftarrow{\text{this way}} B 
+     \xrightarrow[\text{or that way}]{ } C
+```
+
+$$
+ A \xleftarrow{\text{this way}} B 
+  \xrightarrow[\text{or that way}]{ } C
+$$
+
+Cases,
+
+```txt
+    u(x) = 
+     \begin{cases} 
+      \exp{x} & \text{if } x \geq 0 \\
+      1       & \text{if } x < 0
+     \end{cases}
+```
+
+$$
+ u(x) = 
+  \begin{cases} 
+   \exp{x} & \text{if } x \geq 0 \\
+   1       & \text{if } x < 0
+  \end{cases}
 $$
 
 ## LaTeX APPS
