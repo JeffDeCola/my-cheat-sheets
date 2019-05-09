@@ -142,6 +142,16 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
+Pythagorean theorem (my solution to number, but it stinks),
+
+```txt
+x^n + y^n = z^n \qquad \qquad (1)
+```
+
+$$
+x^n + y^n = z^n \qquad \qquad (1)
+$$
+
 Square root,
 
 ```txt
