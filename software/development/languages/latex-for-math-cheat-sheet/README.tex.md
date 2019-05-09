@@ -21,16 +21,14 @@ View my entire list of cheat sheets on
 
 `TeX` is an advanced typesetting system which was
 developed by Donald Knuth in 1978. It is a markup language
-for describing a document. TeX is mainly popular
-because of its ability to handle complex technical
+for describing a document.
+LaTeX is designed for the content, not the look of the document.
+TeX is mainly popular because of its ability to handle complex technical
 text and in displaying mathematical formula.
 
 ## LaTeX
 
 `LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
-LaTeX is designed for the content, not the look of the document.
-A LaTeX editor is an app which enables you to write,
-edit and publish your paper in LaTeX.
 
 ```txt
 \documentclass{article}
@@ -40,7 +38,7 @@ edit and publish your paper in LaTeX.
 ```
 
 But I don't do any of this, I'm only interested in
-the mathematical formulas. Typesetting mathematics
+the mathematical formulas of LaTeX. Typesetting mathematics
 is one of LaTeX's greatest strengths.
 
 ## HOW I CREATED THIS README.md
