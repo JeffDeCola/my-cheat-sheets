@@ -118,15 +118,6 @@ E=mc^2
 
 <p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
-Einsteins famous equation (color),
-
-```txt
-\color{red}
-E=mc^2
-```
-
-<p align="center"><img alt="$$&#10;\color{red}&#10;E=mc^2&#10;$$" src="svgs/8c3de3548a825a1cef9ed356c0f648a0.svg" align="middle" width="86.984205pt" height="14.175084pt"/></p>
-
 Pythagorean theorem,
 
 ```txt
@@ -134,15 +125,6 @@ x^n + y^n = z^n
 ```
 
 <p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
-
-Pythagorean theorem (numbered),
-
-```txt
-\tag{hi}
-x^n + y^n = z^n
-```
-
-<p align="center"><img alt="$$&#10;\tag{hi}&#10;x^n + y^n = z^n&#10;$$" src="svgs/e4a06d5880e06b22af8889d9f7bee1eb.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
 
 Pythagorean theorem (with box),
 
@@ -285,6 +267,20 @@ Cases,
 ```
 
 <p align="center"><img alt="$$&#10; u(x) = &#10;  \begin{cases} &#10;   \exp{x} &amp; \text{if } x \geq 0 \\&#10;   1       &amp; \text{if } x &lt; 0&#10;  \end{cases}&#10;$$" src="svgs/7ece3ca3a971e04277b69433db754ff9.svg" align="middle" width="174.7581pt" height="49.13139pt"/></p>
+
+## LIMITATIONS - I WOULD IKE TO DO
+
+Color,
+
+```txt
+    \color{red} E=mc^2
+```
+
+Line numbers,
+
+```txt
+    \tag{1} E=mc^2
+```
 
 ## LaTeX APPS
 
