@@ -36,7 +36,7 @@ Multiplication is implied.
 
 Instead of,
 
-<p align="center"><img alt="$$&#10;a*b + c*d=10&#10;$$" src="svgs/e759ff827d5b4730f1fdc19cac492653.svg" align="middle" width="120.575235pt" height="12.737637pt"/></p>
+<p align="center"><img alt="$$&#10;a \times b + c\times d=10&#10;$$" src="svgs/fd0df166fb6b691d244a93f263852d85.svg" align="middle" width="129.6735pt" height="12.737637pt"/></p>
 
 Its easier to do,
 
@@ -48,13 +48,13 @@ Since we do grouping,
 
 We can use that for multiplication on numbers. So instead of,
 
-<p align="center"><img alt="$$&#10;2*5 = 10&#10;$$" src="svgs/a95c3602a2b32185e10558744f030518.svg" align="middle" width="70.11807pt" height="10.554027pt"/></p>
+<p align="center"><img alt="$$&#10;2 \times 5 = 10&#10;$$" src="svgs/23f4b26a1ca1dbb9c0d41ba8387b30f5.svg" align="middle" width="74.667285pt" height="11.9187915pt"/></p>
 
 Its cleaner to do,
 
 <p align="center"><img alt="$$&#10;2(5) = 10&#10;$$" src="svgs/3f86b56d9a8bdbcc574805229cd48b4e.svg" align="middle" width="67.36158pt" height="16.376943pt"/></p>
 
-## HOW TO SOLVE SIMPLE EQUATIONS WITH ONE OPERATIONS (REARRANGEMENT)
+## SOLVE SIMPLE EQUATIONS WITH ONE OPERATION (REARRANGEMENT)
 
 Figuring out the unknowns via rearrangement.  Equations
 must always by balanced.  Just do the same things to both sides
@@ -70,37 +70,137 @@ Subtraction _(subtract 7 from each side)_,
 
 Dealing with <img alt="$-x$" src="svgs/4eb1b9787b23954d9a6d0a46d13c6971.svg" align="middle" width="22.097625pt" height="19.10667pt"/>, _(add <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> on each side)_,
 
-<p align="center"><img alt="$$&#10;\begin{aligned}&#10;12-x =&amp; 5 \\&#10;(x) + 12-x =&amp; 5 + (x)  \\&#10;12 =&amp; 5+x \\&#10;(-5)+12 =&amp; 5+x+(-5) \\&#10;7 =&amp; x \\&#10;x =&amp; 7&#10;\end{aligned}&#10;$$" src="svgs/0b40bb38c0980dbaaaf2da9d4599fe92.svg" align="middle" width="196.84665pt" height="133.84173pt"/></p>
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;12-x =&amp; 5 \\&#10;(x) + 12-x =&amp; 5 + (x)  \\&#10;12 =&amp; 5+x \\&#10;(-5)+12 =&amp; 5+x+(-5) \\&#10;7 =&amp; x \\&#10;x =&amp; 7&#10;\end{aligned}&#10;$$" src="svgs/0b40bb38c0980dbaaaf2da9d4599fe92.svg" align="middle" width="196.84665pt" height="133.84173pt"/></p> 
 
 Division _(divide by 3 on each side)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;3x =&amp; 15 \\&#10;\frac{3x}{(3)} =&amp; \frac{15}{(3)} \\&#10;x =&amp; 5 \\&#10;\end{aligned}&#10;$$" src="svgs/0910e28fb19ae212e51ade6794483ca3.svg" align="middle" width="63.306045pt" height="80.53056pt"/></p>
 
-Multiplication _(multiply by 2 on each side)_,
+Multiplication with <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> on the top _(multiply by 2 on each side)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;\frac{x}{2} =&amp; 3 \\&#10;(2)\frac{x}{2} =&amp; 3(2) \\&#10;x =&amp; 6&#10;\end{aligned}&#10;$$" src="svgs/21f3201996b4f67020a3ecaeb7ff7702.svg" align="middle" width="80.81106pt" height="85.88085pt"/></p>
 
-Multiplication _(multiply by x on each side)_,
+Multiplication with <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> on the bottom _(multiply by x on each side)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;\frac{4}{x} =&amp; 2 \\&#10;(x)\frac{4}{x} =&amp; 2(x) \\&#10;4 =&amp; 2x \\&#10;\frac{4}{(2)} =&amp; \frac{2x}{(2)} \\&#10;2 =&amp; x \\&#10;x =&amp; 2&#10;\end{aligned}&#10;$$" src="svgs/cb0e16e087d80df934a2e670e54fb530.svg" align="middle" width="83.158185pt" height="187.53405pt"/></p>
 
-## HOW TO SOLVE SIMPLE EQUATIONS WITH TWO OPERATIONS (REARRANGEMENT)
+## SOLVE SIMPLE EQUATIONS WITH TWO OPERATIONS (REARRANGEMENT)
 
 Also called 2-step equations.  When solving multi step operations
-revers the oder of operations rule, which is,
+use the oder of operations rule in reverse, which is,
 
 * <img alt="$()$" src="svgs/1a6e75b76a32b9cde4ccf76274dcc911.svg" align="middle" width="12.73767pt" height="24.56553pt"/> and Groups
 * Exponents and Radicals
-* <img alt="$/$" src="svgs/87f05cbf93b3fa867c09609490a35c99.svg" align="middle" width="8.188554pt" height="24.56553pt"/> <img alt="$*$" src="svgs/7c74eeb32158ff7c4f67d191b95450fb.svg" align="middle" width="8.188554pt" height="15.23973pt"/>
+* <img alt="$\div$" src="svgs/24547b79c405a6d22240abf775098c7e.svg" align="middle" width="12.73767pt" height="19.10667pt"/> <img alt="$\times$" src="svgs/bdbf342b57819773421273d508dba586.svg" align="middle" width="12.73767pt" height="19.10667pt"/>
 * <img alt="$+$" src="svgs/df33724455416439909c33a7db76b2bc.svg" align="middle" width="12.73767pt" height="19.10667pt"/> <img alt="$-$" src="svgs/2a69f75630cce402c7c381036296bca9.svg" align="middle" width="12.73767pt" height="19.10667pt"/>
 
-Addition & Multiplication _(use subtraction and then division)_,
+Multiplication & Addition _(use subtraction and then division)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;2x + 2 =&amp; 8 \\&#10;(-2) + 2x + 2 =&amp; 8 + (-2) \\&#10;2x =&amp; 6 \\&#10;\frac{2x}{(2)} =&amp; \frac{6}{(2)} \\&#10;x =&amp; 3&#10;\end{aligned}&#10;$$" src="svgs/abc8b1e172b177350e475e70f18c6c71.svg" align="middle" width="179.05305pt" height="129.845595pt"/></p>
 
-## GRAPHING EQUATIONS
+Division & Subtraction _(use addition and then multiplication)_,
 
-Easier to see when you take algebraic equations and graphic there solutions.
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;\frac{x}{2}-1 =&amp; 4 \\&#10;(1)+\frac{x}{2}-1 =&amp; 4+(1) \\&#10;\frac{x}{2} =&amp; 5 \\&#10;(2)\frac{x}{2} =&amp; 5(2) \\&#10;x =&amp; 10&#10;\end{aligned}&#10;$$" src="svgs/aaf83a9a8dca439e70620910c8f0a87c.svg" align="middle" width="149.25603pt" height="157.97991pt"/></p>
+
+Groups _(Do groups last)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;2(x+2) =&amp; 8 \\&#10;\frac{2(x+2)}{(2)} =&amp; \frac{8}{(2)} \\&#10;(x+2) =&amp; 4\\&#10;x+2 =&amp; 4\\&#10;(-2)+x+2 =&amp; 4 +(-2)\\&#10;x =&amp; 2&#10;\end{aligned}&#10;$$" src="svgs/3f8bb4c113674af966d33d584d881378.svg" align="middle" width="170.8344pt" height="157.96704pt"/></p>
+
+Groups implied above and below fraction line _(Do groups last)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;\frac{x-1}{2} =&amp; 4 \\&#10;(2)\frac{x-1}{2} =&amp; 4(2) \\&#10;x-1 =&amp; 8 \\&#10;(1)+x-1 =&amp; 8+(1) \\&#10;x =&amp; 9&#10;\end{aligned}&#10;$$" src="svgs/264ffdb5cda4c6986e595c71ce9640f9.svg" align="middle" width="145.310715pt" height="142.214655pt"/></p>
+
+## SOLVE SIMPLE EQUATIONS WITH EXPONENTS & ROOTS (REARRANGEMENT)
+
+As we mentioned before algebra is similar to arithmetic,
+
+<p align="center"><img alt="$$&#10;4^2 \quad in \; algebra \quad x^2 \\&#10;\sqrt{16} \quad in \; algebra \quad \sqrt{x}&#10;$$" src="svgs/0a3931a151dbdc364aab7f875c9b8078.svg" align="middle" width="298.2045pt" height="18.242565pt"/></p>
+
+As a side note, that will help us later on, <img alt="$x^0 = 1$" src="svgs/0509db0612eccfb1265dfc7f2772fd75.svg" align="middle" width="46.792845pt" height="26.70657pt"/> and <img alt="$x^1 = x$" src="svgs/076118b2477f47de9838c4b30f0bb0e8.svg" align="middle" width="47.96418pt" height="26.70657pt"/>.
+
+Square Root _(Use exponent of 2)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;\sqrt{x} =&amp; 3 \\&#10;(\sqrt{x})^2 =&amp; (3)^2 \\&#10;x =&amp; 9&#10;\end{aligned}&#10;$$" src="svgs/95202467f0bd67f55f1762bdcf9f8f97.svg" align="middle" width="88.059345pt" height="64.653765pt"/></p>
+
+Cube Root _(Use exponent of 3)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;\sqrt[3]{x} =&amp; 5 \\&#10;(\sqrt[3]{x})^3 =&amp; (5)^3 \\&#10;x =&amp; 125&#10;\end{aligned}&#10;$$" src="svgs/941489a61be024346a56aa3a3fc5167e.svg" align="middle" width="89.086965pt" height="64.653765pt"/></p>
+
+Exponent 2nd power _(Use square root)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;x^2 =&amp; 36 \\&#10;\sqrt{x^2} =&amp; \sqrt{36} \\&#10;x =&amp; \pm6&#10;\end{aligned}&#10;$$" src="svgs/5e99b2ff7c2cd1d18650cfdd358c8255.svg" align="middle" width="77.956725pt" height="69.191595pt"/></p>
+
+Remember, the square root of a number can be both positive and negative.
+<img alt="$\sqrt{36} = 6$" src="svgs/b065bd608d93b0b5d0b6b318b87b8e14.svg" align="middle" width="60.195465pt" height="28.51134pt"/> because <img alt="$6\times6 = 36$" src="svgs/bd16f11eeb202e778a5da341bf108ccb.svg" align="middle" width="74.667285pt" height="21.10812pt"/>
+But <img alt="$(-6)*(-6)=36$" src="svgs/96e6a08140003de60422b40038d3b1ec.svg" align="middle" width="121.068915pt" height="24.56553pt"/>. So it is also <img alt="$\sqrt{36}=-6$" src="svgs/f2b3d7ddf1ec7a8f08af5498bdfbf538.svg" align="middle" width="72.933135pt" height="28.51134pt"/>.
+
+Exponent 3rd power _(Use cube root)_,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;x^3 =&amp; 27 \\&#10;\sqrt[3]{x^3} =&amp; \sqrt[3]{27} \\&#10;x =&amp; 3&#10;\end{aligned}&#10;$$" src="svgs/b706a728e067ebb3d749da94d6e7cd76.svg" align="middle" width="78.984345pt" height="67.82688pt"/></p>
+
+## POLYNOMIALS
+
+First, a `term` is a mathematical expression made up of two parts
+(a number part and a variable part).  The number part is called the coefficient.
+For example a term can be <img alt="$6y$" src="svgs/8b94a9b677f1adc08bbf7ceebc66addc.svg" align="middle" width="16.805415pt" height="21.10812pt"/> or <img alt="$6y^2$" src="svgs/4e6ab8ce46c662aaec1b23bf2effb5c2.svg" align="middle" width="23.335785pt" height="26.70657pt"/>.
+
+A polynomial is a combination of terms linked together by
+addition or subtraction.
+
+* One term - monomial
+* Two terms - binomial (aka polynomial)
+* Three terms - trinomial (aka polynomial)
+* Four or more terms - polynomial
+
+Example of a polynomial,
+
+<p align="center"><img alt="$$&#10;3x^2 + x - 5&#10;$$" src="svgs/f3f40245cbf1704d30d490efdf0783b5.svg" align="middle" width="82.55808pt" height="15.5398485pt"/></p>
+
+But why does the <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> not have a number part and the 5 not have a variable part?
+Well think of <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> as <img alt="$1x$" src="svgs/cb251c47412adcb82a3960318043fe93.svg" align="middle" width="17.54841pt" height="21.10812pt"/> and <img alt="$5$" src="svgs/9612eecfec9dadf1a81d296bd2473777.svg" align="middle" width="8.188554pt" height="21.10812pt"/> as  <img alt="$5x^0$" src="svgs/4adfd2d7e665c8f2ae1e68586d78f0a9.svg" align="middle" width="24.07647pt" height="26.70657pt"/>. Hence,
+
+<p align="center"><img alt="$$&#10;\boxed{3x^2 + 1x - 5x^0}&#10;$$" src="svgs/7a6a961d919f19d8557de1bb07ff9f94.svg" align="middle" width="118.9518pt" height="26.750625pt"/></p>
+
+The `degree` of a polynomial is determined by the power of the
+variable part. <img alt="$5x^4$" src="svgs/48d656f08cd4ac889512bcf4f867fca9.svg" align="middle" width="24.07647pt" height="26.70657pt"/> would be a forth degree term.
+
+Polynomials are often referred to by the degree of the
+highest term. Hence, <img alt="$7x^4 + 3y^2$" src="svgs/9c7cf8e7d5dbd08cd3eb504d467dc6c1.svg" align="middle" width="68.301915pt" height="26.70657pt"/> would be a 4th degree polynomial.
+Arrange the polynomial from highest to lowest terms. As an example,
+
+<p align="center"><img alt="$$&#10;7x^4 + 3y^2 + x + 5&#10;$$" src="svgs/a9bc1d7d2bbe0fd491f4387da0ac4e61.svg" align="middle" width="126.783525pt" height="17.359485pt"/></p>
+
+But what about <img alt="$3 + 7x - 5x^2$" src="svgs/10701390da41e53077579d78c4216e45.svg" align="middle" width="89.90025pt" height="26.70657pt"/>? Simple,
+
+<p align="center"><img alt="$$&#10;-5x^2 + 7x + 3&#10;$$" src="svgs/839ef06d35fabb2657ad31fc4335f095.svg" align="middle" width="103.484205pt" height="15.5398485pt"/></p>
+
+## SIMPLIFYING POLYNOMIALS
+
+Simplify by making polynomial shorter. Combining like terms
+(same variable parts),
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;&amp;2x^3 + 4x^2 + 3x^2 + 5x \\&#10;&amp;2x^3 + (4+3)x^2 + 5x \\&#10;&amp;2x^3 + 7x^2 + 5x&#10;\end{aligned}&#10;$$" src="svgs/ebcd7c905fc76402e60664ce95841552.svg" align="middle" width="152.447295pt" height="68.931885pt"/></p>
+
+## DISTRIBUTIVE PROPERTY
+
+Its like the distributive property in arithmetic
+<img alt="$a(b+c) = ab+ac$" src="svgs/fd1eaf802874f57b83468cadcd7e840a.svg" align="middle" width="128.895855pt" height="24.56553pt"/> or <img alt="$a(b-c) = ab-ac$" src="svgs/12db10a8569625d42bb860749859a636.svg" align="middle" width="128.895855pt" height="24.56553pt"/>.
+
+Take a `factor` and `distribute` it to the terms,
+
+As an example with <img alt="$3$" src="svgs/5dc642f297e291cfdde8982599601d7e.svg" align="middle" width="8.188554pt" height="21.10812pt"/> as a factor,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;&amp; 3(x+6) \\&#10;&amp; 3x +18&#10;\end{aligned}&#10;$$" src="svgs/b0fa76628067a31cd6f5230202cfd0dc.svg" align="middle" width="58.51791pt" height="38.304915pt"/></p>
+
+As another example with <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> as a factor,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;&amp; x(x^2-8x+2) \\&#10;&amp; x^3-8x^2+2x&#10;\end{aligned}&#10;$$" src="svgs/a28c672bcc7497b103cb8e6abe65e629.svg" align="middle" width="104.655705pt" height="42.235875pt"/></p>
+
+In reverse you can `factor out` something.
+
+## GRAPHING EQUATIONS ON A COORDINATE PLANE
+
+A coordinate plane has an <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> and <img alt="$y$" src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg" align="middle" width="8.61696pt" height="14.10255pt"/> axis.
 
 ### LINEAR EQUATIONS
 
@@ -109,4 +209,3 @@ Form straight lines when you graph.
 ### QUADRATIC EQUATIONS
 
 Form curves when graphs.
-
