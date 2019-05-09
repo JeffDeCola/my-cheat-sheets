@@ -11,7 +11,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Einsteins famous equation,
+Einstein's famous equation,
 
 $$
 E=mc^2
