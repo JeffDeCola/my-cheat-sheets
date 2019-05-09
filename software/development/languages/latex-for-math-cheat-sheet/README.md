@@ -9,7 +9,7 @@ Documentation and reference,
 * [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
-Which math functions can I do,
+What LaTeX math functions can I use,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Table](https://katex.org/docs/support_table.html)
@@ -118,6 +118,15 @@ E=mc^2
 
 <p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
+Einsteins famous equation (color),
+
+```txt
+\color{red}
+E=mc^2
+```
+
+<p align="center"><img alt="$$&#10;\color{red}&#10;E=mc^2&#10;$$" src="svgs/8c3de3548a825a1cef9ed356c0f648a0.svg" align="middle" width="86.984205pt" height="14.175084pt"/></p>
+
 Pythagorean theorem,
 
 ```txt
@@ -129,10 +138,11 @@ x^n + y^n = z^n
 Pythagorean theorem (numbered),
 
 ```txt
+\tag{hi}
 x^n + y^n = z^n
 ```
 
-<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p> (1)
+<p align="center"><img alt="$$&#10;\tag{hi}&#10;x^n + y^n = z^n&#10;$$" src="svgs/e4a06d5880e06b22af8889d9f7bee1eb.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
 
 Pythagorean theorem (with box),
 
@@ -142,6 +152,15 @@ Pythagorean theorem (with box),
 
 <p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
 
+Square root,
+
+```txt
+\sqrt[3]{x}
+```
+
+<p align="center"><img alt="$$&#10;\sqrt[3]{x}&#10;$$" src="svgs/8375620ec7847ff048e565abd48c90cd.svg" align="middle" width="23.093565pt" height="16.379385pt"/></p>
+
+Relations
 Alignment (on equal sign),
 
 ```txt

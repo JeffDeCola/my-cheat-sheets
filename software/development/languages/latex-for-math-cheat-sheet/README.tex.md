@@ -9,7 +9,7 @@ Documentation and reference,
 * [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
-Which math functions can I do,
+What LaTeX math functions can I use,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Table](https://katex.org/docs/support_table.html)
@@ -122,6 +122,18 @@ $$
 E=mc^2
 $$
 
+Einsteins famous equation (color),
+
+```txt
+\color{red}
+E=mc^2
+```
+
+$$
+\color{red}
+E=mc^2
+$$
+
 Pythagorean theorem,
 
 ```txt
@@ -135,12 +147,14 @@ $$
 Pythagorean theorem (numbered),
 
 ```txt
+\tag{hi}
 x^n + y^n = z^n
 ```
 
 $$
+\tag{hi}
 x^n + y^n = z^n
-$$ (1)
+$$
 
 Pythagorean theorem (with box),
 
@@ -152,6 +166,17 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
+Square root,
+
+```txt
+\sqrt[3]{x}
+```
+
+$$
+\sqrt[3]{x}
+$$
+
+Relations
 Alignment (on equal sign),
 
 ```txt
