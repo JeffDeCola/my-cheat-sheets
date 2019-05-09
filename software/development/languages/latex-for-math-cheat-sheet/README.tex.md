@@ -122,18 +122,6 @@ $$
 E=mc^2
 $$
 
-Einsteins famous equation (color),
-
-```txt
-\color{red}
-E=mc^2
-```
-
-$$
-\color{red}
-E=mc^2
-$$
-
 Pythagorean theorem,
 
 ```txt
@@ -141,18 +129,6 @@ x^n + y^n = z^n
 ```
 
 $$
-x^n + y^n = z^n
-$$
-
-Pythagorean theorem (numbered),
-
-```txt
-\tag{hi}
-x^n + y^n = z^n
-```
-
-$$
-\tag{hi}
 x^n + y^n = z^n
 $$
 
@@ -360,6 +336,20 @@ $$
    1       & \text{if } x < 0
   \end{cases}
 $$
+
+## LIMITATIONS - I WOULD IKE TO DO
+
+Color,
+
+```txt
+    \color{red} E=mc^2
+```
+
+Line numbers,
+
+```txt
+    \tag{1} E=mc^2
+```
 
 ## LaTeX APPS
 
