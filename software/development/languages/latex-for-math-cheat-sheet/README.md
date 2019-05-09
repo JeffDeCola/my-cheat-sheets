@@ -134,6 +134,14 @@ Pythagorean theorem (with box),
 
 <p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
 
+Pythagorean theorem (my solution to number, but it stinks),
+
+```txt
+x^n + y^n = z^n \qquad \qquad (1)
+```
+
+<p align="center"><img alt="$$&#10;x^n + y^n = z^n \qquad \qquad (1)&#10;$$" src="svgs/ff047756a3f4d6a16e355eaa8ab4a5e2.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
+
 Square root,
 
 ```txt
