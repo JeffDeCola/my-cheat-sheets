@@ -1,15 +1,15 @@
-# LaTeX for MATH CHEAT SHEET
+# LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX for math` _is the math part of LaTex.  But LaTeX is much more,
+`LaTeX math mode` _is the math mode of LaTex. LaTeX is much more,
 an advanced typesetting system._
 
 Documentation and reference,
 
-* [LaTeX math document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
-* [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
-What LaTeX math functions can I use,
+What LaTeX math mode functions can I use,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Table](https://katex.org/docs/support_table.html)
@@ -38,8 +38,78 @@ text and in displaying mathematical formula.
 ```
 
 But I don't do any of this, I'm only interested in
-the mathematical formulas of LaTeX. Typesetting mathematics
-is one of LaTeX's greatest strengths.
+the mathematical formulas of LaTeX (Math mode). Because
+typesetting mathematics is one of LaTeX's greatest strengths.
+
+## INSTALL LaTeX
+
+This is to install a full version with all the packages.
+
+I'm not sure how to install a lighter version,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install texlive-full
+```
+
+check version,
+
+```bash
+latex version
+```
+
+To test, lets use a LateX document which will invoke math mode,
+to create a .pdf file,
+
+```bash
+cd latex-example
+pdflatex latex-math-mode.txt
+```
+
+This example will be explained below.
+
+## USING LaTeX IN MATH MODE
+
+I want to render this LaTeX math equation `E=mc^2`,
+
+First, there are three ways `declaring math mode` in LaTeX,
+
+* In-Line \$...\$
+* Newline, center \$\$...\$\$
+* Newline, center with label `<p align="center"><img alt="\begin{equation}...\end{equation}" src="svgs/e6a861f3b9c02a84c0c275dea2658e17.svg" align="middle" width="356.9082pt" height="16.376943pt"/></p>`
+
+Second there are two main ways to format multiple equations in LaTeX math mode,
+
+* `begin{gathered}...end{gathered}` - Every equation centered.
+* `begin{aligned}...end{aligned}` - Will align on `&`.  I like this one.
+
+Display Mode,
+
+```txt
+    E=mc^2
+```
+
+You will get,
+
+<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
+
+Inline Mode using,
+
+```txt
+    Einstein's equation
+    E=mc^2
+    represent energy is equal to matter multiplied by the speed of light squared.
+```
+
+You will get,
+
+Einstein's equation
+<img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
+represent energy is equal to matter multiplied by the speed of light squared.
+
+Again, `\begin{equation}` not available for us when used with markdown.
+So we can't tag.
 
 ## HOW I CREATED THIS README.md
 
@@ -65,37 +135,11 @@ I used to use a github app called
 [TeXify](https://github.com/apps/texify),
 but it is not that reliable and I don't like
 other programs having write access to my repo.  I feel
-like i loose control.
+like I loose control.
 
-## LaTeX for MATH (DISPLAY & INLINE MODE)
+Here is an illustration on how it works,
 
-As mentioned, I only use LaTeX math capabilities. In order to use LaTeX
-with markdown you need a delimiter, I like to use the dollar sign.
-Delimiters are not shown for simplicity.
-
-Display Mode,
-
-```txt
-    E=mc^2
-```
-
-You will get,
-
-<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
-
-Inline Mode using,
-
-```txt
-    Einstein's equation
-    E=mc^2
-    represent energy is equal to matter multiplied by the speed of light squared.
-```
-
-You will get,
-
-Einstein's equation
-<img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
-represent energy is equal to matter multiplied by the speed of light squared.
+![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
 
 ## COMMON LaTeX MATH EQUATIONS
 
@@ -149,8 +193,18 @@ Square root,
 
 <p align="center"><img alt="$$&#10;\sqrt[3]{x}&#10;$$" src="svgs/8375620ec7847ff048e565abd48c90cd.svg" align="middle" width="23.093565pt" height="16.379385pt"/></p>
 
-Relations
-Alignment (on equal sign),
+Multiple equations (gathered)
+
+```txt
+    \begin{gathered}
+        a=b+c \\
+        d+e=f
+    \end{gathered}
+```
+
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
+
+Multiple equations (aligned on ampersand &)
 
 ```txt
     \begin{aligned}
