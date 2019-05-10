@@ -86,7 +86,7 @@ First, there are three ways `declaring math mode` in LaTeX,
 
 * In-line mode \$...\$
 * Display mode (Newline, center) \$\$...\$\$
-* Display mode (Newline, center with label) begin{equation}...end{equation}
+* Display mode (Newline, center with tag) begin{equation}...end{equation}
 
 An example of LaTeX math in-line mode,
 
@@ -130,6 +130,8 @@ Result,
     E=mc^2
 \end{equation}
 
+This is sometimes hard to render correctly, so I kind of stay away from it.
+
 ### FORMATING MULTIPLE EQUATIONS
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
@@ -137,21 +139,7 @@ Second there are two main ways to format multiple equations in LaTeX math mode,
 * begin{gathered}...end{gathered} - Every equation centered.
 * begin{aligned}...end{aligned} - Will align on an ampersand.  I like this one.
 
-An example of LaTeX math in-line mode,
-
-```txt
-    Einstein's equation
-    $E=mc^2$
-    represent energy is equal to matter multiplied by the speed of light squared.
-```
-
-Result,
-
-Einstein's equation
-$E=mc^2$
-represent energy is equal to matter multiplied by the speed of light squared.
-
-An example of LaTeX math display mode using aligned,
+An example of LaTeX math display mode (using aligned),
 
 ```txt
     $$
@@ -171,25 +159,25 @@ $$
 \end{aligned}
 $$
 
-An example of LaTeX math display mode using gathered,
+An example of LaTeX math display mode (using gathered),
 
 ```txt
-    \begin{equation}
+    $$
     \begin{gathered}
         a=b+c \\
         d+e=f
     \end{gathered}
-    \end{equation}
+    $$
 ```
 
 Result,
 
-\begin{equation}
+$$
 \begin{gathered}
     a=b+c \\
     d+e=f
 \end{gathered}
-\end{equation}
+$$
 
 Again, begin{equation} not available for us when used with markdown.
 So we can't tag.
@@ -265,7 +253,7 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
-Pythagorean theorem (my solution to number, but it stinks),
+Pythagorean theorem (my solution to number, but it kinda stinks),
 
 ```txt
     x^n + y^n = z^n
@@ -273,6 +261,7 @@ Pythagorean theorem (my solution to number, but it stinks),
 ```
 
 $$
+\qquad \qquad
 x^n + y^n = z^n
 \qquad \qquad (1)
 $$
