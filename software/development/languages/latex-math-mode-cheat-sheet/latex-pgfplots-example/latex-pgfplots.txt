@@ -1,0 +1,11 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{width=7cm,compat=1.10}
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}
+    \addplot+[sharp plot] coordinates
+      {(0,0) (1,2) (2,3)};
+  \end{axis}
+\end{tikzpicture}
+\end{document}
