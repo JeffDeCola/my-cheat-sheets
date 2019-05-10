@@ -80,11 +80,57 @@ This example outlines and basics of latex math mode and is explained below.
 
 I want to render this LaTeX math equation `E=mc^2`,
 
+### DECLARING MATH MODE
+
 First, there are three ways `declaring math mode` in LaTeX,
 
 * In-line mode \$...\$
 * Display mode (Newline, center) \$\$...\$\$
 * Display mode (Newline, center with label) begin{equation}...end{equation}
+
+An example of LaTeX math in-line mode,
+
+```txt
+    Einstein's equation
+    $E=mc^2$
+    represent energy is equal to matter multiplied by the speed of light squared.
+```
+
+Result,
+
+Einstein's equation
+$E=mc^2$
+represent energy is equal to matter multiplied by the speed of light squared.
+
+An example of LaTeX math display mode,
+
+```txt
+    $$
+    $E=mc^2$
+    $$
+```
+
+Result,
+
+$$
+E=mc^2
+$$
+
+An example of LaTeX math display mode (with tag),
+
+```txt
+    \begin{equation}
+        E=mc^2
+    \end{equation}
+```
+
+Result,
+
+\begin{equation}
+    E=mc^2
+\end{equation}
+
+### FORMATING MULTIPLE EQUATIONS
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
 
@@ -108,10 +154,12 @@ represent energy is equal to matter multiplied by the speed of light squared.
 An example of LaTeX math display mode using aligned,
 
 ```txt
+    $$
     \begin{aligned}
         a&=b+c \\
         d+e&=f
     \end{aligned}
+    $$
 ```
 
 Result,
