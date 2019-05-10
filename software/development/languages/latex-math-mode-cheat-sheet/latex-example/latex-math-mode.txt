@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+PATH I - Lets demonstrate all 3 math modes.\\
+\\
+1 - INLINE MODE\\
+This is einstein's equation inline $E=mc^2$.\\
+\\
+2 - NEWLINE CENTER\\
+$$
+E=mc^2
+$$
+\\
+3 - NEWLINE CENTER LABEL\\
+\begin{equation}
+	E=mc^2
+\end{equation}
+\\
+PART II -Lets demonstrate formating of multiple equations in math mode.\\
+\\
+1 - BEGIN GATHERED (both equations centered)\\
+$$
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}    
+$$
+\\
+2 - BEGIN ALIGNED (Both equation aligned on ampersand with tag)\\
+\begin{equation}
+\begin{aligned}
+    a&=b+c \\
+    d+e&=f
+\end{aligned}
+\end{equation}
+\end{document}

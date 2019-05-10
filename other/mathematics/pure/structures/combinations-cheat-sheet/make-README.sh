@@ -10,8 +10,8 @@ echo "rm -r svgs/"
 rm -r svgs/
 echo " "
 
-echo "Run readme2tex"
-python -m readme2tex --readme README.tex.md --output README.md --nocdn
+echo "Run readme2tex (use -m switch to specify package"
+python -m readme2tex --usepackage "tikz" --readme README.tex.md --output README.md --nocdn
 echo " "
 
 echo "For more information on readme2tex, read my cheat sheet"

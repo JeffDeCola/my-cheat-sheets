@@ -1,15 +1,15 @@
-# LaTeX for MATH CHEAT SHEET
+# LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX for math` _is the math part of LaTex.  But LaTeX is much more,
+`LaTeX math mode` _is the math mode of LaTex. LaTeX is much more,
 an advanced typesetting system._
 
 Documentation and reference,
 
-* [LaTeX math document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
-* [LaTeX math reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+* [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
+* [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
-What LaTeX math functions can I use,
+What LaTeX math mode functions can I use,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Table](https://katex.org/docs/support_table.html)
@@ -38,40 +38,51 @@ text and in displaying mathematical formula.
 ```
 
 But I don't do any of this, I'm only interested in
-the mathematical formulas of LaTeX. Typesetting mathematics
-is one of LaTeX's greatest strengths.
+the mathematical formulas of LaTeX (Math mode). Because
+typesetting mathematics is one of LaTeX's greatest strengths.
 
-## HOW I CREATED THIS README.md
+## INSTALL LaTeX
 
-I use a program called [readme2tex](https://github.com/leegao/readme2tex).
-I run everything on my local machine.
+This is to install a full version with all the packages.
 
-It works by taking your LaTeX math formula, rendering an image and
-referencing that image using HTML.
+I'm not sure how to install a lighter version,
 
-First, I created and edit in README.tex.md.
-I have my LaTeX for math markdown in there delimited by dollar signs.
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install texlive-full
+```
 
-Second, I run `readme2tex`. This will,
+check version,
 
-* Create a new README.md file.
-* Creates *.svg images for each of the LateX for math formulas.
-* Add those image links automatically in your README.md file.
+```bash
+latex version
+```
 
-It created the images using the latex program and geometry package you
-must install on your machine.  See the end of this cheat sheet for how I installed.
+To test, lets use a LateX document which will invoke math mode,
+to create a .pdf file,
 
-I used to use a github app called
-[TeXify](https://github.com/apps/texify),
-but it is not that reliable and I don't like
-other programs having write access to my repo.  I feel
-like i loose control.
+```bash
+cd latex-example
+pdflatex latex-math-mode.txt
+```
 
-## LaTeX for MATH (DISPLAY & INLINE MODE)
+This example will be explained below.
 
-As mentioned, I only use LaTeX math capabilities. In order to use LaTeX
-with markdown you need a delimiter, I like to use the dollar sign.
-Delimiters are not shown for simplicity.
+## USING LaTeX IN MATH MODE
+
+I want to render this LaTeX math equation `E=mc^2`,
+
+First, there are three ways `declaring math mode` in LaTeX,
+
+* In-Line \$...\$
+* Newline, center \$\$...\$\$
+* Newline, center with label `\begin{equation}...\end{equation}`
+
+Second there are two main ways to format multiple equations in LaTeX math mode,
+
+* `begin{gathered}...end{gathered}` - Every equation centered.
+* `begin{aligned}...end{aligned}` - Will align on `&`.  I like this one.
 
 Display Mode,
 
@@ -98,6 +109,39 @@ You will get,
 Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
+
+Again, `\begin{equation}` not available for us when used with markdown.
+So we can't tag.
+
+## HOW I CREATED THIS README.md
+
+I use a program called [readme2tex](https://github.com/leegao/readme2tex).
+I run everything on my local machine.
+
+It works by taking your LaTeX math formula, rendering an image and
+referencing that image using HTML.
+
+First, I created and edit in README.tex.md.
+I have my LaTeX for math markdown in there delimited by dollar signs.
+
+Second, I run `readme2tex`. This will,
+
+* Create a new README.md file.
+* Creates *.svg images for each of the LateX for math formulas.
+* Add those image links automatically in your README.md file.
+
+It created the images using the latex program and geometry package you
+must install on your machine.  See the end of this cheat sheet for how I installed.
+
+I used to use a github app called
+[TeXify](https://github.com/apps/texify),
+but it is not that reliable and I don't like
+other programs having write access to my repo.  I feel
+like I loose control.
+
+Here is an illustration on how it works,
+
+![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
 
 ## COMMON LaTeX MATH EQUATIONS
 
@@ -162,8 +206,23 @@ $$
 \sqrt[3]{x}
 $$
 
-Relations
-Alignment (on equal sign),
+Multiple equations (gathered)
+
+```txt
+    \begin{gathered}
+        a=b+c \\
+        d+e=f
+    \end{gathered}
+```
+
+$$
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}
+$$
+
+Multiple equations (aligned on ampersand &)
 
 ```txt
     \begin{aligned}
