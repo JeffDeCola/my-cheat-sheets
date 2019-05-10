@@ -551,8 +551,8 @@ Sadly, I could not get this to work with `readme2tex`.
 
 ## GRAPHIC PACKAGE "pgfplots"
 
-Outside the scope of this cheat sheet but I do have an example
-in this repo.
+`pgfplots` is outside the scope of this cheat sheet but I do have an example
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-example/latex-pgfplots.txt).
 
 ## LaTeX APPS
 
