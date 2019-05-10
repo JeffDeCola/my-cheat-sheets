@@ -489,18 +489,54 @@ u(x) =
 \end{cases}
 $$
 
-## LIMITATIONS - I WOULD IKE TO DO
+Make some big text,
 
-Color,
+```txt
+    $$
+    \huge\text{Hello Jeff}
+    $$
+```
+
+$$
+\huge\text{Hello Jeff}
+$$
+
+## COLOR PACKAGE "xcolor"
+
+If you want color, you must use the color package "xcolor".
+So when you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "xcolor" ....etc...
+```
+
+As an example,
 
 ```txt
     \color{red} E=mc^2
 ```
 
-Line numbers,
+$$
+\color{red} E=mc^2
+$$
+
+## GRAPH PACKAGE "tikz"
+
+`TikZ` is a LaTeX package that allows you to create high quality diagrams.
+Tikz is probably the most complex and powerful tool to create
+graphic elements in LaTeX.
+When you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "tikz" ....etc...
+```
+
+As an example of a circle,
 
 ```txt
-    \tag{1} E=mc^2
+    \begin{tikzpicture}
+        \draw (2,2) circle (3cm);
+    \end{tikzpicture}
 ```
 
 ## LaTeX APPS
@@ -554,6 +590,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install texlive-full
 sudo apt install texlive-extra-utils
+sudo apt install texlive-publishers
 ```
 
 Install cairocffi and other dependencies you may need,

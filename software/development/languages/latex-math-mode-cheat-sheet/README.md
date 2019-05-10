@@ -395,18 +395,50 @@ Cases,
 
 <p align="center"><img alt="$$&#10;u(x) =&#10;\begin{cases}&#10;    \exp{x} &amp; \text{if } x \geq 0 \\&#10;    1       &amp; \text{if } x &lt; 0&#10;\end{cases}&#10;$$" src="svgs/7cdb2cc12c0acb192d47b17946ace840.svg" align="middle" width="174.7581pt" height="49.13139pt"/></p>
 
-## LIMITATIONS - I WOULD IKE TO DO
+Make some big text,
 
-Color,
+```txt
+    $$
+    \huge\text{Hello Jeff}
+    $$
+```
+
+<p align="center"><img alt="$$&#10;\huge\text{Hello Jeff}&#10;$$" src="svgs/e352edc1951d2b05c08e5e2f08d50273.svg" align="middle" width="129.856485pt" height="23.58741pt"/></p>
+
+## COLOR PACKAGE "xcolor"
+
+If you want color, you must use the color package "xcolor".
+So when you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "xcolor" ....etc...
+```
+
+As an example,
 
 ```txt
     \color{red} E=mc^2
 ```
 
-Line numbers,
+<p align="center"><img alt="$$&#10;\color{red} E=mc^2&#10;$$" src="svgs/701e889902a8da29f6b7ca34bdd374d7.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
+
+## GRAPH PACKAGE "tikz"
+
+`TikZ` is a LaTeX package that allows you to create high quality diagrams.
+Tikz is probably the most complex and powerful tool to create
+graphic elements in LaTeX.
+When you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "tikz" ....etc...
+```
+
+As an example of a circle,
 
 ```txt
-    \tag{1} E=mc^2
+    \begin{tikzpicture}
+        \draw (2,2) circle (3cm);
+    \end{tikzpicture}
 ```
 
 ## LaTeX APPS
@@ -460,6 +492,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install texlive-full
 sudo apt install texlive-extra-utils
+sudo apt install texlive-publishers
 ```
 
 Install cairocffi and other dependencies you may need,
