@@ -1,0 +1,9 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+
+\begin{tikzpicture}
+    \draw (2,2) circle (3cm);
+\end{tikzpicture}
+
+\end{document}
