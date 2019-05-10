@@ -1,7 +1,7 @@
 # LaTeX MATH MODE CHEAT SHEET
 
 `LaTeX math mode` _is the math mode of LaTex. LaTeX is
-an advanced typesetting system._
+an advanced markup language used for typesetting._
 
 Documentation and reference,
 
@@ -9,10 +9,10 @@ Documentation and reference,
 * [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [mathurl.com to help build your formulas](http://mathurl.com/)
 
-What LaTeX math mode functions can I use,
+LaTeX math mode functions & symbols,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
-* [KaTeX Support Table](https://katex.org/docs/support_table.html)
+* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -46,12 +46,11 @@ The syntax can look something like,
 ```
 
 But I don't use any of this, I'm only interested in
-the mathematical formulas of LaTeX (Math mode).
+the mathematical formulas of LaTeX (Latex Math Mode).
 
 ## INSTALL LaTeX
 
-This is to install a full version with all the packages. I'm not sure
-how to install a lighter version properly,
+This is to install a full version with all the packages,
 
 ```bash
 sudo apt-get update
@@ -59,14 +58,16 @@ sudo apt-get upgrade -y
 sudo apt-get install texlive-full
 ```
 
-check version,
+I'm not sure how to install a lighter version.
+
+Check version,
 
 ```bash
 latex -version
 ```
 
 To test, lets use a LateX file
-[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.txt)
+[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-example/latex-math-mode.txt)
 which will invoke math mode and create a .pdf file,
 
 ```bash
@@ -75,8 +76,17 @@ pdflatex latex-math-mode.txt
 ```
 
 If everything worked correctly your .pdf should look like
-[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.pdf).
+[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-example/latex-math-mode.pdf).
 This example outlines and basics of latex math mode and is explained below.
+
+Some popular packages are,
+
+* xcolor - _add color_
+* amsmath & amsfonts - _For rendering matrices_
+* tikz - _2D graphing, drawing data or function plots_
+  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-example/latex-tikzpicture.txt)
+* pgfplts - _2D/3D graphing, drawing data or function plots_
+  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-example/latex-pgfplots.txt)
 
 ## USING LaTeX IN MATH MODE
 
@@ -84,11 +94,11 @@ I want to render this LaTeX math equation `E=mc^2`.
 
 ### DECLARING MATH MODE
 
-First, there are three ways `declaring math mode` in LaTeX,
+First, there are three ways to `declare math mode` in LaTeX,
 
-* In-line mode \$...\$
-* Display mode (Newline, center) \$\$...\$\$
-* Display mode (Newline, center with tag) begin{equation}...end{equation}
+* In-line mode using \$...\$
+* Display mode (Newline, center) using \$\$...\$\$
+* Display mode (Newline, center with tag) using begin{equation}...end{equation}
 
 An example of LaTeX math in-line mode,
 
@@ -129,8 +139,8 @@ so I kind of stay away from it.  I have a way to make my own tags below.
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
 
-* `begin{gathered}...end{gathered}` - Every equation centered.
-* `begin{aligned}...end{aligned}` - Will align on an ampersand.
+* `begin{gathered}...end{gathered}` - Every equation centered
+* `begin{aligned}...end{aligned}` - Will align on an ampersand
 
 An example of LaTeX math display mode (using aligned),
 
@@ -161,22 +171,19 @@ An example of LaTeX math display mode (using gathered),
 ## HOW I CREATED THIS README.md
 
 I use a program called [readme2tex](https://github.com/leegao/readme2tex).
-I run everything on my local machine.
+I run everything on my local machine using my own
+[fork](https://github.com/JeffDeCola/readme2tex).
 
 It works by taking your LaTeX math formula, rendering an image and
 referencing that image using HTML.
 
-First, I created and edit in README.tex.md.
-I have my LaTeX for math markdown in there delimited by dollar signs.
+First, I created and edit in README.tex.md. Second, I run `readme2tex`. This will,
 
-Second, I run `readme2tex`. This will,
+* Create a new README.md file
+* Creates *.svg images for each of the LateX math formulas
+* Those image are linked automatically in your README.md file using HTML
 
-* Create a new README.md file.
-* Creates *.svg images for each of the LateX for math formulas.
-* Add those image links automatically in your README.md file.
-
-It created the images using the latex program and geometry package you
-must install on your machine.  See the end of this cheat sheet for how I installed.
+See the end of this cheat sheet for how I installed readme2tex.
 
 I used to use a github app called
 [TeXify](https://github.com/apps/texify),
@@ -184,15 +191,15 @@ but it is not that reliable and I don't like
 other programs having write access to my repo.  I feel
 like I loose control.
 
-Here is an illustration on how it works,
+Here is an illustration on how readme2tex works,
 
 ![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
 
 ## COMMON LaTeX MATH EQUATIONS
 
-For brevity dollar sign delimiters are not shown.
+For brevity, the dollar sign delimiters are not shown.
 
-You can use,
+As a reminder you can use,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
@@ -427,6 +434,7 @@ As an example,
 `TikZ` is a LaTeX package that allows you to create high quality diagrams.
 Tikz is probably the most complex and powerful tool to create
 graphic elements in LaTeX.
+
 When you use `readme2tex make sure you add it in,
 
 ```bash
@@ -440,6 +448,13 @@ As an example of a circle,
         \draw (2,2) circle (3cm);
     \end{tikzpicture}
 ```
+
+Sadly, I could not get this to work with `readme2tex`.
+
+## GRAPHIC PACKAGE "pgfplots"
+
+Outside the scope of this cheat sheet but I do have an example
+in this repo.
 
 ## LaTeX APPS
 
@@ -476,7 +491,7 @@ created a `README.md` file with links to those images.
 
 This app is not that stable.
 
-### APP - readme2tex
+### APP - readme2tex INSTALL
 
 [readme2tex](https://github.com/leegao/readme2tex).
 
