@@ -86,7 +86,7 @@ First, there are three ways `declaring math mode` in LaTeX,
 
 * In-line mode \$...\$
 * Display mode (Newline, center) \$\$...\$\$
-* Display mode (Newline, center with label) begin{equation}...end{equation}
+* Display mode (Newline, center with tag) begin{equation}...end{equation}
 
 An example of LaTeX math in-line mode,
 
@@ -126,6 +126,8 @@ Result,
 
 <p align="center"><img alt="\begin{equation}&#10;    E=mc^2&#10;\end{equation}" src="svgs/f334ebc0d2eff9a7f146c11edd071f96.svg" align="middle" width="382.01955pt" height="18.269295pt"/></p>
 
+This is sometimes hard to render correctly, so I kind of stay away from it.
+
 ### FORMATING MULTIPLE EQUATIONS
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
@@ -133,21 +135,7 @@ Second there are two main ways to format multiple equations in LaTeX math mode,
 * begin{gathered}...end{gathered} - Every equation centered.
 * begin{aligned}...end{aligned} - Will align on an ampersand.  I like this one.
 
-An example of LaTeX math in-line mode,
-
-```txt
-    Einstein's equation
-    $E=mc^2$
-    represent energy is equal to matter multiplied by the speed of light squared.
-```
-
-Result,
-
-Einstein's equation
-<img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
-represent energy is equal to matter multiplied by the speed of light squared.
-
-An example of LaTeX math display mode using aligned,
+An example of LaTeX math display mode (using aligned),
 
 ```txt
     $$
@@ -162,20 +150,20 @@ Result,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
 
-An example of LaTeX math display mode using gathered,
+An example of LaTeX math display mode (using gathered),
 
 ```txt
-    \begin{equation}
+    $$
     \begin{gathered}
         a=b+c \\
         d+e=f
     \end{gathered}
-    \end{equation}
+    $$
 ```
 
 Result,
 
-<p align="center"><img alt="\begin{equation}&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;\end{equation}" src="svgs/80c767efa74d6db63b09080ffc4aa560.svg" align="middle" width="382.7076pt" height="39.21489pt"/></p>
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
 
 Again, begin{equation} not available for us when used with markdown.
 So we can't tag.
@@ -245,14 +233,14 @@ Pythagorean theorem (with box),
 
 <p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
 
-Pythagorean theorem (my solution to number, but it stinks),
+Pythagorean theorem (my solution to number, but it kinda stinks),
 
 ```txt
     x^n + y^n = z^n
     \qquad \qquad (1)
 ```
 
-<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;\qquad \qquad (1)&#10;$$" src="svgs/af3f527658a202ca27971ce66f43be4c.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
+<p align="center"><img alt="$$&#10;\qquad \qquad&#10;x^n + y^n = z^n&#10;\qquad \qquad (1)&#10;$$" src="svgs/a9f596fd5580220ee9acda5dc91f807c.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
 
 Square root,
 
