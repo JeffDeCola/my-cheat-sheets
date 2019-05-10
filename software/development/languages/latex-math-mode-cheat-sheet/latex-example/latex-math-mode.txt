@@ -1,9 +1,11 @@
+\title{LaTeX Math Mode}
 \documentclass{article}
 \usepackage{amsmath}
 \begin{document}
 PATH I - Lets demonstrate all 3 math modes.\\
 \\
 1 - INLINE MODE\\
+\\
 This is einstein's equation inline $E=mc^2$.\\
 \\
 2 - NEWLINE CENTER\\
