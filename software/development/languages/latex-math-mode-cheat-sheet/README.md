@@ -1,6 +1,6 @@
 # LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX math mode` _is the math mode of LaTex. LaTeX is much more,
+`LaTeX math mode` _is the math mode of LaTex. LaTeX is
 an advanced typesetting system._
 
 Documentation and reference,
@@ -45,14 +45,13 @@ The syntax can look something like,
     \end{document}
 ```
 
-But I don't do any of this, I'm only interested in
-the mathematical formulas of LaTeX (Math mode). 
+But I don't use any of this, I'm only interested in
+the mathematical formulas of LaTeX (Math mode).
 
 ## INSTALL LaTeX
 
-This is to install a full version with all the packages.
-
-I'm not sure how to install a lighter version,
+This is to install a full version with all the packages. I'm not sure
+how to install a lighter version properly,
 
 ```bash
 sudo apt-get update
@@ -66,19 +65,22 @@ check version,
 latex -version
 ```
 
-To test, lets use a LateX document which will invoke math mode,
-to create a .pdf file,
+To test, lets use a LateX file
+[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.txt)
+which will invoke math mode and create a .pdf file,
 
 ```bash
 cd latex-example
 pdflatex latex-math-mode.txt
 ```
 
+If everything worked correctly your .pdf should look like
+[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.pdf).
 This example outlines and basics of latex math mode and is explained below.
 
 ## USING LaTeX IN MATH MODE
 
-I want to render this LaTeX math equation `E=mc^2`,
+I want to render this LaTeX math equation `E=mc^2`.
 
 ### DECLARING MATH MODE
 
@@ -96,8 +98,6 @@ An example of LaTeX math in-line mode,
     represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
-Result,
-
 Einstein's equation
 <img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
 represent energy is equal to matter multiplied by the speed of light squared.
@@ -110,8 +110,6 @@ An example of LaTeX math display mode,
     $$
 ```
 
-Result,
-
 <p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
 An example of LaTeX math display mode (with tag),
@@ -122,18 +120,17 @@ An example of LaTeX math display mode (with tag),
     \end{equation}
 ```
 
-Result,
-
 <p align="center"><img alt="\begin{equation}&#10;    E=mc^2&#10;\end{equation}" src="svgs/f334ebc0d2eff9a7f146c11edd071f96.svg" align="middle" width="382.01955pt" height="18.269295pt"/></p>
 
-This is sometimes hard to render correctly, so I kind of stay away from it.
+This is sometimes hard to render being{equation} correctly,
+so I kind of stay away from it.  I have a way to make my own tags below.
 
 ### FORMATING MULTIPLE EQUATIONS
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
 
-* begin{gathered}...end{gathered} - Every equation centered.
-* begin{aligned}...end{aligned} - Will align on an ampersand.  I like this one.
+* `begin{gathered}...end{gathered}` - Every equation centered.
+* `begin{aligned}...end{aligned}` - Will align on an ampersand.
 
 An example of LaTeX math display mode (using aligned),
 
@@ -145,8 +142,6 @@ An example of LaTeX math display mode (using aligned),
     \end{aligned}
     $$
 ```
-
-Result,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
 
@@ -161,12 +156,7 @@ An example of LaTeX math display mode (using gathered),
     $$
 ```
 
-Result,
-
 <p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
-
-Again, begin{equation} not available for us when used with markdown.
-So we can't tag.
 
 ## HOW I CREATED THIS README.md
 
@@ -200,9 +190,7 @@ Here is an illustration on how it works,
 
 ## COMMON LaTeX MATH EQUATIONS
 
-Note, dollar sign delimiters not shown.  Also, you can't use begin{equation}
-because that is not part of LateX for math.  You are now getting into LaTeX
-typesetting capabilities.
+For brevity dollar sign delimiters are not shown.
 
 You can use,
 
@@ -233,14 +221,35 @@ Pythagorean theorem (with box),
 
 <p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
 
-Pythagorean theorem (my solution to number, but it kinda stinks),
+Pythagorean theorem (numbered using begin{equation}),
 
 ```txt
-    x^n + y^n = z^n
-    \qquad \qquad (1)
+    \begin{equation}
+        x^n + y^n = z^n
+    \end{equation}
 ```
 
-<p align="center"><img alt="$$&#10;\qquad \qquad&#10;x^n + y^n = z^n&#10;\qquad \qquad (1)&#10;$$" src="svgs/a9f596fd5580220ee9acda5dc91f807c.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
+<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n&#10;\end{equation}" src="svgs/9c2c2ace77591d2c08d3ea86c859717c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
+
+Pythagorean theorem (numbered using tag),
+
+```txt
+    \begin{equation}
+        x^n + y^n = z^n\tag{6}
+    \end{equation}
+```
+
+<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n\tag{6}&#10;\end{equation}" src="svgs/508f5e725b18bed700d18ff1cea4238c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
+
+Pythagorean theorem (another way to do numbers),
+
+```txt
+    \qquad \qquad
+    x^n + y^n = z^n
+    \qquad \qquad (4)
+```
+
+<p align="center"><img alt="$$&#10;\qquad \qquad&#10;x^n + y^n = z^n&#10;\qquad \qquad (4)&#10;$$" src="svgs/5b71346bca16eedf780a40e41ddef9e8.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
 
 Square root,
 
@@ -250,7 +259,7 @@ Square root,
 
 <p align="center"><img alt="$$&#10;\sqrt[3]{x}&#10;$$" src="svgs/8375620ec7847ff048e565abd48c90cd.svg" align="middle" width="23.093565pt" height="16.379385pt"/></p>
 
-Multiple equations (gathered)
+Multiple equations (gathered),
 
 ```txt
     \begin{gathered}
@@ -261,7 +270,7 @@ Multiple equations (gathered)
 
 <p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
 
-Multiple equations (aligned on ampersand &)
+Multiple equations (aligned on ampersand &),
 
 ```txt
     \begin{aligned}
