@@ -30,16 +30,23 @@ text and in displaying mathematical formula.
 
 `LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
 
+The syntax can look something like,
+
 ```txt
-\documentclass{article}
-\title{Cartesian closed categories and the price of eggs}
-\author{Jane Doe}
-\date{September 1994}
+    \documentclass{article}
+    \title{Cartesian closed categories and the price of eggs}
+    \author{Jane Doe}
+    \date{September 1994}
+    \usepackage{amsmath}
+    \begin{document}
+    \begin{equation}
+        E=mc^2
+    \end{equation}
+    \end{document}
 ```
 
 But I don't do any of this, I'm only interested in
-the mathematical formulas of LaTeX (Math mode). Because
-typesetting mathematics is one of LaTeX's greatest strengths.
+the mathematical formulas of LaTeX (Math mode). 
 
 ## INSTALL LaTeX
 
@@ -56,7 +63,7 @@ sudo apt-get install texlive-full
 check version,
 
 ```bash
-latex version
+latex -version
 ```
 
 To test, lets use a LateX document which will invoke math mode,
@@ -67,7 +74,7 @@ cd latex-example
 pdflatex latex-math-mode.txt
 ```
 
-This example will be explained below.
+This example outlines and basics of latex math mode and is explained below.
 
 ## USING LaTeX IN MATH MODE
 
@@ -75,42 +82,68 @@ I want to render this LaTeX math equation `E=mc^2`,
 
 First, there are three ways `declaring math mode` in LaTeX,
 
-* In-Line \$...\$
-* Newline, center \$\$...\$\$
-* Newline, center with label `\begin{equation}...\end{equation}`
+* In-line mode \$...\$
+* Display mode (Newline, center) \$\$...\$\$
+* Display mode (Newline, center with label) begin{equation}...end{equation}
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
 
-* `begin{gathered}...end{gathered}` - Every equation centered.
-* `begin{aligned}...end{aligned}` - Will align on `&`.  I like this one.
+* begin{gathered}...end{gathered} - Every equation centered.
+* begin{aligned}...end{aligned} - Will align on an ampersand.  I like this one.
 
-Display Mode,
-
-```txt
-    E=mc^2
-```
-
-You will get,
-
-$$
-E=mc^2
-$$
-
-Inline Mode using,
+An example of LaTeX math in-line mode,
 
 ```txt
     Einstein's equation
-    E=mc^2
+    $E=mc^2$
     represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
-You will get,
+Result,
 
 Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
 
-Again, `\begin{equation}` not available for us when used with markdown.
+An example of LaTeX math display mode using aligned,
+
+```txt
+    \begin{aligned}
+        a&=b+c \\
+        d+e&=f
+    \end{aligned}
+```
+
+Result,
+
+$$
+\begin{aligned}
+    a&=b+c \\
+    d+e&=f
+\end{aligned}
+$$
+
+An example of LaTeX math display mode using gathered,
+
+```txt
+    \begin{equation}
+    \begin{gathered}
+        a=b+c \\
+        d+e=f
+    \end{gathered}
+    \end{equation}
+```
+
+Result,
+
+\begin{equation}
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}
+\end{equation}
+
+Again, begin{equation} not available for us when used with markdown.
 So we can't tag.
 
 ## HOW I CREATED THIS README.md
