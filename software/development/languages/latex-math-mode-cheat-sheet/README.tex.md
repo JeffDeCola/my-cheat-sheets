@@ -1,6 +1,6 @@
 # LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX math mode` _is the math mode of LaTex. LaTeX is much more,
+`LaTeX math mode` _is the math mode of LaTex. LaTeX is
 an advanced typesetting system._
 
 Documentation and reference,
@@ -45,14 +45,13 @@ The syntax can look something like,
     \end{document}
 ```
 
-But I don't do any of this, I'm only interested in
-the mathematical formulas of LaTeX (Math mode). 
+But I don't use any of this, I'm only interested in
+the mathematical formulas of LaTeX (Math mode).
 
 ## INSTALL LaTeX
 
-This is to install a full version with all the packages.
-
-I'm not sure how to install a lighter version,
+This is to install a full version with all the packages. I'm not sure
+how to install a lighter version properly,
 
 ```bash
 sudo apt-get update
@@ -66,19 +65,22 @@ check version,
 latex -version
 ```
 
-To test, lets use a LateX document which will invoke math mode,
-to create a .pdf file,
+To test, lets use a LateX file
+[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.txt)
+which will invoke math mode and create a .pdf file,
 
 ```bash
 cd latex-example
 pdflatex latex-math-mode.txt
 ```
 
+If everything worked correctly your .pdf should look like
+[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-example/latex-math-mode.pdf).
 This example outlines and basics of latex math mode and is explained below.
 
 ## USING LaTeX IN MATH MODE
 
-I want to render this LaTeX math equation `E=mc^2`,
+I want to render this LaTeX math equation `E=mc^2`.
 
 ### DECLARING MATH MODE
 
@@ -96,8 +98,6 @@ An example of LaTeX math in-line mode,
     represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
-Result,
-
 Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
@@ -109,8 +109,6 @@ An example of LaTeX math display mode,
     $E=mc^2$
     $$
 ```
-
-Result,
 
 $$
 E=mc^2
@@ -124,20 +122,19 @@ An example of LaTeX math display mode (with tag),
     \end{equation}
 ```
 
-Result,
-
 \begin{equation}
     E=mc^2
 \end{equation}
 
-This is sometimes hard to render correctly, so I kind of stay away from it.
+This is sometimes hard to render being{equation} correctly,
+so I kind of stay away from it.  I have a way to make my own tags below.
 
 ### FORMATING MULTIPLE EQUATIONS
 
 Second there are two main ways to format multiple equations in LaTeX math mode,
 
-* begin{gathered}...end{gathered} - Every equation centered.
-* begin{aligned}...end{aligned} - Will align on an ampersand.  I like this one.
+* `begin{gathered}...end{gathered}` - Every equation centered.
+* `begin{aligned}...end{aligned}` - Will align on an ampersand.
 
 An example of LaTeX math display mode (using aligned),
 
@@ -149,8 +146,6 @@ An example of LaTeX math display mode (using aligned),
     \end{aligned}
     $$
 ```
-
-Result,
 
 $$
 \begin{aligned}
@@ -170,17 +165,12 @@ An example of LaTeX math display mode (using gathered),
     $$
 ```
 
-Result,
-
 $$
 \begin{gathered}
     a=b+c \\
     d+e=f
 \end{gathered}
 $$
-
-Again, begin{equation} not available for us when used with markdown.
-So we can't tag.
 
 ## HOW I CREATED THIS README.md
 
@@ -214,9 +204,7 @@ Here is an illustration on how it works,
 
 ## COMMON LaTeX MATH EQUATIONS
 
-Note, dollar sign delimiters not shown.  Also, you can't use begin{equation}
-because that is not part of LateX for math.  You are now getting into LaTeX
-typesetting capabilities.
+For brevity dollar sign delimiters are not shown.
 
 You can use,
 
@@ -253,17 +241,42 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
-Pythagorean theorem (my solution to number, but it kinda stinks),
+Pythagorean theorem (numbered using begin{equation}),
 
 ```txt
+    \begin{equation}
+        x^n + y^n = z^n
+    \end{equation}
+```
+
+\begin{equation}
     x^n + y^n = z^n
-    \qquad \qquad (1)
+\end{equation}
+
+Pythagorean theorem (numbered using tag),
+
+```txt
+    \begin{equation}
+        x^n + y^n = z^n\tag{6}
+    \end{equation}
+```
+
+\begin{equation}
+    x^n + y^n = z^n\tag{6}
+\end{equation}
+
+Pythagorean theorem (another way to do numbers),
+
+```txt
+    \qquad \qquad
+    x^n + y^n = z^n
+    \qquad \qquad (4)
 ```
 
 $$
 \qquad \qquad
 x^n + y^n = z^n
-\qquad \qquad (1)
+\qquad \qquad (4)
 $$
 
 Square root,
@@ -276,7 +289,7 @@ $$
 \sqrt[3]{x}
 $$
 
-Multiple equations (gathered)
+Multiple equations (gathered),
 
 ```txt
     \begin{gathered}
@@ -292,7 +305,7 @@ $$
 \end{gathered}
 $$
 
-Multiple equations (aligned on ampersand &)
+Multiple equations (aligned on ampersand &),
 
 ```txt
     \begin{aligned}
