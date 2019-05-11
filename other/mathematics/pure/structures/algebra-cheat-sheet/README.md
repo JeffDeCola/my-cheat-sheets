@@ -230,23 +230,46 @@ where,
 * <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> is the set of numbers we can input (the domain)
 * <img alt="$y$" src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg" align="middle" width="8.61696pt" height="14.10255pt"/> is the set of numbers that we get as output (the range)
 
-Now we could make a table, but it is easier if we graph,
+I should note some notation,
+
+<p align="center"><img alt="$$&#10;f(x) = y = 2x&#10;$$" src="svgs/11495d0c15967fb14a68a1f846faabc5.svg" align="middle" width="101.79213pt" height="16.376943pt"/></p>
+
+Or stated `f of x equals y`.
+
+We can graph this function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equal-2x.svg"
+    <img src="latex-pgfplots/y-equals-2x.svg"
     align="middle"
 </p>
 
 But what about this equation,
 
-<p align="center"><img alt="$$&#10;y^2 = x \\&#10;y = \sqrt{x}&#10;$$" src="svgs/1a2d05d943792e02f76a23dc6c5c96bd.svg" align="middle" width="100.805925pt" height="17.359485pt"/></p>
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;y^2 = x \\&#10;y = \sqrt{x}&#10;\end{gathered}&#10;$$" src="svgs/6459ee71c5d85c704601e487efa3f14e.svg" align="middle" width="53.582595pt" height="43.81047pt"/></p>
 
-But for each input we get 2 outputs (one to many).  `This is not a function`.
+For each input we get 2 outputs (one to many).  Hence `this is not a function`.
 
-### LINEAR EQUATIONS
+As we will see this does not pass the `vertical line test`.  Meaning,
+the vertical line can only pass through the graphed line once.
+
+So for <img alt="$y = \sqrt{x}$" src="svgs/79074496e8aa7ba59b7df45b447c7297.svg" align="middle" width="53.582595pt" height="24.99552pt"/>, as we can see, the vertical line intercepts
+it twice, hence no function,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equals-sqrt-x.svg"
+    align="middle"
+</p>
+
+### LINEAR FUNCTIONS
 
 Form straight lines when you graph.
+
+We already did one above.
 
 ### QUADRATIC EQUATIONS
 
 Form curves when graphs.
+
+### CUBIC FUNCTIONS
+
+### TRIG FUNCTIONS
