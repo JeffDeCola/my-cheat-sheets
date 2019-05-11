@@ -2,6 +2,16 @@
 
 `algebra` _finding out what the unknown is._
 
+As a side note, this cheat sheet was built using,
+
+* LaTex Math Mode equations rendered to images using
+  [readme2tex](https://github.com/JeffDeCola/readme2tex)
+* LaTeX `pgfplots` package to create the graphs
+
+You can see my
+[LaTeX math mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
+on how to do this.
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -419,16 +429,52 @@ it twice, hence no function,
     align="middle"
 </p>
 
-### LINEAR FUNCTIONS
+### LINEAR FUNCTIONS (m is slope)
 
 Form straight lines when you graph.
 
-We already did one above.
+It has a basic form of,
+
+$$
+\boxed{y = mx + b}
+$$
+
+Where $m$ is the `slope` of the line and $b$ is the `y-intercept`.
+
+We already did one above $y = 2x$, where $m = 2$ and $b = 0$,
+
+$$
+y = 2x + 0
+$$
+
+Lets do another example,
+
+$$
+\begin{aligned}
+y &= -\frac{1}{3}x - 3 \\
+f(x) &= -\frac{1}{3}x - 3
+\end{aligned}
+$$
+
+Where the line would look like,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equals-minus-1-over-3-times-x-minus-3.svg"
+    align="middle"
+</p>
+
+As a side note, what if $m=1000000$.  That would look like
+a vertical line, but it isn't because it would fail the vertical
+line test.
 
 ### QUADRATIC EQUATIONS
 
-Form curves when graphs.
+tbd
 
 ### CUBIC FUNCTIONS
 
+tbd
+
 ### TRIG FUNCTIONS
+
+tbd
