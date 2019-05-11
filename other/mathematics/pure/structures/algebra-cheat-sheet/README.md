@@ -15,6 +15,15 @@ on how to do this.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## HISTORY
+
+From Persia around 820 AD, there was a book of algebra for balancing and
+completion. We are talking about almost 3,000 years ago.  But even before
+that people were balancing equations in 2000 AD.
+
+But a greek gentleman name Diophantus around 200 BC is sometimes known
+as the father of algebra.  Al-Khwarizmi is another father back in 600 BC.
+
 ## OVERVIEW - THE UNKNOWN
 
 Algebra is a lot like arithmetic.
@@ -263,7 +272,7 @@ As we will see this does not pass the `vertical line test`.  Meaning,
 the vertical line can only pass through the graphed line once.
 
 So for <img alt="$y = \sqrt{x}$" src="svgs/79074496e8aa7ba59b7df45b447c7297.svg" align="middle" width="53.582595pt" height="24.99552pt"/>, as we can see, the vertical line intercepts
-it twice, hence no function,
+it twice, hence not a function,
 
 <p align="center">
     <img src="latex-pgfplots/y-equals-sqrt-x.svg"
