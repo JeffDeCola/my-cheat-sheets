@@ -1,0 +1,33 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        title={},
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xlabel=$x$,
+        ylabel={$f(x)$},
+        xmin=-6.5,xmax=6.5,ymin=-6.5,ymax=6.5,
+        xtick distance=2,
+        ytick distance=2,
+        grid=major,
+        grid style={thin,densely dotted,black!20}
+    ]
+    \addplot[
+        domain= -7:7,
+        samples=100,
+        color=red
+        ] 
+        {(-1/3*x)-3};
+    \addlegendentry{$f(x) = -\frac{1}{3}x - 3 $}
+    \end{axis}
+    \end{tikzpicture}
+}
+
+\end{document}

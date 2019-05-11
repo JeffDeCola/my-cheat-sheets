@@ -2,6 +2,16 @@
 
 `algebra` _finding out what the unknown is._
 
+As a side note, this cheat sheet was built using,
+
+* LaTex Math Mode equations rendered to images using
+  [readme2tex](https://github.com/JeffDeCola/readme2tex)
+* LaTeX `pgfplots` package to create the graphs
+
+You can see my
+[LaTeX math mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
+on how to do this.
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -260,16 +270,43 @@ it twice, hence no function,
     align="middle"
 </p>
 
-### LINEAR FUNCTIONS
+### LINEAR FUNCTIONS (m is slope)
 
 Form straight lines when you graph.
 
-We already did one above.
+It has a basic form of,
+
+<p align="center"><img alt="$$&#10;\boxed{y = mx + b}&#10;$$" src="svgs/12b1df18b5de3134c76e50641e441973.svg" align="middle" width="92.718945pt" height="25.789995pt"/></p>
+
+Where <img alt="$m$" src="svgs/0e51a2dede42189d77627c4d742822c3.svg" align="middle" width="14.379255pt" height="14.10255pt"/> is the `slope` of the line and <img alt="$b$" src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align="middle" width="7.0284885pt" height="22.74591pt"/> is the `y-intercept`.
+
+We already did one above <img alt="$y = 2x$" src="svgs/124b49b18251340df4b37d84976754ad.svg" align="middle" width="48.03744pt" height="21.10812pt"/>, where <img alt="$m = 2$" src="svgs/39124f150a1b1249b668329ebb679ce5.svg" align="middle" width="44.437635pt" height="21.10812pt"/> and <img alt="$b = 0$" src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg" align="middle" width="37.086885pt" height="22.74591pt"/>,
+
+<p align="center"><img alt="$$&#10;y = 2x + 0&#10;$$" src="svgs/7d60633fb62c32e50e50665b438ef75e.svg" align="middle" width="76.26927pt" height="13.7384445pt"/></p>
+
+Lets do another example,
+
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;y &amp;= -\frac{1}{3}x - 3 \\&#10;f(x) &amp;= -\frac{1}{3}x - 3&#10;\end{aligned}&#10;$$" src="svgs/51ab95cb962deb55b25c9cefcc858ce4.svg" align="middle" width="116.36163pt" height="72.51618pt"/></p>
+
+Where the line would look like,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equals-minus-1-over-3-times-x-minus-3.svg"
+    align="middle"
+</p>
+
+As a side note, what if <img alt="$m=1000000$" src="svgs/66da0496f0d1ff4b99d66fb27364df28.svg" align="middle" width="93.56853pt" height="21.10812pt"/>.  That would look like
+a vertical line, but it isn't because it would fail the vertical
+line test.
 
 ### QUADRATIC EQUATIONS
 
-Form curves when graphs.
+tbd
 
 ### CUBIC FUNCTIONS
 
+tbd
+
 ### TRIG FUNCTIONS
+
+tbd
