@@ -1,0 +1,93 @@
+\documentclass[10pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{listings}
+
+\title{\vspace{-5.0cm}LaTeX MATH MODE}
+\author{\vspace{-0.1cm}Jeff DeCola}
+\date{\vspace{-0.5cm}}
+
+\setlength{\parindent}{0em} %Paragraph Indent
+\setlength{\parskip}{1em} %Paragraph Spacing
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\textbf{THREE WAYS TO DECLARE MATH MODE IN LATEX}
+\end{center}
+
+\textbf{INLINE MODE}
+
+\begin{lstlisting}
+This is einstein's equation inline $E=mc^2$.
+\end{lstlisting}
+
+This is einstein's equation inline $E=mc^2$.
+
+\textbf{NEWLINE CENTER}
+
+\begin{lstlisting}
+$$
+E=mc^2
+$$
+\end{lstlisting}
+
+$$
+E=mc^2
+$$
+
+\textbf{NEWLINE CENTER WITH NUMBER}
+
+\begin{lstlisting}
+\begin{equation}
+	E=mc^2
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	E=mc^2
+\end{equation}
+
+\begin{center}
+\textbf{FORMATTING MULTIPLE EQUATIONS IN MATH MODE}
+\end{center}
+
+\textbf{BEGIN GATHERED} (both equations centered)
+
+\begin{lstlisting}
+$$
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}    
+$$
+\end{lstlisting}
+
+$$
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}    
+$$
+
+\textbf{BEGIN ALIGNED} (Both equation aligned on ampersand with tag)
+
+\begin{lstlisting}
+\begin{equation}
+    \begin{aligned}
+        a&=b+c \\
+        d+e&=f
+    \end{aligned}
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+    \begin{aligned}
+        a&=b+c \\
+        d+e&=f
+    \end{aligned}
+\end{equation}
+
+\end{document}
