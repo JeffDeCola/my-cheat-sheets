@@ -8,22 +8,24 @@
 \resizebox{8cm}{8cm}{%
     \begin{tikzpicture}
     \begin{axis}[
-        title={Coordinate Plane (2D Number Plane)},
+        title={},
         axis lines=middle,
         axis line style={Stealth-Stealth,very thick},
         xlabel=$x$,
-        ylabel=$y$,
-        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
-        xtick distance=1,
-        ytick distance=1,
+        ylabel={$f(x)$},
+        xmin=-6.5,xmax=6.5,ymin=-6.5,ymax=6.5,
+        xtick distance=2,
+        ytick distance=2,
         grid=major,
         grid style={thin,densely dotted,black!20}
     ]
     \addplot[
-        mark=*
-        ]
-        coordinates {(3,2)}
-        node[pin=150:{$(3,2)$}]{};
+        domain= -7:7,
+        samples=50,
+        color=red
+        ] 
+        {2*x};
+    \addlegendentry{$f(x) = 2x$}
     \end{axis}
     \end{tikzpicture}
 }

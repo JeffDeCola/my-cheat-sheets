@@ -198,11 +198,11 @@ There are hundreds of packages you can use with LateX.
 * `xcolor` - _Add color_
 * `amsmath` & `amsfonts` - _For rendering matrices_
 * `tikz` - _Create postscript and .pdf graph­ics_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikztex)
+  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
   * `pgfplts` - _2D/3D graphing, drawing data or function plots_
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplotstex)
+    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex)
   * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclidetex)
+    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclide.tex)
 
 ### xcolor
 
@@ -244,7 +244,7 @@ As an example of a circle,
 Sadly, I could not get this to work with `readme2tex`.
 
 But I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikztex)
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
 
 ### pgfplots
 

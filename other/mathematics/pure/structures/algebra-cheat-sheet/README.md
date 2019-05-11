@@ -8,7 +8,7 @@ View my entire list of cheat sheets on
 ## OVERVIEW - THE UNKNOWN
 
 Algebra is a lot like arithmetic.
-But algebra introduces the element of the unknown values,
+But algebra introduces the element of unknown values,
 
 <p align="center"><img alt="$$&#10;1 + 2 = unknown&#10;$$" src="svgs/ab0a7916d8238e871cf00f4dad636e80.svg" align="middle" width="126.304035pt" height="12.737637pt"/></p>
 
@@ -18,6 +18,7 @@ or
 
 Where <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> is a placeholder for a number we don't know yet.
 The equation is telling us the known and unknown values.
+
 One of the main goals of algebra is to `solve the equation`.
 To find out what the unknown is,
 
@@ -27,12 +28,10 @@ To find out what the unknown is,
 
 <p align="center"><img alt="$$&#10;a + b = 2&#10;$$" src="svgs/958c35238e5b326abb602cd35810f526.svg" align="middle" width="65.786985pt" height="12.737637pt"/></p>
 
-So if <img alt="$a = 2$" src="svgs/cf34371d316f136e859347be44d26b44.svg" align="middle" width="38.715105pt" height="21.10812pt"/>, then <img alt="$b = 0$" src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg" align="middle" width="37.086885pt" height="22.74591pt"/>.  <img alt="$b$" src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align="middle" width="7.0284885pt" height="22.74591pt"/> will change depending on <img alt="$a$" src="svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align="middle" width="8.656725pt" height="14.10255pt"/>.
+If <img alt="$a = 2$" src="svgs/cf34371d316f136e859347be44d26b44.svg" align="middle" width="38.715105pt" height="21.10812pt"/>, then <img alt="$b = 0$" src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg" align="middle" width="37.086885pt" height="22.74591pt"/>.  If <img alt="$a = 1$" src="svgs/f0ab30e11910c2d2688aac5ed2ced758.svg" align="middle" width="38.715105pt" height="21.10812pt"/>, then <img alt="$b = 1$" src="svgs/3396462ea631cee3339fb06b67f38e5f.svg" align="middle" width="37.086885pt" height="22.74591pt"/>. Hence <img alt="$b$" src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg" align="middle" width="7.0284885pt" height="22.74591pt"/> will change depending on <img alt="$a$" src="svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align="middle" width="8.656725pt" height="14.10255pt"/>.
 And visa versa.
 
-## MAKES THINGS SIMPLE - MULTIPLICATION
-
-Multiplication is implied.
+## MULTIPLICATION IS IMPLIED
 
 Instead of,
 
@@ -60,7 +59,7 @@ Figuring out the unknowns via rearrangement.  Equations
 must always by balanced.  Just do the same things to both sides
 of the equation.
 
-Addition (_add 5 on each side_)
+Addition (_add 5 on each side_),
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;x-5 =&amp; 16 \\&#10;(5)+x-5 =&amp; 16+(5) \\&#10;x =&amp; 21&#10;\end{aligned}&#10;$$" src="svgs/c0110e73ec633a2cb07a3d4ce42b4e0f.svg" align="middle" width="153.499335pt" height="59.869095pt"/></p>
 
@@ -106,7 +105,7 @@ Groups _(Do groups last)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;2(x+2) =&amp; 8 \\&#10;\frac{2(x+2)}{(2)} =&amp; \frac{8}{(2)} \\&#10;(x+2) =&amp; 4\\&#10;x+2 =&amp; 4\\&#10;(-2)+x+2 =&amp; 4 +(-2)\\&#10;x =&amp; 2&#10;\end{aligned}&#10;$$" src="svgs/3f8bb4c113674af966d33d584d881378.svg" align="middle" width="170.8344pt" height="157.96704pt"/></p>
 
-Groups implied above and below fraction line _(Do groups last)_,
+Groups are implied both above and below fraction line _(Do groups last)_,
 
 <p align="center"><img alt="$$&#10;\begin{aligned}&#10;\frac{x-1}{2} =&amp; 4 \\&#10;(2)\frac{x-1}{2} =&amp; 4(2) \\&#10;x-1 =&amp; 8 \\&#10;(1)+x-1 =&amp; 8+(1) \\&#10;x =&amp; 9&#10;\end{aligned}&#10;$$" src="svgs/264ffdb5cda4c6986e595c71ce9640f9.svg" align="middle" width="145.310715pt" height="142.214655pt"/></p>
 
@@ -114,7 +113,7 @@ Groups implied above and below fraction line _(Do groups last)_,
 
 As we mentioned before algebra is similar to arithmetic,
 
-<p align="center"><img alt="$$&#10;4^2 \quad in \; algebra \quad x^2 \\&#10;\sqrt{16} \quad in \; algebra \quad \sqrt{x}&#10;$$" src="svgs/0a3931a151dbdc364aab7f875c9b8078.svg" align="middle" width="298.2045pt" height="18.242565pt"/></p>
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;4^2 \quad in \; algebra \quad x^2 \\&#10;\sqrt{16} \quad in \; algebra \quad \sqrt{x}&#10;\end{gathered}&#10;$$" src="svgs/e725679236472660ced0a2ee6b556c38.svg" align="middle" width="159.569355pt" height="45.56838pt"/></p>
 
 As a side note, that will help us later on, <img alt="$x^0 = 1$" src="svgs/0509db0612eccfb1265dfc7f2772fd75.svg" align="middle" width="46.792845pt" height="26.70657pt"/> and <img alt="$x^1 = x$" src="svgs/076118b2477f47de9838c4b30f0bb0e8.svg" align="middle" width="47.96418pt" height="26.70657pt"/>.
 
@@ -170,7 +169,7 @@ Arrange the polynomial from highest to lowest terms. As an example,
 
 <p align="center"><img alt="$$&#10;7x^4 + 3y^2 + x + 5&#10;$$" src="svgs/a9bc1d7d2bbe0fd491f4387da0ac4e61.svg" align="middle" width="126.783525pt" height="17.359485pt"/></p>
 
-But what about <img alt="$3 + 7x - 5x^2$" src="svgs/10701390da41e53077579d78c4216e45.svg" align="middle" width="89.90025pt" height="26.70657pt"/>? Simple,
+But what about <img alt="$3 + 7x - 5x^2$" src="svgs/10701390da41e53077579d78c4216e45.svg" align="middle" width="89.90025pt" height="26.70657pt"/>?  It would be,
 
 <p align="center"><img alt="$$&#10;-5x^2 + 7x + 3&#10;$$" src="svgs/839ef06d35fabb2657ad31fc4335f095.svg" align="middle" width="103.484205pt" height="15.5398485pt"/></p>
 
@@ -198,9 +197,51 @@ As another example with <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0
 
 In reverse you can `factor out` something.
 
-## GRAPHING EQUATIONS ON A COORDINATE PLANE
+## THE COORDINATE PLANE (2D NUMBER PLANE)
 
-A coordinate plane has an <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> and <img alt="$y$" src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg" align="middle" width="8.61696pt" height="14.10255pt"/> axis.
+A `2D number plane` or `coordinate plane` has an <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> and <img alt="$y$" src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg" align="middle" width="8.61696pt" height="14.10255pt"/>
+(horizontal and vertical) axis.
+You can plot points on a coordinate system with coordinates
+(ordered pairs) <img alt="$(x,y)$" src="svgs/7392a8cd69b275fa1798ef94c839d2e0.svg" align="middle" width="38.005605pt" height="24.56553pt"/>.
+
+For example, plot the coordinates <img alt="$(3,2)$" src="svgs/c2b3cecb67a773c47721114a4b95184e.svg" align="middle" width="36.40362pt" height="24.56553pt"/> on the coordinate plane,
+
+<p align="center">
+    <img src="latex-pgfplots/coordinate-system.svg"
+    align="middle"
+</p>
+
+There are four quadrants in a coordinate plane labeled with roman numerals
+I, II, III, IV.
+
+## FUNCTIONS
+
+A `function` is just something that relates one `input set` (the domain)
+to another `output set` (range) in a particular way.  A `set` is just a
+collection of things.  A function can only produce one output
+value for each input value.
+
+For a function example,
+
+<p align="center"><img alt="$$&#10;y = 2x&#10;$$" src="svgs/152d7c9297c76cc0f0cb18dc6078afcc.svg" align="middle" width="48.037275pt" height="13.7384445pt"/></p>
+
+where,
+
+* <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/> is the set of numbers we can input (the domain)
+* <img alt="$y$" src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg" align="middle" width="8.61696pt" height="14.10255pt"/> is the set of numbers that we get as output (the range)
+
+Now we could make a table, but it is easier if we graph,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equal-2x.svg"
+    align="middle"
+</p>
+
+But what about this equation,
+
+<p align="center"><img alt="$$&#10;y^2 = x \\&#10;y = \sqrt{x}&#10;$$" src="svgs/1a2d05d943792e02f76a23dc6c5c96bd.svg" align="middle" width="100.805925pt" height="17.359485pt"/></p>
+
+But for each input we get 2 outputs (one to many).  `This is not a function`.
 
 ### LINEAR EQUATIONS
 

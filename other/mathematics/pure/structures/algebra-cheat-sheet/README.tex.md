@@ -347,7 +347,7 @@ $$
 
 In reverse you can `factor out` something.
 
-## GRAPHING EQUATIONS ON A COORDINATE PLANE
+## THE COORDINATE PLANE (2D NUMBER PLANE)
 
 A `2D number plane` or `coordinate plane` has an $x$ and $y$
 (horizontal and vertical) axis.
@@ -360,6 +360,43 @@ For example, plot the coordinates $(3,2)$ on the coordinate plane,
     <img src="latex-pgfplots/coordinate-system.svg"
     align="middle"
 </p>
+
+There are four quadrants in a coordinate plane labeled with roman numerals
+I, II, III, IV.
+
+## FUNCTIONS
+
+A `function` is just something that relates one `input set` (the domain)
+to another `output set` (range) in a particular way.  A `set` is just a
+collection of things.  A function can only produce one output
+value for each input value.
+
+For a function example,
+
+$$
+y = 2x
+$$
+
+where,
+
+* $x$ is the set of numbers we can input (the domain)
+* $y$ is the set of numbers that we get as output (the range)
+
+Now we could make a table, but it is easier if we graph,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equal-2x.svg"
+    align="middle"
+</p>
+
+But what about this equation,
+
+$$
+y^2 = x \\
+y = \sqrt{x}
+$$
+
+But for each input we get 2 outputs (one to many).  `This is not a function`.
 
 ### LINEAR EQUATIONS
 
