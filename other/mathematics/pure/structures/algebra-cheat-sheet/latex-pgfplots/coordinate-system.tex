@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+%\pgfplotsset{width=7cm,compat=1.10}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+        xtick distance=1,
+        ytick distance=1,
+        xlabel=$x$,
+        ylabel=$y$,
+        title=\large{Coordinate Plane (2D Number Plane)},
+        grid=major,
+        grid style={thin,densely dotted,black!20}]
+        \addplot[mark=none] {x^2/4};
+        \addplot[mark=none] {-1};
+        \addplot[mark=*] coordinates {(0,1)} node[pin=150:{$(0,1)$}]{} ;
+    \end{axis}
+    \end{tikzpicture}
+}
+\end{document}

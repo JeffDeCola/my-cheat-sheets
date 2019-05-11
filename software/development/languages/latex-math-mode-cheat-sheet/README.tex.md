@@ -3,6 +3,9 @@
 `LaTeX math mode` _is the math mode of LaTex. Where LaTeX is
 an advanced markup language used for typesetting._
 
+This is a long cheat sheet, so you may just want to jump to
+[common latex math equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet#common-latex-math-equations).
+
 Documentation and reference,
 
 * [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
@@ -69,30 +72,17 @@ latex -version
 ```
 
 To test, lets use a LateX file
-[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.txt)
+[latex-math-mode.tex](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.tex)
 which will invoke math mode and create a .pdf file,
 
 ```bash
 cd latex-math-mode-examples
-pdflatex latex-math-mode.txt
+pdflatex latex-math-modetex
 ```
 
 If everything worked correctly your .pdf should look like
 [mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.pdf).
 This example outlines and basics of latex math mode and is explained below.
-
-## POPULAR LaTeX PACKAGES
-
-There are hundreds of packages you can use with LateX.
-
-* `xcolor` - _Add color_
-* `amsmath` & `amsfonts` - _For rendering matrices_
-* `tikz` - _Create postscript and .pdf graph­ics_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikzpicture.txt)
-  * `pgfplts` - _2D/3D graphing, drawing data or function plots_
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.txt)
-  * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
-    [my example]((https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclide.txt))
 
 ## USING LaTeX IN MATH MODE
 
@@ -214,6 +204,155 @@ like I loose control.
 Here is an illustration on how readme2tex works,
 
 ![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
+
+## POPULAR LaTeX PACKAGES
+
+There are hundreds of packages you can use with LateX.
+
+* `xcolor` - _Add color_
+* `amsmath` & `amsfonts` - _For rendering matrices_
+* `tikz` - _Create postscript and .pdf graph­ics_
+  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikztex)
+  * `pgfplts` - _2D/3D graphing, drawing data or function plots_
+    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplotstex)
+  * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
+    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclidetex)
+
+### xcolor
+
+If you want color, you must use the color package "xcolor".
+So when you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "xcolor" ....etc...
+```
+
+As an example,
+
+```txt
+    \color{red} E=mc^2
+```
+
+$$
+\color{red} E=mc^2
+$$
+
+### tikz
+
+`TikZ` is a LaTeX package that allows you to create high quality diagrams.
+Tikz is probably the most complex and powerful tool to create
+graphic elements in LaTeX.
+
+When you use `readme2tex make sure you add it in,
+
+```bash
+python -m readme2tex --usepackage "tikz" ....etc...
+```
+
+As an example of a circle,
+
+```txt
+    \begin{tikzpicture}
+        \draw (2,2) circle (3cm);
+    \end{tikzpicture}
+```
+
+Sadly, I could not get this to work with `readme2tex`.
+
+But I do have an example
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikztex)
+
+### pgfplots
+
+`pgfplots` is outside the scope of this cheat sheet but I do have an example
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex).
+
+## CONVERTING TO OTHER FILE FORMATS
+
+* `pdflatex` .tex -> .pdf
+* `latex` .tex -> .dvi
+* `dvisvgm` .dvi -> .svg
+* `ghostscript` .pdf -> many types
+
+## LaTeX APPS
+
+Some cool LaTeX apps I use.
+
+### VISUAL STUDIO CODE APP - MARKDOWN + MATH
+
+View LaTeX math formulas in Visual Studio Code preview window.
+
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
+
+### BROWSER SUPPORT - KaTeX
+
+Displays mathematical notation in web browsers.
+
+[KaTeX](https://katex.org/docs/supported.html)
+
+### BROWSER SANDBOX - mathurl.com
+
+Sandbox to create your LaTeX math formulas online.
+
+[mathurl.com](http://mathurl.com/)
+
+### GITHUB APP - TeXify
+
+[TeXify](https://github.com/apps/texify)
+is a github app (on github) that Renders LateX to images in markdown.
+Its built on
+[readme2tex](https://github.com/leegao/readme2tex).
+
+You write `README.text.md` and push.
+At github, it will convert your LaTeX to `/tex/*.svg` images and
+created a `README.md` file with links to those images.
+
+This app is not that stable.
+
+### APP - readme2tex INSTALL
+
+[readme2tex](https://github.com/leegao/readme2tex).
+
+This cheat sheet is using this app.
+
+You need Python 2.7 or above and pip installed.
+
+Install full latex (I really only wanted latex and
+latex geometry package) and dvisvgm,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install texlive-full
+sudo apt install texlive-extra-utils
+sudo apt install texlive-publishers
+```
+
+Install cairocffi and other dependencies you may need,
+
+```bash
+sudo apt-get install libffi6 libffi-dev
+pip install --user cairocffi
+pip install 'setuptools<36'
+```
+
+Now install readme2tex,
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+sudo python setup.py develop
+```
+
+Again, I do not want to install the full version of latex
+(3 gigs), but can't figure out how to install latex
+and just the geometry package.
+
+Usage,
+
+```bash
+python -m readme2tex --readme README.tex.md --output README.md --nocdn
+```
 
 ## COMMON LaTeX MATH EQUATIONS
 
@@ -511,131 +650,5 @@ Make some big text,
 ```
 
 $$
-\huge\text{Hello Jeff}
+\huge\text{Goodbye Jeff}
 $$
-
-## COLOR PACKAGE "xcolor"
-
-If you want color, you must use the color package "xcolor".
-So when you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "xcolor" ....etc...
-```
-
-As an example,
-
-```txt
-    \color{red} E=mc^2
-```
-
-$$
-\color{red} E=mc^2
-$$
-
-## GRAPH PACKAGE "tikz"
-
-`TikZ` is a LaTeX package that allows you to create high quality diagrams.
-Tikz is probably the most complex and powerful tool to create
-graphic elements in LaTeX.
-
-When you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "tikz" ....etc...
-```
-
-As an example of a circle,
-
-```txt
-    \begin{tikzpicture}
-        \draw (2,2) circle (3cm);
-    \end{tikzpicture}
-```
-
-Sadly, I could not get this to work with `readme2tex`.
-
-## GRAPHIC PACKAGE "pgfplots"
-
-`pgfplots` is outside the scope of this cheat sheet but I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.txt).
-
-## LaTeX APPS
-
-Some cool LaTeX apps I use.
-
-### VISUAL STUDIO CODE APP - MARKDOWN + MATH
-
-View LaTeX math formulas in Visual Studio Code preview window.
-
-[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
-
-### BROWSER SUPPORT - KaTeX
-
-Displays mathematical notation in web browsers.
-
-[KaTeX](https://katex.org/docs/supported.html)
-
-### BROWSER SANDBOX - mathurl.com
-
-Sandbox to create your LaTeX math formulas online.
-
-[mathurl.com](http://mathurl.com/)
-
-### GITHUB APP - TeXify
-
-[TeXify](https://github.com/apps/texify)
-is a github app (on github) that Renders LateX to images in markdown.
-Its built on
-[readme2tex](https://github.com/leegao/readme2tex).
-
-You write `README.text.md` and push.
-At github, it will convert your LaTeX to `/tex/*.svg` images and
-created a `README.md` file with links to those images.
-
-This app is not that stable.
-
-### APP - readme2tex INSTALL
-
-[readme2tex](https://github.com/leegao/readme2tex).
-
-This cheat sheet is using this app.
-
-You need Python 2.7 or above and pip installed.
-
-Install full latex (I really only wanted latex and
-latex geometry package) and dvisvgm,
-
-```bash
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install texlive-full
-sudo apt install texlive-extra-utils
-sudo apt install texlive-publishers
-```
-
-Install cairocffi and other dependencies you may need,
-
-```bash
-sudo apt-get install libffi6 libffi-dev
-pip install --user cairocffi
-pip install 'setuptools<36'
-```
-
-Now install readme2tex,
-
-```bash
-git clone https://github.com/leegao/readme2tex
-cd readme2tex
-sudo python setup.py develop
-```
-
-Again, I do not want to install the full version of latex
-(3 gigs), but can't figure out how to install latex
-and just the geometry package.
-
-Usage,
-
-```bash
-python -m readme2tex --readme README.tex.md --output README.md --nocdn
-```

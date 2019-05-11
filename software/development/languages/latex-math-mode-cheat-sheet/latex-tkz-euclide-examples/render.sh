@@ -6,8 +6,8 @@ echo "************************************************************************"
 echo "**************************************************** render.sh (START) *"
 echo " "
 
-echo "pdflatex latex-tkz-euclide.txt"
-pdflatex latex-tkz-euclide.txt
+echo "pdflatex latex-tkz-euclide.tex"
+pdflatex latex-tkz-euclide.tex
 echo " "
 
 echo "****************************************************** render.sh (END) *"

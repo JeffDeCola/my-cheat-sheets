@@ -6,8 +6,8 @@ echo "************************************************************************"
 echo "**************************************************** render.sh (START) *"
 echo " "
 
-echo "pdflatex latex-tikzpicture.txt"
-pdflatex latex-tikzpicture.txt
+echo "pdflatex latex-tikz.tex"
+pdflatex latex-tikz.tex
 echo " "
 
 echo "****************************************************** render.sh (END) *"
