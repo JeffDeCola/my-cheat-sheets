@@ -1,22 +1,22 @@
 #!/bin/bash -e
-# make-README.sh
+# y-equals-sqrt-x.sh
 
 echo " "
 echo "************************************************************************"
-echo "*********************************************** make-README.sh (START) *"
+echo "******************************************* y-equals-sqrt-x.sh (START) *"
 echo " "
 
 echo "Create .dvi file"
-echo "latex y-equal-2x.tex"
-latex y-equal-2x.tex
+echo "latex y-equals-sqrt-x.tex"
+latex y-equals-sqrt-x.tex
 echo " "
 
 echo "Convert .dvi to .svg"
 echo "    -n no fonts"
 echo "    -a This option forces dvisvgm to vectorize everything"
-dvisvgm -n -a y-equal-2x.dvi
+dvisvgm -n -a y-equals-sqrt-x.dvi
 echo " "
 
-echo "************************************************* make-README.sh (END) *"
+echo "********************************************* y-equals-sqrt-x.sh (END) *"
 echo "************************************************************************"
 echo " "

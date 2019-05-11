@@ -382,26 +382,53 @@ where,
 * $x$ is the set of numbers we can input (the domain)
 * $y$ is the set of numbers that we get as output (the range)
 
-Now we could make a table, but it is easier if we graph,
+I should note some notation,
+
+$$
+f(x) = y = 2x
+$$
+
+Or stated `f of x equals y`.
+
+We can graph this function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equal-2x.svg"
+    <img src="latex-pgfplots/y-equals-2x.svg"
     align="middle"
 </p>
 
 But what about this equation,
 
 $$
+\begin{gathered}
 y^2 = x \\
 y = \sqrt{x}
+\end{gathered}
 $$
 
-But for each input we get 2 outputs (one to many).  `This is not a function`.
+For each input we get 2 outputs (one to many).  Hence `this is not a function`.
 
-### LINEAR EQUATIONS
+As we will see this does not pass the `vertical line test`.  Meaning,
+the vertical line can only pass through the graphed line once.
+
+So for $y = \sqrt{x}$, as we can see, the vertical line intercepts
+it twice, hence no function,
+
+<p align="center">
+    <img src="latex-pgfplots/y-equals-sqrt-x.svg"
+    align="middle"
+</p>
+
+### LINEAR FUNCTIONS
 
 Form straight lines when you graph.
+
+We already did one above.
 
 ### QUADRATIC EQUATIONS
 
 Form curves when graphs.
+
+### CUBIC FUNCTIONS
+
+### TRIG FUNCTIONS

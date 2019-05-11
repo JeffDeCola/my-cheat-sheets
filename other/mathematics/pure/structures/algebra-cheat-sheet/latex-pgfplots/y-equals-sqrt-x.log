@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  11 MAY 2019 04:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2019.5.8)  11 MAY 2019 05:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**y-equal-2x.tex
-(./y-equal-2x.tex
+**y-equals-sqrt-x.tex
+(./y-equals-sqrt-x.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/standalone/standalone.cls
@@ -481,8 +481,8 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen167
 \pgfarrowlinewidth=\dimen168
 )
-No file y-equal-2x.aux.
-\openout1 = `y-equal-2x.aux'.
+No file y-equals-sqrt-x.aux.
+\openout1 = `y-equals-sqrt-x.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -504,19 +504,19 @@ your preamble.
  on input line 6.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
+(Font)              <5> on input line 42.
 [1
 
-] (./y-equal-2x.aux) ) 
+] (./y-equals-sqrt-x.aux) ) 
 Here is how much of TeX's memory you used:
- 20988 strings out of 493030
- 561738 string characters out of 6136261
- 729692 words of memory out of 5000000
- 24221 multiletter control sequences out of 15000+600000
+ 20987 strings out of 493030
+ 561766 string characters out of 6136261
+ 764179 words of memory out of 5000000
+ 24220 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,16n,96p,734b,2110s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,16n,96p,739b,2102s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on y-equal-2x.dvi (1 page, 15288 bytes).
+Output written on y-equals-sqrt-x.dvi (1 page, 26920 bytes).
