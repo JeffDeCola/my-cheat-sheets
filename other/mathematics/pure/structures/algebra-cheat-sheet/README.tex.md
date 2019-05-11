@@ -8,7 +8,7 @@ View my entire list of cheat sheets on
 ## OVERVIEW - THE UNKNOWN
 
 Algebra is a lot like arithmetic.
-But algebra introduces the element of the unknown values,
+But algebra introduces the element of unknown values,
 
 $$
 1 + 2 = unknown
@@ -22,6 +22,7 @@ $$
 
 Where $x$ is a placeholder for a number we don't know yet.
 The equation is telling us the known and unknown values.
+
 One of the main goals of algebra is to `solve the equation`.
 To find out what the unknown is,
 
@@ -39,12 +40,10 @@ $$
 a + b = 2
 $$
 
-So if $a = 2$, then $b = 0$.  $b$ will change depending on $a$.
+If $a = 2$, then $b = 0$.  If $a = 1$, then $b = 1$. Hence $b$ will change depending on $a$.
 And visa versa.
 
-## MAKES THINGS SIMPLE - MULTIPLICATION
-
-Multiplication is implied.
+## MULTIPLICATION IS IMPLIED
 
 Instead of,
 
@@ -82,7 +81,7 @@ Figuring out the unknowns via rearrangement.  Equations
 must always by balanced.  Just do the same things to both sides
 of the equation.
 
-Addition (_add 5 on each side_)
+Addition (_add 5 on each side_),
 
 $$
 \begin{aligned}
@@ -195,7 +194,7 @@ x =& 2
 \end{aligned}
 $$
 
-Groups implied above and below fraction line _(Do groups last)_,
+Groups are implied both above and below fraction line _(Do groups last)_,
 
 $$
 \begin{aligned}
@@ -212,8 +211,10 @@ $$
 As we mentioned before algebra is similar to arithmetic,
 
 $$
+\begin{gathered}
 4^2 \quad in \; algebra \quad x^2 \\
 \sqrt{16} \quad in \; algebra \quad \sqrt{x}
+\end{gathered}
 $$
 
 As a side note, that will help us later on, $x^0 = 1$ and $x^1 = x$.
@@ -300,7 +301,7 @@ $$
 7x^4 + 3y^2 + x + 5
 $$
 
-But what about $3 + 7x - 5x^2$? Simple,
+But what about $3 + 7x - 5x^2$?  It would be,
 
 $$
 -5x^2 + 7x + 3

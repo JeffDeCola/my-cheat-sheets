@@ -1,6 +1,6 @@
 # LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX math mode` _is the math mode of LaTex. LaTeX is
+`LaTeX math mode` _is the math mode of LaTex. Where LaTeX is
 an advanced markup language used for typesetting._
 
 Documentation and reference,
@@ -17,14 +17,13 @@ LaTeX math mode functions & symbols,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## TeX
+## IT STARTED WITH TeX
 
 `TeX` is an advanced typesetting system which was
 developed by Donald Knuth in 1978. It is a markup language
 for describing a document.
-LaTeX is designed for the content, not the look of the document.
-TeX is mainly popular because of its ability to handle complex technical
-text and in displaying mathematical formula.
+
+LaTeX is designed to describe the content, not the look of the document.
 
 ## LaTeX
 
@@ -38,10 +37,13 @@ The syntax can look something like,
     \author{Jane Doe}
     \date{September 1994}
     \usepackage{amsmath}
+
     \begin{document}
+
     \begin{equation}
         E=mc^2
     \end{equation}
+
     \end{document}
 ```
 
@@ -67,26 +69,30 @@ latex -version
 ```
 
 To test, lets use a LateX file
-[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-example/latex-math-mode.txt)
+[latex-math-mode.txt](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.txt)
 which will invoke math mode and create a .pdf file,
 
 ```bash
-cd latex-example
+cd latex-math-mode-examples
 pdflatex latex-math-mode.txt
 ```
 
 If everything worked correctly your .pdf should look like
-[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-example/latex-math-mode.pdf).
+[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.pdf).
 This example outlines and basics of latex math mode and is explained below.
 
-Some popular packages are,
+## POPULAR LaTeX PACKAGES
 
-* xcolor - _add color_
-* amsmath & amsfonts - _For rendering matrices_
-* tikz - _2D graphing, drawing data or function plots_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-example/latex-tikzpicture.txt)
-* pgfplts - _2D/3D graphing, drawing data or function plots_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-example/latex-pgfplots.txt)
+There are hundreds of packages you can use with LateX.
+
+* `xcolor` - _Add color_
+* `amsmath` & `amsfonts` - _For rendering matrices_
+* `tikz` - _Create postscript and .pdf graph­ics_
+  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikzpicture.txt)
+  * `pgfplts` - _2D/3D graphing, drawing data or function plots_
+    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.txt)
+  * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
+    [my example]((https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclide.txt))
 
 ## USING LaTeX IN MATH MODE
 
@@ -453,8 +459,8 @@ Sadly, I could not get this to work with `readme2tex`.
 
 ## GRAPHIC PACKAGE "pgfplots"
 
-Outside the scope of this cheat sheet but I do have an example
-in this repo.
+`pgfplots` is outside the scope of this cheat sheet but I do have an example
+[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.txt).
 
 ## LaTeX APPS
 
