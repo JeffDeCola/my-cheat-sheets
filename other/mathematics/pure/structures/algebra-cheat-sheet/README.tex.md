@@ -15,6 +15,15 @@ on how to do this.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## HISTORY
+
+From Persia around 820 AD, there was a book of algebra for balancing and
+completion. We are talking about almost 3,000 years ago.  But even before
+that people were balancing equations in 2000 AD.
+
+But a greek gentleman name Diophantus around 200 BC is sometimes known
+as the father of algebra.  Al-Khwarizmi is another father back in 600 BC.
+
 ## OVERVIEW - THE UNKNOWN
 
 Algebra is a lot like arithmetic.
