@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.8)  10 MAY 2019 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.8)  11 MAY 2019 02:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**latex-math-mode.txt
-(./latex-math-mode.txt
+**latex-math-mode.tex
+(./latex-math-mode.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -462,8 +462,8 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 (./latex-math-mode.aux) ) 
 Here is how much of TeX's memory you used:
- 3190 strings out of 493029
- 38638 string characters out of 6136235
+ 3189 strings out of 493029
+ 38634 string characters out of 6136235
  109339 words of memory out of 5000000
  6736 multiletter control sequences out of 15000+600000
  8111 words of font info for 30 fonts, out of 8000000 for 9000

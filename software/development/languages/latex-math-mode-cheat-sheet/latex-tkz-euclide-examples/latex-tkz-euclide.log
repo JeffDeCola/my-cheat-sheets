@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.8)  10 MAY 2019 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.8)  11 MAY 2019 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**latex-tkz-euclide.txt
-(./latex-tkz-euclide.txt
+**latex-tkz-euclide.tex
+(./latex-tkz-euclide.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1018,17 +1018,14 @@ Overfull \hbox (21.00372pt too wide) in paragraph at lines 28--29
 [][][][][][][][][][][][][][][][][][] 
  []
 
-! I can't write on file `latex-tkz-euclide.pdf'.
-(Press Enter to retry, or Control-D to exit; default file extension is `.pdf')
-Please type another file name for output: 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./latex-tkz-euclide.aux) 
 ) 
 Here is how much of TeX's memory you used:
- 18221 strings out of 493029
- 354790 string characters out of 6136235
- 439520 words of memory out of 5000000
+ 18220 strings out of 493029
+ 354786 string characters out of 6136235
+ 439519 words of memory out of 5000000
  21352 multiletter control sequences out of 15000+600000
  8410 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

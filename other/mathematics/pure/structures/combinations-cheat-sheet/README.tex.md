@@ -18,11 +18,5 @@ E=mc^2
 $$
 
 $$
-\huge\text{Hello \LaTeX}
+\huge\text{Hello Jeff}
 $$
-
-\begin{tikzpicture}
-    \draw (1,0) -- (0,0) -- (0,1);
-\end{tikzpicture}
-
-

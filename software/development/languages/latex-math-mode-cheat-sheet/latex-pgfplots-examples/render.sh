@@ -6,8 +6,8 @@ echo "************************************************************************"
 echo "**************************************************** render.sh (START) *"
 echo " "
 
-echo "pdflatex latex-pgfplots.txt"
-pdflatex latex-pgfplots.txt
+echo "pdflatex latex-pgfplots.tex"
+pdflatex latex-pgfplots.tex
 echo " "
 
 echo "****************************************************** render.sh (END) *"

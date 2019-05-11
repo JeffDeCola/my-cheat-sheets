@@ -349,7 +349,17 @@ In reverse you can `factor out` something.
 
 ## GRAPHING EQUATIONS ON A COORDINATE PLANE
 
-A coordinate plane has an $x$ and $y$ axis.
+A `2D number plane` or `coordinate plane` has an $x$ and $y$
+(horizontal and vertical) axis.
+You can plot points on a coordinate system with coordinates
+(ordered pairs) $(x,y)$.
+
+For example, plot the coordinates $(3,2)$ on the coordinate plane,
+
+<p align="center">
+    <img src="latex-pgfplots/coordinate-system.svg"
+    align="middle"
+</p>
 
 ### LINEAR EQUATIONS
 

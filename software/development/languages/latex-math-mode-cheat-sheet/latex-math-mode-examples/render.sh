@@ -6,8 +6,8 @@ echo "************************************************************************"
 echo "**************************************************** render.sh (START) *"
 echo " "
 
-echo "pdflatex latex-math-mode.txt"
-pdflatex latex-math-mode.txt
+echo "pdflatex latex-math-mode.tex"
+pdflatex latex-math-mode.tex
 echo " "
 
 echo "****************************************************** render.sh (END) *"
