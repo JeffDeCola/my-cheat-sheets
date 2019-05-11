@@ -284,8 +284,8 @@ Random other things I'm interested in.
 
 ### MATHEMATICS
 
-_This entire sections is a massive work in progress, it will take me quite a few years to finish.
-I am using the GitHub server App [TeXify](https://github.com/apps/texify) to render my LaTeX to .svg images at github._
+_This entire sections is a massive work in progress, it will take me
+quite a few years to finish._
 
 * APPLIED
 
@@ -297,6 +297,10 @@ I am using the GitHub server App [TeXify](https://github.com/apps/texify) to ren
   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+
+* NOTABLE EQUATIONS
+
+  * [notable equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/notable-equations/notable-equations-cheat-sheet)
 
 * PURE
 
