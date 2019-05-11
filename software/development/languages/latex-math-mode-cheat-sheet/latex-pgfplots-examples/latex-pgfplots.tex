@@ -1,11 +1,10 @@
-\documentclass[10pt]{article}
+\documentclass{article}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\pgfplotsset{width=7cm,compat=1.10}
 \usetikzlibrary{arrows.meta}
 
 \title{\vspace{-5.0cm}LaTeX pgfplots EXAMPLES}
@@ -18,62 +17,97 @@
 \begin{document}
 \maketitle
 
-\textbf{This will draw a coordinate system,}
+\textbf{This will draw a blank Coordinate Plane (2D Number Plane),}
 
 \begin{lstlisting}
-\begin{tikzpicture}
-    \begin{axis}
-        \addplot+[sharp plot] coordinates
-        {(0,0) (1,2) (2,3)};
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+        xtick distance=1,
+        ytick distance=1,
+        xlabel=$x$,
+        ylabel=$y$,
+        title={Coordinate Plane (2D Number Plane)},
+        grid=major,
+        grid style={thin,densely dotted,black!20}]
     \end{axis}
-\end{tikzpicture}
+    \end{tikzpicture}
+}
 \end{lstlisting}
 
 \begin{center}
-\begin{tikzpicture}
-    \begin{axis}
-        \addplot+[sharp plot] coordinates
-        {(0,0) (1,2) (2,3)};
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+        xtick distance=1,
+        ytick distance=1,
+        xlabel=$x$,
+        ylabel=$y$,
+        title={Coordinate Plane (2D Number Plane)},
+        grid=major,
+        grid style={thin,densely dotted,black!20}]
     \end{axis}
-\end{tikzpicture}
+    \end{tikzpicture}
+}
 \end{center}
 
-\textbf{This will draw a coordinate system with line,}
+\textbf{Coordinate Plane with coordinates $(3,2)$,}
 
 \begin{lstlisting}
-\begin{tikzpicture}
-\begin{axis}[
-  axis lines=middle,
-  axis line style={Stealth-Stealth,very thick},
-  xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
-  xtick distance=1,
-  ytick distance=1,
-  xlabel=$x$,
-  ylabel=$y$,
-  title={Jeff's Plot},
-  grid=major,
-  grid style={thin,densely dotted,black!20}]
-\addplot [Latex-Latex,domain=-5:3,samples=2] {x*2/3} node[right]{$a$};
-\end{axis}
-\end{tikzpicture}
+\addplot[mark=*] coordinates {(3,2)} node[pin=150:{$(3,2)$}]{} ;
 \end{lstlisting}
 
 \begin{center}
-\begin{tikzpicture}
-\begin{axis}[
-  axis lines=middle,
-  axis line style={Stealth-Stealth,very thick},
-  xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
-  xtick distance=1,
-  ytick distance=1,
-  xlabel=$x$,
-  ylabel=$y$,
-  title={Jeff's Plot},
-  grid=major,
-  grid style={thin,densely dotted,black!20}]
-\addplot [Latex-Latex,domain=-5:3,samples=2] {x*2/3} node[right]{$a$};
-\end{axis}
-\end{tikzpicture}
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+        xtick distance=1,
+        ytick distance=1,
+        xlabel=$x$,
+        ylabel=$y$,
+        title={Coordinate Plane (2D Number Plane)},
+        grid=major,
+        grid style={thin,densely dotted,black!20}]
+        \addplot[mark=*] coordinates {(3,2)} node[pin=150:{$(3,2)$}]{} ;
+    \end{axis}
+    \end{tikzpicture}
+}
+\end{center}
+
+\textbf{Coordinate Plane with line $?????$,}
+
+
+\begin{lstlisting}
+\addplot[mark=*] coordinates {(3,2)} node[pin=150:{$(3,2)$}]{} ;
+\end{lstlisting}
+
+\begin{center}
+\resizebox{8cm}{8cm}{%
+    \begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        axis line style={Stealth-Stealth,very thick},
+        xmin=-5.5,xmax=5.5,ymin=-5.5,ymax=5.5,
+        xtick distance=1,
+        ytick distance=1,
+        xlabel=$x$,
+        ylabel=$y$,
+        title={Coordinate Plane (2D Number Plane)},
+        grid=major,
+        grid style={thin,densely dotted,black!20}]
+        \addplot[mark=none] {+3};
+    \end{axis}
+    \end{tikzpicture}
+}
 \end{center}
 
 \end{document}
