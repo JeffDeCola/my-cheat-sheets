@@ -1,6 +1,7 @@
 # ASTRONOMY CHEAT SHEET
 
-`astronomy` _tbd._
+`astronomy` _is the branch of science which deals with celestial objects,
+space, and the physical universe as a whole._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -40,7 +41,7 @@ Like Copernicus no telescopes, just eyes. Worked with Kepler.
 But he still believed earth revolved around sun.  He was very
 tied to the church.
 
-#### JOHANNES KEPLER (1571-1630) GERMAN
+### JOHANNES KEPLER (1571-1630) GERMAN
 
 Sick a frail child. Math teacher. Very religious.
 Wanted to find gods work. Worked for Brahe to
@@ -161,4 +162,3 @@ Here are some notable stars,
   meaning, "searing" or "scorching.
 * `Rigel` - Blue color. 7th brightest star in the Constellation of orion.
   864 lights years away.
-

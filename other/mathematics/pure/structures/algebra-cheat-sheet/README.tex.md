@@ -422,7 +422,7 @@ As we will see this does not pass the `vertical line test`.  Meaning,
 the vertical line can only pass through the graphed line once.
 
 So for $y = \sqrt{x}$, as we can see, the vertical line intercepts
-it twice, hence no function,
+it twice, hence not a function,
 
 <p align="center">
     <img src="latex-pgfplots/y-equals-sqrt-x.svg"
