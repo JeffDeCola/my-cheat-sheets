@@ -376,7 +376,7 @@ You can plot points on a coordinate system with coordinates
 For example, plot the coordinates $(3,2)$ on the coordinate plane,
 
 <p align="center">
-    <img src="https://github.com/JeffDeCola/my-latex-pgfplots-graphs/blob/master/pure-mathematics/algebra/coordinate-plane/coordinate-plane.svg"
+    <img src="pgfplots-pics/coordinate-plane.svg"
     align="middle"
 </p>
 
@@ -412,7 +412,7 @@ Or stated `f of x equals y`.
 We can graph this function,
 
 <p align="center">
-    <img src="https://github.com/JeffDeCola/my-latex-pgfplots-graphs/blob/master/pure-mathematics/algebra/coordinate-plane/coordinate-plane.svg"
+    <img src="pgfplots-pics/f-of-x-equals-2x.svg"
     align="middle"
 </p>
 
@@ -434,7 +434,7 @@ So for $y = \sqrt{x}$, as we can see, the vertical line intercepts
 it twice, hence not a function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-sqrt-x.svg"
+    <img src="pgfplots-pics/f-of-x-equals-sqrt-x.svg"
     align="middle"
 </p>
 
@@ -468,7 +468,7 @@ $$
 Where the line would look like,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-minus-1-over-3-times-x-minus-3.svg"
+    <img src="pgfplots-pics/f-of-x-equals-minus-1-over-3-times-x-minus-3.svg"
     align="middle"
 </p>
 
