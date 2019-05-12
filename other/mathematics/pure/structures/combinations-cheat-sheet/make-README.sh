@@ -15,7 +15,7 @@ python -m readme2tex --usepackage "tikz" --readme README.tex.md --output README.
 echo " "
 
 echo "For more information on readme2tex, read my cheat sheet"
-echo "    https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-for-math-cheat-sheet#app---readme2tex"
+echo "    https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet#app---readme2tex-install"
 echo " "
 
 echo "************************************************* make-README.sh (END) *"
