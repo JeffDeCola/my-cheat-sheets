@@ -5,10 +5,10 @@
 As a side note, this cheat sheet was built using,
 
 * LaTex Math Mode equations rendered to images using
-  [readme2tex](https://github.com/JeffDeCola/readme2tex)
-* I created the graphs in my repo
+  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
+* Graphs where created in
   [my-latex-pgfplots-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
-  using LaTeX `pgfplots` package
+  repo using the LaTeX `pgfplots` package
 
 You can see my
 [LaTeX math mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)

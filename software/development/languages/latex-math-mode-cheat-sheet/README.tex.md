@@ -182,7 +182,7 @@ $$
 
 I use a program called [readme2tex](https://github.com/leegao/readme2tex).
 I run everything on my local machine using my own
-[fork](https://github.com/JeffDeCola/readme2tex).
+[readme2tex-pgf-plots](https://github.com/JeffDeCola/readme2tex-pgfplots).
 
 It works by taking your LaTeX math formula, rendering an image and
 referencing that image using HTML.
