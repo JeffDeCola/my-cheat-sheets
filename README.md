@@ -71,7 +71,8 @@ Various Apps and tools for the goal of creating an App/Service.
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
     [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet),
     [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
-  * [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
+  * [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet),
+    [my-latex-pgfplots-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
     [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet),
