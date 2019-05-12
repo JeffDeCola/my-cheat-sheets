@@ -376,7 +376,7 @@ You can plot points on a coordinate system with coordinates
 For example, plot the coordinates $(3,2)$ on the coordinate plane,
 
 <p align="center">
-    <img src="latex-pgfplots/coordinate-system.svg"
+    <img src="https://github.com/JeffDeCola/my-latex-pgfplots-graphs/blob/master/pure-mathematics/algebra/coordinate-plane/coordinate-plane.svg"
     align="middle"
 </p>
 
@@ -412,7 +412,7 @@ Or stated `f of x equals y`.
 We can graph this function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-2x.svg"
+    <img src="https://github.com/JeffDeCola/my-latex-pgfplots-graphs/blob/master/pure-mathematics/algebra/coordinate-plane/coordinate-plane.svg"
     align="middle"
 </p>
 
