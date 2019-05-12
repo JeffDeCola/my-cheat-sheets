@@ -27,3 +27,4 @@ plugins:
 # - <pattern>
 exclude_patterns:
 - "docs/"
+- "mathematics/"
