@@ -267,6 +267,10 @@ But I do have an example
 `pgfplots` is outside the scope of this cheat sheet but I do have an example
 [here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex).
 
+I also have a my repo
+[my-latex-pgfplots-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
+with lots of examples.
+
 ## CONVERTING TO OTHER FILE FORMATS
 
 * `pdflatex` .tex -> .pdf
