@@ -105,7 +105,7 @@ The `Meridian` passes through the `zenith` and both
 The `Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
 Plane of our solar system.
 
-![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.jpg)
+![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.svg)
 
 ## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
 
