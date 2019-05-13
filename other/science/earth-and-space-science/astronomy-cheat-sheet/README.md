@@ -105,7 +105,7 @@ The `Meridian` passes through the `zenith` and both
 The `Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
 Plane of our solar system.
 
-![IMAGE - Celestial Sphere - IMAGE](../../../../docs/pics/celestial-sphere.jpg)
+![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.jpg)
 
 ## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
 
@@ -128,7 +128,7 @@ point is the spring equinox. It would be written like,
 When viewing stars lets talk about magnitude.
 The relative brightness of a star as seen from earth.
 
-* APPARENT - How luminous the star looks on earth. Intrinsix.
+* APPARENT - How luminous the star looks on earth. Intrinsic.
 * ABSOLUTE - How luminous a start is from a standard distance.
 
 The lower the number, the brighter the star is.
