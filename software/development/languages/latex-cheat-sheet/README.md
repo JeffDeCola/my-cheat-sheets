@@ -1,24 +1,19 @@
-# LaTeX MATH MODE CHEAT SHEET
+# LaTeX CHEAT SHEET
 
-`LaTeX math mode` _is the math mode of LaTex. Where LaTeX is
-an advanced markup language used for typesetting._
-
-This is a long cheat sheet, so you may just want to jump to
-[common latex math equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet#common-latex-math-equations).
-
-Documentation and reference,
-
-* [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
-* [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [mathurl.com to help build your formulas](http://mathurl.com/)
-
-LaTeX math mode functions & symbols,
-
-* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
-* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
+`LaTeX` _is an advanced markup language used for typesetting._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+
+## OVERVIEW
+
+`LateX` is is a markup language used for describing a documents.
+
+[LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
+can display math equations.
+
+[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
+can graph 2D and 3D images via LaTeX packages.
 
 ## IT STARTED WITH TeX
 
@@ -26,7 +21,7 @@ View my entire list of cheat sheets on
 developed by Donald Knuth in 1978. It is a markup language
 for describing a document.
 
-LaTeX is designed to describe the content, not the look of the document.
+TeX is designed to describe the content, not the look of the document.
 
 ## LaTeX
 
@@ -34,7 +29,7 @@ LaTeX is designed to describe the content, not the look of the document.
 
 The syntax can look something like,
 
-```txt
+```latex
     \documentclass{article}
     \title{Cartesian closed categories and the price of eggs}
     \author{Jane Doe}
@@ -71,104 +66,30 @@ Check version,
 latex -version
 ```
 
-To test, lets use a LateX file
-[latex-math-mode.tex](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.tex)
-which will invoke math mode and create a .pdf file,
+## CONVERTING TO OTHER FILE FORMATS
 
-```bash
-cd latex-math-mode-examples
-pdflatex latex-math-modetex
-```
+You can created a LaTeX File (.tex) and convert to many formats,
 
-If everything worked correctly your .pdf should look like
-[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.pdf).
-This example outlines and basics of latex math mode and is explained below.
+* `pdflatex` .tex -> .pdf
+* `latex` .tex -> .dvi
+* `dvisvgm` .dvi -> .svg
+* `ghostscript` .pdf -> many types
 
-## USING LaTeX IN MATH MODE
+## POPULAR LaTeX PACKAGES
 
-I want to render this LaTeX math equation `E=mc^2`.
+There are hundreds of packages you can use with LateX such as,
 
-### DECLARING MATH MODE
-
-First, there are three ways to `declare math mode` in LaTeX,
-
-* In-line mode using \$...\$
-* Display mode (Newline, center) using \$\$...\$\$
-* Display mode (Newline, center with tag) using begin{equation}...end{equation}
-
-An example of LaTeX math in-line mode,
-
-```txt
-    Einstein's equation
-    $E=mc^2$
-    represent energy is equal to matter multiplied by the speed of light squared.
-```
-
-Einstein's equation
-<img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
-represent energy is equal to matter multiplied by the speed of light squared.
-
-An example of LaTeX math display mode,
-
-```txt
-    $$
-    $E=mc^2$
-    $$
-```
-
-<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
-
-An example of LaTeX math display mode (with tag),
-
-```txt
-    \begin{equation}
-        E=mc^2
-    \end{equation}
-```
-
-<p align="center"><img alt="\begin{equation}&#10;    E=mc^2&#10;\end{equation}" src="svgs/f334ebc0d2eff9a7f146c11edd071f96.svg" align="middle" width="382.01955pt" height="18.269295pt"/></p>
-
-This is sometimes hard to render being{equation} correctly,
-so I kind of stay away from it.  I have a way to make my own tags below.
-
-### FORMATING MULTIPLE EQUATIONS
-
-Second there are two main ways to format multiple equations in LaTeX math mode,
-
-* `begin{gathered}...end{gathered}` - Every equation centered
-* `begin{aligned}...end{aligned}` - Will align on an ampersand
-
-An example of LaTeX math display mode (using aligned),
-
-```txt
-    $$
-    \begin{aligned}
-        a&=b+c \\
-        d+e&=f
-    \end{aligned}
-    $$
-```
-
-<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
-
-An example of LaTeX math display mode (using gathered),
-
-```txt
-    $$
-    \begin{gathered}
-        a=b+c \\
-        d+e=f
-    \end{gathered}
-    $$
-```
-
-<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
+* `xcolor` - _Add color_
+* `amsmath` & `amsfonts` - _For rendering matrices_
+* `tikz` - _Refer to
+  [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
+  cheat sheet_
 
 ## HOW I CREATED THIS README.md
 
 I use a program called [readme2tex](https://github.com/leegao/readme2tex).
 I run everything on my local machine using my own
-[readme2tex-pgf-plots](https://github.com/JeffDeCola/readme2tex-pgfplots).
+[readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots).
 
 It works by taking your LaTeX math formula, rendering an image and
 referencing that image using HTML.
@@ -181,112 +102,12 @@ First, I created and edit in README.tex.md. Second, I run `readme2tex`. This wil
 
 See the end of this cheat sheet for how I installed readme2tex.
 
-I used to use a github app called
-[TeXify](https://github.com/apps/texify),
-but it is not that reliable and I don't like
-other programs having write access to my repo.  I feel
-like I loose control.
-
 Here is an illustration on how readme2tex works,
 
 ![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
 
-## POPULAR LaTeX PACKAGES
-
-There are hundreds of packages you can use with LateX.
-
-* `xcolor` - _Add color_
-* `amsmath` & `amsfonts` - _For rendering matrices_
-* `tikz` - _Create postscript and .pdf graph­ics_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
-  * `pgfplts` - _2D/3D graphing, drawing data or function plots_
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex)
-  * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclide.tex)
-
-### xcolor
-
-If you want color, you must use the color package "xcolor".
-So when you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "xcolor" ....etc...
-```
-
-As an example,
-
-```txt
-    \color{red} E=mc^2
-```
-
-<p align="center"><img alt="$$&#10;\color{red} E=mc^2&#10;$$" src="svgs/701e889902a8da29f6b7ca34bdd374d7.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
-
-### tikz
-
-`TikZ` is a LaTeX package that allows you to create high quality diagrams.
-Tikz is probably the most complex and powerful tool to create
-graphic elements in LaTeX.
-
-When you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "tikz" ....etc...
-```
-
-As an example of a circle,
-
-```txt
-    \begin{tikzpicture}
-        \draw (2,2) circle (3cm);
-    \end{tikzpicture}
-```
-
-Sadly, I could not get this to work with `readme2tex`.
-
-But I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
-
-### pgfplots
-
-`pgfplots` is outside the scope of this cheat sheet but I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex).
-
-I also have a my repo
-[my-latex-pgfplots-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
-with lots of examples.
-
-## CONVERTING TO OTHER FILE FORMATS
-
-* `pdflatex` .tex -> .pdf
-* `latex` .tex -> .dvi
-* `dvisvgm` .dvi -> .svg
-* `ghostscript` .pdf -> many types
-
-## LaTeX APPS
-
-Some cool LaTeX apps I use.
-
-### VISUAL STUDIO CODE APP - MARKDOWN + MATH
-
-View LaTeX math formulas in Visual Studio Code preview window.
-
-[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
-
-### BROWSER SUPPORT - KaTeX
-
-Displays mathematical notation in web browsers.
-
-[KaTeX](https://katex.org/docs/supported.html)
-
-### BROWSER SANDBOX - mathurl.com
-
-Sandbox to create your LaTeX math formulas online.
-
-[mathurl.com](http://mathurl.com/)
-
-### GITHUB APP - TeXify
-
-[TeXify](https://github.com/apps/texify)
+I previously used a github app called
+[TeXify](https://github.com/apps/texify) which
 is a github app (on github) that Renders LateX to images in markdown.
 Its built on
 [readme2tex](https://github.com/leegao/readme2tex).
@@ -295,9 +116,9 @@ You write `README.text.md` and push.
 At github, it will convert your LaTeX to `/tex/*.svg` images and
 created a `README.md` file with links to those images.
 
-This app is not that stable.
+This app is not that stable so I stopped using it.
 
-### APP - readme2tex INSTALL
+## APP - readme2tex INSTALL
 
 [readme2tex](https://github.com/leegao/readme2tex).
 
@@ -342,219 +163,7 @@ Usage,
 python -m readme2tex --readme README.tex.md --output README.md --nocdn
 ```
 
-## COMMON LaTeX MATH EQUATIONS
+## VISUAL STUDIO CODE APP - MARKDOWN + MATH
 
-For brevity, the dollar sign delimiters are not shown.
-
-As a reminder you can use,
-
-* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
-* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
-
-Einsteins famous equation,
-
-```txt
-    E=mc^2
-```
-
-<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
-
-Pythagorean theorem,
-
-```txt
-    x^n + y^n = z^n
-```
-
-<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
-
-Pythagorean theorem (with box),
-
-```txt
-    \boxed{x^n + y^n = z^n}
-```
-
-<p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
-
-Pythagorean theorem (numbered using begin{equation}),
-
-```txt
-    \begin{equation}
-        x^n + y^n = z^n
-    \end{equation}
-```
-
-<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n&#10;\end{equation}" src="svgs/9c2c2ace77591d2c08d3ea86c859717c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
-
-Pythagorean theorem (numbered using tag),
-
-```txt
-    \begin{equation}
-        x^n + y^n = z^n\tag{6}
-    \end{equation}
-```
-
-<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n\tag{6}&#10;\end{equation}" src="svgs/508f5e725b18bed700d18ff1cea4238c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
-
-Pythagorean theorem (another way to do numbers),
-
-```txt
-    \qquad \qquad
-    x^n + y^n = z^n
-    \qquad \qquad (4)
-```
-
-<p align="center"><img alt="$$&#10;\qquad \qquad&#10;x^n + y^n = z^n&#10;\qquad \qquad (4)&#10;$$" src="svgs/5b71346bca16eedf780a40e41ddef9e8.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
-
-Square root,
-
-```txt
-    \sqrt[3]{x}
-```
-
-<p align="center"><img alt="$$&#10;\sqrt[3]{x}&#10;$$" src="svgs/8375620ec7847ff048e565abd48c90cd.svg" align="middle" width="23.093565pt" height="16.379385pt"/></p>
-
-Multiple equations (gathered),
-
-```txt
-    \begin{gathered}
-        a=b+c \\
-        d+e=f
-    \end{gathered}
-```
-
-<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
-
-Multiple equations (aligned on ampersand &),
-
-```txt
-    \begin{aligned}
-        a&=b+c \\
-        d+e&=f
-    \end{aligned}
-```
-
-<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
-
-Alignment and spacing (on equal sign),
-
-```txt
-    \begin{aligned}
-        f(x) =& x^2\! +3x\! +2 \\
-        f(x) =& x^2+3x+2 \\
-        f(x) =& x^2\, +3x\, +2 \\
-        f(x) =& x^2\: +3x\: +2 \\
-        f(x) =& x^2\; +3x\; +2 \\
-        f(x) =& x^2\ +3x\ +2 \\
-        f(x) =& x^2\quad +3x\quad +2 \\
-        f(x) =& x^2\qquad +3x\qquad +2
-    \end{aligned}
-```
-
-<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    f(x) =&amp; x^2\! +3x\! +2 \\&#10;    f(x) =&amp; x^2+3x+2 \\&#10;    f(x) =&amp; x^2\, +3x\, +2 \\&#10;    f(x) =&amp; x^2\: +3x\: +2 \\&#10;    f(x) =&amp; x^2\; +3x\; +2 \\&#10;    f(x) =&amp; x^2\ +3x\ +2 \\&#10;    f(x) =&amp; x^2\quad +3x\quad +2 \\&#10;    f(x) =&amp; x^2\qquad +3x\qquad +2&#10;\end{aligned}&#10;$$" src="svgs/7e7e2b03aa45736c18ad92fa9b6f9b47.svg" align="middle" width="197.66175pt" height="205.1412pt"/></p>
-
-An integral,
-
-```txt
-    \int_{a}^{b} x^2 dx
-```
-
-<p align="center"><img alt="$$&#10;\int_{a}^{b} x^2 dx&#10;$$" src="svgs/7434eb168b5dfced915545b6a422e7b8.svg" align="middle" width="60.399075pt" height="41.24901pt"/></p>
-
-Limits,
-
-```txt
-    \lim_{x\to\infty} f(x)
-```
-
-<p align="center"><img alt="$$&#10;\lim_{x\to\infty} f(x)&#10;$$" src="svgs/b7ecb947fb5547679f1c7ab9a546d2ce.svg" align="middle" width="68.289045pt" height="22.14564pt"/></p>
-
-Some trigonometry,
-
-```txt
-    \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
-```
-
-<p align="center"><img alt="$$&#10;\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)&#10;$$" src="svgs/85b567a60b6ab8fbc319c720f66f8ae2.svg" align="middle" width="282.74565pt" height="16.376943pt"/></p>
-
-Fractions (binomial coefficients),
-
-```txt
-    \binom{n}{k} = \frac{n!}{k!(n-k)!}
-```
-
-<p align="center"><img alt="$$&#10;\binom{n}{k} = \frac{n!}{k!(n-k)!}&#10;$$" src="svgs/9cc892f15c1314868714ad2b49649eb5.svg" align="middle" width="127.93704pt" height="39.30498pt"/></p>
-
-Brackets,
-
-```txt
-    \left( \frac{x}{y} \right)
-```
-
-<p align="center"><img alt="$$&#10;\left( \frac{x}{y} \right)&#10;$$" src="svgs/2beb7431726139ffb37413b4031f73c1.svg" align="middle" width="37.49592pt" height="39.30498pt"/></p>
-
-Bracket array,
-
-```txt
-    \left(
-        \begin{array}{ccc}
-            1 & 2 & 3\\
-            4 & 4 & 9\\
-            1 & -8 & 2
-        \end{array}
-    \right)
-```
-
-<p align="center"><img alt="$$&#10;\left(&#10;    \begin{array}{ccc}&#10;        1 &amp; 2 &amp; 3\\&#10;        4 &amp; 4 &amp; 9\\&#10;        1 &amp; -8 &amp; 2&#10;    \end{array}&#10;\right)&#10;$$" src="svgs/7192bf1b080bb1180da0295fcda68a71.svg" align="middle" width="115.47162pt" height="59.068185pt"/></p>
-
-Arrays in Brackets with spacing (\qquad),
-
-```txt
-    \left(
-        \begin{array}{ccc}
-            1 & 2 & 3\\
-            4 & 5 & 9\\
-            1 & -8 & 2
-        \end{array}
-    \right)
-    \qquad
-    \left\{
-        \begin{array}{ccc}
-            1 & 5 & 8\\
-            0 & 2 & 4\\
-            3 & 3 & -8
-        \end{array}
-    \right\}
-```
-
-<p align="center"><img alt="$$&#10;\left(&#10;    \begin{array}{ccc}&#10;        1 &amp; 2 &amp; 3\\&#10;        4 &amp; 5 &amp; 9\\&#10;        1 &amp; -8 &amp; 2&#10;    \end{array}&#10;\right)&#10;\qquad&#10;\left\{&#10;    \begin{array}{ccc}&#10;        1 &amp; 5 &amp; 8\\&#10;        0 &amp; 2 &amp; 4\\&#10;        3 &amp; 3 &amp; -8&#10;    \end{array}&#10;\right\}&#10;$$" src="svgs/34937d1b68e46828a9241c64dd9c8c8a.svg" align="middle" width="267.069pt" height="59.12346pt"/></p>
-
-Some cool arrows,
-
-```txt
-    A \xleftarrow{\text{this way}} B
-    \xrightarrow[\text{or that way}]{ } C
-```
-
-<p align="center"><img alt="$$&#10;A \xleftarrow{\text{this way}} B&#10;\xrightarrow[\text{or that way}]{ } C&#10;$$" src="svgs/056bb44ae5a648c007f840c99bc3cbdf.svg" align="middle" width="192.2844pt" height="31.01538pt"/></p>
-
-Cases,
-
-```txt
-    u(x) =
-    \begin{cases}
-        \exp{x} & \text{if } x \geq 0 \\
-        1       & \text{if } x < 0
-    \end{cases}
-```
-
-<p align="center"><img alt="$$&#10;u(x) =&#10;\begin{cases}&#10;    \exp{x} &amp; \text{if } x \geq 0 \\&#10;    1       &amp; \text{if } x &lt; 0&#10;\end{cases}&#10;$$" src="svgs/7cdb2cc12c0acb192d47b17946ace840.svg" align="middle" width="174.7581pt" height="49.13139pt"/></p>
-
-Make some big text,
-
-```txt
-    $$
-    \huge\text{Hello Jeff}
-    $$
-```
-
-<p align="center"><img alt="$$&#10;\huge\text{Goodbye Jeff}&#10;$$" src="svgs/12b85ea14fbb1d1e51274a3079b71fa0.svg" align="middle" width="180.76245pt" height="30.19401pt"/></p>
+View LaTeX math formulas in Visual Studio Code preview window via
+[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath).
