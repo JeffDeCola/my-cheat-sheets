@@ -7,12 +7,12 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-`LateX` is is a markup language used for describing a documents.
+LateX is is a markup language used for describing a documents.
 
-[LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
-can display math equations.
+[LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+can display math equations in LaTeX.
 
-[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
+[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
 can graph 2D and 3D images via LaTeX packages.
 
 ## IT STARTED WITH TeX
@@ -44,9 +44,6 @@ The syntax can look something like,
 
     \end{document}
 ```
-
-But I don't use any of this, I'm only interested in
-the mathematical formulas of LaTeX (Latex Math Mode).
 
 ## INSTALL LaTeX
 
@@ -81,8 +78,8 @@ There are hundreds of packages you can use with LateX such as,
 
 * `xcolor` - _Add color_
 * `amsmath` & `amsfonts` - _For rendering matrices_
-* `tikz` - _Refer to
-  [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode.md)
+* `tikz` - _Refer to my
+  [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
   cheat sheet_
 
 ## HOW I CREATED THIS README.md
@@ -120,7 +117,7 @@ This app is not that stable so I stopped using it.
 
 ## APP - readme2tex INSTALL
 
-[readme2tex](https://github.com/leegao/readme2tex).
+How  to install [readme2tex](https://github.com/leegao/readme2tex).
 
 This cheat sheet is using this app.
 
