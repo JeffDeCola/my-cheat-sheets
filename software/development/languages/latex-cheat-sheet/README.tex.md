@@ -12,7 +12,7 @@ LateX is is a markup language used for describing a documents.
 [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
 can display math equations in LaTeX.
 
-[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
 can graph 2D and 3D images via LaTeX packages.
 
 ## IT STARTED WITH TeX
