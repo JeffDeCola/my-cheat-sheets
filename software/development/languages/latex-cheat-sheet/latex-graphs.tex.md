@@ -3,7 +3,7 @@
 `LaTeX graphs` _uses packages to create images._
 
 Refer to my repo
-[my-latex--graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
+[my-latex-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
 for lots of graph examples.
 
 View my entire list of cheat sheets on

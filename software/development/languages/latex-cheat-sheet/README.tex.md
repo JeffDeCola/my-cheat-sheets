@@ -115,9 +115,9 @@ created a `README.md` file with links to those images.
 
 This app is not that stable so I stopped using it.
 
-## APP - readme2tex INSTALL
+## readme2tex INSTALL
 
-How  to install [readme2tex](https://github.com/leegao/readme2tex).
+How to install [readme2tex](https://github.com/leegao/readme2tex).
 
 This cheat sheet is using this app.
 
