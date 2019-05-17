@@ -34,7 +34,7 @@ An example of LaTeX math in-line mode,
 ```
 
 Einstein's equation
-$E=mc^2$
+<img alt="$E=mc^2$" src="svgs/ccb175704c18ad5a81177f1274fcd39f.svg" align="middle" width="62.9013pt" height="26.70657pt"/>
 represent energy is equal to matter multiplied by the speed of light squared.
 
 An example of LaTeX math display mode,
@@ -45,9 +45,7 @@ An example of LaTeX math display mode,
     $$
 ```
 
-$$
-E=mc^2
-$$
+<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
 An example of LaTeX math display mode (with tag),
 
@@ -57,9 +55,7 @@ An example of LaTeX math display mode (with tag),
     \end{equation}
 ```
 
-\begin{equation}
-    E=mc^2
-\end{equation}
+<p align="center"><img alt="\begin{equation}&#10;    E=mc^2&#10;\end{equation}" src="svgs/f334ebc0d2eff9a7f146c11edd071f96.svg" align="middle" width="382.01955pt" height="18.269295pt"/></p>
 
 This is sometimes hard to render being{equation} correctly,
 so I kind of stay away from it.  I have a way to make my own tags below.
@@ -82,12 +78,7 @@ An example of LaTeX math display mode (using aligned),
     $$
 ```
 
-$$
-\begin{aligned}
-    a&=b+c \\
-    d+e&=f
-\end{aligned}
-$$
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
 
 An example of LaTeX math display mode (using gathered),
 
@@ -100,12 +91,7 @@ An example of LaTeX math display mode (using gathered),
     $$
 ```
 
-$$
-\begin{gathered}
-    a=b+c \\
-    d+e=f
-\end{gathered}
-$$
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
 
 ## COMMON LaTeX MATH EQUATIONS
 
@@ -122,9 +108,7 @@ Einsteins famous equation,
     E=mc^2
 ```
 
-$$
-E=mc^2
-$$
+<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
 
 Pythagorean theorem,
 
@@ -132,9 +116,7 @@ Pythagorean theorem,
     x^n + y^n = z^n
 ```
 
-$$
-x^n + y^n = z^n
-$$
+<p align="center"><img alt="$$&#10;x^n + y^n = z^n&#10;$$" src="svgs/238cd7abcefb8a6a256d0bec59744770.svg" align="middle" width="94.22292pt" height="14.9075025pt"/></p>
 
 Pythagorean theorem (with box),
 
@@ -142,9 +124,7 @@ Pythagorean theorem (with box),
     \boxed{x^n + y^n = z^n}
 ```
 
-$$
-\boxed{x^n + y^n = z^n}
-$$
+<p align="center"><img alt="$$&#10;\boxed{x^n + y^n = z^n}&#10;$$" src="svgs/2dc0d735a1c4f4b4bb63782b8b4e8875.svg" align="middle" width="106.44249pt" height="26.116035pt"/></p>
 
 Pythagorean theorem (numbered using begin{equation}),
 
@@ -154,9 +134,7 @@ Pythagorean theorem (numbered using begin{equation}),
     \end{equation}
 ```
 
-\begin{equation}
-    x^n + y^n = z^n
-\end{equation}
+<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n&#10;\end{equation}" src="svgs/9c2c2ace77591d2c08d3ea86c859717c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
 
 Pythagorean theorem (numbered using tag),
 
@@ -166,9 +144,7 @@ Pythagorean theorem (numbered using tag),
     \end{equation}
 ```
 
-\begin{equation}
-    x^n + y^n = z^n\tag{6}
-\end{equation}
+<p align="center"><img alt="\begin{equation}&#10;    x^n + y^n = z^n\tag{6}&#10;\end{equation}" src="svgs/508f5e725b18bed700d18ff1cea4238c.svg" align="middle" width="397.69125pt" height="16.376943pt"/></p>
 
 Pythagorean theorem (another way to do numbers),
 
@@ -178,11 +154,7 @@ Pythagorean theorem (another way to do numbers),
     \qquad \qquad (4)
 ```
 
-$$
-\qquad \qquad
-x^n + y^n = z^n
-\qquad \qquad (4)
-$$
+<p align="center"><img alt="$$&#10;\qquad \qquad&#10;x^n + y^n = z^n&#10;\qquad \qquad (4)&#10;$$" src="svgs/5b71346bca16eedf780a40e41ddef9e8.svg" align="middle" width="181.7541pt" height="16.376943pt"/></p>
 
 Square root,
 
@@ -190,9 +162,7 @@ Square root,
     \sqrt[3]{x}
 ```
 
-$$
-\sqrt[3]{x}
-$$
+<p align="center"><img alt="$$&#10;\sqrt[3]{x}&#10;$$" src="svgs/8375620ec7847ff048e565abd48c90cd.svg" align="middle" width="23.093565pt" height="16.379385pt"/></p>
 
 Multiple equations (gathered),
 
@@ -203,12 +173,7 @@ Multiple equations (gathered),
     \end{gathered}
 ```
 
-$$
-\begin{gathered}
-    a=b+c \\
-    d+e=f
-\end{gathered}
-$$
+<p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
 
 Multiple equations (aligned on ampersand &),
 
@@ -219,12 +184,7 @@ Multiple equations (aligned on ampersand &),
     \end{aligned}
 ```
 
-$$
-\begin{aligned}
-    a&=b+c \\
-    d+e&=f
-\end{aligned}
-$$
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    a&amp;=b+c \\&#10;    d+e&amp;=f&#10;\end{aligned}&#10;$$" src="svgs/61e53b5569a8e3e0af95fdfbec895cdf.svg" align="middle" width="92.330205pt" height="39.21489pt"/></p>
 
 Alignment and spacing (on equal sign),
 
@@ -241,18 +201,7 @@ Alignment and spacing (on equal sign),
     \end{aligned}
 ```
 
-$$
-\begin{aligned}
-    f(x) =& x^2\! +3x\! +2 \\
-    f(x) =& x^2+3x+2 \\
-    f(x) =& x^2\, +3x\, +2 \\
-    f(x) =& x^2\: +3x\: +2 \\
-    f(x) =& x^2\; +3x\; +2 \\
-    f(x) =& x^2\ +3x\ +2 \\
-    f(x) =& x^2\quad +3x\quad +2 \\
-    f(x) =& x^2\qquad +3x\qquad +2
-\end{aligned}
-$$
+<p align="center"><img alt="$$&#10;\begin{aligned}&#10;    f(x) =&amp; x^2\! +3x\! +2 \\&#10;    f(x) =&amp; x^2+3x+2 \\&#10;    f(x) =&amp; x^2\, +3x\, +2 \\&#10;    f(x) =&amp; x^2\: +3x\: +2 \\&#10;    f(x) =&amp; x^2\; +3x\; +2 \\&#10;    f(x) =&amp; x^2\ +3x\ +2 \\&#10;    f(x) =&amp; x^2\quad +3x\quad +2 \\&#10;    f(x) =&amp; x^2\qquad +3x\qquad +2&#10;\end{aligned}&#10;$$" src="svgs/7e7e2b03aa45736c18ad92fa9b6f9b47.svg" align="middle" width="197.66175pt" height="205.1412pt"/></p>
 
 An integral,
 
@@ -260,9 +209,7 @@ An integral,
     \int_{a}^{b} x^2 dx
 ```
 
-$$
-\int_{a}^{b} x^2 dx
-$$
+<p align="center"><img alt="$$&#10;\int_{a}^{b} x^2 dx&#10;$$" src="svgs/7434eb168b5dfced915545b6a422e7b8.svg" align="middle" width="60.399075pt" height="41.24901pt"/></p>
 
 Limits,
 
@@ -270,9 +217,7 @@ Limits,
     \lim_{x\to\infty} f(x)
 ```
 
-$$
-\lim_{x\to\infty} f(x)
-$$
+<p align="center"><img alt="$$&#10;\lim_{x\to\infty} f(x)&#10;$$" src="svgs/b7ecb947fb5547679f1c7ab9a546d2ce.svg" align="middle" width="68.289045pt" height="22.14564pt"/></p>
 
 Some trigonometry,
 
@@ -280,9 +225,7 @@ Some trigonometry,
     \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
 ```
 
-$$
-\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
-$$
+<p align="center"><img alt="$$&#10;\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)&#10;$$" src="svgs/85b567a60b6ab8fbc319c720f66f8ae2.svg" align="middle" width="282.74565pt" height="16.376943pt"/></p>
 
 Fractions (binomial coefficients),
 
@@ -290,9 +233,7 @@ Fractions (binomial coefficients),
     \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
 
-$$
-\binom{n}{k} = \frac{n!}{k!(n-k)!}
-$$
+<p align="center"><img alt="$$&#10;\binom{n}{k} = \frac{n!}{k!(n-k)!}&#10;$$" src="svgs/9cc892f15c1314868714ad2b49649eb5.svg" align="middle" width="127.93704pt" height="39.30498pt"/></p>
 
 Brackets,
 
@@ -300,9 +241,7 @@ Brackets,
     \left( \frac{x}{y} \right)
 ```
 
-$$
-\left( \frac{x}{y} \right)
-$$
+<p align="center"><img alt="$$&#10;\left( \frac{x}{y} \right)&#10;$$" src="svgs/2beb7431726139ffb37413b4031f73c1.svg" align="middle" width="37.49592pt" height="39.30498pt"/></p>
 
 Bracket array,
 
@@ -316,15 +255,7 @@ Bracket array,
     \right)
 ```
 
-$$
-\left(
-    \begin{array}{ccc}
-        1 & 2 & 3\\
-        4 & 4 & 9\\
-        1 & -8 & 2
-    \end{array}
-\right)
-$$
+<p align="center"><img alt="$$&#10;\left(&#10;    \begin{array}{ccc}&#10;        1 &amp; 2 &amp; 3\\&#10;        4 &amp; 4 &amp; 9\\&#10;        1 &amp; -8 &amp; 2&#10;    \end{array}&#10;\right)&#10;$$" src="svgs/7192bf1b080bb1180da0295fcda68a71.svg" align="middle" width="115.47162pt" height="59.068185pt"/></p>
 
 Arrays in Brackets with spacing (\qquad),
 
@@ -346,23 +277,7 @@ Arrays in Brackets with spacing (\qquad),
     \right\}
 ```
 
-$$
-\left(
-    \begin{array}{ccc}
-        1 & 2 & 3\\
-        4 & 5 & 9\\
-        1 & -8 & 2
-    \end{array}
-\right)
-\qquad
-\left\{
-    \begin{array}{ccc}
-        1 & 5 & 8\\
-        0 & 2 & 4\\
-        3 & 3 & -8
-    \end{array}
-\right\}
-$$
+<p align="center"><img alt="$$&#10;\left(&#10;    \begin{array}{ccc}&#10;        1 &amp; 2 &amp; 3\\&#10;        4 &amp; 5 &amp; 9\\&#10;        1 &amp; -8 &amp; 2&#10;    \end{array}&#10;\right)&#10;\qquad&#10;\left\{&#10;    \begin{array}{ccc}&#10;        1 &amp; 5 &amp; 8\\&#10;        0 &amp; 2 &amp; 4\\&#10;        3 &amp; 3 &amp; -8&#10;    \end{array}&#10;\right\}&#10;$$" src="svgs/34937d1b68e46828a9241c64dd9c8c8a.svg" align="middle" width="267.069pt" height="59.12346pt"/></p>
 
 Some cool arrows,
 
@@ -371,10 +286,7 @@ Some cool arrows,
     \xrightarrow[\text{or that way}]{ } C
 ```
 
-$$
-A \xleftarrow{\text{this way}} B
-\xrightarrow[\text{or that way}]{ } C
-$$
+<p align="center"><img alt="$$&#10;A \xleftarrow{\text{this way}} B&#10;\xrightarrow[\text{or that way}]{ } C&#10;$$" src="svgs/056bb44ae5a648c007f840c99bc3cbdf.svg" align="middle" width="192.2844pt" height="31.01538pt"/></p>
 
 Cases,
 
@@ -386,13 +298,7 @@ Cases,
     \end{cases}
 ```
 
-$$
-u(x) =
-\begin{cases}
-    \exp{x} & \text{if } x \geq 0 \\
-    1       & \text{if } x < 0
-\end{cases}
-$$
+<p align="center"><img alt="$$&#10;u(x) =&#10;\begin{cases}&#10;    \exp{x} &amp; \text{if } x \geq 0 \\&#10;    1       &amp; \text{if } x &lt; 0&#10;\end{cases}&#10;$$" src="svgs/7cdb2cc12c0acb192d47b17946ace840.svg" align="middle" width="174.7581pt" height="49.13139pt"/></p>
 
 Make some big text,
 
@@ -402,6 +308,4 @@ Make some big text,
     $$
 ```
 
-$$
-\huge\text{Goodbye Jeff}
-$$
+<p align="center"><img alt="$$&#10;\huge\text{Goodbye Jeff}&#10;$$" src="svgs/12b85ea14fbb1d1e51274a3079b71fa0.svg" align="middle" width="180.76245pt" height="30.19401pt"/></p>
