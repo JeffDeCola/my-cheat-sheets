@@ -62,10 +62,10 @@ so I kind of stay away from it.  I have a way to make my own tags below.
 
 ## FORMATING MULTIPLE EQUATIONS
 
-Second there are two main ways to format multiple equations in LaTeX math mode,
+There are two main ways to format multiple equations in LaTeX math mode,
 
-* `begin{gathered}...end{gathered}` - Every equation centered
 * `begin{aligned}...end{aligned}` - Will align on an ampersand
+* `begin{gathered}...end{gathered}` - Every equation centered
 
 An example of LaTeX math display mode (using aligned),
 
@@ -308,4 +308,4 @@ Make some big text,
     $$
 ```
 
-<p align="center"><img alt="$$&#10;\huge\text{Goodbye Jeff}&#10;$$" src="svgs/12b85ea14fbb1d1e51274a3079b71fa0.svg" align="middle" width="180.76245pt" height="30.19401pt"/></p>
+<p align="center"><img alt="$$&#10;\huge\text{Hello Jeff}&#10;$$" src="svgs/e352edc1951d2b05c08e5e2f08d50273.svg" align="middle" width="129.856485pt" height="23.58741pt"/></p>
