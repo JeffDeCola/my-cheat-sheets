@@ -33,7 +33,7 @@ There are a few ways to interact with your database (server),
 
 Here is an illustration,
 
-![IMAGE - postgreSQL-server - IMAGE](../../../../docs/pics/postgreSQL-server.jpg)
+![IMAGE - postgreSQL-server - IMAGE](../../../../../docs/pics/postgreSQL-server.jpg)
 
 ## INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4
 
