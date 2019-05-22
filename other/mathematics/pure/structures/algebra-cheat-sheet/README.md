@@ -7,12 +7,14 @@ This cheat sheet was built using,
 * LaTex Math Mode equations rendered to images using
   [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
 * Graphs were created in
-  [my-latex-pgfplots-graphs](https://github.com/JeffDeCola/my-latex-pgfplots-graphs)
-  repo using the LaTeX `pgfplots` package
+  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
+  repo using the LaTeX graph packages
 
 You can see my
-[LaTeX Math Mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
-on how to do this.
+[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+and
+[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+cheat sheets for more information.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
