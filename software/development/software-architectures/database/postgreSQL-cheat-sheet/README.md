@@ -1,13 +1,25 @@
 # postgreSQL CHEAT SHEET
-
+ca
 `postgreSQL` _is a open source object-relational database system._
 
 Documentation and reference,
 
 * [postgreSQL website](https://www.postgresql.org/)
-* You use this command a lot to run psql `sudo -u postgres psql`
 * To use with go, refer to my repo
   [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
+
+TL;DR,
+
+```bash
+sudo -u postgres psql
+sudo /etc/init.d/postgresql start
+CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
+CREATE DATABASE jeff_db_example OWNER jeffd;
+\l
+\c jeff_db_example
+CREATE TABLE (id int primary key not null, first_name text, last_name text);
+\d
+```
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -158,12 +170,14 @@ Start,
 
 ```bash
 pg_ctl -D /usr/local/var/postgres start
+sudo /etc/init.d/postgresql start
 ```
 
 Stop,
 
 ```bash
 pg_ctl -D /usr/local/var/postgres stop
+sudo /etc/init.d/postgresql stop
 ``` 
 
 ## USING PSQL (CLIENT)
@@ -209,7 +223,7 @@ Method 3 - Create user using psql (REMEMBER TO END WITH `;`),
 ```bash
 sudo -u postgres psql
 CREATE USER jeffd;
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'yourpass';
+CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
 ```
 
 Check user was created,
