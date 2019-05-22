@@ -2,15 +2,19 @@
 
 `algebra` _finding out what the unknown is._
 
-As a side note, this cheat sheet was built using,
+This cheat sheet was built using,
 
 * LaTex Math Mode equations rendered to images using
-  [readme2tex](https://github.com/JeffDeCola/readme2tex)
-* LaTeX `pgfplots` package to create the graphs
+  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
+* Graphs were created in
+  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
+  repo using the LaTeX graph packages
 
 You can see my
-[LaTeX math mode cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet)
-on how to do this.
+[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+and
+[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+cheat sheets for more information.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -376,7 +380,7 @@ You can plot points on a coordinate system with coordinates
 For example, plot the coordinates $(3,2)$ on the coordinate plane,
 
 <p align="center">
-    <img src="latex-pgfplots/coordinate-system.svg"
+    <img src="pgfplots-pics/coordinate-plane.svg"
     align="middle"
 </p>
 
@@ -412,7 +416,7 @@ Or stated `f of x equals y`.
 We can graph this function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-2x.svg"
+    <img src="pgfplots-pics/f-of-x-equals-2x.svg"
     align="middle"
 </p>
 
@@ -434,7 +438,7 @@ So for $y = \sqrt{x}$, as we can see, the vertical line intercepts
 it twice, hence not a function,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-sqrt-x.svg"
+    <img src="pgfplots-pics/f-of-x-equals-sqrt-x.svg"
     align="middle"
 </p>
 
@@ -468,7 +472,7 @@ $$
 Where the line would look like,
 
 <p align="center">
-    <img src="latex-pgfplots/y-equals-minus-1-over-3-times-x-minus-3.svg"
+    <img src="pgfplots-pics/f-of-x-equals-minus-1-over-3-times-x-minus-3.svg"
     align="middle"
 </p>
 

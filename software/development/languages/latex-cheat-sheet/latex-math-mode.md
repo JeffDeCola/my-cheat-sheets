@@ -3,9 +3,6 @@
 `LaTeX math mode` _is the math mode of LaTex. Where LaTeX is
 an advanced markup language used for typesetting._
 
-This is a long cheat sheet, so you may just want to jump to
-[common latex math equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet#common-latex-math-equations).
-
 Documentation and reference,
 
 * [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
@@ -20,75 +17,7 @@ LaTeX math mode functions & symbols,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## IT STARTED WITH TeX
-
-`TeX` is an advanced typesetting system which was
-developed by Donald Knuth in 1978. It is a markup language
-for describing a document.
-
-LaTeX is designed to describe the content, not the look of the document.
-
-## LaTeX
-
-`LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
-
-The syntax can look something like,
-
-```txt
-    \documentclass{article}
-    \title{Cartesian closed categories and the price of eggs}
-    \author{Jane Doe}
-    \date{September 1994}
-    \usepackage{amsmath}
-
-    \begin{document}
-
-    \begin{equation}
-        E=mc^2
-    \end{equation}
-
-    \end{document}
-```
-
-But I don't use any of this, I'm only interested in
-the mathematical formulas of LaTeX (Latex Math Mode).
-
-## INSTALL LaTeX
-
-This is to install a full version with all the packages,
-
-```bash
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install texlive-full
-```
-
-I'm not sure how to install a lighter version.
-
-Check version,
-
-```bash
-latex -version
-```
-
-To test, lets use a LateX file
-[latex-math-mode.tex](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.tex)
-which will invoke math mode and create a .pdf file,
-
-```bash
-cd latex-math-mode-examples
-pdflatex latex-math-modetex
-```
-
-If everything worked correctly your .pdf should look like
-[mine](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-math-mode-examples/latex-math-mode.pdf).
-This example outlines and basics of latex math mode and is explained below.
-
-## USING LaTeX IN MATH MODE
-
-I want to render this LaTeX math equation `E=mc^2`.
-
-### DECLARING MATH MODE
+## DECLARING MATH MODE
 
 First, there are three ways to `declare math mode` in LaTeX,
 
@@ -131,12 +60,12 @@ An example of LaTeX math display mode (with tag),
 This is sometimes hard to render being{equation} correctly,
 so I kind of stay away from it.  I have a way to make my own tags below.
 
-### FORMATING MULTIPLE EQUATIONS
+## FORMATING MULTIPLE EQUATIONS
 
-Second there are two main ways to format multiple equations in LaTeX math mode,
+There are two main ways to format multiple equations in LaTeX math mode,
 
-* `begin{gathered}...end{gathered}` - Every equation centered
 * `begin{aligned}...end{aligned}` - Will align on an ampersand
+* `begin{gathered}...end{gathered}` - Every equation centered
 
 An example of LaTeX math display mode (using aligned),
 
@@ -163,180 +92,6 @@ An example of LaTeX math display mode (using gathered),
 ```
 
 <p align="center"><img alt="$$&#10;\begin{gathered}&#10;    a=b+c \\&#10;    d+e=f&#10;\end{gathered}&#10;$$" src="svgs/b81b3a8ee17288b65f2e80ae31ac2c24.svg" align="middle" width="67.843545pt" height="39.21489pt"/></p>
-
-## HOW I CREATED THIS README.md
-
-I use a program called [readme2tex](https://github.com/leegao/readme2tex).
-I run everything on my local machine using my own
-[fork](https://github.com/JeffDeCola/readme2tex).
-
-It works by taking your LaTeX math formula, rendering an image and
-referencing that image using HTML.
-
-First, I created and edit in README.tex.md. Second, I run `readme2tex`. This will,
-
-* Create a new README.md file
-* Creates *.svg images for each of the LateX math formulas
-* Those image are linked automatically in your README.md file using HTML
-
-See the end of this cheat sheet for how I installed readme2tex.
-
-I used to use a github app called
-[TeXify](https://github.com/apps/texify),
-but it is not that reliable and I don't like
-other programs having write access to my repo.  I feel
-like I loose control.
-
-Here is an illustration on how readme2tex works,
-
-![IMAGE - readme2tex-latex-math-mode-github - IMAGE](../../../../docs/pics/readme2tex-latex-math-mode-github.jpg)
-
-## POPULAR LaTeX PACKAGES
-
-There are hundreds of packages you can use with LateX.
-
-* `xcolor` - _Add color_
-* `amsmath` & `amsfonts` - _For rendering matrices_
-* `tikz` - _Create postscript and .pdf graph­ics_
-  [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
-  * `pgfplts` - _2D/3D graphing, drawing data or function plots_
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex)
-  * `tkz-euclide` - Eu­clidean ge­om­e­try with tikz
-    [my example](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tkz-euclide-examples/latex-tkz-euclide.tex)
-
-### xcolor
-
-If you want color, you must use the color package "xcolor".
-So when you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "xcolor" ....etc...
-```
-
-As an example,
-
-```txt
-    \color{red} E=mc^2
-```
-
-<p align="center"><img alt="$$&#10;\color{red} E=mc^2&#10;$$" src="svgs/701e889902a8da29f6b7ca34bdd374d7.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
-
-### tikz
-
-`TikZ` is a LaTeX package that allows you to create high quality diagrams.
-Tikz is probably the most complex and powerful tool to create
-graphic elements in LaTeX.
-
-When you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "tikz" ....etc...
-```
-
-As an example of a circle,
-
-```txt
-    \begin{tikzpicture}
-        \draw (2,2) circle (3cm);
-    \end{tikzpicture}
-```
-
-Sadly, I could not get this to work with `readme2tex`.
-
-But I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-tikz-examples/latex-tikz.tex)
-
-### pgfplots
-
-`pgfplots` is outside the scope of this cheat sheet but I do have an example
-[here](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-math-mode-cheat-sheet/latex-pgfplots-examples/latex-pgfplots.tex).
-
-## CONVERTING TO OTHER FILE FORMATS
-
-* `pdflatex` .tex -> .pdf
-* `latex` .tex -> .dvi
-* `dvisvgm` .dvi -> .svg
-* `ghostscript` .pdf -> many types
-
-## LaTeX APPS
-
-Some cool LaTeX apps I use.
-
-### VISUAL STUDIO CODE APP - MARKDOWN + MATH
-
-View LaTeX math formulas in Visual Studio Code preview window.
-
-[MARKDOWN + MATH](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath)
-
-### BROWSER SUPPORT - KaTeX
-
-Displays mathematical notation in web browsers.
-
-[KaTeX](https://katex.org/docs/supported.html)
-
-### BROWSER SANDBOX - mathurl.com
-
-Sandbox to create your LaTeX math formulas online.
-
-[mathurl.com](http://mathurl.com/)
-
-### GITHUB APP - TeXify
-
-[TeXify](https://github.com/apps/texify)
-is a github app (on github) that Renders LateX to images in markdown.
-Its built on
-[readme2tex](https://github.com/leegao/readme2tex).
-
-You write `README.text.md` and push.
-At github, it will convert your LaTeX to `/tex/*.svg` images and
-created a `README.md` file with links to those images.
-
-This app is not that stable.
-
-### APP - readme2tex INSTALL
-
-[readme2tex](https://github.com/leegao/readme2tex).
-
-This cheat sheet is using this app.
-
-You need Python 2.7 or above and pip installed.
-
-Install full latex (I really only wanted latex and
-latex geometry package) and dvisvgm,
-
-```bash
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get install texlive-full
-sudo apt install texlive-extra-utils
-sudo apt install texlive-publishers
-```
-
-Install cairocffi and other dependencies you may need,
-
-```bash
-sudo apt-get install libffi6 libffi-dev
-pip install --user cairocffi
-pip install 'setuptools<36'
-```
-
-Now install readme2tex,
-
-```bash
-git clone https://github.com/leegao/readme2tex
-cd readme2tex
-sudo python setup.py develop
-```
-
-Again, I do not want to install the full version of latex
-(3 gigs), but can't figure out how to install latex
-and just the geometry package.
-
-Usage,
-
-```bash
-python -m readme2tex --readme README.tex.md --output README.md --nocdn
-```
 
 ## COMMON LaTeX MATH EQUATIONS
 
@@ -553,4 +308,4 @@ Make some big text,
     $$
 ```
 
-<p align="center"><img alt="$$&#10;\huge\text{Goodbye Jeff}&#10;$$" src="svgs/12b85ea14fbb1d1e51274a3079b71fa0.svg" align="middle" width="180.76245pt" height="30.19401pt"/></p>
+<p align="center"><img alt="$$&#10;\huge\text{Hello Jeff}&#10;$$" src="svgs/e352edc1951d2b05c08e5e2f08d50273.svg" align="middle" width="129.856485pt" height="23.58741pt"/></p>

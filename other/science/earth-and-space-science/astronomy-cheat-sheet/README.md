@@ -89,46 +89,88 @@ Apple falling from tree is a fairy tail he made up.
 * Worked with Halley studying a comet (Halley's comet) and
   predicted when it would come back
 
-## CELESTIAL SPHERE - MODEL THE STARS FROM EARTH
+## THE CELESTIAL SPHERE
 
 The `Celestial Sphere` is a sphere around the earth that make the
 stars appear to occupy fixed positions relative to each other.
-The north pole is the north of the sphere. Its a good model.
-There is a `celestial equator`.
+The earth spins inside the celestial sphere.
 
-The `zenith` is the point directly above the observer.
-90&deg; from any point on horizon.
+The sphere is inline with the earth's equator and poles.
+The earth's north pole is the `North Celestial Pole`
+and the earth's south pole is the
+`South Celestial Pole`. The `Celestial Equator` is a plane that
+extends out from our earth's equator.
 
-The `Meridian` passes through the `zenith` and both
-`celestial sphere` poles. Perpendicular to `celestial equator`.
+The `Ecliptic` is the Apparent path of suns motion on the `Celestial Sphere`.
+The plane of our solar system.  The `Ecliptic` obviously passed through the
+`Autumn Equinox` and the `Spring (Vernal) Equinox`.
 
-The `Ecliptic` is the Apparent path of suns motion on the `celestial sphere`.
-Plane of our solar system.
+### MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)
 
-![IMAGE - Celestial Sphere - IMAGE](../../../../docs/pics/celestial-sphere.jpg)
+You need two coordinated to find where a star is on the celestial sphere,
 
-## FINDING A STAR ON CELESTIAL SPHERE (DECLINATION AND RIGHT ASCENSION)
+* `Right Ascension` is like longitude on earth.
+* `Declination` is like latitude on earth.
 
-You need two coordinated to find a star, `declination`
-and `right ascension`.
+`Right ascension` is counter-clockwise from the `Spring (Vernal) Equinox`.
+The units are,
 
-`Declination` is like latitude on earth.
-The angle of the star form the celestial equator.
-The north star would be 90&deg;.  It would be written like,
+* `Hours` (0h-24h)
+* `Minutes` (0m-60m)
+* `Seconds`  (0m-60s)
 
-`-2`&deg;` 49' 11"` (degrees, arc minutes and arc seconds).
+The granularity (pixels) would be 24 x 60 x 60 = `86,400 points`.
 
-`Right ascension` is like longitude on the earth. The zero
-point is the spring equinox. It would be written like,
+It would be written like,
 
-`5h 41m 28s` (hours, minutes and seconds).
+`5h 41m 28s`
+
+`Declination` runs pole to pole, the `North Celestial Pole`
+would be 90&deg; and the `South Celestial Pole`
+would be -90&deg; The Equator would be 0&deg;.
+The units are,
+
+* `Degrees` (-90&deg;-90&deg;)
+* `Arc Minutes` (0'-60')
+* `Arc Seconds` (0"-60")
+
+The granularity (pixels) would be 180 x 60 x 60 = `648,000 points`.
+
+It would be written like,
+
+`-2`&deg; `49' 11"`
+
+The north pole would be written like `90`&deg; `0' 0"`.
+
+The total number of `pixels` on a `Celestial Sphere` would be,
+648,000 * 86,400 points = 55,987,200,000 or roughly ~55
+billion points.
+
+### OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)
+
+How does an observer on earth find a star?
+The point directly above the observer is called the
+`zenith`. The `zenith` is 90&deg; from any point on horizon.
+
+The star at a giving time simply has an
+
+* `altitude` Degree from horizon where 0&deg is horizon and 90&deg; is zenith
+* `azimuth` Angle from north (clockwise)
+
+The `Meridian` passes through the `Zenith` and both the north and
+south `Celestial Sphere` poles. Which is perpendicular to
+the `Celestial Equator`.
+
+This figure may help,
+
+![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.svg)
 
 ## STAR MAGNITUDE
 
 When viewing stars lets talk about magnitude.
 The relative brightness of a star as seen from earth.
 
-* APPARENT - How luminous the star looks on earth. Intrinsix.
+* APPARENT - How luminous the star looks on earth. Intrinsic.
 * ABSOLUTE - How luminous a start is from a standard distance.
 
 The lower the number, the brighter the star is.
