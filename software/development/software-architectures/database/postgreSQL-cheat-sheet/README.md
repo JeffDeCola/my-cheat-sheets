@@ -2,12 +2,6 @@
 ca
 `postgreSQL` _is a open source object-relational database system._
 
-Documentation and reference,
-
-* [postgreSQL website](https://www.postgresql.org/)
-* To use with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
-
 TL;DR,
 
 ```bash
@@ -20,6 +14,12 @@ CREATE DATABASE jeff_db_example OWNER jeffd;
 CREATE TABLE (id int primary key not null, first_name text, last_name text);
 \d
 ```
+
+Documentation and reference,
+
+* [postgreSQL website](https://www.postgresql.org/)
+* To use with go, refer to my repo
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
