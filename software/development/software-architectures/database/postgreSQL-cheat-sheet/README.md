@@ -8,9 +8,10 @@ tl;dr,
 sudo /etc/init.d/postgresql start
 ps aux | grep -i postgres
 sudo -u postgres psql
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
 CREATE USER jeffd;
+CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
 CREATE DATABASE jeff_db_example OWNER jeffd;
+DROP DATABASE jeff_db_example3;
 \l
 \c jeff_db_example
 CREATE TABLE people (id int primary key not null, first_name text, last_name text);
@@ -105,6 +106,9 @@ Install from [here](https://www.pgadmin.org/download/)
 It will run in your browser such as
 [http://127.0.0.1:50088/browser/](http://127.0.0.1:50088/browser/)
 
+To connect, just use the username `postgres` and the password you
+will create below.
+
 ### CHECK VERSIONS
 
 Server,
@@ -125,40 +129,62 @@ pgadmin,
 pgadmin3 -v
 ```
 
-## CONFIGURE POSTGRES
+## CONFIGURE
 
-You may need to configure depending how you installed.
+The configuration files are,
 
-Enter postgres using psql as user postgres (yeah its a little confusing),
+* pg_hba.conf - Where Authentication is handled
+* postgresql.conf - Server config.
+
+Edit pg_hba.conf (macOS path is second one),
 
 ```bash
-sudo -u postgres psql postgres
-> \password postgres
-> "admin"
-> CREATE EXTENSION adminpack;
-> \q
+sudo su - postgres
+nano /etc/postgresql/10/main/pg_hba.conf
+nano /Library/PostgreSQL/11/data/pg_hba.conf
+```
+Make it look like,
+
+```txt
+# Local networks
+host    all     all     xx.xx.xx.xx/xx  md5
+# Example
+host    all     all     192.168.0.0/24  md5
+host    all     all     127.0.0.0/32    md5
 ```
 
-Check `pg_hba.conf`,
+Edit postgresql.conf (macOS path is second one),
 
 ```bash
-sudo nano /etc/postgresql/<VERSION>/main/pg_hba.conf
-sudo nano /etc/postgresql/10/main/pg_hba.conf
-```
-
-Edit `postgresql.conf`,
-
-```bash
-sudo nano /etc/postgresql/<VERSION>/main/postgresql.conf
+sudo su - postgres
 sudo nano /etc/postgresql/10/main/postgresql.conf
+nano /Library/PostgreSQL/11/data/postgresql.conf
 ```
 
 Replace `listen_addresses = 'localhost'` with `listen_addresses = '*'`
 
-To restart postgres server,
+Restart server and confirm postgres listening on port 5432,
+
+```txt
+netstat -ant | grep 5432
+tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN
+tcp6       0      0 :::5432                 :::*                    LISTEN
+```
+
+Change both passwords for user postgres and the username postgres
+in psql,
+
+Change user password,
 
 ```bash
-sudo service postgresql restart
+sudo passwd postgres
+```
+
+Then change username in psql password,
+
+```bash
+sudo -u postgres psql
+ALTER USER postgres PASSWORD 'Password';
 ```
 
 ## START/STOP POSTGRESQL SERVER
@@ -170,6 +196,8 @@ ps aux | grep -i postgres
 ```
 
 ### LINUX
+
+Uses init.d,
 
 Start,
 
@@ -184,6 +212,8 @@ sudo /etc/init.d/postgresql stop
 ``` 
 
 ### MACOS
+
+Must be postgres user.
 
 Status,
 
@@ -205,8 +235,6 @@ Stop,
 sudo su - postgres
 /Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data stop -s -m fast
 ``` 
-
-/Library/PostgreSQL/11/bin/postgres
 
 ## USING PSQL (CLIENT)
 
@@ -246,12 +274,13 @@ Method 2 - Create user using command line without becoming user postgres,
 sudo -u postgres createuser jeffd
 ```
 
-Method 3 - Create user using psql (REMEMBER TO END WITH `;`),
+Method 3 (USER THIS ONE) - Create user using
+psql (REMEMBER TO END WITH `;`),
 
 ```bash
 sudo -u postgres psql
+CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
 CREATE USER jeffd;
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
 ```
 
 Check user was created,
@@ -278,11 +307,24 @@ Method 2 - Create database using command line without becoming user postgres,
 sudo -u postgres createdb --owner=jeffd jeff_db_example
 ```
 
-Method 3 - Create database using psql (REMEMBER TO END WITH `;`),
+Method 3 (USER THIS ONE) - Create database using
+psql (REMEMBER TO END WITH `;`),
 
 ```bash
 sudo -u postgres psql
 CREATE DATABASE jeff_db_example3 OWNER jeffd;
+```
+
+To drop a database,
+
+```bash
+DROP DATABASE jeff_db_example3;
+```
+
+Add a user to a database,
+
+```bash
+???
 ```
 
 List all databases from psql,
@@ -305,10 +347,11 @@ Then you can do things like create a table,
 
 ## CREATE A TABLE (YOUR SCHEMA)
 
-Some types you can do,
+Create table,
 
 ```bash
 CREATE TABLE people (id int primary key not null, first_name text, last_name text);
+GRANT ALL PRIVILEGES ON TABLE people TO jeffd;
 ```
 
 ## LIST TABLES
