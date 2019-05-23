@@ -1,17 +1,19 @@
 # postgreSQL CHEAT SHEET
-ca
+
 `postgreSQL` _is a open source object-relational database system._
 
-TL;DR,
+tl;dr,
 
 ```bash
-sudo -u postgres psql
 sudo /etc/init.d/postgresql start
+ps aux | grep -i postgres
+sudo -u postgres psql
 CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
+CREATE USER jeffd;
 CREATE DATABASE jeff_db_example OWNER jeffd;
 \l
 \c jeff_db_example
-CREATE TABLE (id int primary key not null, first_name text, last_name text);
+CREATE TABLE people (id int primary key not null, first_name text, last_name text);
 \d
 ```
 
@@ -34,14 +36,14 @@ The origins of PostgreSQL date back to 1986 as part of the POSTGRES
 project at the University of California at Berkeley and has more than
 30 years of active development on the core platform.
 
-### OVERVIEW
+## OVERVIEW
 
 There are a few ways to interact with your database (server),
 
 * Command Line
 * psql (client)
 * go library
-* pgAdmin 4
+* pgAdmin4
 
 Here is an illustration,
 
@@ -93,7 +95,17 @@ brew update
 brew install postgresql
 ```
 
-### CHECK VERSION
+### INSTALL pgAdmin4
+
+`pgAdmin` is a graphical tool for managing and
+developing your databases.
+
+Install from [here](https://www.pgadmin.org/download/)
+
+It will run in your browser such as
+[http://127.0.0.1:50088/browser/](http://127.0.0.1:50088/browser/)
+
+### CHECK VERSIONS
 
 Server,
 
@@ -104,7 +116,7 @@ postgres -V
 Client,
 
 ```bash
-psql --version
+psql -V
 ```
 
 pgadmin,
@@ -113,17 +125,7 @@ pgadmin,
 pgadmin3 -v
 ```
 
-### pgAdmin
-
-`pgAdmin` is a graphical tool for managing and
-developing your databases.
-
-Install from [here](https://www.pgadmin.org/download/)
-
-It will run in your browser
-[http://127.0.0.1:50088/browser/]http://127.0.0.1:50088/browser/)
-
-## CONFIGURE
+## CONFIGURE POSTGRES
 
 You may need to configure depending how you installed.
 
@@ -141,6 +143,7 @@ Check `pg_hba.conf`,
 
 ```bash
 sudo nano /etc/postgresql/<VERSION>/main/pg_hba.conf
+sudo nano /etc/postgresql/10/main/pg_hba.conf
 ```
 
 Edit `postgresql.conf`,
@@ -166,19 +169,44 @@ Check the postgreSQL server is running,
 ps aux | grep -i postgres
 ```
 
+### LINUX
+
 Start,
 
 ```bash
-pg_ctl -D /usr/local/var/postgres start
 sudo /etc/init.d/postgresql start
 ```
 
 Stop,
 
 ```bash
-pg_ctl -D /usr/local/var/postgres stop
 sudo /etc/init.d/postgresql stop
 ``` 
+
+### MACOS
+
+Status,
+
+```bash
+sudo su - postgres
+/Library/PostgreSQL/11/bin/pg_ctl status -D /Library/PostgreSQL/11/data
+```
+
+Start,
+
+```bash
+sudo su - postgres
+/Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data start
+```
+
+Stop,
+
+```bash
+sudo su - postgres
+/Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data stop -s -m fast
+``` 
+
+/Library/PostgreSQL/11/bin/postgres
 
 ## USING PSQL (CLIENT)
 
@@ -280,7 +308,7 @@ Then you can do things like create a table,
 Some types you can do,
 
 ```bash
-CREATE TABLE (id int primary key not null, first_name text, last_name text);
+CREATE TABLE people (id int primary key not null, first_name text, last_name text);
 ```
 
 ## LIST TABLES
