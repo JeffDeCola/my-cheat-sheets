@@ -28,9 +28,9 @@ your data so that it can be parsed elsewhere.
 
 The flow is,
 
-1. Define the message format (using .proto file)
-1. Compile the .proto file to your language
-1. Implement - Use proto file in your code
+1. DEFINE - The message format (using .proto file)
+1. COMPILE - the .proto file to your language
+1. IMPLEMENT - Use proto file in your code
 
 Here is an illustration,
 
