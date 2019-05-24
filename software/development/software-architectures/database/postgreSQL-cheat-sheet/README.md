@@ -9,7 +9,7 @@ sudo /etc/init.d/postgresql start
 ps aux | grep -i postgres
 sudo -u postgres psql
 CREATE USER jeffd;
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'password';
+CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
 CREATE DATABASE jeff_db_example OWNER jeffd;
 DROP DATABASE jeff_db_example3;
 \l
