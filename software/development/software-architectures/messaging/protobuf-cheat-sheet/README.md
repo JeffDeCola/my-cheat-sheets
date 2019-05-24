@@ -22,6 +22,16 @@ Then your client and your server can take that .proto
 file and compile it (using protoc) to their language of
 choice and use it in their microservice/app/service.
 
+Or top state again, the whole purpose of using
+protocol buffers is to serialize
+your data so that it can be parsed elsewhere.
+
+The flow is,
+
+1. Define the message format (using .proto file)
+1. Compile the .proto file to your language
+1. Implement - Use proto file in your code
+
 Here is an illustration,
 
 ![IMAGE - protobuf - IMAGE](../../../../../docs/pics/protobuf.jpg)
@@ -52,21 +62,27 @@ Check version,
 protoc --version
 ```
 
+Almost done, now we need the libraries and the protobuf compile
+for your language. 
+
 ## INSTALL LIBRARIES FOR GO
 
 ```bash
 go get -u github.com/golang/protobuf/protoc-gen-go
 ```
 
-This will get the libraries and
-place `protoc-gen-go` in `$GOPATH/bin/protoc-gen-go`.
+This will,
 
-## .PROTO FILE (VER3)
+* Get the libraries and place in /src/github.com/golang/protobuf
+* Place `protoc-gen-go` binary (used for protoc) in `$GOPATH/bin/protoc-gen-go`
+
+## 1. DEFINE - .proto FILE
 
 The .proto file defines the message format
-in readable form.
+in readable form.  We are using version 3 or
+`proto3` of this file format.
 
-As an example I use in my repo
+As an example that I use in my repo
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging/protobuf)
 
 ```txt   
@@ -86,7 +102,7 @@ message AddressBook {
 }
 ```
 
-## RUN PROTOC
+## 2. COMPILE - RUN PROTOC
 
 `protoc` is the protocol buffer compiler that will
 compile the `messages.proto` file to a readable form
@@ -96,11 +112,13 @@ for your particular language.
 protoc --go_out=. messages.proto
 ```
 
+## 3. IMPLEMENT - IN YOUR CODE
+
+Refer to my repo with go examples using protobuf
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging).
+
 ## USEFUL FOR RPC
 
 Protobuf serves as a basis for a custom remote procedure
 call (RPC) system that can be used for
 inter-machine communication.
-
-The whole purpose of using protocol buffers is to serialize
-your data so that it can be parsed elsewhere.
