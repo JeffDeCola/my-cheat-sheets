@@ -10,19 +10,24 @@ protoc --version
 protoc --go_out=. messages.proto
 ```
 
+Documentation and reference,
+
+* For some example with go, refer to my repo
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging/protobuf)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
-Define the message formats in a .proto file. The concept
-is to have a human readable file representing your data. 
+The concept is to have a human readable file representing your data you
+want to transfer.  This file is a `.proto` file. 
 
-Then your client and your server can take that .proto
+Then your process/machine/microservice/whatever can take that .proto
 file and compile it (using protoc) to their language of
 choice and use it in their microservice/app/service.
 
-Or top state again, the whole purpose of using
+Or to state again, the whole purpose of using
 protocol buffers is to serialize
 your data so that it can be parsed elsewhere.
 
@@ -32,7 +37,7 @@ The flow is,
 1. COMPILE - the .proto file to your language
 1. IMPLEMENT - Use proto file in your code
 
-Here is an illustration,
+Here is an illustration on how protobuf works,
 
 ![IMAGE - protobuf - IMAGE](../../../../../docs/pics/protobuf.jpg)
 
@@ -82,7 +87,7 @@ The .proto file defines the message format
 in readable form.  We are using version 3 or
 `proto3` of this file format.
 
-As an example that I use in my repo
+Here is an example of a .proto file I use in my repo
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging/protobuf)
 
 ```txt   
@@ -91,9 +96,9 @@ syntax = "proto3";
 package main;
 
 message Person {
-	string name = 1;
+    string name = 1;
     int32 age = 2;
-	string email = 3;
+    string email = 3;
     string phone = 4;
 }
 
