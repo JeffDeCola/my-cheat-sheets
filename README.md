@@ -170,6 +170,10 @@ Various Apps and tools for the goal of creating an App/Service.
 
 ### SERVICE ARCHITECTURES
 
+* Overview
+
+  * [overview of service architectures](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/overview/overview-of-service-architectures-cheat-sheet)
+
 * SaaS - SOFTWARE AS A SERVICE
 
   * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet)
@@ -280,6 +284,7 @@ Random other things I'm interested in.
 
 * TECHNOLOGIES
 
+  * [data storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/storage-types-cheat-sheet)
   * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
   * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
