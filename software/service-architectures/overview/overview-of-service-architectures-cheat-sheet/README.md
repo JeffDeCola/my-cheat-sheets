@@ -18,4 +18,4 @@ View my entire list of cheat sheets on
 
 As a high level view,
 
-![IMAGE - service architectures overview - IMAGE](../../../../docs/pics/service-architectures-overview.jpg)
+![IMAGE - overview of service architectures - IMAGE](../../../../docs/pics/overview-of-service-architectures.jpg)
