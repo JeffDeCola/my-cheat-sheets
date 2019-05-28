@@ -1,7 +1,7 @@
 # OVERVIEW OF SERVICE ARCHITECTURES CHEAT SHEET
 
-`overview of service architectures` is a term used where you pay others
-to take care of infrastructure for you._
+`overview of service architectures` is when vendors
+take care of infrastructure for you._
 
 The five main types are,
 
@@ -18,4 +18,4 @@ View my entire list of cheat sheets on
 
 As a high level view,
 
-![IMAGE - service architectures overview - IMAGE](../../../..docs/pics/service-architectures-overview.jpg)
+![IMAGE - service architectures overview - IMAGE](../../../../docs/pics/service-architectures-overview.jpg)
