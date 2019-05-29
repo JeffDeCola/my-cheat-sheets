@@ -27,7 +27,7 @@ There are a few ways to interact with your database (server),
 
 * Command Line
 * psql (client)
-* go library
+* [github.com/???? go library](https://github.com/lib/pq)
 * pgAdmin4
 
 ## INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4

@@ -5,8 +5,14 @@
 tl;dr,
 
 ```bash
+# VERSIONS
+postgres -V
+psql -V
+pgadmin3 -v
+# START
 sudo /etc/init.d/postgresql start
 ps aux | grep -i postgres
+# PSQL
 sudo -u postgres psql
 CREATE USER jeffd;
 CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
@@ -45,7 +51,7 @@ There are a few ways to interact with your database (server),
 
 * Command Line
 * psql (client)
-* [go library](https://github.com/lib/pq)
+* [github.com/lib/pq go library](https://github.com/lib/pq)
 * pgAdmin4
 
 Here is an illustration,
