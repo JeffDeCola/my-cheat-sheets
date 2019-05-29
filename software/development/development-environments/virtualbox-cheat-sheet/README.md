@@ -243,12 +243,12 @@ Just use sftp on port 3022.
 
 Pain in the butt,
 
-1. Windows
+1. Windows.
 
 First setup a shared network printer on Windows. 
 Must also use a private network.
 
-2. Get some software loaded on ubuntu
+2. Get some software loaded on ubuntu.
 
 ```bash
 sudo apt-get install lsb
@@ -257,13 +257,12 @@ sudo apt-get install python3-smbc
 sudo apt-get install smbclient
 ```
 
-3. Get printer driver from printer website
+3. Get printer driver from printer website. Most likely a .deb file.
 
-Most likely a .deb file.
+4. Then you need to find the printer.
 
-4. Then you need to find the printer
+You could search for network printer on `192.168.1.x` or just type it in.
 
-You could search for network printer on 192.168.1.115 or just type it in.
+smb://192.168.1.115/SHARE-EPSON-XP-630-Series
 
-smb://192.168.1.115/SHARE-EPSON-XP-630-Series	
 Also need Username, Workgroup and password.
