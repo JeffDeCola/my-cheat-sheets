@@ -92,6 +92,26 @@ Remember to match the static IP to what's in your
     - CONCOURSE_EXTERNAL_URL=http://192.168.100.6:8080
 ```
 
+## ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)
+
+This is actually quite easy.
+
+Instead of NATS, you use a bridged adapter,
+
+```txt
+Settings -> Network - Adapter -> Bridged Adapter
+```
+
+Your router (on the host machine's network) will choose an
+IP for you.  You can go into that router to save the
+IP based on the mac address if you would like.
+
+Remember to match the static IP to what's in your
+`docker-compose.yml` file,
+
+Also, you do not need set your machine with a static IP.
+Let your router assign one.
+
 ## IF YOU GET AN IMAGE ERROR
 
 Start fresh, so prune the containers and volumes,
