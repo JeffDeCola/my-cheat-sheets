@@ -1,11 +1,7 @@
 # GIT CHEAT SHEET
 
 `git` _is a free and open source
-DVCS (Distributed Version Control System) It is the largest host
-of both open and private source code in the world._
-
-Typically, it lives on your local machine (_local repos_) and on
-GitHub.com (_remote repos_).
+DVCS (Distributed Version Control System)._
 
 tl;dr,
 
@@ -27,6 +23,13 @@ git update-index --chmod=+x path/to/file
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+
+## OVERVIEW
+
+It is the largest host of both open and private
+source code in the world. Typically, git lives on
+your local machine (_local repos_) and on
+GitHub.com (_remote repos_).
 
 ## INSTALL GIT LOCAL
 
