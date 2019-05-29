@@ -26,11 +26,11 @@ wget -O ~/Downloads/Inconsolata.zip https://fonts.google.com/download?family=Inc
 Unzip and place in fonts folder,
 
 ```bash
-cd /usr/share/fonts 
+cd /usr/share/fonts
 sudo mkdir googlefonts
 sudo chmod -R --reference=opentype googlefonts
 cd googlefonts
-sudo unzip -d . ~/Downloads/Inconsolata.zip 
+sudo unzip -d . ~/Downloads/Inconsolata.zip
 ```
 
 Now register the fonts,
