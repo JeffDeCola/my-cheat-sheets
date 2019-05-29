@@ -173,7 +173,7 @@ type the following,
 As I mentioned, their are two versions of go, one for Windows and
 one for your WSL bash.  And each have their own paths.
 
-#### INSTALLING THE GO EXTENTION
+#### INSTALLING THE GO EXTENSION
 
 So when you open VS Code, and install the go extension, it will
 install in the windows area of go. The go extensions will
@@ -204,5 +204,3 @@ cp <YOURPACKAGE>.go /mnt/c/Users/Jeff/go/src/github.com/JeffDeCola/package/path/
 I'm sure there is a better solution, but this works for me.
 
 That's it, you're good to go.
-
-
