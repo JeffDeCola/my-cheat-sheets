@@ -3,6 +3,8 @@
 This method has been depreciated at concourse, but I'm sure you can
 find vagrant files that others have made.
 
+## INSTALL
+
 Get vagrant for Windows [here](https://www.vagrantup.com).
 
 Search for a concourse vagrant file
@@ -26,3 +28,26 @@ vagrant up
 ```
 
 Reinstall the new `fly.exe`.
+
+## BRIDGE CONCOURSE NETWORK TO HOME LAN (198.168.1.x)
+
+Add in Vagrantfile,
+
+```txt
+config.vm.network "public_network", bridge: 'Intel(R) I210 Gigabit Network Connection', use_dhcp_assigned_default_route: true
+```
+
+Or you could make this change in Virtualbox.
+
+Instead of NATS, you use a bridged adapter,
+
+```txt
+Settings -> Network - Adapter -> Bridged Adapter
+```
+
+Either way, your router (on the host machine's network) will choose an
+IP for you.  You can go into that router to save the
+IP based on the mac address if you would like.
+
+Also, do not set your machine with a static IP.
+Let your router assign one.

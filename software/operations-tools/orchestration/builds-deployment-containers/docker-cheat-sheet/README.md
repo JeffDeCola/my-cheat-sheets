@@ -3,6 +3,26 @@
 `docker` _is a virtual linux container. DockerHub is an online
 resource to keep docker images (that you can pull)._
 
+tl;dr,
+
+```bash
+docker version
+# IMAGES
+docker run --name hello-go -dit jeffdecola/hello-go
+docker images
+docker rmi IMAGE-ID
+docker push jeffdecola/hello-go
+docker pull jeffdecola/hello-go
+docker build -t jeffdecola/hello-go .
+# CONTAINERS
+docker ps
+docker rm $(docker ps -a -q)
+# CONNECT
+docker exec -t -i hello-go /bin/bash
+# SEE OUTPUT
+docker logs -f hello-go
+```
+
 Check out my repo
 [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds).
 

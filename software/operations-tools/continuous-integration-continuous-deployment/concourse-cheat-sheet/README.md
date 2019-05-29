@@ -3,6 +3,18 @@
 `concourse` _is a pipelined CI (Continuous Integration) for
 Software Builds. Concourse's main goal is to run tasks_.
 
+tl;dr,
+
+```bash
+http://192.168.100.6:8080/
+fly -t ci login -c http://192.168.100.6:8080/
+fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
+fly -t ci destroy-pipeline --pipeline NAME\
+fly -t ci workers
+fly -t ci set-team --team-name team-jeff --local-user test
+fly -t ci login -n team-jeff
+```
+
 [My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/).
 
 View my entire list of cheat sheets on

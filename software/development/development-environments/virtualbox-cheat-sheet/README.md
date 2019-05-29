@@ -121,7 +121,7 @@ iface enp0s3 inet static
     netmask 255.255.255.0
 ```
 
-Restart/Status `networking.service` using `systemclt`
+Restart/Status `networking.service` using `systemctl`
 or reboot your machine,
 
 ```bash
@@ -143,7 +143,7 @@ You should see your new static ip address.
 For more information about configuring network devices, goto my cheat-sheet
 [network-device-configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet).
 
-## ALLOW HOST ACCESS TO VM
+## ALLOW HOST ACCESS TO VM (HOST-ONLY)
 
 Create a VirtualBox Host-Only Ethernet Adapter and configure
 the VM,
@@ -152,17 +152,28 @@ the VM,
 Settings -> Network - Adapter -> Host-Only Adapter
 ```
 
-When you add a static IP, your Host will be able to access the VM.
+Also set your machine with a static IP.
 
-## ALLOW LOCAL NETWORK ACCESS TO VM
+Refer to my cheat sheet on
+[network device configuration]https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet
+on how to add a static IP.
 
-You use a bridged adapter,
+## ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)
+
+This is actually quite easy.
+
+Instead of NATS, you use a bridged adapter,
 
 ```txt
 Settings -> Network - Adapter -> Bridged Adapter
 ```
 
-I did not explore this feature yet.
+Your router (on the host machine's network) will choose an
+IP for you.  You can go into that router to save the
+IP based on the mac address if you would like.
+
+Also, do not set your machine with a static IP.
+Let your router assign one.
 
 ## INCREASE YOUR VIDEO MEMORY TO 256MB
 

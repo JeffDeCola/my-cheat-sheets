@@ -13,8 +13,7 @@ Storage is really data and the integrated
 hardware/software systems used to manage it.
 
 * ELECTROMAGNETIC
-  * HDD - Refer to my cheat sheet
-    [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
+  * [HDD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
 * OPTICAL
   * CD
   * DVD
