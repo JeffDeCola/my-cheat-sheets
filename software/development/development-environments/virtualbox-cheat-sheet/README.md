@@ -213,3 +213,57 @@ Step 5 - Download gparted-live*.iso
 Insert .iso into the new virtual machine and reboot it.
 Grow your partition and save changes.
 You may have to delete partitions (swap and /dev/sd2) to grow `/dev/sda1`.
+
+## SSH ONTO UBUNTU
+
+On Virtual box add port forwarding for the ubuntu Virtual Machine.
+Network settings and click the Port Forwarding button. Add a new Rule.
+From virtual box configure in settings,
+
+* Host port 3022, guest port 22, name ssh, other left blank.
+
+From ubuntu start a ssh server,
+
+```bash
+sudo apt-get install openssh-server
+```
+
+To use just ssh to [127.0.0.1:3022](127.0.0.1:3022).
+
+## FTP ONTO UBUNTU
+
+```bash
+sudo apt-get install vsftpd
+nano /etc/vsftpd.conf
+```
+
+Just use sftp on port 3022.
+
+## ADD A PRINTER
+
+Pain in the butt,
+
+1. Windows
+
+First setup a shared network printer on Windows. 
+Must also use a private network.
+
+2. Get some software loaded on ubuntu
+
+```bash
+sudo apt-get install lsb
+sudo apt-get update
+sudo apt-get install python3-smbc
+sudo apt-get install smbclient
+```
+
+3. Get printer driver from printer website
+
+Most likely a .deb file.
+
+4. Then you need to find the printer
+
+You could search for network printer on 192.168.1.115 or just type it in.
+
+smb://192.168.1.115/SHARE-EPSON-XP-630-Series	
+Also need Username, Workgroup and password.
