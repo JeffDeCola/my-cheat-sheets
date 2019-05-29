@@ -7,6 +7,24 @@ of both open and private source code in the world._
 Typically, it lives on your local machine (_local repos_) and on
 GitHub.com (_remote repos_).
 
+tl;dr,
+
+```txt
+git config --list
+git clone https://github.com/JeffDeCola/my-cheat-sheets.git
+git status
+# FLOW
+git add .
+git commit -m "your comment"
+git push
+git remote set-url origin git@github.com:JeffDeCola/my-cheat-sheets.git
+# BRANCH
+git checkout -b "develop"
+# PERMISSIONS
+git ls-files --stage
+git update-index --chmod=+x path/to/file
+```
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
