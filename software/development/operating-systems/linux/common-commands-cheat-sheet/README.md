@@ -17,11 +17,6 @@ Sections,
 * [PROCESSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#processes)
 * [NETWORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#networking)
 
-* [SEARCH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#monitoring)
-* [MONITORING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#monitoring)
-* [MONITORING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#monitoring)
-* [MONITORING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#monitoring)
-
 I got a lot of this [here](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/).
 
 View my entire list of cheat sheets on
@@ -59,6 +54,9 @@ w
 
 # Who you are logged in as
 whoami
+
+# What font loaded on system
+fc-list
 ```
 
 ## HARDWARE INFO
@@ -102,7 +100,8 @@ w
 # Create a group named "test".
 groupadd test
 
-# Create an account named john, with a comment of "John Smith" and create the user's home directory.
+# Create an account named john, with a comment of "John Smith" and
+# create the user's home directory.
 useradd -c "John Smith" -m john
 
 # Delete the john account.
@@ -176,6 +175,9 @@ tail file
 
 # Display the last 10 lines of file and "follow" the file as it grows.
 tail -f file
+
+# Get sha-1 hash of a file
+sha1sum file
 ```
 ### FILE TRANSFER
 
@@ -186,13 +188,14 @@ scp file.txt server:/tmp
 # Copy *.html files from server to the local /tmp folder.
 scp server:/var/www/*.html /tmp
 
-# Copy all files and directories recursively from server to the current system's /tmp folder.
+# Copy all files and directories recursively from server to /tmp folder.
 scp -r server:/var/www /tmp
 
 # Synchronize /home to /backups/home
 rsync -a /home /backups/
 
-# Synchronize files/directories between the local and remote system with compression enabled
+# Synchronize files/directories between the local and remote
+# system with compression enabled
 rsync -avz /home server:/backups/
 ```
 
@@ -220,8 +223,8 @@ rm -r directory
 # Forcefully remove directory recursively (Dangerous)
 rm -rf directory
 
-# Copy source_directory recursively to destination. 
-# If destination exists, copy source_directory into destination, 
+# Copy source_directory recursively to destination.
+# If destination exists, copy source_directory into destination,
 # otherwise create destination with the contents of source_directory.
 cp -r source_directory destination
 ```

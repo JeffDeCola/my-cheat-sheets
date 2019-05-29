@@ -15,10 +15,10 @@ View my entire list of cheat sheets on
 Basically, a relational database is a collection of tables.
 Data is displayed in the rows and columns of the table.
 Each table has a schema that represents the fixed
-attributes and data types that the items in the table will have. 
- 
+attributes and data types that the items in the table will have.
+
 The tables have keys associated with them, which are used to
-identify specific columns or rows. 
+identify specific columns or rows.
 
 A Structured Query Language (SQL) statements provide
 the functionality for managing the database (reading, creating, updating,
@@ -33,10 +33,12 @@ Pros,
 
 Cons,
 
-* Schemas rigidly define how all data inserted into the database must be typed and composed.
+* Schemas rigidly define how all data inserted into the database must be typed and
+  composed.
 * Don’t work well — or at all — with unstructured or semi-structured data.
 * Not suited for large analytics or IoT event loads.
-* The tables in your relational database will not necessarily map one-to-one with an object or class representing the same data.
+* The tables in your relational database will not necessarily map one-to-one with
+  an object or class representing the same data.
 * Migration difficult.
 
 Players,
@@ -66,7 +68,7 @@ Cons,
 * Not very good for complex data.
 * There are a range of formats and constraints specific to each database type.
 
-NoSQL/Non-relational databases can take a variety of forms. 
+NoSQL/Non-relational databases can take a variety of forms.
 
 ### KEY_VALUE STORE
 
@@ -95,7 +97,7 @@ and manipulation, making them straightforward to those already familiar with RDB
 
 ### DOCUMENT STORES
 
-Store data in the form of JSON documents. 
+Store data in the form of JSON documents.
 Document stores are similar to key-value or wide column stores,
 but the document name is the key and the contents of the document,
 whatever they are, are the value.

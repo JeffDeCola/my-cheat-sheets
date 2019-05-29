@@ -155,7 +155,7 @@ Settings -> Network - Adapter -> Host-Only Adapter
 Also set your machine with a static IP.
 
 Refer to my cheat sheet on
-[network device configuration]https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet
+[network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
 on how to add a static IP.
 
 ## ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)
@@ -245,7 +245,7 @@ Pain in the butt,
 
 1. Windows.
 
-First setup a shared network printer on Windows. 
+First setup a shared network printer on Windows.
 Must also use a private network.
 
 2. Get some software loaded on ubuntu.

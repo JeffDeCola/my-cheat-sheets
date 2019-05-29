@@ -82,7 +82,7 @@ export PATH=/usr/lib/postgresql/10/bin:$PATH
 
 ### MAC OS
 
-I downloaded the interactive 
+I downloaded the interactive
 [installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
 by EnterpriseDB which includes,
 
@@ -151,6 +151,7 @@ sudo su - postgres
 nano /etc/postgresql/10/main/pg_hba.conf
 nano /Library/PostgreSQL/11/data/pg_hba.conf
 ```
+
 Make it look like,
 
 ```txt
@@ -217,7 +218,7 @@ Stop,
 
 ```bash
 sudo /etc/init.d/postgresql stop
-``` 
+```
 
 ### MACOS
 
@@ -242,7 +243,7 @@ Stop,
 ```bash
 sudo su - postgres
 /Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data stop -s -m fast
-``` 
+```
 
 ## USING PSQL (CLIENT)
 

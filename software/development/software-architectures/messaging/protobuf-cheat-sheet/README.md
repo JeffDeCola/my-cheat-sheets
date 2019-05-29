@@ -21,7 +21,7 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 The concept is to have a human readable file representing your data you
-want to transfer.  This file is a `.proto` file. 
+want to transfer.  This file is a `.proto` file.
 
 Then your process/machine/microservice/whatever can take that .proto
 file and compile it (using protoc) to their language of
@@ -68,7 +68,7 @@ protoc --version
 ```
 
 Almost done, now we need the libraries and the protobuf compile
-for your language. 
+for your language.
 
 ## INSTALL LIBRARIES FOR GO
 
@@ -90,7 +90,7 @@ in readable form.  We are using version 3 or
 Here is an example of a .proto file I use in my repo
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging/protobuf)
 
-```txt   
+```txt
 syntax = "proto3";
 
 package main;
