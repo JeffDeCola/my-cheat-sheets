@@ -184,7 +184,7 @@ The lower the number, the brighter the star is.
 Constellations are good for orienting yourself with the night sky.
 
 * Ursa Major - great bear. Bigger dipper.
-* Ursa Minor - Little bear. Little dipper. 
+* Ursa Minor - Little bear. Little dipper.
 
 ## NORTH AND SOUTH STAR
 

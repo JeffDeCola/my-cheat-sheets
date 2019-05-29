@@ -19,8 +19,9 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 Cloud Spanner is a fully managed, mission-critical, relational database service
-that offers transactional consistency at global scale, schemas, SQL (ANSI 2011 with extensions),
-and automatic, synchronous replication for high availability.
+that offers transactional consistency at global scale, schemas, SQL
+(ANSI 2011 with extensions), and automatic, synchronous replication
+for high availability.
 
 ## FREE RESOURCE
 
