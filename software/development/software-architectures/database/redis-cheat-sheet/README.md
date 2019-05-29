@@ -1,56 +1,34 @@
-# postgreSQL CHEAT SHEET
+# REDIS CHEAT SHEET
 
 `postgreSQL` _is an open source object-relational database system._
 
 tl;dr,
 
 ```bash
-sudo /etc/init.d/postgresql start
-ps aux | grep -i postgres
-sudo -u postgres psql
-CREATE USER jeffd;
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
-CREATE DATABASE jeff_db_example OWNER jeffd;
-DROP DATABASE jeff_db_example3;
-\l
-\c jeff_db_example
-CREATE TABLE people (id int primary key not null, first_name text, last_name text);
-\d
+
 ```
 
 Documentation and reference,
 
-* [postgreSQL website](https://www.postgresql.org/)
+* [redis website](https://redis.io/)
 * To use with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis)
 * A great list of using
   [go with databases](https://github.com/gostor/awesome-go-storage).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## HISTORY
-
-PostgreSQL is an object-relational database management system
-(ORDBMS) based on POSTGRES, Version 4.2, developed at the
-University of California at Berkeley Computer Science Department.
-
-The origins of PostgreSQL date back to 1986 as part of the POSTGRES
-project at the University of California at Berkeley and has more than
-30 years of active development on the core platform.
-
 ## OVERVIEW
+
+Redis ???
 
 There are a few ways to interact with your database (server),
 
 * Command Line
 * psql (client)
-* [go library](https://github.com/lib/pq)
+* go library
 * pgAdmin4
-
-Here is an illustration,
-
-![IMAGE - postgreSQL-server - IMAGE](../../../../../docs/pics/postgreSQL-server.jpg)
 
 ## INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4
 
