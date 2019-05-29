@@ -85,7 +85,7 @@ Place in .bashrc,
 
 ```bash
 LS_COLORS='ow=01;36;40'
-export LS_COLORS 
+export LS_COLORS
 ```
 
 For more information, refer to my

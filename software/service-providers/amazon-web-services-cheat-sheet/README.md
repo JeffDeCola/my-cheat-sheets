@@ -17,7 +17,7 @@ View my entire list of cheat sheets on
 There are a lot of
 [free resources](https://aws.amazon.com/free/)
 across aws.
- 
+
 ## AMAZON WEB SERVICES (AWS) OVERVIEW
 
 AWS is absolutely massive with a host of
@@ -280,7 +280,7 @@ There are a few ways to interact with `aws`,
 * Using the gui/console.
 * Using the aws cli (e.g. `aws`). See below.
 * Using aws SDK Client Libraries / API
-  (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)). 
+  (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)).
   My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/amazon-aws).
 
 This cheat sheet will focus on `aws`.

@@ -29,3 +29,4 @@ exclude_patterns:
 - "docs/"
 - "other/mathematics/"
 - "software/development/languages/latex-cheat-sheet"
+- "software/development/languages/go-cheat-sheet/src/"

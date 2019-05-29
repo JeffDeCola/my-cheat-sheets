@@ -20,7 +20,7 @@ hardware/software systems used to manage it.
   * Blu-ray
   * Blu-ray Ultra HD
 * SILICON BASED
-  * USB Thumb Drive / Flash 
+  * USB Thumb Drive / Flash
   * [microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
   * [RAM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
   * ROM
