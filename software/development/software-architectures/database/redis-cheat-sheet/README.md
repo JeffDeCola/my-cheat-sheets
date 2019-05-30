@@ -25,6 +25,8 @@ exit
 Documentation and reference,
 
 * [redis website](https://redis.io/)
+* Full list of
+  [redis-cli commands](https://redis.io/commands#hash).
 * To use with go, refer to my repo
   [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis)
 * A great list of using
@@ -182,13 +184,66 @@ Start/stop (As mentioned above systemd is actually running the service manager),
 sudo /etc/init.d/redis_6379 start
 sudo /etc/init.d/redis_6379 stop
 ```
-## SOME COMMANDS
+## REDIS-CLI COMMANDS
 
-We can use the command SET to store the value "whats up" at key "jeff":
+Start,
 
 ```bash
 redis-cli
+```
+
+Set/get/delete,
+
+```bash
 set jeff "whats up"
 get jeff
+del jeff
 exit
 ```
+
+But it probably makes more sense to be more organized,
+
+Set/get more organized,
+
+```bash
+set people:jeff "whats up"
+set people:larry "yo yo"
+get people:jeff
+exit
+
+Expire data,
+
+```bash
+set bye "this will expire in 20 seconds"
+expire bye 20
+get bye
+```
+
+Lists,
+
+* RPUSH puts the new value at the end of the list
+* LPUSH puts the new value at the start of the list
+* LRANGE gets a subset of the list
+* LLEN returns the current length of the list.
+* LPOP removes the first element from the list and returns it.
+* RPOP removes the last element from the list and returns it.
+
+```bash
+rpush friends "Alice"
+rpush friends "Bob"
+lpush friends "Sam"
+lrange friends 0 -1
+llen friends
+```
+
+Set is like a list, but no order,
+
+```bash
+sadd superpowers "flight"
+sadd superpowers "x-ray vision"
+sadd superpowers "reflexes"
+smembers superpowers
+```
+
+Full list of redis-cli commands
+[here](https://redis.io/commands#hash).
