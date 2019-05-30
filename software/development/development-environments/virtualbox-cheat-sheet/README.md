@@ -243,12 +243,12 @@ Just use sftp on port 3022.
 
 Pain in the butt,
 
-1. Windows.
+Step 1. Windows.
 
 First setup a shared network printer on Windows.
 Must also use a private network.
 
-2. Get some software loaded on ubuntu.
+Step 2. Get some software loaded on ubuntu.
 
 ```bash
 sudo apt-get install lsb
@@ -257,9 +257,9 @@ sudo apt-get install python3-smbc
 sudo apt-get install smbclient
 ```
 
-3. Get printer driver from printer website. Most likely a .deb file.
+Step 3. Get printer driver from printer website. Most likely a .deb file.
 
-4. Then you need to find the printer.
+Step 4. Then you need to find the printer.
 
 You could search for network printer on `192.168.1.x` or just type it in.
 

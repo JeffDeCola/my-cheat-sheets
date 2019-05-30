@@ -1,11 +1,25 @@
 # REDIS CHEAT SHEET
 
-`postgreSQL` _is an open source object-relational database system._
+`redis` _is an open source non-relational (NoSQL) database system
+using key:value storage._
 
 tl;dr,
 
 ```bash
-
+# VERSIONS
+redis-server --version
+redis-cli --version
+# START/STOP - INIT AT BOOT
+sudo /etc/init.d/redis_6379 start
+sudo /etc/init.d/redis_6379 stop
+ps aux | grep -i redis
+# REDIS_CLI
+redis-cli ping
+# SET/GET
+redis-cli
+set jeff "whats up"
+get jeff
+exit
 ```
 
 Documentation and reference,
@@ -14,345 +28,167 @@ Documentation and reference,
 * To use with go, refer to my repo
   [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis)
 * A great list of using
-  [go with databases](https://github.com/gostor/awesome-go-storage).
+  [go with databases](https://github.com/gostor/awesome-go-storage)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
-Redis ???
+Redis is an open source key-value store,
+often referred to as a NoSQL database.
+The essence of a key-value store is the ability
+to store some data, called a value, inside a key.
+This data can later be retrieved only if we know the
+exact key used to store it.
 
 There are a few ways to interact with your database (server),
 
 * Command Line
-* psql (client)
-* [github.com/???? go library](https://github.com/lib/pq)
-* pgAdmin4
+  * `redis-server` - The server itself
+  * `redis-sentinel`
+  * `redis-benchmark` 
+  * `redis-check-aof`
+  * `redis-check-dump`
+* redis-cli (client)
+* [github.com/go-redis/redis go library](https://github.com/go-redis/redis)
 
-## INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4
+Here is an illustration,
+
+![IMAGE - redis-server - IMAGE](../../../../../docs/pics/redis-server.jpg)
+
+## INSTALL REDIS (SERVER) & REDIS-CLI (CLIENT)
 
 Install from
-[here](https://www.postgresql.org/download).
+[here](https://redis.io/download).
 
-### UBUNTU/DEBIAN
-
-Install postgreSQL Server,
+Or install source,
 
 ```bash
-sudo apt-get update
-sudo apt-get -y install postgresql postgresql-client postgresql-contrib
-sudo apt-get -y install pgadmin3
+wget http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar xzf redis-5.0.5.tar.gz
+cd redis-5.0.5
+make
+cd ..
+sudo mv redis-5.0.5 /usr/lib
 ```
 
 Add command line tools path ~/.bashrc
 
 ```bash
-export PATH=/usr/lib/postgresql/9.5/bin:$PATH
-export PATH=/usr/lib/postgresql/10/bin:$PATH
+export PATH=/usr/lib/redis-5.0.5/src:$PATH
 ```
-
-### MAC OS
-
-I downloaded the interactive
-[installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-by EnterpriseDB which includes,
-
-* PostgreSQL Server
-* pgAdmin - graphical tool for managing database
-* Stackbuilder - package manager
-* Command Line Tools (e.g. createdb)
-
-Add command line tools path ~/.bashrc
-
-```bash
-export PATH=/Library/PostgreSQL/11/bin:$PATH
-```
-
-You could also use brew,
-
-```bash
-brew update
-brew install postgresql
-```
-
-### INSTALL pgAdmin4
-
-`pgAdmin` is a graphical tool for managing and
-developing your databases.
-
-Install from [here](https://www.pgadmin.org/download/)
-
-It will run in your browser such as
-[http://127.0.0.1:50088/browser/](http://127.0.0.1:50088/browser/)
-
-To connect, just use the username `postgres` and the password you
-will create below.
 
 ### CHECK VERSIONS
 
 Server,
 
 ```bash
-postgres -V
+redis-server --version
 ```
 
 Client,
 
 ```bash
-psql -V
-```
-
-pgadmin,
-
-```bash
-pgadmin3 -v
+redis-cli --version
 ```
 
 ## CONFIGURE
 
-The configuration files are,
+There are a few simples steps to properly configure redis
+on your machine.  We will be using port 6379.
 
-* pg_hba.conf - Where Authentication is handled
-* postgresql.conf - Server config.
+### CONFIGURATION FILE
 
-Edit pg_hba.conf (macOS path is second one),
+The configuration template file is `redis.conf`, located in
+`/usr/lib/redis-5.0.5`.
 
-```bash
-sudo su - postgres
-nano /etc/postgresql/10/main/pg_hba.conf
-nano /Library/PostgreSQL/11/data/pg_hba.conf
-```
-
-Make it look like,
-
-```txt
-# Local networks
-host    all     all     xx.xx.xx.xx/xx  md5
-# Example
-host    all     all     192.168.0.0/24  md5
-host    all     all     127.0.0.0/32    md5
-```
-
-Edit postgresql.conf (macOS path is second one),
+Place in `/etc/redis`,
 
 ```bash
-sudo su - postgres
-sudo nano /etc/postgresql/10/main/postgresql.conf
-nano /Library/PostgreSQL/11/data/postgresql.conf
+sudo mkdir /etc/redis
+sudo cp /usr/lib/redis-5.0.5/redis.conf /etc/redis/6379.conf
 ```
 
-Replace `listen_addresses = 'localhost'` with `listen_addresses = '*'`
-
-Restart server and confirm postgres listening on port 5432,
-
-```txt
-netstat -ant | grep 5432
-tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN
-tcp6       0      0 :::5432                 :::*                    LISTEN
-```
-
-Change both passwords for user postgres and the username postgres
-in psql,
-
-Change user password,
+Edit,
 
 ```bash
-sudo passwd postgres
+sudo nano /etc/redis/6379.conf
 ```
 
-Then change username in psql password,
+* Set daemonize to yes (default set to no).
+* Set the pidfile to `/var/run/redis_6379.pid`.
+* Change the port accordingly.
+* Set your preferred loglevel.
+* Set the logfile to `/var/log/redis_6379.log`.
+* Set the dir to `/var/redis/6379` and dbfilename to jeff-redis.rdb.
+
+## START ON BOOT USING THE OLD SysV INIT SCRIPT
+
+SysV init script are old and really should be updated with systemd
+.service scripts but since redis still use them,
+we will do it.  Note the systemd actually runs these scripts,
+not the old init system.
+
+For more information on systemd and init refer to my cheat sheet
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+
+Create an init.d script,
 
 ```bash
-sudo -u postgres psql
-ALTER USER postgres PASSWORD 'Password';
+sudo cp /usr/lib/redis-5.0.5/utils/redis_init_script /etc/init.d/redis_6379
 ```
 
-## START/STOP POSTGRESQL SERVER
-
-Check the postgreSQL server is running,
+Edit,
 
 ```bash
-ps aux | grep -i postgres
+sudo nano /etc/init.d/redis_6379
 ```
 
-### LINUX
-
-Uses init.d,
-
-Start,
+change to look like,
 
 ```bash
-sudo /etc/init.d/postgresql start
+EXEC=/usr/lib/redis-5.0.5/src/redis-server
+CLIEXEC=/usr/lib/redis-5.0.5/src/redis-cli
 ```
 
-Stop,
+Add to init,
 
 ```bash
-sudo /etc/init.d/postgresql stop
+sudo update-rc.d redis_6379 defaults
 ```
 
-### MACOS
+### DATABASE STORAGE AREA
 
-Must be postgres user.
-
-Status,
+Create the database storage area,
 
 ```bash
-sudo su - postgres
-/Library/PostgreSQL/11/bin/pg_ctl status -D /Library/PostgreSQL/11/data
+sudo mkdir /var/redis
+sudo mkdir /var/redis/6379
 ```
 
-Start,
+## START/STOP REDIS-SERVER
+
+Check if the redis-server server is running,
 
 ```bash
-sudo su - postgres
-/Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data start
+ps aux | grep -i redis
+redis-cli ping
 ```
 
-Stop,
+Start/stop (As mentioned above systemd is actually running the service manager),
 
 ```bash
-sudo su - postgres
-/Library/PostgreSQL/11/bin/pg_ctl -D /Library/PostgreSQL/11/data stop -s -m fast
+sudo /etc/init.d/redis_6379 start
+sudo /etc/init.d/redis_6379 stop
 ```
+## SOME COMMANDS
 
-## USING PSQL (CLIENT)
-
-Become user `postgres`,
-
-```bash
-sudo su - postgres
-./psql
-```
-
-But I like to use,
+We can use the command SET to store the value "whats up" at key "jeff":
 
 ```bash
-sudo -u postgres psql
-```
-
-Quit,
-
-```bash
-\q
-```
-
-## CREATE A USER
-
-Create a user `jeffd`,
-
-Method 1 - Create user using command line as user postgres,
-
-```bash
-sudo su - postgres
-./createuser jeffd
-```
-
-Method 2 - Create user using command line without becoming user postgres,
-
-```bash
-sudo -u postgres createuser jeffd
-```
-
-Method 3 (USER THIS ONE) - Create user using
-psql (REMEMBER TO END WITH `;`),
-
-```bash
-sudo -u postgres psql
-CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
-CREATE USER jeffd;
-```
-
-Check user was created,
-
-```bash
-sudo -u postgres psql
-\du
-```
-
-## CREATE A DATABASE
-
-Create database `jeff_db_example`,
-
-Method 1 - Create database using command line as user postgres,
-
-```bash
-sudo su - postgres
-./creatdb --owner=jeffd jeff_db_example
-```
-
-Method 2 - Create database using command line without becoming user postgres,
-
-```bash
-sudo -u postgres createdb --owner=jeffd jeff_db_example
-```
-
-Method 3 (USER THIS ONE) - Create database using
-psql (REMEMBER TO END WITH `;`),
-
-```bash
-sudo -u postgres psql
-CREATE DATABASE jeff_db_example3 OWNER jeffd;
-```
-
-To drop a database,
-
-```bash
-DROP DATABASE jeff_db_example3;
-```
-
-Add a user to a database,
-
-```bash
-???
-```
-
-List all databases from psql,
-
-```bash
-sudo -u postgres psql
-\l
-```
-
-## CONNECT TO A DATABASE
-
-Connect to a `database` using psql,
-
-```bash
-sudo -u postgres psql
-\c jeff_db_example
-```
-
-Then you can do things like create a table,
-
-## CREATE A TABLE (YOUR SCHEMA)
-
-Create table,
-
-```bash
-CREATE TABLE people (id int primary key not null, first_name text, last_name text);
-GRANT ALL PRIVILEGES ON TABLE people TO jeffd;
-```
-
-## LIST TABLES
-
-List all tables in a database your connected to,
-
-```bash
-\d
-```
-
-List a table in database,
-
-```bash
-\d people
-\d+ people
-```
-
-## LIST ROWS OF TABLE
-
-```bash
-select * from people;
-select last_name from people;
+redis-cli
+set jeff "whats up"
+get jeff
+exit
 ```

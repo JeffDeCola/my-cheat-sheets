@@ -5,7 +5,7 @@
 Documentation and reference,
 
 * A great list of using
-  [go with databases](https://github.com/gostor/awesome-go-storage).
+  [go with databases](https://github.com/gostor/awesome-go-storage)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

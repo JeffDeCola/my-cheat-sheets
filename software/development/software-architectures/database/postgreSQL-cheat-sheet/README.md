@@ -50,9 +50,11 @@ project at the University of California at Berkeley and has more than
 There are a few ways to interact with your database (server),
 
 * Command Line
+  * `creatdb`
+  * `createuser`
 * psql (client)
 * [github.com/lib/pq go library](https://github.com/lib/pq)
-* pgAdmin4
+* pgAdmin4 (http client)
 
 Here is an illustration,
 
@@ -206,7 +208,10 @@ ps aux | grep -i postgres
 
 ### LINUX
 
-Uses init.d,
+Uses init.d SysV init script to start at boot. Refer to my
+cheat sheet 
+[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+for more information about init scripts at boot.
 
 Start,
 

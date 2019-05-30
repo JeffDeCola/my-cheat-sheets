@@ -25,7 +25,7 @@ As an illustration,
 
 ![IMAGE - monolith vs microservice - IMAGE](../../../../../docs/pics/monolith-vs-microservice.jpg)
 
-# COMMUNICATION
+## COMMUNICATION
 
 Popular ways are,
 
