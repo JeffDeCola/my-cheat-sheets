@@ -43,7 +43,7 @@ Arrays are,
 
 They are really not used that much.
 
-### BASIC FORMAT
+### ARRAY - BASIC FORMAT
 
 The basic verbose format is,
 
@@ -105,7 +105,7 @@ len(name)
 cap(name)
 ```
 
-## SLICE (BUILT ON ARRAY) - DATA STRUUTRE - REFERENCE TYPE
+## SLICE (BUILT ON ARRAY) - DATA STRUCTURE - REFERENCE TYPE
 
 Slices are for lists,
 
@@ -120,7 +120,7 @@ Slices are for lists,
 * A list/collection identified by an index.
 * Value of uninitialized slice is nil.
 
-### BASIC FORMAT
+### SLICE - BASIC FORMAT
 
 The basic verbose format is,
 
@@ -266,7 +266,7 @@ Maps are,
 * Value of uninitialized map is nil.
 * Map are build on a hash table.
 
-### BASIC FORMAT
+### MAP - BASIC FORMAT
 
 ```go
 // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS - NO APPEND
@@ -333,7 +333,7 @@ delete(a,1)
 Elements of different types and start with capital letter.
 Anything with a capital letter is exported from package.
 
-### BASIC FORMAT
+### STRUCT - BASIC FORMAT
 
 A struct is a data structure.
 
@@ -369,7 +369,7 @@ of a value.
 * `*` is the `"contents of"`
 * `&` is `"address of"`
 
-### BASIC FORMAT
+### POINTER -  BASIC FORMAT
 
 Here is an example,
 
@@ -473,7 +473,7 @@ func main() {
 
 Syntactic way to have multiple structs do the same thing differently,
 
-### BASIC FORMAT
+### INTERFACE - BASIC FORMAT
 
 Basic format,
 
@@ -491,7 +491,7 @@ See the interface [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tr
 
 tbd
 
-### BASIC FORMAT
+### CHANNEL - BASIC FORMAT
 
 Basic Format,
 

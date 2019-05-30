@@ -30,3 +30,5 @@ exclude_patterns:
 - "other/mathematics/"
 - "software/development/languages/latex-cheat-sheet"
 - "software/development/languages/go-cheat-sheet/src/"
+- "software/development/languages/go-cheat-sheet/methods.md"
+- "software/development/languages/go-cheat-sheet/functions.md"

@@ -179,6 +179,7 @@ tail -f file
 # Get sha-1 hash of a file
 sha1sum file
 ```
+
 ### FILE TRANSFER
 
 ```bash
