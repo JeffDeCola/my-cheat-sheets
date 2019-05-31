@@ -9,12 +9,23 @@ tl;dr,
 # VERSIONS
 redis-server --version
 redis-cli --version
-# START/STOP - INIT AT BOOT
+# MANUAL START
+redis-server /etc/redis/6379.conf
+# CHECK IF ALIVE
+redis-cli ping
+ps aux | grep -i redis
+# SHUTDOWN saves the data file /var/redis/6379/jeff-redis.rdb
+redis-cli shutdown
+# CHECK LOG
+tail /var/log/redis_6379.log
+# LINUX BOOT - USING INIT
 sudo /etc/init.d/redis_6379 start
 sudo /etc/init.d/redis_6379 stop
 ps aux | grep -i redis
-# REDIS_CLI
-redis-cli ping
+# MACOS BOOT - USING LAUNCHD
+launchctl load ~/Library/LaunchAgents/local.redis.redis-server.plist
+launchctl unload ~/Library/LaunchAgents/local.redis.redis-server.plist
+launchctl list | grep redis
 # SET/GET
 redis-cli
 set jeff "whats up"
@@ -180,6 +191,28 @@ After 900 sec (15 min) if at least 1 key changed
 After 300 sec (5 min) if at least 10 keys changed
 After 60 sec if at least 10000 keys changed
 
+# TEST YOU CAN RUN IT
+
+```bash
+redis-server /etc/redis/6379.conf
+```
+
+Check if the redis-server server is running,
+
+```bash
+ps aux | grep -i redis
+redis-cli ping
+redis-cli shutdown
+```
+
+Shutdown saves the data file.
+
+Check log if you have issues,
+
+```bash
+tail /var/log/redis_6379.log
+```
+
 ## START ON BOOT
 
 Lets start the redis database server on boot.
@@ -233,16 +266,65 @@ Start redis-server using `launchd`.
 For more information on launchd refer to my cheat sheet
 [here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet)
 
-???
+Create a configuration property list file for your daemon (redis).
+You can call it what you like.
 
+```bash
+nano ~/Library/LaunchAgents/local.redis.redis-server.plist
+```
 
-## CHECK IF RUNNING
+with,
+
+```json
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.redis.redis-server</string>
+	<key>Program</key>
+    <string>/usr/local/lib/redis-5.0.5/src/redis-server</string>
+	<key>ProgramArguments</key>
+	<array>
+        <string>/etc/redis/6379.conf</string>
+	</array>
+    <key>KeepAlive</key>
+    <true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/var/log/redis_6379.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/redis_6379.log</string>
+</dict>
+</plist>
+```
+
+Lets load it,
+
+```bash
+launchctl load ~/Library/LaunchAgents/local.redis.redis-server.plist
+```
+
+Check if launchd launched it (does not mean redis is working),
+
+```bash
+launchctl list | grep redis
+```
+
+### CHECK IF RUNNING
 
 Check if the redis-server server is running,
 
 ```bash
 ps aux | grep -i redis
 redis-cli ping
+```
+
+Check log if issues,
+
+```bash
+tail /var/log/redis_6379.log
 ```
 
 ## REDIS-CLI COMMANDS
