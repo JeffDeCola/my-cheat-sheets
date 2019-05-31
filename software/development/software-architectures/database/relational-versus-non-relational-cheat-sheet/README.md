@@ -70,7 +70,7 @@ Cons,
 
 NoSQL/Non-relational databases can take a variety of forms.
 
-### KEY_VALUE STORE
+### KEY VALUE STORE
 
 Simple and elegant and crazy fast.
 Low-latency data access at any scale.

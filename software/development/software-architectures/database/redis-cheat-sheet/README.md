@@ -64,11 +64,12 @@ Here is an illustration,
 Install from
 [here](https://redis.io/download).
 
-Or install source,
+### LINUX FROM SOURCE
 
 ```bash
 wget http://download.redis.io/releases/redis-5.0.5.tar.gz
 tar xzf redis-5.0.5.tar.gz
+rm redis-5.0.5.tar.gz
 cd redis-5.0.5
 make
 cd ..
@@ -79,6 +80,24 @@ Add command line tools path ~/.bashrc
 
 ```bash
 export PATH=/usr/lib/redis-5.0.5/src:$PATH
+```
+
+### MACOS FROM SOURCE
+
+```bash
+curl -O http://download.redis.io/releases/redis-5.0.5.tar.gz
+tar xzf redis-5.0.5.tar.gz
+rm redis-5.0.5.tar.gz
+cd redis-5.0.5
+make
+cd ..
+sudo mv redis-5.0.5 /usr/local/lib
+```
+
+Add command line tools path ~/.bashrc
+
+```bash
+export PATH=/usr/local/lib/redis-5.0.5/src:$PATH
 ```
 
 ### CHECK VERSIONS
@@ -112,6 +131,13 @@ sudo mkdir /etc/redis
 sudo cp /usr/lib/redis-5.0.5/redis.conf /etc/redis/6379.conf
 ```
 
+Or for macOS,
+
+```bash
+sudo mkdir /etc/redis
+sudo cp /usr/local/lib/redis-5.0.5/redis.conf /etc/redis/6379.conf
+```
+
 Edit,
 
 ```bash
@@ -123,17 +149,50 @@ sudo nano /etc/redis/6379.conf
 * Change the port accordingly.
 * Set your preferred loglevel.
 * Set the logfile to `/var/log/redis_6379.log`.
-* Set the dir to `/var/redis/6379` and dbfilename to jeff-redis.rdb.
+* Set the dir to `/var/redis/6379` and dbfilename to `jeff-redis.rdb`.
 
-## START ON BOOT USING THE OLD SysV INIT SCRIPT
+### DATABASE STORAGE AREA
+
+Create the database storage area,
+
+```bash
+sudo mkdir /var/redis
+sudo mkdir /var/redis/6379
+```
+
+But most data is kept in memory for performance.
+
+You could,
+
+* Issue the save command
+* Edit your config file
+
+the default is,
+
+```txt
+
+save 900 1
+save 300 10
+save 60 10000
+```
+
+After 900 sec (15 min) if at least 1 key changed
+After 300 sec (5 min) if at least 10 keys changed
+After 60 sec if at least 10000 keys changed
+
+## START ON BOOT
+
+Lets start the redis database server on boot.
+
+### LINUX - USE THE OLD SysV INIT SCRIPT
 
 SysV init script are old and really should be updated with systemd
 .service scripts but since redis still use them,
-we will do it.  Note the systemd actually runs these scripts,
+we will do it.  Note the `systemd` actually runs these scripts,
 not the old init system.
 
-For more information on systemd and init refer to my cheat sheet
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+For more information on `systemd` and `init` refer to my cheat sheet
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
 
 Create an init.d script,
 
@@ -147,7 +206,7 @@ Edit,
 sudo nano /etc/init.d/redis_6379
 ```
 
-change to look like,
+Change the following to look like,
 
 ```bash
 EXEC=/usr/lib/redis-5.0.5/src/redis-server
@@ -160,16 +219,24 @@ Add to init,
 sudo update-rc.d redis_6379 defaults
 ```
 
-### DATABASE STORAGE AREA
-
-Create the database storage area,
+Start/stop (As mentioned above systemd is actually running the service manager),
 
 ```bash
-sudo mkdir /var/redis
-sudo mkdir /var/redis/6379
+sudo /etc/init.d/redis_6379 start
+sudo /etc/init.d/redis_6379 stop
 ```
 
-## START/STOP REDIS-SERVER
+### MACOS - LAUNCHD
+
+Start redis-server using `launchd`.
+
+For more information on launchd refer to my cheat sheet
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet)
+
+???
+
+
+## CHECK IF RUNNING
 
 Check if the redis-server server is running,
 
@@ -178,12 +245,6 @@ ps aux | grep -i redis
 redis-cli ping
 ```
 
-Start/stop (As mentioned above systemd is actually running the service manager),
-
-```bash
-sudo /etc/init.d/redis_6379 start
-sudo /etc/init.d/redis_6379 stop
-```
 ## REDIS-CLI COMMANDS
 
 Start,
@@ -210,6 +271,7 @@ set people:jeff "whats up"
 set people:larry "yo yo"
 get people:jeff
 exit
+```
 
 Expire data,
 
@@ -247,3 +309,9 @@ smembers superpowers
 
 Full list of redis-cli commands
 [here](https://redis.io/commands#hash).
+
+## TO USE WITH GO
+
+Refer to my repo
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis).
+
