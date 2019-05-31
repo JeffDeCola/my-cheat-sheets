@@ -1,6 +1,6 @@
-# SYSTEMD SYSTEMCTL CHEAT SHEET
+# SYSTEMD CHEAT SHEET
 
-`systemd systemctl` _controls what programs run when linux boots up._
+`systemd` _controls what programs run when linux boots up._
 
 tl;dl,
 

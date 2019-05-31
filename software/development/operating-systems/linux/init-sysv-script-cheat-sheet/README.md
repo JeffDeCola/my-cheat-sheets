@@ -14,9 +14,9 @@ sudo /etc/init.d/say-hi stop
 ps -efa|grep init
 ```
 
-Current way to start a process at boot,
+Proper way to start a process at boot,
 
-* [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+* [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
 
 Note: Ubuntu 14.04 uses upstart.
 
