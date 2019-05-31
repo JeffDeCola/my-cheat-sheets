@@ -191,7 +191,7 @@ After 900 sec (15 min) if at least 1 key changed
 After 300 sec (5 min) if at least 10 keys changed
 After 60 sec if at least 10000 keys changed
 
-# TEST YOU CAN RUN IT
+## TEST YOU CAN RUN IT
 
 ```bash
 redis-server /etc/redis/6379.conf
