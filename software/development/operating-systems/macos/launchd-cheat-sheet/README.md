@@ -22,8 +22,11 @@ View my entire list of cheat sheets on
 
 `launchd` launches at boot, two types of processes,
 
-* Agents - “~/Library/LaunchAgents” runs on behalf of the logged-in user
-* Daemons - “/Library/LaunchDaemons” runs on behalf of the root users
+* User
+  * Agents - “~/Library/LaunchAgents” runs on behalf of the logged-in user
+* Root
+  * Daemons - “/Library/LaunchDaemons” runs when no users logged in
+  * Agents - “/Library/LaunchAgents” when any user logged in
 
 Here is an illustration,
 
@@ -107,12 +110,22 @@ with,
 <dict>
     <key>Label</key>
     <string>local.say-hi</string>
-    <key>ProgramArguments</key>
+    <key>Program</key>
     <array>
         <string>/Users/jeffdecola/say-hi.sh</string>
     </array>
+	<key>ProgramArguments</key>
+	<array>
+        <string></string>
+	</array>
     <key>KeepAlive</key>
     <true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/jeffdecola/say-hi.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/jeffdecola/say-hi.log</string>
 </dict>
 </plist>
 ```
