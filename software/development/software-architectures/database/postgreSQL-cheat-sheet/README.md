@@ -31,6 +31,8 @@ Documentation and reference,
   [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
 * A great list of using
   [go with databases](https://github.com/gostor/awesome-go-storage).
+* Check out my non-relational/NoSQL database cheat sheet on
+  [redis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

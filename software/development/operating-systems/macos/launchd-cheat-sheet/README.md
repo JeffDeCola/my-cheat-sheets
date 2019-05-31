@@ -54,7 +54,7 @@ See a list of what running,
 launchctl list
 ```
 
-## CREATE, START & STOP A SERVICE (BY WAY OF AN EXAMPLE)
+## CREATE, START & STOP AN AGENT/DAEMON (BY WAY OF AN EXAMPLE)
 
 Lets do this by way of creating a service that runs at boot.
 How about something that simply prints `Hi $USER, #`,
