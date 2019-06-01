@@ -3,28 +3,28 @@
 `astronomy` _goes over the main celestial bodies
 in our solar system.
 
-* [SUN]()
-* [MERCURY]()
-* [VENUS]()
-* [EARTH]()
-  * [THE MOON]()
-* [MARS]()
-* [THE ASTEROID BELT]()
-* [JUPITER]()
-* [SATURN]()
-* [URANUS]()
-* [NEPTUNE]()
-* [DWARF PLANETS]()
-  * [PLUTO (DWARF PLANET)]()
-  * [ERIS (DWARF PLANET)]()
-  * [HAUMEA (DWARF PLANET)]()
-* [KUIPER BELT]()
-* [OORT CLOUD]()
+* [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#sun)
+* [MERCURY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#mercury)
+* [VENUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#venus)
+* [EARTH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#earth)
+  * [THE MOON](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#the-moon)
+* [MARS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#mars)
+* [THE ASTEROID BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#the-asteroid-belt)
+* [JUPITER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#jupiter)
+* [SATURN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#saturn)
+* [URANUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#uranus)
+* [NEPTUNE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#neptune)
+* [DWARF PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#dwarf-planets)
+  * [PLUTO (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#pluto)
+  * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#eris)
+  * [HAUMEA (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#haumea)
+* [KUIPER BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#kuiper-belt)
+* [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#oort-cloud)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## OUR SUN
+## SUN
 
 Our sun, in the grand scheme of things, the sun is not very large,
 not very hot.
@@ -61,10 +61,12 @@ not very hot.
 
 ## EARTH
 
-* We live here
+* 365 days to orbit sun
+* 1 days to rotate on axis (what a coincidence)
 
 ### THE MOON
 
+* 27 days to orbit earth
 * Copernicus and Brahe have craters named after them
 * Synchronous rotation
 * We think Formed by another planet (thea) hitting the earth
@@ -74,7 +76,7 @@ not very hot.
 ## MARS
 
 * About 2 years to orbit sun
-* ?? rotate on axis
+* 24.6 rotate on axis
 * Thin atmosphere of C02 and can reach -5&deg; in daylight
 
 ## THE ASTEROID BELT
@@ -85,7 +87,7 @@ not very hot.
 
 ## JUPITER
 
-* ?? days to orbit sun
+* 433 days to orbit sun
 * 10 hours to rotate on axis
 * The King of Planets
 * The red dot is a storm that has been ragging for over 300 years.
@@ -95,7 +97,7 @@ not very hot.
 ## SATURN
 
 * 30 years to orbit sun
-* ?? days to rotate on axis
+* 10 hours to rotate on axis
 * Furthest planet we can see with naked eye from earth
 * Largest moon is titan
 
@@ -110,26 +112,26 @@ not very hot.
 ## NEPTUNE
 
 * 165 years to orbit sun
-* ?? days to rotate on axis
+* 15 hours to rotate on axis
 * Extreme weather
 
 ## DWARF PLANETS
 
 A celestial body resembling a small planet
 but lacking certain technical criteria that
-are required for it to be classed as such. 
+are required for it to be classed as such
 
 ### PLUTO
 
-* ?? years to orbit sun
-* ?? days to rotate on axis
+* 248 years to orbit sun
+* 6.4 days to rotate on axis
 * De-classified in 2006
 * Has 5 moons
-* Plutos orbit is off, so it seems Pluto was captured by the sun
+* Pluto's orbit is off, so it seems Pluto was captured by the sun
 
 ### ERIS
 
-* ?? years to orbit sun
+* 558 years to orbit sun
 
 ### HAUMEA
 
@@ -148,4 +150,4 @@ are required for it to be classed as such.
 * Huge region (Most of our solar system)
 * Trillions of objects our there
 * Extended shell of icy objects that exist
-  in the outermost reaches of the solar system.
+  in the outermost reaches of the solar system
