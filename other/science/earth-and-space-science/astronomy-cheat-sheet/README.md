@@ -3,10 +3,24 @@
 `astronomy` _is the branch of science which deals with celestial objects,
 space, and the physical universe as a whole._
 
+* [A BRIEF HISTORY OF ASTRONOMY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#brief-history-of-astronomy)
+  * [NICOLAUS COPERNICUS (1473-1543) POLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
+  * [TYCHO BRAHE (1546-1601) DANISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#tycho-brahe-1546-1601-danish)
+  * [JOHANNES KEPLER (1571-1630) GERMAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#johannes-kepler-1571-1630-german)
+  * [GALILEO GALILEI (1564-1642) ITALY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+  * [SIR ISSAC NEWTON (1642-1727) ENGLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
+* [THE CELESTIAL SPHERE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#the-celestial-sphere)
+  * [MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#mapping-star-on-celestial-sphere-declination--right-ascension)
+  * [OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#observer-on-earth-finding-a-star-altitude--azimuth)
+* [STAR MAGNITUDE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#star-magnitude)
+* [CONSTELLATIONS & STARS (POLARIS THE NORTH STAR)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#constellations--stars-polaris-the-north-star)
+* [NORTH AND SOUTH STAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#north-and-south-star)
+* [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## BRIEF HISTORY OF ASTRONOMY
+## A BRIEF HISTORY OF ASTRONOMY
 
 This is a brief history of the major players that started
 modern science.  And sadly, the church fought them
