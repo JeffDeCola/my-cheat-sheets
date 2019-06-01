@@ -7,7 +7,7 @@ configuration file._
 Documentation and reference,
 
 * My cheat sheet,
-  [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/infrastructure-as-a-service/cloud-services-compute/google-cloud-platform-cheat-sheet/google-compute-engine-create-image-packer.md)
+  [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md)
 * [Packer Documentation](https://www.packer.io/)
 
 My Repo example using packer is
