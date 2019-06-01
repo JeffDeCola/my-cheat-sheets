@@ -18,6 +18,7 @@ space, and the physical universe as a whole._
 * [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
 * [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#planets)
 * [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+* [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
 
 On another cheat sheet,
 
@@ -236,6 +237,30 @@ What is a planet?
 * Can clear the area around its orbit
 
 The problem with Pluto could not clear the area around its orbit.
+
+## WHAT OBJECTS HAVE WE LANDED ON
+
+List of landings on extraterrestrial bodies,
+
+* Planets
+  * Mercury
+  * Venus
+  * Mars
+  * Jupiter
+  * Saturn
+* Moons
+  * Earth
+  * Mars
+    * Phobos
+  * Saturn
+    * Titan
+* Asteroids
+  * Eros
+  * Itokawa
+  * Ryugu
+* Comets
+  * Comet 9P/Tempel 1
+  * Comet 67P/Churyumov–Gerasimenko
 
 ## TYPES OF STARS
 
