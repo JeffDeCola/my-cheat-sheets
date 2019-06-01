@@ -3,7 +3,7 @@
 `astronomy` _goes over the main celestial bodies
 in our solar system.
 
-* [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#astronomial-units-and-scale)
+* [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#astronomical-units-and-scale)
 * [SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#solar-system)
 
 The order of celestial starting with the sun,
@@ -39,7 +39,7 @@ It's approximately 8 light-minutes. More exactly,
 
 * 1 AU = 92,955,807 miles (149,597,871 km).
 
-![IMAGE - solar-system-in-astronomical-units - IMAGE](../../../../../docs/pics/solar-system-in-astronomical-units.jpg)
+![IMAGE - solar-system-in-astronomical-units - IMAGE](../../../../docs/pics/solar-system-in-astronomical-units.jpg)
 
 ## SOLAR SYSTEM
 
