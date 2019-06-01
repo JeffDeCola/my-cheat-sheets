@@ -11,7 +11,7 @@ tl;dl,
 sudo /etc/init.d/say-hi start
 sudo /etc/init.d/say-hi stop
 # CHECK
-ps -efa|grep init
+ps -efa | grep init
 ```
 
 Proper way to start a process at boot,
