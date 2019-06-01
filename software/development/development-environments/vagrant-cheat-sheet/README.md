@@ -3,6 +3,21 @@
 `vagrant` _is a tool from HashiCorp that creates and configures (manages)
 portable development environments._
 
+tl;dr,
+
+```bash
+# VERSION
+vagrant version
+# RUN
+vagrant up
+vagrant ssh
+ssh -i ~/.vagrant.d/insecure_private_key -p 2222 vagrant@127.0.0.1
+# LIST/ADD/REMOVE VAGRANT BOXES
+vagrant box list
+vagrant box add --name "ubuntu/jeffs-ubuntu" --force ubuntu-box.box
+vagrant box remove ubuntu/jeffs-ubuntu
+```
+
 Check out my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes).
 
 View my entire list of cheat sheets on
@@ -102,6 +117,27 @@ Simple type,
 
 ```bash
 vagrant up
+```
+
+## SSH INTO IT
+
+ssh into it,
+
+```bash
+vagrant ssh
+```
+
+Or you use vagrant insecure keys,
+
+* Your machine - You use the vagrant insecure private key
+  located on your machine  `~/.vagrant.d/insecure_private_key`.
+* The vagrant box - Uses the default public key in `~/.ssh/authorized_keys`.
+
+This will also add the box fingerprint on your machine in
+`~/.ssh/known_host` for IP `127.0.0.1`.
+
+```bash
+ssh -i ~/.vagrant.d/insecure_private_key -p 2222 vagrant@127.0.0.1
 ```
 
 ## CREATING A VAGRANT BOX
