@@ -3,7 +3,7 @@
 `astronomy` _is the branch of science which deals with celestial objects,
 space, and the physical universe as a whole._
 
-* [A BRIEF HISTORY OF ASTRONOMY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#brief-history-of-astronomy)
+* [A BRIEF HISTORY OF ASTRONOMY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#a-brief-history-of-astronomy)
   * [NICOLAUS COPERNICUS (1473-1543) POLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
   * [TYCHO BRAHE (1546-1601) DANISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#tycho-brahe-1546-1601-danish)
   * [JOHANNES KEPLER (1571-1630) GERMAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#johannes-kepler-1571-1630-german)
@@ -16,6 +16,13 @@ space, and the physical universe as a whole._
 * [CONSTELLATIONS & STARS (POLARIS THE NORTH STAR)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#constellations--stars-polaris-the-north-star)
 * [NORTH AND SOUTH STAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#north-and-south-star)
 * [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
+* [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#planets)
+* [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+
+On another cheat sheet,
+
+* [OUR SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
+  On another cheat sheet
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -218,3 +225,21 @@ Here are some notable stars,
   meaning, "searing" or "scorching.
 * `Rigel` - Blue color. 7th brightest star in the Constellation of orion.
   864 lights years away.
+
+## PLANETS
+
+What is a planet?
+
+* Orbits the sun
+* Has sufficient mass to be round
+* Is not a satellite of another object
+* Can clear the area around its orbit
+
+The problem with Pluto could not clear the area around its orbit.
+
+## TYPES OF STARS
+
+Types of Suns,
+
+* tbd
+* tbd
