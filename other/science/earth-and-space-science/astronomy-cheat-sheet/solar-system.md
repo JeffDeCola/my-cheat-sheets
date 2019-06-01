@@ -43,7 +43,7 @@ It's approximately 8 light-minutes. More exactly,
 
 ## SOLAR SYSTEM
 
-* ?? AU from the sun
+* 0-122 AU from the sun.
 * 99.86% of the system’s mass is found in the Sun and the majority of the
   remaining 0.14% is contained within the solar system’s eight planets.
 * The four smaller inner planets, also known as the “terrestrial planets”
@@ -57,7 +57,7 @@ It's approximately 8 light-minutes. More exactly,
 
 ## SUN
 
-Our sun, in the grand scheme of things, the sun is not very large,
+Our sun, in the grand scheme of things the sun is not very large and
 not very hot.
 
 * About 4.5 billions years old
@@ -74,17 +74,18 @@ not very hot.
 
 ## INNER PLANETS
 
-?? AU from the sun
+* .39-1.52 AU from the sun
+
 The four smaller inner planets, also known as the “terrestrial planets”
 (Mercury, Venus, Earth and Mars), are primarily composed of rock and metal.
 
 ### MERCURY
 
 * Distance: .39 AU from the sun
-* Orbit Period: 88 days to orbit the sun
-* Rotate Axis: 176 days
-* Surface Temperature: 427&deg;C to -173&deg;C
-* Diameter: 4,879 km 
+* Orbit Period: 87.96 days to orbit the sun
+* Rotate Axis: 58.7 days
+* Surface Temperature: -173&deg;C to 427&deg;C 
+* Diameter: 4,878 km (3,031 miles) 
 * Mass: 5.5% of earth
 * Moons: None
 * Notable facts:
@@ -96,124 +97,239 @@ The four smaller inner planets, also known as the “terrestrial planets”
 
 ### VENUS
 
-* ?? AUs from the sun
-* 225 days to orbit the sun
-* 243 days to rotate on axis
-* Co2 is at 96.5%, whereas earth is .04%
-  * These levels trap heat which causes greenhouse effect
-  * Temp is 462&deg;C
-* Pressure is 90 times of earth
-* Aside from sun and moon, brightest object in sky
+* Distance: .723 AU from the sun
+* Orbit Period: 224.68 days to orbit the sun
+* Rotate Axis: 243 days
+* Surface Temperature: Can reach 471&deg;C
+* Diameter: 12,104 km (7,521 miles) About the same size as earth
+* Mass: 81.5% of earth
+* Notable facts:
+  * Co2 is at 96.5%, whereas earth is .04%
+  * Pressure is 90 times of earth
+  * Aside from sun and moon, brightest object in sky
+  * Venus is thought to be made up of a central iron core,
+    rocky mantle and silicate crust.
+  * Hottest planet in our solar system.
 
 ### EARTH
 
-* 1 AU from the sun (amazing)
-* 365.24 days to orbit the sun
-* 1 days to rotate on axis (what a coincidence)
+* Distance: 1 AU (93,000,000 miles) from the sun
+* Orbit Period: 365.26 days to orbit the sun
+* Rotate Axis: 1 day
+* Surface Temperature: -88&deg;C to 58&deg;C
+* Diameter: 12,756 km (7,926 miles) 
+* Mass: 100% of earth
+* Moons: Look up
+* Notable facts:
+  * Powerful magnetic field
+  * Only planet not named after a god
+  * I live here
 
 #### THE MOON
 
-* 27 days to orbit the earth
-* Copernicus and Brahe have craters named after them
-* Synchronous rotation
-* We think Formed by another planet (thea) hitting the earth
-  * To big to be just passing by and caught in orbit
-* Formed 30-50 million after the solar system.
+* Distance: 384,400 km from earth
+* Orbit Period: 27.3 days to orbit the sun
+* Rotate Axis: 27.3 days
+* Surface Temperature: -233&deg;C to 123&deg;C
+* Diameter: 3,475 km
+* Mass: .01% of earth
+* Notable facts
+  * Actually made of cheese
+  * Synchronous rotation
+  * Copernicus and Brahe have craters named after them
+  * We think Formed by another planet (thea) hitting the earth
+    * To big to be just passing by and caught in orbit
+  * Formed 30-50 million after the solar system.
 
 ### MARS
 
-* ?? AU from the sun
-* About 2 years (687 days) to orbit the sun
-* 24.6 rotate on axis
-* Thin atmosphere of C02 and can reach -5&deg; in daylight
+* Distance: 1.524 AU from the sun
+* Orbit Period: About 2 years (686.98 days) to orbit the sun
+* Rotate Axis: 24.6 hours
+* Surface Temperature: -153&deg;C to 20&deg;C
+* Diameter: 4,879 km (6,787 miles)
+* Mass: 10.7% of earth
+* Moons: 2
+  * Phobos
+  * Deimos
+* Notable facts:
+  * Mars and Earth have approx the same land mass
+  * Martian surface gravity is only 37% of the Earth's
+  * Thin atmosphere of C02
+  * Massive dust storms
+  * Tallest mountain in the solar system, at 21KM high
+  * Second smallest planet in the solar system
 
 ## THE ASTEROID BELT
 
-* ?? AU from the sun
+* 2.2-3.2 AU from the sun (about 1 AU thick)
 * Millions of asteroids in this belt
 * 200 known asteroids are larger than 100km
-* Ceres is dwarf planet like Pluto
+* Notable Asteroids
+  * Ceres is dwarf planet like Pluto
+* Asteroid Belt objects are made of rock and stone. 
+
+### CERES
+
+* Distance: 2.8 AU from the sun
+* Orbit Period: 4.6 years to orbit the sun
+* Rotate Axis: tbd
+* Surface Temperature: -105&deg;C
+* Diameter: 950 km (590 miles)
+* Mass: tbd
+* Notable facts:
+  * Ceres accounts for one third of the mass in the asteroid belt.
 
 ## OUTER PLANETS
 
-* ?? AU from the sun
+* 5.203-30.06 AU from the sun
+
 The four outer planets, also known as the “gas giants”
 (Jupiter, Saturn, Uranus and Neptune), are substantially
 larger and more massive than the inner planets.
 
 ### JUPITER
 
-* ?? AU from the sun
-* 433 days to orbit sun
-* 10 hours to rotate on axis
-* The King of Planets
-* The red dot is a storm that has been ragging for over 300 years.
-* 67 Moons
-  * Gallileo discovered 4 of them.
-* Mainly composed mainly of hydrogen and helium
+* Distance: 5.203 AU from the sun
+* Orbit Period: 11.862 years to orbit the sun
+* Rotate Axis: 9.84 hours
+* Surface Temperature: -148&deg;C to tbd&deg;C
+* Diameter: 142,796 km (88,729 miles)
+* Mass: 318 earths
+* Moons: 67 (Gallileo discovered 4 of them)
+  * Ganymede - Largest Moon in solar system (Larger than mercury)
+* Notable facts
+  * 4th brightest object in solar system
+  * Largest Planet
+  * The King of Planets
+  * The red dot is a storm that has been ragging for over 300 years.
+  * Mainly composed mainly of hydrogen and helium
 
 ### SATURN
 
-* 30 years to orbit sun
-* 10 hours to rotate on axis
-* Furthest planet we can see with naked eye from earth
-* Largest moon is titan
-* Mainly composed mainly of hydrogen and helium
+* Distance: 9.539 AU from the sun
+* Orbit Period: 29.456 days to orbit the sun
+* Rotate Axis: 10.2 hours
+* Surface Temperature: -178&deg;C
+* Diameter: 120,660 km (74,600 miles) 
+* Mass: 95 earths
+* Moons: 62
+  * Titan
+* Rings
+  * Saturn’s rings are made up of are billions of particles
+    that range in size from tiny dust grains to to objects as large as mountains.
+* Notable facts:
+  * Furthest planet we can see with naked eye from earth
+  * Mainly composed mainly of hydrogen and helium
 
 ### URANUS
 
-* 84 years to orbit sun
-* 243 days to rotate on axis
-* Can't be seen by naked eye
-* Axis is at 98&deg;, Pole always faces the sun
-* All 27 moons named after Shakespearean characters 
+* Distance: 19.18 AU from the sun
+* Orbit Period: 84.07 days to orbit the sun
+* Rotate Axis: 17.9 hours
+* Surface Temperature: -216&deg;C
+* Diameter: 51,118 km (32,600 miles)
+* Mass: 15 earths
+* Moons: 27 (named after Shakespearean characters)
+* Rings: 13
+  * Uranus has two sets of very thin dark colored rings
+* Notable facts
+  * It has a funny name that kids love
+  * Can't be seen by naked eye
+  * Axis is at 98&deg;, Pole always faces the sun
 
 ### NEPTUNE
 
-* 165 years to orbit sun
-* 15 hours to rotate on axis
-* Extreme weather
-
-## DWARF PLANETS
-
-A celestial body resembling a small planet
-but lacking certain technical criteria that
-are required for it to be classed as such
-
-### PLUTO
-
-* ?? AU from the sun
-* 248 years to orbit sun
-* 6.4 days to rotate on axis
-* De-classified in 2006
-* Has 5 moons
-* Pluto's orbit is off, so it seems Pluto was captured by the sun
-
-### ERIS
-
-* ?? AU from the sun
-* 558 years to orbit sun
-
-### HAUMEA
-
-* ?? AU from the sun
-* 285 years orbit
+* Distance: 30.06 AU from the sun
+* Orbit Period: 164.81 years to orbit the sun
+* Rotate Axis: 19.1 hours
+* Surface Temperature: -214&deg;C
+* Diameter: 48,600 km (30,200 miles)
+* Mass: 17 earths
+* Moons: 14
+* Rings: 5
+  * Neptune has a very thin collection of rings.
+* Notable facts
+  * Extreme weather
+  * Neptune has an incredibly thick atmosphere comprised of
+    74% hydrogen, 25% helium and approximately 1% methane.
 
 ## KUIPER BELT
 
-* 30-55 AU from the sun
+* 30-55 AU from the sun (25 AU thick)
 * Lots of stuff and its huge
 * Chunks of ice
 * More dwarf Planets
+  * Pluto
+  * Haumea
+  * Makemake
 * Commits
 * Stretches across 20 astronomical units (AU) of space
 * Area of the outer solar system
 
+### PLUTO
+
+* Distance: 39.53 AU from the sun
+* Orbit Period: 247.7 years to orbit the sun
+* Rotate Axis: 6.39 days
+* Surface Temperature: -229&deg;C
+* Diameter: 2,274 km (1,413 miles) 
+* Mass: tbd
+* Moons: 5
+* Notable facts
+  * De-classified as planet in 2006
+  * Pluto's orbit is off the plane, so it seems Pluto was captured by the sun
+  * Pluto is one third water
+
+### HAUMEA
+
+* Distance: 43.13 AU from the sun
+* Orbit Period: 283.3 years to orbit the sun
+* Rotate Axis: 3.9 hours
+* Surface Temperature: -241&deg;C
+* Diameter: 1,960 km (1,220 Miles) 
+* Mass: tbd
+* Moons: 2
+  * Hiiaka
+  * Namaka
+* Notable face:
+  * Unique in its elongated shape making it the least
+    spherical of the dwarf planets.
+
+### MAKEMAKE
+
+* Distance: 45.79 AU from the sun
+* Orbit Period: 309.9 years to orbit the sun
+* Rotate Axis: tbd
+* Surface Temperature: -239&deg;C
+* Diameter: 1,434 km (891 miles) 
+* Mass: tbd
+* Moons: 1
+* Notable facts
+  * Third largest dwarf planet in the solar system
+
+## ERIS
+
+* Distance: 68.01 AU from the sun
+* Orbit Period: 560.9 years
+* Rotate Axis: tbd
+* Surface Temperature: -231&deg;C
+* Diameter: 2,326 km 
+* Mass: tbd
+* Moons: 1
+  * Dysnomia
+* Notable facts:
+  * Eris was once considered for the position of tenth planet.
+
 ## OORT CLOUD
 
-* ?? AU from the sun
+The Oort Cloud is a theorized shell of icy objects that lie beyond the Kuiper Belt,
+as such the facts detailed on this page are hypothetical.
+
+* 2,000-100,000 AU from the sun
 * Bubble around our solar system
 * Huge region (Most of our solar system)
 * Trillions of objects our there
 * Extended shell of icy objects that exist
   in the outermost reaches of the solar system
+* 

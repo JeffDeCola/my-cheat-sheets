@@ -238,6 +238,12 @@ What is a planet?
 
 The problem with Pluto could not clear the area around its orbit.
 
+### DWARF PLANETS
+
+A celestial body resembling a small planet
+but lacking certain technical criteria that
+are required for it to be classed as such
+
 ## WHAT OBJECTS HAVE WE LANDED ON
 
 List of landings on extraterrestrial bodies,
