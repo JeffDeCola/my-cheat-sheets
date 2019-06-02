@@ -1,7 +1,7 @@
 # OUR SOLAR SYSTEM CHEAT SHEET
 
 `astronomy` _goes over the main celestial bodies
-in our solar system and beyond,
+in our solar system and beyond._
 
 * [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#sun)
 * [INNER PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md#inner-planets)
