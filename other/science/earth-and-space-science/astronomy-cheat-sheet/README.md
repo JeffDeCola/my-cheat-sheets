@@ -12,18 +12,23 @@ space, and the physical universe as a whole._
 * [THE CELESTIAL SPHERE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#the-celestial-sphere)
   * [MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#mapping-star-on-celestial-sphere-declination--right-ascension)
   * [OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#observer-on-earth-finding-a-star-altitude--azimuth)
-* [STAR MAGNITUDE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#star-magnitude)
-* [CONSTELLATIONS & STARS (POLARIS THE NORTH STAR)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#constellations--stars-polaris-the-north-star)
-* [NORTH AND SOUTH STAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#north-and-south-star)
-* [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
-* [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#planets)
-* [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+* [SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#solar-system)
+* [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#astronomical-units-and-scale)
+* [CELESTIAL BODIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#celestial-bodies)
+  * [STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+    * [STAR MAGNITUDE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#star-magnitude)
+    * [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
+  * [CONSTELLATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+  * [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#planets)
+  * [DWARF PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#dwarf-planets)
+  * [MOONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#moons)
+  * [ASTEROIDS] (https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#asteroids)
+  * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
 * [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
 
 On another cheat sheet,
 
-* [OUR SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
-  On another cheat sheet
+* Our [SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -187,7 +192,40 @@ This figure may help,
 
 ![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.svg)
 
-## STAR MAGNITUDE
+## SOLAR SYSTEM
+
+* 0-122 AU from the sun.
+* 99.86% of the system’s mass is found in the Sun and the majority of the
+  remaining 0.14% is contained within the solar system’s eight planets.
+* The four smaller inner planets, also known as the “terrestrial planets”
+  (Mercury, Venus, Earth and Mars), are primarily composed of rock and metal.
+* The four outer planets, also known as the “gas giants”
+  (Jupiter, Saturn, Uranus and Neptune), are substantially
+  larger and more massive than the inner planets.
+* Other objects of note in the Solar System are the dwarf planets
+  (Ceres, Pluto, Haumea, Makemake & Eris), moons, asteroids,
+  the asteroid belt, comets and the Kuiper belt.
+
+For a complete rundown of our solar system, check out my
+[solar system cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
+
+## ASTRONOMICAL UNITS AND SCALE
+
+An astronomical unit (AU) represents the mean distance between
+the Earth and our sun. An AU is approximately 93 million miles (150 million km).
+It's approximately 8 light-minutes. More exactly,
+
+* 1 AU = 92,955,807 miles (149,597,871 km).
+
+## CELESTIAL BODIES
+
+A natural object which is located outside of Earth's atmosphere.
+
+### STARS
+
+tbd
+
+#### STAR MAGNITUDE
 
 When viewing stars lets talk about magnitude.
 The relative brightness of a star as seen from earth.
@@ -201,23 +239,14 @@ The lower the number, the brighter the star is.
 * Sirius (brightest star in sky) is -1.46.
 * Polaris is 1.97
 
-## CONSTELLATIONS & STARS (POLARIS THE NORTH STAR)
-
-Constellations are good for orienting yourself with the night sky.
-
-* Ursa Major - great bear. Bigger dipper.
-* Ursa Minor - Little bear. Little dipper.
-
-## NORTH AND SOUTH STAR
+#### NOTABLE STARS
 
 For the northern hemisphere Polaris is currently the north star and is
 at is end of little dipper.
 
 But the southern hemisphere doesn't really have a south pole star.
 
-## NOTABLE STARS
-
-Here are some notable stars,
+Here are some other notable stars,
 
 * `Betelgeuse` - Betelgeuse is the brightest star in the night sky. Its
   ready to blow in the next million years. 430 light years away.
@@ -227,7 +256,14 @@ Here are some notable stars,
 * `Rigel` - Blue color. 7th brightest star in the Constellation of orion.
   864 lights years away.
 
-## PLANETS
+### CONSTELLATIONS
+
+Constellations are good for orienting yourself with the night sky.
+
+* Ursa Major - great bear. Bigger dipper.
+* Ursa Minor - Little bear. Little dipper.
+
+### PLANETS
 
 What is a planet?
 
@@ -243,6 +279,18 @@ The problem with Pluto could not clear the area around its orbit.
 A celestial body resembling a small planet
 but lacking certain technical criteria that
 are required for it to be classed as such
+
+### MOONS
+
+tbd
+
+### ASTEROIDS
+
+tbd
+
+### METEORITES
+
+tbd
 
 ## WHAT OBJECTS HAVE WE LANDED ON
 
@@ -267,10 +315,3 @@ List of landings on extraterrestrial bodies,
 * Comets
   * Comet 9P/Tempel 1
   * Comet 67P/Churyumov–Gerasimenko
-
-## TYPES OF STARS
-
-Types of Suns,
-
-* tbd
-* tbd
