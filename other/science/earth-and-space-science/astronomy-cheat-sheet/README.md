@@ -215,6 +215,7 @@ the Earth and our sun. An AU is approximately 93 million miles (150 million km).
 It's approximately 8 light-minutes. More exactly,
 
 * 1 AU = 92,955,807 miles (149,597,871 km).
+* 1 Light Year = 63,241.1 AU
 
 ## CELESTIAL BODIES
 

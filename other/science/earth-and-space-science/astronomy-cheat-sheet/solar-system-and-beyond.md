@@ -308,6 +308,13 @@ larger and more massive than the inner planets.
 * Notable facts:
   * Eris was once considered for the position of tenth planet.
 
+## VOYAGER1
+
+* Distance: 145.86 AU (20 hours light time) from the sun
+* Farthest man made object from earth
+* Launched in 1977
+* Still sending back data
+
 ## OORT CLOUD
 
 The Oort Cloud is a theorized shell of icy objects that lie beyond the Kuiper Belt,
