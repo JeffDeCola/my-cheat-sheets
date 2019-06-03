@@ -25,9 +25,13 @@ in our solar system and beyond._
 * [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
 * [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
   * [PROXIMA CENTAURI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#proxima-centauri)
+  * [SIRIUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
+  * [BETELGEUSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betegeuse)
+  * [RIGEL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
 * [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#galaxies)
   * [CANIS MAJOR DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#canis-major-dwarf-galaxy)
-  * [ANDROMEDA GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andonmeda-galaxy)
+  * [ANDROMEDA GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy)
+  * [MACS0647-JD (FARTHEST OBJECT SEEN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#macs0647-jd-farthest-object-seen)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -319,15 +323,30 @@ as such the facts detailed on this page are hypothetical.
 ## STARS (IN OUR MILKY WAY GALAXY)
 
 * 267,000-?? AU from the sun
-* Obviously in our Milky Way Galaxy
 
 ### PROXIMA CENTAURI
 
-The nearest star(sun) to us.
+* Distance: 267,000 AU (4.221 light years) from the sun
+* The nearest star(sun) to us.
+* Red Dwarf
 
-* Red Dwarf 
-* 267,000 AU from the sun
-* 4.243 light years
+### SIRIUS
+
+* Distance: 543,873 AU (8.6 light years) from the sun
+* Brightest star in the sky
+* Sirius comes from the Greek word Seirius,
+  meaning, "searing" or "scorching.
+
+### BETELGEUSE
+
+* Distance: 27,190,000 AU (430 light years) from the sun
+* Brightest star in the night sky.
+* Its ready to blow in the next million years.
+
+### RIGEL
+
+* Distance: 54,602,891 AU (864 light years) from the sun
+* Blue color. 7th brightest star in the Constellation of orion
 
 ## GALAXIES
 
@@ -335,11 +354,16 @@ The nearest star(sun) to us.
 
 ###  CANIS MAJOR DWARF GALAXY
 
-* 63,000,000 AU from the sun
-* ?? Light Years
+* Distance: 63,000,000 AU (996 light years) from the sun
+* Closest Galaxy to us
 
 ### ANDROMEDA GALAXY
 
-* 1,600,000,000 AU from the sun
-* ?? Light Years
+* Distance: 1,600,000,000 AU (25,300 light years) from the sun
 * Notable Spiral Galaxy
+
+### MACS0647-JD (FARTHEST OBJECT SEEN)
+
+* Distance: 840,530,619,502,900 AU (13,290,896,649 light years) from the sun
+* Most distant object ever seen in the universe
+* Discovered by Hubble Space Telescope
