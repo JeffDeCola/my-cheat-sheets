@@ -26,7 +26,7 @@ space, and the physical universe as a whole._
   * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
 * [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
 
-Check out whats in our [solar system](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
+Check out whats in our [solar system](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 on another cheat sheet.
 
 View my entire list of cheat sheets on
@@ -206,7 +206,7 @@ This figure may help,
   the asteroid belt, comets and the Kuiper belt.
 
 For a complete rundown of our solar system, check out my
-[solar system cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system.md)
+[solar system cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 
 ## ASTRONOMICAL UNITS AND SCALE
 
