@@ -23,6 +23,7 @@ in our solar system and beyond._
   * [MAKEMAKE (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
 * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
 * [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
+* [VOYAGER 1](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#voyager-1)
 * [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
   * [PROXIMA CENTAURI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#proxima-centauri)
   * [SIRIUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
@@ -308,7 +309,7 @@ larger and more massive than the inner planets.
 * Notable facts:
   * Eris was once considered for the position of tenth planet.
 
-## VOYAGER1
+## VOYAGER 1
 
 * Distance: 145.86 AU (20 hours light time) from the sun
 * Farthest man made object from earth

@@ -238,7 +238,7 @@ Various Apps and tools for the goal of creating an App/Service.
 This illustration shows how various Apps and tools fit together
 for the goal of creating an App/Service,
 
-![IMAGE - Creating Services Environment Overview - IMAGE](docs/pics/Creating-Services-Environment-Overview.jpg)
+![IMAGE - creating services environment overview - IMAGE](docs/pics/creating-services-environment-overview.jpg)
 
 ## HARDWARE CHEAT SHEETS
 
@@ -271,7 +271,10 @@ Various Apps and tools for the goal of creating an ASIC.
 
 ### VISUAL OVERVIEW OF CREATING AN ASIC
 
-This illustration coming soon.
+This illustration shows how various Apps and tools fit together
+for the goal of creating an ASIC,
+
+![IMAGE - creating an ASIC environment overview - IMAGE](docs/pics/creating-an-asic-environment-overview.jpg)
 
 ## OTHER CHEAT SHEETS
 
