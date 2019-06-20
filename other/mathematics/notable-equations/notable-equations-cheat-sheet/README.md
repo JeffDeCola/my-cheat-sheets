@@ -1,6 +1,6 @@
 # NOTABLE EQUATIONS CHEAT SHEET
 
-`notable equations` _is my list of beautiful and ground breaking
+`notable equations` _is my list of beautiful and ground breaking math
 equations._
 
 This cheat sheet was built using,
