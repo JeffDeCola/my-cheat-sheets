@@ -4,11 +4,11 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`physics` _tbd._
+`physics` _helps describe everything around us._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## OVERVIEW
+## BASIC EQUATIONS
 
 tbd
