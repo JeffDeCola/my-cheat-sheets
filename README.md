@@ -44,7 +44,7 @@ Some other cheat sheets I'm working on,
   Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
-  * [HISTORY]((https://github.com/JeffDeCola/my-cheat-sheets#history)
+  * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets#random-stuff)
@@ -303,9 +303,6 @@ Random other things I'm interested in.
 
 ### HISTORY
 
-_I just started to get into this and find it
-fascinating._
-
 * WARS
 
   * [THE AMERICAN REVOLUTIONARY WAR (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
@@ -391,7 +388,7 @@ quite a few years to finish._
 
 ### RANDOM STUFF
 
-* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quates-cheat-sheet)
+* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
 
 ### SCIENCE
 
