@@ -44,8 +44,10 @@ Some other cheat sheets I'm working on,
   Random things I'm interested in
 
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
+  * [HISTORY]((https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
+  * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets#random-stuff)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
@@ -299,6 +301,19 @@ Random other things I'm interested in.
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
 
+### HISTORY
+
+_I just started to get into this and find it
+fascinating._
+
+* WARS
+
+  * [THE AMERICAN REVOLUTIONARY WAR (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
+  * [THE WAR OF 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/the-war-of-1812-cheat-sheet)
+  * [THE AMERICAN CIVIL WAR (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/the-american-civil-war-cheat-sheet)
+  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/ww1-cheat-sheet)
+  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/ww2-cheat-sheet)
+
 ### MATHEMATICS
 
 _This entire sections is a massive work in progress, it will take me
@@ -373,6 +388,10 @@ quite a few years to finish._
 
   * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
   * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
+
+### RANDOM STUFF
+
+* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quates-cheat-sheet)
 
 ### SCIENCE
 
