@@ -1,63 +1,75 @@
 # THE AMERICAN REVOLUTIONARY WAR (1775-1783) CHEAT SHEET
 
-`the-american-revolutionary-war` _was between the colonies of British
-America and the british for America's independence._
+`the-american-revolutionary-war` _(aka The War for Independence)
+was between the colonies of British
+America and the british for America's Independence._
 
-* [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)]()
-* [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)]()
-* [THE BOSTON MASSACRE (March 5, 1770)]()
-* [THE BOSTON TEA PARTY (December 16, 1773)]()
-* [FIRST CONTINENTAL CONGRESS (Fall 1774)]()
-* [PAUL REVERE FAMOUS RIDE (April 18, 1775)]()
-* [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)]()
-* [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)]()
-* [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)]()
-* [THE BATTLE OF BUNKER HILL (June 17, 1775)]()
-* [EARLY WAR (1775)]()
-* [FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)]()
-* [COMMON SENSE BY THOMAS PAINE (1776)]()
-* [DECLARATION OF INDEPENDENCE BY THOMAS JEFFERSON (JULY 4, 1776)]()
-* [THE NEW YORK AND NEW JERSEY CAMPAIGNS (1776-1777)]()
-* [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)]()
-* [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)]()
-* [BATTLE OF BRANDYWINE CREEK (September 11, 1777)]()
-* [BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)]()
-* [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)]() 
+* [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
+* [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
+* [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
+* [THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-tea-party-december-16-1773)
+* [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
+* [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
+* [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-shot-heard-round-the-world-april-19-1775)
+* [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-green-mountain-boys--fort-ticonderoga-may-10-1775)
+* [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#continental-army--george-washington-1775)
+* [THE BATTLE OF BUNKER HILL (June 17, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bunker-hill-june-17-1775)
+* [EARLY WAR (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#early-war-1775)
+* [FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#fortification-of-dorchester-heights-march-5-1776)
+* [COMMON SENSE BY THOMAS PAINE (1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#common-sense-by-thomas-paine-1776)
+* [DECLARATION OF INDEPENDENCE BY THOMAS JEFFERSON (JULY 4, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#declaration-of-independence-by-thomas-jefferson-july-4-1776)
+* [THE NEW YORK AND NEW JERSEY CAMPAIGNS (1776-1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-york-and-new-jersey-campaigns-1776-1777)
+* [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#washington-crossing-the-delaware-river-december-25-1776)
+* [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benjamin-franklin-asking-france-for-help-december-1776)
+* [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
+* [THE BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bemis-heights-oct-7-1777)
+* [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
+* [THE BATTLE OF MONMOUTH (June 28, 1778)]()
+* [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)]()
+* [AFRICAN AMERICANS]()
+* [BENEDICT ARNOLD]()
+* [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)]()
+* [THE BATTLE OF YORKTOWN (October 17, 1781)]()
+* [TREATY OF PARIS & AFTERMATH (September 3, 1783)]()
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)
 
-Right before this time, there were lots of wars over land.
-The English basically  had the east coast, and french had the
-midwest and lots of disputed areas in between.
+Right before the war, there were lots of little wars over the new land in America
+between the native Americans and other countries such as Britain, France and Spain.
+The British basically had the east coast, and the French had the midwest with
+a lot of disputed area in between.
 
-The english didn't want the french building forts so King George
-sent a british Colonel George Washington and started the long
-`French and Indian War` (1754-1763).
+The English didn't want the French building forts so King George
+sent a british Colonel `George Washington` and started the long
+7 year `French and Indian War` (1754-1763).
 
-At the peace treaty france gave up all of its territories in
-North America.  But this was at a huge cost and they needed money.
-So they wanted to get money from the colonies.
+At the peace treaty France gave up all of its territories in
+North America.  But Britain needed money sine the war was so
+expensive. So they wanted to get money from the colonies and
+could you really blame them.
 
 ## THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
 To help pay for the war Britain needed money and wanted the colonies to
-pay them back for the expensive wars. In 1764 they introduced the `sugar act`.
+pay them back for the expensive `French and Indian War`. 
+In 1764 they introduced the `sugar act`.
 This forced the colonies to import sugar and molasses from Britain and
 pay a duty on them.  Then in 1764 they introduced the `stamp act` which would actually
 put stamps on things, really tax anything the colonies did.
 
 They colonists were mad because they didn't have any representation
 in parliament and they were being taxed. They protested
-and British goods were boycotted so Britain repealed the stamp act because of this.
+and British goods were boycotted so Britain repealed the Stamp
+Act.
 
 But they still needed money so in 1766 the british introduced tried again and
 introduced the `declaratory act` and the 1767 `Townshend Acts`
 that pretty much taxed everything on import duties.
 
-Once again, the colonists got mad and boycotted goods so the
+Once again, the colonists got mad and boycotted British goods so the
 townshend act was repealed in 1770. But they kept a tea tax and
 sent 1,000 troops to Boston to take control.
 The merchants of Boston circumvented the act by continuing to receive
@@ -93,9 +105,13 @@ Boston ws no under control of britain.
 
 ## FIRST CONTINENTAL CONGRESS (Fall 1774)
 
-Seeing the Boston was under Britain's control, the remaining colonies held
-the First Continental Congress at Carpenter's Hall in Philadelphia, from
-September 5, to October 26, 1774. The colonies were united in a
+The other colonies seeing that Boston was under
+Britain's control, the remaining colonies held
+the `First Continental Congress` at Carpenter's Hall in Philadelphia, from
+September 5, to October 26, 1774.
+56 delegates were there such as Famous people like John Adams,
+Samuel Adams, Robert Treat Paine and George Washington.
+The colonies were united in a
 determination to show a combined authority to Great Britain.
 
 On October 14, the `Declaration and Resolves` established
@@ -104,21 +120,20 @@ common to all of the colonies. Congress voted to meet
 again the following year if these grievances were not
 attended to by England.
 
-56 delegates were there such as Famous people like John Adams,
-Samuel Adams, Robert Treat Paine and George Washington were there.
-
-But the british would not stop, so they armed the colonists and
-these minutemen were ready at a moments notice.
+But the British would not stop, so the Continental
+Congress started to arm the colonists and
+these `minutemen` were ready at a moments notice.
 
 ## PAUL REVERE FAMOUS RIDE (April 18, 1775)
 
-Britain wanted to shut down the rebels so in 1775 the british lead
-by British General Thomas Gage started marching to Concord to
+Britain wanted to shut down the Rebel uprising (lol) 
+so in 1775 British troops, lead
+by British General Thomas Gage, started marching to Concord to
 arrest Samuel Adams and John Hancock. They also
-wanted to seize weapons and gun powder being stored in Concord.
+wanted to seize weapons and gun powder being stored there.
 
 Around midnight Paul Revere was instructed by the Sons of
-Liberty to ride to Lexington, Mass. to warn them and
+Liberty to ride to Lexington, Mass. to warn them so
 the minute men could get ready.
 
 ## THE SHOT HEARD ROUND THE WORLD (April 19, 1775)
@@ -135,20 +150,20 @@ wounded, and dying in their wake. Parker and his men would
 have revenge later that afternoon.
 
 Arriving in Concord around 8:00 am, with about 220 troops in all,
-to secured the north bridge across the Concord River.
-
+the British secured the north bridge across the Concord River.
 The Acton Company, commanded by thirty-year old Captain Isaac Davis,
 wanted to stop the British. When Davis’s company came within range,
 British soldiers opened fire, killing Isaac Davis. The Minute Men replied with
 their own volley, killing three British soldiers and
 wounding nine others. This volley is the volley considered
 `the shot heard round the world`. The rest of the British troops
-retreated back to Boston.  This marked the start of the war for
-independence.
+retreated back to Boston.  This marked the start of the
+`War For Independence`.
 
 ## THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)
 
-The Green Mountain boys were a small group of militia formed by Ethan Allen in 1770.
+Up north, the Green Mountain boys were a small group of militia
+formed by Ethan Allen in 1770.
 Ethan Allen received a visit from Benedict Arnold.
 Arnold was there to ask for the assistance of the Green Mountain Boys
 in capturing Fort Ticonderoga. Allen quickly and enthusiastically agreed.
@@ -157,12 +172,12 @@ The Green Mountain Boys, along with Arnold and his small troop,
 arrived at Fort Ticonderoga on May 10, 1775 and took it.
 
 King George fired General Gage and assigned General Howe to put down
-the rebellion.
+the rebellion (lol, I just can't resist).
 
 ## CONTINENTAL ARMY & GEORGE WASHINGTON (1775)
 
-Because britain and King George was going to retaliate, the colonist started the
-continental army lead by George Washington.
+Because britain and King George was going to retaliate, the colonist
+started the Continental Army lead by the very popular George Washington.
 
 ## THE BATTLE OF BUNKER HILL (June 17, 1775)
 
@@ -189,12 +204,11 @@ most of the fighting occurred on nearby Breed’s Hill.
 
 But independence was not exactly on the table so the colonies
 sent a letter to King George asking if they could work things out.
-
 King george refused, so there was a lot of fighting among the colonies.
-France and Spain sent supplies to the Rebels to help them.
+France and Spain sent supplies to the Colonists to help them.
 
-Benedict Arnold captured british forts in montreal but where defeated in
-Quebec City so they head back to Fort Ticonderoga.
+Benedict Arnold also captured british forts in montreal but was
+defeated in Quebec City so he headed back to Fort Ticonderoga.
 
 ## FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)
 
@@ -208,11 +222,11 @@ the withdrawal of all 9,000 British troops from Boston.
 
 ## COMMON SENSE BY THOMAS PAINE (1776)
 
-Published in 1776, Common Sense challenged the authority of
-the British government and the royal monarchy. The plain
+Also during this time, `Common Sense` by Thomas Paine, Published in 1776,
+challenged the authority of the British government
+and the royal monarchy. The plain
 language that Paine used spoke to the common people of America and
-was the first work to openly ask for independence from Great Britain. 
-
+was the first work to openly ask for independence from Great Britain.
 It brought the idea of independence by the main stream.
 
 ## DECLARATION OF INDEPENDENCE BY THOMAS JEFFERSON (JULY 4, 1776)
@@ -220,68 +234,181 @@ It brought the idea of independence by the main stream.
 Drafting the Declaration of Independence in 1776 became the defining event in
 Thomas Jefferson's life. Despite Jefferson's desire to return to Virginia
 to help write that state's constitution, the Continental Congress
-appointed him to the five-person committee for drafting a declaration of independence.
-
+appointed him to the five-person committee for drafting this.
 The colonies were united and The United states of America was born.
 to the british it was treason.
 
+It should be noted in an early draft he wrote about the abolishment of Slavery
+but it was removed because the south would not support that.
+
 ## THE NEW YORK AND NEW JERSEY CAMPAIGNS (1776-1777)
 
-Britain sent 25,000 troops to staten Island New York to fight the
-Rebels.
+Having fled Boston, Britain sent 25,000 troops to
+Staten Island New York to fight the Rebels.
 
 The New York and New Jersey campaign was a series of battles
 in 1776 and the winter months of 1777 for control of the Port of New York
 between British forces under General Sir William Howe and the
 Continental Army under General George Washington.
-
-Many battles such as the Battle of Kips Bay, the Battle
+There were many battles such as the Battle of Kips Bay, the Battle
 of Harlem Heights and the Battle of White Plains.
 
-Washington fled to Virginia, defeated.  The british were in New Jersey and
+But Washington's army was defeated and Washington
+fled to Virginia.  The british were in New Jersey and
 settled in for a winter of partying and drinking.  They also
-had Hessian mercenaries setup across the Delaware river in case Washington Attacked.
+had Hessian mercenaries setup across the Delaware river
+in case Washington attacked again.
 
 ## WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)
 
-On the night of December 25–26, 1776, `The Battle of Trenton`,
-in a surprise attack organized
-by George Washington against the Hessian forces in Trenton, New Jersey.
+On the night of December 25–26, 1776, in a surprise attack organized
+by George Washington against the Hessian forces in Trenton, New Jersey
+`The Battle of Trenton`.
 With 2,400 men he caught the Hessian forces off guard.
 
-`The Battle of Princeton` was fought near Princeton, New Jersey on January 3, 1777
+Then washing traveled to Princeton for `The Battle of Princeton`
+was fought near Princeton, New Jersey on January 3, 1777
 and ending in a small victory for the Colonials.
 General Lord Cornwallis had left 1,400 British troops.
-
-The british abandoned southern New Jersey for the Winter.
+The british, defeated, abandoned southern New Jersey for the Winter.
 
 ## BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)
 
-The Continental congress sent Benjamin Franklin to
-France to ask for help.  But he just chilled.
+The Continental Congress sent Benjamin Franklin to
+France to ask for help.  But he just chilled for a long time.
 
-## BATTLE OF BRANDYWINE CREEK (September 11, 1777)
+## THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)
 
 To take over New York to divide the colonies in two.
 General Howe would move north while General Burgoyne
 would move south. But Howe decided to take philadelphia.
 `The Battle of Brandywine Creek` between Howe and
-Washington and defeated WAshington.
-Congress escaped to York.
+Washington and defeated Washington.
+Congress left Philly and escaped to York.
 
-## BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)
+## THE BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)
 
-Up north, spearheaded by Major General Benedict Arnold, in the wooded 
-area of Bemis Heights south of Saratoga. Known as the Battle of Bemis Heights, 
+Up north, spearheaded by Major General Benedict Arnold, in the wooded
+area of Bemis Heights south of Saratoga. Known as the Battle of Bemis Heights,
 or the Second Battle of Saratoga, this American victory proved to be a major
-turning point in the War.
+turning point in the War. Again, Benedict Arnold was very successful.
 
 ## THE NEW BRITISH GENERAL - HENRY CLINTON (1777)
 
-Both Howe and Burgoyne were replaced by General Clinton.
-And Washington had to chill for the winter around Valley forge.
-But the French would help train Washington's men to fight.
+King George was furious loosing this battle so
+both Howe and Burgoyne were replaced by General Clinton.
+Washington after loosing Philadelphia, had to
+chill for the winter around Valley Forge.
+But Franklin finally got the French to help train
+Washington's men to fight. The came out of the winter of 1778
+as a new amd improved force and wanted to take Philadelphia back.
+But they didn't have to as the British left Philadelphia to
+pool their resources in New York.  
 
-## BATTLE OF MONMOUTH (June 28, 1778)
+## THE BATTLE OF MONMOUTH (June 28, 1778)
 
-Battle of Monmouth
+Washington sent Benedict Arnold to reoccupy Philly as
+he pursued the British through New Jersey.
+
+Then on June 28, the Battle of Monmouth took place on a hot summer day.
+It was a draw but the British fled to New York.
+
+## FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)
+
+John Adam went to France to help Benjamin Franklin get
+more support from the French. They sent supplies and support
+and enlisted Native Americans to help fight the British.
+
+## AFRICAN AMERICANS
+
+Originally Washington would not allow slaves to join the Continental Army,
+but after the British promised freedom to any slaves that joined their army,
+Washington reversed his decision.  But even after the war many where
+returned to slavery and harsh discrimination.
+
+## BENEDICT ARNOLD
+
+Benedict Arnold was in Philly and married one of elites of Philly.
+But the people of philly accused Arnold of having pro british sentiments.
+To keep the people happy, Washington called Arnold improper and imprudent.
+This was the last straw for Arnold having won major battles and feeling he did not
+get the recognition he deserved.
+
+Arnold asked Washington to put him in charge of the Fort at West Point,
+then he contacted the British offering to hand the plans of the
+fort over to them.  But his treasonous plan were discovered on
+a captured British officer but Arnold managed to escape before
+they could arrest him and fled to New York.
+Now Arnold was part of the British and led raids on like the one in
+Richmond Virginia in 1781.
+
+## BRITISH TAKING THE SOUTH (1780-1781)
+
+After the French entered the war on the side of the Americans in 1778,
+the British shifted their focus to a campaign in the South
+The British took part of Georgia and South Carolina. This was very brutal war.
+
+The Continental Congress sent Horatio Gates to the South
+and lost against Cornwallis. Then Washington sent his guy,
+Nathaneal Greene and there was `The Battle of Cowpens`
+January 17, 1781 in South Carolina.
+
+## THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)
+
+The British chased Greene up through North Carolina.
+Greene led Cornwallis to Virginia far away from his supply line.
+Greene picked up reinforcements and had
+`The Battle of Guilford Courthouse`.
+
+Although British troops under Lieutenant General Charles Cornwallis
+scored a tactical victory at Guilford Courthouse over American forces
+under Major General Nathanael Greene, the British suffered
+significant troop losses during the battle.
+
+## THE BATTLE OF YORKTOWN (October 17, 1781)
+
+Afterward, Cornwallis abandoned his campaign for the
+Carolinas and instead took his army into Virginia to Yorktown.
+
+General George Washington, commanding a force of 17,000 French
+and Continental troops, begins the siege known as the Battle of
+Yorktown against British General Lord Charles Cornwallis and a
+contingent of 9,000 British troops at Yorktown, Virginia,
+in the most important battle of the Revolutionary War.
+Cornwallis surrendered to Washington in the field at
+Yorktown on October 17, 1781, effectively ending the War for Independence.
+
+## TREATY OF PARIS & AFTERMATH (September 3, 1783)
+
+They defeated Cornwallis and he surrendered and
+parliament realized the war was not worth it.
+
+The Treaty of Paris was the official peace treaty
+between the United States and Britain that ended the
+American Revolutionary War. It was signed on September 3, 1783.
+The Congress of the Confederation ratified the treaty on
+January 14, 1784.
+
+In the terms of the treaty, France gave up
+all its territories in mainland North America,
+effectively ending any foreign military threat to
+the British colonies there and the colonies agreed
+to pay debt to Britain.
+
+The independence needed a better charter, hence the Constitution
+was written during the Philadelphia Convention—now
+known as the Constitutional Convention—which convened from
+May 25 to September 17, 1787. It was signed on September 17, 1787.
+
+_We the people of the United States, in order to form a more perfect union,
+establish justice, insure domestic tranquility, provide for the common defense,
+promote the general welfare, and secure the blessings of liberty to ourselves
+and our posterity, do ordain and establish this Constitution for the United
+States of America._
+
+Washington wanted to retire, but others wanted him to be the
+first leader of this new land.  Washington became President in
+April 30, 1789. He set up a cabinet because no President can
+know everything no matter how much of a stable genius they claim to be.
+He could of made the President anything he wanted but he made it
+like it is today.
