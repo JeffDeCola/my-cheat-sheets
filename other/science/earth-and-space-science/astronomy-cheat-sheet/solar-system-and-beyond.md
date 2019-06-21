@@ -1,6 +1,6 @@
-# OUR SOLAR SYSTEM CHEAT SHEET
+# OUR SOLAR SYSTEM & BEYOND CHEAT SHEET
 
-`astronomy` _goes over the main celestial bodies
+`our solar system and beyond` _goes over the main celestial bodies
 in our solar system and beyond._
 
 * [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sun)
@@ -57,7 +57,7 @@ not very hot.
   * Radiative Zone
   * Convective Zone
   * Photosphere
-  * Chromosphere - Atmosphere    
+  * Chromosphere - Atmosphere
   * Corona - Upper atmosphere
 
 ## INNER PLANETS
@@ -72,8 +72,8 @@ The four smaller inner planets, also known as the “terrestrial planets”
 * Distance: .39 AU from the sun
 * Orbit Period: 87.96 days to orbit the sun
 * Rotate Axis: 58.7 days
-* Surface Temperature: -173&deg;C to 427&deg;C 
-* Diameter: 4,878 km (3,031 miles) 
+* Surface Temperature: -173&deg;C to 427&deg;C
+* Diameter: 4,878 km (3,031 miles)
 * Mass: 5.5% of earth
 * Moons: None
 * Notable facts:
@@ -105,7 +105,7 @@ The four smaller inner planets, also known as the “terrestrial planets”
 * Orbit Period: 365.26 days to orbit the sun
 * Rotate Axis: 1 day
 * Surface Temperature: -88&deg;C to 58&deg;C
-* Diameter: 12,756 km (7,926 miles) 
+* Diameter: 12,756 km (7,926 miles)
 * Mass: 100% of earth
 * Moons: Look up
 * Notable facts:
@@ -119,7 +119,7 @@ The four smaller inner planets, also known as the “terrestrial planets”
 * Orbit Period: 27.3 days to orbit the sun
 * Rotate Axis: 27.3 days
 * Surface Temperature: -233&deg;C to 123&deg;C
-* Diameter: 3,475 km
+* Diameter: 3,475 km (2,158.8 miles)
 * Mass: .01% of earth
 * Notable facts
   * Actually made of cheese
@@ -155,7 +155,7 @@ The four smaller inner planets, also known as the “terrestrial planets”
 * 200 known asteroids are larger than 100km
 * Notable Asteroids
   * Ceres is dwarf planet like Pluto
-* Asteroid Belt objects are made of rock and stone. 
+* Asteroid Belt objects are made of rock and stone.
 
 ### CERES
 
@@ -290,7 +290,7 @@ larger and more massive than the inner planets.
 * Orbit Period: 309.9 years to orbit the sun
 * Rotate Axis: tbd
 * Surface Temperature: -239&deg;C
-* Diameter: 1,434 km (891 miles) 
+* Diameter: 1,434 km (891 miles)
 * Mass: tbd
 * Moons: 1
 * Notable facts
@@ -343,13 +343,13 @@ as such the facts detailed on this page are hypothetical.
 * Distance: 543,873 AU (8.6 light years) from the sun
 * Brightest star in the sky
 * Sirius comes from the Greek word Seirius,
-  meaning, "searing" or "scorching.
+  meaning, "searing" or "scorching
 
 ### BETELGEUSE
 
 * Distance: 27,190,000 AU (430 light years) from the sun
-* Brightest star in the night sky.
-* Its ready to blow in the next million years.
+* Brightest star in the night sky
+* Its ready to blow in the next million years
 
 ### RIGEL
 
@@ -360,7 +360,7 @@ as such the facts detailed on this page are hypothetical.
 
 * 63,000,000+ AU from the sun
 
-###  CANIS MAJOR DWARF GALAXY
+### CANIS MAJOR DWARF GALAXY
 
 * Distance: 63,000,000 AU (996 light years) from the sun
 * Closest Galaxy to us

@@ -12,7 +12,7 @@ space, and the physical universe as a whole._
 * [THE CELESTIAL SPHERE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#the-celestial-sphere)
   * [MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#mapping-star-on-celestial-sphere-declination--right-ascension)
   * [OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#observer-on-earth-finding-a-star-altitude--azimuth)
-* [SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#solar-system)
+* [OUR SOLAR SYSTEM & BEYOND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#out-solar-system--beyond)
 * [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#astronomical-units-and-scale)
 * [CELESTIAL BODIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#celestial-bodies)
   * [STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
@@ -25,8 +25,12 @@ space, and the physical universe as a whole._
   * [ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#asteroids)
   * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
 * [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
+* [SCALE]()
+  * [SUN & EARTH]()
+  * [EARTH & MOON]()
+  * [EARTH & MARS]()
 
-Check out whats in our [solar system](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
+Check out whats in [our solar system & beyond](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 on another cheat sheet.
 
 View my entire list of cheat sheets on
@@ -191,7 +195,7 @@ This figure may help,
 
 ![IMAGE - Celestial Sphere - IMAGE](pgfplots-pics/celestial-sphere.svg)
 
-## SOLAR SYSTEM
+## OUR SOLAR SYSTEM & BEYOND
 
 * 0-122 AU from the sun.
 * 99.86% of the system’s mass is found in the Sun and the majority of the
@@ -206,7 +210,7 @@ This figure may help,
   the asteroid belt, comets and the Kuiper belt.
 
 For a complete rundown of our solar system, check out my
-[solar system cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
+[our solar system & beyond cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 
 ## ASTRONOMICAL UNITS AND SCALE
 
@@ -216,6 +220,10 @@ It's approximately 8 light-minutes. More exactly,
 
 * 1 AU = 92,955,807 miles (149,597,871 km).
 * 1 Light Year = 63,241.1 AU
+
+A `parsec` is defined as the distance at which one astronomical
+unit subtends an angle of one arcsecond, which corresponds to 648000*pi
+astronomical units.
 
 ## CELESTIAL BODIES
 
@@ -315,3 +323,19 @@ List of landings on extraterrestrial bodies,
 * Comets
   * Comet 9P/Tempel 1
   * Comet 67P/Churyumov–Gerasimenko
+
+## SCALE
+
+Its hard to comprehend scale, so this may help a bit.
+
+### SUN & EARTH
+
+![IMAGE - scale-of-sun-and-earth - IMAGE](../../../../docs/pics/scale-of-sun-and-earth.jpg)
+
+### EARTH & MOON
+
+![IMAGE - scale-of-earth-and-moon - IMAGE](../../../../docs/pics/scale-of-earth-and-moon.jpg)
+
+### EARTH & MARS
+
+![IMAGE - scale-of-earth-and-mars - IMAGE](../../../../docs/pics/scale-of-earth-and-mars.jpg)
