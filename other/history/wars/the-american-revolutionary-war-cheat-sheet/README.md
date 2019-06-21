@@ -24,13 +24,13 @@ America and the british for America's Independence._
 * [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
 * [THE BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bemis-heights-oct-7-1777)
 * [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
-* [THE BATTLE OF MONMOUTH (June 28, 1778)]()
-* [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)]()
-* [AFRICAN AMERICANS]()
-* [BENEDICT ARNOLD]()
-* [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)]()
-* [THE BATTLE OF YORKTOWN (October 17, 1781)]()
-* [TREATY OF PARIS & AFTERMATH (September 3, 1783)]()
+* [THE BATTLE OF MONMOUTH (June 28, 1778)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-monmouth-june-28-1778)
+* [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
+* [AFRICAN AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#african-americans)
+* [BENEDICT ARNOLD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benedict-arnold)
+* [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-guilford-courthouse-march-15-1781)
+* [THE BATTLE OF YORKTOWN (October 17, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-yorktown-october-17-1781)
+* [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
