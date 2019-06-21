@@ -306,10 +306,10 @@ Random other things I'm interested in.
 * WARS
 
   * [THE AMERICAN REVOLUTIONARY WAR (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
-  * [THE WAR OF 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/the-war-of-1812-cheat-sheet)
-  * [THE AMERICAN CIVIL WAR (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/the-american-civil-war-cheat-sheet)
-  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/ww1-cheat-sheet)
-  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/changes/ww2-cheat-sheet)
+  * [THE WAR OF 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-war-of-1812-cheat-sheet)
+  * [THE AMERICAN CIVIL WAR (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-civil-war-cheat-sheet)
+  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww1-cheat-sheet)
+  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww2-cheat-sheet)
 
 ### MATHEMATICS
 
