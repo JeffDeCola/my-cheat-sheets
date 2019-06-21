@@ -31,8 +31,8 @@ in our solar system and beyond._
   * [RIGEL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
 * [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#galaxies)
   * [CANIS MAJOR DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#canis-major-dwarf-galaxy)
-  * [LARGE MAGELLANIC CLOUD DWARF GALAXY]()
-  * [SMALL MAGELLANIC CLOUD DWARF GALAXY]()
+  * [LARGE MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#large-magellanic-cloud-dwarf-galaxy)
+  * [SMALL MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#small-magellanic-cloud-dwarf-galaxy)
   * [ANDROMEDA GALAXY (M31)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy)
   * [MACS0647-JD (FARTHEST OBJECT SEEN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#macs0647-jd-farthest-object-seen)
 
