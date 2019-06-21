@@ -24,6 +24,10 @@ space, and the physical universe as a whole._
   * [MOONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#moons)
   * [ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#asteroids)
   * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
+* [MESSIER & NEW GENERAL CATALOGUE]()
+  * [GALAXIES]()
+  * [STAR CLUSTERS]()
+  * [NEBULAE]()
 * [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
 * [SCALE]()
   * [SUN & EARTH]()
@@ -300,6 +304,34 @@ tbd
 
 tbd
 
+## MESSIER & NEW GENERAL CATALOGUE
+
+Objects in the sky.  There are about 100 objects in the messier catalogue and
+about 7000 objects in the new General Catalogue.
+
+### GALAXIES
+
+Its more that these are in different stages of their lives. 
+The older they get the become like spiral galaxies.
+
+* BARRED SPIRAL
+* SPIRAL
+* ELLIPTICAL
+* IRREGULAR
+* LENTICULAR
+
+### STAR CLUSTERS
+
+* GLOBULAR - Clump of stars
+* OPEN - Spread out, no real center
+
+### NEBULAE
+
+Looks like big plums of gas.
+
+* STAR BIRTH
+* STAR DEATH
+
 ## WHAT OBJECTS HAVE WE LANDED ON
 
 List of landings on extraterrestrial bodies,
@@ -339,3 +371,7 @@ Its hard to comprehend scale, so this may help a bit.
 ### EARTH & MARS
 
 ![IMAGE - scale-of-earth-and-mars - IMAGE](../../../../docs/pics/scale-of-earth-and-mars.jpg)
+
+### TYPES OF STARS
+
+![IMAGE - scale-of-types-of-stars - IMAGE](../../../../docs/pics/scale-of-types-of-stars.jpg)
