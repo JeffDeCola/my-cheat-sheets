@@ -31,7 +31,9 @@ in our solar system and beyond._
   * [RIGEL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
 * [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#galaxies)
   * [CANIS MAJOR DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#canis-major-dwarf-galaxy)
-  * [ANDROMEDA GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy)
+  * [LARGE MAGELLANIC CLOUD DWARF GALAXY]()
+  * [SMALL MAGELLANIC CLOUD DWARF GALAXY]()
+  * [ANDROMEDA GALAXY (M31)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy)
   * [MACS0647-JD (FARTHEST OBJECT SEEN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#macs0647-jd-farthest-object-seen)
 
 View my entire list of cheat sheets on
@@ -335,7 +337,7 @@ as such the facts detailed on this page are hypothetical.
 ### PROXIMA CENTAURI
 
 * Distance: 267,000 AU (4.221 light years) from the sun
-* The nearest star(sun) to us.
+* The nearest star(sun) to us
 * Red Dwarf
 
 ### SIRIUS
@@ -362,12 +364,36 @@ as such the facts detailed on this page are hypothetical.
 
 ### CANIS MAJOR DWARF GALAXY
 
-* Distance: 63,000,000 AU (996 light years) from the sun
+* Distance: 1,581,030,000 AU (25,000 light years) from the sun
+* Diameter: ??
+* Number of Stars: 1 Billion
+* Constellation: Canis Major
 * Closest Galaxy to us
 
-### ANDROMEDA GALAXY
+### LARGE MAGELLANIC CLOUD DWARF GALAXY
 
-* Distance: 1,600,000,000 AU (25,300 light years) from the sun
+* Distance 10,308,300,000 AU (163,000 light years) from the sun
+* Diameter: 885,375,000 AU (14,000 light years)
+* Number of Stars: 30 Billion
+* Constellation: Dorado & Mensa
+* Orbiting the Milky Way Galaxy
+
+### SMALL MAGELLANIC CLOUD DWARF GALAXY
+
+* Distance: 12,458,490,000 AU (197,000 light years) from the sun
+* Diameter: 442,690,000 AU (7,000 light years) from the sun
+* Number of Stars: 3 Billion
+* Constellation: Tucana & Hydrus
+* Orbiting the Milky Way Galaxy
+
+### ANDROMEDA GALAXY (M31)
+
+* Distance: 160,000,000,000 AU (2,537,000 light years) from the sun
+* Diameter: 220,000 light years across
+* Number of Stars: 1 trillion stars
+* Constellation: Andromeda
+* Designation: M31 or NGC 224
+* Magnitude 3.44
 * Notable Spiral Galaxy
 
 ### MACS0647-JD (FARTHEST OBJECT SEEN)
