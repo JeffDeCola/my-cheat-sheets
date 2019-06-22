@@ -6,9 +6,8 @@
 
 `physics` _helps describe everything around us._
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
+* [BASIC QUANTITIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#basic-quantities)
 * [TERMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#terms)
-* [MOTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#motion)
 
 This cheat sheet was built using,
 
@@ -30,31 +29,79 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 Why are things the way they are, we try to understand.
+IT is the study of the properties of matter and their relationship with energy
+and forces.
 
-* `mass` - _tbd_
-* `velocity` - _tbd_
-* `acceleration` - _tbd_
-* `kinetic energy`
-* `electric field`
-* `gravity`
-* `vector` - _Has a magnitude (size) and a direction_
-* `scalar` - _Only has a magnitude (size)_
+Physics can be subdivided into the following,
 
-## TERMS
+* `CLASSICAL PHYSICS`
+  * This cheat sheet
+  * Isaac Newton is credited with many classical physics theories.
+  * This is further broken down into
+    * `MATTER`
+      * The various states of matter and their properties.
+    * `MECHANICS`
+      * Concerns forces and the motion of objects.
+    * `WAVE MOTION`
+      * Special application of mechanics. It mainly concerns sound    waves
+        and electromagnetic waves.
+    * `HEAT ENERGY`
+      * Heat is the internal energy of a material.
+    * `ELECTRICITY AND MAGNETISM`
+      * General electricity
+      * Static electricity
+      * Direct current (DC) electricity
+      * Alternating current (AC) electricity
+      * Magnetism
+      * Electromagnetism
+    * `GRAVITY`
+      * Concerns the force of gravity near the Earth and the forces
+        of gravitation in space.
+* `RELATIVITY`
+  * Concerns what happens to matter, space, and time at extremely high speeds
+  or velocities.
+* `QUANTUM MECHANICS`
+  * Concerns extremely small sizes and distances
 
-## VECTORS AND SCALARS
+## BASIC QUANTITIES
 
-Let look at Moving a brick.
+Some terms,
 
-If I said I moved a brick 5 meters.  The 5 meters (distance) is a scalar.
+* `Object`
+* `Motion`
+    * descibed with acceleration & velocity
+* `Work`
+* `Power`
+* `Heat`
+* `Waves`
+* `Kinetic Energy`
+* `Electric Field`
+* `Magnetic Field`
+* `Vector`
+  * _Has a magnitude (size) and a direction_
+* `Scalar`
+  * _Only has a magnitude (size)_
 
-If I said it moved 5 meters to the left, now I have a direction,
-so this is a vector.  The magnitude is 5 meters and the direction is to the left.
+Basic quantities are,
 
-Now lets add time. What is I said I moved a brick to the left 5 meters and
-it took 2 seconds.
+* `Acceleration`
+* `Electric Charge`
+* `Energy`
+  * Concerns the velocity of matter
+* `Entropy`
+* `Force`
+  * `Gravity`
+* `Length`
+* `Mass`
+* `Matter`
+  * Objects are made of matter
+* `Momentum`
+* `Potential energy`
+* `Space`
+* `Temperature`
+* `Time`
+* `Velocity`
 
-Velocity is it moved 5 meters in 2 seconds, or <img alt="$v = 2.5 m/s$" src="svgs/c307242077f37ce08590fb2a4dd1e830.svg" align="middle" width="81.568575pt" height="24.56553pt"/>
-So velocity is a scalar.
+This illustration may help,
 
-But if I also tell you the direction, that is a vector and its velocity.
+![IMAGE - physics-overview-diagram - IMAGE](../../../docs/pics/physics-overview-diagram.jpg)
