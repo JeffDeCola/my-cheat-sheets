@@ -16,7 +16,7 @@ The folder structures are organized alphabetically as follows,
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
   For the goal of creating an App/Service
 
-  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
+  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
   * [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
 
@@ -37,7 +37,7 @@ Some other cheat sheets I'm working on,
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
   For the goal of creating an ASIC
 
-  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
+  * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
 
 * [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)

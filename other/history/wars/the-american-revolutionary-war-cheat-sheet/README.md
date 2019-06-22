@@ -28,6 +28,7 @@ America and the british for America's Independence._
 * [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
 * [AFRICAN AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#african-americans)
 * [BENEDICT ARNOLD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benedict-arnold)
+* [BRITISH TAKING THE SOUTH (1780-1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#british-taking-the-south-1780-1781)
 * [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-guilford-courthouse-march-15-1781)
 * [THE BATTLE OF YORKTOWN (October 17, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-yorktown-october-17-1781)
 * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)

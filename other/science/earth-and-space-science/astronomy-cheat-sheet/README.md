@@ -96,7 +96,7 @@ Had three main contributions,
 * Planets travel elliptical
 * Closer you are to sun move faster
 * The square of the orbital period of a planet
-  is proportional to distance of the sun cubed.
+  is proportional to distance of the sun cubed
 
 ### GALILEO GALILEI (1564-1642)  ITALY
 
@@ -205,9 +205,13 @@ This figure may help,
 * 0-122 AU from the sun.
 * 99.86% of the system’s mass is found in the Sun and the majority of the
   remaining 0.14% is contained within the solar system’s eight planets.
-* The four smaller inner planets, also known as the “terrestrial planets”
+* The four smaller
+  [inner planets](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#inner-planets),
+  also known as the “terrestrial planets”
   (Mercury, Venus, Earth and Mars), are primarily composed of rock and metal.
-* The four outer planets, also known as the “gas giants”
+* The four
+  [outer planets](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planets),
+  also known as the “gas giants”
   (Jupiter, Saturn, Uranus and Neptune), are substantially
   larger and more massive than the inner planets.
 * Other objects of note in the Solar System are the dwarf planets
@@ -261,12 +265,15 @@ But the southern hemisphere doesn't really have a south pole star.
 
 Here are some other notable stars,
 
-* `Betelgeuse` - Betelgeuse is the brightest star in the night sky. Its
+* [Betelgeuse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betegeuse)
+  The brightest star in the night sky. Its
   ready to blow in the next million years. 430 light years away.
-* `Sirius` brightest star in the sky and only 8.6
+* [Sirius](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
+  is the brightest star in the sky and only 8.6
   light years away. Sirius comes from the Greek word Seirius,
   meaning, "searing" or "scorching.
-* `Rigel` - Blue color. 7th brightest star in the Constellation of orion.
+* [Rigel](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
+  has a blue color. 7th brightest star in the Constellation of orion.
   864 lights years away.
 
 ### CONSTELLATIONS
