@@ -104,4 +104,4 @@ Basic quantities are,
 
 This illustration may help,
 
-![IMAGE - physics-overview-diagram - IMAGE](../../../docs/pics/physics-overview-diagram.jpg)
+![IMAGE - physics-overview-diagram - IMAGE](../../../../docs/pics/physics-overview-diagram.jpg)
