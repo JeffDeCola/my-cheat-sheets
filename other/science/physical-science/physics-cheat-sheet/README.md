@@ -6,8 +6,8 @@
 
 `physics` _helps describe everything around us._
 
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
 * [BASIC QUANTITIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#basic-quantities)
-* [TERMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#terms)
 
 This cheat sheet was built using,
 
@@ -65,42 +65,47 @@ Physics can be subdivided into the following,
 
 ## BASIC QUANTITIES
 
-Some terms,
+Basic quantities and how they interact are,
 
-* `Object`
-* `Work`
-* `Power`
-* `Heat`
-* `Waves`
-* `Kinetic Energy`
-
-* `Vector`
-  * _Has a magnitude (size) and a direction_
-* `Scalar`
-  * _Only has a magnitude (size)_
-
-Basic quantities are capatalized (and other terms just Highlighted),
-
-* Motion
+* `Motion`
   * `VELOCITY`
+  * The rate of change of its position with respect to a frame of reference,
+    and is a function of time
   * `ACCELERATION`
-* `ELECTIRC CHARGE`
-  * Has an Electric Field
-  * When moving produces a Magnetic Field
+    * Rate of change of velocity of an object with respect to time.
+* `ELECTRIC CHARGE`
+  * Is the physical property of matter that can experience a force
+    when placed in an electromagnetic field.
+  * Has an `electric field`
+  * When moving produces a `magnetic field`
+  * Can flow though a `circuit`.
 * `ENERGY`
+  * Must be transferred to an object in order to perform work on, or to heat,
+    the object
   * Concerns the velocity of matter
-  * Capacity to do Work
+  * Capacity to do `work`
 * `ENTROPY`
 * `FORCE`
-  * Such as Gravity
-* `Length`
-  * `Mass`
-* `Matter`
-  * Objects
+  * Is any interaction that, when unopposed, will change the motion of an object
+  * Such as `gravity`
+* `LENGTH`
+  * Measure of distance
+* `MASS`
+  * Both a property of a physical body and
+  * A measure of its resistance to acceleration (a change in its state of motion)
+    when a net force is applied
+* `MATTER`
+  * `Objects` that have mass a volume (take up space)
 * `MOMENTUM`
+  * Product of the mass and `velocity` of an `object`
 * `POTENTIAL ENERGY`
+  * Is the `energy` held by an `object` because of its position relative
+    to other `objects`
 * `SPACE`
+  * Is the boundless three-dimensional extent in which `objects`
+    and events have relative position and direction.
 * `TEMPERATURE`
+  * Is a physical quantity expressing `hot` and `cold`
 * `TIME`
 
 This illustration may help,
