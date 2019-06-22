@@ -68,39 +68,40 @@ Physics can be subdivided into the following,
 Some terms,
 
 * `Object`
-* `Motion`
-    * descibed with acceleration & velocity
 * `Work`
 * `Power`
 * `Heat`
 * `Waves`
 * `Kinetic Energy`
-* `Electric Field`
-* `Magnetic Field`
+
 * `Vector`
   * _Has a magnitude (size) and a direction_
 * `Scalar`
   * _Only has a magnitude (size)_
 
-Basic quantities are,
+Basic quantities are capatalized (and other terms just Highlighted),
 
-* `Acceleration`
-* `Electric Charge`
-* `Energy`
+* Motion
+  * `VELOCITY`
+  * `ACCELERATION`
+* `ELECTIRC CHARGE`
+  * Has an Electric Field
+  * When moving produces a Magnetic Field
+* `ENERGY`
   * Concerns the velocity of matter
-* `Entropy`
-* `Force`
-  * `Gravity`
+  * Capacity to do Work
+* `ENTROPY`
+* `FORCE`
+  * Such as Gravity
 * `Length`
-* `Mass`
+  * `Mass`
 * `Matter`
-  * Objects are made of matter
-* `Momentum`
-* `Potential energy`
-* `Space`
-* `Temperature`
-* `Time`
-* `Velocity`
+  * Objects
+* `MOMENTUM`
+* `POTENTIAL ENERGY`
+* `SPACE`
+* `TEMPERATURE`
+* `TIME`
 
 This illustration may help,
 
