@@ -12,29 +12,29 @@
 * [PHYSICAL QUANTITIES & UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#physical-quantities--units)
   * [FUNDAMENTAL UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#fundamental-units)
   * [NOTABLE DERIVED UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#notable-derived-units)
-* [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER]()
+* [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#a-quick-discussion-on-objects-mass--matter)
 
 My physics cheat sheets are as follows,
 
-* [MOTION]()
+* [MOTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/motion.md)
   * Scalars & Vectors
   * Speed, Velocity & Acceleration
   * Forces
-* [ENERGY]()
+* [ENERGY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/energy.md)
   * Work & Power
   * Momentum
   * Thermodynamics
   * Potential Energy
   * Kinetic Energy
-* [WAVES]()  
-* [ELECTRICITY AND MAGNETISM]()
+* [WAVES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/waves.md)  
+* [ELECTRICITY AND MAGNETISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/electricity-and-magnetism.md)
   * General electricity
   * Static electricity
   * Direct current (DC) electricity
   * Alternating current (AC) electricity
   * Magnetism
   * Electromagnetism
-* [LIGHT AND OPTICS]()
+* [LIGHT AND OPTICS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/light-and-optics.md)
   * Light as a wave
   * Light as a particle
 
