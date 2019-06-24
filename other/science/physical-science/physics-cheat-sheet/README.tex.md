@@ -7,10 +7,36 @@
 `physics` _helps describe everything around us._
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
-  * [IMPORTANT DISCOVERIES IN PHYSICS]()
-* [UNITS AND PHYSICAL QUANTITIES]()
-  * [FUNDAMENTAL AND DERIVED UNITS]()
-  * [PHYSICAL QUANTITIES]()
+  * [MAIN AREAS OF PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#main-areas-of-physics)
+  * [IMPORTANT DISCOVERIES IN PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#important-discoveries-in-physics)
+* [PHYSICAL QUANTITIES & UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#physical-quantities--units)
+  * [FUNDAMENTAL UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#fundamental-units)
+  * [NOTABLE DERIVED UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#notable-derived-units)
+* [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER]()
+
+My physics cheat sheets are as follows,
+
+* [MOTION]()
+  * Scalars & Vectors
+  * Speed, Velocity & Acceleration
+  * Forces
+* [ENERGY]()
+  * Work & Power
+  * Momentum
+  * Thermodynamics
+  * Potential Energy
+  * Kinetic Energy
+* [WAVES]()  
+* [ELECTRICITY AND MAGNETISM]()
+  * General electricity
+  * Static electricity
+  * Direct current (DC) electricity
+  * Alternating current (AC) electricity
+  * Magnetism
+  * Electromagnetism
+* [LIGHT AND OPTICS]()
+  * Light as a wave
+  * Light as a particle
 
 This cheat sheet was built using,
 
@@ -31,43 +57,22 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Why are things the way they are?  Physics tries to understand.
+Physics tries to understand your world.
+It helps explain why are things the way they are?  
 It is the study of the properties of matter and their relationship with energy
-and forces.
+and forces. There are many branches of physics including electricity,
+astronomy, motion, waves, sound, and light.
+
+### MAIN AREAS OF PHYSICS
 
 Physics can be subdivided into the following,
 
 * `CLASSICAL PHYSICS`
   * This cheat sheet
-  * Isaac Newton is credited with many classical physics theories.
-  * This is further broken down into
-    * `MATTER`
-      * The various states of matter and their properties.
-    * `MECHANICS`
-      * Concerns `forces` such as `gravity` and
-      * The motion (`velocity`, `acceleration`) of objects.
-    * `WAVE MOTION`
-      * Special application of mechanics. It mainly concerns sound waves
-        and electromagnetic waves.
-    * `WORK AND ENERGY`
-      * Heat is the internal energy of a material.
-      * Kinetic
-      * Potential
-      * Power
-      * Temperature as (heat and cold)
-    * `ELECTRICITY AND MAGNETISM`
-      * General electricity
-      * Static electricity
-      * Direct current (DC) electricity
-      * Alternating current (AC) electricity
-      * Magnetism
-      * Electromagnetism
-    * `LIGHT AND OPTICS`
-      * Light as a wave
-      * Light as a particle
+  * Isaac Newton is credited with many classical physics theories
 * `RELATIVITY`
   * Concerns what happens to matter, space, and time at extremely high speeds
-  or velocities.
+    or velocities
 * `QUANTUM MECHANICS`
   * Concerns extremely small sizes and distances
 
@@ -170,3 +175,7 @@ Some derived units of a physical quantity,
 This illustration may help,
 
 ![IMAGE - physics-overview-diagram - IMAGE](../../../../docs/pics/physics-overview-diagram.jpg)
+
+## A QUICK DISCUSSION ON OBJECTS, MASS & MATTER
+
+tbd
