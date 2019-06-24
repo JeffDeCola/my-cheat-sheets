@@ -9,7 +9,7 @@ View my entire list of cheat sheets on
 
 Not listed is the Rasp Pi Zero.
 
-|                  | Rasp Pi 1 Model B+ |  Rasp Pi 2 Model B |  Rasp Pi 3 Model B | Rasp Pi 3 Model B+ |  Rasp Pi 4 Model B |
+| P SPECIFICATIONS | Rasp Pi 1 Model B+ |  Rasp Pi 2 Model B |  Rasp Pi 3 Model B | Rasp Pi 3 Model B+ |  Rasp Pi 4 Model B |
 |:-----------------|-------------------:|-------------------:|-------------------:|-------------------:|-------------------:|
 | Year             |               2014 |               2015 |               2016 |               2018 |               2019 |
 | SoC              |            BCM2835 |            BCM2836 |            BCM2837 |          BCM2837B0 |            BCM2711 |
