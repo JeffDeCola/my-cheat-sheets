@@ -31,6 +31,7 @@ This highlights the main cores and the architecture used.
 | ARMv7-A          |             ARM Cortex-A7 |       Broadcom BCM2836 |
 |                  |             ARM Cortex-A9 |        Freescale i.MX6 |
 | ARMv8-A          |            ARM Cortex-A53 |       Broadcom BCM2837 |
+| ARMv8-A          |            ARM Cortex-A72 |       Broadcom BCM2711 |
 | ARMv8.2-A        |            ARM Cortex-A55 |                        |
 
 SolidRun's

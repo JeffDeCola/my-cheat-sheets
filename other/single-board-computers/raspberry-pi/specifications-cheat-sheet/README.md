@@ -77,7 +77,7 @@ Model 3 and 4,
 | POWER SOURCE     |           microUSB |           microUSB |              USB-C | 
 | - idle           |       300mA (1.5W) |       459mA (2.3W) |           ?mA (?W) | 
 | - max            |       1.34A (6.7W) |      1.13A (5.66W) |            ?A (?W) |
-| PoE              |                  - |  need add-on board | need add-on board  |
+| PoE              |                  - |  need add-on board |  need add-on board |
 
 BCM chips are from Broadcom. Refer to my cheat sheet on
 [ARM architectures](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet).

@@ -31,8 +31,8 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Why are things the way they are, we try to understand.
-IT is the study of the properties of matter and their relationship with energy
+Why are things the way they are?  Physics tries to understand.
+It is the study of the properties of matter and their relationship with energy
 and forces.
 
 Physics can be subdivided into the following,
@@ -73,99 +73,99 @@ Physics can be subdivided into the following,
 
 ### IMPORTANT DISCOVERIES IN PHYSICS
 
-* Nicholas Copernicus - Discovered that the Earth rotates around the Sun.
-* Galileo - Demonstrated that heavy objects do not fall faster than lighter
+* [Nicholas Copernicus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
+  (1473-1543)
+  Discovered that the Earth rotates around the Sun.
+* [Galileo Galilei](Galileohttps://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+  (1564-1642)
+  Demonstrated that heavy objects do not fall faster than lighter
   ones in his famous Leaning Tower of Pisa experiment.
-* Isaac Newton - Published the three laws of motion and explained how gravity works.
-* John Dalton - Described the atom and the atomic theory of matter.
-* Albert Einstein - Published the theory of relativity.
-* Max Planck - Described quantum theory.
+* [Sir Isaac Newton](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
+  (1642-1727)
+  Published the three laws of motion and explained how gravity works.
+* `John Dalton`
+  (1766-1844)
+  Described the atom and the atomic theory of matter.
+* `Albert Einstein`
+  (1879-1955)
+  Published the theory of relativity.
+* `Max Planck`
+  (1858-1947)
+  Described quantum theory.
 
-## UNITS AND PHYSICAL QUANTITIES
+## PHYSICAL QUANTITIES & UNITS
 
- A physical quantity either defined by,
+The measurement of a `physical quantity` is expressed in `units`.
 
-* Specifying how it is measured (e.g. like distance and time)
-* Stating how it is calculated from other measurements (e.g. speed is distance
-  over time).
+ A physical quantity is either defined by,
 
-Measurements of physical quantities are expressed in terms of units (e.g. meters
-or seconds).
+* Specifying how it is measured (e.g. distance and time) or
+* Stating how it is calculated from other measurements (e.g. speed which
+  is distance over time)
 
-### FUNDAMENTAL AND DERIVED UNITS
+### FUNDAMENTAL UNITS
 
-Fundamental units are,
+Fundamental units of a physical quantity,
 
-* LENGTH
-  * meter (m)
-* MASS
-  * kilogram (kg)
-* TIME
-  * seconds (s)
-* ELECTRIC CURRENT
-  * ampere (A)
-* TEMPERATURE
-  * kelvin (K)
-* AMOUNT OF SUBSTANCE
-  * mole (mol)
-* LUMINOUS INTENSITY
-  * candela (cd)  
+* `LENGTH`
+  * $l$, $x$ meter ($m$)
+* `MASS`
+  * $m$ kilogram ($kg$)
+  * mass is not the same as weight
+  * Both a property of a physical body and
+  * A measure of its resistance to acceleration (a change in its state of motion)
+  when a net force is applied
+* `TIME`
+  * $t$ seconds ($s$)
+* `ELECTRIC CURRENT`
+  * ampere ($A$)
+* `TEMPERATURE`
+  * $T$ kelvin ($K$)
+* `AMOUNT OF SUBSTANCE`
+  * mole ($mol$)
+* `LUMINOUS INTENSITY`
+  * candela ($cd$)
 
-There is a massive list of derived units, here are popular ones.
+### NOTABLE DERIVED UNITS
 
-* hertz (Hz)
-* radian (rad)
-* watt (W)
-* ElecVolt (V)
-* Work - joule (J)
-* Area - Square meter ($m2$)
-* Volume - cubic meter - ($m3$)
-* Force (N)
+Some derived units of a physical quantity,
 
-### PHYSICAL QUANTITIES
-
-Basic quantities are,
-
+* `ENERGY`
+  * $E$, $J$ joule ($kg\cdot m^2/ s^{2}$)
+  * Must be transferred to an object in order to perform work on, or to heat,
+    the object
+  * Concerns the velocity of matter
+  * Capacity to do `work`
+* `MATTER`
+  * Have mass and volume (take up space)
 * `Motion`
   * `VELOCITY`
-    * The rate of change of its position with respect to a frame of reference,
+    * $v\ (m/s)$
+    * The rate of change of its position with respect to a frame of   reference,
       and is a function of time
-  * `ACCELERATION`
-    * Rate of change of velocity of an object with respect to time.
+    * `ACCELERATION`
+      * $a\ (m/s^2)$
+      * Rate of change of velocity of an object with respect to time
+    * `MOMENTUM`
+      * $p\ (kg \cdot m/s)$
+      * Product of the mass and `velocity` of an `object`
 * `ELECTRIC CHARGE`
+  * $Q$ coulomb ($A \cdot s$)
   * Is the physical property of matter that can experience a force
     when placed in an electromagnetic field.
   * Has an `electric field`
   * When moving produces a `magnetic field`
   * Can flow though a `circuit`.
-* `ENERGY`
-  * Must be transferred to an object in order to perform work on, or to heat,
-    the object
-  * Concerns the velocity of matter
-  * Capacity to do `work`
-* `ENTROPY`
 * `FORCE`
+  * $N$ newton ($kg \cdot m/s^2$)
   * Is any interaction that, when unopposed, will change the motion of an object
   * Such as `gravity`
-* `LENGTH`
-  * Measure of distance
-* `MASS`
-  * Both a property of a physical body and
-  * A measure of its resistance to acceleration (a change in its state of motion)
-    when a net force is applied
-* `MATTER`
-  * `Objects` that have mass a volume (take up space)
-* `MOMENTUM`
-  * Product of the mass and `velocity` of an `object`
+* `ENTROPY`
+  * $S$, joules per kelvin $J/K$ ($kg\cdot m^2\cdot s^{-2}\cdot K^{-1}$)
 * `POTENTIAL ENERGY`
+  * $PE$, $U$, $V$, joule ($kg\cdot m^2/ s^{2}$)
   * Is the `energy` held by an `object` because of its position relative
     to other `objects`
-* `SPACE`
-  * Is the boundless three-dimensional extent in which `objects`
-    and events have relative position and direction.
-* `TEMPERATURE`
-  * Is a physical quantity expressing `hot` and `cold`
-* `TIME`
 
 This illustration may help,
 
