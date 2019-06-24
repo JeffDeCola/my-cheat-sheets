@@ -73,13 +73,13 @@ Physics can be subdivided into the following,
 
 ### IMPORTANT DISCOVERIES IN PHYSICS
 
-* Nicholas Copernicus - discovered that the Earth rotates around the Sun.
-* Galileo - demonstrated that heavy objects do not fall faster than lighter
+* Nicholas Copernicus - Discovered that the Earth rotates around the Sun.
+* Galileo - Demonstrated that heavy objects do not fall faster than lighter
   ones in his famous Leaning Tower of Pisa experiment.
-* Isaac Newton - published the three laws of motion and explained how gravity works.
-* John Dalton - described the atom and the atomic theory of matter.
-* Albert Einstein - published the theory of relativity.
-* Max Planck - described quantum theory.
+* Isaac Newton - Published the three laws of motion and explained how gravity works.
+* John Dalton - Described the atom and the atomic theory of matter.
+* Albert Einstein - Published the theory of relativity.
+* Max Planck - Described quantum theory.
 
 ## UNITS AND PHYSICAL QUANTITIES
 
