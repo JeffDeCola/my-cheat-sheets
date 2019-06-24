@@ -81,7 +81,7 @@ Physics can be subdivided into the following,
 * [Nicholas Copernicus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
   (1473-1543)
   Discovered that the Earth rotates around the Sun.
-* [Galileo Galilei](Galileohttps://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+* [Galileo Galilei](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
   (1564-1642)
   Demonstrated that heavy objects do not fall faster than lighter
   ones in his famous Leaning Tower of Pisa experiment.
@@ -143,17 +143,16 @@ Some derived units of a physical quantity,
   * Capacity to do `work`
 * `MATTER`
   * Have mass and volume (take up space)
-* `Motion`
-  * `VELOCITY`
-    * $v\ (m/s)$
-    * The rate of change of its position with respect to a frame of   reference,
-      and is a function of time
-    * `ACCELERATION`
-      * $a\ (m/s^2)$
-      * Rate of change of velocity of an object with respect to time
-    * `MOMENTUM`
-      * $p\ (kg \cdot m/s)$
-      * Product of the mass and `velocity` of an `object`
+* `VELOCITY`
+  * $v$ velocity $(m/s)$
+  * The rate of change of its position with respect to a frame of   reference,
+    and is a function of time
+* `ACCELERATION`
+  * $a$ acceleration $(m/s^2)$
+  * Rate of change of velocity of an object with respect to time
+* `MOMENTUM`
+  * $p$ $(kg \cdot m/s)$
+  * Product of the mass and `velocity` of an `object`
 * `ELECTRIC CHARGE`
   * $Q$ coulomb ($A \cdot s$)
   * Is the physical property of matter that can experience a force
@@ -166,9 +165,9 @@ Some derived units of a physical quantity,
   * Is any interaction that, when unopposed, will change the motion of an object
   * Such as `gravity`
 * `ENTROPY`
-  * $S$, joules per kelvin $J/K$ ($kg\cdot m^2\cdot s^{-2}\cdot K^{-1}$)
+  * $S$ joules per kelvin $J/K$ ($kg\cdot m^2/ s^{2}\cdot K$)
 * `POTENTIAL ENERGY`
-  * $PE$, $U$, $V$, joule ($kg\cdot m^2/ s^{2}$)
+  * $PE$, $U$, $V$ joule ($kg\cdot m^2/ s^{2}$)
   * Is the `energy` held by an `object` because of its position relative
     to other `objects`
 

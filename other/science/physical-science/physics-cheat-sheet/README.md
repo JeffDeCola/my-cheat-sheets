@@ -81,7 +81,7 @@ Physics can be subdivided into the following,
 * [Nicholas Copernicus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
   (1473-1543)
   Discovered that the Earth rotates around the Sun.
-* [Galileo Galilei](Galileohttps://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+* [Galileo Galilei](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
   (1564-1642)
   Demonstrated that heavy objects do not fall faster than lighter
   ones in his famous Leaning Tower of Pisa experiment.
@@ -143,17 +143,16 @@ Some derived units of a physical quantity,
   * Capacity to do `work`
 * `MATTER`
   * Have mass and volume (take up space)
-* `Motion`
-  * `VELOCITY`
-    * $v\ (m/s)$
-    * The rate of change of its position with respect to a frame of   reference,
-      and is a function of time
-    * `ACCELERATION`
-      * $a\ (m/s^2)$
-      * Rate of change of velocity of an object with respect to time
-    * `MOMENTUM`
-      * $p\ (kg \cdot m/s)$
-      * Product of the mass and `velocity` of an `object`
+* `VELOCITY`
+  * <img alt="$v$" src="svgs/6c4adbc36120d62b98deef2a20d5d303.svg" align="middle" width="8.52588pt" height="14.10255pt"/> velocity <img alt="$(m/s)$" src="svgs/d8685658a02f20e17f78abc45ab8c32f.svg" align="middle" width="42.98217pt" height="24.56553pt"/>
+  * The rate of change of its position with respect to a frame of   reference,
+    and is a function of time
+* `ACCELERATION`
+  * <img alt="$a$" src="svgs/44bc9d542a92714cac84e01cbbb7fd61.svg" align="middle" width="8.656725pt" height="14.10255pt"/> acceleration <img alt="$(m/s^2)$" src="svgs/ebd9dcc69ce53169f999c68cad3fc4dc.svg" align="middle" width="50.356515pt" height="26.70657pt"/>
+  * Rate of change of velocity of an object with respect to time
+* `MOMENTUM`
+  * <img alt="$p$" src="svgs/2ec6e630f199f589a2402fdf3e0289d5.svg" align="middle" width="8.2397205pt" height="14.10255pt"/> <img alt="$(kg \cdot m/s)$" src="svgs/5ff8a60c97057863f364f3778c07361f.svg" align="middle" width="72.281385pt" height="24.56553pt"/>
+  * Product of the mass and `velocity` of an `object`
 * `ELECTRIC CHARGE`
   * <img alt="$Q$" src="svgs/1afcdb0f704394b16fe85fb40c45ca7a.svg" align="middle" width="12.94689pt" height="22.38192pt"/> coulomb (<img alt="$A \cdot s$" src="svgs/fc9ad280fb732ea020c558cd804c7fce.svg" align="middle" width="31.814475pt" height="22.38192pt"/>)
   * Is the physical property of matter that can experience a force
@@ -166,9 +165,9 @@ Some derived units of a physical quantity,
   * Is any interaction that, when unopposed, will change the motion of an object
   * Such as `gravity`
 * `ENTROPY`
-  * <img alt="$S$" src="svgs/e257acd1ccbe7fcb654708f1a866bfe9.svg" align="middle" width="10.986195pt" height="22.38192pt"/>, joules per kelvin <img alt="$J/K$" src="svgs/136a2a571ad67b5c862637d6df9b409e.svg" align="middle" width="33.017985pt" height="24.56553pt"/> (<img alt="$kg\cdot m^2\cdot s^{-2}\cdot K^{-1}$" src="svgs/71e6fc21f09dc323d2ebc392492f491c.svg" align="middle" width="131.93664pt" height="26.70657pt"/>)
+  * <img alt="$S$" src="svgs/e257acd1ccbe7fcb654708f1a866bfe9.svg" align="middle" width="10.986195pt" height="22.38192pt"/> joules per kelvin <img alt="$J/K$" src="svgs/136a2a571ad67b5c862637d6df9b409e.svg" align="middle" width="33.017985pt" height="24.56553pt"/> (<img alt="$kg\cdot m^2/ s^{2}\cdot K$" src="svgs/651e952dd00e6b89c4b3688180423569.svg" align="middle" width="101.22816pt" height="26.70657pt"/>)
 * `POTENTIAL ENERGY`
-  * <img alt="$PE$" src="svgs/8add5e79fd8356cfbfe5629e455f330b.svg" align="middle" width="25.83075pt" height="22.38192pt"/>, <img alt="$U$" src="svgs/6bac6ec50c01592407695ef84f457232.svg" align="middle" width="12.96735pt" height="22.38192pt"/>, <img alt="$V$" src="svgs/a9a3a4a202d80326bda413b5562d5cd1.svg" align="middle" width="13.192575pt" height="22.38192pt"/>, joule (<img alt="$kg\cdot m^2/ s^{2}$" src="svgs/ce09b314f428d09b637ab633b31bc1a4.svg" align="middle" width="73.446285pt" height="26.70657pt"/>)
+  * <img alt="$PE$" src="svgs/8add5e79fd8356cfbfe5629e455f330b.svg" align="middle" width="25.83075pt" height="22.38192pt"/>, <img alt="$U$" src="svgs/6bac6ec50c01592407695ef84f457232.svg" align="middle" width="12.96735pt" height="22.38192pt"/>, <img alt="$V$" src="svgs/a9a3a4a202d80326bda413b5562d5cd1.svg" align="middle" width="13.192575pt" height="22.38192pt"/> joule (<img alt="$kg\cdot m^2/ s^{2}$" src="svgs/ce09b314f428d09b637ab633b31bc1a4.svg" align="middle" width="73.446285pt" height="26.70657pt"/>)
   * Is the `energy` held by an `object` because of its position relative
     to other `objects`
 
