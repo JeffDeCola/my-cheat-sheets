@@ -7,7 +7,10 @@
 `physics` _helps describe everything around us._
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
-* [BASIC QUANTITIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#basic-quantities)
+  * [IMPORTANT DISCOVERIES IN PHYSICS]()
+* [UNITS AND PHYSICAL QUANTITIES]()
+  * [FUNDAMENTAL AND DERIVED UNITS]()
+  * [PHYSICAL QUANTITIES]()
 
 This cheat sheet was built using,
 
@@ -41,12 +44,17 @@ Physics can be subdivided into the following,
     * `MATTER`
       * The various states of matter and their properties.
     * `MECHANICS`
-      * Concerns forces and the motion of objects.
+      * Concerns `forces` such as `gravity` and
+      * The motion (`velocity`, `acceleration`) of objects.
     * `WAVE MOTION`
-      * Special application of mechanics. It mainly concerns sound    waves
+      * Special application of mechanics. It mainly concerns sound waves
         and electromagnetic waves.
-    * `HEAT ENERGY`
+    * `WORK AND ENERGY`
       * Heat is the internal energy of a material.
+      * Kinetic
+      * Potential
+      * Power
+      * Temperature as (heat and cold)
     * `ELECTRICITY AND MAGNETISM`
       * General electricity
       * Static electricity
@@ -54,23 +62,74 @@ Physics can be subdivided into the following,
       * Alternating current (AC) electricity
       * Magnetism
       * Electromagnetism
-    * `GRAVITY`
-      * Concerns the force of gravity near the Earth and the forces
-        of gravitation in space.
+    * `LIGHT AND OPTICS`
+      * Light as a wave
+      * Light as a particle
 * `RELATIVITY`
   * Concerns what happens to matter, space, and time at extremely high speeds
   or velocities.
 * `QUANTUM MECHANICS`
   * Concerns extremely small sizes and distances
 
-## BASIC QUANTITIES
+### IMPORTANT DISCOVERIES IN PHYSICS
 
-Basic quantities and how they interact are,
+* Nicholas Copernicus - discovered that the Earth rotates around the Sun.
+* Galileo - demonstrated that heavy objects do not fall faster than lighter
+  ones in his famous Leaning Tower of Pisa experiment.
+* Isaac Newton - published the three laws of motion and explained how gravity works.
+* John Dalton - described the atom and the atomic theory of matter.
+* Albert Einstein - published the theory of relativity.
+* Max Planck - described quantum theory.
+
+## UNITS AND PHYSICAL QUANTITIES
+
+ A physical quantity either defined by,
+
+* Specifying how it is measured (e.g. like distance and time)
+* Stating how it is calculated from other measurements (e.g. speed is distance
+  over time).
+
+Measurements of physical quantities are expressed in terms of units (e.g. meters
+or seconds).
+
+### FUNDAMENTAL AND DERIVED UNITS
+
+Fundamental units are,
+
+* LENGTH
+  * meter (m)
+* MASS
+  * kilogram (kg)
+* TIME
+  * seconds (s)
+* ELECTRIC CURRENT
+  * ampere (A)
+* TEMPERATURE
+  * kelvin (K)
+* AMOUNT OF SUBSTANCE
+  * mole (mol)
+* LUMINOUS INTENSITY
+  * candela (cd)  
+
+There is a massive list of derived units, here are popular ones.
+
+* hertz (Hz)
+* radian (rad)
+* watt (W)
+* ElecVolt (V)
+* Work - joule (J)
+* Area - Square meter ($m2$)
+* Volume - cubic meter - ($m3$)
+* Force (N)
+
+### PHYSICAL QUANTITIES
+
+Basic quantities are,
 
 * `Motion`
   * `VELOCITY`
-  * The rate of change of its position with respect to a frame of reference,
-    and is a function of time
+    * The rate of change of its position with respect to a frame of reference,
+      and is a function of time
   * `ACCELERATION`
     * Rate of change of velocity of an object with respect to time.
 * `ELECTRIC CHARGE`
