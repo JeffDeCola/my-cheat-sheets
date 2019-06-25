@@ -7,14 +7,14 @@
 `physics` _helps describe everything around us._
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
-  * [MAIN AREAS OF PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#main-areas-of-physics)
+  * [MAIN BRANCHES OF PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#main-branches-of-physics)
   * [IMPORTANT DISCOVERIES IN PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#important-discoveries-in-physics)
 * [PHYSICAL QUANTITIES & UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#physical-quantities--units)
   * [FUNDAMENTAL UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#fundamental-units)
   * [NOTABLE DERIVED UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#notable-derived-units)
 * [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#a-quick-discussion-on-objects-mass--matter)
 
-My physics cheat sheets are as follows,
+These cheat sheets explore the principle concepts of physics as follows,
 
 * [MOTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/motion.md)
   * Scalars & Vectors
@@ -63,18 +63,19 @@ It is the study of the properties of matter and their relationship with energy
 and forces. There are many branches of physics including electricity,
 astronomy, motion, waves, sound, and light.
 
-### MAIN AREAS OF PHYSICS
+### MAIN BRANCHES OF PHYSICS
 
 Physics can be subdivided into the following,
 
-* `CLASSICAL PHYSICS`
-  * This cheat sheet
+* `CLASSICAL PHYSICS` (**This cheat sheet**)
   * Isaac Newton is credited with many classical physics theories
 * `RELATIVITY`
   * Concerns what happens to matter, space, and time at extremely high speeds
     or velocities
 * `QUANTUM MECHANICS`
   * Concerns extremely small sizes and distances
+* `ELECTROMAGNETISM AND ELECTRONICS`
+* `THERMODYNAMICS AND STATISTICAL MECHANICS`
 
 ### IMPORTANT DISCOVERIES IN PHYSICS
 
@@ -110,33 +111,33 @@ The measurement of a `physical quantity` is expressed in `units`.
 
 ### FUNDAMENTAL UNITS
 
-Fundamental units of a physical quantity,
+Fundamental units, with their symbols, of a physical quantity,
 
 * `LENGTH`
-  * $l$, $x$ meter ($m$)
+  * $l$, $L$, $x$, meter ($m$)
 * `MASS`
-  * $m$ kilogram ($kg$)
+  * $m$, $M$, kilogram ($kg$)
   * mass is not the same as weight
-  * Both a property of a physical body and
+  * Its both a property of a physical body and
   * A measure of its resistance to acceleration (a change in its state of motion)
   when a net force is applied
 * `TIME`
-  * $t$ seconds ($s$)
+  * $t$, $T$, seconds ($s$)
 * `ELECTRIC CURRENT`
-  * ampere ($A$)
+  * $i$, $I$, ampere ($A$)
 * `TEMPERATURE`
-  * $T$ kelvin ($K$)
+  * $T$, $\theta$, kelvin ($K$)
 * `AMOUNT OF SUBSTANCE`
-  * mole ($mol$)
+  * $n$, $N$, mole ($mol$)
 * `LUMINOUS INTENSITY`
-  * candela ($cd$)
+  * $J$, candela ($cd$)
 
 ### NOTABLE DERIVED UNITS
 
 Some derived units of a physical quantity,
 
 * `ENERGY`
-  * $E$, $J$ joule ($kg\cdot m^2/ s^{2}$)
+  * $E$, $J$, joule ($kg\cdot m^2/ s^{2}$)
   * Must be transferred to an object in order to perform work on, or to heat,
     the object
   * Concerns the velocity of matter
@@ -144,30 +145,30 @@ Some derived units of a physical quantity,
 * `MATTER`
   * Have mass and volume (take up space)
 * `VELOCITY`
-  * $v$ velocity $(m/s)$
+  * $v$, velocity $(m/s)$
   * The rate of change of its position with respect to a frame of   reference,
     and is a function of time
 * `ACCELERATION`
-  * $a$ acceleration $(m/s^2)$
+  * $a$, acceleration $(m/s^2)$
   * Rate of change of velocity of an object with respect to time
 * `MOMENTUM`
-  * $p$ $(kg \cdot m/s)$
+  * $p$, $(kg \cdot m/s)$
   * Product of the mass and `velocity` of an `object`
 * `ELECTRIC CHARGE`
-  * $Q$ coulomb ($A \cdot s$)
+  * $Q$, coulomb ($A \cdot s$)
   * Is the physical property of matter that can experience a force
     when placed in an electromagnetic field.
   * Has an `electric field`
   * When moving produces a `magnetic field`
   * Can flow though a `circuit`.
 * `FORCE`
-  * $N$ newton ($kg \cdot m/s^2$)
+  * $N$, newton ($kg \cdot m/s^2$)
   * Is any interaction that, when unopposed, will change the motion of an object
   * Such as `gravity`
 * `ENTROPY`
-  * $S$ joules per kelvin $J/K$ ($kg\cdot m^2/ s^{2}\cdot K$)
+  * $S$, joules per kelvin $J/K$ ($kg\cdot m^2/ s^{2}\cdot K$)
 * `POTENTIAL ENERGY`
-  * $PE$, $U$, $V$ joule ($kg\cdot m^2/ s^{2}$)
+  * $PE$, $U$, $V$, joule $J$ ($kg\cdot m^2/ s^{2}$)
   * Is the `energy` held by an `object` because of its position relative
     to other `objects`
 
