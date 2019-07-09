@@ -36,7 +36,7 @@ For this cheat sheet `The American Revolutionary War` is actually two wars,
   * [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#washington-crossing-the-delaware-river-december-25-1776)
   * [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benjamin-franklin-asking-france-for-help-december-1776)
   * [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
-  * [THE BATTLE OF SARATOGA (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bemis-heights-oct-7-1777)
+  * [THE BATTLE OF SARATOGA (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-saratoga-oct-7-1777)
   * [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
   * [THE BATTLE OF MONMOUTH (June 28, 1778)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-monmouth-june-28-1778)
   * [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
@@ -396,7 +396,7 @@ and surrendered his entire army there on October 17.
 This was a great turning point of the war because it won for Americans
 the foreign assistance which was the last element needed for victory.
 
-![IMAGE - 1777-Surrender_of_General_Burgoyne.jpg - IMAGE](../../../../docs/pics/1777-Surrender_of_General_Burgoyne.jpg.jpg)
+![IMAGE - 1777-Surrender_of_General_Burgoyne.jpg - IMAGE](../../../../docs/pics/1777-Surrender_of_General_Burgoyne.jpg)
 
 _Surrender of General Burgoyne by John Trumbull, 1822
 Depicted at center are General John Burgoyne surrendering
