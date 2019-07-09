@@ -34,6 +34,7 @@ space, and the physical universe as a whole._
   * [EARTH & MOON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--moon)
   * [EARTH & MARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--mars)
   * [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+* [FOR FUN - DEBUNKING THE FLAT EARTH MODEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#for-fun-debunking-the-flat-earth-model)
 
 Check out whats in [our solar system & beyond](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 on another cheat sheet.
@@ -383,3 +384,16 @@ Its hard to comprehend scale, so this may help a bit.
 ### TYPES OF STARS
 
 ![IMAGE - scale-of-types-of-stars - IMAGE](../../../../docs/pics/scale-of-types-of-stars.jpg)
+
+## FOR FUN - DEBUNKING THE FLAT EARTH MODEL
+
+There are always people who pretend/think they know a lot about something, but
+actually know very little to nothing.  In the field of psychology,
+this is referred to as the `Dunning–Kruger effect`. In which people mistakenly
+assess their cognitive ability as greater than it is.
+
+Anyway, here is my simple example out of thousands I use to
+debunk the flat earth model. In the flat earth model, how do you drive west
+to east without turning left the entire time?  Enjoy.
+
+![IMAGE - debunk-flat-earth-example-drive-west-east - IMAGE](../../../../docs/pics/debunk-flat-earth-example-drive-west-east.jpg)

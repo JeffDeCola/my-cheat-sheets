@@ -4,7 +4,7 @@
 in our solar system and beyond._
 
 * [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sun)
-* [INNER PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#inner-planets)
+* [INNER/TERRESTRIAL PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#inner-terrestrial-planets)
   * [MERCURY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mercury)
   * [VENUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#venus)
   * [EARTH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#earth)
@@ -12,8 +12,8 @@ in our solar system and beyond._
   * [MARS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mars)
 * [THE ASTEROID BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#the-asteroid-belt)
   * [CERES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#ceres)
-* [OUTER PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planets)
-  * [JUPITER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#jupiter)
+* [OUTER PLANETS/GAS GIANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planets-gas-giants)
+  * [JUPITER & TROJAN ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#jupiter--trojan-asteroids)
   * [SATURN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#saturn)
   * [URANUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#uranus)
   * [NEPTUNE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#neptune)
@@ -21,9 +21,11 @@ in our solar system and beyond._
   * [PLUTO (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
   * [HAUMEA (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
   * [MAKEMAKE (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
-* [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
-* [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
+* [SCATTERED DISC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#scattered-disc)
+  * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
+* [EDGE OF OUT SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#edge-of-our-solar-system)
 * [VOYAGER 1](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#voyager-1)
+* [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
 * [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
   * [PROXIMA CENTAURI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#proxima-centauri)
   * [SIRIUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
@@ -62,7 +64,7 @@ not very hot.
   * Chromosphere - Atmosphere
   * Corona - Upper atmosphere
 
-## INNER PLANETS
+## INNER/TERRESTRIAL PLANETS
 
 * .39-1.52 AU from the sun
 
@@ -170,7 +172,7 @@ The four smaller inner planets, also known as the “terrestrial planets”
 * Notable facts:
   * Ceres accounts for one third of the mass in the asteroid belt.
 
-## OUTER PLANETS
+## OUTER PLANETS/GAS GIANTS
 
 * 5.203-30.06 AU from the sun
 
@@ -178,7 +180,7 @@ The four outer planets, also known as the “gas giants”
 (Jupiter, Saturn, Uranus and Neptune), are substantially
 larger and more massive than the inner planets.
 
-### JUPITER
+### JUPITER & TROJAN ASTEROIDS
 
 * Distance: 5.203 AU from the sun
 * Orbit Period: 11.862 years to orbit the sun
@@ -194,6 +196,10 @@ larger and more massive than the inner planets.
   * The King of Planets
   * The red dot is a storm that has been ragging for over 300 years.
   * Mainly composed mainly of hydrogen and helium
+
+Trojan asteroids share the same orbit as a planet, in this case,
+jupiter. There are currently over 4,800 known Trojan asteroids
+associated with Jupiter.
 
 ### SATURN
 
@@ -242,17 +248,18 @@ larger and more massive than the inner planets.
 * Notable facts
   * Extreme weather
   * Neptune has an incredibly thick atmosphere comprised of
-    74% hydrogen, 25% helium and approximately 1% methane.
+    74% hydrogen, 25% helium and approximately 1% methane
 
 ## KUIPER BELT
 
-* 30-55 AU from the sun (25 AU thick)
+* Distance: 30-55 AU from the sun (25 AU thick)
 * Lots of stuff and its huge
+* Stuff is Kuiper-belt objects (KBOs)
 * Chunks of ice
-* More dwarf Planets
-  * Pluto
-  * Haumea
-  * Makemake
+* More Dwarf Planets
+  * [PLUTO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
+  * [HAUMEA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
+  * [MAKEMAKE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
 * Commits
 * Stretches across 20 astronomical units (AU) of space
 * Area of the outer solar system
@@ -263,7 +270,7 @@ larger and more massive than the inner planets.
 * Orbit Period: 247.7 years to orbit the sun
 * Rotate Axis: 6.39 days
 * Surface Temperature: -229&deg;C
-* Diameter: 2,274 km (1,413 miles) 
+* Diameter: 2,274 km (1,413 miles)
 * Mass: tbd
 * Moons: 5
 * Notable facts
@@ -277,14 +284,14 @@ larger and more massive than the inner planets.
 * Orbit Period: 283.3 years to orbit the sun
 * Rotate Axis: 3.9 hours
 * Surface Temperature: -241&deg;C
-* Diameter: 1,960 km (1,220 Miles) 
+* Diameter: 1,960 km (1,220 Miles)
 * Mass: tbd
 * Moons: 2
   * Hiiaka
   * Namaka
 * Notable face:
   * Unique in its elongated shape making it the least
-    spherical of the dwarf planets.
+    spherical of the dwarf planets
 
 ### MAKEMAKE
 
@@ -298,18 +305,36 @@ larger and more massive than the inner planets.
 * Notable facts
   * Third largest dwarf planet in the solar system
 
-## ERIS
+## SCATTERED DISC
+
+* Distance: 30-100AT from the sun (~70 AU thick)
+* The area has small icy minor planets known as scattered disc
+  objects (SDOs).
+* As of 2011, over 200 SDOs have been identified
+* Unlike Kuiper-belt objects (KBOs), the orbits of scattered-disc
+  objects can be inclined as much as 40° from the ecliptic
+* Some astronomers maintain it is an extension of the Kuiper belt
+* They can have extreme orbits, 30AU to 130AU
+* The part of the scattered disc closest to
+  the sun is in an area of space called the Kuiper belt
+
+### ERIS
 
 * Distance: 68.01 AU from the sun
 * Orbit Period: 560.9 years
 * Rotate Axis: tbd
 * Surface Temperature: -231&deg;C
-* Diameter: 2,326 km 
+* Diameter: 2,326 km
 * Mass: tbd
 * Moons: 1
   * Dysnomia
 * Notable facts:
-  * Eris was once considered for the position of tenth planet.
+  * Eris was once considered for the position of tenth planet
+
+## EDGE OF OUT SOLAR SYSTEM
+
+* Distance: 120 AU from the sun
+* About the edge of known objects rotating around the sun.
 
 ## VOYAGER 1
 
