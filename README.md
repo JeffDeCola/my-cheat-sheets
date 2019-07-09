@@ -303,6 +303,16 @@ Random other things I'm interested in.
 
 ### HISTORY
 
+* AMERICAN
+
+  * [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/pre-colonial-cheat-sheet)
+  * [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/colonial-america-cheat-sheet)
+  * [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/a-new-nation-cheat-sheet)
+  * [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/civil-war-and-reconstruction-cheat-sheet)
+  * [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/progressive-era-and-world-wars-cheat-sheet)
+  * [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/mid-century-and-cold-war-cheat-sheet)
+  * [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/new-millennium-cheat-sheet)
+
 * WARS
 
   * [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)

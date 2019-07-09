@@ -2,17 +2,21 @@
 
 `the-american-revolutionary-war` _(aka The War for Independence)
 was between the colonies of British
-America and the british for America's Independence._
+America and the British for America's Independence._
 
-* [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
-* [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
-* [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
-* [THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-tea-party-december-16-1773)
-* [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
-* [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
-* [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-shot-heard-round-the-world-april-19-1775)
-* [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-green-mountain-boys--fort-ticonderoga-may-10-1775)
-* [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#continental-army--george-washington-1775)
+* PRE-WAR()
+  * [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
+THE PARIS TREATY
+  * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1762-october-7-1763)
+  * [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
+  * [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
+  * [THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-tea-party-december-16-1773)
+  * [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
+  * [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
+* [THE START OF THE WAR]()
+  * [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-shot-heard-round-the-world-april-19-1775)
+  * [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-green-mountain-boys--fort-ticonderoga-may-10-1775)
+  * [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#continental-army--george-washington-1775)
 * [THE BATTLE OF BUNKER HILL (June 17, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bunker-hill-june-17-1775)
 * [EARLY WAR (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#early-war-1775)
 * [FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#fortification-of-dorchester-heights-march-5-1776)
@@ -31,6 +35,7 @@ America and the british for America's Independence._
 * [BRITISH TAKING THE SOUTH (1780-1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#british-taking-the-south-1780-1781)
 * [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-guilford-courthouse-march-15-1781)
 * [THE BATTLE OF YORKTOWN (October 17, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-yorktown-october-17-1781)
+THE END OF THE WAR
 * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
 
 View my entire list of cheat sheets on
@@ -47,15 +52,24 @@ The English didn't want the French building forts so King George
 sent a british Colonel `George Washington` and started the long
 7 year `French and Indian War` (1754-1763).
 
-At the peace treaty France gave up all of its territories in
-North America.  But Britain needed money sine the war was so
+At the `Treaty of Paris`, France gave up all of its territories in
+North America.  But Britain needed money since the war was so
 expensive. So they wanted to get money from the colonies and
 could you really blame them.
+
+## THE PROCLAMATION OF 1763 (October 7, 1763)
+
+Even after the treaty 
+The last thing the British government wanted were
+American colonists crossing the Appalachians
+fueling French and Native American resentment.
+
+The solution seemed simple. The ROYAL PROCLAMATION OF 1763 was issued, which declared the boundaries of settlement for inhabitants of the 13 colonies to be Appalachia.
 
 ## THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
 To help pay for the war Britain needed money and wanted the colonies to
-pay them back for the expensive `French and Indian War`. 
+pay them back for the expensive `French and Indian War`.
 In 1764 they introduced the `sugar act`.
 This forced the colonies to import sugar and molasses from Britain and
 pay a duty on them.  Then in 1764 they introduced the `stamp act` which would actually
