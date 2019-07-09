@@ -23,7 +23,7 @@ in our solar system and beyond._
   * [MAKEMAKE (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
 * [SCATTERED DISC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#scattered-disc)
   * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
-* [EDGE OF OUT SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#edge-of-our-solar-system)
+* [EDGE OF OUT SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#edge-of-out-solar-system)
 * [VOYAGER 1](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#voyager-1)
 * [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
 * [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
@@ -309,7 +309,7 @@ associated with Jupiter.
 
 * Distance: 30-100AT from the sun (~70 AU thick)
 * The area has small icy minor planets known as scattered disc
-  objects (SDOs).
+  objects (SDOs)
 * As of 2011, over 200 SDOs have been identified
 * Unlike Kuiper-belt objects (KBOs), the orbits of scattered-disc
   objects can be inclined as much as 40° from the ecliptic
@@ -334,7 +334,7 @@ associated with Jupiter.
 ## EDGE OF OUT SOLAR SYSTEM
 
 * Distance: 120 AU from the sun
-* About the edge of known objects rotating around the sun.
+* About the edge of known objects rotating around the sun
 
 ## VOYAGER 1
 
