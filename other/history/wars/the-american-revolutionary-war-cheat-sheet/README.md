@@ -83,7 +83,7 @@ to be Appalachia. This was not acceptable
 to their colonists.
 They fought and want land.
 
-![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.jpg)
+![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.png)
 
 ### THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
