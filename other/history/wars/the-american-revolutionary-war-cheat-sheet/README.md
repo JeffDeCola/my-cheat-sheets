@@ -4,13 +4,18 @@
 was between the colonies of British
 America and the British for America's Independence._
 
+For this cheat sheet `The American Revolutionary War` is actually two wars,
+`The American Revolution` and `The American War for Independence`
+(started later).
+
 * [PRE-WAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#pre-war)
 
   * [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
   * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1763-october-7-1763)
   * [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
+  * [THE SONS OF LIBERTY (1765)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sons-of-liberty-1765)
   * [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
-  * [THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-tea-party-december-16-1773)
+  * [THE TEA ACT & THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-tea-act--the-boston-tea-party-december-16-1773)
   * [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
   * [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
 
@@ -31,7 +36,7 @@ America and the British for America's Independence._
   * [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#washington-crossing-the-delaware-river-december-25-1776)
   * [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benjamin-franklin-asking-france-for-help-december-1776)
   * [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
-  * [THE BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bemis-heights-oct-7-1777)
+  * [THE BATTLE OF SARATOGA (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bemis-heights-oct-7-1777)
   * [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
   * [THE BATTLE OF MONMOUTH (June 28, 1778)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-monmouth-june-28-1778)
   * [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
@@ -109,6 +114,16 @@ sent 1,000 troops to Boston to take control.
 The merchants of Boston circumvented the act by continuing to receive
 tea smuggled in by Dutch traders.
 
+### THE SONS OF LIBERTY (1765)
+
+The Sons of Liberty was a secret organization founded is Boston that was
+created in the Thirteen American Colonies to advance
+the rights of the colonists and to fight taxation by the
+British government. It played a major role in most colonies
+in battling the Stamp Act in 1765. The group officially disbanded
+after the Stamp Act was repealed.
+However, the name was applied to other local separatist.
+
 ### THE BOSTON MASSACRE (MARCH 5, 1770)
 
 The Boston Massacre, known to the British as the `Incident on King Street`,
@@ -117,13 +132,16 @@ and killed several people while being harassed by a mob in Boston.
 The event was heavily publicized by leading Patriots such as
 `Paul Revere` and `Samuel Adams`.
 
+Eight soldiers, one officer, and four civilians were arrested and
+charged with murder, and they were defended by future President `John Adams`.
+
 The anger continued to grow over the next few years.
 
 ![IMAGE - 1770-paul_revere_the_bloody_massacre - IMAGE](../../../../docs/pics/1770-paul_revere_the_bloody_massacre.jpg)
 
 _Paul Revere’s engraving of the Boston Massacre, about 29 known prints._
 
-### THE BOSTON TEA PARTY (December 16, 1773)
+### THE TEA ACT & THE BOSTON TEA PARTY (December 16, 1773)
 
 In 1773 Parliament passed a `Tea Act` designed to aid the
 financially troubled East India Company by granting it a monopoly on
@@ -131,15 +149,21 @@ all tea exported to the colonies and an exemption on the export tax.
 The company thus could sell the tea at a less-than-usual price in either
 America or Britain; it could undersell anyone else.
 
-An incident in which 342 chests of tea belonging to the British East India
-Company were thrown from ships into Boston Harbor by 60 American
+An incident in which 342 chests of tea belonging to the `British East India
+Company` were thrown from ships into Boston Harbor by 60 American
 patriots disguised as Mohawk Indians. The Americans were protesting both
 a tax on tea (taxation without representation) and the perceived
 monopoly of the East India Company.
 
 In retaliation, Parliament passed the series of punitive measures
 known in the colonies as the `Intolerable Acts` and sent more troops.
-Boston ws no under control of britain.
+Boston was no under control of britain.
+
+Some of the intolerable acts were,
+
+* The `Massachusetts Government Act` stopped self government there.
+* The `Quartering Act` forced colonist to house british soldiers in
+  their homes.
 
 ### FIRST CONTINENTAL CONGRESS (Fall 1774)
 
@@ -147,6 +171,8 @@ The other colonies seeing that Boston was under
 Britain's control, the remaining colonies held
 the `First Continental Congress` at Carpenter's Hall in Philadelphia, from
 September 5, to October 26, 1774.
+It was in response to the British Navy instituted a blockade of
+Boston Harbor and the  Intolerable Acts.
 56 delegates were there such as Famous people like John Adams,
 Samuel Adams, Robert Treat Paine and George Washington.
 The colonies were united in a
@@ -175,6 +201,8 @@ Liberty to ride to Lexington, Mass. to warn them so
 the minute men could get ready.
 
 ## THE WAR BEGINS
+
+This was the start of the American Revolution, but not the war of independence, yet.
 
 ### THE SHOT HEARD ROUND THE WORLD (April 19, 1775)
 
@@ -321,7 +349,7 @@ by George Washington against the Hessian forces in Trenton, New Jersey
 `The Battle of Trenton`.
 With 2,400 men he caught the Hessian forces off guard.
 
-Then washing traveled to Princeton for `The Battle of Princeton`
+Then Washington traveled to Princeton for `The Battle of Princeton`
 was fought near Princeton, New Jersey on January 3, 1777
 and ending in a small victory for the Colonials.
 General Lord Cornwallis had left 1,400 British troops.
@@ -333,7 +361,7 @@ _Washington Crossing the Delaware is an 1851 oil-on-canvas
 painting by the German-American artist Emanuel Leutze
 located at The Metropolitan Museum of Art, New York City._
 
-![IMAGE - The-Capture-of-the-Hessians-at-Trenton-December-26-1776 - IMAGE](../../../../docs/pics/The-Capture-of-the-Hessians-at-Trenton-December-26-1776.jpg)
+![IMAGE - 1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776 - IMAGE](../../../../docs/pics/1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776.jpg)
 
 _The Capture of the Hessians at Trenton, December 26, 1776 is the title of
 an oil painting by the American artist John Trumbull depicting the capture
@@ -354,12 +382,26 @@ would move south. But Howe decided to take philadelphia.
 Washington and defeated Washington.
 Congress left Philly and escaped to York.
 
-### THE BATTLE OF BEMIS HEIGHTS (Oct 7, 1777)
+### THE BATTLE OF SARATOGA (Oct 7, 1777)
 
 Up north, spearheaded by Major General Benedict Arnold, in the wooded
-area of Bemis Heights south of Saratoga. Known as the Battle of Bemis Heights,
-or the Second Battle of Saratoga, this American victory proved to be a major
+area of Bemis Heights south of Saratoga. Known as `The Battle of Bemis Heights`,
+or the `Second Battle of Saratoga`, this American victory proved to be a major
 turning point in the War. Again, Benedict Arnold was very successful.
+
+British General `John Burgoyne` found himself trapped by superior American
+forces with no relief, so he retreated to Saratoga (now Schuylerville)
+and surrendered his entire army there on October 17.
+
+This was a great turning point of the war because it won for Americans
+the foreign assistance which was the last element needed for victory.
+
+![IMAGE - 1777-Surrender_of_General_Burgoyne.jpg - IMAGE](../../../../docs/pics/1777-Surrender_of_General_Burgoyne.jpg.jpg)
+
+_Surrender of General Burgoyne by John Trumbull, 1822
+Depicted at center are General John Burgoyne surrendering
+to General Horatio Gates, who refused to take his sword.
+The painting hangs in the United States Capitol Rotunda._
 
 ### THE NEW BRITISH GENERAL - HENRY CLINTON (1777)
 
