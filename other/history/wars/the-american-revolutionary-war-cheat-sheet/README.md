@@ -52,7 +52,9 @@ For this cheat sheet `The American Revolutionary War` is actually two wars,
 * [THE AFTERMATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-aftermath)
 
   * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
+  * [SLAVES & NATIVE AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#slaves-and-native-americans)
   * [THE CONSTITUTION (September 17, 1787)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-constitution-september-17-1787)
+  * [OUR FIRST PRESIDENT (April 30, 1789)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#our-first-president-april-30-1789)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -89,6 +91,9 @@ to their colonists.
 They fought and want land.
 
 ![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.png)
+
+_The 13 colonies are in red, the pink area was claimed by Great Britain
+after the French and Indian War, and the orange region was claimed by Spain._
 
 ### THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
@@ -435,6 +440,9 @@ John Adam went to France to help Benjamin Franklin get
 more support from the French. They sent supplies and support
 and enlisted Native Americans to help fight the British.
 
+As a side note this would bankrupt them and lead to their
+own revolution.
+
 ### AFRICAN AMERICANS
 
 Originally Washington would not allow slaves to join the Continental Army,
@@ -520,11 +528,18 @@ effectively ending any foreign military threat to
 the British colonies there and the colonies agreed
 to pay debt to Britain.
 
+I'm not really sure how the French benefited from any of this.
+
+### SLAVES & NATIVE AMERICANS
+
+Most African Americans went back to being slaves.
+Indian were killed and not part of the new world.
+
 ### THE CONSTITUTION (September 17, 1787)
 
 The independence needed a better charter, hence the Constitution
-was written during the Philadelphia Convention—now
-known as the Constitutional Convention—which convened from
+was written during the Philadelphia Convention, now
+known as the Constitutional Convention, which convened from
 May 25 to September 17, 1787. It was signed on September 17, 1787.
 
 _We the people of the United States, in order to form a more perfect union,
@@ -532,6 +547,8 @@ establish justice, insure domestic tranquility, provide for the common defense,
 promote the general welfare, and secure the blessings of liberty to ourselves
 and our posterity, do ordain and establish this Constitution for the United
 States of America._
+
+### OUR FIRST PRESIDENT (April 30, 1789)
 
 Washington wanted to retire, but others wanted him to be the
 first leader of this new land.  Washington became President in
