@@ -34,7 +34,7 @@ space, and the physical universe as a whole._
   * [EARTH & MOON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--moon)
   * [EARTH & MARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--mars)
   * [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
-* [FOR FUN - DEBUNKING THE FLAT EARTH MODEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#for-fun-debunking-the-flat-earth-model)
+* [FOR FUN - DEBUNKING THE FLAT EARTH MODEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#for-fun---debunking-the-flat-earth-model)
 
 Check out whats in [our solar system & beyond](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 on another cheat sheet.
