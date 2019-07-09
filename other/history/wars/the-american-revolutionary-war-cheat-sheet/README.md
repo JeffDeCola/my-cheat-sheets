@@ -7,7 +7,7 @@ America and the British for America's Independence._
 * [PRE-WAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#pre-war)
 
   * [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
-  * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1762-october-7-1763)
+  * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1763-october-7-1763)
   * [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
   * [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
   * [THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-tea-party-december-16-1773)
@@ -83,7 +83,7 @@ to be Appalachia. This was not acceptable
 to their colonists.
 They fought and want land.
 
-![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-maps.jpg)
+![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.jpg)
 
 ### THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
@@ -373,7 +373,7 @@ as a new amd improved force and wanted to take Philadelphia back.
 But they didn't have to as the British left Philadelphia to
 pool their resources in New York.  
 
-![IMAGE - 777-The_March_to_Valley_Forge_William_Trego - IMAGE](../../../../docs/pics/777-The_March_to_Valley_Forge_William_Trego.png)
+![IMAGE - 1777-The_March_to_Valley_Forge_William_Trego - IMAGE](../../../../docs/pics/1777-The_March_to_Valley_Forge_William_Trego.png)
 
 _The March to Valley Forge by William B. T. Trego depicts George Washington
 and the veterans of his army limping into their winter encampment
