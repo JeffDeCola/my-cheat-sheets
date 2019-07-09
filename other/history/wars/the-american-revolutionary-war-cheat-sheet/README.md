@@ -52,7 +52,7 @@ For this cheat sheet `The American Revolutionary War` is actually two wars,
 * [THE AFTERMATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-aftermath)
 
   * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
-  * [SLAVES & NATIVE AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#slaves-and-native-americans)
+  * [SLAVES & NATIVE AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#slaves--native-americans)
   * [THE CONSTITUTION (September 17, 1787)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-constitution-september-17-1787)
   * [OUR FIRST PRESIDENT (April 30, 1789)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#our-first-president-april-30-1789)
 
@@ -64,7 +64,7 @@ View my entire list of cheat sheets on
 ### GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)
 
 Right before the war, there were lots of little wars over the new land in America
-between the native Americans and other countries such as Britain, France and Spain.
+between the Native Americans and other countries such as Britain, France and Spain.
 The British basically had the east coast, and the French had the midwest with
 a lot of disputed area in between.
 
@@ -80,15 +80,14 @@ could you really blame them.
 ### THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)
 
 Even after the treaty
-The last thing the British government wanted were
+the British government didn't want
 American colonists crossing the Appalachians
 fueling French and Native American resentment.
 
 The solution seemed simple. The `Royal Proclamation of 1763` was issued,
 which declared the boundaries of settlement for inhabitants of the 13 colonies
 to be Appalachia. This was not acceptable
-to their colonists.
-They fought and want land.
+to their colonists because they fought and wanted land.
 
 ![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.png)
 
@@ -97,7 +96,7 @@ after the French and Indian War, and the orange region was claimed by Spain._
 
 ### THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)
 
-To help pay for the war Britain needed money and wanted the colonies to
+To help pay for the war, Britain needed money and wanted the colonies to
 pay them back for the expensive `French and Indian War`.
 In 1764 they introduced the `sugar act`.
 This forced the colonies to import sugar and molasses from Britain and
@@ -215,7 +214,7 @@ The british marched into the small town of Lexington
 around 5:00 am to find, facing them, a militia company of
 more 70 men led by Captain John Parker.
 
-At some point a shot rang out-- historians still debate who fired
+At some point a shot rang out; historians still debate who fired
 the shot. The nervous British soldiers fired a volley,
 killing seven and mortally wounding one of the retreating militiamen.
 The British column moved on towards Concord, leaving the dead,
@@ -244,7 +243,7 @@ in capturing Fort Ticonderoga. Allen quickly and enthusiastically agreed.
 The Green Mountain Boys, along with Arnold and his small troop,
 arrived at Fort Ticonderoga on May 10, 1775 and took it.
 
-King George fired General Gage and assigned General Howe to put down
+King George fired `General Gage` and assigned `General Howe` to put down
 the rebellion (lol, I just can't resist).
 
 ### CONTINENTAL ARMY & GEORGE WASHINGTON (1775)
