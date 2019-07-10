@@ -1,6 +1,6 @@
 # SPECIFICATIONS CHEAT SHEET
 
-`specifications` _of Raspberry Pi models 1, 2 and 3 SBCs._
+`specifications` _of Raspberry Pi models SBCs._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -9,7 +9,7 @@ View my entire list of cheat sheets on
 
 Not listed is the Rasp Pi Zero.
 
-Model 1 and 2,
+### 1 MODEL B+ & 2 Model B
 
 |                  | Rasp Pi 1 Model B+ |  Rasp Pi 2 Model B |
 |:-----------------|-------------------:|-------------------:|
@@ -44,7 +44,7 @@ Model 1 and 2,
 | - max            |      350mA (1.75W) |       820mA (4.1W) |
 | PoE              |                  - |                  - |
 
-Model 3 and 4,
+### 3 MODEL B, 3 MODEL B+ & 4 Model B
 
 |                  |  Rasp Pi 3 Model B | Rasp Pi 3 Model B+ |  Rasp Pi 4 Model B |
 |:-----------------|-------------------:|-------------------:|-------------------:|
