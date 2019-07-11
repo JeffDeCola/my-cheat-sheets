@@ -12,7 +12,7 @@ View my entire list of cheat sheets on
 
 ## DOWNLOAD RASPBIAN IMAGE
 
-Raspbian is the official OS of the raspberry pi.  
+Raspbian is the official OS of the raspberry pi.
 Raspbian comes pre-installed with plenty of software for education,
 programming and general use. It has Python, Scratch, Sonic Pi,
 Java and more.
@@ -25,8 +25,8 @@ Get an image of Raspbian OS
 
 Some caveats,
 
-* Use the lite version if you don't want a desktop.
-* Don't use the full version if you don't have a Pi 4.
+* Use the lite version if you don't want a desktop
+* Don't use the full version if you don't have a Pi 4
 
 ## WRITE IMAGE TO microSD
 
@@ -97,6 +97,15 @@ ssh-keygen -t rsa -b 4096 -C "Keys for Github"
 ```
 
 Place the Raspi public key at github.
+
+I also like to add the hostname/machine name so I know where the commits came from,
+
+```bash
+git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
+git config --global user.email <YOUR-EMAIL>
+git config --global core.editor nano
+git config --global push.default simple
+```
 
 Refer to my
 [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
