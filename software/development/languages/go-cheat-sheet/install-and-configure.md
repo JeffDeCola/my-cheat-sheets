@@ -2,12 +2,28 @@
 
 OK, lets get go...ing.  Yep, that just happened.
 
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
+* [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-paths)
+* [CHECK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#check-your-install)
+
 ## INSTALL
 
 [Binary and source installs](https://golang.org/doc/install) are
 located there for windows, linux or mac.
 
 I would not install from a package.
+
+### LINUX INSTALL
+
+Let's install `ver 1.12.7`  to `/usr/local`,
+
+```bash
+FileName=`go1.12.7.linux-amd64.tar.gz`
+wget https://storage.googleapis.com/golang/$FileName
+tar -xvf $FileName
+sudo mv go /usr/local
+rm $FileName
+```
 
 ## CONFIGURE
 
@@ -73,7 +89,7 @@ On a side note, my cheat sheet
 explains `how to setup VS Code on Windows with the Go Extensions
 and a bash terminal`.  Say that ten times fast.
 
-## CHECK YOUR INSTALL
+## CHECK
 
 Check your go paths and version,
 
