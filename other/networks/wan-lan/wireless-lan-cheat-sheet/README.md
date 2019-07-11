@@ -37,7 +37,7 @@ In order of security (with encryption),
 * WPA2-PSK (TKIP) - Don't use
 * **WPA2-PSK (AES)** - Use this, simple and easy, also called personal or home
 * WPA2 (TKIP) - Don't use
-* **WPA2 (AES)** - This is the highest level and also called enterprise
+* **WPA2 (AES)** - This is the highest level, also called enterprise
 
 Do not use mixed mode on your routers, just select WPA2-PSK (AES).
 
