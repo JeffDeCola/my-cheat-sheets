@@ -2,9 +2,9 @@
 
 `install and configure OS` _distribution on your Raspberry Pi._
 
-* [DOWNLOAD RASPBIAN IMAGE]()
-* [WRITE IMAGE TO microSD]()
-* [SOME CONFIGURATION]()
+* [DOWNLOAD RASPBIAN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-raspbian-image)
+* [WRITE IMAGE TO microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd)
+* [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#basic-configuration)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -32,9 +32,26 @@ Some caveats,
 I use  [Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
 Make sure to use a microSD card of at least 4GB.
 
-## SOME CONFIGURATION
+## BASIC CONFIGURATION
 
 This is a short list,
+
+### CHANGE PASSWORD FOR USER PI
+
+Change your password for user pi,
+
+```bash
+passwd
+```
+
+### TURN ON SSH
+
+I would do this first since you probably want to ssh into it,
+
+```bash
+sudo systemctl enable ssh
+sudo systemctl start ssh
+```
 
 ### ADD NEW USER
 
@@ -42,7 +59,7 @@ For security add a new user,
 
 ```bash
 sudo adduser jeff
-usermod -aG sudo jeff
+sudo usermod -aG sudo jeff
 ```
 
 or
@@ -54,12 +71,6 @@ pi    ALL=(ALL) ALL
 jeff  ALL=(ALL) ALL
 ```
 
-Change your password,
-
-```bash
-passwd
-```
-
 ### NAME YOUR RASPI
 
 Name your host,
@@ -67,15 +78,6 @@ Name your host,
 ```bash
 sudo nano /etc/hostname
 sudo nano /etc/hosts
-```
-
-### TURN ON SSH
-
-Turn on ssh so you can ssh into it,
-
-```bash
-sudo systemctl enable ssh
-sudo systemctl start ssh
 ```
 
 ### GET GIT & GITHUB WORKING
