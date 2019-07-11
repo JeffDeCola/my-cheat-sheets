@@ -24,3 +24,21 @@ These are pretty big approximations,
 |   ac |         1 |          5 |               450 |
 |      |         2 |          5 |               900 |
 |      |         3 |          5 |              1300 |
+
+## SECURITY LEVELS
+
+In order of security (with encryption),
+
+* WEP (RC4) - Never use, easily hacked
+* WPA (TKIP) - Don't use
+* WPA (AES) - Don't use
+* WPA-PSK (TKIP) - Don't use
+* WPA-PSK (AES) - Don't use
+* WPA2-PSK (TKIP) - Don't use
+* **WPA2-PSK (AES)** - Use this, simple and easy, also called personal or home
+* WPA2 (TKIP) - Don't use
+* **WPA2 (AES)** - This is the highest level and also called enterprise
+
+Do not use mixed mode on your routers, just select WPA2-PSK (AES).
+
+PSK is Pre-Shared Key. Also called personal.  Provide router with Plain english key.
