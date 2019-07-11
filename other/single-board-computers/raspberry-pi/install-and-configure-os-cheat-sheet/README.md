@@ -5,6 +5,7 @@
 * [DOWNLOAD RASPBIAN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-raspbian-image)
 * [WRITE IMAGE TO microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd)
 * [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#basic-configuration)
+* [INSTALL GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -71,9 +72,9 @@ pi    ALL=(ALL) ALL
 jeff  ALL=(ALL) ALL
 ```
 
-### NAME YOUR RASPI
+### RENAME YOUR RASPI
 
-Name your host,
+Rename your host,
 
 ```bash
 sudo nano /etc/hostname
@@ -107,12 +108,45 @@ If you don't want to type the password all the time when you ssh
 into your raspi, you can use your ssh keys.
 
 You first need to get client's ssh public key into
-the known hosts file on your rasp pi.  The following command does
-everything for you,
+the known hosts file on your rasp pi.  From your client,\
+the following command does everything for you,
 
 ```bash
 ssh-copy-id <USERNAME>@<IP-ADDRESS>
 ```
 
+Again, you do not do this command on the Raspi.
 You should now be able to ssh into the Raspi
 with having to enter your password.
+
+## INSTALL GO
+
+I like golang, so here is how you install it,
+
+Let's install `ver 1.12.7`  to `/usr/local`,
+
+```bash
+FileName='go1.12.7.linux-armv6l.tar.gz'
+wget https://storage.googleapis.com/golang/$FileName
+tar -xvf $FileName
+sudo mv go /usr/local
+rm $FileName
+```
+
+Add to your `~/.bashrc` file,
+
+```bash
+PATH=$PATH:$HOME/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME
+export GOBIN=$GOPATH/bin
+PATH=$PATH:$GOROOT/bin
+CDPATH=$GOPATH/src/github.com
+```
+
+check,
+
+```bash
+go env
+go version
+```
