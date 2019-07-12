@@ -2,6 +2,12 @@
 
 `install and configure OS` _distribution on your Hummingboard._
 
+* [INSTALL "IGNITION" ON A microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-ignition-on-a-microsd-card)
+* [USE "IGNITION" TO INSTALL AN OS ON A microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#use-ignition-to-install-an-os-on-a-microsd-card)
+* [FULL LIST OF DISTRIBUTIONS FROM SOLIDRUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#full-list-of-distributions-from-solidrun)
+* [BASIC CONFIGURATION FOR DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#basic-configuration-for-debian)
+* [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-go--go-tools)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -21,7 +27,7 @@ To use this, it must be burned on a microSD card.
 
 I would label this microSD card since its easy to forget.
 
-## USE "IGNITION" TO INSTALL AN OS ON A microSD TO USE FOR YOUR HUMMINGBOARD
+## USE "IGNITION" TO INSTALL AN OS ON A microSD CARD
 
 Place the `Ignition` microSD in your hummingboard and boot it up.
 You must have your hummingboard connected to the internet
@@ -53,3 +59,7 @@ distributions will work.
 
 Complete list of `ignition installer scripts` for various OS
 [here](https://wiki.solid-run.com/doku.php?id=tag:ignition&do=showtag&tag=ignition).
+
+## BASIC CONFIGURATION FOR DEBIAN
+
+## INSTALL GO & GO TOOLS

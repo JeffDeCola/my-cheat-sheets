@@ -6,6 +6,7 @@
 * [WRITE IMAGE TO microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd)
 * [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#basic-configuration)
 * [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
+* [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -165,3 +166,46 @@ you should already have `gofmt` and `godocs`.
 
 To install other go tools, refer to my
 [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools).
+
+## CONNECT TO WIFI
+
+As a side note your router should always use WPA2-PSK with AES encryption.
+So we will connect to that.
+
+First scan the wifi in your area,
+
+```bash
+sudo iwlist wlan0 scan
+sudo iwlist wlan0 scan | grep <YOUR-WIFI-NAME>
+```
+
+You should be able to see the network you want.
+
+Edit
+
+```bash
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+With the following for your `WPA2-PSK (AES)`,
+
+```txt
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+    ssid="myssid"
+    psk="mypasskey"
+    proto=RSN
+    key_mgmt=WPA-PSK
+    pairwise=CCMP
+    auth_alg=OPEN
+}
+```
+
+Check your connection,
+
+```bash
+ifconfig wlan0
+```
