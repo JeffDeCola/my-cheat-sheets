@@ -22,6 +22,7 @@ This cheat sheet is broken up into the following sections,
     * Bash on Ubuntu on Windows (Windows System for Linux)
     * Windows
   * Check
+  * Install Go Tools
 
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
   * Basic Structure of go

@@ -59,13 +59,13 @@ PATH=$PATH:$GOROOT/bin
 
 For Ubuntu 14.04 and 16.04 (if upgraded),
 
-```
+```txt
 C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>\.bashrc
 ```
 
 For Ubuntu 18.04 from Windows Store,
 
-```
+```txt
 C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>\.bashrc
 ```
 
@@ -99,7 +99,7 @@ go env
 go version
 ```
 
-### INSTAL GO TOOLS
+## INSTALL GO TOOLS
 
 When you get the source, you should get the go tools
 `gofmt` and `godocs`.
