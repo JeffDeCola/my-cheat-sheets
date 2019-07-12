@@ -5,6 +5,7 @@ OK, lets get go...ing.  Yep, that just happened.
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-paths)
 * [CHECK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#check-your-install)
+* [INSTALL GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools)
 
 ## INSTALL
 
@@ -96,4 +97,26 @@ Check your go paths and version,
 ```bash
 go env
 go version
+```
+
+### INSTAL GO TOOLS
+
+When you get the source, you should get the go tools
+`gofmt` and `godocs`.
+
+Go tools should be in GOPATH or GOROOT.
+
+They usually live in the following locations,
+
+* WINDOWS
+  * C:\Users\Jeff\go\bin & C:\Go\bin
+* macOS and Ubuntu
+  * ~/bin & /usr/bin & usr/local/go/bin
+
+A few other tools may be useful,
+
+```bash
+go get -u -v github.com/nsf/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u golang.org/x/lint/golint
 ```
