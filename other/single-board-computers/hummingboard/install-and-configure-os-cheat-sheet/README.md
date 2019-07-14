@@ -7,7 +7,7 @@
 * [FULL LIST OF DISTRIBUTIONS FROM SOLIDRUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#full-list-of-distributions-from-solidrun)
 * [BASIC CONFIGURATION (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#basic-configuration-debian)
 * [INSTALL GO & GO TOOLS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-go--go-tools-debian)
-* [CONNECT-TO_WIFI (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#connect-to-wifi-debian)
+* [CONNECT TO WIFI (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#connect-to-wifi-debian)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -205,7 +205,7 @@ you should already have `gofmt` and `godocs`.
 To install other go tools, refer to my
 [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools).
 
-## CONNECT-TO_WIFI (DEBIAN)
+## CONNECT TO WIFI (DEBIAN)
 
 As a side note your router should always use WPA2-PSK with AES encryption.
 So we will connect to that.
