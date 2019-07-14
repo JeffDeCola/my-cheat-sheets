@@ -38,12 +38,41 @@ Make sure to use a microSD card of at least 4GB.
 
 This is a short list,
 
+Initial user and password,
+
+```txt
+user: pi
+pw: raspberry
+```
+
+## UPDATE AND UPGRADE
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+If you have issues try,
+
+```bash
+sudo apt update --allow-releaseinfo-change
+```
+
 ### CHANGE PASSWORD FOR USER PI
 
 Change your password for user pi,
 
 ```bash
 passwd
+```
+
+### RENAME YOUR RASPI
+
+Rename your host,
+
+```bash
+sudo nano /etc/hostname
+sudo nano /etc/hosts
 ```
 
 ### TURN ON SSH
@@ -73,15 +102,6 @@ pi    ALL=(ALL) ALL
 jeff  ALL=(ALL) ALL
 ```
 
-### RENAME YOUR RASPI
-
-Rename your host,
-
-```bash
-sudo nano /etc/hostname
-sudo nano /etc/hosts
-```
-
 ### GET GIT & GITHUB WORKING
 
 Get git,
@@ -94,7 +114,7 @@ git version
 Create keys,
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "Keys for Github"
+ssh-keygen -t rsa -b 4096 -C "Keys for Github (<HOSTNAME/MACHINE NAME>)"
 ```
 
 Place the Raspi public key at github.
@@ -102,10 +122,16 @@ Place the Raspi public key at github.
 I also like to add the hostname/machine name so I know where the commits came from,
 
 ```bash
-git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
+git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 git config --global push.default simple
+```
+
+Check configuration,
+
+```bash
+git config --list
 ```
 
 Refer to my
@@ -181,7 +207,7 @@ sudo iwlist wlan0 scan | grep <YOUR-WIFI-NAME>
 
 You should be able to see the network you want.
 
-Edit
+Edit,
 
 ```bash
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
@@ -204,7 +230,7 @@ network={
 }
 ```
 
-Check your connection,
+Check your connection (you may have to reboot),
 
 ```bash
 ifconfig wlan0
