@@ -62,7 +62,7 @@ I also like to add the hostname/machine name so I know where the
 commits came from,
 
 ```bash
-git config --global user.name "Jeff DeCola (<HOSTNAME / MACHINE NAME>)"
+git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 git config --global push.default simple
@@ -130,7 +130,7 @@ This is an illustration on how everything fits together,
 Generate public and private keys,
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "Keys for Github"
+ssh-keygen -t rsa -b 4096 -C "Keys for Github (<HOSTNAME/MACHINE NAME>)"
 ```
 
 Note, we are using a rsa type key with 4096 bit encryption.
@@ -304,7 +304,7 @@ And a reference to the remote repo,
 
 ## ADD & COMMIT (CREATING A NEW VERSION IN YOUR REPO)
 
-The flow is to add your new source to the stagging area
+The flow is to add your new source to the staging area
 and then commit the new source to your local repo.
 
 ```bash

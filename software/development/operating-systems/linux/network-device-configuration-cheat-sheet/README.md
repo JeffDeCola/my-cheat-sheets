@@ -76,7 +76,7 @@ ifconfig -a
 You should see your new static ip address.
 
 For more information on services refer to my cheat sheet
-[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet).
+[systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet).
 
 ## netplan METHOD
 
