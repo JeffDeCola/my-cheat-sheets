@@ -2,16 +2,16 @@
 
 `create-dns-server` _on your Raspberry Pi._
 
-* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#why-do-we-need-a-local-dns-server)
-* [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#benefits)
-* [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#what-dns-is-your-machine-using)
-* [INSTAL & CONFIGURE BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#install--configure-bind-dns-server)
-* [CONFIGURING DHCP ON YOUR ROUTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#configure-dhcp-on-your-router)
-* [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-esrver-cheat-sheet#test)
+* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#why-do-we-need-a-local-dns-server)
+* [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#benefits)
+* [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#what-dns-is-your-machine-using)
+* [INSTAL & CONFIGURE BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#instal--configure-bind-dns-server)
+* [CONFIGURING DNS ON YOUR LOCAL ROUTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#configuring-dhcp-on-your-local-router)
+* [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#test)
 
 I want to credit Dani from
 [domoticproject.com](https://domoticproject.com/configuring-dns-server-raspberry-pi/)
-for most of this information.
+for a lot of this information.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -22,18 +22,21 @@ Most likely your home router is acting as a DNS forwarder;
 You ask your router and your router send its up to the next router.
 The ISP router has it set to asks its own ISP DNS server.
 You could overide this and set your router to ask google DNS, or
-set this request for each machine. ** So the bottom line, the
-request gets passed upstream till someone figures it out.**
+set this request for each machine.
+**So the bottom line, the request gets passed upstream till someone figures it out.**
 
-So how do you reach your raspberry pi from another device?  You muse the ip address.
+So how do you reach your raspberry pi from another device?  You muse the IP address.
 You can't use the hostname.  You must use,
 
 ```bash
 ssh jeff@192.168.1.2
 ```
 
-But if you had a home dns server, it could resolve those names
-for your home network.
+But if you had a home dns server, you could use your hostname,
+
+```bash
+ssh jeff@my-pc
+```
 
 This illustration may help,
 
@@ -44,13 +47,14 @@ This illustration may help,
 From the above illustration, the benefits are apparent,
 
 * You can now use hostname of your local machines.
+* You don't have to set static IPs on your routers (Pain).
 * Your local DNS can cache certain website so now you do not always have to ask
   your ISP DNS or google DNS server.  This is faster.
 * Security, your local requests won't go outside your home network.
 
 ## WHAT DNS IS YOUR MACHINE USING
 
-First let find what dns you are currently using.
+First let find what dns you are currently using on your clients.
 
 ```bash
 cat /etc/resolv.conf
@@ -91,7 +95,7 @@ All DNS configurations for BIND are located under /etc/bind.
 * `named.conf.local` - This file has the local DNS server configuration.
 * `named.conf.default.zones` - It contains the default zones of the server.
 
-Lets configure,
+Lets also configure,
 
 ```bash
 sudo nano /etc/bind/named.conf
@@ -181,28 +185,15 @@ Verify no error with your configuration files. Should return nothing,
 sudo named-checkconf
 ```
 
-## CONFIGURING DHCP ON YOUR ROUTER
+## CONFIGURING DNS ON YOUR LOCAL ROUTER
 
 There are two ways to do this, in each device or at the router.
-
-Lets use the router.
-
-On your router set `DHCP` to your raspberry pi IP address.
+Lets use the router. On your router set `DNS` to your raspberry pi
+IP address.
 
 ## TEST
 
-
-
-
-
-
-
-
-
-
-
-
-
+```bash
 networksetup -listnetworkserviceorder
 networksetup -getdnsservers "Wi-Fi"
 networksetup -getdnsservers "Thunderbolt Ethernet Slot 1"
