@@ -425,6 +425,7 @@ quite a few years to finish._
 
 * RASPBERRY PI (RasPi)
 
+  * [create dns server](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server)
   * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
   * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
 
