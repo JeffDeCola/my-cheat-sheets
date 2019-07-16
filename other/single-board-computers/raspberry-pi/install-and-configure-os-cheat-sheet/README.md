@@ -8,6 +8,10 @@
 * [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
 * [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
 
+Some fun things you can do with you raspberry pi,
+
+* [Create DNS Server Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -45,7 +49,7 @@ user: pi
 pw: raspberry
 ```
 
-## UPDATE AND UPGRADE
+### UPDATE AND UPGRADE
 
 ```bash
 sudo apt-get update
@@ -56,6 +60,14 @@ If you have issues try,
 
 ```bash
 sudo apt update --allow-releaseinfo-change
+```
+
+### WHAT OS VERSION ARE YOU USING
+
+To find the OS release,
+
+```bash
+cat /etc/os-release
 ```
 
 ### CHANGE PASSWORD FOR USER PI

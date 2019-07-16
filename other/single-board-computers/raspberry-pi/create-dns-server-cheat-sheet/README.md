@@ -1,6 +1,6 @@
 # CREATE DNS SERVER CHEAT SHEET
 
-`create-dns-server` _on your Raspberry Pi._
+`create-dns-server` _on your Raspberry Pi using BIND._
 
 * [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#why-do-we-need-a-local-dns-server)
 * [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#benefits)
@@ -64,7 +64,6 @@ For Linux,
 
 ```bash
 nmcli device show enp1s0
-
 ```
 
 For macos,
@@ -78,14 +77,25 @@ scutil --dns | grep 'nameserver\[[0-9]*\]'
 BIND (Berkley Internet Naming Daemon) is the most common program
 used for maintaining a name server on Linux.
 
+First make sure you Raspi is not configured with a static IP,
+
 ```bash
-sudo apt-get install bind9 bind9-doc dnsutils
+sudo nano /etc/network/interfaces
+```
+
+### INSTALL BIND
+
+Now install BIND,
+
+```bash
+sudo apt-get install bind9 bind9-doc dnsutils bind9utils
 ```
 
 Check status,
 
 ```bash
 service bind9 status
+dpkg --list | grep bind
 ```
 
 All DNS configurations for BIND are located under /etc/bind.
@@ -150,7 +160,12 @@ internals;
 };
 ```
 
-Lets configure,
+### FORWARD LOOKUP ZONE
+
+Now set up two zones,
+
+* One for the forward lookup, where the domain’s IP
+* address is searched, and a reverse lookup for the inverse query,
 
 ```bash
 sudo nano /etc/bind/named.conf.local
@@ -159,25 +174,56 @@ sudo nano /etc/bind/named.conf.local
 With,
 
 ```txt
-zone "YOURHOSTNAME" {
-type master;
-file "/etc/bind/YOURHOSTNAME.db";
+zone "home.lan" IN {
+        type master;
+        file "/etc/bind/home.lan.db";
+};
+
+zone "20.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/reverse.20.168.192.in-addr.arpa.db";
 };
 ```
 
-And copy the database here,
+### FORWARD LOOKUP ZONE DB
 
 ```bash
-sudo cp /etc/bind/db.local YOURHOSTNAME.db
+sudo nano /etc/bind/home.lan.db
 ```
 
-Now open the database file,
+```txt
+home.lan. IN SOA raspberry.home.lan. hostmaster.home.lan. (
+    2017081401 ; serial
+    8H ; refresh
+    4H ; retry
+    4W ; expire
+    1D ; minimum
+)
+home.lan. IN NS raspberry.home.lan.
+home.lan. IN MX 10 raspberry.home.lan.
+localhost    IN A 127.0.0.1
+raspberry    IN A 192.168.20.110
+router       IN A 192.168.20.1
+```
+
+### REVERSE LOOKUP ZONE DB
 
 ```bash
-sudo nano /etc/bind/YOURHOSTNAME.db
+sudo nano /etc/bind/reverse.20.168.192.in-addr.arpa.db
 ```
 
-I did not edit this file.
+```txt
+@ IN SOA raspberry.home.lan. hostmaster.home.lan. (
+    2017081401 ; serial
+    8H ; refresh
+    4H ; retry
+    4W ; expire
+    1D ; minimum
+)
+            IN NS raspberry.home.lan.
+1           IN PTR router.home.lan.
+31          IN PTR raspberry.home.lan.
+```
 
 Verify no error with your configuration files. Should return nothing,
 
