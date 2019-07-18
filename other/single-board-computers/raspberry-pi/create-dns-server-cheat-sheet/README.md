@@ -2,12 +2,40 @@
 
 `create-dns-server` _on your Raspberry Pi using BIND._
 
-* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#why-do-we-need-a-local-dns-server)
-* [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#benefits)
-* [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#what-dns-is-your-machine-using)
-* [INSTAL & CONFIGURE BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#instal--configure-bind-dns-server)
-* [CONFIGURING DNS ON YOUR LOCAL ROUTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#configuring-dhcp-on-your-local-router)
-* [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server#test)
+tl;dr,
+
+```bash
+# ON DNS SERVER
+tail -f /var/log/dns.jeffs-query.log
+# ON EACH MACHINE
+cat /etc/resolv.conf
+# The ultimate goal is to have,
+#     search jeffnet.lan
+#     nameserver 192.168.20.110
+#     nameserver 8.8.8.8
+#     nameserver 8.8.4.4
+# CHECKS
+ping stimpy
+ping Jeffs-Raspi-1Bplus
+ping facebook.com
+dig stimpy.jeffnet.lan
+dig Jeffs-Raspi-1Bplus.jeffnet.lan
+dig facebook.com
+ssh jeff@stimpy
+ssh jeff@Jeffs-Raspi-1Bplus
+nslookup stimpy
+nslookup Jeffs-Raspi-1Bplus
+nslookup facebook.com
+```
+
+* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#why-do-we-need-a-local-dns-server)
+* [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#benefits)
+* [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#what-dns-is-your-machine-using)
+* [INSTAL BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#instal-bind-dns-server)
+* [CONFIGURE PRIMARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#configure-primary-dns-server)
+* [CONFIGURE SECONDARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#configure-secondary-dns-server)
+* [CONFIGURING YOUR CLIENTS FOR DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#configuring-your-clients)
+* [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#test)
 
 I want to credit Dani from
 [domoticproject.com](https://domoticproject.com/configuring-dns-server-raspberry-pi/)
@@ -35,7 +63,7 @@ ssh jeff@192.168.1.2
 But if you had a home dns server, you could use your hostname,
 
 ```bash
-ssh jeff@my-pc
+ssh jeff@Jeffs-Raspi
 ```
 
 This illustration may help,
@@ -63,7 +91,9 @@ cat /etc/resolv.conf
 For Linux,
 
 ```bash
+sudo apt-get install network-manager
 nmcli device show enp1s0
+nmcli device show eth0
 ```
 
 For macos,
@@ -72,7 +102,7 @@ For macos,
 scutil --dns | grep 'nameserver\[[0-9]*\]'
 ```
 
-## INSTAL & CONFIGURE BIND (DNS SERVER)
+## INSTAL BIND (DNS SERVER)
 
 BIND (Berkley Internet Naming Daemon) is the most common program
 used for maintaining a name server on Linux.
@@ -82,8 +112,6 @@ First make sure you Raspi is not configured with a static IP,
 ```bash
 sudo nano /etc/network/interfaces
 ```
-
-### INSTALL BIND
 
 Now install BIND,
 
@@ -98,6 +126,22 @@ service bind9 status
 dpkg --list | grep bind
 ```
 
+Put bind 9 in ipv4 mode,
+
+```bash
+sudo nano /etc/default/bind9
+```
+
+with,
+
+```txt
+OPTIONS="-4 -u bind"
+```
+
+## CONFIGURE PRIMARY DNS SERVER
+
+### CONFIGURE named.conf
+
 All DNS configurations for BIND are located under /etc/bind.
 
 * `named.conf` - Primary configuration.
@@ -105,142 +149,420 @@ All DNS configurations for BIND are located under /etc/bind.
 * `named.conf.local` - This file has the local DNS server configuration.
 * `named.conf.default.zones` - It contains the default zones of the server.
 
-Lets also configure,
+Configure,
 
 ```bash
 sudo nano /etc/bind/named.conf
 ```
 
-With,
+with,
 
 ```txt
+// This is the primary configuration file for the BIND DNS server named.
+//
+// Please read /usr/share/doc/bind9/README.Debian.gz for information on the
+// structure of BIND configuration files in Debian, *BEFORE* you customize
+// this configuration file.
+//
+// If you are just adding zones, please do that in /etc/bind/named.conf.local
+
 # Access Control List that includes the loopback interface and the local network
-acl internals {
-127.0.0.0/8;
-192.168.1.0/24;
+acl "jeffs-trusted" {
+127.0.0.0/8;            # Trust localhost, not sure if this is needed
+192.168.20.0/24;        # Trust all IPs in the subnet
 };
 
+include "/etc/bind/named.conf.options";
+include "/etc/bind/named.conf.local";
+include "/etc/bind/named.conf.default-zones";
+```
+
+### CONFIGURE named.conf.options
+
+Configure,
+
+```bash
+sudo nano /etc/bind/named.conf.options
+```
+
+with,
+
+```txt
 options {
+        directory "/var/cache/bind";
 
-directory "/var/cache/bind";
-auth-nxdomain no;
-# Forward queries to:
-forwarders {
-8.8.8.8; # Google DNS
-9.9.9.9; # IMB Quad9 DNS
-192.168.1.1; # ISP DNS (router's own DNS)
+        recursion yes;              # enables recursive queries
+        allow-recursion {           # allows recursive queries from "trusted" clients
+                jeffs-trusted;
+        };
+        listen-on {                 # ns1 private IP address
+            192.168.20.110;
+        };
+        allow-transfer {            # disable zone transfers by default
+            none;
+        };
+        allow-query {
+            jeffs-trusted;
+        };
+
+        // If there is a firewall between you and nameservers you want
+        // to talk to, you may need to fix the firewall to allow multiple
+        // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+        // If your ISP provided one or more IP addresses for stable
+        // nameservers, you probably want to use them as forwarders.
+        // Uncomment the following block, and insert the addresses replacing
+        // the all-0's placeholder.
+
+        forwarders {
+            8.8.8.8; # Google DNS
+            9.9.9.9; # IMB Quad9 DNS
+        };
+
+        //========================================================================
+        // If BIND logs error messages about the root key being expired,
+        // you will need to update your keys.  See https://www.isc.org/bind-keys
+        //========================================================================
+        dnssec-validation auto;
+
+        auth-nxdomain no;    # conform to RFC1035
+        listen-on-v6 { any; };
 };
 
-# Listen port 43 from loopback and our own IP Address
-listen-on port 53 {
-127.0.0.1;
-192.168.1.100;
-};
-
-# Don't listen IPv6 traffic
-listen-on-v6 {
-none;
-};
-
-# Allow queries from loopback and our internal network
-allow-query {
-internals;
-};
-
-# Do not transfer the zone information to the secondary DNS
-allow-transfer {
-none;
-};
-
-// Allow recursive queries to the local host
-allow-recursion {
-internals;
-};
-
+logging {
+        channel bind.jeffs-query.log {
+            file "/var/log/dns.jeffs-query.log";
+            print-time yes;
+            severity debug 3;
+        };
+        category queries { bind.jeffs-query.log; };
 };
 ```
 
-### FORWARD LOOKUP ZONE
+And also create your log file,
+
+```bash
+sudo touch /var/log/dns.jeffs-query.log
+sudo chown bind:bind /var/log/dns.jeffs-query.log
+```
+
+### CONFIGURE named.conf.local
 
 Now set up two zones,
 
 * One for the forward lookup, where the domain’s IP
 * address is searched, and a reverse lookup for the inverse query,
 
+Configure,
+
 ```bash
 sudo nano /etc/bind/named.conf.local
 ```
 
-With,
+with,
 
 ```txt
-zone "home.lan" IN {
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "jeffnet.lan" IN {
         type master;
-        file "/etc/bind/home.lan.db";
+        file "/etc/bind/jeffnet.lan.db";
+        # allow-transfer { 92.168.20.XXX; };          # ns2 private IP address - secondary
+
 };
 
-zone "20.168.192.in-addr.arpa" {
+zone "20.168.192.in-addr.arpa" {                    # 192.168.20.0/24 subnet
         type master;
         file "/etc/bind/reverse.20.168.192.in-addr.arpa.db";
+        # allow-transfer { 192.168.20.XXX; };         # ns2 private IP address - secondary
+
 };
 ```
 
-### FORWARD LOOKUP ZONE DB
+Create forward lookup zone db,
 
 ```bash
-sudo nano /etc/bind/home.lan.db
+sudo nano /etc/bind/jeffnet.lan.db
 ```
 
 ```txt
-home.lan. IN SOA raspberry.home.lan. hostmaster.home.lan. (
-    2017081401 ; serial
-    8H ; refresh
-    4H ; retry
-    4W ; expire
-    1D ; minimum
+;
+; BIND DATA FOR LOCAL LOOPBACK
+$TTL    604800
+@                                   IN      SOA     Jeffs-Raspi-3B.jeffnet.lan. admin.jeffnet.lan. (
+                  3     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
 )
-home.lan. IN NS raspberry.home.lan.
-home.lan. IN MX 10 raspberry.home.lan.
-localhost    IN A 127.0.0.1
-raspberry    IN A 192.168.20.110
-router       IN A 192.168.20.1
+
+;
+; NAMESERVERS - NS RECORDS
+                                    IN      NS      Jeffs-Raspi-3B.jeffnet.lan.     ; NS1
+;                                    IN      NS      ns2-hostname.jeffnet.lan.      ; NS2
+
+;
+; NAMESERVERS - A RECORDS
+Jeffs-Raspi-3B.jeffnet.lan.         IN      A       192.168.20.110                  ; NS1
+;ns2-hostname.jeffnet.lan.           IN      A       192.168.20.xxx                 ; NS2
+
+;
+; 192.168.20.0/24 - A RECORDS
+stimpy.jeffnet.lan.                 IN      A       192.168.20.102
+Jeffs-MBP.jeffnet.lan.              IN      A       192.168.20.103
+Jeffs-Raspi-1Bplus.jeffnet.lan.     IN      A       192.168.20.111
+Jeffs-HBpro-i4X4.jeffnet.lan.       IN      A       192.168.20.120
 ```
 
-### REVERSE LOOKUP ZONE DB
+Create reverse lookup zone db,
 
 ```bash
 sudo nano /etc/bind/reverse.20.168.192.in-addr.arpa.db
 ```
 
 ```txt
-@ IN SOA raspberry.home.lan. hostmaster.home.lan. (
-    2017081401 ; serial
-    8H ; refresh
-    4H ; retry
-    4W ; expire
-    1D ; minimum
+;
+; BIND REVERSE DATA FOR LOCAL LOOPBACK
+$TTL    604800
+@                                   IN      SOA     jeffnet.lan. admin.jeffnet.lan. (
+                  3     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
 )
-            IN NS raspberry.home.lan.
-1           IN PTR router.home.lan.
-31          IN PTR raspberry.home.lan.
+
+;
+; NAMESERVERS - NS RECORDS
+                                    IN      NS      Jeffs-Raspi-3B.jeffnet.lan.     ; NS1
+;                                    IN      NS      ns2-hostname.jeffnet.lan.      ; NS2
+
+;
+; PTR RECORDS
+110                                 IN      PTR     Jeffs-Raspi-3B.jeffnet.lan.     ; NS1
+; XXX                                IN      NS      ns2-hostname.jeffnet.lan.      ; NS2
+102                                 IN      PTR     stimpy.jeffnet.lan.
+103                                 IN      PTR     Jeffs-MBP.jeffnet.jeffnet.lan.
+111                                 IN      PTR     Jeffs-Raspi-1Bplus.jeffnet.lan.
+120                                 IN      PTR     Jeffs-HBpro-i4X4.jeffnet.lan.
 ```
+
+### CONFIGURE named.conf.default.zones
+
+tbd.
+
+### VERIFY NO ERRORS
 
 Verify no error with your configuration files. Should return nothing,
 
 ```bash
-sudo named-checkconf
+named-checkconf
+named-checkzone jeffnet.lan /etc/bind/jeffnet.lan.db
+named-checkzone 20.168.192.in-addr.arpa /etc/bind/reverse.20.168.192.in-addr.arpa.db
 ```
 
-## CONFIGURING DNS ON YOUR LOCAL ROUTER
-
-There are two ways to do this, in each device or at the router.
-Lets use the router. On your router set `DNS` to your raspberry pi
-IP address.
-
-## TEST
+### START BIND
 
 ```bash
-networksetup -listnetworkserviceorder
-networksetup -getdnsservers "Wi-Fi"
-networksetup -getdnsservers "Thunderbolt Ethernet Slot 1"
+service bind9 status
+sudo service bind9 restart
+sudo service bind9 stop
+sudo service bind9 start
+```
+
+## CONFIGURE SECONDARY DNS SERVER
+
+Not part of cheat sheet yet.
+
+## CONFIGURE YOUR CLIENTS FOR DNS
+
+There are two ways your machines can find a nameserver, 
+
+* Set on your router
+* Configure each host
+
+We will do the latter.
+
+You can check your machine that it got the
+static ip and the nameserver ip,
+
+We want,
+
+```bash
+cat /etc/resolv.conf
+```
+
+To have,
+
+```bash
+search jeffnet.lan
+nameserver 192.168.20.110
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+
+### UBUNTU 18.04
+
+Ubuntu 18.04 uses netplan.
+
+If you have a gui, bring up the manager by
+
+```bash
+nm-connection-editor
+sudo systemctl restart NetworkManager
+sudo systemd-resolve --status
+```
+
+If you are not using the gui, then edit this file,
+
+```bash
+sudo nano /etc/netplan/00-private-nameservers.yaml
+```
+
+This is only for ns1, if you had ns2 you will have to add two addresses.
+
+```bash
+network:
+  version: 2
+  ethernets:
+    enp1s0:
+      nameservers:
+        addresses:
+        - 192.168.20.110
+        - 8.8.8.8
+        - 8.8.4.4
+        search:
+        - jeffnet.lan
+```
+
+Now enable and check,
+
+```bash
+sudo netplan try
+sudo netplan --debug apply
+sudo systemd-resolve --status
+```
+
+### UBUNTU 16.04
+
+tbd
+
+### RASPBIAN
+
+```bash
+sudo nano /etc/dhcpcd.conf
+```
+
+add,
+
+```bash
+static domain_name_servers=192.168.20.110 8.8.8.8 8.8.4.4
+static domain_search=jeffnet.lan
+```
+
+Restart,
+
+```bash
+sudo service dhcpcd restart
+```
+
+### macOS
+
+Configure your nameserver in
+`System Preferences - > Network -> Advanced - > DNS`
+
+### DEBIAN 8
+
+You should be able to, but I could not get this to work,
+
+```bash
+sudo nano /etc/network/interfaces
+```
+
+And add,
+
+```bash
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet dhcp
+#    dns-nameservers 192.168.20.110 8.8.8.8 8.8.4.4
+#    dns-search jeffnet.lan
+
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+So I forced it in,
+
+```bash
+sudo nano /etc/dhcp/dhclient.conf
+```
+
+Added,
+
+```txt
+supersede domain-name-servers 192.168.20.110, 8.8.8.8, 8.8.4.4;
+supersede domain-search "jeffnet.lan";
+```
+
+More info,
+
+```bash
+man dhclient.conf
+```
+
+restart,
+
+```bash
+sudo /etc/init.d/networking restart
+```
+
+## TESTING
+
+On your nameserver you can always check the log,
+
+```bash
+tail -f /var/log/dns.jeffs-query.log
+```
+
+From any other device on the network you should be able to,
+
+```bash
+ping stimpy
+ping Jeffs-MBP
+ping Jeffs-Raspi-3B
+ping Jeffs-Raspi-1Bplus
+ping Jeffs-HBpro-i4X4
+ping facebook.com
+
+dig stimpy.jeffnet.lan
+dig Jeffs-MBP.jeffnet.lan
+dig Jeffs-Raspi-3B.jeffnet.lan
+dig Jeffs-Raspi-1Bplus.jeffnet.lan
+dig Jeffs-HBpro-i4X4.jeffnet.lan
+dig facebook.com
+
+ssh jeff@stimpy
+ssh jeffdecola@Jeffs-MBP
+ssh jeff@Jeffs-Raspi-3B
+ssh jeff@Jeffs-Raspi-1Bplus
+ssh jeff@Jeffs-HBpro-i4X4
+
+nslookup stimpy
+nslookup Jeffs-MBP
+nslookup Jeffs-Raspi-3B
+nslookup Jeffs-Raspi-1Bplus
+nslookup Jeffs-HBpro-i4X4
+nslookup facebook.com
 ```

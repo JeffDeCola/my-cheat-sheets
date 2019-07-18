@@ -268,7 +268,7 @@ With,
 ```bash
 allow-hotplug wlan0
 iface wlan0 inet dhcp
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 Check your connection (you may have to reboot),
