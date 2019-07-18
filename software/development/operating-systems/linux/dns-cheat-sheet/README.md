@@ -18,7 +18,7 @@ that may live on your linux box.
 
 Some popular ones are,
 
-* BIND (Popular one)
+* [BIND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet)
 * NSD (Name Server Daemon)
 * djbdns (tinydns).
 * DNSmasq
@@ -28,13 +28,8 @@ Some popular ones are,
 BIND (Berkley Internet Naming Daemon) is the most common
 program used for maintaining a name server on Linux.
 
-Installing BIND is out of the scope of this cheat-sheet.
-
-All DNS configurations for BIND are located under `/etc/bind`.
-
-* /etc/bind/named.conf - _Primary configuration._
-
-* /etc/bind/db.root -  _Describes the root name servers in the world._
+I wrote a cheat sheet on
+[how to install BIND on a raspberry pi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet).
 
 ## DNS CLIENT (RESOLVER)
 
