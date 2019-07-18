@@ -29,7 +29,6 @@ nslookup facebook.com
 ```
 
 * [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#why-do-we-need-a-local-dns-server)
-* [BENEFITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#benefits)
 * [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#what-dns-is-your-machine-using)
 * [INSTAL BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#instal-bind-dns-server)
 * [CONFIGURE PRIMARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet#configure-primary-dns-server)
@@ -69,8 +68,6 @@ ssh jeff@Jeffs-Raspi
 This illustration may help,
 
 ![IMAGE - create-dns-server-on-your-raspberry-pi - IMAGE](../../../../docs/pics/create-dns-server-on-your-raspberry-pi.jpg)
-
-## BENEFITS
 
 From the above illustration, the benefits are apparent,
 
@@ -383,7 +380,7 @@ Not part of cheat sheet yet.
 
 ## CONFIGURE YOUR CLIENTS FOR DNS
 
-There are two ways your machines can find a nameserver, 
+There are two ways your machines can find a nameserver,
 
 * Set on your router
 * Configure each host
@@ -476,11 +473,11 @@ sudo service dhcpcd restart
 ### macOS
 
 Configure your nameserver in
-`System Preferences - > Network -> Advanced - > DNS`
+`System Preferences - > Network -> Advanced - > DNS`.
 
 ### DEBIAN 8
 
-You should be able to, but I could not get this to work,
+Edit,
 
 ```bash
 sudo nano /etc/network/interfaces
@@ -528,7 +525,7 @@ restart,
 sudo /etc/init.d/networking restart
 ```
 
-## TESTING
+## TEST
 
 On your nameserver you can always check the log,
 
