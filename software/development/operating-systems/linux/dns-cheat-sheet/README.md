@@ -3,8 +3,8 @@
 `dns` _(Domain Name Server) resolves hosts/domains into IP addresses
 and visa versa.  Basically a large database._
 
-* DNS SERVER _or name server_
-* DNS CLIENT _or resolver_
+* [DNS SERVER (name server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-server-name-server)
+* [DNS CLIENT (resolver)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-client-resolver)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -20,16 +20,16 @@ Some popular ones are,
 
 * [BIND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet)
 * NSD (Name Server Daemon)
-* djbdns (tinydns).
+* djbdns (tinydns)
 * DNSmasq
 
 ### BIND (A POPULAR NAME SERVER FOR LINUX)
 
 BIND (Berkley Internet Naming Daemon) is the most common
 program used for maintaining a name server on Linux.
-
 I wrote a cheat sheet on
 [how to install BIND on a raspberry pi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/create-dns-server-cheat-sheet).
+But you can use this as a guide for any os.
 
 ## DNS CLIENT (RESOLVER)
 
