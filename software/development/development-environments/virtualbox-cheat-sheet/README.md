@@ -5,6 +5,19 @@ run an operating system (guest) on top of your existing
 operating system (host).  You can think of it as a sandbox of an OS
 running on your computer_.
 
+* [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#virtual-machine-vm-vs-docker-container)
+* [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-on-windows)
+* [INSTALL GUEST ADDITIONS FROM COMMAND LINE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-guest-additions-from-command-line)
+* [SHARED CLIPBOARD & DRAG AND DROP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#shared-clipboard--drag-and-drop)
+*[CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#configure-static-ip-in-ubuntu-running-on-virtualbox)
+* [ALLOW HOST ACCESS TO VM (HOST-ONLY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#allow-host-access-to-vm-host-only)
+* [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#allow-local-network-access-to-vm-bridge)
+* [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
+ *[INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
+* [SSH ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ssh-onto-ubuntu)
+* [FTP ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ftp-onto-ubuntu)
+* [ADD A PRINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#add-a-printer)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
