@@ -3,6 +3,40 @@
 `ssh and keys` _(secure socket shell) is a way to securely
 communicate (via ssh keys) with a remote computer._
 
+tl;dr,
+
+```bash
+# KEYS
+ssh-keygen -t rsa -b 4096 -C "Keys for Github <MACHINE/HOSTNAME>"
+ssh-keygen -E md5 -lf ~/.ssh/id_rsa.pub
+ssh-copy-id user@<IP>
+## SSH CONFIGURATION FILE (EASY LOGIN)
+nano ~/.ssh/config
+# Host stimpy
+#    HostName stimpy
+#    User jeff
+#    IdentityFile ~/.ssh/id_rsa
+ssh stimpy
+# SSH EXAMPLES
+ssh user@<IP>
+ssh -v -p 22 user@<HOSTNAME>
+ssh -i ~/.vagrant.d/insecure_private_key -p 2222 vagrant@127.0.0.1
+ssh stimpy "ls -lat"
+# COPY TO REMOTE
+scp test1.txt jeff@stimpy:~/
+scp -r testdirectory1 jeff@stimpy:~/
+# COPY FROM REMOTE
+scp jeff@stimpy:~/test2.txt ~/
+scp -r jeff@stimpy:testdirectory2 ~/
+```
+
+* [KEYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#keys)
+  Generate and use
+* [SSH CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#ssh-configuration)
+  Configure ssh
+* [SSH EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#ssh-examples)
+  Cool commands to use
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -37,7 +71,7 @@ A way to generate public and private keys.
 For example,
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "Keys for Github"
+ssh-keygen -t rsa -b 4096 -C "Keys for Github <MACHINE/HOSTNAME>"
 ```
 
 * -t switch is the `rsa` type key (very popular).
@@ -73,7 +107,7 @@ Now add your key,
 ssh-add ~/.ssh/id_rsa
 ```
 
-## SSH
+## SSH CONFIGURATION
 
 Another way to communicate to a remote computer without
 traditional username/password `login`.
@@ -98,7 +132,7 @@ Now from your local terminal (ssh client), push the public key
 from your local machine to the remote ssh server,
 
 ```bash
-ssh-copy-id username@<IP>
+ssh-copy-id user@<IP>
 ```
 
 Or you can login to the remote ssh server machine and manually
@@ -112,14 +146,14 @@ sudo nano /etc/ssh/sshd_config
 
 And change the following to only allow ssh,
 
-```
+```bash
 PermitRootLogin no
 PasswordAuthentification no
 ```
 
 Restart ssh service,
 
-```
+```bash
 sudo systemctl reload sshd.service
 ```
 
@@ -127,12 +161,43 @@ If you ever want to add another ssh client, you need to
 turn `PasswordAuthentification yes` and then upload
 your ssh public key as above to `.ssh/authorized_keys`.
 
+### SSH CONFIGURATION FILE
+
+Make it easier to ssh into servers without typing everything,
+
+edit,
+
+```bash
+nano ~/.ssh/config
+```
+
+with,
+
+```txt
+Host st
+    # HostName 192.168.20.102
+    HostName stimpy
+    User jeff
+    IdentityFile ~/.ssh/id_rsa
+```
+
+Then just do a small command of,
+
+```bash
+ssh st
+```
+
+## SSH EXAMPLES
+
+Some cool examples
+
 ### SSH CLIENT - FROM YOUR TERMINAL - TO REMOTE LOGIN
 
 From command line,
 
 ```go
-ssh username@<IP>
+ssh user@<IP>
+ssh -v -p 22 user@<HOSTNAME>
 ```
 
 Again, no password is needed.
@@ -142,4 +207,26 @@ This is useful to ssh on a vagrant made virtualbox VM.
 
 ```bash
 ssh -i ~/.vagrant.d/insecure_private_key -p 2222 vagrant@127.0.0.1
+```
+
+Again, put this info in `~/.ssh/config` so you don't have to type all the time.
+
+### RUN COMMANDS REMOTELY
+
+```bash
+ssh stimpy "ls -lat"
+```
+
+### COPY LOCAL TO REMOTE
+
+```bash
+scp test1.txt jeff@stimpy:~/
+scp -r testdirectory1 jeff@stimpy:~/
+```
+
+### COPY REMOTE TO LOCAL
+
+```bash
+scp jeff@stimpy:~/test2.txt ~/
+scp -r jeff@stimpy:testdirectory2 ~/
 ```
