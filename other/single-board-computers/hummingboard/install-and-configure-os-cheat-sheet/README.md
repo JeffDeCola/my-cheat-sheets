@@ -9,6 +9,10 @@
 * [INSTALL GO & GO TOOLS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-go--go-tools-debian)
 * [CONNECT TO WIFI (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#connect-to-wifi-debian)
 
+Some fun things you can do with your hummingboard,
+
+* [Create DNS Server using BIND Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
