@@ -8,24 +8,20 @@ tl;dr,
 ```bash
 # ON DNS SERVER
 tail -f /var/log/dns.jeffs-query.log
-# ON EACH MACHINE
+# ON EACH MACHINE / CLIENT
 cat /etc/resolv.conf
 # The ultimate goal is to have,
 #     search jeffnet.lan
 #     nameserver 192.168.20.110
 #     nameserver 8.8.8.8
 #     nameserver 8.8.4.4
-# CHECKS
+# SOME CHECKS
 ping stimpy
-ping Jeffs-Raspi-1Bplus
 ping facebook.com
 dig stimpy.jeffnet.lan
-dig Jeffs-Raspi-1Bplus.jeffnet.lan
 dig facebook.com
 ssh jeff@stimpy
-ssh jeff@Jeffs-Raspi-1Bplus
 nslookup stimpy
-nslookup Jeffs-Raspi-1Bplus
 nslookup facebook.com
 ```
 
@@ -35,6 +31,12 @@ nslookup facebook.com
 * [CONFIGURE PRIMARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-primary-dns-server)
 * [CONFIGURE SECONDARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-secondary-dns-server)
 * [CONFIGURE YOUR CLIENTS FOR DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-your-clients-for-dns)
+  * [UBUNTU 18.04](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1804)
+  * [UBUNTU 16.04](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1604)
+  * [RASPBIAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#raspbian)
+  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#macos)
+  * [DEBIAN 8](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#debian-8)
+  * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#windows)
 * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#test)
 
 I want to credit Dani from
@@ -524,6 +526,34 @@ restart,
 
 ```bash
 sudo /etc/init.d/networking restart
+```
+
+### WINDOWS
+
+You goto each adapter settings and edit the properties of IPV4.
+Click the advanced options to add `jeffnet.lan` under `Append these DNS suffixes`.
+
+Under bash for windows you should see your changes after a reboot in `/etc/resolv.conf`.
+
+Now you need to change the port to 2222. Port 22 does not wor
+ because Windows comes with a built in SSH server.
+
+Edit,
+
+```bash
+sudo nano /etc/ssh/sshd_config
+```
+
+with
+
+```bash
+Port 2222
+```
+
+Then restart,
+
+```bash
+sudo service ssh --full-restart
 ```
 
 ## TEST

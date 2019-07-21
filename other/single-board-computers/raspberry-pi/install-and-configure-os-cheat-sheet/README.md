@@ -247,3 +247,18 @@ Check your connection (you may have to reboot),
 ```bash
 ifconfig wlan0
 ```
+
+I had an issue with the Raspi changing the mac address for wlan0.
+Yeah, it makes no sense.  My fix was,
+
+```bash
+sudo nano /etc/rc.local
+```
+
+with,
+
+```bash
+sudo ifconfig wlan0 hw ether AE:EF:49:11:81:41 #Spoofed MAC
+sudo ifconfig wlan0 up # Start
+sudo dhclient wlan0 # Start DHCP
+```
