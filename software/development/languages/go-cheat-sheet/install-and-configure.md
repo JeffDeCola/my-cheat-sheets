@@ -19,7 +19,7 @@ I would not install from a package.
 Let's install `ver 1.12.7`  to `/usr/local`,
 
 ```bash
-FileName=`go1.12.7.linux-amd64.tar.gz`
+FileName='go1.12.7.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
 sudo mv go /usr/local

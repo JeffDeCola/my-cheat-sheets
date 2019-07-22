@@ -2,7 +2,6 @@
 
 `create-dns-server-using-bind` on linux.
 
-
 tl;dr,
 
 ```bash
@@ -15,6 +14,13 @@ cat /etc/resolv.conf
 #     nameserver 192.168.20.110
 #     nameserver 8.8.8.8
 #     nameserver 8.8.4.4
+# ADD HOST TO LOOKUP TABLE
+sudo nano /etc/bind/jeffnet.lan.db
+sudo nano /etc/bind/reverse.20.168.192.in-addr.arpa.db
+# BIND
+service bind9 status
+sudo service bind9 restart
+#
 # SOME CHECKS
 ping stimpy
 ping facebook.com
@@ -424,15 +430,18 @@ If you are not using the gui, then edit this file,
 
 ```bash
 sudo nano /etc/netplan/00-private-nameservers.yaml
+sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
 This is only for ns1, if you had ns2 you will have to add two addresses.
 
-```bash
+```yaml
 network:
   version: 2
+  renderer: networkd
   ethernets:
     enp1s0:
+      dhcp4: yes
       nameservers:
         addresses:
         - 192.168.20.110
