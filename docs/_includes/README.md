@@ -18,6 +18,10 @@ Various Apps and tools for the goal of creating an App/Service.
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
     [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet),
     [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+  * [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+    * [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+    * [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md),
+      [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
     [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet),
@@ -27,12 +31,16 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * LINUX
 
-    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
+    * [common commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet)
+    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet),
+      [create dns server using bind](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
+    * [fonts](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/fonts-cheat-sheet)
+    * [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/init-sysv-script-cheat-sheet)
     * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
     * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
-    * [systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+    * [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
 
   * LINUX DISTRIBUTIONS
 
@@ -44,10 +52,10 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * MAC OS
 
+    * [launchd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet)
     * [LSCOLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
 
 * SOFTWARE ARCHITECTURES
-
 
   * API
 
@@ -62,7 +70,9 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * DATABASE
 
-    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgreSQL-cheat-sheet)
+    * [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet)
+    * [redis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet)
+    * [relational vs non-relational](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet)
 
   * MESSAGING
 
@@ -114,12 +124,16 @@ Various Apps and tools for the goal of creating an App/Service.
 
 ### SERVICE ARCHITECTURES
 
+* Overview
+
+  * [overview of service architectures](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/overview/overview-of-service-architectures-cheat-sheet)
+
 * SaaS - SOFTWARE AS A SERVICE
 
   * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet)
 
 * FaaS - FUNCTION AS A SERVICE
- 
+
   * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
     _hello-go-deploy-aws-lambda repo coming soon_
   * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
@@ -157,22 +171,22 @@ Various Apps and tools for the goal of creating an App/Service.
     [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
 
 ### SERVICE PROVIDERS
-   
-  * [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-  * [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-    * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
-    * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
-    * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
-    * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
-    * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
-  * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
+
+* [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
+* [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+  * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+  * [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
+  * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
+  * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
+  * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
+* [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
 ### VISUAL OVERVIEW OF CREATING AN APP/SERVICE
 
 This illustration shows how various Apps and tools fit together
 for the goal of creating an App/Service,
 
-![IMAGE - Creating Services Environment Overview - IMAGE](pics/Creating-Services-Environment-Overview.jpg)
+![IMAGE - creating services environment overview - IMAGE](pics/creating-services-environment-overview.jpg)
 
 ## HARDWARE CHEAT SHEETS
 
@@ -205,7 +219,10 @@ Various Apps and tools for the goal of creating an ASIC.
 
 ### VISUAL OVERVIEW OF CREATING AN ASIC
 
-This illustration coming soon.
+This illustration shows how various Apps and tools fit together
+for the goal of creating an ASIC,
+
+![IMAGE - creating an ASIC environment overview - IMAGE](pics/creating-an-asic-environment-overview.jpg)
 
 ## OTHER CHEAT SHEETS
 
@@ -224,25 +241,51 @@ Random other things I'm interested in.
 
 * TECHNOLOGIES
 
+  * [data storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/data-storage-cheat-sheet)
   * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
   * [microSD cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
 
+### HISTORY
+
+* AMERICAN
+
+  * [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/pre-colonial-cheat-sheet)
+  * [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/colonial-america-cheat-sheet)
+  * [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/a-new-nation-cheat-sheet)
+  * [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/civil-war-and-reconstruction-cheat-sheet)
+  * [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/progressive-era-and-world-wars-cheat-sheet)
+  * [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/mid-century-and-cold-war-cheat-sheet)
+  * [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/new-millennium-cheat-sheet)
+
+* WARS
+
+  * [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
+  * [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-war-of-1812-cheat-sheet)
+  * [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-civil-war-cheat-sheet)
+  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww1-cheat-sheet)
+  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww2-cheat-sheet)
+
 ### MATHEMATICS
 
-_This entire sections is a massive work in progress, it will take me quite a few years to finish._
+_This entire sections is a massive work in progress, it will take me
+quite a few years to finish._
 
 * APPLIED
 
-   * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-   * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
-   * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
-   * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
-   * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
-   * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
-   * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
-   * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+  * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+  * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/control-theory-cheat-sheet)
+  * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/cryptography-cheat-sheet)
+  * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/electrical-engineering-cheat-sheet)
+  * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/game-theory-cheat-sheet)
+  * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/optimization-cheat-sheet)
+  * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+  * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/applied/probability-and-statistics-cheat-sheet)
+
+* NOTABLE EQUATIONS
+
+  * [notable equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/notable-equations/notable-equations-cheat-sheet)
 
 * PURE
 
@@ -299,6 +342,10 @@ _This entire sections is a massive work in progress, it will take me quite a few
   * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
   * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
 
+### RANDOM STUFF
+
+* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+
 ### SCIENCE
 
 * BIOLOGICAL / LIFE SCIENCE
@@ -307,7 +354,7 @@ _This entire sections is a massive work in progress, it will take me quite a few
   * [social](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/biological-life-science/social-cheat-sheet)
 
 * EARTH & SPACE SCIENCE
-    
+
   * [astronomy](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet)
 
 * PHYSICAL SCIENCE
