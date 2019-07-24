@@ -6,7 +6,13 @@ DVCS (Distributed Version Control System)._
 tl;dr,
 
 ```txt
+# CONFIGURATION SETTINGS
+git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
+git config --global user.email <YOUR-EMAIL>
+git config --global core.editor nano
+git config --global push.default simple
 git config --list
+# CLONE
 git clone https://github.com/JeffDeCola/my-cheat-sheets.git
 git status
 # FLOW
