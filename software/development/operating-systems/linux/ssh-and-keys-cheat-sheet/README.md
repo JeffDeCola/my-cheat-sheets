@@ -147,8 +147,15 @@ sudo nano /etc/ssh/sshd_config
 And change the following to only allow ssh,
 
 ```bash
+Protocol 2
 PermitRootLogin no
+MaxAuthTries 6
+#PermitRootLogin prohibit-password
+PubkeyAuthentication yes
+IgnoreRhosts yes
 PasswordAuthentification no
+PermitEmptyPasswords no
+X11Forwarding no
 ```
 
 Restart ssh service,
