@@ -49,7 +49,7 @@ Table of Contents,
   * [INSTANCES - METADATA SERVER QUERY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---metadata-server-query)
   * [INSTANCES - GCE METADATA - STARTUP SCRIPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---gce-metadata---startup-scripts)
 * [GCE BASIC GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
-* [SSH TO OTHER VMs - USING GCE INTERNAL DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#ssh-to-ther-vms--using-gce-internal-dns)
+* [SSH TO OTHER VMs - USING GCE INTERNAL DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#ssh-to-other-vms---using-gce-internal-dns)
 * [GCE HEALTH CHECK GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-health-check-gcloud-commands)
 
 My repo example using `gce` is
@@ -553,6 +553,10 @@ But you still have to have the ssh keys setup like you would normally.
 I would use the same ssh keys for all VMs.  A universal key if you will.
 I actually do this when I build my image in
 [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master#step-41-create-a-custom-machine-image-using-packer).
+
+This illustration may help,
+
+![IMAGE -  gce-ssh-vm-to-vm - IMAGE](../../../../docs/pics/gce-ssh-vm-to-vm.jpg)
 
 ## GCE HEALTH CHECK GCLOUD COMMANDS
 
