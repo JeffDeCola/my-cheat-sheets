@@ -49,6 +49,7 @@ Table of Contents,
   * [INSTANCES - METADATA SERVER QUERY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---metadata-server-query)
   * [INSTANCES - GCE METADATA - STARTUP SCRIPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---gce-metadata---startup-scripts)
 * [GCE BASIC GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
+* [SSH TO OTHER VMs - USING GCE INTERNAL DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#ssh-to-ther-vms--using-gce-internal-dns)
 * [GCE HEALTH CHECK GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-health-check-gcloud-commands)
 
 My repo example using `gce` is
@@ -528,6 +529,30 @@ ssh onto a VM instance `hello-go` in zone `us-west1-a`,
 ```bash
 gcloud compute --project "<project-name>" ssh --zone "us-west1-a" "hello-go"
 ```
+
+## SSH TO OTHER VMs - USING GCE INTERNAL DNS
+
+If you look at the nameservers your using in your VM,
+
+```bash
+cat /etc/resolv.conf
+```
+
+```txt
+nameserver 169.254.169.254
+search us-west1-a.c.<PROJECT>.internal c.<PROJECT>.internal google.internal
+```
+
+You can use the internal DNS for VMS to ssh onto each other,
+
+```bash
+ssh <USERNAME>@<HOSTNAME>.us-west1-b.c.<PROJECT>.internal
+```
+
+But you still have to have the ssh keys setup like you would normally.
+I would use the same ssh keys for all VMs.  A universal key if you will.
+I actually do this when I build my image in
+[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master#step-41-create-a-custom-machine-image-using-packer).
 
 ## GCE HEALTH CHECK GCLOUD COMMANDS
 
