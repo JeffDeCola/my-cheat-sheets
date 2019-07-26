@@ -36,16 +36,18 @@ Documentation and reference,
 Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#overview)
+* [WHAT YOU NEED IN ORDER TO USE GCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#what-you-need-in-order-to-use-gce)
 * [FREE RESOURCE (f1-micro)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#free-resource-f1-micro)
 * [GCE REGIONS AND ZONES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-regions-and-zones)
 * [GCE MACHINE TYPES, PRICING & REGIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-machine-types-pricing--regions)
-* [https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#interacting-with-gce](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#interacting-with-gce)
 * [INTERACTING WITH GCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#interacting-with-gce)
 * [GOOGLE COMPUTE ENGINE (GCE) MAIN SECTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#google-compute-engine-gce-main-sections)
   * [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#images)
   * [INSTANCE TEMPLATES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instance-templates)
   * [INSTANCE GROUPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instance-groups)
-  * [INSTANCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances)  
+  * [INSTANCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances)
+  * [INSTANCES - METADATA SERVER QUERY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---metadata-server-query)
+  * [INSTANCES - GCE METADATA - STARTUP SCRIPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#instances---gce-metadata---startup-scripts)
 * [GCE BASIC GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
 * [GCE HEALTH CHECK GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-health-check-gcloud-commands)
 
