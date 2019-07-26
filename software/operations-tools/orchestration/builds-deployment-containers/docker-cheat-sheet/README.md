@@ -23,6 +23,25 @@ docker exec -t -i hello-go /bin/bash
 docker logs -f hello-go
 ```
 
+Table of Contents,
+
+* [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-docker-container)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#install)
+* [DOCKER RUN (RUN A SINGLE CONTAINER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-run-run-a-single-container)
+* [DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-compose-run-multiple-containers)
+* [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#images)
+  * [PULL IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#pull-images)  * [CHECK THE HISTORY OF AN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-history-of-an-image)
+  * [CREATE IMAGE USING DOCKERFILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#create-image-using-dockerfile)
+  * [COMPILE YOUR CODE INSIDE BASE IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#compile-your-code-inside-base-image)
+  * [PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#put-your-appservice-into-smaller-image-multi-stage-build)
+  * [PUSH IMAGE TO DOCKERHUB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#push-image-to-dockerhub)
+* [CONTAINERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#containers)
+  * [START/STOP A CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#startstop-a-container)
+  * [DELETE A CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#delete-a-container)
+  * [RUN INTERACTIVE CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#run-interactive-container)
+  * [GET A SHELL PROMPT INSIDE A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#get-a-shell-prompt-inside-a-running-container)
+  * [CHECK THE STDOUT OF A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-stdout-of-a-running-container)
+
 Check out my repo
 [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds).
 
@@ -142,7 +161,7 @@ docker history jeffdecola/hello-go-deploy-gce
 Create a Dockerfile,
 
 ```bash
-## Test
+# Test
 FROM ubuntu:14.04
 MAINTAINER Jeff DeCola
 CMD echo "Hi Jeff"
@@ -159,7 +178,7 @@ CMD /usr/games/fortune -a | cowsay
 And another one,
 
 ```bash
-#Test
+# Test
 FROM ubuntu:14.04
 LABEL Jeff DeCola
 COPY whatever /
@@ -200,7 +219,7 @@ You can use multi-stage to place your app/service in a smaller image ~`13MB`,
 For an example, refer to my repo
 [here](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master/example-01/build-push).
 
-### PUSH IMAGE TO DOKERHUB
+### PUSH IMAGE TO DOCKERHUB
 
 To push an image to dockerhub,
 
