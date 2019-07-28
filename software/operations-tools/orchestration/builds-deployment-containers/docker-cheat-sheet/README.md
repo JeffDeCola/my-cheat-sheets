@@ -8,14 +8,16 @@ tl;dr,
 ```bash
 docker version
 # IMAGES
-docker run --name hello-go -dit jeffdecola/hello-go
+docker run --name hello-go -dit jeffdecola/hello-go-deploy-gce
 docker images
-docker rmi IMAGE-ID
+docker rmi hello-go
 docker push jeffdecola/hello-go
 docker pull jeffdecola/hello-go
 docker build -t jeffdecola/hello-go .
 # CONTAINERS
 docker ps
+docker start hello-go
+docker stop hello-go
 docker rm $(docker ps -a -q)
 # CONNECT
 docker exec -t -i hello-go /bin/bash
