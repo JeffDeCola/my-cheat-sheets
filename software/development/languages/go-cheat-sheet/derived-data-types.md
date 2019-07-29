@@ -5,15 +5,15 @@ special variables built on the basic three data types
 (Boolean, Numeric and String). So you still need to
 declare type and assign values (initialize).
 
-* [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#all-types)
-* [ARRAY - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array---data-structure)
-* [SLICE (BUILT ON ARRAY) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-built-on-array---data-structure---reference-type)
-* [MAP (key:value) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-keyvalue---data-structure---reference-type)
-* [STRUCT - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct---data-structure)
-* [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer)
-* [FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type-func-expression--anonymous-func)
-* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface)
-* [CHANNEL - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channel--reference-type)
+* [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#all-types)
+* [ARRAY - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array---data-structure)
+* [SLICE (BUILT ON ARRAY) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-built-on-array---data-structure---reference-type)
+* [MAP (key:value) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-keyvalue---data-structure---reference-type)
+* [STRUCT - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct---data-structure)
+* [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer)
+* [FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type-func-expression--anonymous-func)
+* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#interface)
+* [CHANNEL - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel---reference-type)
 
 ## ALL TYPES
 

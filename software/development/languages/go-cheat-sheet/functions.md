@@ -9,14 +9,14 @@ Just a note,
 
 Table of Contents,
 
-* [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-formats)
-* [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variadic-functions)
-* [CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#closure-func-expression--anonymous-function)
-* [PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#passing-a-function-as-an-argument-to-a-function---callback)
-* [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#passing-arguments---go-passes-by-value-only)
-* [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#recursion---function-calling-itself)
-* [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#anonymous-self-executing-function)
-* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#example---shapes)
+* [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#basic-formats)
+* [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#variadic-functions)
+* [CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure-func-expression--anonymous-function)
+* [PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-a-function-as-an-argument-to-a-function---callback)
+* [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
+* [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#recursion---function-calling-itself)
+* [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#anonymous-self-executing-function)
+* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#example---shapes)
 
 ## BASIC FORMATS
 
