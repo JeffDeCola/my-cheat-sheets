@@ -7,17 +7,28 @@ Just a note,
 * `Parameters` are where you declare parameters
 * `Arguments` are passed to functions
 
+Table of Contents,
+
+* [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-formats)
+* [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variadic-functions)
+* [CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#closure-func-expression--anonymous-function)
+* [PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#passing-a-function-as-an-argument-to-a-function---callback)
+* [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#passing-arguments---go-passes-by-value-only)
+* [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#recursion---function-calling-itself)
+* [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#anonymous-self-executing-function)
+* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#example---shapes)
+
 ## BASIC FORMATS
 
 The basic format is,
 
-```
+```go
 func receiver identifier parameters returns
 ```
 
 or,
 
-```
+```go
 func receiver name(parameter list) (return type) {
     stuff
 }
@@ -49,7 +60,7 @@ func swap(a, b int) (x int, y int) {
 }
 ```
 
-## VARIADIC FUCTIONS
+## VARIADIC FUNCTIONS
 
 Variadic arguments lists when you don't know how many arguments to pass.
 Variadic parameter list is when you don't know how many parameters are

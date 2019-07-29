@@ -5,6 +5,13 @@ that tells the compiler how to use that data.
 It also tells the computer how much space the data type
 occupies and how the bit pattern is stored.
 
+* [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#all-types)
+* [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
+* [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
+* [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string)
+
+## ALL TYPES
+
 The data types in go are,
 
 * Boolean

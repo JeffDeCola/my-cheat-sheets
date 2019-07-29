@@ -25,8 +25,8 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#formating-types)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
 * [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
-  * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
-  * [TYPE CONVERSION /  TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion---type-casting)
+  * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
+  * [GO TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-casting)
   * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
   * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
   * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
@@ -40,9 +40,9 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
   * [CHANNEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channel)
-  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
+  * [GO OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-operators)
   * [CONTROL STRUCTURE / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structure--flow-control)
-  * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
+  * [GO ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-error-handling)
   * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
 * [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
@@ -59,9 +59,6 @@ This cheat sheet is broken up into the following sections,
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
   * Install
   * Configure
-    * Linux
-    * Bash on Ubuntu on Windows (Windows System for Linux)
-    * Windows
   * Check
   * Install Go Tools
 
@@ -71,14 +68,15 @@ This cheat sheet is broken up into the following sections,
   * Basic Structure of go
   * Basic Syntax
   * Packages (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md))
-  * _run_
-  * _build_
-  * _install_
+  * _go run_
+  * _go build_
+  * _go install_
   * The Object Side of go
 
 ### DATA TYPES
 
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md)
+  * All Types
   * Boolean
   * Numeric
   * String
@@ -103,50 +101,56 @@ This cheat sheet is broken up into the following sections,
 ### DERIVED DATA TYPES
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
-  * Array (Data structure) (_new_)
-  * Slice (Data Structure) (Reference Type) (_make_)
-  * Map (Data Structure) (Reference Type) (_make_)
-  * Struct (Data Structure)
+  * All Types
+  * Array - Data Structure (_new_)
+  * Slice (Built on Array) - Data Structure - Reference Type (_make_)
+  * Map (key:value) Data Structure -Reference Type (_make_)
+  * Struct - Data Structure
   * Pointer
-  * Function (as a Type)
+  * Function (as a Type) (Func Expression & Anonymous Func)
   * Interface (See own [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (Reference Type) (_make_) (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Channel - Reference Type (_make_) (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 ### FUNCTIONS (BLACK BOX)
 
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
   * Basic Formats
   * Variadic Functions
-  * Closure (func expression & anonymous function)
+  * Closure (func Expression & Anonymous Function)
     * Assign anonymous Function (func Literal) to a Variable
     * Return a Function to a Function - Closure
-  * Passing a function (as an argument) to a Function - Callback
+  * Passing a Function (As an Argument) to a Function - Callback
   * Passing Arguments - Go Passes by Value Only
     * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
     * Passing Arguments to Function by "Reference" (_Pointer_) - Parameter Changed
   * Recursion (function calling itself)
   * Anonymous Self Executing Function
+  * Example - Shapes
 
 ### METHODS (ATTACHED TO DATA)
 
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md)
+  * Overview
   * Basic Format
   * Passing Parameters
-  * Passing Struct to Method by Value (_Copy_) - Struct not Changed
-  * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
+    * Passing Struct to Method by Value (_Copy_) - Struct not Changed
+    * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
+  * Example - Shapes
 
 ### INTERFACES (SET OF METHOD SIGNATURES)
 
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md)
+  * Overview
   * Basic Format
-  * Making your code cleaner
+  * Making your Code Cleaner
     * Without Interface
     * With Interface
+  * Example - Shapes
 
 ### CONCURRENCY / CHANNELS
 
 * [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md)
-  * _goroutines_
+  * tbd
 
 ### OPERATORS
 
@@ -161,12 +165,15 @@ This cheat sheet is broken up into the following sections,
 ### CONTROL STRUCTURES / FLOW CONTROL
 
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md)
-  * Loops (_for, while, infinite loops, range, break continue_)
-  * Conditional Statements / Decision Making (_if_/_else_, _switch_, _defer_, _select_)
+  * Loops
+    * _for, _while_, _infinite loops_, _range_, _break/continue_
+  * Conditional Statements / Decision Making
+    * _if_, _if else_, _nested if_, _switch (case)_, _defer_, _select_
 
 ### ERROR HANDLING
 
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/error-handling.md)
+  * tbd
 
 ### FORMATING TYPES
 
@@ -179,10 +186,12 @@ This cheat sheet is broken up into the following sections,
 ### PACKAGES
 
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md)
+  * Go Get a Package and use it
+  * Lets create a package
 
 ## GO SYNTAX OVERVIEW
 
-### DATA TYPES
+### GO DATA TYPES
 
 ```go
     // BOOLEAN
@@ -199,7 +208,7 @@ This cheat sheet is broken up into the following sections,
         // string
 ```
 
-### TYPE CONVERSION /  TYPE CASTING
+### GO TYPE CONVERSION / TYPE CASTING
 
 ```go
     a:= 33
@@ -446,7 +455,7 @@ This cheat sheet is broken up into the following sections,
     tbd
 ```
 
-### OPERATORS
+### GO OPERATORS
 
 ```go
     // ARITHMETIC (MATH)
@@ -520,7 +529,7 @@ This cheat sheet is broken up into the following sections,
         // SELECT
 ```
 
-### ERROR HANDLING
+### GO ERROR HANDLING
 
 ```go
     tbd
@@ -600,7 +609,7 @@ This cheat sheet is broken up into the following sections,
 * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
   _- Exactly that._
 
-### PACKAGES
+### GO PACKAGES
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages._

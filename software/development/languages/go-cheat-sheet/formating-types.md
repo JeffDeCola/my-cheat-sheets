@@ -2,6 +2,11 @@
 
 How to make the output look pretty.
 
+* [READ INPUT (bufio.NewReader PACKAGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#read-input-bufionewreader-package)
+* [SCAN INPUT (fmt.Scan PACKAGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#scan-input-fmtscan-package)
+* [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
+* [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
+
 ## READ INPUT (bufio.NewReader PACKAGE)
 
 Get an enter string as input,

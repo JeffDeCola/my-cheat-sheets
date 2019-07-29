@@ -1,5 +1,14 @@
 # VARIABLES AND CONSTANTS
 
+* [DECLARE TYPE AND ASSIGN VALUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#declare-type-and-assign-value)
+* [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
+* [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
+* [IOTA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#iota)
+* [SCOPE RULES (Universe, Package, File, Block)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#scope-rules-universe-package-file-block)
+* [TYPE INFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-inference)
+* [SHORTHAND ASSIGNMENT (PREFERRED METHOD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#shorthand-assignment-preferred-method)
+* [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
+
 ## DECLARE TYPE AND ASSIGN VALUE
 
 * Declaration is `picking a name for a data type`.
@@ -13,7 +22,7 @@ A variable always has a single type and may be assigned.
 
 The basic verbose format is,
 
-```
+```go
 var name type = value
 ```
 
@@ -44,7 +53,7 @@ It will not change.
 
 The basic verbose formats are,
 
-```
+```go
 const name type = value
 const name = value
 ```
@@ -71,7 +80,7 @@ const (
 )
 ```
 
-## SCOPE RULES
+## SCOPE RULES (Universe, Package, File, Block)
 
 * Universe
 * Package - Access across files.
