@@ -3,12 +3,12 @@
 An operator is a symbol that tells the compiler to perform specific
 mathematical or logical manipulations.
 
-* [ARITHMETIC (MATH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#arithmetic-math)
-* [RELATIONAL (COMPARE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#relational-compare)
-* [LOGICAL (BOOLEAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logical-boolean)
-* [BITWISE (BITS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#bitwise-bits)
-* [ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#assignment)
-* [MISCELLANEOUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#miscellaneous)
+* [ARITHMETIC (MATH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#arithmetic-math)
+* [RELATIONAL (COMPARE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#relational-compare)
+* [LOGICAL (BOOLEAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#logical-boolean)
+* [BITWISE (BITS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#bitwise-bits)
+* [ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#assignment)
+* [MISCELLANEOUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#miscellaneous)
 
 ## ARITHMETIC (MATH)
 
