@@ -8,6 +8,30 @@ This is a very abbreviated cheat-sheet highlighting the main
 syntax of go. I have lots go examples in my appropriately named repo
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples).
 
+* [LET'S GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#lets-go)
+* [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
+  * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
+  * [TYPE CONVERSION /  TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion---type-casting)
+  * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
+  * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
+  * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
+  * [ARRAY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array)
+  * [SLICE (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-reference-type-make)
+  * [MAP (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-reference-type-make)
+  * [STRUCT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct)
+  * [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer)
+  * [FUNCTION TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-type)
+  * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
+  * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
+  * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
+  * [CHANNEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channel)
+  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
+  * [CONTROL STRUCTURE / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structure--flow-control)
+  * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
+  * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
+  * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
+* [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -113,10 +137,9 @@ This cheat sheet is broken up into the following sections,
 
 ## GO SYNTAX OVERVIEW
 
+### DATA TYPES
+
 ```go
-
-// DATA TYPES
-
     // BOOLEAN
         // true, false
 
@@ -129,14 +152,18 @@ This cheat sheet is broken up into the following sections,
 
     // STRING
         // string
+```
 
-// TYPE CONVERSION /  TYPE CASTING
+### TYPE CONVERSION /  TYPE CASTING
 
+```go
     a:= 33
     nowAFloat = float32(a)                          // int to float
+```
 
-// VARIABLE
+### VARIABLE
 
+```go
     // DECLARE TYPE
     var a string
 
@@ -147,14 +174,18 @@ This cheat sheet is broken up into the following sections,
     var a int32 = 22                                // Verbose
     var a = 22                                      // Type Inference
     a := 32                                         // Shorthand Assignment
+```
 
-// CONSTANT / LITERAL
+### CONSTANT / LITERAL
 
+```go
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
+```
 
-// GROUPING VARIABLES
+### GROUPING VARIABLES
 
+```go
     // DECLARE TYPE
     var a, b string
 
@@ -170,9 +201,11 @@ This cheat sheet is broken up into the following sections,
         b = "hello b"
     )
     a, b := "hello a", "hello b"                    // Group Shorthand Assignment
+```
 
-// ARRAY
+### ARRAY
 
+```go
     // DECLARE TYPE
     var a [2]float32{}
 
@@ -183,9 +216,11 @@ This cheat sheet is broken up into the following sections,
     // DECLARE & ASSIGN (INITIALIZE)
     var a = [2]float32{1.1, 2.0}                    // Verbose
     a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+```
 
-// SLICE (Reference Type) (_make_)
+### SLICE (Reference Type) (_make_)
 
+```go
     // DECLARE TYPE - NO SIZE
     var a []float64
 
@@ -204,9 +239,11 @@ This cheat sheet is broken up into the following sections,
 
     // ADD TO ANY SLICE
     a := append(a, 5.7)                             // Append to different slice
+```
 
-// MAP (Reference Type) (_make_)
+### MAP (Reference Type) (_make_)
 
+```go
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
     var a map[string]int
 
@@ -233,9 +270,11 @@ This cheat sheet is broken up into the following sections,
     }
 
     fmt.Println(m1, m2, m3, m4)
+```
 
-// STRUCT
+### STRUCT
 
+ ```go
     // CREATE STRUCT TYPE
     type Rect struct {
         w, h float32
@@ -257,9 +296,11 @@ This cheat sheet is broken up into the following sections,
     r6 := Rect{6.1, 5.0}                            // Shorthand Assignment
 
     fmt.Println(r1, *r2, r3, r4, r5, r6)
+```
 
-// POINTER
+### POINTER
 
+```go
     // CREATE A POINTER TYPE AND ASSIGN
     a := new(int)                                   // Create int pointer type
     *a = 9                                          // "contents of a is 9"
@@ -273,18 +314,22 @@ This cheat sheet is broken up into the following sections,
     b := &r1                                        // From struct Rect above
     r1.w = 6.1                                      // I wish it was *r1.w
     r1.h = 5.0                                      // I wish it was *r1.h
+```
 
-// FUNCTION TYPE
+### FUNCTION TYPE
 
+```go
     // FUNCTION AS A TYPE
     a, b := 4, 4
     var add = func() int {
         return a + b
     }
     fmt.Println(add())
+```
 
-// FUNCTION
+### FUNCTION
 
+```go
     // PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
         func name(a int) {                          // 1 in - You would never d
         func name(a, b int) int32 {                 // 2 in, 1 return
@@ -296,9 +341,11 @@ This cheat sheet is broken up into the following sections,
     // PASSING ARGUMENTS BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
         func name (a *int) {                        // In is a pointer, 0 return
         func name (a *int) float32 {                // In is a pointer, 1 return
+```
 
-// METHOD
+### METHOD
 
+```go
     // PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED
         // Return area
        func (r Rect) area() float32 {               // 0 in, 1 Return
@@ -326,9 +373,11 @@ This cheat sheet is broken up into the following sections,
             r.h = r.h * float32(s)
             return r.w * r.h
         }
+```
 
-// INTERFACE (Reference Type)
+### INTERFACE (Reference Type)
 
+```go
     // CREATE INTERFACE TYPE
     type Describer interface {
         describe()
@@ -344,13 +393,17 @@ This cheat sheet is broken up into the following sections,
         circ = 2 * math.Pi * c.radius
         return
     }
+```
 
-// CHANNEL
+### CHANNEL
 
-    ????
+```go
+    tbd
+```
 
-// OPERATORS
+### OPERATORS
 
+```go
     // ARITHMETIC (MATH)
         // +, i, *, /, %,  ++, --
 
@@ -368,9 +421,11 @@ This cheat sheet is broken up into the following sections,
 
     // MISCELLANEOUS
         // &, *
+```
 
-// CONTROL STRUCTURE / FLOW CONTROL
+### CONTROL STRUCTURE / FLOW CONTROL
 
+```go
     // LOOPS
         // FOR LOOP
         for inti; condition; post {
@@ -418,11 +473,17 @@ This cheat sheet is broken up into the following sections,
         }
 
         // SELECT
+```
 
-// ERROR HANDLING
+### ERROR HANDLING
 
-// FORMAT SPECIFIERS
+```go
+    tbd
+```
 
+### FORMAT SPECIFIERS
+
+```go
     // VALUE OF DEFAULT FORMAT
         // %v
             // %t                                   // boolean
@@ -452,16 +513,17 @@ This cheat sheet is broken up into the following sections,
 
     // POINTER
         // %p
+```
 
-// ESCAPE SEQUENCES
+### ESCAPE SEQUENCES
 
+```go
     // \n                                           // newline.
     // \?                                           // The ? character.
     // \b                                           // backspace.
     // \"                                           // The " character.
 
 // PACKAGES
-
 ```
 
 ## REFERENCES / DOCUMENTATION
