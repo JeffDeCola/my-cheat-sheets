@@ -4,7 +4,7 @@ Converting one data type to another data type.
 
 ## BASIC FORMAT
 
-```
+```go
 type_name(expression)
 ```
 

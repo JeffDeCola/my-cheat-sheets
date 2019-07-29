@@ -1,6 +1,8 @@
 # ERROR HANDLING
 
-panic function???
+tbd
+
+panic function??
 
 if err != nil
 {

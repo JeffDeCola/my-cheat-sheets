@@ -2,12 +2,17 @@
 
 Every thing in go is packages.
 
-It helps us organize our code into folders.
+It helps us organize our code into folders,
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages._
 * [golang.org](https://golang.org/pkg/)
   _-Just official standard packages._
+
+Table of Contents,
+
+* [GO GET A PACKAGE AND USE IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-get-a-package-and-use-it)
+* [LETS CREATE A PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#lets-create-a-package)
 
 ## GO GET A PACKAGE AND USE IT
 
