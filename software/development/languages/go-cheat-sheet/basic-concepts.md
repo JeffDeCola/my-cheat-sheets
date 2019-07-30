@@ -25,26 +25,21 @@ A go program usually has the following things,
 * Statements and Expressions
 * Comments
 
-A statement is an action (_print, if, calling a func_) and
+A `statement` is an action (_print, if, calling a func_) and
 mostly vertical in your code.
 
-An expression produces a value (_x == 2_) and is mostly horizontal
+An `expression` produces a value (_x == 2_) and is mostly horizontal
 in your code.
 
 ## BASIC SYNTAX
 
-`Tokens` are basically the building blocks of go.  For example,
-`fmt.Println("Hello")` has six tokens.
-
-A `Line Separator` is a statement terminator.  It's like placing a `;`.
-
-`Comments` start with `/*` and end with `*/` or use `//` for lines.
-
-`Identifiers` is a name used to identify a variable, function or user defined term.
-
-`Keywords` are reserved like `func`, `for`, `if`, `return`, etc..
-
-`Whitespace` is ignored.
+* `Tokens` are basically the building blocks of go.  For example,
+  `fmt.Println("Hello")` has six tokens.
+* `Line Separator` is a statement terminator.  It's like placing a `;`.
+* `Comments` start with `/*` and end with `*/` or use `//` for lines.
+* `Identifiers` is a name used to identify a variable, function or user defined term.
+* `Keywords` are reserved like `func`, `for`, `if`, `return`, etc..
+* `Whitespace` is ignored.
 
 ## PACKAGES
 
