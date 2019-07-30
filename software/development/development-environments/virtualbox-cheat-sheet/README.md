@@ -9,11 +9,11 @@ running on your computer_.
 * [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-on-windows)
 * [INSTALL GUEST ADDITIONS FROM COMMAND LINE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-guest-additions-from-command-line)
 * [SHARED CLIPBOARD & DRAG AND DROP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#shared-clipboard--drag-and-drop)
-*[CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#configure-static-ip-in-ubuntu-running-on-virtualbox)
+* [CONFIGURE STATIC IP IN UBUNTU RUNNING ON VIRTUALBOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#configure-static-ip-in-ubuntu-running-on-virtualbox)
 * [ALLOW HOST ACCESS TO VM (HOST-ONLY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#allow-host-access-to-vm-host-only)
 * [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#allow-local-network-access-to-vm-bridge)
 * [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
- *[INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
+* [INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
 * [SSH ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ssh-onto-ubuntu)
 * [FTP ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ftp-onto-ubuntu)
 * [ADD A PRINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#add-a-printer)
@@ -50,33 +50,26 @@ Download and install from [virtualbox](https://www.virtualbox.org/).
 Get the latest `VBoxGuestAdditions.iso` image file from
 [virtualbox](http://download.virtualbox.org/virtualbox).
 
-Start your VM.  Go to the menu item
-`Devices -> Insert Guest Additions CD image`
-to mount the ISO image.
-
-From the terminal, run the following commands,
+You can download from,
 
 ```bash
-sudo mkdir -p /media/cdrom
-sudo mount /dev/cdrom /media/cdrom
-sudo apt install -y dkms build-essential linux-headers-generic \
-  linux-headers-$(uname -r)
-sudo /media/cdrom/VBoxLinuxAdditions.run
-reboot
+http://download.virtualbox.org/virtualbox/6.0.10/VBoxGuestAdditions_6.0.10.iso
 ```
 
-You could also do it via the shared folder,
+Sometimes when you update Virtualbox it automatically puts the updated disk
+image here:
+`'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso'`.
+But not all the time.
 
-When you update Virtualbox it automatically puts the updated disk image here:
-'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso'
+### USING SHARED FOLDER
 
-Copy 'C:\Program Files\Oracle\VirtualBox\VBoxGuestAdditions.iso' to shared
-VM folder
+I like installing it via the shared folder.
+Place you VBoxGuestAdditions.iso' in your shared folder.
 
 ```bash
 sudo mkdir /media/cdrom
 sudo mkdir /media/temp
-sudo cp /media/<sharedfolder>/VBoxGuestAdditions.iso /media/temp
+sudo cp /media/<SHAREDFOLDER>/VBoxGuestAdditions.iso /media/temp
 sudo chmod 775 /media/temp/VBoxGuestAdditions.iso
 
 sudo mount -o loop /media/temp/VBoxGuestAdditions.iso /media/cdrom
@@ -102,6 +95,23 @@ Add the group,
 
 ```bash
 sudo usermod --append --groups vboxsf USERNAME
+reboot
+```
+
+### USING THE MENU
+
+You could do this. Start your VM.  Go to the menu item
+`Devices -> Insert Guest Additions CD image`
+to mount the ISO image.  But this does not always work.
+
+Now from the terminal, run the following commands,
+
+```bash
+sudo mkdir -p /media/cdrom
+sudo mount /dev/cdrom /media/cdrom
+sudo apt install -y dkms build-essential linux-headers-generic \
+  linux-headers-$(uname -r)
+sudo /media/cdrom/VBoxLinuxAdditions.run
 reboot
 ```
 

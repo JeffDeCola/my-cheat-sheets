@@ -2,6 +2,29 @@
 
 OK, lets get go...ing.  Yep, that just happened.
 
+tl;dr,
+
+```bash
+# INSTALL
+FileName='go1.12.7.linux-amd64.tar.gz'
+wget https://storage.googleapis.com/golang/$FileName
+tar -xvf $FileName
+sudo mv go /usr/local
+rm $FileName
+# CONFIGURE .bashrc
+PATH=$PATH:$HOME/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME
+export GOBIN=$GOPATH/bin
+PATH=$PATH:$GOROOT/bin
+# CHECK
+go version
+# INSTAL GO TOOLS
+go get -u -v github.com/nsf/gocode
+go get -u -v github.com/rogpeppe/godef
+go get -u golang.org/x/lint/golint
+```
+
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure)
 * [CHECK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#check)
@@ -10,13 +33,16 @@ OK, lets get go...ing.  Yep, that just happened.
 ## INSTALL
 
 [Binary and source installs](https://golang.org/doc/install) are
-located there for windows, linux or mac.
+located here for windows, linux or mac. I would not install from a package.
 
-I would not install from a package.
+The tarball format is,
 
-### LINUX INSTALL
+```bash
+tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+```
 
-Let's install `ver 1.12.7`  to `/usr/local`,
+For example, I want to install go ver `1.12.7` on my OS `linux`
+and architecture `amd64` machine,
 
 ```bash
 FileName='go1.12.7.linux-amd64.tar.gz'
@@ -28,7 +54,7 @@ rm $FileName
 
 ## CONFIGURE
 
-Let's set up the paths.
+Let's set up the go paths.
 
 ### LINUX
 
@@ -102,9 +128,8 @@ go version
 ## INSTALL GO TOOLS
 
 When you get the source, you should get the go tools
-`gofmt` and `godocs`.
-
-Go tools should be in GOPATH or GOROOT.
+`gofmt` and `godocs`. Go tools should be in `$GOPATH`
+or `$GOROOT`.
 
 They usually live in the following locations,
 
@@ -113,7 +138,7 @@ They usually live in the following locations,
 * macOS and Ubuntu
   * ~/bin & /usr/bin & usr/local/go/bin
 
-A few other tools may be useful,
+A few tools that are useful,
 
 ```bash
 go get -u -v github.com/nsf/gocode
