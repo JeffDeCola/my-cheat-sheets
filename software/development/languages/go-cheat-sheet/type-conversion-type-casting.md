@@ -2,6 +2,8 @@
 
 Converting one data type to another data type.
 
+* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#basic-format)
+
 ## BASIC FORMAT
 
 ```go
