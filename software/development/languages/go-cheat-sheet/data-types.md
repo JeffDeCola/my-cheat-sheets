@@ -8,18 +8,18 @@ occupies and how the bit pattern is stored.
 tl;dr,
 
 ```go
-    // BOOLEAN
-        // true, false
+// BOOLEAN
+    // true, false
 
-    // NUMERIC
-        // singed - int8, int16, int32 (rune), int64
-        // unsigned - uint8 (byte), uint16, uint32, uint64
-        // machine - int, uint, uintptr
-        // float - float32, float64
-        // complex - complex64, complex128
+// NUMERIC
+    // singed - int8, int16, int32 (rune), int64
+    // unsigned - uint8 (byte), uint16, uint32, uint64
+    // machine - int, uint, uintptr
+    // float - float32, float64
+    // complex - complex64, complex128
 
-    // STRING
-        // string (immutable array of bytes (or runes))
+// STRING
+    // string (immutable array of bytes (or runes))
 ```
 
 Table of Contents,
@@ -36,18 +36,21 @@ Table of Contents,
 
 The data types in go are,
 
-* Boolean
-* Numeric
-* String
-* Derived (_See next [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)_)
-  * Array (Data structure) (_new_)
-  * Slice (Data Structure) (Reference Type) (_make_)
-  * Map (Data Structure) (Reference Type) (_make_)
-  * Struct (Data Structure)
-  * Pointer
-  * Function (as a Type)
-  * Interface
-  * Channel (Reference Type) (_make_)
+* **BOOLEAN**
+* **NUMERIC**
+* **STRING**
+* Derived (see this
+  [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md))
+  * **ARRAY** (Data Structure) (_new_)
+  * **SLICE** (Data Structure, Reference Type) (_make_)
+  * **MAP** (Data Structure, Reference Type) (_make_)
+  * **STRUCT** (Data Structure)
+  * **POINTER**
+  * **FUNCTION AS A TYPE**
+  * **INTERFACE** (see this
+    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
+  * **CHANNEL** (Reference Type) (_make_) (see this
+    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 ## BOOLEAN
 

@@ -12,20 +12,20 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
-    * Boolean
-    * Numeric
-    * String
+    * **BOOLEAN**
+    * **NUMERIC**
+    * **STRING**
   * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
   * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variables--constants)
   * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#derived-data-types)
-    * Array
-    * Slice
-    * Map
-    * Struct
-    * Pointer
-    * Function (as a type)
-    * Interface (see below)
-    * Channel (see below)
+    * **ARRAY** (Data Structure) (_new_)
+    * **SLICE** (Data Structure, Reference Type) (_make_)
+    * **MAP** (Data Structure, Reference Type) (_make_)
+    * **STRUCT** (Data Structure)
+    * **POINTER**
+    * **FUNCTION AS A TYPE**
+    * **INTERFACE** (see below)
+    * **CHANNEL** (Reference Type) (_make_) (see below)
   * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#functions-black-box)
   * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#methods-attached-to-data)
   * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interfaces-set-of-method-signatures)
@@ -41,12 +41,12 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
   * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
   * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
-  * [ARRAY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array)
-  * [SLICE (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-reference-type-make)
-  * [MAP (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-reference-type-make)
-  * [STRUCT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct)
+  * [ARRAY (Data structure) (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure-new)
+  * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure-reference-type-make)
+  * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure-reference-type-make)
+  * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
   * [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer)
-  * [FUNCTION TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-type)
+  * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
   * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
@@ -245,7 +245,7 @@ This cheat sheet is broken up into the following sections,
     a = "happy"                                     // name = value
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a int32 = 22                                // Verbose (var name type = value)
+    var a int32 = 22                                // Verbose - var name type = value
     var a = 22                                      // Type Inference
     a := 32                                         // Shorthand Assignment (Preferred)
 ```
@@ -268,7 +268,7 @@ This cheat sheet is broken up into the following sections,
     b = "hello b"                                   // name2 = value
 
     // GROUP DECLARE & ASSIGN (INITIALIZE)
-    var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
+    var a, b string = "hello a", "hello b"          // Verbose - var name1, name 2 ... type = value1, value2 ...
     var a, b = "hello a", "hello b"                 // Type Inference
     var (                                           // Parenthesis
         a = "hello a"
@@ -277,22 +277,22 @@ This cheat sheet is broken up into the following sections,
     a, b := "hello a", "hello b"                    // Group Shorthand Assignment
 ```
 
-### ARRAY
+### ARRAY (Data structure) (_new_)
 
 ```go
     // DECLARE TYPE
-    var a [2]float32{}
+    var a [2]float32                                // var name [number]type{}
 
     // ASSIGN VALUE
-    a[1] = 1.1
+    a[1] = 1.1                                      // name[number] = value
     a[2] = 2.0
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a = [2]float32{1.1, 2.0}                    // Verbose
+    var a = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value...}
     a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
 ```
 
-### SLICE (Reference Type) (_make_)
+### SLICE (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPE - NO SIZE
@@ -315,7 +315,7 @@ This cheat sheet is broken up into the following sections,
     a := append(a, 5.7)                             // Append to different slice
 ```
 
-### MAP (Reference Type) (_make_)
+### MAP (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
@@ -346,7 +346,7 @@ This cheat sheet is broken up into the following sections,
     fmt.Println(m1, m2, m3, m4)
 ```
 
-### STRUCT
+### STRUCT (Data Structure)
 
  ```go
     // CREATE STRUCT TYPE
@@ -390,7 +390,7 @@ This cheat sheet is broken up into the following sections,
     r1.h = 5.0                                      // I wish it was *r1.h
 ```
 
-### FUNCTION TYPE
+### FUNCTION AS A TYPE
 
 ```go
     // FUNCTION AS A TYPE

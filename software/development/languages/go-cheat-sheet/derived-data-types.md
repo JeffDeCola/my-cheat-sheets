@@ -5,32 +5,53 @@ special variables built on the basic three data types
 (Boolean, Numeric and String). So you still need to
 declare type and assign values (initialize).
 
+tl;dr,
+
+```go
+//ARRAY
+    // DECLARE TYPE
+    var a [2]float32                                // var name [number]type{}
+    // ASSIGN VALUE
+    a[1] = 1.1                                      // name[number] = value
+    a[2] = 2.0
+    // DECLARE & ASSIGN (INITIALIZE)
+    var a = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value...}
+    a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+```
+
+Table of Contents,
+
 * [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#all-types)
-* [ARRAY - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array---data-structure)
-* [SLICE (BUILT ON ARRAY) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-built-on-array---data-structure---reference-type)
-* [MAP (key:value) - DATA STRUCTURE - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-keyvalue---data-structure---reference-type)
-* [STRUCT - DATA STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct---data-structure)
+* [ARRAY (Data Structure) (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array-data-structure-new)
+* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-data-structure-reference-type-make)
+* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-data-structure-reference-type-make)
+* [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct-data-structure)
 * [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer)
-* [FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type-func-expression--anonymous-func)
+* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type)
 * [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#interface)
-* [CHANNEL - REFERENCE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel---reference-type)
+* [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel-reference-type-make)
 
 ## ALL TYPES
 
-The data types in go,
+The data types in go are,
 
-* Boolean (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* Numeric (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* String (See previous [Cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
-* Derived (This Cheat sheet)
-  * Array (Data structure) (_new_)
-  * Slice (Data Structure) (Reference Type) (_make_)
-  * Map (Data Structure) (Reference Type) (_make_)
-  * Struct (Data Structure)
-  * Pointer
-  * Function (as a Type)
-  * Interface
-  * Channel (Reference Type) (_make_)
+* **BOOLEAN** (see this
+  [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* **NUMERIC** (see this
+  [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* **STRING** (see this
+  [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
+* Derived - This cheat sheet
+  * **ARRAY** (Data Structure) (_new_)
+  * **SLICE** (Data Structure, Reference Type) (_make_)
+  * **MAP** (Data Structure, Reference Type) (_make_)
+  * **STRUCT** (Data Structure)
+  * **POINTER**
+  * **FUNCTION AS A TYPE**
+  * **INTERFACE** (see this
+    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
+  * **CHANNEL** (Reference Type) (_make_) (see this
+    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 `Reference types` are slice, map and channel,
 meaning they are passed by reference/address.
@@ -42,7 +63,7 @@ before use.
 `Data structures` are arrays, slices, maps and structs.  They
 are types that allow us to store data.
 
-## ARRAY - DATA STRUCTURE
+## ARRAY (Data Structure) (_new_)
 
 Arrays are,
 
@@ -116,7 +137,7 @@ len(name)
 cap(name)
 ```
 
-## SLICE (BUILT ON ARRAY) - DATA STRUCTURE - REFERENCE TYPE
+## SLICE (Data Structure, Reference Type) (_make_)
 
 Slices are for lists,
 
@@ -265,7 +286,7 @@ is 16 in second example.  That's so cool.
 }
 ```
 
-## MAP (key:value) - DATA STRUCTURE - REFERENCE TYPE
+## MAP (Data Structure, Reference Type) (_make_)
 
 Maps are,
 
@@ -335,7 +356,7 @@ Delete a key/value,
 delete(a,1)
 ```
 
-## STRUCT - DATA STRUCTURE
+## STRUCT (Data Structure)
 
 * A data structure (holds data).
 * A reference type (pass by "reference").
@@ -428,7 +449,7 @@ fmt.Println(*b) // 43
 fmt.Println(a) //33
 ```
 
-## FUNCTION (AS A TYPE) (FUNC EXPRESSION & ANONYMOUS FUNC)
+## FUNCTION AS A TYPE
 
 Functions can be a type. So like types, I can use
 the variables (the scope) the function lives in.
@@ -484,8 +505,6 @@ func main() {
 
 Syntactic way to have multiple structs do the same thing differently,
 
-### INTERFACE - BASIC FORMAT
-
 Basic format,
 
 ```go
@@ -498,11 +517,9 @@ type Name interface {
 
 See the interface [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
 
-## CHANNEL - REFERENCE TYPE
+## CHANNEL (Reference Type) (_make_)
 
 tbd
-
-### CHANNEL - BASIC FORMAT
 
 Basic Format,
 
