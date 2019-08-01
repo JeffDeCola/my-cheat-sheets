@@ -198,14 +198,14 @@ This cheat sheet is broken up into the following sections,
         // true, false
 
     // NUMERIC
-        // singed - int8, int16, int32, int64
-        // unsigned - uint8 (byte), uint16, uint32 (rune) uint64
+        // singed - int8, int16, int32 (rune), int64
+        // unsigned - uint8 (byte), uint16, uint32, uint64
         // machine - int, uint, uintptr
         // float - float32, float64
         // complex - complex64, complex128
 
     // STRING
-        // string
+        // string (immutable array of bytes (or runes))
 ```
 
 ### GO TYPE CONVERSION / TYPE CASTING

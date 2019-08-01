@@ -45,7 +45,7 @@ in your code.
 
 Everything in go is a package.
 
-Here is a huge [list of go packages](http://golang.org/pkg).
+Here is a great [list of go packages](http://golang.org/pkg).
 
 Or use a go tool to look up packages,
 
