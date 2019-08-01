@@ -5,6 +5,25 @@ that tells the compiler how to use that data.
 It also tells the computer how much space the data type
 occupies and how the bit pattern is stored.
 
+tl;dr,
+
+```go
+    // BOOLEAN
+        // true, false
+
+    // NUMERIC
+        // singed - int8, int16, int32 (rune), int64
+        // unsigned - uint8 (byte), uint16, uint32, uint64
+        // machine - int, uint, uintptr
+        // float - float32, float64
+        // complex - complex64, complex128
+
+    // STRING
+        // string (immutable array of bytes (or runes))
+```
+
+Table of Contents,
+
 * [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#all-types)
 * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
 * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
@@ -40,7 +59,7 @@ Boolean uses [logical operators](https://github.com/JeffDeCola/my-cheat-sheets/t
 * `&&`, `||`, `!`
 
 [Relational operators](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md#relational-compare)
-returns a boolean (true or false).
+(compare) returns a boolean (true or false).
 
 * `==`, `!=`, `<`, `>`, `>=`, `<=`
 
@@ -65,7 +84,7 @@ Based on bit size and sign.
   * `uint64`
 
 * Machine Dependent Types (Depends on your machine)
-  * `int` _The most popular and inferred._
+  * `int` _(The most popular and inferred)_
   * `uint`
   * `uintptr`
 
@@ -118,8 +137,9 @@ Since they are just arrays, you can index into a string.
 As an example `e` is the rune number 101. Hence,
 
 ```go
-a := "hello"
-fmt.Println(string(a[1])) // Prints e
-fmt.Println(a[1]) // Prints 101
-fmt.Println('e') // Prints 101
+    a := "hello"
+    fmt.Println(string(a[1])) // Prints e
+    fmt.Println(a[1])         // Prints 101
+    fmt.Println('e')          // Prints 101
+    fmt.Println("e")          // Prints e
 ```
