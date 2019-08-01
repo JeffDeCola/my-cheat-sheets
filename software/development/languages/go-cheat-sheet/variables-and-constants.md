@@ -69,7 +69,7 @@ var a string                                    // var name type
 a = "happy"                                     // name = value
 
 // DECLARE & ASSIGN (INITIALIZE)
-var a int32 = 22                                // Verbose (var name type = value)
+var a int32 = 22                                // Verbose - var name type = value
 var a = 22                                      // Type Inference
 a := 32                                         // Shorthand Assignment (Preferred)
 ```

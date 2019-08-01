@@ -19,11 +19,13 @@ export GOBIN=$GOPATH/bin
 PATH=$PATH:$GOROOT/bin
 # CHECK
 go version
-# INSTAL GO TOOLS
+# INSTALL GO TOOLS
 go get -u -v github.com/nsf/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u golang.org/x/lint/golint
 ```
+
+Table of Contents,
 
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure)
