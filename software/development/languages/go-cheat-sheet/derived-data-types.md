@@ -67,11 +67,11 @@ are types that allow us to store data.
 
 Arrays are,
 
-* A data structure (holds data).
-* Do not change in size (not dynamic).
-* A numbers sequence of elements of a single type.
-* A list/collection identified by an index.
-* Zero-based indexes.
+* A data structure (holds data)
+* Do not change in size (not dynamic)
+* A numbers sequence of elements of a single type
+* A list/collection identified by an index
+* Zero-based indexes
 
 They are really not used that much.
 
@@ -141,16 +141,16 @@ cap(name)
 
 Slices are for lists,
 
-* A data structure (holds data).
-* A reference type (pass by "reference").
-* Must use _make_ to initialize reference type.
-* Dynamic - Changes in size.
-* Has length and capacity.
-* Built on an `underlying array`.
+* A data structure (holds data)
+* A reference type (pass by "reference")
+* Must use _make_ to initialize reference type
+* Dynamic - Changes in size
+* Has length and capacity
+* Built on an `underlying array`
   If you add things (append), a performance is hit because
-  new arrays will be added (will double the size of the capacity).
-* A list/collection identified by an index.
-* Value of uninitialized slice is nil.
+  new arrays will be added (will double the size of the capacity)
+* A list/collection identified by an index
+* Value of uninitialized slice is nil
 
 ### SLICE - BASIC FORMAT
 
