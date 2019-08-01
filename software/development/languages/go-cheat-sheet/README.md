@@ -41,7 +41,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
   * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
   * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
-  * [ARRAY (Data structure) (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure-new)
+  * [ARRAY (Data Structure) (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure-new)
   * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure-reference-type-make)
   * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure-reference-type-make)
   * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
@@ -279,7 +279,7 @@ This cheat sheet is broken up into the following sections,
     a, b := "hello a", "hello b"                    // Group Shorthand Assignment
 ```
 
-### ARRAY (Data structure) (_new_)
+### ARRAY (Data Structure) (_new_)
 
 ```go
     // DECLARE TYPE
