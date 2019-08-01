@@ -12,20 +12,20 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
-    * **BOOLEAN**
-    * **NUMERIC**
-    * **STRING**
+    * BOOLEAN
+    * NUMERIC
+    * STRING
   * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
   * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variables--constants)
   * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#derived-data-types)
-    * **ARRAY** (Data Structure) (_new_)
-    * **SLICE** (Data Structure, Reference Type) (_make_)
-    * **MAP** (Data Structure, Reference Type) (_make_)
-    * **STRUCT** (Data Structure)
-    * **POINTER**
-    * **FUNCTION AS A TYPE**
-    * **INTERFACE** (see below)
-    * **CHANNEL** (Reference Type) (_make_) (see below)
+    * ARRAY (Data Structure) (_new_)
+    * SLICE (Data Structure, Reference Type) (_make_)
+    * MAP (Data Structure, Reference Type) (_make_)
+    * STRUCT (Data Structure)
+    * POINTER
+    * FUNCTION AS A TYPE
+    * INTERFACE (see below)
+    * CHANNEL (Reference Type) (_make_) (see below)
   * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#functions-black-box)
   * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#methods-attached-to-data)
   * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interfaces-set-of-method-signatures)
@@ -114,14 +114,16 @@ This cheat sheet is broken up into the following sections,
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
   * All Types
-  * Array - Data Structure (_new_)
-  * Slice (Built on Array) - Data Structure - Reference Type (_make_)
-  * Map (key:value) Data Structure -Reference Type (_make_)
-  * Struct - Data Structure
+  * Array (Data Structure) (_new_)
+  * Slice (Data Structure, Reference Type) (_make_)
+  * Map (Data Structure, Reference Type) (_make_)
+  * Struct (Data Structure)
   * Pointer
-  * Function (as a Type) (Func Expression & Anonymous Func)
-  * Interface (See own [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel - Reference Type (_make_) (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
+  * Function as a Type
+  * Interface (See own
+    [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
+  * Channel (Reference Type) (_make_) (See own
+    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
 
 ### FUNCTIONS (BLACK BOX)
 
