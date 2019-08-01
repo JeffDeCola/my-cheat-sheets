@@ -1,28 +1,38 @@
-# TYPE CONVERSION / TYPE CASTING
+# TYPE CONVERSION & TYPE ASSERTION
 
-Converting one data type to another data type.
+Converting one data type to another data type and
+proving its actually that type.
 
-* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#basic-format)
+* [TYPE CONVERSION (TYPE CASTING)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#type-conversion-type-casting)
+* [TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#type-assertion)
 
-## BASIC FORMAT
+## TYPE CONVERSION (TYPE CASTING)
 
 ```go
 type_name(expression)
 ```
 
-As an example,
+int to float,
 
 ```go
-var sum int = 17
-var count int = 5
-var mean float32
-
-mean = float32(sum) / float32(count)
-fmt.Println(mean) // Prints 3.4
+i := 33
+nowAFloat := float32(i) / 2.5  // int to float
+fmt.Println(nowAFloat)         // Prints 13.2
 ```
 
-An example of converting a string into utf-8,
+## TYPE ASSERTION
+
+A type assertion provides access to an interface value's underlying
+concrete value,
 
 ```go
-fmt.Println([]byte("hello")) // [104 101 108 108 111]
+t := interface.(T)
+```
+
+```go
+var j interface{} = "jeff"
+s, ok := j.(string)
+fmt.Println(s, ok) // Prints jeff true
+f, ok := j.(float32)
+fmt.Println(f, ok) // Prints 0, false
 ```
