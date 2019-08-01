@@ -12,9 +12,20 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
-  * [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-casting)
+    * Boolean
+    * Numeric
+    * String
+  * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
   * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variables--constants)
   * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#derived-data-types)
+    * Array
+    * Slice
+    * Map
+    * Struct
+    * Pointer
+    * Function (as a type)
+    * Interface (see below)
+    * Channel (see below)
   * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#functions-black-box)
   * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#methods-attached-to-data)
   * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interfaces-set-of-method-signatures)
@@ -26,7 +37,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
 * [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
   * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
-  * [GO TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-casting)
+  * [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
   * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
   * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
   * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
@@ -81,10 +92,11 @@ This cheat sheet is broken up into the following sections,
   * Numeric
   * String
 
-### TYPE CONVERSION / TYPE CASTING
+### TYPE CONVERSION & TYPE ASSERTION
 
-* [TYPE CONVERSION / TYPE CASTING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md)
-  * Basic Format
+* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
+  * Type Conversion (Type casting)
+  * Type Assertion
 
 ### VARIABLES & CONSTANTS
 
@@ -208,26 +220,34 @@ This cheat sheet is broken up into the following sections,
         // string (immutable array of bytes (or runes))
 ```
 
-### GO TYPE CONVERSION / TYPE CASTING
+### GO TYPE CONVERSION & TYPE ASSERTION
 
 ```go
-    a:= 33
-    nowAFloat = float32(a)                          // int to float
+    // TYPE CONVERSION
+    i := 33
+    nowAFloat := float32(i) / 2.5                   // Result 13.2 (int to float)
+
+    // TYPE ASSERTION
+    var j interface{} = "jeff"
+    s, ok := j.(string)
+    fmt.Println(s, ok)                              // Prints jeff true
+    f, ok := j.(float32)
+    fmt.Println(f, ok)                              // Prints 0, false
 ```
 
 ### VARIABLE
 
 ```go
     // DECLARE TYPE
-    var a string
+    var a string                                    // var name type
 
     // ASSIGN VALUE
-    a = "happy"
+    a = "happy"                                     // name = value
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a int32 = 22                                // Verbose
+    var a int32 = 22                                // Verbose (var name type = value)
     var a = 22                                      // Type Inference
-    a := 32                                         // Shorthand Assignment
+    a := 32                                         // Shorthand Assignment (Preferred)
 ```
 
 ### CONSTANT / LITERAL
@@ -240,15 +260,15 @@ This cheat sheet is broken up into the following sections,
 ### GROUPING VARIABLES
 
 ```go
-    // DECLARE TYPE
-    var a, b string
+    // GROUP DECLARE TYPE
+    var a, b string                                 // var name1, name 2 ... type
 
-    // ASSIGN VALUE
-    a = "hello a"
-    b = "hello b"
+    // GROUP ASSIGN VALUE
+    a = "hello a"                                   // name1 = value
+    b = "hello b"                                   // name2 = value
 
-    // DECLARE & ASSIGN (INITIALIZE)
-    var a, b string = "hello a", "hello b"          // Verbose
+    // GROUP DECLARE & ASSIGN (INITIALIZE)
+    var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
     var a, b = "hello a", "hello b"                 // Type Inference
     var (                                           // Parenthesis
         a = "hello a"

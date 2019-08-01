@@ -1,5 +1,36 @@
 # VARIABLES AND CONSTANTS
 
+tl;dr,
+
+```go
+// DECLARE TYPE
+var a string                                    // var name type
+// ASSIGN VALUE
+a = "happy"                                     // name = value
+// DECLARE & ASSIGN (INITIALIZE)
+var a int32 = 22                                // Verbose (var name type = value)
+var a = 22                                      // Type Inference
+a := 32                                         // Shorthand Assignment (Preferred)
+// CONSTANT / LITERAL
+const a float32 = 3.14                          // Must have Assignment
+const a = 22                                    // Type Inference
+// GROUP DECLARE TYPE
+var a, b string                                 // var name1, name 2 ... type
+// GROUP ASSIGN VALUE
+a = "hello a"                                   // name1 = value
+b = "hello b"                                   // name2 = value
+// GROUP DECLARE & ASSIGN (INITIALIZE)
+var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
+var a, b = "hello a", "hello b"                 // Type Inference
+var (                                           // Parenthesis
+    a = "hello a"
+    b = "hello b"
+)
+a, b := "hello a", "hello b"                    // Group Shorthand Assignment
+ ```
+
+ Table of Contents,
+
 * [DECLARE TYPE AND ASSIGN VALUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#declare-type-and-assign-value)
 * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
 * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
@@ -32,18 +63,16 @@ Here are the various syntax methods,
 
 ```go
 // DECLARE TYPE
-var a string
+var a string                                    // var name type
 
 // ASSIGN VALUE
-a = "happy"
+a = "happy"                                     // name = value
 
 // DECLARE & ASSIGN (INITIALIZE)
-var a int32 = 22                                // Verbose
+var a int32 = 22                                // Verbose (var name type = value)
 var a = 22                                      // Type Inference
 a := 32                                         // Shorthand Assignment (Preferred)
 ```
-
-The preferred method is the shorthand.
 
 ## CONSTANT / LITERAL
 
@@ -131,15 +160,15 @@ var name1, name 2 ... type = value1, value2 ...
 Here is the syntax,
 
 ```go
-// DECLARE TYPE
-var a, b string
+// GROUP DECLARE TYPE
+var a, b string                                 // var name1, name 2 ... type
 
-// ASSIGN VALUE
-a = "hello a"
-b = "hello b"
+// GROUP ASSIGN VALUE
+a = "hello a"                                   // name1 = value
+b = "hello b"                                   // name2 = value
 
-// DECLARE & ASSIGN (INITIALIZE)
-var a, b string = "hello a", "hello b"          // Verbose
+// GROUP DECLARE & ASSIGN (INITIALIZE)
+var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
 var a, b = "hello a", "hello b"                 // Type Inference
 var (                                           // Parenthesis
     a = "hello a"
