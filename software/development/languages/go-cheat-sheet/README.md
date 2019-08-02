@@ -391,30 +391,54 @@ This cheat sheet is broken up into the following sections,
 ### POINTER
 
 ```go
-    // CREATE A POINTER TYPE AND ASSIGN
+    // DECLARE A POINTER TYPE AND ASSIGN
     a := new(int)                                   // Create int pointer type
-    *a = 9                                          // "contents of a is 9"
+    *a = 9                                          // "Contents of a is 9"
+    fmt.Println("Content of pointer *a is", *a)     // 9
 
-    // ASSIGN A POINTER TO A TYPE
-    a := 5                                          // If we have a var int 5
-    b := &a                                         // b is the "address of" a
-    // a == *b (both are 5)                         // "contents of" b is a
+    // ASSIGN A POINTER TO A TYPE INT
+    b := 33                                         // If we have a var int 5
+    c := &b                                         // assign c the "address of" b
+    fmt.Println("Contents of pointer *c is", *c)    // 33
+    fmt.Println("Address of &b is", &b)             // 0x02
+    fmt.Println("Contents of pointer c is", c)      // 0x02
 
-    // ASSIGN A POINTER TO A STRUCT
-    b := &r1                                        // From struct Rect above
-    r1.w = 6.1                                      // I wish it was *r1.w
-    r1.h = 5.0                                      // I wish it was *r1.h
+    // ASSIGN A POINTER TO A TYPE STRUCT
+    var r1 Rect                                     // Create a struct (From above)
+    r1.w = 3                                        // I wish it was *r1.w
+    r1.h = 5                                        // I wish it was *r1.h
+    d := &r1                                        // assign d the "address of" r1
+    fmt.Println("Contents of pointer *d is", *d)    // {3 5}
+    fmt.Println("Address of &r1 is", &r1)           // &{3 5}
+    fmt.Println("Contents of pointer d is", d)      // &{3 5}
 ```
 
 ### FUNCTION AS A TYPE
 
 ```go
-    // FUNCTION AS A TYPE
-    a, b := 4, 4
-    var add = func() int {
-        return a + b
+    // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+    a, b := 3, 9
+    add := func() int {                             // Anonymous func as a type (no name)
+        return a + b                                // returns int
     }
-    fmt.Println(add())
+
+    fmt.Println(add())                              // 12
+    a = 9
+    fmt.Println(add())                              // 18
+
+    // RETURN A FUNCTION TO A FUNCTION
+    func addThis(a, b int) func() int {
+        return func() int {
+            return a + b
+        }
+    }
+    func main() {
+        a, b := 3, 9
+        add := addThis(a, b)                        // Think of the func add like a variable
+        fmt.Println(add())                          // 12
+        a = 9
+        fmt.Println(add())                          // 12 <- NOTE THIS
+    }
 ```
 
 ### FUNCTION
