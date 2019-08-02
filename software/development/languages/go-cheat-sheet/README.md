@@ -247,9 +247,12 @@ This cheat sheet is broken up into the following sections,
     a = "happy"                                     // name = value
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a int32 = 22                                // Verbose - var name type = value
-    var a = 22                                      // Type Inference
-    a := 32                                         // Shorthand Assignment (Preferred)
+    var b int32 = 22                                // Verbose - var name type = value
+    var c = 22                                      // Type Inference
+    d := 32                                         // Shorthand Assignment (Preferred)
+
+    // PRINT
+    fmt.Println(a, b ,c ,d)                         // happy 22 22 32
 ```
 
 ### CONSTANT / LITERAL
@@ -266,112 +269,123 @@ This cheat sheet is broken up into the following sections,
     var a, b string                                 // var name1, name 2 ... type
 
     // GROUP ASSIGN VALUE
-    a = "hello a"                                   // name1 = value
-    b = "hello b"                                   // name2 = value
+    a = "hi a"                                      // name1 = value
+    b = "hi b"                                      // name2 = value
 
     // GROUP DECLARE & ASSIGN (INITIALIZE)
-    var a, b string = "hello a", "hello b"          // Verbose - var name1, name 2 ... type = value1, value2 ...
-    var a, b = "hello a", "hello b"                 // Type Inference
+    var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
+    var e, f = "hi e", "hi f"                       // Type Inference
     var (                                           // Parenthesis
-        a = "hello a"
-        b = "hello b"
+        g = "hi g"
+        h = "hi h"
     )
-    a, b := "hello a", "hello b"                    // Group Shorthand Assignment
+    i, j := "hi i", "hi j"                          // Group Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
 
 ### ARRAY (Data Structure) (_new_)
 
 ```go
     // DECLARE TYPE
-    var a [2]float32                                // var name [number]type{}
+    var a [2]float32                                // var name [number]type
 
     // ASSIGN VALUE
-    a[1] = 1.1                                      // name[number] = value
-    a[2] = 2.0
+    a[0] = 1.1                                      // name[number] = value
+    a[1] = 2.0
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value...}
-    a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+    var b = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value, ...}
+    c := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
 ```
 
 ### SLICE (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPE - NO SIZE
-    var a []float64
+    var a []float64                                 // var name []type
 
     // ASSIGN VALUE - ADD LENGTH TO SLICE
-    a = append(a, 5.7)
+    a = append(a, 5.7)                              // name = append(name, value, value, ...)
 
     // DECLARE TYPE - WITH SIZE (make)
-    m := make([]string, 1, 25)
+    b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
 
     // ASSIGN VALUE
-    m[0] = "hello"
+    b[0] = "hello"                                  // name[index] = value
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var a = []float32{1.1, 2.0}                     // Verbose
-    a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
+    var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{value, value, ...}
+    d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
-    // ADD TO ANY SLICE
-    a := append(a, 5.7)                             // Append to different slice
+    // PRINT
+    fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
 ### MAP (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
-    var a map[string]int
+    var a map[string]int                            // var name map[keytype]valuetype
 
     // DECLARE TYPES (make)
-    var m1 = make(map[string]int)
-    m2 := make(map[string]int)
+    var b = make(map[string]int)                    // var name make(map[keytype]valuetype)
+    c := make(map[string]int)                       // name := make(map[keytype]valuetype)
 
     // ASSIGN KEY:VALUE
-    m1["Jill"] = 23
-    m1["Bob"] = 34
-    m1["Mark"] = 28
-    m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
+    b["Jill"] = 23                                  // name[key] = value
+    b["Bob"] = 34
+    b["Mark"] = 28
+    c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
 
-    // DECLARE & ASSIGN  (INITIALIZE)
-    var m3 = map[string]int{                        // Verbose
+    // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
+    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, key:value, ...}
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
     }
-    m4 := map[string]int{                           // Array Shortcut Assignment
+    e := map[string]int{                            // Array Shortcut Assignment
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
     }
 
-    fmt.Println(m1, m2, m3, m4)
+    // PRINT
+    fmt.Println(a, b, c, d, e)                      // map[Jill:23 Bob:34 Mark:28] (For all of the maps)
+
+    // DELETE A KEY
+    delete(e,"Jill")                                // Delete key "Jill"
 ```
 
 ### STRUCT (Data Structure)
 
  ```go
     // CREATE STRUCT TYPE
-    type Rect struct {
-        w, h float32
+    type Rect struct {                              // Define a struct
+        w, h int
         }
 
     // DECLARE TYPE
-    var r1 Rect
+    var r1 Rect                                     // Create a struct
     r2 := new(Rect)                                 // Returns Pointer
 
     // ASSIGN VALUE TO FIELDS
-    r1.w = 6.1
-    r1.h = 5.0
-    r2.w, r2.h = 6.1, 6.0
+    r1.w = 2                                        // name.field = value
+    r1.h = 4
+    r2.w, r2.h = 3, 5
 
     // DECLARE & ASSIGN (INITIALIZE)
-    var r3 Rect = Rect{6.1, 5.0}                    // Verbose
-    var r4 = Rect{6.1, 5.0}                         // Type Inference
-    r5 := Rect{w: 6.1, h: 5.0}                      // Shorthand Assignment
-    r6 := Rect{6.1, 5.0}                            // Shorthand Assignment
+    var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
+    var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, value, ....}
+    r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
+    r6 := Rect{2, 4}                                // Shorthand Assignment
 
-    fmt.Println(r1, *r2, r3, r4, r5, r6)
+    // PRINT
+    fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
 ### POINTER

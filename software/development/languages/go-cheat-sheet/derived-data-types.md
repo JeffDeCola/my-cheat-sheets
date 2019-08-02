@@ -8,15 +8,77 @@ declare type and assign values (initialize).
 tl;dr,
 
 ```go
-//ARRAY
+// ARRAY (Data Structure) (_new_)
     // DECLARE TYPE
-    var a [2]float32                                // var name [number]type{}
+    var a [2]float32                                // var name [number]type
     // ASSIGN VALUE
-    a[1] = 1.1                                      // name[number] = value
-    a[2] = 2.0
+    a[0] = 1.1                                      // name[number] = value
+    a[1] = 2.0
     // DECLARE & ASSIGN (INITIALIZE)
-    var a = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value...}
-    a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+    var b = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value, ...}
+    c := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+    // PRINT
+    fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
+// SLICE (Data Structure, Reference Type) (_make_)
+    // DECLARE TYPE - NO SIZE
+    var a []float64                                 // var name []type
+    // ASSIGN VALUE - ADD LENGTH TO SLICE
+    a = append(a, 5.7)                              // name = append(name, value, value, ...)
+    // DECLARE TYPE - WITH SIZE (make)
+    b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
+    // ASSIGN VALUE
+    b[0] = "hello"                                  // name[index] = value
+    // DECLARE & ASSIGN (INITIALIZE)
+    var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{value, value, ...}
+    d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
+    // PRINT
+    fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
+// MAP (Data Structure, Reference Type) (_make_)
+    // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+    var a map[string]int                            // var name map[keytype]valuetype
+    // DECLARE TYPES (make)
+    var b = make(map[string]int)                    // var name make(map[keytype]valuetype)
+    c := make(map[string]int)                       // name := make(map[keytype]valuetype)
+    // ASSIGN KEY:VALUE
+    b["Jill"] = 23                                  // name[key] = value
+    b["Bob"] = 34
+    b["Mark"] = 28
+    c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
+    // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
+    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, key:value, ...}
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+    e := map[string]int{                            // Array Shortcut Assignment
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+    // PRINT
+    fmt.Println(a, b, c, d, e)                      // map[Jill:23 Bob:34 Mark:28] (For all of the maps)
+    // DELETE A KEY
+    delete(e,"Jill")                                // Delete key "Jill"
+// STRUCT (Data Structure)
+    // CREATE STRUCT TYPE
+    type Rect struct {                              // Define a struct
+        w, h int
+        }
+    // DECLARE TYPE
+    var r1 Rect                                     // Create a struct
+    r2 := new(Rect)                                 // Returns Pointer
+    // ASSIGN VALUE TO FIELDS
+    r1.w = 2                                        // name.field = value
+    r1.h = 4
+    r2.w, r2.h = 3, 5
+    // DECLARE & ASSIGN (INITIALIZE)
+    var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
+    var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, value, ....}
+    r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
+    r6 := Rect{2, 4}                                // Shorthand Assignment
+    // PRINT
+    fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
+// POINTER
 ```
 
 Table of Contents,
@@ -80,23 +142,31 @@ They are really not used that much.
 The basic verbose format is,
 
 ```go
-var name = [number]type{value, value...}
+var name = [number]type{value, value, ...}
+```
+
+A simple method is as follows,
+
+```go
+a := [2]float32{1.1, 2.0}
 ```
 
 Here is the syntax,
 
 ```go
-
 // DECLARE TYPE
-var a [2]float32{}
+var a [2]float32                                // var name [number]type
 
 // ASSIGN VALUE
-a[1] = 1.1
-a[2] = 2.0
+a[0] = 1.1                                      // name[number] = value
+a[1] = 2.0
 
-// DECLARE & ASSIGN  (INITIALIZE)
-var a = [2]float32{1.1, 2.0}                    // Verbose
-a := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+// DECLARE & ASSIGN (INITIALIZE)
+var b = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value, ...}
+c := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+
+// PRINT
+fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
 ```
 
 Here is printing an array,
@@ -157,7 +227,7 @@ Slices are for lists,
 The basic verbose format is,
 
 ```go
-var name = []type{value, value....}
+var name = []type{value, value, ....}
 ```
 
 The preferred method is as follows (where length and capacity are both at 25),
@@ -169,25 +239,24 @@ m := make([]int, 25)
 Here is the syntax,
 
 ```go
-// DECLARE TYPE - NO SIZE (must use append)
-var a []float64
+// DECLARE TYPE - NO SIZE
+var a []float64                                 // var name []type
 
 // ASSIGN VALUE - ADD LENGTH TO SLICE
-a = append(a, 5.7)
+a = append(a, 5.7)                              // name = append(name, value, value, ...)
 
 // DECLARE TYPE - WITH SIZE (make)
-// Length and capacity both at 25.
-m := make([]string, 25)                         // Preferred way
+b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
 
 // ASSIGN VALUE
-m[0] = "hello"
+b[0] = "hello"                                  // name[index] = value
 
 // DECLARE & ASSIGN (INITIALIZE)
-var a = []float32{1.1, 2.0}                     // Verbose
-a := []float32{3.4, 4.5}                        // Array Shortcut Assignment
+var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{value, value, ...}
+d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
-// ADD TO ANY SLICE
-a := append(a, 5.7)                             // Append to a slice
+// PRINT
+fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
 ### SLICES ARE REFERENCE TYPES
@@ -231,7 +300,8 @@ n := new([18]int)[0:10]
 
 ### VARIADIC PARAMETERS
 
-Slices are used with variadic parameters,
+Slices are used with variadic parameters (a function that will
+take an arbitrary number of ints as arguments),
 
 ```go
 func sum(n ...int) int {
@@ -290,44 +360,55 @@ is 16 in second example.  That's so cool.
 
 Maps are,
 
-* A data structure (holds data).
-* A reference type (pass by "reference").
-* Must use _make_ to initialize reference type.
-* key/value storage (like a data base) (dictionary).
-* Unordered group of elements of the same type.
-* Value of uninitialized map is nil.
-* Map are build on a hash table.
+* A data structure (holds data)
+* A reference type (pass by "reference")
+* Must use _make_ to initialize reference type
+* key/value storage (like a data base) (dictionary)
+* Unordered group of elements of the same type
+* Value of uninitialized map is nil
+* Map are build on a hash table
 
 ### MAP - BASIC FORMAT
 
+The basic verbose format is,
+
 ```go
-// DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS - NO APPEND
-var a map[string]int
+var name = map[keytype]valuetype {key:value, key:value, ...}
+```
+
+The preferred method is as follows (where length and capacity are both at 25),
+
+```go
+m1 := map[keytype]valuetype{key:value, key:value, ...}
+```
+
+Here is the syntax,
+
+```go
+// DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+var m1 map[string]int                           // var name map[keytype]valuetype
 
 // DECLARE TYPES (make)
-var m1 = make(map[string]int)
-m2 := make(map[string]int)
-m3 := map[string]int{}
+var m1 = make(map[string]int)                   // var name make(map[keytype]valuetype)
+m2 := make(map[string]int)                      // name := make(map[keytype]valuetype)
 
 // ASSIGN KEY:VALUE
-m1["Jill"] = 23
+m1["Jill"] = 23                                 // name[key] = value
 m1["Bob"] = 34
 m1["Mark"] = 28
 m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
-// DECLARE & ASSIGN  (INITIALIZE)
-var m3 = map[string]int{                        // Verbose
+// DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
+var m1 = map[string]int{                        // Verbose - var name = map[keytype]valuetype {key:value, key:value, ...}
     "Jill": 23,
     "Bob":  34,
     "Mark": 28,
 }
-m4 := map[string]int{                           // Array Shortcut Assignment
+m1 := map[string]int{                           // Array Shortcut Assignment
     "Jill": 23,
     "Bob":  34,
     "Mark": 28,
 }
-
-fmt.Println(m1, m2, m3, m4)
 ```
 
 ### MAPS ARE REFERENCE TYPES
@@ -354,43 +435,51 @@ Delete a key/value,
 
 ```go
 delete(a,1)
+delete(m1,"Jeff")
 ```
 
 ## STRUCT (Data Structure)
 
-* A data structure (holds data).
-* A reference type (pass by "reference").
-* Composite types..
+* A data structure (holds data)
+* Composite types.
+* A struct is a collection of fields.
 
 Elements of different types and start with capital letter.
 Anything with a capital letter is exported from package.
 
 ### STRUCT - BASIC FORMAT
 
+The basic verbose format is,
+
+```go
+var name = structName{value, value, ....}
+```
+
 A struct is a data structure.
 
 ```go
 // CREATE STRUCT TYPE
-type Rect struct {
-    w, h float32
-}
+type Rect struct {                              // Define a struct
+    w, h int
+    }
 
 // DECLARE TYPE
-var r1 Rect
+var r1 Rect                                     // Create a struct
 r2 := new(Rect)                                 // Returns Pointer
 
 // ASSIGN VALUE TO FIELDS
-r1.w = 6.1
-r1.h = 5.0
-r2.w, r2.h = 6.1, 6.0
+r1.w = 2                                        // name.field = value
+r1.h = 4
+r2.w, r2.h = 3, 5
 
 // DECLARE & ASSIGN (INITIALIZE)
-var r3 Rect = Rect{6.1, 5.0}                    // Verbose
-var r4 = Rect{6.1, 5.0}                         // Type Inference
-r5 := Rect{w: 6.1, h: 5.0}                      // Shortcut Assignment
-r6 := Rect{6.1, 5.0}                            // Shortcut Assignment
+var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
+var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, value, ....}
+r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
+r6 := Rect{2, 4}                                // Shorthand Assignment
 
-fmt.Println(r1, *r2, r3, r4, r5, r6)
+// PRINT
+fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
 ## POINTER
