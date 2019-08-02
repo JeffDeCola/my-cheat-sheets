@@ -445,16 +445,16 @@ This cheat sheet is broken up into the following sections,
 
 ```go
     // PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
-        func name(a int) {                          // 1 in - You would never d
-        func name(a, b int) int32 {                 // 2 in, 1 return
-        func name(name ...int) int {                // Variadic in, 1 return
-        // Not a fan of Named returns
-        func name(a int, b string) (x int32) {      // 2 in, 1 NAMED return
-        func name(a, b int) (x int, y string) {     // 2 in, 2 NAMED return
+    func name(a int) {                              // 1 in
+    func name(a, b int) int32 {                     // 2 in, 1 return
+    func name(name ...int) int {                    // Variadic in, 1 return
+    // Not a fan of Named returns (Don't do this)
+    func name(a int, b string) (x int32) {          // 2 in, 1 NAMED return
+    func name(a, b int) (x int, y string) {         // 2 in, 2 NAMED return
 
     // PASSING ARGUMENTS BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
-        func name (a *int) {                        // In is a pointer, 0 return
-        func name (a *int) float32 {                // In is a pointer, 1 return
+    func name (a *int) {                            // Input is a pointer, 0 return
+    func name (a *int) float32 {                    // Input is a pointer, 1 return
 ```
 
 ### METHOD
