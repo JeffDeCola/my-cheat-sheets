@@ -73,7 +73,7 @@ tl;dr,
     r2.w, r2.h = 3, 5
     // DECLARE & ASSIGN (INITIALIZE)
     var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
-    var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, value, ....}
+    var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, ....}
     r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
     r6 := Rect{2, 4}                                // Shorthand Assignment
     // PRINT
@@ -474,7 +474,7 @@ r2.w, r2.h = 3, 5
 
 // DECLARE & ASSIGN (INITIALIZE)
 var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
-var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, value, ....}
+var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, ....}
 r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
 r6 := Rect{2, 4}                                // Shorthand Assignment
 
