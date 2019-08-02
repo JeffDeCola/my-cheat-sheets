@@ -4,16 +4,77 @@ Functions stand on their own, a black box.
 
 Just a note,
 
-* `Parameters` are where you declare parameters
+* `Parameters` are what you declare in a function
 * `Arguments` are passed to functions
+
+```go
+// BASIC FORMAT
+    func receiver name(parameter list) (return type) {
+        stuff
+    }
+// VARIADIC FUNCTIONS
+    func name(name ...int) int {                    // Variadic in, 1 return
+// PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
+    func negateValue(i int) {
+        i = -i
+    }
+    func main() {
+        a := 33
+        fmt.Println(a)                              // 33
+        negateValue(a)
+        fmt.Println(a)                              // 33
+    }
+// PASSING ARGUMENTS BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
+    func negateValue(i *int) {
+        *i = -*i
+    }
+    func main() {
+        a := 33
+        fmt.Println(a)                              // 33
+        negateValue(&a)
+        fmt.Println(a)                              // -33
+    }
+// CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION
+    // Receiving a function
+    func math(numbers []int, callback func(int)) {
+        for _, n := range numbers {
+            callback(n)
+        }
+    }
+    func main() {
+        numbers := []int{1, 2, 3, 4}
+        // Passing a function (as an argument) to a function - callback
+        math(numbers, func(x int) {
+            fmt.Printf("called %v ", x)             // called 1 called 2 called 3 called 4
+        })
+    }
+// RECURSION - FUNCTION CALLING ITSELF
+    func factorial(n int) int {
+        if n == 0 {
+            return 1
+        }
+        return n * factorial(n-1)
+    }
+    func main() {
+        var n int
+        fmt.Scanf("%d\n", &n)                       // if input 4
+        fmt.Println(factorial(n))                   // 24 (4*3*2*1)
+    }
+// ANONYMOUS SELF EXECUTING FUNCTION
+    func main() {
+        func() {
+            fmt.Println("hi")                       // hi
+        }()
+    }
+```
 
 Table of Contents,
 
 * [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#basic-formats)
 * [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#variadic-functions)
 * [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
-  * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---parameter-not-changed)
-  * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---parameter-changed)
+  * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---argument-not-changed)
+  * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - ARGUMENT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---argument-changed)
 * [FUNCTION TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#function-types)
   * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
   * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure---return-a-function-to-a-function)
@@ -89,7 +150,7 @@ func main() {
 
 ![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
 
-### PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED
+### PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED
 
 Passes a "copy" of the parameter's value and gets something back (return).
 Take the word copy with a grain of salt.
@@ -99,15 +160,19 @@ Really passing a value (the argument) and assigning it to the function's paramet
 Will not change the value of the argument that was passed.  Because of scope.
 
 ```go
-a := 33
-a = negateValue(a)
+func negateValue(i int) {
+    i = -i
+}
 
-func negateValue(i int) int {
-    return i * -1
+func main() {
+    a := 33
+    fmt.Println(a) // 33
+    negateValue(a)
+    fmt.Println(a) // 33
 }
 ```
 
-### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED
+### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
 
 Go only passes by value, hence the quotes on "reference".
 
@@ -115,11 +180,15 @@ Passes the reference (pointer) (the argument) to the function parameter
 so we can change the value of the argument itself (return not necessary),
 
 ```go
-a := 33
-negateReference(&a)
+func negateValue(i *int) {
+    *i = -*i
+}
 
-func negateReference(i *int) {
-    *i = *i * -1
+func main() {
+    a := 33
+    fmt.Println(a) // 33
+    negateValue(&a)
+    fmt.Println(a) // 33
 }
 ```
 
@@ -129,7 +198,8 @@ Again you do this because you want to actually modify whatever you're passing
 ## FUNCTION TYPES
 
 A closure is a function value that references variables from outside its body.
-We already did this in derived types, but will repeat here for completeness.
+**We already did this in derived types**, but will repeat here for fun with
+different examples.
 
 Helps us limit the scope of variables used by multiple functions.
 Without closure, for two or more functions to have access to the same variable,
@@ -287,9 +357,7 @@ don't want complexity in go or being too clever.
 
 This is very straightforward.
 
-Using recursion to get a factorial.
-
-Giving a number x, total = x*x-1*x-2...till x is 1.
+Using recursion to get a factorial,
 
 ```go
 func factorial(n int) int {

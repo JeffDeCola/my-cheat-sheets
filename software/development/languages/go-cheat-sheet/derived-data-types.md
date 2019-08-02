@@ -99,7 +99,7 @@ tl;dr,
     fmt.Println(add())                              // 12
     a = 9
     fmt.Println(add())                              // 18
-    // RETURN A FUNCTION TO A FUNCTION
+    // CLOSURE - RETURN A FUNCTION TO A FUNCTION
     func addThis(a, b int) func() int {
         return func() int {
             return a + b
@@ -609,7 +609,7 @@ The anonymous function (function literal) has use of `a` and `b` because
 of the scope.  This assignment of an anonymous function (function literal)
 to a variable is called `closure`.
 
-### RETURN A FUNCTION TO A FUNCTION
+### CLOSURE - RETURN A FUNCTION TO A FUNCTION
 
 In this method, the function scope acts just like an assigned variable.
 Think of the function like a variable, because that's what is really is,
