@@ -24,6 +24,7 @@ tl;dr,
     var a []float64                                 // var name []type
     // ASSIGN VALUE - ADD LENGTH TO SLICE
     a = append(a, 5.7)                              // name = append(name, value, value, ...)
+    a = append([]float64{1.1}, a...)                // Trick to prepend to slice
     // DECLARE TYPE - WITH SIZE (make)
     b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
     // ASSIGN VALUE
@@ -32,7 +33,7 @@ tl;dr,
     var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{value, value, ...}
     d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
     // PRINT
-    fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
+    fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 // MAP (Data Structure, Reference Type) (_make_)
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
     var a map[string]int                            // var name map[type]type
@@ -278,6 +279,7 @@ var a []float64                                 // var name []type
 
 // ASSIGN VALUE - ADD LENGTH TO SLICE
 a = append(a, 5.7)                              // name = append(name, value, value, ...)
+a = append([]float64{1.1}, a...)                // Trick to prepend to slice
 
 // DECLARE TYPE - WITH SIZE (make)
 b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
@@ -290,7 +292,7 @@ var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{v
 d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
 // PRINT
-fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
+fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
 ### SLICES ARE REFERENCE TYPES
