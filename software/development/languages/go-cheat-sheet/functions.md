@@ -104,26 +104,28 @@ This is called closure because the function captures (enclose)
 the surrounding environment and can use it.
 
 ```go
+x:= 5
+
 // This is also called a func literal.
-increment1 := func() int { // Got x = 5
+increment1 := func() int {                      // Got x = 5
     x++
     return x
 }
 
 // When you call function increment1, it uses x, which is outside function.
-fmt.Println(increment1()) // 6
-fmt.Println(increment1()) // 7
-fmt.Println(x)            // 7
-fmt.Println(increment1()) // 8
+fmt.Println(increment1())                       // 6
+fmt.Println(increment1())                       // 7
+fmt.Println(x)                                  // 7
+fmt.Println(increment1())                       // 8
 x = 30
-fmt.Println(x)            // 30
-fmt.Println(increment1()) // 31 <- NOTE THIS
-fmt.Println(x)            // 31
+fmt.Println(x)                                  // 30
+fmt.Println(increment1())                       // 31 <- NOTE THIS
+fmt.Println(x)                                  // 31
 ```
 
 Just think/treat the function as a variable and closure makes sense.
 People try to make this too complicated, like I did above but its just
-treating the function `inc(x)` as a variable `increment2`.  Simple.
+treating the unnamed function as a variable `increment1`.  Simple.
 
 ### RETURN A FUNCTION TO A FUNCTION - CLOSURE
 
@@ -133,32 +135,39 @@ But this acts like a variable where once increment2 or increment3
 is declared and assigned, x is set.
 
 ```go
+func inc(i int) func() int {
+    return func() int {
+        i++
+        return i
+    }
+}
+
 // CLOSURE METHOD TWO - Return a function to a function
 // This is different because now the value is bound to the variable.
 // The function captures the scope it is in
 // Think of it as an assigned variable, BECAUSE it is.
-increment2 := inc(x) // Got x = 31
-increment3 := inc(x) // Got x = 31
+increment2 := inc(x)                            // Got x = 31
+increment3 := inc(x)                            // Got x = 31
 
 // When you call function increment2, it uses x, which is outside function.
-fmt.Println(increment2()) // 32
-fmt.Println(increment2()) // 33
-fmt.Println(increment2()) // 34
-fmt.Println(x)            // 31
+fmt.Println(increment2())                       // 32
+fmt.Println(increment2())                       // 33
+fmt.Println(increment2())                       // 34
+fmt.Println(x)                                  // 31
 
 // increment2 has its own value of x
 // Treat the function like a variable, because it is.
-fmt.Println(increment3()) // 32
-fmt.Println(increment3()) // 33
-fmt.Println(increment3()) // 34
+fmt.Println(increment3())                       // 32
+fmt.Println(increment3())                       // 33
+fmt.Println(increment3())                       // 34
 x = 20
-fmt.Println(x) // 20
+fmt.Println(x)                                  // 20
 // Nothing to do with x because we assigned inc() to to increment3
-fmt.Println(increment3()) // 35
-fmt.Println(increment3()) // 36
+fmt.Println(increment3())                       // 35
+fmt.Println(increment3())                       // 36
 ```
 
-Some more examples,
+Another example,
 
 ```go
 // Is the integer even or not
@@ -176,12 +185,12 @@ func main() {
     r := even()
 
     for _, s := range n {
-        fmt.Println(s, r(s))
+        fmt.Printf("%v %v,", s, r(s))           // 1 false,2 true,3 false,4 true,5 false,
     }
 }
 ```
 
-It really looks like this (a func expression),
+That really looks like this (a func expression),
 
 ```go
 func main() {
@@ -191,12 +200,12 @@ func main() {
     // r is the returned function
     // Is the integer even or not
     // This is a func expression
-    returned := func(n int) bool {
+    r := func(n int) bool {
         return n%2 == 0
     }
 
     for _, s := range n {
-        fmt.Println(s, returned(s))
+        fmt.Printf("%v %v,", s, r(s))           // 1 false,2 true,3 false,4 true,5 false,
     }
 }
 ```
