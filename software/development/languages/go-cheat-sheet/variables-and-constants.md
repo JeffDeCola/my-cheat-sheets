@@ -3,30 +3,36 @@
 tl;dr,
 
 ```go
-// DECLARE TYPE
-var a string                                    // var name type
-// ASSIGN VALUE
-a = "happy"                                     // name = value
-// DECLARE & ASSIGN (INITIALIZE)
-var a int32 = 22                                // Verbose (var name type = value)
-var a = 22                                      // Type Inference
-a := 32                                         // Shorthand Assignment (Preferred)
+// VARIABLE
+    // DECLARE TYPE
+    var a string                                    // var name type
+    // ASSIGN VALUE
+    a = "happy"                                     // name = value
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b int32 = 22                                // Verbose - var name type = value
+    var c = 22                                      // Type Inference
+    d := 32                                         // Shorthand Assignment (Preferred)
+    // PRINT
+    fmt.Println(a, b ,c ,d)                         // happy 22 22 32
 // CONSTANT / LITERAL
-const a float32 = 3.14                          // Must have Assignment
-const a = 22                                    // Type Inference
-// GROUP DECLARE TYPE
-var a, b string                                 // var name1, name 2 ... type
-// GROUP ASSIGN VALUE
-a = "hello a"                                   // name1 = value
-b = "hello b"                                   // name2 = value
-// GROUP DECLARE & ASSIGN (INITIALIZE)
-var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
-var a, b = "hello a", "hello b"                 // Type Inference
-var (                                           // Parenthesis
-    a = "hello a"
-    b = "hello b"
-)
-a, b := "hello a", "hello b"                    // Group Shorthand Assignment
+    const a float32 = 3.14                          // Must have Assignment
+    const a = 22                                    // Type Inference
+ //GROUPING VARIABLES
+    // GROUP DECLARE TYPE
+    var a, b string                                 // var name1, name 2 ... type
+    // GROUP ASSIGN VALUE
+    a = "hi a"                                      // name1 = value
+    b = "hi b"                                      // name2 = value
+    // GROUP DECLARE & ASSIGN (INITIALIZE)
+    var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
+    var e, f = "hi e", "hi f"                       // Type Inference
+    var (                                           // Parenthesis
+        g = "hi g"
+        h = "hi h"
+    )
+    i, j := "hi i", "hi j"                          // Group Shorthand Assignment
+    // PRINT
+    fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
  ```
 
  Table of Contents,
@@ -69,9 +75,12 @@ var a string                                    // var name type
 a = "happy"                                     // name = value
 
 // DECLARE & ASSIGN (INITIALIZE)
-var a int32 = 22                                // Verbose - var name type = value
-var a = 22                                      // Type Inference
-a := 32                                         // Shorthand Assignment (Preferred)
+var b int32 = 22                                // Verbose - var name type = value
+var c = 22                                      // Type Inference
+d := 32                                         // Shorthand Assignment (Preferred)
+
+// PRINT
+fmt.Println(a, b ,c ,d)                         // happy 22 22 32
 ```
 
 ## CONSTANT / LITERAL
@@ -164,15 +173,18 @@ Here is the syntax,
 var a, b string                                 // var name1, name 2 ... type
 
 // GROUP ASSIGN VALUE
-a = "hello a"                                   // name1 = value
-b = "hello b"                                   // name2 = value
+a = "hi a"                                      // name1 = value
+b = "hi b"                                      // name2 = value
 
 // GROUP DECLARE & ASSIGN (INITIALIZE)
-var a, b string = "hello a", "hello b"          // Verbose (var name1, name 2 ... type = value1, value2 ...)
-var a, b = "hello a", "hello b"                 // Type Inference
+var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
+var e, f = "hi e", "hi f"                       // Type Inference
 var (                                           // Parenthesis
-    a = "hello a"
-    b = "hello b"
+    g = "hi g"
+    h = "hi h"
 )
-a, b := "hello a", "hello b"                    // Group Shorthand Assignment
+i, j := "hi i", "hi j"                          // Group Shorthand Assignment
+
+// PRINT
+fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
