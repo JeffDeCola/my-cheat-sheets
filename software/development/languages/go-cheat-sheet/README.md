@@ -311,6 +311,7 @@ This cheat sheet is broken up into the following sections,
 
     // ASSIGN VALUE - ADD LENGTH TO SLICE
     a = append(a, 5.7)                              // name = append(name, value, value, ...)
+    a = append([]float64{1.1}, a...)                // Trick to prepend to slice
 
     // DECLARE TYPE - WITH SIZE (make)
     b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
@@ -323,7 +324,7 @@ This cheat sheet is broken up into the following sections,
     d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 
     // PRINT
-    fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
+    fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
 ### MAP (Data Structure, Reference Type) (_make_)
@@ -435,6 +436,7 @@ This cheat sheet is broken up into the following sections,
     func main() {
         a, b := 3, 9
         add := addThis(a, b)                        // Think of the func add like a variable
+
         fmt.Println(add())                          // 12
         a = 9
         fmt.Println(add())                          // 12 <- NOTE THIS

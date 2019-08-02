@@ -11,13 +11,13 @@ Table of Contents,
 
 * [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#basic-formats)
 * [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#variadic-functions)
-* [CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure-func-expression--anonymous-function)
-  * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
-  * [RETURN A FUNCTION TO A FUNCTION - CLOSURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#return-a-function-to-a-function---closure)
-* [PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-a-function-as-an-argument-to-a-function---callback)
 * [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
   * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---parameter-not-changed)
   * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---parameter-changed)
+* [FUNCTION TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#function-types)
+  * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
+  * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure---return-a-function-to-a-function)
+* [CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#callback---passing-a-function-as-an-argument-to-a-function)
 * [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#recursion---function-calling-itself)
 * [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#anonymous-self-executing-function)
 * [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#example---shapes)
@@ -85,9 +85,51 @@ func main() {
 }
 ```
 
-## CLOSURE (FUNC EXPRESSION & ANONYMOUS FUNCTION)
+## PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
+
+![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
+
+### PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED
+
+Passes a "copy" of the parameter's value and gets something back (return).
+Take the word copy with a grain of salt.
+
+Really passing a value (the argument) and assigning it to the function's parameter.
+
+Will not change the value of the argument that was passed.  Because of scope.
+
+```go
+a := 33
+a = negateValue(a)
+
+func negateValue(i int) int {
+    return i * -1
+}
+```
+
+### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED
+
+Go only passes by value, hence the quotes on "reference".
+
+Passes the reference (pointer) (the argument) to the function parameter
+so we can change the value of the argument itself (return not necessary),
+
+```go
+a := 33
+negateReference(&a)
+
+func negateReference(i *int) {
+    *i = *i * -1
+}
+```
+
+Again you do this because you want to actually modify whatever you're passing
+(“read/write” as opposed to just “read”)
+
+## FUNCTION TYPES
 
 A closure is a function value that references variables from outside its body.
+We already did this in derived types, but will repeat here for completeness.
 
 Helps us limit the scope of variables used by multiple functions.
 Without closure, for two or more functions to have access to the same variable,
@@ -127,7 +169,7 @@ Just think/treat the function as a variable and closure makes sense.
 People try to make this too complicated, like I did above but its just
 treating the unnamed function as a variable `increment1`.  Simple.
 
-### RETURN A FUNCTION TO A FUNCTION - CLOSURE
+### CLOSURE - RETURN A FUNCTION TO A FUNCTION
 
 Same program as above, but with function outside main.
 
@@ -210,7 +252,7 @@ func main() {
 }
 ```
 
-## PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION - CALLBACK
+## CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION
 
 Passing a function (as an argument) to a function.
 
@@ -240,47 +282,6 @@ Another example is in
 
 Why would you do this? Not very popular in go. You
 don't want complexity in go or being too clever.
-
-## PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
-
-![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
-
-### PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - PARAMETER NOT CHANGED
-
-Passes a "copy" of the parameter's value and gets something back (return).
-Take the word copy with a grain of salt.
-
-Really passing a value (the argument) and assigning it to the function's parameter.
-
-Will not change the value of the argument that was passed.  Because of scope.
-
-```go
-a := 33
-a = negateValue(a)
-
-func negateValue(i int) int {
-    return i * -1
-}
-```
-
-### PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - PARAMETER CHANGED
-
-Go only passes by value, hence the quotes on "reference".
-
-Passes the reference (pointer) (the argument) to the function parameter
-so we can change the value of the argument itself (return not necessary),
-
-```go
-a := 33
-negateReference(&a)
-
-func negateReference(i *int) {
-    *i = *i * -1
-}
-```
-
-Again you do this because you want to actually modify whatever you're passing
-(“read/write” as opposed to just “read”)
 
 ## RECURSION - FUNCTION CALLING ITSELF
 
