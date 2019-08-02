@@ -79,6 +79,40 @@ tl;dr,
     // PRINT
     fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 // POINTER
+    // DECLARE A POINTER TYPE AND ASSIGN
+    a := new(int)                                   // Create int pointer type
+    *a = 9                                          // "Contents of a is 9"
+    fmt.Println("Content of pointer *a is", *a)     // 9
+    // ASSIGN A POINTER TO A TYPE INT
+    b := 33                                         // If we have a var int 5
+    c := &b                                         // assign c the "address of" b
+    fmt.Println("Contents of pointer *c is", *c)    // 33
+    fmt.Println("Address of &b is", &b)             // 0x02
+    fmt.Println("Contents of pointer c is", c)      // 0x02
+// FUNCTION AS A TYPE
+    // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+    a, b := 3, 9
+    add := func() int {                             // Anonymous func as a type (no name)
+        return a + b                                // returns int
+    }
+    fmt.Println(add())                              // 12
+    a = 9
+    fmt.Println(add())                              // 18
+    // RETURN A FUNCTION TO A FUNCTION
+    func addThis(a, b int) func() int {
+        return func() int {
+            return a + b
+        }
+    }
+    func main() {
+        a, b := 3, 9
+        add := addThis(a, b)                        // Think of the func add like a variable
+        fmt.Println(add())                          // 12
+        a = 9
+        fmt.Println(add())                          // 12 <- NOTE THIS
+    }
+// INTERFACE (SEE OWN CHEAT SHEET)
+// CHANNEL (SEE OWN CHEAT SHEET)
 ```
 
 Table of Contents,
@@ -495,20 +529,26 @@ of a value.
 Here is an example,
 
 ```go
-// CREATE A POINTER TYPE AND ASSIGN
+// DECLARE A POINTER TYPE AND ASSIGN
 a := new(int)                                   // Create int pointer type
-*a = 9                                          // "contents of a is 9"
+*a = 9                                          // "Contents of a is 9"
+fmt.Println("Content of pointer *a is", *a)     // 9
 
-// ASSIGN A POINTER TO A TYPE
-a := 5                                          // If we have a var int 5
-b := &a                                         // b is the "address of" a
-// var b *int = &a                              // Long form way to write this
-// a == *b (both are 5)                         // "contents of" b is a
+// ASSIGN A POINTER TO A TYPE INT
+b := 33                                         // If we have a var int 5
+c := &b                                         // assign c the "address of" b
+fmt.Println("Contents of pointer *c is", *c)    // 33
+fmt.Println("Address of &b is", &b)             // 0x02
+fmt.Println("Contents of pointer c is", c)      // 0x02
 
-// ASSIGN A POINTER TO A STRUCT
-b := &r1                                        // From struct Rect above
-r1.w = 6.1                                      // I feel it should be *r1.w
-r1.h = 5.0                                      // I feel it should be *r1.h
+// ASSIGN A POINTER TO A TYPE STRUCT
+var r1 Rect                                     // Create a struct (From above)
+r1.w = 3                                        // I wish it was *r1.w
+r1.h = 5                                        // I wish it was *r1.h
+d := &r1                                        // assign d the "address of" r1
+fmt.Println("Contents of pointer *d is", *d)    // {3 5}
+fmt.Println("Address of &r1 is", &r1)           // &{3 5}
+fmt.Println("Contents of pointer d is", d)      // &{3 5}
 ```
 
 ![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
@@ -520,22 +560,23 @@ Cool uses for pointers are,
 * Allocate space for a variable.
 * Pass by "reference" to a function to change parameters value outside function.
 
-Another example,
+### POINTER PASS BY REFERENCE
+
+As an example,
 
 ```go
-a := 43
-fmt.Println(a)  // 43
-fmt.Println(&a) // Ox333333
+func change(b *int) {
+    *b = 6
+}
 
-// b is a pointer
-// var b *int = &a
-b := &a
-fmt.Println(b)  // Ox333333
-fmt.Println(*b) // 43
+func main() {
+    a := 5  // If we have a var int 5
+    b := &a // b is the "address of" a
 
-// Make the "contents of" what I'm Pointer to 33
-*b = 33
-fmt.Println(a) //33
+    fmt.Println(*b) // 5
+    change(b)
+    fmt.Println(*b) // 6
+}
 ```
 
 ## FUNCTION AS A TYPE
@@ -551,15 +592,15 @@ But here are two methods that can be used,
 ### ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
 
 ```go
+// ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
 a, b := 3, 9
-
-add := func() int {  // anonymous func (no name)
-    return a + b
+add := func() int {                             // Anonymous func as a type (no name)
+    return a + b                                // returns int
 }
 
-fmt.Println(add()) // 12
+fmt.Println(add())                              // 12
 a = 9
-fmt.Println(add()) // 18 <- NOTE THIS
+fmt.Println(add())                              // 18
 ```
 
 The anonymous function (function literal) has use of `a` and `b` because
@@ -572,21 +613,18 @@ In this method, the function scope acts just like an assigned variable.
 Think of the function like a variable, because that's what is really is,
 
 ```go
-// Returns a function
+// RETURN A FUNCTION TO A FUNCTION
 func addThis(a, b int) func() int {
     return func() int {
         return a + b
     }
 }
-
 func main() {
     a, b := 3, 9
-
-    add := addThis(a, b)  // Think of the func add like a variable
-
-    fmt.Println(add()) // 12
+    add := addThis(a, b)                        // Think of the func add like a variable
+    fmt.Println(add())                          // 12
     a = 9
-    fmt.Println(add()) // 12 <- NOTE THIS
+    fmt.Println(add())                          // 12 <- NOTE THIS
 }
 ```
 
