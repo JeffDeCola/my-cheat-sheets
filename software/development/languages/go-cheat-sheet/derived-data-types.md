@@ -35,17 +35,17 @@ tl;dr,
     fmt.Println(a, b, c, d)                         // [5.7] [hello] [1.1 2] [3.4 4.5]
 // MAP (Data Structure, Reference Type) (_make_)
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
-    var a map[string]int                            // var name map[keytype]valuetype
+    var a map[string]int                            // var name map[type]type
     // DECLARE TYPES (make)
-    var b = make(map[string]int)                    // var name make(map[keytype]valuetype)
-    c := make(map[string]int)                       // name := make(map[keytype]valuetype)
+    var b = make(map[string]int)                    // var name make(map[type]type)
+    c := make(map[string]int)                       // name := make(map[type]type)
     // ASSIGN KEY:VALUE
     b["Jill"] = 23                                  // name[key] = value
     b["Bob"] = 34
     b["Mark"] = 28
     c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
     // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
-    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, ...}
+    var d = map[string]int{                         // Verbose - var name = map[type]type {key:value, ...}
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
@@ -373,24 +373,24 @@ Maps are,
 The basic verbose format is,
 
 ```go
-var name = map[keytype]valuetype {key:value, key:value, ...}
+var name = map[type]type {key:value, key:value, ...}
 ```
 
 The preferred method is as follows (where length and capacity are both at 25),
 
 ```go
-m1 := map[keytype]valuetype{key:value, key:value, ...}
+m1 := map[type]type{key:value, key:value, ...}
 ```
 
 Here is the syntax,
 
 ```go
 // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
-var m1 map[string]int                           // var name map[keytype]valuetype
+var m1 map[string]int                           // var name map[type]type
 
 // DECLARE TYPES (make)
-var m1 = make(map[string]int)                   // var name make(map[keytype]valuetype)
-m2 := make(map[string]int)                      // name := make(map[keytype]valuetype)
+var m1 = make(map[string]int)                   // var name make(map[type]type)
+m2 := make(map[string]int)                      // name := make(map[type]type)
 
 // ASSIGN KEY:VALUE
 m1["Jill"] = 23                                 // name[key] = value
@@ -399,7 +399,7 @@ m1["Mark"] = 28
 m2["Jill"], m2["Bob"], m2["Mark"] = 23, 34, 28
 
 // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
-var m1 = map[string]int{                        // Verbose - var name = map[keytype]valuetype {key:value, key:value, ...}
+var m1 = map[string]int{                        // Verbose - var name = map[type]type {key:value, key:value, ...}
     "Jill": 23,
     "Bob":  34,
     "Mark": 28,
