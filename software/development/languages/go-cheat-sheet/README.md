@@ -333,8 +333,8 @@ This cheat sheet is broken up into the following sections,
     var a map[string]int                            // var name map[keytype]valuetype
 
     // DECLARE TYPES (make)
-    var b = make(map[string]int)                    // var name make(map[keytype]valuetype)
-    c := make(map[string]int)                       // name := make(map[keytype]valuetype)
+    var b = make(map[string]int)                    // var name make(map[type]type)
+    c := make(map[string]int)                       // name := make(map[type]type)
 
     // ASSIGN KEY:VALUE
     b["Jill"] = 23                                  // name[key] = value
@@ -343,7 +343,7 @@ This cheat sheet is broken up into the following sections,
     c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
 
     // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
-    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, ...}
+    var d = map[string]int{                         // Verbose - var name = map[type]type {key:value, ...}
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
