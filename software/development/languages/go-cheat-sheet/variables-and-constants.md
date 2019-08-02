@@ -17,7 +17,7 @@ tl;dr,
 // CONSTANT / LITERAL
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
- //GROUPING VARIABLES
+// GROUPING VARIABLES
     // GROUP DECLARE TYPE
     var a, b string                                 // var name1, name 2 ... type
     // GROUP ASSIGN VALUE
