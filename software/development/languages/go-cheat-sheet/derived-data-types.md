@@ -45,7 +45,7 @@ tl;dr,
     b["Mark"] = 28
     c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
     // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
-    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, key:value, ...}
+    var d = map[string]int{                         // Verbose - var name = map[keytype]valuetype {key:value, ...}
         "Jill": 23,
         "Bob":  34,
         "Mark": 28,
