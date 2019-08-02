@@ -130,14 +130,14 @@ This cheat sheet is broken up into the following sections,
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
   * Basic Formats
   * Variadic Functions
-  * Closure (func Expression & Anonymous Function)
-    * Assign anonymous Function (func Literal) to a Variable
-    * Return a Function to a Function - Closure
-  * Passing a Function (As an Argument) to a Function - Callback
   * Passing Arguments - Go Passes by Value Only
-    * Passing Arguments to Function by Value (_Copy_) - Parameter not Changed
-    * Passing Arguments to Function by "Reference" (_Pointer_) - Parameter Changed
-  * Recursion (function calling itself)
+    * Passing Arguments to Function by Value (_Copy_) - Argument not Changed
+    * Passing Arguments to Function by "Reference" (_Pointer_) - Argument Changed
+  * Function Types
+    * Assign anonymous Function (func Literal) to a Variable
+    * Closure - Return a Function to a Function
+  * Callback - Passing a Function (As an Argument) to a Function
+  * Recursion (Function Calling Itself)
   * Anonymous Self Executing Function
   * Example - Shapes
 
@@ -427,7 +427,7 @@ This cheat sheet is broken up into the following sections,
     a = 9
     fmt.Println(add())                              // 18
 
-    // RETURN A FUNCTION TO A FUNCTION
+    // CLOSURE - RETURN A FUNCTION TO A FUNCTION
     func addThis(a, b int) func() int {
         return func() int {
             return a + b
@@ -446,17 +446,70 @@ This cheat sheet is broken up into the following sections,
 ### FUNCTION
 
 ```go
-    // PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
-    func name(a int) {                              // 1 in
-    func name(a, b int) int32 {                     // 2 in, 1 return
+    // BASIC FORMAT
+    func receiver name(parameter list) (return type) {
+        stuff
+    }
+
+    // VARIADIC FUNCTIONS
     func name(name ...int) int {                    // Variadic in, 1 return
-    // Not a fan of Named returns (Don't do this)
-    func name(a int, b string) (x int32) {          // 2 in, 1 NAMED return
-    func name(a, b int) (x int, y string) {         // 2 in, 2 NAMED return
+
+    // PASSING ARGUMENTS BY VALUE (COPY) - ARGUMENT NOT CHANGED
+    func negateValue(i int) {
+        i = -i
+    }
+    func main() {
+        a := 33
+        fmt.Println(a)                              // 33
+        negateValue(a)
+        fmt.Println(a)                              // 33
+    }
 
     // PASSING ARGUMENTS BY "REFERENCE" (POINTER) - ARGUMENT CHANGED
-    func name (a *int) {                            // Input is a pointer, 0 return
-    func name (a *int) float32 {                    // Input is a pointer, 1 return
+    func negateValue(i *int) {
+        *i = -*i
+    }
+    func main() {
+        a := 33
+        fmt.Println(a)                              // 33
+        negateValue(&a)
+        fmt.Println(a)                              // -33
+    }
+
+    // CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION
+    // Receiving a function
+    func math(numbers []int, callback func(int)) {
+        for _, n := range numbers {
+            callback(n)
+        }
+    }
+    func main() {
+        numbers := []int{1, 2, 3, 4}
+        // Passing a function (as an argument) to a function - callback
+        math(numbers, func(x int) {
+            fmt.Printf("called %v ", x)             // called 1 called 2 called 3 called 4
+        })
+    }
+
+    // RECURSION - FUNCTION CALLING ITSELF
+    func factorial(n int) int {
+        if n == 0 {
+            return 1
+        }
+        return n * factorial(n-1)
+    }
+    func main() {
+        var n int
+        fmt.Scanf("%d\n", &n)                       // if input 4
+        fmt.Println(factorial(n))                   // 24 (4*3*2*1)
+    }
+
+    // ANONYMOUS SELF EXECUTING FUNCTION
+    func main() {
+        func() {
+            fmt.Println("hi")                       // hi
+        }()
+    }
 ```
 
 ### METHOD
