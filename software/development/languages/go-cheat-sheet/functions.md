@@ -34,6 +34,28 @@ Just a note,
         negateValue(&a)
         fmt.Println(a)                              // -33
     }
+// FUNCTION AS A TYPE
+    // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+    a, b := 3, 9
+    add := func() int {                             // Anonymous func as a type (no name)
+        return a + b                                // returns int
+    }
+    fmt.Println(add())                              // 12
+    a = 9
+    fmt.Println(add())                              // 18
+    // CLOSURE - RETURN A FUNCTION TO A FUNCTION
+    func addThis(a, b int) func() int {
+        return func() int {
+            return a + b
+        }
+    }
+    func main() {
+        a, b := 3, 9
+        add := addThis(a, b)                        // Think of the func add like a variable
+        fmt.Println(add())                          // 12
+        a = 9
+        fmt.Println(add())                          // 12 <- NOTE THIS
+    }
 // CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION
     // Receiving a function
     func math(numbers []int, callback func(int)) {
@@ -75,7 +97,7 @@ Table of Contents,
 * [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
   * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---argument-not-changed)
   * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - ARGUMENT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---argument-changed)
-* [FUNCTION TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#function-types)
+* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#function-as-a-type)
   * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
   * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure---return-a-function-to-a-function)
 * [CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#callback---passing-a-function-as-an-argument-to-a-function)
@@ -195,7 +217,7 @@ func main() {
 Again you do this because you want to actually modify whatever you're passing
 (“read/write” as opposed to just “read”)
 
-## FUNCTION TYPES
+## FUNCTION AS A TYPE
 
 A closure is a function value that references variables from outside its body.
 **We already did this in derived types**, but will repeat here for fun with

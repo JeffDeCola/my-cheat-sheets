@@ -476,6 +476,12 @@ This cheat sheet is broken up into the following sections,
         fmt.Println(a)                              // -33
     }
 
+    // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+        // See above Function as a Type
+
+    // CLOSURE - RETURN A FUNCTION TO A FUNCTION
+        // See above Function as a Type
+
     // CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION
     // Receiving a function
     func math(numbers []int, callback func(int)) {
@@ -515,33 +521,53 @@ This cheat sheet is broken up into the following sections,
 ### METHOD
 
 ```go
-    // PASSING STRUCT BY VALUE (COPY) - STRUCT NOT CHANGED
-        // Return area
-       func (r Rect) area() float32 {               // 0 in, 1 Return
-            return r.w * r.h
-        }
-        // Return scaled area
-        func (r Rect) scaleArea(s int) float32 {    // 1 in, 1 Return
-            return (r.w * r.h * float32(s))
-        }
+    // BASIC FORMAT (Just a function with receiver)
+    func receiver name(parameter list) (return type) {
+        stuff
+    }
 
-    // PASSING STRUCT BY REFERENCE (POINTER) -  STRUCT CHANGED
-        // Scale the struct by 2                    // 0 in, 0 return
-        func (r *Rect) scaleByTwo() {
-            r.w = r.w * 2.0                         // I wish it was *r1.w
-            r.h = r.h * 2.0                         // I wish it was *r1.h
-        }
-        // Scale the struct by s                    // 1 in, 0 return
-        func (r *Rect) scaleStruct(s float64) {
-            r.w = r.w * float32(s)
-            r.h = r.h * float32(s)
-        }
-        // Scale the struct by s and return area    // 1 in, 1 return
-        func (r *Rect) scaleStructArea(s float64) float32 {
-            r.w = r.w * float32(s)
-            r.h = r.h * float32(s)
-            return r.w * r.h
-        }
+    // Rect is a Rectangle struct type
+    type Rect struct {
+        w, h float32
+    }
+
+    // PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED
+    // Return Area
+    func (r Rect) area() float32 {
+        return r.w * r.h
+    }
+
+    // Scale Struct & Return Area
+    func (r Rect) scaleArea(s float32) float32 {
+        r.w = r.w * s
+        r.h = r.h * s
+        return r.area()
+    }
+
+    func main() {
+        r1 := Rect{2, 4}
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area())       // Rect Area: 2 x 4 = 8
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.scaleArea(3)) // Rect Area: 6 x 12 = 72
+    }
+
+    // PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED
+    // Return Area
+    func (r Rect) area() float32 {
+        return r.w * r.h
+    }
+
+    // Scale Struct
+    func (r *Rect) scaleStruct(s float32) {
+        r.w = r.w * s
+        r.h = r.h * s
+    }
+
+    func main() {
+        r1 := Rect{2, 4}
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 2 x 4 = 8
+        r1.scaleStruct(3)                                          // Passed by Reference
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 6 x 12 = 72
+    }
 ```
 
 ### INTERFACE (Reference Type)

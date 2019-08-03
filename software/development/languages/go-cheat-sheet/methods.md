@@ -1,5 +1,48 @@
 # METHODS
 
+A method is a function with a special receiver argument.
+
+tl;dr,
+
+```go
+// BASIC FORMAT
+    func (receiver) name(parameter list) return type {
+// PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED
+    // Return Area
+    func (r Rect) area() float32 {
+        return r.w * r.h
+    }
+    // Scale Struct & Return Area
+    func (r Rect) scaleArea(s float32) float32 {
+        r.w = r.w * s
+        r.h = r.h * s
+        return r.area()
+    }
+    func main() {
+        r1 := Rect{2, 4}
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area())       // Rect Area: 2 x 4 = 8
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.scaleArea(3)) // Rect Area: 6 x 12 = 72
+    }
+// PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED
+    // Return Area
+    func (r Rect) area() float32 {
+        return r.w * r.h
+    }
+    // Scale Struct
+    func (r *Rect) scaleStruct(s float32) {
+        r.w = r.w * s
+        r.h = r.h * s
+    }
+    func main() {
+        r1 := Rect{2, 4}
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 2 x 4 = 8
+        r1.scaleStruct(3)                                          // Passed by Reference
+        fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 6 x 12 = 72
+    }
+```
+
+Table of Contents,
+
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#overview)
 * [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#basic-format)
 * [PASSING PARAMETERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#passing-parameters)
@@ -11,17 +54,15 @@
 
 A method is a function with a special receiver argument.
 
-Methods, unlike functions which stand on their own,
-are attached to data (struct).
-
-These are great definitions, but I like to think of methods as,
+Methods (unlike functions which stand on their own)
+are attached to data (struct). I like to think of methods as,
 
 * Doing something with (pass by value) a structs data.
 * Doing something to (pass by "reference") a structs data.
 
 ## BASIC FORMAT
 
-The basic format is,
+AS we learned from function, the basic format is,
 
 ```go
 func (receiver) name(parameter list) return type {
@@ -30,7 +71,7 @@ func receiver identifier parameters returns
 
 ## PASSING PARAMETERS
 
-As with functions, you can pass the struct by value or "reference".
+As with functions, you can pass the struct by "value" or "reference".
 
 Giving this struct,
 
@@ -44,34 +85,29 @@ type Rect struct {
 ### PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED
 
 Passes a copy of the struct's value and gets something back (return).
-
 Will not change the values of the struct that was passed.
 
-Get something back (return),
+Get get something back (return),
 
 ```go
-// Return area
+// PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED
+// Return Area
 func (r Rect) area() float32 {
     return r.w * r.h
 }
 
-// Return scaled area
-func (r Rect) scaleArea(s int) float32 {
-    return (r.w * r.h * float32(s))
+// Scale Struct & Return Area
+func (r Rect) scaleArea(s float32) float32 {
+    r.w = r.w * s
+    r.h = r.h * s
+    return r.area()
 }
-```
 
-Where the output is,
-
-```go
-// PASS STRUCT TO METHOD BY VALUE - STRUCT NOT CHANGED
-// Get something back (return).
-
-// Pass the method some data (the struct).
-fmt.Println("The area of", r1.w, "and", r1.h, "is", r1.area())
-
-// Pass the method some data (the struct), plus parameters.
-fmt.Println("The area of", r1.w, "and", r1.h, "scaled by 3 is", r1.scaleArea(3))
+func main() {
+    r1 := Rect{2, 4}
+    fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area())       // Rect Area: 2 x 4 = 8
+    fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.scaleArea(3)) // Rect Area: 6 x 12 = 72
+}
 ```
 
 ### PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED
@@ -83,48 +119,25 @@ the values of the struct itself (return not necessary),
 
 Work on struct itself (return optional),
 
-NOTE: For some reason, struct pointer don't need to use the syntax
-`*r.w` or `*r.h`.  I'm not sure I like this since
-I like to know I'm working on the "contents of" a pointer.
-
 ```go
-// Scale the struct by 2
-func (r *Rect) scaleByTwo() {
-    r.w = r.w * 2.0                                     // I wish this was *r.w
-    r.h = r.h * 2.0                                     // I wish this was *r.h
-}
-
-// Scale the struct by s
-func (r *Rect) scaleStruct(s float64) {
-    r.w = r.w * float32(s)
-    r.h = r.h * float32(s)
-}
-
-// Scale the struct by s and return the area
-func (r *Rect) scaleStructArea(s float64) float32 {
-    r.w = r.w * float32(s)
-    r.h = r.h * float32(s)
+// PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED
+// Return Area
+func (r Rect) area() float32 {
     return r.w * r.h
 }
-```
 
-Where the output is,
+// Scale Struct
+func (r *Rect) scaleStruct(s float32) {
+    r.w = r.w * s
+    r.h = r.h * s
+}
 
-```go
-// PASS STRUCT TO METHOD BY REFERENCE - STRUCT CHANGED
-// Work on struct itself (return optional).
-
-// Pass the method address/pointer of struct.
-r1.scaleByTwo()
-fmt.Println("The area of", r1.w, "and", r1.h, "is", r1.area())
-
-// Pass the method address/pointer of struct, plus parameters.
-r1.scaleStruct(2.0)
-fmt.Println("The area of", r1.w, "and", r1.h, "is", r1.area())
-
-// Pass method address/pointer of struct, plus parameters and return.
-area := r1.scaleStructArea(2.0)
-fmt.Println("The area of", r1.w, "and", r1.h, "is", area)
+func main() {
+    r1 := Rect{2, 4}
+    fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 2 x 4 = 8
+    r1.scaleStruct(3)                                          // Passed by Reference
+    fmt.Println("Rect Area:", r1.w, "x", r1.h, "=", r1.area()) // Rect Area: 6 x 12 = 72
+}
 ```
 
 Again you do this because you want to actually modify whatever you're passing
