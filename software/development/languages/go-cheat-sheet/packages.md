@@ -1,41 +1,57 @@
 # PACKAGES
 
-Every thing in go is packages.
-
+Every thing in go is packages. A package is nothing but a
+directory with some code files
 It helps us organize our code into folders,
 
 * [godoc.org](https://godoc.org/)
-  _- Both standard and user packages._
+  _- Both standard and user packages. Also shows popular packages._
 * [golang.org](https://golang.org/pkg/)
   _-Just official standard packages._
 
 Table of Contents,
 
 * [GO GET A PACKAGE AND USE IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md#go-get-a-package-and-use-it)
-* [LETS CREATE A PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md#lets-create-a-package)
+* [LETS CREATE A CUSTOM PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md#lets-create-a-custom-package)
 
 ## GO GET A PACKAGE AND USE IT
 
-Bring code to computer and use it.
+You already have the regular go packages.
+Lets bring another package to your computer and use it,
 
 ```go
-go get ??????
+go get -u -v github.com/golang/protobuf/protoc-gen-go
 ```
 
-Now use it,
+`-u -v` looks for update and is verbose.
+
+The package in now located in your `/src` folder.
+
+Now use the package. I know there is a constant
+WireStartGroup that is 3. Hence,
 
 ```go
-import "path/to/the/package"
+import (
+    "fmt"
+    "github.com/golang/protobuf/proto"
+)
+
+func main() {
+    fmt.Println(proto.WireStartGroup)   // 3
+}
 ```
 
-## LETS CREATE A PACKAGE
+## LETS CREATE A CUSTOM PACKAGE
 
-When something is Capitalized, its exported outside package.
-
-Lets create a package based on the [interface example](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
+Lets create a simple shapes package that will,
 
 * Area and circumference for circles
-* Volume and surface area for cylinders.
+
+The code is located in
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/shapes).
+
+
+
 
 We will call the package shapes.  Hence the folder name must be called shapes.
 
