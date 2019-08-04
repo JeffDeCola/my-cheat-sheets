@@ -2,14 +2,13 @@
 
 `specifications` _of Raspberry Pi models SBCs._
 
+* [1 MODEL B+ & 2 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#1-model-b--2-model-b)
+* [3 MODEL B, 3 MODEL B+ & 4 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#3-model-b-3-model-b--4-model-b)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SPECIFICATIONS FOR VARIOUS MODELS
-
-Not listed is the Rasp Pi Zero.
-
-### 1 MODEL B+ & 2 Model B
+## 1 MODEL B+ & 2 Model B
 
 |                  | Rasp Pi 1 Model B+ |  Rasp Pi 2 Model B |
 |:-----------------|-------------------:|-------------------:|
@@ -44,7 +43,7 @@ Not listed is the Rasp Pi Zero.
 | - max            |      350mA (1.75W) |       820mA (4.1W) |
 | PoE              |                  - |                  - |
 
-### 3 MODEL B, 3 MODEL B+ & 4 Model B
+## 3 MODEL B, 3 MODEL B+ & 4 Model B
 
 |                  |  Rasp Pi 3 Model B | Rasp Pi 3 Model B+ |  Rasp Pi 4 Model B |
 |:-----------------|-------------------:|-------------------:|-------------------:|
