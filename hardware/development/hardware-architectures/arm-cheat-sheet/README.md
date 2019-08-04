@@ -3,6 +3,10 @@
 `ARM` _architecture is is a family of reduced instruction
 set computing (RISC) architectures for computer processors._
 
+* [ARM HOLDINGS LICENSE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet#arm-holdings-license)
+* [WHY USE SAME ARCHITECTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet#why-use-same-architecture)
+* [ARM CORES USE ARM ARCHITECTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet#arm-cores-use-arm-architecture)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -23,20 +27,17 @@ the ARM7 distro.
 
 This highlights the main cores and the architecture used.
 
-| ARM ARCHITECTURE |      ARM HOLDINGS IP CORE |       THIRD PARTY CHIP |
-|:-----------------|--------------------------:|-----------------------:|
-| ARMv1            |                      ARM1 |                        |
-| ARMv2            |                      ARM2 |                        |
-| ARMv6            |                     ARM11 |       Broadcom BCM2835 |
-| ARMv7-A          |             ARM Cortex-A7 |       Broadcom BCM2836 |
-|                  |             ARM Cortex-A9 |        Freescale i.MX6 |
-| ARMv8-A          |            ARM Cortex-A53 |       Broadcom BCM2837 |
-| ARMv8-A          |            ARM Cortex-A72 |       Broadcom BCM2711 |
-| ARMv8.2-A        |            ARM Cortex-A55 |                        |
+| ARM ARCHITECTURE |      ARM HOLDINGS IP CORE |       THIRD PARTY CHIP |  Single Board Computers |
+|:-----------------|--------------------------:|-----------------------:|------------------------:|
+| ARMv1            |                      ARM1 |                        |                         |
+| ARMv2            |                      ARM2 |                        |                         |
+| ARMv6            |                     ARM11 |       Broadcom BCM2835 |      Rasp Pi 1 Model B+ |
+| ARMv7-A          |             ARM Cortex-A7 |       Broadcom BCM2836 |       Rasp Pi 2 Model B |
+|                  |             ARM Cortex-A9 |        Freescale i.MX6 |            Hummingboard |
+| ARMv8-A          |            ARM Cortex-A53 |       Broadcom BCM2837 |  Rasp Pi 3 Model B & B+ |
+| ARMv8-A          |            ARM Cortex-A72 |       Broadcom BCM2711 |       Rasp Pi 4 Model B |
+| ARMv8.2-A        |            ARM Cortex-A55 |                        |                         |
 
-SolidRun's
-[Hummingboard SBC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
-uses Freescale's i.MX6 chip.
-
-[Raspberry Pi 3 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
-uses a Broadcom BCM2837 chip.
+[Hummingboard Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+and
+[Raspberry Pi Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet).
