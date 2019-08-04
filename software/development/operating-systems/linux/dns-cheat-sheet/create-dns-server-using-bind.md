@@ -20,7 +20,6 @@ sudo nano /etc/bind/reverse.20.168.192.in-addr.arpa.db
 # BIND
 service bind9 status
 sudo service bind9 restart
-#
 # SOME CHECKS
 ping stimpy
 ping facebook.com
@@ -31,18 +30,25 @@ nslookup stimpy
 nslookup facebook.com
 ```
 
-* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#what-dns-is-your-machine-using)
+Table of Contents,
+
+* [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#why-do-we-need-a-local-dns-server)
 * [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#what-dns-is-your-machine-using)
 * [INSTAL BIND (DNS SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#instal-bind-dns-server)
 * [CONFIGURE PRIMARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-primary-dns-server)
+  * [CONFIGURE named.conf](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-namedconf)
+  * [CONFIGURE named.conf.options](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-namedconfoptions)
+  * [CONFIGURE named.conf.local](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-namedconflocal)
+  * [CONFIGURE named.conf.default.zones](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-namedconfdefaultzones)
 * [CONFIGURE SECONDARY DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-secondary-dns-server)
+* [VERIFY & START BIND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#verify--start-bind)
 * [CONFIGURE YOUR CLIENTS FOR DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#configure-your-clients-for-dns)
-  * [UBUNTU 18.04](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1804)
-  * [UBUNTU 16.04](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1604)
-  * [RASPBIAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#raspbian)
-  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#macos)
-  * [DEBIAN 8](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#debian-8)
-  * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#windows)
+  * [UBUNTU 18.04](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1804)
+  * [UBUNTU 16.04](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#ubuntu-1604)
+  * [RASPBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#raspbian)
+  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#macos)
+  * [DEBIAN 8](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#debian-8)
+  * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#windows)
 * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#test)
 
 I want to credit Dani from
@@ -102,7 +108,7 @@ nmcli device show enp1s0
 nmcli device show eth0
 ```
 
-For macos,
+For macOS,
 
 ```bash
 scutil --dns | grep 'nameserver\[[0-9]*\]'
@@ -146,14 +152,14 @@ OPTIONS="-4 -u bind"
 
 ## CONFIGURE PRIMARY DNS SERVER
 
-### CONFIGURE named.conf
-
 All DNS configurations for BIND are located under /etc/bind.
 
-* `named.conf` - Primary configuration.
-* `named.conf.options` - Port to listen, the forwarders to use, etc.
-* `named.conf.local` - This file has the local DNS server configuration.
-* `named.conf.default.zones` - It contains the default zones of the server.
+* `named.conf` - Primary configuration
+* `named.conf.options` - Port to listen, the forwarders to use, etc...
+* `named.conf.local` - This file has the local DNS server configuration
+* `named.conf.default.zones` - It contains the default zones of the server
+
+### CONFIGURE named.conf
 
 Configure,
 
@@ -256,8 +262,8 @@ sudo chown bind:bind /var/log/dns.jeffs-query.log
 
 Now set up two zones,
 
-* One for the forward lookup, where the domain’s IP
-* address is searched, and a reverse lookup for the inverse query,
+* Forward lookup - Where the domain’s IP address is searched
+* Reverse lookup - For the inverse query
 
 Configure,
 
@@ -364,7 +370,11 @@ $TTL    604800
 
 tbd.
 
-### VERIFY NO ERRORS
+## CONFIGURE SECONDARY DNS SERVER
+
+Not part of cheat sheet yet.
+
+## VERIFY & START BIND
 
 Verify no error with your configuration files. Should return nothing,
 
@@ -374,7 +384,7 @@ named-checkzone jeffnet.lan /etc/bind/jeffnet.lan.db
 named-checkzone 20.168.192.in-addr.arpa /etc/bind/reverse.20.168.192.in-addr.arpa.db
 ```
 
-### START BIND
+Start BIND,
 
 ```bash
 service bind9 status
@@ -382,10 +392,6 @@ sudo service bind9 restart
 sudo service bind9 stop
 sudo service bind9 start
 ```
-
-## CONFIGURE SECONDARY DNS SERVER
-
-Not part of cheat sheet yet.
 
 ## CONFIGURE YOUR CLIENTS FOR DNS
 

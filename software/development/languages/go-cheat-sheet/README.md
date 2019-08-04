@@ -56,6 +56,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [GO ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-error-handling)
   * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
+  * [GO PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-packages)
 * [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
 
 View my entire list of cheat sheets on
@@ -200,8 +201,8 @@ This cheat sheet is broken up into the following sections,
 ### PACKAGES
 
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md)
-  * Go Get a Package and use it
-  * Lets create a package
+  * Go Get a Package and Use it
+  * Lets Create A Custom Package
 
 ## GO SYNTAX OVERVIEW
 
@@ -717,8 +718,25 @@ This cheat sheet is broken up into the following sections,
     // \?                                           // The ? character.
     // \b                                           // backspace.
     // \"                                           // The " character.
+```
 
-// PACKAGES
+### GO PACKAGES
+
+```go
+    // GO GET A PACKAGE AND USE IT
+    // As an example
+    go get -u -v github.com/golang/protobuf/protoc-gen-go
+
+    // Lets use it
+    import (
+        "fmt"
+        "github.com/golang/protobuf/proto"
+    )
+    func main() {
+        fmt.Println(proto.WireStartGroup)           // 3 (A constant in the package)
+    }
+
+    //  LETS CREATE A CUSTOM PACKAGE
 ```
 
 ## REFERENCES / DOCUMENTATION
@@ -753,7 +771,7 @@ This cheat sheet is broken up into the following sections,
 ### GO PACKAGES
 
 * [godoc.org](https://godoc.org/)
-  _- Both standard and user packages._
+  _- Both standard and user packages. Also shows popular packages._
 * [golang.org](https://golang.org/pkg/)
   _- Just official standard packages._
 
