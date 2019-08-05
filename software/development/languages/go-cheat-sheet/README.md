@@ -182,7 +182,7 @@ This cheat sheet is broken up into the following sections,
 
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md)
   * Loops
-    * _for, _while_, _infinite loops_, _range_, _break/continue_
+    * _for loop, _while loop_, _infinite loop_, _range loop_, _break/continue_
   * Conditional Statements / Decision Making
     * _if_, _if else_, _nested if_, _switch (case)_, _defer_, _select_
 
@@ -623,34 +623,48 @@ This cheat sheet is broken up into the following sections,
 ```go
     // LOOPS
         // FOR LOOP
-        for inti; condition; post {
         for i:=0; i < 8; i++ {
-            do something
+            fmt.Printf("Count is %v\n", i)
         }
-        // AS A WHILE LOOP
+        // WHILE LOOP
         i :=0
         for i < 8 {
-            do something
+            fmt.Printf("Count is %v\n", i)
             i++
         }
-
-    // RANGE
-    myarray := [3]{3,4,5}
-    for i := range myarray {
-        avg += myarray[i]
-    }
+        // INFINITE LOOP
+        for {
+            do something forever
+        }
+        // RANGE LOOP
+        myslice := []int{3, 4, 5}
+        sum := 0
+        for i := range myslice {
+            fmt.Printf("Adding %v to sum %v\n", myslice[i], sum)
+            sum += myslice[i]
+        }
+        // BREAK/CONTINUE
+        x := 0
+        for {
+            x++
+            if x%2 == 1 {
+                continue
+            }
+            if x >= 100 {
+                break
+            }
+            fmt.Println(x)
+        }
 
     // CONDITIONAL
-
         // IF, IF / ELSE, NESTED IF
-        if a == b {                                 // Relational / Compare operator
+        if a == b {
             fmt.Println("equal")
         } else if a > b {
             fmt.Println("higher")
         } else {
             fmt.Println("Lower")
         }
-
         // SWITCH (CASE)
         switch {
         case (a == b):
@@ -660,14 +674,13 @@ This cheat sheet is broken up into the following sections,
         default:
             fmt.Println("Lower")
         }
-
         // DEFER
         func main() {
             defer fmt.Println("world")
             fmt.Println("hello")
         }
-
         // SELECT
+        tbd
 ```
 
 ### ERROR HANDLING

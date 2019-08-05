@@ -16,7 +16,7 @@ Table of Contents,
   * [FOR LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#for-loop)
   * [WHILE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#while-loop)
   * [INFINITE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#infinite-loop)
-  * [RANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#range)
+  * [RANGE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#range-loop)
   * [BREAK / CONTINUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#break--continue)
 * [CONDITIONAL STATEMENTS /  DECISION MAKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#conditional-statements---decision-making)
   * [IF, IF ELSE, NESTED IF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md#if-if-else-nested-if)
@@ -26,14 +26,13 @@ Table of Contents,
 
 ## LOOPS
 
-Go only has for loops.
-
-For loop basic format,
+Go only has for loops with the basic format,
 
 ```go
-for init; condition; post {}        // normal
-for condition {}                    // while
-for {}                              // infinite
+for init; condition; post {stuff}        // For loop
+for condition {stuff}                    // While loop
+for {stuff}                              // Infinite loop
+for value:= range type {stuff}           // Range loop
 ```
 
 ### FOR LOOP
@@ -41,19 +40,17 @@ for {}                              // infinite
 As an example,
 
 ```go
-for i:=0; i < 8; i++ {
-    do something
+for i := 0; i < 8; i++ {
+    fmt.Printf("count is %v\n", i)
 }
 ```
 
 ### WHILE LOOP
 
-For loop being a while loop,
-
 ```go
 i :=0
 for i < 8 {
-    do something
+    fmt.Printf("count is %v\n", i)
     i++
 }
 ```
@@ -62,29 +59,33 @@ for i < 8 {
 
 ```go
 for {
-    do something
+    do something forever
 }
 ```
 
-### RANGE
+### RANGE LOOP
 
-When we're not really sure how much in our array.
+When we're not really sure how much in our slice,
 
 ```go
-myarray := [3]{3,4,5}
+myslice := []int{3, 4, 5}
+sum := 0
 
-for i := range myarray {
-    avg += myarray[i]
+for i := range myslice {
+    fmt.Printf("Adding %v to sum %v\n", myslice[i], sum)
+    sum += myslice[i]
 }
+fmt.Printf("Final Sum is sum %v\n", sum)
 ```
 
 ### BREAK / CONTINUE
 
-Breaks, breaks out of the loop, and continue just starts
+Breaks out of the loop, and continue just starts
 the loop at the start.
 
 ```go
 // Print even numbers from 1-100
+x := 0
 for {
     x++
     if x%2 == 1 {
@@ -160,7 +161,7 @@ default:
 }
 ```
 
-Using fallthrough,
+Using `fallthrough`,
 
 ```go
 switch {
@@ -192,4 +193,7 @@ Useful if opening a file, you can put the cleanup first, before you do stuff.
 
 ### SELECT
 
+Go’s select lets you wait on multiple channel operations.
 
+Refer to
+[CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
