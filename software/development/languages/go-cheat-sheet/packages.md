@@ -48,7 +48,7 @@ Lets create a simple `jeffshapes` package that will,
 * Get the area and circumference for a circle
 
 The code is located in
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/shapes).
+[my-go-packages](https://github.com/JeffDeCola/my-go-packages#jeffshapes).
 
 First get the package,
 
@@ -56,7 +56,7 @@ First get the package,
 go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
-Then import in your go code,
+Then import in your code,
 
 ```bash
 import github.com/JeffDeCola/my-go-packages/jeffshapes
