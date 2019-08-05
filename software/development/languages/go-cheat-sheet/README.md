@@ -744,12 +744,13 @@ This cheat sheet is broken up into the following sections,
     }
 
     //  LETS CREATE A CUSTOM PACKAGE
-    // Create a go package
+    // Create a go package jeffshapes with methods, types, etc....
+    package jeffshapes
 
-    // Get the package
+    // Like above, get the package for your environment
     go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
 
-    // Use in your go code
+    // Like above, use in your go code
     import github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
