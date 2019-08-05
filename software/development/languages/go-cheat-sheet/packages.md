@@ -43,19 +43,21 @@ func main() {
 
 ## LETS CREATE A CUSTOM PACKAGE
 
-Lets create a simple shapes package that will,
+Lets create a simple `jeffshapes` package that will,
 
-* Area and circumference for circles
+* Get the area and circumference for a circle
 
 The code is located in
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/shapes).
 
+First get the package,
 
+```bash
+go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
+```
 
+Then import in your go code,
 
-We will call the package shapes.  Hence the folder name must be called shapes.
-
-    circle.shapes.area()
-    rectangle.shapes.area()
-
-In shapes I will put methods.
+```bash
+import github.com/JeffDeCola/my-go-packages/jeffshapes
+```
