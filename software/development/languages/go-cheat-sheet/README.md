@@ -744,6 +744,8 @@ This cheat sheet is broken up into the following sections,
     }
 
     //  LETS CREATE A CUSTOM PACKAGE
+    // Create a go package
+
     // Get the package
     go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
 
