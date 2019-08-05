@@ -57,12 +57,12 @@ fmt.Printf("myfloat32    %v or %g\n", myfloat32, myfloat32)     // 3.1425 or 3.1
 fmt.Printf("myfloat32    %f or %.2f\n", myfloat32, myfloat32)   //  3.142500 or 3.14
 fmt.Printf("mycomplex64  %v or %g\n", mycomplex64, mycomplex64) // (33.234234+0i) or (33.234234+0i)
 fmt.Printf("mystring     %v or %s\n", mystring, mystring)       // Jeff or Jeff
-fmt.Printf("myslice     %v or %s\n", myslice, myslice)          // [jeff larry] or [jeff larry]
-fmt.Printf("myslice     %v or %s\n", myslice[0], myslice[1])    // jeff or larry
-fmt.Printf("mymap       %v or %s\n", mymap, mymap[1])           // map[1:cat 2:dog] or cat
-fmt.Printf("mypointer   %v or %p\n", mypointer, mypointer)      // 0xc42000e1e0 or 0xc42000e1e0
-fmt.Printf("mypointer   %v or %s\n", *mypointer, *mypointer)    // jeffry or jeffry
-fmt.Printf("mypointer   %v or %p\n", &mypointer, &mypointer)    // 0xc42000c028 or 0xc42000c028
+fmt.Printf("myslice      %v or %s\n", myslice, myslice)         // [jeff larry] or [jeff larry]
+fmt.Printf("myslice      %v or %s\n", myslice[0], myslice[1])   // jeff or larry
+fmt.Printf("mymap        %v or %s\n", mymap, mymap[1])          // map[1:cat 2:dog] or cat
+fmt.Printf("mypointer    %v or %p\n", mypointer, mypointer)     // 0xc42000e1e0 or 0xc42000e1e0
+fmt.Printf("mypointer    %v or %s\n", *mypointer, *mypointer)   // jeffry or jeffry
+fmt.Printf("mypointer    %v or %p\n", &mypointer, &mypointer)   // 0xc42000c028 or 0xc42000c028
 ```
 
 ## ESCAPE SEQUENCES
