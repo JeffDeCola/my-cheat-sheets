@@ -194,8 +194,6 @@ This cheat sheet is broken up into the following sections,
 ### FORMATING TYPES
 
 * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formating-types.md)
-  * Read Input (bufio.NewReader Package)
-  * Scan Input (fmt.Scan Package)
   * Format Specifiers
   * Escape Sequences
 
@@ -692,14 +690,11 @@ This cheat sheet is broken up into the following sections,
             // %t                                   // boolean
             // %d                                   // signed
             // %d                                   // unsigned
-            // %g                                   // float
-            // %g                                   // complex
+            // %g or %f                             // float
+            // %g or %f                             // complex
             // %s                                   // string
             // %p                                   // pointer
             // %p                                   // channel
-        // %#v                                      // Rep of the value
-        // %T                                       // Rep of the type of the value
-        // %%                                       // a literal percent sign
 
     // BOOLEAN
         // %t
@@ -721,10 +716,11 @@ This cheat sheet is broken up into the following sections,
 ### ESCAPE SEQUENCES
 
 ```go
-    // \n                                           // newline.
-    // \?                                           // The ? character.
-    // \b                                           // backspace.
-    // \"                                           // The " character.
+    // COMMON ONES USED IN FORMATTING
+        // \n                                       // newline
+        // \?                                       // ? character
+        // \b                                       // backspace
+        // \"                                       // " character
 ```
 
 ### GO PACKAGES
