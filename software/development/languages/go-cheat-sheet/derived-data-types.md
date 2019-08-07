@@ -84,7 +84,12 @@ tl;dr,
     a := new(int)                                   // Create int pointer type
     *a = 9                                          // "Contents of a is 9"
     fmt.Println("Content of pointer *a is", *a)     // 9
-    // ASSIGN A POINTER TO A TYPE INT
+    // ASSIGN A POINTER TYPE AND ASSIGN (OVERKILL)
+    var c *int                                      // YOU DON'T NEED THIS
+    b := 33                                         // This is an int
+    c = &b                                          // "Address of b" is in pointer a
+    fmt.Println("Content of pointer *a is", *a)     // 9
+    // ASSIGN A POINTER TO A TYPE INT (INFERRED) - DO THIS
     b := 33                                         // If we have a var int 5
     c := &b                                         // assign c the "address of" b
     fmt.Println("Contents of pointer *c is", *c)    // 33
@@ -536,7 +541,18 @@ a := new(int)                                   // Create int pointer type
 *a = 9                                          // "Contents of a is 9"
 fmt.Println("Content of pointer *a is", *a)     // 9
 
-// ASSIGN A POINTER TO A TYPE INT
+// DECLARE A POINTER TYPE AND ASSIGN
+a := new(int)                                   // Create int pointer type
+*a = 9                                          // "Contents of a is 9"
+fmt.Println("Content of pointer *a is", *a)     // 9
+
+// ASSIGN A POINTER TYPE AND ASSIGN (OVERKILL)
+var c *int                                      // YOU DON'T NEED THIS
+b := 33                                         // This is an int
+c = &b                                          // "Address of b" is in pointer a
+fmt.Println("Content of pointer *a is", *a)     // 9
+
+// ASSIGN A POINTER TO A TYPE INT (INFERRED) - DO THIS
 b := 33                                         // If we have a var int 5
 c := &b                                         // assign c the "address of" b
 fmt.Println("Contents of pointer *c is", *c)    // 33

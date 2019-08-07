@@ -29,7 +29,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#functions-black-box)
   * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#methods-attached-to-data)
   * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interfaces-set-of-method-signatures)
-  * [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#concurrency--channels)
+  * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines--channels)
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
   * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structures--flow-control)
   * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling--logging)
@@ -50,7 +50,8 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
-  * [CHANNEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channel)
+  * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
+  * [CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels)
   * [GO OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-operators)
   * [CONTROL STRUCTURE / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structure--flow-control)
   * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
@@ -163,9 +164,9 @@ This cheat sheet is broken up into the following sections,
     * With Interface
   * Example - Shapes
 
-### CONCURRENCY / CHANNELS
+### GOROUTINES & CHANNELS
 
-* [CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md)
+* [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
   * tbd
 
 ### OPERATORS
@@ -182,7 +183,7 @@ This cheat sheet is broken up into the following sections,
 
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md)
   * Loops
-    * _for loop, _while loop_, _infinite loop_, _range loop_, _break/continue_
+    * _for loop_, _while loop_, _infinite loop_, _range loop_, _break/continue_
   * Conditional Statements / Decision Making
     * _if_, _if else_, _nested if_, _switch (case)_, _defer_, _select_
 
@@ -397,7 +398,13 @@ This cheat sheet is broken up into the following sections,
     *a = 9                                          // "Contents of a is 9"
     fmt.Println("Content of pointer *a is", *a)     // 9
 
-    // ASSIGN A POINTER TO A TYPE INT
+    // ASSIGN A POINTER TYPE AND ASSIGN (OVERKILL)
+    var c *int                                      // YOU DON'T NEED THIS
+    b := 33                                         // This is an int
+    c = &b                                          // "Address of b" is in pointer a
+    fmt.Println("Content of pointer *a is", *a)     // 9
+
+    // ASSIGN A POINTER TO A TYPE INT (INFERRED) - DO THIS
     b := 33                                         // If we have a var int 5
     c := &b                                         // assign c the "address of" b
     fmt.Println("Contents of pointer *c is", *c)    // 33
@@ -590,10 +597,46 @@ This cheat sheet is broken up into the following sections,
     }
 ```
 
-### CHANNEL
+### GOROUTINES
 
 ```go
-    tbd
+    // GOROUTINES - CONCURRENT THREADS
+    func doThis(s string) {
+        do stuff
+    }
+    go doThis("Jeff")                               // Kick off goroutine
+```
+
+### CHANNELS
+
+```go
+    // CHANNELS - GOROUTINE MESSAGE PIPES
+    // SEND & RECEIVE SYNTAX
+    msgCh := make(chan type, size)                  // name := make(chan type, buffer size)
+    msgCh <- type                                   // SEND
+    type := <-msgCh                                 // RECEIVE
+
+    // NOT BUFFERED
+    func doThis(msgCh <-chan string, t int) {
+        rcv := <-msgCh                              // RECEIVE
+        do stuff
+    }
+    msgJeffCh := make(chan string)                  // name := make(chan type)
+    go doThis(msgJeffCh)                            // Kick off goroutine
+    msgJeffCh <- "Jeff"                             // SEND
+
+    // BUFFERED
+    msgCh := make(chan string, 1)                   // name := make(chan type, buffer size)
+
+    // CHANNEL DIRECTION (MORE EXPLICIT)
+    func doThis(msgCh <-chan string, t int) {
+
+    // SELECT (CASE) - WAITING FOR BOTH CHANNELS TO BE RECEIVED
+    select {
+    case msg1 := <-c1:
+        fmt.Println("received", msg1)
+    case msg2 := <-c1:
+        fmt.Println("received", msg2)
 ```
 
 ### GO OPERATORS
@@ -657,7 +700,7 @@ This cheat sheet is broken up into the following sections,
         }
 
     // CONDITIONAL
-        // IF, IF / ELSE, NESTED IF
+        // IF, IF/ELSE, NESTED IF
         if a == b {
             fmt.Println("equal")
         } else if a > b {
@@ -679,8 +722,13 @@ This cheat sheet is broken up into the following sections,
             defer fmt.Println("world")
             fmt.Println("hello")
         }
-        // SELECT
-        tbd
+        // SELECT (CASE) See Channels above
+        // WAITING FOR BOTH CHANNELS TO BE RECEIVED
+        select {
+        case msg1 := <-c1:
+            fmt.Println("received", msg1)
+        case msg2 := <-c1:
+            fmt.Println("received", msg2)
 ```
 
 ### ERROR HANDLING
@@ -792,7 +840,7 @@ This cheat sheet is broken up into the following sections,
 * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
   _- Exactly that._
 
-### GO PACKAGES
+### GO PACKAGE LISTS
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages. Also shows popular packages._
