@@ -167,7 +167,12 @@ This cheat sheet is broken up into the following sections,
 ### GOROUTINES & CHANNELS
 
 * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
-  * tbd
+  * Go Routines - Concurrent Threads
+  * Channels -Goroutine Message Pipes
+    * Not Buffered
+    * Buffered
+    * Channel Direction (More explicit)
+    * Select
 
 ### OPERATORS
 
