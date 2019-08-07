@@ -1,6 +1,6 @@
 # GOROUTINES & CHANNELS
 
-`goroutines` are A lightweight concurrent threads of execution `go func()`
+`goroutines` are lightweight concurrent threads of execution `go func()`
 where `channels` are pipes that allow them to message each other.
 This is a huge benefit of go since it can use multi-core environments.
 
@@ -45,7 +45,7 @@ Table of Contents,
   * [BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#buffered)
   * [CHANNEL DIRECTION (MORE EXPLICIT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channel-direction-more-explicit)
   * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#select)
-  
+
 For goroutine and channel examples, see
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines).
 
@@ -77,6 +77,8 @@ func main() {
     fmt.Println("done")
 }
 ```
+
+![IMAGE - goroutines - IMAGE](../../../../pics/goroutines.jpg)
 
 ## CHANNELS - GOROUTINE MESSAGE PIPES
 
@@ -127,6 +129,8 @@ func main() {
     fmt.Println("done")
 ```
 
+![IMAGE - goroutines-with-channels-not-buffered - IMAGE](../../../../pics/goroutines-with-channels-not-buffered.jpg)
+
 ### BUFFERED
 
 Adds some elasticity for messaging.
@@ -169,6 +173,8 @@ func main() {
     fmt.Scanln()
     fmt.Println("done")
 ```
+
+![IMAGE - goroutines-with-channels-buffered - IMAGE](../../../../pics/goroutines-with-channels-buffered.jpg)
 
 ### CHANNEL DIRECTION (MORE EXPLICIT)
 
