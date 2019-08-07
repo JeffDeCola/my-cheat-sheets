@@ -78,7 +78,7 @@ func main() {
 }
 ```
 
-![IMAGE - goroutines - IMAGE](../../../../pics/goroutines.jpg)
+![IMAGE - goroutines - IMAGE](../../../../docs/pics/goroutines.jpg)
 
 ## CHANNELS - GOROUTINE MESSAGE PIPES
 
@@ -129,7 +129,7 @@ func main() {
     fmt.Println("done")
 ```
 
-![IMAGE - goroutines-with-channels-not-buffered - IMAGE](../../../../pics/goroutines-with-channels-not-buffered.jpg)
+![IMAGE - goroutines-with-channels-not-buffered - IMAGE](../../../../docs/pics/goroutines-with-channels-not-buffered.jpg)
 
 ### BUFFERED
 
@@ -174,7 +174,7 @@ func main() {
     fmt.Println("done")
 ```
 
-![IMAGE - goroutines-with-channels-buffered - IMAGE](../../../../pics/goroutines-with-channels-buffered.jpg)
+![IMAGE - goroutines-with-channels-buffered - IMAGE](../../../../docs/pics/goroutines-with-channels-buffered.jpg)
 
 ### CHANNEL DIRECTION (MORE EXPLICIT)
 
