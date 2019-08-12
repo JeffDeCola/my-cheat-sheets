@@ -11,6 +11,7 @@ syntax of go. I have lots go examples in my appropriately named repo
 * [LET'S GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#lets-go)
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
+  * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#executable-your-code--go-runtime)
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
     * BOOLEAN
     * NUMERIC
@@ -86,6 +87,13 @@ This cheat sheet is broken up into the following sections,
   * _go build_
   * _go install_
   * The Object Side of go
+
+### EXECUTABLE (YOUR CODE & GO RUNTIME)
+
+* [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
+  * Go Executable
+  * Go Runtime (Goroutine Scheduler)
+  * goroutines & Threads
 
 ### DATA TYPES
 
@@ -174,7 +182,7 @@ This cheat sheet is broken up into the following sections,
     * Channel Direction (More explicit)
     * Select
   * Multi-Core (Parallelism)
-  
+
 ### OPERATORS
 
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md)
