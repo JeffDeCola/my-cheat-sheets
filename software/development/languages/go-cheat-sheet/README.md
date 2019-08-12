@@ -173,7 +173,8 @@ This cheat sheet is broken up into the following sections,
     * Buffered
     * Channel Direction (More explicit)
     * Select
-
+  * Multi-Core (Parallelism)
+  
 ### OPERATORS
 
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md)
