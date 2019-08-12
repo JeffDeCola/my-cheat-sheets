@@ -45,6 +45,7 @@ Table of Contents,
   * [BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#buffered)
   * [CHANNEL DIRECTION (MORE EXPLICIT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channel-direction-more-explicit)
   * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#select)
+* [MULTI-CORE (Parallelism)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#multi-core-parallelism)
 
 For goroutine and channel examples, see
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines).
@@ -206,3 +207,15 @@ case msg1 := <-c1:
 case msg2 := <-c1:
     fmt.Println("received", msg2)
 ```
+
+## MULTI-CORE (Parallelism)
+
+A few things to note, goroutines like to run on one core because of the go
+runtime scheduling the routines.  If you use more then one core
+you are running things in parallel.
+
+So in a nutshell, goroutines are not parallelism.
+
+Also, a goroutine is similiar to a thread, but really runs above it.
+They are more lightweight.
+
