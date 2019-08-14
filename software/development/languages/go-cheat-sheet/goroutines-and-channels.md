@@ -215,21 +215,19 @@ A few things to note,
 
 * A go executable (or binary) is made up of your compiled go code and
   the go runtime environment.  Refer to
-  [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
-  for more information.
+  [executable (your code and go runtime)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
+  for more information
 * `Parallelism` is when you can truly run things at the same time.  Hence you
-  need physical hardware to do that (e.g. multi-core).
+  need physical hardware to do that (e.g. multi-core)
 * `goroutines` like to run on one core because of the
-  go runtime is scheduling the goroutines.
+  go runtime is scheduling the goroutines
 * So when you really think about it, **goroutines are not parallelism**
 * A goroutine is also not a thread, but really runs above it,
   goroutines are more lightweight
+* A goroutine will jump around threads unless you lock it.  
 * A thread is just a sequence of instructions that can be
   executed independently by a processor
-* Threads are lighter than the process and so you can
-  spawn a lot of them.
 * No forking allowed in go because forks and threads do not mix
 
-Goroutines exists only in the virtual space of go runtime
-and not in the OS. A goroutine is created with initial only 2KB of stack size.
-the Go runtime multiplexes goroutines to operating system (OS) threads.
+Refer to my example on running goroutines on multi-cores
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/goroutines/goroutines-multi-core).
