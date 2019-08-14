@@ -93,7 +93,7 @@ This cheat sheet is broken up into the following sections,
 * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
   * Go Executable
   * Go Runtime (Goroutine Scheduler)
-  * goroutines & Threads
+  * Goroutines & Threads
 
 ### DATA TYPES
 
