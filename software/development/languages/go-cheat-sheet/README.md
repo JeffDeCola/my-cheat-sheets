@@ -204,7 +204,8 @@ This cheat sheet is broken up into the following sections,
 ### ERROR HANDLING & LOGGING
 
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
-  * tbd
+  * Error Handling
+  * Logging
 
 ### FORMATING TYPES
 
