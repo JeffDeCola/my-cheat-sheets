@@ -748,13 +748,43 @@ This cheat sheet is broken up into the following sections,
 ### ERROR HANDLING
 
 ```go
-    tbd
+    // USING THE ERRORS (github.com/pkg/errors) PACKAGE (NOT STANDARD PACKAGE)
+    // YOUR FUNCTION THAT RETURNS AN ERROR TYPE
+    func a(x int) (int, error) {
+        if x == 42 {
+            // Make your error
+            return -1, errors.New("can't work with 42")
+        }
+        return x + 3, nil
+    }
+
+    // YOUR ERROR CHECKER
+    func checkErr(err error) {
+        if err != nil {
+            fmt.Printf("Error is %+v\n", err)
+            log.Fatal("ERROR:", err)
+        }
+    }
+
+    func main() {
+        //MULTIPLE RETURN VALUES (Simpler form)
+        r, err = b(42)
+        checkErr(err)
+        fmt.Println("Returned", r)
+    }
 ```
 
 ### LOGGING
 
 ```go
-    tbd
+    // USING THE LOGRUS (github.com/sirupsen/logrus) PACKAGE (NOT STANDARD PACKAGE)
+    log.Panic("I'm bailing. Calls panic() after logging.")
+    log.Fatal("Bye. Calls os.Exit(1) after logging.")
+    log.Error("Something failed but I'm not quitting.")
+    log.Warn("You should probably take a look at this.")
+    log.Info("Something noteworthy happened!")
+    log.Debug("Useful debugging information.")
+    log.Trace("Something very low level.")
 ```
 
 ### FORMAT SPECIFIERS
