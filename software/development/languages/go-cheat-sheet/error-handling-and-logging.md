@@ -46,7 +46,7 @@ func main() {
 ```
 
 Refer to
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/logrus)
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/errors)
 for an example using `github.com/pkg/errors` package.
 
 ## LOGGING
