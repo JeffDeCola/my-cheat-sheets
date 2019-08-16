@@ -36,7 +36,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling--logging)
   * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#formating-types)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
-  * [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco-calling-c-with-go)
+  * [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#cgo-calling-c-with-go)
 * [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
   * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
   * [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
@@ -223,7 +223,7 @@ This cheat sheet is broken up into the following sections,
 
 ### CGO (CALLING C WITH GO)
 
-* [CGO (CALLING C WITH GO)]https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/calling-c-with-go.md)
+* [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/calling-c-with-go.md)
   * Example
 
 ## GO SYNTAX OVERVIEW
