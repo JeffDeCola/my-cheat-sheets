@@ -2,7 +2,7 @@
 
 Every thing in go is packages. A package is nothing but a
 directory with some code files
-It helps us organize our code into folders,
+It helps us organize our code into folders.
 
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages. Also shows popular packages._
@@ -40,6 +40,9 @@ func main() {
     fmt.Println(proto.WireStartGroup)   // 3
 }
 ```
+
+For some examples of using packages, checkout my repo
+[my-go-example](https://github.com/JeffDeCola/my-go-examples#packages).
 
 ## LETS CREATE A CUSTOM PACKAGE
 

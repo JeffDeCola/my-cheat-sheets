@@ -36,6 +36,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling--logging)
   * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#formating-types)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
+  * [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco-calling-c-with-go)
 * [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
   * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
   * [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
@@ -60,6 +61,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
   * [GO PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-packages)
+  * [CGO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco)
 * [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
 
 View my entire list of cheat sheets on
@@ -218,6 +220,11 @@ This cheat sheet is broken up into the following sections,
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md)
   * Go Get a Package and Use it
   * Lets Create A Custom Package
+
+### CGO (CALLING C WITH GO)
+
+* [CGO (CALLING C WITH GO)]https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/calling-c-with-go.md)
+  * Example
 
 ## GO SYNTAX OVERVIEW
 
@@ -856,6 +863,25 @@ This cheat sheet is broken up into the following sections,
     import github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
+### GCO
+
+```go
+    package main
+
+    //int Add(int a, int b){
+    //    return a+b;
+    //}
+    import "C"
+    import "fmt"
+
+    func main() {
+        a := C.int(10)
+        b := C.int(20)
+        c := C.Add(a, b)
+        fmt.Println(c)                              // 30
+    }
+```
+
 ## REFERENCES / DOCUMENTATION
 
 ### SYNTAX
@@ -884,6 +910,8 @@ This cheat sheet is broken up into the following sections,
   _- The title says it all._
 * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
   _- Exactly that._
+* [medium.com golangspec](https://medium.com/golangspec)
+  _- A bunch of cool examples._
 
 ### GO PACKAGE LISTS
 
