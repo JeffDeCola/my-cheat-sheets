@@ -28,4 +28,4 @@ func main() {
 ```
 
 You can run this example from my repo `my-go-examples`
-[here](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/simple-c-code).
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/cgo/simple-c-code).
