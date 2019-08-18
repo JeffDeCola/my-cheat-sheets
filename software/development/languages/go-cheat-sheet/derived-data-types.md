@@ -597,6 +597,9 @@ func main() {
 }
 ```
 
+For some pointer examples, refer to my repo my-go-examples
+[here](https://github.com/JeffDeCola/my-go-examples#basic-syntax).
+
 ## FUNCTION AS A TYPE
 
 Functions can be a type. So like types, I can use

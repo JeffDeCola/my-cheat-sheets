@@ -13,9 +13,11 @@ As an example,
 ```go
 package main
 
-//int Add(int a, int b){
-//    return a+b;
-//}
+/*
+int Add(int a, int b){
+    return a+b;
+}
+*/
 import "C"
 import "fmt"
 
@@ -29,3 +31,6 @@ func main() {
 
 You can run this example from my repo `my-go-examples`
 [here](https://github.com/JeffDeCola/my-go-examples/tree/master/cgo/simple-c-code).
+
+To use libraries like `stdio.h`, check out this example
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/cgo/simple-c-code-using-stdio).
