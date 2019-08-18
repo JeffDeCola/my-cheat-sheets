@@ -210,7 +210,7 @@ func main() {
     a := 33
     fmt.Println(a) // 33
     negateValue(&a)
-    fmt.Println(a) // 33
+    fmt.Println(a) // -33
 }
 ```
 
