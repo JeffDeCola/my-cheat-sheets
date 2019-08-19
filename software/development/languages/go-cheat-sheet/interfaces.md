@@ -165,8 +165,8 @@ of three shapes: **circles**, **rectangles** and **triangles**.
 the example is located in `my-go-examples` repo done three different ways,
 
 * [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-functions)
-* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-methods)
-* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-interfaces)
+* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/methods/shapes-using-methods)
+* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/shapes-using-interfaces)
 
 You will see that using an interface you can go from this,
 
