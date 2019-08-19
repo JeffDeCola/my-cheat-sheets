@@ -162,6 +162,7 @@ This cheat sheet is broken up into the following sections,
   * Passing Parameters
     * Passing Struct to Method by Value (_Copy_) - Struct not Changed
     * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
+  * Why Use Methods
   * Example - Shapes
 
 ### INTERFACES (SET OF METHOD SIGNATURES)
