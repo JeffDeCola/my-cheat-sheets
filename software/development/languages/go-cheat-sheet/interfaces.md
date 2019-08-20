@@ -4,21 +4,39 @@ tl;dr,
 
 ```go
 // CREATE INTERFACE TYPE
-// I like to end interface names with er
-type namer interface {
-    methodName1()
-    methodName2()
-    ...
-}
+// STEP 1: Create your data types
+    type myStructA struct {
+        name string
+    }
+    type myStructB struct {
+        x int
+        y int
+    }
+// STEP 2: Create methods with same name using your data types as receivers
+    func (i myStructA) doThis() {
+        fmt.Printf("I'm in doThis() method with receiver myStructA - %v\n", i.name)
+    }
+    func (i myStructB) doThis() {
+        fmt.Printf("I'm in doThis() method with receiver myStructB - %v %v\n", i.x, i.y)
+    }
+// STEP 3: Create your interface type with method
+    type myInterfacer interface {
+        doThis()
+    }
+// STEP 4: Create a function that uses this interface as a parameter
+    // INTERFACE AS A FUNCTION PARAMETER
+    func magic(i myInterfacer) {
+        i.doThis()
+    }
 ```
 
 Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#overview)
 * [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#basic-format)
-* [MAKING YOUR CODE CLEANER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#making-your-code-cleaner)
-  * [WITHOUT INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#without-interface)
-  * [WITH INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#with-interface)
+* [HOW TO MAKE AN INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#how-to-make-an-interface)
+  * [STEPS (INTERFACE AS A PARAMETER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#steps-interface-as-a-parameter)
+  * [USING YOUR NEW FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#using-your-new-function)
 * [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#example---shapes)
 
 ## OVERVIEW
@@ -28,23 +46,36 @@ Interfaces are verbs, they do something.
 Syntactic way to have multiple structs do the same thing differently.
 Implementing the same verb in a different way.
 
-It makes your code cleaner.
-
-From using methods like,
+Giving a few different data struct types,
 
 ```go
-r.areaRectangle()
-t.areaTriangle()
-c.areaCircle()
+c1 := Circle{5}
+r1 := Rectangle{5, 3}
+t1 := Triangle{3, 4, 5}
 ```
 
-To a lot cleaner code,
+From using many functions like this,
 
 ```go
-r.area()
-t.area()
-c.area()
+circleArea(c1)
+rectangleArea(r1)
+triangleArea(t1)
 ```
+
+To a lot cleaner code with one function that can accept
+many types (e.g. an interface),
+
+```go
+area(r1)
+area(t1)
+area(c1)
+```
+
+So the interface is the parameter.  Its great!!
+
+This diagram may help,
+
+![IMAGE - interface - IMAGE](../../../../docs/pics/interface.jpg)
 
 ## BASIC FORMAT
 
@@ -59,103 +90,112 @@ type namer interface {
 }
 ```
 
-## MAKING YOUR CODE CLEANER
+## HOW TO MAKE AN INTERFACE
 
-Giving the following structs,
+Lets use the above example, The end result, we want to be able to
+just use one function with different data types,
 
 ```go
+area(r1)
+area(t1)
+area(c1)
+```
+
+So the **parameter of the area(I'm an interface) function is an interface**.
+
+### STEPS (INTERFACE AS A PARAMETER)
+
+**Step 1:** Create your data types,
+
+```go
+// Circle description
 type Circle struct {
     radius float64
 }
 
-type Cylinder struct {
-    radius float64
+// Rectangle description
+type Rectangle struct {
+    width  float64
     height float64
 }
+
+// Triangle description
+type Triangle struct {
+    a float64
+    b float64
+    c float64
+}
+
 ```
 
-### WITHOUT INTERFACE
-
-Make a method for each property of the shape you wanted
-(e.g. area, volume, circumference, etc...)
+**Step 2:** Create methods with same name using your data types as receivers,
 
 ```go
 // Circle area
-func (c Circle) areaCircle() float64 {
+func (c Circle) area() float64 {
     return math.Pi * math.Pow(c.radius, 2)
 }
 
-// Circle circumference
-func (c Circle) circCircle() float64 {
-    return 2 * math.Pi * c.radius
+// Rectangle area
+func (r Rectangle) area() float64 {
+    return r.width * r.height
 }
 
-// Cylinder volume
-func (c Cylinder) volCylinder() float64 {
-    return math.Pi * math.Pow(c.radius, 2) * c.height
-}
-
-// Cylinder surface
-func (c Cylinder) surfaceCylinder() float64 {
-    return (2 * math.Pi * c.radius * c.height) + (2 * math.Pi * math.Pow(c.radius, 2))
+// Triangle area
+func (t Triangle) area() float64 {
+    // Heron's Formula to get area from 3 sides
+    s := ((t.a + t.b + t.c) / 2)
+    return math.Sqrt(s * (s - t.a) * (s - t.b) * (s - t.c))
 }
 ```
 
-And assign values to them as,
+**Step 3:** Now create your interface type that will accept any receiver that has
+the method name `area()`.  Simple!
 
 ```go
-    // Declare and assign
-    circle1 := Circle{5}
-    cylinder1 := Cylinder{5, 3}
-
-    // Get properties of shapes
-    areaCircle1 := circle1.areaCircle()
-    circCircle1 := circle1.circCircle()
-    volumeCylinder1 := cylinder1.volCylinder()
-    surfaceCylinder1 := cylinder1.surfaceCylinder()
-
-    fmt.Println(circle1.radius, areaCircle1, circCircle1)
-    fmt.Println(cylinder1.radius, cylinder1.height, volumeCylinder1, surfaceCylinder1)
-```
-
-### WITH INTERFACE
-
-But we can make the code neater if we make an interface,
-
-```go
-// CREATE INTERFACE TYPE
-type Describer interface {
-    describe()
+type areaer interface {
+    area() float64
 }
 ```
 
-And create the methods attached to the interface as,
+**Step 4:** Create a function that uses this interface as a parameter,
 
 ```go
-func (c Circle) describe() (area float64, circ float64) {
-    area = math.Pi * math.Pow(c.radius, 2)
-    circ = 2 * math.Pi * c.radius
-    return
-}
-
-func (c Cylinder) describe() (volume float64, circ float64) {
-    volume = math.Pi * math.Pow(c.radius, 2) * c.height
-    circ = 2 * math.Pi * c.radius
-    return
+// INTERFACE AS A FUNCTION PARAMETER
+func area(a areaer) float64 {
+    return a.area()
 }
 ```
 
-And assign values to them as,
+The interface figures out what method to use based on data type.
+Its really cool.
+
+### USING YOUR NEW FUNCTION
+
+Well, now just use it,
 
 ```go
-myCircle := Circle{5}
-myCylinder := Cylinder{5, 3}
-
-areaCircle, circCircle := myCircle.describe()
-volCylinder, circCylinder := myCylinder.describe()
-
-
+// Define some shapes
+c1 := Circle{5}
+r1 := Rectangle{5, 3}
+t1 := Triangle{3, 4, 5}
 ```
+
+Get the area of the shapes,
+
+```go
+c1Area = area(c1)
+r1Area = area(r1)
+t1Area = area(t1)
+```
+
+So easy!!!! Again, the interface figures out what
+method to use based on data type.
+
+You can go one step further and use an interface a a return.
+Refer to  `my-go-examples`
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/interface)
+for an example of this.
 
 ## EXAMPLE - SHAPES
 
