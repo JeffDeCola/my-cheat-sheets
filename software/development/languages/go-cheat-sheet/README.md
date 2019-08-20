@@ -604,19 +604,32 @@ This cheat sheet is broken up into the following sections,
 
 ```go
     // CREATE INTERFACE TYPE
-    type Describer interface {
-        describe()
-
-    type Cylinder struct {
-        radius float64
-        height float64
+    // STEP 1: Create your data types
+    type myStructA struct {
+        name string
+    }
+    type myStructB struct {
+        x int
+        y int
     }
 
-    // ATTACH TO A METHOD
-    func (c Circle) describe() (area float64, circ float64) {
-        area = math.Pi * math.Pow(c.radius, 2)
-        circ = 2 * math.Pi * c.radius
-        return
+    // STEP 2: Create methods with same name using your data types as receivers
+    func (i myStructA) doThis() {
+        fmt.Printf("I'm in doThis() method with receiver myStructA - %v\n", i.name)
+    }
+    func (i myStructB) doThis() {
+        fmt.Printf("I'm in doThis() method with receiver myStructB - %v %v\n", i.x, i.y)
+    }
+
+    // STEP 3: Create your interface type with method
+    type myInterfacer interface {
+        doThis()
+    }
+
+    // STEP 4: Create a function that uses this interface as a parameter
+    // INTERFACE AS A FUNCTION PARAMETER
+    func magic(i myInterfacer) {
+        i.doThis()
     }
 ```
 
