@@ -19,11 +19,11 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
   * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variables--constants)
   * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#derived-data-types)
-    * ARRAY (Data Structure) (_new_)
+    * ARRAY (Data Structure)
     * SLICE (Data Structure, Reference Type) (_make_)
     * MAP (Data Structure, Reference Type) (_make_)
     * STRUCT (Data Structure)
-    * POINTER
+    * POINTER (_new_)
     * FUNCTION AS A TYPE
     * INTERFACE (see below)
     * CHANNEL (Reference Type) (_make_) (see below)
@@ -53,7 +53,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
   * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
-  * [CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels)
+  * [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
   * [GO OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-operators)
   * [CONTROL STRUCTURE / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structure--flow-control)
   * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
@@ -127,11 +127,11 @@ This cheat sheet is broken up into the following sections,
 
 * [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
   * All Types
-  * Array (Data Structure) (_new_)
+  * Array (Data Structure)
   * Slice (Data Structure, Reference Type) (_make_)
   * Map (Data Structure, Reference Type) (_make_)
   * Struct (Data Structure)
-  * Pointer
+  * Pointer (_new_)
   * Function as a Type
   * Interface (See own
     [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
@@ -310,7 +310,7 @@ This cheat sheet is broken up into the following sections,
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
 
-### ARRAY (Data Structure) (_new_)
+### ARRAY (Data Structure)
 
 ```go
     // DECLARE TYPE
@@ -414,7 +414,7 @@ This cheat sheet is broken up into the following sections,
     fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
-### POINTER
+### POINTER (_new_)
 
 ```go
     // DECLARE A POINTER TYPE AND ASSIGN
@@ -644,7 +644,7 @@ This cheat sheet is broken up into the following sections,
     go doThis("Jeff")                               // Kick off goroutine
 ```
 
-### CHANNELS
+### CHANNELS (_make_)
 
 ```go
     // CHANNELS - GOROUTINE MESSAGE PIPES

@@ -8,7 +8,7 @@ declare type and assign values (initialize).
 tl;dr,
 
 ```go
-// ARRAY (Data Structure) (_new_)
+// ARRAY (Data Structure)
     // DECLARE TYPE
     var a [2]float32                                // var name [number]type
     // ASSIGN VALUE
@@ -19,7 +19,7 @@ tl;dr,
     c := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
     // PRINT
     fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
-// SLICE (Data Structure, Reference Type) (_make_)
+// SLICE (Data Structure, Reference Type) (make)
     // DECLARE TYPE - NO SIZE
     var a []float64                                 // var name []type
     // ASSIGN VALUE - ADD LENGTH TO SLICE
@@ -34,7 +34,7 @@ tl;dr,
     d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
     // PRINT
     fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
-// MAP (Data Structure, Reference Type) (_make_)
+// MAP (Data Structure, Reference Type) (make)
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
     var a map[string]int                            // var name map[type]type
     // DECLARE TYPES (make)
@@ -79,7 +79,7 @@ tl;dr,
     r6 := Rect{2, 4}                                // Shorthand Assignment
     // PRINT
     fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
-// POINTER
+// POINTER (new)
     // DECLARE A POINTER TYPE AND ASSIGN
     a := new(int)                                   // Create int pointer type
     *a = 9                                          // "Contents of a is 9"
@@ -118,17 +118,17 @@ tl;dr,
         fmt.Println(add())                          // 12 <- NOTE THIS
     }
 // INTERFACE (SEE OWN CHEAT SHEET)
-// CHANNEL (SEE OWN CHEAT SHEET)
+// CHANNEL (make) (SEE OWN CHEAT SHEET)
 ```
 
 Table of Contents,
 
 * [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#all-types)
-* [ARRAY (Data Structure) (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array-data-structure-new)
+* [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array-data-structure)
 * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-data-structure-reference-type-make)
 * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-data-structure-reference-type-make)
 * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct-data-structure)
-* [POINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer)
+* [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer-new)
 * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type)
 * [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#interface)
 * [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel-reference-type-make)
@@ -144,11 +144,11 @@ The data types in go are,
 * **STRING** (see this
   [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md))
 * Derived - This cheat sheet
-  * **ARRAY** (Data Structure) (_new_)
+  * **ARRAY** (Data Structure)
   * **SLICE** (Data Structure, Reference Type) (_make_)
   * **MAP** (Data Structure, Reference Type) (_make_)
   * **STRUCT** (Data Structure)
-  * **POINTER**
+  * **POINTER** (_new_)
   * **FUNCTION AS A TYPE**
   * **INTERFACE** (see this
     [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
@@ -165,7 +165,7 @@ before use.
 `Data structures` are arrays, slices, maps and structs.  They
 are types that allow us to store data.
 
-## ARRAY (Data Structure) (_new_)
+## ARRAY (Data Structure)
 
 Arrays are,
 
@@ -523,7 +523,7 @@ r6 := Rect{2, 4}                                // Shorthand Assignment
 fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
-## POINTER
+## POINTER (_new_)
 
 A pointer is just a variable that holds the address (of memory)
 of a value.
