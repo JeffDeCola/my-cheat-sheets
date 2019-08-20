@@ -75,7 +75,7 @@ So the interface is the parameter.  Its great!!
 
 This diagram may help,
 
-![IMAGE - interface - IMAGE](../../../../docs/pics/interface.jpg)
+![IMAGE - interface - IMAGE](../../../../docs/pics/interfaces.jpg)
 
 ## BASIC FORMAT
 
@@ -196,6 +196,28 @@ You can go one step further and use an interface a a return.
 Refer to  `my-go-examples`
 [here](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/interface)
 for an example of this.
+
+## OOP - POLYMORPHISM
+
+Polymorphism is the essence of object-oriented programming.
+The ability to treat objects of different types (circle,
+rectangle, triangle) uniformly as long as they adhere to
+the same interface areaer.
+
+And you get different responses back depending on type.
+Seems like it morphing. Polymorphism.
+
+### ENCAPSULATION
+
+Go encapsulates things at the package level. Names that start
+with a lowercase letter are only visible within that package.
+You can hide anything in a private package and just expose
+specific types, interfaces, and functions.
+
+### INHERITANCE
+
+### POLYMORPHISM
+
 
 ## EXAMPLE - SHAPES
 

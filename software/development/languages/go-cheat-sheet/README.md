@@ -170,9 +170,10 @@ This cheat sheet is broken up into the following sections,
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md)
   * Overview
   * Basic Format
-  * Making your Code Cleaner
-    * Without Interface
-    * With Interface
+  * How to make an Interface
+    * Steps (Interface as a parameter)
+    * Using your new Interface
+  * OOP - Polymorphism
   * Example - Shapes
 
 ### GOROUTINES & CHANNELS
