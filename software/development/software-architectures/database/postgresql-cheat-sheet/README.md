@@ -12,16 +12,26 @@ pgadmin3 -v
 # START
 sudo /etc/init.d/postgresql start
 ps aux | grep -i postgres
-# PSQL
+# PSQL (CLIENT)
 sudo -u postgres psql
+# CREATE USER
 CREATE USER jeffd;
 CREATE USER jeffd WITH ENCRYPTED PASSWORD 'mypass';
+\du
+## CREATE DATABASE
 CREATE DATABASE jeff_db_example OWNER jeffd;
-DROP DATABASE jeff_db_example3;
+DROP DATABASE jeff_db_example;
 \l
+# CONNECT/DISCONNECT TO/FROM DATABASE
 \c jeff_db_example
+\q
+# CREATE TABLE
 CREATE TABLE people (id int primary key not null, first_name text, last_name text);
+GRANT ALL PRIVILEGES ON TABLE people TO jeffd;
 \d
+\d people
+\d+ people
+select * from people;
 ```
 
 Table of Contents,
@@ -317,7 +327,6 @@ CREATE USER jeffd;
 Check user was created,
 
 ```bash
-sudo -u postgres psql
 \du
 ```
 
@@ -361,7 +370,6 @@ Add a user to a database,
 List all databases from psql,
 
 ```bash
-sudo -u postgres psql
 \l
 ```
 
