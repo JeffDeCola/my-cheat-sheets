@@ -24,6 +24,21 @@ CREATE TABLE people (id int primary key not null, first_name text, last_name tex
 \d
 ```
 
+Table of Contents,
+
+* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#history)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#overview)
+* [INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#install-postgres-server-psql-client--pgadmin4)
+* [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#configure)
+* [START/STOP POSTGRESQL SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#startstop-postgresql-server)
+* [USING PSQL (CLIENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#using-psql-client)        
+* [CREATE A USER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#create-a-user)
+* [CREATE A DATABASE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#create-a-database)
+* [CONNECT TO A DATABASE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#connect-to-a-database)
+* [CREATE A TABLE (YOUR SCHEMA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#create-a-table-your-schema)
+* [LIST TABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#list-tables)
+* [LIST ROWS OF TABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#list-rows-of-table)  
+
 Documentation and reference,
 
 * [postgreSQL website](https://www.postgresql.org/)
