@@ -27,6 +27,38 @@ git ls-files --stage
 git update-index --chmod=+x path/to/file
 ```
 
+Table of Contents,
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#overview)
+* [INSTALL GIT LOCAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#install-git-local)
+* [CONFIGURE SOME SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#configure-some-settings)
+* [HTTPS ACCESS (USING .netrc)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#https-access-using-netrc)
+* [SSH KEY (USING KEYS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#ssh-key-using-keys)
+* [INTEGRATE GIT WITH BASH PROMPT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#integrate-git-with-bash-prompt)
+* [WORKFLOW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#workflow)
+* [CREATING A REPO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#creating-a-repo)
+* [GIT STATUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#git-status)
+* [BRANCHES, LOCAL COPY OF REMOTE BRANCHES AND HEAD POINTERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#branches-local-copy-of-remote-branches-and-head-pointers)
+* [ADD & COMMIT (CREATING A NEW VERSION IN YOUR REPO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#add--commit-creating-a-new-version-in-your-repo)
+* [COMMIT VERSIONS (LOG)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#commit-versions-log)
+* [PUSH TO GITHUB (YOUR REMOTE REPO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#push-to-github-your-remote-repo)
+* [PULL FROM GITHUB (git fetch and git merge)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#pull-from-github-git-fetch-and-git-merge)
+* [CHECKOUT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#checkout)
+* [REVERT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#revert)
+* [RESET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#reset)
+* [REBASE (BRANCH WILL HAVE NEW BASE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#rebase-branch-will-have-new-base)
+* [CREATE / DELETE A BRANCH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#create--delete-a-branch)
+* [FETCH (UPDATES YOUR ORIGIN/MASTER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#fetch-updates-your-originmaster)
+* [MERGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#merge)
+* [REMOVING A COMMIT ON GITHUB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#removing-a-commit-on-github)
+* [TAGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#tagging)
+* [TO GET ALL CAUGHT UP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#to-get-all-caught-up)
+* [LOST DATA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#lost-data)
+* [MAC-OS git checkout autocomplete](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#mac-os-git-checkout-autocomplete)
+* [IF YOU PUSH SOMETHING SECRET UP BY ACCIDENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#if-you-push-something-secret-up-by-accident)
+* [MIGRATE FROM BITBUCKET TO GITHUB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#migrate-from-bitbucket-to-github)
+* [FILE PERMISSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#file-permissions)
+* [MY NOTES - HOW I CREATE A LOCAL/REMOTE REPO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#my-notes---how-i-create-a-localremote-repo)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
@@ -192,7 +224,7 @@ git remote -v
 For more information about ssh, I wrote a cheat sheet
 [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet).
 
-## INTERGRATE GIT WITH BASH PROMPT
+## INTEGRATE GIT WITH BASH PROMPT
 
 It's nice to have your prompt tell you what
 branch you are on and give other status information.
