@@ -35,3 +35,6 @@ Run,
 ```bash
 go test -v -cover .
 ```
+
+Check out an example in my repo
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/testing/gotests).
