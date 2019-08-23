@@ -145,5 +145,6 @@ A few tools that are useful,
 ```bash
 go get -u -v github.com/nsf/gocode
 go get -u -v github.com/rogpeppe/godef
-go get -u golang.org/x/lint/golint
+go get -u -v golang.org/x/lint/golint
+go get -u -v github.com/cweill/gotests/...
 ```

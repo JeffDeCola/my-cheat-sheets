@@ -26,12 +26,23 @@ ps aux | grep -i redis
 launchctl load ~/Library/LaunchAgents/local.redis.redis-server.plist
 launchctl unload ~/Library/LaunchAgents/local.redis.redis-server.plist
 launchctl list | grep redis
-# SET/GET
+# SET/GET/DEL
 redis-cli
 set jeff "whats up"
 get jeff
+del jeff
 exit
 ```
+
+Table of Contents,
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#overview)
+* [INSTALL REDIS (SERVER) & REDIS-CLI (CLIENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#install-redis-server--redis-cli-client)
+* [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#configure)
+* [TEST YOU CAN RUN IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#test-you-can-run-it)
+* [START ON BOOT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#start-on-boot)
+* [REDIS-CLI COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#redis-cli-commands)
+* [TO USE WITH GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#to-use-with-go)
 
 Documentation and reference,
 
@@ -284,20 +295,20 @@ with,
 <dict>
     <key>Label</key>
     <string>local.redis.redis-server</string>
-	<key>Program</key>
+    <key>Program</key>
     <string>/usr/local/lib/redis-5.0.5/src/redis-server</string>
-	<key>ProgramArguments</key>
-	<array>
+    <key>ProgramArguments</key>
+    <array>
         <string>/etc/redis/6379.conf</string>
-	</array>
+    </array>
     <key>KeepAlive</key>
     <true/>
-	<key>RunAtLoad</key>
-	<true/>
-	<key>StandardErrorPath</key>
-	<string>/var/log/redis_6379.log</string>
-	<key>StandardOutPath</key>
-	<string>/var/log/redis_6379.log</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/var/log/redis_6379.log</string>
+    <key>StandardOutPath</key>
+    <string>/var/log/redis_6379.log</string>
 </dict>
 </plist>
 ```
