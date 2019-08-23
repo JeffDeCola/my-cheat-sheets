@@ -5,6 +5,14 @@
 This cheat-sheet is heavy on Windows and go, and I probably
 should of called it `VS Code for Windows using go`.
 
+Table of Contents,
+
+* [INSTALL ON LINUX OR WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#install-on-linux-or-windows)
+* [CONFIGURE - LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#configure---linux)
+* [CONFIGURE - WINDOWS VERSION OF VS CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#configure---windows-version-of-vs-code)
+* [INSTALLING EXTENSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#installing-extensions) 
+* [USING GO with WINDOWS VS CODE and BASH WSL TERMINAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#using-go-with-windows-vs-code-and-bash-wsl-terminal)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
