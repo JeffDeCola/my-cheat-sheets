@@ -4,6 +4,15 @@
 of custom machine `images` (for multiple platforms) from a single
 configuration file._
 
+Table of Contents,
+
+* [AUTOMATES MACHINE IMAGE BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#automates-machine-image-builds)
+* [INSTALL PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#install-packer)
+* [HOW PACKER CREATES YOUR CUSTOM IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#how-packer-creates-your-custom-image)
+* [TEMPLATE FILE (CONFIGURATION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#template-file-configuration)
+* [VALIDATE THE TEMPLATE FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#validate-the-template-file)
+* [RUN THE TEMPLATE FILE (BUILD THE IMAGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet#run-the-template-file-build-the-image)
+
 Documentation and reference,
 
 * My cheat sheet,

@@ -43,15 +43,21 @@ The tarball format is,
 tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-For example, I want to install go ver `1.12.7` on my OS `linux`
+For example, I want to install go ver `1.12.9` on my OS `linux`
 and architecture `amd64` machine,
 
 ```bash
-FileName='go1.12.7.linux-amd64.tar.gz'
+FileName='go1.12.9.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
 sudo mv go /usr/local
 rm $FileName
+```
+
+For macOS just use a different FileName,
+
+```bash
+FileName='go1.12.9.darwin-amd64.tar.gz'
 ```
 
 ## CONFIGURE
