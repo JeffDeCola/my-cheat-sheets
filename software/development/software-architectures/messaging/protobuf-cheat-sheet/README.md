@@ -22,8 +22,8 @@ Table of Contents,
 
 Documentation and reference,
 
-* For some example with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging/protobuf)
+* For some examples with go, refer to my repo
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -43,9 +43,9 @@ your data so that it can be parsed elsewhere.
 
 The flow is,
 
-1. DEFINE - The message format (using .proto file)
-1. COMPILE - the .proto file to your language
-1. IMPLEMENT - Use proto file in your code
+1. `DEFINE` - The message format (using .proto file)
+1. `COMPILE` - the .proto file to your language
+1. `IMPLEMENT` - Use proto file in your code
 
 Here is an illustration on how protobuf works,
 
@@ -71,6 +71,13 @@ sudo unzip -o $PROTOC_ZIP -d /usr/local bin/protoc
 rm -f $PROTOC_ZIP
 ```
 
+For Raspberry pi,
+
+```bash
+apt list *protobuf*
+sudo apt install protobuf-compiler
+```
+
 Check version,
 
 ```bash
@@ -83,12 +90,12 @@ for your language.
 ## INSTALL LIBRARIES FOR GO
 
 ```bash
-go get -u github.com/golang/protobuf/protoc-gen-go
+go get -v -u github.com/golang/protobuf/protoc-gen-go
 ```
 
 This will,
 
-* Get the libraries and place in /src/github.com/golang/protobuf
+* Get the libraries and place in `/src/github.com/golang/protobuf`
 * Place `protoc-gen-go` binary (used for protoc) in `$GOPATH/bin/protoc-gen-go`
 
 ## 1. DEFINE - .proto FILE
@@ -130,10 +137,9 @@ protoc --go_out=. messages.proto
 ## 3. IMPLEMENT - IN YOUR CODE
 
 Refer to my repo with go examples using protobuf
-[here](https://github.com/JeffDeCola/my-go-examples/tree/master/messaging).
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging).
 
 ## USEFUL FOR RPC
 
-Protobuf serves as a basis for a custom remote procedure
-call (RPC) system that can be used for
-inter-machine communication.
+Protobuf serves as a basis for a custom Remote Procedure
+Call (RPC) system that can be used for inter-machine communication.
