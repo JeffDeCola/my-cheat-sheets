@@ -6,6 +6,9 @@ tl;dr,
 
 ```bash
 nats-server -v
+nats-server -DV -p 4222 -a 127.0.0.1
+# INSTALL NATS GO CLIENT LIBRARIES
+go get -v -u github.com/nats-io/nats.go/
 ```
 
 Table of Contents,
@@ -25,7 +28,9 @@ View my entire list of cheat sheets on
 
 ## NATS
 
-NATS is a Message BUS. The official NATS server was `gnatsd`
+NATS is a Message BUS.
+Fundamentally NATS is about publishing and listening for messages.
+The official NATS server was `gnatsd`
 but renamed to `nats-server` for the v2.0.0.release.
 
 ## INSTALL A NATS SERVER (nats-server)
@@ -67,7 +72,7 @@ check,
 nats-server -v
 ```
 
-## START NATS
+## START NATS (nat-server)
 
 For the default of `0.0.0.0:4222` (security is disabled),
 
@@ -78,8 +83,14 @@ nats-server -DV -p 4222 -a 127.0.0.1
 
 Where -DV is both debug and trace log.
 
-## GO CLIENT LIBRARY
+The NATS server listens for client connections on TCP Port 4222.
+
+## INSTALL NATS GO CLIENT LIBRARY
 
 ```go
 go get -v -u github.com/nats-io/nats.go/
 ```
+
+Refer to my repo
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging)
+for how to connect to NATS and use via go.
