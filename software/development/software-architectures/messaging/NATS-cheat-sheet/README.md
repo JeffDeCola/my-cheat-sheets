@@ -11,10 +11,12 @@ nats-server -DV -p 4222 -a 127.0.0.1
 go get -v -u github.com/nats-io/nats.go/
 ```
 
-Table of Contents,
+Table of contents,
 
-*
-*
+* [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#nats)
+* [INSTALL A NATS SERVER (nats-server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#install-a-nats-server-nats-server)
+* [START NATS (nat-server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#start-nats-nat-server)
+* [INSTALL NATS GO CLIENT LIBRARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#install-nats-go-client-library)
 
 Documentation and reference,
 
