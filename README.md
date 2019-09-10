@@ -185,6 +185,7 @@ Various Apps and tools for the goal of creating an App/Service.
 
 * SaaS - SOFTWARE AS A SERVICE
 
+  * [keybase](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/keybase-cheat-sheet)
   * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet)
 
 * FaaS - FUNCTION AS A SERVICE
