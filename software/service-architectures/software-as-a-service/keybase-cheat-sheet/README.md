@@ -35,7 +35,7 @@ go install -tags production github.com/keybase/client/go/keybase
 Run service,
 
 ```bash
-keybase service
+keybase service &
 ```
 
 Run client,
