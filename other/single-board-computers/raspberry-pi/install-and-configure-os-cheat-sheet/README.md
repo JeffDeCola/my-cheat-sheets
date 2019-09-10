@@ -7,6 +7,7 @@
 * [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#basic-configuration)
 * [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
 * [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
+* [INCREASE SWAP SPACE FROM 100M TO 2G](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#increase-swap-space-from-100m-to-2g)
 
 Some fun things you can do with your raspberry pi,
 
@@ -261,4 +262,27 @@ with,
 sudo ifconfig wlan0 hw ether AE:EF:49:11:81:41 #Spoofed MAC
 sudo ifconfig wlan0 up # Start
 sudo dhclient wlan0 # Start DHCP
+```
+
+## INCREASE SWAP SPACE FROM 100M TO 2G
+
+Increase you swap[ from 100M to 4GB.
+
+Edit,
+
+```bash
+sudo nano /etc/dphys-swapfile
+```
+
+Change to,
+
+```txt
+CONF_SWAPSIZE=2000
+```
+
+Stop and start,
+
+```bash
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
 ```
