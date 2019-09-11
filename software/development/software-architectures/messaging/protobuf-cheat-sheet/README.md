@@ -13,11 +13,10 @@ protoc --go_out=. messages.proto
 Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#overview)
-* [INSTALL PROTOC FROM SOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#install-protoc-from-source)
+* [INSTALL PROTOBUF COMPILER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#install-protobuf-compiler)
 * [INSTALL LIBRARIES FOR GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#install-libraries-for-go)
-* [1. DEFINE - .proto FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#1-define---proto-file)
-* [2. COMPILE - RUN PROTOC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#2-compile---run-protoc)
-* [3. IMPLEMENT - IN YOUR CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#3-implement---in-your-code)
+* [1. DEFINE - .proto FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#1-define---proto-file) 
+* [2. COMPILE - RUN PROTOC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#2-compile---run-protoc)* [3. IMPLEMENT - IN YOUR CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#3-implement---in-your-code)
 * [USEFUL FOR RPC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#useful-for-rpc)
 
 Documentation and reference,
