@@ -51,7 +51,37 @@ Here is an illustration on how protobuf works,
 
 ![IMAGE - protobuf - IMAGE](../../../../../docs/pics/protobuf.jpg)
 
-## INSTALL PROTOC FROM SOURCE
+## INSTALL PROTOBUF COMPILER
+
+Like all software, there are many ways to install.
+
+### FROM SOURCE
+
+The protocol compiler is written in C++.  It will take a while to compile it,
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install autoconf automake libtool curl make g++ unzip
+PROTOC_ZIP=protobuf-cpp-3.9.1.zip
+curl -OL https://github.com/google/protobuf/releases/download/v3.9.1/$PROTOC_ZIP
+unzip $PROTOC_ZIP
+rm $PROTOC_ZIP
+cd protobuf-3.9.1
+./configure
+make
+make check
+sudo make install
+sudo ldconfig
+```
+
+Check version,
+
+```bash
+protoc --version
+```
+
+### PRE-BUILT - EASIEST WAY
 
 For macOS,
 
@@ -69,6 +99,13 @@ PROTOC_ZIP=protoc-3.7.1-linux-x86_64.zip
 curl -OL https://github.com/google/protobuf/releases/download/v3.7.1/$PROTOC_ZIP
 sudo unzip -o $PROTOC_ZIP -d /usr/local bin/protoc
 rm -f $PROTOC_ZIP
+```
+
+Or you could probably do for ubuntu/debian package. But I don't
+recommend since it probably an older version,
+
+```bash
+sudo apt-get install protobuf-compiler
 ```
 
 For Raspberry pi,
