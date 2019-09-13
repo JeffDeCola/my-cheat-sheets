@@ -57,8 +57,6 @@ The syntax can look something like,
 
 ## INSTALL LaTeX
 
-Install LaTeX on different OS,
-
 ### LINUX
 
 This is to install a full version with all the packages,
@@ -79,8 +77,13 @@ latex -version
 
 ### MACOS
 
+Download and install the full version called MacTex from
+[here](http://tug.org/mactex/mactex-download.html).
+
+Check version,
+
 ```bash
-brew cask install basictex
+latex -version
 ```
 
 ## CONVERTING TO OTHER FILE FORMATS
