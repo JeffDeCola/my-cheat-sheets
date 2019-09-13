@@ -111,12 +111,10 @@ I run everything on my local machine using my own
 It works by taking your LaTeX math formula, rendering an image and
 referencing that image using HTML.
 
-As a reminder, I installed in the repo,
+As a reminder, I installed using,
 
 ```bash
-git clone https://github.com/leegao/readme2tex
-cd readme2tex
-sudo python setup.py develop
+sudo pip install readme2tex
 ```
 
 First, I created and edit in README.tex.md. Second, I run `readme2tex`. This will,
