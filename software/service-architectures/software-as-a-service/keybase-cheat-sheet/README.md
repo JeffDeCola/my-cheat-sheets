@@ -6,6 +6,17 @@ encrypted private and group repos.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## WHY DO YOU NEED THIS
+
+I use it for the `encrypted repos` hosted at keybase.io.
+It is not like github where you can goto the website and do PR, etc.
+Its just a place to keep a repo that is encrypted end-to-end.
+
+Hence this program is connected to your keybase account
+and will encrypt your data before it is sent to the repo.
+
+Refer to your keybase app to create a repo and then just use normal git.
+
 ## INSTALL
 
 The easiest way to install is being going to the website

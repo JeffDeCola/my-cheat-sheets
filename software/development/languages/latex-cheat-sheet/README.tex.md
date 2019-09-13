@@ -57,6 +57,10 @@ The syntax can look something like,
 
 ## INSTALL LaTeX
 
+Install LaTeX on different OS,
+
+### LINUX
+
 This is to install a full version with all the packages,
 
 ```bash
@@ -71,6 +75,12 @@ Check version,
 
 ```bash
 latex -version
+```
+
+### MACOS
+
+```bash
+brew cask install basictex
 ```
 
 ## CONVERTING TO OTHER FILE FORMATS
@@ -100,6 +110,14 @@ I run everything on my local machine using my own
 
 It works by taking your LaTeX math formula, rendering an image and
 referencing that image using HTML.
+
+As a reminder, I installed in the repo,
+
+```bash
+git clone https://github.com/leegao/readme2tex
+cd readme2tex
+sudo python setup.py develop
+```
 
 First, I created and edit in README.tex.md. Second, I run `readme2tex`. This will,
 
