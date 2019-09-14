@@ -75,12 +75,38 @@ It ends in 2140 at 21,000,000 bitcoins.
 
 * Hash:  Based
 
-## PRIVATE & PUBLIC WALLETS
+## WALLETS & EXCHANGE
+
+There is a difference.
+
+### WALLET
 
 A Wallet has the ability to,
 
 * Send
 * Receive
+
+Pros,
+
+* You can use your bitcoin.
+
+### EXCHANGE
+
+The ability to,
+
+* Buy
+* Sell
+* Convert
+
+Pros,
+
+* Get money in and out of bitcoin.
+
+### HYBRID
+
+Like coinbase, its a mix of the two and it can be confusing.
+
+### PRIVATE AND PUBLIC WALLETS
 
 A `Private Wallet` is just that, private.
 You have a wallet address.  You own that address.
@@ -93,11 +119,3 @@ For example, here is a private wallet for XLM Lumens,
 A `Public Wallet` is just that, used by many people.
 But you now need a unique identifier to determine who you are,
 hence a Destination Tag/Memo. Coinbase uses Public Wallets.
-
-## EXCHANGE
-
-The ability to,
-
-* Buy
-* Sell
-* Convert

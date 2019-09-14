@@ -37,18 +37,20 @@ View my entire list of cheat sheets on
 
 Nobody can change that piece of information once it is on a blockchain
 
-## STEP 1 - A BLOCK OF DATA
+## HOW DOES IT WORK
+
+### STEP 1 - A BLOCK OF DATA
 
 * A Block mainly has immutable data in it
 
-## STEP 2 - BLOCK HASH
+### STEP 2 - BLOCK HASH
 
 * Every block gets a unique digital signature (a hash)
   that corresponds to exactly the data in that block.
 * The hash has a few characters at the beginning
   that are unique (e.g. 000).  More on this in a bit.
 
-## STEP 3 - CHAIN BLOCKS TOGETHER
+### STEP 3 - CHAIN BLOCKS TOGETHER
 
 * Chain blocks together with the previous blocks hash.
 * Hence block 2 has the has of block 1 and using it for its hash.
@@ -63,7 +65,7 @@ That would create a new hash.
 
 That would obviously break the chain, and it is rejected.
 
-## STEP 4 - MINING - FINDING THE NONCE
+### STEP 4 - MINING - FINDING THE NONCE
 
 When adding a block we have three things,
 
