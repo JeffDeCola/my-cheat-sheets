@@ -56,7 +56,7 @@ Nobody can change that piece of information once it is on a blockchain
 
 Here is an illustration of a chain of blocks,
 
-![IMAGE - blockchain-data-hash - IMAGE](docs/pics/blockchain-data-hash.jpg)
+![IMAGE - blockchain-data-hash - IMAGE](../../../../../docs/pics/blockchain-data-hash.jpg)
 
 Now imagine if the data in block 1 is altered, even by 1 bit.
 That would create a new hash.
@@ -75,7 +75,7 @@ The goal is to find a nonce that will result in the
 hash to have that unique number (e.g. 000) at
 the start of the hash.
 
-![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](docs/pics/blockchain-with-mining-data-hash-nonce.jpg)
+![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](../../../../../docs/pics/blockchain-with-mining-data-hash-nonce.jpg)
 
 ## WHY IS THIS IMMUTABLE
 
