@@ -43,6 +43,10 @@ There are hundreds of currencies, these are my favorites.
 
 * Hash: SHA-256 Based
 
+Bitcoins can be mined every 10 minutes.
+Every 4 years that number gets cut in half.
+It ends in 2140 at 21,000,000 bitcoins.
+
 ### DAI (DAI)
 
 * Hash: Not sure
@@ -73,6 +77,11 @@ There are hundreds of currencies, these are my favorites.
 
 ## PRIVATE & PUBLIC WALLETS
 
+A Wallet has the ability to,
+
+* Send
+* Receive
+
 A `Private Wallet` is just that, private.
 You have a wallet address.  You own that address.
 A private wallet is one which the individual fully controls
@@ -82,11 +91,13 @@ For example, here is a private wallet for XLM Lumens,
 [Stellar Lumens (XLM) Private Wallet](https://stellar.expert/explorer/public/account/GBKIQHJT7QP6JVLQZRHR7XQMKBFCN5ZCB5BZMEAGVTTZIJTBBZANMTK5)
 
 A `Public Wallet` is just that, used by many people.
-But you now need a unique identifier to determine who you are
-that is called a Destination Tag/Memo. Coinbase uses Public Wallets.
+But you now need a unique identifier to determine who you are,
+hence a Destination Tag/Memo. Coinbase uses Public Wallets.
 
 ## EXCHANGE
 
-The Ability to buy and sell currency.
+The ability to,
 
-
+* Buy
+* Sell
+* Convert

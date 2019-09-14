@@ -18,7 +18,9 @@ Table of Contents,
 
 Documentation and reference,
 
-* tbd
+* A
+  [simple-blockchain](https://github.com/JeffDeCola/my-go-examples/tree/master/blockchain/simple-blockchain)
+  I wrote in go in `my-go-examples` repo.
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -44,7 +46,7 @@ Nobody can change that piece of information once it is on a blockchain
 * Every block gets a unique digital signature (a hash)
   that corresponds to exactly the data in that block.
 * The hash has a few characters at the beginning
-  that are unique (e.g. 12345).  More on this in a bit.
+  that are unique (e.g. 000).  More on this in a bit.
 
 ## STEP 3 - CHAIN BLOCKS TOGETHER
 
@@ -54,7 +56,7 @@ Nobody can change that piece of information once it is on a blockchain
 
 Here is an illustration of a chain of blocks,
 
-![IMAGE - blockchain-linking-blocks-together - IMAGE](docs/pics/blockchain-linking-blocks-together.jpg)
+![IMAGE - blockchain-data-hash - IMAGE](docs/pics/blockchain-data-hash.jpg)
 
 Now imagine if the data in block 1 is altered, even by 1 bit.
 That would create a new hash.
@@ -70,15 +72,12 @@ When adding a block we have three things,
 * A nonce (a random info to mine)
 
 The goal is to find a nonce that will result in the
-hash to have that unique number (e.g. 12345) at
+hash to have that unique number (e.g. 000) at
 the start of the hash.
 
-![IMAGE - blockchain-data-hash-nonce - IMAGE](docs/pics/blockchain-data-hash-nonc.jpg)
+![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](docs/pics/blockchain-with-mining-data-hash-nonce.jpg)
 
 ## WHY IS THIS IMMUTABLE
 
-It is almost impossible to go back int he chain and change anything.
+It is almost impossible to go back in the chain and change anything.
 The amount of computation power is virtually infinite.
-
-
-
