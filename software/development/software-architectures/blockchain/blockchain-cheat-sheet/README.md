@@ -37,6 +37,8 @@ View my entire list of cheat sheets on
 
 Nobody can change that piece of information once it is on a blockchain
 
+Blockchain is a structure for storing data in which groups of valid transactions, called blocks, form a chronological chain, with each block cryptographically linked to the previous one. 
+
 ## HOW DOES IT WORK
 
 ### STEP 1 - A BLOCK OF DATA
@@ -79,7 +81,13 @@ the start of the hash.
 
 ![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](../../../../../docs/pics/blockchain-with-mining-data-hash-nonce.jpg)
 
-## WHY IS THIS IMMUTABLE
+## WHY IS THIS IMMUTABLE - WHY WE ADD BLOCKS
 
 It is almost impossible to go back in the chain and change anything.
 The amount of computation power is virtually infinite.
+
+By adding new blocks you keep the chain going, hence
+bad people can't start changing the data because they have to
+re calculate all the blocks.  It because impossible.
+
+
