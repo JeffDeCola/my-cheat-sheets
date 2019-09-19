@@ -74,6 +74,16 @@ It ends in 2140 at 21,000,000 bitcoins.
 ### STELLAR LUMENS (XLM)
 
 * Hash:  Based
+* Transactions take only 5 seconds
+* Transactions cost a tiny fraction of a penny
+* Stellar does not burn mountains of fossil fuels (see Ethereum or Bitcoin)
+* A person can send a token or currency to another user, magically
+  transforming it to a different token in the process.
+
+### Zcash (ZEC)
+
+Did not use 3rd, party but installed their Wallet on stimpy from
+[here](https://z.cash/download/)
 
 ## WALLETS & EXCHANGE
 
