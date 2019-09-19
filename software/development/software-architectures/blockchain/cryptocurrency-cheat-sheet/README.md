@@ -8,19 +8,24 @@
 exchange that uses strong encryption to secure financial transactions.
 The validity of each cryptocurrency's coins is provided by a blockchain._
 
-tl;dr,
-
-```bash
-tbd
-```
-
 Table of Contents,
 
-* tbd
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#overview)
+* [TOP CURRENCIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#top-currencies)
+  * [BITCOIN (BTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#bitcoin-btc)
+  * [DAI (DAI)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#dai-dai)
+  * [EOS (EOS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#eos-eos)
+  * [ETHEREUM (ETH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#ethereum-eth)
+  * [ETHEREUM CLASSIC (ETC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#ethereum-classic-etc)
+  * [LITECOIN (LTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#litecoin-ltc)
+  * [STELLAR LUMENS (XLM)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#stellar-lumens-xlm)
+  * [ZCASH (ZEC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#zcash-zec)
+* [WALLETS & EXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#wallets--exchange)
 
-Documentation and reference,
+documentation and reference,
 
-* tbd
+* My
+  [blockchain cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
@@ -29,11 +34,14 @@ View my entire list of cheat sheets on
 
 To understand cryptocurrency you must understand blockchain.
 
-A blockchain is a new kind of infrastructure software. From a developer’s
-perspective you can create an immutable history of transactions on a
-blockchain. Once those transactions are stored on a blockchain, it
-is guaranteed that those transactions will not be deleted, modified,
+From a developer’s perspective you can create an immutable history of data on a
+blockchain. Once data is stored on a blockchain, it
+is guaranteed that that data will not be deleted, modified,
 or forged without a trace of the action.
+
+The data for cryptocurrency is the transactions.
+
+The reason to add to the chain is keep it unhackable.
 
 ## TOP CURRENCIES
 
@@ -41,23 +49,45 @@ There are hundreds of currencies, these are my favorites.
 
 ### BITCOIN (BTC)
 
+* Launch: 2009
+* Official website:
+  [bitcoin.org](https://bitcoin.org/en/)
+* Can you mine: **YES**
 * Hash: SHA-256 Based
-
-Bitcoins can be mined every 10 minutes.
-Every 4 years that number gets cut in half.
-It ends in 2140 at 21,000,000 bitcoins.
+* Max Supply: 21 Million
+* Proof Type: PoW
+* Example of a Wallet:
+  [btc.com](https://btc.com/bc1q7ukm7lezz8qc5mjx9qjnpa7jq059qveqzvt38p)
+* Bitcoins can be mined every 10 minutes
+* Every 4 years that number gets cut in half
+* Mining ends in 2140 at 21,000,000 bitcoins
 
 ### DAI (DAI)
 
-* Hash: Not sure
-* Dai is always worth $1 USD each
+* Launch: ???
+* Official website:
+  [makerdao.com](https://makerdao.com/en/dai)
+* Can you mine: ??
+* Hash: ??? Based
+* Max Supply: ???
+* Proof Type: Po?
+* Example of a Wallet:
+  [etherscan.io](https://etherscan.io/address/0x1e195263ad67ca3daf5772dd824f7d0ae16b9735)
+* Dai is always worth $1 USD
 * Anyone with an Ethereum wallet can own, accept, and transfer it
 * It can be exchanged without any middleman
 
 ### EOS (EOS)
 
-* [eos.io](https://eos.io/)
-* Hash: Not sure
+* Launch: ???
+* Official website:
+  [eos.io](https://eos.io/)
+* Can you mine: ??
+* Hash: ??? Based
+* Max Supply: ???
+* Proof Type: PoS
+* Example of a Wallet:
+  []()
 * Built for both public and private use
 * Written in C++
 * The protocol emulates most of the attributes of a real computer
@@ -65,24 +95,74 @@ It ends in 2140 at 21,000,000 bitcoins.
 
 ### ETHEREUM (ETH)
 
-* Hash:  Based
+* Launch: 2015
+* Official website:
+  [ethereum.org](https://www.ethereum.org/)
+* Can you mine: **YES**
+* Hash: ethash
+* Max Supply: No Limit
+* Proof Type: PoW
+* Example of a Wallet:
+  [etherscan.io](https://etherscan.io/address/0x1e195263ad67ca3daf5772dd824f7d0ae16b9735)
+* Its not a currency, its a platform
+
+### ETHEREUM CLASSIC (ETC)
+
+A hard fork of etherium,
+
+* Launch: 2015
+* Official website:
+  [ethereumclassic.org](https://ethereumclassic.org/)
+* Can you mine: **YES**
+* Hash: ethash
+* Max Supply: No Limit
+* Proof Type: PoW
+* Example of a Wallet:
+  [etherscan.io](https://etherscan.io/address/0x1e195263ad67ca3daf5772dd824f7d0ae16b9735)
+* Its not a currency, its a platform
 
 ### LITECOIN (LTC)
 
-* Hash:  Based
+* Launch: 2011
+* Official website:
+  [litecoin.org](https://litecoin.org/)
+* Can you mine: **YES**
+* Hash: scrypt
+* Max Supply: 84,000,000
+* Proof Type: PoW
+* Example of a Wallet:
+  []()
 
 ### STELLAR LUMENS (XLM)
 
-* Hash: Based
+* Launch: 2014
+* Official website:
+  [stellar.org](https://www.stellar.org/)
+* Can you mine: NO
+* Hash: ??? Based
+* Supply: 100 Billion
+* Proof Type: Consensus Protocol
+* Example of a Wallet:
+  [stellar.expert](https://stellar.expert/explorer/public/account/GBWTLKXCMOW3OGCVUQBBMK2DK5ZVGWJBRZWTHYVDBM67CHET7YIUJ7IE)
 * Transactions take only 5 seconds
 * Transactions cost a tiny fraction of a penny
-* Stellar does not burn mountains of fossil fuels (see Ethereum or Bitcoin)
+* Stellar does not burn electricity to mine like Ethereum or Bitcoin)
 * A person can send a token or currency to another user, magically
   transforming it to a different token in the process.
 
-### Zcash (ZEC)
+### ZCASH (ZEC)
 
-Did not use 3rd, party but installed their ZecWallet
+* Launch: 2016
+* Official website:
+  [z.cash](https://z.cash/)
+* Can you mine: **YES**
+* Hash: Equihash based
+* Max Supply: 21,000,000
+* Proof Type: PoW
+* Example of a Wallet:
+  [explorer.zcha.in](https://explorer.zcha.in/accounts/t1dsSDxhm8WN5XistRCkezFXsdTqsFAx7gE)
+
+I installed their ZecWallet from
 [here](https://z.cash/download/).
 
 If you use the Windows Desktop `ZecWallet` the data is stored in,
@@ -104,7 +184,7 @@ A Wallet has the ability to,
 
 Pros,
 
-* You can use your bitcoin.
+* You can use your bitcoin
 
 ### EXCHANGE
 
@@ -116,7 +196,7 @@ The ability to,
 
 Pros,
 
-* Get money in and out of bitcoin.
+* Get money in and out of bitcoin
 
 ### HYBRID
 
