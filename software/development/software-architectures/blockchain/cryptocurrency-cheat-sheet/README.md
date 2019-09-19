@@ -73,7 +73,7 @@ It ends in 2140 at 21,000,000 bitcoins.
 
 ### STELLAR LUMENS (XLM)
 
-* Hash:  Based
+* Hash: Based
 * Transactions take only 5 seconds
 * Transactions cost a tiny fraction of a penny
 * Stellar does not burn mountains of fossil fuels (see Ethereum or Bitcoin)
@@ -82,8 +82,14 @@ It ends in 2140 at 21,000,000 bitcoins.
 
 ### Zcash (ZEC)
 
-Did not use 3rd, party but installed their Wallet on stimpy from
-[here](https://z.cash/download/)
+Did not use 3rd, party but installed their ZecWallet
+[here](https://z.cash/download/).
+
+If you use the Windows Desktop `ZecWallet` the data is stored in,
+
+```txt
+C:/Users/Jeff/AppData/Roaming/Zcash/zcash.conf
+```
 
 ## WALLETS & EXCHANGE
 
