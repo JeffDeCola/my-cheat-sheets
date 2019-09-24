@@ -66,7 +66,7 @@ Zcash company which is a complete package that will let you,
 
 Here is an illustration of what we are going to do,
 
-![IMAGE - mine-zcash-cryptocurrency - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency.jpg)
+![IMAGE - mine-zcash-cryptocurrency-macos - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency-macos.jpg)
 
 ## INSTALL FROM SOURCE ON YOUR MACOS
 
