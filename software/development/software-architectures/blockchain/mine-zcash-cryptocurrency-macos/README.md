@@ -1,4 +1,4 @@
-# MINE ZCASH CRYPTOCURRENCY CHEAT SHEET
+# MINE ZCASH CRYPTOCURRENCY MACOS CHEAT SHEET
 
 `mine-zcash-cryptocurrency-macOS` _will show you how to mine for zcash(ZEC) on the
 Zcash mainnet on your macOS._
@@ -36,6 +36,7 @@ Table of Contents,
 * [INSTALL FROM SOURCE ON YOUR MACOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#install-from-source-on-your-macos)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#run)
 * [ZCASH-CLI COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#zcash-cli-commands)
+* [MINING POOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#mining-pools)
 
 ## OVERVIEW OF ZCASH
 
@@ -161,7 +162,7 @@ zcash-cli getmininginfo
 
 ## ZCASH-CLI COMMANDS
 
-````bash
+```bash
 zcash-cli help
 ```
 
@@ -181,3 +182,9 @@ Create and List z-addr wallet,
 zcash-cli z_getnewaddress
 zcash-cli z_listaddresses
 ```
+
+## MINING POOLS
+
+At some point this may be a good idea,
+
+[List of ming pools](https://www.zcashcommunity.com/mining/mining-pools/).
