@@ -171,6 +171,11 @@ If you use the Windows Desktop `ZecWallet` the data is stored in,
 C:/Users/Jeff/AppData/Roaming/Zcash/zcash.conf
 ```
 
+I wrote some cheatsheets on how mine zcash,
+
+* [mine-zcash-cryptocurrency-macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos)
+* [mine-zcash-cryptocurrency-windows-evga-gtx1080](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080)
+
 ## WALLETS & EXCHANGE
 
 There is a difference.
@@ -215,3 +220,23 @@ For example, here is a private wallet for XLM Lumens,
 A `Public Wallet` is just that, used by many people.
 But you now need a unique identifier to determine who you are,
 hence a Destination Tag/Memo. Coinbase uses Public Wallets.
+
+## MINING
+
+Mining is basically finding a nonce that will give
+you a hash with the first 10 digits of all zero.
+And whoever figures it out gets coins.
+Hence, computational power if the key.
+
+First, you choose your hardware and find the software that works with it.
+
+* Hardware
+  * CPU
+  * GPU
+  * ASIC
+
+You can also join a pool which you contribute with your
+computations and share in the pools rewards.
+
+The metric used is H/s (hashes per second)
+or Sol/s (SOLutions per Second).
