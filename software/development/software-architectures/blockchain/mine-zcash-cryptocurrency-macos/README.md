@@ -21,6 +21,8 @@ zcash-cli stop
     # LIST WALLETS
     zcash-cli getaddressesbyaccount ""
     zcash-cli z_listaddresses
+    # WALLET BALANCE
+    zcash-cli z_gettotalbalance
     # GET PRIVATE WALLET KEY
     zcash-cli dumpprivkey "t-addr"
 # DATA
@@ -63,6 +65,7 @@ Zcash company which is a complete package that will let you,
 * Run a full Node
 * Mine with your CPU
 * Built in Wallet for sending and receiving Zcash
+* Ability to hook up to pools (Optional)
 
 Here is an illustration of what we are going to do,
 
@@ -181,6 +184,12 @@ Create and List z-addr wallet,
 ```bash
 zcash-cli z_getnewaddress
 zcash-cli z_listaddresses
+```
+
+Wallet balance,
+
+```bash
+zcash-cli z_gettotalbalance
 ```
 
 ## MINING POOLS
