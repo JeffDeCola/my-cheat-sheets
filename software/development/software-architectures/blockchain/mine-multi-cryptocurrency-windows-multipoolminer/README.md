@@ -9,8 +9,13 @@ since you would need a full node.  **The pool keeps the node**.
 
 Table of Contents,
 
-* tbd
-
+* [MININGPOOLHUB.COM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#miningpoolhubcom)
+  * [CONFIGURE AUTOEXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#configure-autoexchange)
+  * [ADD A HUB WORKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#add-a-hub-worker)
+* [MULTIPOOLMINER.EXE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#multipoolminerexe)
+  * [DOWNLOAD & INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#download--install)
+  * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer#configure)
+  
 ## MININGPOOLHUB.COM
 
 First, lets pick you pool. I registered at
@@ -70,7 +75,7 @@ Grab the latest Windows binary from
 
 Place the folder anywhere on your rig.
 
-## CONFIGURE
+### CONFIGURE
 
 Its actually very simple. Open `Start-MiningPoolHub.bat` and simply edit
 the following line to something like,
