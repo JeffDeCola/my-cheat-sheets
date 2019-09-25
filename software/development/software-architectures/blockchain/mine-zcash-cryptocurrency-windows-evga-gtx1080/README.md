@@ -1,17 +1,19 @@
 # MINE ZCASH CRYPTOCURRENCY WINDOWS EVGA GTX1080 CHEAT SHEET
 
-`mine-zcash-cryptocurrency-windows-evga-gtx1080` _will show you how to mine for zcash(ZEC) on the
-Zcash mainnet on your maWindows 10 using your GPU (EVGA GTX1080)._
+`mine-zcash-cryptocurrency-windows-evga-gtx1080` _will show you how to mine for
+zcash(ZEC) on the Zcash mainnet on your Windows 10 using your GPU (EVGA GTX1080).
+I will be using open source sw `funakoshiMiner` connected to `Slush Pool` by BitFly._
 
-tl;dr,
-
-```bash
-
-```
+This is pool based, meaning the software will not work independently
+since you would need a full node.
 
 Table of Contents,
 
-* tbd
+* [OVERVIEW OF ZCASH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080#overview-of-zcash)
+* [WINDOWS 10 EVGA GTX1080](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080#windows-10-evga-gtx1080)
+* [INSTALL funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080#install-funakoshiminer)
+* [GET A SLUSH POOL ACCOUNT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080#get-a-slush-pool-account)
+* [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080#configure)
 
 ## OVERVIEW OF ZCASH
 
@@ -31,17 +33,38 @@ The block spacing is 2.5 mins, so each block produces 12.5 ZEC.
 
 ## WINDOWS 10 EVGA GTX1080
 
-There are many different hardware options but I am going to use
-my gtx1080 on my windows rig. I will be using
+There are many different hardware and software options but
+I am going to use my gtx1080 on my windows rig.
+I will be using the open source funakoshiMiner with slush pool.
 
-* Run a full Node???
-* Mine with your CPU???
-* Built in Wallet for sending and receiving Zcash???
+`Funakoshi` is a Equihash CUDA Miner.  So it works with ZEC and ETH
+but not bitcoin.
 
-Here is an illustration of what we are going to do,
+Here is an illustration of what we're going to do,
 
 ![IMAGE - mine-zcash-cryptocurrency-windows-evga-gtx1080 - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency-windows-evga-gtx1080.jpg)
 
-## INSTALL FROM SOURCE ON YOUR MACOS
+## INSTALL funakoshiMiner
 
-Lets start the installation,
+Grab the latest Windows binary from
+[github.com/funakoshi2718/funakoshi-miner](https://github.com/funakoshi2718/funakoshi-miner)
+
+Place the folder anywhere on your rig.
+
+## GET A SLUSH POOL ACCOUNT
+
+You really can use any pool, but I choose
+[slushpool.com](https://slushpool.com).
+
+Provide them a wallet to put your mined coins.
+And then created a worker for ZEC coins in your dashboard.
+
+## CONFIGURE
+
+Its actually very simple. Open Start.bat and simply edit,
+
+```bash
+funakoshiMiner.exe --server us-east.zec.slushpool.com --port 4444 --user <USER>.<WORKER>
+```
+
+Thats it, you are mining and now wasting electricity.
