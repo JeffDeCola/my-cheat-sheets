@@ -1,11 +1,12 @@
-# MINE ZCASH CRYPTOCURRENCY WINDOWS EVGA GTX1080 CHEAT SHEET
+# MINE ZCASH CRYPTOCURRENCY WINDOWS NVIDIA GPU POOL CHEAT SHEET
 
-`mine-zcash-cryptocurrency-windows-evga-gtx1080` _will show you how to mine for
-zcash(ZEC) on the Zcash mainnet on your Windows 10 using your GPU (EVGA GTX1080).
-I will be using open source sw `funakoshiMiner` connected to `Slush Pool` by BitFly._
+`mine-zcash-cryptocurrency-windows-nvidia-gpu-pool` _will show you how to mine for
+zcash(ZEC) on the Zcash on your Windows 10 using your Nvidia GPU
+(e.g. EVGA GTX1080). I will be using open source software `funakoshiMiner`
+connected to `SlushPool`._
 
-This is pool based, meaning the software will not work independently
-since you would need a full node.
+This is **pool based**, meaning the software will not work independently
+since you would need a full node.  **The pool keeps the node**.
 
 Table of Contents,
 
@@ -42,7 +43,7 @@ but not bitcoin.
 
 Here is an illustration of what we're going to do,
 
-![IMAGE - mine-zcash-cryptocurrency-windows-evga-gtx1080 - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency-windows-evga-gtx1080.jpg)
+![IMAGE - mine-zcash-cryptocurrency-windows-nvidia-gpu-pool - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency-windows-nvidia-gpu-pool.jpg)
 
 ## INSTALL funakoshiMiner
 

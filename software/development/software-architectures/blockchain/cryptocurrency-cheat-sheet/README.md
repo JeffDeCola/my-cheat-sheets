@@ -174,7 +174,7 @@ C:/Users/Jeff/AppData/Roaming/Zcash/zcash.conf
 I wrote some cheatsheets on how mine zcash,
 
 * [mine-zcash-cryptocurrency-macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos)
-* [mine-zcash-cryptocurrency-windows-evga-gtx1080](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-evga-gtx1080)
+* [mine-zcash-cryptocurrency-windows-nvidia-gpu-pool](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-nvidia-gpu-pool)
 
 ## WALLETS & EXCHANGE
 
