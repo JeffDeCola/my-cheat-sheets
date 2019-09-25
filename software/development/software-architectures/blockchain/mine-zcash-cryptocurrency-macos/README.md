@@ -153,6 +153,7 @@ Start, run in background or stop,
 ```bash
 zcashd
 zcashd -daemon
+zcashd -damemon=0 -showmetrics=1
 zcash-cli stop
 ```
 
