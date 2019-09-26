@@ -33,7 +33,7 @@ Check out my cheat sheet on all the popular
 
 Here is an illustration of what we're going to do,
 
-![IMAGE - mine-ZEC-windows-gpu-funakoshiMiner - IMAGE](../../../../../docs/pics/mine-ZEC-windows-gpu-funakoshiMiner.jpg)
+![IMAGE - mine-ZEC-windows-gpu-funakoshiMiner - IMAGE](../../../../docs/pics/mine-ZEC-windows-gpu-funakoshiMiner.jpg)
 
 ## POOL (slushpool.com)
 

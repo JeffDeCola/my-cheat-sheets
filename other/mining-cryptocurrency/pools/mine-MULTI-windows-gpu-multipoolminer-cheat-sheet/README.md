@@ -35,7 +35,7 @@ Check out my cheat sheet on all the popular
 
 Here is an illustration of what we're going to do,
 
-![IMAGE - mine-MULTI-windows-gpu-multipoolminer - IMAGE](../../../../../docs/pics/mine-MULTI-windows-gpu-multipoolminer.jpg)
+![IMAGE - mine-MULTI-windows-gpu-multipoolminer - IMAGE](../../../../docs/pics/mine-MULTI-windows-gpu-multipoolminer.jpg)
 
 ## POOL (miningpoolhub.com)
 

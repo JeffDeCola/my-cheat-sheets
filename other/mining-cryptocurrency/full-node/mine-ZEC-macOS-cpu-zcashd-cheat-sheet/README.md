@@ -61,7 +61,7 @@ Check out my cheat sheet on all the popular
 
 Here is an illustration of what we're going to do,
 
-![IMAGE - mine-ZEC-macOS-cpu-zcashd - IMAGE](../../../../../docs/pics/mine-ZEC-macOS-cpu-zcashd.jpg)
+![IMAGE - mine-ZEC-macOS-cpu-zcashd - IMAGE](../../../../docs/pics/mine-ZEC-macOS-cpu-zcashd.jpg)
 
 ## MINER (zcashd)
 
