@@ -46,7 +46,7 @@ Some other cheat sheets I'm working on,
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
-  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets#minning-cryptocurrency)
+  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets#mining-cryptocurrency)
   * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets#networks)
   * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets#random-stuff)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)

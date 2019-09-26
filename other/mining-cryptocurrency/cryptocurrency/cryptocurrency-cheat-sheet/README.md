@@ -6,17 +6,22 @@ The validity of each cryptocurrency's coins is provided by a blockchain._
 
 Table of Contents,
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#overview)
-* [TOP CURRENCIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#top-currencies)
-  * [BITCOIN (BTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#bitcoin-btc)
-  * [DAI (DAI)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#dai-dai)
-  * [EOS (EOS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#eos-eos)
-  * [ETHEREUM (ETH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#ethereum-eth)
-  * [ETHEREUM CLASSIC (ETC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#ethereum-classic-etc)
-  * [LITECOIN (LTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#litecoin-ltc)
-  * [STELLAR LUMENS (XLM)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#stellar-lumens-xlm)
-  * [ZCASH (ZEC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#zcash-zec)
-* [WALLETS & EXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#wallets--exchange)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#overview)
+* [TOP CURRENCIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#top-currencies)
+  * [BITCOIN (BTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#bitcoin-btc)
+  * [DAI (DAI)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#dai-dai)
+  * [EOS (EOS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#eos-eos)
+  * [ETHEREUM (ETH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#ethereum-eth)
+  * [ETHEREUM CLASSIC (ETC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#ethereum-classic-etc)
+  * [LITECOIN (LTC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#litecoin-ltc)
+  * [STELLAR LUMENS (XLM)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#stellar-lumens-xlm)
+  * [ZCASH (ZEC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#zcash-zec)
+* [WALLETS & EXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#wallets--exchange)
+  * [WALLET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#wallet)
+  * [EXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#exchange)
+  * [HYBRID](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#hybrid)
+  * [PRIVATE AND PUBLIC WALLETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#private-and-public-wallets)
+* [MINING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet#mining)
 
 Documentation and reference,
 
