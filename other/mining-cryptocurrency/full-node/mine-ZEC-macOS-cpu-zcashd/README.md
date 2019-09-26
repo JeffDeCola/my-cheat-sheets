@@ -1,7 +1,18 @@
-# MINE ZCASH CRYPTOCURRENCY MACOS CHEAT SHEET
+# MINE ZCASH MACOS CPU ZCASHD CHEAT SHEET
 
-`mine-zcash-cryptocurrency-macOS` _will show you how to mine for zcash(ZEC) on the
-Zcash mainnet on your macOS._
+`mine-ZEC-macOS-cpu-zcashd` _will show you
+how to mine for Zcash (ZEC)
+on your macOS CPU
+using `zcashd` node, wallet and mining software._
+
+My other mining cheatsheets,
+
+* FULL NODE
+  * [mine-ZEC-macOS-cpu-zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd)
+  **YOU ARE HERE**
+* POOLS
+  * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer)
+  * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner)
 
 tl;dr,
 
@@ -33,30 +44,26 @@ nano ~/Library/Application\ Support/Zcash/zcash.conf
 
 Table of Contents,
 
-* [OVERVIEW OF ZCASH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#overview-of-zcash)
-* [macOS CPU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#macos-cpu)
-* [INSTALL FROM SOURCE ON YOUR MACOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#install-from-source-on-your-macos)
-* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#run)
-* [ZCASH-CLI COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#zcash-cli-commands)
-* [MINING POOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos#mining-pools)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#overview)
+* [MINER (zcashd)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#miner-zcashd)
+  * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#install)
+  * [BUILD FOR NUMBER OF CORES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#build-for-number-of-cores)
+  * [CONFIGURE FOR MINING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#configure-for-mining)
+* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#run)
+* [ZCASH-CLI COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#zcash-cli-commands)
+  * [WALLETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#wallets)
+* [POOLS (OPTIONAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd#pools-optional)
 
-## OVERVIEW OF ZCASH
+Check out my cheat sheet on all the popular
+[cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
 
-* Launch: 2016
-* Official website:
-  [z.cash](https://z.cash/)
-* Can you mine: YES
-* Hash: Equihash based
-* Max Supply: 21,000,000
-* Proof Type: Proof of Work
-* Example of a Wallet:
-  [explorer.zcha.in](https://explorer.zcha.in/accounts/t1h1xStMimJTxAo9DvLY7koDj9UkKDACtxb)
+## OVERVIEW
 
-The Block Rewards will issue a total of 50 Zcash (ZEC) every 10 mins.
-The block spacing is 2.5 mins, so each block produces 12.5 ZEC.
-10% of all coins mined will go to the Founders Reward.
+Here is an illustration of what we're going to do,
 
-## macOS CPU
+![IMAGE - mine-ZEC-macOS-cpu-zcashd - IMAGE](../../../../../docs/pics/mine-ZEC-macOS-cpu-zcashd.jpg)
+
+## MINER (zcashd)
 
 There are many different hardware options but I am going to use
 my macOS CPU. The easiest is the Zcash software provided by
@@ -67,11 +74,7 @@ Zcash company which is a complete package that will let you,
 * Built in Wallet for sending and receiving Zcash
 * Ability to hook up to pools (Optional)
 
-Here is an illustration of what we are going to do,
-
-![IMAGE - mine-zcash-cryptocurrency-macos - IMAGE](../../../../../docs/pics/mine-zcash-cryptocurrency-macos.jpg)
-
-## INSTALL FROM SOURCE ON YOUR MACOS
+### INSTALL
 
 Lets start the installation,
 
@@ -193,8 +196,8 @@ Wallet balance,
 zcash-cli z_gettotalbalance
 ```
 
-## MINING POOLS
+## POOLS (OPTIONAL)
 
-At some point this may be a good idea,
+At some point this may be a good idea to join a pool,
 
 [List of ming pools](https://www.zcashcommunity.com/mining/mining-pools/).

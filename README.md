@@ -126,10 +126,6 @@ Various Apps and tools for the goal of creating an App/Service.
   * BLOCKCHAIN
 
     * [blockchain](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
-    * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet)
-    * [mine-multi-cryptocurrency-windows-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-multi-cryptocurrency-windows-multipoolminer)
-    * [mine-zcash-cryptocurrency-macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos)
-    * [mine-zcash-cryptocurrency-windows-nvidia-gpu-pool](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-nvidia-gpu-pool)
 
   * CRYPTOGRAPHY
 
@@ -400,6 +396,21 @@ quite a few years to finish._
     * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/linear-algebra-cheat-sheet)
     * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/number-theory-cheat-sheet)
     * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/order-theory-cheat-sheet)
+
+### MINING CRYPTOCURRENCY
+
+* CRYPTOCURRENCY
+
+  * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet)
+
+* FULL NODE
+
+  * [mine-ZEC-macOS-cpu-zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd)
+
+* POOLS
+
+  * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer)
+  * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner)
 
 ### NETWORKS
 

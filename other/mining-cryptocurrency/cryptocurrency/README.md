@@ -1,9 +1,5 @@
 # CRYPTOCURRENCY CHEAT SHEET
 
-```txt
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 `cryptocurrency` _is a digital asset in a decentralized
 exchange that uses strong encryption to secure financial transactions.
 The validity of each cryptocurrency's coins is provided by a blockchain._
@@ -22,7 +18,7 @@ Table of Contents,
   * [ZCASH (ZEC)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#zcash-zec)
 * [WALLETS & EXCHANGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/cryptocurrency-cheat-sheet#wallets--exchange)
 
-documentation and reference,
+Documentation and reference,
 
 * My
   [blockchain cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
@@ -162,6 +158,10 @@ A hard fork of etherium,
 * Example of a Wallet:
   [explorer.zcha.in](https://explorer.zcha.in/accounts/t1dsSDxhm8WN5XistRCkezFXsdTqsFAx7gE)
 
+The Block Rewards will issue a total of 50 Zcash (ZEC) every 10 mins.
+The block spacing is 2.5 mins, so each block produces 12.5 ZEC.
+10% of all coins mined will go to the Founders Reward.
+
 I installed their ZecWallet from
 [here](https://z.cash/download/).
 
@@ -170,11 +170,6 @@ If you use the Windows Desktop `ZecWallet` the data is stored in,
 ```txt
 C:/Users/Jeff/AppData/Roaming/Zcash/zcash.conf
 ```
-
-I wrote some cheatsheets on how mine zcash,
-
-* [mine-zcash-cryptocurrency-macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-macos)
-* [mine-zcash-cryptocurrency-windows-nvidia-gpu-pool](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/mine-zcash-cryptocurrency-windows-nvidia-gpu-pool)
 
 ## WALLETS & EXCHANGE
 
