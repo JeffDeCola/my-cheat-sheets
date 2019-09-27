@@ -6,9 +6,6 @@ on your Windows 10 GPU
 using `multipoolminer` mining software
 connected to the `miningpoolhub.com` pool._
 
-This is **pool based**, meaning the software will not work independently
-since you would need a full node.  **The pool keeps the node**.
-
 My other mining cheatsheets,
 
 * **FULL NODE**
