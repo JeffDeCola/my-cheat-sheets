@@ -5,6 +5,10 @@ how to mine for Zcash (ZEC)
 on your macOS CPU
 using `zcashd` node, wallet and mining software._
 
+NOTE: cpu mining really not worth it even if you join a pool.
+Also, you don't need a full node to mine solo anymore,
+just use a solo pool.
+
 My other mining cheatsheets,
 
 * **FULL NODE**
@@ -75,6 +79,10 @@ Zcash company which is a complete package that will let you,
 * Mine with your CPU
 * Built in Wallet for sending and receiving Zcash
 * Ability to hook up to pools (Optional)
+
+The benefit of a full node is that you can mine solo,
+rather than in a pool, but they have solo pools, so
+you really don't need to run a full node anymore.
 
 ### INSTALL
 
