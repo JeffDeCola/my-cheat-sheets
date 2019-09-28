@@ -68,7 +68,7 @@ miner.exe
 --port 4040
 --user <WALLET>.<WORKER>
 --pass x
---api 10053
+--api 10050
 ```
 
 ### NORMAL POOL
@@ -84,6 +84,6 @@ To run on `2miners.com` normal pool just change the pool and port,
 
 You can locally monitor your mining software,
 
-[localhost:10053/](http://localhost:10053/)
+[localhost:10050/](http://localhost:10050/)
 
 Thats it, you're mining and wasting electricity.
