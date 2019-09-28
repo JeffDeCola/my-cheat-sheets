@@ -1,4 +1,4 @@
-# MINE RVN (Ravencoin) WINDOWS GPU T-REX CHEAT SHEET
+# MINE RVN (Ravencoin) WINDOWS GPU USING T-REX CHEAT SHEET
 
 `mine-RVN-windows-gpu-t-rex-` _will show you
 how to mine for RVN (Ravencoin)
