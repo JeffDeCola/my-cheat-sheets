@@ -12,6 +12,7 @@ My other mining cheat sheets,
   * [mine-ZEC-macOS-cpu-zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd-cheat-sheet)
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
+  * [mine-BTG-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
   * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer-cheat-sheet)
   * [mine-RVN-windows-gpu-t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
@@ -23,6 +24,7 @@ Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#overview)
 * [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#miner)
+* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#pool)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#run)
 * [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#monitor)
 
@@ -44,6 +46,14 @@ Grab the latest Windows binary from
 [github.com/funakoshi2718/funakoshi-miner](https://github.com/funakoshi2718/funakoshi-miner)
 and place the folder anywhere on your rig.
 
+## POOL
+
+You can use any pool. For this example we're going to use
+[slushpool.com](https://slushpool.com/).
+
+After you sign up, you will place your username
+in the .bat file below.
+
 ## RUN
 
 To run on `slushpool.com` create a `start.bat` file,
@@ -58,14 +68,14 @@ setx GPU_SINGLE_ALLOC_PERCENT 100
 funakoshiMiner.exe \
 --server us-east.zec.slushpool.com \
 --port 4444 \
---user <USER>.<WORKER>
+--user <USERNAME>.<WORKER>
 -tele-port 10052
 ```
 
 ## MONITOR
 
-Because you set the port above, you can monitor your miner,
+You can locally monitor your mining software,
 
-[http://localhost:10052](http://localhost:10052)
+[localhost:10052](http://localhost:10052)
 
 Thats it, you're mining and wasting electricity.

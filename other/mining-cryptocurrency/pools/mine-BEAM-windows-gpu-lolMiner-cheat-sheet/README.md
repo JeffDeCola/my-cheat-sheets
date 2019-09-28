@@ -13,6 +13,7 @@ My other mining cheat sheets,
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
   **YOU ARE HERE**
+  * [mine-BTG-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
   * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer-cheat-sheet)
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
   * [mine-RVN-windows-gpu-t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
@@ -23,6 +24,7 @@ Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet#overview)
 * [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet#miner)
+* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet#pool)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet#run)
 * [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet#monitor)
 
@@ -40,8 +42,17 @@ Here is an illustration of what we're going to do,
 `lolMiner` is also a BEAM CUDA Miner.
 
 Grab the latest Windows binary from
-[github.com/Lolliedieb/lolMiner-releases/releases/](https://github.com/Lolliedieb/lolMiner-releases/releases/)
+[github.com/Lolliedieb/lolMiner-releases/releases](https://github.com/Lolliedieb/lolMiner-releases/releases/)
 and place the folder anywhere on your rig.
+
+## POOL
+
+You can use any pool. For this example we're going to use
+[2miners.com](https://2miners.com/)
+which doesn't require an account.
+
+The only thing you need is a personal wallet address
+that you will place in the .bat file below.
 
 ## RUN
 
@@ -75,8 +86,8 @@ To run on `2miners.com` normal pool just change the pool and port,
 
 ## MONITOR
 
-Because you set the port above, you can monitor your miner,
+You can locally monitor your mining software,
 
-[http://localhost:10051/summary](http://localhost:10051/summary)
+[localhost:10051/summary](http://localhost:10051/summary)
 
 Thats it, you're mining and wasting electricity.

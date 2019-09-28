@@ -1,9 +1,9 @@
-# MINE RVN (Ravencoin) WINDOWS GPU USING T-REX CHEAT SHEET
+# MINE BTG (Bitcoin Gold) WINDOWS GPU USING GMINER CHEAT SHEET
 
-`mine-RVN-windows-gpu-t-rex-` _will show you
-how to mine for RVN (Ravencoin)
+`mine-BTG-windows-gpu-gminer` _will show you
+how to mine for BTG (Bitcoin Gold)
 on your Windows 10 GPU
-using `t-rex` mining software
+using `gminer` mining software
 connected to a pool._
 
 My other mining cheat sheets,
@@ -13,20 +13,20 @@ My other mining cheat sheets,
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
   * [mine-BTG-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
+    **YOU ARE HERE**
   * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer-cheat-sheet)
   * [mine-RVN-windows-gpu-t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
-  **YOU ARE HERE**
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
   * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
   * [mine-ZEL-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
 
 Table of Contents,
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#overview)
-* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#miner)
-* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#pool)
-* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#run)
-* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#monitor)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet#overview)
+* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet#miner)
+* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet#pool)
+* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -39,10 +39,10 @@ Here is an illustration of what we're going to do,
 
 ## MINER
 
-`t-rex` can mine quit a bit of different coins.
+`gminer` can mine quit a bit of different coins.
 
 Grab the latest Windows binary from
-[github.com/trexminer/T-Rex/releases](https://github.com/trexminer/T-Rex/releases/)
+[github.com/develsoftware/GMinerRelease/releases](https://github.com/develsoftware/GMinerRelease/releases/)
 and place the folder anywhere on your rig.
 
 ## POOL
@@ -61,12 +61,14 @@ that you will place in the .bat file below.
 To run on `2miners.com` SOLO pool create a `start.bat` file,
 
 ```bash
-t-rex.exe
--a x16r
---fork-at x16rv2=2019-10-01T16:00:00
--o stratum+tcp://solo-rvn.2miners.com:7070
--u <WALLET>.<WORKER>
--p x
+miner.exe
+--algo 144_5
+--pers BgoldPoW
+--server us-solo-btg.2miners.com
+--port 4040
+--user <WALLET>.<WORKER>
+--pass x
+--api 10053
 ```
 
 ### NORMAL POOL
@@ -74,13 +76,14 @@ t-rex.exe
 To run on `2miners.com` normal pool just change the pool and port,
 
 ```bat
--o stratum+tcp://rvn.2miners.com:6060
+--server us-btg.2miners.com
+--port 4040
 ```
 
 ## MONITOR
 
 You can locally monitor your mining software,
 
-[10.141.141.1:4067/trex](http://10.141.141.1:4067/trex)
+[localhost:10053/](http://localhost:10053/)
 
 Thats it, you're mining and wasting electricity.
