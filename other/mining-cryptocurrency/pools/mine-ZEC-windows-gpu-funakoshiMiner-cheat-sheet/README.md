@@ -23,6 +23,7 @@ Table of Contents,
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#overview)
 * [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#miner)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -57,6 +58,13 @@ funakoshiMiner.exe \
 --server us-east.zec.slushpool.com \
 --port 4444 \
 --user <USER>.<WORKER>
+-tele-port 10052
 ```
+
+## MONITOR
+
+Because you set the port above, you can monitor your miner,
+
+[http://localhost:10052](http://localhost:10052)
 
 Thats it, you're mining and wasting electricity.

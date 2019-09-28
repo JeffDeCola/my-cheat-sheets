@@ -23,6 +23,7 @@ Table of Contents,
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#overview)
 * [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#miner)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -57,6 +58,13 @@ lolMiner.exe
 --pool us-east.equihash-hub.miningpoolhub.com
 --port 20574
 --user <USER>.<WORKER>
+--apiport 10051
 ```
+
+## MONITOR
+
+Because you set the port above, you can monitor your miner,
+
+[http://localhost:10051/summary](http://localhost:10051/summary)
 
 Thats it, you're mining and wasting electricity.

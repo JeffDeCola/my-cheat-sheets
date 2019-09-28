@@ -23,6 +23,7 @@ Table of Contents,
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#overview)
 * [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#miner)
 * [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -64,10 +65,10 @@ To run on `2miners.com` normal pool just change the pool and port,
 -o stratum+tcp://rvn.2miners.com:6060
 ```
 
-Thats it, you're mining and wasting electricity.
-
 ## MONITOR
 
-You can also monitor t-rex on your rig,
+You can also monitor `t-rex` on your rig,
 
 [http://10.141.141.1:4067/trex](http://10.141.141.1:4067/trex)
+
+Thats it, you're mining and wasting electricity.
