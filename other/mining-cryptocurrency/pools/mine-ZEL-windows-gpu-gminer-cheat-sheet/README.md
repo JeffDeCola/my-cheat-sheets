@@ -1,9 +1,9 @@
-# MINE ZCL (Zclassic) WINDOWS GPU USING LOLMINER CHEAT SHEET
+# MINE ZEL (ZelCash) WINDOWS GPU USING GMINER CHEAT SHEET
 
-`mine-ZCL-windows-gpu-lolMiner` _will show you
-how to mine for Zclassic (ZCL)
+`mine-ZEL-windows-gpu-gminer` _will show you
+how to mine for ZEL (ZelCash)
 on your Windows 10 GPU
-using `lolMiner` mining software
+using `gminer` mining software
 connected to a pool._
 
 My other mining cheat sheets,
@@ -15,16 +15,16 @@ My other mining cheat sheets,
   * [mine-MULTI-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-MULTI-windows-gpu-multipoolminer-cheat-sheet)
   * [mine-RVN-windows-gpu-t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
-  **YOU ARE HERE**
   * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
   * [mine-ZEL-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
+    **YOU ARE HERE**
 
 Table of Contents,
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#overview)
-* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#miner)
-* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#run)
-* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet#monitor)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet#overview)
+* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet#miner)
+* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -37,35 +37,41 @@ Here is an illustration of what we're going to do,
 
 ## MINER
 
-`lolMiner` is a AUTO192_7 CUDA Miner.
+`gminer` can mine quit a bit of different coins.
 
 Grab the latest Windows binary from
-[github.com/Lolliedieb/lolMiner-releases/releases/](https://github.com/Lolliedieb/lolMiner-releases/releases/)
+[github.com/develsoftware/GMinerRelease/releases](https://github.com/develsoftware/GMinerRelease/releases/)
 and place the folder anywhere on your rig.
 
 ## RUN
 
-To run on `miningpoolhub.com` create a `start.bat` file,
+### SOLO POOL
+
+To run on `2miners.com` SOLO pool create a `start.bat` file,
 
 ```bash
-setx GPU_FORCE_64BIT_PTR 1
-setx GPU_MAX_HEAP_SIZE 100
-setx GPU_USE_SYNC_OBJECTS 1
-setx GPU_MAX_ALLOC_PERCENT 100
-setx GPU_SINGLE_ALLOC_PERCENT 100
+miner.exe
+--algo 125_4
+--server solo-zel.2miners.com
+--port 9393
+--user <WALLET>.<WORKER>
+--pass x
+--api 10050
+```
 
-lolMiner.exe
---coin AUTO192_7
---pool us-east.equihash-hub.miningpoolhub.com
---port 20574
---user <USER>.<WORKER>
---apiport 10051
+### NORMAL POOL
+
+To run on `2miners.com` normal pool just change the pool and port,
+
+```bat
+--server zel.2miners.com
+--port 9090
 ```
 
 ## MONITOR
 
-Because you set the port above, you can monitor your miner,
+You can also monitor `gminer` on your rig,
 
-[http://localhost:10051/summary](http://localhost:10051/summary)
+[localhost:10050/](http://localhost:10050/)
 
 Thats it, you're mining and wasting electricity.

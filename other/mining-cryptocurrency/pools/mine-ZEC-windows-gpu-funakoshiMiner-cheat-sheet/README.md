@@ -1,4 +1,4 @@
-# MINE ZEC (Zcash) WINDOWS GPU FUNAKOSHIMINER CHEAT SHEET
+# MINE ZEC (Zcash) WINDOWS GPU USING FUNAKOSHIMINER CHEAT SHEET
 
 `mine-ZEC-windows-gpu-funakoshiMiner` _will show you
 how to mine for Zcash (ZEC)
@@ -17,6 +17,7 @@ My other mining cheat sheets,
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
   * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
   **YOU ARE HERE**
+  * [mine-ZEL-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
 
 Table of Contents,
 
