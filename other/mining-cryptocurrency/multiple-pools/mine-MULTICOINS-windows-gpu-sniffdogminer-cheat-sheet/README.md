@@ -1,83 +1,84 @@
-# MINE ZEC (Zcash) WINDOWS GPU USING FUNAKOSHIMINER CHEAT SHEET
+# MINE MULTIPLE COINS WINDOWS GPU USING SNIFFDOGMINER CHEAT SHEET
 
-`mine-ZEC-windows-gpu-funakoshiMiner` _will show you
-how to mine for Zcash (ZEC)
+`mine-MULTI-windows-gpu-sniffdogminer` _will show you
+how to mine for multiple coins
 on your Windows 10 GPU
-using `funakoshiMiner` mining software
-connected to a pool._
+using `sniffdogminer` mining software
+connected to the `zergpool.com` pool._
 
-My other mining cheat sheets,
+My other mining cheatsheets,
 
 * **FULL NODE**
   * [mine-ZEC-macOS-cpu-zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd-cheat-sheet)
 * **MULTIPLE POOLS**
   * [mine-MULTICOINS-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
   * [mine-MULTICOINS-windows-gpu-sniffdogminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-sniffdogminer-cheat-sheet)
+    **YOU ARE HERE**
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
   * [mine-BTG-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
   * [mine-RVN-windows-gpu-t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
   * [mine-ZCL-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
   * [mine-ZEC-windows-gpu-funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
-    **YOU ARE HERE**
   * [mine-ZEL-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
 
 Table of Contents,
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#overview)
-* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#miner)
-* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#pool)
-* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#run)
-* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet#monitor)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#overview)
+* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#miner)
+* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#pool)
+* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
 
 ## OVERVIEW
 
+Instead of using a one miner and one pool, you will be
+using multiple miners and multiple pools.
+
+A "mining coordinator" will be used to determine what pool to mine to
+based on your rig in order to maximize profits.
+It will pick the best miner to use at the time and switch
+between miners and pools as coin prices change, etc...
+
+Since you are mining to multiple pools and will have
+little bits of coins everywhere, the pool will automatically
+exchange all those coins into one wallet.
+I like to put everything into litecoin since its fast.
+
 Here is an illustration of what we're going to do,
 
-![IMAGE - mine-XYZ-windows-gpu-XYZminer - IMAGE](../../../../docs/pics/mine-XYZ-windows-gpu-XYZminer.jpg)
+![IMAGE - mine-MULTICOINS-windows-gpu-XYZmulti-miner - IMAGE](../../../../docs/pics/mine-MULTICOINS-windows-gpu-XYZmulti-miner.jpg)
 
 ## MINER
 
-`FunakoshiMiner` is a Equihash CUDA Miner.  So it works with ZEC and ETH
-but not bitcoin.
-
 Grab the latest Windows binary from
-[github.com/funakoshi2718/funakoshi-miner](https://github.com/funakoshi2718/funakoshi-miner)
-and place the folder anywhere on your rig.
+[https://github.com/pinpins/Sniffdogminer/releases](https://github.com/pinpins/Sniffdogminer/releases)
+
+Place the folder anywhere on your rig.
 
 ## POOL
 
-You can use any pool. For this example we're going to use
-[slushpool.com](https://slushpool.com/).
+First, lets pick your pool. I picked
+[zergpool.com](https://zergpool.com).
 
-After you sign up, you will place your username
-in the .bat file below.
+No registration is required, they do payouts in the currency
+of you wallet address.  Simple.
 
 ## RUN
 
-To run on `slushpool.com` create a `start.bat` file,
+Create a `star.bat` file,
 
 ```bash
-setx GPU_FORCE_64BIT_PTR 1
-setx GPU_MAX_HEAP_SIZE 100
-setx GPU_USE_SYNC_OBJECTS 1
-setx GPU_MAX_ALLOC_PERCENT 100
-setx GPU_SINGLE_ALLOC_PERCENT 100
 
-funakoshiMiner.exe \
---server us-east.zec.slushpool.com \
---port 4444 \
---user <USERNAME>.<WORKER>
--tele-port 10052
 ```
 
 ## MONITOR
 
 You can locally monitor your mining software,
 
-[localhost:10052](http://localhost:10052)
+ [???](???)
 
 Thats it, you're mining and wasting electricity.
