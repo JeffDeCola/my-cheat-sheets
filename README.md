@@ -411,7 +411,7 @@ quite a few years to finish._
 * MULTIPLE POOLS
 
   * [mine MULTIPLE COINS on windows gpu using multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
-  * [mine MULTIPLE COINS on windows gpu using sniffdogminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-sniffdogminer-cheat-sheet)
+  * [mine MULTIPLE COINS on windows gpu using awesome miner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-awesome-miner-cheat-sheet)
 
 * POOLS
 

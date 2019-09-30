@@ -13,7 +13,7 @@ My other mining cheatsheets,
 * **MULTIPLE POOLS**
   * [mine-MULTICOINS-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
     **YOU ARE HERE**
-  * [mine-MULTICOINS-windows-gpu-sniffdogminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-sniffdogminer-cheat-sheet)
+  * [mine-MULTICOINS-windows-gpu-awesome-miner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-awesome-miner-cheat-sheet)
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
   * [mine-BTG-windows-gpu-gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
@@ -48,6 +48,8 @@ little bits of coins everywhere, the pool will automatically
 exchange all those coins into one wallet.
 I like to put everything into litecoin since its fast.
 
+They like to call these `Multialgo (Multi algorithm), Multicoin, Auto-Exchange Pools`.
+
 Here is an illustration of what we're going to do,
 
 ![IMAGE - mine-MULTICOINS-windows-gpu-XYZmulti-miner - IMAGE](../../../../docs/pics/mine-MULTICOINS-windows-gpu-XYZmulti-miner.jpg)
@@ -64,14 +66,12 @@ Place the folder anywhere on your rig.
 First, lets pick you pool. I registered at
 [miningpoolhub.com](https://miningpoolhub.com).
 
-There are other pools, but I choose this one.
-
 Now choose the wallet to put all your coins in aut-exchange.
 Add a Worker name and a password 'x' under hub worker.
 
 ## RUN
 
-Create a `star.bat` file,
+Create a `start.bat` file,
 
 ```bash
 set "command=& .\multipoolminer.ps1

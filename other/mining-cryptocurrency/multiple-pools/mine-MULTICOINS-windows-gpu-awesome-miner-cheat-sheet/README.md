@@ -1,9 +1,9 @@
-# MINE MULTIPLE COINS WINDOWS GPU USING SNIFFDOGMINER CHEAT SHEET
+# MINE MULTIPLE COINS WINDOWS GPU USING AWESOME MINER CHEAT SHEET
 
-`mine-MULTI-windows-gpu-sniffdogminer` _will show you
+`mine-MULTI-windows-gpu-awesome-miner` _will show you
 how to mine for multiple coins
 on your Windows 10 GPU
-using `sniffdogminer` mining software
+using `awesome-miner` mining software
 connected to the `zergpool.com` pool._
 
 My other mining cheatsheets,
@@ -12,7 +12,7 @@ My other mining cheatsheets,
   * [mine-ZEC-macOS-cpu-zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd-cheat-sheet)
 * **MULTIPLE POOLS**
   * [mine-MULTICOINS-windows-gpu-multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
-  * [mine-MULTICOINS-windows-gpu-sniffdogminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-sniffdogminer-cheat-sheet)
+  * [mine-MULTICOINS-windows-gpu-awesome-miner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-awesome-miner-cheat-sheet)
     **YOU ARE HERE**
 * **POOLS**
   * [mine-BEAM-windows-gpu-lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
@@ -24,11 +24,11 @@ My other mining cheatsheets,
 
 Table of Contents,
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#overview)
-* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#miner)
-* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#pool)
-* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#run)
-* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-sniffdogminer-cheat-sheet#monitor)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-awesome-miner-cheat-sheet#overview)
+* [MINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-awesome-miner-cheat-sheet#miner)
+* [POOL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-awesome-miner-cheat-sheet#pool)
+* [RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-awesome-miner-cheat-sheet#run)
+* [MONITOR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTI-windows-gpu-awesome-miner-cheat-sheet#monitor)
 
 Check out my cheat sheet on all the popular
 [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet).
@@ -48,6 +48,8 @@ little bits of coins everywhere, the pool will automatically
 exchange all those coins into one wallet.
 I like to put everything into litecoin since its fast.
 
+They like to call these `Multialgo (Multi algorithm), Multicoin, Auto-Exchange Pools`.
+
 Here is an illustration of what we're going to do,
 
 ![IMAGE - mine-MULTICOINS-windows-gpu-XYZmulti-miner - IMAGE](../../../../docs/pics/mine-MULTICOINS-windows-gpu-XYZmulti-miner.jpg)
@@ -55,7 +57,7 @@ Here is an illustration of what we're going to do,
 ## MINER
 
 Grab the latest Windows binary from
-[https://github.com/pinpins/Sniffdogminer/releases](https://github.com/pinpins/Sniffdogminer/releases)
+[awesomeminer.com](https://www.awesomeminer.com/download)
 
 Place the folder anywhere on your rig.
 
@@ -69,16 +71,33 @@ of you wallet address.  Simple.
 
 ## RUN
 
-Create a `star.bat` file,
+Its installed in your system so just kick it off.
 
-```bash
+I suggest doing a benchmark first.
 
+Normally, you can just run because the software is all setup for
+your pool under `options -> profit switching`.  You just add your wallet.
+The default is BTC.
+
+If you want to payout to a particular wallet other than BTC like litecoin,
+add `c=LTC` in each of the pools under `options -> online services`.
+
+You can even get more selective if you want to create your own pools and pool groups.
+For example, I would like to mine FOLM (FLM) coin and put my coins into my FLM wallet
+using a SOLO pool.
+
+My switches for zergpool would be placed in `options -> pools`,
+
+```txt
+Pool URL: stratum+tcp://phi.mine.zergpool.com:8333
+Worker Name: Fpz2px36Ptaa7PKBK4HLA7DprDrqGNRsXN
+Worker password: c=FLM,mc=FLM,m=solo
 ```
 
 ## MONITOR
 
-You can locally monitor your mining software,
-
- [???](???)
+You can play around with the interface.
+[Awesomeminer.com](https://www.awesomeminer.com/download)
+is the best source of information.
 
 Thats it, you're mining and wasting electricity.
