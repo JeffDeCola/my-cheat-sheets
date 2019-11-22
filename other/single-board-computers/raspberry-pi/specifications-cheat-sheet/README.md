@@ -21,12 +21,12 @@ View my entire list of cheat sheets on
 | - Instruct Set   |     ARMv6 (32-bit) |   ARMv7-A (32-bit) |
 | - GPU            | 250MHz VideoCoreIV | 250MHz VideoCoreIV |
 | - - OpenGL ES    |  1.1/2.0 24 GFLOPS |  1.1/2.0 24 GFLOPS |
-| - - MPEG-2       |       Need License |       Need License |  
+| - - MPEG-2       |       Need License |       Need License |
 | - - H.264 encode |            1080p30 |            1080p30 |
 | - - H.264 decode |            1080p30 |            1080p30 |
 | - - H.265 encode |                  - |                 -  |
 | - - H.265 decode |                  - |                 -  |
-| - - VRAM         |             Shared |             Shared |  
+| - - VRAM         |             Shared |             Shared |
 | - RAM            |        512MB SDRAM |          1GB SDRAM |
 | OS               |   Rasbian (32-bit) |   Rasbian (32-bit) |
 | Storage          |            microSD |            microSD |
@@ -35,9 +35,9 @@ View my entire list of cheat sheets on
 | Bluetooth        |                  - |                  - |
 | USB              |        (4) USB 2.0 |        (4) USB 2.0 |
 | Video Out        |  HDMI(rev1.3)/Comp |  HDMI(rev1.3)/Comp |
-| - resolution     |            1080p30 |            1080p30 |  
+| - resolution     |            1080p30 |            1080p30 |
 | Audio Out        |    HDMI/Headphone  |     HDMI/Headphone |
-| GPIO             |                 40 |                 40 |  
+| GPIO             |                 40 |                 40 |
 | POWER SOURCE     |           microUSB |           microUSB |
 | - idle           |         200mA (1W) |       220mA (1.1W) |
 | - max            |      350mA (1.75W) |       820mA (4.1W) |
@@ -73,8 +73,8 @@ View my entire list of cheat sheets on
 | - resolution     |            1080p60 |            1080p60 |  (1)4kp60 (2)4kp30 |
 | Audio Out        |     HDMI/Headphone |     HDMI/Headphone |     HDMI/Headphone |
 | GPIO             |                 40 |                 40 |                 40 |
-| POWER SOURCE     |           microUSB |           microUSB |              USB-C | 
-| - idle           |       300mA (1.5W) |       459mA (2.3W) |           ?mA (?W) | 
+| POWER SOURCE     |           microUSB |           microUSB |              USB-C |
+| - idle           |       300mA (1.5W) |       459mA (2.3W) |           ?mA (?W) |
 | - max            |       1.34A (6.7W) |      1.13A (5.66W) |            ?A (?W) |
 | PoE              |                  - |  need add-on board |  need add-on board |
 
