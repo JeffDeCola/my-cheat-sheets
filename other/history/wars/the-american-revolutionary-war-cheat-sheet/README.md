@@ -417,7 +417,7 @@ But Franklin finally got the French to help train
 Washington's men to fight. The came out of the winter of 1778
 as a new amd improved force and wanted to take Philadelphia back.
 But they didn't have to as the British left Philadelphia to
-pool their resources in New York.  
+pool their resources in New York.
 
 ![IMAGE - 1777-The_March_to_Valley_Forge_William_Trego - IMAGE](../../../../docs/pics/1777-The_March_to_Valley_Forge_William_Trego.png)
 

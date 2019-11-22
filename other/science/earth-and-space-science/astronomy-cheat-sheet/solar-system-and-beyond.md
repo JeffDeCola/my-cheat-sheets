@@ -207,7 +207,7 @@ associated with Jupiter.
 * Orbit Period: 29.456 days to orbit the sun
 * Rotate Axis: 10.2 hours
 * Surface Temperature: -178&deg;C
-* Diameter: 120,660 km (74,600 miles) 
+* Diameter: 120,660 km (74,600 miles)
 * Mass: 95 earths
 * Moons: 62
   * Titan
