@@ -26,7 +26,7 @@ These cheat sheets explore the principle concepts of physics as follows,
   * Thermodynamics
   * Potential Energy
   * Kinetic Energy
-* [WAVES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/waves.md)  
+* [WAVES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/waves.md)
 * [ELECTRICITY AND MAGNETISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/electricity-and-magnetism.md)
   * General electricity
   * Static electricity
@@ -58,7 +58,7 @@ View my entire list of cheat sheets on
 ## OVERVIEW
 
 Physics tries to understand your world.
-It helps explain why are things the way they are?  
+It helps explain why are things the way they are?
 It is the study of the properties of matter and their relationship with energy
 and forces. There are many branches of physics including electricity,
 astronomy, motion, waves, sound, and light.

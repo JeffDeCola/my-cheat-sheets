@@ -320,7 +320,7 @@ about 7000 objects in the new General Catalogue.
 
 ### GALAXIES
 
-Its more that these are in different stages of their lives. 
+Its more that these are in different stages of their lives.
 The older they get the become like spiral galaxies.
 
 * BARRED SPIRAL
