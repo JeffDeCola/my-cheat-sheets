@@ -37,3 +37,4 @@ exclude_patterns:
 - "software/development/languages/go-cheat-sheet/methods.md"
 - "software/development/languages/go-cheat-sheet/functions.md"
 - "other/science/physical-science/physics-cheat-sheet/README.md"
+- "other/single-board-computers/raspberry-pi/specifications-cheat-sheet/README.md"
