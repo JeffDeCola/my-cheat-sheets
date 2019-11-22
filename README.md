@@ -1,6 +1,5 @@
 # MY CHEAT SHEETS
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/316ee7f047cc7a36ba2e/maintainability)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/maintainability)
 [![CodeClimate Issues](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
