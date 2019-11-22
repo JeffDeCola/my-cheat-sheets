@@ -36,3 +36,4 @@ exclude_patterns:
 - "software/development/languages/go-cheat-sheet/src/"
 - "software/development/languages/go-cheat-sheet/methods.md"
 - "software/development/languages/go-cheat-sheet/functions.md"
+- "other/science/physical-science/physics-cheat-sheet/README.md"
