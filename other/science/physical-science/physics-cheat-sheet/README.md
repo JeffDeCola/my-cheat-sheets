@@ -114,10 +114,7 @@ The measurement of a `physical quantity` is expressed in `units`.
 Fundamental units, with their symbols, of a physical quantity,
 
 * `LENGTH`
-  * <img alt="$l$" src="svgs/2f2322dff5bde89c37bcae4116fe20a8.svg" align="middle" width="5.2088685pt" height="22.74591pt"/>,
-    $L$,
-    $x$,
-    meter ($m$)
+  * <img alt="$l$" src="svgs/2f2322dff5bde89c37bcae4116fe20a8.svg" align="middle" width="5.2088685pt" height="22.74591pt"/>, <img alt="$L$" src="svgs/ddcb483302ed36a59286424aa5e0be17.svg" align="middle" width="11.14542pt" height="22.38192pt"/>, <img alt="$x$" src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg" align="middle" width="9.359955pt" height="14.10255pt"/>, meter (<img alt="$m$" src="svgs/0e51a2dede42189d77627c4d742822c3.svg" align="middle" width="14.379255pt" height="14.10255pt"/>)
 * `MASS`
   * <img alt="$m$" src="svgs/0e51a2dede42189d77627c4d742822c3.svg" align="middle" width="14.379255pt" height="14.10255pt"/>, <img alt="$M$" src="svgs/fb97d38bcc19230b0acd442e17db879c.svg" align="middle" width="17.67348pt" height="22.38192pt"/>, kilogram (<img alt="$kg$" src="svgs/37682785176707acd9c0723853f931df.svg" align="middle" width="17.442315pt" height="22.74591pt"/>)
   * mass is not the same as weight
