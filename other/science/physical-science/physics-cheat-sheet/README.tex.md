@@ -114,7 +114,10 @@ The measurement of a `physical quantity` is expressed in `units`.
 Fundamental units, with their symbols, of a physical quantity,
 
 * `LENGTH`
-  * $l$, $L$, $x$, meter ($m$)
+  * $l$,
+    $L$,
+    $x$,
+    meter ($m$)
 * `MASS`
   * $m$, $M$, kilogram ($kg$)
   * mass is not the same as weight
