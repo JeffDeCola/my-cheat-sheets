@@ -3,45 +3,35 @@
 [![CodeClimate Issues](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-cheat-sheets` _is a place to keep all my cheat sheets
-on everything you need for the complete development of
-ASIC hardware or a software App/Service._
+A place to keep all my cheat sheets
+for the complete development of
+ASIC hardware or a software app/service._
 
 These cheat sheets contain info I gathered from other sources and
-figured out over time.
+figured out over time. It is an ongoing process.
 
-The folder structures are organized alphabetically as follows,
+Table of Contents,
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
   For the goal of creating an App/Service
-
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
   * [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
-
     * SaaS - SOFTWARE AS A SERVICE
     * FaaS - FUNCTIONS AS A SERVICE
     * PaaS - PLATFORM AS A SERVICE
     * CaaS - CONTAINERS AS A SERVICE
     * IaaS - INFRASTRUCTURE AS A SERVICE
-
   * [SERVICE PROVIDERS](https://github.com/JeffDeCola/my-cheat-sheets#service-providers)
-
     * AMAZON AWS
     * GOOGLE GCP
     * MICROSOFT AZURE
-
-Some other cheat sheets I'm working on,
-
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
   For the goal of creating an ASIC
-
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
-
 * [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)
   Random things I'm interested in
-
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
