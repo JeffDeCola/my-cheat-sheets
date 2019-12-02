@@ -3,19 +3,25 @@
 [![CodeClimate Issues](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
 [![MIT License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-A place to keep all my cheat sheets
+_A place to keep all my cheat sheets
 for the complete development of
 ASIC hardware or a software app/service._
 
-These cheat sheets contain info I gathered from other sources and
-figured out over time. It is an ongoing process.
-
-Table of Contents,
+**Table of Contents**
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-  For the goal of creating an App/Service
+  _(For the goal of creating an App/Service)_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
+    * DEVELOPMENT ENVIRONMENTS
+    * LANGUAGES
+    * OPERATING SYSTEMS
+    * SOFTWARE ARCHITECTURES
+    * SOURCE / VERSION CONTROL
   * [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
+    * CONFIGURATION MANAGEMENT
+    * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
+    * ORCHESTRATION
+    * TELEMETRY
   * [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
     * SaaS - SOFTWARE AS A SERVICE
     * FaaS - FUNCTIONS AS A SERVICE
@@ -27,11 +33,11 @@ Table of Contents,
     * GOOGLE GCP
     * MICROSOFT AZURE
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
-  For the goal of creating an ASIC
+  _(For the goal of creating an ASIC)_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
 * [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)
-  Random things I'm interested in
+  _(Random things I'm interested in)_
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
@@ -41,6 +47,8 @@ Table of Contents,
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
+These cheat sheets contain info I gathered from other sources and
+figured out over time. It is an ongoing process.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
