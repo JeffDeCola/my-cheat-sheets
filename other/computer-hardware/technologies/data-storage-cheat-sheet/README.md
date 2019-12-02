@@ -24,7 +24,7 @@ hardware/software systems used to manage it.
   * [microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/microSD-cards-cheat-sheet)
   * [RAM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
   * ROM
-  * SSD
+  * [SSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/ssd-cheat-sheet)
 * SaaS
   * Cloud Storage
 
