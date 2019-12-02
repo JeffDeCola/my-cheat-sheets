@@ -1,6 +1,6 @@
 # HARD DRIVES CHEAT SHEET
 
-`hard drives` _are hard drives._
+_Hard drives._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
