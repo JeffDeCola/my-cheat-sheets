@@ -1,8 +1,8 @@
 # HASHING CHEAT SHEET
 
-`hashing` _is changing a message into an unreadable string not for
+_`Hashing` (fingerprinting) is changing a message into an unreadable string not for
 the purpose of hiding the message, but more for verifying the
-contents of the message. Finding the message `fingerprint`._
+contents of the message._
 
 There are three main types of cryptography,
 
@@ -23,4 +23,4 @@ View my entire list of cheat sheets on
 Cryptography is the art of changing a message from a readable format,
 referred to as `plaintext`, into an unreadable one, or `ciphertext`.
 
-Two common hashing algorithms are MD5 and SHA.
+Two common hashing algorithms are MD5 and SHA.  Hashing is obviously not reversible.

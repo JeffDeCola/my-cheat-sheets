@@ -28,3 +28,9 @@ Asymmetric cryptography uses two separate keys,
 * A private key is used to then decrypt the message
 
 This is used all over the web for ssl, tls, pgp, ssh, etc...
+
+This illustration from my go example
+[rsa-asymmetric-cryptography](https://github.com/JeffDeCola/my-go-examples/tree/master/cryptography/asymmetric-cryptography/rsa-asymmetric-cryptography)
+may help,
+
+![IMAGE - rsa-asymmetric-cryptography.jpg - IMAGE](https://github.com/JeffDeCola/my-go-examples/blob/master/docs/pics/rsa-asymmetric-cryptography.jpg)
