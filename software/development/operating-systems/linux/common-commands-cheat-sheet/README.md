@@ -1,8 +1,8 @@
 # COMMON COMMANDS CHEAT SHEET
 
-`Common commands` _lists my favorite linux commands._
+_A list of my favorite linux commands._
 
-Sections,
+Table of Contents,
 
 * [SYSTEM INFO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#system-info)
 * [HARDWARE INFO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#hardware-info)

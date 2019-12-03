@@ -1,6 +1,8 @@
 # INIT SysV SCRIPT CHEAT SHEET
 
-`init SysV script` are depreciated and systemd should be used.
+`init SysV script` is **depreciated** and
+[systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
+should be used.
 But systemd can still run these old init sysV scrips, so
 it is here for reference.
 
@@ -13,10 +15,6 @@ sudo /etc/init.d/say-hi stop
 # CHECK
 ps -efa | grep init
 ```
-
-Proper way to start a process at boot,
-
-* [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
 
 Note: Ubuntu 14.04 uses upstart.
 

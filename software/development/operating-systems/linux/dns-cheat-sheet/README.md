@@ -1,7 +1,9 @@
 # DNS CHEAT SHEET
 
-`dns` _(Domain Name Server) resolves hosts/domains into IP addresses
+_A `DNS` (Domain Name Server) resolves hosts/domains into IP addresses
 and visa versa.  Basically a large database._
+
+Table of Contents,
 
 * [DNS SERVER (name server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-server-name-server)
 * [DNS CLIENT (resolver)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-client-resolver)

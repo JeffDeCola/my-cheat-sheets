@@ -1,6 +1,6 @@
 # FONTS CHEAT SHEET
 
-`fonts` _is fonts._
+_How to install fonts on linux._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
