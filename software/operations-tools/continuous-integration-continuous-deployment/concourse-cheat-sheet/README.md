@@ -15,7 +15,7 @@ fly -t ci set-team --team-name team-jeff --local-user test
 fly -t ci login -n team-jeff
 ```
 
-[My Concourse task examples](https://jeffdecola.github.io/my-concourse-ci-tasks/).
+[My Concourse task examples](https://github.com/JeffDeCola/my-concourse-ci-tasks).
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
