@@ -41,7 +41,7 @@ After you have installed VS Code, goto your user
 settings.json (press F1) and set
 VS Code integrated terminal to point to WSL bash.
 
-For Ubuntu 14.04 on Windows,
+For Ubuntu 14.04/16.04 on Windows,
 
 ```yaml
 "terminal.integrated.shell.windows": "C:\\Windows\\sysnative\\bash.exe",
