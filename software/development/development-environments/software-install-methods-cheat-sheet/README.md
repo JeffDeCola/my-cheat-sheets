@@ -1,7 +1,6 @@
 # SOFTWARE INSTALL METHODS CHEAT SHEET
 
-`software install methods` _is a very high level view on
-how to install software/Apps._
+A very high level view on how to install software/Apps._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

@@ -39,7 +39,7 @@ View my entire list of cheat sheets on
 
 ## OVERVIEW
 
-Put simple, the goal is to create a common development environment.
+Put simple, the goal is to **create a common development environment**.
 
 Vagrant provides the same production environment (_OS,
 packages, users, configuration, etc..._) giving developers the
