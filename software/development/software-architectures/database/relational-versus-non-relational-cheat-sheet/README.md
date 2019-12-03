@@ -54,7 +54,7 @@ Players,
 * Oracle
 * MySQL
 * Microsoft SQL Server
-* [PostgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgreSQL-cheat-sheet)
+* [PostgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet)
 * DB2
 
 ## NON-RELATIONAL / NoSQL
