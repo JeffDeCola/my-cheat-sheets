@@ -23,14 +23,14 @@ second StdOut/StdErr pair is visible in the file.
 |    **&>**     |    no    |    no    |   yes    |   yes    |  overwrite    |
 |    **&>>**    |    no    |    no    |   yes    |   yes    |   append      |
 |               |          |          |          |          |               |
-|  **| tee**    |   yes    |   yes    |   yes    |    no    |  overwrite    |
-|  **| tee -a** |   yes    |   yes    |   yes    |    no    |   append      |
+|  **\| tee**    |   yes    |   yes    |   yes    |    no    |  overwrite    |
+|  **\| tee -a** |   yes    |   yes    |   yes    |    no    |   append      |
 |               |          |          |          |          |               |
 |  **n.e. (*)** |   yes    |   yes    |    no    |   yes    |  overwrite    |
 |  **n.e. (*)** |   yes    |   yes    |    no    |   yes    |   append      |
 |               |          |          |          |          |               |
-| **|& tee**    |   yes    |   yes    |   yes    |   yes    |  overwrite    |
-| **|& tee -a** |   yes    |   yes    |   yes    |   yes    |   append      |
+| **\|& tee**    |   yes    |   yes    |   yes    |   yes    |  overwrite    |
+| **\|& tee -a** |   yes    |   yes    |   yes    |   yes    |   append      |
 
 For example,
 
