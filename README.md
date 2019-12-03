@@ -7,7 +7,7 @@ _A place to keep all my cheat sheets
 for the complete development of
 ASIC hardware or a software app/service._
 
-**Table of Contents**
+Table of Contents,
 
 * [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
   _(For the goal of creating an App/Service)_
@@ -61,24 +61,26 @@ Various Apps and tools for the goal of creating an App/Service.
 * DEVELOPMENT ENVIRONMENTS
 
   * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/software-install-methods-cheat-sheet)
-  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet),
-    [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
+  * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
+    ([my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes))
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
 
 * LANGUAGES
 
   * [go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet),
-    [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet),
-    [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+    [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet)
+    ([my-go-examples](https://github.com/JeffDeCola/my-go-examples),
+    [my-go-packages](https://github.com/JeffDeCola/my-go-packages),
+    [my-go-tools](https://github.com/JeffDeCola/my-go-tools))
   * [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
     * [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-    * [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md),
-      [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
-    [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
-  * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet),
-    [my-php-containers](https://github.com/JeffDeCola/my-php-containers)
+    * [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
+      ([my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs))
+  * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
+    ([my-python-examples](https://github.com/JeffDeCola/my-python-examples))
+  * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet)
+    ([my-php-containers](https://github.com/JeffDeCola/my-php-containers))
 
 * OPERATING SYSTEMS
 
@@ -113,6 +115,7 @@ Various Apps and tools for the goal of creating an App/Service.
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/RESTful-cheat-sheet)
+      ([RESTful-API-test](https://github.com/JeffDeCola/RESTful-API-test))
     * [youtube content id api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-content-id-api-cheat-sheet)
     * [youtube data api v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-data-api-v3-cheat-sheet)
     * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet)
@@ -145,6 +148,8 @@ Various Apps and tools for the goal of creating an App/Service.
   * MICROSERVICES
 
     * [microservices](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/microservices/microservices-cheat-sheet)
+      ([catch-microservice](https://github.com/JeffDeCola/catch-microservice),
+      [data-crunch-engine](https://github.com/JeffDeCola/data-crunch-engine))
 
 * SOURCE / VERSION CONTROL
 
@@ -159,21 +164,23 @@ Various Apps and tools for the goal of creating an App/Service.
 * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
 
   * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet)
+    ([my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks))
 
 * ORCHESTRATION
 
   * BUILDS / DEPLOYMENT / CONTAINERS
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet),
-      [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
+      ([my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds))
     * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
+      ([my-packer-image-builds](https://github.com/JeffDeCola/my-packer-image-builds))
     * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
   * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
     * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet),
-      [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon)
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
+      ([hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon))
     * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION
@@ -198,41 +205,41 @@ Various Apps and tools for the goal of creating an App/Service.
 
 * FaaS - FUNCTION AS A SERVICE
 
-  * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet),
-    _hello-go-deploy-aws-lambda repo coming soon_
-  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet),
-    _hello-go-deploy-gcf repo coming soon_
-  * [microsoft azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet),
-    _hello-go-deploy-azure-functions repo coming soon_
+  * [aws lambda](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
+    (_hello-go-deploy-aws-lambda repo coming soon_)
+  * [google cloud functions (gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
+    (_hello-go-deploy-gcf repo coming soon_)
+  * [microsoft azure functions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet)
+    (_hello-go-deploy-azure-functions repo coming soon_)
 
 * PaaS - PLATFORM AS A SERVICE
 
-  * [aws elastic beanstalk](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/aws-elastic-beanstalk-cheat-sheet),
-    [hello-go-deploy-aws-elastic-beanstalk](https://github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk)
-  * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet),
-    [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
-  * [microsoft azure app service](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/microsoft-azure-app-service-cheat-sheet),
-    [hello-go-deploy-azure-app-service](https://github.com/JeffDeCola/hello-go-deploy-azure-app-service)
+  * [aws elastic beanstalk](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/aws-elastic-beanstalk-cheat-sheet)
+    ([hello-go-deploy-aws-elastic-beanstalk](https://github.com/JeffDeCola/hello-go-deploy-aws-elastic-beanstalk))
+  * [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+    ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))
+  * [microsoft azure app service](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/microsoft-azure-app-service-cheat-sheet)
+    ([hello-go-deploy-azure-app-service](https://github.com/JeffDeCola/hello-go-deploy-azure-app-service))
 
 * CaaS - CONTAINERS AS A SERVICE
 
-  * [amazon elastic container service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet),
-    [hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
-  * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet),
-    [hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks)
-  * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
-    [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-  * [microsoft azure kubernetes service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet),
-    [hello-go-deploy-aks](https://github.com/JeffDeCola/hello-go-deploy-aks)
+  * [amazon elastic container service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
+    ([hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs))
+  * [amazon elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
+    ([hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks))
+  * [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+    ([hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke))
+  * [microsoft azure kubernetes service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
+    ([hello-go-deploy-aks](https://github.com/JeffDeCola/hello-go-deploy-aks))
 
 * IaaS - INFRASTRUCTURE AS A SERVICE
 
-  * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet),
-    [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
-  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet),
-    [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-  * [microsoft azure virtual machines (vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet),
-    [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
+  * [amazon elastic compute cloud (ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
+    ([hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2))
+  * [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
+    ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))
+  * [microsoft azure virtual machines (vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet)
+    ([hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm))
 
 ### SERVICE PROVIDERS
 
@@ -401,6 +408,9 @@ quite a few years to finish._
 * CRYPTOCURRENCY
 
   * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet)
+    ([jeffCoin](https://github.com/JeffDeCola/jeffCoin),
+    [crypto-miner-manager](https://github.com/JeffDeCola/crypto-miner-manager),
+    [crypto-wallet-status](https://github.com/JeffDeCola/crypto-wallet-status))
 
 * FULL NODE
 
