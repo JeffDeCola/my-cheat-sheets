@@ -3,12 +3,6 @@
 `wsl (bash on ubuntu on windows)` _allows you to install linux
 on a windows machine._
 
-tl;dr,
-
-```bash
-C:\Users\USERNAME\AppData\Local\Lxss\home\USERNAME
-```
-
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
