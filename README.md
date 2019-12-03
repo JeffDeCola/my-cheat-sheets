@@ -78,7 +78,7 @@ Various Apps and tools for the goal of creating an App/Service.
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet),
     [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet),
-    [my-php-examples](https://github.com/JeffDeCola/my-php-containers)
+    [my-php-containers](https://github.com/JeffDeCola/my-php-containers)
 
 * OPERATING SYSTEMS
 

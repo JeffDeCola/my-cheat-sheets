@@ -1,6 +1,6 @@
 # CREATE DNS SERVER USING BIND
 
-`create-dns-server-using-bind` on linux.
+_How to create a dns server using bind on linux._
 
 tl;dr,
 
