@@ -23,7 +23,7 @@ python -m readme2tex --usepackage "xcolor" --readme latex-graphs.tex.md --output
 echo " "
 
 echo "For more information on readme2tex, read my cheat sheet"
-echo "    https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-math-mode-cheat-sheet#app---readme2tex"
+echo "    https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#how-i-created-this-readmemd"
 echo " "
 
 echo "************************************************* make-README.sh (END) *"
