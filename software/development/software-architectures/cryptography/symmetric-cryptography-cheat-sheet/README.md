@@ -1,6 +1,6 @@
 # SYMMETRIC CRYPTOGRAPHY CHEAT SHEET
 
-`symmetric-cryptography` __uses one key to both encrypt
+_`Symmetric cryptography` uses one key to both encrypt
 and a decrypt a message._
 
 There are three main types of cryptography,
@@ -23,3 +23,9 @@ Cryptography is the art of changing a message from a readable format,
 referred to as `plaintext`, into an unreadable one, or `ciphertext`.
 
 Symmetric cryptography uses a single key to encrypt and decrypt a message.
+
+This illustration from my go example
+[aes-256](https://github.com/JeffDeCola/my-go-examples/tree/master/cryptography/symmetric-cryptography/aes-256)
+may help,
+
+![IMAGE - aes.jpg - IMAGE](https://github.com/JeffDeCola/my-go-examples/blob/master/docs/pics/aes.jpg)
