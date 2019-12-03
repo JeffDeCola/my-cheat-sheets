@@ -2,11 +2,20 @@
 
 `LaTeX` _is an advanced markup language used for typesetting._
 
+tl;dr,
+
+```bash
+# CREATED README.MD FILE
+python -m readme2tex --usepackage "xcolor" --readme README.tex.md --output README.md --nocdn
+```
+
+Table of Contents,
+
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#overview)
 * [IT STARTED WITH TeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#it-started-with-tex)
 * [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#latex)
 * [INSTALL LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#install-latex)
-* [CONVERTING TO OTHER FILE FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#converting-to-other-file-formats)       
+* [CONVERTING TO OTHER FILE FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#converting-to-other-file-formats)
 * [POPULAR LaTeX PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#popular-latex-packages)
 * [HOW I CREATED THIS README.md](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#how-i-created-this-readmemd)
 * [readme2tex INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#readme2tex-install)
@@ -19,11 +28,10 @@ View my entire list of cheat sheets on
 
 LateX is is a markup language used for describing a documents.
 
-[LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-can display math equations in LaTeX.
-
-[LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
-can graph 2D and 3D images via LaTeX packages.
+* [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+can display math equations in LaTeX
+* [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
+can graph 2D and 3D images via LaTeX packages
 
 ## IT STARTED WITH TeX
 
@@ -186,7 +194,7 @@ and just the geometry package.
 Usage,
 
 ```bash
-python -m readme2tex --readme README.tex.md --output README.md --nocdn
+python -m readme2tex --usepackage "xcolor" --readme README.tex.md --output README.md --nocdn
 ```
 
 ## VISUAL STUDIO CODE APP - MARKDOWN + MATH
