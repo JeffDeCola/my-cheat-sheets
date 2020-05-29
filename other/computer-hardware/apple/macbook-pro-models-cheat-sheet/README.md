@@ -7,6 +7,46 @@ Note that LL/A is the USA region.
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## 2020 (MID)
+
+* 13-INCH TOUCH BAR
+
+  * 256GB/8GB - 8th Gen i5 1.4GHz (Quad Core) Intel Iris Plus Graphics 645
+    * `MXK32LL/A`   Space Gray
+    * `MXK62LL/A`   Silver
+
+  * 512GB/8GB - 8th Gen i5 1.4GHz (Quad Core) Intel Iris Plus Graphics 645
+    * `MXK52LL/A`   Space Gray
+    * `MXK72LL/A`   Silver
+
+  * 512GB/16GB - 10th Gen i5 2GHz (Quad Core) Intel Iris Plus Graphics
+    * `MWP42LL/A`   Space Gray
+    * `MWP72LL/A`   Silver
+
+  * 1000GB/16GB - 10th Gen i5 2GHz (Quad Core) Intel Iris Plus Graphics
+    * `MWP52LL/A`   Space Gray
+    * `MWP82LL/A`   Silver
+
+## 2019 (MID)
+
+* 13-INCH TOUCH BAR
+
+  * 128GB/8GB - 8th Gen i5 1.4GHz (Quad Core) Intel Iris Plus Graphics 645
+    * `MUHN2LL/A`   Space Gray
+    * `MUHQ2LL/A`   Silver
+
+  * 256GB/8GB - 8th Gen i5 1.4GHz (Quad Core) Intel Iris Plus Graphics 645
+    * `MUHP2LL/A`   Space Gray
+    * `MUHR2LL/A`   Silver
+
+  * 256GB/8GB - 8th Gen i5 2.4Ghz (Quad Core) Intel Iris Plus Graphics 655
+    * `MV962LL/A`   Space Gray
+    * `MV992LL/A`   Silver
+
+  * 512GB/8GB - 8th Gen i5 2.4Ghz (Quad Core) Intel Iris Plus Graphics 655
+    * `MV972LL/A`   Space Gray
+    * `MV9A2LL/A`   Silver
+
 ## 2018 (MID)
 
 * 13-INCH TOUCH BAR
@@ -27,7 +67,7 @@ View my entire list of cheat sheets on
 * 13-INCH NO TOUCH BAR
 
   * 128GB/8GB - 7th Gen i5 (Dual Core) Intel Iris Plus Graphics 640
-    * `MPXQ2LL/A`   Space Gray
+    * `MPXQ2LL/A`   Space Gray (I own this one)
     * `MPXR2LL/A`   Silver
 
   * 256GB/8GB - 7th Gen i5 (Dual Core) Intel Iris Plus Graphics 640
