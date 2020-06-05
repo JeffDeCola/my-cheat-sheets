@@ -402,7 +402,7 @@ There are two ways your machines can find a nameserver,
 
 We will do the latter.
 
-You can check your machine that it got the
+Most of the time, you can check your machine that it got the
 static ip and the nameserver ip,
 
 We want,
@@ -420,9 +420,20 @@ nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
 
-### UBUNTU 18.04
+You can also do,
 
-Ubuntu 18.04 uses netplan.
+```bash
+systemd-resolve --status
+```
+
+### UBUNTU
+
+These DNS configurations work most of the time.
+
+#### UBUNTU 18.04
+
+Ubuntu 18.04 uses netplan. A YAML based configuration system,
+which simplifies the configuration process.
 
 If you have a gui, bring up the manager by
 
@@ -432,11 +443,19 @@ sudo systemctl restart NetworkManager
 sudo systemd-resolve --status
 ```
 
+Remember to turn automatic DNS off in the normal network settings.
+Yeah, this was a pain to figure out.
+
 If you are not using the gui, then edit this file,
 
 ```bash
-sudo nano /etc/netplan/00-private-nameservers.yaml
-sudo nano /etc/netplan/01-netcfg.yaml
+sudo nano /etc/netplan/01-network-manager-all.yaml
+```
+
+Find you ethernet name with,
+
+```bash
+ip a
 ```
 
 This is only for ns1, if you had ns2 you will have to add two addresses.
@@ -444,7 +463,7 @@ This is only for ns1, if you had ns2 you will have to add two addresses.
 ```yaml
 network:
   version: 2
-  renderer: networkd
+  renderer: NetworkManger
   ethernets:
     enp1s0:
       dhcp4: yes
@@ -462,12 +481,14 @@ Now enable and check,
 ```bash
 sudo netplan try
 sudo netplan --debug apply
+sudo netplan --debug generate
 sudo systemd-resolve --status
 ```
 
-### UBUNTU 16.04
+#### UBUNTU 20.04
 
-tbd
+Ubuntu 20.04 also uses netplan for network management by default.
+See above.
 
 ### RASPBIAN
 
