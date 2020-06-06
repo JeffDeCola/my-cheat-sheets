@@ -1,8 +1,8 @@
-# INSTALL AND CONFIGURE OS CHEAT SHEET
+# INSTALL & CONFIGURE OS CHEAT SHEET
 
-`install and configure OS` _distribution on your Raspberry Pi._
+`install & configure OS` _distribution on your Raspberry Pi._
 
-* [DOWNLOAD RASPBIAN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-raspbian-image)
+* [DOWNLOAD IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-image)
 * [WRITE IMAGE TO microSD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd)
 * [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#basic-configuration)
 * [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
@@ -16,30 +16,31 @@ Some fun things you can do with your raspberry pi,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## DOWNLOAD RASPBIAN IMAGE
+## DOWNLOAD IMAGE
 
-Raspbian is the official OS of the raspberry pi.
-Raspbian comes pre-installed with plenty of software for education,
-programming and general use. It has Python, Scratch, Sonic Pi,
-Java and more.
-Raspbian is a free operating system based on Debian, optimized for
-the Raspberry Pi hardware. Raspbian comes with over 35,000 packages:
-pre-compiled software bundled in a nice format for easy installation.
+Get an image of the `Raspberry Pi OS` (previously called Raspbian),
 
-Get an image of Raspbian OS
-[here](https://www.raspberrypi.org/downloads/raspbian/).
+* [32-bit](https://www.raspberrypi.org/downloads/raspbian/)
+* [64-bit (beta test version)](https://www.ras.pberrypi.org/forums/viewtopic.php?f=117&t=275370)
+
+Raspberry Pi OS comes pre-installed with plenty of software for education,
+programming and general use. It has Python, Scratch, Sonic Pi, Java and more.
 
 Some caveats,
 
 * Use the lite version if you don't want a desktop
 * Don't use the full version if you don't have a Pi 4
 
-## WRITE IMAGE TO microSD
+## WRITE IMAGE TO microSD CARD
 
 I use  [Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
 Make sure to use a microSD card of at least 4GB.
 
-## BASIC CONFIGURATION
+They recommend to use the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
+for an easy way to install Raspberry Pi OS and other operating systems to a
+microSD card.
+
+## CONFIGURE YOUR OS
 
 This is a short list,
 
@@ -50,7 +51,7 @@ user: pi
 pw: raspberry
 ```
 
-### UPDATE AND UPGRADE
+### Update and Upgrade
 
 ```bash
 sudo apt-get update
@@ -63,7 +64,7 @@ If you have issues try,
 sudo apt update --allow-releaseinfo-change
 ```
 
-### WHAT OS VERSION ARE YOU USING
+### What OS version are you using
 
 To find the OS release,
 
@@ -71,7 +72,7 @@ To find the OS release,
 cat /etc/os-release
 ```
 
-### CHANGE PASSWORD FOR USER PI
+### Change Password for PI
 
 Change your password for user pi,
 
@@ -79,7 +80,7 @@ Change your password for user pi,
 passwd
 ```
 
-### RENAME YOUR RASPI
+### Rename your RasPi
 
 Rename your host,
 
@@ -88,7 +89,7 @@ sudo nano /etc/hostname
 sudo nano /etc/hosts
 ```
 
-### TURN ON SSH
+### Turn on ssh
 
 I would do this first since you probably want to ssh into it,
 
@@ -97,7 +98,7 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-### ADD NEW USER
+### Add a New User
 
 For security add a new user,
 
@@ -115,7 +116,7 @@ pi    ALL=(ALL) ALL
 jeff  ALL=(ALL) ALL
 ```
 
-### GET GIT & GITHUB WORKING
+### Get Git and GitHub Working
 
 Get git,
 
@@ -151,7 +152,7 @@ Refer to my
 [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
 for more info.
 
-### USE SSH KEYS TO SSH INTO RASPI
+### Use ssh Keys to ssh into your RasPI
 
 If you don't want to type the password all the time when you ssh
 into your raspi, you can use your ssh keys.
@@ -259,14 +260,14 @@ sudo nano /etc/rc.local
 with,
 
 ```bash
-sudo ifconfig wlan0 hw ether AE:EF:49:11:81:41 #Spoofed MAC
+sudo ifconfig wlan0 hw ether AE:EF:49:11:81:41 # Spoofed MAC
 sudo ifconfig wlan0 up # Start
 sudo dhclient wlan0 # Start DHCP
 ```
 
 ## INCREASE SWAP SPACE FROM 100M TO 2G
 
-Increase you swap[ from 100M to 4GB.
+Increase you swap from 100M to 4GB.
 
 Edit,
 
