@@ -42,9 +42,9 @@ microSD card.
 
 ## CONFIGURE YOUR OS
 
-This is a short list,
+What I would do.
 
-Initial user and password,
+### Initial Username and Password
 
 ```txt
 user: pi
@@ -267,7 +267,7 @@ sudo dhclient wlan0 # Start DHCP
 
 ## INCREASE SWAP SPACE FROM 100M TO 2G
 
-Increase you swap from 100M to 4GB.
+Increase you swap from 100M to 2GB.
 
 Edit,
 
