@@ -2,6 +2,14 @@
 
 `macbook pro models` _are the part numbers for the various Macbook Pros._
 
+Table of Contents,
+
+* [2020 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2020-mid)
+* [2019 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2019-mid)
+* [2018 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2018-mid)
+* [2017 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2017-mid)
+* [2016 (LATE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2016-late)
+
 Note that LL/A is the USA region.
 
 View my entire list of cheat sheets on
