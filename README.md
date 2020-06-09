@@ -85,6 +85,7 @@ Various Apps and tools for the goal of creating an App/Service.
 * OPERATING SYSTEMS
 
   * LINUX
+    ([my-linux-tools](https://github.com/JeffDeCola/my-linux-tools))
 
     * [common commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet),
