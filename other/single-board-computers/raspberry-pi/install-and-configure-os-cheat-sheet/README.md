@@ -21,7 +21,7 @@ View my entire list of cheat sheets on
 Get an image of the `Raspberry Pi OS` (previously called Raspbian),
 
 * [32-bit](https://www.raspberrypi.org/downloads/raspbian/)
-* [64-bit (beta test version)](https://www.ras.pberrypi.org/forums/viewtopic.php?f=117&t=275370)
+* [64-bit (beta test version)](https://www.raspberrypi.org/forums/viewtopic.php?f=117&t=275370)
 
 Raspberry Pi OS comes pre-installed with plenty of software for education,
 programming and general use. It has Python, Scratch, Sonic Pi, Java and more.
