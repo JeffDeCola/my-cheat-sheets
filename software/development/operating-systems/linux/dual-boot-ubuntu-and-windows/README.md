@@ -1,40 +1,52 @@
-# DUAL BOOT UBUNTU AND WINDOWS
+# DUAL BOOT UBUNTU & WINDOWS
 
-_Some tricks to help you if you run into issues._
+_Installing Ubuntu on PC that already has Windows installed._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## SIMPLE INSTALL
+## INSTALL USING A BOOTABLE THUMB DRIVE
 
-I got my image
-[here]().
+I got my Ubuntu from
+[here](https://ubuntu.com/download/desktop).
 
-Create a bootable ubuntu using windows rufus.
+I created a bootable ubuntu using windows
+[rufus](https://rufus.ie/)
+(A free application for Windows that can be used to format
+and create bootable USB thumb drives)
+The MBR partition scheme should work.
 
-## AN ISSUE I HAD WITH RST
+You may have to enter your bios to change the boot order.
 
-RST is Intel Rapid Storage Techology,  I needed to change it to AHCI.
+## AN ISSUE I HAD WITH INTEL RST
 
+If your computer uses RST (Intel Rapid Storage Technology), you
+may need to change to AHCI (Advanced Host Controller Interface).
+The **trick is to reinstall Windows with AHCI**.  Don't worry, it's not that hard.
 
-CREATE RECOVERY DISK ON THUMBDRIVE
-You will use this to do fresh reinstall windows
+First you need two USB thumb drives,
 
-CREATE BOOTABLE UBUNTU THUMB
-use rufus and set to GPT partition scheme.
+* Create a `Windows Recovery Disk` on a USB thumb drive
+on the computer you want to dual boot on. Search for `recovery drive`
+in Windows and follow the steps
+* Create your `bootable Ubuntu USB thumb drive`
+using rufus (see above) with the GPT partition scheme
 
-ENTER BIOS - PRESS F2 METHOD
-Enter UEFI (BIOS) through pressing ESC or F2
-1) In 'Boot' tab: 'Disable Fastboot'
-2) In Security tab set secure boot to disabled
-3) In Advanced tab disable Intel Rapid Storage Techology (RST) - Change to AHCI
-Press F10 to save & exit
+Second, depending on your BIOS, you may need to,
 
-WON'T BOOT
-Stick in recover, do fresh install windows.  Uses the above settings.
-The goal - RST is not used, but AHCI is.
+* Disable `Fastboot`
+* Set `Secure Boot` to disabled
+* Change Intel Rapid Storage Technology (RST) to AHCI
 
-BOOT UBUNTU
-Immediately press ESC or F2 again
-In 'Boot' tab: your USB drive should be listed - change the order
-Press F10 to save & exit
+Third, Windows probably won't boot, so put in your Windows Recovery
+Drive and do a fresh install.
+**Now AHCI is being used, not RST.**  This was the trick.
+
+Last, after you have Windows reinstalled (using AHCI),
+* Put in `bootable Ubuntu USB thumb drive`
+* Reboot
+* Enter BIOS
+* Choose Ubuntu to boot
+* Save exit
+
+Now you should be able to dual boot install Ubuntu on your rig.  Congrats.
