@@ -446,6 +446,7 @@ quite a few years to finish._
 ### RANDOM STUFF
 
 * [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+* [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
 
 ### SCIENCE
 
