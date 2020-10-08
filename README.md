@@ -280,7 +280,8 @@ Various Apps and tools for the goal of creating an ASIC.
 
 * SIMULATION
 
-  * [iverilog]()
+  * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
+  * [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
 
 * SYNTHESIS
 
