@@ -9,7 +9,7 @@ Table of Contents,
 
 * [FOUR WAY INTERCHANGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#four-way-interchanges)
   * [Cloverleaf](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#cloverleaf)
-  * [STack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#stack)
+  * [Stack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#stack)
   * [Turbine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#turbine)
   * [Windmill](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#windmill)
   * [Roundabout](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet#roundabout)

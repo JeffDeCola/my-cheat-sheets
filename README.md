@@ -280,7 +280,7 @@ Various Apps and tools for the goal of creating an ASIC.
 
 * SIMULATION
 
-  * _coming soon_
+  * [iverilog]()
 
 * SYNTHESIS
 
