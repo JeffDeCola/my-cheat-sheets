@@ -63,13 +63,13 @@ As we know, bash home is `/home/<bashusername>`.
 
 This directory is actually located for Ubuntu 14.04,
 
-```
+```text
 C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
 ```
 
 And for Ubuntu 18.04,
 
-```
+```text
 C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
 ```
 
@@ -81,7 +81,7 @@ to put your project files somewhere else.
 
 I created the following directory path to keep my projects/working area,
 
-```
+```text
 /mnt/c/Users/<winusername>/home/<bashusername>
 ```
 
@@ -91,14 +91,14 @@ Set the working area in VS code to open in this directory.
 
 The bottom line. Your Ubuntu home is,
 
-```
+```text
 \Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
 \Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
 ```
 
 But your projects/working directory is,
 
-```
+```text
 /mnt/c/Users/<winusername>/home/<bashusername>
 ```
 

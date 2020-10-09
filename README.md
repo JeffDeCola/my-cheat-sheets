@@ -65,6 +65,7 @@ Various Apps and tools for the goal of creating an App/Service.
     ([my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes))
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
+    * [verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
 
 * LANGUAGES
 
@@ -274,7 +275,8 @@ Various Apps and tools for the goal of creating an ASIC.
 * LANGUAGES
 
   * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
+    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples),
+    [VS Code verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md))
 
 ### TOOLS
 
