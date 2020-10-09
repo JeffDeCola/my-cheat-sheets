@@ -2,22 +2,20 @@
 
 _How to install and check `GTKWave`_
 
+Documentation and reference,
+
+* []() Home page.
+
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## INSTALL GTKWave
 
 I installed `GTKWave` for waveform viewing.
 
-### Install from package
+### Install Binary
 
-Gets placed in `/usr/bin`.
-
-This is easier,
-
-```bash
-sudo apt-get update
-sudo apt-get install ?????????
-```
+Install binary from
+[here](https://sourceforge.net/projects/gtkwave/files/)
 
 ## CHECK
 
