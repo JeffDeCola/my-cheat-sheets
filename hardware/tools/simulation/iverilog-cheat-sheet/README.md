@@ -1,14 +1,24 @@
 # IVERILOG CHEAT SHEET
 
-_How to install and check `iverilog`_
+_How to install and check `iverilog` (Icaris Verilog), a tool for
+simulation and synthesis._
+
+Documentation and reference,
+
+* Icarus Verilog
+  [Home page](http://iverilog.icarus.com/)
+* [Repo](  https://github.com/steveicarus/iverilog)
+* [Installation guide](https://iverilog.fandom.com/wiki/Installation_Guide)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## INSTALL IVERILOG
 
-I installed `iverilog` for simulation and synthesis.
+### INSTALL ON LINUX
 
-### Install from package
+You can install it either from a package or build it from source.
+
+#### Install from a package
 
 Gets placed in `/usr/bin`.
 
@@ -19,7 +29,7 @@ sudo apt-get update
 sudo apt-get install verilog
 ```
 
-### Install from Source
+#### Install from Source
 
 Gets placed in `/usr/local/bin` (default).
 
@@ -57,7 +67,26 @@ sudo su
 make install
 ```
 
-## CHECK
+### INSTALL ON WINDOWS
+
+Pre-built binaries are
+[here](http://bleyer.org/icarus/)
+
+### INSTALL ON macOS
+
+The GNU Bison tool (packaged with Xcode) needs to be updated to version 3.
+
+```bash
+brew install bison
+```
+
+Install iverilog,
+
+```bash
+brew install icarus-verilog
+```
+
+## CHECK INSTALLATION
 
 Check,
 
@@ -85,8 +114,15 @@ Compile,
 iverilog -o hello hello.v
 ```
 
-Execute,
+Execute with linux,
 
 ```bash
 ./hello
 ```
+
+Execute with Windows,
+
+```bash
+vvp hello
+```
+

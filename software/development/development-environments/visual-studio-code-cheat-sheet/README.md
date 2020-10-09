@@ -126,7 +126,7 @@ and you will see LF.
 
 Most extensions are standalone and they live in the following directories,
 
-* Windows `Users\Jeff\vscode\extensions`
+* Windows `Users\Jeff\.vscode\extensions`
 * macOS `~/.vscode/extensions`
 * Linux `~/.vscode/extensions`
 
