@@ -144,6 +144,9 @@ vvp hello
 ## SIMPLE EXAMPLE WITH TESTBENCH AND WAVEFORM .VCD FILE
 
 In this example we will create, synthesis and test an AND gate.
+The flow is as follows,
+
+![IMAGE - iVERILOG to .vcd FLOW - IMAGE](../../../../docs/pics/iverilog-to-vcd-flow.jpg)
 
 First, create your AND gate verilog file `and-gate.v`,
 
