@@ -8,6 +8,8 @@ Documentation and reference,
 * GTKWave
   [User's Guide](http://gtkwave.sourceforge.net/gtkwave.pdf)
 * My verilog example [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+* [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
+  free synthesis and simulation tool
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

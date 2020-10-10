@@ -11,7 +11,7 @@ Table of Contents,
   * [INSTALL ON macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-macos)
 * [CHECK INSTALLATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#check-installation)
 * [SIMPLE EXAMPLE (NO TEST BENCH OR WAVEFORM FILE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-no-test-bench-or-waveform-file)
-* [SIMPLE EXAMPLE WITH TESTBENCH AND WAVEFORM .VCD FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-with-testbench-and-waveform-vcd-file)   
+* [SIMPLE EXAMPLE WITH TESTBENCH AND WAVEFORM .VCD FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-with-testbench-and-waveform-vcd-file)
 
 Documentation and reference,
 
@@ -22,7 +22,9 @@ Documentation and reference,
 * Icarus Verilog
   [Installation guide](https://iverilog.fandom.com/wiki/Installation_Guide)
 * My verilog example [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
-
+* [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
+  is a free waveform viewer
+  
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## INSTALL IVERILOG
