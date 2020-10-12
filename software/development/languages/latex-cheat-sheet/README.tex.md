@@ -94,6 +94,21 @@ Check version,
 latex -version
 ```
 
+## INSTALL PACKAGES USING TEXLIVE MANAGER (tlmgr)
+
+After you install, you can update and install other packages located
+[here](https://ctan.org/)
+using `tlmgr`. For example,
+
+```bash
+sudo tlmgr update --self
+sudo tlmgr update --self --all
+sudo tlmgr install standalone
+sudo tlmgr install ghostscript ????????????
+sudo tlmgr install circuitikz ????????????
+sudo tlmgr install dvisvgm
+```
+
 ## CONVERTING TO OTHER FILE FORMATS
 
 You can created a LaTeX File (.tex) and convert to many formats,
