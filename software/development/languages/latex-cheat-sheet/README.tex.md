@@ -104,8 +104,7 @@ using `tlmgr`. For example,
 sudo tlmgr update --self
 sudo tlmgr update --self --all
 sudo tlmgr install standalone
-sudo tlmgr install ghostscript ????????????
-sudo tlmgr install circuitikz ????????????
+sudo tlmgr install circuitikz
 sudo tlmgr install dvisvgm
 ```
 
