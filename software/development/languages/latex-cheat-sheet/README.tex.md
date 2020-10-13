@@ -92,7 +92,7 @@ Make sure you have the following,
 
 ```bash
 latex -version
-tlmgr -v
+tlmgr -version
 dvisvgm -V1
 ghostscript -v
 ```
