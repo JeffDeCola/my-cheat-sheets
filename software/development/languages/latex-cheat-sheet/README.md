@@ -12,17 +12,20 @@ python -m readme2tex --usepackage "xcolor" --readme README.tex.md --output READM
 Table of Contents,
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#overview)
-* [IT STARTED WITH TeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#it-started-with-tex)
-* [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#latex)
+* [LaTeX .tex FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#latex-tex-file)
+* [CREATE A .svg IMAGE FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#create-a-svg-image-file)
 * [INSTALL LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#install-latex)
+  * [LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#linux)
+  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#macos)
+  * [CHECK INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#check-install)
+* [INSTALL PACKAGES USING TEXLIVE MANAGER (tlmgr)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#install-packages-using-texlive-manager-tlmgr)
 * [CONVERTING TO OTHER FILE FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#converting-to-other-file-formats)
 * [POPULAR LaTeX PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#popular-latex-packages)
 * [HOW I CREATED THIS README.md](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#how-i-created-this-readmemd)
 * [readme2tex INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#readme2tex-install)
 * [VISUAL STUDIO CODE APP - MARKDOWN + MATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#visual-studio-code-app---markdown--math)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
@@ -33,19 +36,17 @@ can display math equations in LaTeX
 * [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
 can graph 2D and 3D images via LaTeX packages
 
-## IT STARTED WITH TeX
-
-`TeX` is an advanced typesetting system which was
+It stated with `TeX` which is an advanced typesetting system
 developed by Donald Knuth in 1978. It is a markup language
 for describing a document.
 
 TeX is designed to describe the content, not the look of the document.
 
-## LaTeX
-
 `LaTeX` is a set of macros built on top of TeX. Built back in the 80s.
 
-The syntax can look something like,
+## LaTeX .tex FILE
+
+The `.tex` syntax can look something like,
 
 ```latex
     \documentclass{article}
@@ -63,6 +64,12 @@ The syntax can look something like,
     \end{document}
 ```
 
+## CREATE A .svg IMAGE FILE
+
+The flow to create an image file `.svg` from a `.tex` file looks like,
+
+![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](../../../../docs/pics/latex-software-flow-to-create-svg-image-file.jpg)
+
 ## INSTALL LaTeX
 
 ### LINUX
@@ -77,21 +84,34 @@ sudo apt-get install texlive-full
 
 I'm not sure how to install a lighter version.
 
-Check version,
+### macOS
 
-```bash
-latex -version
-```
-
-### MACOS
-
-Download and install the full version called MacTex from
+Download and install the full version called `MacTex` from
 [here](http://tug.org/mactex/mactex-download.html).
 
-Check version,
+### CHECK INSTALL
+
+Make sure you have the following,
 
 ```bash
 latex -version
+tlmgr -version
+dvisvgm -V1
+ghostscript -v
+```
+
+## INSTALL PACKAGES USING TEXLIVE MANAGER (tlmgr)
+
+After you install, you can update and install other packages located
+[here](https://ctan.org/)
+using `tlmgr`. For example,
+
+```bash
+sudo tlmgr update --self
+sudo tlmgr update --self --all
+sudo tlmgr install standalone
+sudo tlmgr install circuitikz
+sudo tlmgr install amsmath
 ```
 
 ## CONVERTING TO OTHER FILE FORMATS

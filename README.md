@@ -65,6 +65,7 @@ Various Apps and tools for the goal of creating an App/Service.
     ([my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes))
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
+    * [verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
 
 * LANGUAGES
 
@@ -85,11 +86,12 @@ Various Apps and tools for the goal of creating an App/Service.
 * OPERATING SYSTEMS
 
   * LINUX
-    ([my-linux-tools](https://github.com/JeffDeCola/my-linux-tools))
+    ([my-linux-shell-scripts](https://github.com/JeffDeCola/my-linux-shell-scripts))
 
     * [common commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet)
     * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet),
       [create dns server using bind](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
+    * [dual-boot-ubuntu-and-windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dual-boot-ubuntu-and-windows)
     * [fonts](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/fonts-cheat-sheet)
     * [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/init-sysv-script-cheat-sheet)
     * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
@@ -273,13 +275,15 @@ Various Apps and tools for the goal of creating an ASIC.
 * LANGUAGES
 
   * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
+    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples),
+    [VS Code verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md))
 
 ### TOOLS
 
 * SIMULATION
 
-  * _coming soon_
+  * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
+  * [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
 
 * SYNTHESIS
 
@@ -445,6 +449,7 @@ quite a few years to finish._
 ### RANDOM STUFF
 
 * [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+* [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
 
 ### SCIENCE
 
