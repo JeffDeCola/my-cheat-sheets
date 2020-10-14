@@ -5,7 +5,9 @@ _A handy extension for Syntax Highlighting and Linting._
 Documentation and reference,
 
 * [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL&ssr=false#overview)
-
+* My cheat sheet on
+  [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
+  
 ## INSTALL
 
 In order to use this extention you must install a `simulator` and `ctags`.
