@@ -22,6 +22,35 @@ Documentation and reference,
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## TBD
+## OVERVIEW AND HDL LEVELS
 
-tbd
+Verilog is used to describe digital system at the,
+
+* Behavioral Level - Good for testing
+* Register Transfer Level (RTL)
+* Gate Level
+* Switch Level
+
+## GATE PRIMATIVES
+
+You can model gate primitives at the gate level with,
+
+```verilog
+    and(xy, x, y);
+    nand(xy, x, y);
+    or();
+    nor();
+    or();
+    nor();
+```
+
+OPERATORS
+
+```verilog
+#ARITHMATIC
+
+    *   // Multiply
+
+
+
+```
