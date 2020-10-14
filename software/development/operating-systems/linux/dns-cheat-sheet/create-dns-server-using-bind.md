@@ -9,6 +9,7 @@ tl;dr,
 tail -f /var/log/dns.jeffs-query.log
 # ON EACH MACHINE / CLIENT
 cat /etc/resolv.conf
+systemd-resolve --status
 # The ultimate goal is to have,
 #     search jeffnet.lan
 #     nameserver 192.168.20.110
