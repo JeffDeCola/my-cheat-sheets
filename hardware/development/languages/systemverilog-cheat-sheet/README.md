@@ -18,7 +18,7 @@ Documentation and reference,
   is a free waveform viewer
 * VS Code [Verilog HDL Extension](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
  for syntax highlighting and linting
-* Check out my repo [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples/blob/master/README.md)
+* Check out my repo [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 

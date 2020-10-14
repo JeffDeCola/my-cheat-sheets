@@ -10,7 +10,7 @@ Table of Contents,
   * [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-windows)
   * [INSTALL ON macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-macos)
 * [CHECK INSTALLATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#check-installation)
-* [SIMPLE EXAMPLE (NO TEST BENCH OR WAVEFORM FILE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-no-test-bench-or-waveform-file)
+* [SIMPLE EXAMPLE (NO TESTBENCH OR WAVEFORM FILE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-no-testbench-or-waveform-file)
 * [SIMPLE EXAMPLE WITH TESTBENCH AND WAVEFORM .VCD FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-with-testbench-and-waveform-vcd-file)
 
 Documentation and reference,
@@ -21,6 +21,8 @@ Documentation and reference,
   [Repo](  https://github.com/steveicarus/iverilog)
 * Icarus Verilog
   [Installation guide](https://iverilog.fandom.com/wiki/Installation_Guide)
+* My cheat sheet on
+  [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
 * My verilog example [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
 * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
   is a free waveform viewer
@@ -109,7 +111,7 @@ Check,
 iverilog -h
 ```
 
-## SIMPLE EXAMPLE (NO TEST BENCH OR WAVEFORM FILE)
+## SIMPLE EXAMPLE (NO TESTBENCH OR WAVEFORM FILE)
 
 Create a verilog file `hello.v`,
 
