@@ -9,8 +9,8 @@ ASIC hardware or a software app/service._
 
 Table of Contents,
 
-* [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
-  _(For the goal of creating an App/Service)_
+* [SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets) -
+  _For the goal of creating an App/Service_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
     * DEVELOPMENT ENVIRONMENTS
     * LANGUAGES
@@ -32,12 +32,17 @@ Table of Contents,
     * AMAZON AWS
     * GOOGLE GCP
     * MICROSOFT AZURE
-* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)
-  _(For the goal of creating an ASIC)_
+* [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) -
+  _For the goal of creating an ASIC_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
+    * HARDWARE ARCHITECTURES
+    * LANGUAGES
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
-* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)
-  _(Random things I'm interested in)_
+    * SIMULATION
+    * SYNTHESIS
+    * TIMING
+* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
+  _Random things I'm interested in_
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
