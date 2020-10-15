@@ -6,7 +6,7 @@ tl;dr,
 
 ```bash
 # INSTALL
-FileName='go1.12.7.linux-amd64.tar.gz'
+FileName='go1.15.3.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
 sudo mv go /usr/local
@@ -37,28 +37,84 @@ Table of Contents,
 [Binary and source installs](https://golang.org/doc/install) are
 located here for windows, linux or mac. I would not install from a package.
 
+### WINDOWS
+
+Just use the installer found
+[Binary and source installs](https://golang.org/doc/install).
+
+### LINUX
+
 The tarball format is,
 
 ```bash
 tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-For example, I want to install go ver `1.12.9` on my OS `linux`
-and architecture `amd64` machine,
+Hence,
 
 ```bash
-FileName='go1.12.9.linux-amd64.tar.gz'
+FileName='go1.15.3.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
 sudo mv go /usr/local
 rm $FileName
 ```
 
+### macOS
+
 For macOS just use a different FileName,
 
 ```bash
-FileName='go1.12.9.darwin-amd64.tar.gz'
+FileName='go1.15.3.darwin-amd64.tar.gz'
 ```
+
+### RASPBERRY PI OS
+
+For  just use a different FileName,
+
+```bash
+FileName='go1.15.3.linux-arm64.tar.gz'
+```
+
+## UPDATE GO TO NEWER VERSION
+
+This is easy.
+
+### WINDOWS
+
+Just use the installer found
+[Binary and source installs](https://golang.org/doc/install).
+
+### LINUX
+
+Remove your old version,
+
+```bash
+which go
+sudo rm -rf /usr/local/go
+```
+
+Follow the steps above.
+
+### macOS
+
+```bash
+which go
+sudo rm -rf /usr/local/go
+```
+
+Follow the steps above.
+
+### RASPBERRY PI OS
+
+Remove your old version,
+
+```bash
+which go
+sudo rm -rf /usr/local/go
+```
+
+Follow the steps above.
 
 ## CONFIGURE
 
@@ -142,13 +198,17 @@ or `$GOROOT`.
 They usually live in the following locations,
 
 * WINDOWS
-  * C:\Users\Jeff\go\bin & C:\Go\bin
+  * C:\Users\Jeff\go\bin
+  * C:\Go\bin
 * macOS and Ubuntu
-  * ~/bin & /usr/bin & usr/local/go/bin
+  * ~/bin
+  * /usr/bin
+  * /usr/local/go/bin
 
-A few tools that are useful,
+Some tools,
 
 ```bash
+go get -u -v golang.org/x/tools/...
 go get -u -v github.com/nsf/gocode
 go get -u -v github.com/rogpeppe/godef
 go get -u -v golang.org/x/lint/golint
