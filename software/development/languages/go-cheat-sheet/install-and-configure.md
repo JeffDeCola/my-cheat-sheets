@@ -32,7 +32,7 @@ Table of Contents,
   * [LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#linux)
   * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#macos)
   * [RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#raspberry-pi-os)
-* [UPDATE GO TO NEWER VERSION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#update-go-to-newer-version)
+* [UPGRADE GO TO NEWER VERSION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-go-to-newer-version)
   * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#windows)
   * [LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#linux)
   * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md#macos)
@@ -88,7 +88,7 @@ For  just use a different FileName,
 FileName='go1.15.3.linux-arm64.tar.gz'
 ```
 
-## UPDATE GO TO NEWER VERSION
+## UPGRADE GO TO NEWER VERSION
 
 This is easy.
 
