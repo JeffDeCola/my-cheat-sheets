@@ -17,12 +17,28 @@ Documentation and reference,
 
 ## INSTALL GTKWave
 
-I installed `GTKWave` for waveform viewing.
-
-### Install Binary
+### WINDOWS AND macOS (BINARY)
 
 Install binary from
 [here](https://sourceforge.net/projects/gtkwave/files/).
+
+### LINUX
+
+Grab source from from
+[here](https://sourceforge.net/projects/gtkwave/files/).
+
+You may need to install some packages,
+
+```bash
+sudo apt-get -y install tk-dev tcl-dev liblzma-dev gtk+2.0 gperf
+./configure
+make
+su
+make install
+exit
+which gtkwave
+gtkwave -v
+```
 
 ## CHECK
 
