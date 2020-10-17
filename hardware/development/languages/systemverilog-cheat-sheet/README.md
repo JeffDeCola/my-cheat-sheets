@@ -55,12 +55,10 @@ module name (
     rst         // Reset
 );
 
-// INPUT/OUTPUT
+// PORT DECLARATION
 input in1, in2;
 input clk, rst;
 output out1, out2;
-
-// DATA TYPE
 
 ```
 
@@ -122,9 +120,36 @@ output out1, out2;
 
 ## VARIABLE ASSIGNMENT
 
-* **COMBINATIONAL ELEMENTS** Two ways to model - **assign** and **always** statements
-* **SEQUENTIAL ELEMENTS**  One way to model - **always** statement
+* **COMBINATIONAL ELEMENTS** Two ways to model - **assign statement** and
+  **always block**
+* **SEQUENTIAL ELEMENTS**  One way to model - **always block**
 * **INITIAL STATEMENTS** Used in test benches only
+
+### ASSIGN STATEMENT
+
+An assign statement,
+
+* Used to model combinational logic
+* Only use non-blocking statements
+
+```verilog
+assign b <= a;
+b <= a;
+```
+
+### ALWAYS BLOCKS
+
+An always block,
+
+* Executes always, unlike initial blocks which execute only once
+* Should have a sensitive list or a delay associated with it
+
+```verilog
+always @ (posedge clk)
+begin
+    b <= a;
+end
+```
 
 ### INITIAL BLOCKS
 
@@ -139,33 +164,24 @@ initial begin
 end
 ```
 
-### ALWAYS BLOCKS
+## TASK AND FUNCTION
 
-An always block,
+Just like other languages when repeating the same old things again and again.
 
-* Executes always, unlike initial blocks which execute only once
-* Should have a sensitive list or a delay associated with it
+* Tasks can have a delay.
+* Functions can return a value, whereas tasks can not.
 
 ```verilog
-always  @ (a or b or sel)
+function parity;
+input [31:0] data;
+integer i;
 begin
-  y = 0;
-  if (sel == 0) begin
-    y = a;
-  end else begin
-    y = b;
+  parity = 0;
+  for (i= 0; i < 32; i = i + 1) begin
+    parity = parity ^ data[i];
   end
 end
-```
-
-### ASSIGN STATEMENT
-
-An assign statement,
-
-* Used to model combinational logic
-
-```verilog
-assign out = (enable) ? data : 1'bz;
+endfunction
 ```
 
 ## GATE PRIMITIVES
