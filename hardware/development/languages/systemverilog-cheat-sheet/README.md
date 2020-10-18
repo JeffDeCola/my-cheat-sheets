@@ -9,14 +9,15 @@ _Verilog is a Hardware Description Language (HDL) used to describe a digital sys
 Table of Contents,
 
 * [OVERVIEW AND HDL LEVELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#overview-and-hdl-levels)
-* [SAMPLE CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#sample-code)
+* [BASIC STRUCTURE - THE MODULE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#basic-structure---the-module)
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#data-types)
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#operators)
 * [CONTROL STATEMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#control-statements)
 * [VARIABLE ASSIGNMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#variable-assignment)
-  * [INITIAL BLOCKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-blocks)
-  * [ALWAYS BLOCKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-blocks)
   * [ASSIGN STATEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
+  * [ALWAYS BLOCKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-blocks)
+  * [INITIAL BLOCKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-blocks)
+* [TASK AND FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#task-and-function)
 * [GATE PRIMITIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#gate-primitives)
 
 Documentation and reference,
@@ -40,16 +41,19 @@ Verilog is used to describe digital system at the,
 * Gate Level
 * Switch Level
 
-## SAMPLE CODE
+The word Verilog is a combination of the words `verification` and `logic`
+because the language was first suggested as a simulation and verification tool.
 
-Let's look at a block box,
+## BASIC STRUCTURE - THE MODULE
+
+Let's look at a black box of a ,
 
 ```verilog
 // Description of this Module
 module name (
-    in1,        // 1-bit input
-    in2[3:0],   // 4-bit input  (little-endian)
-    out1,       // 1-bit output
+    input in1,        // 1-bit input
+    input in2[3:0],   // 4-bit input  (little-endian)
+    intpu out1,       // 1-bit output
     out2[0:1],  // 2-bit output  (big-endian)
     clk,        // Clock
     rst         // Reset
@@ -60,6 +64,11 @@ input in1, in2;
 input clk, rst;
 output out1, out2;
 
+// DATA TYPES
+
+// CODE STARTS HERE
+
+
 ```
 
 ## DATA TYPES
@@ -67,7 +76,7 @@ output out1, out2;
 ```verilog
 // DRIVER
     reg                 // Holds a state
-    wire                // Connecting things
+    wire                // Connecting things - represents a physical wire
 ```
 
 ## OPERATORS
@@ -133,8 +142,9 @@ An assign statement,
 * Only use non-blocking statements
 
 ```verilog
-assign b <= a;
-b <= a;
+assign b <= a;      // another way to write it
+b = a;              // blocking
+b <= a;             // non-blocking
 ```
 
 ### ALWAYS BLOCKS
@@ -143,6 +153,7 @@ An always block,
 
 * Executes always, unlike initial blocks which execute only once
 * Should have a sensitive list or a delay associated with it
+* Used for both combinational and sequential logic
 
 ```verilog
 always @ (posedge clk)
