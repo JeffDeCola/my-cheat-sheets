@@ -64,14 +64,23 @@ It has input/output as well as the description of what it does.
     reg ??;
 
     // STRUCTURAL (ADD OTHER MODULES)
-    name2 my-thing (.B(C), .Y(Y), .A(n1) );
-    name2 my-thing (.B(C), .Y(Y), .A(n1) );
+    name2 my-thing1 (.a(C), .b(Y), .y(n1) );
+    name2 my-thing2 (.a(C), .b(Y), .y(n1) );
 
     // DESCRIPTION
 
         stuff
 
     endmodule
+```
+
+## NUMBERS
+
+Represented as,
+
+```verilog
+    4’b1001     // 1001
+    12’hFA3     // 1111 1001 0011
 ```
 
 ## DATA TYPES
@@ -81,6 +90,9 @@ It has input/output as well as the description of what it does.
         reg                 // Holds a state
         wire                // Connecting things (Represents a physical wire)
 ```
+
+Note the name `reg` does not necessarily mean that the value is
+a register. (It could be, it does not have to be).
 
 ## OPERATORS
 
@@ -160,15 +172,16 @@ You can model gate primitives at the gate level with,
 
 ## COMBINATIONAL & SEQUENTIAL LOGIC
 
-* **COMBINATIONAL**
+* **COMBINATIONAL LOGIC**
   * Blocks that do not have memory
   * Model using Continuous Assignment Statement (**assign**)
   * Model using an **always block** with
     Blocking Procedural Assignment Statements (**=**)
   * Model using an **always block** with
     Non-Blocking Procedural Assignment Statements (**<=**)
-* **SEQUENTIAL**
+* **SEQUENTIAL LOGIC**
   * Blocks that have memory
+  * Triggered by a `clk` event
   * Model using **always block** with
     Blocking Procedural Assignment Statements (**=**)
   * Model using **always block** with
@@ -183,11 +196,18 @@ Used for combinational logic,
     assign xy_1 = x & y;
 ```
 
-## ALWAYS BLOCKS
+## ALWAYS BLOCK
 
 * Used for both combinational and sequential logic
 * Executes always, unlike initial blocks which execute only once
 * Should have a sensitive list or a delay associated with it
+
+Syntax,
+
+```verilog
+    always @ (sensitivity list)
+        statement;
+```
 
 For combinational logic (AND gate),
 
@@ -221,12 +241,20 @@ For sequential logic (d-flip-flop),
         q <= d;
         q_bar <= !d;
     end
+
+    // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT
+    always @ (posedge clk, negedge reset)
+    begin
+        q <= d;
+        q_bar <= !d;
+    end
 ```
 
-## INITIAL BLOCKS (TESTBENCH)
+## INITIAL BLOCK (TESTBENCH)
 
 * Unlike always block, initial blocks executed only once when simulation starts
 * Used for testbenches
+* No sensitivity list
 
 ```verilog
 // INITIAL BLOCK
