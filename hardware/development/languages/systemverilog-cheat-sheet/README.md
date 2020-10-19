@@ -152,21 +152,21 @@ Pretty much in order of precedence,
   * Modeled using an
     [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
     [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
 * **SEQUENTIAL LOGIC**
   * Blocks that have memory and triggered by a `clk` event (sensitivity list)
   * Modeled using an
     [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
     [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
 
 ### ASSIGN STATEMENT
 
@@ -191,54 +191,49 @@ The **Always Block** is used for both combinational and sequential logic.
 Syntax,
 
 ```verilog
-    always @ (sensitivity list)
+    always @ (sensitivity list) begin
         procedural statement;
     end
 ```
 
 The procedural statements are either,
 
-* **Blocking Procedural Assignment Statements** (**=**) ONLY USE IN TESTBENCHES
-  * Take place sequentially
 * **Non-Blocking Procedural Assignment Statements** (**<=**)
-  * Take place concurrently
+  * Values are assigned concurrently
+* **Blocking Procedural Assignment Statements** (**=**) ONLY USE IN TESTBENCHES
+  * Values are assigned sequentially good for testbenches
 
 An example of combinational logic (AND gate),
 
 ```verilog
-    // ALWAYS BLOCK with BLOCKING PROCEDURAL ASSIGNMENT STATEMENT - ONLY USE IN TESTBENCHES
-    always @ ( * )
-    begin
-        xy = x & y;
+    // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT
+    always @ ( * ) begin
+        xy <= x & y;
     end
 
-    // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT
-    always @ ( * )
-    begin
-        xy <= x & y;
+    // ALWAYS BLOCK with BLOCKING PROCEDURAL ASSIGNMENT STATEMENT - ONLY USE IN TESTBENCHES
+    always @ ( * ) begin
+        xy = x & y;
     end
 ```
 
 An example of sequential logic (d-flip-flop),
 
 ```verilog
-    // ALWAYS BLOCK with BLOCKING PROCEDURAL ASSIGNMENT STATEMENT - ONLY USE IN TESTBENCHES
-    always @ (posedge clk)
-    begin
-        q = d;
-        q_bar = !d;
-    end
-
     // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT
-    always @ (posedge clk)
-    begin
+    always @ (posedge clk) begin
         q <= d;
         q_bar <= !d;
     end
 
+    // ALWAYS BLOCK with BLOCKING PROCEDURAL ASSIGNMENT STATEMENT - ONLY USE IN TESTBENCHES
+    always @ (posedge clk) begin
+        q = d;
+        q_bar = !d;
+    end
+
     // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT????????????????????
-    always @ (posedge clk, negedge reset)
-    begin
+    always @ (posedge clk, negedge reset) begin
         q <= d;
         q_bar <= !d;
     end
@@ -264,7 +259,7 @@ An example of initializing an d-flip-flop for testing,
 ```verilog
     // INITIAL BLOCK INITIALIZING D-FLIP FLOP
     initial begin
-        ???????????????
+        ???????????????;
     end
 ```
 
@@ -318,8 +313,8 @@ Just like other languages when repeating the same old things again and again.
     begin
     parity = 0;
     for (i= 0; i < 32; i = i + 1) begin
-        parity = parity ^ data[i];
-    end
+            parity = parity ^ data[i];
+        end
     end
     endfunction
 ```
