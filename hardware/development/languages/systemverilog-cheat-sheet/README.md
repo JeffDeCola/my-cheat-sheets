@@ -148,25 +148,25 @@ Pretty much in order of precedence,
 * **COMBINATIONAL LOGIC**
   * Blocks that do not have memory
   * Modeled using
-    [Continuous Assignment Statement (assign)]()
+    [Continuous Assignment Statement (assign)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
   * Modeled using an
-    [Always Block]()
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)]()
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
-    [Always Block]()
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)]()
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
 * **SEQUENTIAL LOGIC**
   * Blocks that have memory and triggered by a `clk` event (sensitivity list)
   * Modeled using an
-    [Always Block]()
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)]()
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
-    [Always Block]()
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)]()
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
 
 ### ASSIGN STATEMENT
 
@@ -183,7 +183,9 @@ An example of combinational logic (AND gate),
 
 The **Always Block** is used for both combinational and sequential logic.
 
-* Executes always, unlike initial blocks which execute only once
+* Executes always, unlike
+  [Initial Blocks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-block-testbench)
+  which execute only once
 * Should have a sensitive list or a delay associated with it
 
 Syntax,
