@@ -13,6 +13,7 @@ Table of Contents,
   * [BASIC STRUCTURE (THE MODULE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#basic-structure-the-module)
   * [NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#numbers)
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#data-types)
+  * [SCALAR, VECTOR & ARRAYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#scalar-vector--arrays)
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#operators)
 * [MODELING COMBINATIONAL & SEQUENTIAL LOGIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#modeling-combinational--sequential-logic)
   * [ASSIGN STATEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
@@ -56,32 +57,40 @@ First, the basics.
 A `module` is the basic building block of verilog.
 It has input/output as well as the description of what it does.
 
+Here is an abstraction of what it looks like,
+
 ```verilog
     // VERILOG MODULE
     module name (
-        input  a,           // 1 bit input
-        input  b[3:0],      // 4-input bus (big indian)
         input  clk          // CLock
-        output x[0:7],      // 8-bit output bus (little indian)
-        output x            // 1 bit output
+        input  rst          // Reset
+        input  a,           // 1 bit input
+        input  [3:0] b      // Vector - 4-input bus (big indian)
+        output [0:7] x      // Vector - 8-bit output bus (little indian)
+        output y            // 1 bit output
     );
 
     // DATA TYPES
-    wire n1;
-    reg ??;
+    wire w1;
+    reg  r1;
 
-    // STRUCTURAL (ADD OTHER MODULES)
-    name2 my-thing1 (.a(C), .b(Y), .y(n1) );
-    name2 my-thing2 (.a(C), .b(Y), .y(n1) );
+    // STRUCTURAL (INSTANTIATE OTHER MODULES)
+    name2 my-thing1 (.a(a1), .b(b1), .c(c1));
+    name2 my-thing2 (.a(a2), .b(b2), .c(c2));
 
     // DESCRIPTION
+    assign xy = x & y;
 
-        stuff
+    always @ (sensitivity list) begin
+        procedural statement;
+    end
 
     endmodule
 ```
 
 ### NUMBERS
+
+`[size]'[base_format][number]`
 
 ```verilog
     4’b1001     // 1001
@@ -90,14 +99,34 @@ It has input/output as well as the description of what it does.
 
 ### DATA TYPES
 
+I just want to focus on these two data types,  There are others, but
+I find these the most useful.
+
 ```verilog
     // DRIVER
         reg                 // Holds a state
         wire                // Connecting things (Represents a physical wire)
+
+    // VARIABLES
+        wire    [3:0] out   // out is a vector variable
+        input   clk         // clk is a scalar variable
 ```
 
 Note the name `reg` does not necessarily mean that the value is
 a register. (It could be, it does not have to be).
+
+### SCALAR, VECTOR & ARRAYS
+
+This is simple,
+
+```verilog
+    // SCALAR
+        input   clk              // clk is a scalar variable
+    // VECTOR
+        reg  [3:0] y2            // y2 is a 4-bit scalar variable
+    // ARRAY - Used for memory
+        reg  [7:0] y3 [0:1][0:3] // y3 is a 2D array (2 rows, 4 col) each 8-bit wide
+```
 
 ### OPERATORS
 
@@ -201,7 +230,7 @@ The procedural statements are either,
 * **Non-Blocking Procedural Assignment Statements** (**<=**)
   * Values are assigned concurrently
 * **Blocking Procedural Assignment Statements** (**=**) ONLY USE IN TESTBENCHES
-  * Values are assigned sequentially good for testbenches
+  * Values are assigned sequentially
 
 An example of combinational logic (AND gate),
 
