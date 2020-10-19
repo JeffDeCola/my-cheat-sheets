@@ -261,12 +261,6 @@ An example of sequential logic (d-flip-flop),
         q = d;
         q_bar = !d;
     end
-
-    // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT????????????????????
-    always @ (posedge clk, negedge reset) begin
-        q <= d;
-        q_bar <= !d;
-    end
 ```
 
 ### INITIAL BLOCK (TESTBENCH)
@@ -289,7 +283,14 @@ An example of initializing an d-flip-flop for testing,
 ```verilog
     // INITIAL BLOCK INITIALIZING D-FLIP FLOP
     initial begin
-        ???????????????;
+        CLK = 0;
+        RST = 0;
+        D = 0;
+
+        #15; D = 1;
+        #10; D = 0;
+        #20; D = 1;
+        etc...
     end
 ```
 
@@ -299,15 +300,13 @@ Let's learn a little more about what you can do.
 
 ### GATE PRIMITIVES
 
-You can model gate primitives at the gate level with,
+Not really needed, but you can model gate primitives
+such as `and`, `nand`, `or`, `nor`, `xor`.
+
+For example,
 
 ```verilog
     and(xy, x, y);
-    nand(xy, x, y);
-    or();
-    nor();
-    or();
-    nor();
 ```
 
 ### CONCATENATION
@@ -330,13 +329,18 @@ Example,
             statements;
         end
     // CASE
-        tbd                 // tbd
+        case (expression) begin
+            xx: statements
+            xx: statements
+            xx: statements
+            xx: statements
+        end
     // WHILE
         repeat (expression) begin
             statements;
         end
     // FOR LOOP
-        for ( init; condition; increment) begin
+        for (init; condition; increment) begin
             statements;
         end
     // REPEAT
