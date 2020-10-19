@@ -56,6 +56,7 @@ First, the basics.
 
 A `module` is the basic building block of verilog.
 It has input/output as well as the description of what it does.
+Think of it like a black box.
 
 Here is an abstraction of what it looks like,
 
@@ -309,23 +310,39 @@ You can model gate primitives at the gate level with,
     nor();
 ```
 
+### CONCATENATION
+
+Example,
+
+```verilog
+    wire [2:0] y
+
+    assign y = {a, b, 1'b1}
+```
+
 ### CONTROL STATEMENTS
 
 ```verilog
     // IF-ELSE
-        if (enable == 1'b1) begin
-            //stuff
+        if (expression) begin
+            statements;
         end else begin
-            // more stuff
+            statements;
         end
     // CASE
         tbd                 // tbd
     // WHILE
-        tbd                 // tbd
+        repeat (expression) begin
+            statements;
+        end
     // FOR LOOP
-        tbd                 // tbd
+        for ( init; condition; increment) begin
+            statements;
+        end
     // REPEAT
-        tbd                 // tbd
+        repeat (times) begin
+            statements;
+        end
 ```
 
 ### TASK AND FUNCTION
