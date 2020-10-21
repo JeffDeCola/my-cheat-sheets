@@ -1,9 +1,5 @@
 # SYSTEMVERILOG CHEAT SHEET
 
-```text
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 _Verilog is a Hardware Description Language (HDL) used to describe a digital system._
 
 Table of Contents,
@@ -107,14 +103,20 @@ I find these the most useful.
     // DRIVER
         reg                 // Holds a state
         wire                // Connecting things (Represents a physical wire)
-
-    // VARIABLES
-        wire    [3:0] out   // out is a vector variable
-        input   clk         // clk is a scalar variable
 ```
 
 Note the name `reg` does not necessarily mean that the value is
 a register. (It could be, it does not have to be).
+
+Variables and constants are also data types,
+
+```verilog
+    // VARIABLES
+        wire    [3:0] out   // out is a vector variable
+        input   clk         // clk is a scalar variable
+    // CONSTANT
+        parameter [3:0] state = 2'b0001;
+```
 
 ### SCALAR, VECTOR & ARRAYS
 
@@ -173,7 +175,7 @@ Pretty much in order of precedence,
         ?:                  // Conditional (Operates on 3 inputs)
 ```
 
-## MODELING COMBINATIONAL & SEQUENTIAL LOGIC
+## MODELING COMBINATIONAL & SEQUENTIAL LOGIC (USING 3 BASIC BUILDING BLOCKS)
 
 * **COMBINATIONAL LOGIC**
   * Blocks that do not have memory
@@ -268,6 +270,7 @@ An example of sequential logic (d-flip-flop),
 Unlike always block, Initial Blocks executed only once when simulation starts.
 
 * Used for testbenches
+* Can not synthesize
 * No sensitivity list
 
 Syntax,
@@ -314,9 +317,8 @@ For example,
 Example,
 
 ```verilog
-    wire [2:0] y
-
-    assign y = {a, b, 1'b1}
+    wire [2:0] y;
+    assign y = {a, b, 1'b1};
 ```
 
 ### CONTROL STATEMENTS
@@ -355,6 +357,11 @@ Just like other languages when repeating the same old things again and again.
 
 * Tasks can have a delay
 * Functions can return a value, whereas tasks can not
+
+```verilog
+
+
+```
 
 ```verilog
     function parity;
