@@ -18,7 +18,7 @@ Table of Contents,
 * [MORE SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#more-syntax)
   * [GATE PRIMITIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#gate-primitives)
   * [CONCATENATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#concatenation)
-  * [CONTROL STATEMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#control-statements)
+  * [CONTROL STATEMENTS (IF-ELSE, CASE, WHILE, FOR LOOP, REPEAT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#control-statements-if-else-case-while-for-loop-repeat)
   * [TASKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#tasks)
   * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#functions)
 
@@ -319,7 +319,7 @@ Example,
     assign y = {a, b, 1'b1};
 ```
 
-### CONTROL STATEMENTS
+### CONTROL STATEMENTS (IF-ELSE, CASE, WHILE, FOR LOOP, REPEAT)
 
 ```verilog
     // IF-ELSE
@@ -330,11 +330,12 @@ Example,
         end
     // CASE
         case (expression) begin
-            xx: statements
-            xx: statements
-            xx: statements
-            xx: statements
-        end
+            xx:      statements
+            xx:      statements
+            xx:      statements
+            xx:      statements
+            default: statement
+        endcase
     // WHILE
         repeat (expression) begin
             statements;
