@@ -1,9 +1,5 @@
 # SYSTEMVERILOG CHEAT SHEET
 
-```text
-*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
-```
-
 _Verilog is a Hardware Description Language (HDL) used to describe a digital system._
 
 Table of Contents,
@@ -321,9 +317,8 @@ For example,
 Example,
 
 ```verilog
-    wire [2:0] y
-
-    assign y = {a, b, 1'b1}
+    wire [2:0] y;
+    assign y = {a, b, 1'b1};
 ```
 
 ### CONTROL STATEMENTS
@@ -362,6 +357,11 @@ Just like other languages when repeating the same old things again and again.
 
 * Tasks can have a delay
 * Functions can return a value, whereas tasks can not
+
+```verilog
+
+
+```
 
 ```verilog
     function parity;
