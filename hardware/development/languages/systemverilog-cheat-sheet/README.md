@@ -11,14 +11,16 @@ Table of Contents,
   * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#data-types)
   * [SCALAR, VECTOR & ARRAYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#scalar-vector--arrays)
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#operators)
-* [MODELING COMBINATIONAL & SEQUENTIAL LOGIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#modeling-combinational--sequential-logic)
+* [MODELING COMBINATIONAL & SEQUENTIAL LOGIC (USING 3 BASIC BUILDING BLOCKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#modeling-combinational--sequential-logic-using-3-basic-building-blocks)
   * [ASSIGN STATEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
   * [ALWAYS BLOCK (WHERE THE MAGIC HAPPENS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
   * [INITIAL BLOCK (TESTBENCH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-block-testbench)
 * [MORE SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#more-syntax)
   * [GATE PRIMITIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#gate-primitives)
+  * [CONCATENATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#concatenation)
   * [CONTROL STATEMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#control-statements)
-  * [TASK AND FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#task-and-function)
+  * [TASKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#tasks)
+  * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#functions)
 
 Documentation and reference,
 
@@ -54,35 +56,31 @@ A `module` is the basic building block of verilog.
 It has input/output as well as the description of what it does.
 Think of it like a black box.
 
-Here is an abstraction of what it looks like,
+Here is the structure of some verilog code I coped from my
+[left-shift-register](https://github.com/JeffDeCola/my-systemverilog-examples/blob/master/sequential-logic/shifters/left-shift-register/left-shift-register.v).
 
 ```verilog
-    // VERILOG MODULE
-    module name (
-        input  clk          // CLock
-        input  rst          // Reset
-        input  a,           // 1 bit input
-        input  [3:0] b      // Vector - 4-input bus (big indian)
-        output [0:7] x      // Vector - 8-bit output bus (little indian)
-        output y            // 1 bit output
-    );
+// A 2-bit left-shift-register
+module left_shift_register(
+    input        clk,           // clk
+    input        rst,           // Reset
+    input        d,             // d
+    output [3:0] out            // out
+);
 
-    // DATA TYPES
-    wire w1;
-    reg  r1;
+// DATA TYPES
+reg [3:0] out;
 
-    // STRUCTURAL (INSTANTIATE OTHER MODULES)
-    name2 my-thing1 (.a(a1), .b(b1), .c(c1));
-    name2 my-thing2 (.a(a2), .b(b2), .c(c2));
-
-    // DESCRIPTION
-    assign xy = x & y;
-
-    always @ (sensitivity list) begin
-        procedural statement;
+// SEQUENTIAL CODE
+always @ (posedge clk) begin
+    if (rst) begin
+        out <= 4'b0000;      
+    end else begin
+        out <= {out[2:0], d};
     end
+end
 
-    endmodule
+endmodule
 ```
 
 ### NUMBERS
@@ -351,27 +349,28 @@ Example,
         end
 ```
 
-### TASK AND FUNCTION
+### TASKS
 
-Just like other languages when repeating the same old things again and again.
-
-* Tasks can have a delay
-* Functions can return a value, whereas tasks can not
+Tasks are used in testbenches,
 
 ```verilog
-
-
+    $display("Start Simulation");
+    $finish;
 ```
 
+### FUNCTIONS
+
+Functions are used to repeat code. Unlike tasks, functions can return a value.
+
 ```verilog
-    function parity;
-    input [31:0] data;
-    integer i;
-    begin
-    parity = 0;
-    for (i= 0; i < 32; i = i + 1) begin
-            parity = parity ^ data[i];
-        end
-    end
-    endfunction
+    module simple_function();
+
+        function  myfunction;
+            input a, b, c, d;
+            begin
+                myfunction = ((a+b) + (c-d));
+            end
+        endfunction
+
+    endmodule
 ```
