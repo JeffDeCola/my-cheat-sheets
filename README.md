@@ -292,7 +292,7 @@ Various Apps and tools for the goal of creating an ASIC.
 
 * SYNTHESIS
 
-  * _coming soon_
+  * [Xilinx Vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
 
 * TIMING
 
