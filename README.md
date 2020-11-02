@@ -33,7 +33,7 @@ Table of Contents,
     * GOOGLE GCP
     * MICROSOFT AZURE
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) -
-  _For the goal of creating an ASIC_
+  _For the goal of creating an ASIC/FPGA_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
     * HARDWARE ARCHITECTURES
     * LANGUAGES
@@ -60,6 +60,8 @@ View my entire list of cheat sheets on
 ## SOFTWARE CHEAT SHEETS
 
 Various Apps and tools for the goal of creating an App/Service.
+
+![IMAGE - creating services environment overview - IMAGE](docs/pics/creating-services-environment-overview.jpg)
 
 ### DEVELOPMENT
 
@@ -260,16 +262,11 @@ Various Apps and tools for the goal of creating an App/Service.
   * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
 * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
-### VISUAL OVERVIEW OF CREATING AN APP/SERVICE
-
-This illustration shows how various Apps and tools fit together
-for the goal of creating an App/Service,
-
-![IMAGE - creating services environment overview - IMAGE](docs/pics/creating-services-environment-overview.jpg)
-
 ## HARDWARE CHEAT SHEETS
 
-Various Apps and tools for the goal of creating an ASIC.
+Various Apps and tools for the goal of creating an ASIC/FPGA.
+
+![IMAGE - creating an ASIC environment overview - IMAGE](docs/pics/creating-an-asic-environment-overview.jpg)
 
 ### DEVELOPMENT
 
@@ -297,13 +294,6 @@ Various Apps and tools for the goal of creating an ASIC.
 * TIMING
 
   * _coming soon_
-
-### VISUAL OVERVIEW OF CREATING AN ASIC
-
-This illustration shows how various Apps and tools fit together
-for the goal of creating an ASIC,
-
-![IMAGE - creating an ASIC environment overview - IMAGE](docs/pics/creating-an-asic-environment-overview.jpg)
 
 ## OTHER CHEAT SHEETS
 
