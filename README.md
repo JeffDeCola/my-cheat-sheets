@@ -5,7 +5,9 @@
 
 _A place to keep all my cheat sheets
 for the complete development of
-ASIC hardware or a software app/service._
+ASIC/FPGA hardware or a software app/service.
+These cheat sheets contain info I gathered from other sources and
+figured out over time. It's an ongoing process._
 
 Table of Contents,
 
@@ -52,10 +54,7 @@ Table of Contents,
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
-These cheat sheets contain info I gathered from other sources and
-figured out over time. It is an ongoing process.
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## SOFTWARE CHEAT SHEETS
 
