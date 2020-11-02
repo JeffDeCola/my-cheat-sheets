@@ -19,6 +19,4 @@ I downloaded and use the **Vivado HL webPACK Edition**.
 
 This is my quick and dirty overview,
 
-xilinx-vivado-flow
-
 ![IMAGE - xilinx-vivado-flow - IMAGE](../../../../docs/pics/xilinx-vivado-flow.jpg)
