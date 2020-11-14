@@ -12,6 +12,14 @@ Documentation and reference,
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## SOME SPECS
+
+A very short list,
+
+* Xilinx Spartan-7 FPGA (Part Number XC7S50)
+* 52,160 logic cells
+* 250 pins
+
 ## PROGRAM ONBOARD FLASH WITH YOUR DESIGN
 
 Reprogram the onboard flash so it boots with your design.
