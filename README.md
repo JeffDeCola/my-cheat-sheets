@@ -37,6 +37,7 @@ Table of Contents,
 * [HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) -
   _For the goal of creating an ASIC/FPGA_
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
+    * FPGA DEVELOPMENT BOARDS
     * HARDWARE ARCHITECTURES
     * LANGUAGES
   * [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
@@ -271,7 +272,7 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 * FPGA DEVELOPMENT BOARDS
   
-  * [Digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-dev-boards/digilent-arty-s7-cheat-sheet)
+  * [Digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
 
 * HARDWARE ARCHITECTURES
 
