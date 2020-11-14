@@ -269,6 +269,10 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 ### DEVELOPMENT
 
+* FPGA DEVELOPMENT BOARDS
+  
+  * [Digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-dev-boards/digilent-arty-s7-cheat-sheet)
+
 * HARDWARE ARCHITECTURES
 
   * [ARM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/hardware-architectures/arm-cheat-sheet)
