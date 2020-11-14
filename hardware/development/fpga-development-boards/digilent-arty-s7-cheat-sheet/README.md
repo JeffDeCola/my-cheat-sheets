@@ -5,9 +5,8 @@ _A FPGA development board.  Just some of my notes on this board._
 Documentation and reference,
 
 * [Digilent ARTY-S7](https://reference.digilentinc.com/reference/programmable-logic/arty-s7/start)
-  Home page
-* [Xilinx Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
   home page
+* [Xilinx Vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
 * My verilog examples repo [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
