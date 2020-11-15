@@ -8,6 +8,7 @@
 * [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
 * [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
 * [INCREASE SWAP SPACE FROM 100M TO 2G](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#increase-swap-space-from-100m-to-2g)
+* [INPUT & OUTPUT GPIO PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#input--output-gpio-pins)
 
 Some fun things you can do with your raspberry pi,
 
@@ -287,3 +288,17 @@ Stop and start,
 sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 ```
+
+## INPUT & OUTPUT GPIO PINS
+
+Some specs,
+
+* The newer RasPi have 40 pin GPIOs
+* The GPIO pins can be used as either digital inputs or outputs
+* All the pins have 3.3V logic levels and are not 5V-safe
+* There are 5V and 3.3V power pins
+
+This may help,
+
+raspberry-pi-input-and-output-using-gpio-pins
+![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
