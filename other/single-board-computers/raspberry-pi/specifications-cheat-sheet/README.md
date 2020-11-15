@@ -15,7 +15,7 @@ View my entire list of cheat sheets on
 |:-----------------|-------------------:|-------------------:|
 | Year             |               2014 |               2015 |
 | SoC              |            BCM2835 |            BCM2836 |
-| - CPU / CORE     |              ARM11 |      ARM Cortex A7 |
+| - CPU / CORE     |ARM11 (ARM1176JZFS) |      ARM Cortex A7 |
 | - bus            |             32-bit |             32-bit |
 | - Hz             |             700MHz |             900MHz |
 | - Cores          |                  1 |                  4 |

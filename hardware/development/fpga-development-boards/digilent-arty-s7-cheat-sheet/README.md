@@ -28,3 +28,6 @@ Reprogram the onboard flash so it boots with your design.
 * In Hardware manager choose `Add Configuration Memory Device`
   * Pick Spansion part number `s25fl128sxxxxxx0`
 * Hardware Manager should program your dev board
+
+## USING PMOD FOR INPUT/OUTPUT
+
