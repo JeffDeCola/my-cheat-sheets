@@ -27,4 +27,4 @@ Reprogram the onboard flash so it boots with your design.
   * Make sure in project settings you click checkbox to also create .bin file
 * In Hardware manager choose `Add Configuration Memory Device`
   * Pick Spansion part number `s25fl128sxxxxxx0`
-* It should program your deivce
+* Hardware Manager should program your dev board

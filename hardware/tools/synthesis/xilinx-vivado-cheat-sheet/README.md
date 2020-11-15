@@ -15,7 +15,7 @@ Documentation and reference,
 
 ## INSTALL
 
-I downloaded and use the **Vivado HL webPACK Edition**.
+I downloaded and use the free **Vivado HL webPACK Edition**.
 
 ## VIVADO FLOW
 
