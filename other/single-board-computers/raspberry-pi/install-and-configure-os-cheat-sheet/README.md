@@ -289,17 +289,19 @@ sudo /etc/init.d/dphys-swapfile stop
 sudo /etc/init.d/dphys-swapfile start
 ```
 
-## INPUT & OUTPUT GPIO PINS
+## INPUT & OUTPUT USING GPIO PINS
 
 Some specs,
 
 * GPIO is General Purpose Input / Output
-* The newer RasPi have 40 pin GPIOs
+* The newer RasPi's have 40 pin GPIOs
 * The GPIO pins can be used as either digital inputs or outputs
 * All the pins have 3.3V logic levels and are not 5V-safe
 * There are 5V and 3.3V power pins
 
+For fun I wrote a golang program to control these pins
+[raspi-gpio](https://github.com/JeffDeCola/my-go-examples/tree/master/single-board-computers/raspi-gpio)
+
 This may help,
 
-raspberry-pi-input-and-output-using-gpio-pins
 ![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
