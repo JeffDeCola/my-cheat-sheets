@@ -293,6 +293,7 @@ sudo /etc/init.d/dphys-swapfile start
 
 Some specs,
 
+* GPIO is General Purpose Input / Output
 * The newer RasPi have 40 pin GPIOs
 * The GPIO pins can be used as either digital inputs or outputs
 * All the pins have 3.3V logic levels and are not 5V-safe
@@ -301,4 +302,4 @@ Some specs,
 This may help,
 
 raspberry-pi-input-and-output-using-gpio-pins
-![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
+![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
