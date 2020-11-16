@@ -15,8 +15,9 @@ Documentation and reference,
 
 A very short list,
 
-* Xilinx Spartan-7 FPGA (Part Number XC7S50)
+* Xilinx Spartan-7 FPGA (Part Number XC7S50-CSGA324)
 * 52,160 logic cells
+* 65,200 flip-flops
 * 250 pins
 
 ## PROGRAM ONBOARD FLASH WITH YOUR DESIGN
