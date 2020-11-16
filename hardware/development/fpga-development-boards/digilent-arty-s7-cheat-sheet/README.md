@@ -32,9 +32,6 @@ Reprogram the onboard flash so it boots with your design.
 
 ## INPUT & OUTPUT USING PMOD PINS
 
-
 This may help,
 
-raspberry-pi-input-and-output-using-gpio-pins
-![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](????)
-
+![IMAGE - arty-s7-input-and-output-using-pmod - IMAGE](../../../../docs/pics/arty-s7-input-and-output-using-pmod.jpg)
