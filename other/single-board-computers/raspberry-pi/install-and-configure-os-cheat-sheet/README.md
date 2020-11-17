@@ -2,6 +2,8 @@
 
 `install & configure OS` _distribution on your Raspberry Pi._
 
+Table of Contents,
+
 * [DOWNLOAD IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-image)
 * [WRITE IMAGE TO microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd-card)
 * [CONFIGURE YOUR OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#configure-your-os)
@@ -302,11 +304,11 @@ Some specs,
 For fun I wrote a golang program to control these pins
 [raspi-gpio](https://github.com/JeffDeCola/my-go-examples/tree/master/single-board-computers/raspi-gpio).
 
+This is how I set up the led and button on a breadboard,
+
+![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
+
 Here is the GPIO pin map I got from
 [raspberrypi.org](raspberrypi.org),
 
 ![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../docs/pics/raspberry-pi-gpio-pins.png)
-
-This may help,
-
-![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
