@@ -302,6 +302,11 @@ Some specs,
 For fun I wrote a golang program to control these pins
 [raspi-gpio](https://github.com/JeffDeCola/my-go-examples/tree/master/single-board-computers/raspi-gpio).
 
+Here is the GPIO pin map I got from
+[raspberrypi.org](raspberrypi.org),
+
+![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../docs/pics/raspberry-pi-gpio-pins.png)
+
 This may help,
 
 ![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
