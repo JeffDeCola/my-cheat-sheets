@@ -58,9 +58,11 @@ This is how I set up the led and button on a breadboard,
 
 ![IMAGE - arty-s7-input-and-output-using-pmod - IMAGE](../../../../docs/pics/arty-s7-input-and-output-using-pmod.jpg)
 
-This is the Pmod pin map,
+This is the 12-pin Pmod pin map,
 
 ![IMAGE - pmod-connector- IMAGE](../../../../docs/pics/pmod-connector.png)
+
+These are the 4 Pmod ports on the ARTY-S7,
 
 |             | Pmod JA    | Pmod JB    | Pmod JC    | Pmod JD    |
 |-------------|------------|------------|------------|------------|
