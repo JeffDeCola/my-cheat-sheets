@@ -3,3 +3,6 @@
 
 // GO
 coverage.out
+
+// macOS
+.DS_Store
