@@ -4,11 +4,14 @@
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
-This is a very abbreviated cheat-sheet highlighting the main
-syntax of go. I have lots go examples in my appropriately named repo
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples).
+This is an abbreviated cheat-sheet highlighting the main
+syntax of go. I have lots go examples in
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+repo.
 
-* [LET'S GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#lets-go)
+Table of Contents,
+
+* **[LET'S GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#lets-go)**
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
   * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#executable-your-code--go-runtime)
@@ -37,7 +40,7 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [FORMATING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#formating-types)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
   * [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#cgo-calling-c-with-go)
-* [GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)
+* **[GO SYNTAX OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-syntax-overview)**
   * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
   * [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
   * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
@@ -62,10 +65,15 @@ syntax of go. I have lots go examples in my appropriately named repo
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
   * [GO PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-packages)
   * [CGO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco)
-* [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* [REFERENCES / DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
+* [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+* [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
+* [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
+
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## LET'S GO
 
