@@ -15,15 +15,14 @@ Table of Contents,
 
 Documentation and reference,
 
-* My cheat sheet,
+* My cheat sheet to
   [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md)
-* [Packer Documentation](https://www.packer.io/)
+* [my-packer-image-builds](https://github.com/JeffDeCola/my-packer-image-builds)
+* [Packer documentation](https://www.packer.io/)
+* I use packer on my repo
+  [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 
-My Repo example using packer is
-[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## AUTOMATES MACHINE IMAGE BUILDS
 
