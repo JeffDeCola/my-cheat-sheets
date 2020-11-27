@@ -11,8 +11,8 @@ figured out over time. It's an ongoing process._
 
 Table of Contents,
 
-* **[SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)** -
-  _For the goal of creating an App/Service_
+* **[SOFTWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets) -
+  _For the goal of creating an App/Service_**
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
     * DEVELOPMENT ENVIRONMENTS
     * LANGUAGES
@@ -34,8 +34,8 @@ Table of Contents,
     * AMAZON AWS
     * GOOGLE GCP
     * MICROSOFT AZURE
-* **[HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets)** -
-  _For the goal of creating an ASIC/FPGA_
+* **[HARDWARE CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#hardware-cheat-sheets) -
+  _For the goal of creating an ASIC/FPGA_**
   * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-1)
     * FPGA DEVELOPMENT BOARDS
     * HARDWARE ARCHITECTURES
@@ -44,8 +44,8 @@ Table of Contents,
     * SIMULATION
     * SYNTHESIS
     * TIMING
-* **[OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets)** -
-  _Random things I'm interested in_
+* **[OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
+  _Random things I'm interested in_**
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
