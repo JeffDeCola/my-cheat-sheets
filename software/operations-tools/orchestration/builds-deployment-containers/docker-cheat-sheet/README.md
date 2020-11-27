@@ -45,13 +45,12 @@ Table of Contents,
   * [GET A SHELL PROMPT INSIDE A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#get-a-shell-prompt-inside-a-running-container)
   * [CHECK THE STDOUT OF A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-stdout-of-a-running-container)
 
-Check out my repo
-[my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds).
+Documentation and reference,
 
-[Jeff's images at DockerHub](https://hub.docker.com/u/jeffdecola/).
+* [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
+* My images at [DockerHub](https://hub.docker.com/u/jeffdecola/)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
 

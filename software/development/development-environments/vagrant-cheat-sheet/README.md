@@ -32,10 +32,11 @@ Table of Contents,
 * [CREATING A VAGRANT BOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#creating-a-vagrant-box)
 * [SOME BASIC COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#some-basic-commands)
 
-Check out my repo [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes).
+Documentation and reference,
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
+
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
