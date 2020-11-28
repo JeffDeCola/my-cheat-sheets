@@ -56,7 +56,7 @@ Table of Contents,
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/) updated with
-[concourse ci](https://github.com/JeffDeCola/my-cheat-sheets.ci-README.md)
+[ci-README.md](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)
 
 ## SOFTWARE CHEAT SHEETS
 
