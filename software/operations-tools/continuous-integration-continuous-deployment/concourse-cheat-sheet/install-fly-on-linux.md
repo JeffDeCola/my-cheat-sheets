@@ -27,6 +27,16 @@ mv $HOME/Downloads/fly $HOME/bin/fly-x.x.x
 I always have issues with Ubuntu on Bash on Windows so this is easier for me,
 
 ```bash
+curl -Lo flytemp.tgz https://github.com/concourse/concourse/releases/download/v6.7.1/fly-6.7.1-linux-amd64.tgz
+chmod +x flytemp.tgz
+tar -xvzf flytemp.tgz
+rm flytemp.tgz
+cp fly $HOME/bin/fly-6.7.1
+```
+
+Old,
+
+```bash
 curl -Lo flytemp https://github.com/concourse/concourse/releases/download/v3.2.1/fly_linux_amd64 && chmod +x flytemp && mv flytemp $HOME/bin/fly-3.2.1
 ```
 
