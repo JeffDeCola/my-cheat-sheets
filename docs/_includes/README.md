@@ -1,4 +1,4 @@
-_Built with
+_built with
 [concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
 # SOFTWARE CHEAT SHEETS
