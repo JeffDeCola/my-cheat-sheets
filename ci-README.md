@@ -2,9 +2,8 @@
 
 For fun, I use concourse ci to,
 
-* Automatically update the
+* Updates the
   [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-  per repo PUSH
 * Copies, edits and updates the `README.md` file to `/docs/_includes/README.md`
 * Alerts me of the progress via repo status and slack
 
