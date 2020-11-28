@@ -1,13 +1,16 @@
 # PYTHON CHEAT SHEET
 
-```
+```txt
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`python` _tbd._
+_tbd._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* [my-python-examples](https://github.com/JeffDeCola/my-python-examples)
+
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## TBD
 
