@@ -10,7 +10,7 @@ For fun, I use concourse ci to,
 
 ## PIPELINE
 
-The
+The concourse
 [pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci/pipeline.yml)
 shows the entire ci flow. Visually, it looks like,
 
@@ -18,7 +18,7 @@ shows the entire ci flow. Visually, it looks like,
 
 ## JOBS, TASKS AND RESOURCE TYPES
 
-The `jobs` and `tasks` are,
+The concourse `jobs` and `tasks` are,
 
 * `job-readme-github-pages` runs task
   [task-readme-github-pages.yml](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci/tasks/task-readme-github-pages.yml)
