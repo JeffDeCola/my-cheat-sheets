@@ -1,27 +1,29 @@
-# MY GITHUB WEBPAGE IS UPDATED USING CONCOURSE
+# CONCOURSE CONTINUOUS INTEGRATION
 
 For fun, I use concourse ci to,
 
-* Automatically updates the
+* Automatically update the
   [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
   per repo PUSH
 * Copies, edits and updates the `README.md` file to `/docs/_includes/README.md`
-* Alerts me of the changes via repo status and slack
+* Alerts me of the progress via repo status and slack
 
 ## PIPELINE
 
 The
-[pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh)
+[pipeline.yml](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci/pipeline.yml)
 shows the entire ci flow. Visually, it looks like,
 
 ![IMAGE - my-cheat-sheets concourse ci pipeline - IMAGE](docs/pics/my-cheat-sheets-pipeline.jpg)
 
-## JOBS AND TASKS
+## JOBS, TASKS AND RESOURCE TYPES
 
 The `jobs` and `tasks` are,
 
 * `job-readme-github-pages` runs task
-  [readme-github-pages.sh](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/ci/scripts/readme-github-pages.sh)
+  [task-readme-github-pages.yml](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci/tasks/task-readme-github-pages.yml)
+  that kicks off shell script
+  [readme-github-pages.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci/scripts/readme-github-pages.sh)
 
 The concourse `resources types` are,
 
