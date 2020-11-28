@@ -55,8 +55,9 @@ Table of Contents,
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/) updated with
-[ci-README.md](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+_updated with
+[ci](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
 ## SOFTWARE CHEAT SHEETS
 
