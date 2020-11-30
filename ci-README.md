@@ -1,11 +1,10 @@
 # CONCOURSE CONTINUOUS INTEGRATION
 
-For fun, I use concourse ci to,
+I use concourse ci to,
 
-* Updates the
-  [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-* Copies, edits and updates the `README.md` file to `/docs/_includes/README.md`
-* Alerts me of the progress via repo status and slack
+* Copy and edity `README.md` to `/docs/_includes/README.md` for
+  [GitHub Webpage](https://jeffdecola.github.io/catch-microservice/)
+* Alert me of the progress via repo status and slack
 
 ## PIPELINE
 
