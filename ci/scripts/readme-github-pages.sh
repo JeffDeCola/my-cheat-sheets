@@ -101,6 +101,10 @@ fi
 
 if [ "$commit" = "yes" ]
 then
+
+    echo "GIT SETUP -------------------------------------------------------------------------"
+    echo " "
+
     echo "cp temp-README.md docs/_includes/README.md"
     cp temp-README.md docs/_includes/README.md
     echo " "
@@ -112,6 +116,9 @@ then
     git config --global user.name "Jeff DeCola (Concourse)"
     echo " "
     git config --list
+    echo " "
+
+    echo "GIT PUSH MASTER BRANCH ------------------------------------------------------------"
     echo " "
 
     echo "git add and commit what is needed to protect from unforseen issues"
