@@ -6,3 +6,15 @@ coverage.out
 
 # macOS
 .DS_Store
+
+# Ignore binaries
+**/bin/catch
+
+# Ignore test coverage
+**/test/test_coverage.txt
+
+# Ignore binary used for docker build
+**/build-push/catch
+
+# Ignore README for github pages
+**/docs/_includes/README.md
