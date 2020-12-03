@@ -15,6 +15,3 @@ coverage.out
 
 # Ignore binary used for docker build
 **/build-push/hello-go
-
-# Ignore README for github pages
-**/docs/_includes/README.md
