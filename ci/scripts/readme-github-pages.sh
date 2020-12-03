@@ -94,8 +94,8 @@ then
     echo " "
 else
     echo "    No, it does not exist"
-    echo "    Creating the _includes directory"
-    mkdir docs/_includes
+    echo "    Creating the _includes directory if it doesn't exist"
+    mkdir -p docs/_includes
     echo " "
 fi
 

@@ -1,5 +1,3 @@
 The README.md intentionally not in this folder.
 
-.gitignore will ignore it.
-
 Concourse ci will update the README.md on the master branch.
