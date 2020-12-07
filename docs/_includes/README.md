@@ -392,6 +392,7 @@ quite a few years to finish._
 ### RANDOM STUFF
 
 * [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+* [seeburg-1952-m100c-jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet)
 * [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
 
 ### SCIENCE
