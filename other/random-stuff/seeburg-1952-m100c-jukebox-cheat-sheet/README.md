@@ -2,6 +2,12 @@
 
 _Parts and part numbers._
 
+Table on Contents,
+
+* [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#fuses)
+* [LIGHTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#lights)
+* [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#vacuum-tubes)
+
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## FUSES
