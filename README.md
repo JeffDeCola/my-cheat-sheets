@@ -450,6 +450,8 @@ quite a few years to finish._
 ### RANDOM STUFF
 
 * [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+* [gta v my stuff](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet)
+* [my lunch ratings dtla](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/my-lunch-ratings-dtla-cheat-sheet)
 * [seeburg-1952-m100c-jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet)
 * [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
 
