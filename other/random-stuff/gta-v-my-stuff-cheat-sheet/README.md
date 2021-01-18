@@ -1,10 +1,65 @@
 # GTA V MY STUFF CHEAT SHEET
 
-_I like to play this game_
+_I like to play this game._
 
-## PHONE
+Table of Contents,
+* [INTERACTIVE MENU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#interactive-menu)
+* [PHONE - PEGASUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#phone---pegasus)
+* [PHONE - MECHANIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#phone---mechanic)
 
-### PEGASUS
+## INTERACTIVE MENU
+
+### BUNKER
+
+* ANTI-AIRCRAFT Trailer
+
+### HANGER
+
+* Titan
+* Hydra
+* Volatol (Huge Super Hero)
+* Tula
+* RM-10 Bombushka (Huge slow bomber)
+* P-996 LAZER
+* V-65 Molotok
+* B-11 Strikeforce
+* Luxor Deluxe
+* Annihilator Stealth
+* Ultralight
+* Cuban 800
+* Pyro
+* RO-86 Alkonost (Huge Plane)
+
+### NIGHTCLUB LEVEL B1
+
+* Speedo Custom (BUG - ERROR)
+* Mule Custom
+* Pounder Custom
+
+### WAREHOUSE BASEMENT
+
+* Phantom Wedge
+* Ruiner 2000
+* Technical Aqua
+* Wastelander
+* Armored Boxville
+* Rocket Voltic
+* Ramp Buggy
+* Blazer Aqua
+
+### SERVICES
+
+* Galazy Super Yacht
+* Mobile Operations Center (In Bunker)
+* Avenger (At Lago Zancudo Facility)
+* Terrobyte (At Nightclub Garage B5)
+  * Request Oppressor Mk II
+* Kosatka (Sub)
+  * Request Sparrow (Helicopter)
+  * Request Avisa (Mini Sub)
+  * Request Dinghy
+
+## PHONE - PEGASUS
 
 * Weaponized
   * Insurgent Pick-Up (Just call mechanic)
@@ -25,62 +80,15 @@ _I like to play this game_
 * Truck
   * Mule
 * Transport
-  * Journey (Shitty Winabago?)
+  * Journey (RV)
 * Blimp
   * Blimp Tony's Fun House
 * Special
   * Festival Bus Cosmic Trip
 
-### MECHANIC
+## PHONE - MECHANIC
 
-## INTERACTIVE MENU
-
-### SERVICES
-
-* Galazy Super Yacht
-* Mobile Operations Center (At BUNKER)
-* Avenger (At LAGO ZANCUDO FACILITY)
-* Terrobyte (At NIGHTCLUB GARAGE B5)
-  * Request Oppressor Mk II
-* Kosatka (Sub)
-  * Request Sparrow (Helicopter)
-  * Request Avisa (Sub)
-  * Request Dinghy
-
-### HANGER
-
-* Titan
-* Hydra
-Volatol
-P-996 LAZER
-V-65 Molotok
-B-11 Strikeforce
-Luxor Deluxe
-Annihilator Stealth
-Ultralight
-Cuban 800
-*Pyro
-RO-86 Alkonost (Huge Plane)
-
-
-### WAREHOUSE BASEMENT
-
-* Phantom Wedge
-* Ruiner 2000
-* Technical Aqua
-* Wastelander
-* Armored Boxville
-* Rocket Voltic
-* Ramp Buggy
-* Blazer Aqua
-
-## REQUEST ANTI-AIRCRAFT Trailer  ******************
-
-
-*
-*
-
-## INTEGRITY WAY, 28 (Downtown)
+### INTEGRITY WAY, 28 (Downtown)
 
 _Working Class (The pinstripes),_
 
@@ -89,17 +97,18 @@ _Working Class (The pinstripes),_
 * Felon GT
 * Caracara 4x4
 
-## TINSEL TOWERS, APT 42
+### TINSEL TOWERS, APT 42
 
 _Fast and furious,_
 
 * Cyclone (electric)
 * Locust
 * Futo
+* Flash GT
 * Elegy RH8
 * Feltzer
 
-## ECLIPSE TOWERS, 3 (Hollywood)
+### ECLIPSE TOWERS, 3 (Hollywood)
 
 _Open wheel and racing,_
 
@@ -113,14 +122,13 @@ _Open wheel and racing,_
 * BR8 (F1)
 * Veto Classic (Go cart)
 
-## 4584 PROCOPIO DR (Up North)
+### 4584 PROCOPIO DR (Up North)
 
 _TBD,_
 
-* Felon GT
-* etc...
+* Currently Felon GT (x6)
 
-## EXCEPTIONALISTS WAY (Airport)
+### EXCEPTIONALISTS WAY (Airport)
 
 _Futuristic,_
 
@@ -128,7 +136,7 @@ _Futuristic,_
 * Deluxo (Flying car)
 * Stromberg (Lame underwater car)
 
-## HAWICK CLUBHOUSE (Hollwwood)
+### HAWICK CLUBHOUSE (Hollywood)
 
 _Motorcycles,_
 
@@ -141,7 +149,7 @@ _Motorcycles,_
 * Oppressor
 * Manchez Scout
 
-## 3 ALTA ST, APT 57 (Downtown)
+### 3 ALTA ST, APT 57 (Downtown)
 
 _Rusted,_
 
@@ -153,11 +161,9 @@ _Rusted,_
 * Tornado
 * Injection
 
-## OFFICE GARAGE (Downtown)
+### OFFICE GARAGE (Downtown)
 
-_Reject crap cars I hate but pin probably loves,_
-
-* **1** _Benny's_
+* **LEVEL 1** _Benny's_
   * RBuccaneer Custom topless
   * Tornado
   * Manana
@@ -179,31 +185,31 @@ _Reject crap cars I hate but pin probably loves,_
   * Sabre Turbo
   * Sultan
 
-* **2** _tbd_
-  * tbd
-  * etc...
+* **Level 2** _tbd_
+  * tbd (x20)
 
-* **3** _Money/Insurance cars_
+* **Level 3** _Money/Insurance cars_
   * Itali RSX (x20)
 
-## LAGO ZANCUDO FACILITY (Mid map)
+### LAGO ZANCUDO FACILITY (Mid map)
 
 _Military,_
 
 * Barrage
 * Weaponized Tampa
 * TM-02 Khanjali (Tank)
+* Thruster (Flying backpack)
 
 _Other,_
 
 * Avenger (Helicopter Plane)
 
-## NIGHTCLUB GARAGE (Hollywood)
+### NIGHTCLUB GARAGE (Hollywood)
 
 * **ENTRANCE**
   * Insurgent Pick-Up Custom
 
-* **B1** _Carry? via Vehical menu_
+* **B1** _Use Interactive Menu_
   * Speedo Custom (BROKE - ERROR)
   * Mule Custom
   * Pounder Custom
@@ -225,9 +231,9 @@ _Other,_
   * Oppressor Mk II (x10)
 
 * **B5**
-  * TERROBYTE (See below)
+  * TERROBYTE (with Oppressor Mk II)
 
-## ARENA (Down South)
+### ARENA
 
 _Mini and fiat,_
 
@@ -268,7 +274,7 @@ _Future Shock,_
   * fast furious
   * truck
 
-## CASINO PENTHOUSE GARAGE
+### CASINO PENTHOUSE GARAGE
 
 _Bond and luxury,_
 
@@ -280,7 +286,7 @@ _Bond and luxury,_
 * Stinger GT
 * Stinger
 
-## ARCADE GARAGE (Hollywood)
+### ARCADE GARAGE (Hollywood)
 
 _Supercars,_
 
@@ -292,15 +298,16 @@ _Supercars,_
 * Tyrus
 * Krieger
 
-## 331 SUPPLY ST (casino area)
+### 331 SUPPLY ST (casino area)
 
 * Itali GTO
-Itali RSX
-Opressor
+* Itali RSX
+* Opressor
 
-## TERROBYTE
-  * Oppressor Mk II
+### TERROBYTE
+  
+* Oppressor Mk II
 
-## KOSATKA
-  * Toreador (has torpedos)
-  * tbd
+### KOSATKA
+
+* Toreador (Has Torpedos)
