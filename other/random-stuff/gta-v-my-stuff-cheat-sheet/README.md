@@ -88,18 +88,14 @@ Table of Contents,
 
 ## PHONE - MECHANIC
 
-### INTEGRITY WAY, 28 (Downtown)
-
-_Working Class (The pinstripes),_
+### INTEGRITY WAY, 28 (Working Class - The pinstripes)
 
 * Youga Classic
 * Baller
 * Felon GT
 * Caracara 4x4
 
-### TINSEL TOWERS, APT 42
-
-_Fast and furious,_
+### TINSEL TOWERS, APT 42 (Fast and furious)
 
 * Cyclone (electric)
 * Locust
@@ -108,9 +104,7 @@ _Fast and furious,_
 * Elegy RH8
 * Feltzer
 
-### ECLIPSE TOWERS, 3 (Hollywood)
-
-_Open wheel and racing,_
+### ECLIPSE TOWERS, 3 (Open wheel and racing)
 
 * Outlaw (Offroad)
 * Vagrant (Offroad)
@@ -122,23 +116,17 @@ _Open wheel and racing,_
 * BR8 (F1)
 * Veto Classic (Go cart)
 
-### 4584 PROCOPIO DR (Up North)
-
-_TBD,_
+### 4584 PROCOPIO DR (tbd)
 
 * Currently Felon GT (x6)
 
-### EXCEPTIONALISTS WAY (Airport)
-
-_Futuristic,_
+### EXCEPTIONALISTS WAY (Futuristic)
 
 * Vigilante (Batman)
 * Deluxo (Flying car)
 * Stromberg (Lame underwater car)
 
-### HAWICK CLUBHOUSE (Hollywood)
-
-_Motorcycles,_
+### HAWICK CLUBHOUSE (Motorcycles)
 
 * Carbon RS
 * Hexer
@@ -149,9 +137,7 @@ _Motorcycles,_
 * Oppressor
 * Manchez Scout
 
-### 3 ALTA ST, APT 57 (Downtown)
-
-_Rusted,_
+### 3 ALTA ST, APT 57 (Rusted)
 
 * Duneloader
 * Rusty Rebel
@@ -191,20 +177,14 @@ _Rusted,_
 * **Level 3** _Money/Insurance cars_
   * Itali RSX (x20)
 
-### LAGO ZANCUDO FACILITY (Mid map)
-
-_Military,_
+### LAGO ZANCUDO FACILITY (Military)
 
 * Barrage
 * Weaponized Tampa
 * TM-02 Khanjali (Tank)
 * Thruster (Flying backpack)
 
-_Other,_
-
-* Avenger (Helicopter Plane)
-
-### NIGHTCLUB GARAGE (Hollywood)
+### NIGHTCLUB GARAGE
 
 * **ENTRANCE**
   * Insurgent Pick-Up Custom
@@ -235,9 +215,7 @@ _Other,_
 
 ### ARENA
 
-_Mini and fiat,_
-
-* **WORKSHOP**
+* **WORKSHOP** _Mini and fiat_
   * Issi
   * Issi Sport
   * mini
@@ -246,9 +224,7 @@ _Mini and fiat,_
   * Brioso R/Q
   * Brioso 300
 
-_Armor and Nightmare (color),_
-
-* **B1**
+* **B1** _Armor and Nightmare_
   * Kuruma (Armored)
   * Paragon R (Armored)
   * Schafter LWB (Armored)
@@ -260,9 +236,7 @@ _Armor and Nightmare (color),_
   * Van
   * truck
 
-_Future Shock,_
-
-* **B2**
+* **B2** _Future Shock_
   * Big Wheel
   * Limo
   * Van
@@ -274,9 +248,7 @@ _Future Shock,_
   * fast furious
   * truck
 
-### CASINO PENTHOUSE GARAGE
-
-_Bond and luxury,_
+### CASINO PENTHOUSE GARAGE (Bond and luxury)
 
 * Stafford (Old School)
 * Roosevelt Valor (Old School)
@@ -286,9 +258,7 @@ _Bond and luxury,_
 * Stinger GT
 * Stinger
 
-### ARCADE GARAGE (Hollywood)
-
-_Supercars,_
+### ARCADE GARAGE (Supercars)
 
 * Adder
 * Thrax
@@ -298,16 +268,16 @@ _Supercars,_
 * Tyrus
 * Krieger
 
-### 331 SUPPLY ST (casino area)
+### 331 SUPPLY ST (Favorite Cars)
 
 * Itali GTO
 * Itali RSX
 * Opressor
 
-### TERROBYTE
+### TERROBYTE (Basement of Nightclub)
   
 * Oppressor Mk II
 
-### KOSATKA
+### KOSATKA (Submarine)
 
 * Toreador (Has Torpedos)
