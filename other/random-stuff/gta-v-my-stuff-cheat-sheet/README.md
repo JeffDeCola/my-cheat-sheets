@@ -2,7 +2,9 @@
 
 _I like to play this game_
 
-## PEGASUS
+## PHONE
+
+### PEGASUS
 
 * Weaponized
   * Insurgent Pick-Up (Just call mechanic)
@@ -29,18 +31,52 @@ _I like to play this game_
 * Special
   * Festival Bus Cosmic Trip
 
-* TANK
-## SERVICES
+### MECHANIC
+
+## INTERACTIVE MENU
+
+### SERVICES
 
 * Galazy Super Yacht
 * Mobile Operations Center (At BUNKER)
 * Avenger (At LAGO ZANCUDO FACILITY)
 * Terrobyte (At NIGHTCLUB GARAGE B5)
-* Kosatka (sub)
+  * Request Oppressor Mk II
+* Kosatka (Sub)
+  * Request Sparrow (Helicopter)
+  * Request Avisa (Sub)
+  * Request Dinghy
 
-## WAREHOUSE
+### HANGER
 
-*
+* Titan
+* Hydra
+Volatol
+P-996 LAZER
+V-65 Molotok
+B-11 Strikeforce
+Luxor Deluxe
+Annihilator Stealth
+Ultralight
+Cuban 800
+*Pyro
+RO-86 Alkonost (Huge Plane)
+
+
+### WAREHOUSE BASEMENT
+
+* Phantom Wedge
+* Ruiner 2000
+* Technical Aqua
+* Wastelander
+* Armored Boxville
+* Rocket Voltic
+* Ramp Buggy
+* Blazer Aqua
+
+## REQUEST ANTI-AIRCRAFT Trailer  ******************
+
+
 *
 *
 
@@ -100,9 +136,10 @@ _Motorcycles,_
 * Hexer
 * Blazer
 * Faggio Mod
-* Shotaro
+* Shotaro (Tron)
 * BF400
 * Oppressor
+* Manchez Scout
 
 ## 3 ALTA ST, APT 57 (Downtown)
 
@@ -120,28 +157,42 @@ _Rusted,_
 
 _Reject crap cars I hate but pin probably loves,_
 
-* **1**
-  * RE-7B
-  * Peyote
+* **1** _Benny's_
+  * RBuccaneer Custom topless
   * Tornado
-  * etc...
-
-_Money cars,_
+  * Manana
+  * Peyote
+  * Newro Custom
+  * Specter
+  * Youga Classic 4x4
+  * Moonbena custon
+  * Mini Custom
+  * Gauntlet Classic
+  * Glendale
+  * Comet
+  * Elegy RH8
+  * Faction
+  * Banshee
+  * Primo
+  * Itali GTB
+  * Virgo Classic
+  * Sabre Turbo
+  * Sultan
 
 * **2** _tbd_
-  * as above
+  * tbd
+  * etc...
 
-_Money cars,_
-
-* **3**
+* **3** _Money/Insurance cars_
   * Itali RSX (x20)
 
 ## LAGO ZANCUDO FACILITY (Mid map)
 
 _Military,_
 
+* Barrage
 * Weaponized Tampa
-* TM-02 Khanjali
+* TM-02 Khanjali (Tank)
 
 _Other,_
 
@@ -153,7 +204,7 @@ _Other,_
   * Insurgent Pick-Up Custom
 
 * **B1** _Carry? via Vehical menu_
-  * Speedo Custom
+  * Speedo Custom (BROKE - ERROR)
   * Mule Custom
   * Pounder Custom
 
@@ -185,6 +236,7 @@ _Mini and fiat,_
   * Issi Sport
   * mini
   * Issi Classic
+  * aloced
   * Brioso R/Q
   * Brioso 300
 
@@ -234,19 +286,21 @@ _Supercars,_
 
 * Adder
 * Thrax
-* Itali RSX
 * Visione
 * Furia
-* Itali GTO
 * T20
 * Tyrus
 * Krieger
 
-## MOBILE
+## 331 SUPPLY ST (casino area)
 
-* **TERROBYTE**
+* Itali GTO
+Itali RSX
+Opressor
+
+## TERROBYTE
   * Oppressor Mk II
 
-* **KOSATKA**
+## KOSATKA
   * Toreador (has torpedos)
   * tbd
