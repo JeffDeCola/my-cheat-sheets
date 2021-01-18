@@ -24,8 +24,8 @@ Table on Contents,
 * Produced: 38,200
 * Dimentions (HxWxD): 54" x 35" x 26"
 * Weight: 305 lbs
-* Remote Speaker: [Teardrop]()
-* Wallbox: [3W1 "WALL-O-MATIC"]()
+* Remote Speaker: [Teardrop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
+* Wallbox: [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
 * Cabinet Key: G245
 * Coins: 5, 10, 25 cents
 
@@ -59,8 +59,12 @@ There are a total of 3 Flourescent lights.
 
 * BOTTOM
   * **Ballast** 405546 (1)
-    * ADVANCE L-220F (Discontinued Part)
-    * T12 Magnetic Ballasts
+    * Manufacturer: ADVANCE
+    * Model: L-220F (Discontinued)
+    * Type: Magnetic Ballast (Older Technology)
+    * Start Method: Preheat
+    * Number of Lamps: 2
+    * Operates Lamp type: F20T12
   * **Starter** 405138 (2)
     * FS2 or FS-25
   * **Flourescent Tubes** 405547 (2)
