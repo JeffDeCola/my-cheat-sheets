@@ -2,6 +2,8 @@
 
 _A Multi-Vendor (Marketplace) E-Commerce platform._
 
+[See my offsite demo](https://multi-vendor-marketplace.jeffdecola.com)
+
 Other E-Commerce platform configurations,
 
 * **MULTI-VENDOR**
@@ -19,17 +21,27 @@ Documentation and reference,
 
 * [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
-This may help,
+This is an illustration of a muklti-vendor marketplace using wordpress,
 
 ![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../../docs/pics/multi-vendor-marketplace.jpg)
 
-## HIGH LEVEL STEPS
+## SOFTWARE STACK
 
-These are some of my notes to help create this platform.
+To create this marketplace, the following was used,
 
-* Install Wordpress on your web server
-* 
+* WORDPRESS
+  * WooCommerce plugin
+  * WC Vendors plugin
+
+## STEPS TO CREATE YOUR MARKETPLACE
+
+This is a very abbreviated list to create a multi-vendor marketplace
+using wordpress.
+
+* Install WordPress on your server (with SSL)
+* Install WooCommerce plugin
+* Install WC Vendors plugin
