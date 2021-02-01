@@ -16,4 +16,4 @@ Documentation and reference,
 
 This may help,
 
-![IMAGE -single-vendor-single-store.jpg - IMAGE](docs/pics/single-vendor-single-store.jpg)
+![IMAGE -single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)

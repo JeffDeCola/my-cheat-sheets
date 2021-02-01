@@ -16,4 +16,4 @@ Documentation and reference,
 
 This may help,
 
-![IMAGE - multi-vendor-multi-store.jpg - IMAGE](docs/pics/multi-vendor-multi-store.jpg)
+![IMAGE - multi-vendor-multi-store.jpg - IMAGE](../../../../docs/pics/multi-vendor-multi-store.jpg)

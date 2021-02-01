@@ -18,7 +18,7 @@ Documentation and reference,
 
 This may help,
 
-![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../docs/pics/multi-vendor-marketplace.jpg)
+![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../../docs/pics/multi-vendor-marketplace.jpg)
 
 ## HIGH LEVEL STEPS
 
