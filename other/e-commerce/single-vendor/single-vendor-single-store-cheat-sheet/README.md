@@ -2,6 +2,8 @@
 
 _A Single-Vendor (Single-Store) E-Commerce Platform._
 
+[See my offsite demo](https://single-vender-single-store.jeffdecola.com)
+
 Other E-Commerce platform configurations,
 
 * **MULTI-VENDOR**
@@ -19,10 +21,16 @@ Documentation and reference,
 
 * [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
+
+Example using WordPress and WooCommerce PlugIn)
 
 This may help,
 
 ![IMAGE -single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
+
+## STEPS
+
+These steps
