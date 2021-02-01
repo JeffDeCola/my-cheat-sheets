@@ -47,6 +47,7 @@ Table of Contents,
 * **[OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets#other-cheat-sheets) -
   _Random things I'm interested in_**
   * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets#computer-hardware)
+  * [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets#e-commerce-platforms)
   * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#history)
   * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets#mathematics)
   * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets#mining-cryptocurrency)
@@ -214,6 +215,7 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * [keybase](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/keybase-cheat-sheet)
   * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet)
+  * [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
 * FaaS - FUNCTION AS A SERVICE
 
@@ -324,6 +326,17 @@ Random other things I'm interested in.
   * [monitors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/monitors-cheat-sheet)
   * [ssd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/ssd-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
+
+### E-COMMERCE PLATFORMS
+
+* MULTI-VENDOR
+
+  * [multi vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
+  * [multi vendor multi store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
+
+* SINGLE-VENDOR
+
+  * [single vendor single store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
 
 ### HISTORY
 
