@@ -1,6 +1,7 @@
 # SINGLE-VENDOR SINGLE-STORE CHEAT SHEET
 
-_A Single-Vendor (Single-Store) E-Commerce Platform._
+_A Single-Vendor (Single-Store) E-Commerce Platform.
+More simply, an online store._
 
 Other E-Commerce platform configurations,
 
@@ -13,7 +14,12 @@ Other E-Commerce platform configurations,
 
 Table of Contents,
 
-* tbd
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#overview)
+* [USERS (ADMIN, VENDORS & CUSTOMERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#users-admin-vendors--customers)
+* [STEPS TO CREATE AN ONLINE STORE USING WORDPRESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#steps-to-create-an-online-store-using-wordpress)
+  * [SOFTWARE STACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#software-stack)
+  * [INSTALATION STEPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#instalation-steps)
+  * [CONFIGURATION STEPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#configuration-steps)
 
 Documentation and reference,
 
@@ -24,13 +30,13 @@ Documentation and reference,
 
 ## OVERVIEW
 
-E-Commerce Platforms are Software as a Service (SaaS).
+E-Commerce platforms are Software as a Service (SaaS).
 
 The following illustration is a high-level view of an
-Single-Vendor (Single-Store) E-Commerce platform using
-WordPress and WooCommerce PlugIn.
-
-Or more simply, an online store hosted on your private server,
+Single-Vendor (Single-Store) E-Commerce platform
+on a private server
+using WordPress and WooCommerce PlugIn.
+Or more simply, an **online store** hosted on your private server.
 
 ![IMAGE -single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
 
@@ -60,7 +66,7 @@ the following capabilities,
   * Purchasing
   * Shipping/Tracking
 
-## LETS MAKE AN ONLINE STORE USING WORDPRESS
+## STEPS TO CREATE AN ONLINE STORE USING WORDPRESS
 
 These are the high-level steps I did to create my
 online store.
@@ -70,14 +76,14 @@ online store.
 * WORDPRESS
   * WooCommerce plugin
 
-### INSTALATION
+### INSTALATION STEPS
 
 * Get a WebServer like Bluehost
-* Get a domain name
+* Buy a domain name
 * Setup SSL (i.e. https)
 * Install WordPress
-* Install the WooCommerce Plugin
+* Install the WordPress WooCommerce Plugin
 
-## CONFIGURATION
+### CONFIGURATION STEPS
 
-* 
+* tbd
