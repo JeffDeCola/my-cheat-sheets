@@ -19,8 +19,13 @@ Documentation and reference,
 
 ## OVERVIEW
 
-Each Vendor has it's own store.
+E-Commerce Platforms are Software as a Service (SaaS).
 
-This may help showing what shopify does,
+The following illustration is a high-level view of an
+Multi-Vendor (Multi-Store) E-Commerce platform using
+Shopify.
+
+Or more simply, your own personal online store hosted
+on shopify's server,
 
 ![IMAGE - multi-vendor-multi-store.jpg - IMAGE](../../../../docs/pics/multi-vendor-multi-store.jpg)
