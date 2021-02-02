@@ -2,8 +2,6 @@
 
 _A Multi-Vendor (Marketplace) E-Commerce platform._
 
-[See my offsite demo](https://multi-vendor-marketplace.jeffdecola.com)
-
 Other E-Commerce platform configurations,
 
 * **MULTI-VENDOR**
@@ -19,29 +17,46 @@ Table of Contents,
 
 Documentation and reference,
 
-* [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
+* [See my offsite demo of an online marketplace](https://multi-vendor-marketplace.jeffdecola.com)
+* [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
-This is an illustration of a muklti-vendor marketplace using wordpress,
+E-Commerce Platforms are Software as a Service (SaaS).
+
+The following illustration is a high-level view of an
+Multi-Vendor (Multi-Store) E-Commerce platform using
+WordPress, WooCommerce and WC Vendors PlugIn.
+
+Or more simply, an online marketplace hosted on your private server,
 
 ![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../../docs/pics/multi-vendor-marketplace.jpg)
 
-## SOFTWARE STACK
+## USERS (ADMIN, VENDORS & CUSTOMERS)
 
-To create this marketplace, the following was used,
+There are 3 main users of an E-Commerce platform.
+
+## LETS MAKE AN ONLINE STORE USING WORDPRESS
+
+These are the high-level steps I did to create my
+online store.
+
+### SOFTWARE STACK
 
 * WORDPRESS
   * WooCommerce plugin
-  * WC Vendors plugin
+  * WC Vendors
 
-## STEPS TO CREATE YOUR MARKETPLACE
+### INSTALATION
 
-This is a very abbreviated list to create a multi-vendor marketplace
-using wordpress.
+* Get a WebServer like Bluehost
+* Get a domain name and setup SSL (i.e. https)
+* Install WordPress
+* Install the WooCommerce Plugin
+* Install the WC Vendors Plugin
 
-* Install WordPress on your server (with SSL)
-* Install WooCommerce plugin
-* Install WC Vendors plugin
+## CONFIGURATION
+
+* 
