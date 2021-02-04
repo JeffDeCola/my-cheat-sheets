@@ -1,6 +1,7 @@
 # MULTI-VENDOR MULTI-STORE CHEAT SHEET
 
-_A Multi-Vendor (Multi-Store) E-Commerce Platform._
+_A Multi-Vendor (Multi-Store) E-Commerce Platform.
+More simply, an online store._
 
 Other E-Commerce platform configurations,
 
@@ -19,13 +20,12 @@ Documentation and reference,
 
 ## OVERVIEW
 
-E-Commerce Platforms are Software as a Service (SaaS).
+E-Commerce platforms are Software as a Service (SaaS).
 
 The following illustration is a high-level view of an
-Multi-Vendor (Multi-Store) E-Commerce platform using
-Shopify.
-
-Or more simply, your own personal online store hosted
-on shopify's server,
+Multi-Vendor (Multi-Store) E-Commerce platform on another server
+using Shopify.
+Or more simply, your own personal **online store** hosted
+on Shopify's server.
 
 ![IMAGE - multi-vendor-multi-store.jpg - IMAGE](../../../../docs/pics/multi-vendor-multi-store.jpg)
