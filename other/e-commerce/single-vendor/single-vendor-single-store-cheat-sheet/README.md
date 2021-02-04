@@ -18,8 +18,10 @@ Table of Contents,
 * [USERS (ADMIN, VENDORS & CUSTOMERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#users-admin-vendors--customers)
 * [STEPS TO CREATE AN ONLINE STORE USING WORDPRESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#steps-to-create-an-online-store-using-wordpress)
   * [SOFTWARE STACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#software-stack)
-  * [INSTALATION STEPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#instalation-steps)
-  * [CONFIGURATION STEPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#configuration-steps)
+  * [INSTALL & BASIC OCNFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#install--basic-ocnfiguration)
+  * [USERS & PAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#users--pages)
+  * [BASIC WOOCOMMERCE CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#basic-woocommerce-configuration)
+  * [PRETTY IT UP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet#pretty-it-up)
 
 Documentation and reference,
 
@@ -75,7 +77,7 @@ These are the high-level steps I did to create my
 
 ### SOFTWARE STACK
 
-* WordPress
+* WORDPRESS
   * WooCommerce Plugin
     * WooCommerce Shiping & Tax Plugin
     * Creative Mail by Constant Contact Plugin
@@ -85,7 +87,7 @@ These are the high-level steps I did to create my
     * WC Vendors Marketplace Plugin
   * Loginizer Plugin
 
-### INSTALLATION STEPS
+### INSTALL & BASIC OCNFIGURATION
 
 * GET WORDPRES SETUP ON YOUR SERVER
   * Get a WebServer like Bluehost
@@ -102,34 +104,32 @@ These are the high-level steps I did to create my
   * Install the Loginizer Plugin
   * Install Jetpack by wordpress.com
 
-### USERS
+### USERS & PAGES
 
-What you should have,
+What you should have for users,
 
-* Vanilla Users
+* WORDPRESS USERS
   * Subscriber
   * Contributor
   * Author
   * Editor
   * Administrator
-* WooCommerce Users
+* WOOCOMMERCE USERS
   * Shop manager
   * Customer
 
-### PAGES
+What you should have for pages,
 
-What you should have,
-
-* Vanilla Pages
+* WORDPRESS PAGES
   * Privacy Policy (Privacy Policy Page)
   * Sample Page
-* WooCommerce Pages
+* WOOCOMMERCE PAGES
   * Cart (Cart Page)
   * Checkout (Checkout Page)
   * My account (My Accounts Page)
   * Shop (Shop Page)
 
-## BASIC WOOCOMMERCE CONFIGURATION
+### BASIC WOOCOMMERCE CONFIGURATION
 
 * Go throught the steps to get the store up means having a product.
   * Add a product
