@@ -1,7 +1,7 @@
 # SINGLE-VENDOR SINGLE-STORE CHEAT SHEET
 
 _A Single-Vendor (Single-Store) E-Commerce Platform.
-More simply, an online store._
+More simply, **an online store**._
 
 Other E-Commerce platform configurations,
 
@@ -25,17 +25,19 @@ Documentation and reference,
 
 * [See my offsite demo](https://single-vendor-single-store.jeffdecola.com)
 * [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
+  content management system
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
-E-Commerce platforms are Software as a Service (SaaS).
-
 The following illustration is a high-level view of an
-Single-Vendor (Single-Store) E-Commerce platform
-on a private server
-using WordPress and WooCommerce PlugIn.
+Single-Vendor (Single-Store) E-Commerce platform (SaaS)
+on a private server using,
+
+* WordPress (Content Management System)
+* WooCommerce PlugIn (E-Commerce Platform)
+
 Or more simply, an **online store** hosted on your private server.
 
 ![IMAGE - single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
@@ -137,7 +139,7 @@ What you should have,
 
 ### PRETTY IT UP
 
-How to make it look better using the WooCommerce Storefront theme,
+How to make it look better using the WooCommerce Storefront Theme,
 
 * Add a logo
 * 
