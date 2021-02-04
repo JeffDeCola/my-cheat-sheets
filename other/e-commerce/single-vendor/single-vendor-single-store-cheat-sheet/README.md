@@ -23,7 +23,7 @@ Table of Contents,
 
 Documentation and reference,
 
-* [See my offsite demo of an online store](https://single-vendor-single-store.jeffdecola.com)
+* [See my offsite demo](https://single-vendor-single-store.jeffdecola.com)
 * [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
@@ -38,7 +38,7 @@ on a private server
 using WordPress and WooCommerce PlugIn.
 Or more simply, an **online store** hosted on your private server.
 
-![IMAGE -single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
+![IMAGE - single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
 
 ## USERS (ADMIN, VENDORS & CUSTOMERS)
 
@@ -69,21 +69,75 @@ the following capabilities,
 ## STEPS TO CREATE AN ONLINE STORE USING WORDPRESS
 
 These are the high-level steps I did to create my
-online store.
+[online store demo](https://single-vendor-single-store.jeffdecola.com).
 
 ### SOFTWARE STACK
 
-* WORDPRESS
-  * WooCommerce plugin
+* WordPress
+  * WooCommerce Plugin
+    * WooCommerce Shiping & Tax Plugin
+    * Creative Mail by Constant Contact Plugin
+    * Facebook for WooCommerce Plugin
+    * Google Ads & Marketing by Kliken Plugin
+    * Mailchimp for WooCommerce Plugin
+    * WC Vendors Marketplace Plugin
+  * Loginizer Plugin
 
-### INSTALATION STEPS
+### INSTALLATION STEPS
 
-* Get a WebServer like Bluehost
-* Buy a domain name
-* Setup SSL (i.e. https)
-* Install WordPress
-* Install the WordPress WooCommerce Plugin
+* GET WORDPRES SETUP ON YOUR SERVER
+  * Get a WebServer like Bluehost
+  * Buy a domain name
+  * Setup SSL (i.e. https)
+  * Install WordPress
+* INSTALL WOOCOMMERCE PLUGIN
+  * Install the WooCommerce Plugin
+  * The setup wizard will help you with basic plugin setup
+  * Chose the Storefront theme
+  * This will add four new Pages: **Cart, Checkout, My account and Shop**
+  * This will add 2 new Users: **Shop manager & Customer**
+* INSTALL OTHER PLUGINS
+  * Install the Loginizer Plugin
+  * Install Jetpack by wordpress.com
 
-### CONFIGURATION STEPS
+### USERS
 
-* tbd
+What you should have,
+
+* Vanilla Users
+  * Subscriber
+  * Contributor
+  * Author
+  * Editor
+  * Administrator
+* WooCommerce Users
+  * Shop manager
+  * Customer
+
+### PAGES
+
+What you should have,
+
+* Vanilla Pages
+  * Privacy Policy (Privacy Policy Page)
+  * Sample Page
+* WooCommerce Pages
+  * Cart (Cart Page)
+  * Checkout (Checkout Page)
+  * My account (My Accounts Page)
+  * Shop (Shop Page)
+
+## BASIC WOOCOMMERCE CONFIGURATION
+
+* Go throught the steps to get the store up means having a product.
+  * Add a product
+  * Setup payments
+  * Setup tax
+  * Setup shipping
+
+### PRETTY IT UP
+
+How to make it look better using the WooCommerce Storefront theme,
+
+* Add a logo
+* 

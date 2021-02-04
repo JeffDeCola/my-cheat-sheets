@@ -1,6 +1,7 @@
 # MULTI-VENDOR MARKETPLACE CHEAT SHEET
 
-_A Multi-Vendor (Marketplace) E-Commerce platform._
+_A Multi-Vendor (Marketplace) E-Commerce platform.
+More simply, an online marketplace._
 
 Other E-Commerce platform configurations,
 
@@ -17,46 +18,50 @@ Table of Contents,
 
 Documentation and reference,
 
-* [See my offsite demo of an online marketplace](https://multi-vendor-marketplace.jeffdecola.com)
+* [See my offsite demo](https://multi-vendor-marketplace.jeffdecola.com)
 * [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
-E-Commerce Platforms are Software as a Service (SaaS).
+E-Commerce platforms are Software as a Service (SaaS).
 
 The following illustration is a high-level view of an
-Multi-Vendor (Multi-Store) E-Commerce platform using
-WordPress, WooCommerce and WC Vendors PlugIn.
-
-Or more simply, an online marketplace hosted on your private server,
+Multi-Vendor (Multi-Store) E-Commerce platform
+on a private server
+using WordPress, WooCommerce and WC Vendors PlugIn.
+Or more simply, an **online marketplace** hosted on your private server.
 
 ![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../../docs/pics/multi-vendor-marketplace.jpg)
 
 ## USERS (ADMIN, VENDORS & CUSTOMERS)
 
 There are 3 main users of an E-Commerce platform.
+And admin, vendors and customers. Each have there own
+interface and capabilities.
 
-## LETS MAKE AN ONLINE STORE USING WORDPRESS
+## STEPS TO CREATE AN ONLINE MARKETPLACE USING WORDPRESS
 
 These are the high-level steps I did to create my
-online store.
+[online marketplace demo](https://multi-vendor-marketplace.jeffdecola.com).
 
-### SOFTWARE STACK
+* WC Vendors Marketplace Plugin
 
-* WORDPRESS
-  * WooCommerce plugin
-  * WC Vendors
+* INSTALL WOOCOMMERCE PLUGIN
+  * Install the WC Vendors Marketplace Plugin
+  * The setup wizard will help you with basic plugin setup
+    * You can set the basic commision rate here
+  * This will add 4 new Pages: **Vendor Dashboard, Orders, Shop Settings & Vendors**
+  * This will add 2 new Users: **Vendor & Pending Vendor**
 
-### INSTALATION
 
-* Get a WebServer like Bluehost
-* Get a domain name and setup SSL (i.e. https)
-* Install WordPress
-* Install the WooCommerce Plugin
-* Install the WC Vendors Plugin
+* WC Vendors Users
+  * Vendor
+  * Pending Vendor
 
-## CONFIGURATION
-
-* 
+* WC Vendors Pages
+  * Vendor Dashboard
+  * Orders
+  * Shop Settings
+  * Vendors
