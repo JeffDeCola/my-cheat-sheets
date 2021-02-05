@@ -5,12 +5,10 @@ More simply, **an online marketplace**._
 
 My other repos showing different platforms,
 
-* MULTI-VENDOR
-  * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
-    **(You are Here)**
-  * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
-* SINGLE-VENDOR
-  * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
+* [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
+  **(You are Here)**
+* [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
+* [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
 
 Table of Contents,
 
@@ -18,9 +16,14 @@ Table of Contents,
 
 Documentation and reference,
 
-* [See my offsite demo](https://multi-vendor-marketplace.jeffdecola.com)
+* See my offsite
+  [demo of an E-Commerce marketplace](https://multi-vendor-marketplace.jeffdecola.com)
 * [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
   content management system
+* [WooCommerce](https://woocommerce.com/)
+  e-commerce plugin
+* [WC Vendors](https://www.wcvendors.com/)
+  multi-vendor marketplace plugin
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -32,7 +35,7 @@ on a private server using,
 
 * WordPress (Content Management System)
 * WooCommerce PlugIn (E-Commerce Platform)
-* WC Vendors PlugIn ()
+* WC Vendors PlugIn (Multi-Vendor Marketplace)
 
 Or more simply, this illustration shows an **online marketplace** hosted on your private server,
 
@@ -48,9 +51,6 @@ interface and capabilities.
 
 These are the high-level steps I did to create my
 [online marketplace demo](https://multi-vendor-marketplace.jeffdecola.com).
-
-
-
 
 
 
