@@ -9,17 +9,20 @@ Table of Contents,
 
 ## INTERACTIVE MENU
 
-### BUNKER
+### INVENTORY
 
-* ANTI-AIRCRAFT Trailer
+* RC Bandito
+* RC Tank
 
-### HANGER
+### VEHICALS
+
+#### HANGER
 
 * Titan
-* Hydra
 * Volatol (Huge Super Hero)
 * Tula
 * RM-10 Bombushka (Huge slow bomber)
+* Hydra
 * P-996 LAZER
 * V-65 Molotok
 * B-11 Strikeforce
@@ -30,7 +33,7 @@ Table of Contents,
 * Pyro
 * RO-86 Alkonost (Huge Plane)
 
-### NIGHTCLUB LEVEL B1
+#### NIGHTCLUB LEVEL B1
 
 * Speedo Custom (BUG - ERROR)
 * Mule Custom
@@ -46,6 +49,10 @@ Table of Contents,
 * Rocket Voltic
 * Ramp Buggy
 * Blazer Aqua
+
+#### BUNKER
+
+* ANTI-AIRCRAFT Trailer
 
 ### SERVICES
 
@@ -66,6 +73,7 @@ Table of Contents,
   * Turrented Limo
 * Military  
   * Rhino Tank
+  * Vetir
 * Helicopter
   * Buzzard Attack Chopper
   * Cargobob Jetsam
@@ -88,11 +96,13 @@ Table of Contents,
 
 ## PHONE - MECHANIC
 
-### INTEGRITY WAY, 28 (Working Class - The pinstripes)
+### INTEGRITY WAY, 28 (Working Class - The Pinstripes)
 
 * Youga Classic
 * Baller
 * Felon GT
+* Slamtruck (Crappy ramp tow truck)
+* Squaddie (Pin's Black transport)
 * Caracara 4x4
 
 ### TINSEL TOWERS, APT 42 (Fast and furious)
@@ -116,9 +126,14 @@ Table of Contents,
 * BR8 (F1)
 * Veto Classic (Go cart)
 
-### 4584 PROCOPIO DR (tbd)
+### 4584 PROCOPIO DR (Muscle)
 
-* Currently Felon GT (x6)
+* Rapid GT Classic
+* Deviant
+* Tampa
+* Ellie
+* Gauntlet Hellfire
+* Guantlet Classic
 
 ### EXCEPTIONALISTS WAY (Futuristic)
 
@@ -150,29 +165,29 @@ Table of Contents,
 ### OFFICE GARAGE (Downtown)
 
 * **LEVEL 1** _Benny's_
-  * RBuccaneer Custom topless
-  * Tornado
-  * Manana
-  * Peyote
+  * Buccaneer Custom Topless
+  * Manana Custom
+  * Tornado Custom
+  * Peyote Custom Topless
+  * Virgo Classic Custom
+  * Faction Custom Donk
+  * Comet Retro Custom
+  * Elegy Retro Custom
+  * Itali GTB Custom
+  * Specter Custom
+  * Banshee 900R Topless
   * Newro Custom
-  * Specter
+  * Sultan RS
   * Youga Classic 4x4
-  * Moonbena custon
-  * Mini Custom
-  * Gauntlet Classic
-  * Glendale
-  * Comet
-  * Elegy RH8
-  * Faction
-  * Banshee
-  * Primo
-  * Itali GTB
-  * Virgo Classic
-  * Sabre Turbo
-  * Sultan
+  * Moonbena Custon
+  * Minivan Custom
+  * Primo Custom
+  * Glendale Custom
+  * Sabre Turbo Custom
+  * Gauntlet Classic Custom
 
-* **Level 2** _tbd_
-  * tbd (x20)
+* **Level 2** _PR4_
+  * PR4 (x20)
 
 * **Level 3** _Money/Insurance cars_
   * Itali RSX (x20)
@@ -252,6 +267,7 @@ Table of Contents,
 
 * Stafford (Old School)
 * Roosevelt Valor (Old School)
+* Hermes (zz top car)
 * Scramjet
 * JB 700W (James Bond car)
 * Stinger Topless
