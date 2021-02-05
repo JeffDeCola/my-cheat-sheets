@@ -3,13 +3,13 @@
 _A Multi-Vendor (Marketplace) E-Commerce platform.
 More simply, **an online marketplace**._
 
-Other E-Commerce platform configurations,
+My other repos showing different platforms,
 
-* **MULTI-VENDOR**
+* MULTI-VENDOR
   * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
     **(You are Here)**
   * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
-* **SINGLE-VENDOR**
+* SINGLE-VENDOR
   * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
 
 Table of Contents,
@@ -34,7 +34,7 @@ on a private server using,
 * WooCommerce PlugIn (E-Commerce Platform)
 * WC Vendors PlugIn ()
 
-Or more simply, an **online marketplace** hosted on your private server.
+Or more simply, this illustration shows an **online marketplace** hosted on your private server,
 
 ![IMAGE - multi-vendor-marketplace.jpg - IMAGE](../../../../docs/pics/multi-vendor-marketplace.jpg)
 

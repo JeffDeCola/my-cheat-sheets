@@ -3,12 +3,12 @@
 _A Single-Vendor (Single-Store) E-Commerce Platform.
 More simply, **an online store**._
 
-Other E-Commerce platform configurations,
+My other repos showing different platforms,
 
-* **MULTI-VENDOR**
+* MULTI-VENDOR
   * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
   * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
-* **SINGLE-VENDOR**
+* SINGLE-VENDOR
   * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
     **(You are Here)**
 
@@ -40,7 +40,7 @@ on a private server using,
 * WordPress (Content Management System)
 * WooCommerce PlugIn (E-Commerce Platform)
 
-Or more simply, an **online store** hosted on your private server.
+Or more simply, this illustration shows an **online store** hosted on your private server,
 
 ![IMAGE - single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
 
@@ -70,7 +70,7 @@ the following capabilities,
   * Purchasing
   * Shipping/Tracking
 
-## STEPS TO CREATE AN ONLINE STORE USING WORDPRESS
+## CREATE AN ONLINE STORE USING WORDPRESS
 
 These are the high-level steps I did to create my
 [online store demo](https://single-vendor-single-store.jeffdecola.com).
@@ -87,9 +87,9 @@ These are the high-level steps I did to create my
     * WC Vendors Marketplace Plugin
   * Loginizer Plugin
 
-### INSTALL & BASIC OCNFIGURATION
+### INSTALL & BASIC CONFIGURATION
 
-* GET WORDPRES SETUP ON YOUR SERVER
+* GET WORDPRESS SETUP ON YOUR SERVER
   * Get a WebServer like Bluehost
   * Buy a domain name
   * Setup SSL (i.e. https)
