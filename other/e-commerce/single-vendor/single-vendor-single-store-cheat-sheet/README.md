@@ -29,7 +29,7 @@ Documentation and reference,
   content management system
 * [WooCommerce](https://woocommerce.com/)
   e-commerce plugin
-  
+
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
@@ -99,7 +99,7 @@ These are the high-level steps I did to create my
   * Install the WooCommerce Plugin
   * The setup wizard will help you with basic plugin setup
   * Chose the Storefront theme
-  * This will add four new Pages: **Cart, Checkout, My account and Shop**
+  * This will add four new Pages: **Cart, Checkout, My account & Shop**
   * This will add 2 new Users: **Shop manager & Customer**
 * INSTALL OTHER PLUGINS
   * Install the Loginizer Plugin
