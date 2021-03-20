@@ -1,124 +1,62 @@
 # CPU CHEAT SHEET
 
-`cpu` _lists the most common Desktop Intel i7 CPUs._
+_The most common desktop Intel and AMD CPUs._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Hi pin working on this today. :)
 
-## DESKTOP INTEL I7
+Documents and references,
 
-### 2018 - COFFEE LAKE (8th/9th GEN)
+* A good website that your can search CPUs
+  [here](https://www.techpowerup.com/cpu-specs/)
 
-* Coffee Lake-S
-  * FREQ: 6-8 Cores, 3.2-4 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 1151
+[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-### 2017 - KABY LAKE (7th GEN)
+## DESKTOP INTEL CORE I7
 
-* Kaby Lake-S
-  * FREQ: 4 Cores, 2.9-4.2 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 1151
+| YEAR | GEN | CODE NAME        | C/T       | GHz     | SIZE  | TRANS B | SOCKET      |
+|------|-----|------------------|-----------|---------|-------|---------|-------------|
+| 2021 | 11  | Rocket Lake-S    | 8/16      | 2.5-5.0 | 14nm  |         | LGA 1200    |
+| 2020 | 10  | Tiger Lake-U     | 8/16      |         | 14nm  |         | LGA 1200    |
+| 2020 |     | Comet Lake-H     | 8/16      |         | 14nm  |         | LGA 1200    |
+| 2020 |     | Comet Lake-U     | 8/16      |         | 14nm  |         | LGA 1200    |
+| 2020 |     | Comet Lake-Y     | 8/16      |         | 14nm  |         | LGA 1200    |
+| 2020 |     | Comet Lake-Y     | 8/16      |         | 14nm  |         | LGA 1200    |
+| 2018 | 8/9 | Coffee Lake-S    | 6-8/8-12  |         | 14nm  |         | LGA 1151    |
+| 2017 | 7   | Kaby Lake-S      | 4/8       |         | 14nm  |         | LGA 1151    |
+|      |     | Kaby Lake-X      | 4/8       |         | 14nm  |         | LGA 2066    |
+| 2015 | 6   | SkyLake-S        | 4/8       |         | 14nm  |         | LGA 1151    |
+|      |     | SkyLake-H        | 4/8       |         | 14nm  |         | BGA 1440    |
+|      |     | SkyLake-X        | 6-8/12-16 |         | 14nm  |         | LGA 2066    |
+| 2015 | 5   | Broadwell-H      | 4         | 3.3-3.6 | 14nm  |         | LGA 1150    |
+|      |     | Broadwell-E      | 6-10      |         | 14nm  |         | LGA 2011-3  |
+| 2013 | 4   | Haswell-DT       | 4         |         | 22nm  | 1.4     | LGA 1150    |
+|      |     | Haswell-H        | 4         |         | 22nm  | 1.4     | BGA 1364    |
+|      |     | Haswell-E        | 6-8       |         | 22nm  | 2.6     | LGA 2011-v3 |
+| 2012 | 3   | Ivy Bridge       | 4         |         | 22nm  |         | LGA 1155    |
+|      |     | Ivy Bridge-E     | 4-6       |         | 22nm  | 1.8     | LGA 2011    |
+| 2011 | 2   | Sandy Bridge     | 4         |         | 32nm  |         | LGA 1155    |
+|      |     | Sandy Bridge-E   | 4-6       |         | 32nm  | 2.2     | LGA 2011    |
+| 2010 | 1   | Gulftown         | 6         |         | 32nm  | 1.2     | LGA 1366    |
+| 2008 | 1   | Lynnfield        | 4         |         | 45nm  |         | LGA 1156    |
+| 2008 | 1   | Bloomfield       | 4         |         | 45nm  |         | LGA 1366    |
 
-* Kaby Lake-X
-  * FREQ: 4 Cores, 4.3 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 2066
+## OLDER INTEL DESKTOP PROCESSORS
 
-### 2015/2016 - SKYLAKE (6th GEN)
+| YEAR | NAME            | CORES | GHz     | SIZE   | TRANS B | 
+|------|-----------------|-------|---------|--------|---------|
+| 1990 | Intel386 SL     |       | .025    | 1000nm |         |
+| 1988 | Intel386 SX     |       | .033    | 1000nm |         |
+| 1985 | Intel386 DX     |       | .033    | 1000nm |         |
 
-* Skylake-S
-  * FREQ: 4 Cores, 2.4-3.4 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 1151
-  * CHIPSET - H110, B150, Q150, H170, Q170, Z170
+## DESKTOP AMD RYZEN 7
 
-* Skylake-H
-  * FREQ: 4 Cores, 3.3 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - BGA 1440
-
-* Skylake-X
-  * FREQ: 6-8 Cores, 3.5-3.8 GHz, DirectX 12.0
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 2066
-
-### 2014 - BROADWELL (5th GEN)
-
-* Broadwell-H
-  * FREQ: 4 Cores, 3.3 GHz, DirectX 11.2
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 1150
-
-* Broadwell-E
-  * FREQ: 6-10 Cores, 3-3.4 GHz, DirectX 11.2
-  * SIZE: 14nm, not sure billion transistors
-  * SOCKET - LGA 2011-3
-
-### 2013/2014 - HASWELL (4th GEN)
-
-* Haswell-DT
-  * FREQ: 4 Cores, 2.2-4 GHz, DirectX 11.1
-  * SIZE: 22nm, 1.4 billion transistors
-  * SOCKET - LGA 1150
-  * CHIPSET - H81, B85, Q85, Q87, H87, Z87, H97, Z97
-
-* Haswell-H
-  * FREQ: 4 Cores, 3.2 GHz, DirectX 11.1
-  * SIZE: 22nm, 1.4 billion transistors
-  * SOCKET - BGA-1364
-
-* Haswell-E
-  * FREQ: 6-8 Cores, 3-3.3 GHz, DirectX 11.1
-  * SIZE: 22nm, 2.6 billion transistors
-  * SOCKET - LGA 2011-v3
-  * CHIPSET - X99
-  * CHIP - i7-5960X (2011-3)
-
-### 2012/2013 - IVY BRIDGE (3rd GEN)
-
-* Ivy Bridge
-  * FREQ: 4 Cores, 2.5-3.4 GHz, DirectX 11.0
-  * SIZE: 22nm, 1.4 billion transistors
-  * SOCKET - LGA 1155
-  * CHIPSET - B75, Q75, Q77, H77, Z75 and Z77
-
-* Ivy Bridge-E
-  * FREQ: 4-6 Cores, 3.4-3.6 GHz, DirectX 10.1
-  * SIZE: 22nm, 1.86 billion transistors
-  * SOCKET - LGA 2011
-  * CHIPSET - X79
-
-### 2011/2012 - SANDY BRIDGE (2nd GEN)
-
-* Sandy Bridge
-  * FREQ: 4 Cores, 2.8-3.4 GHz, DirectX 10.1
-  * SIZE: 32nm, 1.16 billion transistors
-  * SOCKET - LGA 1155
-  * CHIPSET - B65, H61, Q67, H67, P67 and Z68
-
-* Sandy Bridge-E
-  * FREQ: 4-6 Cores, 3.2-3.6 GHz, DirectX 10.1
-  * SIZE: 32nm, 1.27 billion transistors
-  * SOCKET - LGA 2011
-  * CHIPSET - X79
-
-### 2010/2011 - WESTMERE (1st GEN)
-
-* Gulftown
-  * FREQ: 6 Cores, 3.2-3.47 GHz, DirectX 10.0
-  * SIZE: 32nm, 1.17 billion transistors
-  * SOCKET: LGA 1366
-
-### 2008/2009/20010 - NEHALEM (1st GEN)
-
-* Bloomfield
-  * FREQ: 4 Cores, 2.67-3.33 GHz, DirectX 10.0
-  * SIZE: 45nm, 731 million transistors
-  * SOCKET: LGA 1366
-
-* Lynnfield
-  * FREQ: 4 Cores, 2.67-3.07 GHz, DirectX 10.0
-  * SIZE: 45nm, 774 million transistors
-  * SOCKET: LGA 1366
+| YEAR | SERIES | CODE NAME        | ARCH  | C/T   | GHz     | SIZE  | TRANS B | SOCKET      |
+|------|--------|------------------|-------|-------|---------|-------|---------|-------------|
+| 2021 | 5000   | Cezanne          | Zen 3 | 8/16  | 2.8-4.4 | 7nm   | 9.8     | AM4         |
+| 2020 | 5000   | Vermeer          | Zen 3 | 8/16  | 3.8-4.7 | 7nm   |         | AM4         |
+| 2020 | 4000   | Renoir           | Zen 2 | 8/16  | 3.1-4.4 | 7nm   | 9.8     | AM4         |
+| 2019 | 3000   | Matisse          | Zen 2 | 8/16  | 3.8     | 7nm   | 3.8-5.9 | AM4         |
+| 2019 | 3000   | Picasso          | Zen+  | 8/16  | 2.3-4.0 | 12nm  | 3.8-5.9 | AM4         |
+| 2018 | 2000   | Pinnacle Ridge   | Zen+  | 8/16  | 2.8-4.1 | 12nm  | 4.8     | AM4         |
+| 2017 | 2000   | Raven Ridge      | Zen   | 8/16  | 2.2-3.8 | 14nm  |         | AM4         |
+| 2017 | 1000   | Zen              | Zen   | 8/16  | 3.0-3.8 | 14nm  | 4.8     | AM4         |
