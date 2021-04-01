@@ -2,12 +2,11 @@
 
 _The most common desktop Intel and AMD CPUs._
 
-Hi pin working on this today. :)
-
 Documents and references,
 
 * A good website that your can search CPUs
   [here](https://www.techpowerup.com/cpu-specs/)
+* [cpu benchmarks](https://www.cpubenchmark.net/high_end_cpus.html)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
