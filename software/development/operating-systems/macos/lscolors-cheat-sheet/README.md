@@ -3,14 +3,24 @@
 `LSCOLORS` _is an environment variable used to set different colors
 for different kinds of files when using the `ls` command._
 
+Table of Contents,
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet#overview)
+* [BSD - SET LSCOLORS ENV VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet#bsd---set-lscolors-env-variable)
+* [BSD - SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet#bsd---settings)
+
+Documentation and reference,
+
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+
+## OVERVIEW
+
 The `ls` that comes with macOS is from `BSD`, and lacks some
 of the features of its GNU sibling.
 
 Setting `ls` color for linux is
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet).
 
 ## BSD - SET LSCOLORS ENV VARIABLE
 
