@@ -57,11 +57,12 @@ Table of Contents,
   * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets#random-stuff)
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
+* **[CONTINUOUS INTEGRATION](https://github.com/JeffDeCola/my-cheat-sheets#continuous-integration)**
 
 Documentation and references,
 
 * This repos
- [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+ [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
  _built with
  [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
@@ -500,3 +501,10 @@ quite a few years to finish._
 
   * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
   * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+
+## CONTINUOUS INTEGRATION
+
+Refer to
+[ci-README.md](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)
+on how I automated building this repos
+[github webpage](https://jeffdecola.github.io/my-cheat-sheets/).
