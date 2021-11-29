@@ -35,8 +35,8 @@ Table of Contents,
 Documentation and reference,
 
 * [my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
