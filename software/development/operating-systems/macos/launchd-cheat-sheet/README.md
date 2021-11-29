@@ -114,7 +114,7 @@ nano ~/Library/LaunchAgents/local.say-hi.plist
 
 with,
 
-```json
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -125,18 +125,18 @@ with,
     <array>
         <string>/Users/jeffdecola/say-hi.sh</string>
     </array>
-	<key>ProgramArguments</key>
-	<array>
+    <key>ProgramArguments</key>
+    <array>
         <string></string>
-	</array>
+    </array>
     <key>KeepAlive</key>
     <true/>
-	<key>RunAtLoad</key>
-	<true/>
-	<key>StandardErrorPath</key>
-	<string>/Users/jeffdecola/say-hi.log</string>
-	<key>StandardOutPath</key>
-	<string>/Users/jeffdecola/say-hi.log</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardErrorPath</key>
+    <string>/Users/jeffdecola/say-hi.log</string>
+    <key>StandardOutPath</key>
+    <string>/Users/jeffdecola/say-hi.log</string>
 </dict>
 </plist>
 ```
