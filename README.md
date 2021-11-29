@@ -61,7 +61,7 @@ Table of Contents,
 
 Documentation and references,
 
-* This repos
+* my-cheat-sheets
  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
  _built with
  [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_

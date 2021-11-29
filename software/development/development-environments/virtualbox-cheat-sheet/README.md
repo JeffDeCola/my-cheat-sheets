@@ -3,7 +3,9 @@
 `virtualbox` _a "virtualization" product, allows you to
 run an operating system (guest) on top of your existing
 operating system (host).  You can think of it as a sandbox of an OS
-running on your computer_.
+running on your computer._
+
+Table of Contents,
 
 * [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#virtual-machine-vm-vs-docker-container)
 * [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-on-windows)
@@ -18,13 +20,15 @@ running on your computer_.
 * [FTP ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ftp-onto-ubuntu)
 * [ADD A PRINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#add-a-printer)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
 
 The following diagram shows the difference between a Virtual Machine
-and a Docker Container.
+and a Docker Container,
 
 ![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
@@ -213,18 +217,18 @@ The increase is in MB, so if you want to increase 10GB or ~10,000MB
 you pick a number that is a power of 2. 2 to the power of 13 is 8192.
 2 to the power of 14 is 16384.  Lets use the latter.
 
-Step 1 - Make a backup (clone).
+Step 1 - Make a backup (clone)
 
-Step 2 - Create new virtual Machine that is bigger.
+Step 2 - Create new virtual Machine that is bigger
 
-Step 3 - Find UUID of your old and new VM.
+Step 3 - Find UUID of your old and new VM
 
 ```bash
 VBoxManage list hdds
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" list hdds
 ```
 
-Step 4 - run VBoxManage clonemedium.
+Step 4 - run VBoxManage clonemedium
 
 ```bash
 VBoxManage clonemedium <source-guid> <destinatin-guid> --existing
@@ -266,12 +270,12 @@ Just use sftp on port 3022.
 
 Pain in the butt,
 
-Step 1. Windows.
+Step 1 - Windows
 
 First setup a shared network printer on Windows.
 Must also use a private network.
 
-Step 2. Get some software loaded on ubuntu.
+Step 2 - Get some software loaded on ubuntu
 
 ```bash
 sudo apt-get install lsb
@@ -280,9 +284,9 @@ sudo apt-get install python3-smbc
 sudo apt-get install smbclient
 ```
 
-Step 3. Get printer driver from printer website. Most likely a .deb file.
+Step 3 - Get printer driver from printer website. Most likely a .deb file
 
-Step 4. Then you need to find the printer.
+Step 4 - Then you need to find the printer
 
 You could search for network printer on `192.168.1.x` or just type it in.
 

@@ -13,13 +13,15 @@ Table of Contents,
 * [INSTALLING EXTENSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#installing-extensions) 
 * [USING GO with WINDOWS VS CODE and BASH WSL TERMINAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#using-go-with-windows-vs-code-and-bash-wsl-terminal)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## INSTALL ON LINUX OR WINDOWS
 
 Most, if not all of the time VS Code will be
-install on Linux.  But a few crazy people like
+install on Linux. But a few crazy people like
 to use Windows as a Dev Environment.
 
 Go to [code.visualstudio.com](https://code.visualstudio.com/)
