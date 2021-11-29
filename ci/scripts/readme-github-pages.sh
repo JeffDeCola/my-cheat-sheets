@@ -60,8 +60,8 @@ echo " "
 
 echo "Copy README.md to /docs/_includes/README.md and edit"
 echo "    Remove everything before the second heading in README.md.  Place in temp-README.md"
-echo "    sed '0,/GitHub Webpage/d' README.md > temp-README.md"
-sed '0,/GitHub Webpage/d' README.md > temp-README.md
+echo "    sed '0,/github webpage/d' README.md > temp-README.md"
+sed '0,/github webpage/d' README.md > temp-README.md
 echo "    Change the first heading ## to #"
 echo "    sed -i '0,/##/{s/##/#/}' temp-README.md"
 sed -i '0,/##/{s/##/#/}' temp-README.md
