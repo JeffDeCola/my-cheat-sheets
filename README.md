@@ -7,7 +7,8 @@ _A place to keep all my cheat sheets
 for the complete development of
 ASIC/FPGA hardware or a software app/service.
 These cheat sheets contain info I gathered from other sources and
-figured out over time. It's an ongoing process._
+figured out over time.
+It's an ongoing process._
 
 Table of Contents,
 
@@ -25,6 +26,7 @@ Table of Contents,
     * ORCHESTRATION
     * TELEMETRY
   * [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
+    * Overview
     * SaaS - SOFTWARE AS A SERVICE
     * FaaS - FUNCTIONS AS A SERVICE
     * PaaS - PLATFORM AS A SERVICE
@@ -56,9 +58,12 @@ Table of Contents,
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets#science)
   * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets#single-board-computers-sbc)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-_built with
-[concourse ci](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
+Documentation and references,
+
+* This repos
+ [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+ _built with
+ [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
 ## SOFTWARE CHEAT SHEETS
 
@@ -305,7 +310,7 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 ## OTHER CHEAT SHEETS
 
-Random other things I'm interested in.
+Random things I'm interested in.
 
 ### COMPUTER HARDWARE
 
