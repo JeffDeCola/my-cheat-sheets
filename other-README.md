@@ -6,16 +6,15 @@ figured out over time. It's an ongoing process._
 
 Table of Contents,
 
-* [OTHER CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#other-cheat-sheets)
-  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#computer-hardware)
-  * [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#e-commerce-platforms)
-  * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#history)
-  * [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#mathematics)
-  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#mining-cryptocurrency)
-  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#networks)
-  * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#random-stuff)
-  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#science)
-  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#single-board-computers-sbc)
+* [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#computer-hardware)
+* [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#e-commerce-platforms)
+* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
+* [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mathematics)
+* [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mining-cryptocurrency)
+* [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#networks)
+* [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-stuff)
+* [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
+* [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#single-board-computers-sbc)
 
 Documentation and references,
 
