@@ -246,17 +246,20 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 ## OTHER CHEAT SHEETS
 
-Links to cheat sheets of other random things I'm interested in,
+Links to other cheat sheets I'm interested in,
 
-* [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#computer-hardware)
-* [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#e-commerce-platforms)
-* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
-* [MATHEMATICS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mathematics)
-* [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mining-cryptocurrency)
-* [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#networks)
-* [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-stuff)
-* [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
-* [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#single-board-computers-sbc)
+* [MATH AND SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math-and-science)
+  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
+  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
+* [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
+  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#computer-hardware)
+  * [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#e-commerce-platforms)
+  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mining-cryptocurrency)
+  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#networks)
+  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#single-board-computers-sbc)
+* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-things)
+  * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
+  * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-stuff)
 
 ## CONTINUOUS INTEGRATION
 
