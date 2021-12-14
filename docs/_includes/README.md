@@ -156,15 +156,15 @@ Various Apps and tools for the goal of creating an App/Service.
 
   * CONTENT MANAGEMENT
 
-    * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
-    * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
-    * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
-    * [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/wordpress-cheat-sheet)
+    * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/multi-vendor-marketplace-cheat-sheet)
+    * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/multi-vendor-multi-store-cheat-sheet)
+    * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet)
+    * [wordpress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/wordpress-cheat-sheet)
 
   * COMMUNICATIONS
 
-    * [keybase](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/keybase-cheat-sheet)
-    * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/slack-cheat-sheet) 
+    * [keybase](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/keybase-cheat-sheet)
+    * [slack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/slack-cheat-sheet)
 
 * FaaS - FUNCTION AS A SERVICE
 
@@ -256,18 +256,25 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 Links to other cheat sheets I'm interested in,
 
-* [MATH AND SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math-and-science)
-  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
-  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
-* [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
-  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#computer-hardware)
-  * [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#e-commerce-platforms)
-  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mining-cryptocurrency)
-  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#networks)
-  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#single-board-computers-sbc)
+* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
+  * [AMERICAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#american)
 * [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-things)
-  * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
-  * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-stuff)
+* [STEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#stem)
+  * [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
+  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
+    * APPLIED
+    * NOTABLE EQUATIONS
+    * PURE
+  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
+    * BIOLOGICAL / LIFE SCIENCE
+    * EARTH & SPACE SCIENCE
+    * PHYSICAL SCIENCE
+  * [TECHNOLOGY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#technology)
+    * COMPUTER HARDWARE
+    * COMPUTERS MANUFACTURERS
+    * CRYPTOCURRENCY AND MINING
+    * NETWORKS
+    * SINGLE BOARD COMPUTERS (SBC)
 
 ## CONTINUOUS INTEGRATION
 
