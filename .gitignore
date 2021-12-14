@@ -7,6 +7,9 @@ coverage.out
 # macOS
 .DS_Store
 
+#Wind0ws
+.jpg:Zone.Identifier
+
 # Ignore binaries
 **/bin/hello-go
 
