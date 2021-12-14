@@ -6,18 +6,25 @@ figured out over time. It's an ongoing process._
 
 Table of Contents,
 
-* [MATH AND SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math-and-science)
-  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
-  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
-* [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
-  * [COMPUTER HARDWARE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#computer-hardware)
-  * [E-COMMERCE PLATFORMS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#e-commerce-platforms)
-  * [MINING CRYPTOCURRENCY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#mining-cryptocurrency)
-  * [NETWORKS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#networks)
-  * [SINGLE BOARD COMPUTERS (SBC)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#single-board-computers-sbc)
-* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-things)
-  * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
-  * [RANDOM STUFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-stuff)
+* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#history)
+  * [AMERICAN](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#american)
+* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#random-things)
+* [STEM](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#stem)
+  * [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#engineering)
+  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#math)
+    * APPLIED
+    * NOTABLE EQUATIONS
+    * PURE
+  * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#science)
+    * BIOLOGICAL / LIFE SCIENCE
+    * EARTH & SPACE SCIENCE
+    * PHYSICAL SCIENCE
+  * [TECHNOLOGY](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#technology)
+    * COMPUTER HARDWARE
+    * COMPUTERS MANUFACTURERS
+    * CRYPTOCURRENCY AND MINING
+    * NETWORKS
+    * SINGLE BOARD COMPUTERS (SBC)
 
 Documentation and references,
 
@@ -26,7 +33,41 @@ Documentation and references,
  _built with
  [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
-## MATH AND SCIENCE
+## HISTORY
+
+### AMERICAN
+
+* TIME PERIODS
+
+  * [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/pre-colonial-cheat-sheet)
+  * [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/colonial-america-cheat-sheet)
+  * [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/a-new-nation-cheat-sheet)
+  * [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/civil-war-and-reconstruction-cheat-sheet)
+  * [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/progressive-era-and-world-wars-cheat-sheet)
+  * [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/mid-century-and-cold-war-cheat-sheet)
+  * [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/new-millennium-cheat-sheet)
+
+* WARS
+
+  * [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
+  * [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-war-of-1812-cheat-sheet)
+  * [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-civil-war-cheat-sheet)
+  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww1-cheat-sheet)
+  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww2-cheat-sheet)
+
+## RANDOM THINGS
+
+* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
+* [gta v my stuff](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet)
+* [my lunch ratings dtla](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/my-lunch-ratings-dtla-cheat-sheet)
+* [seeburg-1952-m100c-jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet)
+* [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
+
+## STEM
+
+### ENGINEERING
+
+* COMING SOON
 
 ### MATH
 
@@ -108,20 +149,9 @@ quite a few years to finish._
   * [chemistry](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/chemistry-cheat-sheet)
   * [physics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet)
 
-## ENGINEERING
+### TECHNOLOGY
 
-### COMPUTER HARDWARE
-
-* APPLE
-
-  * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
-
-* PC
-
-  * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
-  * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
-
-* TECHNOLOGIES
+* COMPUTER HARDWARE
 
   * [data storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/data-storage-cheat-sheet)
   * [hard drives](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/hard-drives-cheat-sheet)
@@ -130,93 +160,62 @@ quite a few years to finish._
   * [ssd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/ssd-cheat-sheet)
   * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/technologies/usb-cheat-sheet)
 
-### E-COMMERCE PLATFORMS
+* COMPUTERS MANUFACTURERS
 
-* MULTI-VENDOR
+  * APPLE
 
-  * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-marketplace-cheat-sheet)
-  * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/multi-vendor/multi-vendor-multi-store-cheat-sheet)
+    * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet)
 
-* SINGLE-VENDOR
+  * PC
 
-  * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/e-commerce/single-vendor/single-vendor-single-store-cheat-sheet)
+    * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/cpu-cheat-sheet)
+    * [ram](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/pc/ram-cheat-sheet)
 
-### MINING CRYPTOCURRENCY
+* CRYPTOCURRENCY AND MINING
 
-* CRYPTOCURRENCY
+  * OVERVIEW
+    * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet)
+      ([jeffCoin](https://github.com/JeffDeCola/jeffCoin),
+      [crypto-miner-manager](https://github.com/JeffDeCola/crypto-miner-manager),
+      [crypto-wallet-status](https://github.com/JeffDeCola/crypto-wallet-status))
 
-  * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/cryptocurrency/cryptocurrency-cheat-sheet)
-    ([jeffCoin](https://github.com/JeffDeCola/jeffCoin),
-    [crypto-miner-manager](https://github.com/JeffDeCola/crypto-miner-manager),
-    [crypto-wallet-status](https://github.com/JeffDeCola/crypto-wallet-status))
+  * FULL NODE
 
-* FULL NODE
+    * [mine ZEC (Zcash) on macOS cpu using zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd-cheat-sheet)
 
-  * [mine ZEC (Zcash) on macOS cpu using zcashd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/full-node/mine-ZEC-macOS-cpu-zcashd-cheat-sheet)
+  * MULTIPLE POOLS
 
-* MULTIPLE POOLS
+    * [mine MULTIPLE COINS on windows gpu using multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
+    * [mine MULTIPLE COINS on windows gpu using awesome miner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-awesome-miner-cheat-sheet)
 
-  * [mine MULTIPLE COINS on windows gpu using multipoolminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-multipoolminer-cheat-sheet)
-  * [mine MULTIPLE COINS on windows gpu using awesome miner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/multiple-pools/mine-MULTICOINS-windows-gpu-awesome-miner-cheat-sheet)
+  * POOLS
 
-* POOLS
+    * [mine BEAM (BEAM) on windows gpu using lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
+    * [mine BTG (Bitcoin Gold) on windows gpu using gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
+    * [mine RVN (Ravencoin) on windows gpu using t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
+    * [mine ZCL (Zclassic) on windows gpu using lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
+    * [mine ZEC (Zcash) on windows gpu using funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
+    * [mine ZEL (ZelCash) on windows gpu using gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
 
-  * [mine BEAM (BEAM) on windows gpu using lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BEAM-windows-gpu-lolMiner-cheat-sheet)
-  * [mine BTG (Bitcoin Gold) on windows gpu using gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-BTG-windows-gpu-gminer-cheat-sheet)
-  * [mine RVN (Ravencoin) on windows gpu using t-rex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-RVN-windows-gpu-t-rex-cheat-sheet)
-  * [mine ZCL (Zclassic) on windows gpu using lolMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZCL-windows-gpu-lolMiner-cheat-sheet)
-  * [mine ZEC (Zcash) on windows gpu using funakoshiMiner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEC-windows-gpu-funakoshiMiner-cheat-sheet)
-  * [mine ZEL (ZelCash) on windows gpu using gminer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mining-cryptocurrency/pools/mine-ZEL-windows-gpu-gminer-cheat-sheet)
+* NETWORKS
 
-### NETWORKS
+  * CELLULAR
 
-* CELLULAR
+    * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
 
-  * [telecommunication standards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/cellular/telecommunication-standards-cheat-sheet)
+  * WAN / LAN
 
-* WAN / LAN
+    * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
+    * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
 
-  * [ethernet wan / lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/ethernet-wan-lan-cheat-sheet)
-  * [wireless lan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/networks/wan-lan/wireless-lan-cheat-sheet)
+* SINGLE BOARD COMPUTERS (SBC)
 
-### SINGLE BOARD COMPUTERS (SBC)
+  * HUMMINGBOARD
 
-* HUMMINGBOARD
+    * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+    * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
 
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/specifications-cheat-sheet)
+  * RASPBERRY PI (RasPi)
 
-* RASPBERRY PI (RasPi)
-
-  * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
-  * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
-
-## RANDOM THINGS
-
-### HISTORY
-
-* AMERICAN
-
-  * [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/pre-colonial-cheat-sheet)
-  * [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/colonial-america-cheat-sheet)
-  * [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/a-new-nation-cheat-sheet)
-  * [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/civil-war-and-reconstruction-cheat-sheet)
-  * [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/progressive-era-and-world-wars-cheat-sheet)
-  * [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/mid-century-and-cold-war-cheat-sheet)
-  * [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/new-millennium-cheat-sheet)
-
-* WARS
-
-  * [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet)
-  * [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-war-of-1812-cheat-sheet)
-  * [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-civil-war-cheat-sheet)
-  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww1-cheat-sheet)
-  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/ww2-cheat-sheet)
-
-### RANDOM STUFF
-
-* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/famous-quotes-cheat-sheet)
-* [gta v my stuff](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet)
-* [my lunch ratings dtla](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/my-lunch-ratings-dtla-cheat-sheet)
-* [seeburg-1952-m100c-jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet)
-* [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/typical-highway-interchanges-cheat-sheet)
+    * [install and configure OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
+    * [specifications](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
