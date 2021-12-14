@@ -5,7 +5,7 @@
 
 Various Apps and tools for the goal of creating an App/Service.
 
-![IMAGE - creating-a-service-app-environment-overview - IMAGE](pics/creating-a-service-app-environment-overview.jpg)
+![IMAGE - creating-a-service-app - IMAGE](pics/creating-a-service-app.jpg)
 
 ### DEVELOPMENT
 
@@ -219,7 +219,7 @@ Various Apps and tools for the goal of creating an App/Service.
 
 Various Apps and tools for the goal of creating an ASIC/FPGA.
 
-![IMAGE - creating-an-asic-fpga-environment-overview - IMAGE](pics/creating-an-asic-fpga-environment-overview.jpg)
+![IMAGE - creating-an-asic-fpga - IMAGE](pics/creating-an-asic-fpga.jpg)
 
 ### DEVELOPMENT
 
