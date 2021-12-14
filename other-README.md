@@ -6,8 +6,9 @@ figured out over time. It's an ongoing process._
 
 Table of Contents,
 
-* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
-  * [AMERICAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#american)
+* [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#american-history)
+  * [TIME PERIODS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#time-periods)
+  * [WARS](https://github.com/JeffDeCola/my-cheat-sheets/other-README.md#wars)
 * [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-things)
 * [STEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#stem)
   * [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
@@ -33,27 +34,25 @@ Documentation and references,
  _built with
  [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
 
-## HISTORY
+## AMERICAN HISTORY
 
-### AMERICAN
+### TIME PERIODS
 
-* TIME PERIODS
+* [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/pre-colonial-cheat-sheet)
+* [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/colonial-america-cheat-sheet)
+* [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/a-new-nation-cheat-sheet)
+* [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/civil-war-and-reconstruction-cheat-sheet)
+* [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/progressive-era-and-world-wars-cheat-sheet)
+* [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/mid-century-and-cold-war-cheat-sheet)
+* [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/new-millennium-cheat-sheet)
 
-  * [Pre-Colonial (Before 1600)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/pre-colonial-cheat-sheet)
-  * [Colonial America (1600-1799)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/colonial-america-cheat-sheet)
-  * [A New Nation (1800-1849)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/a-new-nation-cheat-sheet)
-  * [Civil War & Reconstruction (1850-1899)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/civil-war-and-reconstruction-cheat-sheet)
-  * [Progressive Era & World Wars (1900-1949)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/progressive-era-and-world-wars-cheat-sheet)
-  * [Mid-Century & Cold War (1950-1999)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/mid-century-and-cold-war-cheat-sheet)
-  * [New Millennium (2000 Onward)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/time-periods/new-millennium-cheat-sheet)
+### WARS
 
-* WARS
-
-  * [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-american-revolutionary-war-cheat-sheet)
-  * [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-war-of-1812-cheat-sheet)
-  * [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-american-civil-war-cheat-sheet)
-  * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/ww1-cheat-sheet)
-  * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/ww2-cheat-sheet)
+* [The American Revolutionary War (1775-1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-american-revolutionary-war-cheat-sheet)
+* [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-war-of-1812-cheat-sheet)
+* [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/the-american-civil-war-cheat-sheet)
+* [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/ww1-cheat-sheet)
+* [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/american/wars/ww2-cheat-sheet)
 
 ## RANDOM THINGS
 
@@ -67,7 +66,7 @@ Documentation and references,
 
 ### ENGINEERING
 
-* COMING SOON
+* _coming soon_
 
 ### MATH
 
