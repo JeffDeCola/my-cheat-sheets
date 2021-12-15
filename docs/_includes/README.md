@@ -256,15 +256,11 @@ Various Apps and tools for the goal of creating an ASIC/FPGA.
 
 Links to other cheat sheets I'm interested in,
 
-* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#history)
-  * [AMERICAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#american)
+* [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#american-history)
+  * [TIME PERIODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#time-periods)
+  * [WARS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#wars)
 * [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#random-things)
 * [STEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#stem)
-  * [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
-  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
-    * APPLIED
-    * NOTABLE EQUATIONS
-    * PURE
   * [SCIENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#science)
     * BIOLOGICAL / LIFE SCIENCE
     * EARTH & SPACE SCIENCE
@@ -275,6 +271,11 @@ Links to other cheat sheets I'm interested in,
     * CRYPTOCURRENCY AND MINING
     * NETWORKS
     * SINGLE BOARD COMPUTERS (SBC)
+  * [ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#engineering)
+  * [MATH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md#math)
+    * APPLIED
+    * NOTABLE EQUATIONS
+    * PURE
 
 ## CONTINUOUS INTEGRATION
 
