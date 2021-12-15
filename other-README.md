@@ -27,7 +27,7 @@ Table of Contents,
     * NETWORKS
     * SINGLE BOARD COMPUTERS (SBC)
 
-Documentation and references,
+Documentation and reference,
 
 * my-cheat-sheets
  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)

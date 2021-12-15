@@ -3,8 +3,10 @@
 `keybase` is secure groups, files and chat for everyone. It also has
 encrypted private and group repos.
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## WHY DO YOU NEED THIS
 
