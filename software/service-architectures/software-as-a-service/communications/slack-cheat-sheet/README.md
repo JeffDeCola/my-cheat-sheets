@@ -6,8 +6,10 @@
 
 `slack` _._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and reference,
+
+* View a list of all my-cheat-sheets on my
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 

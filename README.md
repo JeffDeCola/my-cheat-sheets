@@ -49,9 +49,9 @@ Table of Contents,
   _Random things I'm interested in_**
 * [CONTINUOUS INTEGRATION](https://github.com/JeffDeCola/my-cheat-sheets#continuous-integration)
 
-Documentation and references,
+Documentation and reference,
 
-* [Other](https://jeffdecola.github.io/my-cheat-sheets/other-README.md)
+* [Other](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other-README.md)
   cheat sheets on random things I'm interested in
 * my-cheat-sheets
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
