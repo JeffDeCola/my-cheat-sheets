@@ -3,9 +3,30 @@
 _I like to play this game._
 
 Table of Contents,
-* [INTERACTIVE MENU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#interactive-menu)
-* [PHONE - PEGASUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#phone---pegasus)
-* [PHONE - MECHANIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/gta-v-my-stuff-cheat-sheet#phone---mechanic)
+
+* [INTERACTIVE MENU (Press M)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#interactive-menu-press-m)
+  * [INVENTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#inventory)
+  * [VEHICLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#vehicles)
+  * [SERVICES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#services)
+* [PHONE - PEGASUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#phone---pegasus)
+* [PHONE - MECHANIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#phone---mechanic)
+  * [INTEGRITY WAY, 28 (Working Class - Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#integrity-way-28-working-class---downtown)
+  * [TINSEL TOWERS, APT 42 (Fast and furious)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#tinsel-towers-apt-42-fast-and-furious)
+  * [ECLIPSE TOWERS, 3 (Open wheel and racing)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#eclipse-towers-3-open-wheel-and-racing)
+  * [4584 PROCOPIO DR (Muscle - Up North)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#4584-procopio-dr-muscle---up-north)
+  * [EXCEPTIONALISTS WAY (Futuristic - Airport)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#exceptionalists-way-futuristic---airport)
+  * [HAWICK CLUBHOUSE (Motorcycles)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#hawick-clubhouse-motorcycles)
+  * [3 ALTA ST, APT 57 (Rusted - Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#3-alta-st-apt-57-rusted---downtown)
+  * [OFFICE GARAGE (Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#office-garage-downtown)
+  * [LAGO ZANCUDO FACILITY (Military)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#lago-zancudo-facility-military)
+  * [NIGHTCLUB GARAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub-garage)
+  * [ARENA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena)
+  * [CASINO PENTHOUSE GARAGE (Bond and luxury)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#casino-penthouse-garage-bond-and-luxury)
+  * [ARCADE GARAGE (Supercars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arcade-garage-supercars)
+  * [331 SUPPLY ST (Favorite Cars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#331-supply-st-favorite-cars)
+  * [AUTO SHOP STORAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#auto-shop-storage)
+  * [TERROBYTE (Basement of Nightclub)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#terrobyte-basement-of-nightclub)
+  * [KOSATKA (Submarine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#kosatka-submarine)
 
 ## INTERACTIVE MENU (Press M)
 
