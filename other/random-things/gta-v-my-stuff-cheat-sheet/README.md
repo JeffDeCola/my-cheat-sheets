@@ -11,17 +11,26 @@ Table of Contents,
 * [PHONE - PEGASUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#phone---pegasus)
 * [PHONE - MECHANIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#phone---mechanic)
   * [INTEGRITY WAY, 28 (Working Class - Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#integrity-way-28-working-class---downtown)
-  * [TINSEL TOWERS, APT 42 (Fast and furious)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#tinsel-towers-apt-42-fast-and-furious)
-  * [ECLIPSE TOWERS, 3 (Open wheel and racing)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#eclipse-towers-3-open-wheel-and-racing)
+  * [TINSEL TOWERS, APT 42 (Fast and Furious)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#tinsel-towers-apt-42-fast-and-furious)
+  * [ECLIPSE TOWERS, 3 (Open Wheel and Racing)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#eclipse-towers-3-open-wheel-and-racing)
   * [4584 PROCOPIO DR (Muscle - Up North)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#4584-procopio-dr-muscle---up-north)
   * [EXCEPTIONALISTS WAY (Futuristic - Airport)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#exceptionalists-way-futuristic---airport)
   * [HAWICK CLUBHOUSE (Motorcycles)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#hawick-clubhouse-motorcycles)
   * [3 ALTA ST, APT 57 (Rusted - Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#3-alta-st-apt-57-rusted---downtown)
-  * [OFFICE GARAGE (Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#office-garage-downtown)
+  * [OFFICE - GARAGE 1 (Benny's)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#office---garage-1-bennys)
+  * [OFFICE - GARAGE 2 (PR4's)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#office---garage-2-pr4s)
+  * [OFFICE - GARAGE 3 (Itali RSX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#office---garage-3-itali-rsx)
   * [LAGO ZANCUDO FACILITY (Military)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#lago-zancudo-facility-military)
-  * [NIGHTCLUB GARAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub-garage)
-  * [ARENA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena)
-  * [CASINO PENTHOUSE GARAGE (Bond and luxury)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#casino-penthouse-garage-bond-and-luxury)
+  * [NIGHTCLUB - GARAGE SERVICE ENTRANCE (Insurgent)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---garage-service-entrance-insurgent)
+  * [NIGHTCLUB - B1 (TRUCKS - Use Interactive Menu)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b1-trucks---use-interactive-menu)
+  * [NIGHTCLUB - B2 (Eclectic)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b2-eclectic)
+  * [NIGHTCLUB - B3 (Itali GTO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b3-itali-gto)
+  * [NIGHTCLUB - B4 (Sky Rats - Oppressor Mk II)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b4-sky-rats---oppressor-mk-ii)
+  * [NIGHTCLUB - B5 (TERROBYTE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b5-terrobyte)
+  * [ARENA - WORKSHOP (Mini and Fiat)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---workshop-mini-and-fiat)
+  * [ARENA - B1 (Armor and Nightmare)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---b1-armor-and-nightmare)
+  * [ARENA - B2 (Future Shock)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---b2-future-shock)
+  * [CASINO PENTHOUSE GARAGE (Bond and Luxury)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#casino-penthouse-garage-bond-and-luxury)
   * [ARCADE GARAGE (Supercars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arcade-garage-supercars)
   * [331 SUPPLY ST (Favorite Cars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#331-supply-st-favorite-cars)
   * [AUTO SHOP STORAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#auto-shop-storage)
@@ -146,7 +155,7 @@ Table of Contents,
   * _empty_
   * _empty_
 
-### TINSEL TOWERS, APT 42 (Fast and furious)
+### TINSEL TOWERS, APT 42 (Fast and Furious)
 
 * Cyclone (electric)
 * Locust (Open roof bars - cool)
@@ -159,18 +168,18 @@ Table of Contents,
 * _empty_
 * _empty_
 
-### ECLIPSE TOWERS, 3 (Open wheel and racing)
+### ECLIPSE TOWERS, 3 (Open Wheel and F1)
 
 * Outlaw (Offroad)
 * Vagrant (Offroad)
-* Dune FAV
-* Tyrus (stock racing)
+* Dune FAV (With machine gun)
+* Veto Classic (Go cart)
 * _empty_
 * DR1 (F1)
 * R88 (F1)
 * PR4 (F1)
 * BR8 (F1)
-* Veto Classic (Go cart)
+* _empty_
 
 ### 4584 PROCOPIO DR (Muscle - Up North)
 
@@ -220,38 +229,39 @@ Table of Contents,
 * Injection (Bug)
   * _empty_
 
-### OFFICE GARAGE (Downtown)
+### OFFICE - GARAGE 1 (Benny's)
 
-* **GARAGE 1** _Benny's_
-  * Level 1
-    * Buccaneer Custom Topless (Flame/Speakers)
-    * Manana Custom (Green Topless)
-    * Tornado Custom (Purple Top)
-    * Peyote Custom Topless (Green Speakers)
-    * Virgo Classic Custom (Purple Speakers))
-    * Faction Custom Donk (gucci Big Wheel)
-  * Level 2
-    * Comet Retro Custom (Porche white/Blue)
-    * Elegy Retro Custom (Old racing)
-    * Itali GTB Custom (Supercar)
-    * Specter Custom (Orange)
-    * Banshee 900R Topless (Blue Dodge Viper)
-    * Truffade Newro Custom (Yellow/Black/Red)
-    * Sultan RS (Black Yellow Racing)
-  * Level 3
-    * Youga Classic 4x4 (Love Van)
-    * Moonbena Custon (Mini Van Speakers)
-    * Minivan Custom (Smaller Van - Flame)
-    * Primo Custom (Blue/Green - Speakers)
-    * Glendale Custom (Leopard - Speakers)
-    * Sabre Turbo Custom (Cool flame - Looks good)
-    * Gauntlet Classic Custom (Light Blue - Old School Muscle)
+* Level 1
+  * Buccaneer Custom Topless (Flame/Speakers)
+  * Manana Custom (Green Topless)
+  * Tornado Custom (Purple Top)
+  * Peyote Custom Topless (Green Speakers)
+  * Virgo Classic Custom (Purple Speakers))
+  * Faction Custom Donk (gucci Big Wheel)
+* Level 2
+  * Comet Retro Custom (Porche white/Blue)
+  * Elegy Retro Custom (Old racing)
+  * Itali GTB Custom (Supercar)
+  * Specter Custom (Orange)
+  * Banshee 900R Topless (Blue Dodge Viper)
+  * Truffade Nero Custom (Yellow/Black/Red)
+  * Sultan RS (Black Yellow Racing)
+* Level 3
+  * Youga Classic 4x4 (Love Van)
+  * Moonbena Custon (Mini Van Speakers)
+  * Minivan Custom (Smaller Van - Flame)
+  * Primo Custom (Blue/Green - Speakers)
+  * Glendale Custom (Leopard - Speakers)
+  * Sabre Turbo Custom (Cool flame - Looks good)
+  * Gauntlet Classic Custom (Light Blue - Old School Muscle)
 
-* **GARAGE 2** _PR4_
-  * PR4 (x20)
+### OFFICE - GARAGE 2 (PR4's)
 
-* **GARAGE 3** _Money/Insurance cars_
-  * Itali RSX (x20)
+* PR4 (x20)
+
+### OFFICE - GARAGE 3 (Itali RSX)
+
+* Itali RSX (x20)
 
 ### LAGO ZANCUDO FACILITY (Military)
 
@@ -269,97 +279,99 @@ Table of Contents,
   * Thruster (Flying backpack)
   * Avenger (Use Interactive Services Menu)
 
-### NIGHTCLUB GARAGE
+### NIGHTCLUB - GARAGE SERVICE ENTRANCE (Insurgent)
 
-* **SERVICE ENTRANCE**
-  * Insurgent Pick-Up Custom (Can also call with Pegasus)
+* Insurgent Pick-Up Custom (Can also call with Pegasus)
 
-* **B1** _Use Interactive Menu_
-  * Speedo Custom (BROKE - ERROR)
-  * Mule Custom
-  * Pounder Custom
+### NIGHTCLUB - B1 (TRUCKS - Use Interactive Menu)
 
-* **B2** _Eclectic_
-  * Rhapsody
-  * Clique (X-mas)
-  * Club (Speaker on Top)
-  * Weevil (Bug)
-  * Winky (Jeep)
-  * Kalahari (Safari Type)
-  * Retinue Mk II (Orange)
-  * _empty_
-  * _empty_
-  * _empty_
+* Speedo Custom (BROKE - ERROR)
+* Mule Custom
+* Pounder Custom
 
-* **B3** _Favorite car_
+### NIGHTCLUB - B2 (Eclectic)
 
-  * Itali GTO (x10)
-    * Red/Yellow
-    * Red Scribble
-    * Green Camo
-    * Matte Blue
-    * Orange/green
-    * Light Blue
-    * White Racing
-    * Yellow
-    * Grey/Pink
-    * Black
+* Rhapsody
+* Clique (X-mas)
+* Club (Speaker on Top)
+* Weevil (Bug)
+* Winky (Jeep)
+* Kalahari (Safari Type)
+* Retinue Mk II (Orange)
+* _empty_
+* _empty_
+* _empty_
 
-* **B4** _Sky Rats_
-  * Oppressor Mk II (x10)
-    * Black
-    * Orange Camo
-    * Pink
-    * Black/Grey
-    * Grey
-    * Purple
-    * Grey
-    * Green/White
-    * Red
-    * Blue
+### NIGHTCLUB - B3 (Itali GTO)
 
-* **B5** _Use Interactive Services Menu_
-  * TERROBYTE (with Oppressor Mk II)
+* Red/Yellow
+* Red Scribble
+* Green Camo
+* Matte Blue
+* Orange/green
+* Light Blue
+* White Racing
+* Yellow
+* Grey/Pink
+* Black
 
-### ARENA
+### NIGHTCLUB - B4 (Grotti - Ferrari)
 
-* **WORKSHOP** _Mini and fiat_
-  * _empty_ (Big spot)
-  * Issi (Blue/White normal)
-  * Issi Sport (Blue/White Sported fin)
-  * mini (Blue/White Future Shock)
-  * Issi Classic (Blue white Stripe)
-  * aloced (Blue rusted with rusted snowplow)
-  * Brioso R/Q (Grey fiat)
-  * Brioso 300 (Old yellow fiat)
-  * _empty_
-  * _empty_
+* Itali GTO (Yellow)
+* Furio
+* Visione
+* Itali RSX
+* Carconizzare
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
 
-* **B1** _Armor and Nightmare_
-  * Kuruma (Armored) (One of my favorites)
-  * _empty_
-  * Paragon R (Armored) (Nice Bently)
-  * Schafter LWB (Armored) (Dark Red Matte)
-  * Nightshark (Armored)
-  * muscle (crazy looking with stuff on it)
-  * tank (Crazy looking)
-  * fast furious (crazy)
-  * Van (Crazy)
-  * truck (Huge)
+### NIGHTCLUB - B5 (TERROBYTE)
 
-* **B2** _Future Shock_
-  * Big Wheel (Huge orange with elec net)
-  * Limo (Huge Green Limo)
-  * Van (Orange Van)
-  * Muscle (White with machine guns)
-  * Mini Truck
-  * Impaler (Red with snow plow)
-  * bike (Pink crazy)
-  * tank (Black/white)
-  * fast furious (Black)
-  * truck (Blue Huge)
+* TERROBYTE (with Oppressor Mk II - Can Use Interactive Services Menu)
 
-### CASINO PENTHOUSE GARAGE (Bond and luxury)
+### ARENA - WORKSHOP (Mini and Fiat)
+
+* _empty_ (Big spot)
+* Issi (Blue/White normal)
+* Issi Sport (Blue/White Sported fin)
+* mini (Blue/White Future Shock)
+* Issi Classic (Blue white Stripe)
+* aloced (Blue rusted with rusted snowplow)
+* Brioso R/Q (Grey fiat)
+* Brioso 300 (Old yellow fiat)
+* _empty_
+* _empty_
+
+### ARENA - B1 (Armor and Nightmare)
+
+* Kuruma (Armored) (One of my favorites)
+* _empty_
+* Paragon R (Armored) (Nice Bently)
+* Schafter LWB (Armored) (Dark Red Matte)
+* Nightshark (Armored)
+* muscle (crazy looking with stuff on it)
+* tank (Crazy looking)
+* fast furious (crazy)
+* Van (Crazy)
+* truck (Huge)
+
+### ARENA - B2 (Future Shock)
+
+* Big Wheel (Huge orange with elec net)
+* Limo (Huge Green Limo)
+* Van (Orange Van)
+* Muscle (White with machine guns)
+* Mini Truck
+* Impaler (Red with snow plow)
+* bike (Pink crazy)
+* tank (Black/white)
+* fast furious (Black)
+* truck (Blue Huge)
+
+### CASINO PENTHOUSE GARAGE (Bond and Luxury)
 
 * Stafford (Old School Flower Power)
 * Roosevelt Valor (Old School)
@@ -372,25 +384,23 @@ Table of Contents,
 * Stinger GT (Orange)
 * Stinger (Green)
 
-### ARCADE GARAGE (Supercars)
+### ARCADE GARAGE (Maclarin and Buggatti)
 
 * Adder (Bugatti - White/Red)
 * Thrax (Bugatti)
 * _empty_
-* Visione (red)
-* Furia (red)
+* _empty_
+* _empty_
 * Taipan (red)
 * T20
-* Tyrus (formula one kinda)
-*_empty_
+* Tyrus
+* _empty_
 * Krieger
 
 ### 331 SUPPLY ST (Favorite Cars)
 
-* Itali GTO (Yellow)
-* Itali RSX (Red/Yellow)
 * Opressor (Light Blue)
-* _7 empty spots_
+* _9 empty spots_
 
 ### AUTO SHOP STORAGE
 
@@ -401,6 +411,12 @@ Table of Contents,
 * Drift Yosemite (White/Blue Flames)
 * Chapian (Pink Purple Flame Muscle car)
 * _4 empty spots_
+
+### AGENCY GARAGE
+
+* Baller ST
+* Bravado Buffalo STX (Awesome Anti-skyrat care and armor)
+* _18 empty spots_
 
 ### TERROBYTE (Basement of Nightclub)
   
