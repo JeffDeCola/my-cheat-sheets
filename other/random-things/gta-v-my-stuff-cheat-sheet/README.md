@@ -12,7 +12,7 @@ Table of Contents,
 * [PHONE - MECHANIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#phone---mechanic)
   * [INTEGRITY WAY, 28 (Working Class - Downtown)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#integrity-way-28-working-class---downtown)
   * [TINSEL TOWERS, APT 42 (Fast and Furious)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#tinsel-towers-apt-42-fast-and-furious)
-  * [ECLIPSE TOWERS, 3 (Open Wheel and Racing)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#eclipse-towers-3-open-wheel-and-racing)
+  * [ECLIPSE TOWERS, 3 (Open Wheel and F1)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#eclipse-towers-3-open-wheel-and-f1)
   * [4584 PROCOPIO DR (Muscle - Up North)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#4584-procopio-dr-muscle---up-north)
   * [EXCEPTIONALISTS WAY (Futuristic - Airport)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#exceptionalists-way-futuristic---airport)
   * [HAWICK CLUBHOUSE (Motorcycles)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#hawick-clubhouse-motorcycles)
@@ -25,18 +25,19 @@ Table of Contents,
   * [NIGHTCLUB - B1 (TRUCKS - Use Interactive Menu)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b1-trucks---use-interactive-menu)
   * [NIGHTCLUB - B2 (Eclectic)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b2-eclectic)
   * [NIGHTCLUB - B3 (Itali GTO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b3-itali-gto)
-  * [NIGHTCLUB - B4 (Sky Rats - Oppressor Mk II)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b4-sky-rats---oppressor-mk-ii)
+  * [NIGHTCLUB - B4 (Grotti - Ferrari)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b4-grotti---ferrari)
   * [NIGHTCLUB - B5 (TERROBYTE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#nightclub---b5-terrobyte)
   * [ARENA - WORKSHOP (Mini and Fiat)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---workshop-mini-and-fiat)
   * [ARENA - B1 (Armor and Nightmare)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---b1-armor-and-nightmare)
   * [ARENA - B2 (Future Shock)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arena---b2-future-shock)
   * [CASINO PENTHOUSE GARAGE (Bond and Luxury)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#casino-penthouse-garage-bond-and-luxury)
-  * [ARCADE GARAGE (Supercars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arcade-garage-supercars)
+  * [ARCADE GARAGE (Maclarin and Buggatti)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#arcade-garage-maclarin-and-buggatti)
   * [331 SUPPLY ST (Favorite Cars)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#331-supply-st-favorite-cars)
   * [AUTO SHOP STORAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#auto-shop-storage)
+  * [AGENCY GARAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#agency-garage)
   * [TERROBYTE (Basement of Nightclub)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#terrobyte-basement-of-nightclub)
   * [KOSATKA (Submarine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#kosatka-submarine)
-
+  
 ## INTERACTIVE MENU (Press M)
 
 ### INVENTORY
