@@ -5,8 +5,14 @@ and visa versa.  Basically a large database._
 
 Table of Contents,
 
-* [DNS SERVER (name server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-server-name-server)
-* [DNS CLIENT (resolver)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-client-resolver)
+* [DNS SERVER (NAME SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-server-name-server)
+  * [BIND (A POPULAR NAME SERVER FOR LINUX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#bind-a-popular-name-server-for-linux)
+* [DNS CLIENT (RESOLVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-client-resolver)
+  * [CONFIGURATION (/etc/resolv.conf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#configuration-etcresolvconf)
+  * [CHECK THAT YOUR DNS CLIENT IS WORKING PROPERLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#check-that-your-dns-client-is-working-properly)
+  * [RESOLVCONF (An App used by Ubuntu and Debian)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#resolvconf-an-app-used-by-ubuntu-and-debian)
+  * [NETWORK MANAGER (An App used by Centos and Red Hat)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#network-manager-an-app-used-by-centos-and-red-hat)
+  * [PREVENT UPDATES FROM DHCP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#prevent-updates-from-dhcp)
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).

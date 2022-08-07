@@ -34,14 +34,14 @@ UHS SPEED CLASS
 | CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |      APPLICATION |
 |------:|-----------------:|-----------------:|-----------------:|
 |    U1 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
-|    U2 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
+|    U3 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
 
 VIDEO SPEED CLASS
 
 | CLASS |  MIN WRITE SPEED |  BUS TYPE / MODE |      APPLICATION |
 |------:|-----------------:|-----------------:|-----------------:|
-|    V6 |           6 MB/s |               V6 |                  |
-|   V10 |          10 MB/s |              V10 |       Full 1080p |
-|   V30 |          30 MB/s |              V30 |         2K or 4K |
-|   V60 |          60 MB/s |              V60 |               8K |
-|   V90 |          90 MB/s |              V90 |               8K |
+|    V6 |           6 MB/s |   UHC-I / UHS-II |                  |
+|   V10 |          10 MB/s |   UHC-I / UHS-II |       Full 1080p |
+|   V30 |          30 MB/s |   UHC-I / UHS-II |         2K or 4K |
+|   V60 |          60 MB/s |           UHS-II |               8K |
+|   V90 |          90 MB/s |           UHS-II |               8K |
