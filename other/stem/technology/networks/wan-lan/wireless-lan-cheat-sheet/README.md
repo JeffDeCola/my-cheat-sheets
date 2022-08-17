@@ -35,15 +35,21 @@ These are pretty big approximations,
 
 In order of security (with encryption),
 
-* WEP (RC4) - Never use, easily hacked
-* WPA (TKIP) - Don't use
-* WPA (AES) - Don't use
-* WPA-PSK (TKIP) - Don't use
-* WPA-PSK (AES) - Don't use
-* WPA2-PSK (TKIP) - Don't use
-* **WPA2-PSK (AES)** - Use this, simple and easy, also called personal or home
-* WPA2 (TKIP) - Don't use
-* **WPA2 (AES)** - This is the highest level, also called enterprise
+* GENERATION 1
+  * WEP (RC4) - Never use, easily hacked
+  * WPA (TKIP) - Don't use
+  * WPA (AES) - Don't use
+  * WPA-PSK (TKIP) - Don't use
+  * WPA-PSK (AES) - Don't use
+* GENERATION 2
+  * WPA2-PSK (TKIP) - Don't use
+  * **WPA2-PSK (AES)** - Use this, simple and easy, also called personal or home
+  * WPA2 (TKIP) - Don't use
+  * WPA2 ENT (AES) - Enterprise mode
+* GENERATION 3
+  * **WPA3-PSK (SAE)** - Personal - Simultaneous Authentication of Equals
+  * WPA3 (Enhance Open Mode) - For open networks
+  * WPA3 ENT (AES with GCMP) - Enterprise Mode
 
 Do not use mixed mode, just select WPA2-PSK (AES).
 
