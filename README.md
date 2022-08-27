@@ -11,7 +11,7 @@ figured out over time. It's an ongoing process._
 
 **SOFTWARE CHEAT SHEETS**
 
-* [SOFTWARE DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#software-development)
+* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * DEVELOPMENT ENVIRONMENTS
   * LANGUAGES
   * OPERATING SYSTEMS
@@ -36,7 +36,7 @@ figured out over time. It's an ongoing process._
 
 **HARDWARE CHEAT SHEETS**
 
-* [HARDWARE DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#hardware-development)
+* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#hardware-development-hw)
   * FPGA DEVELOPMENT BOARDS
   * HARDWARE ARCHITECTURES
   * LANGUAGES
@@ -70,7 +70,7 @@ _Various Apps and tools for the goal of creating an App/Service._
 
 ![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.jpg)
 
-### SOFTWARE DEVELOPMENT
+### DEVELOPMENT
 
 * DEVELOPMENT ENVIRONMENTS
 
@@ -284,7 +284,7 @@ _Various Apps and tools for the goal of creating an ASIC/FPGA._
 
 ![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/creating-an-asic-fpga.jpg)
 
-### HARDWARE DEVELOPMENT
+### DEVELOPMENT HW
 
 * FPGA DEVELOPMENT BOARDS
   
