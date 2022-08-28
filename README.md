@@ -36,7 +36,7 @@ figured out over time. It's an ongoing process._
 
 **HARDWARE CHEAT SHEETS**
 
-* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#hardware-development-hw)
+* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-hw)
   * FPGA DEVELOPMENT BOARDS
   * HARDWARE ARCHITECTURES
   * LANGUAGES
