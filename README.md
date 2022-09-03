@@ -9,8 +9,6 @@ ASIC/FPGA hardware or a software app/service.
 These cheat sheets contain info I gathered from other sources and
 figured out over time. It's an ongoing process._
 
----
-
 **SOFTWARE CHEAT SHEETS**
 
 * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
@@ -72,11 +70,7 @@ Documentation and reference
 
 _Various Apps and tools for the goal of creating an App/Service._
 
-<details> <summary>Click for "Creating a Service/APP" Diagram Overview </summary>
-
 ![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.jpg)
-
-</details>
 
 ### DEVELOPMENT
 
@@ -292,11 +286,7 @@ _Various Apps and tools for the goal of creating an App/Service._
 
 _Various Apps and tools for the goal of creating an ASIC/FPGA._
 
-<details><summary>Click for "Creating an ASIC/FGPA" Diagram Overview </summary>
-
 ![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/creating-an-asic-fpga.jpg)
-
-</details>
 
 ### DEVELOPMENT HW
 
