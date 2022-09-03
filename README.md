@@ -9,6 +9,8 @@ ASIC/FPGA hardware or a software app/service.
 These cheat sheets contain info I gathered from other sources and
 figured out over time. It's an ongoing process._
 
+---
+
 **SOFTWARE CHEAT SHEETS**
 
 * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
@@ -63,6 +65,8 @@ Documentation and reference
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
   _built with
   [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
+
+---
 
 ## SOFTWARE CHEAT SHEETS
 
@@ -282,6 +286,8 @@ _Various Apps and tools for the goal of creating an App/Service._
   * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
 * [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 
+---
+
 ## HARDWARE CHEAT SHEETS
 
 _Various Apps and tools for the goal of creating an ASIC/FPGA._
@@ -322,6 +328,8 @@ _Various Apps and tools for the goal of creating an ASIC/FPGA._
 * TIMING
 
   * _coming soon_
+
+---
 
 ## OTHER CHEAT SHEETS
 
@@ -509,6 +517,8 @@ _Other cheat sheets I'm interested in._
       * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/linear-algebra-cheat-sheet)
       * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/number-theory-cheat-sheet)
       * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/order-theory-cheat-sheet)
+
+---
 
 ## CONTINUOUS INTEGRATION
 
