@@ -47,11 +47,11 @@ figured out over time. It's an ongoing process._
 
 **OTHER CHEAT SHEETS**
 
-* [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/README.md#american-history)
+* [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#american-history)
   * TIME PERIODS
   * WARS
-* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/README.md#random-things)
-* [STEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/README.md#stem)
+* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets#random-things)
+* [STEM](https://github.com/JeffDeCola/my-cheat-sheets#stem)
   * SCIENCE
   * TECHNOLOGY
   * ENGINEERING
@@ -80,6 +80,10 @@ _Various Apps and tools for the goal of creating an App/Service._
   * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
     ([my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes))
   * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
+    * [install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
+    * [install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
+    * [install ubuntu with gnome desktop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
+    * [install windows 11](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows-11.md)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
     * [verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
 
@@ -105,9 +109,10 @@ _Various Apps and tools for the goal of creating an App/Service._
     ([my-linux-shell-scripts](https://github.com/JeffDeCola/my-linux-shell-scripts))
 
     * [common commands](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet)
-    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet),
-      [create dns server using bind](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
-    * [dual-boot-ubuntu-and-windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dual-boot-ubuntu-and-windows)
+    * [common-distributions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-distributions-cheat-sheet)
+    * [dns](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet)
+      * [create dns server using bind](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
+    * [dual-boot-ubuntu-and-windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dual-boot-ubuntu-and-windows-cheat-sheet)
     * [fonts](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/fonts-cheat-sheet)
     * [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/init-sysv-script-cheat-sheet)
     * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
@@ -115,10 +120,6 @@ _Various Apps and tools for the goal of creating an App/Service._
     * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
     * [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
-
-  * LINUX DISTRIBUTIONS
-
-    * _coming soon_
 
   * MAC OS
 
