@@ -185,6 +185,11 @@ _Various Apps and tools for the goal of creating an App/Service._
 
   * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet)
     ([my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks))
+    * [install concourse binary](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
+    * [install concourse on virtualbox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
+    * [install concourse using ansible google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+    * [install fly on linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
+    * [install fly on windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
 
 * ORCHESTRATION
 
