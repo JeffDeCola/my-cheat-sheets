@@ -2,22 +2,22 @@
 
 _Basis steps to install Arch Linux using zsh without a desktop on VirtualBox._
 
-## STEPS
+## ARCH LINUX MINI
 
-Sadly, you must type this in command line. You can't copy/paste into terminal.
-Yup, it stinks. I suggest using ssh into the box.
+Sadly, you must type the following in the command line. You can't copy/paste into terminal.
+Yup, it stinks.
 
 **DOWNLOAD .iso IMAGE**
 
 * GET .iso IMAGE
-  * Download Arch Linux image from [official website](https://archlinux.org/)
+  * Download image from [official website](https://archlinux.org/)
 
-**CREATE NEW VM AND ATTACH .iso IMAGE**  
+**VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
 * CREATE VM
   * Name "VB-Arch-Linux-Mini"
-  * Chose Arch Linux 64-bit (2048 MB RAM, 21.07 GB Disk)
-* VM SETTINGS  
+  * Chose ARch Linux 64-bit (2048 MB RAM, 21.07 GB Disk, .vdi, dynamically allocated)
+* VM SETTINGS
   * Attach .iso image in Settings -> Storage
 
 **START VM**
@@ -90,7 +90,7 @@ Yup, it stinks. I suggest using ssh into the box.
 
 * INSTALL GRUB (A BOOT LOADER)
   * `pacman -S grub os-prober`
-  * `grub-install --target=i386-pc /dev/sda`
+  * `grub-install --target=i386-pc /dev/sda` (correct target even for 64-bit)
   * `grub-mkconfig -o /boot/grub/grub.cfg`
 * EXIT & UMOUNT
   * `exit`
@@ -120,7 +120,7 @@ Yup, it stinks. I suggest using ssh into the box.
   * check with `groups jeff`
 * **CLOSE VM**
 
-**VIRTUALBOX NETWORK**
+**VIRTUALBOX - NETWORK**
 
 * SETTING MENU
   * Devices->Shared Clipboard->Bidirectional
