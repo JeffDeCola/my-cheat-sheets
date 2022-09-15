@@ -1,11 +1,10 @@
 # VIRTUALBOX CHEAT SHEET
 
-`virtualbox` _a "virtualization" product, allows you to
+_VirtualBox is a "virtualization" product, which allows you to
 run an operating system (guest) on top of your existing
-operating system (host).  You can think of it as a sandbox of an OS
-running on your computer._
+operating system (host)._
 
-Table of Contents,
+Table of Contents
 
 * [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#virtual-machine-vm-vs-docker-container)
 * [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-on-windows)
@@ -20,7 +19,16 @@ Table of Contents,
 * [FTP ONTO UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#ftp-onto-ubuntu)
 * [ADD A PRINTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#add-a-printer)
 
-Documentation and reference,
+Documentation and Reference
+
+* [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
+on virtualbox
+* [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
+on virtualbox
+* [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
+on virtualbox
+* [Install Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows-11.md)
+on virtualbox
 
 * View a list of all my-cheat-sheets on my
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
@@ -32,14 +40,14 @@ and a Docker Container,
 
 ![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
-Virtual Machine,
+Virtual Machine
 
 * Must use a Hypervisor emulated Virtual Hardware
 * Needs a guest OS
 * Takes a lot of system resources
 * Takes up a lot of memory
 
-Container,
+Container
 
 * Uses a shared host OS
 * You must use that OS
@@ -87,7 +95,7 @@ After reboot, check that it installed,
 ls /opt
 ```
 
-You may need to add yourself to the vboxsf group,
+You may need to add yourself to the vboxsf group.
 
 First check,
 
@@ -121,7 +129,7 @@ reboot
 
 ## SHARED CLIPBOARD & DRAG AND DROP
 
-The following is required to use these features:
+The following is required to use these features,
 
 * Shared folder enabled
 * Guest Additions installed
