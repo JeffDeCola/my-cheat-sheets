@@ -22,15 +22,22 @@ Yup, it stinks.
 
 * CREATE VM
   * Name "VB-Arch-Linux-Mini"
-  * Chose ARch Linux 64-bit (2048 MB RAM, 21.07 GB Disk, .vdi, dynamically allocated)
-* VM SETTINGS
-  * Attach .iso image in Settings -> Storage
+  * Chose Arch Linux 64-bit (2048 MB RAM, 20 GB Disk, .vdi, dynamically allocated)
+* ATTACH IMAGE
+  * Settings->Storage with Controller: IDE
+  * Attach .iso image
+* DISPLAY
+  * Settings->Display->Screen
+  * Video Memory: 128MB
+  * Graphics Controller: VBoxSVGA
+  * Enable 3D Acceleration enabled
+  * Scale Factor 200%
 
 **START VM**
 
 * **START VM**
 * SELECT BOOT
-  * Use "Boot Arch Linux (x86_64)"
+  * Select "Arch Linux install medium (x86_64, BIOS)"
 * CHECK NETWORK  
   * `ping.google.com`
 
@@ -64,7 +71,9 @@ Yup, it stinks.
 * CHANGE ROOT TO NEW SYSTEM
   * `arch-chroot /mnt`
 * INSTALL NANO
-  * `pacman -S nano`  
+  * `pacman -S nano`
+* INSTALL VI
+  * `pacman -S vi`
 * LANGUAGE
   * `nano /etc/locale.gen`, uncomment en_US.UTF-8 UTF-8
   * `locale-gen`
@@ -75,7 +84,12 @@ Yup, it stinks.
   * `hwclock --systohc --utc`
 * HOSTNAME
   * `nano /etc/hostname`
-  * "VB-Arch-Linux-Mini"
+    * "VB-Arch-Linux-Mini"
+    * /etc/hostname should not contain comments or empty lines.
+  * `nano /etc/hosts`
+    * #ip-address       hostname.domain.org     hostname"
+    * "127.0.0.1        localhost.localdomain   localhost  VB-Arch-Linux-Mini"
+    * "::1              localhost.localdomain   localhost  VB-Arch-Linux-Mini"
 * CHANGE ROOT PASSWORD
   * `passwd`
 
@@ -119,6 +133,7 @@ Yup, it stinks.
 
 **FIRST BOOT & CONFIGURE**
 
+* **START VM**
 * LOGIN
   * Login as root
 * INSTALL sudo & Zsh
@@ -126,30 +141,27 @@ Yup, it stinks.
 * ADD USER USING ZSH
   * `useradd -m -g users -s /usr/bin/zsh jeff`
   * `passwd jeff`
-  * `sudo nano /etc/sudoers`
+* ADD USER TO SUDOERS
+  * `EDITOR=vi visudo`
     * add "jeff ALL=(ALL) ALL"
     * uncomment "%sudo ALL =(ALL:ALL) ALL"
     * uncomment "%wheel ALL=(ALL:ALL) ALL"
+    * Check file with `EDITOR=vi visudo -C`
+* ADD TO GROUPS
   * `usermod -aG wheel jeff`
   * `usermod -aG vboxsf jeff`
   * check with `groups jeff`
 * **CLOSE VM**
-
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **FIRST LOGIN AS JEFF & CONFIGURE**
 
 * **START VM**
 * LOGIN
   * Login as jeff
-* PROMPT
-  * nano .zshrc add `PS1="%F{green}%n@%m:%F{cyan}%1~ %F{white}$"`  
+* Q & A FOR ZSH
+  * Since it's first time you can go through Q & A  
+* ADD 1PROMPT
+  * nano .zshrc add `PS1="%F{green}%n@%m:%F{cyan}%1~ %F{white}$ "`  
 * UPDATE
   * `sudo pacman -Syu`
 * CHECK SERVICES RUNNING
@@ -157,3 +169,13 @@ Yup, it stinks.
   * `systemctl status dhcpcd.service`
   * `systemctl status sshd.service`
   * `systemctl status systemd-swap.service`
+* CHECK ETH CONNECTIONS
+  * Note: arch linux uses ip tools rather than net-tools
+  * `ip addr`
+* CHECK HOSTNAME
+  * `sudo pacman -S inetutils`
+  * `hostname`
+
+## YOUR HOME NETWORK
+
+* Since we are in bridge mode, I like to configure my home router to set the same ip address
