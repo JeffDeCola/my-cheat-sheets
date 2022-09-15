@@ -27,6 +27,7 @@ _Basis steps to install Windows on VirtualBox._
 
 **START VM**
 
+* **START VM**
 * STOP AT INSTALL NOW
   * Stop when you see "Install Now" Button
 
@@ -66,6 +67,14 @@ _Basis steps to install Windows on VirtualBox._
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
+**VIRTUALBOX - NETWORK - BRIDGE MODE**
+
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
+
 **VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE**
 
 * VM SETTINGS
@@ -73,6 +82,7 @@ _Basis steps to install Windows on VirtualBox._
 
 **FIRST LOGIN AS JEFF**
 
+* **START VM**
 * LOGIN
   * Login as Jeff deCola
 
@@ -84,22 +94,14 @@ _Basis steps to install Windows on VirtualBox._
   * Open File Manger in Windows
   * Run `VBoxWindowsAdditions-amd64.exe`
 
+**DRAG AND DROP SETTINGS**
+
+* VM MENU
+  * Devices->Drag and Drop->Bidirectional
+
 **DISPLAY (AUTO RESIZE)**  
 
 * VM MENU
   * This should now be available
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
-
-**DRAG AND DROP SETTINGS**
-
-* VM MENU
-  * Devices->Drag and Drop->Bidirectional
-
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`

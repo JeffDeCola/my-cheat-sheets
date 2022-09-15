@@ -22,7 +22,8 @@ Yup, it stinks.
 
 **START VM**
 
-* START VM
+* **START VM**
+* SELECT BOOT
   * Use "Boot Arch Linux (x86_64)"
 * CHECK NETWORK  
   * `ping.google.com`
@@ -102,6 +103,14 @@ Yup, it stinks.
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
+**VIRTUALBOX - NETWORK - BRIDGE MODE**
+
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
+
 **FIRST BOOT & CONFIGURE**
 
 * LOGIN
@@ -120,15 +129,17 @@ Yup, it stinks.
   * check with `groups jeff`
 * **CLOSE VM**
 
-**VIRTUALBOX - NETWORK**
+**VIRTUALBOX - NETWORK - BRIDGE MODE**
 
-* SETTING MENU
-  * Devices->Shared Clipboard->Bidirectional
-  NETWORKING - CHANGE NAT TO BRIDGE
-  * Settings -> Network - Adapter -> Bridged Adapter
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**FIRST LOGIN AS JEFF**
+**FIRST LOGIN AS JEFF & CONFIGURE**
 
+* **START VM**
 * LOGIN
   * Login as jeff
 * PROMPT

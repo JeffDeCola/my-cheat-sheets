@@ -22,13 +22,13 @@ Table of Contents
 Documentation and Reference
 
 * [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
-on virtualbox
+  on virtualbox
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
-on virtualbox
+  on virtualbox
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
-on virtualbox
+  on virtualbox
 * [Install Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows-11.md)
-on virtualbox
+  on virtualbox
 
 * View a list of all my-cheat-sheets on my
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)

@@ -26,7 +26,8 @@ Yup, it stinks.
 
 **START VM**
 
-* START VM
+* **START VM**
+* INSTALL
   * Use "Install" (non graph)
 
 **Q & A**
@@ -47,20 +48,17 @@ Yup, it stinks.
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
-**VIRTUALBOX - NETWORK**
+**VIRTUALBOX - NETWORK - BRIDGE MODE**
 
-* SETTING MENU
-  * Devices->Shared Clipboard->Bidirectional
-  NETWORKING - CHANGE NAT TO BRIDGE
-  * Settings -> Network - Adapter -> Bridged Adapter
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**FIRST LOGIN AS JEFF**
+**FIRST LOGIN AS JEFF & CONFIGURE**
 
-* LOGIN
-  * Login as jeff
-
-**FIRST BOOT & CONFIGURE**
-
+* **START VM**
 * LOGIN
   * Login as jeff
 * CHECK NETWORK  
