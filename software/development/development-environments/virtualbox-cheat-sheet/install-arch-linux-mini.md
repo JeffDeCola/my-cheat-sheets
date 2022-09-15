@@ -2,6 +2,13 @@
 
 _Basis steps to install Arch Linux using zsh without a desktop on VirtualBox._
 
+Documentation and Reference
+
+* [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
+* [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
+* [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
+* [Install Windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows-11.md)
+
 ## ARCH LINUX MINI
 
 Sadly, you must type the following in the command line. You can't copy/paste into terminal.
