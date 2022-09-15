@@ -20,16 +20,19 @@ Documentation and Reference
 * CREATE VM
   * Name "VB-Windows-11" (Must be less than 15 characters for Windows Host Name)
   * Chose Windows 11 Pro 64-bit (8192 MB RAM, ~.100 GB Disk, .vdi, dynamically allocated)
-* VM SETTINGS
-  * Attach .iso image in Settings -> Storage
+* ATTACH IMAGE
+  * Settings->Storage with Controller: IDE
+  * Attach .iso image
+* PROCESSOR
   * Settings->System->Processor
-    * 4 Processors
-    * Enable PAE/NX
+  * 4 Processors
+  * Enable PAE/NX
+* DISPLAY
   * Settings->Display->Screen
-    * Video Memory: 256MB
-    * Graphics Controller: VBoxSVGA
-    * Enable 3D Acceleration enabled
-    * Scale Factor 200% (This will help cut down on video RAM usage)
+  * Video Memory: 256MB
+  * Graphics Controller: VBoxSVGA
+  * Enable 3D Acceleration enabled
+  * Scale Factor 200% (This will help cut down on video RAM usage)
 
 **START VM**
 
@@ -111,3 +114,7 @@ Documentation and Reference
   * This should now be available
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
+
+## YOUR HOME NETWORK
+
+* Since we are in bridge mode, I like to configure my home router to set the same ip address

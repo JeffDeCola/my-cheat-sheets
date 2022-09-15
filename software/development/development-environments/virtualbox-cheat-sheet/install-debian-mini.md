@@ -24,8 +24,15 @@ Yup, it stinks.
 * CREATE VM
   * Name "VB-Debian-11-Mini"
   * Chose Debian 64-bit (2048 MB RAM, 21.07 GB Disk, .vdi, dynamically allocated)
-* VM SETTINGS
-  * Attach .iso image in Settings -> Storage
+* ATTACH IMAGE
+  * Settings->Storage with Controller: IDE
+  * Attach .iso image
+* DISPLAY
+  * Settings->Display->Screen
+  * Video Memory: 128MB
+  * Graphics Controller: VBoxSVGA
+  * Enable 3D Acceleration enabled
+  * Scale Factor 200%
 
 **START VM**
 
@@ -80,3 +87,7 @@ Yup, it stinks.
   * nano .zshrc add `PS1="%F{green}%n@%m:%F{cyan}%1~ %F{white}$"`  ??
 * UPDATE
   * `sudo pacman -Syu`??
+
+## YOUR HOME NETWORK
+
+* Since we are in bridge mode, I like to configure my home router to set the same ip address
