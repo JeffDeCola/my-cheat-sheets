@@ -117,4 +117,6 @@ Documentation and Reference
 
 ## YOUR HOME NETWORK
 
-* Since we are in bridge mode, I like to configure my home router to set the same ip address
+* BRIDGE MODE
+  * Since we are in bridge mode, I like to configure my home router to set the same ip address
+  

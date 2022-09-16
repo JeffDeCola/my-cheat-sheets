@@ -131,14 +131,14 @@ Yup, it stinks.
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**FIRST BOOT & CONFIGURE**
+**FIRST BOOT AS ROOT & CONFIGURE**
 
 * **START VM**
 * LOGIN
   * Login as root
 * INSTALL sudo & Zsh
   * `pacman -S sudo zsh`
-* ADD USER USING ZSH
+* ADD jeff USING ZSH
   * `useradd -m -g users -s /usr/bin/zsh jeff`
   * `passwd jeff`
 * ADD USER TO SUDOERS
@@ -160,8 +160,8 @@ Yup, it stinks.
   * Login as jeff
 * Q & A FOR ZSH
   * Since it's first time you can go through Q & A  
-* ADD 1PROMPT
-  * nano .zshrc add `PS1="%F{green}%n@%m:%F{cyan}%1~ %F{white}$ "`  
+* CONFIGURE PROMPT
+  * nano .zshrc add `prompt="%F{green}%n@%m:%F{cyan}%1~ %F{white}$ "`  
 * UPDATE
   * `sudo pacman -Syu`
 * CHECK SERVICES RUNNING
@@ -178,4 +178,32 @@ Yup, it stinks.
 
 ## YOUR HOME NETWORK
 
-* Since we are in bridge mode, I like to configure my home router to set the same ip address
+* BRIDGE MODE
+  * Since we are in bridge mode, I like to configure my home router to set the same ip address
+
+## CONNECT TO GITHUB AND GET YOUR REPOS
+
+* SSH INTO VM
+  * It is easier to ssh into the box to copy paste commands
+  * From another computer `ssh <ip>`
+* CREATE KEYS
+  * `ssh-keygen -t rsa -b 4096 -C "Keys for Github VB-Arch-Linux-Mini"`
+  * `ssh-add ~/.ssh/id_rsa`
+* ADD PUBLIC KEY TO GITHUB
+  * Copy/Paste public key (.ssh/id_rsa.pub) at github
+* CONNECT TO GITHUB
+  * `ssh -T git@github.com`
+* INSTALL GIT
+  * `sudo pacman -S git`
+* GIT CONFIGURATION SETTINGS
+  * `git config --global user.name "Jeff DeCola (VB-Arch-Linux-Mini)"`
+  * `git config --global user.email <YOUR_EMAIL>`
+  * `git config --global core.editor nano`
+  * `git config --global push.default simple`
+  * Check with `git config --list`
+* CLONE REPO
+  * `mkdir development`
+  * `git clone git@github.com:JeffDeCola/my-cheat-sheets.git`
+* GIT AWARE PROMPT
+  * I like to use [this](https://github.com/joeytwiddle/git-aware-prompt)
+  * `PROMPT='%F{green}%n@%m:%F{cyan}%1~%{$txtcyn%}$git_branch%{$txtred%}$git_unknown_count%{$txtrst%} %F{white}$ '`
