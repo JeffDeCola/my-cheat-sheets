@@ -8,7 +8,7 @@ Documentation and Reference
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
 
-## WINDOWS 11
+## WINDOWS 11 PRO
 
 **DOWNLOAD .iso IMAGE**
 
@@ -33,6 +33,11 @@ Documentation and Reference
   * Graphics Controller: VBoxSVGA
   * Enable 3D Acceleration enabled
   * Scale Factor 200% (This will help cut down on video RAM usage)
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **START VM**
 
@@ -76,14 +81,6 @@ Documentation and Reference
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
-
 **VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE**
 
 * VM SETTINGS
@@ -98,6 +95,7 @@ Documentation and Reference
 **INSTALL GUEST ADDITIONS ON WINDOWS**
 
 * INSTALL CD FROM VM MENU
+  * This is probably not needed
   * Devices->Insert Guest Additions CD image
 * RUN GUEST ADDITIONS EXECUTABLE  
   * Open File Manger in Windows
@@ -115,7 +113,14 @@ Documentation and Reference
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
 
-## YOUR HOME NETWORK
+**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+
+* **CLOSE VM**
+* VM SETTINGS
+  * Remove guest additions .iso image in Settings -> Storage
+* **START VM**
+
+**YOUR HOME NETWORK**
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address

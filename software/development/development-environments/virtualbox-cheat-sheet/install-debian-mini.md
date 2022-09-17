@@ -47,7 +47,7 @@ Yup, it stinks.
   * Hostname "VB-Debian-11-Mini"
   * Domain name "debian11.com"
   * User Jeff DeCola
-  * timezones
+  * Timezone
   * User entire disk as partition
   * Make sure you don't pick a desktop (use space bar to uncheck)
   * etc...
@@ -61,7 +61,8 @@ Yup, it stinks.
 **VIRTUALBOX - NETWORK - BRIDGE MODE**
 
 * SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Could probably do this above
+  * The VM will receive it's own IP address if DHCP is enabled in the network
   * Settings -> Network -> Adapter 1
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
@@ -90,12 +91,12 @@ Yup, it stinks.
   * `sudo apt-get upgrade`
 * CHECK GUEST ADDITIONS INSTALLED (NO DESKTOP)
   * check `lsmod | grep vboxguest`
-  * Not sure how it got installed.
+  * Not sure how it got installed
 * INSTALL GUEST ADDITIONS (NO DESKTOP) (I DID NOT CHECK THIS)
   * `sudo mkdir -p /mnt/guestadditions`
   * `sudo mount /dev/cdrom /mnt/guestadditions`
   * `cd /mnt/guestadditions`
-  * `sudo sh ./VBoxLinuxAdditions.run --nox11`
+  * `sudo ./VBoxLinuxAdditions.run`
   * `reboot`
   * check `lsmod | grep vboxguest`
 * ENABLE SSH SERVICE
@@ -108,12 +109,33 @@ Yup, it stinks.
 * CHECK HOSTNAME
   * `hostname`
 
-## YOUR HOME NETWORK
+**DRAG AND DROP SETTINGS (NOT AN OPTION WITHOUT DESKTOP)**
+
+* VM MENU
+  * Devices->Drag and Drop->Bidirectional
+
+**DISPLAY (AUTO RESIZE) (NOT AN OPTION WITHOUT DESKTOP)**  
+
+* VM MENU
+  * This should now be available
+  * View->Auto Resize Guest Display
+  * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
+
+**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+
+* **CLOSE VM**
+* VM SETTINGS
+  * Remove guest additions .iso image in Settings -> Storage
+* **START VM**
+
+**YOUR HOME NETWORK**
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
 
-## CONNECT TO GITHUB AND GET YOUR REPOS
+## OPTIONAL INSTALLS & CONFIGURATIONS
+
+**CONNECT TO GITHUB AND GET YOUR REPOS**
 
 * SSH INTO VM
   * It is easier to ssh into the box to copy paste commands
@@ -135,7 +157,17 @@ Yup, it stinks.
   * Check with `git config --list`
 * CLONE REPO
   * `mkdir development`
-  * `git clone git@github.com:JeffDeCola/my-cheat-sheets.git`
-* GIT AWARE PROMPT
+  * `cd development`
+  * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
+
+**GIT AWARE PROMPT**
+
+* INSTALL
   * I like to use [this](https://github.com/jimeh/git-aware-prompt)
+  * `mkdir ~/.bash`
+  * `cd ~/.bash`
+  * `git clone https://github.com/jimeh/git-aware-prompt.git`
+* EDIT .bashrc
+  * `export GITAWAREPROMPT=~/.bash/git-aware-prompt`
+  * `source "${GITAWAREPROMPT}/main.sh"`
   * `PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "`

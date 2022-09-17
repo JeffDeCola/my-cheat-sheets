@@ -126,7 +126,8 @@ Yup, it stinks.
 **VIRTUALBOX - NETWORK - BRIDGE MODE**
 
 * SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
+  * Could probably do this above
+  * The VM will receive it's own IP address if DHCP is enabled in the network
   * Settings -> Network -> Adapter 1
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
@@ -176,12 +177,14 @@ Yup, it stinks.
   * `sudo pacman -S inetutils`
   * `hostname`
 
-## YOUR HOME NETWORK
+**YOUR HOME NETWORK**
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
 
-## CONNECT TO GITHUB AND GET YOUR REPOS
+## OPTIONAL INSTALLS & CONFIGURATIONS
+
+**CONNECT TO GITHUB AND GET YOUR REPOS**
 
 * SSH INTO VM
   * It is easier to ssh into the box to copy paste commands
@@ -203,7 +206,17 @@ Yup, it stinks.
   * Check with `git config --list`
 * CLONE REPO
   * `mkdir development`
-  * `git clone git@github.com:JeffDeCola/my-cheat-sheets.git`
-* GIT AWARE PROMPT
-  * I like to use [this](https://github.com/joeytwiddle/git-aware-prompt)
+  * `cd development`
+  * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
+
+**GIT AWARE PROMPT**
+
+* INSTALL
+  * I like to use [this](https://github.com/joeytwiddle/git-aware-prompt) for zsh
+  * `mkdir ~/.bash`
+  * `cd ~/.bash`
+  * `git clone https://github.com/jimeh/git-aware-prompt.git`
+* EDIT .bashrc
+  * `export GITAWAREPROMPT=~/.bash/git-aware-prompt`
+  * `source "${GITAWAREPROMPT}/main.sh"`
   * `PROMPT='%F{green}%n@%m:%F{cyan}%1~%{$txtcyn%}$git_branch%{$txtred%}$git_unknown_count%{$txtrst%} %F{white}$ '`
