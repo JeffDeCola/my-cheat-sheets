@@ -21,7 +21,7 @@ Yup, it stinks.
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Debian-11-Mini"
   * Chose Debian 64-bit (2048 MB RAM, 20.00 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
@@ -33,6 +33,11 @@ Yup, it stinks.
   * Graphics Controller: VBoxSVGA
   * Enable 3D Acceleration enabled
   * Scale Factor 200%
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **START VM**
 
@@ -51,21 +56,13 @@ Yup, it stinks.
   * User entire disk as partition
   * Make sure you don't pick a desktop (use space bar to uncheck)
   * etc...
-* **CLOSE VM**
 
 **VIRTUALBOX - REMOVE .iso IMAGE**
 
+* **CLOSE VM**
 * VM SETTINGS  
   * Remove image in Settings -> Storage
-
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * Could probably do this above
-  * The VM will receive it's own IP address if DHCP is enabled in the network
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
+* **START VM**
 
 **FIRST LOGIN AS JEFF & CONFIGURE AS ROOT**
 
@@ -109,17 +106,13 @@ Yup, it stinks.
 * CHECK HOSTNAME
   * `hostname`
 
-**DRAG AND DROP SETTINGS (NOT AN OPTION WITHOUT DESKTOP)**
+**SHARED SETTINGS**
 
 * VM MENU
-  * Devices->Drag and Drop->Bidirectional
-
-**DISPLAY (AUTO RESIZE) (NOT AN OPTION WITHOUT DESKTOP)**  
-
-* VM MENU
-  * This should now be available
-  * View->Auto Resize Guest Display
-  * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
+  * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
 
 **VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
 
