@@ -11,9 +11,6 @@ Documentation and Reference
 
 ## UBUNTU 22.04 LTS WITH GNOME DESKTOP
 
-Sadly, you must type the following in the command line. You can't copy/paste into terminal.
-Yup, it stinks.
-
 **DOWNLOAD .iso IMAGE**
 
 * GET .iso IMAGE
@@ -21,7 +18,7 @@ Yup, it stinks.
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Ubuntu-2204-GNOME"
   * Chose Ubuntu 64-bit (4096 MB RAM, 100 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
@@ -93,9 +90,12 @@ Yup, it stinks.
 * CHECK HOSTNAME
   * `hostname`
 
-**DRAG AND DROP SETTINGS**
+**SHARED SETTINGS**
 
 * VM MENU
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
 
 **DISPLAY (AUTO RESIZE)**  

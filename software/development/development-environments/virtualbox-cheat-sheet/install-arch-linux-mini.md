@@ -20,7 +20,7 @@ Yup, it stinks.
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Arch-Linux-Mini"
   * Chose Arch Linux 64-bit (2048 MB RAM, 20 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
@@ -32,6 +32,11 @@ Yup, it stinks.
   * Graphics Controller: VBoxSVGA
   * Enable 3D Acceleration enabled
   * Scale Factor 200%
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **START VM**
 
@@ -88,8 +93,8 @@ Yup, it stinks.
     * /etc/hostname should not contain comments or empty lines.
   * `nano /etc/hosts`
     * #ip-address       hostname.domain.org     hostname"
-    * "127.0.0.1        localhost.localdomain   localhost  VB-Arch-Linux-Mini"
-    * "::1              localhost.localdomain   localhost  VB-Arch-Linux-Mini"
+    * "127.0.0.1        localhost.localdomain   VB-Arch-Linux-Mini localhost"
+    * "::1              localhost.localdomain   VB-Arch-Linux-Mini localhost"
 * CHANGE ROOT PASSWORD
   * `passwd`
 
@@ -116,25 +121,24 @@ Yup, it stinks.
 * EXIT & UMOUNT
   * `exit`
   * `umount -R /mnt`
-* **CLOSE VM**
+
+**SHARED SETTINGS**
+
+* VM MENU
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
+  * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
 
 **VIRTUALBOX - REMOVE .iso IMAGE**
 
+* **CLOSE VM**
 * VM SETTINGS  
   * Remove image in Settings -> Storage
-
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * Could probably do this above
-  * The VM will receive it's own IP address if DHCP is enabled in the network
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
+* **START VM**
 
 **FIRST BOOT AS ROOT & CONFIGURE**
 
-* **START VM**
 * LOGIN
   * Login as root
 * INSTALL sudo & Zsh

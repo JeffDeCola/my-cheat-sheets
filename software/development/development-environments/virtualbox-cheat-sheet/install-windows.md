@@ -17,7 +17,7 @@ Documentation and Reference
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Windows-11" (Must be less than 15 characters for Windows Host Name)
   * Chose Windows 11 Pro 64-bit (8192 MB RAM, ~.100 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
@@ -66,6 +66,8 @@ Documentation and Reference
 
 **Q & A**
 
+* IF IT HANGS
+  * Just reboot
 * ANSWER QUESTIONS
   * Choose "I don’t have a product key"
   * Choose "Windows 11 Pro"
@@ -90,7 +92,7 @@ Documentation and Reference
 
 * **START VM**
 * LOGIN
-  * Login as Jeff deCola
+  * Login as Jeff DeCola
 
 **INSTALL GUEST ADDITIONS ON WINDOWS**
 
@@ -100,10 +102,14 @@ Documentation and Reference
 * RUN GUEST ADDITIONS EXECUTABLE  
   * Open File Manger in Windows
   * Run `VBoxWindowsAdditions-amd64.exe`
+  * When done, it will ask to reboot
 
-**DRAG AND DROP SETTINGS**
+**SHARED SETTINGS**
 
 * VM MENU
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
 
 **DISPLAY (AUTO RESIZE)**  
@@ -124,4 +130,3 @@ Documentation and Reference
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
-  
