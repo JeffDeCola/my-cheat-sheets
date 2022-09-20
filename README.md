@@ -128,7 +128,7 @@ _Various Apps and tools for the goal of creating an App/Service._
 
   * WINDOWS
 
-    * [wsl (bash on ubuntu on windows)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl-bash-on-ubuntu-on-windows-cheat-sheet)
+    * [wsl2 (bash on ubuntu on windows)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet)
 
 * SOFTWARE ARCHITECTURES
 
