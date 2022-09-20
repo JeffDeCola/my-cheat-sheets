@@ -1,14 +1,13 @@
-# WSL - BASH ON UBUNTU ON WINDOWS CHEAT SHEET
+# WSL2 - BASH ON UBUNTU ON WINDOWS CHEAT SHEET
 
-`wsl (bash on ubuntu on windows)` _allows you to install linux
-on a windows machine._
+_`WSL2 allows you to install linux on a windows machine._
 
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## WSL (WINDOWS SUBSYSTEM FOR LINUX)
+## WSL2 (WINDOWS SUBSYSTEM FOR LINUX)
 
-The WSL (Windows System for Linux) allows you to run linux on Windows.
+The WSL2 (Windows System for Linux) allows you to run linux on Windows.
 
 Ubuntu runs on top of windows with its own /home folder.
 
@@ -42,13 +41,13 @@ Where does Windows keep the files?
 
 For Ubuntu 14.04/16.04,
 
-```
+```txt
 C:\Users\<WindowsNAME>\AppData\Local\lxss\home\<bashusername>
 ```
 
-For Ubuntu 18.04 (From Windows Store),
+For Ubuntu 18.04+ (From Windows Store),
 
-```
+```txt
 C:\Users\<WindowsNAME>\AppData\Local\Packages\<SOMETHING>\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\<bashusername>
 ```
 
