@@ -208,6 +208,7 @@ Step one - Create firewall rule to allow incoming traffic on port 2222.
 I used a powershell but you can you `Windows Defender Firewall` GUI,
 
 ```bash
+New-NetFirewallRule -Name sshd -DisplayName 'Jeff OpenSSH Server (sshd) for WSL' -Enabled True -Direction Outbound -Protocol TCP -Action Allow -LocalPort 2222
 New-NetFirewallRule -Name sshd -DisplayName 'Jeff OpenSSH Server (sshd) for WSL' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 2222
 ```
 
@@ -219,7 +220,8 @@ Again, you can use powershell or `Windows Defender Firewall` GUI,
 
 ```bash
 netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=2222 protocol=tcp
-netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=192.168.10.122 connectport=2222
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=192.168.20.122 connectport=2222
+netsh interface portproxy show v4tov4;
 ```
 
 You check via `Windows Defender Firewall` rules on Windows GUI.
