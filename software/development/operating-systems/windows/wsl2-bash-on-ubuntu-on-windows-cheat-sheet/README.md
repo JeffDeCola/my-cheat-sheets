@@ -9,7 +9,19 @@ Table of Contents,
 * [FILE LOCATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#file-locations)
 * [ADD SUDO FOR USER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#add-sudo-for-user)
 * [FIX DIRECTORY COLOR IF HARD TO READ](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#fix-directory-color-if-hard-to-read)
-* [CONFIGURE SSH (PORT 2222) ON WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-2222-on-wsl2)
+* [CONFIGURE SSH (NORMAL PORT 22) ON WSL2 (EASY WAY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-normal-port-22-on-wsl2-easy-way)
+  * [START SSH SERVER ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#start-ssh-server-on-windows)
+  * [MAKE WINDOWS OPENSSH TO OPEN WSL2 BASH SHELL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-windows-openssh-to-open-wsl2-bash-shell)
+  * [CONFIGURE SSHD ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-sshd-on-windows)
+  * [WE ARE USING WINDOWS .ssh DIRECTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#we-are-using-windows-ssh-directory)
+  * [TEST IT'S WORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-its-working)
+* [CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-2222-on-wsl2-too-much-work)
+  * [MAKE SSH KEYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-ssh-keys)
+  * [INSTALL OPENSSH-SERVER IN WSL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#install-openssh-server-in-wsl)
+  * [CONFIGURE SSH PORT NUMBER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-number)
+  * [START SSH SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#start-ssh-service)
+  * [FORWARD PORTS INTO WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#forward-ports-into-wsl2)
+  * [TEST IT'S WORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-its-working)
 * [SETUP CODE DEVELOPMENT ENVIRONMENT ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#setup-code-development-environment-on-windows)
 
 View my entire list of cheat sheets on
@@ -132,17 +144,109 @@ export LS_COLORS
 For more information, refer to my
 [LS_COLORS cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
 
-## CONFIGURE SSH (PORT 2222) ON WSL2
+## CONFIGURE SSH (NORMAL PORT 22) ON WSL2 (EASY WAY)
+
+We're going to change windows shell for ssh to wsl bash shell.
+
+So we use Windows' OpenSSH and authenticates with Windows and then runs WSL2.
+WSL2 starts up, uses bash, and Windows handles the TCP traffic.
+
+### START SSH SERVER ON WINDOWS
+
+Open an admin PowerShell prompt to see if you have the server running,
+
+```bash
+Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
+```
+
+If OpenSSH.Server NOTPresent, add it,
+
+```bash
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```
+
+Start service,
+
+```bash
+Start-Service sshd
+```
+
+Start service automatically,
+
+```bash
+Set-Service -Name sshd -StartupType 'Automatic'
+```
+
+Check if it's running,
+
+```bash
+ get-service sshd
+```
+
+### MAKE WINDOWS OPENSSH TO OPEN WSL2 BASH SHELL
+
+This is the magic.
+Update the registry via powershell or you could use regedit,
+
+```bash
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\WINDOWS\System32\bash.exe" -PropertyType String -Force
+```
+
+### CONFIGURE SSHD ON WINDOWS
+
+```bash
+start-process notepad C:\Programdata\ssh\sshd_config
+```
+
+You may do things like,
+
+```bash
+Port 2222
+ListenAddress 0.0.0.0
+PubkeyAuthentication no
+PasswordAuthentication yes
+```
+
+Restart,
+
+```bash
+restart-service sshd
+```
+
+### WE ARE USING WINDOWS .ssh DIRECTORY
+
+We are not using WSL2 .ssh directory, we are using windows located in 
+`Users\jeffry\.ssh`.
+
+### TEST IT'S WORKING
+
+Now test your ssh from another machine on the network and use your windows
+username and password. NOT wsl2.
+
+```bash
+ssh -v -p 2222 user@<HOSTNAME>
+ssh -v -p 2222 jeffry@192.168.20.122
+```
+
+## CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)
+
+**NOTE: After thinking about it, this is too much work, especially since the**
+**IP of the WSL will change on reboot.**
+
+Windows only forwarding ports, and uses WSL2's Linux OpenSSH and
+authenticates against Linux.
 
 The WSL version of Ubuntu uses the old init.d style scripts
 for most services. So we'll use service ssh start,
 restart, status, stop, etc....
 
+### MAKE SSH KEYS
+
 If you don't have ssh keys, make them,
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "Keys for Github ADDIE-PC"
-ssh-keygen - A # Generates RSA DSA ECDSA ED25519
+ssh-keygen -A # Generates RSA DSA ECDSA ED25519
 ssh-add
 ```
 
@@ -152,6 +256,8 @@ If having issue with ssh-add, you may need to,
 eval `ssh-agent -s`
 ssh-add
 ```
+
+### INSTALL OPENSSH-SERVER IN WSL
 
 Check if you have ssh installed,
 
@@ -165,6 +271,8 @@ If it is not recognized, install it,
 sudo apt install openssh-server
 ```
 
+### CONFIGURE SSH PORT NUMBER
+
 Edit `/etc/ssh/sshd_config` to add port and listen to any adapter,
 
 ```bash
@@ -174,6 +282,8 @@ ListenAddress 0.0.0.0
 PubkeyAuthentication no
 PasswordAuthentication yes
 ```
+
+### START SSH SERVICE
 
 Start service,
 
@@ -200,33 +310,52 @@ Quick ssh test from local machine using powershell,
 ssh -p 2222 localhost
 ```
 
+### FORWARD PORTS INTO WSL2
+
 Now let's make other machines on the network to ssh into wsl2.
 This is because the network interface we see in wsl2 is a virtual
 interface that does not match the physical interface that Windows manages.
 
-Step one - Create firewall rule to allow incoming traffic on port 2222.
+**Step 1** - Create firewall rule to allow incoming traffic on port 2222.
 I used a powershell but you can you `Windows Defender Firewall` GUI,
 
 ```bash
-New-NetFirewallRule -Name sshd -DisplayName 'Jeff OpenSSH Server (sshd) for WSL' -Enabled True -Direction Outbound -Protocol TCP -Action Allow -LocalPort 2222
 New-NetFirewallRule -Name sshd -DisplayName 'Jeff OpenSSH Server (sshd) for WSL' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 2222
 ```
 
-You check via `Windows Defender Firewall` rules on Windows GUI.
+You can remove it using,
 
-Step 2 - Now route incoming traffic on the physical interface to the WSL interface
+```bash
+Remove-NetFireWallRule -DisplayName 'Jeff OpenSSH Server (sshd) for WSL';
+```
+
+You can check via `Windows Defender Firewall` rules on Windows GUI.
+
+**Step 2** - Now route incoming traffic on the physical interface to the WSL interface
 via a power forwarding rule. I use a static IP to make this easier.
 Again, you can use powershell or `Windows Defender Firewall` GUI,
 
+First get ip of your WSl
+
+```bash
+ip addr
+```
+
+Then use that IP for connectaddress,
+
 ```bash
 netsh interface portproxy delete v4tov4 listenaddress=0.0.0.0 listenport=2222 protocol=tcp
-netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=192.168.20.122 connectport=2222
+netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=172.31.206.81 connectport=2222
 netsh interface portproxy show v4tov4;
 ```
 
+NOTE: **This ip changes on reboot, so you need script or do this every reboot**
+
 You check via `Windows Defender Firewall` rules on Windows GUI.
 
-Done, now test your ssh from another machine on the network,
+### TEST IT'S WORKING
+
+Now test your ssh from another machine on the network,
 
 ```bash
 ssh -v -p 2222 user@<HOSTNAME>
