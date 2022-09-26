@@ -8,7 +8,7 @@ Documentation and Reference
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
 
-## WINDOWS 11
+## WINDOWS 11 PRO
 
 **DOWNLOAD .iso IMAGE**
 
@@ -17,7 +17,7 @@ Documentation and Reference
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Windows-11" (Must be less than 15 characters for Windows Host Name)
   * Chose Windows 11 Pro 64-bit (8192 MB RAM, ~.100 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
@@ -33,6 +33,11 @@ Documentation and Reference
   * Graphics Controller: VBoxSVGA
   * Enable 3D Acceleration enabled
   * Scale Factor 200% (This will help cut down on video RAM usage)
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **START VM**
 
@@ -61,6 +66,8 @@ Documentation and Reference
 
 **Q & A**
 
+* IF IT HANGS
+  * Just reboot
 * ANSWER QUESTIONS
   * Choose "I don’t have a product key"
   * Choose "Windows 11 Pro"
@@ -76,14 +83,6 @@ Documentation and Reference
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
-
 **VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE**
 
 * VM SETTINGS
@@ -93,19 +92,24 @@ Documentation and Reference
 
 * **START VM**
 * LOGIN
-  * Login as Jeff deCola
+  * Login as Jeff DeCola
 
 **INSTALL GUEST ADDITIONS ON WINDOWS**
 
 * INSTALL CD FROM VM MENU
+  * This is probably not needed
   * Devices->Insert Guest Additions CD image
 * RUN GUEST ADDITIONS EXECUTABLE  
   * Open File Manger in Windows
   * Run `VBoxWindowsAdditions-amd64.exe`
+  * When done, it will ask to reboot
 
-**DRAG AND DROP SETTINGS**
+**SHARED SETTINGS**
 
 * VM MENU
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
 
 **DISPLAY (AUTO RESIZE)**  
@@ -115,6 +119,14 @@ Documentation and Reference
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
 
-## YOUR HOME NETWORK
+**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
 
-* Since we are in bridge mode, I like to configure my home router to set the same ip address
+* **CLOSE VM**
+* VM SETTINGS
+  * Remove guest additions .iso image in Settings -> Storage
+* **START VM**
+
+**YOUR HOME NETWORK**
+
+* BRIDGE MODE
+  * Since we are in bridge mode, I like to configure my home router to set the same ip address

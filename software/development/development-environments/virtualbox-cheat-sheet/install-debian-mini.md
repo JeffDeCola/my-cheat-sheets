@@ -1,6 +1,6 @@
 # INSTALL DEBIAN MINI CHEAT SHEET
 
-_Basis steps to install Debian distribution using zsh without a desktop on VirtualBox._
+_Basis steps to install Debian distribution using bash without a desktop on VirtualBox._
 
 Documentation and Reference
 
@@ -21,9 +21,9 @@ Yup, it stinks.
 
 **VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
 
-* CREATE VM
+* NEW VM
   * Name "VB-Debian-11-Mini"
-  * Chose Debian 64-bit (2048 MB RAM, 21.07 GB Disk, .vdi, dynamically allocated)
+  * Chose Debian 64-bit (2048 MB RAM, 20.00 GB Disk, .vdi, dynamically allocated)
 * ATTACH IMAGE
   * Settings->Storage with Controller: IDE
   * Attach .iso image
@@ -33,6 +33,11 @@ Yup, it stinks.
   * Graphics Controller: VBoxSVGA
   * Enable 3D Acceleration enabled
   * Scale Factor 200%
+* SET BRIDGE
+  * The VM will receive it's own IP address if DHCP is enabled in the network
+  * Settings -> Network -> Adapter 1
+    * `Bridged Adapter`
+    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
 **START VM**
 
@@ -44,50 +49,118 @@ Yup, it stinks.
   
 * ANSWER QUESTIONS  
   * root password
-  * Use "debian11.com"
+  * Hostname "VB-Debian-11-Mini"
+  * Domain name "debian11.com"
   * User Jeff DeCola
-  * Host "VB-Debian-11-Mini"
-  * timezones'
+  * Timezone
   * User entire disk as partition
-  * Make sure you don;t pick a desktop
+  * Make sure you don't pick a desktop (use space bar to uncheck)
   * etc...
-* **CLOSE VM**
 
 **VIRTUALBOX - REMOVE .iso IMAGE**
 
+* **CLOSE VM**
 * VM SETTINGS  
   * Remove image in Settings -> Storage
+* **START VM**
 
-**VIRTUALBOX - NETWORK - BRIDGE MODE**
-
-* SET BRIDGE
-  * The VM will receive it's own IP address if DHCP is enabled in the network.
-  * Settings -> Network -> Adapter 1
-    * `Bridged Adapter`
-    * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
-
-**FIRST LOGIN AS JEFF & CONFIGURE**
+**FIRST LOGIN AS JEFF & CONFIGURE AS ROOT**
 
 * **START VM**
 * LOGIN
   * Login as jeff
-* CHECK NETWORK  
-  * `ping.google.com`
-* INSTALL sudo & Zsh
-  * `pacman -S sudo zsh`??
-* ADD GROUPS
-  * `sudo nano /etc/sudoers`??
-  * add "jeff ALL=(ALL) ALL"??
-  * uncomment "%sudo ALL =(ALL:ALL) ALL"??
-  * uncomment "%wheel ALL=(ALL:ALL) ALL"??
-  * `usermod -aG wheel jeff`??
-  * `usermod -aG vboxsf jeff`?
-  * check with `groups jeff`??
-* PROMPT
-  * nano .zshrc add `PS1="%F{green}%n@%m:%F{cyan}%1~ %F{white}$"`  ??
+* SU ROOT
+  * `su -` (- gives you an environment)
+* INSTALL sudo
+  * `apt-get -S sudo`
+* ADD jeff to sudo
+  * `adduser jeff sudo`
+  * check with `groups jeff`
+* EXIT ROOT
+  * `exit`
+
+**CONFIGURE AS JEFF**
+
+* CONFIGURE PROMPT
+  * nano .bashrc uncomment `force_color_prompt=yes"`  
 * UPDATE
-  * `sudo pacman -Syu`??
+  * `sudo apt update`
+  * `sudo apt-get upgrade`
+* CHECK GUEST ADDITIONS INSTALLED (NO DESKTOP)
+  * check `lsmod | grep vboxguest`
+  * Not sure how it got installed
+* INSTALL GUEST ADDITIONS (NO DESKTOP) (I DID NOT CHECK THIS)
+  * `sudo mkdir -p /mnt/guestadditions`
+  * `sudo mount /dev/cdrom /mnt/guestadditions`
+  * `cd /mnt/guestadditions`
+  * `sudo ./VBoxLinuxAdditions.run`
+  * `reboot`
+  * check `lsmod | grep vboxguest`
+* ENABLE SSH SERVICE
+  * `sudo apt-get install openssh-server`
+* CHECK SERVICES RUNNING
+  * `systemctl status sshd.service`
+* CHECK ETH CONNECTIONS
+  * Note: debian uses ip tools rather than net-tools
+  * `ip addr`
+* CHECK HOSTNAME
+  * `hostname`
 
-## YOUR HOME NETWORK
+**SHARED SETTINGS**
 
-* Since we are in bridge mode, I like to configure my home router to set the same ip address
+* VM MENU
+  * Devices->Shared Folders->Shared Folder Settings
+    * Pick where you want this folder
+  * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
+  * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
+
+**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+
+* **CLOSE VM**
+* VM SETTINGS
+  * Remove guest additions .iso image in Settings -> Storage
+* **START VM**
+
+**YOUR HOME NETWORK**
+
+* BRIDGE MODE
+  * Since we are in bridge mode, I like to configure my home router to set the same ip address
+
+## OPTIONAL INSTALLS & CONFIGURATIONS
+
+**CONNECT TO GITHUB AND GET YOUR REPOS**
+
+* SSH INTO VM
+  * It is easier to ssh into the box to copy paste commands
+  * From another computer `ssh <ip>`
+* CREATE KEYS
+  * `ssh-keygen -t rsa -b 4096 -C "Keys for Github VB-Debian-11-Mini"`
+  * `ssh-add ~/.ssh/id_rsa`
+* ADD PUBLIC KEY TO GITHUB
+  * Copy/Paste public key (.ssh/id_rsa.pub) at github
+* CONNECT TO GITHUB
+  * `ssh -T git@github.com`
+* INSTALL GIT
+  * `sudo apt-get install git`
+* GIT CONFIGURATION SETTINGS
+  * `git config --global user.name "Jeff DeCola (VB-Debian-11-Mini)"`
+  * `git config --global user.email <YOUR_EMAIL>`
+  * `git config --global core.editor nano`
+  * `git config --global push.default simple`
+  * Check with `git config --list`
+* CLONE REPO
+  * `mkdir development`
+  * `cd development`
+  * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
+
+**GIT AWARE PROMPT**
+
+* INSTALL
+  * I like to use [this](https://github.com/jimeh/git-aware-prompt)
+  * `mkdir ~/.bash`
+  * `cd ~/.bash`
+  * `git clone https://github.com/jimeh/git-aware-prompt.git`
+* EDIT .bashrc
+  * `export GITAWAREPROMPT=~/.bash/git-aware-prompt`
+  * `source "${GITAWAREPROMPT}/main.sh"`
+  * `PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "`
