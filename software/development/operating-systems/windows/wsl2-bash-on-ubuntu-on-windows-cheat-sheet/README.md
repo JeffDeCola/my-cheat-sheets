@@ -144,14 +144,30 @@ export LS_COLORS
 For more information, refer to my
 [LS_COLORS cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
 
-## CONFIGURE SSH (NORMAL PORT 22) ON WSL2 (EASY WAY)
+## SSH SERVER
+
+How to ssh into/from wsl2.
+
+### METHOD 1 - USE WINDOWS SSH SERVER
 
 Let's make this simple and use windows ssh server.
 So we will be using windows ssh keys and authentification.
 
 Then we'll just change windows shell for ssh to wsl2 bash shell.
 
-### START SSH SERVER ON WINDOWS
+FILES LOCATIONS OVERVIEW
+
+* C:\Programdata\ssh
+  * sshd_config
+* C:\Users\jeffry\.ssh
+  * authorized_keys
+  
+* /home/jeff/.ssh
+  * config
+  * keys
+  * known_hosts
+
+#### START SSH SERVER ON WINDOWS
 
 Open an admin PowerShell prompt to see if you have the server running,
 
@@ -183,7 +199,7 @@ Check if it's running,
  get-service sshd
 ```
 
-### MAKE WINDOWS OPENSSH USE WSL2 BASH SHELL
+#### MAKE WINDOWS OPENSSH USE WSL2 BASH SHELL
 
 This is the magic.
 Update the registry via powershell or you could use regedit,
@@ -192,19 +208,19 @@ Update the registry via powershell or you could use regedit,
 New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\WINDOWS\System32\bash.exe" -PropertyType String -Force
 ```
 
-### CONFIGURE SSHD ON WINDOWS
+#### CONFIGURE SSHD ON WINDOWS
 
 ```bash
 start-process notepad C:\Programdata\ssh\sshd_config
 ```
 
-You may do things like,
+You may do things like, I would leave authorized_keys commented so it's in programdata.
 
 ```bash
 Port 22
 PubkeyAuthentication yes
 PasswordAuthentication no
-AuthorizedKeysFile .ssh/authorized_keys
+# AuthorizedKeysFile .ssh/authorized_keys
 ```
 
 Restart,
@@ -214,13 +230,16 @@ restart-service sshd
 get-service sshd
 ```
 
-### ADD THE KEYS YOU WANT TO USE
+#### ADD THE KEYS YOU WANT TO USE
+
+Place keys in C:\Programdata\ssh
 
 ```bash
 Get-Service ssh-agent
 set-service ssh-agent StartupType ‘Automatic’
 Start-Service ssh-agent
-ssh-add "C:\Users\jeffry\.ssh\id_rsa"
+ssh-add C:\Users\jeffry\.ssh\id_rsa
+ssh-add C:\Users\jeffry\.ssh\id_ecdsa
 ```
 
 If you have issue, try StartType as manual,
@@ -236,12 +255,18 @@ Check,
 ssh-add -L
 ```
 
-### WE ARE USING WINDOWS .ssh DIRECTORY
+#### WE ARE USING WINDOWS .ssh DIRECTORY
 
 We are not using WSL2 .ssh directory, we are using windows located in
 `Users\jeffry\.ssh`.
 
-### TEST IT
+#### ADD AUTHORIZED KEYS FROM OTHER MACHINES
+
+```bash
+start-process notepad C:\Users\jeffry\.ssh\authorized_keys
+```
+
+#### TEST IT
 
 Now test your ssh from another machine on the network and use your windows
 username and password. NOT wsl2.
@@ -251,7 +276,7 @@ ssh -v -p 22 user@<HOSTNAME>
 ssh -v -p 22 jeffry@192.168.20.122
 ```
 
-## CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)
+### METHOD 2 - USE WSL2 SSH SERVER (TOO MUCH WORK)
 
 **NOTE: After thinking about it, this is too much work, especially since the**
 **IP of the WSL will change on reboot.**
@@ -263,14 +288,13 @@ The WSL version of Ubuntu uses the old init.d style scripts
 for most services. So we'll use service ssh start,
 restart, status, stop, etc....
 
-### MAKE SSH KEYS
+#### MAKE SSH KEYS
 
 If you don't have ssh keys, make them,
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
-ssh-keygen -t ecdsa -b 521 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
-ssh-add
+ssh-add ~/.ssh/id_rsa
 ```
 
 If having issue with ssh-add, you may need to,
@@ -280,7 +304,7 @@ eval `ssh-agent -s`
 ssh-add
 ```
 
-### INSTALL OPENSSH-SERVER IN WSL
+#### INSTALL OPENSSH-SERVER IN WSL
 
 Check if you have ssh installed,
 
@@ -294,7 +318,7 @@ If it is not recognized, install it,
 sudo apt install openssh-server
 ```
 
-### CONFIGURE SSH PORT NUMBER
+#### CONFIGURE SSH PORT NUMBER
 
 Edit `/etc/ssh/sshd_config` to add port and listen to any adapter,
 
@@ -306,7 +330,7 @@ PubkeyAuthentication no
 PasswordAuthentication yes
 ```
 
-### START SSH SERVICE
+#### START SSH SERVICE
 
 Start service,
 
@@ -333,7 +357,7 @@ Quick ssh test from local machine using powershell,
 ssh -p 2222 localhost
 ```
 
-### FORWARD PORTS INTO WSL2
+#### FORWARD PORTS INTO WSL2
 
 Now let's make other machines on the network to ssh into wsl2.
 This is because the network interface we see in wsl2 is a virtual
@@ -376,7 +400,7 @@ NOTE: **This ip changes on reboot, so you need script or do this every reboot**
 
 You check via `Windows Defender Firewall` rules on Windows GUI.
 
-### TEST
+#### TEST
 
 Now test your ssh from another machine on the network,
 
