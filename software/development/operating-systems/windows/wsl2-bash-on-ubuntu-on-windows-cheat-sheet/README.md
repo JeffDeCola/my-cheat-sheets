@@ -14,14 +14,14 @@ Table of Contents,
   * [MAKE WINDOWS OPENSSH TO OPEN WSL2 BASH SHELL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-windows-openssh-to-open-wsl2-bash-shell)
   * [CONFIGURE SSHD ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-sshd-on-windows)
   * [WE ARE USING WINDOWS .ssh DIRECTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#we-are-using-windows-ssh-directory)
-  * [TEST IT'S WORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-its-working)
+  * [TEST IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-it)
 * [CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-2222-on-wsl2-too-much-work)
   * [MAKE SSH KEYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-ssh-keys)
   * [INSTALL OPENSSH-SERVER IN WSL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#install-openssh-server-in-wsl)
   * [CONFIGURE SSH PORT NUMBER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-number)
   * [START SSH SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#start-ssh-service)
   * [FORWARD PORTS INTO WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#forward-ports-into-wsl2)
-  * [TEST IT'S WORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-its-working)
+  * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test)
 * [SETUP CODE DEVELOPMENT ENVIRONMENT ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#setup-code-development-environment-on-windows)
 
 View my entire list of cheat sheets on
@@ -146,10 +146,10 @@ For more information, refer to my
 
 ## CONFIGURE SSH (NORMAL PORT 22) ON WSL2 (EASY WAY)
 
-We're going to change windows shell for ssh to wsl bash shell.
+Let's make this simple and use windows ssh server.
+So we will be using windows ssh keys and authentification.
 
-So we use Windows' OpenSSH and authenticates with Windows and then runs WSL2.
-WSL2 starts up, uses bash, and Windows handles the TCP traffic.
+Then we'll just change windows shell for ssh to wsl2 bash shell.
 
 ### START SSH SERVER ON WINDOWS
 
@@ -183,7 +183,7 @@ Check if it's running,
  get-service sshd
 ```
 
-### MAKE WINDOWS OPENSSH TO OPEN WSL2 BASH SHELL
+### MAKE WINDOWS OPENSSH USE WSL2 BASH SHELL
 
 This is the magic.
 Update the registry via powershell or you could use regedit,
@@ -201,31 +201,54 @@ start-process notepad C:\Programdata\ssh\sshd_config
 You may do things like,
 
 ```bash
-Port 2222
-ListenAddress 0.0.0.0
-PubkeyAuthentication no
-PasswordAuthentication yes
+Port 22
+PubkeyAuthentication yes
+PasswordAuthentication no
+AuthorizedKeysFile .ssh/authorized_keys
 ```
 
 Restart,
 
 ```bash
 restart-service sshd
+get-service sshd
+```
+
+### ADD THE KEYS YOU WANT TO USE
+
+```bash
+Get-Service ssh-agent
+set-service ssh-agent StartupType ‘Automatic’
+Start-Service ssh-agent
+ssh-add "C:\Users\jeffry\.ssh\id_rsa"
+```
+
+If you have issue, try StartType as manual,
+
+```bash
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Get-Service ssh-agent | Select StartType
+```
+
+Check,
+
+```bash
+ssh-add -L
 ```
 
 ### WE ARE USING WINDOWS .ssh DIRECTORY
 
-We are not using WSL2 .ssh directory, we are using windows located in 
+We are not using WSL2 .ssh directory, we are using windows located in
 `Users\jeffry\.ssh`.
 
-### TEST IT'S WORKING
+### TEST IT
 
 Now test your ssh from another machine on the network and use your windows
 username and password. NOT wsl2.
 
 ```bash
-ssh -v -p 2222 user@<HOSTNAME>
-ssh -v -p 2222 jeffry@192.168.20.122
+ssh -v -p 22 user@<HOSTNAME>
+ssh -v -p 22 jeffry@192.168.20.122
 ```
 
 ## CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)
@@ -245,8 +268,8 @@ restart, status, stop, etc....
 If you don't have ssh keys, make them,
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "Keys for Github ADDIE-PC"
-ssh-keygen -A # Generates RSA DSA ECDSA ED25519
+ssh-keygen -t rsa -b 4096 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
+ssh-keygen -t ecdsa -b 521 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
 ssh-add
 ```
 
@@ -353,7 +376,7 @@ NOTE: **This ip changes on reboot, so you need script or do this every reboot**
 
 You check via `Windows Defender Firewall` rules on Windows GUI.
 
-### TEST IT'S WORKING
+### TEST
 
 Now test your ssh from another machine on the network,
 
