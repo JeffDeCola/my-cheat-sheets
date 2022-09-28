@@ -270,7 +270,6 @@ If you don't have ssh keys, make them,
 ```bash
 ssh-keygen -t rsa -b 4096 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
 ssh-keygen -t ecdsa -b 521 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
-ssh-keygen -A # Generates RSA DSA ECDSA ED25519
 ssh-add
 ```
 
