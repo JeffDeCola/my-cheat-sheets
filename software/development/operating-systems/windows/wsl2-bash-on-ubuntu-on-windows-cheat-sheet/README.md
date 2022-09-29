@@ -157,17 +157,15 @@ Then we'll just change windows shell for ssh to wsl2 bash shell.
 
 FILES LOCATIONS OVERVIEW
 
-* C:\Programdata\ssh
+* SSH SERVER USES WINDOWS (C:\Programdata\ssh)
   * sshd_config
-* C:\Users\jeffry\.ssh
-  * authorized_keys
-  
-* /home/jeff/.ssh
+  * administrators_authorized_keys (sshd_config will point to this)
+* SSH CLIENT USES WSL2 (/home/jeff/.ssh)
   * config
   * keys
   * known_hosts
 
-#### START SSH SERVER ON WINDOWS
+#### INSTALL/START SSH SERVER ON WINDOWS
 
 Open an admin PowerShell prompt to see if you have the server running,
 
@@ -220,7 +218,8 @@ You may do things like, I would leave authorized_keys commented so it's in progr
 Port 22
 PubkeyAuthentication yes
 PasswordAuthentication no
-# AuthorizedKeysFile .ssh/authorized_keys
+# AuthorizedKeysFile //wsl$/Ubuntu-20.04/home/jeff/.ssh/authorized_keys
+AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
 ```
 
 Restart,
@@ -230,16 +229,22 @@ restart-service sshd
 get-service sshd
 ```
 
-#### ADD THE KEYS YOU WANT TO USE
+#### ADD YOUR KEYS TO THE AGENT
 
-Place keys in C:\Programdata\ssh
+Create keys you want to use and add them to windows ssh agent.
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "Keys for Github (TK2-PC Bash on Ubuntu on Windows)"
+```
+
+Add keys to ssh agent,
 
 ```bash
 Get-Service ssh-agent
 set-service ssh-agent StartupType ‘Automatic’
 Start-Service ssh-agent
 ssh-add C:\Users\jeffry\.ssh\id_rsa
-ssh-add C:\Users\jeffry\.ssh\id_ecdsa
+ssh-add //wsl$/Ubuntu-20.04/home/jeff/.ssh/id_rsa
 ```
 
 If you have issue, try StartType as manual,
@@ -255,15 +260,18 @@ Check,
 ssh-add -L
 ```
 
-#### WE ARE USING WINDOWS .ssh DIRECTORY
+#### ADD KEYS FROM OTHER MACHINES
 
-We are not using WSL2 .ssh directory, we are using windows located in
-`Users\jeffry\.ssh`.
-
-#### ADD AUTHORIZED KEYS FROM OTHER MACHINES
+Since I'm admin in Windows, I must keep authorized keys here,
 
 ```bash
-start-process notepad C:\Users\jeffry\.ssh\authorized_keys
+start-process notepad C:\Programdata\ssh\administrators_authorized_keys
+```
+
+Change permissions,
+
+```bash
+icacls.exe "C:\ProgramData\ssh\administrators_authorized_keys" /inheritance:r /grant "Administrators:F" /grant "SYSTEM:F"
 ```
 
 #### TEST IT
