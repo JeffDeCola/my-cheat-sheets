@@ -134,8 +134,11 @@ Yup, it stinks.
   * It is easier to ssh into the box to copy paste commands
   * From another computer `ssh <ip>`
 * CREATE KEYS
-  * `ssh-keygen -t rsa -b 4096 -C "Keys for Github VB-Debian-11-Mini"`
+  * `ssh-keygen -t rsa -b 4096 -C "Keys for Github (VB-Debian-11-Mini)"`
+* ADD KEYS TO SSH AUTH AGENT  
   * `ssh-add ~/.ssh/id_rsa`
+  * If agent not running `eval "$(ssh-agent)"`
+  * Check `ssh-add -L`
 * ADD PUBLIC KEY TO GITHUB
   * Copy/Paste public key (.ssh/id_rsa.pub) at github
 * CONNECT TO GITHUB
@@ -147,6 +150,7 @@ Yup, it stinks.
   * `git config --global user.email <YOUR_EMAIL>`
   * `git config --global core.editor nano`
   * `git config --global push.default simple`
+  * `git config --global pull.rebase false`
   * Check with `git config --list`
 * CLONE REPO
   * `mkdir development`
@@ -164,3 +168,18 @@ Yup, it stinks.
   * `export GITAWAREPROMPT=~/.bash/git-aware-prompt`
   * `source "${GITAWAREPROMPT}/main.sh"`
   * `PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "`
+
+**SSH LOGIN VIA KEYS NOT PASSWORD**
+
+* EDIT sshd_config
+  * `sudo nano /etc/ssh/sshd_config`
+  * Port 22
+  * PubkeyAuthentication yes
+  * PasswordAuthentication no
+  * AuthorizedKeysFile .ssh/authorized_keys
+* RESTART SERVICE  
+  * `sudo systemctl restart sshd.service`
+  * `sudo systemctl status sshd.service`
+* AUTHORIZED KEYS
+  * If you want to ssh into this machine
+  * Add public keys from other hosts in `.ssh/authorized_keys`
