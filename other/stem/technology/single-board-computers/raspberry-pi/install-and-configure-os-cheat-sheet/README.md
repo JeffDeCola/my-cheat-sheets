@@ -4,13 +4,22 @@
 
 Table of Contents,
 
-* [DOWNLOAD IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-image)
-* [WRITE IMAGE TO microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd-card)
-* [CONFIGURE YOUR OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#configure-your-os)
-* [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
-* [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
-* [INCREASE SWAP SPACE FROM 100M TO 2G](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#increase-swap-space-from-100m-to-2g)
-* [INPUT & OUTPUT GPIO PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#input--output-using-gpio-pins)
+* [DOWNLOAD IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-image)
+* [WRITE IMAGE TO microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd-card)
+* [CONFIGURE YOUR OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#configure-your-os)
+  * [Initial Username and Password](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#initial-username-and-password)
+  * [Update and Upgrade](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#update-and-upgrade)
+  * [What OS version are you using](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#what-os-version-are-you-using)
+  * [Change Password for PI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#change-password-for-pi)
+  * [Rename your RasPi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#rename-your-raspi)
+  * [Turn on ssh](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#turn-on-ssh)
+  * [Add a New User](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#add-a-new-user)
+  * [Get Git and GitHub Working](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#get-git-and-github-working)
+  * [Use ssh Keys to ssh into your RasPI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#use-ssh-keys-to-ssh-into-your-raspi)
+* [INSTALL GO & GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#install-go--go-tools)
+* [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
+* [INCREASE SWAP SPACE FROM 100M TO 2G](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#increase-swap-space-from-100m-to-2g)
+* [INPUT & OUTPUT USING GPIO PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#input--output-using-gpio-pins)
 
 Some fun things you can do with your raspberry pi,
 
@@ -45,9 +54,15 @@ microSD card.
 
 ## CONFIGURE YOUR OS
 
-What I would do.
+This is very helpful,
+
+```bash
+sudo raspi-config
+```
 
 ### Initial Username and Password
+
+If is didn't ask you for a user, sign in as root,
 
 ```txt
 user: pi
@@ -103,7 +118,7 @@ sudo systemctl start ssh
 
 ### Add a New User
 
-For security add a new user,
+If it didn't ask you during setup, add a user,
 
 ```bash
 sudo adduser jeff
@@ -143,6 +158,7 @@ git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 git config --global push.default simple
+git config --global pull.rebase false
 ```
 
 Check configuration,
@@ -215,6 +231,13 @@ To install other go tools, refer to my
 As a side note your router should always use WPA2-PSK with AES encryption.
 So we will connect to that.
 
+I would use this,
+
+```bash
+sudo raspi-config
+```
+
+But you can always do it using the cli.
 First scan the wifi in your area,
 
 ```bash
@@ -306,9 +329,9 @@ For fun I wrote a golang program to control these pins
 
 This is how I set up the led and button on a breadboard,
 
-![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
+![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
 
 Here is the GPIO pin map I got from
 [raspberrypi.org](raspberrypi.org),
 
-![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../docs/pics/raspberry-pi-gpio-pins.png)
+![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../../../docs/pics/raspberry-pi-gpio-pins.png)
