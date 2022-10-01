@@ -156,7 +156,6 @@ Yup, it stinks.
   * `mkdir development`
   * `cd development`
   * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
-  * `git clone git@github.com:JeffDeCola/my-global-repo-scripts-private.git`
 
 **GIT AWARE PROMPT**
 

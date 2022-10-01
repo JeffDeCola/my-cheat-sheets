@@ -1,6 +1,6 @@
 # INSTALL UBUNTU WITH GNOME DESKTOP CHEAT SHEET
 
-_Basis steps to install Ubuntu distribution using zsh with a GNOME desktop on VirtualBox._
+_Basis steps to install Ubuntu distribution using bash with a GNOME desktop on VirtualBox._
 
 Documentation and Reference
 
