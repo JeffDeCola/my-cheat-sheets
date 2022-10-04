@@ -113,6 +113,8 @@ Yup, it stinks.
     * Pick where you want this folder
   * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
   * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
+* CREATE FOLDER
+  *
 
 **VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
 
