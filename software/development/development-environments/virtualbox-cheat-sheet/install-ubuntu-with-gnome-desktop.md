@@ -92,11 +92,24 @@ Documentation and Reference
 
 **SHARED SETTINGS**
 
-* VM MENU
-  * Devices->Shared Folders->Shared Folder Settings
-    * Pick where you want this folder
+* **CLOSE VM**
+* VM MENU - DRAG AND DROP
   * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
+* CREATE SHARED FOLDER ON WINDOWS
+  * Create shared folder on windows
+* VM MENU - CONFIGURE WINDOWS SHARED FOLDER
+  * Settings->Shared Folders
+    * Add folder "VB-Ubuntu-2204-GNOME"
+    * Check Auto-mount
+* **START VM**
+* MAKE SURE YOUR PART OF vboxsf GROUP
+  * `groups`
+  * `sudo usermod -a -G vboxsf jeff`
+* SHARED FOLDER IS HERE
+  * `cd /media/sf_VB-Ubuntu-2204-GNOME`
+* CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
+  * `sudo ln -sf /media/sf_VB-Ubuntu-2204-GNOME /home/jeff/shared`
 
 **DISPLAY (AUTO RESIZE)**  
 

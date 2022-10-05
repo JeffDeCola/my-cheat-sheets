@@ -124,11 +124,24 @@ Yup, it stinks.
 
 **SHARED SETTINGS**
 
-* VM MENU
-  * Devices->Shared Folders->Shared Folder Settings
-    * Pick where you want this folder
+* **CLOSE VM**
+* VM MENU - DRAG AND DROP
   * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
   * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
+* CREATE SHARED FOLDER ON WINDOWS
+  * Create shared folder on windows
+* VM MENU - CONFIGURE WINDOWS SHARED FOLDER
+  * Settings->Shared Folders
+    * Add folder "VB-Arch-Linux-Mini"
+    * Check Auto-mount
+* **START VM**
+* MAKE SURE YOUR PART OF vboxsf GROUP
+  * `groups`
+  * `sudo usermod -a -G vboxsf jeff`
+* SHARED FOLDER IS HERE
+  * `cd /media/sf_VB-Arch-Linux-Mini`
+* CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
+  * `sudo ln -sf /media/sf_VB-Arch-Linux-Mini /home/jeff/shared`
 
 **VIRTUALBOX - REMOVE .iso IMAGE**
 
