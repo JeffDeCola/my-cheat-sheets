@@ -2,6 +2,10 @@
 
 _Basis steps to install Windows on VirtualBox._
 
+Table of Contents,
+
+* [WINDOWS 11 PRO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#windows-11-pro)
+
 Documentation and Reference
 
 * [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
@@ -106,11 +110,19 @@ Documentation and Reference
 
 **SHARED SETTINGS**
 
-* VM MENU
-  * Devices->Shared Folders->Shared Folder Settings
-    * Pick where you want this folder
+* **CLOSE VM**
+* VM MENU - DRAG AND DROP
   * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
+* CREATE SHARED FOLDER ON WINDOWS
+  * Create shared folder on windows
+* VM MENU - CONFIGURE WINDOWS SHARED FOLDER
+  * Settings->Shared Folders
+    * Add folder "VB-Windows-11"
+    * Check Auto-mount
+* **START VM**
+* CHECK
+  * Will be under network
 
 **DISPLAY (AUTO RESIZE)**  
 

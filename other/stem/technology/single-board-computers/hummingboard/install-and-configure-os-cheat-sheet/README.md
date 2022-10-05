@@ -16,7 +16,20 @@ Some fun things you can do with your hummingboard,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
-## INSTALL "IGNITION" ON A microSD CARD
+## INSTALL
+
+How to install an OS on your hummingboard.
+
+### METHOD 1 - FLASH IMAGE
+
+Get the images
+[here](https://images.solid-run.com/IMX6/).
+
+On windows, I use
+[Win32DiskImager](https://sourceforge.net/projects/win32diskimager).
+to burn the image on a microSD card.
+
+### METHOD 2 - OLD-WAY - "IGNITION"
 
 The `Ignition` installer from SolidRun lets you easily select
 your OS distribution of choice.
@@ -31,8 +44,6 @@ To use this, ignition must be burned on a microSD card.
   to burn the image on a microSD card.
 
 I would label this microSD card since its easy to forget.
-
-## USE "IGNITION" TO INSTALL AN OS ON A microSD CARD
 
 Place the `Ignition` microSD in your hummingboard and boot it up.
 You must have your hummingboard connected to the internet
@@ -64,8 +75,6 @@ your image.  Do not write over the `Ignition` microSD card
 Note, depending on your hummingboard version, not all OS
 distributions will work.
 
-## FULL LIST OF DISTRIBUTIONS FROM SOLIDRUN
-
 Complete list of `ignition installer scripts` for various OS
 [here](https://wiki.solid-run.com/doku.php?id=tag:ignition&do=showtag&tag=ignition).
 
@@ -89,7 +98,7 @@ sudo apt-get upgrade
 
 ### CHANGE PASSWORD FOR USER DEBIAN
 
-Change your password for user pi,
+If you want, change your password for root/debian,
 
 ```bash
 passwd
@@ -102,6 +111,12 @@ Rename your host,
 ```bash
 sudo nano /etc/hostname
 sudo nano /etc/hosts
+```
+
+check,
+
+```bash
+hostname
 ```
 
 ### ADD NEW USER
@@ -124,7 +139,7 @@ jeff  ALL=(ALL) ALL
 
 ### UPDATE PATH
 
-Since this an older copy of debian, I had to add sbin
+If you have an older copy of debian, add sbin
 in `.bashrc` file,
 
 ```bash
@@ -154,11 +169,20 @@ Place the Raspi public key at github.
 
 I also like to add the hostname/machine name so I know where the commits came from,
 
+Add to auth agent,
+
+```bash
+eval "$(ssh-agent)"
+ssh-add ~/.ssh/id_rsa
+ssh-add -L
+```
+
 ```bash
 git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
 git config --global core.editor nano
 git config --global push.default simple
+git config --global pull.rebase false
 ```
 
 Check configuration,
