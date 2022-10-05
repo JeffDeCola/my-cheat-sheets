@@ -2,6 +2,11 @@
 
 _Basis steps to install Debian distribution using bash without a desktop on VirtualBox._
 
+Table of Contents
+
+* [DEBIAN 11 MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#debian-11-mini)
+* [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#optional-installs--configurations)
+
 Documentation and Reference
 
 * [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
@@ -108,11 +113,24 @@ Yup, it stinks.
 
 **SHARED SETTINGS**
 
-* VM MENU
-  * Devices->Shared Folders->Shared Folder Settings
-    * Pick where you want this folder
+* **CLOSE VM**
+* VM MENU - DRAG AND DROP
   * (NOT AVAILABLE) Devices->Shared ClipBoard->Bidirectional
   * (NOT AVAILABLE) Devices->Drag and Drop->Bidirectional
+* CREATE SHARED FOLDER ON WINDOWS
+  * Create shared folder on windows
+* VM MENU - CONFIGURE WINDOWS SHARED FOLDER
+  * Settings->Shared Folders
+    * Add folder "VB-Debian-11-Mini"
+    * Check Auto-mount
+* **START VM**
+* MAKE SURE YOUR PART OF vboxsf GROUP
+  * `groups`
+  * `sudo usermod -a -G vboxsf jeff`
+* SHARED FOLDER IS HERE
+  * `cd /media/sf_VB-Debian-11-Mini`
+* CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
+  * `sudo ln -sf /media/sf_VB-Debian-11-Mini /home/jeff/shared`
 
 **VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
 
