@@ -160,6 +160,10 @@ FILES LOCATIONS OVERVIEW
 * SSH SERVER USES WINDOWS (C:\Programdata\ssh)
   * sshd_config
   * administrators_authorized_keys (sshd_config will point to this)
+* SSH CLIENT FOR SSH REMOTE (c:\Users\jeffry\.ssh)
+  * config
+  * keys
+  * known_hosts
 * SSH CLIENT USES WSL2 (/home/jeff/.ssh)
   * config
   * keys
