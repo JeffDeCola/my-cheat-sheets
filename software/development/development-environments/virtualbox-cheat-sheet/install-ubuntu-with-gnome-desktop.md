@@ -2,6 +2,11 @@
 
 _Basis steps to install Ubuntu distribution using bash with a GNOME desktop on VirtualBox._
 
+Table of Contents,
+
+* [UBUNTU 22.04 LTS WITH GNOME DESKTOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#ubuntu-2204-lts-with-gnome-desktop)
+* [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#optional-installs--configurations)
+
 Documentation and Reference
 
 * [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
@@ -195,3 +200,22 @@ Documentation and Reference
   * If you want to ssh into this machine
   * Add public keys from other hosts in `.ssh/authorized_keys`
   
+**ADD A PRINTER**
+
+Pain in the butt and may not work anymore,
+
+* SHARED NETWORK
+  * Setup a shared network printer on Windows.
+  * Must also use a private network.
+* INSTALL
+  * `sudo apt-get install lsb`
+  * `sudo apt-get update`
+  * `sudo apt-get install python3-smbc`
+  * `sudo apt-get install smbclient`
+* PRINTER DRIVER
+  * Get printer driver from their website, usually a .deb file
+* FIND PRINTER  
+  * SEarch on your network (e.g. 192.168.1.x)
+  * e.g. smb://192.168.1.115/SHARE-EPSON-XP-630-Series
+* CONFIG  
+  * Also need Username, Workgroup and password
