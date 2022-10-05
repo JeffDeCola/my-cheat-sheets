@@ -215,7 +215,7 @@ Pain in the butt and may not work anymore,
 * PRINTER DRIVER
   * Get printer driver from their website, usually a .deb file
 * FIND PRINTER  
-  * SEarch on your network (e.g. 192.168.1.x)
-  * e.g. smb://192.168.1.115/SHARE-EPSON-XP-630-Series
+  * Search on your network (e.g. 192.168.1.x)
+  * For example, smb://192.168.1.115/SHARE-EPSON-XP-630-Series
 * CONFIG  
   * Also need Username, Workgroup and password
