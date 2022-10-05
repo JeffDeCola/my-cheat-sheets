@@ -106,11 +106,19 @@ Documentation and Reference
 
 **SHARED SETTINGS**
 
-* VM MENU
-  * Devices->Shared Folders->Shared Folder Settings
-    * Pick where you want this folder
+* **CLOSE VM**
+* VM MENU - DRAG AND DROP
   * Devices->Shared ClipBoard->Bidirectional
   * Devices->Drag and Drop->Bidirectional
+* CREATE SHARED FOLDER ON WINDOWS
+  * Create shared folder on windows
+* VM MENU - CONFIGURE WINDOWS SHARED FOLDER
+  * Settings->Shared Folders
+    * Add folder "VB-Windows-11"
+    * Check Auto-mount
+* **START VM**
+* CHECK
+  * Will be under network
 
 **DISPLAY (AUTO RESIZE)**  
 
