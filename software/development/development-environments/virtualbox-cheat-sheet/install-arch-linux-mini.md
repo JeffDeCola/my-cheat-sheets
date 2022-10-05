@@ -2,6 +2,11 @@
 
 _Basis steps to install Arch Linux using zsh without a desktop on VirtualBox._
 
+Table of Contents
+
+* [ARCH LINUX MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#arch-linux-mini)
+* [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#optional-installs--configurations)
+
 Documentation and Reference
 
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)

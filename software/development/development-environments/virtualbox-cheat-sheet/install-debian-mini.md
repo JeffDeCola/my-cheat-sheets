@@ -2,6 +2,11 @@
 
 _Basis steps to install Debian distribution using bash without a desktop on VirtualBox._
 
+Table of Contents
+
+* [DEBIAN 11 MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#debian-11-mini)
+* [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#optional-installs--configurations)
+
 Documentation and Reference
 
 * [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
