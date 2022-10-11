@@ -7,6 +7,8 @@ tl;dr
 ```bash
 # INSTALL
 FileName='go1.19.2.linux-amd64.tar.gz'
+FileName='go1.19.2.darwin-amd64.tar.gz'
+FileName='go1.19.2.linux-arm64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
 sudo mv go /usr/local
