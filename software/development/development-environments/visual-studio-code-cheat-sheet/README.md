@@ -5,13 +5,19 @@
 This cheat-sheet is heavy on Windows and go, and I probably
 should of called it `VS Code for Windows using go`.
 
-Table of Contents,
+Table of Contents
 
 * [INSTALL ON LINUX OR WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#install-on-linux-or-windows)
 * [CONFIGURE - LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#configure---linux)
 * [CONFIGURE - WINDOWS VERSION OF VS CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#configure---windows-version-of-vs-code)
-* [INSTALLING EXTENSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#installing-extensions) 
+  * [SET YOUR INTEGRATED TERMINAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#set-your-integrated-terminal)
+  * [CREATE A WORKING/PROJECT DIRECTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#create-a-workingproject-directory)
+  * [FIX EOL (END-Of-LINE) CRLF TO LF FOR WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#fix-eol-end-of-line-crlf-to-lf-for-windows)
+* [INSTALLING EXTENSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#installing-extensions)
 * [USING GO with WINDOWS VS CODE and BASH WSL TERMINAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#using-go-with-windows-vs-code-and-bash-wsl-terminal)
+  * [DIAGRAM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#diagram)
+  * [WHAT YOU NEED ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#what-you-need-on-windows)
+  * [TWO VERSION OF GO (VS CODE and TERMINAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#two-version-of-go-vs-code-and-terminal)
 
 Documentation and reference,
 

@@ -126,18 +126,11 @@ I modified this file with the few things explained above.
 I use the following code in my `.bashrc` file,
 
 ```bash
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    echo "Changing the ls color using  dircolors -b ~/.dircolors"
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+test -r ~/.dircolors && eval "$(dircolors ~/.dircolors)"
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 ```
 
 Then I created a `.directories` file and updated
@@ -151,7 +144,7 @@ Some settings for LS_COLORS.
   * bd  = (BLOCK, BLK) Block device (buffered) special file
   * cd  = (CHAR, CHR) Character device (unbuffered) special file
   * di  = (DIR)  Directory
-  * do  = (DOOR) [Door][1]
+  * do  = (DOOR) Door
   * ex  = (EXEC) Executable file (ie. has 'x' set in permissions)
   * fi  = (FILE) Normal file
   * ln  = (SYMLINK, LINK, LNK)   Symbolic link. If you set this to
@@ -176,7 +169,7 @@ Some settings for LS_COLORS.
 * COLORS
   * 31  = red
   * 32  = green
-  * 33  = orange
+  * 33  = orange (yellow)
   * 34  = blue
   * 35  = purple
   * 36  = cyan
@@ -193,7 +186,7 @@ Some settings for LS_COLORS.
   * 40  = black background
   * 41  = red background
   * 42  = green background
-  * 43  = orange background
+  * 43  = orange background (yellow)
   * 44  = blue background
   * 45  = purple background
   * 46  = cyan background
