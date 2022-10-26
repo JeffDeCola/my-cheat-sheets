@@ -50,6 +50,10 @@ figured out over time. It's an ongoing process._
 * [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#american-history)
   * TIME PERIODS
   * WARS
+* [FILM PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets#film-production)
+  * PRE-PRODUCTION
+  * PRODUCTION
+  * POST-PRODUCTION
 * [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets#random-things)
 * [STEM](https://github.com/JeffDeCola/my-cheat-sheets#stem)
   * SCIENCE
@@ -117,7 +121,7 @@ _Various Apps and tools for the goal of creating an App/Service._
     * [LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet)
     * [network device configuration](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet)
     * [redirect output](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/redirect-output-cheat-sheet)
-    * services
+    * SERVICES
       * [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet)
       * [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet)
     * [ssh and keys](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet)
@@ -351,6 +355,17 @@ _Other cheat sheets I'm interested in._
   * [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-civil-war-cheat-sheet)
   * [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/ww1-cheat-sheet)
   * [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/ww2-cheat-sheet)
+
+### FILM PRODUCTION
+
+* PRE-PRODUCTION
+  * tbd
+
+* PRODUCTION
+  * tdb
+
+* POST-PRODUCTION
+  * [sound design team](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/sound-design-team-cheat-sheet)
 
 ### RANDOM THINGS
 

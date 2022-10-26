@@ -170,8 +170,6 @@ PubkeyAuthentication yes
 IgnoreRhosts yes
 PasswordAuthentification no
 PermitEmptyPasswords no
-X11Forwarding no
-AllowTcpForwarding no
 ```
 
 Restart ssh service,

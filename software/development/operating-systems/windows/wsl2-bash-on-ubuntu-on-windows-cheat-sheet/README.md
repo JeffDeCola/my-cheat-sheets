@@ -2,26 +2,16 @@
 
 _`wsl2 allows you to install linux on a windows machine._
 
-Table of Contents,
+Table of Contents
 
 * [WSL2 (WINDOWS SUBSYSTEM FOR LINUX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#wsl2-windows-subsystem-for-linux)
 * [INSTALL UBUNTU ON WINDOWS FROM APP STORE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#install-ubuntu-on-windows-from-app-store)
 * [FILE LOCATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#file-locations)
 * [ADD SUDO FOR USER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#add-sudo-for-user)
 * [FIX DIRECTORY COLOR IF HARD TO READ](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#fix-directory-color-if-hard-to-read)
-* [CONFIGURE SSH (NORMAL PORT 22) ON WSL2 (EASY WAY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-normal-port-22-on-wsl2-easy-way)
-  * [START SSH SERVER ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#start-ssh-server-on-windows)
-  * [MAKE WINDOWS OPENSSH TO OPEN WSL2 BASH SHELL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-windows-openssh-to-open-wsl2-bash-shell)
-  * [CONFIGURE SSHD ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-sshd-on-windows)
-  * [WE ARE USING WINDOWS .ssh DIRECTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#we-are-using-windows-ssh-directory)
-  * [TEST IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test-it)
-* [CONFIGURE SSH (PORT 2222) ON WSL2 (TOO MUCH WORK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-2222-on-wsl2-too-much-work)
-  * [MAKE SSH KEYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#make-ssh-keys)
-  * [INSTALL OPENSSH-SERVER IN WSL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#install-openssh-server-in-wsl)
-  * [CONFIGURE SSH PORT NUMBER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#configure-ssh-port-number)
-  * [START SSH SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#start-ssh-service)
-  * [FORWARD PORTS INTO WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#forward-ports-into-wsl2)
-  * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#test)
+* [SSH SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#ssh-server)
+  * [METHOD 1 - USE WINDOWS SSH SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#method-1---use-windows-ssh-server)
+  * [METHOD 2 - USE WSL2 SSH SERVER (TOO MUCH WORK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#method-2---use-wsl2-ssh-server-too-much-work)
 * [SETUP CODE DEVELOPMENT ENVIRONMENT ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#setup-code-development-environment-on-windows)
 
 View my entire list of cheat sheets on
