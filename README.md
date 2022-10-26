@@ -365,7 +365,7 @@ _Other cheat sheets I'm interested in._
   * tdb
 
 * POST-PRODUCTION
-  * [sound design team](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/sound-design-team-cheat-sheet)
+  * [sound design team](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-cheat-sheet)
 
 ### RANDOM THINGS
 
