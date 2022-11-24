@@ -9,7 +9,7 @@ ASIC/FPGA hardware or a software app/service.
 These cheat sheets contain info I gathered from other sources and
 figured out over time. It's an ongoing process._
 
-**SOFTWARE CHEAT SHEETS**
+**I - SOFTWARE CHEAT SHEETS**
 
 * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
   * DEVELOPMENT ENVIRONMENTS
@@ -17,7 +17,7 @@ figured out over time. It's an ongoing process._
   * OPERATING SYSTEMS
   * SOFTWARE ARCHITECTURES
   * SOURCE / VERSION CONTROL
-* [OPERATIONS TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#operations-tools)
+* [OPERATIONS](https://github.com/JeffDeCola/my-cheat-sheets#operations)
   * CONFIGURATION MANAGEMENT
   * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
   * ORCHESTRATION
@@ -34,7 +34,7 @@ figured out over time. It's an ongoing process._
   * GOOGLE GCP
   * MICROSOFT AZURE
 
-**HARDWARE CHEAT SHEETS**
+**II - HARDWARE CHEAT SHEETS**
 
 * [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-hw)
   * FPGA DEVELOPMENT BOARDS
@@ -45,7 +45,7 @@ figured out over time. It's an ongoing process._
   * SYNTHESIS
   * TIMING
 
-**OTHER CHEAT SHEETS**
+**III - OTHER CHEAT SHEETS**
 
 * [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#american-history)
   * TIME PERIODS
@@ -70,7 +70,7 @@ Documentation and reference
 
 ---
 
-## SOFTWARE CHEAT SHEETS
+## I - SOFTWARE CHEAT SHEETS
 
 _Various Apps and tools for the goal of creating an App/Service._
 
@@ -180,47 +180,47 @@ _Various Apps and tools for the goal of creating an App/Service._
 
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
 
-### OPERATIONS TOOLS
+### OPERATIONS
 
 * CONFIGURATION MANAGEMENT
 
-  * [ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/configuration-management/ansible-cheat-sheet)
+  * [ansible](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet)
 
 * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
 
-  * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet)
+  * [concourse](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet)
     ([my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks))
-    * [install concourse binary](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
-    * [install concourse on virtualbox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
-    * [install concourse using ansible google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
-    * [install fly on linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
-    * [install fly on windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
+    * [install concourse binary](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
+    * [install concourse on virtualbox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
+    * [install concourse using ansible google compute engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+    * [install fly on linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
+    * [install fly on windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
 
 * ORCHESTRATION
 
   * BUILDS / DEPLOYMENT / CONTAINERS
 
-    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/docker-cheat-sheet)
+    * [docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet)
       ([my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds))
-    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
+    * [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet)
       ([my-packer-image-builds](https://github.com/JeffDeCola/my-packer-image-builds))
-    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/terraform-cheat-sheet)
+    * [terraform](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/terraform-cheat-sheet)
 
   * CLUSTER MANAGERS / RESOURCE MANAGEMENT / SCHEDULING
 
-    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
-    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
+    * [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+    * [marathon](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
       ([hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon))
-    * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
+    * [mesos](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
   * DISCOVERY / CONFIGURATION
 
-    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/discovery-configuration/consul-cheat-sheet)
+    * [consul](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet)
 
 * TELEMETRY
 
-  * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/grafana-cheat-sheet)
-  * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/telemetry/stackdriver-cheat-sheet)
+  * [grafana](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/telemetry/grafana-cheat-sheet)
+  * [stackdriver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/telemetry/stackdriver-cheat-sheet)
 
 ### SERVICE ARCHITECTURES
 
@@ -293,7 +293,7 @@ _Various Apps and tools for the goal of creating an App/Service._
 
 ---
 
-## HARDWARE CHEAT SHEETS
+## II - HARDWARE CHEAT SHEETS
 
 _Various Apps and tools for the goal of creating an ASIC/FPGA._
 
@@ -332,7 +332,7 @@ _Various Apps and tools for the goal of creating an ASIC/FPGA._
 
 ---
 
-## OTHER CHEAT SHEETS
+## III - OTHER CHEAT SHEETS
 
 _Other cheat sheets I'm interested in._
 
