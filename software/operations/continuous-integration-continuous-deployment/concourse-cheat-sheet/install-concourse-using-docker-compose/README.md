@@ -16,13 +16,13 @@ and has a configuration/provisioning file docker-compose.yml.
 Get the `docker-compose.yml` file above.
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/docker-compose.yml
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/docker-compose.yml
 ```
 
 Generate the keys needed,
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/generate-keys.sh
+wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/generate-keys.sh
 sudo sh generate-keys.sh
 ```
 

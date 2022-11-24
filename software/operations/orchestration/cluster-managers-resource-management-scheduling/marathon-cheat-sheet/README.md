@@ -7,7 +7,7 @@ Documentation and reference,
 
 * [Marathon Documentation](https://mesosphere.github.io/marathon/)
 * My
-  [mesos cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
+  [mesos cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
 
 My Repo example is
 [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon).
@@ -66,5 +66,3 @@ To deploy your app, send the json file to marathon,
 ```bash
 curl -X PUT http://10.141.141.10:8080/v2/apps/jeffAPP -d @app.json -H "Content-type: application/json"
 ```
-
-

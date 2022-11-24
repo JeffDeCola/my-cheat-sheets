@@ -9,7 +9,7 @@ Documentation and reference,
 * [Mesosphere Documentation](https://mesosphere.com/)
 * [Mesos Documentation](http://mesos.apache.org/)
 * My
-  [marathon cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
+  [marathon cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
 
 My Repo example is
 [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon).

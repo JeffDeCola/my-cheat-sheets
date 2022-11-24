@@ -24,18 +24,18 @@ View my entire list of cheat sheets on
 
 There are many ways to install concourse, here are a few,
 
-* [On VirtualBox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
-* [Binary Install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
-* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose)
-* [Ansible Roles on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+* [On VirtualBox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
+* [Binary Install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
+* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose)
+* [Ansible Roles on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 
 ## INSTALL AND CONNECT FLY TO CONCOURSE
 
 Now we need a way to connect to your concourse server.
 Fly allows you to uploads/updates your files.
 
-* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
-* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
+* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
+* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
 
 ## CREATE A TEAM
 
@@ -56,7 +56,7 @@ check `~/.flyrc` to see your new team.
 See a more detailed example at
 [my-concourse-ci-tasks](https://jeffdecola.github.io/my-concourse-ci-tasks/).
 
-The following diagram illustrates compase running a task called seach-and-replace.
+The following diagram illustrates compares running a task called search-and-replace.
 
 * `pipeline.yml` A pipeline of resources and jobs.
 * `config.yml` Configures task
@@ -64,7 +64,7 @@ The following diagram illustrates compase running a task called seach-and-replac
   * Sets up inputs/outputs into task container
 * `task.sh` does the task
 
-`IMPORTANT - THE JOBS ARE COMPLETELY IDENPENDENT OF EACH OTHER`
+`IMPORTANT - THE JOBS ARE COMPLETELY INDEPENDENT OF EACH OTHER`
 
 If you want to store 'state', use a resource to send it offsite.
 
@@ -187,8 +187,8 @@ Then in your `task.yml` file, also use params with the same name
 
 ```yml
 params:
-  PRIVITE_KEY-FILE: "this will be overwritten"
-  PRIVITE_KEY: "this will be overwritten"
+  PRIVATE_KEY-FILE: "this will be overwritten"
+  PRIVATE_KEY: "this will be overwritten"
 ```
 
 This will create an env variable `PRIVATE_KEY-FILE` and `PRIVATE_KEY` you
