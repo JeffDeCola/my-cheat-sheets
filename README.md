@@ -11,51 +11,51 @@ figured out over time. It's an ongoing process._
 
 **I - SOFTWARE CHEAT SHEETS**
 
-* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)
+* **[DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)**
   * DEVELOPMENT ENVIRONMENTS
   * LANGUAGES
   * OPERATING SYSTEMS
   * SOFTWARE ARCHITECTURES
   * SOURCE / VERSION CONTROL
-* [OPERATIONS](https://github.com/JeffDeCola/my-cheat-sheets#operations)
+* **[OPERATIONS](https://github.com/JeffDeCola/my-cheat-sheets#operations)**
   * CONFIGURATION MANAGEMENT
   * CONTINUOUS INTEGRATION / CONTINUOUS DEPLOYMENT
   * ORCHESTRATION
   * TELEMETRY
-* [SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)
+* **[SERVICE ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets#service-architectures)**
   * OVERVIEW
   * SaaS - SOFTWARE AS A SERVICE
   * FaaS - FUNCTIONS AS A SERVICE
   * PaaS - PLATFORM AS A SERVICE
   * CaaS - CONTAINERS AS A SERVICE
   * IaaS - INFRASTRUCTURE AS A SERVICE
-* [SERVICE PROVIDERS](https://github.com/JeffDeCola/my-cheat-sheets#service-providers)
+* **[SERVICE PROVIDERS](https://github.com/JeffDeCola/my-cheat-sheets#service-providers)**
   * AMAZON AWS
   * GOOGLE GCP
   * MICROSOFT AZURE
 
 **II - HARDWARE CHEAT SHEETS**
 
-* [DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-hw)
+* **[DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-hw)**
   * FPGA DEVELOPMENT BOARDS
   * HARDWARE ARCHITECTURES
   * LANGUAGES
-* [TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)
+* **[TOOLS](https://github.com/JeffDeCola/my-cheat-sheets#tools)**
   * SIMULATION
   * SYNTHESIS
   * TIMING
 
 **III - OTHER CHEAT SHEETS**
 
-* [AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#american-history)
+* **[AMERICAN HISTORY](https://github.com/JeffDeCola/my-cheat-sheets#american-history)**
   * TIME PERIODS
   * WARS
-* [FILM PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets#film-production)
+* **[FILM PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets#film-production)**
   * PRE-PRODUCTION
   * PRODUCTION
   * POST-PRODUCTION
-* [RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets#random-things)
-* [STEM](https://github.com/JeffDeCola/my-cheat-sheets#stem)
+* **[RANDOM THINGS](https://github.com/JeffDeCola/my-cheat-sheets#random-things)**
+* **[STEM](https://github.com/JeffDeCola/my-cheat-sheets#stem)**
   * SCIENCE
   * TECHNOLOGY
   * ENGINEERING
