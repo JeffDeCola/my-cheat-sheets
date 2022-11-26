@@ -5,6 +5,9 @@ This is not to be used as tax advice, these are just my opinions._
 
 Table of Contents,
 
+* [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
+* [SCHEDULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules)
+* [1040 OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#1040-overview)
 * [REPORT PROCEEDS OF SELLING A CAPITAL ASSET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#report-proceeds-of-selling-a-capital-asset)
 
 View my entire list of cheat sheets on
@@ -20,6 +23,7 @@ View my entire list of cheat sheets on
 * **1099-DIV** - Dividends and Distributions **SCHEDULE B LINE 5**
 * **1099-K** - Payment Card and Third Party Network Transactions (e.g. eBay) **SCHEDULE C LINE 1**
 * **1099-B** - Proceeds From Broker and Barter Exchange Transactions **FORM 8949 -> SCHEDULE D BOX A,B,C,D,E,F**
+* **FORM 1065 (SCHEDULE K-1)** - Partners Share of Income, Deductions, Credits, etc. **SCHEDULE E LINE 28**
 
 ## SCHEDULES
 
@@ -68,6 +72,7 @@ View my entire list of cheat sheets on
   * **Enter SCHEDULE 1 LINE 5**
   * Part I - Income or Loss From Rental Real Estate and Royalties
   * Part II - Income or Loss From Partnerships and S Corporations
+    * **K-1**
   * Part III - Income or Loss From Estates and Trusts
   * Part IV - Income or Loss From Real Estate Mortgage Investment Conduits (REMICs)
   * Part V - Summary
@@ -89,6 +94,7 @@ View my entire list of cheat sheets on
     * **1099-MISC** -> **SCHEDULE 1 LINE 8** -> **1040 LINE 8(10)**
   * BUSINESS INCOME (LOSS)
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
+    * **SCHEDULE K-1** -> **SCHEDULE E** -> **SCHEDULE 1 LINE 5** -> **1040 LINE 8/10**
   * CAPITAL GAINS (LOSS)
     * **1099-B** -> **FORM 8949** -> **SCHEDULE D LINe 1b/2/3/8b/9/10** -> **1040 LINE 7**
   * OTHER GAINS (LOSS)
