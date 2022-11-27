@@ -14,6 +14,8 @@ Documents and references,
 
 | YEAR | GEN | CODE NAME        | C/T       | GHz     | SIZE  | TRANS B | SOCKET      |
 |------|-----|------------------|-----------|---------|-------|---------|-------------|
+| 2022 | 13  | Raptor Lake      | 8/24      |         | 10nm  |         | LGA 1700    |
+| 2022 | 12  | Alder Lake       | 8/20      |         | 10nm  |         | LGA 1700    |
 | 2021 | 11  | Rocket Lake-S    | 8/16      | 2.5-5.0 | 14nm  |         | LGA 1200    |
 | 2020 | 10  | Tiger Lake-U     | 8/16      |         | 14nm  |         | LGA 1200    |
 | 2020 |     | Comet Lake-H     | 8/16      |         | 14nm  |         | LGA 1200    |
@@ -41,7 +43,7 @@ Documents and references,
 
 ## OLDER INTEL DESKTOP PROCESSORS
 
-| YEAR | NAME            | CORES | GHz     | SIZE   | TRANS B | 
+| YEAR | NAME            | CORES | GHz     | SIZE   | TRANS B |
 |------|-----------------|-------|---------|--------|---------|
 | 1990 | Intel386 SL     |       | .025    | 1000nm |         |
 | 1988 | Intel386 SX     |       | .033    | 1000nm |         |
@@ -51,6 +53,7 @@ Documents and references,
 
 | YEAR | SERIES | CODE NAME        | ARCH  | C/T   | GHz     | SIZE  | TRANS B | SOCKET      |
 |------|--------|------------------|-------|-------|---------|-------|---------|-------------|
+| 2022 | 7000   | Raphael          | Zen 4 | 8/16  | 4.5-5.4 | 5nm   |         | AM5         |
 | 2021 | 5000   | Cezanne          | Zen 3 | 8/16  | 2.8-4.4 | 7nm   | 9.8     | AM4         |
 | 2020 | 5000   | Vermeer          | Zen 3 | 8/16  | 3.8-4.7 | 7nm   |         | AM4         |
 | 2020 | 4000   | Renoir           | Zen 2 | 8/16  | 3.1-4.4 | 7nm   | 9.8     | AM4         |
