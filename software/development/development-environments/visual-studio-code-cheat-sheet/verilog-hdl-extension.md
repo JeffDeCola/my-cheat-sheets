@@ -6,11 +6,11 @@ Documentation and reference,
 
 * [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL&ssr=false#overview)
 * My cheat sheet on
-  [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
+  [verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
   
 ## INSTALL
 
-In order to use this extention you must install a `simulator` and `ctags`.
+In order to use this extension you must install a `simulator` and `ctags`.
 
 ### INSTALL SIMULATOR
 
