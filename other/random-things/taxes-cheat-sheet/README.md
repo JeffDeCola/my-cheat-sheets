@@ -18,12 +18,13 @@ View my entire list of cheat sheets on
 * **W-2** - Wage and Tax Statement **1040 LINE 2**
 * **1099-G** - Certain Government Payments (e.g. unemployment) **SCHEDULE 1 LINE 7**
 * **1099-MISC** - Miscellaneous **SCHEDULE 1 LINE 8**
+* **1098** - Mortgage Interest Statement **SCHEDULE A LINE 8a**
 * **1099-INT** - Interest Income **SCHEDULE B LINE 1**
 * **1099-OID** - Original Issue Discount **SCHEDULE B LINE 1**
 * **1099-DIV** - Dividends and Distributions **SCHEDULE B LINE 5**
 * **1099-K** - Payment Card and Third Party Network Transactions (e.g. eBay) **SCHEDULE C LINE 1**
-* **1099-B** - Proceeds From Broker and Barter Exchange Transactions **FORM 8949 -> SCHEDULE D BOX A,B,C,D,E,F**
-* **FORM 1065 (SCHEDULE K-1)** - Partners Share of Income, Deductions, Credits, etc. **SCHEDULE E LINE 28**
+* **1099-B** - Proceeds From Broker and Barter Exchange Transactions **8949 -> SCHEDULE D BOX A,B,C,D,E,F**
+* **SCHEDULE K-1 (FORM 1065)** - Partners Share of Income, Deductions, Credits, etc. **SCHEDULE E LINE 28**
 
 ## SCHEDULES
 
@@ -34,13 +35,13 @@ View my entire list of cheat sheets on
   * Part II - Adjustments to Income
     * **Enter 1040 LINE 10**
     * Jury Duty Pay, Education expenses
-* **SCHEDULE A** - Itemized Deductions
+* **SCHEDULE A** - Itemized Deductions (Is this greater than standard deduction)
   * **Enter 1040 LINE 12a**
   * Medical and Dental Expenses
   * Taxes You Paid
     * State and Local
   * Interest You Paid
-    * Mortgage
+    * Mortgage **1098**
   * Gifts to Charity
   * Theft
   * Other
@@ -72,7 +73,7 @@ View my entire list of cheat sheets on
   * **Enter SCHEDULE 1 LINE 5**
   * Part I - Income or Loss From Rental Real Estate and Royalties
   * Part II - Income or Loss From Partnerships and S Corporations
-    * **K-1**
+    * **SCHEDULE K-1**
   * Part III - Income or Loss From Estates and Trusts
   * Part IV - Income or Loss From Real Estate Mortgage Investment Conduits (REMICs)
   * Part V - Summary
@@ -96,7 +97,7 @@ View my entire list of cheat sheets on
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
     * **SCHEDULE K-1** -> **SCHEDULE E** -> **SCHEDULE 1 LINE 5** -> **1040 LINE 8/10**
   * CAPITAL GAINS (LOSS)
-    * **1099-B** -> **FORM 8949** -> **SCHEDULE D LINe 1b/2/3/8b/9/10** -> **1040 LINE 7**
+    * **1099-B** -> **8949** -> **SCHEDULE D LINe 1b/2/3/8b/9/10** -> **1040 LINE 7**
   * OTHER GAINS (LOSS)
   * FARM INCOME (LOSS)
   * UNEMPLOYMENT INCOME
@@ -122,6 +123,7 @@ View my entire list of cheat sheets on
   * MEDICAL AND DENTAL EXPENSES
   * TAXES YOU PAID
   * INTEREST AND INSURANCE PREMIUM YOU PAID
+    * **1098** -> **SCHEDULE A LINE 8a** -> **1040 LINE 12a**
   * GIFTS TO CHARITY (Non standard deduction)
   * CASUALTY AND THEFT LOSSES
   * OTHER ITEMIZED DEDUCTIONS
@@ -156,7 +158,7 @@ a short-term sale (held less than a year) or a portion of both.
 ### STEP 2 - SALES ON FORM 8949
 
 You report these proceeds (sales) on
-**FORM 8949** (Sales and Other Dispositions of Capital Assets).
+**8949** (Sales and Other Dispositions of Capital Assets).
 
 ```text
 PROCEEDS (SALE) - COST = CAPITAL GAIN/LOSS
@@ -179,5 +181,5 @@ I like to combine.
 
 ### STEP 3 - TOTALS ON SCHEDULE D
 
-Now add all the totals from all your **FORM 8949** and put on
+Now add all the totals from all your **8949** and put on
 **SCHEDULE D** (Capital Gains and Losses).
