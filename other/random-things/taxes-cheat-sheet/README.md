@@ -97,7 +97,7 @@ View my entire list of cheat sheets on
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
     * **SCHEDULE K-1** -> **SCHEDULE E** -> **SCHEDULE 1 LINE 5** -> **1040 LINE 8/10**
   * CAPITAL GAINS (LOSS)
-    * **1099-B** -> **8949** -> **SCHEDULE D LINe 1b/2/3/8b/9/10** -> **1040 LINE 7**
+    * **1099-B** -> **8949** -> **SCHEDULE D LINE 1b/2/3/8b/9/10** -> **1040 LINE 7**
   * OTHER GAINS (LOSS)
   * FARM INCOME (LOSS)
   * UNEMPLOYMENT INCOME
@@ -118,7 +118,7 @@ View my entire list of cheat sheets on
   * STUDENT LOAN INTEREST DEDUCTION
   * TUITION AND FEES DEDUCTION
   * OTHER MISC DEDUCTIONS
-* **DEDUCTIONS**
+* **DEDUCTIONS** (or use Standard Deduction)
   * **SCHEDULE A** -> **1040 LINE 12a**
   * MEDICAL AND DENTAL EXPENSES
   * TAXES YOU PAID
