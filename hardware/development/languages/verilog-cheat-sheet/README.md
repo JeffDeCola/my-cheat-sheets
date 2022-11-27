@@ -1,26 +1,26 @@
-# SYSTEMVERILOG CHEAT SHEET
+# VERILOG CHEAT SHEET
 
 _Verilog is a Hardware Description Language (HDL) used to describe a digital system._
 
 Table of Contents,
 
-* [OVERVIEW & HDL LEVELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#overview--hdl-levels)
-* [BASIC SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#basic-syntax)
-  * [BASIC STRUCTURE (THE MODULE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#basic-structure-the-module)
-  * [NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#numbers)
-  * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#data-types)
-  * [SCALAR, VECTOR & ARRAYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#scalar-vector--arrays)
-  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#operators)
-* [MODELING COMBINATIONAL & SEQUENTIAL LOGIC (USING 3 BASIC BUILDING BLOCKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#modeling-combinational--sequential-logic-using-3-basic-building-blocks)
-  * [ASSIGN STATEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
-  * [ALWAYS BLOCK (WHERE THE MAGIC HAPPENS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
-  * [INITIAL BLOCK (TESTBENCH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-block-testbench)
-* [MORE SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#more-syntax)
-  * [GATE PRIMITIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#gate-primitives)
-  * [CONCATENATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#concatenation)
-  * [CONTROL STATEMENTS (IF-ELSE, CASE, WHILE, FOR LOOP, REPEAT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#control-statements-if-else-case-while-for-loop-repeat)
-  * [TASKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#tasks)
-  * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#functions)
+* [OVERVIEW & HDL LEVELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#overview--hdl-levels)
+* [BASIC SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#basic-syntax)
+  * [BASIC STRUCTURE (THE MODULE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#basic-structure-the-module)
+  * [NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#numbers)
+  * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#data-types)
+  * [SCALAR, VECTOR & ARRAYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#scalar-vector--arrays)
+  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#operators)
+* [MODELING COMBINATIONAL & SEQUENTIAL LOGIC (USING 3 BASIC BUILDING BLOCKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#modeling-combinational--sequential-logic-using-3-basic-building-blocks)
+  * [ASSIGN STATEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#assign-statement)
+  * [ALWAYS BLOCK (WHERE THE MAGIC HAPPENS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
+  * [INITIAL BLOCK (TESTBENCH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#initial-block-testbench)
+* [MORE SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#more-syntax)
+  * [GATE PRIMITIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#gate-primitives)
+  * [CONCATENATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#concatenation)
+  * [CONTROL STATEMENTS (IF-ELSE, CASE, WHILE, FOR LOOP, REPEAT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#control-statements-if-else-case-while-for-loop-repeat)
+  * [TASKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#tasks)
+  * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#functions)
 
 Documentation and reference,
 
@@ -30,7 +30,7 @@ Documentation and reference,
   is a free waveform viewer
 * VS Code [Verilog HDL Extension](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
  for syntax highlighting and linting
-* Check out my repo [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+* Check out my repo [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -57,7 +57,7 @@ It has input/output as well as the description of what it does.
 Think of it like a black box.
 
 Here is the structure of some verilog code I coped from my
-[left-shift-register](https://github.com/JeffDeCola/my-systemverilog-examples/blob/master/sequential-logic/shifters/left-shift-register/left-shift-register.v).
+[left-shift-register](https://github.com/JeffDeCola/my-verilog-examples/blob/master/sequential-logic/shifters/left-shift-register/left-shift-register.v).
 
 ```verilog
 // A 2-bit left-shift-register
@@ -178,25 +178,25 @@ Pretty much in order of precedence,
 * **COMBINATIONAL LOGIC**
   * Blocks that do not have memory
   * Modeled using
-    [Continuous Assignment Statement (assign)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#assign-statement)
+    [Continuous Assignment Statement (assign)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#assign-statement)
   * Modeled using an
-    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
-    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
 * **SEQUENTIAL LOGIC**
   * Blocks that have memory and triggered by a `clk` event (sensitivity list)
   * Modeled using an
-    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Non-Blocking Procedural Assignment Statements (<=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
   * Modeled using an
-    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Always Block](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
     with
-    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#always-block-where-the-magic-happens)
+    [Blocking Procedural Assignment Statements (=)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#always-block-where-the-magic-happens)
 
 ### ASSIGN STATEMENT
 
@@ -214,7 +214,7 @@ An example of combinational logic (AND gate),
 The **Always Block** is used for both combinational and sequential logic.
 
 * Executes always, unlike
-  [Initial Blocks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet#initial-block-testbench)
+  [Initial Blocks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#initial-block-testbench)
   which execute only once
 * Should have a sensitive list or a delay associated with it
 

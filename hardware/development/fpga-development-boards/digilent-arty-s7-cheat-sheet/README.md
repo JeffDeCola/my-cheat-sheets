@@ -13,7 +13,7 @@ Documentation and reference,
 * [Digilent ARTY-S7](https://reference.digilentinc.com/reference/programmable-logic/arty-s7/start)
   home page
 * [Xilinx Vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
-* My verilog examples repo [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+* My verilog examples repo [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 

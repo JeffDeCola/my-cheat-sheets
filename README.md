@@ -311,9 +311,9 @@ _Various Apps and tools for the goal of creating an ASIC/FPGA._
 
 * LANGUAGES
 
-  * [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet),
+  * [verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet),
     [VS Code verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
-    ([my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples))
+    ([my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples))
 
 ### TOOLS
 
