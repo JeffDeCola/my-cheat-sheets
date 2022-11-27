@@ -17,8 +17,8 @@ Documentation and reference,
 * GTKWave
   [User's Guide](http://gtkwave.sourceforge.net/gtkwave.pdf)
 * My cheat sheet on
-  [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-* My verilog example [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+  [Verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
+* My verilog example [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 * [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
   free synthesis and simulation tool
 
@@ -69,6 +69,6 @@ automatically launch GTKWave with your saved `*.gtkw` file from Windows WSL,
 macOS or Linux.
 
 The script
-[launch-gtkwave.sh](https://github.com/JeffDeCola/my-systemverilog-examples/blob/master/launch-GTKWave-script/launch-gtkwave.sh)
+[launch-gtkwave.sh](https://github.com/JeffDeCola/my-verilog-examples/blob/master/launch-GTKWave-script/launch-gtkwave.sh)
 is located in my repo
-[my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples).
+[my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples).

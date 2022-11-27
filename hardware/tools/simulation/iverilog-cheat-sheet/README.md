@@ -22,8 +22,8 @@ Documentation and reference,
 * Icarus Verilog
   [Installation guide](https://iverilog.fandom.com/wiki/Installation_Guide)
 * My cheat sheet on
-  [SystemVerilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/systemverilog-cheat-sheet)
-* My verilog example [my-systemverilog-examples](https://github.com/JeffDeCola/my-systemverilog-examples)
+  [Verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
+* My verilog example [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
   is a free waveform viewer
   
