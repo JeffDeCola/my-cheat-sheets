@@ -4,12 +4,12 @@ _M100C parts and part numbers._
 
 Table on Contents,
 
-* [M100C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#m100c)
-  * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#fuses)
-  * [LIGHTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#lights)
-  * [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#vacuum-tubes)
-* [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
-* [TEARDROP EXTERNAL SPEAKERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
+* [M100C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#m100c)
+  * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#fuses)
+  * [LIGHTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#lights)
+  * [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#vacuum-tubes)
+* [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
+* [TEARDROP EXTERNAL SPEAKERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -22,10 +22,11 @@ Table on Contents,
 * Selectors: 100
 * Records: 50
 * Produced: 38,200
-* Dimentions (HxWxD): 54" x 35" x 26"
+* Dimensions (HxWxD): 54" x 35" x 26"
 * Weight: 305 lbs
-* Remote Speaker: [Teardrop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
-* Wallbox: [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-stuff/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
+* Remote Speaker: [Teardrop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
+
+* Wallbox: [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
 * Cabinet Key: G245
 * Coins: 5, 10, 25 cents
 
@@ -44,14 +45,14 @@ There are a total of 5 fuses. 3AG stands for the 3rd size of “Automobile Glass
 
 ### LIGHTS
 
-There are a total of 3 Flourescent lights.
+There are a total of 3 Fluorescent lights.
 
 * TOP
   * **Ballast** 405101 (1)
     * ??FIND THIS PART NUMBER?? (Discontinued)
   * **Starter** 405138 (1)
     * FS-25
-  * **Flourescent Tube** 405136 (1)
+  * **Fluorescent Tube** 405136 (1)
     * 33", 25-watt, Daylight (5500K-6500K), T12 Bulb Shape
     * GE 10299 - F25T12/D/33 - 25 watt, 6500K, 1600 Lumens (Discontinued)
 
@@ -69,27 +70,35 @@ There are a total of 3 Flourescent lights.
     * FS2 or FS-25
   * **Flourescent Tubes** 405547 (2)
     * 24", 20-watt, Daylight (5500K-6500K), T12 Bulb Shape
-    * SYLVANIA 22083 - F20T12/D - 20 Watt, 6500K, 1075 Lumens
-    * PHILIPS 273284 - F20T12/D ALTO - 20 Watt, 6500K, 1075 Lumens
-    * GE 80047 - F20T12/D/ECO - 20 watt, 6500K, 1025 Lumens
+      * SYLVANIA 22083 - F20T12/D - 20 Watt, 6500K, 1075 Lumens
+      * PHILIPS 273284 - F20T12/D ALTO - 20 Watt, 6500K, 1075 Lumens
+      * GE 80047 - F20T12/D/ECO - 20 watt, 6500K, 1025 Lumens
 
 ![IMAGE - bottom-lights-schematic-seeburg - IMAGE](../../../docs/pics/bottom-lights-schematic-seeburg.jpg)
 
 ### VACUUM TUBES
 
 There are a total of 8 vacuum tubes.
-RCA made the tubes for the seeburg.
+The originals are labeled "**by RCA for Seeburg**".
 
 * **MRA3-L6** MASTER REMOTE AMPLIFIER
-  * **6J7** (1) - Anode cap on top.
-  * **6SN7-GT** (1)
-  * **6SK7-GT** (1) - Empty, not sure it's needed
-  * **6SL7-GT** (2)
-  * **6L6-G** (2)
-  * **5U4-G** (1)
-
+  * NOT SURE
+    * **6J7** (1) - Anode cap on top
+  * PREAMP TUBES
+    * **6SN7-GT** (1)
+    * **6SK7-GT** (1) - Empty Slot
+    * **6SL7-GT** (2)
+  * POWER TUBES
+    * **6L6-G** (2) - Expensive - Try to get matched pair
+  * RECTIFIER TUBES (AC TO DC)  
+    * **5U4-G** (1)
 * **WSR5-L6** WIRED SELECTION RECEIVER
-  * **2050** (1) - Get the RCA tube with Green letters. Seeburg name on it.
+  * **2050** (1)
+
+NOTES: G stands for its glass.
+GT stands for glass tubular.
+The 6SK7-GT tube controls the auto-volume control and recommend to leave empty.
+Get the 2050 RCA tube with the Seeburg name in green letters.
 
 ![IMAGE - MRA3-L6 MASTER REMOTE AMPLIFIER SCHEMATIC - IMAGE](../../../docs/pics/MRA3-L6-master-remote-amplifier-schematic.jpg)
 
