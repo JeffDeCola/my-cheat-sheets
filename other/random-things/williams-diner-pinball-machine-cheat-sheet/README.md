@@ -4,33 +4,28 @@ _M100C parts and part numbers._
 
 Table on Contents,
 
-* [M100C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#m100c)
-  * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#fuses)
-  * [LIGHTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#lights)
-  * [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#vacuum-tubes)
-* [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
-* [TEARDROP EXTERNAL SPEAKERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
+* tbd*
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## M100C
+## DINER
 
-* Model: M100C
-* Third in series M100A, M100B, M100C
-* Year: 1952
-* Speed: 45 rpm
-* Selectors: 100
-* Records: 50
-* Produced: 38,200
-* Dimensions (HxWxD): 54" x 35" x 26"
-* Weight: 305 lbs
-* Remote Speaker: [Teardrop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
+* Model: 571
+* Manufactured: Williams Electronic Games, Inc.
+* part of ???
+* Year: September, 1990
+* Produced: 3,552
+* Dimensions (HxWxD): ??" x ??" x ??"
+* Weight: ??? lbs
+* Players: 4
+* Flippers: 2
+* Ramps: 2
+* Multi-ball: 2
+* 3-Bank Drop Targets: 2
 
-* Wallbox: [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
-* Cabinet Key: G245
 * Coins: 5, 10, 25 cents
 
-![IMAGE - seeburg_m100c.png - IMAGE](../../../docs/pics/seeburg_m100c.png)
+![IMAGE - diner-pinball.jpg - IMAGE](../../../docs/pics/diner-pinball.jpg)
 
 ### FUSES
 

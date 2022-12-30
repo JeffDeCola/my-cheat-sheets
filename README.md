@@ -375,6 +375,7 @@ _Other cheat sheets I'm interested in._
 * [seeburg-1952-m100c-jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet)
 * [taxes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet)
 * [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/typical-highway-interchanges-cheat-sheet)
+* [williams-diner-pinball-machine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet)
 
 ### STEM
 
