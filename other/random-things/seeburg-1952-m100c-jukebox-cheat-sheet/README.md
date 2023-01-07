@@ -38,12 +38,21 @@ There are a total of 5 fuses. 3AG stands for the 3rd size of “Automobile Glass
 
 * 3AG FUSES  (.25" Diameter, 1.25" in length)
   * **5 amp 3AG** (1) - ??FAST BLOW, VOLTAGE??
-  * **1 amp 3AG** (1) - ??FAST BLOW, VOLTAGE??
+  * **3 amp 3AG** (1) - ??FAST BLOW, VOLTAGE??
   * **2 amp 3AG SLO-BLO** (2) ??VOLTAGE??
 * FUSTAT FUSES  
   * **3 amp Fustat** (1) ??VOLTAGE??
 
 ### LIGHTS
+
+LAMPS (BULBS)
+
+* SELECT PANEL LAMPS
+  * Part #302141 (2) - Ba9s (6.3V 150mA, 1) Lamp #47
+* MECHANISM LAMP
+  * Part #f7917 (1) - Ba15s (6.5V 1020mA, 6W) #Mini Lamp #81
+* RECORD INDICATOR
+  * Part #?? (lots) - Ba9s (6.5V 250mA, 1.6) Mini Lamp #44
 
 There are a total of 3 Fluorescent lights.
 
@@ -89,7 +98,7 @@ The originals are labeled "**by RCA for Seeburg**".
     * **6SK7-GT** (1) - Empty Slot
     * **6SL7-GT** (2) - Have 1 Seeburg New Spare and 2 RCA Used Spare
   * POWER TUBES
-    * **6L6-G** (2) - Expensive - Get matched pair - **NEED MATCHED SPARES!**
+    * **6L6-G** (2) - Expensive - Get matched pair
   * RECTIFIER TUBES (AC TO DC)  
     * **5U4-G** (1) - Have 1 RCA Used Spare
 * **WSR5-L6 WIRED SELECTION RECEIVER**
