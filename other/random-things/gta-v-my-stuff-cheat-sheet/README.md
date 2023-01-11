@@ -148,17 +148,17 @@ Table of Contents,
 * Bugstars Burrito (Van)
 * Youga Classic (Van)
 * LifeGuard
-* Baller (red)
-* Felon GT (red)
+* Baller (Red)
+* Felon GT (Red)
 * Slamtruck (Crappy ramp tow truck)
 * Squaddie (Pin's Black transport)
 * Caracara 4x4 (Blue truck)
-  * _empty_
-  * _empty_
+* _empty_
+* _empty_
 
 ### TINSEL TOWERS, APT 42 (Fast and Furious)
 
-* Cyclone (electric)
+* Cyclone (Electric)
 * Locust (Open roof bars - cool)
 * Futo
 * Flash GT (white - cool)
@@ -168,6 +168,7 @@ Table of Contents,
 * _empty_
 * _empty_
 * _empty_
+* Scorcher (Bicycle On Wall)
 
 ### ECLIPSE TOWERS, 3 (Open Wheel and F1)
 
@@ -181,6 +182,7 @@ Table of Contents,
 * PR4 (F1)
 * BR8 (F1)
 * _empty_
+* Scorcher (Bicycle On Wall)
 
 ### 4584 PROCOPIO DR (Muscle - Up North)
 
@@ -222,13 +224,13 @@ Table of Contents,
 * Duneloader (Truck stuff on back)
 * Rusty Rebel (Truck with tire on back)
 * Bohhi (Truck with horns on front)
-  * _empty_
-  * _empty_
+* _empty_
+* _empty_
 * Surfer (Old Surfer Van)
 * Tornado (Guitar)
 * Tornado
 * Injection (Bug)
-  * _empty_
+* _empty_
 
 ### OFFICE - GARAGE 1 (Benny's)
 
@@ -305,16 +307,16 @@ Table of Contents,
 
 ### NIGHTCLUB - B3 (Itali GTO)
 
-* Red/Yellow
-* Red Scribble
-* Green Camo
-* Matte Blue
-* Orange/green
-* Light Blue
-* White Racing
-* Yellow
-* Grey/Pink
-* Black
+* Itali GTO (Red/Yellow)
+* Itali GTO (Red Scribble)
+* Itali GTO (Green Camo)
+* Itali GTO (Matte Blue)
+* Itali GTO (Orange/green)
+* Itali GTO (Light Blue)
+* Itali GTO (White Racing)
+* Itali GTO (Yellow)
+* Itali GTO (Grey/Pink)
+* Itali GTO (Black)
 
 ### NIGHTCLUB - B4 (Grotti - Ferrari)
 
@@ -401,7 +403,15 @@ Table of Contents,
 ### 331 SUPPLY ST (Favorite Cars)
 
 * Opressor (Light Blue)
-* _9 empty spots_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
 
 ### AUTO SHOP STORAGE
 
@@ -417,7 +427,24 @@ Table of Contents,
 
 * Baller ST
 * Bravado Buffalo STX (Awesome Anti-skyrat care and armor)
-* _18 empty spots_
+* 10F
+* Ruiner ZZ-8
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
+* _empty_
 
 ### TERROBYTE (Basement of Nightclub)
   

@@ -57,4 +57,3 @@ Since I needed to fix the left flipper, here are my notes.
   * Flipper Coil "Solenoid" (FL11630/50VDC)
   * Coil Stop (A-12111)
   * Lane change Switch Assembly: Not Used
-  
