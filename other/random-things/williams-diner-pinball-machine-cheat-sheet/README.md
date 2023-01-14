@@ -45,7 +45,7 @@ There are a lot of fuses.
   * Part# 24-8768 - Bulb #555 (6.3V 0.25A) - A lot of these
   * Part# 24-8802 - Bulb #906 (13V, 0.69A) - I think 4 of these
 * BAYONET BASE
-  * Part# ?? - Bulb #44 (6.3V 0.25A) - Less than 10 of these
+  * Part# xx - Bulb #44 (6.3V 0.25A) - Less than 10 of these
     * Can use Bulb #47 (6.3V .15A) but they are dimmer
   * Part# 24-8704 - Bulb #89 (13V, 0.58A) - Maybe 10
 
