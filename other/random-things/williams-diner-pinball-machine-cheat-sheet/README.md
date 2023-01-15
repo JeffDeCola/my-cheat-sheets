@@ -17,11 +17,13 @@ Documentation and reference,
 ## DINER OVERVIEW
 
 * Model: 571
+* Serial Number: 571 420760
 * System: 11C
 * Manufactured: Williams Electronic Games, Inc.
 * Year: September, 1990
 * Produced: 3,552
 * Dimensions (WxDxH): 29" x 56" x 75"
+* Power: 115V 60Hz, 8 AMPS
 * Weight: 250 lbs
 * Players: 4
 * Flippers: 2
