@@ -153,6 +153,10 @@ _Various Apps and tools for the goal of creating an App/Service._
 
     * [blockchain](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
 
+  * COMMUNICATION
+
+    * [in-process and inter-process (ipc) communications overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/communication/in-process-and-inter-process-communications-ipc-overview-cheat-sheet)
+
   * CRYPTOGRAPHY
 
     * [asymmetric-cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/cryptography/asymmetric-cryptography-cheat-sheet)
