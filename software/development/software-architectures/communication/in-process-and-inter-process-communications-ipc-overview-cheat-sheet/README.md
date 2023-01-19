@@ -31,12 +31,12 @@ Here is a high-level view,
 * Asynchronous – The client doesn’t block while waiting for a response,
   and the response, if any, may not be immediate
 
-![IMAGE - synchronous-and-asynchronous-communication.jpg - IMAGE](../../../../docs/pics/in-process-communication/synchronous-and-asynchronous-communication.jpg)
+![IMAGE - synchronous-and-asynchronous-communication.jpg - IMAGE](../../../../../docs/pics/synchronous-and-asynchronous-communication.jpg)
 
 ## CLIENT SERVER COMMUNICATION
 
-![IMAGE - client-server-communication.jpg - IMAGE](../../../../docs/pics/in-process-communication/client-server-communication.jpg)
+![IMAGE - client-server-communication.jpg - IMAGE](../../../../../docs/pics/client-server-communication.jpg)
 
 ## IN-PROCESS AND INTER-PROCESS COMMUNICATION
 
-![IMAGE - in-process-and-inter-process-communication.jpg - IMAGE](../../../../docs/pics/in-process-communication/in-process-and-inter-process-communication.jpg)
+![IMAGE - in-process-and-inter-process-communication.jpg - IMAGE](../../../../../docs/pics/in-process-and-inter-process-communication.jpg)
