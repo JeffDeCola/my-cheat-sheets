@@ -1,6 +1,6 @@
 # WILLIAMS 1990 DINER PINBALL MACHINE CHEAT SHEET
 
-_Parts and part numbers._
+_Parts, part numbers and settings._
 
 Table on Contents,
 
@@ -8,6 +8,10 @@ Table on Contents,
 * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#fuses)
 * [LAMPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#lamps)
 * [LEFT FLIPPER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#left-flipper)
+* [GAME ADJUSTMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#game-adjustments)
+  * [GENERAL SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#general-settings)
+  * [GAME DIFFICULTY SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#game-difficulty-settings)
+  * [OTHER SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#other-settings)
 
 Documentation and reference,
 
