@@ -8,6 +8,7 @@ Table on Contents,
 * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#fuses)
 * [LAMPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#lamps)
 * [LEFT FLIPPER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#left-flipper)
+* [CPU BOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#cpu-board)
 * [GAME ADJUSTMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#game-adjustments)
   * [GENERAL SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#general-settings)
   * [GAME DIFFICULTY SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#game-difficulty-settings)
@@ -16,19 +17,26 @@ Table on Contents,
 Documentation and reference,
 
 * [The Internet Pinball Machine Database](https://www.ipdb.org/machine.cgi?id=681)
+* A great resource for system 11C systems from
+  [pinwiki](https://www.pinwiki.com/wiki/index.php/Williams_System_9_-_11)
+* A resource from troubleshooting
+  [here](https://techniek.flipperwinkel.nl/wms11/index1.htm)
 * [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## DINER OVERVIEW
 
 * Model: 571
 * Serial Number: 571 420760
-* System: 11C
+* System: 11C (Forth gen of system 11)
 * Manufactured: Williams Electronic Games, Inc.
 * Year: September, 1990
 * Produced: 3,552
 * Dimensions (WxDxH): 29" x 56" x 75"
 * Power: 115V 60Hz, 8 AMPS
 * Weight: 250 lbs
+* CPU: 1 Mhz 8 bit
+* RAM: 2Kx8 Memory with (3) 1.5V Alkaline AA batteries for power
+* ROM (2) 32Kx8 (Game Program) Latest Version L-4
 * Players: 4
 * Flippers: 2
 * Ramps: 2
@@ -64,10 +72,61 @@ Since I needed to fix the left flipper, here are my notes.
   * Coil Stop (A-12111)
   * Lane change Switch Assembly: Not Used
 
+## MAIN BOARDS
+
+There are 6 main boards.
+
+### SYSTEM 11C CPU BOARD (D-11883-571)
+
+* System 11C CPU Board Part #D-11883-571 (571 is the game number)
+  * Hitachi 6802 Microprocessor (U15) Part #5400-09150-00
+    * 40 pin MPU
+    * 8-bit
+    * Address bus: 16 bits (64K memory RAM)
+    * Data Bus: 8 bits
+    * 72 instructions (172 opcodes)
+    * 1 MHz
+    * Transistors: 7200
+    * Assembly language
+  * RAM (U25) Part #5340-10139-00
+    * Static RAM 6116
+    * 2Kx8
+    * 24 pin
+    * (3) 1.5V Alkaline AA batteries for power
+  * ROM (U26 & U27) Part #A-5343-571-2
+    * EPROM 27256
+    * 32Kx8
+    * Latest Version L-4
+    * U26 : Checksum: C706
+    * U27 : Checksum: 10C3
+  * Peripheral Interface Adapter (U10, U38, U41, U42, U51, U54)
+    * 6821
+    * 40-pin
+
+### AUDIO BOARD (D-11581-571)
+
+For this system 11C, it contains all sounds on ROM.
+
+### POWER SUPPLY BOARD (D-12246)
+
+Supplies power.
+
+### AUX POWER DRIVER BOARD (D-12247-566)
+
+Supplies Aux power.
+
+### BACKBOARD INTERCONNECT BOARD (D-12313-571)
+
+The 571 is for the game number.
+
+### MASTER DISPLAY BOARD (D-12232-1)
+
+The LED display.
+
 ## GAME ADJUSTMENTS
 
 There are 70 adjustments. 31-48 are game specific (e.g. diner).
-I will list thee notable ones.
+I will list the notable ones.
 
 There are three buttons on the door,
 
@@ -77,7 +136,7 @@ There are three buttons on the door,
 
 To move up number, have AUTO (UP) and press ADVANCE.
 To move down number, have MANUAL (DOWN) and press ADVANCE.
-Press start button to chose.
+Press start button to select.
 
 ### GENERAL SETTINGS
 
