@@ -91,7 +91,9 @@ Press start button to chose.
 | 06 | REPLY REWARD (SEE ABOVE)           | CREDIT (FREE GAME)      | EXTRA BALL              |
 | 07 | SPECIAL REWARD                     | CREDIT (FREE GAME)      |                         |
 | 08 | MATCH FEATURE (CHANCE FREE GAME)   | 8%                      | 20%                     |
-| 11 | EXTRA BALLS PER GAME               | 3                       | 4                       |
+| 09 | BALLS PER GAME                     | 3                       |                         |
+| 10 | TILT WARNING PER GAME              | 3                       |                         |
+| 11 | EXTRA BALLS PER GAME               | 4                       |                         |
 
 ### GAME DIFFICULTY SETTINGS
 
