@@ -42,7 +42,7 @@ Documentation and reference,
 * Weight: 250 lbs
 * CPU: 1 Mhz 8 bit
 * RAM: 2Kx8 Memory with (3) 1.5V Alkaline AA batteries for power
-* ROM (2) 32Kx8 (Game Program) Latest Version L-4
+* ROM (2) 32Kx8 (Game Program) Version L-3 (latest version is L-4)
 * Players: 4
 * Flippers: 2
 * Ramps: 2
@@ -85,7 +85,8 @@ There are 6 main boards.
 ### SYSTEM 11C CPU BOARD (D-11883-571)
 
 * System 11C CPU Board Part #D-11883-571 (571 is the game number)
-  * Hitachi 6802 Microprocessor (U15) Part #5400-09150-00
+  * 6802 Microprocessor (U15) Part #5400-09150-00
+    * STMicroelectronics Part#EF6802P Date Code 8936 (I think 1989 Week 36)
     * 40 pin MPU
     * 8-bit
     * Address bus: 16 bits (64K memory RAM)
@@ -95,23 +96,24 @@ There are 6 main boards.
     * Transistors: 7200
     * Assembly language
   * RAM (U25) Part #5340-10139-00
-    * Static RAM 6116
+    * Fujitsu Part #MB8416A-15L Date Code 8413 R45 (I think 1984 Week 13)
+    * SRAM 6116
     * 2Kx8
     * 24 pin
     * (3) 1.5V Alkaline AA batteries for power
   * ROM (U26 & U27) Part #A-5343-571-2
     * EPROM 27256
     * 32Kx8
-    * Latest Version L-4
-    * U26 : Checksum: C706
-    * U27 : Checksum: 10C3
+    * Version L-3 (Latest Version is L-4)
+    * U26 : Checksum: C706 (for L-4)
+    * U27 : Checksum: 10C3 (for L-4)
   * Peripheral Interface Adapter (U10, U38, U41, U42, U51, U54)
     * 6821
     * 40-pin
 
 ### AUDIO BOARD (D-11581-571)
 
-For this system 11C, it contains all sounds on ROM.
+For this system 11C, it contains all sounds on 3 ROM chips.
 
 ### POWER SUPPLY BOARD (D-12246)
 
