@@ -20,11 +20,11 @@ Table on Contents,
 * [IGT BASE OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#igt-base-os)
 * [IGT PLATFORM SOFTWARE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#igt-platform-software)
 * [BOOT CHIPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#boot-chips)
+* [MAKE CHANGES ON MACHINE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#make-changes-on-machine)
+* [INSTALL NEW GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#install-new-games)
 * [AVP GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#avp-games)
   * [FAMILY 20 GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#family-20-games)
   * [FAMILY 14 GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#family-14-games)
-* [MAKE CHANGES ON MACHINE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#make-changes-on-machine)
-* [INSTALL NEW GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#install-new-games)
 
 Documentation and reference,
 
@@ -247,6 +247,19 @@ Get these. No license required to load games.
   * AVPSHOWL014-13 (2013)
   * AVPSB014B3004 (2012) - **GET THIS**
 
+## MAKE CHANGES ON MACHINE
+
+With zero credits on machine, insert Ekey into brain box.
+
+## INSTALL NEW GAMES
+
+To load software (games) you need,
+
+* INSTALL USB THUMB DRIVE (Has game files on it)
+* LICENSE USB THUMB DRIVE
+
+You can also load games using Show boot chips (No license required).
+
 ## AVP GAMES
 
 How read game part numbers,
@@ -262,6 +275,8 @@ How read game part numbers,
 |:--------------------------------|:--------------------------|:----------------------------------------|
 | ??                              | Lobstermania 3            | (x-Real, x-Line)                        |
 
+![IMAGE - igt-g23-family-20-selection-screen - IMAGE](../../../docs/pics/igt-g23-family-20-selection-screen.jpg)
+
 ### FAMILY 14 GAMES
 
 | NUMBER                          | GAME                      | DETAILS                                 |
@@ -275,15 +290,4 @@ How read game part numbers,
 | GI014-001O75-D008               | Wolf Run                  | (5-Real, 40-Line)                       |
 | GI014-001X43-C003               | Wolf Run MultiPlay        | UP TO 4 GAMES                           |
 
-## MAKE CHANGES ON MACHINE
-
-With zero credits on machine, insert Ekey into brain box.
-
-## INSTALL NEW GAMES
-
-To load software (games) you need,
-
-* INSTALL USB THUMB DRIVE (Has game files on it)
-* LICENSE USB THUMB DRIVE
-
-You can also load games using Show boot chips (No license required).
+![IMAGE - igt-g23-family-14-selection-screen - IMAGE](../../../docs/pics/igt-g23-family-14-selection-screen.jpg)
