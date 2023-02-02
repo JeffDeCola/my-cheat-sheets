@@ -45,9 +45,11 @@ Documentation and reference,
   * Stand
   * Bill
   * TITO
-  * I want a the manual
+  * I want the owners manual
   * I want lock assemblies
   * Can I get a show boot?
+  * Alaska, Arizona, Arkansas, Kentucky, Maine, Minnesota, Nevada, Ohio,
+    Rhode Island, Texas, Utah, Virginia, West Virginia
 
 ## MANUALS
 
