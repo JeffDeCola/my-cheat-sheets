@@ -352,12 +352,15 @@ _Other cheat sheets I'm interested in._
 ### FILM PRODUCTION
 
 * PRE-PRODUCTION
-  * tbd
+
+  * _coming soon_
 
 * PRODUCTION
-  * tdb
+
+  * _coming soon_
 
 * POST-PRODUCTION
+
   * [sound design team](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-cheat-sheet)
 
 ### RANDOM THINGS
