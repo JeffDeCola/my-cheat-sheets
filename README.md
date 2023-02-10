@@ -61,18 +61,9 @@ figured out over time. It's an ongoing process._
   * ENGINEERING
   * MATH
 
-Documentation and reference
-
-* my-cheat-sheets
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-  _built with
-  [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)_
-
 ---
 
 ## I - SOFTWARE CHEAT SHEETS
-
-_Various Apps and tools for the goal of creating an App/Service._
 
 ![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.jpg)
 
@@ -298,8 +289,6 @@ _Various Apps and tools for the goal of creating an App/Service._
 ---
 
 ## II - HARDWARE CHEAT SHEETS
-
-_Various Apps and tools for the goal of creating an ASIC/FPGA._
 
 ![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/creating-an-asic-fpga.jpg)
 
@@ -537,12 +526,3 @@ _Other cheat sheets I'm interested in._
       * [linear algebra](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/linear-algebra-cheat-sheet)
       * [number theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/number-theory-cheat-sheet)
       * [order theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/order-theory-cheat-sheet)
-
----
-
-## CONTINUOUS INTEGRATION
-
-Refer to
-[ci-README.md](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/ci-README.md)
-on how I automated building this repos
-[github webpage](https://jeffdecola.github.io/my-cheat-sheets/).
