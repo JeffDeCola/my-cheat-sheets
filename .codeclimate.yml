@@ -32,6 +32,7 @@ plugins:
 exclude_patterns:
 - "docs/"
 - "other/mathematics/"
+- "other/stem/"
 - "software/development/languages/latex-cheat-sheet"
 - "software/development/languages/go-cheat-sheet/src/"
 - "software/development/languages/go-cheat-sheet/methods.md"
