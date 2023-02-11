@@ -40,7 +40,7 @@ There are a total of 5 fuses. 3AG stands for the 3rd size of “Automobile Glass
   * **5 amp 3AG** (1) - ??FAST BLOW, VOLTAGE??
   * **3 amp 3AG** (1) - ??FAST BLOW, VOLTAGE??
   * **2 amp 3AG SLO-BLO** (2) ??VOLTAGE??
-* FUSTAT FUSES  
+* FUSTAT FUSES
   * **3 amp Fustat** (1) ??VOLTAGE??
 
 ### LIGHTS
@@ -99,7 +99,7 @@ The originals are labeled "**by RCA for Seeburg**".
     * **6SL7-GT** (2) - Have 1 Seeburg New Spare and 2 RCA Used Spare
   * POWER TUBES
     * **6L6-G** (2) - Expensive - Get matched pair
-  * RECTIFIER TUBES (AC TO DC)  
+  * RECTIFIER TUBES (AC TO DC)
     * **5U4-G** (1) - Have 1 RCA Used Spare
 * **WSR5-L6 WIRED SELECTION RECEIVER**
   * **2050** (1) - Have 1 Seeburg Used Spare

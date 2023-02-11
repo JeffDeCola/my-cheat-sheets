@@ -37,7 +37,7 @@ Table of Contents,
   * [AGENCY GARAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#agency-garage)
   * [TERROBYTE (Basement of Nightclub)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#terrobyte-basement-of-nightclub)
   * [KOSATKA (Submarine)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#kosatka-submarine)
-  
+
 ## INTERACTIVE MENU (Press M)
 
 ### INVENTORY
@@ -96,7 +96,7 @@ Table of Contents,
 
 * **BUNKER**
   * Mobile Operations Center (Bunker)
-* **LAGO ZANCUDO FACILITY**  
+* **LAGO ZANCUDO FACILITY**
   * Avenger (At Lago Zancudo Facility)
 * **NIGHTCLUB LEVEL B5**  
   * Terrobyte (At Nightclub Garage B5)
@@ -272,7 +272,7 @@ Table of Contents,
   * _empty_
   * Barrage (Dune buggy with weapons on top)
   * Speedo Custom (Use Interactive Request Special Vehicle Menu - BUG - ERROR)
-* Other Side  
+* Other Side
   * _empty_
   * _empty_
   * Weaponized Tampa
@@ -447,7 +447,7 @@ Table of Contents,
 * _empty_
 
 ### TERROBYTE (Basement of Nightclub)
-  
+
 * Oppressor Mk II
 
 ### KOSATKA (Submarine)
