@@ -98,7 +98,7 @@ Table of Contents,
   * Mobile Operations Center (Bunker)
 * **LAGO ZANCUDO FACILITY**
   * Avenger (At Lago Zancudo Facility)
-* **NIGHTCLUB LEVEL B5**  
+* **NIGHTCLUB LEVEL B5**
   * Terrobyte (At Nightclub Garage B5)
     * Request Oppressor Mk II
 * **UNDER WATER**
@@ -113,7 +113,7 @@ Table of Contents,
 * Weaponized
   * Insurgent Pick-Up (Just call mechanic)
   * Turrented Limo
-* Military  
+* Military
   * Rhino Tank
   * Vetir
 * Helicopter
