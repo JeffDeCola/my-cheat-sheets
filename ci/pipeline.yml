@@ -51,6 +51,7 @@ resources:
 
 - name: my-cheat-sheets
   type: git
+  icon: github
   source:
     #uri: https://github.com/jeffdecola/my-cheat-sheets
     uri: git@github.com:jeffdecola/my-cheat-sheets.git
@@ -58,10 +59,12 @@ resources:
     private_key: {{git_private_key}}
 - name: resource-slack-alert
   type: slack-notification
+  icon: slack
   source:
     url: {{slack_url}} 
 - name: resource-repo-status 
   type: github-status
+  icon: github
   source:
     repository: jeffdecola/my-cheat-sheets 
     access_token: {{repo_github_token}}
