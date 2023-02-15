@@ -19,8 +19,8 @@ version: "2"
 plugins:
   markdownlint:
     enabled: true
-    # ... IGNORE INLINE HTML ...
     checks:
+      # ... IGNORE INLINE HTML ...
       MD033:
         enabled: false
   shellcheck:
