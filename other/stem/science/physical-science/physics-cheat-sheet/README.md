@@ -6,54 +6,46 @@
 
 `physics` _helps describe everything around us._
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#overview)
-  * [MAIN BRANCHES OF PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#main-branches-of-physics)
-  * [IMPORTANT DISCOVERIES IN PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#important-discoveries-in-physics)
-* [PHYSICAL QUANTITIES & UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#physical-quantities--units)
-  * [FUNDAMENTAL UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#fundamental-units)
-  * [NOTABLE DERIVED UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#notable-derived-units)
-* [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/physical-science/physics-cheat-sheet#a-quick-discussion-on-objects-mass--matter)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#overview)
+  * [MAIN BRANCHES OF PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#main-branches-of-physics)
+  * [IMPORTANT DISCOVERIES IN PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#important-discoveries-in-physics)
+* [PHYSICAL QUANTITIES & UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#physical-quantities--units)
+  * [FUNDAMENTAL UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#fundamental-units)
+  * [NOTABLE DERIVED UNITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#notable-derived-units)
+* [A QUICK DISCUSSION ON OBJECTS, MASS & MATTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science/physics-cheat-sheet#a-quick-discussion-on-objects-mass--matter)
 
 These cheat sheets explore the principle concepts of physics as follows,
 
-* [MOTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/motion.md)
+* [MOTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/motion.md)
   * Scalars & Vectors
   * Speed, Velocity & Acceleration
   * Forces
-* [ENERGY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/energy.md)
+* [ENERGY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/energy.md)
   * Work & Power
   * Momentum
   * Thermodynamics
   * Potential Energy
   * Kinetic Energy
-* [WAVES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/waves.md)
-* [ELECTRICITY AND MAGNETISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/electricity-and-magnetism.md)
+* [WAVES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/waves.md)
+* [ELECTRICITY AND MAGNETISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/electricity-and-magnetism.md)
   * General electricity
   * Static electricity
   * Direct current (DC) electricity
   * Alternating current (AC) electricity
   * Magnetism
   * Electromagnetism
-* [LIGHT AND OPTICS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/physical-science/physics-cheat-sheet/light-and-optics.md)
+* [LIGHT AND OPTICS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/light-and-optics.md)
   * Light as a wave
   * Light as a particle
 
-This cheat sheet was built using,
+Documentation and Reference
 
-* LaTex Math Mode equations rendered to images using
-  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
-* Graphs were created in
-  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  repo using the LaTeX graph packages
-
-You can see my
-[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-and
-[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-cheat sheets for more information.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/make-README.sh)
+  uses
+  [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+  to render equations and make this readme
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
@@ -79,14 +71,14 @@ Physics can be subdivided into the following,
 
 ### IMPORTANT DISCOVERIES IN PHYSICS
 
-* [Nicholas Copernicus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
+* [Nicholas Copernicus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
   (1473-1543)
   Discovered that the Earth rotates around the Sun.
-* [Galileo Galilei](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+* [Galileo Galilei](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
   (1564-1642)
   Demonstrated that heavy objects do not fall faster than lighter
   ones in his famous Leaning Tower of Pisa experiment.
-* [Sir Isaac Newton](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
+* [Sir Isaac Newton](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
   (1642-1727)
   Published the three laws of motion and explained how gravity works.
 * `John Dalton`
