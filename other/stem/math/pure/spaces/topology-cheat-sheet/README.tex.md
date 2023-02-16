@@ -4,28 +4,24 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`topology` _tbd._
+_This cheat sheet coming Soon._
 
-This cheat sheet was built using,
+Table of Contents
 
-* LaTex Math Mode equations rendered to images using
-  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
-* Graphs were created in
-  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  repo using the LaTeX graph packages
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/spaces/topology-cheat-sheet#overview)
 
-You can see my
-[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-and
-[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-cheat sheets for more information.
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/math/pure/spaces/topology-cheat-sheet/make-README.sh)
+  uses
+  [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+  to render equations and make this readme
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
-Einstein's famous equation,
+Einsteins famous equation,
 
 $$
 E=mc^2

@@ -1,52 +1,55 @@
 # NOTABLE EQUATIONS CHEAT SHEET
 
-`notable equations` _is my list of beautiful and ground breaking math
-equations._
+_My list of beautiful and ground breaking math equations._
 
-This cheat sheet was built using,
+Table of Contents
 
-* LaTex Math Mode equations rendered to images using
-  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
-* Graphs were created in
-  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  repo using the LaTeX graph packages
+* [APPLIED MATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#applied-math)
+  * [PHYSICS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#physics)
+  * [ELECTRICAL ENGINEERING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#electrical-engineering)
+* [PURE MATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#pure-math)
+  * [CHANGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#changes)
+  * [FOUNDATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#foundations)
+  * [NUMBER SYSTEMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#number-systems)
+  * [SPACES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#spaces)
+  * [STRUCTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/notable-equations/notable-equations-cheat-sheet#structures)
 
-You can see my
-[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-and
-[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-cheat sheets for more information.
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/math/notable-equations/notable-equations-cheat-sheet/make-README.sh)
+  uses
+  [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+  to render equations and make this readme
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## APPLIED MATH
 
 ### PHYSICS
 
-tbd
+_Coming soon._
 
 ### ELECTRICAL ENGINEERING
 
-tbd
+_Coming soon._
 
 ## PURE MATH
 
 ### CHANGES
 
-tbd
+_Coming soon._
 
 ### FOUNDATIONS
 
-tbd
+_Coming soon._
 
 ### NUMBER SYSTEMS
 
-tbd
+_Coming soon._
 
 ### SPACES
 
-tbd
+_Coming soon._
 
 ### STRUCTURES
 
@@ -61,4 +64,4 @@ $$
 Where $m$ is the `slope` of the line and $b$ is the `y-intercept`.
 
 More info in
-[algebra cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#linear-functions-m-is-slope)
+[algebra cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#linear-functions-m-is-slope)

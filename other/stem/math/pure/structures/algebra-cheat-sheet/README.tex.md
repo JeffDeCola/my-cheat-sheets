@@ -1,40 +1,33 @@
 # ALGEBRA CHEAT SHEET
 
-`algebra` _finding out what the unknown is._
+`algebra` _is finding out what the unknown is._
 
-* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#history)
-* [OVERVIEW - THE UNKNOWN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#overview---the-unknown)
-* [VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#variables)
-* [MULTIPLICATION IS IMPLIED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#multiplication-is-implied)
-* [SOLVE SIMPLE EQUATIONS WITH ONE OPERATION (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-one-operation-rearrangement)
-* [SOLVE SIMPLE EQUATIONS WITH TWO OPERATIONS (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-two-operations-rearrangement)
-* [SOLVE SIMPLE EQUATIONS WITH EXPONENTS & ROOTS (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-exponents--roots-rearrangement)
-* [POLYNOMIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#polynomials)
-* [SIMPLIFYING POLYNOMIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#simplifying-polynomials)
-* [DISTRIBUTIVE PROPERTY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#distributive-property)
-* [THE COORDINATE PLANE (2D NUMBER PLANE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#the-coordinate-plane-2d-number-plane)
-* [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#functions)
-  * [LINEAR FUNCTIONS (m is slope)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#linear-functions-m-is-slope)
-  * [QUADRATIC EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#quadratic-equations)
-  * [CUBIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#cubic-functions)
-  * [TRIG FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/mathematics/pure/structures/algebra-cheat-sheet#trig-functions)
+Table of Contents
 
-This cheat sheet was built using,
+* [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#history)
+* [OVERVIEW - THE UNKNOWN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#overview---the-unknown)
+* [VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#variables)
+* [MULTIPLICATION IS IMPLIED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#multiplication-is-implied)
+* [SOLVE SIMPLE EQUATIONS WITH ONE OPERATION (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-one-operation-rearrangement)
+* [SOLVE SIMPLE EQUATIONS WITH TWO OPERATIONS (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-two-operations-rearrangement)
+* [SOLVE SIMPLE EQUATIONS WITH EXPONENTS & ROOTS (REARRANGEMENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#solve-simple-equations-with-exponents--roots-rearrangement)
+* [POLYNOMIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#polynomials)
+* [SIMPLIFYING POLYNOMIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#simplifying-polynomials)
+* [DISTRIBUTIVE PROPERTY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#distributive-property)
+* [THE COORDINATE PLANE (2D NUMBER PLANE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#the-coordinate-plane-2d-number-plane)
+* [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#functions)
+  * [LINEAR FUNCTIONS (m is slope)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#linear-functions-m-is-slope)
+  * [QUADRATIC EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#quadratic-equations)
+  * [CUBIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#cubic-functions)
+  * [TRIG FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#trig-functions)
+Documentation and Reference
 
-* LaTeX Math Mode equations rendered to images using
-  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
-* Graphs were created in
-  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  repo using the LaTeX graph packages
-
-You can see my
-[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-and
-[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-cheat sheets for more information.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/math/pure/structures/algebra-cheat-sheet/make-README.sh)
+  uses
+  [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+  to render equations and make this readme
+* This repos
+  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## HISTORY
 
