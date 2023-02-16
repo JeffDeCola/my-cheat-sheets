@@ -20,6 +20,7 @@ Table of Contents
   * [QUADRATIC EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#quadratic-equations)
   * [CUBIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#cubic-functions)
   * [TRIG FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#trig-functions)
+
 Documentation and Reference
 
 * [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/math/pure/structures/algebra-cheat-sheet/make-README.sh)
