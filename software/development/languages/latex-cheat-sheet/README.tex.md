@@ -9,7 +9,7 @@ tl;dr,
 python -m readme2tex --usepackage "xcolor" --readme README.tex.md --output README.md --nocdn
 ```
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#overview)
 * [LaTeX .tex FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#latex-tex-file)
@@ -25,9 +25,9 @@ Table of Contents,
 * [readme2tex INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#readme2tex-install)
 * [VISUAL STUDIO CODE APP - MARKDOWN + MATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet#visual-studio-code-app---markdown--math)
 
-Documentation and reference,
+Documentation and Reference
 
-* [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
+* [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
 
 [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
