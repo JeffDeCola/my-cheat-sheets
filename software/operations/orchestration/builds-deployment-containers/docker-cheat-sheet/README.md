@@ -29,6 +29,7 @@ Table of Contents,
 
 * [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-docker-container)
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#install)
+* [DOCKER DESKTOP ON WINDOWS WITH WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-desktop-on-windows-with-wsl2)
 * [DOCKER RUN (RUN A SINGLE CONTAINER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-run-run-a-single-container)
 * [DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-compose-run-multiple-containers)
 * [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#images)
@@ -87,6 +88,33 @@ To mange docker as non-root, add yourself to the docker group,
 
 ```bash
 sudo usermod -aG docker $USER
+```
+
+## DOCKER DESKTOP ON WINDOWS WITH WSL2
+
+Moving data hogging docker data to external drive.
+
+STEP 1 - Shutdown docker desktop via menu.
+
+STEP 2 - Shut down wsl via cmd.
+
+```cmd
+wsl --shutdown
+```
+
+STEP 3 - DELETE docker director in `C:\Users\jeffry\AppData\Local\Docker`
+and `C:\ProgramData\Docker`.
+
+STEP 4 - Link AppData to external location via cmd.
+
+```cmd
+mklink /j "C:\Users\jeffry\AppData\Local\Docker" "F:\Docker\AppData"
+```
+
+STEP 5 - Link ProgramData to external location via cmd.
+
+```cnd
+mklink /j "C:\ProgramData\Docker" "F:\Docker\ProgramData"
 ```
 
 ## DOCKER RUN (RUN A SINGLE CONTAINER)
