@@ -185,4 +185,4 @@ vagrant box remove ubuntu/jeffs-ubuntu
 
 An illustration of vagrant, docker and packer tools,
 
-![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)
+![IMAGE -  vagrant docker packer - IMAGE](../../../../docs/pics/vagrant-docker-packer.jpg)
