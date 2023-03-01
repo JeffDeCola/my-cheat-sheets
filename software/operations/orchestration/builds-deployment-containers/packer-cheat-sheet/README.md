@@ -12,6 +12,7 @@ Table of Contents,
 * [TEMPLATE FILE (CONFIGURATION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#template-file-configuration)
 * [VALIDATE THE TEMPLATE FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#validate-the-template-file)
 * [RUN THE TEMPLATE FILE (BUILD THE IMAGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#run-the-template-file-build-the-image)
+* [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#vagrant-docker-and-packer)
 
 Documentation and reference,
 
@@ -228,3 +229,9 @@ template file.
 
 Again, to see a working example, go to my repo
 [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
+
+## VAGRANT, DOCKER AND PACKER
+
+An illustration of vagrant, docker and packer tools,
+
+![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)

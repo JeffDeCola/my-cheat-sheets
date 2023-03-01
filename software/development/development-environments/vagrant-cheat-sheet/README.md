@@ -31,6 +31,7 @@ Table of Contents,
 * [SSH INTO IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#ssh-into-it)
 * [CREATING A VAGRANT BOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#creating-a-vagrant-box)
 * [SOME BASIC COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#some-basic-commands)
+* [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet#vagrant-docker-and-packer)
 
 Documentation and reference,
 
@@ -179,3 +180,9 @@ Destroy box on your machine,
 ```bash
 vagrant box remove ubuntu/jeffs-ubuntu
 ```
+
+## VAGRANT, DOCKER AND PACKER
+
+An illustration of vagrant, docker and packer tools,
+
+![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)
