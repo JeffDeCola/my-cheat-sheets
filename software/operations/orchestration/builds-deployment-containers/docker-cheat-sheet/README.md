@@ -45,6 +45,7 @@ Table of Contents,
   * [RUN INTERACTIVE CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#run-interactive-container)
   * [GET A SHELL PROMPT INSIDE A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#get-a-shell-prompt-inside-a-running-container)
   * [CHECK THE STDOUT OF A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-stdout-of-a-running-container)
+* [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#vagrant-docker-and-packer)
 
 Documentation and reference,
 
@@ -360,3 +361,9 @@ docker logs -f <container_name>
 ```
 
 `-f` switch is check forever.
+
+## VAGRANT, DOCKER AND PACKER
+
+An illustration of vagrant, docker and packer tools,
+
+![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)
