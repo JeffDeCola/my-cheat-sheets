@@ -1,20 +1,22 @@
 # PACKER CHEAT SHEET
 
-`packer` _is a tool from HashiCorp that automates the building
-of custom machine `images` (for multiple platforms) from a single
-configuration file._
+_Packer is useful for the automated BUILD of a custom image._
 
-Table of Contents,
+Table of Contents
 
 * [AUTOMATES MACHINE IMAGE BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#automates-machine-image-builds)
 * [INSTALL PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#install-packer)
 * [HOW PACKER CREATES YOUR CUSTOM IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#how-packer-creates-your-custom-image)
 * [TEMPLATE FILE (CONFIGURATION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#template-file-configuration)
+  * [BASIC FORMAT OF A TEMPLATE FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#basic-format-of-a-template-file)
+  * [VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#variables)
+  * [BUILDERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#builders)
+  * [PROVISIONERS (ADD YOUR STUFF)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#provisioners-add-your-stuff)
 * [VALIDATE THE TEMPLATE FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#validate-the-template-file)
 * [RUN THE TEMPLATE FILE (BUILD THE IMAGE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#run-the-template-file-build-the-image)
 * [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet#vagrant-docker-and-packer)
 
-Documentation and reference,
+Documentation and Reference
 
 * My cheat sheet to
   [create a custom image using packer on gce](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md)
@@ -22,8 +24,6 @@ Documentation and reference,
 * [Packer documentation](https://www.packer.io/)
 * I use packer on my repo
   [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## AUTOMATES MACHINE IMAGE BUILDS
 
@@ -75,7 +75,7 @@ packer version
 
 ## HOW PACKER CREATES YOUR CUSTOM IMAGE
 
-Its actually pretty straight forward,
+It's actually pretty straight forward,
 
 * Authorize Packer with `gce`.
 * Starts up a temporary VM `instance`  and temporary `boot disk`

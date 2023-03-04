@@ -1,12 +1,14 @@
 # DOCKER CHEAT SHEET
 
-`docker` _is a virtual linux container. DockerHub is an online
-resource to keep docker images (that you can pull)._
+Docker is useful for the automated BUILD of a docker custom image.
+Docker is also useful for the automated DEPLOY of a docker
+custom image in an loosely isolated environment._
 
 tl;dr,
 
 ```bash
 docker version
+
 # IMAGES
 docker run --name hello-go -dit jeffdecola/hello-go-deploy-gce
 docker images
@@ -14,18 +16,21 @@ docker rmi hello-go
 docker push jeffdecola/hello-go
 docker pull jeffdecola/hello-go
 docker build -t jeffdecola/hello-go .
+
 # CONTAINERS
 docker ps
 docker start hello-go
 docker stop hello-go
 docker rm $(docker ps -a -q)
+
 # CONNECT
 docker exec -t -i hello-go /bin/bash
+
 # SEE OUTPUT
 docker logs -f hello-go
 ```
 
-Table of Contents,
+Table of Contents
 
 * [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-docker-container)
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#install)
@@ -33,7 +38,7 @@ Table of Contents,
 * [DOCKER RUN (RUN A SINGLE CONTAINER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-run-run-a-single-container)
 * [DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-compose-run-multiple-containers)
 * [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#images)
-  * [PULL IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#pull-images)
+  * [PULL DOCKER IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#pull-docker-images)
   * [CHECK THE HISTORY OF AN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-history-of-an-image)
   * [CREATE IMAGE USING DOCKERFILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#create-image-using-dockerfile)
   * [COMPILE YOUR CODE INSIDE BASE IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#compile-your-code-inside-base-image)
@@ -47,12 +52,10 @@ Table of Contents,
   * [CHECK THE STDOUT OF A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-stdout-of-a-running-container)
 * [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#vagrant-docker-and-packer)
 
-Documentation and reference,
+Documentation and Reference
 
 * [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
 * My images at [DockerHub](https://hub.docker.com/u/jeffdecola/)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
 
@@ -93,7 +96,7 @@ sudo usermod -aG docker $USER
 
 ## DOCKER DESKTOP ON WINDOWS WITH WSL2
 
-Moving data hogging docker data to external drive.
+How to Move your data hogging docker data to external drive.
 
 STEP 1 - Shutdown docker desktop via menu.
 
@@ -146,9 +149,7 @@ Here is an example of using docker-compose to
 
 ## IMAGES
 
-An image is ready to run.
-
-List images,
+List your docker images,
 
 ```bash
 docker images
@@ -157,7 +158,7 @@ docker images
 Delete an image,
 
 ```bash
-docker rmi IMAGE-ID
+docker rmi {IMAGE-ID}
 ```
 
 Delete all images (-f is force),
@@ -167,7 +168,7 @@ docker rmi $(docker images -q)
 docker rmi -f $(docker images -q)
 ```
 
-### PULL IMAGES
+### PULL DOCKER IMAGES
 
 Get an image from [hub.docker.com](https://hub.docker.com/explore/),
 
@@ -246,9 +247,6 @@ Now that you compiled your code and created an image its just too big.
 You can use multi-stage to place your app/service in a smaller image ~`13MB`,
 
 ![IMAGE - multi-stage-build-to-keep-image-small - IMAGE](../../../../../docs/pics/multi-stage-build-to-keep-image-small.jpg)
-
-For an example, refer to my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gce/tree/master/example-01/build-push).
 
 ### PUSH IMAGE TO DOCKERHUB
 
