@@ -260,7 +260,7 @@ docker push jeffdecola/hello-go
 
 A container is a running image.
 
-List of Running Containers
+List of Running Containers,
 
 ```bash
 docker ps
