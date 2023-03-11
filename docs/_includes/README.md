@@ -305,7 +305,7 @@ _Other cheat sheets I'm interested in._
 
 ### RANDOM THINGS
 
-* [famous quotes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/famous-quotes-cheat-sheet)
+* [famous quotes!!](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/famous-quotes-cheat-sheet)
 * [gta v my stuff](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet)
 * [igt g23 and g23v2 upright video slot machine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet)
 * [rca victor portable record player 3VC82](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/rca-victor-portable-record-player-3VC82-cheat-sheet)
