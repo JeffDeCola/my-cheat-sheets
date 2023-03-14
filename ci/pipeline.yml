@@ -1,70 +1,93 @@
 # my-cheat-sheets pipeline.yml
 
+#------------------------------------------------------------------------------------------
 jobs:
 
+#**********************************************
 - name: job-readme-github-pages
+#**********************************************
   plan:
-  - get: my-cheat-sheets
-    trigger: true
-  - put: resource-slack-alert
-    params:
-      channel: '#jeff-builds'
-      text: "From my-cheat-sheets: STARTED job-readme-github-pages in concourse ci."
-  - put: resource-repo-status
-    params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-cheat-sheets" }
-  - task: task-readme-github-pages
-    file: my-cheat-sheets/ci/tasks/task-readme-github-pages.yml
-    on_success:
-      do:
-      - put: my-cheat-sheets
-        params:
-          repository: my-cheat-sheets-updated  
-      - put: resource-slack-alert
-        params:
-          channel: '#jeff-builds'
-          text: "From my-cheat-sheets: PASSED job-readme-github-pages in concourse ci."
-      - put: resource-repo-status
-        params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
-    on_failure:
-      do:
-      - put: resource-slack-alert
-        params:
-          channel: '#jeff-builds'
-          text: "From my-cheat-sheets: FAILED job-readme-github-pages in concourse ci."
-      - put: resource-repo-status
-        params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
 
+    # GET REPO FROM GITHUB
+    - get: my-cheat-sheets
+      trigger: true
+    # SEND SLACK ALERT  
+    - put: resource-slack-alert
+      params:
+        channel: '#jeff-builds'
+        text: "From my-cheat-sheets: STARTED job-readme-github-pages in concourse ci."
+    # SEND GITHUB STATUS
+    - put: resource-repo-status
+      params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-cheat-sheets" }    
+    
+    # RUN TASK IN REPO USING ALPINE DOCKER IMAGE
+    - task: task-readme-github-pages
+      file: my-cheat-sheets/ci/tasks/task-readme-github-pages.yml
+      
+      # TASK SUCCESS
+      on_success:
+        do:
+          # PUSH NEW REPO TO GITHUB
+          - put: my-cheat-sheets
+            params:
+              repository: my-cheat-sheets-updated  
+          # SEND SLACK ALERT  
+          - put: resource-slack-alert
+            params:
+              channel: '#jeff-builds'
+              text: "From my-cheat-sheets: PASSED job-readme-github-pages in concourse ci."
+          # SEND GITHUB STATUS
+          - put: resource-repo-status
+            params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
+      
+      # TASK FAILURE   
+      on_failure:
+        do:
+          # SEND SLACK ALERT  
+          - put: resource-slack-alert
+            params:
+              channel: '#jeff-builds'
+              text: "From my-cheat-sheets: FAILED job-readme-github-pages in concourse ci."
+          # SEND GITHUB STATUS
+          - put: resource-repo-status
+            params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-cheat-sheets" }
+
+#------------------------------------------------------------------------------------------
 resource_types:
 
-- name: slack-notification
-  type: docker-image
-  source:
-    repository: cfcommunity/slack-notification-resource
-    tag: latest
-- name: github-status
-  type: docker-image
-  source:
-    repository: dpb587/github-status-resource
-    tag: master
+  - name: slack-notification
+    type: docker-image
+    source:
+      repository: cfcommunity/slack-notification-resource
+      tag: latest
 
+  - name: github-status
+    type: docker-image
+    source:
+      repository: dpb587/github-status-resource
+      tag: master
+
+#------------------------------------------------------------------------------------------
 resources:
 
-- name: my-cheat-sheets
-  type: git
-  icon: github
-  source:
-    #uri: https://github.com/jeffdecola/my-cheat-sheets
-    uri: git@github.com:jeffdecola/my-cheat-sheets.git
-    branch: master
-    private_key: {{git_private_key}}
-- name: resource-slack-alert
-  type: slack-notification
-  icon: slack
-  source:
-    url: {{slack_url}} 
-- name: resource-repo-status 
-  type: github-status
-  icon: github
-  source:
-    repository: jeffdecola/my-cheat-sheets 
-    access_token: {{repo_github_token}}
+  - name: my-cheat-sheets
+    type: git
+    icon: github
+    source:
+      #uri: https://github.com/jeffdecola/my-cheat-sheets
+      uri: git@github.com:jeffdecola/my-cheat-sheets.git
+      branch: master
+      private_key: ((git_private_key))
+
+  - name: resource-slack-alert
+    type: slack-notification
+    icon: slack
+    source:
+      url: ((slack_url)) 
+
+  - name: resource-repo-status 
+    type: github-status
+    icon: github
+    source:
+      repository: jeffdecola/my-cheat-sheets 
+      access_token: ((repo_github_token))
