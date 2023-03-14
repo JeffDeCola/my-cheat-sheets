@@ -9,10 +9,10 @@ image_resource:
     tag: 1.20.1
 
 inputs:
-- name: my-cheat-sheets
+  - name: my-cheat-sheets
 
 outputs:
-- name: my-cheat-sheets-updated
+  - name: my-cheat-sheets-updated
 
 run:
   path: ./my-cheat-sheets/ci/scripts/readme-github-pages.sh
