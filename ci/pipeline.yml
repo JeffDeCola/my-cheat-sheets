@@ -85,8 +85,8 @@ resources:
     source:
       url: ((slack_url)) 
 
-  - name: resource-repo-status-clone 
-    type: github-status-clone
+  - name: resource-repo-status
+    type: github-status
     icon: github
     source:
       repository: jeffdecola/my-cheat-sheets 
