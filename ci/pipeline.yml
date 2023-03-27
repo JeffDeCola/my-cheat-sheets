@@ -91,3 +91,4 @@ resources:
     source:
       repository: jeffdecola/my-cheat-sheets 
       access_token: ((repo_github_token))
+      branch: master
