@@ -64,8 +64,8 @@ resource_types:
   - name: github-status
     type: docker-image
     source:
-      repository: dpb587/github-status-resource
-      tag: master
+      repository: jeffdecola/github-status-resource-clone
+      tag: v0.0.2
 
 #------------------------------------------------------------------------------------------
 resources:
@@ -85,8 +85,8 @@ resources:
     source:
       url: ((slack_url)) 
 
-  - name: resource-repo-status 
-    type: github-status
+  - name: resource-repo-status-clone 
+    type: github-status-clone
     icon: github
     source:
       repository: jeffdecola/my-cheat-sheets 
