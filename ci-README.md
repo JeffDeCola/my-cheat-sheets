@@ -32,7 +32,7 @@ The concourse `resources types` are,
   [docker image](https://hub.docker.com/r/cfcommunity/slack-notification-resource)
   that will notify slack on your progress
 * `resource-repo-status` uses a resource type
-  [docker image](https://hub.docker.com/r/dpb587/github-status-resource)
+  [docker image](https://hub.docker.com/r/jeffdecola/github-status-resource-clone)
   that will update your git status for that particular commit
 
 For more information on using concourse for continuous integration,
