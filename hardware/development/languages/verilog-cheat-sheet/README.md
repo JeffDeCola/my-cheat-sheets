@@ -2,7 +2,7 @@
 
 _Verilog is a Hardware Description Language (HDL) used to describe a digital system._
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW & HDL LEVELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#overview--hdl-levels)
 * [BASIC SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#basic-syntax)
@@ -22,17 +22,19 @@ Table of Contents,
   * [TASKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#tasks)
   * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet#functions)
 
-Documentation and reference,
+Documentation and Reference
 
+* [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 * [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
-  is a free verilog simulator and synthesis tool
+  is a free tool for simulation and synthesis
 * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
-  is a free waveform viewer
-* VS Code [Verilog HDL Extension](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
+  is a free HDL waveform viewer
+* [xilinx vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
+  is a complete IDE for synthesis and analysis of HDL designs
+* [digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
+  is a FPGA development board
+* vs code [verilog HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
  for syntax highlighting and linting
-* Check out my repo [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW & HDL LEVELS
 

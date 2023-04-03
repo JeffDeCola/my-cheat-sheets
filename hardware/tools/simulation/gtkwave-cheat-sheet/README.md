@@ -1,8 +1,8 @@
 # GTKWAVE CHEAT SHEET
 
-_`GTKWave` is a free HDL waveform viewer_
+_GTKWave is a free HDL waveform viewer._
 
-Table of Contents,
+Table of Contents
 
 * [INSTALL GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet#install-gtkwave)
   * [WINDOWS & macOS (BINARY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet#windows--macos-binary)
@@ -11,18 +11,21 @@ Table of Contents,
 * [VCD FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet#vcd-file)
 * [SCRIPT TO OPEN GTKWave VIA SHELL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet#script-to-open-gtkwave-via-shell)
 
-Documentation and reference,
+Documentation and Reference
 
-* [GTKWave home page](http://gtkwave.sourceforge.net/) Home page
 * GTKWave
-  [User's Guide](http://gtkwave.sourceforge.net/gtkwave.pdf)
-* My cheat sheet on
-  [Verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
-* My verilog example [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
+  [home page](http://gtkwave.sourceforge.net/)
+* GTKWave
+  [user's guide](http://gtkwave.sourceforge.net/gtkwave.pdf)
+* [verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
+  cheat sheet
+* [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 * [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
-  free synthesis and simulation tool
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+  is a free tool for simulation and synthesis
+* [xilinx vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
+  is a complete IDE for synthesis and analysis of HDL designs
+* [digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
+  is a FPGA development board
 
 ## INSTALL GTKWave
 
