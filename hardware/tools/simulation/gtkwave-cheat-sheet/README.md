@@ -27,7 +27,7 @@ Documentation and Reference
 * [digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
   is a FPGA development board
 
-## INSTALL GTKWave
+## INSTALL
 
 ### WINDOWS & macOS (BINARY)
 
@@ -42,19 +42,22 @@ Grab source from from
 You may need to install some packages,
 
 ```bash
-sudo apt-get -y install tk-dev tcl-dev liblzma-dev gtk+2.0 gperf
+sudo apt-get -y install tk-dev tcl-dev liblzma-dev gtk+2.0 gperf libbz2-dev
+wget https://sourceforge.net/projects/gtkwave/files/gtkwave-gtk3-3.3.115/gtkwave-gtk3-3.3.115.tar.gz
+tar -xvf gtkwave-gtk3-3.3.115.tar.gz
+rm -rf gtkwave-gtk3-3.3.115.tar.g
+cd gtkwave-gtk3-3.3.115
 ./configure
 make
-su
+sudo su
 make install
 exit
 which gtkwave
 gtkwave -v
 ```
 
-## CHECK INSTALL
-
-Just open up the executable.
+If you are using WSL2 on Windows, you need to run an xserver.
+This is out of the scope of this cheat sheet.
 
 ## VCD FILE
 
