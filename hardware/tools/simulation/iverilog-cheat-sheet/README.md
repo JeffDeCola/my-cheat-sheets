@@ -1,9 +1,8 @@
 # IVERILOG CHEAT SHEET
 
-_How to install and check `iverilog` (Icaris Verilog), a tool for
-simulation and synthesis._
+_iverilog (icaris verilog) is a free tool for simulation and synthesis._
 
-Table of Contents,
+Table of Contents
 
 * [INSTALL IVERILOG](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-iverilog)
   * [INSTALL ON LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-linux)
@@ -13,23 +12,25 @@ Table of Contents,
 * [SIMPLE EXAMPLE (NO TESTBENCH OR WAVEFORM FILE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-no-testbench-or-waveform-file)
 * [SIMPLE EXAMPLE WITH TESTBENCH AND WAVEFORM .VCD FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#simple-example-with-testbench-and-waveform-vcd-file)
 
-Documentation and reference,
+Documentation and Reference
 
-* Icarus Verilog
-  [Home page](http://iverilog.icarus.com/)
-* Icarus Verilog
-  [Repo](  https://github.com/steveicarus/iverilog)
-* Icarus Verilog
+* iverilog
+  [home page](http://iverilog.icarus.com/)
+* iverilog
+  [repo](  https://github.com/steveicarus/iverilog)
+* iverilog
   [Installation guide](https://iverilog.fandom.com/wiki/Installation_Guide)
-* My cheat sheet on
-  [Verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
-* My verilog example [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
+* [verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
+  cheat sheet
+* [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
 * [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
-  is a free waveform viewer
+  is a free HDL waveform viewer
+* [xilinx vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
+  is a complete IDE for synthesis and analysis of HDL designs
+* [digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
+  is a FPGA development board
   
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
-## INSTALL IVERILOG
+## INSTALL
 
 ### INSTALL ON LINUX
 

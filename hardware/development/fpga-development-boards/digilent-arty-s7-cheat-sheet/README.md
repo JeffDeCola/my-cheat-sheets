@@ -1,21 +1,24 @@
 # DIGILENT ARTY-S7 CHEAT SHEET
 
-_A FPGA development board.  Just some of my notes on this board._
+_Digilent ARTY-S7 is a FPGA development board._
 
-Table of Contents,
+Table of Contents
 
 * [SOME SPECS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#some-specs)
 * [PROGRAM ONBOARD FLASH WITH YOUR DESIGN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#program-onboard-flash-with-your-design)
 * [INPUT & OUTPUT USING PMOD PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#input--output-using-pmod-pins)
 
-Documentation and reference,
+Documentation and Reference
 
-* [Digilent ARTY-S7](https://reference.digilentinc.com/reference/programmable-logic/arty-s7/start)
-  home page
-* [Xilinx Vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
-* My verilog examples repo [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [verilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/languages/verilog-cheat-sheet)
+  cheat sheet
+* [my-verilog-examples](https://github.com/JeffDeCola/my-verilog-examples)
+* [iverilog](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet)
+  is a free tool for simulation and synthesis
+* [GTKWave](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/gtkwave-cheat-sheet)
+  is a free HDL waveform viewer
+* [xilinx vivado](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet)
+  is a complete IDE for synthesis and analysis of HDL designs
 
 ## SOME SPECS
 
