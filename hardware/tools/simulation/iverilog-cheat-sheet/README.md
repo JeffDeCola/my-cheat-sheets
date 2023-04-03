@@ -67,12 +67,13 @@ I needed a few things,
 sudo apt-get install -y autoconf
 sudo apt-get install -y gperf
 sudo apt-get install -y flex
+sudo apt-get install -y bison
 ```
 
 Build configuration files,
 
 ```bash
-cd steveicarus/iverilog
+cd iverilog
 sh autoconf.sh
 ```
 
