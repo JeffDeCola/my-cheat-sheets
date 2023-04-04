@@ -133,6 +133,7 @@ Documentation and Reference
   * WINDOWS
 
     * [wsl2 (bash on ubuntu on windows)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet)
+    * [wls2 with xserver](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wls2-with-xserver-cheat-sheet)
 
 * SOFTWARE ARCHITECTURES
 
