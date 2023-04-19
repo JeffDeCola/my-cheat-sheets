@@ -1,6 +1,6 @@
 # WSL2 - BASH ON UBUNTU ON WINDOWS CHEAT SHEET
 
-_`wsl2 allows you to install linux on a windows machine._
+_wsl2 allows you to install linux on a windows machine._
 
 Table of Contents
 
