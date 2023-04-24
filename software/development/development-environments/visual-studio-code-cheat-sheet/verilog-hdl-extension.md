@@ -1,8 +1,8 @@
 # VS CODE VERILOG HDL EXTENSION CHEAT SHEET
 
-_A handy extension for Syntax Highlighting and Linting._
+_A handy extension for syntax highlighting, formatting and linting._
 
-Documentation and reference,
+Documentation and Reference
 
 * [VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=mshr-h.VerilogHDL&ssr=false#overview)
 * My cheat sheet on
