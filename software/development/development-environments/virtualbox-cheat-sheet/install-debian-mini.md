@@ -1,11 +1,26 @@
 # INSTALL DEBIAN MINI CHEAT SHEET
 
-_Basis steps to install Debian distribution using bash without a desktop on VirtualBox._
+_Basic steps to install a Debian distribution using bash without a desktop on VirtualBox._
 
 Table of Contents
 
-* [DEBIAN 11 MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#debian-11-mini)
+* [INSTALL DEBIAN 11 MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#install-debian-11-mini)
+  * [DOWNLOAD .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#download-iso-image)
+  * [VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#virtualbox---create-new-vm-and-attach-iso-image)
+  * [START VM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#start-vm)
+  * [Q & A](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#q--a)
+  * [VIRTUALBOX - REMOVE .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#virtualbox---remove-iso-image)
+* [FIRST LOGIN AS JEFF & CONFIGURE AS ROOT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#first-login-as-jeff--configure-as-root)
+  * [CONFIGURE AS ROOT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#configure-as-root)
+  * [CONFIGURE AS JEFF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#configure-as-jeff)
+* [MORE SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#more-settings)
+  * [SHARED SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#shared-settings)
+  * [VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#virtualbox---remove-guest-additionsiso-image)
+  * [HOME NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#home-network)
 * [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#optional-installs--configurations)
+  * [CONNECT TO GITHUB AND GET YOUR REPOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#connect-to-github-and-get-your-repos)
+  * [GIT AWARE PROMPT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#git-aware-prompt)
+  * [SSH LOGIN VIA KEYS NOT PASSWORD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md#ssh-login-via-keys-not-password)
 
 Documentation and Reference
 
@@ -14,17 +29,17 @@ Documentation and Reference
 * [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
 * [Common debian distros](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-distributions-cheat-sheet)
 
-## DEBIAN 11 MINI
+## INSTALL DEBIAN 11 MINI
 
 Sadly, you must type the following in the command line. You can't copy/paste into terminal.
 Yup, it stinks.
 
-**DOWNLOAD .iso IMAGE**
+### DOWNLOAD .iso IMAGE
 
 * GET .iso IMAGE
   * Download image from [official website](https://www.debian.org/distrib/)
 
-**VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
+### VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE
 
 * NEW VM
   * Name "VB-Debian-11-Mini"
@@ -44,14 +59,14 @@ Yup, it stinks.
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**START VM**
+### START VM
 
 * **START VM**
 * INSTALL
   * Use "Install" (non graph)
 
-**Q & A**
-  
+### Q & A
+
 * ANSWER QUESTIONS  
   * root password
   * Hostname "VB-Debian-11-Mini"
@@ -62,14 +77,16 @@ Yup, it stinks.
   * Make sure you don't pick a desktop (use space bar to uncheck)
   * etc...
 
-**VIRTUALBOX - REMOVE .iso IMAGE**
+### VIRTUALBOX - REMOVE .iso IMAGE
 
 * **CLOSE VM**
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 * **START VM**
 
-**FIRST LOGIN AS JEFF & CONFIGURE AS ROOT**
+## FIRST LOGIN AS JEFF & CONFIGURE AS ROOT
+
+### CONFIGURE AS ROOT
 
 * **START VM**
 * LOGIN
@@ -84,7 +101,7 @@ Yup, it stinks.
 * EXIT ROOT
   * `exit`
 
-**CONFIGURE AS JEFF**
+### CONFIGURE AS JEFF
 
 * CONFIGURE PROMPT
   * nano .bashrc uncomment `force_color_prompt=yes"`  
@@ -111,7 +128,9 @@ Yup, it stinks.
 * CHECK HOSTNAME
   * `hostname`
 
-**SHARED SETTINGS**
+## MORE SETTINGS
+
+### SHARED SETTINGS
 
 * **CLOSE VM**
 * VM MENU - DRAG AND DROP
@@ -132,21 +151,21 @@ Yup, it stinks.
 * CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
   * `sudo ln -sf /media/sf_VB-Debian-11-Mini /home/jeff/shared`
 
-**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+### VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE
 
 * **CLOSE VM**
 * VM SETTINGS
   * Remove guest additions .iso image in Settings -> Storage
 * **START VM**
 
-**YOUR HOME NETWORK**
+### HOME NETWORK
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
 
 ## OPTIONAL INSTALLS & CONFIGURATIONS
 
-**CONNECT TO GITHUB AND GET YOUR REPOS**
+### CONNECT TO GITHUB AND GET YOUR REPOS
 
 * SSH INTO VM
   * It is easier to ssh into the box to copy paste commands
@@ -175,7 +194,7 @@ Yup, it stinks.
   * `cd development`
   * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
 
-**GIT AWARE PROMPT**
+### GIT AWARE PROMPT
 
 * INSTALL
   * I like to use [this](https://github.com/jimeh/git-aware-prompt)
@@ -187,7 +206,7 @@ Yup, it stinks.
   * `source "${GITAWAREPROMPT}/main.sh"`
   * `PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "`
 
-**SSH LOGIN VIA KEYS NOT PASSWORD**
+### SSH LOGIN VIA KEYS NOT PASSWORD
 
 * EDIT sshd_config
   * `sudo nano /etc/ssh/sshd_config`

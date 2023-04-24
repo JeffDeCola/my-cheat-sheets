@@ -1,10 +1,25 @@
 # INSTALL WINDOWS CHEAT SHEET
 
-_Basis steps to install Windows on VirtualBox._
+_Basic steps to install Windows on VirtualBox._
 
-Table of Contents,
+Table of Contents
 
-* [WINDOWS 11 PRO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#windows-11-pro)
+* [INSTALL WINDOWS 11 PRO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#install-windows-11-pro)
+  * [DOWNLOAD .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#download-iso-image)
+  * [VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#virtualbox---create-new-vm-and-attach-iso-image)
+  * [START VM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#start-vm)
+  * [OPEN REGEDIT IN VM (NOT IN HOST)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#open-regedit-in-vm-not-in-host)
+  * [CONTINUE INSTALL AND Q & A](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#continue-install-and-q--a)
+  * [VIRTUALBOX - REMOVE .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#virtualbox---remove-iso-image)
+  * [VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#virtualbox---attach-guest-additionsiso-image)
+* [FIRST LOGIN AS USER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#first-login-as-user)
+  * [LOGIN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#login)
+* [MORE SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#more-settings)
+  * [INSTALL GUEST ADDITIONS ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#install-guest-additions-on-windows)
+  * [SHARED SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#shared-settings)
+  * [DISPLAY (AUTO RESIZE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#display-auto-resize)
+  * [VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#virtualbox---remove-guest-additionsiso-image)
+  * [HOME NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md#home-network)
 
 Documentation and Reference
 
@@ -12,14 +27,14 @@ Documentation and Reference
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
 
-## WINDOWS 11 PRO
+## INSTALL WINDOWS 11 PRO
 
-**DOWNLOAD .iso IMAGE**
+### DOWNLOAD .iso IMAGE
 
 * GET .iso IMAGE
   * Download image from [official website](https://www.microsoft.com/en-us/software-download/windows11)
 
-**VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
+### VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE
 
 * NEW VM
   * Name "VB-Windows-11" (Must be less than 15 characters for Windows Host Name)
@@ -43,13 +58,13 @@ Documentation and Reference
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**START VM**
+### START VM
 
 * **START VM**
 * STOP AT INSTALL NOW
   * Stop when you see "Install Now" Button
 
-**OPEN REGEDIT IN VM (NOT IN HOST)**
+### OPEN REGEDIT IN VM (NOT IN HOST)
 
 * START REGEDIT
   * Click Shift-F10 to bring up cmd shell
@@ -63,13 +78,10 @@ Documentation and Reference
     * "BypassRamCheck"
 * EXIT REGEDIT
 
-**CONTINUE INSTALL**
+### CONTINUE INSTALL AND Q & A
 
 * INSTALL NOW
   * Click "Install Now" button
-
-**Q & A**
-
 * IF IT HANGS
   * Just reboot
 * ANSWER QUESTIONS
@@ -82,23 +94,27 @@ Documentation and Reference
   * etc...
 * **CLOSE VM**
 
-**VIRTUALBOX - REMOVE .iso IMAGE**
+### VIRTUALBOX - REMOVE .iso IMAGE
 
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
-**VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE**
+### VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE
 
 * VM SETTINGS
   * Attach guest additions .iso image in Settings -> Storage
 
-**FIRST LOGIN AS JEFF**
+## FIRST LOGIN AS USER
+
+### LOGIN
 
 * **START VM**
 * LOGIN
   * Login as Jeff DeCola
 
-**INSTALL GUEST ADDITIONS ON WINDOWS**
+## MORE SETTINGS
+
+### INSTALL GUEST ADDITIONS ON WINDOWS
 
 * INSTALL CD FROM VM MENU
   * This is probably not needed
@@ -108,7 +124,7 @@ Documentation and Reference
   * Run `VBoxWindowsAdditions-amd64.exe`
   * When done, it will ask to reboot
 
-**SHARED SETTINGS**
+### SHARED SETTINGS
 
 * **CLOSE VM**
 * VM MENU - DRAG AND DROP
@@ -124,21 +140,21 @@ Documentation and Reference
 * CHECK
   * Will be under network
 
-**DISPLAY (AUTO RESIZE)**  
+### DISPLAY (AUTO RESIZE)
 
 * VM MENU
   * This should now be available
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
 
-**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+### VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE
 
 * **CLOSE VM**
 * VM SETTINGS
   * Remove guest additions .iso image in Settings -> Storage
 * **START VM**
 
-**YOUR HOME NETWORK**
+### HOME NETWORK
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
