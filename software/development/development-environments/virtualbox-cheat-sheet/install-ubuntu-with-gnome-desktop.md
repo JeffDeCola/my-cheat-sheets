@@ -1,11 +1,29 @@
 # INSTALL UBUNTU WITH GNOME DESKTOP CHEAT SHEET
 
-_Basis steps to install Ubuntu distribution using bash with a GNOME desktop on VirtualBox._
+_Basic steps to install an Ubuntu distribution using bash with a GNOME desktop on VirtualBox._
 
-Table of Contents,
+Table of Contents
 
-* [UBUNTU 22.04 LTS WITH GNOME DESKTOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#ubuntu-2204-lts-with-gnome-desktop)
+* [INSTALL UBUNTU 22.04 LTS WITH GNOME DESKTOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#install-ubuntu-2204-lts-with-gnome-desktop)
+  * [DOWNLOAD .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#download-iso-image)
+  * [VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#virtualbox---create-new-vm-and-attach-iso-image)
+  * [START VM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#start-vm)
+  * [Q & A](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#q--a)
+  * [VIRTUALBOX - REMOVE .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#virtualbox---remove-iso-image)
+  * [VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#virtualbox---attach-guest-additionsiso-image)
+* [FIRST LOGIN AS JEFF & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#first-login-as-jeff--configure)
+  * [BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#basic-configuration)
+* [MORE SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#more-settings)
+  * [SHARED SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#shared-settings)
+  * [DISPLAY (AUTO RESIZE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#display-auto-resize)
+  * [VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#virtualbox---remove-guest-additionsiso-image)
+  * [HOME NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#home-network)
 * [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#optional-installs--configurations)
+  * [INSTALL VS CODE AND SYNC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#install-vs-code-and-sync)
+  * [CONNECT TO GITHUB AND GET YOUR REPOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#connect-to-github-and-get-your-repos)
+  * [GIT AWARE PROMPT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#git-aware-prompt)
+  * [SSH LOGIN VIA KEYS NOT PASSWORD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#ssh-login-via-keys-not-password)
+  * [ADD A PRINTER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md#add-a-printer)
 
 Documentation and Reference
 
@@ -14,14 +32,14 @@ Documentation and Reference
 * [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
 * [Common ubuntu distros](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-distributions-cheat-sheet)
 
-## UBUNTU 22.04 LTS WITH GNOME DESKTOP
+## INSTALL UBUNTU 22.04 LTS WITH GNOME DESKTOP
 
-**DOWNLOAD .iso IMAGE**
+### DOWNLOAD .iso IMAGE
 
 * GET .iso IMAGE
   * Download image from [official website](https://ubuntu.com/download/desktop)
 
-**VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
+### VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE
 
 * NEW VM
   * Name "VB-Ubuntu-2204-GNOME"
@@ -41,14 +59,14 @@ Documentation and Reference
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**START VM**
+### START VM
 
 * **START VM**
 * SELECT BOOT
   * Select "Install"
 
-**Q & A**
-  
+### Q & A
+
 * ANSWER QUESTIONS
   * Timezone
   * Hostname "VB-Ubuntu-2204-GNOME"
@@ -56,17 +74,19 @@ Documentation and Reference
   * etc...
 * **CLOSE VM (WHEN IT ASKED TO RESTART)**
 
-**VIRTUALBOX - REMOVE .iso IMAGE**
+### VIRTUALBOX - REMOVE .iso IMAGE
 
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 
-**VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE**
+### VIRTUALBOX - ATTACH GUEST ADDITIONS.iso IMAGE
 
 * VM SETTINGS
   * Attach guest additions .iso image in Settings -> Storage
 
-**FIRST LOGIN AS JEFF & CONFIGURE**
+## FIRST LOGIN AS JEFF & CONFIGURE
+
+### BASIC CONFIGURATION
 
 * **START VM**
 * LOGIN
@@ -95,7 +115,9 @@ Documentation and Reference
 * CHECK HOSTNAME
   * `hostname`
 
-**SHARED SETTINGS**
+## MORE SETTINGS
+
+### SHARED SETTINGS
 
 * **CLOSE VM**
 * VM MENU - DRAG AND DROP
@@ -116,35 +138,35 @@ Documentation and Reference
 * CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
   * `sudo ln -sf /media/sf_VB-Ubuntu-2204-GNOME /home/jeff/shared`
 
-**DISPLAY (AUTO RESIZE)**  
+### DISPLAY (AUTO RESIZE)
 
 * VM MENU
   * This should now be available
   * View->Auto Resize Guest Display
   * Make sure your Host Settings->Display is 200% (Help with native resolution like 4K)
 
-**VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE**
+### VIRTUALBOX - REMOVE GUEST ADDITIONS.iso IMAGE
 
 * **CLOSE VM**
 * VM SETTINGS
   * Remove guest additions .iso image in Settings -> Storage
 * **START VM**
 
-**YOUR HOME NETWORK**
+### HOME NETWORK
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
 
 ## OPTIONAL INSTALLS & CONFIGURATIONS
 
-**INSTALL VS CODE AND SYNC**
+### INSTALL VS CODE AND SYNC
 
 * DOWNLOAD AND INSTALL
   * Download vs Code from browser and install
 * SYNC TO YOUR GITHUB ACCOUNT  
 * COPY/ PAST workspace file from another machine
 
-**CONNECT TO GITHUB AND GET YOUR REPOS**
+### CONNECT TO GITHUB AND GET YOUR REPOS
 
 * SSH INTO VM
   * It is easier to ssh into the box to copy paste commands
@@ -173,7 +195,7 @@ Documentation and Reference
   * `cd development`
   * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
 
-**GIT AWARE PROMPT**
+### GIT AWARE PROMPT
 
 * INSTALL
   * I like to use [this](https://github.com/jimeh/git-aware-prompt)
@@ -185,7 +207,7 @@ Documentation and Reference
   * `source "${GITAWAREPROMPT}/main.sh"`
   * `PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "`
 
-**SSH LOGIN VIA KEYS NOT PASSWORD**
+### SSH LOGIN VIA KEYS NOT PASSWORD
 
 * EDIT sshd_config
   * `sudo nano /etc/ssh/sshd_config`
@@ -200,7 +222,7 @@ Documentation and Reference
   * If you want to ssh into this machine
   * Add public keys from other hosts in `.ssh/authorized_keys`
   
-**ADD A PRINTER**
+### ADD A PRINTER
 
 Pain in the butt and may not work anymore,
 

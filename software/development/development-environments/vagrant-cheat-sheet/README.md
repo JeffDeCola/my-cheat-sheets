@@ -3,7 +3,7 @@
 _Vagrant is a tool from HashiCorp that builds and deploys
 portable development environments._
 
-tl;dr,
+tl;dr
 
 ```bash
 docker version

@@ -1,11 +1,29 @@
 # INSTALL ARCH LINUX CHEAT SHEET
 
-_Basis steps to install Arch Linux using zsh without a desktop on VirtualBox._
+_Basic steps to install Arch Linux using zsh without a desktop on VirtualBox._
 
 Table of Contents
 
-* [ARCH LINUX MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#arch-linux-mini)
+* [INSTALL ARCH LINUX MINI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#install-arch-linux-mini)
+  * [DOWNLOAD .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#download-iso-image)
+  * [VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#virtualbox---create-new-vm-and-attach-iso-image)
+  * [START VM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#start-vm)
+  * [SETUP DISK PARTITION & MOUNT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#setup-disk-partition--mount)
+  * [INSTALL ARCH LINUX BASE SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#install-arch-linux-base-system)
+  * [CONFIGURE SETTINGS ON NEW DRIVE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#configure-settings-on-new-drive)
+  * [ENABLE SERVICES ON NEW DRIVE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#enable-services-on-new-drive)
+  * [BOOT LOADER & EXIT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#boot-loader--exit)
+  * [SHARED SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#shared-settings)
+  * [VIRTUALBOX - REMOVE .iso IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#virtualbox---remove-iso-image)
+* [FIRST BOOT AS ROOT & USER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#first-boot-as-root--user)
+  * [CONFIGURE AS ROOT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#configure-as-root)
+  * [CONFIGURE AS USER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#configure-as-user)
+* [MORE SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#more-settings)
+  * [HOME NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#home-network)
 * [OPTIONAL INSTALLS & CONFIGURATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#optional-installs--configurations)
+  * [CONNECT TO GITHUB AND GET YOUR REPOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#connect-to-github-and-get-your-repos)
+  * [GIT AWARE PROMPT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#git-aware-prompt)
+  * [SSH LOGIN VIA KEYS NOT PASSWORD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md#ssh-login-via-keys-not-password)
 
 Documentation and Reference
 
@@ -13,17 +31,17 @@ Documentation and Reference
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
 * [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
 
-## ARCH LINUX MINI
+## INSTALL ARCH LINUX MINI
 
 Sadly, you must type the following in the command line. You can't copy/paste into terminal.
 Yup, it stinks.
 
-**DOWNLOAD .iso IMAGE**
+### DOWNLOAD .iso IMAGE
 
 * GET .iso IMAGE
   * Download image from [official website](https://archlinux.org/)
 
-**VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE**  
+### VIRTUALBOX - CREATE NEW VM AND ATTACH .iso IMAGE
 
 * NEW VM
   * Name "VB-Arch-Linux-Mini"
@@ -43,7 +61,7 @@ Yup, it stinks.
     * `Bridged Adapter`
     * `Realtek Gaming GbE (GIGabit Ethernet) Family Controller`
 
-**START VM**
+### START VM
 
 * **START VM**
 * SELECT BOOT
@@ -51,7 +69,7 @@ Yup, it stinks.
 * CHECK NETWORK  
   * `ping.google.com`
 
-**SETUP DISK PARTITION & MOUNT**
+### SETUP DISK PARTITION & MOUNT
 
 * PARTITION DISK
   * `fdisk /dev/sda`
@@ -67,7 +85,7 @@ Yup, it stinks.
 * MOUNT NEW DISK
   * `mount /dev/sda1 /mnt`
 
-**INSTALL ARCH LINUX BASE SYSTEM**
+### INSTALL ARCH LINUX BASE SYSTEM
 
 * INSTALL BASE PACKAGES ON /mnt
   * `pacstrap /mnt base base-devel linux linux-firmware linux-headers`
@@ -76,7 +94,7 @@ Yup, it stinks.
 * GENERATE FILESYSTEM TABLE ON /mnt
   * `genfstab -U /mnt >>/mnt/etc/fstab`
 
-**CONFIGURE SETTINGS ON NEW DRIVE**
+### CONFIGURE SETTINGS ON NEW DRIVE
 
 * CHANGE ROOT TO NEW SYSTEM
   * `arch-chroot /mnt`
@@ -103,7 +121,7 @@ Yup, it stinks.
 * CHANGE ROOT PASSWORD
   * `passwd`
 
-**ENABLE SERVICES ON NEW DRIVE**
+### ENABLE SERVICES ON NEW DRIVE
 
 * ENABLE CLIENT DHCP SERVICE
   * `systemctl enable dhcpcd`
@@ -117,7 +135,7 @@ Yup, it stinks.
   * `pacman -S systemd-swap`
   * `systemctl enable systemd-swap`
 
-**BOOT LOADER & EXIT**
+### BOOT LOADER & EXIT
 
 * INSTALL GRUB (A BOOT LOADER)
   * `pacman -S grub os-prober`
@@ -127,7 +145,7 @@ Yup, it stinks.
   * `exit`
   * `umount -R /mnt`
 
-**SHARED SETTINGS**
+### SHARED SETTINGS
 
 * **CLOSE VM**
 * VM MENU - DRAG AND DROP
@@ -148,14 +166,16 @@ Yup, it stinks.
 * CREATE SYMBOLIC LINK IN YOUR HOME DIRECTORY
   * `sudo ln -sf /media/sf_VB-Arch-Linux-Mini /home/jeff/shared`
 
-**VIRTUALBOX - REMOVE .iso IMAGE**
+### VIRTUALBOX - REMOVE .iso IMAGE
 
 * **CLOSE VM**
 * VM SETTINGS  
   * Remove image in Settings -> Storage
 * **START VM**
 
-**FIRST BOOT AS ROOT & CONFIGURE**
+## FIRST BOOT AS ROOT & USER
+
+### CONFIGURE AS ROOT
 
 * LOGIN
   * Login as root
@@ -176,7 +196,7 @@ Yup, it stinks.
   * check with `groups jeff`
 * **CLOSE VM**
 
-**FIRST LOGIN AS JEFF & CONFIGURE**
+### CONFIGURE AS USER
 
 * **START VM**
 * LOGIN
@@ -199,14 +219,16 @@ Yup, it stinks.
   * `sudo pacman -S inetutils`
   * `hostname`
 
-**YOUR HOME NETWORK**
+## MORE SETTINGS
+
+### HOME NETWORK
 
 * BRIDGE MODE
   * Since we are in bridge mode, I like to configure my home router to set the same ip address
 
 ## OPTIONAL INSTALLS & CONFIGURATIONS
 
-**CONNECT TO GITHUB AND GET YOUR REPOS**
+### CONNECT TO GITHUB AND GET YOUR REPOS
 
 * SSH INTO VM
   * It is easier to ssh into the box to copy paste commands
@@ -235,7 +257,7 @@ Yup, it stinks.
   * `cd development`
   * `git clone git@github.com:JeffDeCola/<REPO NAME>.git`
 
-**GIT AWARE PROMPT**
+### GIT AWARE PROMPT
 
 * INSTALL
   * I like to use [this](https://github.com/joeytwiddle/git-aware-prompt) for zsh
@@ -247,7 +269,7 @@ Yup, it stinks.
   * `source "${GITAWAREPROMPT}/main.sh"`
   * `PROMPT='%F{green}%n@%m:%F{cyan}%1~%{$txtcyn%}$git_branch%{$txtred%}$git_unknown_count%{$txtrst%} %F{white}$ '`
 
-**SSH LOGIN VIA KEYS NOT PASSWORD**
+### SSH LOGIN VIA KEYS NOT PASSWORD
 
 * EDIT sshd_config
   * `sudo nano /etc/ssh/sshd_config`
