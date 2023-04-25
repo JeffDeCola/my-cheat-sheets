@@ -1,8 +1,8 @@
 # LaTeX CHEAT SHEET
 
-`LaTeX` _is an advanced markup language used for typesetting._
+_LaTeX is an advanced markup language used for typesetting._
 
-tl;dr,
+tl;dr
 
 ```bash
 # CREATED README.MD FILE
