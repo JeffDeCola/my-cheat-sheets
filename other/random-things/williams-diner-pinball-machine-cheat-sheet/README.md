@@ -57,6 +57,8 @@ Documentation and reference,
 
 There are a lot of fuses.
 
+Size: 3AG (Automotive glass) 1.25 inches with a diameter of 1/4 inch.
+
 ![IMAGE - williams-diner-pinball-machine-fuses.jpg - IMAGE](../../../docs/pics/williams-diner-pinball-machine-fuses.jpg)
 
 ## LAMPS
