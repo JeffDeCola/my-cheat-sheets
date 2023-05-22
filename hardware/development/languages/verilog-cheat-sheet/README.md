@@ -40,10 +40,10 @@ Documentation and Reference
 
 Verilog is used to describe digital system at the,
 
-* Behavioral Level - Good for testing
-* Register Transfer Level (RTL)
-* Gate Level
 * Switch Level
+* Gate/Structural Level
+* Data Flow Level
+* Behavioral Level (Alogorithm)
 
 The word Verilog is a combination of the words `verification` and `logic`
 because the language was first suggested as a simulation and verification tool.
@@ -59,28 +59,26 @@ It has input/output as well as the description of what it does.
 Think of it like a black box.
 
 Here is the structure of some verilog code I coped from my
-[left-shift-register](https://github.com/JeffDeCola/my-verilog-examples/blob/master/sequential-logic/shifters/left-shift-register/left-shift-register.v).
+[left-shift-register](https://github.com/JeffDeCola/my-verilog-examples/blob/master/sequential-logic/shifters/left_shift_register/left_shift_register.v).
 
 ```verilog
-// A 2-bit left-shift-register
-module left_shift_register(
-    input        clk,           // clk
-    input        rst,           // Reset
-    input        d,             // d
-    output [3:0] out            // out
-);
+// A 4-bit left shift register.
 
-// DATA TYPES
-reg [3:0] out;
+module left_shift_register_behavioral (
+    input            clk,           // clk
+    input            rst,           // Reset
+    input            d,             // d
+    output reg [3:0] out);          // out
 
-// SEQUENTIAL CODE
-always @ (posedge clk) begin
-    if (rst) begin
-        out <= 4'b0000;      
-    end else begin
-        out <= {out[2:0], d};
+    // LEFT SHIFT REGISTER
+    // ALWAYS BLOCK with NON-BLOCKING PROCEDURAL ASSIGNMENT STATEMENT
+    always @ (posedge clk) begin
+        if (rst) begin
+            out <= 4'b0000;      
+        end else begin
+            out <= {out[2:0], d};
+        end
     end
-end
 
 endmodule
 ```
@@ -223,7 +221,7 @@ The **Always Block** is used for both combinational and sequential logic.
 Syntax,
 
 ```verilog
-    always @ (sensitivity list) begin
+    always @(sensitivity list) begin
         procedural statement;
     end
 ```
@@ -303,7 +301,7 @@ Let's learn a little more about what you can do.
 
 ### GATE PRIMITIVES
 
-Not really needed, but you can model gate primitives
+You can model gate primitives
 such as `and`, `nand`, `or`, `nor`, `xor`.
 
 For example,
