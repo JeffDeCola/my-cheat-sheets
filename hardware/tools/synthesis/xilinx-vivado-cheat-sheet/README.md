@@ -34,7 +34,7 @@ The constraint file is a .xdc file that tells Vivado what pins to use
 on your FPGA development board.
 
 I use the digilent ARTY-S7 development board and the constraint file is
-[arty-s7-50-constraints.xdc](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet/arty-s7-50-constraints.xdc).
+[arty-s7-50-constraints.xdc](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/hardware/tools/synthesis/xilinx-vivado-cheat-sheet/arty-s7-50-constraints.xdc).
 
 ## VIVADO FLOW
 
