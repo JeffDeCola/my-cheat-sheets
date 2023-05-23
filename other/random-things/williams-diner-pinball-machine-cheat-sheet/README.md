@@ -57,7 +57,12 @@ Documentation and reference,
 
 There are a lot of fuses.
 
-Size: 3AG (Automotive glass) 1.25 inches with a diameter of 1/4 inch.
+For example, Williams part number #5731-09651-00 is a 5 AMP fuse
+
+* Fuse, Size 3AG (0.25" x 1.25"), 5.0 Amp, Slow, 250VAC
+* Littelfuse #313005
+* Bussmann #MDL-5 or #MSL-5
+* Size: 3AG (Automotive glass) 1.25 inches with a diameter of 1/4 inch.
 
 ![IMAGE - williams-diner-pinball-machine-fuses.jpg - IMAGE](../../../docs/pics/williams-diner-pinball-machine-fuses.jpg)
 

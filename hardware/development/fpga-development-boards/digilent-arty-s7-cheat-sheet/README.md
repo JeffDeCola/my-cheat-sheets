@@ -1,10 +1,11 @@
 # DIGILENT ARTY-S7 CHEAT SHEET
 
-_Digilent ARTY-S7 is a FPGA development board._
+_Digilent ARTY S7-50 is a FPGA development board._
 
 Table of Contents
 
 * [SOME SPECS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#some-specs)
+* [POWER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#power)
 * [PROGRAM ONBOARD FLASH WITH YOUR DESIGN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#program-onboard-flash-with-your-design)
 * [INPUT & OUTPUT USING PMOD PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet#input--output-using-pmod-pins)
 
@@ -22,12 +23,29 @@ Documentation and Reference
 
 ## SOME SPECS
 
-A very short list,
+A very short list of the arty S7-50 specs,
 
 * Xilinx Spartan-7 FPGA (Part Number XC7S50-CSGA324)
 * 52,160 logic cells
 * 65,200 flip-flops
+* Block RAM (kbits) 2,700
 * 250 pins
+* Internal clock speeds exceeding 450MHz
+
+![IMAGE - digilent-arty-s7-50.jpg - IMAGE](../../../../docs/pics/digilent-arty-s7-50.jpg)
+
+## POWER
+
+Check your power good led to make sure it's lit.
+
+The USB port can deliver enough power for the vast majority of designs.
+However, a few demanding applications might require more power
+than the USB port can provide.
+
+An external power supply can be used by plugging into Power Jack J13.
+
+The supply must use a coaxial, center-positive 2.1mm (or 2.5mm)
+internal-diameter plug, 12 Volts DC, 3 amps.
 
 ## PROGRAM ONBOARD FLASH WITH YOUR DESIGN
 
