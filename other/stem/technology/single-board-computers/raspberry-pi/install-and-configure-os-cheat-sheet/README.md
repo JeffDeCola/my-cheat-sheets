@@ -335,3 +335,7 @@ Here is the GPIO pin map I got from
 [raspberrypi.org](raspberrypi.org),
 
 ![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../../../docs/pics/raspberry-pi-gpio-pins.png)
+
+What it would look like to connect to another device,
+
+![IMAGE - raspi-connecting.jpg - IMAGE](../../../../../../docs/pics/raspi-connecting.jpg)
