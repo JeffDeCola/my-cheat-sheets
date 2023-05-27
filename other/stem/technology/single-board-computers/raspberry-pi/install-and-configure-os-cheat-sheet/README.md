@@ -1,8 +1,8 @@
 # INSTALL & CONFIGURE OS CHEAT SHEET
 
-`install & configure OS` _distribution on your Raspberry Pi._
+_Install & configure OS distribution on your Raspberry Pi._
 
-Table of Contents,
+Table of Contents
 
 * [DOWNLOAD IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#download-image)
 * [WRITE IMAGE TO microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#write-image-to-microsd-card)
@@ -20,6 +20,7 @@ Table of Contents,
 * [CONNECT TO WIFI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#connect-to-wifi)
 * [INCREASE SWAP SPACE FROM 100M TO 2G](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#increase-swap-space-from-100m-to-2g)
 * [INPUT & OUTPUT USING GPIO PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#input--output-using-gpio-pins)
+* [ADDING 4 GPIO PINS - USING SERIAL PINS FOR GPIO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#adding-4-gpio-pins---using-serial-pins-for-gpio)
 
 Some fun things you can do with your raspberry pi,
 
@@ -339,3 +340,14 @@ Here is the GPIO pin map I got from
 What it would look like to connect to another device,
 
 ![IMAGE - raspi-connecting.jpg - IMAGE](../../../../../../docs/pics/raspi-connecting.jpg)
+
+## ADDING 4 GPIO PINS - USING SERIAL PINS FOR GPIO
+
+To use pins 3, 5, 8 and 10 as GPIO pins, you must disable the serial port
+using raspi-config.
+
+```bash
+sudo raspi-config
+```
+
+Select `Interfacing Options` and then `Serial` and select `No`.
