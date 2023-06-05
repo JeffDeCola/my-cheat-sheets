@@ -1,10 +1,12 @@
 # DOCKER CHEAT SHEET
 
+[![My dockerhub](https://img.shields.io/badge/website-dockerhub-blue)](https://hub.docker.com/u/jeffdecola)
+
 Docker is useful for the automated BUILD of a docker custom image.
 Docker is also useful for the automated DEPLOY of a docker
 custom image in an loosely isolated environment._
 
-tl;dr,
+tl;dr
 
 ```bash
 docker version
@@ -26,36 +28,21 @@ docker rm $(docker ps -a -q)
 # CONNECT
 docker exec -t -i hello-go /bin/bash
 
-# SEE OUTPUT
+# STDIN
+echo 'whatever' | socat EXEC:"docker attach hello-go",pty STDIN
+
+# STDOUT
 docker logs -f hello-go
 ```
 
 Table of Contents
 
-* [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-docker-container)
-* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#install)
-* [DOCKER DESKTOP ON WINDOWS WITH WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-desktop-on-windows-with-wsl2)
-* [DOCKER RUN (RUN A SINGLE CONTAINER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-run-run-a-single-container)
-* [DOCKER-COMPOSE (RUN MULTIPLE CONTAINERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-compose-run-multiple-containers)
-* [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#images)
-  * [PULL DOCKER IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#pull-docker-images)
-  * [CHECK THE HISTORY OF AN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-history-of-an-image)
-  * [CREATE IMAGE USING DOCKERFILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#create-image-using-dockerfile)
-  * [COMPILE YOUR CODE INSIDE BASE IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#compile-your-code-inside-base-image)
-  * [PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#put-your-appservice-into-smaller-image-multi-stage-build)
-  * [PUSH IMAGE TO DOCKERHUB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#push-image-to-dockerhub)
-* [CONTAINERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#containers)
-  * [START/STOP A CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#startstop-a-container)
-  * [DELETE A CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#delete-a-container)
-  * [RUN INTERACTIVE CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#run-interactive-container)
-  * [GET A SHELL PROMPT INSIDE A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#get-a-shell-prompt-inside-a-running-container)
-  * [CHECK THE STDOUT OF A RUNNING CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-stdout-of-a-running-container)
-* [VAGRANT, DOCKER AND PACKER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#vagrant-docker-and-packer)
+????
 
 Documentation and Reference
 
 * [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
-* My images at [DockerHub](https://hub.docker.com/u/jeffdecola/)
+* My images at [dockerhub](https://hub.docker.com/u/jeffdecola/)
 
 ## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
 
@@ -80,7 +67,7 @@ Container,
 ## INSTALL
 
 Goto [docs.docker.com/install](https://docs.docker.com/install)
-to install.  Must be 64-bit machine.
+to install. Must be 64-bit machine.
 
 When you're done, check version,
 
@@ -126,8 +113,8 @@ mklink /j "C:\ProgramData\Docker" "F:\Docker\ProgramData"
 To run a simple docker container just use `docker run`,
 
 ```bash
-docker run jeffdecola/hello-go
-docker run --name hello-go -dit jeffdecola/hello-go
+docker run jeffdecola/hello-go-deploy-gce
+docker run --name hello-go -dit jeffdecola/hello-go-deploy-gce
 ```
 
 * `-d` Run container in background.
@@ -248,7 +235,7 @@ You can use multi-stage to place your app/service in a smaller image ~`13MB`,
 
 ![IMAGE - multi-stage-build-to-keep-image-small - IMAGE](../../../../../docs/pics/multi-stage-build-to-keep-image-small.jpg)
 
-### PUSH IMAGE TO DOCKERHUB
+### PUSH IMAGE TO dockerhub
 
 To push an image to dockerhub,
 
@@ -342,20 +329,24 @@ Now see what the docker container daemon is doing,
 docker logs NAME
 ```
 
-### GET A SHELL PROMPT INSIDE A RUNNING CONTAINER
+### CONNECT
 
-To get inside a running container,
+To get a shell in a running container,
 
 ```bash
-docker exec -t -i <container ID> /bin/bash
+docker exec -t -i hello-go /bin/bash
 ```
 
-Use `docker ps` to get the container ID.
-
-### CHECK THE STDOUT OF A RUNNING CONTAINER
+### STDIN
 
 ```bash
-docker logs -f <container_name>
+echo 'whatever' | socat EXEC:"docker attach hello-go",pty STDIN
+```
+
+### STDOUT
+
+```bash
+docker logs -f hello-go
 ```
 
 `-f` switch is check forever.
