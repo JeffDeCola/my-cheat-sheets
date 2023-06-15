@@ -196,7 +196,7 @@ docker images
 docker history jeffdecola/hello-go-deploy-gce
 ```
 
-### CREATE IMAGE USING DOCKERFILE
+### BUILD
 
 Create a Dockerfile,
 
@@ -237,6 +237,28 @@ Check your build,
 
 ```bash
 docker images
+```
+
+### BUILD FOR A DIFFERENT PLATFORM
+
+Sometimes you may want to build an image on an AMD64 for an ARM64.
+
+Use the `--platform` command,
+
+```bash
+docker build --platform linux/arm64 -t jeffdecola/NAME .
+```
+
+You can check what platform you have available,
+
+```bash
+docker buildx ls
+```
+
+If you need to add a platform,
+
+```bash
+sudo apt install qemu-user-static
 ```
 
 ### COMPILE YOUR CODE INSIDE BASE IMAGE
