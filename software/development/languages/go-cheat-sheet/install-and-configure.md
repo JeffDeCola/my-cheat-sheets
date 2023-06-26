@@ -1,27 +1,23 @@
 # INSTALL & CONFIGURE
 
-OK, lets get go...ing.  Yep, that just happened.
+_OK, lets get go...ing.  Yep, that just happened._
 
 tl;dr
 
 ```bash
-# INSTALL
-FileName='go1.19.2.linux-amd64.tar.gz'
-FileName='go1.19.2.darwin-amd64.tar.gz'
-FileName='go1.19.2.linux-arm64.tar.gz'
+# INSTAL/UPGRADE LINUX
+FileName='go1.20.5.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
+sudo rm -rf /usr/local/go
 sudo mv go /usr/local
 rm $FileName
 # CONFIGURE .bashrc
-# JEFF ADDED FOR GO
 export PATH=$PATH:/usr/local/go/bin
 export GOBIN=/home/jeff/go/bin
 export PATH=$PATH:$GOBIN
 # CHECK
 go version
-# INSTALL GO TOOLS
-# Use vs code go extension
 ```
 
 Table of Contents
@@ -41,25 +37,16 @@ Table of Contents
   * [CONFIGURE BASH ON UBUNTU ON WINDOWS (WSL2)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-bash-on-ubuntu-on-windows-wsl2)
 * [INSTALL GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools)
 
-## INSTALL
+## INSTALL/UPGRADE
 
 [Binary and source installs](https://golang.org/doc/install) are
 located here for windows, linux or mac. I would not install from a package.
 
-### INSTALL WINDOWS
+I wrote a
+[script](https://github.com/JeffDeCola/my-linux-shell-scripts/tree/master/software/go-install-new-version)
+to do this automatically.
 
-Just use the installer found
-[Binary and source installs](https://golang.org/doc/install).
-
-### INSTALL macOS
-
-For macOS just use a different FileName,
-
-```bash
-FileName='go1.19.2.darwin-amd64.tar.gz'
-```
-
-### INSTALL LINUX
+### LINUX
 
 Go lives in `/usr/local/go`.
 
@@ -72,72 +59,39 @@ tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 Hence,
 
 ```bash
-FileName='go1.19.2.linux-amd64.tar.gz'
+FileName='go1.20.5.linux-amd64.tar.gz'
 wget https://storage.googleapis.com/golang/$FileName
 tar -xvf $FileName
+sudo rm -rf /usr/local/go
 sudo mv go /usr/local
 rm $FileName
 ```
 
-### INSTALL RASPBERRY PI OS (DEBIAN)
+### RASPBERRY PI OS (DEBIAN)
 
 For Raspberry Pi just use a different FileName,
 
 ```bash
-FileName='go1.19.2.linux-arm64.tar.gz'
+FileName='go1.20.5.linux-arm64.tar.gz'
 ```
 
-## UPGRADE
+### macOS
 
-This is easy.
+```bash
+FileName='go1.20.5.darwin-amd64.tar.gz'
+wget https://storage.googleapis.com/golang/$FileName
+sudo installer -pkg $FileName -target /usr/local
+rm $FileName
+```
 
-### UPGRADE WINDOWS
+### WINDOWS
 
 Just use the installer found
 [Binary and source installs](https://golang.org/doc/install).
 
-### UPGRADE macOS
-
-Remove your old version,
-
-```bash
-which go
-sudo rm -rf /usr/local/go
-```
-
-Follow the steps above.
-
-### UPGRADE LINUX & RASPBERRY PI OS
-
-Remove your old version from `/usr/local/go` and replace.
-
-```bash
-which go
-sudo rm -rf /usr/local/go
-```
-
-Follow the install steps above.
-
 ## CONFIGURE
 
 Let's set up the go paths.
-
-### CONFIGURE WINDOWS
-
-Do not get confused, this is not being installed on WSL (Windows System for Linux),
-this is being installed on Windows OS. The installation should automatically
-set the Windows environment variables as follows,
-
-```text
-GOROOT=C:\Go\
-GOPATH C:\Users\<WINDOWSNAME>\go
-Path=...\Go\bin;...%GOPATH%\bin
-```
-
-On a side note, my cheat sheet
-[visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
-explains `how to setup VS Code on Windows with the Go Extensions
-and a bash terminal`.  Say that ten times fast.
 
 ### CONFIGURE LINUX & RASPBERRY PI OS
 
@@ -153,7 +107,7 @@ export GOBIN=/home/jeff/go/bin
 export PATH=$PATH:$GOBIN
 ```
 
-Old way I used to do it and depreciated,
+Old way I used to do it (depreciated),
 
 ```bash
 # JEFF ADDED FOR GO
@@ -178,7 +132,7 @@ export GOBIN=/home/jeff/go/bin
 export PATH=$PATH:$GOBIN
 ```
 
-Old way I used to do it and depreciated,
+Old way I used to do it (depreciated),
 
 ```bash
 PATH=$PATH:$HOME/bin
@@ -203,6 +157,23 @@ C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWind
 The trick is to have your project/working directory
 not in your home directory as shown with my `$GOPATH`.
 This is because Windows and linux do not play well together.
+
+### CONFIGURE WINDOWS
+
+Do not get confused, this is not being installed on WSL (Windows System for Linux),
+this is being installed on Windows OS. The installation should automatically
+set the Windows environment variables as follows,
+
+```text
+GOROOT=C:\Go\
+GOPATH C:\Users\<WINDOWSNAME>\go
+Path=...\Go\bin;...%GOPATH%\bin
+```
+
+On a side note, my cheat sheet
+[visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
+explains `how to setup VS Code on Windows with the Go Extensions
+and a bash terminal`.  Say that ten times fast.
 
 ## INSTALL GO TOOLS
 

@@ -80,8 +80,7 @@ This cheat sheet is broken up into the following sections,
 ### INSTALL & CONFIGURE
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
-  * Install
-  * Upgrade
+  * Install/Upgrade
   * Configure
   * Install Go Tools
 
