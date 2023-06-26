@@ -28,18 +28,17 @@ Table of Contents
 
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
   * [INSTALL WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-windows)
-  * [INSTALL LINUX](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-linux)
   * [INSTALL macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-macos)
+  * [INSTALL LINUX](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-linux)
   * [INSTALL RASPBERRY PI OS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-raspberry-pi-os-debian)
-* [UPGRADE GO TO NEWER VERSION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-go-to-newer-version)
+* [UPGRADE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade)
   * [UPGRADE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-windows)
-  * [UPGRADE LINUX & RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-linux--raspberry-pi-os)
   * [UPGRADE macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-macos)
+  * [UPGRADE LINUX & RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-linux--raspberry-pi-os)
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure)
   * [CONFIGURE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-windows)
   * [CONFIGURE LINUX & RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-linux--raspberry-pi-os)
   * [CONFIGURE BASH ON UBUNTU ON WINDOWS (WSL2)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-bash-on-ubuntu-on-windows-wsl2)
-* [CHECK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#check)
 * [INSTALL GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools)
 
 ## INSTALL
@@ -51,6 +50,14 @@ located here for windows, linux or mac. I would not install from a package.
 
 Just use the installer found
 [Binary and source installs](https://golang.org/doc/install).
+
+### INSTALL macOS
+
+For macOS just use a different FileName,
+
+```bash
+FileName='go1.19.2.darwin-amd64.tar.gz'
+```
 
 ### INSTALL LINUX
 
@@ -72,14 +79,6 @@ sudo mv go /usr/local
 rm $FileName
 ```
 
-### INSTALL macOS
-
-For macOS just use a different FileName,
-
-```bash
-FileName='go1.19.2.darwin-amd64.tar.gz'
-```
-
 ### INSTALL RASPBERRY PI OS (DEBIAN)
 
 For Raspberry Pi just use a different FileName,
@@ -88,7 +87,7 @@ For Raspberry Pi just use a different FileName,
 FileName='go1.19.2.linux-arm64.tar.gz'
 ```
 
-## UPGRADE GO TO NEWER VERSION
+## UPGRADE
 
 This is easy.
 
@@ -96,17 +95,6 @@ This is easy.
 
 Just use the installer found
 [Binary and source installs](https://golang.org/doc/install).
-
-### UPGRADE LINUX & RASPBERRY PI OS
-
-Remove your old version from `/usr/local/go` and replace.
-
-```bash
-which go
-sudo rm -rf /usr/local/go
-```
-
-Follow the install steps above.
 
 ### UPGRADE macOS
 
@@ -118,6 +106,17 @@ sudo rm -rf /usr/local/go
 ```
 
 Follow the steps above.
+
+### UPGRADE LINUX & RASPBERRY PI OS
+
+Remove your old version from `/usr/local/go` and replace.
+
+```bash
+which go
+sudo rm -rf /usr/local/go
+```
+
+Follow the install steps above.
 
 ## CONFIGURE
 
@@ -204,15 +203,6 @@ C:\Users\<WindowsNAME>\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWind
 The trick is to have your project/working directory
 not in your home directory as shown with my `$GOPATH`.
 This is because Windows and linux do not play well together.
-
-## CHECK
-
-Check your go paths and version,
-
-```bash
-go env
-go version
-```
 
 ## INSTALL GO TOOLS
 
