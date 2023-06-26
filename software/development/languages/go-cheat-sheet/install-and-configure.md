@@ -22,19 +22,15 @@ go version
 
 Table of Contents
 
-* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install)
-  * [INSTALL WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-windows)
-  * [INSTALL macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-macos)
-  * [INSTALL LINUX](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-linux)
-  * [INSTALL RASPBERRY PI OS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-raspberry-pi-os-debian)
-* [UPGRADE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade)
-  * [UPGRADE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-windows)
-  * [UPGRADE macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-macos)
-  * [UPGRADE LINUX & RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#upgrade-linux--raspberry-pi-os)
+* [INSTALL/UPGRADE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#installupgrade)
+  * [LINUX](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#linux)
+  * [RASPBERRY PI OS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#raspberry-pi-os-debian)
+  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#macos)
+  * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#windows)
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure)
-  * [CONFIGURE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-windows)
   * [CONFIGURE LINUX & RASPBERRY PI OS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-linux--raspberry-pi-os)
   * [CONFIGURE BASH ON UBUNTU ON WINDOWS (WSL2)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-bash-on-ubuntu-on-windows-wsl2)
+  * [CONFIGURE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-windows)
 * [INSTALL GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools)
 
 ## INSTALL/UPGRADE
@@ -78,7 +74,7 @@ FileName='go1.20.5.linux-arm64.tar.gz'
 ### macOS
 
 ```bash
-FileName='go1.20.5.darwin-amd64.tar.gz'
+FileName='go1.20.5.darwin-amd64.pkg'
 wget https://storage.googleapis.com/golang/$FileName
 sudo installer -pkg $FileName -target /usr/local
 rm $FileName
