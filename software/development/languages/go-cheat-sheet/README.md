@@ -4,8 +4,6 @@ _Go is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
-Table of Contents
-
 **LET'S GO**
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
@@ -72,12 +70,6 @@ Table of Contents
 * [GO PACKAGE LISTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-package-lists)
 * [OTHER STUFF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#other-stuff)
 * [HELP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#help)
-
-Documentation and Reference
-
-* [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
-* [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
-* [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
 
 ---
 
@@ -922,6 +914,12 @@ The syntax of go.
 ## REFERENCES / DOCUMENTATION
 
 Reference and documentation from other sources.
+
+### MY REPOS
+
+* [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+* [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
+* [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
 
 ### SYNTAX
 
