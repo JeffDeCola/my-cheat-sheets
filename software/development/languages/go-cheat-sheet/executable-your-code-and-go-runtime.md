@@ -17,7 +17,7 @@ A go executable is made up of,
 
 This diagram shows how everything fits together.
 The bottom line, go likes to put goroutines on threads.  And the goroutines
-will bounce all over the place as the schedulers schedule things.
+will bounce all over the place as the thread schedulers schedule things.
 
 ![IMAGE - executable-your-code-and-go-runtime - IMAGE](../../../../docs/pics/executable-your-code-and-go-runtime.jpg)
 

@@ -82,8 +82,8 @@ networked systems._
 
 **GO SYNTAX OVERVIEW (BELOW)**
   
-* [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
-* [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
+* [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
+* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
 * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
 * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
 * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
@@ -109,7 +109,7 @@ networked systems._
 
 ---
 
-## GO DATA TYPES
+## DATA TYPES
 
 ```go
     // BOOLEAN
@@ -126,7 +126,7 @@ networked systems._
         // string (immutable array of bytes (or runes))
 ```
 
-## GO TYPE CONVERSION & TYPE ASSERTION
+## TYPE CONVERSION & TYPE ASSERTION
 
 ```go
     // TYPE CONVERSION
