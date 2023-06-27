@@ -1,7 +1,12 @@
 # ERROR HANDLING & LOGGING
 
-Using the non-standard `github.com/pkg/errors` and
-the `github.com/sirupsen/logrus` package.
+_Using the non-standard `github.com/pkg/errors` and
+the `github.com/sirupsen/logrus` package._
+
+Table of Contents
+
+* [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#error-handling)
+* [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#logging)
 
 ## ERROR HANDLING
 

@@ -1,9 +1,9 @@
 # DERIVED DATA TYPES
 
-I like to think of derived data types as
+_I like to think of derived data types as
 special variables built on the basic three data types
 (Boolean, Numeric and String). So you still need to
-declare type and assign values (initialize).
+declare type and assign values (initialize)._
 
 tl;dr,
 
@@ -121,17 +121,32 @@ tl;dr,
 // CHANNEL (make) (SEE OWN CHEAT SHEET)
 ```
 
-Table of Contents,
+Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#overview)
-* [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array-data-structure)
-* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-data-structure-reference-type-make)
-* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-data-structure-reference-type-make)
-* [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct-data-structure)
-* [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer-new)
-* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type)
-* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#interface)
-* [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel-reference-type-make)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#overview)
+* [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array-data-structure)
+  * [ARRAY - BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#array---basic-format)
+* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice-data-structure-reference-type-make)
+  * [SLICE - BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slice---basic-format)
+  * [SLICES ARE REFERENCE TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#slices-are-reference-types)
+  * [BUILT ON ARRAYS - make](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#built-on-arrays---make)
+  * [VARIADIC PARAMETERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#variadic-parameters)
+  * [LENGTH AND CAPACITY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#length-and-capacity)
+* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map-data-structure-reference-type-make)
+  * [MAP - BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#map---basic-format)
+  * [MAPS ARE REFERENCE TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#maps-are-reference-types)
+  * [DELETE A KEY/VALUE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#delete-a-keyvalue)
+* [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct-data-structure)
+  * [STRUCT - BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#struct---basic-format)
+* [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer-new)
+  * [POINTER -  BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer----basic-format)
+  * [POINTER USES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer-uses)
+  * [POINTER PASS BY REFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#pointer-pass-by-reference)
+* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#function-as-a-type)
+  * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#assign-anonymous-function-func-literal-to-a-variable)
+  * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#closure---return-a-function-to-a-function)
+* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#interface)
+* [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md#channel-reference-type-make)
 
 ## OVERVIEW
 

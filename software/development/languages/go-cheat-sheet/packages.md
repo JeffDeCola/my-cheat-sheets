@@ -7,12 +7,12 @@ It helps us organize our code into folders.
 * [godoc.org](https://godoc.org/)
   _- Both standard and user packages. Also shows popular packages._
 * [golang.org](https://golang.org/pkg/)
-  _-Just official standard packages._
+  _- Just official standard packages._
 
-Table of Contents,
+Table of Contents
 
-* [GO GET A PACKAGE AND USE IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md#go-get-a-package-and-use-it)
-* [LETS CREATE A CUSTOM PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md#lets-create-a-custom-package)
+* [GO GET A PACKAGE AND USE IT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md#go-get-a-package-and-use-it)
+* [LETS CREATE A CUSTOM PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md#lets-create-a-custom-package)
 
 ## GO GET A PACKAGE AND USE IT
 
