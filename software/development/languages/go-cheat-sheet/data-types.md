@@ -24,7 +24,7 @@ tl;dr,
 
 Table of Contents,
 
-* [ALL TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#all-types)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#overview)
 * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
 * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
   * [INTEGER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#integer)
@@ -32,7 +32,7 @@ Table of Contents,
   * [COMPLEX NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#complex-numbers)
 * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#string)
 
-## ALL TYPES
+## OVERVIEW
 
 The data types in go are,
 
