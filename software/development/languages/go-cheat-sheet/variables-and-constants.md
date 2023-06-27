@@ -1,5 +1,7 @@
 # VARIABLES AND CONSTANTS
 
+_Variables and constants._
+
 tl;dr,
 
 ```go
@@ -35,16 +37,16 @@ tl;dr,
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
  ```
 
- Table of Contents,
+Table of Contents
 
-* [DECLARE TYPE AND ASSIGN VALUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#declare-type-and-assign-value)
-* [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
-* [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
-* [IOTA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#iota)
-* [SCOPE RULES (Universe, Package, File, Block)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#scope-rules-universe-package-file-block)
-* [TYPE INFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#type-inference)
-* [SHORTHAND ASSIGNMENT (PREFERRED METHOD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#shorthand-assignment-preferred-method)
-* [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
+* [DECLARE TYPE AND ASSIGN VALUE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#declare-type-and-assign-value)
+* [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
+* [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
+* [IOTA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#iota)
+* [SCOPE RULES (Universe, Package, File, Block)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#scope-rules-universe-package-file-block)
+* [TYPE INFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#type-inference)
+* [SHORTHAND ASSIGNMENT (PREFERRED METHOD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#shorthand-assignment-preferred-method)
+* [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
 
 ## DECLARE TYPE AND ASSIGN VALUE
 

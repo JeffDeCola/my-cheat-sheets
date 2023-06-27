@@ -1,9 +1,11 @@
 # FORMATTING TYPES
 
-How to make the output look pretty.
+_How to make the output look pretty._
 
-* [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formating-types.md#format-specifiers)
-* [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formating-types.md#escape-sequences)
+Table of Contents
+
+* [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#format-specifiers)
+* [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#escape-sequences)
 
 ## FORMAT SPECIFIERS
 

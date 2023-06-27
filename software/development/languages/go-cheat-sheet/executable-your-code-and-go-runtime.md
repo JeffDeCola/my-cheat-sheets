@@ -1,6 +1,12 @@
 # EXECUTABLE (YOUR CODE & GO RUNTIME)
 
-An executable or binary is your running program.
+_An executable or binary is your running program._
+
+Table of Contents
+
+* [GO EXECUTABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#go-executable)
+* [GO RUNTIME (GOROUTINE SCHEDULER)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#go-runtime-goroutine-scheduler)
+* [GOROUTINES & THREADS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#goroutines--threads)
 
 ## GO EXECUTABLE
 

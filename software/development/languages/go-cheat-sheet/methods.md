@@ -1,6 +1,6 @@
 # METHODS
 
-A method is a function with a special receiver argument.
+_A method is a function with a special receiver argument._
 
 tl;dr,
 
@@ -41,15 +41,15 @@ tl;dr,
     }
 ```
 
-Table of Contents,
+Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#overview)
-* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#basic-format)
-* [PASSING PARAMETERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#passing-parameters)
-  * [PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#passing-struct-to-method-by-value-copy---struct-not-changed)
-  * [PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#passing-struct-to-method-by-reference-pointer---struct-changed)
-* [WHY USE METHODS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#why-use-methods)
-* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md#example---shapes)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#overview)
+* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#basic-format)
+* [PASSING PARAMETERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#passing-parameters)
+  * [PASSING STRUCT TO METHOD BY VALUE (COPY) - STRUCT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#passing-struct-to-method-by-value-copy---struct-not-changed)
+  * [PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#passing-struct-to-method-by-reference-pointer---struct-changed)
+* [WHY USE METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#why-use-methods)
+* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#example---shapes)
 
 ## OVERVIEW
 

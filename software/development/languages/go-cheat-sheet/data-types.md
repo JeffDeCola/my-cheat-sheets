@@ -1,9 +1,9 @@
 # DATA TYPES
 
-Types or data types are a classification of data,
+_Types or data types are a classification of data,
 that tells the compiler how to use that data.
 It also tells the computer how much space the data type
-occupies and how the bit pattern is stored.
+occupies and how the bit pattern is stored._
 
 tl;dr,
 
@@ -22,15 +22,15 @@ tl;dr,
     // string (immutable array of bytes (or runes))
 ```
 
-Table of Contents,
+Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#overview)
-* [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
-* [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
-  * [INTEGER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#integer)
-  * [FLOATING POINT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#floating-point)
-  * [COMPLEX NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#complex-numbers)
-* [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md#string)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#overview)
+* [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
+* [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
+  * [INTEGER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#integer)
+  * [FLOATING POINT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#floating-point)
+  * [COMPLEX NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#complex-numbers)
+* [STRING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#string)
 
 ## OVERVIEW
 

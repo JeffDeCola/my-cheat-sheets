@@ -1,18 +1,20 @@
 # BASIC CONCEPTS
 
-Go actually forces you to use a particular coding style.  This is a little
+_Go actually forces you to use a particular coding style.  This is a little
 painful at first, but actually great in the long run since
 it makes everyone's code look and feel the same.
 It also will not allow pollution in your code (things you
-don't use).
+don't use)._
 
-* [BASIC STRUCTURE OF GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#basic-structure-of-go)
-* [BASIC SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#basic-syntax)
-* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#packages)
-* [GO RUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-run)
-* [GO BUILD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-build)
-* [GO INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-install)
-* [THE OBJECT SIDE OF GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md#the-object-side-of-go)
+Table of Contents
+
+* [BASIC STRUCTURE OF GO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#basic-structure-of-go)
+* [BASIC SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#basic-syntax)
+* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#packages)
+* [GO RUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-run)
+* [GO BUILD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-build)
+* [GO INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-install)
+* [THE OBJECT SIDE OF GO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#the-object-side-of-go)
 
 ## BASIC STRUCTURE OF GO
 

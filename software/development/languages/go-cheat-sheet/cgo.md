@@ -1,6 +1,10 @@
 # CGO (CALLING C WITH GO)
 
-Cgo lets go call C code.
+_`cgo` lets go call C code._
+
+Table of Contents
+
+* [EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/cgo.md#example)
 
 ## EXAMPLE
 

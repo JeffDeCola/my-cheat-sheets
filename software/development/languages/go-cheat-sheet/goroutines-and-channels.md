@@ -1,8 +1,8 @@
 # GOROUTINES & CHANNELS
 
-`goroutines` are lightweight concurrent threads of execution `go func()`
+_`goroutines` are lightweight concurrent threads of execution `go func()`
 where `channels` are pipes that allow them to message each other.
-This is a huge benefit of go since it can use multi-core environments.
+This is a huge benefit of go since it can use multi-core environments._
 
 tl;dr,
 
@@ -37,18 +37,20 @@ tl;dr,
         fmt.Println("received", msg2)
 ```
 
-Table of Contents,
+Table of Contents
 
-* [GOROUTINES - CONCURRENT THREADS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#goroutines---concurrent-threads)
-* [CHANNELS - GOROUTINE MESSAGE PIPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channels---goroutine-message-pipes)
-  * [NOT BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#not-buffered)
-  * [BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#buffered)
-  * [CHANNEL DIRECTION (MORE EXPLICIT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channel-direction-more-explicit)
-  * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#select)
-* [MULTI-CORE (Parallelism)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#multi-core-parallelism)
+* [GOROUTINES - CONCURRENT THREADS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#goroutines---concurrent-threads)
+* [CHANNELS - GOROUTINE MESSAGE PIPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channels---goroutine-message-pipes)
+  * [NOT BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#not-buffered)
+  * [BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#buffered)
+  * [CHANNEL DIRECTION (MORE EXPLICIT)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channel-direction-more-explicit)
+  * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#select)
+* [MULTI-CORE (Parallelism)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#multi-core-parallelism)
 
-For goroutine and channel examples, see
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines).
+Documentation and Reference
+
+* For goroutine and channel examples, see
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines).
 
 ## GOROUTINES - CONCURRENT THREADS
 

@@ -1,10 +1,12 @@
 # TYPE CONVERSION & TYPE ASSERTION
 
-Converting one data type to another data type and
-proving its actually that type.
+_Converting one data type to another data type and
+proving its actually that type._
 
-* [TYPE CONVERSION (TYPE CASTING)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#type-conversion-type-casting)
-* [TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-type-casting.md#type-assertion)
+Table of Contents
+
+* [TYPE CONVERSION (TYPE CASTING)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md#type-conversion-type-casting)
+* [TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md#type-assertion)
 
 ## TYPE CONVERSION (TYPE CASTING)
 

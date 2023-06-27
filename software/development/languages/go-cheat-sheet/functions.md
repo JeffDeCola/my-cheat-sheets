@@ -1,6 +1,6 @@
 # FUNCTIONS
 
-Functions stand on their own, a black box.
+_Functions stand on their own, a black box._
 
 Just a note,
 
@@ -90,20 +90,20 @@ Just a note,
     }
 ```
 
-Table of Contents,
+Table of Contents
 
-* [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#basic-formats)
-* [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#variadic-functions)
-* [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
-  * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---argument-not-changed)
-  * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - ARGUMENT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---argument-changed)
-* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#function-as-a-type)
-  * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
-  * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#closure---return-a-function-to-a-function)
-* [CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#callback---passing-a-function-as-an-argument-to-a-function)
-* [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#recursion---function-calling-itself)
-* [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#anonymous-self-executing-function)
-* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md#example---shapes)
+* [BASIC FORMATS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#basic-formats)
+* [VARIADIC FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#variadic-functions)
+* [PASSING ARGUMENTS - GO PASSES BY VALUE ONLY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments---go-passes-by-value-only)
+  * [PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-value-copy---argument-not-changed)
+  * [PASSING ARGUMENTS TO FUNCTION BY "REFERENCE" (POINTER) - ARGUMENT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#passing-arguments-to-function-by-reference-pointer---argument-changed)
+* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#function-as-a-type)
+  * [ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#assign-anonymous-function-func-literal-to-a-variable)
+  * [CLOSURE - RETURN A FUNCTION TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#closure---return-a-function-to-a-function)
+* [CALLBACK - PASSING A FUNCTION (AS AN ARGUMENT) TO A FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#callback---passing-a-function-as-an-argument-to-a-function)
+* [RECURSION - FUNCTION CALLING ITSELF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#recursion---function-calling-itself)
+* [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#anonymous-self-executing-function)
+* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#example---shapes)
 
 ## BASIC FORMATS
 

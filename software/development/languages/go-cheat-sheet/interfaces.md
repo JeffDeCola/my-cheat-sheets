@@ -1,5 +1,7 @@
 # INTERFACES (SET OF METHOD SIGNATURES)
 
+_Interfaces._
+
 tl;dr,
 
 ```go
@@ -30,14 +32,18 @@ tl;dr,
     }
 ```
 
-Table of Contents,
+Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#overview)
-* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#basic-format)
-* [HOW TO MAKE AN INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#how-to-make-an-interface)
-  * [STEPS (INTERFACE AS A PARAMETER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#steps-interface-as-a-parameter)
-  * [USING YOUR NEW FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#using-your-new-function)
-* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md#example---shapes)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#overview)
+* [BASIC FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#basic-format)
+* [HOW TO MAKE AN INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#how-to-make-an-interface)
+  * [STEPS (INTERFACE AS A PARAMETER)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#steps-interface-as-a-parameter)
+  * [USING YOUR NEW FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#using-your-new-function)
+* [OOP - POLYMORPHISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#oop---polymorphism)
+  * [ENCAPSULATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#encapsulation)
+  * [INHERITANCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#inheritance)
+  * [POLYMORPHISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#polymorphism)
+* [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#example---shapes)
 
 ## OVERVIEW
 
@@ -216,8 +222,11 @@ specific types, interfaces, and functions.
 
 ### INHERITANCE
 
+_tbd._
+
 ### POLYMORPHISM
 
+_tbd._
 
 ## EXAMPLE - SHAPES
 
