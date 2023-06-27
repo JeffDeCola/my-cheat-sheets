@@ -75,14 +75,11 @@ networked systems._
 
 ## LET'S GO
 
-This cheat sheet is broken up into the following sections,
+### [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
 
-### INSTALL & CONFIGURE
-
-* [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
-  * Install/Upgrade
-  * Configure
-  * Install Go Tools
+* Install/Upgrade
+* Configure
+* Install go Tools
 
 ### BASIC CONCEPTS
 
@@ -105,15 +102,15 @@ This cheat sheet is broken up into the following sections,
 ### DATA TYPES
 
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md)
-  * All Types
+  * Overview
   * Boolean
-  * Numeric
+  * Numeric (Integer, Floating Point, Complex Number)
   * String
 
 ### TYPE CONVERSION & TYPE ASSERTION
 
 * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
-  * Type Conversion (Type casting)
+  * Type Conversion (Type Casting)
   * Type Assertion
 
 ### VARIABLES & CONSTANTS
@@ -236,8 +233,6 @@ This cheat sheet is broken up into the following sections,
 ---
 
 ## GO SYNTAX OVERVIEW
-
-The syntax of go.
 
 ### GO DATA TYPES
 
@@ -912,7 +907,7 @@ The syntax of go.
 
 ## REFERENCES / DOCUMENTATION
 
-Reference and documentation from other sources.
+Some great resources.
 
 ### MY REPOS
 
@@ -923,47 +918,46 @@ Reference and documentation from other sources.
 ### SYNTAX
 
 * [golang.org](http://golang.org)
-  _- Home base for everything._
+  _- Home base for everything_
 * [golang.org docs](https://golang.org/doc/)
-  _- A good collection of docs._
+  _- A good collection of docs_
 * [golang.org spec](https://golang.org/ref/spec)
-  _- I'll be honest, way to much stuff to make your head spin._
+  _- I'll be honest, way to much stuff to make your head spin_
 
 ### RUNNING CODE
 
 * [golang.org go playground](https://play.golang.org/)
-  _- Lets you write, compile and share code.  Just awesome._
+  _- Lets you write, compile and share code_
 
 ### TUTORIALS
 
 * [golang.org tour of go](https://tour.golang.org/welcome/1)
-  _- A good place to start._
+  _- A good place to start_
 * [golang.org effective go](https://golang.org/doc/effective_go.html)
-  _- A must read to create great things._
+  _- A must read to create great things_
 * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
-  _- A great summary of syntax._
+  _- A great summary of syntax_
 * [gobyexample.com](https://gobyexample.com/)
-  _- The title says it all._
+  _- The title says it all_
 * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
-  _- Exactly that._
+  _- Exactly that_
 * [medium.com golangspec](https://medium.com/golangspec)
-  _- A bunch of cool examples._
+  _- A bunch of cool examples_
 
 ### GO PACKAGE LISTS
 
 * [godoc.org](https://godoc.org/)
-  _- Both standard and user packages. Also shows popular packages._
+  _- Both standard and user packages. Also shows popular packages_
 * [golang.org](https://golang.org/pkg/)
-  _- Just official standard packages._
+  _- Just official standard packages_
 
 ### OTHER STUFF
 
 * [Go Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
   _- My cheat sheet on setting up
-  [setting up visual studio code with go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
-  ._
+  [setting up visual studio code with go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)_
 
 ### HELP
 
 * [Go forum](https://forum.golangbridge.org/)
-  _- Community forum._
+  _- Community forum_
