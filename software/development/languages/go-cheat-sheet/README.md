@@ -4,10 +4,11 @@ _Go is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
-**LET'S GO**
+**LET'S GO (LINKS)**
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#install--configure)
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#basic-concepts)
+  * SYNTAX, RUN, BUILD, INSTALL
 * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#executable-your-code--go-runtime)
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
   * BOOLEAN
@@ -25,17 +26,61 @@ networked systems._
   * INTERFACE (see below)
   * CHANNEL (Reference Type) (_make_) (see below)
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#functions-black-box)
+  * PASSING ARGUMENTS (VALUE (COPY) AND REFERENCE (POINTER))
+  * CALL BACK
+  * RECURSION
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#methods-attached-to-data)
+  * PASSING PARAMETERS (VALUE (COPY) AND REFERENCE (POINTER))
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interfaces-set-of-method-signatures)
 * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines--channels)
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
 * [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structures--flow-control)
+  * LOOPS
+  * CONDITIONAL STATEMENTS
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling--logging)
 * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#formatting-types)
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
 * [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#cgo-calling-c-with-go)
 
-**GO SYNTAX OVERVIEW**
+**REFERENCES/DOCUMENTATION (LINKS)**
+
+* MY REPOS
+  * [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+  * [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
+  * [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
+* SYNTAX
+  * [golang.org](http://golang.org)
+    _- Home base for everything_
+  * [golang.org docs](https://golang.org/doc/)
+    _- A good collection of docs_
+  * [golang.org spec](https://golang.org/ref/spec)
+    _- I'll be honest, way to much stuff to make your head spin_
+* RUNNING CODE
+  * [golang.org go playground](https://play.golang.org/)
+    _- Lets you write, compile and share code_
+* TUTORIALS
+  * [golang.org tour of go](https://tour.golang.org/welcome/1)
+    _- A good place to start_
+  * [golang.org effective go](https://golang.org/doc/effective_go.html)
+    _- A must read to create great things_
+  * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
+    _- A great summary of syntax_
+  * [gobyexample.com](https://gobyexample.com/)
+    _- The title says it all_
+  * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
+    _- Exactly that_
+  * [medium.com golangspec](https://medium.com/golangspec)
+    _- A bunch of cool examples_
+* GO PACKAGE LISTS
+  * [godoc.org](https://godoc.org/)
+    _- Both standard and user packages. Also shows popular packages_
+  * [golang.org](https://golang.org/pkg/)
+    _- Just official standard packages_
+* HELP
+  * [Go forum](https://forum.golangbridge.org/)
+    _- Community forum_
+
+**GO SYNTAX OVERVIEW (BELOW)**
   
 * [GO DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-data-types)
 * [GO TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-type-conversion--type-assertion)
@@ -62,179 +107,9 @@ networked systems._
 * [GO PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-packages)
 * [GCO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco)
 
-**REFERENCES / DOCUMENTATION**
-
-* [SYNTAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#syntax)
-* [RUNNING CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#running-code)
-* [TUTORIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#tutorials)
-* [GO PACKAGE LISTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-package-lists)
-* [OTHER STUFF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#other-stuff)
-* [HELP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#help)
-
 ---
 
-## LET'S GO
-
-### [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
-
-* Install/Upgrade
-* Configure
-* Install go Tools
-
-### BASIC CONCEPTS
-
-* [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
-  * Basic Structure of go
-  * Basic Syntax
-  * Packages (See own [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md))
-  * _go run_
-  * _go build_
-  * _go install_
-  * The Object Side of go
-
-### EXECUTABLE (YOUR CODE & GO RUNTIME)
-
-* [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
-  * Go Executable
-  * Go Runtime (Goroutine Scheduler)
-  * Goroutines & Threads
-
-### DATA TYPES
-
-* [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/data-types.md)
-  * Overview
-  * Boolean
-  * Numeric (Integer, Floating Point, Complex Number)
-  * String
-
-### TYPE CONVERSION & TYPE ASSERTION
-
-* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
-  * Type Conversion (Type Casting)
-  * Type Assertion
-
-### VARIABLES & CONSTANTS
-
-* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
-  * Declare Type and Assign Value
-  * Variable
-  * Constant / Literal
-  * IOTA
-  * Scope Rules (Universe, Package, File, Block)
-  * Type Inference
-  * Shorthand Assignment (Preferred Method)
-  * Grouping Variables
-
-### DERIVED DATA TYPES
-
-* [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
-  * All Types
-  * Array (Data Structure)
-  * Slice (Data Structure, Reference Type) (_make_)
-  * Map (Data Structure, Reference Type) (_make_)
-  * Struct (Data Structure)
-  * Pointer (_new_)
-  * Function as a Type
-  * Interface (See own
-    [Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md))
-  * Channel (Reference Type) (_make_) (See own
-    [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md))
-
-### FUNCTIONS (BLACK BOX)
-
-* [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/functions.md)
-  * Basic Formats
-  * Variadic Functions
-  * Passing Arguments - Go Passes by Value Only
-    * Passing Arguments to Function by Value (_Copy_) - Argument not Changed
-    * Passing Arguments to Function by "Reference" (_Pointer_) - Argument Changed
-  * Function Types
-    * Assign anonymous Function (func Literal) to a Variable
-    * Closure - Return a Function to a Function
-  * Callback - Passing a Function (As an Argument) to a Function
-  * Recursion (Function Calling Itself)
-  * Anonymous Self Executing Function
-  * Example - Shapes
-
-### METHODS (ATTACHED TO DATA)
-
-* [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/methods.md)
-  * Overview
-  * Basic Format
-  * Passing Parameters
-    * Passing Struct to Method by Value (_Copy_) - Struct not Changed
-    * Passing Struct to Method by Reference (_Pointer_) - Struct Changed
-  * Why Use Methods
-  * Example - Shapes
-
-### INTERFACES (SET OF METHOD SIGNATURES)
-
-* [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md)
-  * Overview
-  * Basic Format
-  * How to make an Interface
-    * Steps (Interface as a parameter)
-    * Using your new Interface
-  * OOP - Polymorphism
-  * Example - Shapes
-
-### GOROUTINES & CHANNELS
-
-* [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
-  * Go Routines - Concurrent Threads
-  * Channels - Goroutine Message Pipes
-    * Not Buffered
-    * Buffered
-    * Channel Direction (More explicit)
-    * Select
-  * Multi-Core (Parallelism)
-
-### OPERATORS
-
-* [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/operators.md)
-  * Arithmetic (_Math_)
-  * Relational (_Compare_)
-  * Logical (_Boolean_)
-  * Bitwise (_Bits_)
-  * Assignment
-  * Miscellaneous
-
-### CONTROL STRUCTURES / FLOW CONTROL
-
-* [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/control-structure-flow-control.md)
-  * Loops
-    * _for loop_, _while loop_, _infinite loop_, _range loop_, _break/continue_
-  * Conditional Statements / Decision Making
-    * _if_, _if else_, _nested if_, _switch (case)_, _defer_, _select_
-
-### ERROR HANDLING & LOGGING
-
-* [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
-  * Error Handling
-  * Logging
-
-### FORMATTING TYPES
-
-* [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formatting-types.md)
-  * Format Specifiers
-  * Escape Sequences
-
-### PACKAGES
-
-* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/packages.md)
-  * Go Get a Package and Use it
-  * Lets Create A Custom Package
-
-### CGO (CALLING C WITH GO)
-
-* [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/calling-c-with-go.md)
-  * Example
-
----
-
-## GO SYNTAX OVERVIEW
-
-### GO DATA TYPES
+## GO DATA TYPES
 
 ```go
     // BOOLEAN
@@ -251,7 +126,7 @@ networked systems._
         // string (immutable array of bytes (or runes))
 ```
 
-### GO TYPE CONVERSION & TYPE ASSERTION
+## GO TYPE CONVERSION & TYPE ASSERTION
 
 ```go
     // TYPE CONVERSION
@@ -266,7 +141,7 @@ networked systems._
     fmt.Println(f, ok)                              // Prints 0, false
 ```
 
-### VARIABLE
+## VARIABLE
 
 ```go
     // DECLARE TYPE
@@ -284,14 +159,14 @@ networked systems._
     fmt.Println(a, b ,c ,d)                         // happy 22 22 32
 ```
 
-### CONSTANT / LITERAL
+## CONSTANT / LITERAL
 
 ```go
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
 ```
 
-### GROUPING VARIABLES
+## GROUPING VARIABLES
 
 ```go
     // GROUP DECLARE TYPE
@@ -314,7 +189,7 @@ networked systems._
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
 
-### ARRAY (Data Structure)
+## ARRAY (Data Structure)
 
 ```go
     // DECLARE TYPE
@@ -332,7 +207,7 @@ networked systems._
     fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
 ```
 
-### SLICE (Data Structure, Reference Type) (_make_)
+## SLICE (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPE - NO SIZE
@@ -356,7 +231,7 @@ networked systems._
     fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
-### MAP (Data Structure, Reference Type) (_make_)
+## MAP (Data Structure, Reference Type) (_make_)
 
 ```go
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
@@ -391,7 +266,7 @@ networked systems._
     delete(e,"Jill")                                // Delete key "Jill"
 ```
 
-### STRUCT (Data Structure)
+## STRUCT (Data Structure)
 
  ```go
     // CREATE STRUCT TYPE
@@ -418,7 +293,7 @@ networked systems._
     fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
-### POINTER (_new_)
+## POINTER (_new_)
 
 ```go
     // DECLARE A POINTER TYPE AND ASSIGN
@@ -449,7 +324,7 @@ networked systems._
     fmt.Println("Contents of pointer d is", d)      // &{3 5}
 ```
 
-### FUNCTION AS A TYPE
+## FUNCTION AS A TYPE
 
 ```go
     // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
@@ -478,7 +353,7 @@ networked systems._
     }
 ```
 
-### FUNCTION
+## FUNCTION
 
 ```go
     // BASIC FORMAT
@@ -553,7 +428,7 @@ networked systems._
     }
 ```
 
-### METHOD
+## METHOD
 
 ```go
     // BASIC FORMAT (Just a function with receiver)
@@ -605,7 +480,7 @@ networked systems._
     }
 ```
 
-### INTERFACE (Reference Type)
+## INTERFACE (Reference Type)
 
 ```go
     // CREATE INTERFACE TYPE
@@ -638,7 +513,7 @@ networked systems._
     }
 ```
 
-### GOROUTINES
+## GOROUTINES
 
 ```go
     // GOROUTINES - CONCURRENT THREADS
@@ -648,7 +523,7 @@ networked systems._
     go doThis("Jeff")                               // Kick off goroutine
 ```
 
-### CHANNELS (_make_)
+## CHANNELS (_make_)
 
 ```go
     // CHANNELS - GOROUTINE MESSAGE PIPES
@@ -680,7 +555,7 @@ networked systems._
         fmt.Println("received", msg2)
 ```
 
-### GO OPERATORS
+## GO OPERATORS
 
 ```go
     // ARITHMETIC (MATH)
@@ -702,7 +577,7 @@ networked systems._
         // &, *
 ```
 
-### CONTROL STRUCTURE / FLOW CONTROL
+## CONTROL STRUCTURE / FLOW CONTROL
 
 ```go
     // LOOPS
@@ -772,7 +647,7 @@ networked systems._
             fmt.Println("received", msg2)
 ```
 
-### ERROR HANDLING
+## ERROR HANDLING
 
 ```go
     // USING THE ERRORS (github.com/pkg/errors) PACKAGE (NOT STANDARD PACKAGE)
@@ -801,7 +676,7 @@ networked systems._
     }
 ```
 
-### LOGGING
+## LOGGING
 
 ```go
     // USING THE LOGRUS (github.com/sirupsen/logrus) PACKAGE (NOT STANDARD PACKAGE)
@@ -814,7 +689,7 @@ networked systems._
     log.Trace("Something very low level.")
 ```
 
-### FORMAT SPECIFIERS
+## FORMAT SPECIFIERS
 
 ```go
     // VALUE OF DEFAULT FORMAT
@@ -845,7 +720,7 @@ networked systems._
         // %p
 ```
 
-### ESCAPE SEQUENCES
+## ESCAPE SEQUENCES
 
 ```go
     // COMMON ONES USED IN FORMATTING
@@ -855,7 +730,7 @@ networked systems._
         // \"                                       // " character
 ```
 
-### GO PACKAGES
+## GO PACKAGES
 
 ```go
     // GO GET A PACKAGE AND USE IT
@@ -882,7 +757,7 @@ networked systems._
     import github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
-### GCO
+## GCO
 
 ```go
     package main
@@ -902,62 +777,3 @@ networked systems._
         fmt.Println(c)                              // 30
     }
 ```
-
----
-
-## REFERENCES / DOCUMENTATION
-
-Some great resources.
-
-### MY REPOS
-
-* [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
-* [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
-* [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
-
-### SYNTAX
-
-* [golang.org](http://golang.org)
-  _- Home base for everything_
-* [golang.org docs](https://golang.org/doc/)
-  _- A good collection of docs_
-* [golang.org spec](https://golang.org/ref/spec)
-  _- I'll be honest, way to much stuff to make your head spin_
-
-### RUNNING CODE
-
-* [golang.org go playground](https://play.golang.org/)
-  _- Lets you write, compile and share code_
-
-### TUTORIALS
-
-* [golang.org tour of go](https://tour.golang.org/welcome/1)
-  _- A good place to start_
-* [golang.org effective go](https://golang.org/doc/effective_go.html)
-  _- A must read to create great things_
-* [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
-  _- A great summary of syntax_
-* [gobyexample.com](https://gobyexample.com/)
-  _- The title says it all_
-* [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
-  _- Exactly that_
-* [medium.com golangspec](https://medium.com/golangspec)
-  _- A bunch of cool examples_
-
-### GO PACKAGE LISTS
-
-* [godoc.org](https://godoc.org/)
-  _- Both standard and user packages. Also shows popular packages_
-* [golang.org](https://golang.org/pkg/)
-  _- Just official standard packages_
-
-### OTHER STUFF
-
-* [Go Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
-  _- My cheat sheet on setting up
-  [setting up visual studio code with go](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)_
-
-### HELP
-
-* [Go forum](https://forum.golangbridge.org/)
-  _- Community forum_
