@@ -6,25 +6,35 @@ tl;dr,
 
 ```go
 // VARIABLE
+
     // DECLARE TYPE
     var a string                                    // var name type
+
     // ASSIGN VALUE
     a = "happy"                                     // name = value
+    
     // DECLARE & ASSIGN (INITIALIZE)
     var b int32 = 22                                // Verbose - var name type = value
     var c = 22                                      // Type Inference
     d := 32                                         // Shorthand Assignment (Preferred)
+    
     // PRINT
     fmt.Println(a, b ,c ,d)                         // happy 22 22 32
+
 // CONSTANT / LITERAL
+
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
+
 // GROUPING VARIABLES
+
     // GROUP DECLARE TYPE
     var a, b string                                 // var name1, name 2 ... type
+    
     // GROUP ASSIGN VALUE
     a = "hi a"                                      // name1 = value
     b = "hi b"                                      // name2 = value
+    
     // GROUP DECLARE & ASSIGN (INITIALIZE)
     var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
     var e, f = "hi e", "hi f"                       // Type Inference
@@ -33,6 +43,7 @@ tl;dr,
         h = "hi h"
     )
     i, j := "hi i", "hi j"                          // Group Shorthand Assignment
+    
     // PRINT
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
  ```
