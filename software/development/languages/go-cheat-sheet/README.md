@@ -8,15 +8,14 @@ networked systems._
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
-  * SYNTAX, RUN, BUILD, INSTALL
+  * RUN
+  * BUILD
+  * INSTALL
 * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md)
   * BOOLEAN
   * NUMERIC
   * STRING
-* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
-* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
-* [DERIVED DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/derived-data-types.md)
   * ARRAY (Data Structure)
   * SLICE (Data Structure, Reference Type) (_make_)
   * MAP (Data Structure, Reference Type) (_make_)
@@ -25,12 +24,10 @@ networked systems._
   * FUNCTION AS A TYPE
   * INTERFACE (see below)
   * CHANNEL (Reference Type) (_make_) (see below)
+* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
+* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
 * [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
-  * PASSING ARGUMENTS (VALUE (COPY) AND REFERENCE (POINTER))
-  * CALL BACK
-  * RECURSION
 * [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
-  * PASSING PARAMETERS (VALUE (COPY) AND REFERENCE (POINTER))
 * [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
 * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
@@ -81,21 +78,25 @@ networked systems._
     _- Community forum_
 
 **GO SYNTAX OVERVIEW (BELOW)**
-  
-* [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#data-types)
+
+* DATA TYPES
+  * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
+  * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
+  * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string)
+  * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure)
+  * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure-reference-type-make)
+  * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure-reference-type-make)
+  * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
+  * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new)
+  * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
 * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
 * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
 * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
 * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
-* [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure)
-* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure-reference-type-make)
-* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure-reference-type-make)
-* [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
-* [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new)
-* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
-* [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
-* [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
-* [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
+* BUILDING BLOCKS
+  * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
+  * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
+  * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
 * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
 * [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
@@ -109,84 +110,29 @@ networked systems._
 
 ---
 
-## DATA TYPES
+## BOOLEAN
 
 ```go
     // BOOLEAN
         // true, false
+```
 
+## NUMERIC
+
+```go
     // NUMERIC
         // singed - int8, int16, int32 (rune), int64
         // unsigned - uint8 (byte), uint16, uint32, uint64
         // machine - int, uint, uintptr
         // float - float32, float64
         // complex - complex64, complex128
-
-    // STRING
-        // string (immutable array of bytes (or runes))
 ```
 
-## TYPE CONVERSION & TYPE ASSERTION
+## STRING
 
 ```go
-    // TYPE CONVERSION
-    i := 33
-    nowAFloat := float32(i) / 2.5                   // Result 13.2 (int to float)
-
-    // TYPE ASSERTION
-    var j interface{} = "jeff"
-    s, ok := j.(string)
-    fmt.Println(s, ok)                              // Prints jeff true
-    f, ok := j.(float32)
-    fmt.Println(f, ok)                              // Prints 0, false
-```
-
-## VARIABLE
-
-```go
-    // DECLARE TYPE
-    var a string                                    // var name type
-
-    // ASSIGN VALUE
-    a = "happy"                                     // name = value
-
-    // DECLARE & ASSIGN (INITIALIZE)
-    var b int32 = 22                                // Verbose - var name type = value
-    var c = 22                                      // Type Inference
-    d := 32                                         // Shorthand Assignment (Preferred)
-
-    // PRINT
-    fmt.Println(a, b ,c ,d)                         // happy 22 22 32
-```
-
-## CONSTANT / LITERAL
-
-```go
-    const a float32 = 3.14                          // Must have Assignment
-    const a = 22                                    // Type Inference
-```
-
-## GROUPING VARIABLES
-
-```go
-    // GROUP DECLARE TYPE
-    var a, b string                                 // var name1, name 2 ... type
-
-    // GROUP ASSIGN VALUE
-    a = "hi a"                                      // name1 = value
-    b = "hi b"                                      // name2 = value
-
-    // GROUP DECLARE & ASSIGN (INITIALIZE)
-    var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
-    var e, f = "hi e", "hi f"                       // Type Inference
-    var (                                           // Parenthesis
-        g = "hi g"
-        h = "hi h"
-    )
-    i, j := "hi i", "hi j"                          // Group Shorthand Assignment
-
-    // PRINT
-    fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
+    // STRING (immutable array of bytes (or runes))
+        // string 
 ```
 
 ## ARRAY (Data Structure)
@@ -351,6 +297,69 @@ networked systems._
         a = 9
         fmt.Println(add())                          // 12 <- NOTE THIS
     }
+```
+
+## TYPE CONVERSION & TYPE ASSERTION
+
+```go
+    // TYPE CONVERSION
+    i := 33
+    nowAFloat := float32(i) / 2.5                   // Result 13.2 (int to float)
+
+    // TYPE ASSERTION
+    var j interface{} = "jeff"
+    s, ok := j.(string)
+    fmt.Println(s, ok)                              // Prints jeff true
+    f, ok := j.(float32)
+    fmt.Println(f, ok)                              // Prints 0, false
+```
+
+## VARIABLE
+
+```go
+    // DECLARE TYPE
+    var a string                                    // var name type
+
+    // ASSIGN VALUE
+    a = "happy"                                     // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b int32 = 22                                // Verbose - var name type = value
+    var c = 22                                      // Type Inference
+    d := 32                                         // Shorthand Assignment (Preferred)
+
+    // PRINT
+    fmt.Println(a, b ,c ,d)                         // happy 22 22 32
+```
+
+## CONSTANT / LITERAL
+
+```go
+    const a float32 = 3.14                          // Must have Assignment
+    const a = 22                                    // Type Inference
+```
+
+## GROUPING VARIABLES
+
+```go
+    // GROUP DECLARE TYPE
+    var a, b string                                 // var name1, name 2 ... type
+
+    // GROUP ASSIGN VALUE
+    a = "hi a"                                      // name1 = value
+    b = "hi b"                                      // name2 = value
+
+    // GROUP DECLARE & ASSIGN (INITIALIZE)
+    var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
+    var e, f = "hi e", "hi f"                       // Type Inference
+    var (                                           // Parenthesis
+        g = "hi g"
+        h = "hi h"
+    )
+    i, j := "hi i", "hi j"                          // Group Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
 
 ## FUNCTION
