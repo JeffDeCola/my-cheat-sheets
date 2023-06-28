@@ -18,8 +18,160 @@ tl;dr,
     // float - float32, float64
     // complex - complex64, complex128
 
-// STRING
-    // string (immutable array of bytes (or runes))
+// STRING (immutable array of bytes (or runes))
+    // string 
+
+// ARRAY (Data Structure)
+
+    // DECLARE TYPE
+    var a [2]float32                                // var name [number]type
+
+    // ASSIGN VALUE
+    a[0] = 1.1                                      // name[number] = value
+    a[1] = 2.0
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = [2]float32{1.1, 2.0}                    // Verbose - var name = [number]type{value, value, ...}
+    c := [2]float32{1.1, 2.0}                       // Array Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
+
+// SLICE (Data Structure, Reference Type) (_make_)
+
+    // DECLARE TYPE - NO SIZE
+    var a []float64                                 // var name []type
+
+    // ASSIGN VALUE - ADD LENGTH TO SLICE
+    a = append(a, 5.7)                              // name = append(name, value, value, ...)
+    a = append([]float64{1.1}, a...)                // Trick to prepend to slice
+
+    // DECLARE TYPE - WITH SIZE (make)
+    b := make([]string, 1, 25)                      // name := make([]type, length, capacity)
+
+    // ASSIGN VALUE
+    b[0] = "hello"                                  // name[index] = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var c = []float32{1.1, 2.0}                     // Verbose - var name = []type{value, value, ...}
+    d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
+
+    // PRINT
+    fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
+
+// MAP (Data Structure, Reference Type) (_make_)
+
+    // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
+    var a map[string]int                            // var name map[keytype]valuetype
+
+    // DECLARE TYPES (make)
+    var b = make(map[string]int)                    // var name make(map[type]type)
+    c := make(map[string]int)                       // name := make(map[type]type)
+
+    // ASSIGN KEY:VALUE
+    b["Jill"] = 23                                  // name[key] = value
+    b["Bob"] = 34
+    b["Mark"] = 28
+    c["Jill"], c["Bob"], c["Mark"] = 23, 34, 28
+
+    // DECLARE & ASSIGN KEY:VALUE (INITIALIZE)
+    var d = map[string]int{                         // Verbose - var name = map[type]type {key:value, ...}
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+    e := map[string]int{                            // Array Shortcut Assignment
+        "Jill": 23,
+        "Bob":  34,
+        "Mark": 28,
+    }
+
+    // PRINT
+    fmt.Println(a, b, c, d, e)                      // map[Jill:23 Bob:34 Mark:28] (For all of the maps)
+
+    // DELETE A KEY
+    delete(e,"Jill")                                // Delete key "Jill"
+
+// STRUCT (Data Structure)
+
+    // CREATE STRUCT TYPE
+    type Rect struct {                              // Define a struct
+        w, h int
+        }
+
+    // DECLARE TYPE
+    var r1 Rect                                     // Create a struct
+    r2 := new(Rect)                                 // Returns Pointer
+
+    // ASSIGN VALUE TO FIELDS
+    r1.w = 2                                        // name.field = value
+    r1.h = 4
+    r2.w, r2.h = 3, 5
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var r3 Rect = Rect{2, 4}                        // Verbose (Don't use)
+    var r4 = Rect{2, 4}                             // Type Inference - var name = structName{value, ....}
+    r5 := Rect{w: 2, h: 4}                          // Shorthand Assignment
+    r6 := Rect{2, 4}                                // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
+
+// POINTER (_new_)
+
+    // DECLARE A POINTER TYPE AND ASSIGN
+    a := new(int)                                   // Create int pointer type
+    *a = 9                                          // "Contents of a is 9"
+    fmt.Println("Content of pointer *a is", *a)     // 9
+
+    // ASSIGN A POINTER TYPE AND ASSIGN (OVERKILL)
+    var c *int                                      // YOU DON'T NEED THIS
+    b := 33                                         // This is an int
+    c = &b                                          // "Address of b" is in pointer a
+    fmt.Println("Content of pointer *a is", *a)     // 9
+
+    // ASSIGN A POINTER TO A TYPE INT (INFERRED) - DO THIS
+    b := 33                                         // If we have a var int 5
+    c := &b                                         // assign c the "address of" b
+    fmt.Println("Contents of pointer *c is", *c)    // 33
+    fmt.Println("Address of &b is", &b)             // 0x02
+    fmt.Println("Contents of pointer c is", c)      // 0x02
+
+    // ASSIGN A POINTER TO A TYPE STRUCT
+    var r1 Rect                                     // Create a struct (From above)
+    r1.w = 3                                        // I wish it was *r1.w
+    r1.h = 5                                        // I wish it was *r1.h
+    d := &r1                                        // assign d the "address of" r1
+    fmt.Println("Contents of pointer *d is", *d)    // {3 5}
+    fmt.Println("Address of &r1 is", &r1)           // &{3 5}
+    fmt.Println("Contents of pointer d is", d)      // &{3 5}
+
+// FUNCTION AS A TYPE
+
+    // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+    a, b := 3, 9
+    add := func() int {                             // Anonymous func as a type (no name)
+        return a + b                                // returns int
+    }
+
+    fmt.Println(add())                              // 12
+    a = 9
+    fmt.Println(add())                              // 18
+
+    // CLOSURE - RETURN A FUNCTION TO A FUNCTION
+    func addThis(a, b int) func() int {
+        return func() int {
+            return a + b
+        }
+    }
+    func main() {
+        a, b := 3, 9
+        add := addThis(a, b)                        // Think of the func add like a variable
+
+        fmt.Println(add())                          // 12
+        a = 9
+        fmt.Println(add())                          // 12 <- NOTE THIS
+    }
 ```
 
 Table of Contents
@@ -27,19 +179,15 @@ Table of Contents
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#overview)
 * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
 * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
-  * [INTEGER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#integer)
-  * [FLOATING POINT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#floating-point)
-  * [COMPLEX NUMBERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#complex-numbers)
 * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#string)
-* [DERIVED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#derived)
-  * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#array-data-structure)
-  * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#slice-data-structure-reference-type-make)
-  * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#map-data-structure-reference-type-make)
-  * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#struct-data-structure)
-  * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#pointer-new)
-  * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#function-as-a-type)
-  * [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#interface)
-  * [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#channel-reference-type-make)
+* [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#array-data-structure)
+* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#slice-data-structure-reference-type-make)
+* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#map-data-structure-reference-type-make)
+* [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#struct-data-structure)
+* [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#pointer-new)
+* [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#function-as-a-type)
+* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#interface)
+* [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#channel-reference-type-make)
 
 ## OVERVIEW
 
@@ -48,7 +196,7 @@ There are 4 data types in go.
 * `Boolean`
 * `Numeric`
 * `String`
-* `Derived`
+* `Derived` (Array, slice, map, struct, pointer, function, interface, channel)
 
 `Reference types` are slice, map and channel,
 meaning they are passed by reference/address.
@@ -155,9 +303,7 @@ As an example `e` is the rune number 101. Hence,
     fmt.Println("e")          // Prints e
 ```
 
-## DERIVED
-
-### ARRAY (Data Structure)
+## ARRAY (Data Structure)
 
 Arrays are,
 
@@ -169,7 +315,7 @@ Arrays are,
 
 They are really not used that much.
 
-#### ARRAY - BASIC FORMAT
+### ARRAY - BASIC FORMAT
 
 The basic verbose format is,
 
@@ -239,7 +385,7 @@ len(name)
 cap(name)
 ```
 
-### SLICE (Data Structure, Reference Type) (_make_)
+## SLICE (Data Structure, Reference Type) (_make_)
 
 Slices are for lists,
 
@@ -254,7 +400,7 @@ Slices are for lists,
 * A list/collection identified by an index
 * Value of uninitialized slice is nil
 
-#### SLICE - BASIC FORMAT
+### SLICE - BASIC FORMAT
 
 The basic verbose format is,
 
@@ -292,7 +438,7 @@ d := []float32{3.4, 4.5}                        // Array Shortcut Assignment
 fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
-#### SLICES ARE REFERENCE TYPES
+### SLICES ARE REFERENCE TYPES
 
 Like maps and channels, slices are reference types, meaning
 slices are always passed by "reference/address".
@@ -309,7 +455,7 @@ func main() {
 }
 ```
 
-#### BUILT ON ARRAYS - make
+### BUILT ON ARRAYS - make
 
 Make makes a slice of length x and capacity (which is the length of the
 underlying array) y,
@@ -331,7 +477,7 @@ n := make([]int, 10, 18)
 n := new([18]int)[0:10]
 ```
 
-#### VARIADIC PARAMETERS
+### VARIADIC PARAMETERS
 
 Slices are used with variadic parameters (a function that will
 take an arbitrary number of ints as arguments),
@@ -351,7 +497,7 @@ func main() {
 }
 ```
 
-#### LENGTH AND CAPACITY
+### LENGTH AND CAPACITY
 
 Find length,
 
@@ -389,7 +535,7 @@ is 16 in second example.  That's so cool.
 }
 ```
 
-### MAP (Data Structure, Reference Type) (_make_)
+## MAP (Data Structure, Reference Type) (_make_)
 
 Maps are,
 
@@ -401,7 +547,7 @@ Maps are,
 * Value of uninitialized map is nil
 * Map are build on a hash table
 
-#### MAP - BASIC FORMAT
+### MAP - BASIC FORMAT
 
 The basic verbose format is,
 
@@ -444,7 +590,7 @@ m1 := map[string]int{                           // Array Shortcut Assignment
 }
 ```
 
-#### MAPS ARE REFERENCE TYPES
+### MAPS ARE REFERENCE TYPES
 
 Like slices and channels, maps are reference types, meaning
 maps are always passed by reference/address.
@@ -462,7 +608,7 @@ func main() {
 }
 ```
 
-#### DELETE A KEY/VALUE
+### DELETE A KEY/VALUE
 
 Delete a key/value,
 
@@ -471,7 +617,7 @@ delete(a,1)
 delete(m1,"Jeff")
 ```
 
-### STRUCT (Data Structure)
+## STRUCT (Data Structure)
 
 * A data structure (holds data)
 * Composite types.
@@ -513,7 +659,7 @@ r6 := Rect{2, 4}                                // Shorthand Assignment
 fmt.Println(r1, *r2, r3, r4, r5, r6)            // {2 4} {3 5} {2 4} {2 4} {2 4} {2 4}
 ```
 
-### POINTER (_new_)
+## POINTER (_new_)
 
 A pointer is just a variable that holds the address (of memory)
 of a value.
@@ -521,7 +667,7 @@ of a value.
 * `*` is the `"contents of"`
 * `&` is `"address of"`
 
-#### POINTER -  BASIC FORMAT
+### POINTER -  BASIC FORMAT
 
 Here is an example,
 
@@ -561,14 +707,14 @@ fmt.Println("Contents of pointer d is", d)      // &{3 5}
 
 ![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
 
-#### POINTER USES
+### POINTER USES
 
 Cool uses for pointers are,
 
 * Allocate space for a variable.
 * Pass by "reference" to a function to change parameters value outside function.
 
-#### POINTER PASS BY REFERENCE
+### POINTER PASS BY REFERENCE
 
 As an example,
 
@@ -590,7 +736,7 @@ func main() {
 For some pointer examples, refer to my repo my-go-examples
 [here](https://github.com/JeffDeCola/my-go-examples#basic-syntax).
 
-### FUNCTION AS A TYPE
+## FUNCTION AS A TYPE
 
 Functions can be a type. So like types, I can use
 the variables (the scope) the function lives in.
@@ -600,7 +746,7 @@ There is a better explanation of this on the cheat sheet
 
 But here are two methods that can be used,
 
-#### ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
+### ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
 
 ```go
 // ASSIGN ANONYMOUS FUNCTION (func LITERAL) TO A VARIABLE
@@ -618,7 +764,7 @@ The anonymous function (function literal) has use of `a` and `b` because
 of the scope.  This assignment of an anonymous function (function literal)
 to a variable is called `closure`.
 
-#### CLOSURE - RETURN A FUNCTION TO A FUNCTION
+### CLOSURE - RETURN A FUNCTION TO A FUNCTION
 
 In this method, the function scope acts just like an assigned variable.
 Think of the function like a variable, because that's what is really is,
@@ -639,7 +785,7 @@ func main() {
 }
 ```
 
-### INTERFACE
+## INTERFACE
 
 Syntactic way to have multiple structs do the same thing differently,
 
@@ -655,7 +801,7 @@ type Name interface {
 
 See the interface [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
 
-### CHANNEL (Reference Type) (_make_)
+## CHANNEL (Reference Type) (_make_)
 
 tbd
 
