@@ -8,9 +8,7 @@ networked systems._
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
-  * RUN
-  * BUILD
-  * INSTALL
+(run, build, install)
 * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md)
   * BOOLEAN
@@ -26,14 +24,15 @@ networked systems._
   * CHANNEL (Reference Type) (_make_) (see below)
 * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
 * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
-* [FUNCTIONS (BLACK BOX)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
-* [METHODS (ATTACHED TO DATA)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
-* [INTERFACES (SET OF METHOD SIGNATURES)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
-* [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
 * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
-* [CONTROL STRUCTURES / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md)
-  * LOOPS
-  * CONDITIONAL STATEMENTS
+* [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
+(Black Box)
+* [METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
+(Attached to Data)
+* [INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
+(Set of Method Signatures)
+* [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
+* [CONTROL STRUCTURES & FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md)
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
 * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
@@ -56,17 +55,17 @@ networked systems._
   * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
   * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
-* MAKE THINGS
+* BUILDING BLOCKS
   * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
 * GO RUNTIME
   * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
   * [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
-* CONTROL STRUCTURES / FLOW CONTROL
+* CONTROL STRUCTURES & FLOW CONTROL
   * [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#loops)
   * [CONDITIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#conditional)
-* ERROR / LOGGING
+* ERROR & LOGGING
   * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
   * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging)
 * OUTPUT
