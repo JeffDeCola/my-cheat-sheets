@@ -1,4 +1,4 @@
-# CONTROL STRUCTURES / FLOW CONTROL
+# CONTROL STRUCTURES & FLOW CONTROL
 
 _A control structure analyzes variables and chooses a direction
 in which to go based on given parameters.
@@ -6,17 +6,17 @@ in which to go based on given parameters.
 
 Table of Contents
 
-* [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#loops)
-  * [FOR LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#for-loop)
-  * [WHILE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#while-loop)
-  * [INFINITE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#infinite-loop)
-  * [RANGE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#range-loop)
-  * [BREAK / CONTINUE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#break--continue)
-* [CONDITIONAL STATEMENTS /  DECISION MAKING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#conditional-statements---decision-making)
-  * [IF, IF ELSE, NESTED IF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#if-if-else-nested-if)
-  * [SWITCH (CASE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#switch-case)
-  * [DEFER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#defer)
-  * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md#select)
+* [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#loops)
+  * [FOR LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#for-loop)
+  * [WHILE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#while-loop)
+  * [INFINITE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#infinite-loop)
+  * [RANGE LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#range-loop)
+  * [BREAK / CONTINUE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#break--continue)
+* [CONDITIONAL STATEMENTS /  DECISION MAKING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#conditional-statements---decision-making)
+  * [IF, IF ELSE, NESTED IF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#if-if-else-nested-if)
+  * [SWITCH (CASE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#switch-case)
+  * [DEFER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#defer)
+  * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#select)
 
 ## LOOPS
 
