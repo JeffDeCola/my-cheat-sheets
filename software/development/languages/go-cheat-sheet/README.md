@@ -4,7 +4,7 @@ _Go is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
-**LET'S GO (LINKS)**
+**LET'S GO (LINKS TO CHEATSHEETS)**
 
 * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
 * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
@@ -37,47 +37,8 @@ networked systems._
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
 * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
 * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
-* [CGO (CALLING C WITH GO)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/cgo.md)
 
-**REFERENCES/DOCUMENTATION (LINKS)**
-
-* MY REPOS
-  * [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
-  * [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
-  * [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
-* SYNTAX
-  * [golang.org](http://golang.org)
-    _- Home base for everything_
-  * [golang.org docs](https://golang.org/doc/)
-    _- A good collection of docs_
-  * [golang.org spec](https://golang.org/ref/spec)
-    _- I'll be honest, way to much stuff to make your head spin_
-* RUNNING CODE
-  * [golang.org go playground](https://play.golang.org/)
-    _- Lets you write, compile and share code_
-* TUTORIALS
-  * [golang.org tour of go](https://tour.golang.org/welcome/1)
-    _- A good place to start_
-  * [golang.org effective go](https://golang.org/doc/effective_go.html)
-    _- A must read to create great things_
-  * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
-    _- A great summary of syntax_
-  * [gobyexample.com](https://gobyexample.com/)
-    _- The title says it all_
-  * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
-    _- Exactly that_
-  * [medium.com golangspec](https://medium.com/golangspec)
-    _- A bunch of cool examples_
-* GO PACKAGE LISTS
-  * [godoc.org](https://godoc.org/)
-    _- Both standard and user packages. Also shows popular packages_
-  * [golang.org](https://golang.org/pkg/)
-    _- Just official standard packages_
-* HELP
-  * [Go forum](https://forum.golangbridge.org/)
-    _- Community forum_
-
-**GO SYNTAX OVERVIEW (BELOW)**
+**GO SYNTAX (BELOW)**
 
 * DATA TYPES
   * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
@@ -89,24 +50,32 @@ networked systems._
   * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
   * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new)
   * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
-* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
-* [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
-* [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
-* [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
-* BUILDING BLOCKS
+* USING TYPES
+  * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
+  * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
+  * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
+  * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
+  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
+* MAKE THINGS
   * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
   * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
   * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
-* [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
-* [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
-* [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
-* [CONTROL STRUCTURE / FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#control-structure--flow-control)
-* [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
-* [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging)
-* [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
-* [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
-* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
-* [GCO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#gco)
+* GO RUNTIME
+  * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
+  * [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
+* CONTROL STRUCTURES / FLOW CONTROL
+  * [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#loops)
+  * [CONDITIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#conditional)
+* ERROR / LOGGING
+  * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
+  * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging)
+* OUTPUT
+  * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
+  * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
+* GO STRUCTURE
+  * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
+* HELP
+  * [REFERENCES/DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#referencesdocumentation)
 
 ---
 
@@ -362,6 +331,28 @@ networked systems._
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
 ```
 
+## OPERATORS
+
+```go
+    // ARITHMETIC (MATH)
+        // +, i, *, /, %,  ++, --
+
+    // RELATIONAL (COMPARE)
+        // ==, !=, >, <, >=, <=
+
+    // LOGICAL (BOOLEAN)
+        // &&, ||, !
+
+    // BITWISE (BITS)
+        // &, |, ^, <<, >>
+
+    // ASSIGNMENT
+        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |=
+
+    // MISCELLANEOUS
+        // &, *
+```
+
 ## FUNCTION
 
 ```go
@@ -564,96 +555,76 @@ networked systems._
         fmt.Println("received", msg2)
 ```
 
-## OPERATORS
+## LOOPS
 
 ```go
-    // ARITHMETIC (MATH)
-        // +, i, *, /, %,  ++, --
-
-    // RELATIONAL (COMPARE)
-        // ==, !=, >, <, >=, <=
-
-    // LOGICAL (BOOLEAN)
-        // &&, ||, !
-
-    // BITWISE (BITS)
-        // &, |, ^, <<, >>
-
-    // ASSIGNMENT
-        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |=
-
-    // MISCELLANEOUS
-        // &, *
+    // FOR LOOP
+    for i:=0; i < 8; i++ {
+        fmt.Printf("Count is %v\n", i)
+    }
+    // WHILE LOOP
+    i :=0
+    for i < 8 {
+        fmt.Printf("Count is %v\n", i)
+        i++
+    }
+    // INFINITE LOOP
+    for {
+        do something forever
+    }
+    // RANGE LOOP
+    myslice := []int{3, 4, 5}
+    sum := 0
+    for i := range myslice {
+        fmt.Printf("Adding %v to sum %v\n", myslice[i], sum)
+        sum += myslice[i]
+    }
+    // BREAK/CONTINUE
+    x := 0
+    for {
+        x++
+        if x%2 == 1 {
+            continue
+        }
+        if x >= 100 {
+            break
+        }
+        fmt.Println(x)
+    }
 ```
 
-## CONTROL STRUCTURE / FLOW CONTROL
+## CONDITIONAL
 
 ```go
-    // LOOPS
-        // FOR LOOP
-        for i:=0; i < 8; i++ {
-            fmt.Printf("Count is %v\n", i)
-        }
-        // WHILE LOOP
-        i :=0
-        for i < 8 {
-            fmt.Printf("Count is %v\n", i)
-            i++
-        }
-        // INFINITE LOOP
-        for {
-            do something forever
-        }
-        // RANGE LOOP
-        myslice := []int{3, 4, 5}
-        sum := 0
-        for i := range myslice {
-            fmt.Printf("Adding %v to sum %v\n", myslice[i], sum)
-            sum += myslice[i]
-        }
-        // BREAK/CONTINUE
-        x := 0
-        for {
-            x++
-            if x%2 == 1 {
-                continue
-            }
-            if x >= 100 {
-                break
-            }
-            fmt.Println(x)
-        }
-
-    // CONDITIONAL
-        // IF, IF/ELSE, NESTED IF
-        if a == b {
-            fmt.Println("equal")
-        } else if a > b {
-            fmt.Println("higher")
-        } else {
-            fmt.Println("Lower")
-        }
-        // SWITCH (CASE)
-        switch {
-        case (a == b):
-            fmt.Println("equal")
-        case (a > b):
-            fmt.Println("higher")
-        default:
-            fmt.Println("Lower")
-        }
-        // DEFER
-        func main() {
-            defer fmt.Println("world")
-            fmt.Println("hello")
-        }
-        // SELECT (CASE) See Channels above
-        // WAITING FOR BOTH CHANNELS TO BE RECEIVED
-        select {
-        case msg1 := <-c1:
-            fmt.Println("received", msg1)
-        case msg2 := <-c1:
-            fmt.Println("received", msg2)
+    // IF, IF/ELSE, NESTED IF
+    if a == b {
+        fmt.Println("equal")
+    } else if a > b {
+        fmt.Println("higher")
+    } else {
+        fmt.Println("Lower")
+    }
+    // SWITCH (CASE)
+    switch {
+    case (a == b):
+        fmt.Println("equal")
+    case (a > b):
+        fmt.Println("higher")
+    default:
+        fmt.Println("Lower")
+    }
+    // DEFER
+    func main() {
+        defer fmt.Println("world")
+        fmt.Println("hello")
+    }
+    // SELECT (CASE) See Channels above
+    // WAITING FOR BOTH CHANNELS TO BE RECEIVED
+    select {
+    case msg1 := <-c1:
+        fmt.Println("received", msg1)
+    case msg2 := <-c1:
+        fmt.Println("received", msg2)
 ```
 
 ## ERROR HANDLING
@@ -766,23 +737,40 @@ networked systems._
     import github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
-## GCO
+## REFERENCES/DOCUMENTATION
 
-```go
-    package main
-
-    /*
-    int Add(int a, int b){
-        return a+b;
-    }
-    */
-    import "C"
-    import "fmt"
-
-    func main() {
-        a := C.int(10)
-        b := C.int(20)
-        c := C.Add(a, b)
-        fmt.Println(c)                              // 30
-    }
-```
+* MY REPOS
+  * [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
+  * [my-go-packages](https://github.com/JeffDeCola/my-go-packages)
+  * [my-go-tools](https://github.com/JeffDeCola/my-go-tools)
+* SYNTAX
+  * [golang.org](http://golang.org)
+    _- Home base for everything_
+  * [golang.org docs](https://golang.org/doc/)
+    _- A good collection of docs_
+  * [golang.org spec](https://golang.org/ref/spec)
+    _- I'll be honest, way to much stuff to make your head spin_
+* RUNNING CODE
+  * [golang.org go playground](https://play.golang.org/)
+    _- Lets you write, compile and share code_
+* TUTORIALS
+  * [golang.org tour of go](https://tour.golang.org/welcome/1)
+    _- A good place to start_
+  * [golang.org effective go](https://golang.org/doc/effective_go.html)
+    _- A must read to create great things_
+  * [tutorialspoint.com](https://www.tutorialspoint.com/go/go_data_types.htm)
+    _- A great summary of syntax_
+  * [gobyexample.com](https://gobyexample.com/)
+    _- The title says it all_
+  * [An Introduction to Programming in Go](https://www.golang-book.com/books/intro)
+    _- Exactly that_
+  * [medium.com golangspec](https://medium.com/golangspec)
+    _- A bunch of cool examples_
+* GO PACKAGE LISTS
+  * [godoc.org](https://godoc.org/)
+    _- Both standard and user packages. Also shows popular packages_
+  * [golang.org](https://golang.org/pkg/)
+    _- Just official standard packages_
+* HELP
+  * [Go forum](https://forum.golangbridge.org/)
+    _- Community forum_
