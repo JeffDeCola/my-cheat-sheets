@@ -43,15 +43,15 @@ networked systems._
 * USING TYPES  
   * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion))
-  * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
-    * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
-      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable))
-    * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
-      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal))
-    * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
-      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables))
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators))
+* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
+  * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable))
+  * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal))
+  * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables))
 * BUILDING BLOCKS
   * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
     (Black Box)
@@ -76,7 +76,7 @@ networked systems._
   * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#error-handling)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling))
   * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#logging)
-    ([syntadx](hhttps://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging))
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging))
 * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
   * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#format-specifiers)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers))
@@ -357,6 +357,28 @@ networked systems._
     fmt.Println(f, ok)                              // Prints 0, false
 ```
 
+## OPERATORS
+
+```go
+    // ARITHMETIC (MATH)
+        // +, i, *, /, %,  ++, --
+
+    // RELATIONAL (COMPARE)
+        // ==, !=, >, <, >=, <=
+
+    // LOGICAL (BOOLEAN)
+        // &&, ||, !
+
+    // BITWISE (BITS)
+        // &, |, ^, <<, >>
+
+    // ASSIGNMENT
+        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |=
+
+    // MISCELLANEOUS
+        // &, *
+```
+
 ## VARIABLE
 
 ```go
@@ -404,28 +426,6 @@ networked systems._
 
     // PRINT
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
-```
-
-## OPERATORS
-
-```go
-    // ARITHMETIC (MATH)
-        // +, i, *, /, %,  ++, --
-
-    // RELATIONAL (COMPARE)
-        // ==, !=, >, <, >=, <=
-
-    // LOGICAL (BOOLEAN)
-        // &&, ||, !
-
-    // BITWISE (BITS)
-        // &, |, ^, <<, >>
-
-    // ASSIGNMENT
-        // =, +=, -=, *=, /=, %=, <=, >>=, &=, ^=, |=
-
-    // MISCELLANEOUS
-        // &, *
 ```
 
 ## FUNCTION
