@@ -376,6 +376,7 @@ networked systems._
 ## CONSTANT / LITERAL
 
 ```go
+    // DECLARE & ASSIGN (INITIALIZE)
     const a float32 = 3.14                          // Must have Assignment
     const a = 22                                    // Type Inference
 ```
