@@ -37,6 +37,7 @@ Common ones,
 * `%p` pointer
 * `%p` channel
 * `%p` slice - address of 0th element in base 16 notation, with leading 0
+* `%T` type
 
 As an example,
 

@@ -4,7 +4,7 @@ _Go is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
 
-**LET'S GO (LINKS TO CHEATSHEETS)**
+**LINKS TO CHEAT SHEETS OR QUICK SYNTAX**
 
 * BASIC
   * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
@@ -12,74 +12,72 @@ networked systems._
 (run, build, install)
   * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages))
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md)
-  * BOOLEAN
-  * NUMERIC
-  * STRING
-  * ARRAY (Data Structure)
-  * SLICE (Data Structure & Reference Type) (_make_)
-  * MAP (Data Structure & Reference Type) (_make_)
-  * STRUCT (Data Structure)
-  * POINTER (_new_)
-  * FUNCTION AS A TYPE
+  * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#boolean)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean))
+  * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric))
+  * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#string)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string-immutable-array-of-bytes-or-runes))
+  * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#array-data-structure)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure))
+  * [SLICE (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#slice-data-structure--reference-type-make)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure--reference-type-make))
+  * [MAP (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#map-data-structure--reference-type-make)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure--reference-type-make))
+  * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#struct-data-structure)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure))
+  * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#pointer-new)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new))
+  * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#function-as-a-type)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type))
   * INTERFACE (see below)
   * CHANNEL (Reference Type) (_make_) (see below)
 * USING TYPES  
   * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion))
   * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
+    * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable))
+    * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal))
+    * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables))
   * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators))
 * BUILDING BLOCKS
   * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
-(Black Box)
+    (Black Box)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function))
   * [METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
-(Attached to Data)
+    (Attached to Data)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method))
   * [INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
-(Set of Method Signatures)
+    (Set of Method Signatures)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type))
 * GO RUNTIME
   * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
+    * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#goroutines---concurrent-threads)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines))
+    * [CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channels---goroutine-message-pipes)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make))
 * [CONTROL STRUCTURES & FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md)
+  * [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#loops)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#loops))
+  * [CONDITIONAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#conditional-statements---decision-making)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#conditional))
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
+  * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#error-handling)
+    ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling))
+  * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#logging)
+    ([syntax](hhttps://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging))
 * OUTPUT
   * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
-
-**GO SYNTAX (BELOW)**
-
-* BASIC
-  * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
-* DATA TYPES
-  * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
-  * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
-  * [STRING (immutable array of bytes (or runes))](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string-immutable-array-of-bytes-or-runes)
-  * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure)
-  * [SLICE (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure--reference-type-make)
-  * [MAP (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure--reference-type-make)
-  * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
-  * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new)
-  * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
-  * INTERFACE (see below)
-  * CHANNEL (Reference Type) (make) (see below)
-* USING TYPES
-  * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#type-conversion--type-assertion)
-  * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#variable)
-  * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#constant--literal)
-  * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#grouping-variables)
-  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#operators)
-* BUILDING BLOCKS
-  * [FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function)
-  * [METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#method)
-  * [INTERFACE (Reference Type)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#interface-reference-type)
-* GO RUNTIME
-  * [GOROUTINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#goroutines)
-  * [CHANNELS (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#channels-make)
-* CONTROL STRUCTURES & FLOW CONTROL
-  * [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#loops)
-  * [CONDITIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#conditional)
-* ERROR HANDLING & LOGGING
-  * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
-  * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging)
-* OUTPUT
-  * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
-  * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
+    * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#format-specifiers)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers))
+    * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#escape-sequences)
+      ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences))
 * HELP
   * [REFERENCES/DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#referencesdocumentation)
 
@@ -697,7 +695,7 @@ networked systems._
         defer fmt.Println("world")
         fmt.Println("hello")
     }
-    
+
     // SELECT (CASE) See Channels above
     // WAITING FOR BOTH CHANNELS TO BE RECEIVED
     select {
