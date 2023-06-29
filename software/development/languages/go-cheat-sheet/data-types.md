@@ -3,7 +3,8 @@
 _Types or data types are a classification of data,
 that tells the compiler how to use that data.
 It also tells the computer how much space the data type
-occupies and how the bit pattern is stored._
+occupies and how the bit pattern is stored.
+We are using variables in this section._
 
 tl;dr,
 
@@ -232,8 +233,14 @@ Table of Contents
 * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#struct-data-structure)
 * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#pointer-new)
 * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#function-as-a-type)
-* [INTERFACE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#interface)
-* [CHANNEL (Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#channel-reference-type-make)
+* **INTERFACE**
+(Refer to my
+[interfaces](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
+cheat sheet)
+* **CHANNEL (Reference Type) (_make_)**
+(Refer to my
+[goroutines & channels](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
+cheat sheet)
 
 ## OVERVIEW
 
@@ -722,11 +729,6 @@ a := new(int)                                   // Create int pointer type
 *a = 9                                          // "Contents of a is 9"
 fmt.Println("Content of pointer *a is", *a)     // 9
 
-// DECLARE A POINTER TYPE AND ASSIGN
-a := new(int)                                   // Create int pointer type
-*a = 9                                          // "Contents of a is 9"
-fmt.Println("Content of pointer *a is", *a)     // 9
-
 // ASSIGN A POINTER TYPE AND ASSIGN (OVERKILL)
 var c *int                                      // YOU DON'T NEED THIS
 b := 33                                         // This is an int
@@ -829,34 +831,3 @@ func main() {
     fmt.Println(add())                          // 12 <- NOTE THIS
 }
 ```
-
-## INTERFACE
-
-Syntactic way to have multiple structs do the same thing differently,
-
-Basic format,
-
-```go
-// CREATE INTERFACE TYPE
-type Name interface {
-    methodName()
-    ...
-}
-```
-
-See the interface [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/interfaces.md).
-
-## CHANNEL (Reference Type) (_make_)
-
-tbd
-
-Basic Format,
-
-```go
-tbd
-```
-
-Like slices and maps, channels are reference types, meaning
-channels are always passed by reference/address.
-
-See channel [cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
