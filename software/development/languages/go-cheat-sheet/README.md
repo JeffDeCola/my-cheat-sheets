@@ -6,10 +6,12 @@ networked systems._
 
 **LET'S GO (LINKS TO CHEATSHEETS)**
 
-* [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
-* [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
+* BASIC
+  * [INSTALL & CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md)
+  * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
 (run, build, install)
-* [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
+  * [EXECUTABLE (YOUR CODE & GO RUNTIME)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
+  * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md)
   * BOOLEAN
   * NUMERIC
@@ -22,23 +24,28 @@ networked systems._
   * FUNCTION AS A TYPE
   * INTERFACE (see below)
   * CHANNEL (Reference Type) (_make_) (see below)
-* [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
-* [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
-* [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
-* [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
+* USING TYPES  
+  * [TYPE CONVERSION & TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md)
+  * [VARIABLES & CONSTANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md)
+  * [OPERATORS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/operators.md)
+* BUILDING BLOCKS
+  * [FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md)
 (Black Box)
-* [METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
+  * [METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md)
 (Attached to Data)
-* [INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
+  * [INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
 (Set of Method Signatures)
-* [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
+* GO RUNTINE
+  * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
 * [CONTROL STRUCTURES & FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md)
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
-* [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
-* [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
+* OUTPUT
+  * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
 
 **GO SYNTAX (BELOW)**
 
+* BASIC
+  * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
 * DATA TYPES
   * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
   * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
@@ -67,18 +74,43 @@ networked systems._
 * CONTROL STRUCTURES & FLOW CONTROL
   * [LOOPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#loops)
   * [CONDITIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#conditional)
-* ERROR & LOGGING
+* ERROR HANDLING & LOGGING
   * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#error-handling)
   * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#logging)
 * OUTPUT
   * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers)
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences)
-* GO STRUCTURE
-  * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages)
 * HELP
   * [REFERENCES/DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#referencesdocumentation)
 
 ---
+
+## PACKAGES
+
+```go
+    // GO GET A PACKAGE AND USE IT
+    // As an example
+    go get -u -v github.com/golang/protobuf/protoc-gen-go
+
+    // Lets use it
+    import (
+        "fmt"
+        "github.com/golang/protobuf/proto"
+    )
+    func main() {
+        fmt.Println(proto.WireStartGroup)           // 3 (A constant in the package)
+    }
+
+    //  LETS CREATE A CUSTOM PACKAGE
+    // Create a go package jeffshapes with methods, types, etc....
+    package jeffshapes
+
+    // Like above, get the package for your environment
+    go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
+
+    // Like above, use in your go code
+    import github.com/JeffDeCola/my-go-packages/jeffshapes
+```
 
 ## BOOLEAN
 
@@ -748,33 +780,6 @@ networked systems._
         // \?                                       // ? character
         // \b                                       // backspace
         // \"                                       // " character
-```
-
-## PACKAGES
-
-```go
-    // GO GET A PACKAGE AND USE IT
-    // As an example
-    go get -u -v github.com/golang/protobuf/protoc-gen-go
-
-    // Lets use it
-    import (
-        "fmt"
-        "github.com/golang/protobuf/proto"
-    )
-    func main() {
-        fmt.Println(proto.WireStartGroup)           // 3 (A constant in the package)
-    }
-
-    //  LETS CREATE A CUSTOM PACKAGE
-    // Create a go package jeffshapes with methods, types, etc....
-    package jeffshapes
-
-    // Like above, get the package for your environment
-    go get -u -v github.com/JeffDeCola/my-go-packages/jeffshapes
-
-    // Like above, use in your go code
-    import github.com/JeffDeCola/my-go-packages/jeffshapes
 ```
 
 ## REFERENCES/DOCUMENTATION
