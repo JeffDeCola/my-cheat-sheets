@@ -35,9 +35,9 @@ networked systems._
 (Attached to Data)
   * [INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md)
 (Set of Method Signatures)
-* GO RUNTINE
+* GO RUNTIME
   * [GOROUTINES & CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
-* [CONTROL STRUCTURES & FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-flow-control.md)
+* [CONTROL STRUCTURES & FLOW CONTROL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md)
 * [ERROR HANDLING & LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md)
 * OUTPUT
   * [FORMATTING TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md)
@@ -635,16 +635,19 @@ networked systems._
     for i:=0; i < 8; i++ {
         fmt.Printf("Count is %v\n", i)
     }
+
     // WHILE LOOP
     i :=0
     for i < 8 {
         fmt.Printf("Count is %v\n", i)
         i++
     }
+
     // INFINITE LOOP
     for {
         do something forever
     }
+
     // RANGE LOOP
     myslice := []int{3, 4, 5}
     sum := 0
@@ -652,6 +655,7 @@ networked systems._
         fmt.Printf("Adding %v to sum %v\n", myslice[i], sum)
         sum += myslice[i]
     }
+
     // BREAK/CONTINUE
     x := 0
     for {
@@ -677,6 +681,7 @@ networked systems._
     } else {
         fmt.Println("Lower")
     }
+
     // SWITCH (CASE)
     switch {
     case (a == b):
@@ -686,11 +691,13 @@ networked systems._
     default:
         fmt.Println("Lower")
     }
+
     // DEFER
     func main() {
         defer fmt.Println("world")
         fmt.Println("hello")
     }
+    
     // SELECT (CASE) See Channels above
     // WAITING FOR BOTH CHANNELS TO BE RECEIVED
     select {
