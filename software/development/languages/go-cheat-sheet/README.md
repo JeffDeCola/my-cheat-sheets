@@ -82,7 +82,7 @@ networked systems._
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers))
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#escape-sequences)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences))
-* [REFERENCES & DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references---documentation)
+* [REFERENCES & DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references--documentation)
 
 ---
 
