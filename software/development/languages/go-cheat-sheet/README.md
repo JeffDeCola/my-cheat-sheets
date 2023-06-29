@@ -11,7 +11,7 @@ networked systems._
   * [BASIC CONCEPTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md)
 (run, build, install)
   * [EXECUTABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md)
-    (Your code & go runtime)
+    (your code & go runtime)
   * [PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#packages))
 * [DATA TYPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md)
@@ -82,8 +82,7 @@ networked systems._
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#format-specifiers))
   * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#escape-sequences)
     ([syntax](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#escape-sequences))
-* HELP
-  * [REFERENCES/DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#referencesdocumentation)
+* [REFERENCES & DOCUMENTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#references---documentation)
 
 ---
 
@@ -792,7 +791,7 @@ networked systems._
         // \"                                       // " character
 ```
 
-## REFERENCES/DOCUMENTATION
+## REFERENCES & DOCUMENTATION
 
 * MY REPOS
   * [my-go-examples](https://github.com/JeffDeCola/my-go-examples)
