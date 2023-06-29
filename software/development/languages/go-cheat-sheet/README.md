@@ -15,8 +15,8 @@ networked systems._
   * NUMERIC
   * STRING
   * ARRAY (Data Structure)
-  * SLICE (Data Structure, Reference Type) (_make_)
-  * MAP (Data Structure, Reference Type) (_make_)
+  * SLICE (Data Structure & Reference Type) (_make_)
+  * MAP (Data Structure & Reference Type) (_make_)
   * STRUCT (Data Structure)
   * POINTER (_new_)
   * FUNCTION AS A TYPE
@@ -44,8 +44,8 @@ networked systems._
   * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
   * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string)
   * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure)
-  * [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure-reference-type-make)
-  * [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure-reference-type-make)
+  * [SLICE (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure--reference-type-make)
+  * [MAP (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure--reference-type-make)
   * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#struct-data-structure)
   * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#pointer-new)
   * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#function-as-a-type)
@@ -81,26 +81,65 @@ networked systems._
 ## BOOLEAN
 
 ```go
-    // BOOLEAN
+    // VALUES
         // true, false
+
+    // DECLARE TYPE
+    var a bool                                      // var name type
+
+    // ASSIGN VALUE
+    a = true                                        // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = true                                    // Verbose - var name = value
+    c := false                                      // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // true false true
 ```
 
 ## NUMERIC
 
 ```go
-    // NUMERIC
+    // TYPES
         // singed - int8, int16, int32 (rune), int64
         // unsigned - uint8 (byte), uint16, uint32, uint64
         // machine - int, uint, uintptr
         // float - float32, float64
         // complex - complex64, complex128
+
+    // DECLARE TYPE
+    var a int32                                     // var name type
+
+    // ASSIGN VALUE
+    a = 23                                          // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = 23                                      // Verbose - var name = value
+    c := 23                                         // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // 23 23 23
 ```
 
-## STRING
+## STRING (immutable array of bytes (or runes))
 
 ```go
-    // STRING (immutable array of bytes (or runes))
-        // string 
+    // TYPE
+        // string
+
+    // DECLARE TYPE
+    var a string                                    // var name string
+
+    // ASSIGN VALUE
+    a = "hello"                                     // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = "good"                                  // Verbose - var name = value
+    c := "night"                                    // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // hello good night
 ```
 
 ## ARRAY (Data Structure)
@@ -121,7 +160,7 @@ networked systems._
     fmt.Println(a, b, c)                            // [1.1 2] [1.1 2] [1.1 2]
 ```
 
-## SLICE (Data Structure, Reference Type) (_make_)
+## SLICE (Data Structure & Reference Type) (_make_)
 
 ```go
     // DECLARE TYPE - NO SIZE
@@ -145,7 +184,7 @@ networked systems._
     fmt.Println(a, b, c, d)                         // [1.1 5.7] [hello] [1.1 2] [3.4 4.5]
 ```
 
-## MAP (Data Structure, Reference Type) (_make_)
+## MAP (Data Structure & Reference Type) (_make_)
 
 ```go
     // DECLARE TYPES - THIS IS A NIL MAP - DON'T DO THIS
