@@ -9,17 +9,63 @@ tl;dr,
 
 ```go
 // BOOLEAN
-    // true, false
+
+    // VALUES
+        // true, false
+
+    // DECLARE TYPE
+    var a bool                                      // var name type
+
+    // ASSIGN VALUE
+    a = true                                        // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = true                                    // Verbose - var name = value
+    c := false                                      // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // true false true
 
 // NUMERIC
-    // singed - int8, int16, int32 (rune), int64
-    // unsigned - uint8 (byte), uint16, uint32, uint64
-    // machine - int, uint, uintptr
-    // float - float32, float64
-    // complex - complex64, complex128
+
+    // TYPES
+        // singed - int8, int16, int32 (rune), int64
+        // unsigned - uint8 (byte), uint16, uint32, uint64
+        // machine - int, uint, uintptr
+        // float - float32, float64
+        // complex - complex64, complex128
+
+    // DECLARE TYPE
+    var a int32                                     // var name type
+
+    // ASSIGN VALUE
+    a = 23                                          // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = 23                                      // Verbose - var name = value
+    c := 23                                         // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // 23 23 23
+
 
 // STRING (immutable array of bytes (or runes))
-    // string 
+
+    // TYPE
+        // string
+
+    // DECLARE TYPE
+    var a string                                    // var name string
+
+    // ASSIGN VALUE
+    a = "hello"                                     // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = "good"                                  // Verbose - var name = value
+    c := "night"                                    // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // hello good night
 
 // ARRAY (Data Structure)
 
@@ -181,8 +227,8 @@ Table of Contents
 * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#numeric)
 * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#string)
 * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#array-data-structure)
-* [SLICE (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#slice-data-structure-reference-type-make)
-* [MAP (Data Structure, Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#map-data-structure-reference-type-make)
+* [SLICE (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#slice-data-structure--reference-type-make)
+* [MAP (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#map-data-structure--reference-type-make)
 * [STRUCT (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#struct-data-structure)
 * [POINTER (_new_)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#pointer-new)
 * [FUNCTION AS A TYPE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/data-types.md#function-as-a-type)
@@ -198,15 +244,14 @@ There are 4 data types in go.
 * `String`
 * `Derived` (Array, slice, map, struct, pointer, function, interface, channel)
 
+`Data structures` are arrays, slices, maps and structs.  They store data.
+
 `Reference types` are slice, map and channel,
 meaning they are passed by reference/address.
-Reference types are build upon an underlining `data structure`
+Reference types are build upon an underlining data structure
 (stores data). We are passing the address of these underlying
 data structures. Also can use use _make_ to initialize reference type
 before use.
-
-`Data structures` are arrays, slices, maps and structs.  They
-are types that allow us to store data.
 
 ## BOOLEAN
 
@@ -385,7 +430,7 @@ len(name)
 cap(name)
 ```
 
-## SLICE (Data Structure, Reference Type) (_make_)
+## SLICE (Data Structure & Reference Type) (_make_)
 
 Slices are for lists,
 
@@ -535,7 +580,7 @@ is 16 in second example.  That's so cool.
 }
 ```
 
-## MAP (Data Structure, Reference Type) (_make_)
+## MAP (Data Structure & Reference Type) (_make_)
 
 Maps are,
 
