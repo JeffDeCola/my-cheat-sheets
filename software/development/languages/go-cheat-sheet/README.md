@@ -42,7 +42,7 @@ networked systems._
 * DATA TYPES
   * [BOOLEAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#boolean)
   * [NUMERIC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#numeric)
-  * [STRING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string)
+  * [STRING (immutable array of bytes (or runes))](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#string-immutable-array-of-bytes-or-runes)
   * [ARRAY (Data Structure)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#array-data-structure)
   * [SLICE (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#slice-data-structure--reference-type-make)
   * [MAP (Data Structure & Reference Type) (_make_)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#map-data-structure--reference-type-make)
