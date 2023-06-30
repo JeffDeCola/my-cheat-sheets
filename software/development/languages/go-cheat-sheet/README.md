@@ -128,6 +128,7 @@ networked systems._
     // DECLARE & ASSIGN (INITIALIZE)
     var b = true                                    // Verbose - var name = value
     c := false                                      // Shorthand Assignment
+    isGreaterTen := myNumber > 10                   // With conditional 
 
     // PRINT
     fmt.Println(a, b, c)                            // true false true
