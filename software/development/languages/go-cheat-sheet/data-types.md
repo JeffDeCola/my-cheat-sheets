@@ -23,6 +23,7 @@ tl;dr,
     // DECLARE & ASSIGN (INITIALIZE)
     var b = true                                    // Verbose - var name = value
     c := false                                      // Shorthand Assignment
+    isGreaterTen := myNumber > 10                   // With conditional 
 
     // PRINT
     fmt.Println(a, b, c)                            // true false true
@@ -273,6 +274,27 @@ Boolean uses [logical operators](https://github.com/JeffDeCola/my-cheat-sheets/t
 (compare) returns a boolean (true or false).
 
 * `==`, `!=`, `<`, `>`, `>=`, `<=`
+
+```go
+    // DECLARE TYPE
+    var a bool                                      // var name type
+
+    // ASSIGN VALUE
+    a = true                                        // name = value
+
+    // DECLARE & ASSIGN (INITIALIZE)
+    var b = true                                    // Verbose - var name = value
+    c := false                                      // Shorthand Assignment
+
+    // PRINT
+    fmt.Println(a, b, c)                            // true false true
+```
+
+You can also use conditional statements with booleans.
+
+```go
+  isGreaterTen := myNumber > 10
+```
 
 ## NUMERIC
 
