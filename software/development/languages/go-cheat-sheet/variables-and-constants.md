@@ -7,6 +7,11 @@ tl;dr,
 ```go
 // VARIABLE
 
+    // VARIABLE SCOPE
+        // LOCAL                                    // Inside curly brackets
+        // PACKAGE                                  // Package level
+        // GLOBAL                                   // Module level - Capitalize                   
+
     // DECLARE TYPE
     var a string                                    // var name type
 
@@ -55,7 +60,7 @@ Table of Contents
 * [VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#variable)
 * [CONSTANT / LITERAL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#constant--literal)
 * [IOTA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#iota)
-* [SCOPE RULES (Universe, Package, File, Block)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#scope-rules-universe-package-file-block)
+* [SCOPE RULES (Global, Package, Local)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#scope-rules-global-package-local)
 * [TYPE INFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#type-inference)
 * [SHORTHAND ASSIGNMENT (PREFERRED METHOD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#shorthand-assignment-preferred-method)
 * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
@@ -132,12 +137,11 @@ const (
 )
 ```
 
-## SCOPE RULES (Universe, Package, File, Block)
+## SCOPE RULES (Global, Package, Local)
 
-* Universe
-* Package - Access across files.
-* File - File level (e.g. import "fmt").
-* Block - Inside curly braces.
+* Global - Capitalize
+* Package - Access across files
+* Local - Inside curly braces
 
 Order of declaration matters.
 

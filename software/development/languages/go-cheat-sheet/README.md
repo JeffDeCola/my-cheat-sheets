@@ -382,6 +382,12 @@ networked systems._
 ## VARIABLE
 
 ```go
+
+    // VARIABLE SCOPE
+        // LOCAL                                    // Inside curly brackets
+        // PACKAGE                                  // Package level
+        // GLOBAL                                   // Module level - Capitalize                   
+
     // DECLARE TYPE
     var a string                                    // var name type
 
