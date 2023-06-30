@@ -12,11 +12,26 @@ tl;dr,
         do stuff
     }
     go doThis("Jeff")                               // Kick off goroutine
+
+    // CREATE WAITGROUP
+    var wg sync.WaitGroup                           // CREATE
+
+    // ADD WAITGROUP FOR EACH GO ROUTINE
+    wg.Add(1)                                       // ADD
+
+    // GOROUTINE DONE
+    wg.Done()                                       // DONE
+
+    // WAIT TILL DONE
+    wg.Wait()                                       // WAIT
+
 // CHANNELS - GOROUTINE MESSAGE PIPES
+
     // SEND & RECEIVE
     msgCh := make(chan type, size)                  // name := make(chan type, buffer size)
     msgCh <- type                                   // SEND
     type := <-msgCh                                 // RECEIVE
+    
     // NOT BUFFERED
     func doThis(msgCh <-chan string, t int) {
         rcv := <-msgCh                              // RECEIVE
@@ -25,10 +40,13 @@ tl;dr,
     msgJeffCh := make(chan string)                  // name := make(chan type)
     go doThis(msgJeffCh)                            // Kick off goroutine
     msgJeffCh <- "Jeff"                             // SEND
+    
     // BUFFERED
     msgCh := make(chan string, 1)                   // name := make(chan type, buffer size)
+    
     // CHANNEL DIRECTION (MORE EXPLICIT)
     func doThis(msgCh <-chan string, t int) {
+    
     // SELECT (CASE) - WAITING FOR BOTH CHANNELS TO BE RECEIVED
     select {
     case msg1 := <-c1:
@@ -40,6 +58,8 @@ tl;dr,
 Table of Contents
 
 * [GOROUTINES - CONCURRENT THREADS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#goroutines---concurrent-threads)
+  * [GOROUTINE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#goroutine)
+  * [WAITGROUP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#waitgroup)
 * [CHANNELS - GOROUTINE MESSAGE PIPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#channels---goroutine-message-pipes)
   * [NOT BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#not-buffered)
   * [BUFFERED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md#buffered)
@@ -57,6 +77,8 @@ Documentation and Reference
 A goroutine is a lightweight thread/process/etc... of execution.
 It will run concurrently. The Go runtime multiplexes goroutines to
 operating system (OS) threads.
+
+### GOROUTINE
 
 ```go
 // OUR GOROUTINE (Counts to 3)
@@ -83,6 +105,55 @@ func main() {
 ```
 
 ![IMAGE - goroutines - IMAGE](../../../../docs/pics/goroutines.jpg)
+
+### WAITGROUP
+
+Use a waitgroup to wait for all goroutines to finish.
+
+```go
+    // CREATE WAITGROUP
+    var wg sync.WaitGroup                           // CREATE
+
+    // ADD WAITGROUP FOR EACH GO ROUTINE
+    wg.Add(1)                                       // ADD
+
+    // GOROUTINE DONE
+    wg.Done()                                       // DONE
+
+    // WAIT TILL DONE
+    wg.Wait()                                       // WAIT
+```
+
+Hence,
+
+```go
+// CREATE WAITGROUP
+var wg sync.WaitGroup
+
+// OUR GOROUTINE (Counts to 3)
+func doThis(s string, t int) {
+    for i := 1; i < 4; i++ {
+        time.Sleep(time.Duration(t) * time.Second)
+        fmt.Printf("%v - Count is %v\n", s, i)
+    }
+    // GOROUTINE DONE
+    wg.Done()
+}
+
+func main() {
+
+    // ADD WAITGROUP
+    wg.Add(3)
+    go doThis("Monty", 1) // Kick off goroutines
+    time.Sleep(1 * time.Second)
+    go doThis("Larry", 2)
+    time.Sleep(1 * time.Second)
+    go doThis("Curly", 3)
+
+    // WAIT TILL DONE
+    wg.Wait()
+}
+```
 
 ## CHANNELS - GOROUTINE MESSAGE PIPES
 

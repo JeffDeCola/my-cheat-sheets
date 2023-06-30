@@ -597,17 +597,27 @@ networked systems._
 ## GOROUTINES
 
 ```go
-    // GOROUTINES - CONCURRENT THREADS
     func doThis(s string) {
         do stuff
     }
     go doThis("Jeff")                               // Kick off goroutine
+
+    // CREATE WAITGROUP
+    var wg sync.WaitGroup                           // CREATE
+
+    // ADD WAITGROUP FOR EACH GO ROUTINE
+    wg.Add(1)                                       // ADD
+
+    // GOROUTINE DONE
+    wg.Done()                                       // DONE
+
+    // WAIT TILL DONE
+    wg.Wait()                                       // WAIT
 ```
 
 ## CHANNELS (_make_)
 
 ```go
-    // CHANNELS - GOROUTINE MESSAGE PIPES
     // SEND & RECEIVE SYNTAX
     msgCh := make(chan type, size)                  // name := make(chan type, buffer size)
     msgCh <- type                                   // SEND
