@@ -1,21 +1,18 @@
 # BLOCKCHAIN CHEAT SHEET
 
-_A `blockchain` is a digital way to save data and make it immutable._
+_A blockchain is a digital way to save data and make it immutable._
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet#overview)
 * [HOW DOES IT WORK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet#how-does-it-work)
 * [WHY IS THIS IMMUTABLE - WHY DO WE ADD BLOCKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet#why-is-this-immutable---why-do-we-add-blocks)
 
-Documentation and reference,
+Documentation and Reference
 
-* A
-  [single-node-blockchain-with-REST](https://github.com/JeffDeCola/my-go-examples/tree/master/blockchain/single-node-blockchain-with-REST)
-  I wrote in go in `my-go-examples` repo.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* Check out a
+  [single-node-blockchain-with-REST](https://github.com/JeffDeCola/my-go-examples/tree/master/architectures/blockchain/single-node-blockchain-with-REST)
+  I wrote in go.
 
 ## OVERVIEW
 
