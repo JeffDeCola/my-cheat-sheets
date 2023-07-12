@@ -82,15 +82,15 @@ Documentation and Reference
   * [software install methods](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/software-install-methods-cheat-sheet)
   * [vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vagrant-cheat-sheet)
     ([my-vagrant-boxes](https://github.com/JeffDeCola/my-vagrant-boxes))
-  * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet)
-    * [install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-arch-linux-mini.md)
-    * [install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-debian-mini.md)
-    * [install ubuntu with gnome desktop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
-    * [install windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-windows.md)
+  * [virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
+    * [install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
+    * [install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
+    * [install ubuntu with gnome desktop](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
+    * [install windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
     * [verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
     * [vs code on windows wsl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md)
-  * [vmware](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet)
+  * [vmware](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet)
 
 * LANGUAGES
 
