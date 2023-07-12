@@ -62,8 +62,8 @@ Table of Contents
 
 Documentation and Reference
 
-* [VMWare](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet)
-* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet)
+* [VMWare](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet)
+* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
 * [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
 * My images at [dockerhub](https://hub.docker.com/u/jeffdecola/)
 

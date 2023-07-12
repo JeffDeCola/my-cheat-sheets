@@ -6,20 +6,20 @@ operating system (host)._
 
 Table of Contents
 
-* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#virtual-machine-vm-vs-container)
-* [INSTALL VIRTUALBOX ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#install-virtualbox-on-windows)
-* [INSTALL A GUEST OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#install-a-guest-os)
-* [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
-* [INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
+* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#virtual-machine-vm-vs-container)
+* [INSTALL VIRTUALBOX ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-virtualbox-on-windows)
+* [INSTALL A GUEST OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-a-guest-os)
+* [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
+* [INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
 
 Documentation and Reference
 
-* [VMWare](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet)
+* [VMWare](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet)
 * [Docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet)
-* [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-arch-linux-mini.md)
-* [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-debian-mini.md)
-* [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
-* [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet/install-windows.md)
+* [Install arch linux mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-arch-linux-mini.md)
+* [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
+* [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
+* [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
 * View a list of all my-cheat-sheets on my
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -28,7 +28,7 @@ Documentation and Reference
 The following diagram shows the difference between Virtual Machines
 and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
 Virtual Machines
 
