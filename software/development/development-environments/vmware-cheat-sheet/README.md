@@ -5,12 +5,12 @@ run an operating systems._
 
 Table of Contents
 
-* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet#virtual-machine-vm-vs-container)
-* [INSTALL FREE VERSION OF ESXi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet#install-free-version-of-esxi)
+* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet#virtual-machine-vm-vs-container)
+* [INSTALL FREE VERSION OF ESXi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet#install-free-version-of-esxi)
 
 Documentation and Reference
 
-* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet)
+* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet)
 * [Docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet)
 * [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
@@ -19,7 +19,7 @@ Documentation and Reference
 The following diagram shows the difference between Virtual Machines
 and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
 Virtual Machines
 
