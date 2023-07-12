@@ -6,11 +6,11 @@ operating system (host)._
 
 Table of Contents
 
-* [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#virtual-machine-vm-vs-docker-container)
-* [INSTALL VIRTUALBOX ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-virtualbox-on-windows)
-* [INSTALL A GUEST OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#install-a-guest-os)
-* [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
-* [INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
+* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#virtual-machine-vm-vs-container)
+* [INSTALL VIRTUALBOX ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#install-virtualbox-on-windows)
+* [INSTALL A GUEST OS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#install-a-guest-os)
+* [INCREASE YOUR VIDEO MEMORY TO 256MB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#increase-your-video-memory-to-256mb)
+* [INCREASE THE SIZE OF YOUR VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet#increase-the-size-of-your-virtual-disk)
 
 Documentation and Reference
 
@@ -21,21 +21,21 @@ Documentation and Reference
 * View a list of all my-cheat-sheets on my
   [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
+## VIRTUAL MACHINE (VM) vs CONTAINER
 
-The following diagram shows the difference between a Virtual Machine
-and a Docker Container,
+The following diagram shows the difference between Virtual Machines
+and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
-Virtual Machine
+Virtual Machines
 
 * Must use a Hypervisor emulated Virtual Hardware
-* Needs a guest OS
+* May or may not use a guest OS
 * Takes a lot of system resources
 * Takes up a lot of memory
 
-Container
+Containers
 
 * Uses a shared host OS
 * You must use that OS
