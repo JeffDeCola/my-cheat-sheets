@@ -10,9 +10,8 @@ Table of Contents
 
 Documentation and Reference
 
-* [VMWare]()
-* [Virtualbox]()
-* [Docker]()
+* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet)
+* [Docker](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet)
 * [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## VIRTUAL MACHINE (VM) vs CONTAINER

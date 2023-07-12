@@ -39,7 +39,7 @@ docker logs -f hello-go
 
 Table of Contents
 
-* [VIRTUAL MACHINE (VM) vs DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-docker-container)
+* [VIRTUAL MACHINE (VM) vs CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#virtual-machine-vm-vs-container)
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#install)
 * [DOCKER DESKTOP ON WINDOWS WITH WSL2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-desktop-on-windows-with-wsl2)
 * [DOCKER RUN (RUN A SINGLE CONTAINER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#docker-run-run-a-single-container)
@@ -62,24 +62,26 @@ Table of Contents
 
 Documentation and Reference
 
+* [VMWare](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/vmware-cheat-sheet)
+* [Virtualbox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/hypervisor/virtualbox-cheat-sheet)
 * [my-docker-image-builds](https://github.com/JeffDeCola/my-docker-image-builds)
 * My images at [dockerhub](https://hub.docker.com/u/jeffdecola/)
 
-## VIRTUAL MACHINE (VM) vs DOCKER CONTAINER
+## VIRTUAL MACHINE (VM) vs CONTAINER
 
-The following diagram shows the difference between a Virtual Machine
-and a Docker Container.
+The following diagram shows the difference between Virtual Machines
+and Containers,
 
 ![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
 
-Virtual Machine,
+Virtual Machines
 
 * Must use a Hypervisor emulated Virtual Hardware
-* Needs a guest OS
+* May or may not use a guest OS
 * Takes a lot of system resources
 * Takes up a lot of memory
 
-Container,
+Containers
 
 * Uses a shared host OS
 * You must use that OS
