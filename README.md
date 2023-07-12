@@ -150,7 +150,7 @@ Documentation and Reference
   * AUTHORIZATION
 
     * [OAuth 2.0 authorization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet)
-  
+
   * BLOCKCHAIN
 
     * [blockchain](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
@@ -415,11 +415,15 @@ _Other cheat sheets I'm interested in._
     * [ssd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/ssd-cheat-sheet)
     * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/usb-cheat-sheet)
 
-  * COMPUTERS MANUFACTURERS
+  * COMPUTER MANUFACTURERS
 
     * APPLE
 
       * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet)
+
+    * DELL
+
+      * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell/poweredge-r730-cheat-sheet)
 
     * PC
 
