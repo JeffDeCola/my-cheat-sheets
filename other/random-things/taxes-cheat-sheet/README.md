@@ -3,8 +3,9 @@
 _Some tax info I find useful.
 This is not to be used as tax advice, these are just my opinions._
 
-Table of Contents,
+Table of Contents
 
+* [EMPLOYMENT FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employment-forms)
 * [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
 * [SCHEDULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules)
 * [1040 OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#1040-overview)
@@ -13,9 +14,15 @@ Table of Contents,
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
+## EMPLOYMENT FORMS
+
+* **W-4** - Employee's Withholding Certificate
+* **W-9** -Request for Taxpayer Identification Number and Certification
+
 ## RECEIVED FORMS
 
 * **W-2** - Wage and Tax Statement **1040 LINE 2**
+* **W-2G** - Certain Gambling Winnings **SCHEDULE 1 LINE 8b**
 * **1099-G** - Certain Government Payments (e.g. unemployment) **SCHEDULE 1 LINE 7**
 * **1099-MISC** - Miscellaneous **SCHEDULE 1 LINE 8**
 * **1098** - Mortgage Interest Statement **SCHEDULE A LINE 8a**
@@ -31,7 +38,7 @@ View my entire list of cheat sheets on
 * **SCHEDULE 1** - Additional Income and Adjustments to Income
   * Part I - Additional Income
     * **Enter 1040 LINE 8**
-    * Unemployment **1099-G**, **1099-MISC**, **SCHEDULE C**, **SCHEDULE E**
+    * **W-2G**, Unemployment **1099-G**, **1099-MISC**, **SCHEDULE C**, **SCHEDULE E**
   * Part II - Adjustments to Income
     * **Enter 1040 LINE 10**
     * Jury Duty Pay, Education expenses
@@ -92,6 +99,7 @@ View my entire list of cheat sheets on
   * TAXABLE REFUNDS OF STATE AND LOCAL TAXES
   * ALIMONY RECEIVED
   * MISCELLANEOUS INCOME
+    * **W-2G** -> **SCHEDULE 1 LINE 8** -> **1040 LINE 8(10)**
     * **1099-MISC** -> **SCHEDULE 1 LINE 8** -> **1040 LINE 8(10)**
   * BUSINESS INCOME (LOSS)
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
