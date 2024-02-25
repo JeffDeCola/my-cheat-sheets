@@ -21,7 +21,10 @@ View my entire list of cheat sheets on
 
 ## RECEIVED FORMS
 
-* **W-2** - Wage and Tax Statement **1040 LINE 2**
+* **1099-NEC** - Nonemployee Compensation **SCHEDULE ??? LINE ???**
+* **FORM 5498** - IRA Contribution Information **SCHEDULE ??? LINE ???**
+
+* **W-2** - Wage and Tax Statement **1040 LINE 1**
 * **W-2G** - Certain Gambling Winnings **SCHEDULE 1 LINE 8b**
 * **1099-G** - Certain Government Payments (e.g. unemployment) **SCHEDULE 1 LINE 7**
 * **1099-MISC** - Miscellaneous **SCHEDULE 1 LINE 8**
@@ -85,27 +88,29 @@ View my entire list of cheat sheets on
   * Part IV - Income or Loss From Real Estate Mortgage Investment Conduits (REMICs)
   * Part V - Summary
 
-## 1040 OVERVIEW
+## 1040 INCOME OVERVIEW
 
 * **INCOME**
-  * WAGES, SALARIES, TIPS
-    * **W-2** -> **1040 LINE 2**
-  * INTEREST INCOME
+  * LINE 1 - WAGES, SALARIES, TIPS
+    * **W-2** -> **1040 LINE 1**
+  * LINE 2 - INTEREST INCOME
     * **1099-INT, 1099-OID** -> **SCHEDULE B** -> **1040 LINE 2b**
-  * DIVIDEND INCOME
+  * LINE 3 - DIVIDEND INCOME
     * **1099-DIV** -> **SCHEDULE B** -> **1040 LINE 3b**
-  * PENSIONS, ANNUITIES AND IRA DISTRIBUTIONS
-  * SOCIAL SECURITY BENEFITS
-  * TAXABLE REFUNDS OF STATE AND LOCAL TAXES
-  * ALIMONY RECEIVED
+  * LINE 4 - IRA DISTRIBUTIONS
+  * LINE 5 - PENSIONS & ANNUITIES
+  * LINE 6 - SOCIAL SECURITY BENEFITS
+  * LINE 7 - CAPITAL GAINS (LOSS)
+    * **1099-B** -> **8949** -> **SCHEDULE D LINE 1b/2/3/8b/9/10** -> **1040 LINE 7**
+  * ?? TAXABLE REFUNDS OF STATE AND LOCAL TAXES
+  * ?? ALIMONY RECEIVED
   * MISCELLANEOUS INCOME
     * **W-2G** -> **SCHEDULE 1 LINE 8** -> **1040 LINE 8(10)**
     * **1099-MISC** -> **SCHEDULE 1 LINE 8** -> **1040 LINE 8(10)**
   * BUSINESS INCOME (LOSS)
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
     * **SCHEDULE K-1** -> **SCHEDULE E** -> **SCHEDULE 1 LINE 5** -> **1040 LINE 8/10**
-  * CAPITAL GAINS (LOSS)
-    * **1099-B** -> **8949** -> **SCHEDULE D LINE 1b/2/3/8b/9/10** -> **1040 LINE 7**
+
   * OTHER GAINS (LOSS)
   * FARM INCOME (LOSS)
   * UNEMPLOYMENT INCOME
@@ -136,15 +141,21 @@ View my entire list of cheat sheets on
   * CASUALTY AND THEFT LOSSES
   * OTHER ITEMIZED DEDUCTIONS
   * QUALIFIED BUSINESS INCOME DEDUCTION
+
+## 1040 TAXES AND CREDITS OVERVIEW
+
+* **TAXES**
+  * SELF-EMPLOYMENT TAX
+  * ETC...
 * **CREDITS**
   * CHILD TAX CREDIT
   * EDUCTION CREDITS
   * ADOPTION EXPENSES
   * ENERGY CREDITS
   * MARKETPLACE HEALTH INSURANCE
-* **TAXES**
-  * SELF-EMPLOYMENT TAX
-  * ETC...
+
+## 1040 PAYMENTS OVERVIEW
+
 * **PAYMENTS / REFUNDABLE CREDITS**
   * EARNED INCOME CREDIT
   * ESTIMATE TAX PAYMENTS YOU PAID
