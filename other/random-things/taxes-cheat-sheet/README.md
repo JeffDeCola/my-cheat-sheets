@@ -8,11 +8,14 @@ Table of Contents
 * [EMPLOYMENT FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employment-forms)
 * [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
 * [SCHEDULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules)
-* [1040 OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#1040-overview)
+* [FORM 1040](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-1040)
+  * [INCOME OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#income-overview)
+  * [TAXES AND CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#taxes-and-credits)
+  * [1040 PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#1040-payments)
 * [REPORT PROCEEDS OF SELLING A CAPITAL ASSET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#report-proceeds-of-selling-a-capital-asset)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+  * [STEP 1 - RECEIVE A 1099-B - WHAT YOU SOLD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#step-1---receive-a-1099-b---what-you-sold)
+  * [STEP 2 - SALES ON FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#step-2---sales-on-form-8949)
+  * [STEP 3 - TOTALS ON SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#step-3---totals-on-schedule-d)
 
 ## EMPLOYMENT FORMS
 
@@ -21,9 +24,8 @@ View my entire list of cheat sheets on
 
 ## RECEIVED FORMS
 
-* **1099-NEC** - Nonemployee Compensation **SCHEDULE ??? LINE ???**
-* **FORM 5498** - IRA Contribution Information **SCHEDULE ??? LINE ???**
-
+* **??? 1099-NEC** - Nonemployee Compensation **SCHEDULE ??? LINE ???**
+* **??? FORM 5498** - IRA Contribution Information **SCHEDULE ??? LINE ???**
 * **W-2** - Wage and Tax Statement **1040 LINE 1**
 * **W-2G** - Certain Gambling Winnings **SCHEDULE 1 LINE 8b**
 * **1099-G** - Certain Government Payments (e.g. unemployment) **SCHEDULE 1 LINE 7**
@@ -88,7 +90,11 @@ View my entire list of cheat sheets on
   * Part IV - Income or Loss From Real Estate Mortgage Investment Conduits (REMICs)
   * Part V - Summary
 
-## 1040 INCOME OVERVIEW
+## FORM 1040
+
+_U.S. Individual Income Tax Return._
+
+### INCOME OVERVIEW
 
 * **INCOME**
   * LINE 1 - WAGES, SALARIES, TIPS
@@ -110,7 +116,6 @@ View my entire list of cheat sheets on
   * BUSINESS INCOME (LOSS)
     * **INVOICES, 1099-K** -> **SCHEDULE C** -> **SCHEDULE 1 LINE 3** -> **1040 LINE 8/10**
     * **SCHEDULE K-1** -> **SCHEDULE E** -> **SCHEDULE 1 LINE 5** -> **1040 LINE 8/10**
-
   * OTHER GAINS (LOSS)
   * FARM INCOME (LOSS)
   * UNEMPLOYMENT INCOME
@@ -142,7 +147,7 @@ View my entire list of cheat sheets on
   * OTHER ITEMIZED DEDUCTIONS
   * QUALIFIED BUSINESS INCOME DEDUCTION
 
-## 1040 TAXES AND CREDITS OVERVIEW
+### TAXES AND CREDITS
 
 * **TAXES**
   * SELF-EMPLOYMENT TAX
@@ -154,7 +159,7 @@ View my entire list of cheat sheets on
   * ENERGY CREDITS
   * MARKETPLACE HEALTH INSURANCE
 
-## 1040 PAYMENTS OVERVIEW
+### 1040 PAYMENTS
 
 * **PAYMENTS / REFUNDABLE CREDITS**
   * EARNED INCOME CREDIT
