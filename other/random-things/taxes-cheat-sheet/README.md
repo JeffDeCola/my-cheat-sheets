@@ -6,8 +6,10 @@ Table of Contents
 
 * [FORM 1040](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-1040)
   * [INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#income)
-  * [TAXES AND CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#taxes-and-credits)
+  * [TAX AND CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-and-credits)
   * [PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#payments)
+  * [REFUND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#refund)
+  * [AMMOUNT YOU OWE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#ammount-you-owe)
 * [COMMON RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#common-received-forms)
 * [SCHEDULES AND OTHER FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules-and-other-forms)
   * [SCHEDULE B - INTEREST AND ORDINARY DIVIDENDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends)
@@ -30,7 +32,7 @@ _U.S. Individual Income Tax Return._
 
 ### INCOME
 
-#### TOTAL INCOME
+#### ALL INCOME
 
 * LINE 1 - Wage and Salary Income
   * **W-2 BOX 1**
@@ -146,9 +148,12 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
       ->
       **LINE 10**
+
+#### TOTAL INCOME
+
 * LINE 9 - ADD LINES 1-8 - YOUR TOTAL INCOME
 
-#### ADJUSTED GROSS INCOME (DEDUCTIONS)
+#### (MINUS) ADJUSTMENTS TO INCOME (DEDUCTIONS)
 
 * LINE 10 - ADJUSTMENTS TO INCOME FROM SCHEDULE 1
   * DEDUCTIBLE PART OF SELF-EMPLOYMENT TAX
@@ -157,9 +162,12 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
       ->
       **LINE 26**
+
+#### ADJUSTED GROSS INCOME
+
 * LINE 11 - SUBTRACT LINE 10 FROM LINE 9 - YOUR ADJUSTED GROSS INCOME
 
-#### TAXABLE INCOME (MORE DEDUCTIONS)
+#### (MINUS) DEDUCTIONS
 
 * LINE 12 - STANDARD DEDUCTION OR ITEMIZED DEDUCTIONS
   * PROPERTY TAXES
@@ -184,37 +192,93 @@ _U.S. Individual Income Tax Return._
   * SOLE PROPRIETORSHIP
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
       ->
-      **[FORM 8995]() LINE 1**
+      **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
       ->
       **LINE 15**
   * PARTNERSHIP, S CORPORATION, ETC.
-    * **SCHEDULE E LINE 31**
+    * **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 31**
       ->
-      **[FORM 8995]() LINE 1**
+      **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
       ->
       **LINE 15**
-* LINE 14 - ADD LINES 12 AND 13
+* LINE 14 - ADD LINES 12 AND 13 - YOUR TOTAL DEDUCTIONS
+
+#### TAXABLE INCOME
+
 * LINE 15 - SUBTRACT LINE 14 FROM LINE 11 - YOUR TAXABLE INCOME
 
-### TAXES AND CREDITS
+### TAX AND CREDITS
 
-* **TAXES**
-  * SELF-EMPLOYMENT TAX
-  * ETC...
-* **CREDITS**
-  * CHILD TAX CREDIT
-  * EDUCTION CREDITS
-  * ADOPTION EXPENSES
-  * ENERGY CREDITS
-  * MARKETPLACE HEALTH INSURANCE
+#### TAX
+
+* LINE 16 - YOUR TAX YOU OWE
+
+#### (ADD) ADDITIONAL TAXES
+
+* LINE 17 - ADDITIONAL TAXES FROM SCHEDULE 2 (PART I)
+
+#### SUBTOTAL
+
+* LINE 18 - ADD LINES 16 AND 17
+
+#### (MINUS) CREDITS AND PAYMENTS
+
+* LINE 19 - CHILD TAX CREDITS
+* LINE 20 - ADDITIONAL CREDITS AND PAYMENTS FROM SCHEDULE 3
+* LINE 21 - ADD LINES 19 AND 20 - YOUR TOTAL CREDITS AND PAYMENTS
+
+#### SUBTOTAL
+
+* LINE 22 - SUBTRACT LINE 21 FROM LINE 18
+
+#### (ADD) OTHER TAXES
+
+* LINE 23 - OTHER TAXES FROM SCHEDULE 2 (PART II)
+
+#### TOTAL TAX
+
+* LINE 24 - ADD LINE 22 AND LINE 23 - YOUR TOTAL TAX
 
 ### PAYMENTS
 
-* **PAYMENTS / REFUNDABLE CREDITS**
-  * EARNED INCOME CREDIT
-  * ESTIMATE TAX PAYMENTS YOU PAID
-  * OTHER PAYMENTS
-  * RECOVERY REBATE CREDIT (STIMULUS)
+#### FEDERAL TAX WITHHELD
+
+* LINE 25a - W-2 PAYMENTS
+* LINE 25b - 1099 PAYMENTS
+* LINE 25c - OTHER PAYMENTS
+
+#### TOTAL TAX WITHHELD
+
+* LINE 25d - ADD LINES 25a, 25b, and 25c - YOUR TOTAL TAX WITHHELD
+
+#### (ADD) ESTIMATED TAX PAYMENTS
+
+* LINE 26 - ESTIMATED TAX PAYMENTS
+
+#### (ADD) OTHER PAYMENTS AND REFUNDABLE CREDITS
+
+* LINE 27 - EARNED INCOME CREDIT
+* LINE 28 - ADDITIONAL CHILD TAX CREDIT
+* LINE 29 - AMERICA OPPORTUNITY CREDIT
+* LINE 30 - RESERVED FOR FUTURE USE
+* LINE 31 - AMMOUNT FROM SCHEDULE 3 LINE 15
+* LINE 32 - ADD LINES 27, 28, 29, 30, and 31 - YOUR TOTAL OTHER PAYMENTS AND REFUNDABLE CREDITS
+
+#### TOTAL PAYMENTS
+
+* LINE 33 - ADD LINES 25d, 26 and 32 - YOUR TOTAL PAYMENTS
+
+### REFUND
+
+_If LINE 33 is greater than LINE 24._
+
+* LINE 34 - SUBTRACT LINE 24 FROM LINE 33 - YOUR REFUND
+
+### AMMOUNT YOU OWE
+
+_If LINE 33 is less than LINE 24._
+
+* LINE 37 - SUBTRACT LINE 33 FROM LINE 24 - YOUR AMOUNT YOU OWE
 
 ## COMMON RECEIVED FORMS
 
