@@ -18,6 +18,7 @@ Table of Contents
   * [SCHEDULE E - SUPPLEMENTAL INCOME AND LOSS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss)
   * [SCHEDULE SE - SELF-EMPLOYMENT TAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)
   * [SCHEDULE A - ITEMIZED DEDUCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions)
+  * [FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)
   * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
 * [OTHER NOTES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#other-notes)
   * [EMPLOYEE FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employee-forms)
