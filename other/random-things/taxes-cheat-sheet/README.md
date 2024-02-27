@@ -151,19 +151,47 @@ _U.S. Individual Income Tax Return._
 
 * LINE 10 - ADJUSTMENTS TO INCOME FROM SCHEDULE 1
   * DEDUCTIBLE PART OF SELF-EMPLOYMENT TAX
-    * **SCHEDULE SE LINE 13**
+    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
       ->
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
       ->
       **LINE 26**
-
 * LINE 11 - SUBTRACT LINE 10 FROM LINE 9 - YOUR ADJUSTED GROSS INCOME
 
 #### TAXABLE INCOME (MORE DEDUCTIONS)
 
 * LINE 12 - STANDARD DEDUCTION OR ITEMIZED DEDUCTIONS
-  * **SCHEDULE A LINE 12a**
+  * PROPERTY TAXES
+    * **PROPERTY TAX RECEIPTS**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5c**
+      ->
+      **LINE 17**
+  * MORTGAGE INTEREST
+    * **1098 BOX 1**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 8a**
+      ->
+      **LINE 17**
+  * CHARITY
+    * **CHARITY RECEIPTS**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 11**
+      ->
+      **LINE 17**
 * LINE 13 - BUSINESS INCOME DEDUCTIONS
+  * SOLE PROPRIETORSHIP
+    * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
+      ->
+      **[FORM 8995]() LINE 1**
+      ->
+      **LINE 15**
+  * PARTNERSHIP, S CORPORATION, ETC.
+    * **SCHEDULE E LINE 31**
+      ->
+      **[FORM 8995]() LINE 1**
+      ->
+      **LINE 15**
 * LINE 14 - ADD LINES 12 AND 13
 * LINE 15 - SUBTRACT LINE 14 FROM LINE 11 - YOUR TAXABLE INCOME
 
@@ -348,9 +376,31 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-
+* **PROPERTY TAX RECEIPTS**
+  * **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5c**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1098** - Mortgage Interest Statement
-  * **SCHEDULE A LINE 8a**
+  * **BOX 1**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 8a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
+* **CHARITY RECEIPTS**
+  * **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 11**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
+
 * **??? FORM 5498** - IRA Contribution Information
   * **SCHEDULE ??? LINE ???**
 
@@ -472,7 +522,7 @@ _In order used on form 1040._
 * PART II - ADJUSTMENTS TO INCOME
   * LINE 11 - Education expenses
   * LINE 15 - Deductible Part of Self-Employment Tax
-    * **SCHEDULE SE LINE 13**
+    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
   * LINE 21 - Student Loan Interest Deduction
   * LINE 26 - Total Adjustments to Income
     * Enter **1040 LINE 10**
@@ -495,21 +545,35 @@ _In order used on form 1040._
   * LINE 2 - Net Earnings From Self-Employment
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
   * LINE 12 - Self-Employment Tax
-    * Enter **SCHEDULE 2 LINE 4**
+    * Enter **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 4**
   * LINE 13 - Deduction for One-Half of Self-Employment Tax
-    * Enter **SCHEDULE 1 LINE 15**
+    * Enter **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
+* PART II - OPTIONAL METHOD TO FIGURE NET EARNINGS
 
 ### SCHEDULE A - ITEMIZED DEDUCTIONS
 
-* **Enter 1040 LINE 12a**
-* Medical and Dental Expenses
-* Taxes You Paid
-  * State and Local
-* Interest You Paid
-  * Mortgage **1098**
-* Gifts to Charity
-* Theft
-* Other
+* MEDICAL AND DENTAL EXPENSES
+* TAXES YOU PAID
+  * LINE 5c - State and Local Taxes
+    * **PROPERTY TAX RECEIPTS**
+* INTEREST YOU PAID
+  * LINE 8a - Home Mortgage Interest
+    * **1098 BOX 1**
+* GIFTS TO CHARITY
+  * LINE 11 - Cash Contributions
+    * **CHARITY RECEIPTS**
+* CASUALTY AND THEFT LOSSES
+* OTHER ITEMIZED DEDUCTIONS
+* TOTAL ITEMIZED DEDUCTIONS
+  * Enter **1040 LINE 12**
+
+### FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION
+
+* LINE 1 - Business Income
+  * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
+  * **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 41**
+* LINE 15 - Total Qualified Business Income Deduction
+  * Enter **1040 LINE 13**
 
 ### SCHEDULE 2 - ADDITIONAL TAXES
 
