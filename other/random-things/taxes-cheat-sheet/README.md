@@ -94,7 +94,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 12**
       ->
       **LINE 16**
-* LINE 8 - ADDITIONAL INCOME FROM SCHEDULE 1
+* LINE 8 - Additional Income from Schedules 1
   * BUSINESS INCOME (LOSS)
     * **INVOICES**
       ->
@@ -151,11 +151,11 @@ _U.S. Individual Income Tax Return._
 
 #### TOTAL INCOME
 
-* LINE 9 - ADD LINES 1-8 - YOUR TOTAL INCOME
+* LINE 9 - Add Lines 1 through 8 - Your Total Income
 
 #### (MINUS) ADJUSTMENTS TO INCOME (DEDUCTIONS)
 
-* LINE 10 - ADJUSTMENTS TO INCOME FROM SCHEDULE 1
+* LINE 10 - Adjustments to Income from Schedules 1
   * DEDUCTIBLE PART OF SELF-EMPLOYMENT TAX
     * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
       ->
@@ -165,11 +165,11 @@ _U.S. Individual Income Tax Return._
 
 #### ADJUSTED GROSS INCOME
 
-* LINE 11 - SUBTRACT LINE 10 FROM LINE 9 - YOUR ADJUSTED GROSS INCOME
+* LINE 11 - Subtract Line 10 from 9 - Your Adjusted Gross Income
 
 #### (MINUS) DEDUCTIONS
 
-* LINE 12 - STANDARD DEDUCTION OR ITEMIZED DEDUCTIONS
+* LINE 12 - Standard Deduction or Itemized Deductions
   * PROPERTY TAXES
     * **PROPERTY TAX RECEIPTS**
       ->
@@ -188,7 +188,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 11**
       ->
       **LINE 17**
-* LINE 13 - BUSINESS INCOME DEDUCTIONS
+* LINE 13 - Business Income Deductions
   * SOLE PROPRIETORSHIP
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
       ->
@@ -201,43 +201,43 @@ _U.S. Individual Income Tax Return._
       **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
       ->
       **LINE 15**
-* LINE 14 - ADD LINES 12 AND 13 - YOUR TOTAL DEDUCTIONS
+* LINE 14 - Add Lines 12 and 13 - Your Total Deductions
 
 #### TAXABLE INCOME
 
-* LINE 15 - SUBTRACT LINE 14 FROM LINE 11 - YOUR TAXABLE INCOME
+* LINE 15 - Subtract Line 14 from Line 11 - Your Taxable Income
 
 ### TAX AND CREDITS
 
 #### TAX
 
-* LINE 16 - YOUR TAX
+* LINE 16 - Your Tax
 
 #### (ADD) ADDITIONAL TAXES
 
-* LINE 17 - ADDITIONAL TAXES FROM SCHEDULE 2 (PART I)
+* LINE 17 - Additional Taxes from Schedules 2 (Part I)
 
 #### SUBTOTAL
 
-* LINE 18 - ADD LINES 16 AND 17
+* LINE 18 - Add Lines 16 and 17
 
 #### (MINUS) CREDITS AND PAYMENTS
 
-* LINE 19 - CHILD TAX CREDITS
-* LINE 20 - ADDITIONAL CREDITS AND PAYMENTS FROM SCHEDULE 3
-* LINE 21 - ADD LINES 19 AND 20 - YOUR TOTAL CREDITS AND PAYMENTS
+* LINE 19 - Child Tax Credits
+* LINE 20 - Additional Payments and Credits from Schedule 3
+* LINE 21 - Add Lines 19 and 20 - Your Total Credits and Payments
 
 #### SUBTOTAL
 
-* LINE 22 - SUBTRACT LINE 21 FROM LINE 18
+* LINE 22 - Subtract Line 21 from 18
 
 #### (ADD) OTHER TAXES
 
-* LINE 23 - OTHER TAXES FROM SCHEDULE 2 (PART II)
+* LINE 23 - Other Taxes from Schedules 2 (Part II)
 
 #### TOTAL TAX
 
-* LINE 24 - ADD LINE 22 AND LINE 23 - YOUR TOTAL TAX
+* LINE 24 - Add Lines 22 and 23 - Your Total Tax
 
 ### PAYMENTS
 
@@ -257,28 +257,28 @@ _U.S. Individual Income Tax Return._
 
 #### (ADD) OTHER PAYMENTS AND REFUNDABLE CREDITS
 
-* LINE 27 - EARNED INCOME CREDIT
-* LINE 28 - ADDITIONAL CHILD TAX CREDIT
-* LINE 29 - AMERICA OPPORTUNITY CREDIT
-* LINE 30 - RESERVED FOR FUTURE USE
-* LINE 31 - AMMOUNT FROM SCHEDULE 3 LINE 15
-* LINE 32 - ADD LINES 27, 28, 29, 30, and 31 - YOUR TOTAL OTHER PAYMENTS AND REFUNDABLE CREDITS
+* LINE 27 - Earned Income Credit
+* LINE 28 - Additional Child Tax Credit
+* LINE 29 - American Opportunity Credit
+* LINE 30 - Reserved for Future Use
+* LINE 31 - Ammount from Schedule 3 Line 15
+* LINE 32 - Add Lines 27, 28, 29, 30, and 31 - Your Total Other Payments and Refundable Credits
 
 #### TOTAL PAYMENTS
 
-* LINE 33 - ADD LINES 25d, 26 and 32 - YOUR TOTAL PAYMENTS
+* LINE 33 - Add Lines 25d, 26 and 32 - Your Total Payments
 
 ### REFUND
 
-_If LINE 33 is greater than LINE 24._
+_If Line 33 is greater than Line 24._
 
-* LINE 34 - SUBTRACT LINE 24 FROM LINE 33 - YOUR REFUND
+* LINE 34 - Subtract Line 24 from Line 33 - Your Refund
 
 ### AMMOUNT YOU OWE
 
-_If LINE 33 is less than LINE 24._
+_If Line 33 is less than Line 24._
 
-* LINE 37 - SUBTRACT LINE 33 FROM LINE 24 - YOUR AMOUNT YOU OWE
+* LINE 37 - Subtract Line 33 from Line 24 - Your Amount You Owe
 
 ## RECEIVED FORMS
 
