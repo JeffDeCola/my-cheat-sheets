@@ -228,11 +228,11 @@ _U.S. Individual Income Tax Return._
 * LINE 19 - Child Tax Credits
 * LINE 20 - Additional Payments and Credits from Schedule 3 (Part I)
   * CLEAN VEHICLE CREDIT
-    * **[FORM 8936]() LINE 9**
+    * **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
       ->
       **LINE 13**
       ->
-      **[SCHEDULE 3]() LINE 6f**
+      **[SCHEDULE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments) LINE 6f**
       ->
       **LINE 8**
 * LINE 21 - Add Lines 19 and 20 - Your Total Credits and Payments
@@ -260,8 +260,18 @@ _U.S. Individual Income Tax Return._
 #### FEDERAL TAX WITHHELD
 
 * LINE 25a - W-2 PAYMENTS
+  * **W-2 BOX 2**
 * LINE 25b - 1099 PAYMENTS
+  * **1099-INT BOX 4**
+  * **1099-OID BOX 4**
+  * **1099-DIV BOX 4**
+  * **1099-B BOX 4**
+  * **1099-K BOX 4**
+  * **1099-G BOX 4**
+  * **1099-MISC BOX 4**
+  * **1099-NEC BOX 4**
 * LINE 25c - OTHER PAYMENTS
+  * **W-2G BOX 4**
 
 #### TOTAL TAX WITHHELD
 
@@ -270,6 +280,7 @@ _U.S. Individual Income Tax Return._
 #### (ADD) ESTIMATED TAX PAYMENTS
 
 * LINE 26 - ESTIMATED TAX PAYMENTS
+  * Payments you sent using **FORM 1040-ES**
 
 #### (ADD) OTHER PAYMENTS AND REFUNDABLE CREDITS
 
@@ -304,6 +315,9 @@ _In order used on form 1040._
   * **BOX 1**
     ->
     **1040 LINE 1a**
+  * **BOX 2**
+    ->
+    **1040 LINE 25a**
 * **1099-INT** - Interest Income
   * **BOX 1**
     ->
@@ -312,6 +326,9 @@ _In order used on form 1040._
     **LINE 4**
     ->
     **1040 LINE 2b**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **1099-OID** - Original Issue Discount
   * **BOX 1**
     ->
@@ -320,6 +337,9 @@ _In order used on form 1040._
     **LINE 4**
     ->
     **1040 LINE 2b**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **SCHEDULE K-1 (FORM 1065)** - Partner's Share of Income, Deductions, Credits, etc.
   * INTEREST -
     **BOX 5**
@@ -365,8 +385,6 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-  * ?????????????? -
-    **SCHEDULE E LINE 28 ?????**
 * **1099-DIV** - Dividends and Distributions
   * **BOX 1a**
     ->
@@ -375,6 +393,9 @@ _In order used on form 1040._
     **LINE 6**
     ->
     **1040 LINE 3b**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **1099-B** - Proceeds From Broker and Barter Exchange Transactions
   * SHORT-TERM GAINS -
     **VARIOUS BOXES**
@@ -400,6 +421,9 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
+  * **1099-DIV BOX 4**
+    ->
+    **1040 LINE 25b**
 * **INVOICES** - From your Business
   * **TOTAL AMOUNT**
     ->
@@ -424,6 +448,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **1099-G** - Certain Government Payments (e.g. Unemployment)
   * **BOX 1**
     ->
@@ -432,6 +459,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **W-2G** - Certain Gambling Winnings
   * **BOX 1**
     ->
@@ -440,6 +470,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25c** 
 * **1099-MISC** - Miscellaneous Income
   * **BOX 3**
     ->
@@ -448,6 +481,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **1099-NEC** - Nonemployee Compensation (Not Self-Employed)
   * **BOX 1**
     ->
@@ -456,6 +492,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
 * **PROPERTY TAX RECEIPTS**
   * **TOTAL AMOUNT**
     ->
@@ -674,7 +713,7 @@ _In order used on form 1040._
   * LINE 9-12 - Calculating the Credit
     * Will leave this out for now
   * LINE 13 - Personal Use of Credit
-    * Enter **[SCHEDULE 3]() LINE 6f**
+    * Enter **[SCHEDULE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments) LINE 6f**
 * Part IV - Credit for Previously Owned Clean Vehicles
 * Part V - Credit for Qualified Commercial Clean Vehicles
 
@@ -682,7 +721,7 @@ _In order used on form 1040._
 
 * PART 1 - NONREFUNDABLE CREDITS
   * LINE 6f - Clean Vehicle Credit
-    * **[FORM 8936]() LINE 13**
+    * **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 13**
   * LINE 8
     * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
 * PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
