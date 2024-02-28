@@ -190,6 +190,12 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 11**
       ->
       **LINE 17**
+  * GAMBLING LOSSES
+    * **GAMBLING LOSS RECEIPTS**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 16**
+      ->
+      **LINE 17**
 * LINE 13 - Business Income Deductions
   * SOLE PROPRIETORSHIP
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
@@ -463,6 +469,7 @@ _In order used on form 1040._
     ->
     **1040 LINE 25b**
 * **W-2G** - Certain Gambling Winnings
+  * You may deduct gambling losses if you file **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions)**
   * **BOX 1**
     ->
     **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8b**
@@ -472,7 +479,7 @@ _In order used on form 1040._
     **1040 LINE 8**
   * **BOX 4**
     ->
-    **1040 LINE 25c** 
+    **1040 LINE 25c**
 * **1099-MISC** - Miscellaneous Income
   * **BOX 3**
     ->
@@ -515,6 +522,14 @@ _In order used on form 1040._
   * **TOTAL AMOUNT**
     ->
     **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 11**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
+* **GAMBLING LOSS RECEIPTS**
+  * **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 16**
     ->
     **LINE 17**
     ->
@@ -691,10 +706,14 @@ _In order used on form 1040._
 * GIFTS TO CHARITY
   * LINE 11 - Cash Contributions
     * **CHARITY RECEIPTS**
+* GAMBLING LOSSES
+  * LINE 13 - Gambling Losses
+    * **GAMBLING LOSS RECEIPTS**
 * CASUALTY AND THEFT LOSSES
 * OTHER ITEMIZED DEDUCTIONS
 * TOTAL ITEMIZED DEDUCTIONS
-  * Enter **[1040 LINE 12](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
+  * LINE 17 - Add Lines 4 through 16 - Your Total Itemized Deductions
+    * Enter **[1040 LINE 12](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
 ### FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION
 
@@ -716,7 +735,7 @@ _In order used on form 1040._
 
 ### FORM 8936 - CLEAN VEHICLE CREDITS
 
-* PART 1 - Modified Adjusted Gross Income Amount
+* PART I - Modified Adjusted Gross Income Amount
 * Part II - Credit for Business/Investment Use Part of New Clean Vehicles
 * Part III - Credit for Personal Use Part of New Clean Vehicles
   * LINE 9-12 - Calculating the Credit
