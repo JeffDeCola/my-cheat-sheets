@@ -117,7 +117,7 @@ _U.S. Individual Income Tax Return._
   * RENTAL REAL ESTATE, PARTNERSHIPS, S CORPORATIONS, TRUSTS, ETC.
     * **SCHEDULE K-1 BOX 1**
       ->
-      **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) lINE 28**
+      **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 28**
       ->
       **LINE 41**
       ->
@@ -481,14 +481,14 @@ _In order used on form 1040._
     * **1099-OID BOX 1**
     * **SCHEDULE K-1 BOX 5**
   * LINE 4 - Total Interest
-    * Enter **1040 LINE 2b**
+    * Enter **[1040 LINE 2b](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
 * PART II - ORDINARY DIVIDENDS
   * LINE 5 - List names and Dividend Amounts
     * **1099-DIV BOX 1a**
     * **SCHEDULE K-1 BOX 6a**
   * LINE 6 - Total Dividends
-    * Enter **1040 LINE 3b**
-* PART III - FOREIGN ACCOUNTS AND TRUSTS
+    * Enter **[1040 LINE 3b](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
+* PART III - FOREIGN ACCOU`NTS AND TRUSTS
 
 ### FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS
 
@@ -499,7 +499,7 @@ _In order used on form 1040._
   * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
   * LINE 2 - Totals
-    * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 1b, 2 or 3**
+    * Enter **[SCHEDULE D LINE 1b, 2 or 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 * PART II - LONG-TERM TRANSACTIONS
   * BOX D - Long-Term Transactions Reported on Form 1099-B
   * BOX E - Short-Term Transactions Reported on Form 1099-B but not to IRS
@@ -507,7 +507,7 @@ _In order used on form 1040._
   * LINE 8a - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
   * LINE 2 - Totals
-    * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 8b, 9 or 10**
+    * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 
 ### SCHEDULE D - CAPITAL GAINS AND LOSSES
 
@@ -533,7 +533,7 @@ _In order used on form 1040._
   * LINE 15 - Net Long-Term Capital Gain (Loss)
 * PART III - SUMMARY
   * LINE 16 - Total Capital Gain (Loss)
-    * Enter **1040 LINE 7**
+    * Enter **[1040 LINE 7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
 
 ### SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)
 
@@ -547,11 +547,11 @@ _In order used on form 1040._
 * PART II - EXPENSES
   * LINE 28 - Total Expenses
   * LINE 31 - Net Profit (Loss)
-    * Enter **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
-    * Enter **SCHEDULE SE LINE 2**
+    * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
+    * Enter **[SCHEDULE SE LINE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
 * PART III - COST OF GOODS SOLD
   * LINE 42 - Total Cost of Goods Sold
-    * Enter **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 4**
+    * Enter **[SCHEDULE C LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) (above)**
 * PART IV - INFORMATION ON YOUR VEHICLE
 * PART V - OTHER EXPENSES
 
@@ -583,14 +583,14 @@ _In order used on form 1040._
     * **1099-MISC BOX 3**
     * **1099-NEC BOX 1** (Not Self-Employed)
   * LINE 10 - Total Additional Income
-    * Enter **1040 LINE 8**
+    * Enter **[1040 LINE 8](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
 * PART II - ADJUSTMENTS TO INCOME
   * LINE 11 - Education expenses
   * LINE 15 - Deductible Part of Self-Employment Tax
     * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
   * LINE 21 - Student Loan Interest Deduction
   * LINE 26 - Total Adjustments to Income
-    * Enter **1040 LINE 10**
+    * Enter **[1040 LINE 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-adjustments-to-income-deductions)**
 
 ### SCHEDULE E - SUPPLEMENTAL INCOME AND LOSS
 
@@ -602,7 +602,7 @@ _In order used on form 1040._
 * PART IV - INCOME OR LOSS FROM REAL ESTATE MORTGAGE INVESTMENT CONDUITS (REMICs)
 * PART V - SUMMARY
   * LINE 41 - Total Income (Loss)
-    * Enter **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 5**
+    * Enter **[SCHEDULE 1 LINE 5](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
 
 ### SCHEDULE SE - SELF-EMPLOYMENT TAX
 
@@ -610,9 +610,9 @@ _In order used on form 1040._
   * LINE 2 - Net Earnings From Self-Employment
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
   * LINE 12 - Self-Employment Tax
-    * Enter **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 4**
+    * Enter **[SCHEDULE 2 LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
   * LINE 13 - Deduction for One-Half of Self-Employment Tax
-    * Enter **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
+    * Enter **[SCHEDULE 1 LINE 15](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
 * PART II - OPTIONAL METHOD TO FIGURE NET EARNINGS
 
 ### SCHEDULE A - ITEMIZED DEDUCTIONS
@@ -630,7 +630,7 @@ _In order used on form 1040._
 * CASUALTY AND THEFT LOSSES
 * OTHER ITEMIZED DEDUCTIONS
 * TOTAL ITEMIZED DEDUCTIONS
-  * Enter **1040 LINE 12**
+  * Enter **[1040 LINE 12](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
 ### FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION
 
@@ -638,7 +638,7 @@ _In order used on form 1040._
   * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
   * **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 41**
 * LINE 15 - Total Qualified Business Income Deduction
-  * Enter **1040 LINE 13**
+  * Enter **[1040 LINE 13](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
 ### SCHEDULE 2 - ADDITIONAL TAXES
 
@@ -647,7 +647,7 @@ _In order used on form 1040._
   * LINE 4 - Self-Employment Tax
     * **SCHEDULE SE LINE 12**
   * LINE 21 - Total Other Taxes
-    * Enter **1040 LINE 23**
+    * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
 
 ## OTHER NOTES
 
