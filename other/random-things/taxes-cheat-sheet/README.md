@@ -349,7 +349,6 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-
   * ?????????????? -
     **SCHEDULE E LINE 28 ?????**
 * **1099-DIV** - Dividends and Distributions
@@ -465,9 +464,8 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
-
-* **??? FORM 5498** - IRA Contribution Information
-  * **SCHEDULE ??? LINE ???**
+* **FORM 5498** - IRA Contribution Information
+  * Just for your records
 
 ## SCHEDULES AND OTHER FORMS
 
@@ -549,6 +547,7 @@ _In order used on form 1040._
   * LINE 31 - Net Profit (Loss)
     * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
     * Enter **[SCHEDULE SE LINE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
+    * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
 * PART III - COST OF GOODS SOLD
   * LINE 42 - Total Cost of Goods Sold
     * Enter **[SCHEDULE C LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) (above)**
@@ -603,6 +602,7 @@ _In order used on form 1040._
 * PART V - SUMMARY
   * LINE 41 - Total Income (Loss)
     * Enter **[SCHEDULE 1 LINE 5](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
+    * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
 
 ### SCHEDULE SE - SELF-EMPLOYMENT TAX
 
