@@ -9,8 +9,8 @@ Table of Contents
   * [TAX AND CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-and-credits)
   * [PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#payments)
   * [REFUND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#refund)
-  * [AMMOUNT YOU OWE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#ammount-you-owe)
-* [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
+  * [AMOUNT YOU OWE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#amount-you-owe)
+  * [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
 * [SCHEDULES AND OTHER FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules-and-other-forms)
   * [SCHEDULE B - INTEREST AND ORDINARY DIVIDENDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends)
   * [FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets)
@@ -301,7 +301,7 @@ _If Line 33 is greater than Line 24._
 
 * LINE 34 - Subtract Line 24 from Line 33 - Your Refund
 
-### AMMOUNT YOU OWE
+### AMOUNT YOU OWE
 
 _If Line 33 is less than Line 24._
 
