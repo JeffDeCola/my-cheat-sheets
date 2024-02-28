@@ -215,7 +215,7 @@ _U.S. Individual Income Tax Return._
 
 #### (ADD) ADDITIONAL TAXES
 
-* LINE 17 - Additional Taxes from Schedules 2 (Part I)
+* LINE 17 - Additional Taxes from Schedule 2 (Part I)
 
 #### SUBTOTAL
 
@@ -224,7 +224,15 @@ _U.S. Individual Income Tax Return._
 #### (MINUS) CREDITS AND PAYMENTS
 
 * LINE 19 - Child Tax Credits
-* LINE 20 - Additional Payments and Credits from Schedule 3
+* LINE 20 - Additional Payments and Credits from Schedule 3 (Part I)
+  * CLEAN VEHICLE CREDIT
+    * **[FORM 8936]() LINE 9**
+      ->
+      **LINE 13**
+      ->
+      **[SCHEDULE 3]() LINE 6f**
+      ->
+      **LINE 8**
 * LINE 21 - Add Lines 19 and 20 - Your Total Credits and Payments
 
 #### SUBTOTAL
@@ -234,6 +242,12 @@ _U.S. Individual Income Tax Return._
 #### (ADD) OTHER TAXES
 
 * LINE 23 - Other Taxes from Schedules 2 (Part II)
+  * SELF-EMPLOYMENT TAX
+    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 12**
+      ->
+      **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
+      ->
+      **LINE 21**
 
 #### TOTAL TAX
 
@@ -261,7 +275,7 @@ _U.S. Individual Income Tax Return._
 * LINE 28 - Additional Child Tax Credit
 * LINE 29 - American Opportunity Credit
 * LINE 30 - Reserved for Future Use
-* LINE 31 - Ammount from Schedule 3 Line 15
+* LINE 31 - Ammount from Schedule 3 (Part II)
 * LINE 32 - Add Lines 27, 28, 29, 30, and 31 - Your Total Other Payments and Refundable Credits
 
 #### TOTAL PAYMENTS
@@ -643,11 +657,33 @@ _In order used on form 1040._
 ### SCHEDULE 2 - ADDITIONAL TAXES
 
 * PART 1 - TAX
+  * LINE 1 Alternative Minimum Tax (AMT)
 * PART 2 - OTHER TAXES
   * LINE 4 - Self-Employment Tax
-    * **SCHEDULE SE LINE 12**
+    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 12**
   * LINE 21 - Total Other Taxes
     * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
+
+### FORM 8936 - CLEAN VEHICLE CREDITS
+
+* PART 1 - Modified Adjusted Gross Income Amount
+* Part II - Credit for Business/Investment Use Part of New Clean Vehicles
+* Part III - Credit for Personal Use Part of New Clean Vehicles
+  * LINE 9-12 - Calculating the Credit
+    * Will leave this out for now
+  * LINE 13 - Personal Use of Credit
+    * Enter **[SCHEDULE 3]() LINE 6f**
+* Part IV - Credit for Previously Owned Clean Vehicles
+* Part V - Credit for Qualified Commercial Clean Vehicles
+
+### SCHEDULE 3 - ADDITIONAL CREDITS AND PAYMENTS
+
+* PART 1 - NONREFUNDABLE CREDITS
+  * LINE 6f - Clean Vehicle Credit
+    * **[FORM 8936]() LINE 13**
+  * LINE 8
+    * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
+* PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
 
 ## OTHER NOTES
 
