@@ -150,7 +150,12 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
       ->
       **LINE 10**
-
+  * SETTLEMENTS
+    * **SETTLEMENTS RECEIPTS**
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
+      ->
+      **LINE 10**
 #### TOTAL INCOME
 
 * LINE 9 - Add Lines 1 through 8 - Your Total Income
@@ -502,6 +507,14 @@ _In order used on form 1040._
   * **BOX 4**
     ->
     **1040 LINE 25b**
+* **SETTLEMENTS RECEIPTS**
+  * **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
 * **PROPERTY TAX RECEIPTS**
   * **TOTAL AMOUNT**
     ->
@@ -655,6 +668,7 @@ _In order used on form 1040._
   * LINE 8z - Other Income
     * **1099-MISC BOX 3**
     * **1099-NEC BOX 1** (Not Self-Employed)
+    * **SETTLEMENT RECEIPTS**
   * LINE 10 - Total Additional Income
     * Enter **[1040 LINE 8](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
 * PART II - ADJUSTMENTS TO INCOME
