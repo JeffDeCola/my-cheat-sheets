@@ -213,7 +213,7 @@ _U.S. Individual Income Tax Return._
 
 #### TAX
 
-* LINE 16 - Your Tax
+* LINE 16 - Look up Tax Bracket - Your Tax
 
 #### (ADD) ADDITIONAL TAXES
 
@@ -519,7 +519,11 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
-* **FORM 5498** - IRA Contribution Information
+* **1040-ES** - Estimated Tax for Individuals (You sent this form to IRS)
+  * **TOTAL AMOUNT** from all payment vouchers
+    ->
+    **1040 LINE 26**
+* **5498** - IRA Contribution Information
   * Just for your records
 
 ## SCHEDULES AND OTHER FORMS
@@ -623,7 +627,7 @@ _In order used on form 1040._
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
       **LINE 31**
-  * LINE 5 - Rental Real Estate, Royalties, Partnerships, S Corporations, Trusts, etc.
+  * LINE 5 - Rental Real Estate, Royalties, Partnerships, S Corporations, Trusts, etc. (Loss)
     * **SCHEDULE K-1 BOX 1**
       ->
       **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 28**
@@ -649,13 +653,18 @@ _In order used on form 1040._
 ### SCHEDULE E - SUPPLEMENTAL INCOME AND LOSS
 
 * PART I - INCOME OR LOSS FROM RENTAL REAL ESTATE AND ROYALTIES
+  * LINE 26 - Total Rental Real Estate and Royalty Income (Loss)
 * PART II - INCOME OR LOSS FROM PARTNERSHIPS AND S CORPORATIONS
-  * LINE 28 - Income an Loss
+  * LINE 28 - List Income (Loss) from Partnerships and S Corporations
     * **SCHEDULE K-1 BOX 1**
+  * LINE 32 - Total Partnership and S Corporation Income (Loss)
 * PART III - INCOME OR LOSS FROM ESTATES AND TRUSTS
+  * LINE 37 - Total Estate and Trust Income (Loss)
 * PART IV - INCOME OR LOSS FROM REAL ESTATE MORTGAGE INVESTMENT CONDUITS (REMICs)
+  * LINE 39 - Total REMICs Income (Loss)
 * PART V - SUMMARY
-  * LINE 41 - Total Income (Loss)
+  * LINE 40 - Net Farm Rental Income or (Loss)
+  * LINE 41 - Add Lines 26, 32, 37, 39 and 40 - Total Income (Loss)
     * Enter **[SCHEDULE 1 LINE 5](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
     * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
 
@@ -713,7 +722,7 @@ _In order used on form 1040._
   * LINE 9-12 - Calculating the Credit
     * Will leave this out for now
   * LINE 13 - Personal Use of Credit
-    * Enter **[SCHEDULE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments) LINE 6f**
+    * Enter **[SCHEDULE 3 LINE 6f](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments)**
 * Part IV - Credit for Previously Owned Clean Vehicles
 * Part V - Credit for Qualified Commercial Clean Vehicles
 
