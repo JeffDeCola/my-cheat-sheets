@@ -85,7 +85,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
       ->
       **LINE 16**
-    * **SOLD PERSONAL PROPERTY & YOUR INFO**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
       ->
       **8949 LINE 1**
       ->
@@ -118,7 +118,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
       ->
       **LINE 16**
-    * **SOLD PERSONAL PROPERTY & YOUR INFO**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
       ->
       **8949 LINE 1**
       ->
@@ -503,7 +503,7 @@ _In order used on form 1040._
     **1040 LINE 25b**
 * **SOLD PERSONAL PROPERTY** - Bill of Sale (e.g. Sold a car at a profit)
   * SHORT-TERM GAINS -
-    **TOTAL AMOUNT & OTHER INFO**
+    **TOTAL AMOUNT & INFO**
     ->
     **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
     ->
@@ -515,7 +515,7 @@ _In order used on form 1040._
     ->
     **1040 LINE 7**
   * LONG-TERM GAINS -
-    **TOTAL AMOUNT & OTHER INFO**
+    **TOTAL AMOUNT & INFO**
     ->
     **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
     ->
@@ -675,7 +675,7 @@ _In order used on form 1040._
   * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
     * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
-    * **SOLD PERSONAL PROPERTY & YOUR INFO**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 1b, 2 or 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 * PART II - LONG-TERM TRANSACTIONS
@@ -685,7 +685,7 @@ _In order used on form 1040._
   * LINE 8a - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
     * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
-    * **SOLD PERSONAL PROPERTY & YOUR INFO**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 
