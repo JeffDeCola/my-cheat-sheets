@@ -76,6 +76,24 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
       ->
       **LINE 16**
+    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+      ->
+      **8949 LINE 1**
+      ->
+      **LINE 2**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
+      ->
+      **LINE 16**
+    * **SOLD PERSONAL PROPERTY & YOUR INFO**
+      ->
+      **8949 LINE 1**
+      ->
+      **LINE 2**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
+      ->
+      **LINE 16**
     * **SCHEDULE K-1 BOX 8**
       ->
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 5**
@@ -83,6 +101,24 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
   * LONG-TERM
     * **1099-B VARIOUS BOXES**
+      ->
+      **8949 LINE 1**
+      ->
+      **LINE 2**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
+      ->
+      **LINE 16**
+    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+      ->
+      **8949 LINE 1**
+      ->
+      **LINE 2**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
+      ->
+      **LINE 16**
+    * **SOLD PERSONAL PROPERTY & YOUR INFO**
       ->
       **8949 LINE 1**
       ->
@@ -107,7 +143,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
       ->
       **LINE 10**
-    * **1099-K BOX 1a**
+    * **1099-K BOX 1a** (As a Sole Proprietorship)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
@@ -156,6 +192,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
       ->
       **LINE 10**
+
 #### TOTAL INCOME
 
 * LINE 9 - Add Lines 1 through 8 - Your Total Income
@@ -277,7 +314,8 @@ _U.S. Individual Income Tax Return._
   * **1099-OID BOX 4**
   * **1099-DIV BOX 4**
   * **1099-B BOX 4**
-  * **1099-K BOX 4**
+  * **1099-K BOX 4** (e.g. Ebay, Etsy, etc.)
+  * **1099-K BOX 4** (As a Sole Proprietorship)
   * **1099-G BOX 4**
   * **1099-MISC BOX 4**
   * **1099-NEC BOX 4**
@@ -435,6 +473,59 @@ _In order used on form 1040._
   * **1099-DIV BOX 4**
     ->
     **1040 LINE 25b**
+* **1099-K** - Payment Card and Third Party Network Transactions (e.g. Ebay, Etsy, etc.)
+  * SHORT-TERM GAINS -
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * LONG-TERM GAINS -
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **SOLD PERSONAL PROPERTY** - Bill of Sale (e.g. Sold a car at a profit)
+  * SHORT-TERM GAINS -
+    **TOTAL AMOUNT & OTHER INFO**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * LONG-TERM GAINS -
+    **TOTAL AMOUNT & OTHER INFO**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
 * **INVOICES** - From your Business
   * **TOTAL AMOUNT**
     ->
@@ -447,7 +538,7 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-* **1099-K** - Payment Card and Third Party Network Transactions (e.g. eBay)
+* **1099-K** - Payment Card and Third Party Network Transactions (As a Sole Proprietorship)
   * **BOX 1a**
     ->
     **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
@@ -583,6 +674,8 @@ _In order used on form 1040._
   * BOX C - Short-Term Transactions Not Reported to IRS
   * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
+    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **SOLD PERSONAL PROPERTY & YOUR INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 1b, 2 or 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 * PART II - LONG-TERM TRANSACTIONS
@@ -591,6 +684,8 @@ _In order used on form 1040._
   * BOX F - Long-Term Transactions Not Reported to IRS
   * LINE 8a - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
+    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **SOLD PERSONAL PROPERTY & YOUR INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 
@@ -625,7 +720,7 @@ _In order used on form 1040._
 * PART I - INCOME
   * LINE 1 - Gross Receipts
     * **INVOICES**
-    * **1099-K BOX 1a**
+    * **1099-K BOX 1a** (As a Sole Proprietorship)
   * LINE 4 - Cost of Goods Sold
     * FROM **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 42**
   * LINE 7 - Gross Income (Loss)
@@ -650,7 +745,7 @@ _In order used on form 1040._
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
       **LINE 31**
-    * **1099-K BOX 1a**
+    * **1099-K BOX 1a** (As a Sole Proprietorship)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
