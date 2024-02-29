@@ -693,21 +693,21 @@ _In order used on form 1040._
 
 * PART I - SHORT-TERM CAPITAL GAINS AND LOSSES
   * LINE 1b - Total for all transactions (BOX A)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From**[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 2 - Total for all transactions (BOX B)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 3 - Total for all transactions (BOX C)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 5 - Short Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 BOX 8**
   * LINE 7 - Net Short-Term Capital Gain (Loss)
 * PART II - LONG-TERM CAPITAL GAINS AND LOSSES
   * LINE 8b - Total for all transactions (BOX D)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 9 - Total for all transactions (BOX E)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 10 - Total for all transactions (BOX F)
-    * **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 12 - Long Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 BOX 9a**
   * LINE 15 - Net Long-Term Capital Gain (Loss)
@@ -722,7 +722,7 @@ _In order used on form 1040._
     * **INVOICES**
     * **1099-K BOX 1a** (As a Sole Proprietorship)
   * LINE 4 - Cost of Goods Sold
-    * FROM **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 42**
+    * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 42**
   * LINE 7 - Gross Income (Loss)
 * PART II - EXPENSES
   * LINE 28 - Total Expenses
@@ -769,7 +769,7 @@ _In order used on form 1040._
 * PART II - ADJUSTMENTS TO INCOME
   * LINE 11 - Education expenses
   * LINE 15 - Deductible Part of Self-Employment Tax
-    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
+    * From **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
   * LINE 21 - Student Loan Interest Deduction
   * LINE 26 - Total Adjustments to Income
     * Enter **[1040 LINE 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-adjustments-to-income-deductions)**
@@ -827,8 +827,8 @@ _In order used on form 1040._
 ### FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION
 
 * LINE 1 - Business Income
-  * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
-  * **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 41**
+  * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
+  * From **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 41**
 * LINE 15 - Total Qualified Business Income Deduction
   * Enter **[1040 LINE 13](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
@@ -838,7 +838,7 @@ _In order used on form 1040._
   * LINE 1 Alternative Minimum Tax (AMT)
 * PART 2 - OTHER TAXES
   * LINE 4 - Self-Employment Tax
-    * **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 12**
+    * From **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 12**
   * LINE 21 - Total Other Taxes
     * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
 
@@ -858,7 +858,7 @@ _In order used on form 1040._
 
 * PART 1 - NONREFUNDABLE CREDITS
   * LINE 6f - Clean Vehicle Credit
-    * **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 13**
+    * From **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 13**
   * LINE 8
     * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
 * PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
