@@ -76,7 +76,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
       ->
       **LINE 16**
-    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **1099-K VARIOUS BOXES** (Sold Property)
       ->
       **8949 LINE 1**
       ->
@@ -109,7 +109,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
       ->
       **LINE 16**
-    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **1099-K VARIOUS BOXES** (Sold Property)
       ->
       **8949 LINE 1**
       ->
@@ -134,7 +134,7 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
 * LINE 8 - Additional Income from Schedules 1
   * BUSINESS INCOME (LOSS)
-    * **INVOICES**
+    * **1099-NEC BOX 1** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
@@ -143,7 +143,16 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
       ->
       **LINE 10**
-    * **1099-K BOX 1a** (As a Sole Proprietorship)
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+      ->
+      **LINE 10**
+    * **1099-K BOX 1a** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
@@ -181,7 +190,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 10**
   * NONEMPLOYEE COMPENSATION (NOT SELF-EMPLOYED)
-    * **1099-NEC BOX 1**
+    * **1099-NEC BOX 1** (Not Self-Employed)
       ->
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
       ->
@@ -314,11 +323,12 @@ _U.S. Individual Income Tax Return._
   * **1099-OID BOX 4**
   * **1099-DIV BOX 4**
   * **1099-B BOX 4**
-  * **1099-K BOX 4** (e.g. Ebay, Etsy, etc.)
-  * **1099-K BOX 4** (As a Sole Proprietorship)
+  * **1099-K BOX 4** (Sold Property)
+  * **1099-NEC BOX 4** (Self-Employed)
+  * **1099-K BOX 4** (Self-Employed)
   * **1099-G BOX 4**
   * **1099-MISC BOX 4**
-  * **1099-NEC BOX 4**
+  * **1099-NEC BOX 4** (Not Self-Employed)
 * LINE 25c - OTHER PAYMENTS
   * **W-2G BOX 4**
 
@@ -485,7 +495,7 @@ _In order used on form 1040._
   * **1099-DIV BOX 4**
     ->
     **1040 LINE 25b**
-* **1099-K** - Payment Card and Third Party Network Transactions (e.g. Ebay, Etsy, etc.)
+* **1099-K** - Payment Card and Third Party Network Transactions (Sold Property)
   * SHORT-TERM GAINS -
     **VARIOUS BOXES**
     ->
@@ -538,7 +548,22 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
-* **INVOICES** - From your Business
+* **1099-NEC** - Nonemployee Compensation (Self-Employed)
+  * **BOX1**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **INVOICES** - From your Business (Self-Employed)
   * **TOTAL AMOUNT**
     ->
     **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
@@ -550,7 +575,7 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-* **1099-K** - Payment Card and Third Party Network Transactions (As a Sole Proprietorship)
+* **1099-K** - Payment Card and Third Party Network Transactions (Self-Employed)
   * **BOX 1a**
     ->
     **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
@@ -588,7 +613,7 @@ _In order used on form 1040._
   * **BOX 4**
     ->
     **1040 LINE 25c**
-* **1099-MISC** - Miscellaneous Income
+* **1099-MISC** - Miscellaneous Income (Not Self-Employed)
   * **BOX 3**
     ->
     **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
@@ -600,7 +625,7 @@ _In order used on form 1040._
     ->
     **1040 LINE 25b**
 * **1099-NEC** - Nonemployee Compensation (Not Self-Employed)
-  * **BOX 1**
+  * **BOX 3**
     ->
     **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
     ->
@@ -686,7 +711,7 @@ _In order used on form 1040._
   * BOX C - Short-Term Transactions Not Reported to IRS
   * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
-    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **1099-K VARIOUS BOXES** (Sold Property)
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 1b, 2 or 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
@@ -696,7 +721,7 @@ _In order used on form 1040._
   * BOX F - Long-Term Transactions Not Reported to IRS
   * LINE 8a - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES**
-    * **1099-K VARIOUS BOXES** (e.g. Ebay, Etsy, etc.)
+    * **1099-K VARIOUS BOXES** (Sold Property)
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
@@ -731,8 +756,9 @@ _In order used on form 1040._
 
 * PART I - INCOME
   * LINE 1 - Gross Receipts
-    * **INVOICES**
-    * **1099-K BOX 1a** (As a Sole Proprietorship)
+    * **1099-NEC BOX 1** (Self-Employed)
+    * **INVOICES** (Self-Employed)
+    * **1099-K BOX 1a** (Self-Employed)
   * LINE 4 - Cost of Goods Sold
     * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 42**
   * LINE 7 - Gross Income (Loss)
@@ -752,12 +778,17 @@ _In order used on form 1040._
 
 * PART I - ADDITIONAL INCOME
   * LINE 3 - Business Income (Loss)
-    * **INVOICES**
+    * **1099-NEC BOX 1** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
       **LINE 31**
-    * **1099-K BOX 1a** (As a Sole Proprietorship)
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+    * **1099-K BOX 1a** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
