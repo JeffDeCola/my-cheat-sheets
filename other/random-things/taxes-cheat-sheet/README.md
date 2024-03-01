@@ -434,6 +434,18 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+  * SELF-EMPLOYMENT EARNINGS -
+    **BOX 14**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 12**
+    ->
+    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
+    ->
+    **LINE 21**
+    ->
+    **1040 LINE 23**
 * **1099-DIV** - Dividends and Distributions
   * **BOX 1a**
     ->
@@ -797,8 +809,9 @@ _In order used on form 1040._
 * PART I - SELF-EMPLOYMENT TAX
   * LINE 2 - Net Earnings From Self-Employment
     * **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
+    * **SCHEDULE K-1 BOX 14**
   * LINE 12 - Self-Employment Tax
-    * Enter **[SCHEDULE 2 LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
+    * Enter **[SCHEDULE 2 LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)**
   * LINE 13 - Deduction for One-Half of Self-Employment Tax
     * Enter **[SCHEDULE 1 LINE 15](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
 * PART II - OPTIONAL METHOD TO FIGURE NET EARNINGS
