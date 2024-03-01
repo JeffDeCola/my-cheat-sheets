@@ -730,21 +730,21 @@ _In order used on form 1040._
 
 * PART I - SHORT-TERM CAPITAL GAINS AND LOSSES
   * LINE 1b - Total for all transactions (BOX A)
-    * From**[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 2 - Total for all transactions (BOX B)
-    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 3 - Total for all transactions (BOX C)
-    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 5 - Short Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 BOX 8**
   * LINE 7 - Net Short-Term Capital Gain (Loss)
 * PART II - LONG-TERM CAPITAL GAINS AND LOSSES
   * LINE 8b - Total for all transactions (BOX D)
-    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 9 - Total for all transactions (BOX E)
-    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 10 - Total for all transactions (BOX F)
-    * From **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
   * LINE 12 - Long Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 BOX 9a**
   * LINE 15 - Net Long-Term Capital Gain (Loss)
