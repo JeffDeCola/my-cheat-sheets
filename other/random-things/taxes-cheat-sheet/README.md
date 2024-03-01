@@ -528,7 +528,7 @@ _In order used on form 1040._
       **LINE 16**
       ->
       **1040 LINE 7**
-* ADDITIONAL INCOME FROM SCHEDULES 1
+* ADDITIONAL INCOME FROM SCHEDULE 1
   * **1099-NEC** - Nonemployee Compensation (Self-Employed)
     * **BOX1**
       ->
