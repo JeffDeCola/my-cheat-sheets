@@ -69,7 +69,7 @@ _U.S. Individual Income Tax Return._
   * SHORT TERM
     * **1099-B VARIOUS BOXES**
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -78,7 +78,7 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
     * **1099-K VARIOUS BOXES** (Sold Property)
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -87,7 +87,7 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -102,7 +102,7 @@ _U.S. Individual Income Tax Return._
   * LONG-TERM
     * **1099-B VARIOUS BOXES**
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -111,7 +111,7 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
     * **1099-K VARIOUS BOXES** (Sold Property)
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -120,7 +120,7 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO**
       ->
-      **8949 LINE 1**
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
       **LINE 2**
       ->
@@ -930,7 +930,7 @@ a short-term sale (held less than a year) or a portion of both.
 #### STEP 2 - SALES ON FORM 8949
 
 You report these proceeds (sales) on
-**8949** (Sales and Other Dispositions of Capital Assets).
+**FORM 8949** (Sales and Other Dispositions of Capital Assets).
 
 ```text
 PROCEEDS (SALE) - COST = CAPITAL GAIN/LOSS
@@ -953,5 +953,5 @@ I like to combine.
 
 #### STEP 3 - TOTALS ON SCHEDULE D
 
-Now add all the totals from all your **8949** and put on
+Now add all the totals from all your **FORM 8949** and put on
 **SCHEDULE D** (Capital Gains and Losses).
