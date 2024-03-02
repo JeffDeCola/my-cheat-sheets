@@ -143,7 +143,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
       ->
       **LINE 10**
-    * **INVOICES** (Self-Employed)
+    * **INVOICES TOTAL AMOUNT** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
       ->
@@ -853,7 +853,7 @@ _In order used on form 1040._
       ->
       **1040 LINE 12**
 * BUSINESS INCOME DEDUCTIONS
-  * **1099-NEC** - Nonemployee Compensation (Not Self-Employed)
+  * **1099-NEC** - Nonemployee Compensation (Self-Employed)
     * **BOX1**
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
@@ -902,7 +902,7 @@ _In order used on form 1040._
       ->
       **1040 LINE 13**
 * OTHER TAXES (SELF-EMPLOYMENT TAX)
-  * **1099-NEC** - Nonemployee Compensation (Not Self-Employed)
+  * **1099-NEC** - Nonemployee Compensation (Self-Employed)
     * **BOX1**
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
