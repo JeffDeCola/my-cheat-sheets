@@ -27,6 +27,7 @@ Table of Contents
   * [FORM 8936 - CLEAN VEHICLE CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits)
   * [SCHEDULE 3 - ADDITIONAL CREDITS AND PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments)
   * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
+* [AN ILLUSTRATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#an-illustration)
 
 ## EMPLOYEE FORMS
 
@@ -1488,3 +1489,9 @@ _In order used on form 1040._
       **LINE 12**
   * LINE 21 - Total Other Taxes
     * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
+
+## AN ILLUSTRATION
+
+This illustration may help.
+
+![IMAGE - 1040-common-form-flow - IMAGE](../../../docs/pics/1040-common-form-flow.jpg)
