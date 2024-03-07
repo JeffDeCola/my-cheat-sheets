@@ -399,9 +399,13 @@ _U.S. Individual Income Tax Return._
 * LINE 19 - Child Tax Credits
 * LINE 20 - Additional Payments and Credits from Schedule 3 (Part I)
   * CLEAN VEHICLE CREDIT
-    * **VEHICLE PURCHASE RECEIPTS**
+    * **VEHICLE PURCHASE RECEIPTS TOTAL AMOUNT & INFO**
       ->
-      **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
+      **[SCHEDULE A (FORM 8939)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount) LINE 9**
+      ->
+      **LINE 12**
+      ->
+      **[FORM 8939](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
       ->
       **LINE 13**
       ->
@@ -1084,11 +1088,14 @@ _In order used on form 1040._
     ->
     **1040 LINE 12**
 * **VEHICLE PURCHASE RECEIPTS**
-  * ????????????????????????????????????
   * Additional Payments and Credits from Schedule 3 (Part I) (Clean Vehicle Credit):
     **TOTAL AMOUNT & INFO**
     ->
-    **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
+    **[SCHEDULE A (FORM 8939)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount) LINE 9**
+    ->
+    **LINE 12**
+    ->
+    **[FORM 8939](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
     ->
     **LINE 13**
     ->
@@ -1096,7 +1103,7 @@ _In order used on form 1040._
     ->
     **LINE 8**
     ->
-    **1040 LINE 23**
+    **1040 LINE 20**
 * **1040-ES** - Estimated Tax for Individuals (You sent this form to IRS)
   * Payments:
     **TOTAL AMOUNT** from all payment vouchers
@@ -1421,9 +1428,12 @@ _In order used on form 1040._
 ### SCHEDULE A (FORM 8936) - CLEAN VEHICLE CREDIT AMOUNT
 
 * PART I - Vehicle Details
-  * LINE 1
 * PART II - Credit Amount for Business/Investment Use Part of New Clean Vehicle
+  * LINE 9 - Tentative Credit Amount
+    * **VEHICLE PURCHASE RECEIPTS**
 * PART III - Credit Amount for Personal Use Part of New Clean Vehicle
+  * LINE 12 - Personal Credit Amount
+    * Enter **[FORM 8936 LINE 9](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits)**
 * PART IV - Credit Amount for Previously Owned Clean Vehicle
 * PART V - Credit Amount for Qualified Commercial Clean Vehicle
 
@@ -1432,9 +1442,12 @@ _In order used on form 1040._
 * PART I - Modified Adjusted Gross Income Amount
 * Part II - Credit for Business/Investment Use Part of New Clean Vehicles
 * Part III - Credit for Personal Use Part of New Clean Vehicles
-  * LINE 9: 
-  * LINE 9-12 - Calculating the Credit
-    * Fill in this info
+  * LINE 9: Total Credit Amount from Part III SChedule A (Form 8936)
+    * **VEHICLE PURCHASE RECEIPTS**
+      ->
+      **[SCHEDULE A (FORM 8939)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount) LINE 9**
+      ->
+      **LINE 12**
   * LINE 13 - Personal Use of Credit
     * Enter **[SCHEDULE 3 LINE 6f](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments)**
 * Part IV - Credit for Previously Owned Clean Vehicles
@@ -1444,7 +1457,15 @@ _In order used on form 1040._
 
 * PART 1 - NONREFUNDABLE CREDITS
   * LINE 6f - Clean Vehicle Credit
-    * From **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 13**
+    * **VEHICLE PURCHASE RECEIPTS**
+      ->
+      **[SCHEDULE A (FORM 8939)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount) LINE 9**
+      ->
+      **LINE 12**
+      ->
+      **[FORM 8939](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
+      ->
+      **LINE 13**
   * LINE 8
     * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
 * PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
