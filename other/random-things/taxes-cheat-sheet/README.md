@@ -78,7 +78,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 1b**
       ->
       **LINE 16**
     * **1099-B VARIOUS BOXES** (BOX B - Not Reported)
@@ -87,7 +87,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 2**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 2**
       ->
       **LINE 16**
     * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property (Gain Only))
@@ -96,7 +96,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 3**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 3**
       ->
       **LINE 16**
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX C - Not a 1099-B) (Gain Only)
@@ -105,7 +105,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 3**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 3**
       ->
       **LINE 16**
     * **SCHEDULE K-1 (FORM 1065) BOX 8**
@@ -129,7 +129,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 8b**
       ->
       **LINE 16**
     * **1099-B VARIOUS BOXES** (BOX E - Not Reported)
@@ -138,7 +138,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 9**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 9**
       ->
       **LINE 16**
     * **1099-K VARIOUS BOXES** (BOX F - Not a 1099-B) (Sold Property (Gain Only))
@@ -147,7 +147,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 10**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 10**
       ->
       **LINE 16**
     * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX F - Not a 1099-B) (Gain Only)
@@ -156,7 +156,7 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 2**
       ->
-      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 10**
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 10**
       ->
       **LINE 16**
     * **SCHEDULE K-1 (FORM 1065) BOX 9a**
