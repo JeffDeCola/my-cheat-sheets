@@ -4,6 +4,7 @@ _Common tax info I find useful for filing Form 1040. This is not to be used as t
 
 Table of Contents
 
+* [EMPLOYEE FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employee-forms)
 * [FORM 1040](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-1040)
   * [INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#income)
   * [TAX AND CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-and-credits)
@@ -14,6 +15,7 @@ Table of Contents
 * [SCHEDULES AND OTHER FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules-and-other-forms)
   * [SCHEDULE B - INTEREST AND ORDINARY DIVIDENDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends)
   * [FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets)
+  * [CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet)
   * [SCHEDULE D - CAPITAL GAINS AND LOSSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)
   * [SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship)
   * [SCHEDULE 1 - ADDITIONAL INCOME AND ADJUSTMENTS TO INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)
@@ -21,12 +23,15 @@ Table of Contents
   * [SCHEDULE SE - SELF-EMPLOYMENT TAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)
   * [SCHEDULE A - ITEMIZED DEDUCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions)
   * [FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)
-  * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
+  * [SCHEDULE A (FORM 8936) - CLEAN VEHICLE CREDIT AMOUNT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount)
   * [FORM 8936 - CLEAN VEHICLE CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits)
   * [SCHEDULE 3 - ADDITIONAL CREDITS AND PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments)
-* [OTHER NOTES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#other-notes)
-  * [EMPLOYEE FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employee-forms)
-  * [REPORT PROCEEDS OF SELLING A CAPITAL ASSET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#report-proceeds-of-selling-a-capital-asset)
+  * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
+
+## EMPLOYEE FORMS
+
+* **W-9** -Request for Taxpayer Identification Number and Certification
+* **W-4** - Employee's Withholding Certificate
 
 ## FORM 1040
 
@@ -36,7 +41,7 @@ _U.S. Individual Income Tax Return._
 
 #### ALL INCOME
 
-* LINE 1 - Wage and Salary Income
+* LINE 1a - Wage and Salary Income
   * **W-2 BOX 1**
 * LINE 2b -  Interest Income from Schedule B
   * **1099-INT BOX 1**
@@ -66,7 +71,7 @@ _U.S. Individual Income Tax Return._
 * LINE 5b - Pensions and Annuities
 * LINE 6b - Social Security Benefits
 * LINE 7 - Capital Gains (Loss) from Schedule D
-  * SHORT TERM
+  * SHORT TERM CAPITAL GAINS (LOSS)
     * **1099-B VARIOUS BOXES** (BOX A - Reported)
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
@@ -85,7 +90,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 2**
       ->
       **LINE 16**
-    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property)
+    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property (Gain Only))
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
@@ -94,7 +99,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 3**
       ->
       **LINE 16**
-    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX C - Not a 1099-B)
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX C - Not a 1099-B) (Gain Only)
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
@@ -108,7 +113,16 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 5**
       ->
       **LINE 16**
-  * LONG-TERM
+    * **SCHEDULE D (PREVIOUS YEAR) LINE 7**
+      ->
+      **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 5**
+      ->
+      **LINE 8**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 6**
+      ->
+      **LINE 16**
+  * LONG-TERM CAPITAL GAINS (LOSS)
     * **1099-B VARIOUS BOXES** (BOX D - Reported)
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
@@ -127,7 +141,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 9**
       ->
       **LINE 16**
-    * **1099-K VARIOUS BOXES** (BOX F - Not a 1099-B) (Sold Property)
+    * **1099-K VARIOUS BOXES** (BOX F - Not a 1099-B) (Sold Property (Gain Only))
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
@@ -136,7 +150,7 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 10**
       ->
       **LINE 16**
-    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX F - Not a 1099-B)
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX F - Not a 1099-B) (Gain Only)
       ->
       **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
       ->
@@ -150,7 +164,16 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 12**
       ->
       **LINE 16**
-* LINE 8 - Additional Income from Schedules 1
+    * **SCHEDULE D (PREVIOUS YEAR) LINE 15**
+      ->
+      **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 9**
+      ->
+      **LINE 13**
+      ->
+      **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 14**
+      ->
+      **LINE 16**
+* LINE 8 - Additional Income from Schedule 1
   * BUSINESS INCOME (LOSS) from Schedule C
     * **1099-NEC BOX 1** (Self-Employed)
       ->
@@ -201,8 +224,13 @@ _U.S. Individual Income Tax Return._
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8b**
       ->
       **LINE 10**
+    * **GAMBLING WINNINGS** (No W-2G)
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8b**
+      ->
+      **LINE 10**
   * MISCELLANEOUS INCOME (Not Self-Employed)
-    * **1099-MISC BOX 3**
+    * **1099-MISC BOX 3** (Not Self-Employed)
       ->
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8z**
       ->
@@ -226,7 +254,7 @@ _U.S. Individual Income Tax Return._
 
 #### (MINUS) ADJUSTMENTS TO INCOME (DEDUCTIONS)
 
-* LINE 10 - Adjustments to Income from Schedules 1
+* LINE 10 - Adjustments to Income from Schedule 1
   * DEDUCTIBLE PART OF SELF-EMPLOYMENT TAX
     * **1099-NEC BOX1** (Self-Employed)
       ->
@@ -353,15 +381,15 @@ _U.S. Individual Income Tax Return._
 
 ### TAX AND CREDITS
 
-#### TAX
+#### TAX ON INCOME
 
-* LINE 16 - Look up Tax Bracket - Your Tax
+* LINE 16 - Look up Tax Bracket - Your Tax on Income
 
 #### (ADD) ADDITIONAL TAXES
 
 * LINE 17 - Additional Taxes from Schedule 2 (Part I)
 
-#### SUBTOTAL
+#### TAX (AFTER ADDITIONAL TAXES)
 
 * LINE 18 - Add Lines 16 and 17
 
@@ -370,7 +398,9 @@ _U.S. Individual Income Tax Return._
 * LINE 19 - Child Tax Credits
 * LINE 20 - Additional Payments and Credits from Schedule 3 (Part I)
   * CLEAN VEHICLE CREDIT
-    * **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
+    * **VEHICLE PURCHASE RECEIPTS**
+      ->
+      **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
       ->
       **LINE 13**
       ->
@@ -379,13 +409,13 @@ _U.S. Individual Income Tax Return._
       **LINE 8**
 * LINE 21 - Add Lines 19 and 20 - Your Total Credits and Payments
 
-#### SUBTOTAL
+#### TAX (AFTER CREDITS AND PAYMENTS)
 
 * LINE 22 - Subtract Line 21 from 18
 
 #### (ADD) OTHER TAXES
 
-* LINE 23 - Other Taxes from Schedules 2 (Part II)
+* LINE 23 - Other Taxes from Schedule 2 (Part II)
   * SELF-EMPLOYMENT TAX
     * **1099-NEC BOX1** (Self-Employed)
         ->
@@ -467,7 +497,7 @@ _U.S. Individual Income Tax Return._
 
 #### (ADD) ESTIMATED TAX PAYMENTS
 
-* LINE 26 - ESTIMATED TAX PAYMENTS
+* LINE 26 - Estimated Tax Payments
   * Payments you sent using **FORM 1040-ES**
 
 #### (ADD) OTHER PAYMENTS AND REFUNDABLE CREDITS
@@ -476,7 +506,7 @@ _U.S. Individual Income Tax Return._
 * LINE 28 - Additional Child Tax Credit
 * LINE 29 - American Opportunity Credit
 * LINE 30 - Reserved for Future Use
-* LINE 31 - Ammount from Schedule 3 (Part II)
+* LINE 31 - Amount from Schedule 3 (Part II)
 * LINE 32 - Add Lines 27, 28, 29, 30, and 31 - Your Total Other Payments and Refundable Credits
 
 #### TOTAL PAYMENTS
@@ -488,12 +518,16 @@ _U.S. Individual Income Tax Return._
 _If Line 33 is greater than Line 24._
 
 * LINE 34 - Subtract Line 24 from Line 33 - Your Refund
+* LINE 35a - Amount You Want Refunded To You
+* LINE 35b, c, d - Your Bank Information
+* LINE 36 - Amount You Want Applied to Next Year Tax
 
 ### AMOUNT YOU OWE
 
 _If Line 33 is less than Line 24._
 
 * LINE 37 - Subtract Line 33 from Line 24 - Your Amount You Owe
+* LINE 38 - Tax Penalty
 
 ## RECEIVED FORMS
 
@@ -530,6 +564,333 @@ _In order used on form 1040._
     **LINE 4**
     ->
     **1040 LINE 2b**
+  * Federal Tax Withheld:
+    **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **1099-DIV** - Dividends and Distributions
+  * Dividend Income:
+    **BOX 1a**
+    ->
+    **[SCHEDULE B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends) LINE 5**
+    ->
+    **LINE 6**
+    ->
+    **1040 LINE 3b**
+  * Federal Tax Withheld:
+    **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Reported)
+  * Short-Term Capitol Gains (Loss) (BOX A):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 1b**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Long-Term Capitol Gains (Loss) (BOX D):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 8b**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Not Reported)
+  * Short-Term Capitol Gains (Loss) (BOX B):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 2**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Long-Term Capitol Gains (Loss) (BOX E):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 9**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **1099-K** - Payment Card and Third Party Network Transactions (Not a 1099-B) (Sold Property (Gain only))
+  * Short-Term Capitol Gains (Loss) (BOX C):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 3**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Long-Term Capitol Gains (Loss) (BOX F):
+    **VARIOUS BOXES**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 10**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Federal Tax Withheld:
+    **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **SOLD PERSONAL PROPERTY** - Bill of Sale (e.g. Sold a car at a profit) (Gain only) (Not a 1099-B)
+  * Short-Term Capitol Gains (Loss) (BOX C):
+    **TOTAL AMOUNT & INFO**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 3**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Long-Term Capitol Gains (Loss) (BOX F):
+    **TOTAL AMOUNT & INFO**
+    ->
+    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+    ->
+    **LINE 2**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 10**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+* **SCHEDULE D (PREVIOUS YEAR)** - Capital Gains and Losses (Carryover Loss)
+  * Short-Term Capitol Loss Carryover:
+    **LINE 7**
+    ->
+    **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 5**
+    ->
+    **LINE 8**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 6**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+  * Long-Term Capitol Loss Carryover:
+    **LINE 15**
+    ->
+    **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 9**
+    ->
+    **LINE 13**
+    ->
+    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 14**
+    ->
+    **LINE 16**
+    ->
+    **1040 LINE 7**
+* **1099-NEC** - Nonemployee Compensation (Self-Employed)
+  * Additional Income (Business Income (Loss)):
+    **BOX1**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+  * Adjustments to Income (Deductible Part of Self-Employment Tax):
+    **BOX1**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 13**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
+    ->
+    **LINE 26**
+    ->
+    **1040 LINE 10**
+  * Business Income Deductions:
+    **BOX1**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
+    ->
+    **LINE 15**
+    ->
+    **1040 LINE 13**
+  * Other Taxes from Schedule 2 (Part II) (Self-Employment Tax):
+    **BOX1**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 12**
+    ->
+    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
+    ->
+    **LINE 21**
+    ->
+    **1040 LINE 23**
+  * Federal Tax Withheld:
+    **BOX 4**
+    ->
+    **1040 LINE 25b**
+* **INVOICES** - From your Business (Self-Employed)
+  * Additional Income (Business Income (Loss)):
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+  * Adjustments to Income (Deductible Part of Self-Employment Tax):
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 13**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
+    ->
+    **LINE 26**
+    ->
+    **1040 LINE 10**
+  * Business Income Deductions:
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
+    ->
+    **LINE 15**
+    ->
+    **1040 LINE 13**
+  * Other Taxes from Schedule 2 (Part II) (Self-Employment Tax):
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 12**
+    ->
+    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
+    ->
+    **LINE 21**
+    ->
+    **1040 LINE 23**
+* **1099-K** - Payment Card and Third Party Network Transactions (Self-Employed)
+  * Additional Income (Business Income (Loss)):
+    **BOX 1a**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+  * Adjustments to Income (Deductible Part of Self-Employment Tax):
+    **BOX 1a**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 13**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
+    ->
+    **LINE 26**
+    ->
+    **1040 LINE 10**
+  * Business Income Deductions:
+    **BOX 1a**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
+    ->
+    **LINE 15**
+    ->
+    **1040 LINE 13**
+  * Other Taxes from Schedule 2 (Part II) (Self-Employment Tax):
+    **BOX 1a**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+    ->
+    **LINE 12**
+    ->
+    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
+    ->
+    **LINE 21**
+    ->
+    **1040 LINE 23**
   * Federal Tax Withheld:
     **BOX 4**
     ->
@@ -603,7 +964,7 @@ _In order used on form 1040._
     **LINE 15**
     ->
     **1040 LINE 13**
-  * Other Taxes from Schedules 2 (Part II)
+  * Other Taxes from Schedule 2 (Part II) (Self-Employment Tax):
     **BOX 14**
     ->
     **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
@@ -615,307 +976,6 @@ _In order used on form 1040._
     **LINE 21**
     ->
     **1040 LINE 23**
-* **1099-DIV** - Dividends and Distributions
-  * Dividend Income:
-    **BOX 1a**
-    ->
-    **[SCHEDULE B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends) LINE 5**
-    ->
-    **LINE 6**
-    ->
-    **1040 LINE 3b**
-  * Federal Tax Withheld:
-    **BOX 4**
-    ->
-    **1040 LINE 25b**
-* **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Reported)
-  * Short-Term Capitol Gains (Loss) (BOX A):
-    **VARIOUS BOXES**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * Long-Term Capitol Gains (Loss) (BOX D):
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * **BOX 4**
-    ->
-    **1040 LINE 25b**
-* **1099-B** - Proceeds From Broker and Barter Exchange Transactions (BOX B - Not Reported)
-  * Short-Term Capitol Gains (Loss) (BOX B):
-    **VARIOUS BOXES**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 2**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * Long-Term Capitol Gains (Loss) (BOX E):
-    **VARIOUS BOXES**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 9**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * **BOX 4**
-    ->
-    **1040 LINE 25b**
-* **1099-K** - Payment Card and Third Party Network Transactions (BOX C - Not a 1099-B) (Sold Property)
-  * Short-Term Capitol Gains (Loss) (BOX C):
-    **VARIOUS BOXES**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 3**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * Long-Term Capitol Gains (Loss) (BOX F):
-    **VARIOUS BOXES**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 10**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * Federal Tax Withheld:
-    **BOX 4**
-    ->
-    **1040 LINE 25b**
-* **SOLD PERSONAL PROPERTY** - Bill of Sale (e.g. Sold a car at a profit) (Not a 1099-B)
-  * Short-Term Capitol Gains (Loss) (BOX C):
-    **TOTAL AMOUNT & INFO**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 1b, 2**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-  * Long-Term Capitol Gains (Loss) (BOX F):
-    **TOTAL AMOUNT & INFO**
-    ->
-    **[8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
-    ->
-    **LINE 2**
-    ->
-    **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) 8b, 9**
-    ->
-    **LINE 16**
-    ->
-    **1040 LINE 7**
-* **1099-NEC** - Nonemployee Compensation (Self-Employed)
-  * Additional Income (Business Income):
-    **BOX1**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
-    ->
-    **LINE 10**
-    ->
-    **1040 LINE 8**
-  * Adjustments to Income (Deductible Part of Self-Employment Tax):
-    **BOX1**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 13**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
-    ->
-    **LINE 26**
-    ->
-    **1040 LINE 10**
-  * Business Income Deductions:
-    **BOX1**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
-    ->
-    **LINE 15**
-    ->
-    **1040 LINE 13**
-  * Other Taxes from Schedules 2 (Part II)
-    **BOX1**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 12**
-    ->
-    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
-    ->
-    **LINE 21**
-    ->
-    **1040 LINE 23**
-  * Federal Tax Withheld:
-    **BOX 4**
-    ->
-    **1040 LINE 25b**
-* **INVOICES** - From your Business (Self-Employed)
-  * Additional Income (Business Income):
-    **TOTAL AMOUNT**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
-    ->
-    **LINE 10**
-    ->
-    **1040 LINE 8**
-  * Adjustments to Income (Deductible Part of Self-Employment Tax):
-    **TOTAL AMOUNT**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 13**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
-    ->
-    **LINE 26**
-    ->
-    **1040 LINE 10**
-  * Business Income Deductions:
-    **TOTAL AMOUNT**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
-    ->
-    **LINE 15**
-    ->
-    **1040 LINE 13**
-  * Other Taxes from Schedules 2 (Part II)
-    **TOTAL AMOUNT**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 12**
-    ->
-    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
-    ->
-    **LINE 21**
-    ->
-    **1040 LINE 23**
-* **1099-K** - Payment Card and Third Party Network Transactions (Self-Employed)
-  * Additional Income (Business Income):
-    **BOX 1a**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
-    ->
-    **LINE 10**
-    ->
-    **1040 LINE 8**
-  * Adjustments to Income (Deductible Part of Self-Employment Tax):
-    **BOX 1a**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 13**
-    ->
-    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 15**
-    ->
-    **LINE 26**
-    ->
-    **1040 LINE 10**
-  * Business Income Deductions:
-    **BOX 1a**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[FORM 8995](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction) LINE 1**
-    ->
-    **LINE 15**
-    ->
-    **1040 LINE 13**
-  * Other Taxes from Schedules 2 (Part II)
-    **BOX 1a**
-    ->
-    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-    ->
-    **LINE 31**
-    ->
-    **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-    ->
-    **LINE 12**
-    ->
-    **[SCHEDULE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes) LINE 4**
-    ->
-    **LINE 21**
-    ->
-    **1040 LINE 23**
-  * Federal Tax Withheld:
-    **BOX 4**
-    ->
-    **1040 LINE 25b**
 * **1099-G** - Certain Government Payments
   * Additional Income (Unemployment Compensation):
     **BOX 1**
@@ -942,6 +1002,15 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25c**
+* **GAMBLING WINNINGS** (No W-2G)
+  * Additional Income (Gambling Winnings):
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 8b**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
 * **1099-MISC** - Miscellaneous Income (Not Self-Employed)
   * Additional Income (Miscellaneous Income):
     **BOX 3**
@@ -1013,6 +1082,20 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+* **VEHICLE PURCHASE RECEIPTS**
+  * ????????????????????????????????????
+  * Additional Payments and Credits from Schedule 3 (Part I) (Clean Vehicle Credit):
+    **TOTAL AMOUNT & INFO**
+    ->
+    **[FORM 8936](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits) LINE 9**
+    ->
+    **LINE 13**
+    ->
+    **[SCHEDULE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments) LINE 6f**
+    ->
+    **LINE 8**
+    ->
+    **1040 LINE 23**
 * **1040-ES** - Estimated Tax for Individuals (You sent this form to IRS)
   * Payments:
     **TOTAL AMOUNT** from all payment vouchers
@@ -1041,7 +1124,7 @@ _In order used on form 1040._
     * **SCHEDULE K-1 (FORM 1065) BOX 6a**
   * LINE 6 - Total Dividends
     * Enter **[1040 LINE 3b](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
-* PART III - FOREIGN ACCOU`NTS AND TRUSTS
+* PART III - FOREIGN ACCOUNTS AND TRUSTS
 
 ### FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS
 
@@ -1052,43 +1135,92 @@ _In order used on form 1040._
   * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES** (BOX A - Reported)
     * **1099-B VARIOUS BOXES** (BOX B - Not Reported)
-    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property)
-    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX C - Not a 1099-B)
+    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property (Gain Only))
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX C - Not a 1099-B) (Gain Only)
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 1b, 2 or 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 * PART II - LONG-TERM TRANSACTIONS
   * BOX D - Long-Term Transactions Reported on Form 1099-B
   * BOX E - Short-Term Transactions Reported on Form 1099-B but not to IRS
   * BOX F - Long-Term Transactions Not Reported to IRS
-  * LINE 8a - Description of Property Gain (Loss)
+  * LINE 1 - Description of Property Gain (Loss)
     * **1099-B VARIOUS BOXES** (BOX D - Reported)
     * **1099-B VARIOUS BOXES** (BOX E - Not Reported)
-    * **1099-K VARIOUS BOXES** (BOX F - Not a 1099-B) (Sold Property)
-    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX F - Not a 1099-B)
+    * **1099-K VARIOUS BOXES** (BOX F - Not a 1099-B) (Sold Property (Gain Only))
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO** (BOX F - Not a 1099-B) (Gain Only)
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
+
+### CAPITAL LOSS CARRYOVER WORKSHEET
+
+* LINE 5 - Short-Term Capitol Loss from Previous Year
+  * **SCHEDULE D (PREVIOUS YEAR) LINE 7**
+* LINE 8 - Short-Term Capitol Loss Carryover
+  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 6**
+* LINE 9 - Short-Term Capitol Loss from Previous Year
+  * **SCHEDULE D (PREVIOUS YEAR) LINE 15**
+* LINE 13 - Short-Term Capitol Loss Carryover
+  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 14**
 
 ### SCHEDULE D - CAPITAL GAINS AND LOSSES
 
 * PART I - SHORT-TERM CAPITAL GAINS AND LOSSES
   * LINE 1b - Total for all transactions (BOX A - Reported)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * **1099-B VARIOUS BOXES** (BOX A - Reported)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
   * LINE 2 - Total for all transactions (BOX B - Not Reported)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * **1099-B VARIOUS BOXES** (BOX B - Not Reported)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
   * LINE 3 - Total for all transactions (BOX C - Not on 1099-B)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO (BOX C - Not a 1099-B)** (BOX C - Not a 1099-B)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
   * LINE 5 - Short Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 (FORM 1065) BOX 8**
+  * LINE 6 - Short-Term Capital Loss Carryover
+    * **SCHEDULE D (PREVIOUS YEAR) LINE 7**
+      ->
+      **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 5**
+      ->
+      **LINE 8**
   * LINE 7 - Net Short-Term Capital Gain (Loss)
 * PART II - LONG-TERM CAPITAL GAINS AND LOSSES
-  * LINE 8b - Total for all transactions (BOX D - Reported)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
-  * LINE 9 - Total for all transactions (BOX E - Not Reported)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
-  * LINE 10 - Total for all transactions (BOX F -Not on 1099-B)
-    * From **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 2**
+  * LINE 8b - Total for all transactions (BOX A - Reported)
+    * **1099-B VARIOUS BOXES** (BOX A - Reported)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
+  * LINE 9 - Total for all transactions (BOX B - Not Reported)
+    * **1099-B VARIOUS BOXES** (BOX B - Not Reported)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
+  * LINE 10 - Total for all transactions (BOX C - Not on 1099-B)
+    * **1099-K VARIOUS BOXES** (BOX C - Not a 1099-B) (Sold Property)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
+    * **SOLD PERSONAL PROPERTY TOTAL COST & INFO (BOX C - Not a 1099-B)** (BOX C - Not a 1099-B)
+      **[FORM 8949](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets) LINE 1**
+      ->
+      **LINE 2**
   * LINE 12 - Long Term Gain (Loss) From Corporations, etc.
     * **SCHEDULE K-1 (FORM 1065) BOX 9a**
+  * LINE 14 - Long-Term Capital Loss Carryover
+    * **SCHEDULE D (PREVIOUS YEAR) LINE 15**
+      ->
+      **[CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet) LINE 9**
+      ->
+      **LINE 13**
   * LINE 15 - Net Long-Term Capital Gain (Loss)
 * PART III - SUMMARY
   * LINE 16 - Total Capital Gain (Loss)
@@ -1102,17 +1234,21 @@ _In order used on form 1040._
     * **INVOICES** (Self-Employed)
     * **1099-K BOX 1a** (Self-Employed)
   * LINE 4 - Cost of Goods Sold
-    * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 42**
+    * From **LINE 42** (below)
   * LINE 7 - Gross Income (Loss)
 * PART II - EXPENSES
   * LINE 28 - Total Expenses
   * LINE 31 - Net Profit (Loss)
     * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
+      (Additional Income) (Business Income (Loss))
     * Enter **[SCHEDULE SE LINE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
+      (Self-Employment Tax)
     * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
+      (Business Income Deductions)
 * PART III - COST OF GOODS SOLD
   * LINE 42 - Total Cost of Goods Sold
-    * Enter **[SCHEDULE C LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) (above)**
+    * Enter **LINE 4**
+    (above)
 * PART IV - INFORMATION ON YOUR VEHICLE
 * PART V - OTHER EXPENSES
 
@@ -1145,6 +1281,7 @@ _In order used on form 1040._
     * **1099-G BOX 1**
   * LINE 8b - Gambling
     * **W-2G BOX 1**
+    * **GAMBLING WINNINGS** (No W-2G)
   * LINE 8z - Other Income
     * **1099-MISC BOX 3** (Not Self-Employed)
     * **1099-NEC BOX 1** (Not Self-Employed)
@@ -1154,7 +1291,38 @@ _In order used on form 1040._
 * PART II - ADJUSTMENTS TO INCOME
   * LINE 11 - Education expenses
   * LINE 15 - Deductible Part of Self-Employment Tax
-    * From **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 13**
+    * **1099-NEC BOX 1** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 13**
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 13**
+    * **1099-K BOX 1a** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 13**
+    * **SCHEDULE K-1 (FORM 1065) BOX 14**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 13**
   * LINE 21 - Student Loan Interest Deduction
   * LINE 26 - Total Adjustments to Income
     * Enter **[1040 LINE 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-adjustments-to-income-deductions)**
@@ -1181,7 +1349,21 @@ _In order used on form 1040._
 
 * PART I - SELF-EMPLOYMENT TAX
   * LINE 2 - Net Earnings From Self-Employment
-    * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
+    * **1099-NEC BOX 1** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+    * **1099-K BOX 1a** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
     * **SCHEDULE K-1 (FORM 1065) BOX 14**
   * LINE 12 - Self-Employment Tax
     * Enter **[SCHEDULE 2 LINE 4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)**
@@ -1212,26 +1394,44 @@ _In order used on form 1040._
 ### FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION
 
 * LINE 1 - Business Income
-  * From **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 31**
-  * From **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 41**
+  * **1099-NEC BOX 1** (Self-Employed)
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+  * **INVOICES** (Self-Employed)
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+  * **1099-K BOX 1a** (Self-Employed)
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+    ->
+    **LINE 31**
+  * **SCHEDULE K-1 (FORM 1065) BOX 1**
+    ->
+    **[SCHEDULE E](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss) LINE 28**
+    ->
+    **LINE 41**
 * LINE 15 - Total Qualified Business Income Deduction
   * Enter **[1040 LINE 13](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
-### SCHEDULE 2 - ADDITIONAL TAXES
+### SCHEDULE A (FORM 8936) - CLEAN VEHICLE CREDIT AMOUNT
 
-* PART 1 - TAX
-  * LINE 1 Alternative Minimum Tax (AMT)
-* PART 2 - OTHER TAXES
-  * LINE 4 - Self-Employment Tax
-    * From **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 12**
-  * LINE 21 - Total Other Taxes
-    * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
+* PART I - Vehicle Details
+  * LINE 1
+* PART II - Credit Amount for Business/Investment Use Part of New Clean Vehicle
+* PART III - Credit Amount for Personal Use Part of New Clean Vehicle
+* PART IV - Credit Amount for Previously Owned Clean Vehicle
+* PART V - Credit Amount for Qualified Commercial Clean Vehicle
 
 ### FORM 8936 - CLEAN VEHICLE CREDITS
 
 * PART I - Modified Adjusted Gross Income Amount
 * Part II - Credit for Business/Investment Use Part of New Clean Vehicles
 * Part III - Credit for Personal Use Part of New Clean Vehicles
+  * LINE 9: 
   * LINE 9-12 - Calculating the Credit
     * Fill in this info
   * LINE 13 - Personal Use of Credit
@@ -1248,51 +1448,43 @@ _In order used on form 1040._
     * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
 * PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
 
-## OTHER NOTES
+### SCHEDULE 2 - ADDITIONAL TAXES
 
-Random other notes that may be helpful.
-
-### EMPLOYEE FORMS
-
-* **W-4** - Employee's Withholding Certificate
-* **W-9** -Request for Taxpayer Identification Number and Certification
-
-### REPORT PROCEEDS OF SELLING A CAPITAL ASSET
-
-A Capital Asset can be a stock/bond/crypto/etc.
-
-#### STEP 1 - RECEIVE A 1099-B - WHAT YOU SOLD
-
-Usually you get a **1099-B** from a broker that will list all your proceeds
-from selling your Capital Assets.
-It will also show if this was a long-term sale (held more than a year),
-a short-term sale (held less than a year) or a portion of both.
-
-#### STEP 2 - SALES ON FORM 8949
-
-You report these proceeds (sales) on
-**FORM 8949** (Sales and Other Dispositions of Capital Assets).
-
-```text
-PROCEEDS (SALE) - COST = CAPITAL GAIN/LOSS
-```
-
-There are 6 Boxes to check depending on the following,
-
-* **HAVE 1099-B REPORTED TO IRS**
-  * SHORT-TERM SALES (BOX A)
-  * LONG-TERM SALES (BOX D)
-* **HAVE 1099-B NOT REPORTED TO IRS (RARE)**
-  * SHORT-TERM SALES (BOX B)
-  * LONG-TERM SALES (BOX E)
-* **DON'T HAVE A 1099-B**
-  * SHORT-TERM SALES (BOX C)
-  * LONG-TERM SALES (BOX F)
-
-You may list each sale or combine the sales together to save time.
-I like to combine.
-
-#### STEP 3 - TOTALS ON SCHEDULE D
-
-Now add all the totals from all your **FORM 8949** and put on
-**SCHEDULE D** (Capital Gains and Losses).
+* PART 1 - TAX
+  * LINE 1 Alternative Minimum Tax (AMT)
+* PART 2 - OTHER TAXES
+  * LINE 4 - Self-Employment Tax
+    * **1099-NEC BOX 1** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **1099-K BOX 1a** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **SCHEDULE K-1 (FORM 1065) BOX 14**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+  * LINE 21 - Total Other Taxes
+    * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
