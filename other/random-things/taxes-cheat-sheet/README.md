@@ -313,8 +313,86 @@ _U.S. Individual Income Tax Return._
 #### (MINUS) DEDUCTIONS
 
 * LINE 12 - Standard Deduction or Itemized Deductions from Schedule A
-  * PROPERTY TAXES
-    * **PROPERTY TAX RECEIPTS**
+  * MEDICAL/DENTAL COSTS
+    * **MEDICAL/DENTAL RECEIPTS**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 1**
+      ->
+      **LINE 17**
+  * STATE AND LOCAL TAXES
+    * **W-2 BOX 17**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-INT BOX 17**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-OID BOX 14**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-DIV BOX 16**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-B BOX 16** (Reported)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-B BOX 16** (Not Reported)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-K BOX 8** (Sold Property)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-NEC BOX 5** (Self-Employed)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-K BOX 8** (Self-Employed)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-G BOX 11**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **W-2G BOX 15**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-MISC BOX 16** (Not Self-Employed)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+    * **1099-NEC BOX 5** (Not Self-Employed)
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+      ->
+      **LINE 17**
+  * REAL ESTATE TAXES
+    * **REAL ESTATE TAX RECEIPTS**
+      ->
+      **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5b**
+      ->
+      **LINE 17**
+  * CAR EXCISE TAX
+    * **CAR EXCISE TAX RECEIPTS**
       ->
       **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5c**
       ->
@@ -547,6 +625,14 @@ _In order used on form 1040._
     **BOX 2**
     ->
     **1040 LINE 25a**
+  * State Tax Withheld:
+    **BOX 17**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-INT** - Interest Income
   * Interest Income:
     **BOX 1**
@@ -560,6 +646,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 17**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-OID** - Original Issue Discount
   * Interest Income:
     **BOX 1**
@@ -573,6 +667,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 14**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-DIV** - Dividends and Distributions
   * Dividend Income:
     **BOX 1a**
@@ -586,6 +688,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 16**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Reported)
   * Short-Term Capitol Gains (Loss) (BOX A):
     **VARIOUS BOXES**
@@ -611,9 +721,18 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
-  * **BOX 4**
+  * Federal Tax Withheld:
+    **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 16**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Not Reported)
   * Short-Term Capitol Gains (Loss) (BOX B):
     **VARIOUS BOXES**
@@ -639,9 +758,18 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
-  * **BOX 4**
+  * Federal Tax Withheld:
+    **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 16**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-K** - Payment Card and Third Party Network Transactions (Not a 1099-B) (Sold Property (Gain only))
   * Short-Term Capitol Gains (Loss) (BOX C):
     **VARIOUS BOXES**
@@ -671,6 +799,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 8**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **SOLD PERSONAL PROPERTY** - Bill of Sale (e.g. Sold a car at a profit) (Gain only) (Not a 1099-B)
   * Short-Term Capitol Gains (Loss) (BOX C):
     **TOTAL AMOUNT & INFO**
@@ -782,6 +918,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 5**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **INVOICES** - From your Business (Self-Employed)
   * Additional Income (Business Income (Loss)):
     **TOTAL AMOUNT**
@@ -900,6 +1044,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 8**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **SCHEDULE K-1 (FORM 1065)** - Partner's Share of Income, Deductions, Credits, etc.
   * Interest Income:
     **BOX 5**
@@ -994,6 +1146,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 11**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **W-2G** - Certain Gambling Winnings
   * Additional Income (Gambling Winnings):
     **BOX 1**
@@ -1006,7 +1166,15 @@ _In order used on form 1040._
   * Federal Tax Withheld:
     **BOX 4**
     ->
-    **1040 LINE 25c**
+    **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 15**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **GAMBLING WINNINGS** (No W-2G)
   * Additional Income (Gambling Winnings):
     **TOTAL AMOUNT**
@@ -1026,9 +1194,17 @@ _In order used on form 1040._
     ->
     **1040 LINE 8**
   * Federal Tax Withheld:
-   **BOX 4**
+    **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 16**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-NEC** - Nonemployee Compensation (Not Self-Employed)
   * Additional Income (Nonemployee Compensation):
     **BOX 3**
@@ -1042,6 +1218,14 @@ _In order used on form 1040._
     **BOX 4**
     ->
     **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 5**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **SETTLEMENTS RECEIPTS**
   * Additional Income (Settlements):
     **TOTAL AMOUNT**
@@ -1051,7 +1235,25 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-* **PROPERTY TAX RECEIPTS**
+* **MEDICAL/DENTAL RECEIPTS**
+  * Itemized Deductions:
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 1**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
+* **REAL ESTATE TAX RECEIPTS**
+  * Itemized Deductions:
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5b**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
+* **CAR EXCISE TAX RECEIPTS**
   * Itemized Deductions:
     **TOTAL AMOUNT**
     ->
@@ -1382,9 +1584,27 @@ _In order used on form 1040._
 ### SCHEDULE A - ITEMIZED DEDUCTIONS
 
 * MEDICAL AND DENTAL EXPENSES
+  * LINE 1 - Medical and Dental Expenses
+    * **MEDICAL/DENTAL RECEIPTS**
 * TAXES YOU PAID
-  * LINE 5c - State and Local Taxes
-    * **PROPERTY TAX RECEIPTS**
+  * LINE 5a - State and Local Income Taxes or General Sales Taxes
+    * **W-2 BOX 17**
+    * **1099-INT BOX 17**
+    * **1099-OID BOX 14**
+    * **1099-DIV BOX 16**
+    * **1099-B BOX 16** (Reported)
+    * **1099-B BOX 16** (Not Reported)
+    * **1099-K BOX 8** (Sold Property)
+    * **1099-NEC BOX 5** (Self-Employed)
+    * **1099-K BOX 8** (Self-Employed)
+    * **1099-G BOX 11**
+    * **W-2G BOX 15**
+    * **1099-MISC BOX 16** (Not Self-Employed)
+    * **1099-NEC BOX 5** (Not Self-Employed)
+  * LINE 5b - State and Local Real Estate Taxes
+    * **REAL ESTATE TAX RECEIPTS**
+  * LINE 5c - State and Local Personal Property Taxes
+    * **CAR EXCISE TAX RECEIPTS**
 * INTEREST YOU PAID
   * LINE 8a - Home Mortgage Interest
     * **1098 BOX 1**
