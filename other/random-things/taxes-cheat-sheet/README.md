@@ -17,8 +17,9 @@ Table of Contents
   * [FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets)
   * [CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet)
   * [SCHEDULE D - CAPITAL GAINS AND LOSSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)
-  * [SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship)
+  * [TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet)
   * [SCHEDULE 1 - ADDITIONAL INCOME AND ADJUSTMENTS TO INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)
+  * [SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship)
   * [SCHEDULE E - SUPPLEMENTAL INCOME AND LOSS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-e---supplemental-income-and-loss)
   * [SCHEDULE SE - SELF-EMPLOYMENT TAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)
   * [SCHEDULE A - ITEMIZED DEDUCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions)
@@ -867,7 +868,7 @@ _In order used on form 1040._
   * Additional Income (State Tax Refund):
     **BOX 1**
     ->
-    **[TAX REFUND WROKSHEET]() LINE 1**
+    **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE 1**
     ->
     **LINE 7**
     ->
@@ -1467,37 +1468,22 @@ _In order used on form 1040._
   * LINE 16 - Total Capital Gain (Loss)
     * Enter **[1040 LINE 7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
 
-### SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)
+### TAX REFUND WORKSHEET
 
-* PART I - INCOME
-  * LINE 1 - Gross Receipts
-    * **1099-NEC BOX 1** (Self-Employed)
-    * **INVOICES** (Self-Employed)
-    * **1099-K BOX 1a** (Self-Employed)
-  * LINE 4 - Cost of Goods Sold
-    * From **LINE 42** (below)
-  * LINE 7 - Gross Income (Loss)
-* PART II - EXPENSES
-  * LINE 28 - Total Expenses
-  * LINE 31 - Net Profit (Loss)
-    * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
-      (Additional Income) (Business Income (Loss))
-    * Enter **[SCHEDULE SE LINE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
-      (Self-Employment Tax)
-    * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
-      (Business Income Deductions)
-* PART III - COST OF GOODS SOLD
-  * LINE 42 - Total Cost of Goods Sold
-    * Enter **LINE 4**
-    (above)
-* PART IV - INFORMATION ON YOUR VEHICLE
-* PART V - OTHER EXPENSES
+* LINE 1
+  * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
+* LINE 9 Taxable Part of your Refund
+  * Enter **[SCHEUDLE 1 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
 
 ### SCHEDULE 1 - ADDITIONAL INCOME AND ADJUSTMENTS TO INCOME
 
 * PART I - ADDITIONAL INCOME
   * LINE 1 - State Tax Refund (If you Itemized Deductions from Previous Year)
-    * **1099-G BOX 1**
+    * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
+      ->
+      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE1**
+      ->
+      **LINE 9**
   * LINE 3 - Business Income (Loss)
     * **1099-NEC BOX 1** (Self-Employed)
       ->
@@ -1569,6 +1555,32 @@ _In order used on form 1040._
   * LINE 21 - Student Loan Interest Deduction
   * LINE 26 - Total Adjustments to Income
     * Enter **[1040 LINE 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-adjustments-to-income-deductions)**
+
+### SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)
+
+* PART I - INCOME
+  * LINE 1 - Gross Receipts
+    * **1099-NEC BOX 1** (Self-Employed)
+    * **INVOICES** (Self-Employed)
+    * **1099-K BOX 1a** (Self-Employed)
+  * LINE 4 - Cost of Goods Sold
+    * From **LINE 42** (below)
+  * LINE 7 - Gross Income (Loss)
+* PART II - EXPENSES
+  * LINE 28 - Total Expenses
+  * LINE 31 - Net Profit (Loss)
+    * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
+      (Additional Income) (Business Income (Loss))
+    * Enter **[SCHEDULE SE LINE 2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)**
+      (Self-Employment Tax)
+    * Enter **[FORM 8995 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)**
+      (Business Income Deductions)
+* PART III - COST OF GOODS SOLD
+  * LINE 42 - Total Cost of Goods Sold
+    * Enter **LINE 4**
+    (above)
+* PART IV - INFORMATION ON YOUR VEHICLE
+* PART V - OTHER EXPENSES
 
 ### SCHEDULE E - SUPPLEMENTAL INCOME AND LOSS
 
