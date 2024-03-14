@@ -2,7 +2,7 @@
 
 _Common tax info I find useful for filing Form 1040. This is not to be used as tax advice, these are just my opinions._
 
-Table of Contents 
+Table of Contents
 
 * [EMPLOYEE FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#employee-forms)
 * [FORM 1040](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-1040)
