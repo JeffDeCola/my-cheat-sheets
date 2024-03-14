@@ -175,6 +175,12 @@ _U.S. Individual Income Tax Return._
       ->
       **LINE 16**
 * LINE 8 - Additional Income from Schedule 1
+  * STATE TAX REFUND (If Itemized Deductions Previous Year)
+    * **1099-G BOX 1**
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 1**
+      ->
+      **LINE 10**
   * BUSINESS INCOME (LOSS) from Schedule C
     * **1099-NEC BOX 1** (Self-Employed)
       ->
@@ -568,7 +574,7 @@ _U.S. Individual Income Tax Return._
   * **1099-K BOX 4** (Sold Property)
   * **1099-NEC BOX 4** (Self-Employed)
   * **1099-K BOX 4** (Self-Employed)
-  * **1099-G BOX 4**
+  * **1099-G BOX 4** (Unemployment Compensation)
   * **1099-MISC BOX 4** (Not Self-Employed)
   * **1099-NEC BOX 4** (Not Self-Employed)
 * LINE 25c - OTHER PAYMENTS
@@ -857,6 +863,31 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
+* **1099-G** - Certain Government Payments (State Tax Refund) if Itemized Deductions Previous Year
+  * Additional Income (State Tax Refund):
+    **BOX 1**
+    ->
+    **[TAX REFUND WROKSHEET]() LINE 1**
+    ->
+    **LINE 7**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 1**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+  * Federal Tax Withheld:
+    **BOX 4**
+    ->
+    **1040 LINE 25b**
+  * State Tax Withheld:
+    **BOX 11**
+    ->
+    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
+    ->
+    **LINE 17**
+    ->
+    **1040 LINE 12**
 * **1099-NEC** - Nonemployee Compensation (Self-Employed)
   * Additional Income (Business Income (Loss)):
     **BOX1**
@@ -1133,7 +1164,7 @@ _In order used on form 1040._
     **LINE 21**
     ->
     **1040 LINE 23**
-* **1099-G** - Certain Government Payments
+* **1099-G** - Certain Government Payments (Unemployment Compensation)
   * Additional Income (Unemployment Compensation):
     **BOX 1**
     ->
@@ -1465,6 +1496,8 @@ _In order used on form 1040._
 ### SCHEDULE 1 - ADDITIONAL INCOME AND ADJUSTMENTS TO INCOME
 
 * PART I - ADDITIONAL INCOME
+  * LINE 1 - State Tax Refund (If you Itemized Deductions from Previous Year)
+    * **1099-G BOX 1**
   * LINE 3 - Business Income (Loss)
     * **1099-NEC BOX 1** (Self-Employed)
       ->
@@ -1597,7 +1630,7 @@ _In order used on form 1040._
     * **1099-K BOX 8** (Sold Property)
     * **1099-NEC BOX 5** (Self-Employed)
     * **1099-K BOX 8** (Self-Employed)
-    * **1099-G BOX 11**
+    * **1099-G BOX 11** (Unemployment Compensation)
     * **W-2G BOX 15**
     * **1099-MISC BOX 16** (Not Self-Employed)
     * **1099-NEC BOX 5** (Not Self-Employed)
