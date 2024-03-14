@@ -177,7 +177,11 @@ _U.S. Individual Income Tax Return._
       **LINE 16**
 * LINE 8 - Additional Income from Schedule 1
   * STATE TAX REFUND (If Itemized Deductions Previous Year)
-    * **1099-G BOX 1**
+    * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
+      ->
+      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE1**
+      ->
+      **LINE 9**
       ->
       **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 1**
       ->
@@ -877,18 +881,6 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
-  * Federal Tax Withheld:
-    **BOX 4**
-    ->
-    **1040 LINE 25b**
-  * State Tax Withheld:
-    **BOX 11**
-    ->
-    **[SCHEUDLE A](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions) LINE 5a**
-    ->
-    **LINE 17**
-    ->
-    **1040 LINE 12**
 * **1099-NEC** - Nonemployee Compensation (Self-Employed)
   * Additional Income (Business Income (Loss)):
     **BOX1**
@@ -1393,17 +1385,6 @@ _In order used on form 1040._
   * LINE 2 - Totals
     * Enter **[SCHEDULE D LINE 8b, 9 or 10](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)**
 
-### CAPITAL LOSS CARRYOVER WORKSHEET
-
-* LINE 5 - Short-Term Capitol Loss from Previous Year
-  * **SCHEDULE D (PREVIOUS YEAR) LINE 7**
-* LINE 8 - Short-Term Capitol Loss Carryover
-  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 6**
-* LINE 9 - Short-Term Capitol Loss from Previous Year
-  * **SCHEDULE D (PREVIOUS YEAR) LINE 15**
-* LINE 13 - Short-Term Capitol Loss Carryover
-  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 14**
-
 ### SCHEDULE D - CAPITAL GAINS AND LOSSES
 
 * PART I - SHORT-TERM CAPITAL GAINS AND LOSSES
@@ -1435,6 +1416,7 @@ _In order used on form 1040._
       ->
       **LINE 8**
   * LINE 7 - Net Short-Term Capital Gain (Loss)
+    * Used for carryover next year
 * PART II - LONG-TERM CAPITAL GAINS AND LOSSES
   * LINE 8b - Total for all transactions (BOX A - Reported)
     * **1099-B VARIOUS BOXES** (BOX A - Reported)
@@ -1464,9 +1446,21 @@ _In order used on form 1040._
       ->
       **LINE 13**
   * LINE 15 - Net Long-Term Capital Gain (Loss)
+    * Used for carryover next year
 * PART III - SUMMARY
   * LINE 16 - Total Capital Gain (Loss)
     * Enter **[1040 LINE 7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#all-income)**
+
+### CAPITAL LOSS CARRYOVER WORKSHEET
+
+* LINE 5 - Short-Term Capitol Loss from Previous Year
+  * **SCHEDULE D (PREVIOUS YEAR) LINE 7**
+* LINE 8 - Short-Term Capitol Loss Carryover
+  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 6**
+* LINE 9 - Short-Term Capitol Loss from Previous Year
+  * **SCHEDULE D (PREVIOUS YEAR) LINE 15**
+* LINE 13 - Short-Term Capitol Loss Carryover
+  * Enter **[SCHEDULE D](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses) LINE 14**
 
 ### TAX REFUND WORKSHEET
 
@@ -1690,6 +1684,47 @@ _In order used on form 1040._
 * LINE 15 - Total Qualified Business Income Deduction
   * Enter **[1040 LINE 13](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-deductions)**
 
+### SCHEDULE 2 - ADDITIONAL TAXES
+
+* PART 1 - TAX
+  * LINE 1 Alternative Minimum Tax (AMT)
+* PART 2 - OTHER TAXES
+  * LINE 4 - Self-Employment Tax
+    * **1099-NEC BOX 1** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **INVOICES** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **1099-K BOX 1a** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+    * **SCHEDULE K-1 (FORM 1065) BOX 14**
+      ->
+      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
+      ->
+      **LINE 12**
+  * LINE 21 - Total Other Taxes
+    * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
+
 ### SCHEDULE A (FORM 8936) - CLEAN VEHICLE CREDIT AMOUNT
 
 * PART I - Vehicle Details
@@ -1734,47 +1769,6 @@ _In order used on form 1040._
   * LINE 8
     * Enter **[1040 LINE 20](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#minus-credits-and-payments)**
 * PART 2 - OTHER PAYMENTS AND REFUNDABLE CREDITS
-
-### SCHEDULE 2 - ADDITIONAL TAXES
-
-* PART 1 - TAX
-  * LINE 1 Alternative Minimum Tax (AMT)
-* PART 2 - OTHER TAXES
-  * LINE 4 - Self-Employment Tax
-    * **1099-NEC BOX 1** (Self-Employed)
-      ->
-      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-      ->
-      **LINE 31**
-      ->
-      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-      ->
-      **LINE 12**
-    * **INVOICES** (Self-Employed)
-      ->
-      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-      ->
-      **LINE 31**
-      ->
-      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-      ->
-      **LINE 12**
-    * **1099-K BOX 1a** (Self-Employed)
-      ->
-      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
-      ->
-      **LINE 31**
-      ->
-      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-      ->
-      **LINE 12**
-    * **SCHEDULE K-1 (FORM 1065) BOX 14**
-      ->
-      **[SCHEDULE SE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax) LINE 2**
-      ->
-      **LINE 12**
-  * LINE 21 - Total Other Taxes
-    * Enter **[1040 LINE 23](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#add-other-taxes)**
 
 ## AN ILLUSTRATION
 
