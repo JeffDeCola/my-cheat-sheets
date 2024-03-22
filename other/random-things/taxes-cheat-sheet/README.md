@@ -12,11 +12,20 @@ Table of Contents
   * [REFUND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#refund)
   * [AMOUNT YOU OWE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#amount-you-owe)
 * [RECEIVED FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#received-forms)
+  * [WAGE INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#wage-income)
+  * [INTEREST INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#interest-income)
+  * [DIVIDEND INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#dividend-income)
+  * [CAPITAL GAINS (LOSS) INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-gains-loss-income)
+  * [ADDITIONAL INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#additional-income)
+  * [ITEMIZED DEDUCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#itemized-deductions)
+  * [CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#credits)
+  * [ESTIMATED TAX PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#estimated-tax-payments)
+  * [RETIREMENT INFORMATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#retirement-information)
 * [SCHEDULES AND OTHER FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedules-and-other-forms)
   * [SCHEDULE B - INTEREST AND ORDINARY DIVIDENDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-b---interest-and-ordinary-dividends)
   * [FORM 8949 - SALES AND OTHER DISPOSITIONS OF CAPITAL ASSETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8949---sales-and-other-dispositions-of-capital-assets)
-  * [CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet)
   * [SCHEDULE D - CAPITAL GAINS AND LOSSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-d---capital-gains-and-losses)
+  * [CAPITAL LOSS CARRYOVER WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#capital-loss-carryover-worksheet)
   * [TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet)
   * [SCHEDULE 1 - ADDITIONAL INCOME AND ADJUSTMENTS TO INCOME](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)
   * [SCHEDULE C - PROFIT OR LOSS FROM BUSINESS (SOLE PROPRIETORSHIP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship)
@@ -24,10 +33,10 @@ Table of Contents
   * [SCHEDULE SE - SELF-EMPLOYMENT TAX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-se---self-employment-tax)
   * [SCHEDULE A - ITEMIZED DEDUCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a---itemized-deductions)
   * [FORM 8995 - QUALIFIED BUSINESS INCOME DEDUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8995---qualified-business-income-deduction)
+  * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
   * [SCHEDULE A (FORM 8936) - CLEAN VEHICLE CREDIT AMOUNT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-a-form-8936---clean-vehicle-credit-amount)
   * [FORM 8936 - CLEAN VEHICLE CREDITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#form-8936---clean-vehicle-credits)
   * [SCHEDULE 3 - ADDITIONAL CREDITS AND PAYMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-3---additional-credits-and-payments)
-  * [SCHEDULE 2 - ADDITIONAL TAXES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-2---additional-taxes)
 * [AN ILLUSTRATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#an-illustration)
 
 ## EMPLOYEE FORMS
@@ -179,7 +188,16 @@ _U.S. Individual Income Tax Return._
   * STATE TAX REFUND (If Itemized Deductions Previous Year)
     * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
       ->
-      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE1**
+      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE 1**
+      ->
+      **LINE 9**
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 1**
+      ->
+      **LINE 10**
+    * **SCHEDULE A (PREVIOUS YEAR) LINE 17**
+      ->
+      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE 4**
       ->
       **LINE 9**
       ->
@@ -208,6 +226,15 @@ _U.S. Individual Income Tax Return._
     * **1099-K BOX 1a** (Self-Employed)
       ->
       **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINE 1**
+      ->
+      **LINE 31**
+      ->
+      **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+      ->
+      **LINE 10**
+    * **BUSINESS EXPENSE RECEIPTS** (Self-Employed)
+      ->
+      **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINES 8-27**
       ->
       **LINE 31**
       ->
@@ -627,6 +654,8 @@ _If Line 33 is less than Line 24._
 
 _In order used on form 1040._
 
+### WAGE INCOME
+
 * **W-2** - Wage and Tax Statement
   * Wage Income:
     **BOX 1**
@@ -644,6 +673,9 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+
+### INTEREST INCOME
+
 * **1099-INT** - Interest Income
   * Interest Income:
     **BOX 1**
@@ -686,6 +718,9 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+
+### DIVIDEND INCOME
+
 * **1099-DIV** - Dividends and Distributions
   * Dividend Income:
     **BOX 1a**
@@ -707,6 +742,9 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+
+### CAPITAL GAINS (LOSS) INCOME
+
 * **1099-B** - Proceeds From Broker and Barter Exchange Transactions (Reported)
   * Short-Term Capitol Gains (Loss) (BOX A):
     **VARIOUS BOXES**
@@ -868,11 +906,27 @@ _In order used on form 1040._
     **LINE 16**
     ->
     **1040 LINE 7**
+
+### ADDITIONAL INCOME
+
 * **1099-G** - Certain Government Payments (State Tax Refund) if Itemized Deductions Previous Year
   * Additional Income (State Tax Refund):
     **BOX 1**
     ->
     **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE 1**
+    ->
+    **LINE 7**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 1**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
+* **SCHEDULE A (PREVIOUS YEAR)** - Itemized Deductions
+  * Total Itemized Deductions:
+    **LINE 17**
+    ->
+    **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE 4**
     ->
     **LINE 7**
     ->
@@ -1076,6 +1130,19 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+* **BUSINESS EXPENSE RECEIPTS** (Self-Employed)
+  * Business Expenses:
+    **TOTAL AMOUNT**
+    ->
+    **[SCHEDULE C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-c---profit-or-loss-from-business-sole-proprietorship) LINES 8-27**
+    ->
+    **LINE 31**
+    ->
+    **[SCHEDULE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income) LINE 3**
+    ->
+    **LINE 10**
+    ->
+    **1040 LINE 8**
 * **SCHEDULE K-1 (FORM 1065)** - Partner's Share of Income, Deductions, Credits, etc.
   * Interest Income:
     **BOX 5**
@@ -1259,6 +1326,9 @@ _In order used on form 1040._
     **LINE 10**
     ->
     **1040 LINE 8**
+
+### ITEMIZED DEDUCTIONS
+
 * **MEDICAL/DENTAL RECEIPTS**
   * Itemized Deductions:
     **TOTAL AMOUNT**
@@ -1313,6 +1383,9 @@ _In order used on form 1040._
     **LINE 17**
     ->
     **1040 LINE 12**
+
+### CREDITS
+
 * **VEHICLE PURCHASE RECEIPTS**
   * Additional Payments and Credits from Schedule 3 (Part I) (Clean Vehicle Credit):
     **TOTAL AMOUNT & INFO**
@@ -1330,11 +1403,17 @@ _In order used on form 1040._
     **LINE 8**
     ->
     **1040 LINE 20**
+
+### ESTIMATED TAX PAYMENTS
+
 * **1040-ES** - Estimated Tax for Individuals (You sent this form to IRS)
   * Payments:
     **TOTAL AMOUNT** from all payment vouchers
     ->
     **1040 LINE 26**
+
+### RETIREMENT INFORMATION
+
 * **5498** - IRA Contribution Information
   * Information Only
     * Just for your records
@@ -1466,6 +1545,8 @@ _In order used on form 1040._
 
 * LINE 1
   * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
+* LINE 4
+  * **SCHEDULE A (PREVIOUS YEAR) LINE 17**
 * LINE 9 Taxable Part of your Refund
   * Enter **[SCHEUDLE 1 LINE 1](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
 
@@ -1476,6 +1557,11 @@ _In order used on form 1040._
     * **1099-G BOX 1** (State Tax Refund) If you Itemized Deductions from Previous Year
       ->
       **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE1**
+      ->
+      **LINE 9**
+    * **SCHEDULE A (PREVIOUS YEAR) LINE 17**
+      ->
+      **[TAX REFUND WORKSHEET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#tax-refund-worksheet) LINE4**
       ->
       **LINE 9**
   * LINE 3 - Business Income (Loss)
@@ -1561,6 +1647,8 @@ _In order used on form 1040._
     * From **LINE 42** (below)
   * LINE 7 - Gross Income (Loss)
 * PART II - EXPENSES
+  * LINES 8-27 - Various Business Expenses
+    * **BUSINESS EXPENSE RECEIPTS** (Self Employed)
   * LINE 28 - Total Expenses
   * LINE 31 - Net Profit (Loss)
     * Enter **[SCHEDULE 1 LINE 3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet#schedule-1---additional-income-and-adjustments-to-income)**
