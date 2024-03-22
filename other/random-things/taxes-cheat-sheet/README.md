@@ -1862,4 +1862,4 @@ _In order used on form 1040._
 
 This illustration may help.
 
-![IMAGE - 1040-common-form-flow - IMAGE](../../../docs/pics/1040-common-form-flow.jpg)
+![IMAGE - 1040-common-form-flow - IMAGE](../../../docs/pics/1040-common-form-flow.svg)
