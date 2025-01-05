@@ -13,7 +13,7 @@ figured out over time. It's an ongoing process._
 **I - SOFTWARE CHEAT SHEETS**
 
 * **[DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)**
-  * DEVELOPMENT ENVIRONMENTSffff
+  * DEVELOPMENT ENVIRONMENTS
   * LANGUAGES
   * OPERATING SYSTEMS
   * SOFTWARE ARCHITECTURES
