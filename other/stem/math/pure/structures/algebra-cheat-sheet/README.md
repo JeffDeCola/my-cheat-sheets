@@ -62,7 +62,7 @@ To find out what the unknown is,
 
 <p align="center"><img src="svgs/958c35238e5b326abb602cd35810f526.svg?invert_in_darkmode" align="middle" width="65.97198135pt" height="12.785402849999999pt" /></p>
 
-If <img src="svgs/cf34371d316f136e859347be44d26b44.svg?invert_in_darkmode" align="middle" width="38.82599489999999pt" height="21.18721440000001pt" />, then <img src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg?invert_in_darkmode" align=middle width=37.19163689999999pt height=22.831056599999986pt/>.  If <img src="svgs/f0ab30e11910c2d2688aac5ed2ced758.svg?invert_in_darkmode" align=middle width=38.82599489999999pt height=21.18721440000001pt/>, then <img src="svgs/3396462ea631cee3339fb06b67f38e5f.svg?invert_in_darkmode" align=middle width=37.19163689999999pt height=22.831056599999986pt/>. Hence <img src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/> will change depending on <img src="svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/>.
+If <img src="svgs/cf34371d316f136e859347be44d26b44.svg?invert_in_darkmode" align="middle" width="38.82599489999999pt" height="21.18721440000001pt" />, then <img src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg?invert_in_darkmode" align="middle" width="37.19163689999999pt" height="22.831056599999986pt" />.  If <img src="svgs/f0ab30e11910c2d2688aac5ed2ced758.svg?invert_in_darkmode" align=middle width=38.82599489999999pt height=21.18721440000001pt/>, then <img src="svgs/3396462ea631cee3339fb06b67f38e5f.svg?invert_in_darkmode" align=middle width=37.19163689999999pt height=22.831056599999986pt/>. Hence <img src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/> will change depending on <img src="svgs/44bc9d542a92714cac84e01cbbb7fd61.svg?invert_in_darkmode" align=middle width=8.68915409999999pt height=14.15524440000002pt/>.
 And visa versa.
 
 ## MULTIPLICATION IS IMPLIED
@@ -101,7 +101,7 @@ Subtraction _(subtract 7 from each side)_,
 
 <p align="center"><img src="svgs/13d91d780fbefdc0d7390c31074b2fe6.svg?invert_in_darkmode" align="middle" width="179.2578084pt" height="59.90867685pt" /></p>
 
-Dealing with <img src="svgs/4eb1b9787b23954d9a6d0a46d13c6971.svg?invert_in_darkmode" align="middle" width="22.180421999999993pt" height="19.1781018pt" />, _(add <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align=middle width=9.39498779999999pt height=14.15524440000002pt/> on each side)_,
+Dealing with <img src="svgs/4eb1b9787b23954d9a6d0a46d13c6971.svg?invert_in_darkmode" align="middle" width="22.180421999999993pt" height="19.1781018pt" />, _(add <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> on each side)_,
 
 <p align="center"><img src="svgs/0b40bb38c0980dbaaaf2da9d4599fe92.svg?invert_in_darkmode" align="middle" width="197.1343176pt" height="133.88127885pt" /></p> 
 
@@ -124,8 +124,8 @@ use the oder of operations rule in reverse, which is,
 
 * <img src="svgs/1a6e75b76a32b9cde4ccf76274dcc911.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="24.65753399999998pt" /> and Groups
 * Exponents and Radicals
-* <img src="svgs/24547b79c405a6d22240abf775098c7e.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" /> <img src="svgs/bdbf342b57819773421273d508dba586.svg?invert_in_darkmode" align=middle width=12.785434199999989pt height=19.1781018pt/>
-* <img src="svgs/df33724455416439909c33a7db76b2bc.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" /> <img src="svgs/2a69f75630cce402c7c381036296bca9.svg?invert_in_darkmode" align=middle width=12.785434199999989pt height=19.1781018pt/>
+* <img src="svgs/24547b79c405a6d22240abf775098c7e.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" /> <img src="svgs/bdbf342b57819773421273d508dba586.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" />
+* <img src="svgs/df33724455416439909c33a7db76b2bc.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" /> <img src="svgs/2a69f75630cce402c7c381036296bca9.svg?invert_in_darkmode" align="middle" width="12.785434199999989pt" height="19.1781018pt" />
 
 Multiplication & Addition _(use subtraction and then division)_,
 
@@ -149,7 +149,7 @@ As we mentioned before algebra is similar to arithmetic,
 
 <p align="center"><img src="svgs/e725679236472660ced0a2ee6b556c38.svg?invert_in_darkmode" align="middle" width="159.82260195pt" height="45.60802124999999pt" /></p>
 
-As a side note, that will help us later on, <img src="svgs/0509db0612eccfb1265dfc7f2772fd75.svg?invert_in_darkmode" align="middle" width="46.90628744999999pt" height="26.76175259999998pt" /> and <img src="svgs/076118b2477f47de9838c4b30f0bb0e8.svg?invert_in_darkmode" align=middle width=48.08206589999999pt height=26.76175259999998pt/>.
+As a side note, that will help us later on, <img src="svgs/0509db0612eccfb1265dfc7f2772fd75.svg?invert_in_darkmode" align="middle" width="46.90628744999999pt" height="26.76175259999998pt" /> and <img src="svgs/076118b2477f47de9838c4b30f0bb0e8.svg?invert_in_darkmode" align="middle" width="48.08206589999999pt" height="26.76175259999998pt" />.
 
 Square Root _(Use exponent of 2)_,
 
@@ -164,8 +164,8 @@ Exponent 2nd power _(Use square root)_,
 <p align="center"><img src="svgs/5e99b2ff7c2cd1d18650cfdd358c8255.svg?invert_in_darkmode" align="middle" width="77.9567151pt" height="69.2244762pt" /></p>
 
 Remember, the square root of a number can be both positive and negative.
-<img src="svgs/b065bd608d93b0b5d0b6b318b87b8e14.svg?invert_in_darkmode" align="middle" width="60.27391754999999pt" height="28.511366399999982pt" /> because <img src="svgs/bd16f11eeb202e778a5da341bf108ccb.svg?invert_in_darkmode" align=middle width=74.88565919999999pt height=21.18721440000001pt/>
-But <img src="svgs/96e6a08140003de60422b40038d3b1ec.svg?invert_in_darkmode" align="middle" width="121.46116949999997pt" height="24.65753399999998pt" />. So it is also <img src="svgs/f2b3d7ddf1ec7a8f08af5498bdfbf538.svg?invert_in_darkmode" align=middle width=73.05935174999999pt height=28.511366399999982pt/>.
+<img src="svgs/b065bd608d93b0b5d0b6b318b87b8e14.svg?invert_in_darkmode" align="middle" width="60.27391754999999pt" height="28.511366399999982pt" /> because <img src="svgs/bd16f11eeb202e778a5da341bf108ccb.svg?invert_in_darkmode" align="middle" width="74.88565919999999pt" height="21.18721440000001pt" />
+But <img src="svgs/96e6a08140003de60422b40038d3b1ec.svg?invert_in_darkmode" align="middle" width="121.46116949999997pt" height="24.65753399999998pt" />. So it is also <img src="svgs/f2b3d7ddf1ec7a8f08af5498bdfbf538.svg?invert_in_darkmode" align="middle" width="73.05935174999999pt" height="28.511366399999982pt" />.
 
 Exponent 3rd power _(Use cube root)_,
 
@@ -175,7 +175,7 @@ Exponent 3rd power _(Use cube root)_,
 
 First, a `term` is a mathematical expression made up of two parts
 (a number part and a variable part).  The number part is called the coefficient.
-For example a term can be <img src="svgs/8b94a9b677f1adc08bbf7ceebc66addc.svg?invert_in_darkmode" align="middle" width="16.86843509999999pt" height="21.18721440000001pt" /> or <img src="svgs/4e6ab8ce46c662aaec1b23bf2effb5c2.svg?invert_in_darkmode" align=middle width=23.420962949999986pt height=26.76175259999998pt/>.
+For example a term can be <img src="svgs/8b94a9b677f1adc08bbf7ceebc66addc.svg?invert_in_darkmode" align="middle" width="16.86843509999999pt" height="21.18721440000001pt" /> or <img src="svgs/4e6ab8ce46c662aaec1b23bf2effb5c2.svg?invert_in_darkmode" align="middle" width="23.420962949999986pt" height="26.76175259999998pt" />.
 
 A polynomial is a combination of terms linked together by
 addition or subtraction.
@@ -190,7 +190,7 @@ Example of a polynomial,
 <p align="center"><img src="svgs/f3f40245cbf1704d30d490efdf0783b5.svg?invert_in_darkmode" align="middle" width="82.78523715pt" height="15.572667pt" /></p>
 
 But why does the <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> not have a number part and the 5 not have a variable part?
-Well think of <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> as <img src="svgs/cb251c47412adcb82a3960318043fe93.svg?invert_in_darkmode" align=middle width=17.614197149999992pt height=21.18721440000001pt/> and <img src="svgs/9612eecfec9dadf1a81d296bd2473777.svg?invert_in_darkmode" align=middle width=8.219209349999991pt height=21.18721440000001pt/> as  <img src="svgs/4adfd2d7e665c8f2ae1e68586d78f0a9.svg?invert_in_darkmode" align=middle width=24.16674479999999pt height=26.76175259999998pt/>. Hence,
+Well think of <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> as <img src="svgs/cb251c47412adcb82a3960318043fe93.svg?invert_in_darkmode" align="middle" width="17.614197149999992pt" height="21.18721440000001pt" /> and <img src="svgs/9612eecfec9dadf1a81d296bd2473777.svg?invert_in_darkmode" align=middle width=8.219209349999991pt height=21.18721440000001pt/> as  <img src="svgs/4adfd2d7e665c8f2ae1e68586d78f0a9.svg?invert_in_darkmode" align=middle width=24.16674479999999pt height=26.76175259999998pt/>. Hence,
 
 <p align="center"><img src="svgs/7a6a961d919f19d8557de1bb07ff9f94.svg?invert_in_darkmode" align="middle" width="118.95185939999998pt" height="26.750705849999996pt" /></p>
 
@@ -217,7 +217,7 @@ Simplify by making polynomial shorter. Combining like terms
 ## DISTRIBUTIVE PROPERTY
 
 Its like the distributive property in arithmetic
-<img src="svgs/fd1eaf802874f57b83468cadcd7e840a.svg?invert_in_darkmode" align="middle" width="129.29010929999998pt" height="24.65753399999998pt" /> or <img src="svgs/12db10a8569625d42bb860749859a636.svg?invert_in_darkmode" align=middle width=129.29010929999998pt height=24.65753399999998pt/>.
+<img src="svgs/fd1eaf802874f57b83468cadcd7e840a.svg?invert_in_darkmode" align="middle" width="129.29010929999998pt" height="24.65753399999998pt" /> or <img src="svgs/12db10a8569625d42bb860749859a636.svg?invert_in_darkmode" align="middle" width="129.29010929999998pt" height="24.65753399999998pt" />.
 
 Take a `factor` and `distribute` it to the terms,
 
@@ -233,7 +233,7 @@ In reverse you can `factor out` something.
 
 ## THE COORDINATE PLANE (2D NUMBER PLANE)
 
-A `2D number plane` or `coordinate plane` has an <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> and <img src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg?invert_in_darkmode" align=middle width=8.649225749999989pt height=14.15524440000002pt/>
+A `2D number plane` or `coordinate plane` has an <img src="svgs/332cc365a4987aacce0ead01b8bdcc0b.svg?invert_in_darkmode" align="middle" width="9.39498779999999pt" height="14.15524440000002pt" /> and <img src="svgs/deceeaf6940a8c7a5a02373728002b0f.svg?invert_in_darkmode" align="middle" width="8.649225749999989pt" height="14.15524440000002pt" />
 (horizontal and vertical) axis.
 You can plot points on a coordinate system with coordinates
 (ordered pairs) <img src="svgs/7392a8cd69b275fa1798ef94c839d2e0.svg?invert_in_darkmode" align="middle" width="38.135511149999985pt" height="24.65753399999998pt" />.
@@ -302,9 +302,9 @@ It has a basic form of,
 
 <p align="center"><img src="svgs/12b1df18b5de3134c76e50641e441973.svg?invert_in_darkmode" align="middle" width="92.7189153pt" height="25.789928999999997pt" /></p>
 
-Where <img src="svgs/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode" align="middle" width="14.433101099999991pt" height="14.15524440000002pt" /> is the `slope` of the line and <img src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align=middle width=7.054796099999991pt height=22.831056599999986pt/> is the `y-intercept`.
+Where <img src="svgs/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode" align="middle" width="14.433101099999991pt" height="14.15524440000002pt" /> is the `slope` of the line and <img src="svgs/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode" align="middle" width="7.054796099999991pt" height="22.831056599999986pt" /> is the `y-intercept`.
 
-We already did one above <img src="svgs/124b49b18251340df4b37d84976754ad.svg?invert_in_darkmode" align="middle" width="48.18103454999999pt" height="21.18721440000001pt" />, where <img src="svgs/39124f150a1b1249b668329ebb679ce5.svg?invert_in_darkmode" align=middle width=44.56994024999999pt height=21.18721440000001pt/> and <img src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg?invert_in_darkmode" align=middle width=37.19163689999999pt height=22.831056599999986pt/>,
+We already did one above <img src="svgs/124b49b18251340df4b37d84976754ad.svg?invert_in_darkmode" align="middle" width="48.18103454999999pt" height="21.18721440000001pt" />, where <img src="svgs/39124f150a1b1249b668329ebb679ce5.svg?invert_in_darkmode" align="middle" width="44.56994024999999pt" height="21.18721440000001pt" /> and <img src="svgs/4cd550fd2010ef3d2857dc7d1f169624.svg?invert_in_darkmode" align=middle width=37.19163689999999pt height=22.831056599999986pt/>,
 
 <p align="center"><img src="svgs/7d60633fb62c32e50e50665b438ef75e.svg?invert_in_darkmode" align="middle" width="76.49143425pt" height="13.789957499999998pt" /></p>
 
