@@ -4,7 +4,7 @@
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 
-_A place to keep all my cheat sheetsf
+_A place to keep all my cheat sheets
 for the complete development of
 ASIC/FPGA hardware or a software app/service.
 These cheat sheets contain info I gathered from other sources and
