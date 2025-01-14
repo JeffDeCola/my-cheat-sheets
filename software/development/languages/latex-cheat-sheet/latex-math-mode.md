@@ -136,7 +136,9 @@ $$
 ```
 
 $$
-\boxed{x^n + y^n = z^n}
+\begin{equation}
+  \boxed{x^n + y^n = z^n}
+\end{equation}
 $$
 
 **Pythagorean theorem (numbered using begin{equation})**
