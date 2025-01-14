@@ -17,8 +17,8 @@ LaTeX math mode functions & symbols,
 
 First, there are three ways to declare math mode in LaTeX,
 
-1. In-line mode using \$...\$
-2. Block mode using \$\$...\$\$
+1. In-line mode using $
+2. Block mode using $$
 3. Block mode using begin{equation}...end{equation}
 
 ### In-line Mode
