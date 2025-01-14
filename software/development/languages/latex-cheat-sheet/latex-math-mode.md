@@ -139,6 +139,10 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
+$$
+\boxed{hi}
+$$
+
 **Pythagorean theorem (numbered using begin{equation})**
 
 ```text
