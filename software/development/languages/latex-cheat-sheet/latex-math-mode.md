@@ -147,9 +147,11 @@ $$
     \end{equation}
 ```
 
+$$
 \begin{equation}
     x^n + y^n = z^n
 \end{equation}
+$$
 
 **Pythagorean theorem (numbered using tag)**
 
@@ -159,9 +161,11 @@ $$
     \end{equation}
 ```
 
+$$
 \begin{equation}
     x^n + y^n = z^n\tag{6}
 \end{equation}
+$$
 
 **Pythagorean theorem (another way to do numbers)**
 
