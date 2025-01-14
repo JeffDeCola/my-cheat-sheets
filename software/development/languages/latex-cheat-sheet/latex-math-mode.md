@@ -1,7 +1,6 @@
 # LaTeX MATH MODE CHEAT SHEET
 
-`LaTeX math mode` _is the math mode of LaTex. Where LaTeX is
-an advanced markup language used for typesetting._
+_The math mode of LaTex._
 
 Documentation and reference,
 
@@ -13,9 +12,6 @@ LaTeX math mode functions & symbols,
 
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## DECLARING MATH MODE
 
