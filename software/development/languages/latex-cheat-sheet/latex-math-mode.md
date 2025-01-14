@@ -2,7 +2,7 @@
 
 _The math mode of LaTex._
 
-Documentation and reference,
+Documentation and Reference
 
 * [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 * [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
@@ -15,13 +15,13 @@ LaTeX math mode functions & symbols,
 
 ## DECLARING MATH MODE
 
-First, there are three ways to `declare math mode` in LaTeX,
+First, there are three ways to declare math mode in LaTeX,
 
-* In-line mode using \$...\$
-* Display mode (Newline, center) using \$\$...\$\$
-* Display mode (Newline, center with tag) using begin{equation}...end{equation}
+1. In-line mode using \$...\$
+2. Block mode using \$\$...\$\$
+3. Block mode using begin{equation}...end{equation}
 
-An example of LaTeX math in-line mode,
+### In-line Mode
 
 ```txt
     Einstein's equation
@@ -33,7 +33,7 @@ Einstein's equation
 $E=mc^2$
 represent energy is equal to matter multiplied by the speed of light squared.
 
-An example of LaTeX math display mode,
+### Block Mode
 
 ```txt
     $$
@@ -45,7 +45,7 @@ $$
 E=mc^2
 $$
 
-An example of LaTeX math display mode (with tag),
+### Block Mode using begin
 
 ```txt
     \begin{equation}
@@ -53,14 +53,13 @@ An example of LaTeX math display mode (with tag),
     \end{equation}
 ```
 
-\begin{equation}
-    E=mc^2
-\end{equation}
+$$
+  \begin{equation}
+      E=mc^2
+  \end{equation}
+$$
 
-This is sometimes hard to render being{equation} correctly,
-so I kind of stay away from it.  I have a way to make my own tags below.
-
-## FORMATING MULTIPLE EQUATIONS
+## FORMATTING MULTIPLE EQUATIONS
 
 There are two main ways to format multiple equations in LaTeX math mode,
 
