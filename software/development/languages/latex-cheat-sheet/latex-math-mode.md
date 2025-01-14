@@ -17,9 +17,9 @@ LaTeX math mode functions & symbols,
 
 First, there are three ways to declare math mode in LaTeX,
 
-1. In-line mode using $
-2. Block mode using $$
-3. Block mode using begin{equation}...end{equation}
+1. In-line mode using **$**
+2. Block mode using **$$**
+3. Block mode using **begin{equation}** ... **end{equation}**
 
 ### In-line Mode
 
@@ -45,7 +45,7 @@ $$
 E=mc^2
 $$
 
-### Block Mode using begin
+### Block Mode using begin{equation}
 
 ```txt
     \begin{equation}
@@ -66,7 +66,7 @@ There are two main ways to format multiple equations in LaTeX math mode,
 * `begin{aligned}...end{aligned}` - Will align on an ampersand
 * `begin{gathered}...end{gathered}` - Every equation centered
 
-An example of LaTeX math display mode (using aligned),
+Block mode (using aligned),
 
 ```txt
     $$
@@ -84,7 +84,7 @@ $$
 \end{aligned}
 $$
 
-An example of LaTeX math display mode (using gathered),
+Block mode (using gathered),
 
 ```txt
     $$
