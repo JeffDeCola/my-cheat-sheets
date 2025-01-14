@@ -26,7 +26,7 @@ First, there are three ways to declare math mode in LaTeX,
 
 ### In-line Mode
 
-```txt
+```text
     Einstein's equation
     $E=mc^2$
     represent energy is equal to matter multiplied by the speed of light squared.
@@ -38,7 +38,7 @@ represent energy is equal to matter multiplied by the speed of light squared.
 
 ### Block Mode
 
-```txt
+```text
     $$
     $E=mc^2$
     $$
@@ -50,7 +50,7 @@ $$
 
 ### Block Mode using begin{equation}
 
-```txt
+```text
     \begin{equation}
         E=mc^2
     \end{equation}
@@ -71,7 +71,7 @@ There are two main ways to format multiple equations in LaTeX math mode,
 
 Block mode (using aligned),
 
-```txt
+```text
     $$
     \begin{aligned}
         a&=b+c \\
@@ -89,7 +89,7 @@ $$
 
 Block mode (using gathered),
 
-```txt
+```text
     $$
     \begin{gathered}
         a=b+c \\
@@ -111,7 +111,7 @@ _For brevity, the dollar sign delimiters are not shown._
 
 **Einsteins famous equation**
 
-```txt
+```text
     E=mc^2
 ```
 
@@ -121,7 +121,7 @@ $$
 
 **Pythagorean theorem**
 
-```txt
+```text
     x^n + y^n = z^n
 ```
 
@@ -131,7 +131,7 @@ $$
 
 **Pythagorean theorem (with box)**
 
-```txt
+```text
     \boxed{x^n + y^n = z^n}
 ```
 
@@ -141,7 +141,7 @@ $$
 
 **Pythagorean theorem (numbered using begin{equation})**
 
-```txt
+```text
     \begin{equation}
         x^n + y^n = z^n
     \end{equation}
@@ -153,7 +153,7 @@ $$
 
 **Pythagorean theorem (numbered using tag)**
 
-```txt
+```text
     \begin{equation}
         x^n + y^n = z^n\tag{6}
     \end{equation}
@@ -165,7 +165,7 @@ $$
 
 **Pythagorean theorem (another way to do numbers)**
 
-```txt
+```text
     \qquad \qquad
     x^n + y^n = z^n
     \qquad \qquad (4)
@@ -179,7 +179,7 @@ $$
 
 **Square root**
 
-```txt
+```text
     \sqrt[3]{x}
 ```
 
@@ -189,7 +189,7 @@ $$
 
 **Multiple equations (gathered)**
 
-```txt
+```text
     \begin{gathered}
         a=b+c \\
         d+e=f
@@ -205,7 +205,7 @@ $$
 
 **Multiple equations (aligned on ampersand &)**
 
-```txt
+```text
     \begin{aligned}
         a&=b+c \\
         d+e&=f
@@ -221,7 +221,7 @@ $$
 
 **Alignment and spacing (on equal sign)**
 
-```txt
+```text
     \begin{aligned}
         f(x) =& x^2\! +3x\! +2 \\
         f(x) =& x^2+3x+2 \\
@@ -249,7 +249,7 @@ $$
 
 **An integral**
 
-```txt
+```text
     \int_{a}^{b} x^2 dx
 ```
 
@@ -259,7 +259,7 @@ $$
 
 **Limits**
 
-```txt
+```text
     \lim_{x\to\infty} f(x)
 ```
 
@@ -269,7 +269,7 @@ $$
 
 **Some trigonometry**
 
-```txt
+```text
     \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
 ```
 
@@ -279,7 +279,7 @@ $$
 
 **Fractions (binomial coefficients)**
 
-```txt
+```text
     \binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
 
@@ -289,7 +289,7 @@ $$
 
 **Brackets**
 
-```txt
+```text
     \left( \frac{x}{y} \right)
 ```
 
@@ -299,7 +299,7 @@ $$
 
 **Bracket array**
 
-```txt
+```text
     \left(
         \begin{array}{ccc}
             1 & 2 & 3\\
@@ -321,7 +321,7 @@ $$
 
 **Arrays in Brackets with spacing (\qquad)**
 
-```txt
+```text
     \left(
         \begin{array}{ccc}
             1 & 2 & 3\\
@@ -359,7 +359,7 @@ $$
 
 **Some cool arrows**
 
-```txt
+```text
     A \xleftarrow{\text{this way}} B
     \xrightarrow[\text{or that way}]{ } C
 ```
@@ -371,7 +371,7 @@ $$
 
 **Cases**
 
-```txt
+```text
     u(x) =
     \begin{cases}
         \exp{x} & \text{if } x \geq 0 \\
@@ -389,7 +389,7 @@ $$
 
 **Make some big text**
 
-```txt
+```text
     $$
     \huge\text{Hello Jeff}
     $$
