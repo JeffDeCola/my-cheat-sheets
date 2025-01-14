@@ -107,14 +107,9 @@ $$
 
 ## COMMON LaTeX MATH EQUATIONS
 
-For brevity, the dollar sign delimiters are not shown.
+_For brevity, the dollar sign delimiters are not shown._
 
-As a reminder you can use,
-
-* [KaTeX Supported Functions](https://katex.org/docs/supported.html)
-* [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
-
-Einsteins famous equation,
+**Einsteins famous equation**
 
 ```txt
     E=mc^2
@@ -124,7 +119,7 @@ $$
 E=mc^2
 $$
 
-Pythagorean theorem,
+**Pythagorean theorem**
 
 ```txt
     x^n + y^n = z^n
@@ -134,7 +129,7 @@ $$
 x^n + y^n = z^n
 $$
 
-Pythagorean theorem (with box),
+**Pythagorean theorem (with box)**
 
 ```txt
     \boxed{x^n + y^n = z^n}
@@ -144,7 +139,7 @@ $$
 \boxed{x^n + y^n = z^n}
 $$
 
-Pythagorean theorem (numbered using begin{equation}),
+**Pythagorean theorem (numbered using begin{equation})**
 
 ```txt
     \begin{equation}
@@ -156,7 +151,7 @@ Pythagorean theorem (numbered using begin{equation}),
     x^n + y^n = z^n
 \end{equation}
 
-Pythagorean theorem (numbered using tag),
+**Pythagorean theorem (numbered using tag)**
 
 ```txt
     \begin{equation}
@@ -168,7 +163,7 @@ Pythagorean theorem (numbered using tag),
     x^n + y^n = z^n\tag{6}
 \end{equation}
 
-Pythagorean theorem (another way to do numbers),
+**Pythagorean theorem (another way to do numbers)**
 
 ```txt
     \qquad \qquad
@@ -182,7 +177,7 @@ x^n + y^n = z^n
 \qquad \qquad (4)
 $$
 
-Square root,
+**Square root**
 
 ```txt
     \sqrt[3]{x}
@@ -192,7 +187,7 @@ $$
 \sqrt[3]{x}
 $$
 
-Multiple equations (gathered),
+**Multiple equations (gathered)**
 
 ```txt
     \begin{gathered}
@@ -208,7 +203,7 @@ $$
 \end{gathered}
 $$
 
-Multiple equations (aligned on ampersand &),
+**Multiple equations (aligned on ampersand &)**
 
 ```txt
     \begin{aligned}
@@ -224,7 +219,7 @@ $$
 \end{aligned}
 $$
 
-Alignment and spacing (on equal sign),
+**Alignment and spacing (on equal sign)**
 
 ```txt
     \begin{aligned}
@@ -252,7 +247,7 @@ $$
 \end{aligned}
 $$
 
-An integral,
+**An integral**
 
 ```txt
     \int_{a}^{b} x^2 dx
@@ -262,7 +257,7 @@ $$
 \int_{a}^{b} x^2 dx
 $$
 
-Limits,
+**Limits**
 
 ```txt
     \lim_{x\to\infty} f(x)
@@ -272,7 +267,7 @@ $$
 \lim_{x\to\infty} f(x)
 $$
 
-Some trigonometry,
+**Some trigonometry**
 
 ```txt
     \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
@@ -282,7 +277,7 @@ $$
 \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
 $$
 
-Fractions (binomial coefficients),
+**Fractions (binomial coefficients)**
 
 ```txt
     \binom{n}{k} = \frac{n!}{k!(n-k)!}
@@ -292,7 +287,7 @@ $$
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
 $$
 
-Brackets,
+**Brackets**
 
 ```txt
     \left( \frac{x}{y} \right)
@@ -302,7 +297,7 @@ $$
 \left( \frac{x}{y} \right)
 $$
 
-Bracket array,
+**Bracket array**
 
 ```txt
     \left(
@@ -324,7 +319,7 @@ $$
 \right)
 $$
 
-Arrays in Brackets with spacing (\qquad),
+**Arrays in Brackets with spacing (\qquad)**
 
 ```txt
     \left(
@@ -362,7 +357,7 @@ $$
 \right\}
 $$
 
-Some cool arrows,
+**Some cool arrows**
 
 ```txt
     A \xleftarrow{\text{this way}} B
@@ -374,7 +369,7 @@ A \xleftarrow{\text{this way}} B
 \xrightarrow[\text{or that way}]{ } C
 $$
 
-Cases,
+**Cases**
 
 ```txt
     u(x) =
@@ -392,7 +387,7 @@ u(x) =
 \end{cases}
 $$
 
-Make some big text,
+**Make some big text**
 
 ```txt
     $$
