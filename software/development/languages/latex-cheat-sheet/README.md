@@ -110,10 +110,10 @@ sudo tlmgr install amsmath
 
 You can created a LaTeX File (.tex) and convert to many formats,
 
-* `pdflatex` .tex -> .pdf
 * `latex` .tex -> .dvi
+* `pdflatex` .tex -> .pdf
 * `dvisvgm` .dvi -> .svg
-* `ghostscript` .pdf -> many types
+* `ghostscript` .pdf/.ps -> many types
 
 ## POPULAR LaTeX PACKAGES
 
