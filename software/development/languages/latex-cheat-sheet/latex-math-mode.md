@@ -136,9 +136,7 @@ $$
 ```
 
 $$
-\begin{equation}
-  \boxed{x^n + y^n = z^n}
-\end{equation}
+\boxed{x^n + y^n = z^n}
 $$
 
 **Pythagorean theorem (numbered using begin{equation})**
@@ -159,13 +157,13 @@ $$
 
 ```text
     \begin{equation}
-        x^n + y^n = z^n\tag{6}
+        x^n + y^n = z^n \tag{6}
     \end{equation}
 ```
 
 $$
 \begin{equation}
-    x^n + y^n = z^n\tag{6}
+    x^n + y^n = z^n \tag{6}
 \end{equation}
 $$
 
