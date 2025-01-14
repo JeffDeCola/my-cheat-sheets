@@ -25,7 +25,7 @@ First, there are three ways to declare math mode in LaTeX,
 
 ```txt
     Einstein's equation
-    $E=mc^2$
+    \$E=mc^2\$
     represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -36,9 +36,9 @@ represent energy is equal to matter multiplied by the speed of light squared.
 ### Block Mode
 
 ```txt
-    $$
+    \$\$
     $E=mc^2$
-    $$
+    \$\$
 ```
 
 $$
