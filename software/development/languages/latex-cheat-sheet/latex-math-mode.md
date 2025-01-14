@@ -2,16 +2,19 @@
 
 _The math mode of LaTex._
 
+Table of Contents
+
+* [DECLARING MATH MODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#declaring-math-mode)
+* [FORMATTING MULTIPLE EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#formatting-multiple-equations)
+* [COMMON LaTeX MATH EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#common-latex-math-equations)
+
 Documentation and Reference
 
 * [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 * [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-* [mathurl.com to help build your formulas](http://mathurl.com/)
-
-LaTeX math mode functions & symbols,
-
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
+* [mathurl.com to help build your formulas](http://mathurl.com/)
 
 ## DECLARING MATH MODE
 
@@ -25,7 +28,7 @@ First, there are three ways to declare math mode in LaTeX,
 
 ```txt
     Einstein's equation
-    \$E=mc^2\$
+    $E=mc^2$
     represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
@@ -36,9 +39,9 @@ represent energy is equal to matter multiplied by the speed of light squared.
 ### Block Mode
 
 ```txt
-    \$\$
+    $$
     $E=mc^2$
-    \$\$
+    $$
 ```
 
 $$
