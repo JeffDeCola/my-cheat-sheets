@@ -27,9 +27,9 @@ First, there are three ways to declare math mode in LaTeX,
 ### In-line Mode
 
 ```text
-    Einstein's equation
-    $E=mc^2$
-    represent energy is equal to matter multiplied by the speed of light squared.
+Einstein's equation
+$E=mc^2$
+represent energy is equal to matter multiplied by the speed of light squared.
 ```
 
 Einstein's equation
@@ -39,10 +39,14 @@ represent energy is equal to matter multiplied by the speed of light squared.
 ### Block Mode
 
 ```text
-    $$
-    $E=mc^2$
-    $$
+$$
+$E=mc^2$
+$$
 ```
+
+$$
+\boxed ab
+$$
 
 $$
 E=mc^2
@@ -51,9 +55,9 @@ $$
 ### Block Mode using begin{equation}
 
 ```text
-    \begin{equation}
-        E=mc^2
-    \end{equation}
+\begin{equation}
+  E=mc^2
+\end{equation}
 ```
 
 $$
@@ -72,36 +76,36 @@ There are two main ways to format multiple equations in LaTeX math mode,
 Block mode (using aligned),
 
 ```text
-    $$
-    \begin{aligned}
-        a&=b+c \\
-        d+e&=f
-    \end{aligned}
-    $$
+$$
+\begin{aligned}
+  a&=b+c \\
+  d+e&=f
+\end{aligned}
+$$
 ```
 
 $$
 \begin{aligned}
-    a&=b+c \\
-    d+e&=f
+  a&=b+c \\
+  d+e&=f
 \end{aligned}
 $$
 
 Block mode (using gathered),
 
 ```text
-    $$
-    \begin{gathered}
-        a=b+c \\
-        d+e=f
-    \end{gathered}
-    $$
+$$
+\begin{gathered}
+  a=b+c \\
+  d+e=f
+\end{gathered}
+$$
 ```
 
 $$
 \begin{gathered}
-    a=b+c \\
-    d+e=f
+  a=b+c \\
+  d+e=f
 \end{gathered}
 $$
 
@@ -112,7 +116,7 @@ _For brevity, the dollar sign delimiters are not shown._
 **Einsteins famous equation**
 
 ```text
-    E=mc^2
+E=mc^2
 ```
 
 $$
@@ -122,7 +126,7 @@ $$
 **Pythagorean theorem**
 
 ```text
-    x^n + y^n = z^n
+x^n + y^n = z^n
 ```
 
 $$
@@ -132,13 +136,11 @@ $$
 **Pythagorean theorem (with box)**
 
 ```text
-    \boxed{x^n + y^n = z^n}
+\boxed{x^n + y^n = z^n}
 ```
 
-\boxed{x^n + y^n = z^n}
-
 $$
-\boxed ab
+\boxed{x^n + y^n = z^n}
 $$
 
 **Pythagorean theorem (numbered using begin{equation})**
@@ -396,9 +398,9 @@ $$
 **Make some big text**
 
 ```text
-    $$
+$$
     \huge\text{Hello Jeff}
-    $$
+$$
 ```
 
 $$
