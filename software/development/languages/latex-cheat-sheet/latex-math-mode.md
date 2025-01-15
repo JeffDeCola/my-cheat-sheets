@@ -325,13 +325,13 @@ $$
     \end{array}
 \right)
 \qquad
-\left\{
+\left[
     \begin{array}{ccc}
         1 & 5 & 8\\
         0 & 2 & 4\\
         3 & 3 & -8
     \end{array}
-\right\}
+\right]
 ```
 
 $$
@@ -341,7 +341,7 @@ $$
         4 & 5 & 9\\
         1 & -8 & 2
     \end{array}
-\right)\
+\right)
 \qquad
 \left[
     \begin{array}{ccc}
@@ -355,13 +355,23 @@ $$
 **Some cool arrows**
 
 ```text
-A \xleftarrow{\text{this way}} B
-\xrightarrow[\text{or that way}]{ } C
+A
+\xleftarrow[]{
+    \text{this way} }
+B
+\xrightarrow[]{
+    \text{or that way}}
+C
 ```
 
 $$
-A \xleftarrow{\text{this way}} B
-\xrightarrow[\text{or that way}]{ } C
+A
+\xleftarrow[]{
+    \text{this way} }
+B
+\xrightarrow[]{
+    \text{or that way}}
+C
 $$
 
 **Cases**
