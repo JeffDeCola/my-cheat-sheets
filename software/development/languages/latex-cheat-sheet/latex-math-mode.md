@@ -343,6 +343,9 @@ $$
     \end{array}
 \right)
 \qquad
+\left\{
+hi
+\right\}
 $$
 
 **Some cool arrows**
