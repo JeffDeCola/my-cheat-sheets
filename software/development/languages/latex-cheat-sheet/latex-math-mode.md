@@ -135,9 +135,7 @@ $$
     \boxed{x^n + y^n = z^n}
 ```
 
-$$
 \boxed{x^n + y^n = z^n}
-$$
 
 $$
 \boxed ab
