@@ -4,27 +4,16 @@
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`order theory` _tbd._
+_This cheat sheet coming Soon._
 
-This cheat sheet was built using,
+Table of Contents
 
-* LaTex Math Mode equations rendered to images using
-  [readme2tex-pgfplots](https://github.com/JeffDeCola/readme2tex-pgfplots)
-* Graphs were created in
-  [my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs)
-  repo using the LaTeX graph packages
-
-You can see my
-[Latex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-and
-[LaTeX Math Mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
-cheat sheets for more information.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/order-theory-cheat-sheet#overview)
 
 ## OVERVIEW
 
-Einstein's famous equation,
+Einsteins famous equation,
 
-<p align="center"><img alt="$$&#10;E=mc^2&#10;$$" src="svgs/3abb8c75967ebfdd6439c56912f3d75a.svg" align="middle" width="62.901135pt" height="14.175084pt"/></p>
+$$
+E=mc^2
+$$
