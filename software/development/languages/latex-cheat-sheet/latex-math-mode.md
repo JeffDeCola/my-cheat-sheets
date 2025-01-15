@@ -140,7 +140,7 @@ $$
 $$
 
 $$
-\boxed{hi}
+\boxed ab
 $$
 
 **Pythagorean theorem (numbered using begin{equation})**
