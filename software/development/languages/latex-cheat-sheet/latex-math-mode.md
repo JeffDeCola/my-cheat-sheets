@@ -341,10 +341,15 @@ $$
         4 & 5 & 9\\
         1 & -8 & 2
     \end{array}
+\right)\
+\qquad
+\left(
+    \begin{array}{ccc}
+        1 & 5 & 8\\
+        0 & 2 & 4\\
+        3 & 3 & -8
+    \end{array}
 \right)
-\left\{
-hi
-\right\}
 $$
 
 **Some cool arrows**
