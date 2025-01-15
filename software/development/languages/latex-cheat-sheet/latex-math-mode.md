@@ -342,7 +342,6 @@ $$
         1 & -8 & 2
     \end{array}
 \right)
-\qquad
 \left\{
 hi
 \right\}
