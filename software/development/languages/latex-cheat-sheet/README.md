@@ -122,5 +122,5 @@ There are hundreds of packages you can use with LateX such as,
 * `xcolor` - _Add color_
 * `amsmath` & `amsfonts` - _For rendering matrices_
 * `tikz` - _Refer to my
-  [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+  [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
   cheat sheet_
