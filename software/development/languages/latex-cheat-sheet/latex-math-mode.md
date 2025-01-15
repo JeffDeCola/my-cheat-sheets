@@ -45,7 +45,15 @@ $$
 ```
 
 $$
-\boxed{E=mc^2}
+\begin{align*}
+E_1 & = \frac{e_{1max}}{\sqrt{2}}\\
+& = \frac{N_1.{\phi}_m.w}{\sqrt{2}}\\
+& = \frac{N_1{\phi}_m.2\pi.f}{\sqrt{2}}\\
+\\
+E_1 & = 4.44 N_1.{\phi}_m.f \\
+\\
+E_1 &= \boxed{4.44 N_1.B_m.A.f}
+\end{align*}
 $$
 
 $$
