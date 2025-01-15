@@ -6,7 +6,8 @@ Table of Contents
 
 * [DECLARING MATH MODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#declaring-math-mode)
 * [FORMATTING MULTIPLE EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#formatting-multiple-equations)
-* [COMMON LaTeX MATH EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#common-latex-math-equations)
+* [MATH EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#math-examples)
+* [TEXT EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#text-examples)
 
 Documentation and Reference
 
@@ -40,21 +41,9 @@ represent energy is equal to matter multiplied by the speed of light squared.
 
 ```text
 $$
-$E=mc^2$
+E=mc^2
 $$
 ```
-
-$$
-\begin{align*}
-E_1 & = \frac{e_{1max}}{\sqrt{2}}\\
-& = \frac{N_1.{\phi}_m.w}{\sqrt{2}}\\
-& = \frac{N_1{\phi}_m.2\pi.f}{\sqrt{2}}\\
-\\
-E_1 & = 4.44 N_1.{\phi}_m.f \\
-\\
-E_1 &= \boxed{4.44 N_1.B_m.A.f}
-\end{align*}
-$$
 
 $$
 E=mc^2
@@ -64,14 +53,14 @@ $$
 
 ```text
 \begin{equation}
-  E=mc^2
+   E=mc^2
 \end{equation}
 ```
 
 $$
-  \begin{equation}
-      E=mc^2
-  \end{equation}
+\begin{equation}
+   E=mc^2
+\end{equation}
 $$
 
 ## FORMATTING MULTIPLE EQUATIONS
@@ -81,43 +70,43 @@ There are two main ways to format multiple equations in LaTeX math mode,
 * `begin{aligned}...end{aligned}` - Will align on an ampersand
 * `begin{gathered}...end{gathered}` - Every equation centered
 
-Block mode (using aligned),
+**Block mode (using aligned)**
 
 ```text
 $$
 \begin{aligned}
-  a&=b+c \\
-  d+e&=f
+    a&=b+c \\
+    d+e&=f
 \end{aligned}
 $$
 ```
 
 $$
 \begin{aligned}
-  a&=b+c \\
-  d+e&=f
+    a&=b+c \\
+    d+e&=f
 \end{aligned}
 $$
 
-Block mode (using gathered),
+**Block mode (using gathered)**
 
 ```text
 $$
 \begin{gathered}
-  a=b+c \\
-  d+e=f
+    a=b+c \\
+    d+e=f
 \end{gathered}
 $$
 ```
 
 $$
 \begin{gathered}
-  a=b+c \\
-  d+e=f
+    a=b+c \\
+    d+e=f
 \end{gathered}
 $$
 
-## COMMON LaTeX MATH EQUATIONS
+## MATH EXAMPLES
 
 _For brevity, the dollar sign delimiters are not shown._
 
@@ -131,7 +120,7 @@ $$
 E=mc^2
 $$
 
-**Pythagorean theorem**
+**Pythagorean Theorem**
 
 ```text
 x^n + y^n = z^n
@@ -141,30 +130,12 @@ $$
 x^n + y^n = z^n
 $$
 
-**Pythagorean theorem (with box)**
+**Pythagorean Theorem (numbered using begin{equation})**
 
 ```text
-\boxed{x^n + y^n = z^n}
-```
-
-<div style="border: 2px solid; display: inline-block; padding: 5px;">
-$
-E=mc^2
-$
-</div>
-
-<span style="border: 1px solid black;">Important text here</span>
-
-$$
-\boxed{x^n + y^n = z^n}
-$$
-
-**Pythagorean theorem (numbered using begin{equation})**
-
-```text
-    \begin{equation}
-        x^n + y^n = z^n
-    \end{equation}
+\begin{equation}
+    x^n + y^n = z^n
+\end{equation}
 ```
 
 $$
@@ -173,12 +144,12 @@ $$
 \end{equation}
 $$
 
-**Pythagorean theorem (numbered using tag)**
+**Pythagorean Theorem (numbered using tag)**
 
 ```text
-    \begin{equation}
-        x^n + y^n = z^n \tag{6}
-    \end{equation}
+\begin{equation}
+    x^n + y^n = z^n \tag{6}
+\end{equation}
 ```
 
 $$
@@ -190,21 +161,21 @@ $$
 **Pythagorean theorem (another way to do numbers)**
 
 ```text
-    \qquad \qquad
+\qquad \qquad
     x^n + y^n = z^n
-    \qquad \qquad (4)
+\qquad \qquad (4)
 ```
 
 $$
 \qquad \qquad
-x^n + y^n = z^n
+    x^n + y^n = z^n
 \qquad \qquad (4)
 $$
 
 **Square root**
 
 ```text
-    \sqrt[3]{x}
+\sqrt[3]{x}
 ```
 
 $$
@@ -214,10 +185,10 @@ $$
 **Multiple equations (gathered)**
 
 ```text
-    \begin{gathered}
-        a=b+c \\
-        d+e=f
-    \end{gathered}
+\begin{gathered}
+    a=b+c \\
+    d+e=f
+\end{gathered}
 ```
 
 $$
@@ -230,10 +201,10 @@ $$
 **Multiple equations (aligned on ampersand &)**
 
 ```text
-    \begin{aligned}
-        a&=b+c \\
-        d+e&=f
-    \end{aligned}
+\begin{aligned}
+    a&=b+c \\
+    d+e&=f
+\end{aligned}
 ```
 
 $$
@@ -246,16 +217,16 @@ $$
 **Alignment and spacing (on equal sign)**
 
 ```text
-    \begin{aligned}
-        f(x) =& x^2\! +3x\! +2 \\
-        f(x) =& x^2+3x+2 \\
-        f(x) =& x^2\, +3x\, +2 \\
-        f(x) =& x^2\: +3x\: +2 \\
-        f(x) =& x^2\; +3x\; +2 \\
-        f(x) =& x^2\ +3x\ +2 \\
-        f(x) =& x^2\quad +3x\quad +2 \\
-        f(x) =& x^2\qquad +3x\qquad +2
-    \end{aligned}
+\begin{aligned}
+    f(x) =& x^2\! +3x\! +2 \\
+    f(x) =& x^2+3x+2 \\
+    f(x) =& x^2\, +3x\, +2 \\
+    f(x) =& x^2\: +3x\: +2 \\
+    f(x) =& x^2\; +3x\; +2 \\
+    f(x) =& x^2\ +3x\ +2 \\
+    f(x) =& x^2\quad +3x\quad +2 \\
+    f(x) =& x^2\qquad +3x\qquad +2
+\end{aligned}
 ```
 
 $$
@@ -274,7 +245,7 @@ $$
 **An integral**
 
 ```text
-    \int_{a}^{b} x^2 dx
+\int_{a}^{b} x^2 dx
 ```
 
 $$
@@ -284,7 +255,7 @@ $$
 **Limits**
 
 ```text
-    \lim_{x\to\infty} f(x)
+\lim_{x\to\infty} f(x)
 ```
 
 $$
@@ -294,7 +265,7 @@ $$
 **Some trigonometry**
 
 ```text
-    \sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
+\sin(a + b ) = \sin(a)\cos(b) + \cos(a)\sin(b)
 ```
 
 $$
@@ -304,7 +275,7 @@ $$
 **Fractions (binomial coefficients)**
 
 ```text
-    \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
 ```
 
 $$
@@ -314,7 +285,7 @@ $$
 **Brackets**
 
 ```text
-    \left( \frac{x}{y} \right)
+\left( \frac{x}{y} \right)
 ```
 
 $$
@@ -324,13 +295,13 @@ $$
 **Bracket array**
 
 ```text
-    \left(
-        \begin{array}{ccc}
-            1 & 2 & 3\\
-            4 & 4 & 9\\
-            1 & -8 & 2
-        \end{array}
-    \right)
+\left(
+    \begin{array}{ccc}
+        1 & 2 & 3\\
+        4 & 4 & 9\\
+        1 & -8 & 2
+    \end{array}
+\right)
 ```
 
 $$
@@ -346,21 +317,21 @@ $$
 **Arrays in Brackets with spacing (\qquad)**
 
 ```text
-    \left(
-        \begin{array}{ccc}
-            1 & 2 & 3\\
-            4 & 5 & 9\\
-            1 & -8 & 2
-        \end{array}
-    \right)
-    \qquad
-    \left\{
-        \begin{array}{ccc}
-            1 & 5 & 8\\
-            0 & 2 & 4\\
-            3 & 3 & -8
-        \end{array}
-    \right\}
+\left(
+    \begin{array}{ccc}
+        1 & 2 & 3\\
+        4 & 5 & 9\\
+        1 & -8 & 2
+    \end{array}
+\right)
+\qquad
+\left\{
+    \begin{array}{ccc}
+        1 & 5 & 8\\
+        0 & 2 & 4\\
+        3 & 3 & -8
+    \end{array}
+\right\}
 ```
 
 $$
@@ -384,8 +355,8 @@ $$
 **Some cool arrows**
 
 ```text
-    A \xleftarrow{\text{this way}} B
-    \xrightarrow[\text{or that way}]{ } C
+A \xleftarrow{\text{this way}} B
+\xrightarrow[\text{or that way}]{ } C
 ```
 
 $$
@@ -396,11 +367,11 @@ $$
 **Cases**
 
 ```text
-    u(x) =
-    \begin{cases}
-        \exp{x} & \text{if } x \geq 0 \\
-        1       & \text{if } x < 0
-    \end{cases}
+u(x) =
+\begin{cases}
+    \exp{x} & \text{if } x \geq 0 \\
+    1       & \text{if } x < 0
+\end{cases}
 ```
 
 $$
@@ -411,12 +382,38 @@ u(x) =
 \end{cases}
 $$
 
-**Make some big text**
+**Getting fancy**
 
 ```text
+\begin{align*}
+    E_1 & = \frac{e_{1max}}{\sqrt{2}}\\
+    & = \frac{N_1.{\phi}_m.w}{\sqrt{2}}\\
+    & = \frac{N_1{\phi}_m.2\pi.f}{\sqrt{2}}\\
+    \\
+    E_1 & = 4.44 N_1.{\phi}_m.f \\
+    \\
+    E_1 &= \boxed{4.44 N_1.B_m.A.f}
+\end{align*}
+```
+
 $$
-    \huge\text{Hello Jeff}
+\begin{align*}
+    E_1 & = \frac{e_{1max}}{\sqrt{2}}\\
+    & = \frac{N_1.{\phi}_m.w}{\sqrt{2}}\\
+    & = \frac{N_1{\phi}_m.2\pi.f}{\sqrt{2}}\\
+    \\
+    E_1 & = 4.44 N_1.{\phi}_m.f \\
+    \\
+    E_1 &= \boxed{4.44 N_1.B_m.A.f}
+\end{align*}
 $$
+
+## TEXT EXAMPLES
+
+**Some big text**
+
+```text
+\huge\text{Hello Jeff}
 ```
 
 $$
