@@ -15,18 +15,31 @@ _Use packages to create images._
 Tikz is probably the most complex and powerful tool to create
 graphic elements in LaTeX.
 
-When you use `readme2tex make sure you add it in,
-
-```bash
-python -m readme2tex --usepackage "tikz" ....etc...
-```
-
-As an example of a circle,
+As an example of `a-point-on-a-circle` in
+[my-latex-renders](https://github.com/JeffDeCola/my-latex-renders/tree/master/mathematics/pure/spaces/geometry/a-point-on-a-circle),
 
 ```txt
-    \begin{tikzpicture}
-        \draw (2,2) circle (3cm);
-    \end{tikzpicture}
+\documentclass[border=5mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1]
+
+    % Draw the circle
+    \draw (2,2) circle (3cm);
+
+    % Add a point on the circle
+    % For example, a point at 45 degrees (pi/4 radians) from the center
+    \fill ($(2,2) + (45:3cm)$) circle (2pt);
+
+\end{tikzpicture}
+
+\end{document}
 ```
 
-Sadly, I could not get this to work with `readme2tex`.
+<p align="center">
+    <img src="a-point-on-a-circle.svg"
+    align="middle"
+</p>
