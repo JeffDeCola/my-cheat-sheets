@@ -148,9 +148,12 @@ $$
 ```
 
 <div style="border: 2px solid; display: inline-block; padding: 5px;">
-$$ E=mc^2 $$
+$
+E=mc^2
+$
 </div>
 
+<div style="border: 1px solid black;">Your text here</div>. 
 
 $$
 \boxed{x^n + y^n = z^n}
