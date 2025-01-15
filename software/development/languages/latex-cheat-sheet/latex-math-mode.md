@@ -153,7 +153,7 @@ E=mc^2
 $
 </div>
 
-<div style="border: 1px solid black;">Your text here</div>. 
+<span style="border: 1px solid black;">Important text here</span>
 
 $$
 \boxed{x^n + y^n = z^n}
