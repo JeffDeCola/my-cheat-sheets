@@ -147,6 +147,11 @@ $$
 \boxed{x^n + y^n = z^n}
 ```
 
+<div style="border: 2px solid; display: inline-block; padding: 5px;">
+$$ E=mc^2 $$
+</div>
+
+
 $$
 \boxed{x^n + y^n = z^n}
 $$
