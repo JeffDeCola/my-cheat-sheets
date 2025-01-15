@@ -38,15 +38,6 @@ These cheat sheets explore the principle concepts of physics as follows,
   * Light as a wave
   * Light as a particle
 
-Documentation and Reference
-
-* [make-README.sh](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/physical-science/physics-cheat-sheet/make-README.sh)
-  uses
-  [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
-  to render equations and make this readme
-* This repos
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
 ## OVERVIEW
 
 Physics tries to understand your world.
