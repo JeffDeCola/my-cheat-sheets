@@ -343,8 +343,6 @@ $$
     \end{array}
 \right)
 \qquad
-hi
-
 $$
 
 **Some cool arrows**
