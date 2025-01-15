@@ -130,35 +130,7 @@ $$
 x^n + y^n = z^n
 $$
 
-**Pythagorean Theorem (numbered using begin{equation})**
-
-```text
-\begin{equation}
-    x^n + y^n = z^n
-\end{equation}
-```
-
-$$
-\begin{equation}
-    x^n + y^n = z^n
-\end{equation}
-$$
-
-**Pythagorean Theorem (numbered using tag)**
-
-```text
-\begin{equation}
-    x^n + y^n = z^n \tag{6}
-\end{equation}
-```
-
-$$
-\begin{equation}
-    x^n + y^n = z^n \tag{6}
-\end{equation}
-$$
-
-**Pythagorean theorem (another way to do numbers)**
+**Pythagorean theorem (add numbers)**
 
 ```text
 \qquad \qquad
