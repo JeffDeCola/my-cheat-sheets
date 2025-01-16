@@ -1,20 +1,10 @@
-# CONCOURSE
-.credentials.yml
+# repo-generic-.gitignore
 
-# GO
-coverage.out
+# CONCOURSE SECRETS
+.credentials.yml
 
 # macOS
 .DS_Store
 
-# Windows
+# WINDOWS
 *.jpg:Zone.Identifier
-
-# Ignore binaries
-**/bin/hello-go
-
-# Ignore test coverage
-**/test/test_coverage.txt
-
-# Ignore binary used for docker build
-**/build-push/hello-go
