@@ -22,6 +22,7 @@
   * [visual studio code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
     * [verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
     * [vs code on windows wsl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md)
+  * [vmware](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/vmware-cheat-sheet)
 
 * LANGUAGES
 
@@ -31,9 +32,9 @@
     [my-go-tools](https://github.com/JeffDeCola/my-go-tools))
   * [go tools](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-tools-cheat-sheet)
   * [LaTeX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+    ([my-latex-renders](https://github.com/JeffDeCola/my-latex-renders))
     * [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
     * [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
-      ([my-latex-graphs](https://github.com/JeffDeCola/my-latex-graphs))
   * [python](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/python-cheat-sheet)
     ([my-python-examples](https://github.com/JeffDeCola/my-python-examples))
   * [php](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/php-cheat-sheet)
@@ -81,7 +82,7 @@
   * AUTHORIZATION
 
     * [OAuth 2.0 authorization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet)
-  
+
   * BLOCKCHAIN
 
     * [blockchain](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/blockchain/blockchain-cheat-sheet)
@@ -346,11 +347,15 @@ _Other cheat sheets I'm interested in._
     * [ssd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/ssd-cheat-sheet)
     * [usb](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/usb-cheat-sheet)
 
-  * COMPUTERS MANUFACTURERS
+  * COMPUTER MANUFACTURERS
 
     * APPLE
 
       * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet)
+
+    * DELL
+
+      * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell/poweredge-r730-cheat-sheet)
 
     * PC
 
