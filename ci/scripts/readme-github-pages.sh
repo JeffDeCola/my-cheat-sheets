@@ -121,7 +121,7 @@ then
     echo "GIT PUSH MASTER BRANCH ------------------------------------------------------------"
     echo " "
 
-    echo "git add and commit what is needed to protect from unforseen issues"
+    echo "git add and commit what is needed to protect from unforeseen issues"
     echo "git add docs/_includes/README.md"
     git add docs/_includes/README.md
     echo " "
