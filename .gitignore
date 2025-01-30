@@ -1,7 +1,7 @@
 # repo-generic-.gitignore
 
 # CONCOURSE SECRETS
-.credentials.yml
+.concourse-secrets.yml
 
 # macOS
 .DS_Store
