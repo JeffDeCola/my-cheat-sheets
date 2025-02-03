@@ -1,9 +1,9 @@
 # CONCOURSE CHEAT SHEET
 
-`concourse` _is a pipelined CI (Continuous Integration) for
-Software Builds. Concourse's main goal is to run tasks_.
+_Concourse is a pipelined CI/CD tool for software builds.
+It's main goal is to run tasks._
 
-tl;dr,
+TL;DR
 
 ```bash
 http://192.168.100.6:8080/
@@ -15,10 +15,22 @@ fly -t ci set-team --team-name team-jeff --local-user test
 fly -t ci login -n team-jeff
 ```
 
-[My Concourse task examples](https://github.com/JeffDeCola/my-concourse-ci-tasks).
+Table on Contents
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [OVERVIEW]()
+* [INSTALL]()
+
+Documentation and Reference
+
+* [my-cicd-pipeline-examples](https://github.com/JeffDeCola/my-cicd-pipeline-examples)
+
+## OVERVIEW
+
+## INSTALL
+
+
+
+
 
 ## INSTALL CONCOURSE SERVER
 
