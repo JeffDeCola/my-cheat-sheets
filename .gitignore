@@ -3,8 +3,18 @@
 # CONCOURSE SECRETS
 .concourse-secrets.yml
 
+# SSH KEYS
+id_rsa*
+
+# PGP KEYS
+*.pgp
+
 # macOS
 .DS_Store
 
 # WINDOWS
 *.jpg:Zone.Identifier
+
+# TAR FILES
+*.tar.gz
+*.tar.gz.gpg
