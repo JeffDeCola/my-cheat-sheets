@@ -9,7 +9,7 @@ Table on Contents
 * [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#allow-local-network-access-to-vm-bridge)
 * [IF YOU GET AN IMAGE ERROR](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#if-you-get-an-image-error)
 * [START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#start-your-docker-compose-containers-automatically-at-bootcrash-using-systemd)
-* [USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#user-your-own-postgres-database-rather-then-docker)
+* [USE YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#use-your-own-postgres-database-rather-then-docker)
 
 ## INSTALL USING DOCKER-COMPOSE
 
@@ -171,7 +171,7 @@ Changes will come to effect on a reboot,
 sudo reboot
 ```
 
-## USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER
+## USE YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER
 
 Instead of using docker postgres, lets use our own on the server itself.
 
