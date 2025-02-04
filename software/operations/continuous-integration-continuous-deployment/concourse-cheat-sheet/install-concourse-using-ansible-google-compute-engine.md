@@ -1,6 +1,12 @@
 # INSTALL CONCOURSE USING AN ANSIBLE ROLE ON GCE
 
-The following will install and configure concourse as 2 web and 4 workers.
+```text
+**** OLD - ARCHIVED INFORMATION ****
+```
+
+_The following will install and configure concourse as 2 web and 4 workers._
+
+## OVERVIEW
 
 The following ansible role repos are used,
 
@@ -20,7 +26,7 @@ In the future, may want to consider using git submodules.
 
 ## CREATE FOLLOWING INSTANCES (2X WEB/ 4X WORKER)
 
-First get the followiong ubuntu instances running on Google Compute Engine:
+First get the following ubuntu instances running on Google Compute Engine:
 
 * p-concourse-web-01
 * p-concourse-web-02

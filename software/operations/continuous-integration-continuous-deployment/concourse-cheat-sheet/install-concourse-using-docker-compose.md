@@ -1,76 +1,48 @@
-# INSTALL CONCOURSE USING DOCKER-COMPOSE CHEAT SHEET
+# INSTALL CONCOURSE USING DOCKER-COMPOSE
 
-Concourse is distributed as a single concourse binary,
-making it easy to run just about anywhere, especially with Docker.
+_This is a cheat sheet on how to install concourse using docker-compose._
 
-These are two ways to install concourse using docker.
+Table on Contents
 
-* Using `docker run IMAGENAME` (the traditional way).
-* Using `docker-compose up`.
+* [INSTALL USING DOCKER-COMPOSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#install-using-docker-compose)
+* [USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE]()
+* [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)]()
+* [IF YOU GET AN IMAGE ERROR]()
+* [START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)]()
+* [USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER]()
 
-We will use the later, `docker-compose` since its easier
-and has a configuration/provisioning file docker-compose.yml.
+## INSTALL USING DOCKER-COMPOSE
 
-## INSTALL CONCOURSE USING DOCKER-COMPOSE
-
-Get the `docker-compose.yml` file above.
+Get the `docker-compose.yml` file from concourse,
 
 ```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/docker-compose.yml
+curl -O https://concourse-ci.org/docker-compose.yml
 ```
 
-Generate the keys needed,
+Edit the `docker-compose.yml` file to your liking.
 
-```bash
-wget https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/generate-keys.sh
-sudo sh generate-keys.sh
+```yaml
+CONCOURSE_EXTERNAL_URL: http://192.168.20.112:8080
+comment out # cgroup: host
 ```
 
-Run docker-compose up,
+Run docker-compose up. This will run two docker containers:
+concourse (web and worker) and concourse-db.
 
 ```bash
-docker-compose up
-```
-
-Keep the output minimal,
-
-```bash
-docker-compose up
+docker-compose up -d
 ```
 
 Note that this will pull two docker images,
+
+* postgres
+* concourse/concourse
 
 ```bash
 docker images
 ```
 
-* postgres
-* concourse/concourse
-
-As noted in my `docker-compose.yml` file I like to keep
-specific versions so it doesn't just keep pulling
-and storing the latest.
-
-`docker-compose up` created three docker containers,
-
-```bash
-docker ps
-```
-
-* postgres
-* concourse/concourse (web)
-* concourse/concourse (worker)
-
-## CHECK IT
-
-That's it, check that its working,
-
-[192.168.100.6:8080](http://192.168.100.6:8080)
-
-I could not get login as user
-`jeff` and password `test`.
-
-So I just used `test` `test`.
+Default team is main and the User/Password is test/test.
 
 To stop all docker containers is simple,
 

@@ -6,7 +6,9 @@ It's main goal is to run tasks._
 TL;DR
 
 ```bash
-http://192.168.100.6:8080/
+# MY CONCOURSE SERVER
+http://192.168.20.112:8080/
+
 fly -t ci login -c http://192.168.100.6:8080/
 fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
 fly -t ci destroy-pipeline --pipeline NAME\
@@ -28,31 +30,40 @@ Documentation and Reference
 
 ## INSTALL
 
+There are many ways to install concourse,
 
-
-
-
-## INSTALL CONCOURSE SERVER
-
-There are many ways to install concourse, here are a few,
-
-* [On VirtualBox using vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
-* [Binary Install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
-* [Docker Repository using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose)
-* [Ansible Roles on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+* [Install Docker Using docker-compose](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md)
+**I use this**
+* [Install Concourse On VirtualBox Using Vagrant](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md)
+**(archived)**
+* [Install Concourse Binary](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-binary.md)
+**(archived)**
+* [Install Concourse Using Ansible on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
+**(archived)**
 
 ## INSTALL AND CONNECT FLY TO CONCOURSE
 
 Now we need a way to connect to your concourse server.
-Fly allows you to uploads/updates your files.
+this is done via fly. We will create a `main-ci-target` to attach to `main (team)`
 
-* [Install Fly on Windows](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-windows.md)
-* [Install Fly on Linux](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-fly-on-linux.md)
 
-## CREATE A TEAM
 
-You are now logged in to concourse with team `main`.
-You can check `~/.flyrc` to see this.
+## CREATE A NEW TARGET AND NEW TEAM
+
+You are now logged in to concourse with main-ci-target that is attached to team `main`.
+
+To check targets and teams,
+
+```bash
+cat ~/.flyrc
+fly targets
+```
+
+???????????????????????
+
+To create a new target,
+
+```bash
 
 To create a new team,
 
