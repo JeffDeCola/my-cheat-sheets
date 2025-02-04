@@ -1,7 +1,11 @@
 # INSTALL CONCOURSE ON VIRTUALBOX USING VAGRANT
 
-This method has been depreciated at concourse, but I'm sure you can
-find vagrant files that others have made.
+```text
+**** OLD - ARCHIVED INFORMATION ****
+```
+
+_This method has been depreciated at concourse, but I'm sure you can
+find vagrant files that others have made._
 
 ## INSTALL
 
@@ -34,7 +38,8 @@ Reinstall the new `fly.exe`.
 Add in Vagrantfile,
 
 ```txt
-config.vm.network "public_network", bridge: 'Intel(R) I210 Gigabit Network Connection', use_dhcp_assigned_default_route: true
+config.vm.network "public_network", bridge: 'Intel(R) I210 Gigabit
+Network Connection', use_dhcp_assigned_default_route: true
 ```
 
 Or you could make this change in Virtualbox.

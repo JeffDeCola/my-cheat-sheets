@@ -1,10 +1,14 @@
 # INSTALL CONCOURSE BINARY
 
-Find the latest binaries here.
+```text
+**** OLD - ARCHIVED INFORMATION ****
+```
+
+_Install concourse using binaries files._
 
 ## CONCOURSE BINARY AND KEYS
 
-Get the latest Concourse binary,
+Get the latest concourse binary,
 
 ```bash
 wget https://github.com/concourse/concourse/releases/download/v2.7.3/concourse_linux_amd64
