@@ -9,24 +9,51 @@ TL;DR
 # MY CONCOURSE SERVER
 http://192.168.20.112:8080/
 
-fly -t ci login -c http://192.168.100.6:8080/
-fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
-fly -t ci destroy-pipeline --pipeline NAME\
-fly -t ci workers
-fly -t ci set-team --team-name team-jeff --local-user test
-fly -t ci login -n team-jeff
+# cli version
+fly -version
+
+# Login to main team using main-ci-target
+fly -t main-ci-target login -c http://192.168.20.112:8080 -u test -p test
+
+# Set Pipeline
+fly --target jeffs-ci-target set-pipeline --pipeline jeffs-concourse-example \
+--config pipeline.yml --load-vars-from .concourse-secrets.yml
+# Destroy Pipeline
+fly --target jeffs-ci-target destroy-pipeline --pipeline jeffs-concourse-example
+
+# Check Targets and Teams
+fly targets
+# Check Workers
+fly -t main-ci-target workers
 ```
 
 Table on Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#overview)
 * [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#install)
+* [INSTALL FLY - A CLI TO CONNECT TO CONCOURSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#install-fly---a-cli-to-connect-to-concourse)
+* [CONNECT TO CONCOURSE USING FLY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#connect-to-concourse-using-fly)
+* [CREATE A NEW TARGET AND NEW TEAM (OPTIONAL)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#create-a-new-target-and-new-team-optional)
+* [CREATING YOUR FIRST PIPELINE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#creating-your-first-pipeline)
+* [SET/DESTROY PIPELINE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#setdestroy-pipeline)
+* [FILE PERMISSIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#file-permissions)
+* [PASSING SECRETS TO USE IN YOUR SCRIPT (via env)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md#passing-secrets-to-use-in-your-script-via-env)
 
 Documentation and Reference
 
 * [my-cicd-pipeline-examples](https://github.com/JeffDeCola/my-cicd-pipeline-examples)
+* [concourse-resource-template](https://github.com/JeffDeCola/concourse-resource-template)
+* [concourse-deploy-docker-resource](https://github.com/JeffDeCola/concourse-deploy-docker-resource)
+* [github-status-resource-clone](https://github.com/JeffDeCola/github-status-resource-clone)
+  (cloned from another user)
 
 ## OVERVIEW
+
+This illustration shows the basic structure of concourse. Refer to
+[my-cicd-pipeline-examples](https://github.com/JeffDeCola/my-cicd-pipeline-examples)
+for pipeline examples.
+
+![IMAGE - concourse overview - IMAGE](../../../../docs/pics/concourse-overview.svg)
 
 ## INSTALL
 
@@ -41,57 +68,60 @@ There are many ways to install concourse,
 * [Install Concourse Using Ansible on Google Compute Engine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md)
 **(archived)**
 
-## INSTALL AND CONNECT FLY TO CONCOURSE
+## INSTALL FLY - A CLI TO CONNECT TO CONCOURSE
 
-Now we need a way to connect to your concourse server.
-this is done via fly. We will create a `main-ci-target` to attach to `main (team)`
+Connect to your concourse server. In my case it's
+[192.168.20.112:8080](http://192.168.20.112:8080)
+Unless you changed it in docker-compose file,
+the default username/password is test/test.
 
+Download fly to your machine and change the permissions,
 
+```bash
+chmod 755 fly
+```
 
-## CREATE A NEW TARGET AND NEW TEAM
+## CONNECT TO CONCOURSE USING FLY
 
-You are now logged in to concourse with main-ci-target that is attached to team `main`.
+Create a new target to attach to main team,
 
-To check targets and teams,
+```bash
+fly -t main-ci-target login -c http://192.168.20.112:8080 -u test -p test
+```
+
+Check targets and teams,
 
 ```bash
 cat ~/.flyrc
 fly targets
 ```
 
-???????????????????????
+## CREATE A NEW TARGET AND NEW TEAM (OPTIONAL)
 
-To create a new target,
-
-```bash
-
-To create a new team,
+Create a new target,
 
 ```bash
-fly -t ci set-team --team-name team-jeff --local-user test
-fly -t ci login -n team-jeff
+fly -t jeffs-ci-target login -c http://192.168.20.112:8080 -u test -p test
 ```
 
-check `~/.flyrc` to see your new team.
+Create a new team,
 
-## BASIC STRUCTURE OF CONCOURSE
+```bash
+fly -t jeffs-ci-target set-team --team-name jeffs-ci-team --local-user test
+```
 
-See a more detailed example at
-[my-concourse-ci-tasks](https://jeffdecola.github.io/my-concourse-ci-tasks/).
+Attach target to team,
 
-The following diagram illustrates compares running a task called search-and-replace.
+```bash
+fly -t jeffs-ci-target login -n jeffs-ci-team -c http://192.168.20.112:8080
+```
 
-* `pipeline.yml` A pipeline of resources and jobs.
-* `config.yml` Configures task
-  * Grabs docker image
-  * Sets up inputs/outputs into task container
-* `task.sh` does the task
+Check targets and teams,
 
-`IMPORTANT - THE JOBS ARE COMPLETELY INDEPENDENT OF EACH OTHER`
-
-If you want to store 'state', use a resource to send it offsite.
-
-![IMAGE - concourse cheat sheet structure - IMAGE](../../../../docs/pics/Concourse-structure.jpg)
+```bash
+cat ~/.flyrc
+fly targets
+```
 
 ## CREATING YOUR FIRST PIPELINE
 
@@ -100,66 +130,23 @@ There are plenty of better explanations on the web then I could do here.
 I have a few examples in my repo
 [my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks).
 
-## LOAD/REMOVE PIPELINE TO/FROM CONCOURSE
+## SET/DESTROY PIPELINE
 
 Load your pipeline to concourse,
 
 ```bash
-fly -t ci set-pipeline -p NAME -c pipeline.yml --load-vars-from .credentials.yml
+fly --target jeffs-ci-target \
+    set-pipeline \
+    --pipeline jeffs-concourse-example \
+    --config pipeline.yml
 ```
 
 To remove,
 
 ```bash
-fly -t ci destroy-pipeline --pipeline NAME
-```
-
-## RESTART A BAD WORKER (STALLED)
-
-Check your workers if they are stalled,
-
-```bash
-fly -t ci workers
-```
-
-If stalled, make sure you login using this full login with -c,
-
-```bash
-fly -t ci login -c http://NAME:8080/
-```
-
-And then prune-workers,
-
-```bash
-fly -t ci prune-worker -w WORKERNAME
-```
-
-## CREATE A NEW TEAM WITH NEW USER
-
-Create a new team,
-
-```bash
-fly -t ci set-team --team-name ciusers \
-    --basic-auth-username admin \
-    --basic-auth-password admin
-```
-
-Like above, login to new team,
-
-```bash
-fly -t ci login -n ciusers -c http://<ip>:8080
-```
-
-Show all targets,
-
-```bash
-fly targets
-```
-
-Show all teams,
-
-```bash
-fly -t ci teams
+fly --target jeffs-ci-target \
+    destroy-pipeline \
+    --pipeline jeffs-concourse-example
 ```
 
 ## FILE PERMISSIONS
