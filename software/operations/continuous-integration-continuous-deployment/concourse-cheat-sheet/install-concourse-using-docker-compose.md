@@ -5,11 +5,11 @@ _This is a cheat sheet on how to install concourse using docker-compose._
 Table on Contents
 
 * [INSTALL USING DOCKER-COMPOSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#install-using-docker-compose)
-* [USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE]()
-* [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)]()
-* [IF YOU GET AN IMAGE ERROR]()
-* [START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)]()
-* [USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER]()
+* [USER A STATIC IP TO ACCESS OUTSIDE YOUR MACHINE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#user-a-static-ip-to-access-outside-your-machine)
+* [ALLOW LOCAL NETWORK ACCESS TO VM (BRIDGE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#allow-local-network-access-to-vm-bridge)
+* [IF YOU GET AN IMAGE ERROR](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#if-you-get-an-image-error)
+* [START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#start-your-docker-compose-containers-automatically-at-bootcrash-using-systemd)
+* [USER YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#user-your-own-postgres-database-rather-then-docker)
 
 ## INSTALL USING DOCKER-COMPOSE
 
