@@ -76,6 +76,8 @@ such as reactive machines, limited memory and theory of mind (hypothetical).
     * Stacking
   * **Reinforcement Learning**
 
+![IMAGE - machine-learning - IMAGE](docs/pics/machine-learning.svg)
+
 ### CLASSICAL LEARNING
 
 Classical learning is the most common type of machine learning.
