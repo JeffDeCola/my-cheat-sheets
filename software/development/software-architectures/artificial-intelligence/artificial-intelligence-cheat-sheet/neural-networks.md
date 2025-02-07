@@ -77,15 +77,24 @@ There are several activation functions you may encounter in practice:
 * **Sigmoid** - The sigmoid function takes a real-valued number and
   "squashes" it into range between 0 and 1.
 
-  $$ f(x) = \frac{1}{1 + e^{-x}} $$
+$$
+f(x) = \frac{1}{1 + e^{-x}}
+$$
 
 * **Tanh** - The tanh function is similar to the sigmoid, but squashes
   the output to be between -1 and 1.
-  $$ f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
+
+$$
+f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+$$
+
 * **ReLU** - The ReLU function (short for Rectified Linear Units) takes
   a real-valued number and thresholds it at zero (replaces negative
   values with zero).
-  $$ f(x) = \max(0, x) $$
+
+$$
+f(x) = \max(0, x)
+$$
 
 ## NEURAL NETWORKS EXAMPLES
 
