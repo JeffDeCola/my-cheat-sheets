@@ -6,6 +6,7 @@ Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#overview)
 * [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
+  * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
 * [NEURAL NETWORKS EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-examples)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
   * [FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
@@ -59,9 +60,11 @@ Where,
 * $x_1, x_2, \ldots, x_n$ are the input values
 * $w_1, w_2, \ldots, w_n$ are the weights
 * $b$ is the bias
-* $f$ is the activation function which is the output
+* $f$ is the activation function (which is the output)
 
 ![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
+
+### THE ACTIVATION FUNCTION
 
 The purpose of the activation function is to introduce non-linearity
 into the output of a neuron. This is important because most real-world
@@ -70,31 +73,38 @@ and understand this data.The main function of Bias is to provide every
 node with a trainable constant value (in addition to the normal inputs
 that the node receives).
 
-Every activation function (or non-linearity) takes a single number
-and performs a certain fixed mathematical operation on it.
-There are several activation functions you may encounter in practice:
+The summation of the weighted inputs plus the bias is the input
+to the activation function, but the activation function itself
+is a non-linear transformation applied to this sum.
 
-* **Sigmoid** - The sigmoid function takes a real-valued number and
-  "squashes" it into range between 0 and 1.
+There are several activation functions you may encounter in practice
+(I like to use `s` as the input to the activation function to represent the
+weighted sum of the inputs).
 
-$$
-f(x) = \frac{1}{1 + e^{-x}}
-$$
-
-* **Tanh** - The tanh function is similar to the sigmoid, but squashes
-  the output to be between -1 and 1.
-
-$$
-f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
-$$
-
-* **ReLU** - The ReLU function (short for Rectified Linear Units) takes
-  a real-valued number and thresholds it at zero (replaces negative
-  values with zero).
-
-$$
-f(x) = \max(0, x)
-$$
+* **Sigmoid Function**
+  * Formula: $f(s) = \frac{1}{1 + e^{-s}}$
+  * Output Range: (0, 1)
+  * Usage: Often used in the output layer of neural networks for binary
+    classification problems
+* **Tanh (Hyperbolic Tangent) Function**
+  * Formula: $f(s) = \tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}$
+  * Output Range: (-1, 1)
+  * Usage: Often used in hidden layers of neural networks
+* **ReLU (Rectified Linear Unit) Function**
+  * Formula: $f(s) = \max(0, s)$
+  * Output Range: [0, ∞)
+  * Usage: Commonly used in hidden layers of deep neural networks due
+    to its simplicity and effectiveness
+* **Leaky ReLU Function**
+  * Formula: $f(s) = \max(\alpha s, s)$ where ( \alpha ) is a small constant
+  * Output Range: (-∞, ∞)
+  * Addresses the "dying ReLU" problem by allowing a small, non-zero gradient
+    when the unit is not active
+* **Softmax Function**
+  * Formula: $f(s_i) = \frac{e^{s_i}}{\sum_{j} e^{s_j}}$
+  * Output Range: (0, 1) for each class, and the sum of all outputs is 1
+  * Usage: Commonly used in the output layer of neural networks
+    for multi-class classification problems
 
 ## NEURAL NETWORKS EXAMPLES
 
