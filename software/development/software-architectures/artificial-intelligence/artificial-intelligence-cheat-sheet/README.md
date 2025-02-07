@@ -9,6 +9,7 @@ Table of Contents
 * [TYPES OF AI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#types-of-ai)
   * [CAPABILITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#capability)
   * [FUNCTIONALITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#functionality)
+* [ARTIFICIAL INTELLIGENCE HIERARCHY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#artificial-intelligence-hierarchy)
 * [MACHINE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#machine-learning)
   * [CLASSICAL LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#classical-learning)
   * [DEEP LEARNING (NEURAL NETWORKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#deep-learning-neural-networks)
@@ -19,6 +20,10 @@ Documentation and Reference
 
 * [neural networks cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 * my repo coming soon
+* [perceptron neural network]()
+  written in go
+* [multi-layer perceptron (mlp) neural network]()
+  written in go
 
 ## OVERVIEW
 
@@ -50,14 +55,30 @@ do (Functionality).
 * **Self Awareness**
   * AI that has consciousness
 
+## ARTIFICIAL INTELLIGENCE HIERARCHY
+
+Artificial Intelligence can be broken down into many subcategories.
+I will focus on Machine Learning.
+
+* **Artificial Intelligence (AI)**
+  * Machine Learning (ML)
+  * Robotics
+  * Natural Language Processing (NLP)
+  * Computer Vision
+  * Expert Systems
+  * Fuzzy Logic
+  * Evolutionary Algorithms
+
+![IMAGE - artificial-intelligence-hierarchy - IMAGE](../../../../../docs/pics/artificial-intelligence-hierarchy.svg)
+
 ## MACHINE LEARNING
 
-Today, Machine learnings is the most popular subset of AI
-that allows a system to learn from data.
-Machine learning are used in various functional AI types (above)
-such as reactive machines, limited memory and theory of mind (hypothetical).
+Machine Learning is a subset of AI that allows a system to learn from data
+rather than through explicit programming.
 
-* **Machine Learning** (ML)
+There are many types of Machine Learning such as,
+
+* **Machine Learning (ML)**
   * **Classical Learning**
     * Supervised Learning
       * Classification
@@ -79,8 +100,6 @@ such as reactive machines, limited memory and theory of mind (hypothetical).
     * Bagging
     * Stacking
   * **Reinforcement Learning**
-
-![IMAGE - machine-learning - IMAGE](../../../../../docs/pics/machine-learning.svg)
 
 ### CLASSICAL LEARNING
 

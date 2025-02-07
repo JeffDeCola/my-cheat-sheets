@@ -18,9 +18,9 @@ Table of Contents
 Documentation and Reference
 
 * [artificial intelligence cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-* [perceptron neural network example]()
+* [perceptron neural network]()
   written in go
-* [multi-layer perceptron (mlp) neural network example]()
+* [multi-layer perceptron (mlp) neural network]()
   written in go
 
 ## OVERVIEW
@@ -40,19 +40,27 @@ being programmed with any task-specific rules.
 A neural network is a mathematical model that is designed to behave
 much like a human brain.
 The basic building block of a neural network is the neuron.
-A neuron takes an input, applies a weight to it, and passes it through
+
+A neuron takes an input, applies a weight to it, sums up the weighted
+inputs, 
+
+
+adds a bias term and then takes the sum
+of the weighted inputs and the bias and passes it through an activation function
+
+and passes it through
 an activation function to produce an output.
 
 The mathematical model of a neuron is,
 
 $$
-y = f(w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b)
+y = f(s) = f(w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b)
 $$
 
 or
 
 $$
-y = f(\sum_{i=1}^{n} w_i x_i + b)
+y = f(s) = f(\sum_{i=1}^{n} w_i x_i + b)
 $$
 
 Where,
@@ -73,12 +81,12 @@ and understand this data.The main function of Bias is to provide every
 node with a trainable constant value (in addition to the normal inputs
 that the node receives).
 
-The summation of the weighted inputs plus the bias is the input
-to the activation function, but the activation function itself
+**The summation of the weighted inputs plus the bias is the input
+to the activation function**, but the activation function itself
 is a non-linear transformation applied to this sum.
 
 There are several activation functions you may encounter in practice
-(I like to use `s` as the input to the activation function to represent the
+(I like to use _**s**_ as the input to the activation function to represent the
 weighted sum of the inputs).
 
 * **Sigmoid Function**
@@ -115,7 +123,7 @@ Nomenclature,
 ### PERCEPTRON (P)
 
 My
-[perceptron neural network example]()
+[perceptron neural network]()
 written in go.
 
 * DESCRIPTION:
@@ -140,7 +148,7 @@ written in go.
 ### FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
 
 My
-[multi-layer perceptron (mlp) neural network example]()
+[multi-layer perceptron (mlp) neural network]()
 written in go.
 
 * DESCRIPTION:
