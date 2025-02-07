@@ -125,20 +125,20 @@ raw data.
 
 There are many types of neural networks such as,
 
-* **Perceptron (P)**
+* **[Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)**
   * The simplest form of a neural network
   * Used for simple classification tasks
-* **Feed-Forward (FF) / MULTI-LAYER PERCEPTRON (MLP)**
+* **[Feed-Forward (FF) / MULTI-LAYER PERCEPTRON (MLP)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)**
   * Data moves in one direction
   * No loops in the network
   * Used for simple classification tasks
-* **Auto Encoder (AE)**
+* **[Auto Encoder (AE)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)**
   * Used for reducing dimensionality
-* **Recurrent Neural Networks (RNN)**
+* **[Recurrent Neural Networks (RNN)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)**
   * Used for sequential data
-* **Convolutional Neural Networks (CNN)**
+* **[Convolutional Neural Networks (CNN)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)**
   * Used for image data
-* **Generative Adversarial Networks (GAN)**
+* **[Generative Adversarial Networks (GAN)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)**
   * Used for generating new data
 
 Read more on my
