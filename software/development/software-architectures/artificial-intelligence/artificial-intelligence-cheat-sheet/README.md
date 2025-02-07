@@ -141,9 +141,6 @@ There are many types of neural networks such as,
 * **[Generative Adversarial Networks (GAN)**](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)**
   * Used for generating new data
 
-Read more on my
-[neural networks cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md).
-
 ### ENSEMBLE LEARNING
 
 Ensemble learning is when you take multiple machine learning algorithms
