@@ -5,28 +5,99 @@ _This is a high level overview of Neural Networks._
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#overview)
-* [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
-* [FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
-* [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
-* [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
-* [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
-* [GENERATIVE ADVERSARIAL NETWORKS (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
+* [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
+* [NEURAL NETWORKS EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-examples)
+  * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
+  * [FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
+  * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
+  * [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
+  * [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
+  * [GENERATIVE ADVERSARIAL NETWORKS (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
 
 Documentation and Reference
 
 * [artificial intelligence cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
+* [perceptron neural network example]()
+  written in go
+* [multi-layer perceptron (mlp) neural network example]()
+  written in go
 
 ## OVERVIEW
 
-A neural network is a series of algorithms that endeavors to recognize
+A neural network is:
+
+* A series of algorithms that endeavors to recognize
 underlying relationships in a set of data through a process that mimics the
 way the human brain operates.
+* The neural network itself is not an algorithm, but rather a framework for many
+different machine learning algorithms to work together and process complex data inputs.
+* Such systems "learn" to perform tasks by considering examples, generally without
+being programmed with any task-specific rules.
+
+## MATHEMATICAL MODEL OF A NEURON
+
+A neural network is a mathematical model that is designed to behave
+much like a human brain.
+The basic building block of a neural network is the neuron.
+A neuron takes an input, applies a weight to it, and passes it through
+an activation function to produce an output.
+
+The mathematical model of a neuron is,
+
+$$
+y = f(w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b)
+$$
+
+or
+
+$$
+y = f(\sum_{i=1}^{n} w_i x_i + b)
+$$
+
+Where,
+
+* $x_1, x_2, \ldots, x_n$ are the input values
+* $w_1, w_2, \ldots, w_n$ are the weights
+* $b$ is the bias
+* $f$ is the activation function which is the output
+
+![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
+
+The purpose of the activation function is to introduce non-linearity
+into the output of a neuron. This is important because most real-world
+data is non-linear and we want our neural network to be able to model
+and understand this data.The main function of Bias is to provide every
+node with a trainable constant value (in addition to the normal inputs
+that the node receives).
+
+Every activation function (or non-linearity) takes a single number
+and performs a certain fixed mathematical operation on it.
+There are several activation functions you may encounter in practice:
+
+* **Sigmoid** - The sigmoid function takes a real-valued number and
+  "squashes" it into range between 0 and 1.
+
+  $$ f(x) = \frac{1}{1 + e^{-x}} $$
+
+* **Tanh** - The tanh function is similar to the sigmoid, but squashes
+  the output to be between -1 and 1.
+  $$ f(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
+* **ReLU** - The ReLU function (short for Rectified Linear Units) takes
+  a real-valued number and thresholds it at zero (replaces negative
+  values with zero).
+  $$ f(x) = \max(0, x) $$
+
+## NEURAL NETWORKS EXAMPLES
 
 Nomenclature,
 
 ![IMAGE - neural networks nomenclature - IMAGE](../../../../../docs/pics/neural-networks-nomenclature.svg)
 
-## PERCEPTRON (P)
+### PERCEPTRON (P)
+
+My
+[perceptron neural network example]()
+written in go.
 
 * DESCRIPTION:
   * The simplest form of a neural network
@@ -47,13 +118,21 @@ Nomenclature,
 
 ![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/neural-networks-perceptron.svg)
 
-## FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
+### FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
+
+My
+[multi-layer perceptron (mlp) neural network example]()
+written in go.
 
 * DESCRIPTION:
   * Data moves in one direction
   * No loops in the network
   * Consists of three layers, an Input Layer, Hidden Layers, and an Output Layer
   * The hidden layers have no connection to the outside world
+  * Has three layers: An Input Layer, Hidden Layers, and an Output Layer
+  * The Input Layer provides the initial data for the network
+  * The Output Layer provides the final output of the network
+  * The Hidden Layers are where the network learns the patterns in the data
 * FUNCTION:
   * It takes an input and calculates the weighted input for each node.
   * Afterward, it uses an activation function (mostly a `sigmoid function`)
@@ -77,7 +156,7 @@ Nomenclature,
 
 ![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/neural-networks-feed-forward.svg)
 
-## AUTO ENCODER (AE)
+### AUTO ENCODER (AE)
 
 * DESCRIPTION:
   * An unsupervised learning algorithm
@@ -96,7 +175,7 @@ Nomenclature,
 
 ![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/neural-networks-auto-encoder.svg)
 
-## RECURRENT NEURAL NETWORKS (RNN)
+### RECURRENT NEURAL NETWORKS (RNN)
 
 * DESCRIPTION:
   * A variation of a feed-forward neural network
@@ -117,7 +196,7 @@ Nomenclature,
 
 ![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/neural-networks-recurrent.svg)
 
-## CONVOLUTIONAL NEURAL NETWORKS (CNN)
+### CONVOLUTIONAL NEURAL NETWORKS (CNN)
 
 * DESCRIPTION:
   * A type of neural network that is primarily used for image classification
@@ -138,7 +217,7 @@ Nomenclature,
 
 ![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/neural-networks-convolutional.svg)
 
-## GENERATIVE ADVERSARIAL NETWORKS (GAN)
+### GENERATIVE ADVERSARIAL NETWORKS (GAN)
 
 * DESCRIPTION:
   * A type of neural network that is used to generate new data
