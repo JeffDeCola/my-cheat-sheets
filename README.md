@@ -150,6 +150,7 @@ Documentation and Reference
   * ARTIFICIAL INTELLIGENCE
 
     * [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
+      * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 
   * AUTHORIZATION
 
