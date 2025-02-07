@@ -20,7 +20,7 @@ way the human brain operates.
 
 Nomenclature,
 
-![IMAGE - neural networks nomenclature - IMAGE](../../../../docs/pics/neural-networks-nomenclature.svg)
+![IMAGE - neural networks nomenclature - IMAGE](../../../../../docs/pics/neural-networks-nomenclature.svg)
 
 ## PERCEPTRON (P)
 
@@ -41,7 +41,7 @@ Nomenclature,
 * APPLICATION:
   * Basic Classification tasks
 
-![IMAGE - neural networks perceptron - IMAGE](../../../../docs/pics/neural-networks-perceptron.svg)
+![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/neural-networks-perceptron.svg)
 
 ## FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
 
@@ -71,7 +71,7 @@ Nomenclature,
   * Pattern Recognition
   * Speech Recognition
 
-![IMAGE - neural networks feed-forward - IMAGE](../../../../docs/pics/neural-networks-feed-forward.svg)
+![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/neural-networks-feed-forward.svg)
 
 ## AUTO ENCODER (AE)
 
@@ -90,7 +90,7 @@ Nomenclature,
   * Dimensionality Reduction
   * Image Compression
 
-![IMAGE - neural networks auto encoder - IMAGE](../../../../docs/pics/neural-networks-auto-encoder.svg)
+![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/neural-networks-auto-encoder.svg)
 
 ## RECURRENT NEURAL NETWORKS (RNN)
 
@@ -111,7 +111,7 @@ Nomenclature,
   * Speech Recognition
   * Language Translation
 
-![IMAGE - neural networks recurrent - IMAGE](../../../../docs/pics/neural-networks-recurrent.svg)
+![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/neural-networks-recurrent.svg)
 
 ## CONVOLUTIONAL NEURAL NETWORKS (CNN)
 
@@ -132,7 +132,7 @@ Nomenclature,
   * Object Detection
   * Image Segmentation
 
-![IMAGE - neural networks convolutional - IMAGE](../../../../docs/pics/neural-networks-convolutional.svg)
+![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/neural-networks-convolutional.svg)
 
 ## GENERATIVE ADVERSARIAL NETWORKS (GAN)
 
@@ -156,4 +156,4 @@ Nomenclature,
   * Image Enhancement
   * Image-to-Image Translation
 
-![IMAGE - neural networks generative adversarial - IMAGE](../../../../docs/pics/neural-networks-generative-adversarial.svg)
+![IMAGE - neural networks generative adversarial - IMAGE](../../../../../docs/pics/neural-networks-generative-adversarial.svg)
