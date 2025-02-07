@@ -67,12 +67,12 @@ such as reactive machines, limited memory and theory of mind (hypothetical).
       * Pattern Recognition
       * Dimensionality Reduction Visualization
   * **Deep Learning** (Neural Networks)
-    * Perceptron (P)
-    * Feed-Forward (FF) / Multi-Layer Perceptron (MLP)
-    * Auto Encoders (AE)
-    * Recurrent Neural Networks (RNN)
-    * Convolutional Neural Networks (CNN)
-    * Generative Adversarial Networks (GAN)
+    * [Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
+    * [Feed-Forward (FF) / Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
+    * [Auto Encoders (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
+    * [Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
+    * [Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
+    * [Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
     * etc...
   * **Ensemble Learning**
     * Boosting
