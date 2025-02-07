@@ -17,6 +17,7 @@ Table of Contents
 
 Documentation and Reference
 
+* [neural networks cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 * my repo coming soon
 
 ## OVERVIEW
@@ -66,10 +67,13 @@ such as reactive machines, limited memory and theory of mind (hypothetical).
       * Pattern Recognition
       * Dimensionality Reduction Visualization
   * **Deep Learning** (Neural Networks)
+    * Perceptron (P)
+    * Feed-Forward (FF) / Multi-Layer Perceptron (MLP)
+    * Auto Encoders (AE)
     * Recurrent Neural Networks (RNN)
     * Convolutional Neural Networks (CNN)
     * Generative Adversarial Networks (GAN)
-    * Other Neural Networks
+    * etc...
   * **Ensemble Learning**
     * Boosting
     * Bagging
@@ -119,16 +123,26 @@ raw data.
   * Each node is a neuron that is connected to other neurons
   * The network can learn from data, improve itself and make decisions
 
-There are many types of neural networks,
+There are many types of neural networks such as,
 
+* **Perceptron (P)**
+  * The simplest form of a neural network
+  * Used for simple classification tasks
+* **Feed-Forward (FF) / MULTI-LAYER PERCEPTRON (MLP)**
+  * Data moves in one direction
+  * No loops in the network
+  * Used for simple classification tasks
+* **Auto Encoder (AE)**
+  * Used for reducing dimensionality
 * **Recurrent Neural Networks (RNN)**
   * Used for sequential data
 * **Convolutional Neural Networks (CNN)**
   * Used for image data
 * **Generative Adversarial Networks (GAN)**
   * Used for generating new data
-* **Other Neural Networks**
-  * Many other types of neural networks
+
+Read more on my
+[neural networks cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md).
 
 ### ENSEMBLE LEARNING
 
