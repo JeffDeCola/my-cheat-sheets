@@ -6,6 +6,7 @@ Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#overview)
 * [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
+  * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-summation-function)
   * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
 * [NEURAL NETWORKS EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-examples)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
@@ -41,26 +42,39 @@ A neural network is a mathematical model that is designed to behave
 much like a human brain.
 The basic building block of a neural network is the neuron.
 
-A neuron takes an input, applies a weight to it, sums up the weighted
-inputs, 
+An artificial neuron,
 
+* Takes an input
+* Applies a weight to that input
+* Passes the weighted input through a **summation function**
+  * Sums up the weighted inputs
+  * Adds a bias term to the weighted inputs
+* Passes the sum through an **activation function**
+* Outputs the result
 
-adds a bias term and then takes the sum
-of the weighted inputs and the bias and passes it through an activation function
+![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
 
-and passes it through
-an activation function to produce an output.
+It’s important to stress that this model of a biological neuron is very coarse.
+For example, there are many different types of neurons, each with different
+properties. The dendrites in biological neurons perform complex nonlinear
+computations. The synapses are not just a single weight, they’re a
+complex non-linear dynamical system. The exact timing of the output
+spikes in many systems is known to be important, suggesting that
+the rate code approximation may not hold.
 
-The mathematical model of a neuron is,
+### THE SUMMATION FUNCTION
+
+The summation function is the first step in the process of a neuron.
+It takes the weighted inputs and sums them up.
 
 $$
-y = f(s) = f(w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b)
+s = f(x) = w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b
 $$
 
 or
 
 $$
-y = f(s) = f(\sum_{i=1}^{n} w_i x_i + b)
+s = f(x) = \sum_{i=1}^{n} w_i x_i + b
 $$
 
 Where,
@@ -68,51 +82,66 @@ Where,
 * $x_1, x_2, \ldots, x_n$ are the input values
 * $w_1, w_2, \ldots, w_n$ are the weights
 * $b$ is the bias
-* $f$ is the activation function (which is the output)
 
-![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
+The main function of Bias is to provide every node with a trainable
+constant value in addition to the normal inputs
+that the node receives.
 
 ### THE ACTIVATION FUNCTION
 
-The purpose of the activation function is to introduce non-linearity
-into the output of a neuron. This is important because most real-world
-data is non-linear and we want our neural network to be able to model
-and understand this data.The main function of Bias is to provide every
-node with a trainable constant value (in addition to the normal inputs
-that the node receives).
-
-**The summation of the weighted inputs plus the bias is the input
-to the activation function**, but the activation function itself
-is a non-linear transformation applied to this sum.
+The activation function is the second step in the process of a neuron.
+The purpose is to introduce non-linearity into the output of a neuron.
+This is important because most real-world data is non-linear
+and we want our neural network to be able to model and understand this data.
+The summation of the weighted inputs plus the bias is the input
+to the activation function.
 
 There are several activation functions you may encounter in practice
-(I like to use _**s**_ as the input to the activation function to represent the
-weighted sum of the inputs).
+I like to use _**s**_ as the input to the activation function to 
+represent the weighted sum of the inputs plus bias.
 
 * **Sigmoid Function**
-  * Formula: $f(s) = \frac{1}{1 + e^{-s}}$
   * Output Range: (0, 1)
   * Usage: Often used in the output layer of neural networks for binary
-    classification problems
+  classification problems
+
+  $$
+  y = f(s) = \frac{1}{1 + e^{-s}}
+  $$
+
 * **Tanh (Hyperbolic Tangent) Function**
-  * Formula: $f(s) = \tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}$
   * Output Range: (-1, 1)
   * Usage: Often used in hidden layers of neural networks
+
+$$
+y = f(s) = \tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}
+$$
+
 * **ReLU (Rectified Linear Unit) Function**
-  * Formula: $f(s) = \max(0, s)$
   * Output Range: [0, ∞)
   * Usage: Commonly used in hidden layers of deep neural networks due
     to its simplicity and effectiveness
+  $$
+  y = f(s) = \max(0, s)
+  $$
+
 * **Leaky ReLU Function**
-  * Formula: $f(s) = \max(\alpha s, s)$ where ( \alpha ) is a small constant
   * Output Range: (-∞, ∞)
   * Addresses the "dying ReLU" problem by allowing a small, non-zero gradient
     when the unit is not active
+
+$$
+y = f(s) = \max(\alpha s, s)
+$$
+
 * **Softmax Function**
-  * Formula: $f(s_i) = \frac{e^{s_i}}{\sum_{j} e^{s_j}}$
   * Output Range: (0, 1) for each class, and the sum of all outputs is 1
   * Usage: Commonly used in the output layer of neural networks
     for multi-class classification problems
+
+ $$
+ y = f(s_i) = \frac{e^{s_i}}{\sum_{j} e^{s_j}}
+ $$
 
 ## NEURAL NETWORKS EXAMPLES
 
