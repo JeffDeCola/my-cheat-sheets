@@ -83,7 +83,7 @@ Where,
 * $w_1, w_2, \ldots, w_n$ are the weights
 * $b$ is the bias
 
-The main function of Bias is to provide every node with a trainable
+The main function of bias is to provide every node with a trainable
 constant value in addition to the normal inputs
 that the node receives.
 
@@ -93,11 +93,13 @@ The activation function is the second step in the process of a neuron.
 The purpose is to introduce non-linearity into the output of a neuron.
 This is important because most real-world data is non-linear
 and we want our neural network to be able to model and understand this data.
+Every activation function (or non-linearity) takes a single number
+and performs a certain fixed mathematical operation on it.
 The summation of the weighted inputs plus the bias is the input
 to the activation function.
 
 There are several activation functions you may encounter in practice
-I like to use _**s**_ as the input to the activation function to 
+I like to use _**s**_ as the input to the activation function to
 represent the weighted sum of the inputs plus bias.
 
 * **Sigmoid Function**
@@ -105,9 +107,9 @@ represent the weighted sum of the inputs plus bias.
   * Usage: Often used in the output layer of neural networks for binary
   classification problems
 
-  $$
-  y = f(s) = \frac{1}{1 + e^{-s}}
-  $$
+$$
+y = f(s) = \frac{1}{1 + e^{-s}}
+$$
 
 * **Tanh (Hyperbolic Tangent) Function**
   * Output Range: (-1, 1)
@@ -121,9 +123,10 @@ $$
   * Output Range: [0, ∞)
   * Usage: Commonly used in hidden layers of deep neural networks due
     to its simplicity and effectiveness
-  $$
-  y = f(s) = \max(0, s)
-  $$
+
+$$
+y = f(s) = \max(0, s)
+$$
 
 * **Leaky ReLU Function**
   * Output Range: (-∞, ∞)
