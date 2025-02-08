@@ -68,13 +68,13 @@ The summation function is the first step in the process of a neuron.
 It takes the weighted inputs and sums them up.
 
 $$
-s = f(x) = w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b
+s = f(x) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
 $$
 
 or
 
 $$
-s = f(x) = \sum_{i=1}^{n} w_i x_i + b
+s = f(x) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
 Where,
