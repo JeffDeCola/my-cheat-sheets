@@ -219,8 +219,8 @@ written in go.
 
 * DESCRIPTION:
   * An unsupervised learning algorithm
-  * The number of hidden cells is less than the number of input cells
-  * The number of input cells is equal to the number of output cells
+  * The number of hidden nodes is less than the number of input nodes
+  * The number of input nodes is equal to the number of output nodes
 * FUNCTION:
   * The Encoder compresses the input data
   * The Decoder decompresses the compressed data
