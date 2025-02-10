@@ -38,9 +38,8 @@ being programmed with any task-specific rules.
 
 ## MATHEMATICAL MODEL OF A NEURON
 
-A neural network is a mathematical model that is designed to behave
-much like a human brain.
 The basic building block of a neural network is the neuron.
+Each neuron is composed of two units, a summation unit and an activation unit.
 
 An artificial neuron,
 
@@ -49,7 +48,7 @@ An artificial neuron,
 * Passes the weighted input through a **summation function**
   * Sums up the weighted inputs
   * Adds a bias term to the weighted inputs
-* Passes the sum through an **activation function**
+* Passes the sum through a non-linear **activation function**
 * Outputs the result
 
 ![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
