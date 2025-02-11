@@ -8,7 +8,7 @@ Table of Contents
 * [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
   * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-summation-function)
   * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
-* [NEURAL NETWORKS EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-examples)
+* [NEURAL NETWORKS ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-architectures)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
   * [FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
   * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
@@ -67,7 +67,7 @@ The summation function is the first step in the process of a neuron.
 It takes the weighted inputs and sums them up.
 
 $$
-s = f(x) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
+s = f(x,w) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
 $$
 
 or
@@ -88,26 +88,30 @@ that the node receives.
 
 ### THE ACTIVATION FUNCTION
 
-The activation function is the second step in the process of a neuron.
-The purpose is to introduce non-linearity into the output of a neuron.
+The activation function is the function that determines if the
+neuron will fire or not. It is the second step in the process of a neuron.
+The purpose is to introduce **non-linearity** into the output of a neuron.
 This is important because most real-world data is non-linear
-and we want our neural network to be able to model and understand this data.
-Every activation function (or non-linearity) takes a single number
-and performs a certain fixed mathematical operation on it.
-The summation of the weighted inputs plus the bias is the input
-to the activation function.
+and we want our neural network to be able to model and understand real world data.
 
 There are several activation functions you may encounter in practice
 I like to use _**s**_ as the input to the activation function to
 represent the weighted sum of the inputs plus bias.
 
+Here are a few common activation functions,
+
 * **Sigmoid Function**
   * Output Range: (0, 1)
   * Usage: Often used in the output layer of neural networks for binary
-  classification problems
+    classification problems
+  * The power of the sigmoid function is **once you know the value of
+    the function, you already know the derivative of the function**
 
 $$
-y = f(s) = \frac{1}{1 + e^{-s}}
+\begin{aligned}
+y &= f(s) = \frac{1}{1 + e^{-s}} \\
+y'(s) =\frac{dy}{ds} &= \frac{d}{ds}f(s) = f(s)(1-f(s))
+\end{aligned}
 $$
 
 * **Tanh (Hyperbolic Tangent) Function**
@@ -145,7 +149,7 @@ $$
  y = f(s_i) = \frac{e^{s_i}}{\sum_{j} e^{s_j}}
  $$
 
-## NEURAL NETWORKS EXAMPLES
+## NEURAL NETWORKS ARCHITECTURES
 
 Nomenclature,
 
@@ -161,6 +165,8 @@ written in go.
   * The simplest form of a neural network
   * Known as a single-layer neural network
   * Has only 2 layers: An Input Layer and an Output Layer
+  * It gets its name from performing the human-like
+    function of perception, seeing and recognizing images
 * FUNCTION:
   * It takes an input and calculates the weighted input for each node
   * Afterward, it uses an activation function (mostly a sigmoid function)
