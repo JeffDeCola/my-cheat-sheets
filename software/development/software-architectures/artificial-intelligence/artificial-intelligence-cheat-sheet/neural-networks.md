@@ -43,17 +43,17 @@ Each neuron is composed of two units, a summation unit and an activation unit.
 
 An artificial neuron,
 
-* Takes input **$x_{[i]}$**
+* Takes input $x_{[i]}$
 * Applies a weight to that input $w_{[i]}$
 * **Summation Function**
-  * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
   * Weighted sum of inputs
-  * Adds a bias term to the weighted inputs
+  * Adds a bias term to the weighted inputs $b$
+  * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
 * **Activation Function**
-  * $y = f(s)$
-  * Applies an activation function to the sum
+  * Applies a non-linear activation function to the sum
   * The activation function determines if the neuron will fire or not
-* Outputs the result **$y$**
+  * $y = f(s)$
+* Outputs the result $y$
 
 ![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
 
@@ -101,7 +101,6 @@ and we want our neural network to be able to model and understand real world dat
 There are several activation functions you may encounter in practice
 I like to use _**s**_ as the input to the activation function to
 represent the weighted sum of the inputs plus bias.
-
 Here are a few common activation functions,
 
 * **Sigmoid Function**
