@@ -43,13 +43,17 @@ Each neuron is composed of two units, a summation unit and an activation unit.
 
 An artificial neuron,
 
-* Takes an input
-* Applies a weight to that input
-* Passes the weighted input through a **summation function**
-  * Sums up the weighted inputs
+* Takes input **$x_{[i]}$**
+* Applies a weight to that input $w_{[i]}$
+* **Summation Function**
+  * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
+  * Weighted sum of inputs
   * Adds a bias term to the weighted inputs
-* Passes the sum through a non-linear **activation function**
-* Outputs the result
+* **Activation Function**
+  * $y = f(s)$
+  * Applies an activation function to the sum
+  * The activation function determines if the neuron will fire or not
+* Outputs the result **$y$**
 
 ![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
 
