@@ -19,10 +19,11 @@ Table of Contents
 Documentation and Reference
 
 * [artificial intelligence cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-* [perceptron neural network]()
-  written in go
-* [multi-layer perceptron (mlp) neural network]()
-  written in go
+* [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
+* [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron-simple-example)
+  neural network written in go
+* [multi-layer perceptron-scalable](https://github.com/JeffDeCola/my-neural-networks/tree/main/multi-layer-perceptron-scalable)
+  neural network written in go
 
 ## OVERVIEW
 
@@ -160,9 +161,9 @@ Nomenclature,
 
 ### PERCEPTRON (P)
 
-My
-[perceptron neural network]()
-written in go.
+my
+[perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron-simple-example)
+neural network written in go.
 
 * DESCRIPTION:
   * The simplest form of a neural network
@@ -188,8 +189,8 @@ written in go.
 ### FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
 
 My
-[multi-layer perceptron (mlp) neural network]()
-written in go.
+[multi-layer perceptron-scalable](https://github.com/JeffDeCola/my-neural-networks/tree/main/multi-layer-perceptron-scalable)
+neural network written in go.
 
 * DESCRIPTION:
   * Data moves in one direction
