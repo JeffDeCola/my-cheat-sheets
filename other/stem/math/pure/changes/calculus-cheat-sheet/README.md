@@ -41,7 +41,7 @@ approaches as the input approaches a certain value.
 It is written as,
 
 $$
-lim_{x->a} f(x) = L
+lim_{x \to a} f(x) = L
 $$
 
 Where `f(x)` is a function of `x`, `a` is the value `x` is approaching,
