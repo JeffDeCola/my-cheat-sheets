@@ -56,7 +56,7 @@ $$
 The limit of `x² + 2` as `x` approaches `3` is,
 
 $$
-lim_{x->3} (x² + 2) = 11
+lim_{x \to 3} (x² + 2) = 11
 $$
 
 But why do we need limits?  Because some functions are not defined at certain points.
@@ -72,7 +72,7 @@ This is not defined at `x = 0`.
 However, we can still find the limit of `f(x)` as `x` approaches `0`.
 
 $$
-lim_{x->0} (1/x) = \infty
+lim_{x \to 0} (1/x) = \infty
 $$
 
 So how does this apply to calculus?  Well, the derivative of a function is
