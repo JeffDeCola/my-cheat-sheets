@@ -1,7 +1,7 @@
 # ARTIFICIAL INTELLIGENCE CHEAT SHEET
 
-_An high level overview of Artificial Intelligence (AI)
-and a quick dive into Machine Learning (ML)._
+_An high level overview of artificial intelligence (AI)
+and a quick dive into machine learning (ML)._
 
 Table of Contents
 
@@ -18,7 +18,6 @@ Table of Contents
 
 Documentation and Reference
 
-* [Artificial intelligence cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
 * [Neural networks cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 * [My neural networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
 examples written in go
@@ -30,11 +29,11 @@ examples written in go
 ## OVERVIEW
 
 Artificial Intelligence (AI) is the term used to describe the ability of a
-machine to perform cognitive processes.
+machine to perform a cognitive processes.
 
 ## TYPES OF AI
 
-AI can be looked at in two ways; How good it is (Capabilities) and what it can
+AI can be looked at in two ways; How good it is (Capability) and what it can
 do (Functionality).
 
 ### CAPABILITY
@@ -116,8 +115,10 @@ The system learns to predict the output from the input data.
 
 * **Classification**
   * Used for predicting a category
+  * Example: Is this email spam or not spam?
 * **Regression**
   * Used for predicting a quantity
+  * Example: What will the price of a house be?
 
 #### UNSUPERVISED LEARNING
 
@@ -126,10 +127,13 @@ output and the system learns to find patterns in the data.
 
 * **Clustering**
   * Used for grouping similar data
+  * Example: Grouping customers by purchasing behavior
 * **Pattern Recognition**
   * Used for finding patterns in data
+  * Example: Finding patterns in stock market data
 * **Dimensionality Reduction Visualization**
   * Used for reducing the number of features in data
+  * Example: Reducing the number of features in an image
 
 ### DEEP LEARNING (NEURAL NETWORKS)
 
@@ -138,7 +142,7 @@ It is the most popular type of machine learning today. A Neural Network is a
 working system at the heart of a Deep Learning algorithm that helps it process
 raw data.
 
-* **Neural Networks**
+* **[Neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)**
   * Like a human brain
   * A network of nodes that are interconnected
   * Each node is a neuron that is connected to other neurons
@@ -149,33 +153,42 @@ There are many types of neural networks such as,
 * **[Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)**
   * The simplest form of a neural network
   * Used for simple classification tasks
-* **[Feed-Forward (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)**
+  * Example: Is this email spam or not spam?
+* **[Feed-Forward (FF) / Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)**
   * Data moves in one direction
   * No loops in the network
   * Used for simple classification tasks
+  * Example: Is this email spam or not spam?
 * **[Auto Encoder (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)**
   * Used for reducing dimensionality
+  * Example: Reducing the number of features in an image
 * **[Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)**
   * Used for sequential data
+  * Example: Predicting the next word in a sentence
 * **[Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)**
   * Used for image data
+  * Example: Image recognition
 * **[Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)**
   * Used for generating new data
+  * Example: Generating new images
 
 ### ENSEMBLE LEARNING
 
 Ensemble learning is when you take multiple machine learning algorithms
-and combine them to make a more powerful model.
-Ensemble Learning
+and combine them to make a more powerful model. There are three types,
 
 * **Boosting**
   * Used for reducing bias
+  * Example: AdaBoost
 * **Bagging**
   * Used for reducing variance
+  * Example: Random Forest
 * **Stacking**
   * Used for reducing bias and variance
+  * Example: Stacked Generalization
 
 ### REINFORCEMENT LEARNING
 
 Reinforcement learning is a type of machine learning that is used to
-train an agent to make a sequence of decisions.
+train an agent to make a sequence of decisions. Examples include
+game playing and robotics.
