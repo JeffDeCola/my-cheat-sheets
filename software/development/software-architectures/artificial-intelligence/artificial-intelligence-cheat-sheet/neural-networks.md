@@ -10,7 +10,7 @@ Table of Contents
   * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
 * [NEURAL NETWORKS ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-architectures)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
-  * [FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#feed-forward-ff--multi-layer-perceptron-mlp)
+  * [MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
   * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
   * [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
   * [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
@@ -28,7 +28,7 @@ examples written in go
 
 ## OVERVIEW
 
-A neural network is:
+A neural network is,
 
 * A series of algorithms that endeavors to recognize
 underlying relationships in a set of data through a process that mimics the
@@ -43,17 +43,17 @@ being programmed with any task-specific rules.
 The basic building block of a neural network is the neuron.
 Each neuron is composed of two units, a summation unit and an activation unit.
 
-An artificial neuron,
+An artificial neuron consists of the following components,
 
-* Takes input $x_{[i]}$
+* Input(s) $x_{[i]}$
 * Applies a weight to that input $w_{[i]}$
 * **Summation Function**
   * Weighted sum of inputs
-  * Adds a bias term to the weighted inputs $b$
+  * Adds a bias term to the weighted sums $b$
   * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
 * **Activation Function**
-  * Applies a non-linear activation function to the sum
   * The activation function determines if the neuron will fire or not
+  * Applies a non-linear activation function to the sum
   * $y = f(s)$
 * Outputs the result $y$
 
@@ -70,7 +70,7 @@ the rate code approximation may not hold.
 ### THE SUMMATION FUNCTION
 
 The summation function is the first step in the process of a neuron.
-It takes the weighted inputs and sums them up.
+It takes the weighted inputs and sums them up. Then adds a bias term.
 
 $$
 s = f(x,w) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
@@ -162,7 +162,7 @@ Nomenclature,
 
 ### PERCEPTRON (P)
 
-my
+My
 [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron-simple-example)
 neural network written in go.
 
@@ -184,37 +184,40 @@ neural network written in go.
     to linearly separate our two classes of data
 * APPLICATION:
   * Basic Classification tasks
+  * Simple Linear Regression tasks
+  * Example: Predicting if a student will pass or fail based on
+    the number of hours they studied
 
 ![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/neural-networks-perceptron.svg)
 
-### FEED-FORWARD (FF) / MULTI-LAYER PERCEPTRON (MLP)
+### MULTI-LAYER PERCEPTRON (MLP)
 
+Also known as a Feed-Forward Neural Network (FF).
 My
-[multi-layer perceptron-scalable](https://github.com/JeffDeCola/my-neural-networks/tree/main/multi-layer-perceptron-scalable)
+[mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-classification-example)
 neural network written in go.
 
 * DESCRIPTION:
   * Data moves in one direction
   * No loops in the network
-  * Consists of three layers, an Input Layer, Hidden Layers, and an Output Layer
-  * The hidden layers have no connection to the outside world
   * Has three layers: An Input Layer, Hidden Layers, and an Output Layer
   * The Input Layer provides the initial data for the network
   * The Output Layer provides the final output of the network
-  * The Hidden Layers are where the network learns the patterns in the data
+  * The hidden layers have no connection to the outside world
+  * The hidden Layers are where the network learns the patterns in the data
 * FUNCTION:
   * It takes an input and calculates the weighted input for each node.
-  * Afterward, it uses an activation function (mostly a `sigmoid function`)
-    for classification purposes.
+  * Afterward, it uses an activation function (mostly a sigmoid function)
+    for classification purposes
 * TRAINING:
   * Adjusting the weights of the neurons to minimize the error between
     the predicted output and the actual output
-  * This process is typically performed using the `backpropagation algorithm`
+  * This process is typically performed using the backpropagation algorithm
   * In backpropagation, the error is propagated back through the network
     to update the weights. The gradient of the loss function with
     respect to each weight is calculated, and the weights are
     adjusted using gradient descent.
-  * `Gradient Descent` is an optimization algorithm used to minimize
+  * Gradient Descent is an optimization algorithm used to minimize
     some function by iteratively moving in the direction of steepest
     descent as defined by the negative of the gradient
 * APPLICATION:
@@ -222,6 +225,8 @@ neural network written in go.
   * Regression tasks
   * Pattern Recognition
   * Speech Recognition
+  * Example: Predicting student performance based on the number of hours
+    they studied, their midterm grade, and their last test grade
 
 ![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/neural-networks-feed-forward.svg)
 
@@ -241,6 +246,7 @@ neural network written in go.
   * AEs to find common patterns and generalize the data
   * Dimensionality Reduction
   * Image Compression
+  * Example: Reducing the dimensionality of an image
 
 ![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/neural-networks-auto-encoder.svg)
 
@@ -262,6 +268,7 @@ neural network written in go.
   * Time Series Prediction
   * Speech Recognition
   * Language Translation
+  * Example: Predicting the next word in a sentence
 
 ![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/neural-networks-recurrent.svg)
 
@@ -283,6 +290,7 @@ neural network written in go.
   * Image Classification
   * Object Detection
   * Image Segmentation
+  * Example: Classifying images of cats and dogs
 
 ![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/neural-networks-convolutional.svg)
 
@@ -307,5 +315,6 @@ neural network written in go.
   * Image Generation
   * Image Enhancement
   * Image-to-Image Translation
+  * Example: Generating new images of human faces
 
 ![IMAGE - neural networks generative adversarial - IMAGE](../../../../../docs/pics/neural-networks-generative-adversarial.svg)
