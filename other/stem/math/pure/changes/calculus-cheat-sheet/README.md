@@ -14,7 +14,7 @@ Table of Contents
 
 Documentation and Reference
 
-* [my-lates-renders](https://github.com/JeffDeCola/my-latex-renders)
+* [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
 
 ## OVERVIEW
 
@@ -253,48 +253,39 @@ $$
 ## A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS
 
 Lets take everything we learned and use an example of a car driving.
-Instead of using `x` and `y`, we will use `t` for time and `s` for distance.
-This will show us velocity at a given time and the distance traveled.
 
-For example, given a car driving at a constant acceleration of `4 m/s²`,
-starting at `1 m/s` at `t = 0`.
+### FINDING VELOCITY (Using a Derivative)
 
-$$
-a(t) = 4
-$$
-
-The velocity of the car at time `t` is the integral of acceleration.
+Lets say a car travels 50 miles every hour.
+We can write the distance function as
 
 $$
-v(t) = \int a(t) dt = 4t + C
+s(t) = 50t
 $$
 
-Given the car starts at `1 m/s` at `t = 0`, we can solve for `C`.
+where `t` is time in hours and `s` is distance in miles.
+
+The velocity of the car is the **derivative** of the distance function.
 
 $$
-1 = 4(0) + C
+v(t) = \frac{ds}{dt} = 50
 $$
 
-$$
-C = 1
-$$
+So the velocity of the car is 50 mph.
 
-So the velocity of the car at time `t` is `4t + 1`.
+### FINDING DISTANCE FUNCTION (Using an Integral)
 
-The distance traveled by the car at time `t` is the integral of velocity.
-
-$$
-s(t) = \int v(t) dt = \int (4t + 1) dt = 2t² + t + C
-$$
-
-Given the car starts at `0 m` at `t = 0`, we can solve for `C`.
+Lets say we know the velocity of a car is 50 mph.
+We can write the velocity function as
 
 $$
-0 = 2(0)² + 0 + C
+v(t) = 50
 $$
 
+The distance the car travels is the **integral** of the velocity function.
+
 $$
-C = 0
+s(t) = \int v(t) dt = 50t + C
 $$
 
-So the distance traveled by the car at time `t` is `2t² + t`.
+So the distance the car travels is 50t + C.
