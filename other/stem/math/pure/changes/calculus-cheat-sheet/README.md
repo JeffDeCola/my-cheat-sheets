@@ -12,6 +12,10 @@ Table of Contents
   * [USING LIMITS TO FIND THE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-integral)
 * [AN EXAMPLE OF USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#an-example-of-using-derivatives-and-integrals)
 
+Documentation and Reference
+
+* [my-lates-renders](https://github.com/JeffDeCola/my-latex-renders)
+
 ## OVERVIEW
 
 Calculus is a branch of mathematics that studies continuous change.
