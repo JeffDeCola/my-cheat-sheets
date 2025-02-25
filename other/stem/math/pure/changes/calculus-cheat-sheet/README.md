@@ -252,16 +252,21 @@ $$
 where `F(x)` is the antiderivative of `f(x)` and `C` is the constant of
 integration.
 
+```text
+The reason we use F(x) is to avoid confusion with the original function f(x)
+that is being integrated. F(x) is also written as y(x).
+```
+
 For example, given the function,
 
 $$
-y = f(x) = 2x
+f(x) = 2x
 $$
 
 The integral of `2x` is `x²` (see next section on how we did this).
 
 $$
-\int 2x dx = x² + C
+\int 2x dx = F(x) = x² + C
 $$
 
 So if you're looking for the area under the curve of `2x`, you would find the
