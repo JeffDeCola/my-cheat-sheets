@@ -7,7 +7,9 @@ Table of Contents
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#overview)
 * [LIMITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#limits)
 * [DIFFERENTIAL CALCULUS (THE DERIVATIVE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus-the-derivative)
+  * [USING LIMITS TO FIND THE DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-derivative)
 * [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
+  * [USING LIMITS TO FIND THE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-integral)
 * [AN EXAMPLE OF USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#an-example-of-using-derivatives-and-integrals)
 
 ## OVERVIEW
@@ -53,6 +55,11 @@ $$
 f(x) = x² + 2
 $$
 
+<p align="center">
+    <img src="svgs/f-of-x-equals-x-squared-plus-2.svg"
+    align="middle"
+</p>
+
 The limit of `x² + 2` as `x` approaches `3` is,
 
 $$
@@ -64,15 +71,20 @@ But why do we need limits?  Because some functions are not defined at certain po
 For example, given the function
 
 $$
-f(x) = 1/x
+f(x) = \frac{1}{x}
 $$
+
+<p align="center">
+    <img src="svgs/f-of-x-equals-1-over-x.svg"
+    align="middle"
+</p>
 
 This is not defined at `x = 0`.
 
 However, we can still find the limit of `f(x)` as `x` approaches `0`.
 
 $$
-lim_{x \to 0} (1/x) = \infty
+lim_{x \to 0} (\frac{1}{x}) = \infty
 $$
 
 So how does this apply to calculus?  Well, the derivative of a function is
@@ -114,14 +126,24 @@ $$
 So if you're at `x = 3`, the slope of the tangent line is `6`. The rate of
 change of `y` with respect to `x` is `6`.
 
+<p align="center">
+    <img src="svgs/f-of-x-equals-x-squared-plus-2-showing-a-tangent-at-x-equals-2.svg"
+    align="middle"
+</p>
+
 The derivative of a function is the slope of the tangent line to the curve
 at a given point.
 
-### USING LIMITS TO FIND DERIVATIVES
+### USING LIMITS TO FIND THE DERIVATIVE
 
 We learned about limits because the derivative of a function is
 defined as the limit of the average rate of change of the function as the
 interval over which the rate of change is calculated approaches zero.
+
+<p align="center">
+    <img src="svgs/limit-definition-of-the-derivative.svg"
+    align="middle"
+</p>
 
 You can show this as
 
@@ -179,12 +201,17 @@ $$
 So if you're looking for the area under the curve of `2x`, you would find the
 area of a triangle with base `x` and height `2x`.
 
-### USING LIMITS TO FIND INTEGRALS
+### USING LIMITS TO FIND THE INTEGRAL
 
 Because the integral of a function is
 defined as the limit of the sum of the areas of
 rectangles under the curve as the width of the
 rectangles approaches zero.
+
+<p align="center">
+    <img src="svgs/limit-definition-of-the-integral.svg"
+    align="middle"
+</p>
 
 You can show this as
 
