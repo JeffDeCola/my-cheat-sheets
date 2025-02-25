@@ -10,7 +10,9 @@ Table of Contents
   * [USING LIMITS TO FIND THE DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-derivative)
 * [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
   * [USING LIMITS TO FIND THE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-integral)
-* [AN EXAMPLE OF USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#an-example-of-using-derivatives-and-integrals)
+* [A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#a-real-world-example-using-derivatives-and-integrals)
+  * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
+  * [FINDING DISTANCE FUNCTION (Using an Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-an-integral)
 
 Documentation and Reference
 
