@@ -123,8 +123,7 @@ $$
 \frac{dy}{dx} = f'(x) = 2x
 $$
 
-So if you're at `x = 3`, the slope of the tangent line is `6`. The rate of
-change of `y` with respect to `x` is `6`.
+So if you're at `x = 2`, the slope of the tangent line is `4`.
 
 <p align="center">
     <img src="svgs/f-of-x-equals-x-squared-plus-2-showing-a-tangent-at-x-equals-2.svg"
