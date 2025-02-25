@@ -7,15 +7,19 @@ Table of Contents
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#overview)
 * [LIMITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#limits)
 * [DIFFERENTIAL CALCULUS (THE DERIVATIVE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus-the-derivative)
-  * [USING LIMITS TO FIND THE DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-derivative)
+  * [DEFINITIONS OF A DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definitions-of-a-derivative)
+  * [BASIC DERIVATIVE RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-derivative-rules)
 * [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
-  * [USING LIMITS TO FIND THE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#using-limits-to-find-the-integral)
+  * [DEFINITIONS OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definitions-of-an-integral)
+  * [BASIC INTEGRAL RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-integral-rules)
 * [A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#a-real-world-example-using-derivatives-and-integrals)
   * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
   * [FINDING DISTANCE FUNCTION (Using an Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-an-integral)
 
 Documentation and Reference
 
+* [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
+  cheat sheet
 * [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
 
 ## OVERVIEW
@@ -140,7 +144,7 @@ So if you're at `x = 2`, the slope (change) of the tangent line is `4`.
 Hence, the derivative of a function is the slope of the tangent line to the curve
 at a given point.
 
-### USING LIMITS TO FIND THE DERIVATIVE
+### DEFINITIONS OF A DERIVATIVE
 
 We learned about limits because the derivative of a function is
 defined as the limit of the average rate of change of the function as the
@@ -169,6 +173,62 @@ f'(x) &= \lim_{{\Delta x \to 0}} \frac{x^2 + 2x\Delta x + \Delta x^2 + 2 -
 f'(x) &= \lim_{{\Delta x \to 0}} \frac{2x\Delta x + \Delta x^2}{\Delta x} \\
 f'(x) &= \lim_{{\Delta x \to 0}} 2x + \Delta x \\
 f'(x) &= 2x
+\end{aligned}
+$$
+
+### BASIC DERIVATIVE RULES
+
+**Power Rule**
+
+$$
+\begin{aligned}
+f(x) &= x^n \\
+f'(x) &= nx^{n-1}
+\end{aligned}
+$$
+
+**Constant Rule**
+
+$$
+\begin{aligned}
+f(x) &= c \\
+f'(x) &= 0
+\end{aligned}
+$$
+
+**Sum Rule**
+
+$$
+\begin{aligned}
+f(x) &= g(x) + h(x) \\
+f'(x) &= g'(x) + h'(x)
+\end{aligned}
+$$
+
+**Product Rule**
+
+$$
+\begin{aligned}
+f(x) &= g(x)h(x) \\
+f'(x) &= g'(x)h(x) + g(x)h'(x)
+\end{aligned}
+$$
+
+**Quotient Rule**
+
+$$
+\begin{aligned}
+f(x) &= \frac{g(x)}{h(x)} \\
+f'(x) &= \frac{g'(x)h(x) - g(x)h'(x)}{h(x)^2}
+\end{aligned}
+$$
+
+**Chain Rule**
+
+$$
+\begin{aligned}
+f(x) &= g(h(x)) \\
+f'(x) &= g'(h(x))h'(x)
 \end{aligned}
 $$
 
@@ -207,7 +267,7 @@ $$
 So if you're looking for the area under the curve of `2x`, you would find the
 area of a triangle with base `x` and height `2x`.
 
-### USING LIMITS TO FIND THE INTEGRAL
+### DEFINITIONS OF AN INTEGRAL
 
 Because the integral of a function is
 defined as the limit of the sum of the areas of
@@ -249,6 +309,32 @@ $$
 \int 2x dx &= 2 \int x dx \\
 \int 2x dx &= 2 \frac{x^2}{2} + C \\
 \int 2x dx &= x^2 + C
+\end{aligned}
+$$
+
+### BASIC INTEGRAL RULES
+
+**Power Rule**
+
+$$
+\begin{aligned}
+\int x^n dx &= \frac{x^{n+1}}{n+1} + C
+\end{aligned}
+$$
+
+**Constant Rule**
+
+$$
+\begin{aligned}
+\int c dx &= cx + C
+\end{aligned}
+$$
+
+**Sum Rule**
+
+$$
+\begin{aligned}
+\int (f(x) + g(x)) dx &= \int f(x) dx + \int g(x) dx
 \end{aligned}
 $$
 
