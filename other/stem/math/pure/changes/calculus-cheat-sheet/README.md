@@ -26,14 +26,14 @@ Two branches of Calculus,
   * **Derivatives** - One quantity changes with respect to another
   * Example: If you have a function describing the position of a falling object,
     its derivative gives you the object's velocity, and the derivative of
-    velocity gives you acceleration.
+    velocity gives you acceleration
 
 * Integral Calculus
   * Opposite of differential calculus
-  * Finding area under curve.
+  * Finding area under curve
   * **Integrals** - Accumulation of a quantity over an interval
   * Example: If you have a function describing the velocity of a falling object,
-    its integral gives you the object's position.
+    its integral gives you the object's position
 
 ## LIMITS
 
@@ -43,7 +43,7 @@ approaches as the input approaches a certain value.
 It is written as,
 
 $$
-lim_{x \to a} f(x) = L
+\lim_{{x \to a}} f(x) = L
 $$
 
 Where `f(x)` is a function of `x`, `a` is the value `x` is approaching,
@@ -63,7 +63,7 @@ $$
 The limit of `x² + 2` as `x` approaches `3` is,
 
 $$
-lim_{x \to 3} (x² + 2) = 11
+\lim_{x \to 3} (x² + 2) = 11
 $$
 
 But why do we need limits?  Because some functions are not defined at certain points.
@@ -84,7 +84,7 @@ This is not defined at `x = 0`.
 However, we can still find the limit of `f(x)` as `x` approaches `0`.
 
 $$
-lim_{x \to 0} (\frac{1}{x}) = \infty
+\lim_{x \to 0} \frac{1}{x} = \infty
 $$
 
 So how does this apply to calculus?  Well, the derivative of a function is
