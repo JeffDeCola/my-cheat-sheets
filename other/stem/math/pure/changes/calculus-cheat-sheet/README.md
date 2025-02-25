@@ -60,13 +60,13 @@ $$
     align="middle"
 </p>
 
-The limit of `x² + 2` as `x` approaches `3` is,
+The limit of `x² + 2` as `x` approaches `3` is 11,
 
 $$
 \lim_{x \to 3} (x² + 2) = 11
 $$
 
-But why do we need limits?  Because some functions are not defined at certain points.
+WE use limits because some functions are not defined at certain points.
 
 For example, given the function
 
@@ -90,6 +90,7 @@ $$
 So how does this apply to calculus?  Well, the derivative of a function is
 defined as the limit of the average rate of change of the function as the
 interval over which the rate of change is calculated approaches zero.
+This will make more sense in the next section.
 
 ## DIFFERENTIAL CALCULUS (THE DERIVATIVE)
 
@@ -123,14 +124,14 @@ $$
 \frac{dy}{dx} = f'(x) = 2x
 $$
 
-So if you're at `x = 2`, the slope of the tangent line is `4`.
+So if you're at `x = 2`, the slope (change) of the tangent line is `4`.
 
 <p align="center">
     <img src="svgs/f-of-x-equals-x-squared-plus-2-showing-a-tangent-at-x-equals-2.svg"
     align="middle"
 </p>
 
-The derivative of a function is the slope of the tangent line to the curve
+Hence, the derivative of a function is the slope of the tangent line to the curve
 at a given point.
 
 ### USING LIMITS TO FIND THE DERIVATIVE
@@ -154,16 +155,16 @@ So giving the example above of $f(x) = x^2 + 2$, the derivative is
 
 $$
 \begin{aligned}
-f'(x) &= \lim_{{\Delta x \to 0}} \frac{((x+\Delta x)^2 + 2) - (x^2 + 2)}{\Delta x} \\
+f'(x) &= \lim_{{\Delta x \to 0}} \frac{((x+\Delta x)^2 + 2) -
+         (x^2 + 2)}{\Delta x} \\
 f'(x) &= \lim_{{\Delta x \to 0}} \frac{(x+\Delta x)^2 + 2 - x^2 - 2}{\Delta x} \\
-f'(x) &= \lim_{{\Delta x \to 0}} \frac{x^2 + 2x\Delta x + \Delta x^2 + 2 - x^2 - 2}{\Delta x} \\
+f'(x) &= \lim_{{\Delta x \to 0}} \frac{x^2 + 2x\Delta x + \Delta x^2 + 2 -
+         x^2 - 2}{\Delta x} \\
 f'(x) &= \lim_{{\Delta x \to 0}} \frac{2x\Delta x + \Delta x^2}{\Delta x} \\
 f'(x) &= \lim_{{\Delta x \to 0}} 2x + \Delta x \\
 f'(x) &= 2x
 \end{aligned}
 $$
-
-For example, we can see as x approaches 3, the derivative is 6.
 
 ## INTEGRAL CALCULUS (THE INTEGRAL)
 
@@ -215,10 +216,23 @@ rectangles approaches zero.
 You can show this as
 
 $$
-\int f(x) dx = \lim_{{\Delta x \to 0}} \sum_{i=1}^{n} f(x_i) \Delta x
+AREA = \int_{a}^{b} f(x) dx = \lim_{{\Delta x \to 0}}
+       \sum_{i=1}^{n} f(x_i) \Delta x
 $$
 
-So giving the example above of $f(x) = 2x$, the integral is
+where
+
+$$
+\Delta x = \frac{b - a}{n}
+$$
+
+and
+
+$$
+n \to \infty \; and \; \Delta x \to 0
+$$
+
+So giving the example above of $f'(x) = 2x$, the integral is
 
 $$
 \begin{aligned}
@@ -232,9 +246,7 @@ $$
 \end{aligned}
 $$
 
-And we can see the integral of `2x` is `x²`.
-
-## AN EXAMPLE OF USING DERIVATIVES AND INTEGRALS
+## A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS
 
 Lets take everything we learned and use an example of a car driving.
 Instead of using `x` and `y`, we will use `t` for time and `s` for distance.
