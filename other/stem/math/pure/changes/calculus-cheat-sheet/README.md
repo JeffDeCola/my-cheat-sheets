@@ -76,7 +76,7 @@ $$
 \lim_{x \to 3} (x² + 2) = 11
 $$
 
-WE use limits because some functions are not defined at certain points.
+We use limits because some functions are not defined at certain points.
 
 For example, given the function
 
