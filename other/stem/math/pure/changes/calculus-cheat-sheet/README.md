@@ -7,10 +7,10 @@ Table of Contents
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#overview)
 * [LIMITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#limits)
 * [DIFFERENTIAL CALCULUS (THE DERIVATIVE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus-the-derivative)
-  * [DEFINITIONS OF A DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definitions-of-a-derivative)
+  * [DEFINITION OF A DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-a-derivative)
   * [BASIC DERIVATIVE RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-derivative-rules)
 * [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
-  * [DEFINITIONS OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definitions-of-an-integral)
+  * [DEFINITION OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-an-integral)
   * [BASIC INTEGRAL RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-integral-rules)
 * [A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#a-real-world-example-using-derivatives-and-integrals)
   * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
@@ -21,6 +21,12 @@ Documentation and Reference
 * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
   cheat sheet
 * [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
+
+| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
+|------------------------|------------------------------------|--------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
 
 ## OVERVIEW
 
@@ -144,7 +150,7 @@ So if you're at `x = 2`, the slope (change) of the tangent line is `4`.
 Hence, the derivative of a function is the slope of the tangent line to the curve
 at a given point.
 
-### DEFINITIONS OF A DERIVATIVE
+### DEFINITION OF A DERIVATIVE
 
 We learned about limits because the derivative of a function is
 defined as the limit of the average rate of change of the function as the
@@ -272,7 +278,7 @@ $$
 So if you're looking for the area under the curve of `2x`, you would find the
 area of a triangle with base `x` and height `2x`.
 
-### DEFINITIONS OF AN INTEGRAL
+### DEFINITION OF AN INTEGRAL
 
 Because the integral of a function is
 defined as the limit of the sum of the areas of
