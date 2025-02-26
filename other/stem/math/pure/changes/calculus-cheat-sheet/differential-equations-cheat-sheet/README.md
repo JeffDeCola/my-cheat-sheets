@@ -5,20 +5,30 @@ _The study of continuous change._
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#overview)
-* [NOMENCLATURE OF DERIVATIVES, INTEGRALS AND DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#nomenclature-of-derivatives-integrals-and-differential-equations)
+* [UNDERSTANDING f(x)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#understanding-fx)
   * [f(x) in CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-calculus)
   * [f(x) in DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-differential-equations)
   * [SUMMARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#summary)
-* [FIRST-ORDER AND SECOND-ORDER DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#first-order-and-second-order-differential-equations)
+* [CLASSIFICATION OF DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#classification-of-differential-equations)
+  * [BY TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-type)
+  * [BY ORDER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-order)
+* [A REAL WORLD EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#a-real-world-example)
+  * [POPULATION GROWTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#population-growth)
 
 Documentation and Reference
 
 * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
   cheat sheet
 
+| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
+|------------------------|------------------------------------|--------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
+
 ## OVERVIEW
 
-* **Calculus** is a broad field of mathematics that includes 
+* **Calculus** is a broad field of mathematics that includes
 differentiation (finding derivatives) and
 integration (finding integrals).
 It focuses on rates of change and accumulation.
@@ -30,13 +40,17 @@ As we will see, differential equations are used to
 model real-world phenomena involving rates of
 change and accumulation.
 
+```text
+The goal of diffEQ is to find the function y(x) that satisfies the equation.
+```
+
 ## UNDERSTANDING f(x)
 
 Understanding the role of $f(x)$ is important because:
 
 * In **calculus**, you typically **differentiate or integrate** $f(x)$
   to get new functions.
-* In **differential equations**, you **start with $f(x) = \frac{dy}{dx}$
+* In **differential equations**, you **start with $y'(x) = f(x) = \frac{dy}{dx}$
   and integrate** to recover $y(x)$.
 * The notation can be tricky, but knowing whether **$f(x)$ is the function
   or its derivative** helps avoid confusion.
@@ -46,7 +60,7 @@ Understanding the role of $f(x)$ is important because:
 In calculus, we define f(x) as the original function, and we
 find the derivative or integral on that function.
 
-**Derivative**
+#### Derivative
 
 Given a function, find the rate of change.
 
@@ -74,7 +88,7 @@ $$
 f'(x) = \frac{dy}{dx} = 2x + 3
 $$
 
-**Integral**
+#### Integral
 
 Given the rate of change, find the function.
 
@@ -115,7 +129,7 @@ the derivative of another function y(x).
 Like integrals, start with the rate of change and find the function.
 
 $$
-\frac{dy}{dx} = f(x)
+y'(x) = \frac{dy}{dx} = f(x)
 $$
 
 To solve for y(x), we integrate both sides of the equation,
@@ -131,7 +145,7 @@ $$
 As an example,
 
 $$
-\frac{dy}{dx} = f(x) = 2x + 3
+y'(x) = \frac{dy}{dx} = f(x) = 2x + 3
 $$
 
 Solve for y(x),
@@ -144,15 +158,29 @@ $$
 y(x) = x² + 3x + C
 $$
 
-### SUMMARY
+## CLASSIFICATION OF DIFFERENTIAL EQUATIONS
 
-| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND  |
-|------------------------|------------------------------------|-----------------------|
-| CALCULUS (Derivatives) | $f(x)$ is the original function    | $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | $F(x)=\int f(x)dx$    |
-| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$      |
+Differential equations can be classified in many ways, we will
+classify them by type and order.
 
-## FIRST-ORDER AND SECOND-ORDER DIFFERENTIAL EQUATIONS
+### BY TYPE
+
+**Ordinary Differential Equations** (ODEs) involve only one independent variable. For example,
+
+  $$
+  \frac{dy}{dx} = 2x
+  $$
+
+**Partial Differential Equations** (PDEs) involve more than one independent variable.
+For example,
+
+  $$
+  \frac{\partial u}{\partial t} = \frac{\partial² u}{\partial x²}
+  $$
+
+where $u$ is a function of $x$ and $t$.
+
+### BY ORDER
 
 * **First-order** differential equations involve only the first derivative.
   For example,
@@ -167,5 +195,67 @@ $$
   y''(x) = \frac{d²y}{dx²} = 2x
   $$
 
+## A REAL WORLD EXAMPLE
 
+Since differential equations are used to model real-world phenomena,
+let's consider a simple example. Remember, the goal of differential
+equations is to find the function $y(x)$ that satisfies the equation.
 
+### POPULATION GROWTH
+
+Consider a population of bacteria that grows at a rate proportional to the
+current population. The differential equation that models this growth is,
+
+$$
+\frac{dP}{dt} = kP
+$$
+
+$$
+P'(t)= \frac{dP}{dt} = kP
+$$
+
+where $P$ is the population and $k$ is the growth rate constant.
+We want to find P(t), the population at a particular time.
+
+To solve this differential equation, we integrate both sides,
+
+$$
+\int \frac{dP}{dt} dt = \int kP dt
+$$
+
+$$
+\int \frac{dP}{P} = \int k dt
+$$
+
+$$
+\ln P = kt + C
+$$
+
+Solving for natural log we get
+
+$$
+P(t) = e^{kt + C}
+$$
+
+$$
+P(t) = P_0e^{kt}
+$$
+
+where $P_0$ is the initial population at time $t=0$ and k is
+
+$$
+k = \frac{1}{t} ln \frac{P(t)}{P_0}
+$$
+
+As an example, if we have an initial popular of 100 bacteria
+thats doubles every 3 hours,
+
+$$ P_0 = 100 \; and \; P(3) = 2P_0 = 200 $$
+
+the constant k would be
+
+$$ k = \frac{1}{3} ln \frac{200}{100} = \frac{1}{3} ln 2 =0.231$$
+
+Therefore, the population at time t would be,
+
+$$ P(t) = 100e^{0.231t} $$
