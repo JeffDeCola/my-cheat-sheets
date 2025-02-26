@@ -6,10 +6,13 @@ Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#overview)
 * [LIMITS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#limits)
-* [DIFFERENTIAL CALCULUS (THE DERIVATIVE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus-the-derivative)
+* [DIFFERENTIAL CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus)
+  * [THE DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-derivative)
   * [DEFINITION OF A DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-a-derivative)
   * [BASIC DERIVATIVE RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-derivative-rules)
-* [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
+* [INTEGRAL CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus)
+  * [THE INDEFINITE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-indefinite-integral)
+  * [THE DEFINITE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-definite-integral)
   * [DEFINITION OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-an-integral)
   * [BASIC INTEGRAL RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-integral-rules)
 * [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples)
@@ -108,10 +111,12 @@ defined as the limit of the average rate of change of the function as the
 interval over which the rate of change is calculated approaches zero.
 This will make more sense in the next section.
 
-## DIFFERENTIAL CALCULUS (THE DERIVATIVE)
+## DIFFERENTIAL CALCULUS
 
 Derivatives are the rate of change of a function.
 They describe how one quantity changes with respect to another.
+
+## THE DERIVATIVE
 
 The derivative of a function
 
@@ -238,15 +243,17 @@ f'(x) &= g'(h(x))h'(x)
 \end{aligned}
 $$
 
-## INTEGRAL CALCULUS (THE INTEGRAL)
+## INTEGRAL CALCULUS
 
 Integrals are the area under a curve. They describe the accumulation of a
 quantity over an interval.
 
+### THE INDEFINITE INTEGRAL
+
 The integral of a function
 
 $$
-y = f(x)
+f(x)
 $$
 
 is written as
@@ -272,11 +279,44 @@ $$
 The integral of `2x` is `x²` (see next section on how we did this).
 
 $$
-\int 2x dx = F(x) = x² + C
+\int 2x dx = x² + C
 $$
 
 So if you're looking for the area under the curve of `2x`, you would find the
 area of a triangle with base `x` and height `2x`.
+
+### THE DEFINITE INTEGRAL
+
+The definite integral of a function
+
+$$
+f(x)
+$$
+
+is written as
+
+$$
+\int_{a}^{b} f(x) dx = F(b) - F(a)
+$$
+
+where `F(b)` is the antiderivative of `f(x)` evaluated at `b` and
+`F(a)` is the antiderivative of `f(x)` evaluated at `a`.
+
+For example, given the function,
+
+$$
+f(x) = 2x
+$$
+
+The definite integral of `2x` from `0` to `2` is `4`.
+
+$$
+\begin{aligned}
+\int_{0}^{2} 2x dx &= x² \Big|_{0}^{2} \\
+                   &= 2² - 0² \\
+                   &= 4
+\end{aligned}
+$$
 
 ### DEFINITION OF AN INTEGRAL
 
@@ -383,5 +423,19 @@ $$
 $$
 
 The distance function is the **integral** of the velocity function.
+
+$$
+\int 50 dt = f(t) = 50t + C
+$$
+
+### THE SIGMOID FUNCTION
+
+The sigmoid function is a mathematical function having an "S" shaped curve
+(also called a sigmoid curve). Often, sigmoid function refers to the
+special case of the logistic function shown below.
+
+$$
+f(x) = \frac{1}{1 + e^{-x}}
+$$
 
 
