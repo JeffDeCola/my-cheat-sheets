@@ -5,10 +5,10 @@ _The study of continuous change._
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#overview)
+* [HOW TO SOLVE A DIFFERENTIAL EQUATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#how-to-solve-a-differential-equation)
 * [UNDERSTANDING f(x)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#understanding-fx)
   * [f(x) in CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-calculus)
   * [f(x) in DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-differential-equations)
-  * [SUMMARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#summary)
 * [CLASSIFICATION OF DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#classification-of-differential-equations)
   * [BY TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-type)
   * [BY ORDER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-order)
@@ -20,13 +20,13 @@ Documentation and Reference
 * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
   cheat sheet
 
+## OVERVIEW
+
 | CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
 |------------------------|------------------------------------|--------------------------------------|
 | CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
 | CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
 | DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
-
-## OVERVIEW
 
 * **Calculus** is a broad field of mathematics that includes
 differentiation (finding derivatives) and
@@ -44,6 +44,49 @@ change and accumulation.
 The goal of diffEQ is to find the function y(x) that satisfies the equation.
 ```
 
+## HOW TO SOLVE A DIFFERENTIAL EQUATION
+
+Given this first-order ordinary differential equation
+let's walk through the steps to solve it.
+
+$$
+\frac{dy}{dx} = 2x
+$$
+
+Separate the variables,
+
+$$
+dy = 2x dx
+$$
+
+Integrate both sides.
+
+$$
+\int dy = \int 2x dx
+$$
+
+$$
+y = x² + C
+$$
+
+Solve for the constant C using initial conditions.
+
+$$
+y(0) = 0² + C = 0
+$$
+
+Hence
+
+$$
+C = 0
+$$
+
+Therefore, the solution to the differential equation is
+
+$$
+y = x²
+$$
+
 ## UNDERSTANDING f(x)
 
 Understanding the role of $f(x)$ is important because:
@@ -60,7 +103,7 @@ Understanding the role of $f(x)$ is important because:
 In calculus, we define f(x) as the original function, and we
 find the derivative or integral on that function.
 
-#### Derivative
+**Derivative**
 
 Given a function, find the rate of change.
 
@@ -88,7 +131,7 @@ $$
 f'(x) = \frac{dy}{dx} = 2x + 3
 $$
 
-#### Integral
+**Integral**
 
 Given the rate of change, find the function.
 
@@ -132,10 +175,16 @@ $$
 y'(x) = \frac{dy}{dx} = f(x)
 $$
 
-To solve for y(x), we integrate both sides of the equation,
+Separate the variables
 
 $$
-\int \frac{dy}{dx} dx = \int f(x) dx
+{dy} = f(x){dx}
+$$
+
+integrate both sides of the equation,
+
+$$
+\int {dy} = \int f(x) dx
 $$
 
 $$
@@ -148,10 +197,22 @@ $$
 y'(x) = \frac{dy}{dx} = f(x) = 2x + 3
 $$
 
-Solve for y(x),
+or,
 
 $$
-\int \frac{dy}{dx} dx = \int (2x + 3) dx
+\frac{dy}{dx} = 2x + 3
+$$
+
+Separate the variables,
+
+$$
+dy = (2x + 3) dx
+$$
+
+Integrate both sides,
+
+$$
+\int dy = \int (2x + 3) dx
 $$
 
 $$
