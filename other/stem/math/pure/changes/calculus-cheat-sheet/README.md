@@ -12,7 +12,7 @@ Table of Contents
 * [INTEGRAL CALCULUS (THE INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#integral-calculus-the-integral)
   * [DEFINITION OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-an-integral)
   * [BASIC INTEGRAL RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-integral-rules)
-* [A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#a-real-world-example-using-derivatives-and-integrals)
+* [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples)
   * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
   * [FINDING DISTANCE FUNCTION (Using an Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-an-integral)
 
@@ -22,13 +22,13 @@ Documentation and Reference
   cheat sheet
 * [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
 
+## OVERVIEW
+
 | CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
 |------------------------|------------------------------------|--------------------------------------|
 | CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
 | CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
 | DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
-
-## OVERVIEW
 
 Calculus is a branch of mathematics that studies continuous change.
 It was developed independently by Isaac Newton and
@@ -349,17 +349,18 @@ $$
 \end{aligned}
 $$
 
-## A REAL WORLD EXAMPLE USING DERIVATIVES AND INTEGRALS
+## EXAMPLES
 
 Lets take everything we learned and use an example of a car driving.
 
 ### FINDING VELOCITY (Using a Derivative)
 
 Lets say a car travels 50 miles every hour.
+Instead of $x,y$ we will use $t,s$ for time and distance.
 We can write the distance function as
 
 $$
-s(t) = 50t
+s = f(t) = 50t
 $$
 
 where `t` is time in hours and `s` is distance in miles.
@@ -367,7 +368,7 @@ where `t` is time in hours and `s` is distance in miles.
 The velocity of the car is the **derivative** of the distance function.
 
 $$
-v(t) = \frac{ds}{dt} = 50
+\frac{ds}{dt} = f'(t) = 50
 $$
 
 So the velocity of the car is 50 mph.
@@ -378,13 +379,9 @@ Lets say we know the velocity of a car is 50 mph.
 We can write the velocity function as
 
 $$
-v(t) = 50
+\frac{ds}{dt} = f'(t) = 50
 $$
 
-The distance the car travels is the **integral** of the velocity function.
+The distance function is the **integral** of the velocity function.
 
-$$
-s(t) = \int v(t) dt = 50t + C
-$$
 
-So the distance the car travels is 50t + C.
