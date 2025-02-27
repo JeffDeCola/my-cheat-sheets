@@ -258,6 +258,7 @@ where $u$ is a function of $x$ and $t$.
   $$
   y'(x) = \frac{dy}{dx} = 2x
   $$
+
 * **Second-order** differential equations involve the second derivative.
   For example,
 
@@ -316,7 +317,7 @@ $$
 As an example, if we have an initial popular of 100 bacteria
 thats doubles every 3 hours,
 
-$$ P_0 = 100 \; and \; P(3) = 2P_0 = 200 $$
+$$ P_0 = 100 \quad and \quad P(3) = 2P_0 = 200 $$
 
 the constant k would be
 
