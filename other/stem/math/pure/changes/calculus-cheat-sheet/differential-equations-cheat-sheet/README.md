@@ -22,12 +22,6 @@ Documentation and Reference
 
 ## OVERVIEW
 
-| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
-|------------------------|------------------------------------|--------------------------------------|
-| CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
-| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
-
 * **Calculus** is a broad field of mathematics that includes
 differentiation (finding derivatives) and
 integration (finding integrals).
@@ -36,15 +30,30 @@ It focuses on rates of change and accumulation.
 * **Differential Equations** (DiffEQ) are a specific branch of mathematics
 that deals with equations involving derivatives.
 A differential equation expresses a relationship between a function and its derivatives.
-As we will see, differential equations are used to
+Differential equations are used to
 model real-world phenomena involving rates of
 change and accumulation.
 
-```text
-The goal of diffEQ is to find the function y(x) that satisfies the equation.
-```
+It's important to understand the role of $f(x)$ in both calculus and differential equations.
+
+| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
+|------------------------|------------------------------------|--------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx + C$      |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
+
+It's also important to understand the notation,
+
+* $dx$ means a small change in x
+* $dy$ means a small change in y
+* $\frac{dy}{dx}$ means the rate of change of y with respect to x
 
 ## HOW TO SOLVE A DIFFERENTIAL EQUATION
+
+```text
+The goal of diffEQ is to find the function y(x) that satisfies the
+differential equation.
+```
 
 Given this first-order ordinary differential equation
 let's walk through the steps to solve it.

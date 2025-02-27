@@ -8,7 +8,7 @@ Table of Contents
 * [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
   * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-summation-function)
   * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
-* [NEURAL NETWORKS ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-networks-architectures)
+* [ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-architectures)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
   * [MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
   * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
@@ -105,7 +105,7 @@ I like to use _**s**_ as the input to the activation function to
 represent the weighted sum of the inputs plus bias.
 Here are a few common activation functions,
 
-* **Sigmoid Function**
+* [Sigmoid Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function)
   * Output Range: (0, 1)
   * Usage: Often used in the output layer of neural networks for binary
     classification problems
@@ -114,8 +114,8 @@ Here are a few common activation functions,
 
 $$
 \begin{aligned}
-y &= f(s) = \frac{1}{1 + e^{-s}} \\
-y'(s) =\frac{dy}{ds} &= \frac{d}{ds}f(s) = f(s)(1-f(s))
+\sigma(x) &= \frac{1}{1 + e^{-x}} \\
+\sigma'(x) &= \sigma(x) \cdot (1 - \sigma(x))
 \end{aligned}
 $$
 
@@ -124,37 +124,10 @@ $$
   * Usage: Often used in hidden layers of neural networks
 
 $$
-y = f(s) = \tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}
+\tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}
 $$
 
-* **ReLU (Rectified Linear Unit) Function**
-  * Output Range: [0, ∞)
-  * Usage: Commonly used in hidden layers of deep neural networks due
-    to its simplicity and effectiveness
-
-$$
-y = f(s) = \max(0, s)
-$$
-
-* **Leaky ReLU Function**
-  * Output Range: (-∞, ∞)
-  * Addresses the "dying ReLU" problem by allowing a small, non-zero gradient
-    when the unit is not active
-
-$$
-y = f(s) = \max(\alpha s, s)
-$$
-
-* **Softmax Function**
-  * Output Range: (0, 1) for each class, and the sum of all outputs is 1
-  * Usage: Commonly used in the output layer of neural networks
-    for multi-class classification problems
-
- $$
- y = f(s_i) = \frac{e^{s_i}}{\sum_{j} e^{s_j}}
- $$
-
-## NEURAL NETWORKS ARCHITECTURES
+## ARCHITECTURES
 
 Nomenclature,
 
