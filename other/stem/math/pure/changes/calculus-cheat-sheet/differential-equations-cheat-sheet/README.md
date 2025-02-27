@@ -181,32 +181,32 @@ the derivative of another function y(x).
 Like integrals, start with the rate of change and find the function.
 
 $$
-y'(x) = \frac{dy}{dx} = f(x)
+f(x) = \frac{dy}{dx}
 $$
 
 Separate the variables
 
 $$
-{dy} = f(x){dx}
+f(x){dx} = {dy}
 $$
 
 integrate both sides of the equation,
 
 $$
-\int {dy} = \int f(x) dx
+ \int f(x) dx = \int {dy}
 $$
 
 $$
-y(x) = \int f(x) dx
+\int f(x) dx = y(x)
 $$
 
 As an example,
 
 $$
-y'(x) = \frac{dy}{dx} = f(x) = 2x + 3
+f(x) = \frac{dy}{dx} = 2x + 3
 $$
 
-or,
+or
 
 $$
 \frac{dy}{dx} = 2x + 3
