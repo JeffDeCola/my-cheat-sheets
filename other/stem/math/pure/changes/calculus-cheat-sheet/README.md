@@ -15,10 +15,12 @@ Table of Contents
   * [THE DEFINITE INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-definite-integral)
   * [DEFINITION OF AN INTEGRAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-an-integral)
   * [BASIC INTEGRAL RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-integral-rules)
-* [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples)
-  * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
-  * [FINDING DISTANCE FUNCTION (Using an Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-an-integral)
-  * [THE SIGMOID FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function)
+* [EXAMPLES - DERIVATIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---derivatives)
+  * [FINDING VELOCITY (Using the Power Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-the-power-rule)
+  * [THE SIGMOID FUNCTION (Using the Quotient Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function-using-the-quotient-rule)
+  * [EXAMPLE (Using the Chain Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#example-using-the-chain-rule)
+* [EXAMPLES - INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---integrals)
+  * [FINDING DISTANCE FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function)
 
 Documentation and Reference
 
@@ -183,6 +185,7 @@ or
 $$
 \frac{df(x)}{dx}
 $$
+
 ### DEFINITION OF A DERIVATIVE
 
 We learned about limits because the derivative of a function is
@@ -265,10 +268,14 @@ $$
 **Chain Rule**
 
 $$
-\begin{aligned}
-f(x) &= g(h(x)) \\
-f'(x) &= g'(h(x))h'(x)
-\end{aligned}
+f(x) = g(h(x))
+$$
+
+* h(x) is the inner function
+* g(u) is the outer function with u = h(x)
+
+$$
+f'(x) = g'(h(x)) \cdot h'(x)
 $$
 
 ## INTEGRAL CALCULUS
@@ -418,11 +425,11 @@ $$
 \end{aligned}
 $$
 
-## EXAMPLES
+## EXAMPLES - DERIVATIVES
 
-Lets take everything we learned and use an example of a car driving.
+Some derivative examples.
 
-### FINDING VELOCITY (Using a Derivative)
+### FINDING VELOCITY (Using the Power Rule)
 
 Lets say a car travels 50 miles every hour.
 Instead of $x,y$ we will use $t,s$ for time and distance.
@@ -434,7 +441,32 @@ $$
 
 where `t` is time in hours and `s` is distance in miles.
 
-The velocity of the car is the **derivative** of the distance function.
+Let's find the derivative of the distance function using the Power Rule,
+
+$$
+\begin{aligned}
+f(x) &= x^n \\
+f'(x) &= nx^{n-1}
+\end{aligned}
+$$
+
+For the distance function,
+
+$$
+n = 1
+$$
+
+Hence the derivative of the sigmoid function is,
+
+$$
+\begin{aligned}
+f'(t) &= 1 \cdot 50t^{1-1} \\
+f'(t) &= 50t^0 \\
+f'(t) &= 50
+\end{aligned}
+$$
+
+Therefor the velocity of the car is the **derivative** of the distance function.
 
 $$
 f'(t) = \frac{ds}{dt} =  50
@@ -442,22 +474,7 @@ $$
 
 So the velocity of the car is 50 mph.
 
-### FINDING DISTANCE FUNCTION (Using an Integral)
-
-Lets say we know the velocity of a car is 50 mph.
-We can write the velocity function as
-
-$$
-f'(t) = \frac{ds}{dt} = 50
-$$
-
-The distance function is the **integral** of the velocity function.
-
-$$
-f(t) = \int 50 dt = 50t + C
-$$
-
-### THE SIGMOID FUNCTION
+### THE SIGMOID FUNCTION (Using the Quotient Rule)
 
 The sigmoid function is a mathematical function having an "S" shaped curve
 (also called a sigmoid curve).
@@ -479,7 +496,7 @@ $$
 0 \lt \sigma(x) \lt 1
 $$
 
-An the derivative of the sigmoid function is as we will find below,
+An the derivative of the sigmoid function is (see below),
 
 $$
 \sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
@@ -491,15 +508,17 @@ This is a very important property of the sigmoid function and is used in
 neural networks. Because it makes it easy to compute the derivative of
 the sigmoid function during backpropagation.
 
-**Finding the Derivative of the Sigmoid Function**
+Let's find the derivative of the sigmoid function using the Quotient Rule,
 
-Let's find the derivative of the sigmoid function using the quotient rule,
+$$
+\sigma(x) = \frac{g(x)}{h(x)}
+$$
 
 $$
 \sigma'(x) = \frac{g'(x)h(x) - g(x)h'(x)}{h(x)^2}
 $$
 
-where
+For the sigmoid function,
 
 $$
 \begin{aligned}
@@ -510,7 +529,7 @@ h'(x) &= -e^{-x}
 \end{aligned}
 $$
 
-Hence, the derivative of the sigmoid function is,
+Hence the derivative of the sigmoid function is,
 
 $$
 \begin{aligned}
@@ -519,7 +538,7 @@ $$
 \end{aligned}
 $$
 
-Now, let's simplify this.
+Now, let's simplify this,
 
 $$
 \begin{aligned}
@@ -533,4 +552,65 @@ Hence,
 
 $$
 \sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
+$$
+
+### EXAMPLE (Using the Chain Rule)
+
+Giving the function,
+
+$$
+f(x)=(3x^2 + 5x − 2)^4
+$$
+
+Let's find the derivative of the function using the
+Chain Rule,
+
+$$
+\begin{aligned}
+f(x) &= g(h(x)) \\
+f'(x) &= g'(h(x)) \cdot h'(x) \\
+\end{aligned}
+$$
+
+For our function, we take the outer and inner functions as
+
+$$
+\begin{aligned}
+g(u) &= u^4 \\
+h(x) &= 3x^2 + 5x − 2
+\end{aligned}
+$$
+
+And those derivatives are,
+
+$$
+\begin{aligned}
+g'(u) &= 4u^3 \\
+h'(x) &= 6x + 5
+\end{aligned}
+$$
+
+Hence the derivative of the function is,
+
+$$
+f'(x) = 4(3x^2 + 5x − 2)^3 \cdot (6x + 5)
+$$
+
+## EXAMPLES - INTEGRALS
+
+Some integrals examples.
+
+### FINDING DISTANCE FUNCTION
+
+Lets say we know the velocity of a car is 50 mph.
+We can write the velocity function as
+
+$$
+f'(t) = \frac{ds}{dt} = 50
+$$
+
+The distance function is the **integral** of the velocity function.
+
+$$
+f(t) = \int 50 dt = 50t + C
 $$
