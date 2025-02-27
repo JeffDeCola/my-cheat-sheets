@@ -133,7 +133,7 @@ This will make more sense in the next section.
 Derivatives are the rate of change of a function.
 They describe how one quantity changes with respect to another.
 
-## THE DERIVATIVE
+### THE DERIVATIVE
 
 The derivative of a function
 
@@ -172,6 +172,17 @@ So if you're at `x = 2`, the slope (change) of the tangent line is `4`.
 Hence, the derivative of a function is the slope of the tangent line to the curve
 at a given point.
 
+You will usually see the following notation to find the derivative of a function,
+
+$$
+\frac{d}{dx} f(x)
+$$
+
+or
+
+$$
+\frac{df(x)}{dx}
+$$
 ### DEFINITION OF A DERIVATIVE
 
 We learned about limits because the derivative of a function is
