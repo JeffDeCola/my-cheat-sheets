@@ -28,7 +28,7 @@ examples written in go
 
 ## OVERVIEW
 
-A neural network is,
+A neural network is
 
 * A series of algorithms that endeavors to recognize
 underlying relationships in a set of data through a process that mimics the

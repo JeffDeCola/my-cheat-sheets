@@ -277,10 +277,6 @@ Consider a population of bacteria that grows at a rate proportional to the
 current population. The differential equation that models this growth is,
 
 $$
-\frac{dP}{dt} = kP
-$$
-
-$$
 P'(t)= \frac{dP}{dt} = kP
 $$
 
