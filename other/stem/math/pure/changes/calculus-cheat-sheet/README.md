@@ -382,7 +382,7 @@ $$
 and
 
 $$
-n \to \infty \; and \; \Delta x \to 0
+n \to \infty \quad and \quad \Delta x \to 0
 $$
 
 So giving the example above of $f'(x) = 2x$, the integral is
