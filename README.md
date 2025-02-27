@@ -508,7 +508,7 @@ _Other cheat sheets I'm interested in._
     * CHANGES
 
       * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
-        * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus/differential-equations-cheat-sheet)
+        * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
       * [chaos theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/chaos-theory-cheat-sheet)
       * [complex analysis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/complex-analysis-cheat-sheet)
       * [dynamical systems](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/dynamical-systems-cheat-sheet)
