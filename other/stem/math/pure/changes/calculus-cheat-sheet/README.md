@@ -138,13 +138,13 @@ They describe how one quantity changes with respect to another.
 The derivative of a function
 
 $$
-y = f(x)
+f(x) = y
 $$
 
 is written as
 
 $$
-\frac{dy}{dx} = f'(x)
+f'(x) = \frac{dy}{dx}
 $$
 
 where `dy` is the change in `y`, `dx` is the change in `x`, and `f'(x)` is the
@@ -153,13 +153,13 @@ derivative of `f(x)`.
 For example, given the function,
 
 $$
-y = f(x) = x² + 2
+f(x) = y = x² + 2
 $$
 
 The derivative of `x²` is `2x` (see next section on how we did this).
 
 $$
-\frac{dy}{dx} = f'(x) = 2x
+f'(x) = \frac{dy}{dx}  = 2x
 $$
 
 So if you're at `x = 2`, the slope (change) of the tangent line is `4`.
@@ -418,7 +418,7 @@ Instead of $x,y$ we will use $t,s$ for time and distance.
 We can write the distance function as
 
 $$
-s = f(t) = 50t
+f(t) = s = 50t
 $$
 
 where `t` is time in hours and `s` is distance in miles.
@@ -426,7 +426,7 @@ where `t` is time in hours and `s` is distance in miles.
 The velocity of the car is the **derivative** of the distance function.
 
 $$
-\frac{ds}{dt} = f'(t) = 50
+f'(t) = \frac{ds}{dt} =  50
 $$
 
 So the velocity of the car is 50 mph.
@@ -437,13 +437,13 @@ Lets say we know the velocity of a car is 50 mph.
 We can write the velocity function as
 
 $$
-\frac{ds}{dt} = f'(t) = 50
+f'(t) = \frac{ds}{dt} = 50
 $$
 
 The distance function is the **integral** of the velocity function.
 
 $$
-\int 50 dt = f(t) = 50t + C
+f(t) = \int 50 dt = 50t + C
 $$
 
 ### THE SIGMOID FUNCTION
