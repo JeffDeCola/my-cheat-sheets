@@ -18,6 +18,7 @@ Table of Contents
 * [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples)
   * [FINDING VELOCITY (Using a Derivative)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-a-derivative)
   * [FINDING DISTANCE FUNCTION (Using an Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-an-integral)
+  * [THE SIGMOID FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function)
 
 Documentation and Reference
 
@@ -27,18 +28,33 @@ Documentation and Reference
 
 ## OVERVIEW
 
+* **Calculus** is a broad field of mathematics that includes
+differentiation (finding derivatives) and
+integration (finding integrals).
+It focuses on rates of change and accumulation.
+
+* **Differential Equations** (DiffEQ) are a specific branch of mathematics
+that deals with equations involving derivatives.
+A differential equation expresses a relationship between a function and its derivatives.
+Differential equations are used to
+model real-world phenomena involving rates of
+change and accumulation.
+
+It's important to understand the role of $f(x)$ in both calculus and differential equations.
+
 | CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
 |------------------------|------------------------------------|--------------------------------------|
 | CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx$          |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx + C$      |
 | DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
 
-Calculus is a branch of mathematics that studies continuous change.
-It was developed independently by Isaac Newton and
-Gottfried Leibniz in the 17th century, and it has become one of
-the most powerful and widely-used mathematic tools ever created.
+It's also important to understand the notation,
 
-Two branches of Calculus,
+* $dx$ means a small change in x
+* $dy$ means a small change in y
+* $\frac{dy}{dx}$ means the rate of change of y with respect to x
+
+There are two branches of Calculus,
 
 * Differential Calculus
   * Rate of change and slopes
@@ -56,6 +72,7 @@ Two branches of Calculus,
 
 ## LIMITS
 
+Before we get into calculus, we need to understand limits.
 Limits are the foundation of calculus. They describe the value a function
 approaches as the input approaches a certain value.
 
@@ -313,6 +330,7 @@ The definite integral of `2x` from `0` to `2` is `4`.
 $$
 \begin{aligned}
 \int_{0}^{2} 2x dx &= x² \Big|_{0}^{2} \\
+                   &= F(2) - F(0) \\
                    &= 2² - 0² \\
                    &= 4
 \end{aligned}
@@ -431,11 +449,77 @@ $$
 ### THE SIGMOID FUNCTION
 
 The sigmoid function is a mathematical function having an "S" shaped curve
-(also called a sigmoid curve). Often, sigmoid function refers to the
-special case of the logistic function shown below.
+(also called a sigmoid curve).
+
+<p align="center">
+    <img src="svgs/sigmoid-function.svg"
+    align="middle"
+</p>
+
+The sigmoid function is defined as,
 
 $$
-f(x) = \frac{1}{1 + e^{-x}}
+\sigma(x) = \frac{1}{1 + e^{-x}}
 $$
 
+The range of the sigmoid function is between 0 and 1.
 
+$$
+0 \lt \sigma(x) \lt 1
+$$
+
+An the derivative of the sigmoid function is as we will find below,
+
+$$
+\sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
+$$
+
+Which is interesting. The derivative of the sigmoid function is the sigmoid
+function times 1 minus the sigmoid function.
+This is a very important property of the sigmoid function and is used in
+neural networks. Because it makes it easy to compute the derivative of
+the sigmoid function during backpropagation.
+
+**Finding the Derivative of the Sigmoid Function**
+
+Let's find the derivative of the sigmoid function using the quotient rule,
+
+$$
+\sigma'(x) = \frac{g'(x)h(x) - g(x)h'(x)}{h(x)^2}
+$$
+
+where
+
+$$
+\begin{aligned}
+g(x) &= 1 \\
+g'(x) &= 0 \\
+h(x) &= 1 + e^{-x} \\
+h'(x) &= -e^{-x}
+\end{aligned}
+$$
+
+Hence, the derivative of the sigmoid function is,
+
+$$
+\begin{aligned}
+\sigma'(x) &= \frac{0 \cdot (1 + e^{-x}) - 1 \cdot (-e^{-x})}{(1 + e^{-x})^2} \\
+\sigma'(x) &= \frac{e^{-x}}{(1 + e^{-x})^2}
+\end{aligned}
+$$
+
+Now, let's simplify this.
+
+$$
+\begin{aligned}
+\sigma'(x) &= \frac{1}{1 + e^{-x}} \cdot \frac{e^{-x}}{1 + e^{-x}} \\
+\sigma'(x) &= \frac{1}{1 + e^{-x}} \cdot \frac{1 + e^{-x} - 1}{1 + e^{-x}} \\
+\sigma'(x) &= \frac{1}{1 + e^{-x}} \cdot \left( 1 - \frac{1}{1 + e^{-x}} \right)
+\end{aligned}
+$$
+
+Hence,
+
+$$
+\sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
+$$
