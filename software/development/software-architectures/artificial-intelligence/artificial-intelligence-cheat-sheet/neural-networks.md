@@ -125,13 +125,25 @@ $$
     align="middle"
 </p>
 
-* **Tanh (Hyperbolic Tangent) Function**
+* [Tanh Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-tanh-function-using-the-quotient-rule)
   * Output Range: (-1, 1)
   * Usage: Often used in hidden layers of neural networks
+  * The tanh function is a scaled version of the sigmoid function
+  * The tanh function is zero-centered, which helps the model learn
+    faster and prevents the gradients from vanishing
+  * Also, the derivative is just a simple function of the original function
 
 $$
-\tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}
+\begin{aligned}
+\tanh(s) &= \frac{e^s - e^{-s}}{e^s + e^{-s}} \\
+\tanh'(x) &= 1 - \tanh^2(x)
+\end{aligned}
 $$
+
+<p align="center">
+    <img src="svgs/tanh-function.svg"
+    align="middle"
+</p>
 
 ## ARCHITECTURES
 
