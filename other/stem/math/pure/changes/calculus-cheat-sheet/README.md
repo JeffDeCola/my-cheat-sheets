@@ -20,7 +20,7 @@ Table of Contents
   * [THE SIGMOID FUNCTION (Using the Quotient Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function-using-the-quotient-rule)
   * [EXAMPLE (Using the Chain Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#example-using-the-chain-rule)
 * [EXAMPLES - INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---integrals)
-  * [FINDING DISTANCE FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function)
+  * [FINDING DISTANCE FUNCTION (Using the Power Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-the-power-rule)
 
 Documentation and Reference
 
@@ -220,7 +220,7 @@ $$
 
 ### BASIC DERIVATIVE RULES
 
-**Power Rule**
+#### Power Rule
 
 $$
 \begin{aligned}
@@ -229,7 +229,7 @@ f'(x) &= nx^{n-1}
 \end{aligned}
 $$
 
-**Constant Rule**
+#### Constant Rule
 
 $$
 \begin{aligned}
@@ -238,7 +238,7 @@ f'(x) &= 0
 \end{aligned}
 $$
 
-**Sum Rule**
+#### Sum Rule
 
 $$
 \begin{aligned}
@@ -247,7 +247,7 @@ f'(x) &= g'(x) + h'(x)
 \end{aligned}
 $$
 
-**Product Rule**
+#### Product Rule
 
 $$
 \begin{aligned}
@@ -256,7 +256,7 @@ f'(x) &= g'(x)h(x) + g(x)h'(x)
 \end{aligned}
 $$
 
-**Quotient Rule**
+#### Quotient Rule
 
 $$
 \begin{aligned}
@@ -265,14 +265,16 @@ f'(x) &= \frac{g'(x)h(x) - g(x)h'(x)}{h(x)^2}
 \end{aligned}
 $$
 
-**Chain Rule**
+#### Chain Rule
 
 $$
 f(x) = g(h(x))
 $$
 
-* h(x) is the inner function
-* g(u) is the outer function with u = h(x)
+$$
+\text{\scriptsize h(x) is the inner function} \\
+\text{\scriptsize g(u) is the outer function with u = h(x)}
+$$
 
 $$
 f'(x) = g'(h(x)) \cdot h'(x)
@@ -401,28 +403,22 @@ $$
 
 ### BASIC INTEGRAL RULES
 
-**Power Rule**
+#### The Power Rule
 
 $$
-\begin{aligned}
-\int x^n dx &= \frac{x^{n+1}}{n+1} + C
-\end{aligned}
+\int x^n dx = \frac{x^{n+1}}{n+1} + C
 $$
 
-**Constant Rule**
+#### The Constant Rule
 
 $$
-\begin{aligned}
-\int c dx &= cx + C
-\end{aligned}
+\int c dx = cx + C
 $$
 
-**Sum Rule**
+#### The Sum Rule
 
 $$
-\begin{aligned}
-\int (f(x) + g(x)) dx &= \int f(x) dx + \int g(x) dx
-\end{aligned}
+\int (f(x) + g(x)) dx = \int f(x) dx + \int g(x) dx
 $$
 
 ## EXAMPLES - DERIVATIVES
@@ -566,22 +562,28 @@ Let's find the derivative of the function using the
 Chain Rule,
 
 $$
+f(x) = g(h(x))
+$$
+
+$$
+\text{\scriptsize h(x) is the inner function} \\
+\text{\scriptsize g(u) is the outer function with u = h(x)}
+$$
+
+$$
+f'(x) = g'(h(x)) \cdot h'(x)
+$$
+
+For our function, we take the inner and outer functions as
+
+$$
 \begin{aligned}
-f(x) &= g(h(x)) \\
-f'(x) &= g'(h(x)) \cdot h'(x) \\
+h(x) &= 3x^2 + 5x − 2 \\
+g(u) &= u^4
 \end{aligned}
 $$
 
-For our function, we take the outer and inner functions as
-
-$$
-\begin{aligned}
-g(u) &= u^4 \\
-h(x) &= 3x^2 + 5x − 2
-\end{aligned}
-$$
-
-And those derivatives are,
+Where those derivatives are,
 
 $$
 \begin{aligned}
@@ -600,7 +602,7 @@ $$
 
 Some integrals examples.
 
-### FINDING DISTANCE FUNCTION
+### FINDING DISTANCE FUNCTION (Using the Power Rule)
 
 Lets say we know the velocity of a car is 50 mph.
 We can write the velocity function as
@@ -610,6 +612,16 @@ f'(t) = \frac{ds}{dt} = 50
 $$
 
 The distance function is the **integral** of the velocity function.
+
+Let's find the distance function using the Power Rule,
+
+$$
+\begin{aligned}
+\int c dx &= cx + C
+\end{aligned}
+$$
+
+Hence,
 
 $$
 f(t) = \int 50 dt = 50t + C

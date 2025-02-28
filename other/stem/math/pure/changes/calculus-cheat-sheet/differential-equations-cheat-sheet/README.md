@@ -7,12 +7,13 @@ Table of Contents
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#overview)
 * [HOW TO SOLVE A DIFFERENTIAL EQUATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#how-to-solve-a-differential-equation)
 * [UNDERSTANDING f(x)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#understanding-fx)
-  * [f(x) in CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-calculus)
+  * [f(x) in CALCULUS (DERIVATIVE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-calculus-derivative)
+  * [f(x) in CALCULUS (INTEGRAL)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-calculus-integral)
   * [f(x) in DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-differential-equations)
 * [CLASSIFICATION OF DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#classification-of-differential-equations)
   * [BY TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-type)
   * [BY ORDER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-order)
-* [A REAL WORLD EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#a-real-world-example)
+* [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#examples)
   * [POPULATION GROWTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#population-growth)
 
 Documentation and Reference
@@ -107,12 +108,7 @@ Understanding the role of $f(x)$ is important because:
 * The notation can be tricky, but knowing whether **$f(x)$ is the function
   or its derivative** helps avoid confusion.
 
-### f(x) in CALCULUS
-
-In calculus, we define f(x) as the original function, and we
-find the derivative or integral on that function.
-
-**Derivative**
+### f(x) in CALCULUS (DERIVATIVE)
 
 Given a function, find the rate of change.
 
@@ -140,7 +136,7 @@ $$
 f'(x) = \frac{dy}{dx} = 2x + 3
 $$
 
-**Integral**
+### f(x) in CALCULUS (INTEGRAL)
 
 Given the rate of change, find the function.
 
@@ -266,7 +262,7 @@ where $u$ is a function of $x$ and $t$.
   y''(x) = \frac{d²y}{dx²} = 2x
   $$
 
-## A REAL WORLD EXAMPLE
+## EXAMPLES
 
 Since differential equations are used to model real-world phenomena,
 let's consider a simple example. Remember, the goal of differential
