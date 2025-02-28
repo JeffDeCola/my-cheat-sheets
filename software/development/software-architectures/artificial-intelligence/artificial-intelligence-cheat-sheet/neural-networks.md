@@ -18,13 +18,14 @@ Table of Contents
 
 Documentation and Reference
 
-* [Artificial intelligence cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-* [My neural networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
-examples written in go
+* [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
+cheat sheet
+* [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
   * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron-simple-example)
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-classification-example)
   * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-regression-example)
   * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-image-recognition-example)
+* [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 
 ## OVERVIEW
 
@@ -105,7 +106,7 @@ I like to use _**s**_ as the input to the activation function to
 represent the weighted sum of the inputs plus bias.
 Here are a few common activation functions,
 
-* [Sigmoid Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function)
+* [Sigmoid Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function-using-the-quotient-rule)
   * Output Range: (0, 1)
   * Usage: Often used in the output layer of neural networks for binary
     classification problems
@@ -118,6 +119,11 @@ $$
 \sigma'(x) &= \sigma(x) \cdot (1 - \sigma(x))
 \end{aligned}
 $$
+
+<p align="center">
+    <img src="svgs/sigmoid-function.svg"
+    align="middle"
+</p>
 
 * **Tanh (Hyperbolic Tangent) Function**
   * Output Range: (-1, 1)
