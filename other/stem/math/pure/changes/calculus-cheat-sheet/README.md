@@ -272,8 +272,10 @@ f(x) = g(h(x))
 $$
 
 $$
+\begin{aligned}
 \text{\scriptsize h(x) is the inner function} \\
 \text{\scriptsize g(u) is the outer function with u = h(x)}
+\end{aligned}
 $$
 
 $$
@@ -566,8 +568,10 @@ f(x) = g(h(x))
 $$
 
 $$
+\begin{aligned}
 \text{\scriptsize h(x) is the inner function} \\
 \text{\scriptsize g(u) is the outer function with u = h(x)}
+\end{aligned}
 $$
 
 $$
