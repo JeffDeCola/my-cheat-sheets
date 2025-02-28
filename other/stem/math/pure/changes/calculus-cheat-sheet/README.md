@@ -53,9 +53,17 @@ It's important to understand the role of $f(x)$ in both calculus and differentia
 
 It's also important to understand the notation,
 
-* $dx$ means a small change in x
-* $dy$ means a small change in y
+* $dx$ means  infinitesimal step in x
+* $dy$ means  infinitesimal step in y
 * $\frac{dy}{dx}$ means the rate of change of y with respect to x
+
+So,
+
+$$
+dx(t) = y(t)dt
+$$
+
+Would mean, the infinitesimal area, dx(t), of this thin slice can be found by multiplying its height, y(t), to its infinitesimal width dt.
 
 There are two branches of Calculus,
 
