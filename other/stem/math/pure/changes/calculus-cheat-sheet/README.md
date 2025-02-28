@@ -18,6 +18,7 @@ Table of Contents
 * [EXAMPLES - DERIVATIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---derivatives)
   * [FINDING VELOCITY (Using the Power Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-velocity-using-the-power-rule)
   * [THE SIGMOID FUNCTION (Using the Quotient Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-sigmoid-function-using-the-quotient-rule)
+  * [THE TANH FUNCTION (Using the Quotient Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-tanh-function-using-the-quotient-rule)
   * [EXAMPLE (Using the Chain Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#example-using-the-chain-rule)
 * [EXAMPLES - INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---integrals)
   * [FINDING DISTANCE FUNCTION (Using the Power Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-the-power-rule)
@@ -494,7 +495,7 @@ $$
 0 \lt \sigma(x) \lt 1
 $$
 
-An the derivative of the sigmoid function is (see below),
+And the derivative of the sigmoid function is (see solution below),
 
 $$
 \sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
@@ -551,6 +552,148 @@ Hence,
 $$
 \sigma'(x) = \sigma(x) \cdot (1 - \sigma(x))
 $$
+
+### THE TANH FUNCTION (Using the Quotient Rule)
+
+The tanh function is a mathematical function having an "S" shaped curve
+(also called a sigmoid curve).
+
+<p align="center">
+    <img src="svgs/tanh-function.svg"
+    align="middle"
+</p>
+
+The tanh function is defined as,
+
+$$
+\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+$$
+
+The range of the tanh function is between -1 and 1.
+
+$$
+-1 \lt \tanh(x) \lt 1
+$$
+
+And the derivative of the tanh function is (see solution below),
+
+$$
+\tanh'(x) = 1 - \tanh^2(x)
+$$
+
+Which is interesting. The derivative of the tanh function is 1 minus the tanh function squared.
+This is a very important property of the tanh function and is used in
+neural networks. Because it makes it easy to compute the derivative of
+the tanh function during backpropagation.
+
+Let's find the derivative of the tanh function using the Quotient Rule,
+
+$$
+\tanh(x) = \frac{g(x)}{h(x)}
+$$
+
+$$
+\tanh'(x) = \frac{g'(x)h(x) - g(x)h'(x)}{h(x)^2}
+$$
+
+For the tanh function,
+
+$$
+\begin{aligned}
+g(x) &= e^x - e^{-x} \\
+g'(x) &= e^x + e^{-x} \\
+h(x) &= e^x + e^{-x} \\
+h'(x) &= e^x - e^{-x}
+\end{aligned}
+$$
+
+Hence the derivative of the tanh function is,
+
+$$
+\begin{aligned}
+\tanh'(x) &= \frac{(e^x + e^{-x})(e^x + e^{-x}) - (e^x - e^{-x})(e^x - e^{-x})}{(e^x + e^{-x})^2} \\
+\tanh'(x) &= \frac{(e^x + e^{-x})^2 - (e^x - e^{-x})^2}{(e^x + e^{-x})^2} \\
+\end{aligned}
+$$
+
+We know that,
+
+$$
+\begin{aligned}
+(a + b)^2 &= a^2 + 2ab + b^2 \\
+(a - b)^2 &= a^2 - 2ab + b^2
+\end{aligned}
+$$
+
+So
+
+$$
+\begin{aligned}
+(e^x + e^{-x})^2 &= e^{2x} + 2e^x e^{-x} + e^{-2x} = e^{2x} + 2 + e^{-2x} \\
+(e^x - e^{-x})^2 &= e^{2x} - 2e^x e^{-x} + e^{-2x} = e^{2x} - 2 + e^{-2x}
+\end{aligned}
+$$
+
+Plug this back in, we simplify to,
+
+$$
+\begin{aligned}
+\tanh'(x) &= \frac{e^{2x} + 2 + e^{-2x} - e^{2x} + 2 - e^{-2x}}{(e^x + e^{-x})^2} \\
+\tanh'(x) &= \frac{4}{(e^x + e^{-x})^2} \\
+\end{aligned}
+$$
+
+Now, with a little leap of faith, 4 can be written as,
+
+$$
+\begin{aligned}
+4 = (e^x + e^{-x})^2 -(e^x - e^{-x})^2
+\end{aligned}
+$$
+
+So now the derivative looks like,
+
+$$
+\begin{aligned}
+\tanh'(x) &= \frac{(e^x + e^{-x})^2 - (e^x - e^{-x})^2}{(e^x + e^{-x})^2} \\
+\end{aligned}
+$$
+
+We can then split the fraction,
+
+$$
+\begin{aligned}
+\tanh'(x) &= \frac{(e^x + e^{-x})^2}{(e^x + e^{-x})^2} - \frac{(e^x - e^{-x})^2}{(e^x + e^{-x})^2} \\
+\tanh'(x) &= 1 - \frac{(e^x - e^{-x})^2}{(e^x + e^{-x})^2} \\
+\end{aligned}
+$$
+
+Now if we recognize that the original function,
+
+$$
+\begin{aligned}
+\tanh(x) &= \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
+\end{aligned}
+$$
+
+Than squaring the original function would be,
+
+$$
+\begin{aligned}
+\tanh^2(x) &= \left( \frac{e^x - e^{-x}}{e^x + e^{-x}} \right)^2 \\
+\tanh^2(x) &= \frac{(e^x - e^{-x})^2}{(e^x + e^{-x})^2} \\
+\end{aligned}
+$$
+
+Plug this into the derivative to get,
+
+$$
+\begin{aligned}
+\tanh'(x) &= 1 - \tanh^2(x)
+\end{aligned}
+$$
+
+Whew, that was a lot of work.
 
 ### EXAMPLE (Using the Chain Rule)
 
