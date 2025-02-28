@@ -135,7 +135,7 @@ $$
 
 $$
 \begin{aligned}
-\tanh(s) &= \frac{e^s - e^{-s}}{e^s + e^{-s}} \\
+\tanh(x) &= \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
 \tanh'(x) &= 1 - \tanh^2(x)
 \end{aligned}
 $$
