@@ -234,16 +234,16 @@ classify them by type and order.
 
 * **Ordinary Differential Equations** (ODEs) involve only one independent variable. For example,
 
-  $$
-  \frac{dy}{dx} = 2x
-  $$
+$$
+\frac{dy}{dx} = 2x
+$$
 
 * **Partial Differential Equations** (PDEs) involve more than one independent variable.
 For example,
 
-  $$
-  \frac{\partial u}{\partial t} = \frac{\partial² u}{\partial x²}
-  $$
+$$
+\frac{\partial u}{\partial t} = \frac{\partial² u}{\partial x²}
+$$
 
 where $u$ is a function of $x$ and $t$.
 
@@ -252,16 +252,16 @@ where $u$ is a function of $x$ and $t$.
 * **First-order** differential equations involve only the first derivative.
   For example,
 
-  $$
-    y'(x) = \frac{dy}{dx} = 2x
-  $$
+$$
+y'(x) = \frac{dy}{dx} = 2x
+$$
 
 * **Second-order** differential equations involve the second derivative.
   For example,
 
-  $$
-  y''(x) = \frac{d²y}{dx²} = 2x
-  $$
+$$
+y''(x) = \frac{d²y}{dx²} = 2x
+$$
 
 ## EXAMPLES
 
