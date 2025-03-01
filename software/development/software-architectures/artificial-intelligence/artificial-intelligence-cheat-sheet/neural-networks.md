@@ -8,6 +8,7 @@ Table of Contents
 * [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
   * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-summation-function)
   * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
+  * [THE OUTPUT FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-output-function)
 * [ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#neural-architectures)
   * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
   * [MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
@@ -74,13 +75,13 @@ The summation function is the first step in the process of a neuron.
 It takes the weighted inputs and sums them up. Then adds a bias term.
 
 $$
-s = f(x,w) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
+s = f(x,w,b) = x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b
 $$
 
 or
 
 $$
-s = f(x) = \sum_{i=1}^{n} x_i w_i + b
+s = f(x,w,b) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
 Where,
@@ -144,6 +145,27 @@ $$
     <img src="svgs/tanh-function.svg"
     align="middle"
 </p>
+
+### THE OUTPUT FUNCTION
+
+The output function is the final step in the process of a neuron.
+It takes the output of the activation function and outputs the result.
+
+$$
+y = f(s)
+$$
+
+Hence, if we used a sigmoid activation function, the output function would be,
+
+$$
+y = \sigma(s) = \frac{1}{1 + e^{-s}}
+$$
+
+If we used a tanh activation function, the output function would be,
+
+$$
+y = \tanh(s) = \frac{e^s - e^{-s}}{e^s + e^{-s}}
+$$
 
 ## ARCHITECTURES
 
