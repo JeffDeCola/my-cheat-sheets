@@ -2,10 +2,6 @@
 
 _The math behind training a multi-layer perceptron (MLP) neural network._
 
-```text
-I NEED TO FINISH THIS TODAY OR GRACE WILL YELL AT ME
-```
-
 Table of Contents
 
 * [OVERVIEW]()
