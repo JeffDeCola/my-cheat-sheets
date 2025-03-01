@@ -232,13 +232,13 @@ classify them by type and order.
 
 ### BY TYPE
 
-**Ordinary Differential Equations** (ODEs) involve only one independent variable. For example,
+* **Ordinary Differential Equations** (ODEs) involve only one independent variable. For example,
 
   $$
   \frac{dy}{dx} = 2x
   $$
 
-**Partial Differential Equations** (PDEs) involve more than one independent variable.
+* **Partial Differential Equations** (PDEs) involve more than one independent variable.
 For example,
 
   $$
@@ -253,7 +253,7 @@ where $u$ is a function of $x$ and $t$.
   For example,
 
   $$
-  y'(x) = \frac{dy}{dx} = 2x
+    y'(x) = \frac{dy}{dx} = 2x
   $$
 
 * **Second-order** differential equations involve the second derivative.

@@ -30,6 +30,12 @@ A neural networks is trained using a dataset. The dataset is split into two part
   * Used to test the neural network
   * See how well the neural network performs
 
+## OUR EXAMPLE
+
+In this example we will use a multi-layer perceptron (MLP) neural network
+to classify the famous iris dataset.
+
+
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
 Since we are dealing with neural networks, let's quicky review our model of a neuron.
@@ -40,8 +46,8 @@ Check out a more detailed view in my cheat sheets
 
 ### THE SUMMATION FUNCTION
 
-The summation function takes the weighted inputs and sums them up.
-Then adds a bias term.
+The summation function takes the weighted inputs and sums them up and
+then adds a bias term.
 
 $$
 \begin{aligned}
@@ -59,15 +65,30 @@ Where,
 
 ### THE ACTIVATION FUNCTION
 
-The activation function $f(s)$ is a non-linear function that introduces non-linearity
-to the output of a neuron.
+The activation function $f(s)$ is a nonlinear function that introduces non-linearity
+to the output of a neuron. Two common activation functions are,
+the sigmoid function and the tanh function.
 
-Two common activation functions are, the sigmoid function and the tanh function.
+#### The Sigmoid Function
 
 $$
 \begin{aligned}
-\tanh(x) &= \frac{e^x - e^{-x}}{e^x + e^{-x}} \\
-\tanh'(x) &= 1 - \tanh^2(x)
+\sigma(s) &= \frac{1}{1 + e^{-s}} \\
+\sigma'(s) &= \sigma(s)(1 - \sigma(s))
+\end{aligned}
+$$
+
+<p align="center">
+    <img src="svgs/sigmoid-function.svg"
+    align="middle"
+</p>
+
+#### The Tanh Function
+
+$$
+\begin{aligned}
+\tanh(s) &= \frac{e^s - e^{-s}}{e^s + e^{-s}} \\
+\tanh'(s) &= 1 - \tanh^2(s)
 \end{aligned}
 $$
 
@@ -83,3 +104,4 @@ And the output of the neuron is simply the output of the activation function,
 $$
 f = f(s)
 $$
+
