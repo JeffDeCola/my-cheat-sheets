@@ -32,9 +32,36 @@ A neural networks is trained using a dataset. The dataset is split into two part
 
 ## OUR EXAMPLE
 
-In this example we will use a multi-layer perceptron (MLP) neural network
-to classify the famous iris dataset.
+We will use the following multi-layer perceptron (MLP) neural network as our example.
 
+![IMAGE training-multi-layer-perceptron-neural-network IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network.svg)
+
+where
+
+* **Input Layer**
+  * Two input values
+    * $x[0], x[1]$
+* **Hidden Layer**
+  * Each node has two weights
+    * $wh[0][0][0], wh[0][0][1], wh[0][1][0], wh[0][1][1], wh[0][2][0], wh[0][2][1]$
+    * \[hidden layer]\[hidden node]\[input node]
+  * One bias term
+    * $bh[0][0], bh[0][1], bh[0][2]$
+    * \[hidden layer]\[hidden node]
+  * Three activation functions
+    * $fh[0][0](s), fh[0][1](s), fh[0][2](s)$
+    * \[hidden layer]\[hidden node]
+  * Three outputs
+    * $yh[0][0], yh[0][1], yh[0][2]$
+    * \[hidden layer]\[hidden node]
+* **Output Layer**
+  * The node has three weights
+    * $wo[0][0], wo[0][1] wo[1][2]$
+    * \[output node]\[hidden node]
+  * One bias term
+    * $bo[0]$
+  * Two output values
+    * $yo[0], yo[1]$
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
@@ -43,6 +70,20 @@ Check out a more detailed view in my cheat sheets
 [mathematical model of a neuron](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron).
 
 ![IMAGE training-multi-layer-perceptron-neural-network-model-neuron IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-model-neuron.svg)
+
+An artificial neuron consists of the following components,
+
+* Inputs $x_{[i]}$
+* Applies a weight to that input $w_{[i]}$
+* **Summation Function**
+  * Weighted sum of inputs
+  * Adds a bias term to the weighted sums $b$
+  * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
+* **Activation Function**
+  * The activation function determines if the neuron will fire or not
+  * Applies a non-linear activation function to the sum
+  * $y = f(s)$
+* Outputs the result $y$
 
 ### THE SUMMATION FUNCTION
 
@@ -65,8 +106,8 @@ Where,
 
 ### THE ACTIVATION FUNCTION
 
-The activation function $f(s)$ is a nonlinear function that introduces non-linearity
-to the output of a neuron. Two common activation functions are,
+The activation function $f(s)$ is a nonlinear function.
+Two common activation functions are,
 the sigmoid function and the tanh function.
 
 #### The Sigmoid Function
@@ -97,11 +138,12 @@ $$
     align="middle"
 </p>
 
-### THE OUTPUT
+### THE OUTPUT FUNCTION
 
 And the output of the neuron is simply the output of the activation function,
 
 $$
-f = f(s)
+y = f(s)
 $$
 
+## STEP 1 - NORMALIZATION
