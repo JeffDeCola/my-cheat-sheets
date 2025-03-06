@@ -397,7 +397,7 @@ negative of the gradient.
 The formula for gradient descent is,
 
 $$
-\theta_{new} = \theta_{old} - \alpha \nabla f(\theta)
+\theta_{new} = \theta_{old} - \alpha \nabla f(\theta_{old})
 $$
 
 Where,
@@ -454,18 +454,24 @@ Using the gradient descent formula for $x$ and $y$,
 
 $$
 \begin{aligned}
-x_{new} &= x_{old} - \alpha \nabla f(x) \\
+x_{new} &= x_{old} - \alpha \nabla f(x_{old}) \\
 &= x_{old} - \alpha \frac{\partial f}{\partial x} \\
-&= x_{old} - \alpha 2x
+&= x_{old} - \alpha (2x)
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} & = y_{old} - \alpha \nabla f(y) \\
+y_{new} & = y_{old} - \alpha \nabla f(y_{old}) \\
 &= y_{old} - \alpha \frac{\partial f}{\partial y} \\
-&= y_{old} - \alpha 2y \\
+&= y_{old} - \alpha (2y) \\
 \end{aligned}
+$$
+
+We can write the gradient descent formula for $x$ and $y$ as,
+
+$$
+\mathbf{\nabla f(x,y)} = \left[ \mathbf{2x}, \mathbf{2y} \right] \tag{1}
 $$
 
 This will move us closer to the minimum of the function.
@@ -500,6 +506,31 @@ y_{new} &= 4 - \alpha \cdot 8 \\
 \end{aligned}
 $$
 
+Now the new points would be (2.4, 3.2). If we continue this process,
+
+$$
+\begin{aligned}
+\nabla f(2.4, 3.2) &= \left[2 \cdot 2.4, 2 \cdot 3.2\right] \\
+&= \left[4.8, 6.4\right]
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+x_{new} &= 2.4 - 0.1 \cdot 4.8 \\
+&= 2.4 - 0.48 \\
+&= 1.92
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+y_{new} &= 3.2 - 0.1 \cdot 6.4 \\
+&= 3.2 - 0.64 \\
+&= 2.56
+\end{aligned}
+$$
+
 Hence, the new point would be (2.4, 3.2). If we continue this process,
 we will eventually reach the minimum of the function which is (0, 0).
 
@@ -508,11 +539,16 @@ Lets show a table of these calculations,
 | x   | y   | $\nabla f(x,y)$ | $x_{new}$ | $y_{new}$ |
 |-----|-----|-----------------|-----------|-----------|
 | 3   | 4   | [6, 8]          | 2.4       | 3.2       |
-| 2.4 | 3.2 | [4.8, 6.4]      | 1.6       | 2.6       |
-| 1.6 | 2.6 | [3.2, 5.2]      | 1.0       | 2.0       |
-| 1.0 | 2.0 | [2.0, 4.0]      | 0.4       | 1.4       |
-| 0.4 | 1.4 | [0.8, 2.8]      | 0.0       | 1.0       |
+| 2.4 | 3.2 | [4.8, 6.4]      | 1.92      | 2.56      |
+| 1.92| 2.56| [3.84, 5.12]    | 1.536     | 2.048     |
+| 1.536| 2.048| [3.072, 4.096] | 1.2288    | 1.6384    |
+| 1.2288| 1.6384| [2.4576, 3.2768] | 0.98304 | 1.31072 |
+| 0.98304| 1.31072| [1.96608, 2.62144] | 0.786432 | 1.048576 |
+| 0.786432| 1.048576| [1.572864, 2.097152] | 0.6291456 | 0.8388608 |
+| 0.6291456| 0.8388608| [1.2582912, 1.6777216] | 0.50331648 | 0.67108864 |
+| 0.50331648| 0.67108864| [1.00663296, 1.34217728] | 0.402653184 | 0.536870912 |
 
+You can see we are getting closer to the minimum of the function (0, 0).
 
 
 
