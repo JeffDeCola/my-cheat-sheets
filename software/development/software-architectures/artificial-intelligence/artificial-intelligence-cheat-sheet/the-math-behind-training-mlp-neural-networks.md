@@ -54,7 +54,7 @@ An artificial neuron consists of the following components,
 * **Summation Function**
   * Weighted sum of inputs
   * Adds a bias term to the weighted sums $b$
-  * $s = f(x,w) = \sum_{i=1}^{n} x_i w_i + b$
+  * $s = f(w,b) = \sum_{i=1}^{n} x_i w_i + b$
 * **Activation Function**
   * The activation function determines if the neuron will fire or not
   * Applies a nonlinear activation function $f(s)$ to the sum such
@@ -386,7 +386,9 @@ What does this mean?
    to the weights and biases.
 2. Then we will adjust the weights and biases in the opposite direction of the gradient
 
-#### AN EXPLANATION OF THE GRADIENT DESCENT ALGORITHM
+But first, we need to understand what is the gradient of a function.
+
+#### AN EXPLANATION OF THE GRADIENT DESCENT FORMULA
 
 So how do we do minimize the loss function when we have so many weights and biases?
 We will use a technique called gradient descent.
@@ -394,20 +396,21 @@ Gradient descent is an optimization algorithm used to minimize some function
 by iteratively moving in the direction of steepest descent as defined by the
 negative of the gradient.
 
-The formula for gradient descent is,
+The gradient descent formula is,
 
 $$
-\theta_{new} = \theta_{old} - \alpha \nabla f(\theta_{old})
+\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
 $$
 
 Where,
 
 * $\theta_{new}$ is the new value of the parameter
 * $\theta_{old}$ is the old value of the parameter
-* $\alpha$ is the learning rate (a small number)
-* $\nabla f(\theta)$ is the gradient of the function with respect to the parameter
+* $\eta$ is the learning rate (a small number)
+* $\nabla f(\theta_{old})$ is the gradient of the function at $\theta_{old}$
 
-
+You can see that the formula is just subtracting the gradient of the function
+which is the steepness of the function.
 
 As an example, lets say we have a function $f(x,y)$ and we want to
 find the minimum value of $f(x,y)$.
@@ -419,18 +422,19 @@ z &= x^2 + y^2
 \end{aligned}
 $$
 
-This represents a paraboloid (a bowl-shaped surface).
-The graph would look like,
+This represents a paraboloid (a bowl-shaped surface)
+
+NOTE: COULD NOT GET THIS PERFECT - IGNORE THE LIP
 
 <p align="center">
-    <img src="svgs/tanh-function.svg"
+    <img src="svgs/f-of-x-and-y-equals-x-squared-plus-y-squared.svg"
     align="middle"
 </p>
 
 The gradient of $f(x,y)$ is just the partial derivatives of $f(x,y)$ with
 respect to $x$ and $y$.
 
-Partial derivative with respect to $x$,
+The partial derivative with respect to $x$,
 
 $$
 \begin{aligned}
@@ -440,7 +444,7 @@ $$
 \end{aligned}
 $$
 
-Partial derivative with respect to $y$,
+The partial derivative with respect to $y$,
 
 $$
 \begin{aligned}
@@ -450,105 +454,291 @@ $$
 \end{aligned}
 $$
 
-Using the gradient descent formula for $x$ and $y$,
+We can write the gradient for $x$ and $y$ as,
+
+$$
+{\nabla f(x,y)} = \left[{2x},{2y}\right]
+$$
+
+Using the gradient descent formula above for $x$ and $y$,
+
+$$
+\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
+$$
+
+$x$ and $y$ are the parameters we are trying to minimize,
 
 $$
 \begin{aligned}
-x_{new} &= x_{old} - \alpha \nabla f(x_{old}) \\
-&= x_{old} - \alpha \frac{\partial f}{\partial x} \\
-&= x_{old} - \alpha (2x)
+x_{new} &= x_{old} - \eta \nabla f(x_{old}) \\
+&= x_{old} - \eta \frac{\partial f}{\partial x} \\
+&= x_{old} - \eta (2x_{old}) \\
+&= x_{old}(1 - 2\eta)
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} & = y_{old} - \alpha \nabla f(y_{old}) \\
-&= y_{old} - \alpha \frac{\partial f}{\partial y} \\
-&= y_{old} - \alpha (2y) \\
+y_{new} & = y_{old} - \eta \nabla f(y_{old}) \\
+&= y_{old} - \eta \frac{\partial f}{\partial y} \\
+&= y_{old} - \eta (2y_{old}) \\
+&= y_{old}(1 - 2\eta)
 \end{aligned}
 $$
 
-We can write the gradient descent formula for $x$ and $y$ as,
+This formula will move us closer to the minimum of the function $f(x,y)$.
 
-$$
-\mathbf{\nabla f(x,y)} = \left[ \mathbf{2x}, \mathbf{2y} \right] \tag{1}
-$$
-
-This will move us closer to the minimum of the function.
-
-As an example, let's start at a random point (3, 4) and try
-to find the minimum of the function $f(x,y) = x^2 + y^2$.
+Let's plug in some numbers to see how this works.
+Let's start at a random point (3, 4) and try
+to find the minimum of the function $f(x,y) = x^2 + y^2$
+with a learning rate of $\eta = 0.1$.
 
 $$
 \begin{aligned}
-\nabla f(3,4) &= \left[2 \cdot 3, 2 \cdot 4\right] \\
-&= \left[6, 8\right]
-\end{aligned}
-$$
-
-If we want to move to the minimum, we would subtract the gradient,
-
-$$
-\begin{aligned}
-x_{new} &= 3 - \alpha \cdot 6 \\
-&= 3 - 0.1 \cdot 6 \\
-&= 3 - 0.6 \\
-&= 2.4
+x_{new} &= x_{old}(1 - 2\eta) \\
+&= x_{old}(1 - 2 \cdot 0.1) \\
+&= x_{old}(1 - 0.2) \\
+&= x_{old}(0.8) \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} &= 4 - \alpha \cdot 8 \\
-&= 4 - 0.1 \cdot 8 \\
-&= 4 - 0.8 \\
-&= 3.2
+y_{new} &= y_{old}(1 - 2\eta) \\
+&= y_{old}(1 - 2 \cdot 0.1) \\
+&= y_{old}(1 - 0.2) \\
+&= y_{old}(0.8) \\
 \end{aligned}
 $$
 
-Now the new points would be (2.4, 3.2). If we continue this process,
+Plug in 3 and 4,
 
 $$
 \begin{aligned}
-\nabla f(2.4, 3.2) &= \left[2 \cdot 2.4, 2 \cdot 3.2\right] \\
-&= \left[4.8, 6.4\right]
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-x_{new} &= 2.4 - 0.1 \cdot 4.8 \\
-&= 2.4 - 0.48 \\
-&= 1.92
+x_{new} &= 3(0.8) \\
+&= 2.4000
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} &= 3.2 - 0.1 \cdot 6.4 \\
-&= 3.2 - 0.64 \\
-&= 2.56
+y_{new} &= 4(0.8) \\
+&= 3.2000
 \end{aligned}
 $$
 
-Hence, the new point would be (2.4, 3.2). If we continue this process,
-we will eventually reach the minimum of the function which is (0, 0).
+If we keep doing this, we will eventually get to the minimum of the function $f(x,y)$.
 
-Lets show a table of these calculations,
+| $x_{old}$ | $\nabla f(x)$ | $x_{new}$ | | $y_{old}$ | $\nabla f(y)$ | $y_{new}$  | | $f(x,y)$ |
+|-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
+|           |               | 3.0000    | |            |               | 4.0000    | | 25.0000  |
+| 3.0000    | 6.0000        | 2.4000    | | 4.0000     | 8.0000        | 3.2000    | | 16.0000  |
+| 2.4000    | 4.8000        | 1.9200    | | 3.2000     | 6.4000        | 2.5600    | | 10.2400  |
+| 1.9200    | 3.8400        | 1.5360    | | 2.5600     | 5.1200        | 2.0480    | | 6.5536   |
+| 1.5360    | 3.0720        | 1.2288    | | 2.0480     | 4.0960        | 1.6384    | | 4.1943   |
+| 1.2288    | 2.4576        | 0.9830    | | 1.6384     | 3.2768        | 1.3107    | | 2.6844   |
+| 0.9830    | 1.9660        | 0.7864    | | 1.3107     | 2.6214        | 1.0486    | | 1.7179   |
+| 0.7864    | 1.5728        | 0.6291    | | 1.0486     | 2.0972        | 0.8389    | | 1.0995   |
+| 0.6291    | 1.2582        | 0.5033    | | 0.8389     | 1.6778        | 0.6711    | | 0.7140   |
+| 0.5033    | 1.0066        | 0.4027    | | 0.6711     | 1.3422        | 0.5369    | | 0.3579   |
+| 0.4027    | 0.8054        | 0.3222    | | 0.5369     | 1.0738        | 0.4295    | | 0.2294   |
 
-| x   | y   | $\nabla f(x,y)$ | $x_{new}$ | $y_{new}$ |
-|-----|-----|-----------------|-----------|-----------|
-| 3   | 4   | [6, 8]          | 2.4       | 3.2       |
-| 2.4 | 3.2 | [4.8, 6.4]      | 1.92      | 2.56      |
-| 1.92| 2.56| [3.84, 5.12]    | 1.536     | 2.048     |
-| 1.536| 2.048| [3.072, 4.096] | 1.2288    | 1.6384    |
-| 1.2288| 1.6384| [2.4576, 3.2768] | 0.98304 | 1.31072 |
-| 0.98304| 1.31072| [1.96608, 2.62144] | 0.786432 | 1.048576 |
-| 0.786432| 1.048576| [1.572864, 2.097152] | 0.6291456 | 0.8388608 |
-| 0.6291456| 0.8388608| [1.2582912, 1.6777216] | 0.50331648 | 0.67108864 |
-| 0.50331648| 0.67108864| [1.00663296, 1.34217728] | 0.402653184 | 0.536870912 |
+You can see the function $f(x,y)$ is getting closer to zero.
 
-You can see we are getting closer to the minimum of the function (0, 0).
+#### THE GRADIENT OF THE LOSS FUNCTION
+
+Now that we have a firm grasp on the gradient descent formula,
+we can apply it to the loss function of our neural network. We will do the exact steps above, but substitute the loss function $L(w,b)$ for $f(x,y)$.
+
+The loss function we are using is the mean squared error (mse),
+
+$$
+L = \frac{1}{2} \left(y - z\right)^2
+$$
+
+Where,
+
+$$
+\begin{aligned}
+y &= \sigma (s) \\
+&= \sigma (w,b) \\
+&= \sigma (\sum_{i=1}^{n} a_i w_i + b)
+\end{aligned}
+$$
+
+Note: $a$ is the output of the previous layer.
+
+Therefore,
+
+$$
+\begin{aligned}
+L(w,b) = \frac{1}{2} \left(\sigma (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
+\end{aligned}
+$$
+
+But we'll keep the loss function simple to look like,
+
+$$
+\begin{aligned}
+L(s) &= \frac{1}{2} \left(\sigma (s) - z\right)^2 \\
+L(s) &= \frac{1}{2} \left(\sigma (s) - z) \cdot (\sigma (s) - z\right) \\
+L(s) &= \frac{1}{2} \left(\sigma (s)^2 - 2\sigma (s)z + z^2\right)
+\end{aligned} \\
+$$
+
+We want to find the gradient of the loss function with respect to $w$ and $b$. But, it is a little more difficult than the above example. We need to use the chain rule,
+
+$$
+\begin{aligned}
+\nabla L(w) = \frac{\partial L}{\partial w} &= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial w} \\
+\nabla L(b) = \frac{\partial L}{\partial b} &= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial b}
+\end{aligned}
+$$
+
+So let's first find the gradient of the loss function with respect to $s$.
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial s} &= \frac{\partial}{\partial s} L(s) \\
+&= \frac{\partial}{\partial s} \frac{1}{2} \left(\sigma (s)^2 - 2\sigma (s)z + z^2\right) \\
+&= \frac{1}{2} \frac{\partial}{\partial s} \left(\sigma (s)^2 - 2\sigma (s)z + z^2\right) \\
+&= \frac{1}{2} \left(2\sigma (s) \frac{\partial}{\partial s} \sigma (s) - 2z \frac{\partial}{\partial s} \sigma (s)\right) \\
+&= \sigma (s) \sigma'(s) - z \sigma'(s) \\
+&= \sigma'(s) \cdot \left(\sigma (s) - z\right) \\
+&= \sigma'(s) \cdot \left(y - z\right)
+\end{aligned}
+$$
+
+Second, we can find the gradient of the loss function with respect to $s$ and $w$.
+
+$$
+\begin{aligned}
+\frac{\partial s}{\partial w} &= \frac{\partial}{\partial w} \left(\sum_{i=1}^{n} a_i w_i + b\right) \\
+&= \frac{\partial}{\partial w} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b\right) \\
+&= a_{total} ????????
+\end{aligned}
+$$
+
+Last, we can find the gradient of the loss function with respect to $b$.
+
+$$
+\begin{aligned}
+\frac{\partial s}{\partial b} &= \frac{\partial}{\partial b} \left(\sum_{i=1}^{n} x_i w_i + b\right) \\
+&= \frac{\partial}{\partial b} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b\right) \\
+&= 1
+\end{aligned}
+$$
+
+Hence the gradient of the loss function with respect to $w$ is,
+
+$$
+\begin{aligned}
+\nabla L(w) &= \frac{\partial L}{\partial w} \\
+&= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial w} \\
+&= \sigma'(s) \cdot \left(y - z\right) \cdot a_{total} \\
+&= a_{total} \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)
+\end{aligned}
+$$
+
+And the gradient of the loss function with respect to $b$ is,
+
+$$
+\begin{aligned}
+\nabla L(b) &= \frac{\partial L}{\partial b} \\
+&= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial b} \\
+&= \sigma'(s) \cdot \left(y - z\right) \cdot 1 \\
+&= \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)
+\end{aligned}
+$$
+
+Hence, we can write the gradient for $w$ and $b$ as,
+
+$$
+{\nabla L(w,b)} = \left[{a_{total} \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)},{\sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)}\right]
+$$
+
+Using the gradient descent formula above for $w$ and $b$,
+
+$$
+\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
+$$
+
+$w$ and $b$ are the parameters we are trying to minimize, ?????
+
+$$
+\begin{aligned}
+w_{new} &= w_{old} - \eta \nabla L(w_{old}) \\
+&= w_{old} - \eta \frac{\partial L}{\partial w} \\
+&= w_{old} - \eta \left(a_{total} \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
+&= b_{old} - \eta \frac{\partial L}{\partial b} \\
+&= b_{old} - \eta \left(\sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)\right)
+\end{aligned}
+$$
+
+This formula will move us closer to the minimum of the function $L(w,b)$.
+
+Let's plug in some numbers to see how this works.
+Let's start at a random numbers (3, 4) and try
+to find the minimum of the function $L(w,b) = \frac{1}{2} \left(\sigma (w,b) - z\right)^2$
+with a learning rate of $\eta = 0.1$.
+
+$$
+\begin{aligned}
+w_{new} &= w_{old} - \eta \nabla L(w_{old}) \\
+&= w_{old} - \eta \left(a_{total} \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)\right) \\
+&= 
+\end{aligned}
+$$
 
 
 
+
+
+$$
+\begin{aligned}
+y_{new} &= y_{old}(1 - 2\eta) \\
+&= y_{old}(1 - 2 \cdot 0.1) \\
+&= y_{old}(1 - 0.2) \\
+&= y_{old}(0.8) \\
+\end{aligned}
+$$
+
+Plug in 3 and 4,
+
+$$
+\begin{aligned}
+x_{new} &= 3(0.8) \\
+&= 2.4000
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+y_{new} &= 4(0.8) \\
+&= 3.2000
+\end{aligned}
+$$
+
+If we keep doing this, we will eventually get to the minimum of the function $f(x,y)$.
+
+| $x_{old}$ | $\nabla f(x)$ | $x_{new}$ | | $y_{old}$ | $\nabla f(y)$ | $y_{new}$  | | $f(x,y)$ |
+|-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
+|           |               | 3.0000    | |            |               | 4.0000    | | 25.0000  |
+| 3.0000    | 6.0000        | 2.4000    | | 4.0000     | 8.0000        | 3.2000    | | 16.0000  |
+| 2.4000    | 4.8000        | 1.9200    | | 3.2000     | 6.4000        | 2.5600    | | 10.2400  |
+| 1.9200    | 3.8400        | 1.5360    | | 2.5600     | 5.1200        | 2.0480    | | 6.5536   |
+| 1.5360    | 3.0720        | 1.2288    | | 2.0480     | 4.0960        | 1.6384    | | 4.1943   |
+| 1.2288    | 2.4576        | 0.9830    | | 1.6384     | 3.2768        | 1.3107    | | 2.6844   |
+| 0.9830    | 1.9660        | 0.7864    | | 1.3107     | 2.6214        | 1.0486    | | 1.7179   |
+| 0.7864    | 1.5728        | 0.6291    | | 1.0486     | 2.0972        | 0.8389    | | 1.0995   |
+| 0.6291    | 1.2582        | 0.5033    | | 0.8389     | 1.6778        | 0.6711    | | 0.7140   |
+| 0.5033    | 1.0066        | 0.4027    | | 0.6711     | 1.3422        | 0.5369    | | 0.3579   |
+| 0.4027    | 0.8054        | 0.3222    | | 0.5369     | 1.0738        | 0.4295    | | 0.2294   |
+
+You can see the function $f(x,y)$ is getting closer to zero.
