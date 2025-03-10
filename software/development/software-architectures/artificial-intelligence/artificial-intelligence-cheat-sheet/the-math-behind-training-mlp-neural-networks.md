@@ -2,104 +2,7 @@
 
 _The math behind training a multi-layer perceptron (MLP) neural network._
 
-TL;DR
 
-**1 Normalization**
-
-Normalize the input dataset to a range of $[0, 1]$ or $[-1, 1]$.
-
-For $[0, 1]$,
-
-$$
-normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
-$$
-
-**2 Forward Pass**
-
-Calculate the summation function for the hidden layers and output layer,
-
-$$
-s_{h} = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
-$$
-
-$$
-s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
-$$
-
-Apply the activation function to the hidden layers and output layer,
-
-$$
-a_{h} = f_{h}(s_{h})
-$$
-
-$$
-y_{o} = f_{o}(s_{o})
-$$
-
-**2 Backward Pass**
-
-We will be using the mean squared error (mse) loss function,
-
-$$
-L = \frac{1}{2} \left(y_{o} - z\right)^2
-$$
-
-We want to calculate the gradient of the loss function with respect to the weights and biases for the output layer,
-
-$$
-\begin{aligned}
-\nabla L(w_{i}) &= \delta_{o} \cdot a_{i} \\
-\nabla L(b) &= \delta_{o}
-\end{aligned}
-$$
-
-First, calculate the error signal for the mse loss function at the output layer,
-
-$$
-\begin{aligned}
-\delta_{o}
-&= f_{o}'(s) \cdot \left(y_{0} - z\right) \\
-&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
-\end{aligned}
-$$
-
-Second, propagate the error signal back to the hidden layers (where j is the next layer),
-
-$$
-\begin{aligned}
-\delta_{h}
-&= f_{h}'(s) \cdot w_{j} \cdot \delta_{j} \\
-&= a_{h} \left(1 - a_{h}\right) \cdot w_{j} \cdot \delta_{j}
-\end{aligned}
-$$
-
-Using the gradient descent formula, adjust the weights and biases at the output layer,
-
-$$
-\begin{aligned}
-w_{i_{new}}
-&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
-&= w_{i_{old}} - \eta \delta_{o} \cdot a_{i} \\
-b_{new}
-&= b_{old} - \eta \nabla L(b) \\
-&= b_{old} - \eta \delta_{o}
-\end{aligned}
-$$
-
-Also, use the gradient descent formula to adjust the weights and biases at the hidden layers,
-
-$$
-\begin{aligned}
-w_{i_{new}}
-&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
-&= w_{i_{old}} - \eta \delta_{h} \cdot a_{i} \\
-b_{new}
-&= b_{old} - \eta \nabla L(b) \\
-&= b_{old} - \eta \delta_{h}
-\end{aligned}
-$$
-
-By getting new values for $w_{i}$ and $b$, we will get the loss function $L(w_{i},b)$ closer to zero.
 
 Table of Contents
 
@@ -148,6 +51,113 @@ A neural networks is trained using a training dataset.
 The entire process of training a neural network is shown below,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-training-steps IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-training-steps.svg)
+
+## TL;DR
+
+A very high level overview of the math behind training a multi-layer perceptron (MLP) neural network.
+
+### Normalization
+
+Normalize the input dataset to a range of $[0, 1]$ or $[-1, 1]$.
+
+For $[0, 1]$,
+
+$$
+normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
+$$
+
+### Forward Pass
+
+Calculate the summation function for the hidden layers and output layer,
+
+$$
+s_{h} = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
+$$
+
+$$
+s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
+$$
+
+Calculate the activation function to the hidden layers and output layer,
+
+$$
+a_{h} = f_{h}(s_{h})
+$$
+
+$$
+y_{o} = f_{o}(s_{o})
+$$
+
+### Backward Pass
+
+We will be using the mean squared error (mse) loss function,
+
+$$
+\begin{aligned}
+L
+&= \frac{1}{2} \left(y_{o} - z\right)^2 \\
+L(w_{i},b)
+&= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
+\end{aligned}
+$$
+
+The goal is to minimize the loss function $L(w_{i},b)$. Hence, we want to calculate the gradient of the loss function with respect to the weights and biases at the output layer,
+
+$$
+\begin{aligned}
+\nabla L(w_{i}) &= \delta_{o} \cdot a_{i} \\
+\nabla L(b) &= \delta_{o}
+\end{aligned}
+$$
+
+First, calculate the error signal for the mse loss function at the output layer,
+
+$$
+\begin{aligned}
+\delta_{o}
+&= f_{o}'(s) \cdot \left(y_{0} - z\right) \\
+&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
+\end{aligned}
+$$
+
+Second, propagate the error signal back to the hidden layers (where j is the next layer) to calculate the hidden layer error signals,
+
+$$
+\begin{aligned}
+\delta_{h}
+&= f_{h}'(s) \cdot w_{j} \cdot \delta_{j} \\
+&= a_{h} \left(1 - a_{h}\right) \cdot w_{j} \cdot \delta_{j}
+\end{aligned}
+$$
+
+Using the gradient descent formula and our error signal, calculate the new weights and biases at the output layer,
+
+$$
+\begin{aligned}
+w_{i_{new}}
+&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
+&= w_{i_{old}} - \eta \delta_{o} \cdot a_{i} \\
+b_{new}
+&= b_{old} - \eta \nabla L(b) \\
+&= b_{old} - \eta \delta_{o}
+\end{aligned}
+$$
+
+Also, using the gradient descent formula and our error signal, calculate the new weights and biases at the hidden layer,
+
+$$
+\begin{aligned}
+w_{i_{new}}
+&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
+&= w_{i_{old}} - \eta \delta_{h} \cdot a_{i} \\
+b_{new}
+&= b_{old} - \eta \nabla L(b) \\
+&= b_{old} - \eta \delta_{h}
+\end{aligned}
+$$
+
+The new values for $w_{i}$ and $b$ will get use closer to the goal of minimizing
+the loss function $L(w_{i},b)$.
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
@@ -769,7 +779,13 @@ $$
 In neural networks, we refer to this as the error signal $\delta_{o}$,
 
 $$
-\delta_{o} = f_{o}'(s) \cdot \left(y_{o} - z\right)
+\begin{aligned}
+\delta_{o}
+&= f_{o}'(s) \cdot \left(y_{o} - z\right) \\
+&= \sigma_{o}'(s) \cdot \left(y_{o} - z\right) \\
+&= \sigma_{o}(s)(1 - \sigma_{o}(s)) \cdot \left(y_{o} - z\right) \\
+&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right)
+\end{aligned}
 $$
 
 With our example, the error signal for the output layer would be,
@@ -777,9 +793,6 @@ With our example, the error signal for the output layer would be,
 $$
 \begin{aligned}
 \delta_{o}
-&= f_{o}'(s) \cdot \left(y_{o} - z\right) \\
-&= \sigma_{o}'(s) \cdot \left(y_{o} - z\right) \\
-&= \sigma_{o}(s)(1 - \sigma_{o}(s)) \cdot \left(y_{o} - z\right) \\
 &= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right) \\
 &= 0.5030(1 - 0.5030) \cdot (0.5030 - 91) \\
 &= 0.2494 \cdot -90.4970 \\
