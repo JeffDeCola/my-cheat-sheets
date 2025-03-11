@@ -2,11 +2,10 @@
 
 _The math behind training a multi-layer perceptron (MLP) neural network._
 
-
-
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#overview)
+* [TL;DR](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#tldr)
 * [MATHEMATICAL MODEL OF NEURAL NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mathematical-model-of-neural-network)
 * [MLP ARCHITECTURE USED FOR THIS EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mlp-architecture-used-for-this-example)
 * [THE TRAINING DATASET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-dataset)
@@ -16,18 +15,21 @@ Table of Contents
     * [MIN-MAX SCALING FUNCTION [0, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
     * [MIN-MAX SCALING FUNCTION [-1, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
   * [STEP 3 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---forward-pass)
-    * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function)
+    * [THE SUMMATION FUNCTION FOR THE HIDDEN LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function-for-the-hidden-layer)
+    * [THE SUMMATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function-for-the-output-layer)
     * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-activation-function)
-      * [The Sigmoid Function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
-      * [The Tanh Function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-tanh-function)
-    * [THE OUTPUT FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-output-function)
-    * [OUR EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example)
-  * [STEP 4 - LOSS FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---loss-function)
-    * [MEAN SQUARED ERROR (MSE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mean-squared-error-mse)
+    * [THE OUTPUT FUNCTION FOR THE HIDDEN LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-output-function-for-the-hidden-layer)
+    * [THE OUTPUT FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-output-function-for-the-output-layer)
+  * [STEP 4 - CHOSE LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---chose-loss-functions)
   * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-5---backward-pass)
     * [THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-gradient-descent-formula)
     * [AN EXAMPLE USING THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#an-example-using-the-gradient-descent-formula)
-    * [USING THE GRADIENT DESCENT FORMULA ON THE LOSS FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#using-the-gradient-descent-formula-on-the-loss-function)
+      * [Calculate the Gradients of the function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#calculate-the-gradients-of-the-function)
+      * [Calculate the New Values of x and y](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#calculate-the-new-values-of-x-and-y)
+    * [STEP 51 - CALCULATE THE ERROR SIGNAL FOR THE MSE LOSS FUNCTION AT THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-51---calculate-the-error-signal-for-the-mse-loss-function-at-the-output-layer)
+    * [STEP 52 - PROPAGATE THE ERROR SIGNAL BACK TO THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---propagate-the-error-signal-back-to-the-hidden-layers)
+    * [STEP 53 - CALCULATE THE NEW WEIGHTS AND BIASES AT THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---calculate-the-new-weights-and-biases-at-the-output-layer)
+    * [STEP 54 - CALCULATE THE NEW WEIGHTS AND BIASES AT THE HIDDEN LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---calculate-the-new-weights-and-biases-at-the-hidden-layer)
 
 Documentation and Reference
 
@@ -40,6 +42,8 @@ cheat sheet
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-classification-example)
   * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-regression-example)
   * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp-image-recognition-example)
+* [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
+  * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
 
 ## OVERVIEW
 
@@ -58,44 +62,65 @@ A very high level overview of the math behind training a multi-layer perceptron 
 
 ### Normalization
 
-Normalize the input dataset to a range of $[0, 1]$ or $[-1, 1]$.
-
-For $[0, 1]$,
+Calculated the Normalized of the input dataset to a range of
+[$[0, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1),
+or
+[$[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1),
 
 $$
 normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 $$
 
+$$
+normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)} \times 2 - 1
+$$
+
 ### Forward Pass
 
-Calculate the summation function for the hidden layers and output layer,
+Calculate the summation function for the
+[hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function-for-the-hidden-layer)
+and
+[output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function-for-the-output-layer)
 
 $$
-s_{h} = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
-$$
-
-$$
-s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
-$$
-
-Calculate the activation function to the hidden layers and output layer,
-
-$$
-a_{h} = f_{h}(s_{h})
+s = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
 $$
-y_{o} = f_{o}(s_{o})
+s = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
+$$
+
+Using the
+[sigmoid activation function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-activation-function),
+
+$$
+\sigma(s) = \frac{1}{1 + e^{-s}}
+$$
+
+Calculate the activation function at the
+[hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-output-function-for-the-hidden-layer)
+and
+[output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-output-function-for-the-output-layer),
+
+$$
+a_{h} = f_{h}(s)
+$$
+
+$$
+y_{o} = f_{o}(s)
 $$
 
 ### Backward Pass
 
-We will be using the mean squared error (mse) loss function,
+We will be using the
+[mean squared error (mse) loss function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---chose-loss-functions),
 
 $$
 \begin{aligned}
 L
-&= \frac{1}{2} \left(y_{o} - z\right)^2 \\
+&= \frac{1}{2} \left(y - z\right)^2 \\
+L(s)
+&= \frac{1}{2} \left(f_{o}(s) - z\right)^2 \\
 L(w_{i},b)
 &= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
 \end{aligned}
@@ -110,7 +135,8 @@ $$
 \end{aligned}
 $$
 
-First, calculate the error signal for the mse loss function at the output layer,
+First, calculate the
+[error signal for the mse loss function at the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-51---calculate-the-error-signal-for-the-mse-loss-function-at-the-output-layer),
 
 $$
 \begin{aligned}
@@ -120,7 +146,9 @@ $$
 \end{aligned}
 $$
 
-Second, propagate the error signal back to the hidden layers (where j is the next layer) to calculate the hidden layer error signals,
+Second, propagate the
+[error signal back to the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---propagate-the-error-signal-back-to-the-hidden-layers)
+(where j is the next layer) to calculate the hidden layer error signals,
 
 $$
 \begin{aligned}
@@ -130,7 +158,8 @@ $$
 \end{aligned}
 $$
 
-Using the gradient descent formula and our error signal, calculate the new weights and biases at the output layer,
+Using the gradient descent formula and our error signal, calculate the
+[new weights and biases at the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---calculate-the-new-weights-and-biases-at-the-output-layer),
 
 $$
 \begin{aligned}
@@ -143,7 +172,8 @@ b_{new}
 \end{aligned}
 $$
 
-Also, using the gradient descent formula and our error signal, calculate the new weights and biases at the hidden layer,
+Also, using the gradient descent formula and our error signal, calculate the
+[new weights and biases at the hidden layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---calculate-the-new-weights-and-biases-at-the-hidden-layer),
 
 $$
 \begin{aligned}
@@ -341,6 +371,8 @@ I[0] -> Normalized   I[1] -> Normalized
 25   -> -1.0         95   -> 0.8064
 ```
 
+But since we are only going to use the the first row, we will set both inputs to 0.5
+
 ### STEP 3 - FORWARD PASS
 
 Forward propagation is the process of moving the input data through the
@@ -368,6 +400,11 @@ Where,
 * $b$ is the bias
 * $n$ is the number of inputs
 
+```text
+This equation will be used when writing a computer program
+s (hidden) = sum(x[i] * w[i] for i in range(n)) + b
+```
+
 #### THE SUMMATION FUNCTION FOR THE OUTPUT LAYER
 
 The summation function for the output layer is the same as the hidden layer,
@@ -388,7 +425,6 @@ Where,
 
 ```text
 This equation will be used when writing a computer program
-s (hidden) = sum(x[i] * w[i] for i in range(n)) + b
 s (output) = sum(a[i] * w[i] for i in range(n)) + b
 ```
 
@@ -431,20 +467,32 @@ $$
 The output of the hidden layer nodes is the output of the activation function,
 
 $$
-a = f(s)
+\begin{aligned}
+a_{h}
+&= f_{h}(s) \\
+&= \sigma_{h}(s)
+\end{aligned}
 $$
+
+```text
+This equation will be used when writing a computer program
+a (hidden) = 1 / (1 + math.exp(-s))
+```
 
 #### THE OUTPUT FUNCTION FOR THE OUTPUT LAYER
 
 And the output of the output layer node is the output of the activation function,
 
 $$
-y = f(s)
+\begin{aligned}
+y_{o}
+&= f_{o}(s) \\
+&= \sigma_{o}(s)
+\end{aligned}
 $$
 
 ```text
 This equation will be used when writing a computer program
-a (hidden) = 1 / (1 + math.exp(-s))
 y (output) = 1 / (1 + math.exp(-s))
 ```
 
@@ -457,11 +505,11 @@ $$
 a_{h[0][0]} &= f_{h[0][0]}(s) \\
 &= f_{h[0][0]}\left(x_{[0]} w_{h[0][0][0]} +
    x_{[1]} w_{h[0][0][1]} + b_{h[0][0]}\right) \\
-&= f_{h[0][0]}\left((1.0 \cdot -0.5) + (1.0 \cdot -1.0) + 0.5\right) \\
-&= f_{h[0][0]}\left(-0.5 - 1.0 + 0.5\right) \\
-&= f_{h[0][0]}\left(-1.0\right) \\
-&= \sigma(-1.0) \\
-&= 0.2689
+&= f_{h[0][0]}\left((0.5 \cdot -0.5) + (0.5 \cdot -1.0) + 0.5\right) \\
+&= f_{h[0][0]}\left(-0.25 - 0.5 + 0.5\right) \\
+&= f_{h[0][0]}\left(-0.25\right) \\
+&= \sigma(-0.25) \\
+&= 0.4378
 \end{aligned}
 $$
 
@@ -470,8 +518,8 @@ $$
 a_{h[0][1]} &= f_{h[0][1]}(s) \\
 &= f_{h[0][1]}\left(x_{[0]} w_{h[0][1][0]} +
    x_{[1]} w_{h[0][1][1]} + b_{h[0][1]}\right) \\
-&= f_{h[0][1]}\left((1.0 \cdot -0.5) + (1.0 \cdot 0.5) + 0.5\right) \\
-&= f_{h[0][1]}\left(-0.5 + 0.5 + 0.5\right) \\
+&= f_{h[0][1]}\left((0.5 \cdot -0.5) + (0.5 \cdot 0.5) + 0.5\right) \\
+&= f_{h[0][1]}\left(-0.25 + 0.25 + 0.5\right) \\
 &= f_{h[0][1]}\left(0.5\right) \\
 &= \sigma(0.5) \\
 &= 0.6225
@@ -483,11 +531,11 @@ $$
 a_{h[0][2]} &= f_{h[0][2]}(s) \\
 &= f_{h[0][2]}\left(x_{[0]} w_{h[0][2][0]} +
    x_{[1]} w_{h[0][2][1]} + b_{h[0][2]}\right) \\
-&= f_{h[0][2]}\left((1.0 \cdot 1.0) + (1.0 \cdot 0.0) + 0.5\right) \\
-&= f_{h[0][2]}\left(1.0 + 0.0 + 0.5\right) \\
-&= f_{h[0][2]}\left(1.5\right) \\
-&= \sigma(1.5) \\
-&= 0.8176
+&= f_{h[0][2]}\left((0.5 \cdot 1.0) + (0.5 \cdot 0.0) + 0.5\right) \\
+&= f_{h[0][2]}\left(0.5 + 0.0 + 0.5\right) \\
+&= f_{h[0][2]}\left(1.0\right) \\
+&= \sigma(1.0) \\
+&= 0.7310
 \end{aligned}
 $$
 
@@ -498,12 +546,11 @@ $$
 y_{o[0]} &= f_{o[0]}(s) \\
 &= f_{o[0]}\left(y_{h[0][0]} w_{o[0][0]} + y_{h[0][1]} w_{o[0][1]} +
    y_{h[0][2]} w_{o[0][2]} + b_{o[0]}\right) \\
-&= f_{o[0]}\left((0.2689 \cdot 0.5) + (0.6225 \cdot -1.0) +
-   (0.8176 \cdot 0.0) + 0.5\right) \\
-&= f_{o[0]}\left(0.1345 - 0.6225 + 0.0 + 0.5\right) \\
-&= f_{o[0]}\left(0.0120\right) \\
-&= \sigma(0.0120) \\
-&= 0.5030
+&= f_{o[0]}\left(0.4378 \cdot 0.5 + 0.6225 \cdot -1.0 + 0.7310 \cdot 0.0 + 0.5\right) \\
+&= f_{o[0]}\left(0.2189 - 0.6225 + 0.0 + 0.5\right) \\
+&= f_{o[0]}\left(0.0964\right) \\
+&= \sigma(0.0964) \\
+&= 0.5241
 \end{aligned}
 $$
 
@@ -584,12 +631,14 @@ $$
 
 This represents a paraboloid (a bowl-shaped surface)
 
-NOTE: COULD NOT GET THIS PERFECT - IGNORE THE LIP
-
 <p align="center">
     <img src="svgs/f-of-x-and-y-equals-x-squared-plus-y-squared.svg"
     align="middle"
 </p>
+
+NOTE: COULD NOT GET THIS PERFECT - IGNORE THE LIP
+
+##### Calculate the Gradients of the function
 
 The gradient of $f(x,y)$ is just the partial derivatives of $f(x,y)$ with
 respect to $x$ and $y$.
@@ -620,6 +669,8 @@ $$
 {\nabla f(x,y)} = \left[{2x},{2y}\right]
 $$
 
+##### Plug the Gradients into the Gradient Descent Formula
+
 Using the gradient descent formula above for $x$ and $y$,
 
 $$
@@ -647,6 +698,8 @@ y_{new} & = y_{old} - \eta \nabla f(y_{old}) \\
 $$
 
 This formula will move us closer to the minimum of the function $f(x,y)$.
+
+##### Let's Test using Some Numbers
 
 Let's plug in some numbers to see how this works.
 Let's start at a random point (3, 4) and try
@@ -709,7 +762,7 @@ If we keep doing this, we will eventually get to the minimum of the function $f(
 You can see the new values of $x$ and $y$ are getting
 the function $f(x,y)$ closer to zero.
 
-#### STEP 5.1 CALCULATE THE ERROR SIGNAL FOR THE OUTPUT LAYER
+#### STEP 5.1 - CALCULATE THE ERROR SIGNAL FOR THE OUTPUT LAYER
 
 Now that we have a grasp on the gradient descent formula,
 we can apply it to the loss function of our neural network.
@@ -725,7 +778,7 @@ Let's go through the math for the mean squared error (mse)
 loss function at the output layer,
 
 $$
-L = \frac{1}{2} \left(y_{o} - z\right)^2
+L = \frac{1}{2} \left(y - z\right)^2
 $$
 
 Therefore, we can also write the loss function as,
@@ -734,7 +787,7 @@ $$
 \begin{aligned}
 L(y_{o}) &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
 L(s) &= \frac{1}{2} \left(f_{o} (s) - z\right)^2 \\
-L(w_{i},b) &= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
+L(w_{o},b_{o}) &= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
 \end{aligned}
 $$
 
@@ -747,96 +800,41 @@ $$
 &= \frac{\partial L}{\partial y} \cdot
    \frac{\partial y}{\partial s} \cdot
    \frac{\partial s}{\partial w_{i}} \\
-&= \frac{\partial L}{\partial s} \cdot
-   \frac{\partial s}{\partial w_{i}} \\
+
 \nabla L(b) &= \frac{\partial L}{\partial b} \\
 &= \frac{\partial L}{\partial y} \cdot
    \frac{\partial y}{\partial s} \cdot
-   \frac{\partial s}{\partial b} \\
-   &= \frac{\partial L}{\partial s} \cdot
    \frac{\partial s}{\partial b} \\
 \end{aligned}
 $$
 
 So let's find these derivatives.
 
-First we find the **partial derivative of the mse loss function with respect to $s$**.
+1 - The **partial derivative of the mse loss function with respect to output $y$**,
 
 $$
 \begin{aligned}
-\frac{\partial L}{\partial s}
-&= \frac{\partial}{\partial s} L(s) \\
-&= \frac{1}{2} \left(f_{o} (s) - z\right)^2 \\
-&= \frac{\partial}{\partial s} \frac{1}{2} \left(f_{o} (s)^2 - 2f_{o} (s)z + z^2\right) \\
-&= \frac{1}{2} \frac{\partial}{\partial s} \left(f_{o} (s)^2 - 2f_{o} (s)z + z^2\right) \\
-&= \frac{1}{2} \left(2f_{o} (s) \frac{\partial}{\partial s} f_{o} (s) - 2z \frac{\partial}{\partial s} f (s)\right) \\
-&= f_{o} (s) f_{o}'(s) - z f_{o}'(s) \\
-&= f_{o}'(s) \cdot \left(f_{o} (s) - z\right) \\
-&= f_{o}'(s) \cdot \left(y_{o} - z\right)
+\frac{\partial L}{\partial y}
+&= \frac{\partial}{\partial y} L(y_{o}) \\
+&= \frac{\partial}{\partial y} \frac{1}{2} \left(y_{o} - z\right)^2 \\
+&= \left(y_{o} - z\right)
 \end{aligned}
 $$
 
-In neural networks, we refer to this as the error signal $\delta_{o}$,
+2 - The **partial derivative of the output function with respect to the summation function $s$**,
 
 $$
 \begin{aligned}
-\delta_{o}
-&= f_{o}'(s) \cdot \left(y_{o} - z\right) \\
-&= \sigma_{o}'(s) \cdot \left(y_{o} - z\right) \\
-&= \sigma_{o}(s)(1 - \sigma_{o}(s)) \cdot \left(y_{o} - z\right) \\
-&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right)
+\frac{\partial y}{\partial s}
+&= \frac{\partial}{\partial s} f_{o}(s) \\
+&= \frac{\partial}{\partial s} \sigma_{o}(s) \\
+&= \sigma_{o}'(s) \\
+&= \sigma_{o_{o}}(s)(1 - \sigma_{o}(s)) \\
+&= y_{o}(1 - y_{o})
 \end{aligned}
 $$
 
-With our example, the error signal for the output layer would be,
-
-$$
-\begin{aligned}
-\delta_{o}
-&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right) \\
-&= 0.5030(1 - 0.5030) \cdot (0.5030 - 91) \\
-&= 0.2494 \cdot -90.4970 \\
-&= -22.56
-\end{aligned}
-$$
-
-```text
-This output error signal (delta) will be used when writing a computer program.
-d (output) = y * (1 - y) * (y - z)
-```
-
-#### STEP 5.2 CALCULATE THE ERROR SIGNAL FOR THE HIDDEN LAYER
-
-Now that we have the error signal for the output layer,
-we can calculate the error signal for the hidden layers.
-
-The error signal for the hidden layers is the derivative of the activation function
-times the sum of the weights times the error signal of the next layer.
-
-$$
-\delta_{h} = f_{h}'(s) \cdot w \cdot \delta_{o}
-$$
-
-For our example, the error signal for the hidden layer would be,
-
-$$
-\begin{aligned}
-\delta_{h[0][0]}
-&= f_{h[0][0]}'(s) \cdot w_{o[0][0]} \cdot \delta_{o} \\
-&= \sigma_{h[0][0]}'(s) \cdot w_{o[0][0]} \cdot \delta_{o} \\
-&= \sigma_{h[0][0]}(s)(1 - \sigma_{h[0][0]}(s)) \cdot w_{o[0][0]} \cdot \delta_{o} \\
-&= a_{h[0][0]}(1 - a_{h[0][0]}) \cdot w_{o[0][0]} \cdot \delta_{o} \\
-\end{aligned}
-$$
-
-```text
-This equation will be used when writing a computer program
-d (hidden) = a * (1 - a) * w * d (output)
-```
-
-#### THE GRADIENT DESCENT FORMULA FOR THE MSE LOSS FUNCTION
-
-First, we can find the **partial derivative of the summation function with respect to each $w_{i}$**.
+3- The **partial derivative of the summation function with respect to each $w_{i}$**,
 
 $$
 \begin{aligned}
@@ -847,7 +845,7 @@ $$
 \end{aligned}
 $$
 
-Second, this is the **partial derivative of the summation function with respect to $b$**.
+4 - The **partial derivative of the summation function with respect to $b$**,
 
 $$
 \begin{aligned}
@@ -857,32 +855,227 @@ $$
 \end{aligned}
 $$
 
-Pulling it all together, the gradient of the loss function with respect to $w$ is,
+Putting it all together,
 
 $$
 \begin{aligned}
 \nabla L(w_{i})
-&= \frac{\partial L}{\partial w_{i}} \\
-&= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial w_{i}} \\
-&= \delta_{o} \cdot a_{i} \\
+&= \frac{\partial L}{\partial y} \cdot
+   \frac{\partial y}{\partial s} \cdot
+   \frac{\partial s}{\partial w_{i}} \\
+&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot a_{i} \\
 \end{aligned}
 $$
-
-And the gradient of the loss function with respect to $b$ is,
 
 $$
 \begin{aligned}
-\nabla L(b) &= \frac{\partial L}{\partial b} \\
-&= \frac{\partial L}{\partial s} \cdot \frac{\partial s}{\partial b} \\
-&= \delta_{o} \\
+\nabla L(b)
+&= \frac{\partial L}{\partial y} \cdot
+   \frac{\partial y}{\partial s} \cdot
+   \frac{\partial s}{\partial b} \\
+&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot 1 \\
+&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
 \end{aligned}
 $$
 
-If we want, we can write the gradient for $w$ and $b$ as,
+In Neural Networks, let's define the error signal as $\delta_{o}$,
 
 $$
-{\nabla L(w_{i},b)} = \left[{\delta_{o} \cdot a_{i}},{\delta_{o}}\right]
+\begin{aligned}
+\delta_{o}
+&= \frac{\partial L}{\partial y} \cdot \frac{\partial y}{\partial s} \\
+&= \frac{\partial L}{\partial s} \\
+&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
+&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right)
+\end{aligned}
 $$
+
+```text
+This output error signal (delta) will be used when writing a computer program.
+d (output) = y * (1 - y) * (y - z)
+```
+
+Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
+
+$$
+\begin{aligned}
+\nabla L(w_{i})
+= \delta_{o} \cdot a_{i}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\nabla L(b)
+= \delta_{o}
+\end{aligned}
+$$
+
+For our example, the error signals for the output layer would be,
+
+$$
+????
+$$
+
+#### STEP 5.2 - CALCULATE THE ERROR SIGNAL FOR THE HIDDEN LAYERS
+
+Now that we have the error signal for the output layer,
+we can calculate the error signal for the hidden layers.
+
+The error signal for the hidden layers is the derivative of the activation function
+times the sum of the weights times the error signal of the next layer.
+
+$$
+\begin{aligned}
+\nabla L(w_{i}) &= \frac{\partial L}{\partial w_{i}} \\
+&= \frac{\partial L}{\partial a} \cdot
+   \frac{\partial a}{\partial s} \cdot
+   \frac{\partial s}{\partial w_{i}} \\
+
+\nabla L(b) &= \frac{\partial L}{\partial b} \\
+&= \frac{\partial L}{\partial a} \cdot
+   \frac{\partial a}{\partial s} \cdot
+   \frac{\partial s}{\partial b} \\
+\end{aligned}
+$$
+
+So let's find these derivatives,
+
+1- The **partial derivative of the mse loss function with respect to the hidden layer output $a$**. This is the tricky part. We need to use the chain rule of calculus to find the derivative of the loss function with respect to the hidden layer output $y_{o}$.
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial a}
+&= \frac{\partial L}{\partial s_{o}} \cdot
+   \frac{\partial s_{o}}{\partial a} \\
+\end{aligned}
+$$
+
+where,
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial s_{o}} = \delta_{o} (from \; above)
+\end{aligned}
+$$
+
+and
+
+$$
+\begin{aligned}
+\frac{\partial s_{o}}{\partial a}
+&= \frac{\partial}{\partial a} \left(a_{h} w_{o} + b_{o}\right) \\
+&= w_{o}
+\end{aligned}
+$$
+
+Hence,
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial a}
+&= \delta_{o} \cdot w_{o}
+\end{aligned}
+$$
+
+2 - The **partial derivative of the hidden layer output function with respect to the summation function $s$**,
+
+$$
+\begin{aligned}
+\frac{\partial a}{\partial s}
+&= \frac{\partial}{\partial s} f_{h}(s) \\
+&= \frac{\partial}{\partial s} \sigma_{h}(s) \\
+&= \sigma_{h}'(s) \\
+&= \sigma_{h_{o}}(s)(1 - \sigma_{h}(s)) \\
+&= a_{h}(1 - a_{h})
+\end{aligned}
+$$
+
+3 - The **partial derivative of the summation function with respect to each $w_{i}$**,
+
+$$
+\begin{aligned}
+\frac{\partial s}{\partial w_{i}}
+&= \frac{\partial}{\partial w_{i}} \left(\sum_{i=0}^{n} a_i w_i + b\right) \\
+&= \frac{\partial}{\partial w_{i}} \left(a_0 w_0 + a_1 w_1 + \cdots + a_n w_n + b\right) \\
+&= a_{i}
+\end{aligned}
+$$
+
+4 - The **partial derivative of the summation function with respect to $b$**,
+
+$$
+\begin{aligned}
+\frac{\partial s}{\partial b} &= \frac{\partial}{\partial b} \left(\sum_{i=1}^{n} x_i w_i + b\right) \\
+&= \frac{\partial}{\partial b} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b\right) \\
+&= 1
+\end{aligned}
+$$
+
+Putting it all together,
+
+$$
+\begin{aligned}
+\nabla L(w_{i})
+&= \frac{\partial L}{\partial a} \cdot
+   \frac{\partial a}{\partial s} \cdot
+   \frac{\partial s}{\partial w_{i}} \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot a_{i} \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\nabla L(b)
+&= \frac{\partial L}{\partial a} \cdot
+   \frac{\partial a}{\partial s} \cdot
+   \frac{\partial s}{\partial b} \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot 1 \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \\
+\end{aligned}
+$$
+
+In Neural Networks, let's define the error signal as $\delta_{h}$,
+
+$$
+\begin{aligned}
+\delta_{h}
+&= \frac{\partial L}{\partial a} \cdot \frac{\partial a}{\partial s} \\
+&= \frac{\partial L}{\partial s} \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+\end{aligned}
+$$
+
+```text
+This equation will be used when writing a computer program
+d (hidden) =  d (output) * w * a (1 - a)
+```
+
+Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
+
+$$
+\begin{aligned}
+\nabla L(w_{i})
+&= \delta_{h} \cdot a_{i} \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot a_{i}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\nabla L(b)
+&= \delta_{h} \\
+&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+\end{aligned}
+$$
+
+For our example, the error signals for the hidden layer would be,
+
+$$
+????
+$$
+
+#### STEP 5.3 - CALCULATE THE NEW WEIGHTS AND BIASES FOR THE OUTPUT LAYER
 
 Now let's use the gradient descent formula above for $w$ and $b$,
 
@@ -890,7 +1083,7 @@ $$
 \theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
 $$
 
-We use this for each parameter $w$ and $b$,
+We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
@@ -906,62 +1099,42 @@ b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
 \end{aligned}
 $$
 
-#### STEP 5.3 ADJUST THE WEIGHTS AND BIASES
+For our example, the new weights and biases for the output layer would be,
 
+$$
+????
+$$
 
+#### STEP 5.4 - CALCULATE THE NEW WEIGHTS AND BIASES FOR THE HIDDEN LAYERS
 
-
-
-
-##### Our example using the gradient descent formula on the loss function
-
-
-
-
-
-
-
-Let's plug in some numbers to see how this works.
-Let's start at a random numbers (3, 4) and try
-to find the minimum the function $L(w,b)$
-with a learning rate of $\eta = 0.1$.
-
-First, let's simplify the gradient decent formula a little more
-knowing the learning rate of $\eta = 0.1$,
+We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
-w_{new} &= w_{old} - 0.1 \left(a_{total} \cdot \sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)\right)
+w_{i_{new}} &= w_{i_{old}} - \eta \nabla L(w_{i_{old}}) \\
+&= w_{i_{old}} - \eta \delta_{h} \cdot a_{i} \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-b_{new} &= b_{old} - 0.1 \left(\sigma(s)(1 - \sigma(s)) \cdot \left(y - z\right)\right)
+b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
+&= b_{old} - \eta \delta_{h} \\
 \end{aligned}
 $$
 
-Plug in 3 and 4,
+For our example, the new weights and biases for the output layer would be,
 
 $$
-\begin{aligned}
-x_{new} &= 3(0.8) \\
-&= 2.4000
-\end{aligned}
+????
 $$
 
-$$
-\begin{aligned}
-y_{new} &= 4(0.8) \\
-&= 3.2000
-\end{aligned}
-$$
+#### OUR EXAMPLE OVER 10 ITERATIONS
 
 If we keep doing this, we will eventually get to the minimum of the function $L(w,b)$.
 
 | $w_{old}$ | $\nabla L(w)$ | $w_{new}$ | | $b_{old}$ | $\nabla L(b)$ | $b_{new}$  | | $L(w,b)$ |
 |-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
 |           |               | 3.0000    | |            |               | 4.0000    | | ??.0000  |
-
 
 You can see the function $L(w,b)$ is getting closer to zero.
