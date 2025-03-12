@@ -285,7 +285,7 @@ For our example, we will initialize the weights and biases as follows,
     * outputWeight {0.5 -1.0 0.0}
     * outputBias {0.5}
 
-![IMAGE training-multi-layer-perceptron-neural-network-step1-initialization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1-initialization.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step1-initialization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1.svg)
 
 ## THE TRAINING LOOP
 
@@ -306,7 +306,7 @@ Normalization, also called min-max scaling, changes the values of
 input dataset $i$ to occupy a range of $[0, 1]$ or $[-1, 1]$,
 reducing the influence of unusual values of out model.
 
-![IMAGE training-multi-layer-perceptron-neural-network-step2-normalization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step2-normalization.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step2-normalization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step2.svg)
 
 #### MIN-MAX SCALING FUNCTION [0, 1]
 
@@ -381,7 +381,7 @@ Forward propagation is the process of moving the input data through the
 neural network to get an output. Each Hidden out output node will
 calculate a Summation Function and apply an Activation Function.
 
-![IMAGE training-multi-layer-perceptron-neural-network-step3-forward-pass IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step3-forward-pass.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step3-forward-pass IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step3.svg)
 
 #### THE SUMMATION FUNCTION
 
@@ -606,8 +606,6 @@ $$
 The loss function is the difference between the
 predicted output $y$
 and the target output $z$.
-
-![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4-loss-function.svg)
 
 **The goal is to minimize the loss function**. Ideally we want it to be zero.
 
@@ -960,6 +958,8 @@ $$
 
 For our example, the error signals for the output layer would be,
 
+![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.1.svg)
+
 $$
 ????
 $$
@@ -1118,6 +1118,8 @@ $$
 
 For our example, the error signals for the hidden layer would be,
 
+![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.2.svg)
+
 $$
 ????
 $$
@@ -1148,6 +1150,8 @@ $$
 
 For our example, the new weights and biases for the output layer would be,
 
+![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.3.svg)
+
 $$
 ????
 $$
@@ -1171,6 +1175,8 @@ b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
 $$
 
 For our example, the new weights and biases for the output layer would be,
+
+![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.4.svg)
 
 $$
 ????
