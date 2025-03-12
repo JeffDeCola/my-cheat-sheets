@@ -13,7 +13,7 @@ id_rsa*
 .DS_Store
 
 # WINDOWS
-*.jpg:Zone.Identifier
+*:Zone.Identifier
 
 # TAR FILES
 *.tar.gz
