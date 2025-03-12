@@ -10,11 +10,13 @@ Table of Contents
 * [MLP ARCHITECTURE USED FOR THIS EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mlp-architecture-used-for-this-example)
 * [THE TRAINING DATASET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-dataset)
 * [STEP 1 - INITIALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-1---initialization)
+* [STEP 2 - MIN & MAX INPUT VALUES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-input-values)
 * [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-loop)
-  * [STEP 2 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---normalization)
-  * [STEP 3 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---forward-pass)
+  * [STEP 3 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---normalization)
+  * [STEP 4 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---forward-pass)
   * [LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#loss-functions)
-  * [STEP 4 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---backward-pass)
+  * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-5---backward-pass)
+* [STEP 6 - SAVE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
 
 Documentation and Reference
 
@@ -48,13 +50,18 @@ A very high level overview of the math behind training a multi-layer perceptron 
   * Initialize the weights & biases of a mlp neural network by using a
     configuration file or random generation
 
-* **STEP 2 - Normalization**
+* **STEP 2 - Min-Max Input Values**
 
-  * Find the min & max values of each input of the dataset
-  * Normalize input dataset using the
+  * Find the
+    [min & max input values](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-input-values)
+    of each input of the dataset
+
+* **STEP 3 - Normalization**
+
+  * Used to normalize input dataset using the
     [min-max scaling function $[0, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
     or
-  * Normalize input dataset using the
+  * Used to normalize input dataset using the
     [min-max scaling function $[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
 
 $$
@@ -65,16 +72,17 @@ $$
 normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)} \times 2 - 1
 $$
 
-* **STEP 3 - Forward Pass**
+* **STEP 4 - Forward Pass**
 
-* Steps 3.1 - Calculate
+* Steps 4.1 - Calculate
   [the summation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-31---the-summation-function-for-the-hidden-layers)
+  * Normalize the input data using a min-max scaling function above
 
 $$
-s_{h} = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
+s_{h} = f_{h}(w_{0},w_{1},...,b) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
-* Step 3.2 Calculate
+* Step 4.2 Calculate
   [the activation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-32---the-activation-function-for-the-hidden-layers)
   using
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
@@ -87,14 +95,14 @@ $$
 \sigma(s_{h}) = \frac{1}{1 + e^{-s_{h}}}
 $$
 
-* Step 3.3  - Calculate
+* Step 4.3  - Calculate
   [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-33---the-summation-function-for-the-output-layer)
 
 $$
 s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
 $$
 
-* Steps 3.4 - Calculate
+* Steps 4.4 - Calculate
   [the activation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-34---the-activation-function-for-the-output-layer)
   using
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
@@ -111,7 +119,7 @@ $$
 
   * We will be using the
     [mean squared error (mse) loss function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mean-squared-error-mse-loss-function)
-    on each output node.
+    on each output node
 
 $$
 \begin{aligned}
@@ -127,7 +135,7 @@ $$
 * **Goal of Training**
 
   * The goal is to minimize the loss function $L(w_{i},b)$.
-    The goal is to minimize the loss function $L(w_{i},b)$. Hence, we want to calculate the gradient of the loss function with respect to the weights and biases at the output layer,
+    The goal is to minimize the loss function $L(w_{i},b)$. Hence, we want to calculate the gradient of the loss function with respect to the weights and biases at the output layer
 
 $$
 \begin{aligned}
@@ -136,9 +144,9 @@ $$
 \end{aligned}
 $$
 
-* **STEP 4 - Backward Pass**
+* **STEP 5 - Backward Pass**
 
-* Step 4.1 - Calculate
+* Step 5.1 - Calculate
 [the error signal for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-41---the-error-signal-for-the-output-layer) where the target output $z$ is normalized within a pre-defined range
 
 $$
@@ -149,7 +157,7 @@ $$
 \end{aligned}
 $$
 
-* Step 4.2 - Calculate
+* Step 5.2 - Calculate
 [the error signal for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-42---the-error-signal-for-the-hidden-layers)
 
 $$
@@ -160,7 +168,7 @@ $$
 \end{aligned}
 $$
 
-* Step 4.3 - Calculate
+* Step 5.3 - Calculate
 [the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---the-new-weights--biases-for-the-output-layer)
 using the gradient descent formula and our error signal
 
@@ -175,7 +183,7 @@ b_{new}
 \end{aligned}
 $$
 
-* Step 4.4 - Calculate
+* Step 5.4 - Calculate
 [the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-44---the-new-weights--biases-for-the-hidden-layers)
 using the gradient descent formula and our error signal
 
@@ -189,6 +197,11 @@ b_{new}
 &= b - \eta \delta_{h}
 \end{aligned}
 $$
+
+* **STEP 6 - Save Weights & Biases**
+
+  * [Save weights & biases](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
+    to a file
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
@@ -255,11 +268,11 @@ The dataset consists of input values and the corresponding output values.
 In our example, we will use the following training dataset,
 
 ```csv
-I0,  I1,  Z
-70,  100, 90
-50,  85,  80
-65,  70,  80
-30,  95,  70
+I0,  I1,  Z0
+70,  98,  91
+50,  85,  82
+65,  67,  80
+25,  95,  68
 ```
 
 ## STEP 1 - INITIALIZATION
@@ -286,6 +299,19 @@ For our example, we will initialize the weights and biases as follows,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step1-initialization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1.svg)
 
+## STEP 2 - MIN & MAX INPUT VALUES
+
+Before we normalize the input dataset, we need to find the min and max values of each input.
+
+For our example, the min and max values of the input dataset are,
+
+This is straight forward,
+
+```csv
+I[0] -> Min: 25, Max: 70
+I[1] -> Min: 67, Max: 98
+```
+
 ## THE TRAINING LOOP
 
 The goal of training is to adjust the weights and biases
@@ -299,7 +325,7 @@ There are two loops,
 * **One Full Dataset**
   * The entire dataset is passed forward and backward to adjust the weights and biases
 
-### STEP 2 - NORMALIZATION
+### STEP 3 - NORMALIZATION
 
 Normalization, also called min-max scaling, changes the values of
 input dataset $i$ to occupy a range of $[0, 1]$ or $[-1, 1]$,
@@ -307,7 +333,7 @@ reducing the influence of unusual values of out model.
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step2-normalization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step2.svg)
 
-#### MIN-MAX SCALING FUNCTION [0, 1]
+#### Min-Max Scaling Function [0, 1]
 
 The formula to normalize a training dataset using min-max $[0, 1]$ scaling is,
 
@@ -355,7 +381,7 @@ I[0] -> Normalized   I[1] -> Normalized
 25   -> 0.0          95   -> 0.9032
 ```
 
-#### MIN-MAX SCALING FUNCTION [-1, 1]
+#### Min-Max Scaling Function [-1, 1]
 
 The formula to normalize a training dataset using min-max $[-1, 1]$ scaling is,
 
@@ -382,7 +408,7 @@ I[0] -> Normalized   I[1] -> Normalized
 
 But since we are only going to use the the first row, we will set both inputs to 0.5
 
-### STEP 3 - FORWARD PASS
+### STEP 4 - FORWARD PASS
 
 Forward propagation is the process of moving the input data through the
 neural network to get an output. Each Hidden out output node will
@@ -442,7 +468,7 @@ $$
     align="middle"
 </p>
 
-#### STEP 3.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS
+#### STEP 4.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS
 
 The summation function takes the weighted inputs and sums them up and
 then adds a bias term.
@@ -494,7 +520,7 @@ s_{h[0]} &= \left(x_{[0]} w_{h[0][2][0]} + x_{[1]} w_{h[0][2][1]} + b_{h[0][2]}\
 \end{aligned}
 $$
 
-#### STEP 3.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS
+#### STEP 4.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS
 
 The output of the hidden layer nodes is the activation function,
 
@@ -552,7 +578,7 @@ a_{h[0][2]} &= f_{h[0][2]}(s) \\
 \end{aligned}
 $$
 
-#### STEP 3.3 - THE SUMMATION FUNCTION FOR THE OUTPUT LAYER
+#### STEP 4.3 - THE SUMMATION FUNCTION FOR THE OUTPUT LAYER
 
 The summation function for the output layer is the same as the hidden layer,
 
@@ -574,7 +600,7 @@ Where,
 This equation will be used when writing a computer program
 ```
 
-#### STEP 3.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER
+#### STEP 4.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER
 
 And the output of the output layer node is the activation function,
 
@@ -614,7 +640,7 @@ and the target output $z$.
 
 **The goal is to minimize the loss function**. Ideally we want it to be zero.
 
-#### MEAN SQUARED ERROR (MSE) LOSS FUNCTION
+#### Mean Squared Error (MSE) Loss Function
 
 Mean Squared Error (mse) is a common loss function used in regression problems.
 It is the average of the squared differences between the
@@ -632,7 +658,7 @@ We use mse over a simple linear loss because,
 * It is differentiable (which is important for gradient descent below)
 * It penalizes errors more due to squaring
 
-### STEP 4 - BACKWARD PASS
+### STEP 5 - BACKWARD PASS
 
 We will use stochastic gradient descent (SGD) to adjust the weights and biases.
 What does this mean?
@@ -812,7 +838,7 @@ If we keep doing this, we will eventually get to the minimum of the function $f(
 You can see the new values of $x$ and $y$ are getting
 the function $f(x,y)$ closer to zero.
 
-#### STEP 4.1 - THE ERROR SIGNAL FOR THE OUTPUT LAYER
+#### STEP 5.1 - THE ERROR SIGNAL FOR THE OUTPUT LAYER
 
 Now that we have a grasp on the gradient descent formula,
 we can apply it to the loss function of our neural network.
@@ -969,7 +995,7 @@ $$
 ????
 $$
 
-#### STEP 4.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS
+#### STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS
 
 Now that we have the error signal for the output layer,
 we can calculate the error signal for the hidden layers.
@@ -1129,7 +1155,7 @@ $$
 ????
 $$
 
-#### STEP 4.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER
+#### STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER
 
 Now let's use the gradient descent formula above for $w$ and $b$,
 
@@ -1161,7 +1187,7 @@ $$
 ????
 $$
 
-#### STEP 4.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS
+#### STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS
 
 We use this for each parameter $w$ and $b$ to get the new values,
 
@@ -1196,3 +1222,7 @@ If we keep doing this, we will eventually get to the minimum of the function $L(
 |           |               | 3.0000    | |            |               | 4.0000    | | ??.0000  |
 
 You can see the function $L(w,b)$ is getting closer to zero.
+
+## STEP 6 - SAVE WEIGHTS & BIASES
+
+??
