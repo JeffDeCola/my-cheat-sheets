@@ -33,11 +33,10 @@ cheat sheet
 ## OVERVIEW
 
 The goal of training a neural network is to adjust the weights and biases
-of the neural network so that the predicted output is as close as possible
-to the actual output.
-
+so that the output is as close as possible to the target output.
 A neural networks is trained using a training dataset.
-The entire process of training a neural network is shown below,
+
+The steps to training a neural network are shown below,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-training-steps IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-training-steps.svg)
 
@@ -72,7 +71,7 @@ $$
   [the summation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-31---the-summation-function-for-the-hidden-layers)
 
 $$
-s = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
+s_{h} = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
 * Step 3.2 Calculate
@@ -81,18 +80,18 @@ $$
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
 $$
-a_{h} = f_{h}(s)
+a_{h} = f_{h}(s_{h})
 $$
 
 $$
-\sigma(s) = \frac{1}{1 + e^{-s}}
+\sigma(s_{h}) = \frac{1}{1 + e^{-s_{h}}}
 $$
 
 * Step 3.3  - Calculate
   [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-33---the-summation-function-for-the-output-layer)
 
 $$
-s = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
+s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
 $$
 
 * Steps 3.4 - Calculate
@@ -101,11 +100,11 @@ $$
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
 $$
-y_{o} = f_{o}(s)
+y_{o} = f_{o}(s_{o})
 $$
 
 $$
-\sigma(s) = \frac{1}{1 + e^{-s}}
+\sigma(s_{o}) = \frac{1}{1 + e^{-s_{o}}}
 $$
 
 * **Note on Loss Function**
@@ -118,8 +117,8 @@ $$
 \begin{aligned}
 L
 &= \frac{1}{2} \left(y - z\right)^2 \\
-L(s)
-&= \frac{1}{2} \left(f_{o}(s) - z\right)^2 \\
+L(s_{o})
+&= \frac{1}{2} \left(f_{o}(s_{o}) - z\right)^2 \\
 L(w_{i},b)
 &= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
 \end{aligned}
@@ -145,7 +144,7 @@ $$
 $$
 \begin{aligned}
 \delta_{o}
-&= f_{o}'(s) \cdot \left(y_{0} - z\right) \\
+&= f_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
 &= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
 \end{aligned}
 $$
@@ -156,7 +155,7 @@ $$
 $$
 \begin{aligned}
 \delta_{h}
-&= f_{h}'(s) \cdot w_{j} \cdot \delta_{j} \\
+&= f_{h}'(s_{h}) \cdot w_{j} \cdot \delta_{j} \\
 &= a_{h} \left(1 - a_{h}\right) \cdot w_{j} \cdot \delta_{j}
 \end{aligned}
 $$
@@ -168,11 +167,11 @@ using the gradient descent formula and our error signal
 $$
 \begin{aligned}
 w_{i_{new}}
-&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
-&= w_{i_{old}} - \eta \delta_{o} \cdot a_{i} \\
+&= w_{i} - \eta \nabla L(w_{i}) \\
+&= w_{i} - \eta \delta_{o} \cdot a_{i} \\
 b_{new}
-&= b_{old} - \eta \nabla L(b) \\
-&= b_{old} - \eta \delta_{o}
+&= b - \eta \nabla L(b) \\
+&= b - \eta \delta_{o}
 \end{aligned}
 $$
 
@@ -183,11 +182,11 @@ using the gradient descent formula and our error signal
 $$
 \begin{aligned}
 w_{i_{new}}
-&= w_{i_{old}} - \eta \nabla L(w_{i}) \\
-&= w_{i_{old}} - \eta \delta_{h} \cdot a_{i} \\
+&= w_{i} - \eta \nabla L(w_{i}) \\
+&= w_{i} - \eta \delta_{h} \cdot a_{i} \\
 b_{new}
-&= b_{old} - \eta \nabla L(b) \\
-&= b_{old} - \eta \delta_{h}
+&= b - \eta \nabla L(b) \\
+&= b - \eta \delta_{h}
 \end{aligned}
 $$
 
@@ -228,25 +227,25 @@ where
     * $x[0], x[1]$
 * **Hidden Layer**
   * Each node has two inputs, hence two weights
-    * $wh[0][0][0], wh[0][0][1], wh[0][1][0], wh[0][1][1], wh[0][2][0], wh[0][2][1]$
-    * \[hidden layer]\[hidden node]\[input node]
+    * $wh[0][0], wh[0][1], wh[1][0], wh[1][1], wh[2][0], wh[2][1]$
+    * [hidden node]\[input node]
   * One bias term
-    * $bh[0][0], bh[0][1], bh[0][2]$
-    * \[hidden layer]\[hidden node]
+    * $bh[0], bh[1], bh[2]$
+    * [hidden node]
   * Three activation functions
-    * $fh[0][0](s), fh[0][1](s), fh[0][2](s)$
-    * \[hidden layer]\[hidden node]
+    * $fh[0](sh[0]), fh[1](sh[1]), fh[2](sh[2])$
+    * \[hidden node]
   * Three outputs
-    * $ah[0][0], ah[0][1], ah[0][2]$
-    * \[hidden layer]\[hidden node]
+    * $ah[0], ah[1], ah[2]$
+    * \[hidden node]
 * **Output Layer**
   * The node has three inputs, hence three weights
-    * $wo[0][0], wo[0][1] wo[0][2]$
-    * \[output node]\[hidden node]
+    * $wo[0], wo[1] wo[2]$
+    * \[hidden node]
   * One bias term
-    * $bo[0]$
-  * Two output values
-    * $yo[0], yo[1]$
+    * $bo$
+  * One output value
+    * $yo
 
 ## THE TRAINING DATASET
 
@@ -256,7 +255,7 @@ The dataset consists of input values and the corresponding output values.
 In our example, we will use the following training dataset,
 
 ```csv
-I0,  I1,  Z0
+I0,  I1,  Z
 70,  100, 90
 50,  85,  80
 65,  70,  80
@@ -323,6 +322,10 @@ where
 * $max(dataset)$ is the maximum value of the dataset
 * $normalized \; data$ is the output
 
+```text
+This equation and finding the min max values will be used when writing a computer program
+```
+
 For example, from our dataset,
 
 ```csv
@@ -355,11 +358,15 @@ I[0] -> Normalized   I[1] -> Normalized
 #### MIN-MAX SCALING FUNCTION [-1, 1]
 
 The formula to normalize a training dataset using min-max $[-1, 1]$ scaling is,
-$$
 
+$$
 normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 \times 2 - 1
 $$
+
+```text
+This equation and finding the min max values will be used when writing a computer program
+```
 
 This will normalize the dataset to the range of [-1, 1].
 
@@ -456,7 +463,6 @@ Where,
 
 ```text
 This equation will be used when writing a computer program
-s (hidden) = sum(x[i] * w[i] for i in range(n)) + b
 ```
 
 In our example, the summation function for the hidden layer nodes would be,
@@ -496,13 +502,13 @@ $$
 \begin{aligned}
 a_{h}
 &= f_{h}(s) \\
-&= \sigma_{h}(s)
+\sigma_{h}(s)
+&= \frac{1}{1 + e^{-s}}
 \end{aligned}
 $$
 
 ```text
 This equation will be used when writing a computer program
-a (hidden) = 1 / (1 + math.exp(-s))
 ```
 
 The output functions for the hidden layer nodes in our example would be,
@@ -566,7 +572,6 @@ Where,
 
 ```text
 This equation will be used when writing a computer program
-s (output) = sum(a[i] * w[i] for i in range(n)) + b
 ```
 
 #### STEP 3.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER
@@ -577,13 +582,13 @@ $$
 \begin{aligned}
 y_{o}
 &= f_{o}(s) \\
-&= \sigma_{o}(s)
+\sigma_{o}(s)
+&= \frac{1}{1 + e^{-s}}
 \end{aligned}
 $$
 
 ```text
 This equation will be used when writing a computer program
-y (output) = 1 / (1 + math.exp(-s))
 ```
 
 The output function for the output layer node would be,
@@ -649,14 +654,14 @@ negative of the gradient.
 The gradient descent formula is,
 
 $$
-\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
+\theta_{new} = \theta - \eta \nabla f(\theta)
 $$
 
 Where,
 
-* $\nabla f(\theta_{old})$ is the gradient of the function at $\theta_{old}$
+* $\nabla f(\theta)$ is the gradient of the function at $\theta$
 * $\theta_{new}$ is the new value of the parameter
-* $\theta_{old}$ is the old value of the parameter
+* $\theta$ is the old value of the parameter
 * $\eta$ is the learning rate (a small number)
 
 You can see that the formula is just subtracting the gradient of the function
@@ -719,26 +724,26 @@ $$
 Using the gradient descent formula above for $x$ and $y$,
 
 $$
-\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
+\theta_{new} = \theta - \eta \nabla f(\theta)
 $$
 
 We use this for each parameter $x$ and $y$,
 
 $$
 \begin{aligned}
-x_{new} &= x_{old} - \eta \nabla f(x_{old}) \\
-&= x_{old} - \eta \frac{\partial f}{\partial x} \\
-&= x_{old} - \eta (2x_{old}) \\
-&= x_{old}(1 - 2\eta)
+x_{new} &= x - \eta \nabla f(x) \\
+&= x - \eta \frac{\partial f}{\partial x} \\
+&= x - \eta (2x) \\
+&= x(1 - 2\eta)
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} & = y_{old} - \eta \nabla f(y_{old}) \\
-&= y_{old} - \eta \frac{\partial f}{\partial y} \\
-&= y_{old} - \eta (2y_{old}) \\
-&= y_{old}(1 - 2\eta)
+y_{new} & = y - \eta \nabla f(y) \\
+&= y - \eta \frac{\partial f}{\partial y} \\
+&= y - \eta (2y) \\
+&= y(1 - 2\eta)
 \end{aligned}
 $$
 
@@ -756,19 +761,19 @@ knowing the learning rate of $\eta = 0.1$,
 
 $$
 \begin{aligned}
-x_{new} &= x_{old}(1 - 2\eta) \\
-&= x_{old}(1 - 2 \cdot 0.1) \\
-&= x_{old}(1 - 0.2) \\
-&= x_{old}(0.8) \\
+x_{new} &= x(1 - 2\eta) \\
+&= x(1 - 2 \cdot 0.1) \\
+&= x(1 - 0.2) \\
+&= x(0.8) \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-y_{new} &= y_{old}(1 - 2\eta) \\
-&= y_{old}(1 - 2 \cdot 0.1) \\
-&= y_{old}(1 - 0.2) \\
-&= y_{old}(0.8) \\
+y_{new} &= y(1 - 2\eta) \\
+&= y(1 - 2 \cdot 0.1) \\
+&= y(1 - 0.2) \\
+&= y(0.8) \\
 \end{aligned}
 $$
 
@@ -790,7 +795,7 @@ $$
 
 If we keep doing this, we will eventually get to the minimum of the function $f(x,y)$.
 
-| $x_{old}$ | $\nabla f(x)$ | $x_{new}$ | | $y_{old}$ | $\nabla f(y)$ | $y_{new}$  | | $f(x,y)$ |
+| $x$ | $\nabla f(x)$ | $x_{new}$ | | $y$ | $\nabla f(y)$ | $y_{new}$  | | $f(x,y)$ |
 |-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
 |           |               | 3.0000    | |            |               | 4.0000    | | 25.0000  |
 | 3.0000    | 6.0000        | 2.4000    | | 4.0000     | 8.0000        | 3.2000    | | 16.0000  |
@@ -1129,22 +1134,22 @@ $$
 Now let's use the gradient descent formula above for $w$ and $b$,
 
 $$
-\theta_{new} = \theta_{old} - \eta \nabla f(\theta_{old})
+\theta_{new} = \theta - \eta \nabla f(\theta)
 $$
 
 We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
-w_{i_{new}} &= w_{i_{old}} - \eta \nabla L(w_{i_{old}}) \\
-&= w_{i_{old}} - \eta \delta_{o} \cdot a_{i} \\
+w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \\
+&= w_{i} - \eta \delta_{o} \cdot a_{i} \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
-&= b_{old} - \eta \delta_{o} \\
+b_{new} &= b - \eta \nabla L(b) \\
+&= b - \eta \delta_{o} \\
 \end{aligned}
 $$
 
@@ -1162,15 +1167,15 @@ We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
-w_{i_{new}} &= w_{i_{old}} - \eta \nabla L(w_{i_{old}}) \\
-&= w_{i_{old}} - \eta \delta_{h} \cdot a_{i} \\
+w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \\
+&= w_{i} - \eta \delta_{h} \cdot a_{i} \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-b_{new} &= b_{old} - \eta \nabla L(b_{old}) \\
-&= b_{old} - \eta \delta_{h} \\
+b_{new} &= b - \eta \nabla L(b) \\
+&= b - \eta \delta_{h} \\
 \end{aligned}
 $$
 
@@ -1186,7 +1191,7 @@ $$
 
 If we keep doing this, we will eventually get to the minimum of the function $L(w,b)$.
 
-| $w_{old}$ | $\nabla L(w)$ | $w_{new}$ | | $b_{old}$ | $\nabla L(b)$ | $b_{new}$  | | $L(w,b)$ |
+| $w$ | $\nabla L(w)$ | $w_{new}$ | | $b$ | $\nabla L(b)$ | $b_{new}$  | | $L(w,b)$ |
 |-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
 |           |               | 3.0000    | |            |               | 4.0000    | | ??.0000  |
 
