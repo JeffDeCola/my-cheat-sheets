@@ -162,7 +162,7 @@ $$
 $$
 
 * Step 4.3 - Calculate
-[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights--biases-at-the-output-layer)
+[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---the-new-weights--biases-for-the-output-layer)
 using the gradient descent formula and our error signal
 
 $$
@@ -177,7 +177,7 @@ b_{new}
 $$
 
 * Step 4.4 - Calculate
-[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights--biases-at-the-hidden-layers)
+[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-44---the-new-weights--biases-for-the-hidden-layers)
 using the gradient descent formula and our error signal
 
 $$
