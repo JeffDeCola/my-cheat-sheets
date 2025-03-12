@@ -13,8 +13,8 @@ Table of Contents
 * [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-loop)
   * [STEP 2 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---normalization)
   * [STEP 3 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---forward-pass)
-  * [STEP 4 - CHOSE LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---chose-loss-functions)
-  * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-5---backward-pass)
+  * [LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#loss-functions)
+  * [STEP 4 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---backward-pass)
 
 Documentation and Reference
 
@@ -46,8 +46,8 @@ The entire process of training a neural network is shown below,
 A very high level overview of the math behind training a multi-layer perceptron (MLP) neural network.
 
 * **STEP 1 - Initialization**
-  * Initialize the weights and biases of the neural network by either a
-    configuration file or random.
+  * Initialize the weights & biases of a mlp neural network by using a
+    configuration file or random generation
 
 * **STEP 2 - Normalization**
 
@@ -76,9 +76,9 @@ s = f_{h}(w,b) = \sum_{i=1}^{n} x_i w_i + b
 $$
 
 * Step 3.2 Calculate
-  [the activation function for the hidden layers](https://github.com/JeffDeCola/mycheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-32---the-activation-function-for-the-hidden-layers)
+  [the activation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-32---the-activation-function-for-the-hidden-layers)
   using
-  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-signmoid-fuction)
+  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
 $$
 a_{h} = f_{h}(s)
@@ -96,7 +96,7 @@ s = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
 $$
 
 * Steps 3.4 - Calculate
-  [the activation function for the output layer](https://github.com/JeffDeCola/mycheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-34---the-activation-function-for-the-output-laye)
+  [the activation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-34---the-activation-function-for-the-output-layer)
   using
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
@@ -162,7 +162,7 @@ $$
 $$
 
 * Step 4.3 - Calculate
-[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights-&-biases-at-the-output-layer)
+[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights--biases-at-the-output-layer)
 using the gradient descent formula and our error signal
 
 $$
@@ -177,7 +177,7 @@ b_{new}
 $$
 
 * Step 4.4 - Calculate
-[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights-&-biases-at-the-hidden-layers)
+[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---calculate-the-new-weights--biases-at-the-hidden-layers)
 using the gradient descent formula and our error signal
 
 $$
@@ -435,7 +435,7 @@ $$
     align="middle"
 </p>
 
-#### STEP 3.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYER
+#### STEP 3.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS
 
 The summation function takes the weighted inputs and sums them up and
 then adds a bias term.
@@ -488,7 +488,7 @@ s_{h[0]} &= \left(x_{[0]} w_{h[0][2][0]} + x_{[1]} w_{h[0][2][1]} + b_{h[0][2]}\
 \end{aligned}
 $$
 
-#### STEP 3.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYER
+#### STEP 3.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS
 
 The output of the hidden layer nodes is the activation function,
 
@@ -964,7 +964,7 @@ $$
 ????
 $$
 
-#### STEP 3.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS
+#### STEP 4.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS
 
 Now that we have the error signal for the output layer,
 we can calculate the error signal for the hidden layers.
