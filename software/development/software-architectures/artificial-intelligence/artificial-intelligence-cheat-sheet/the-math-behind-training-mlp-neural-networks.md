@@ -205,7 +205,7 @@ $$
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
-Since we are dealing with neural networks, let's quicky review our model of a neuron.
+Since we are dealing with neural networks, let's quickly review our model of a neuron.
 Check out a more detailed view in my cheat sheets
 [mathematical model of a neuron](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron).
 
@@ -297,7 +297,7 @@ For our example, we will initialize the weights and biases as follows,
     * outputWeight {0.5 -1.0 0.0}
     * outputBias {0.5}
 
-![IMAGE training-multi-layer-perceptron-neural-network-step1-initialization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1.svg)
 
 ## STEP 2 - MIN & MAX INPUT VALUES
 
@@ -331,7 +331,7 @@ Normalization, also called min-max scaling, changes the values of
 input dataset $i$ to occupy a range of $[0, 1]$ or $[-1, 1]$,
 reducing the influence of unusual values of out model.
 
-![IMAGE training-multi-layer-perceptron-neural-network-step2-normalization IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step2.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step3 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step3.svg)
 
 #### Min-Max Scaling Function [0, 1]
 
@@ -414,7 +414,7 @@ Forward propagation is the process of moving the input data through the
 neural network to get an output. Each Hidden out output node will
 calculate a Summation Function and apply an Activation Function.
 
-![IMAGE training-multi-layer-perceptron-neural-network-step3-forward-pass IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step3.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step4 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.svg)
 
 #### THE SUMMATION FUNCTION
 
@@ -989,7 +989,7 @@ $$
 
 For our example, the error signals for the output layer would be,
 
-![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.1.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.1.svg)
 
 $$
 ????
@@ -1149,7 +1149,7 @@ $$
 
 For our example, the error signals for the hidden layer would be,
 
-![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.2.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step5.2 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.2.svg)
 
 $$
 ????
@@ -1181,7 +1181,7 @@ $$
 
 For our example, the new weights and biases for the output layer would be,
 
-![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.3.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step5.3 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.3.svg)
 
 $$
 ????
@@ -1207,7 +1207,7 @@ $$
 
 For our example, the new weights and biases for the output layer would be,
 
-![IMAGE training-multi-layer-perceptron-neural-network-step4-loss-function IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step4.4.svg)
+![IMAGE training-multi-layer-perceptron-neural-network-step5.4 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.4.svg)
 
 $$
 ????
