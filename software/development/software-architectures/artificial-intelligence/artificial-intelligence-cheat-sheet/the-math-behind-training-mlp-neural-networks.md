@@ -36,7 +36,6 @@ cheat sheet
 
 The goal of training a neural network is to adjust the weights and biases
 so that the output is as close as possible to the target output.
-A neural networks is trained using a training dataset.
 
 The steps to training a neural network are shown below,
 
@@ -50,18 +49,18 @@ A very high level overview of the math behind training a multi-layer perceptron 
   * Initialize the weights & biases of a mlp neural network by using a
     configuration file or random generation
 
-* **STEP 2 - Min-Max Input Values**
+* **STEP 2 - Min-Max Values**
 
   * Find the
-    [min & max input values](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-input-values)
-    of each input of the dataset
+    [min & max values](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-values)
+    of each input & output of the dataset
 
 * **STEP 3 - Normalization**
 
-  * Used to normalize input dataset using the
+  * Used to normalize input & output of dataset using the
     [min-max scaling function $[0, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
     or
-  * Used to normalize input dataset using the
+  * Used to normalize input & output of dataset using the
     [min-max scaling function $[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
 
 $$
@@ -74,12 +73,13 @@ $$
 
 * **STEP 4 - Forward Pass**
 
-* Steps 4.1 - Calculate
+* Step 4.1 - Calculate
   [the summation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-31---the-summation-function-for-the-hidden-layers)
-  * Normalize the input data using a min-max scaling function above
+  * Normalize the input data using a min-max values above
 
 $$
-s_{h} = f_{h}(w_{0},w_{1},...,b) = \sum_{i=1}^{n} x_i w_i + b
+s_{h} = f(w_{0}...,b_{h})
+= \sum_{i=0}^{n} x_i w_i + b_{h}
 $$
 
 * Step 4.2 Calculate
@@ -88,18 +88,20 @@ $$
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
 $$
-a_{h} = f_{h}(s_{h})
-$$
-
-$$
-\sigma(s_{h}) = \frac{1}{1 + e^{-s_{h}}}
+\begin{aligned}
+a_{h}
+&= f_{h}(s_{h}) \\
+\sigma_{h}(s_{h})
+&= \frac{1}{1 + e^{-s_{h}}}
+\end{aligned}
 $$
 
 * Step 4.3  - Calculate
   [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-33---the-summation-function-for-the-output-layer)
 
 $$
-s_{o} = f_{o}(w,b) = \sum_{i=1}^{n} a_i w_i + b
+s_{o} = f(w_{0}...,b_{o})
+= \sum_{i=0}^{n} x_i w_i + b_{o}
 $$
 
 * Steps 4.4 - Calculate
@@ -108,18 +110,21 @@ $$
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
 
 $$
-y_{o} = f_{o}(s_{o})
+\begin{aligned}
+y_{o}
+&= f_{o}(s_{o}) \\
+\sigma_{o}(s_{o})
+&= \frac{1}{1 + e^{-s_{o}}}
+\end{aligned}
 $$
 
-$$
-\sigma(s_{o}) = \frac{1}{1 + e^{-s_{o}}}
-$$
-
-* **Note on Loss Function**
+* **The Loss Function**
 
   * We will be using the
     [mean squared error (mse) loss function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mean-squared-error-mse-loss-function)
     on each output node
+  * The goal is to minimize the loss function $L(w_{0}...,b)$ by using
+    the gradient descent formula
 
 $$
 \begin{aligned}
@@ -127,20 +132,28 @@ L
 &= \frac{1}{2} \left(y - z\right)^2 \\
 L(s_{o})
 &= \frac{1}{2} \left(f_{o}(s_{o}) - z\right)^2 \\
-L(w_{i},b)
-&= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
+L(w_{0}...,b)
+&= \frac{1}{2} \left(f_{o} (\sum_{i=0}^{n} a_i w_i + b_{o}) - z\right)^2
 \end{aligned}
 $$
 
-* **Goal of Training**
-
-  * The goal is to minimize the loss function $L(w_{i},b)$.
-    The goal is to minimize the loss function $L(w_{i},b)$. Hence, we want to calculate the gradient of the loss function with respect to the weights and biases at the output layer
+* **The Gradient of each Weight & Bias**
 
 $$
 \begin{aligned}
 \nabla L(w_{i}) &= \delta_{o} \cdot a_{i} \\
-\nabla L(b) &= \delta_{o}
+\nabla L(b_{o}) &= \delta_{o}
+\end{aligned}
+$$
+
+* **The Gradient Decent Formula to get new weights & biases**
+
+$$
+\begin{aligned}
+w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
+&= w_{i} - \eta \delta_{o} \cdot a_{i} \\
+b_{new} &= b_{o} - \eta \nabla L(b_{o}) \\
+&= b_{o} - \eta \delta_{o}
 \end{aligned}
 $$
 
@@ -148,6 +161,7 @@ $$
 
 * Step 5.1 - Calculate
 [the error signal for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-41---the-error-signal-for-the-output-layer) where the target output $z$ is normalized within a pre-defined range
+  * Normalize the output target data using a min-max values above
 
 $$
 \begin{aligned}
@@ -163,8 +177,8 @@ $$
 $$
 \begin{aligned}
 \delta_{h}
-&= f_{h}'(s_{h}) \cdot w_{j} \cdot \delta_{j} \\
-&= a_{h} \left(1 - a_{h}\right) \cdot w_{j} \cdot \delta_{j}
+&= f_{h}'(s_{h}) \cdot w_{o} \cdot \delta_{j} \\
+&= a_{h} \left(1 - a_{h}\right) \cdot w_{0} \cdot \delta_{o}
 \end{aligned}
 $$
 
@@ -218,7 +232,7 @@ An artificial neuron consists of the following components,
 * **Summation Function**
   * Weighted sum of inputs
   * Adds a bias term to the weighted sums $b$
-  * $s = f(w,b) = \sum_{i=1}^{n} x_i w_i + b$
+  * $s = f(w_{0}...,b_{0}...) = \sum_{i=1}^{n} x_i w_i + b$
 * **Activation Function**
   * The activation function determines if the neuron will fire or not
   * Applies a nonlinear activation function $f(s)$ to the sum such
@@ -258,7 +272,7 @@ where
   * One bias term
     * $bo$
   * One output value
-    * $yo
+    * $yo$
 
 ## THE TRAINING DATASET
 
@@ -268,7 +282,7 @@ The dataset consists of input values and the corresponding output values.
 In our example, we will use the following training dataset,
 
 ```csv
-I0,  I1,  Z0
+i0,  i1,  z0
 70,  98,  91
 50,  85,  82
 65,  67,  80
@@ -278,11 +292,12 @@ I0,  I1,  Z0
 ## STEP 1 - INITIALIZATION
 
 The first step is to initialize the weights and biases of the neural network.
-This is usually done randomly. Random numbers between $[-1, 1]$ are usually used.
+This can either be done randomly or by using a configuration file.
+The values are usually between -1 and 1.
 
-For our example, we will initialize the weights and biases as follows,
+For our example, we will assume the weights and biases were initialized using a configuration file,
 
-* **HIDDEN LAYER 0**
+* **HIDDEN LAYER**
   * NODE 0
     * hiddenWeight {-0.5 -1.0}
     * hiddenBias {0.5}
@@ -299,37 +314,36 @@ For our example, we will initialize the weights and biases as follows,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step1.svg)
 
-## STEP 2 - MIN & MAX INPUT VALUES
+## STEP 2 - MIN & MAX VALUES
 
 Before we normalize the input dataset, we need to find the min and max values of each input.
-
 For our example, the min and max values of the input dataset are,
 
-This is straight forward,
-
 ```csv
-I[0] -> Min: 25, Max: 70
-I[1] -> Min: 67, Max: 98
+i0 -> Min: 25, Max: 70
+i1 -> Min: 67, Max: 98
 ```
 
 ## THE TRAINING LOOP
 
 The goal of training is to adjust the weights and biases
-to minimize the difference between the actual output $y$
-and the actual targets $z$.
+to minimize the difference between the actual output $y_{o}$
+and the actual targets $z_{o}$.
 The training loop is the process of training the neural network.
 There are two loops,
 
 * **Epochs**
-  * The number of times the entire dataset is passed forward and backward
+  * The number of times the entire dataset is trained
 * **One Full Dataset**
-  * The entire dataset is passed forward and backward to adjust the weights and biases
+  * The entire dataset is trained once, line by line
 
 ### STEP 3 - NORMALIZATION
 
 Normalization, also called min-max scaling, changes the values of
 input dataset $i$ to occupy a range of $[0, 1]$ or $[-1, 1]$,
 reducing the influence of unusual values of out model.
+On a side note, if there is only one line in the dataset,
+all values will be set to 0.5.
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step3 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step3.svg)
 
@@ -355,30 +369,31 @@ This equation and finding the min max values will be used when writing a compute
 For example, from our dataset,
 
 ```csv
-I0,  I1,  Z0
+i0,  i1,  z0
 70,  98,  91
 50,  85,  82
 65,  67,  80
 25,  95,  68
 ```
 
-For $I[0]$, 25 is the minimum value and 70 is the maximum value.
-For $I[1]$, 67 is the minimum value and 98 is the maximum value.
+* For $i[0]$, 25 is the minimum value and 70 is the maximum value.
+* For $i[1]$, 67 is the minimum value and 98 is the maximum value.
+* For $z[0]$, 68 is the minimum value and 91 is the maximum value.
 
-Hence, for data input for $I[0]$ of 65 would be normalized to,
+As an example, for data input for $i[0]$ of 65 would be normalized to,
 
 $$
 \frac{65 - 25}{70 - 25} = 0.8888
 $$
 
-Doing all the calculations for [0,1], the input dataset would look like,
+For our example, the dataset would look like,
 
-```csv
-I[0] -> Normalized   I[1] -> Normalized
-70   -> 1.0          98   -> 1.0
-50   -> 0.5555       85   -> 0.5806
-65   -> 0.8888       67   -> 0.0
-25   -> 0.0          95   -> 0.9032
+```text
+i0 -> Normalized   i1 -> Normalized   z0 -> Normalized
+70 -> 1.0          98 -> 1.0          91 -> 1.0
+50 -> 0.556        85 -> 0.581        82 -> 0.609
+65 -> 0.889        67 -> 0.0          80 -> 0.522
+25 -> 0.0          95 -> 0.903        68 -> 0.0
 ```
 
 #### Min-Max Scaling Function [-1, 1]
@@ -394,19 +409,15 @@ $$
 This equation and finding the min max values will be used when writing a computer program
 ```
 
-This will normalize the dataset to the range of [-1, 1].
+For our example, the input dataset would look like,
 
-Doing all the calculations, the input dataset would look like,
-
-```csv
-I[0] -> Normalized   I[1] -> Normalized
-70   -> 1.0          98   -> 1.0
-50   -> -0.1111      85   -> 0.1613
-65   -> 0.7777       67   -> -1.0
-25   -> -1.0         95   -> 0.8064
+```text
+i0 -> Normalized   i1 -> Normalized   z0 -> Normalized
+70 -> 1.0          98 -> 1.0          91 -> 1.0
+50 -> 0.111        85 -> 0.161        82 -> 0.217
+65 -> 0.778        67 -> -1.0         80 -> 0.043
+25 -> -1.0         95 -> 0.806        68 -> -1.0
 ```
-
-But since we are only going to use the the first row, we will set both inputs to 0.5
 
 ### STEP 4 - FORWARD PASS
 
@@ -418,19 +429,19 @@ calculate a Summation Function and apply an Activation Function.
 
 #### THE SUMMATION FUNCTION
 
-The summation function $f(w,b)$ is the weighted sum of the inputs plus a bias term.
+The summation function $s$ is the weighted sum of the inputs plus a bias term.
 
 $$
 \begin{aligned}
-s = f(w,b) &= x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b \\
-&= \sum_{i=1}^{n} x_i w_i + b
+s = f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b \\
+&= \sum_{i=0}^{n} x_i w_i + b
 \end{aligned}
 $$
 
 Where,
 
-* $x_1, x_2, \ldots, x_n$ are the input values
-* $w_1, w_2, \ldots, w_n$ are the weights
+* $x_0, x_1, \ldots, x_n$ are the input values
+* $w_0, w_1, \ldots, w_n$ are the weights
 * $b$ is the bias
 * $n$ is the number of inputs
 
@@ -475,27 +486,20 @@ then adds a bias term.
 
 $$
 \begin{aligned}
-s = f(w,b) &= x_1 w_1 + x_2 w_2 + \cdots + x_n w_n + b \\
-&= \sum_{i=1}^{n} x_i w_i + b
+s_{h} = f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{h} \\
+&= \sum_{i=0}^{n} x_i w_i + b_{h}
 \end{aligned}
 $$
-
-Where,
-
-* $x_1, x_2, \ldots, x_n$ are the input values
-* $w_1, w_2, \ldots, w_n$ are the weights
-* $b$ is the bias
-* $n$ is the number of inputs
 
 ```text
 This equation will be used when writing a computer program
 ```
 
-In our example, the summation function for the hidden layer nodes would be,
+For our example, the summation function for the hidden layer nodes would be,
 
 $$
 \begin{aligned}
-s_{h[0]} &= \left(x_{[0]} w_{h[0][0][0]} + x_{[1]} w_{h[0][0][1]} + b_{h[0][0]}\right) \\
+s_{h[0]} &= \left(x_{[0]} w_{h[0][0]} + x_{[1]} w_{h[0][1]} + b_{h[0]}\right) \\
 &= \left((0.5 \cdot -0.5) + (0.5 \cdot -1.0) + 0.5\right) \\
 &= \left(-0.25 - 0.5 + 0.5\right) \\
 &= \left(-0.25\right)
@@ -504,7 +508,7 @@ $$
 
 $$
 \begin{aligned}
-s_{h[0]} &= \left(x_{[0]} w_{h[0][1][0]} + x_{[1]} w_{h[0][1][1]} + b_{h[0][1]}\right) \\
+s_{h[1]} &= \left(x_{[0]} w_{h[1][0]} + x_{[1]} w_{h[1][1]} + b_{h[1]}\right) \\
 &= \left((0.5 \cdot -0.5) + (0.5 \cdot 0.5) + 0.5\right) \\
 &= \left(-0.25 + 0.25 + 0.5\right) \\
 &= \left(0.5\right)
@@ -513,7 +517,7 @@ $$
 
 $$
 \begin{aligned}
-s_{h[0]} &= \left(x_{[0]} w_{h[0][2][0]} + x_{[1]} w_{h[0][2][1]} + b_{h[0][2]}\right) \\
+s_{h[2]} &= \left(x_{[0]} w_{h[2][0]} + x_{[1]} w_{h[2][1]} + b_{h[2]}\right) \\
 &= \left((0.5 \cdot 1.0) + (0.5 \cdot 0.0) + 0.5\right) \\
 &= \left(0.5 + 0.0 + 0.5\right) \\
 &= \left(1.0\right)
@@ -527,9 +531,9 @@ The output of the hidden layer nodes is the activation function,
 $$
 \begin{aligned}
 a_{h}
-&= f_{h}(s) \\
-\sigma_{h}(s)
-&= \frac{1}{1 + e^{-s}}
+&= f_{h}(s_{h}) \\
+\sigma_{h}(s_{h})
+&= \frac{1}{1 + e^{-s_{h}}}
 \end{aligned}
 $$
 
@@ -537,43 +541,28 @@ $$
 This equation will be used when writing a computer program
 ```
 
-The output functions for the hidden layer nodes in our example would be,
+For our example, the activation function for the hidden layer nodes would be,
 
 $$
 \begin{aligned}
-a_{h[0][0]} &= f_{h[0][0]}(s) \\
-&= f_{h[0][0]}\left(x_{[0]} w_{h[0][0][0]} +
-   x_{[1]} w_{h[0][0][1]} + b_{h[0][0]}\right) \\
-&= f_{h[0][0]}\left((0.5 \cdot -0.5) + (0.5 \cdot -1.0) + 0.5\right) \\
-&= f_{h[0][0]}\left(-0.25 - 0.5 + 0.5\right) \\
-&= f_{h[0][0]}\left(-0.25\right) \\
-&= \sigma(-0.25) \\
+a_{h[0]} &= f_{h[0]}(s_{h[0]}) \\
+&= \sigma_{h[0]}(-0.25) \\
 &= 0.4378
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-a_{h[0][1]} &= f_{h[0][1]}(s) \\
-&= f_{h[0][1]}\left(x_{[0]} w_{h[0][1][0]} +
-   x_{[1]} w_{h[0][1][1]} + b_{h[0][1]}\right) \\
-&= f_{h[0][1]}\left((0.5 \cdot -0.5) + (0.5 \cdot 0.5) + 0.5\right) \\
-&= f_{h[0][1]}\left(-0.25 + 0.25 + 0.5\right) \\
-&= f_{h[0][1]}\left(0.5\right) \\
-&= \sigma(0.5) \\
+a_{h[1]} &= f_{h[1]}(s_{h[1]}) \\
+&= \sigma_{h[1]}(0.5) \\
 &= 0.6225
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-a_{h[0][2]} &= f_{h[0][2]}(s) \\
-&= f_{h[0][2]}\left(x_{[0]} w_{h[0][2][0]} +
-   x_{[1]} w_{h[0][2][1]} + b_{h[0][2]}\right) \\
-&= f_{h[0][2]}\left((0.5 \cdot 1.0) + (0.5 \cdot 0.0) + 0.5\right) \\
-&= f_{h[0][2]}\left(0.5 + 0.0 + 0.5\right) \\
-&= f_{h[0][2]}\left(1.0\right) \\
-&= \sigma(1.0) \\
+a_{h[2]} &= f_{h[2]}(s_{h[2]}) \\
+&= \sigma_{h[2]}(1.0) \\
 &= 0.7310
 \end{aligned}
 $$
@@ -584,21 +573,26 @@ The summation function for the output layer is the same as the hidden layer,
 
 $$
 \begin{aligned}
-s = f(w,b) &= a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b \\
-&= \sum_{i=1}^{n} a_i w_i + b
+s_{o} = f(w_{0}...,b_{o}) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{o} \\
+&= \sum_{i=0}^{n} x_i w_i + b_{o}
 \end{aligned}
 $$
-
-Where,
-
-* $a_1, a_2, \ldots, a_n$ are the hidden layer output values
-* $w_1, w_2, \ldots, w_n$ are the weights
-* $b$ is the bias
-* $n$ is the number of inputs
 
 ```text
 This equation will be used when writing a computer program
 ```
+
+For our example, the summation function for the output layer node would be,
+
+$$
+\begin{aligned}
+s_{o} &= \left(a_{h[0]} w_{o[0]} + a_{h[1]} w_{o[1]} +
+   a_{h[2]} w_{o[2]} + b_{o}\right) \\
+&= \left(0.4378 \cdot 0.5 + 0.6225 \cdot -1.0 + 0.7310 \cdot 0.0 + 0.5\right) \\
+&= \left(0.2189 - 0.6225 + 0.0 + 0.5\right) \\
+&= \left(0.0964\right)
+\end{aligned}
+$$
 
 #### STEP 4.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER
 
@@ -607,9 +601,9 @@ And the output of the output layer node is the activation function,
 $$
 \begin{aligned}
 y_{o}
-&= f_{o}(s) \\
-\sigma_{o}(s)
-&= \frac{1}{1 + e^{-s}}
+&= f_{o}(s_{o}) \\
+\sigma_{o}(s_{o})
+&= \frac{1}{1 + e^{-s_{o}}}
 \end{aligned}
 $$
 
@@ -617,17 +611,13 @@ $$
 This equation will be used when writing a computer program
 ```
 
-The output function for the output layer node would be,
+For our example, the activation function for the output layer node would be,
 
 $$
 \begin{aligned}
-y_{o[0]} &= f_{o[0]}(s) \\
-&= f_{o[0]}\left(y_{h[0][0]} w_{o[0][0]} + y_{h[0][1]} w_{o[0][1]} +
-   y_{h[0][2]} w_{o[0][2]} + b_{o[0]}\right) \\
-&= f_{o[0]}\left(0.4378 \cdot 0.5 + 0.6225 \cdot -1.0 + 0.7310 \cdot 0.0 + 0.5\right) \\
-&= f_{o[0]}\left(0.2189 - 0.6225 + 0.0 + 0.5\right) \\
-&= f_{o[0]}\left(0.0964\right) \\
-&= \sigma(0.0964) \\
+y_{o} &= f_{o}(s_{o}) \\
+&= f_{o}(0.0964) \\
+&= \sigma_{o}(0.0964) \\
 &= 0.5241
 \end{aligned}
 $$
@@ -637,7 +627,6 @@ $$
 The loss function is the difference between the
 predicted output $y$
 and the target output $z$.
-
 **The goal is to minimize the loss function**. Ideally we want it to be zero.
 
 #### Mean Squared Error (MSE) Loss Function
@@ -664,8 +653,8 @@ We will use stochastic gradient descent (SGD) to adjust the weights and biases.
 What does this mean?
 
 1. We will calculate the gradient of the loss function with respect
-   to the weights and biases.
-2. Then we will adjust the weights and biases in the opposite direction of the gradient
+   to the weights and biases
+2. Then we will adjust (get new) weights and biases in the opposite direction of the gradient
 
 But first, we need to understand the gradient descent formula.
 
@@ -737,12 +726,6 @@ $$
 &= \frac{\partial}{\partial y} (x^2 + y^2) \\
 &= 2y
 \end{aligned}
-$$
-
-If we want, we can write the gradient for $x$ and $y$ as,
-
-$$
-{\nabla f(x,y)} = \left[{2x},{2y}\right]
 $$
 
 ##### Plug the Gradients into the Gradient Descent Formula
@@ -843,12 +826,7 @@ the function $f(x,y)$ closer to zero.
 Now that we have a grasp on the gradient descent formula,
 we can apply it to the loss function of our neural network.
 We will do the exact steps above,
-but substitute the loss function $L(w_{i},b)$ for $f(x,y)$.
-
-Like above, the gradient decent formula gets new values
-for $x$ and $y$ that will get the function $f(x,y)$ closer to zero,
-we will get new values for the weights and biases
-that will get the loss function $L(w_{i},b)$ closer to zero.
+but substitute the loss function $L(w_{0}...,b)$ for $f(x,y)$.
 
 Let's go through the math for the mean squared error (mse)
 loss function at the output layer,
@@ -862,8 +840,8 @@ Therefore, we can also write the loss function as,
 $$
 \begin{aligned}
 L(y_{o}) &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
-L(s) &= \frac{1}{2} \left(f_{o} (s) - z\right)^2 \\
-L(w_{o},b_{o}) &= \frac{1}{2} \left(f_{o} (\sum_{i=1}^{n} a_i w_i + b) - z\right)^2
+L(s_{o}) &= \frac{1}{2} \left(f_{o} (s_{o}) - z\right)^2 \\
+L(w_{0}...,b_{o}) &= \frac{1}{2} \left(f_{o} (\sum_{i=0}^{n} a_i w_i + b_{o}) - z\right)^2
 \end{aligned}
 $$
 
@@ -873,14 +851,14 @@ So we need to use the chain rule of calculus first,
 $$
 \begin{aligned}
 \nabla L(w_{i}) &= \frac{\partial L}{\partial w_{i}} \\
-&= \frac{\partial L}{\partial y} \cdot
-   \frac{\partial y}{\partial s} \cdot
-   \frac{\partial s}{\partial w_{i}} \\
+&= \frac{\partial L}{\partial y_{o}} \cdot
+   \frac{\partial y_{o}}{\partial s_{o}} \cdot
+   \frac{\partial s_{o}}{\partial w_{i}} \\
 
-\nabla L(b) &= \frac{\partial L}{\partial b} \\
-&= \frac{\partial L}{\partial y} \cdot
-   \frac{\partial y}{\partial s} \cdot
-   \frac{\partial s}{\partial b} \\
+\nabla L(b_{o}) &= \frac{\partial L}{\partial b} \\
+&= \frac{\partial L}{\partial y_{o}} \cdot
+   \frac{\partial y_{o}}{\partial s_{o}} \cdot
+   \frac{\partial s_{o}}{\partial b_{o}} \\
 \end{aligned}
 $$
 
@@ -890,22 +868,22 @@ So let's find these derivatives.
 
 $$
 \begin{aligned}
-\frac{\partial L}{\partial y}
-&= \frac{\partial}{\partial y} L(y_{o}) \\
-&= \frac{\partial}{\partial y} \frac{1}{2} \left(y_{o} - z\right)^2 \\
+\frac{\partial L}{\partial y_{o}}
+&= \frac{\partial}{\partial y_{o}} L(y_{o}) \\
+&= \frac{\partial}{\partial y_{o}} \frac{1}{2} \left(y_{o} - z\right)^2 \\
 &= \left(y_{o} - z\right)
 \end{aligned}
 $$
 
-2 - The **partial derivative of the output function with respect to the summation function $s$**,
+2 - The **partial derivative of the output function with respect to the summation function $s_{o}$**,
 
 $$
 \begin{aligned}
-\frac{\partial y}{\partial s}
-&= \frac{\partial}{\partial s} f_{o}(s) \\
-&= \frac{\partial}{\partial s} \sigma_{o}(s) \\
-&= \sigma_{o}'(s) \\
-&= \sigma_{o_{o}}(s)(1 - \sigma_{o}(s)) \\
+\frac{\partial y}{\partial s_{o}}
+&= \frac{\partial}{\partial s_{o}} f_{o}(s_{o}) \\
+&= \frac{\partial}{\partial s_{o}} \sigma_{o}(s_{o}) \\
+&= \sigma_{o}'(s_{o}) \\
+&= \sigma_{o_{o}}(s_{o})(1 - \sigma_{o}(s_{o})) \\
 &= y_{o}(1 - y_{o})
 \end{aligned}
 $$
@@ -921,12 +899,12 @@ $$
 \end{aligned}
 $$
 
-4 - The **partial derivative of the summation function with respect to $b$**,
+4 - The **partial derivative of the summation function with respect to $b_{o}$**,
 
 $$
 \begin{aligned}
-\frac{\partial s}{\partial b} &= \frac{\partial}{\partial b} \left(\sum_{i=1}^{n} x_i w_i + b\right) \\
-&= \frac{\partial}{\partial b} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b\right) \\
+\frac{\partial s}{\partial b_{o}} &= \frac{\partial}{\partial b_{o}} \left(\sum_{i=0}^{n} x_i w_i + b_{o}\right) \\
+&= \frac{\partial}{\partial b_{o}} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b_{o}\right) \\
 &= 1
 \end{aligned}
 $$
@@ -936,9 +914,9 @@ Putting it all together,
 $$
 \begin{aligned}
 \nabla L(w_{i})
-&= \frac{\partial L}{\partial y} \cdot
-   \frac{\partial y}{\partial s} \cdot
-   \frac{\partial s}{\partial w_{i}} \\
+&= \frac{\partial L}{\partial y_{o}} \cdot
+   \frac{\partial y_{o}}{\partial s_{o}} \cdot
+   \frac{\partial s_{o}}{\partial w_{i}} \\
 &= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot a_{i} \\
 \end{aligned}
 $$
@@ -947,10 +925,9 @@ $$
 \begin{aligned}
 \nabla L(b)
 &= \frac{\partial L}{\partial y} \cdot
-   \frac{\partial y}{\partial s} \cdot
-   \frac{\partial s}{\partial b} \\
+   \frac{\partial y_{o}}{\partial s_{o}} \cdot
+   \frac{\partial s_{o}}{\partial b_{o}} \\
 &= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot 1 \\
-&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
 \end{aligned}
 $$
 
@@ -959,16 +936,15 @@ In Neural Networks, let's define the error signal as $\delta_{o}$,
 $$
 \begin{aligned}
 \delta_{o}
-&= \frac{\partial L}{\partial y} \cdot \frac{\partial y}{\partial s} \\
-&= \frac{\partial L}{\partial s} \\
+&= \frac{\partial L}{\partial y_{o}} \cdot \frac{\partial y_{o}}{\partial s_{o}} \\
+&= \frac{\partial L}{\partial s_{o}} \\
 &= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
 &= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right)
 \end{aligned}
 $$
 
 ```text
-This output error signal (delta) will be used when writing a computer program.
-d (output) = y * (1 - y) * (y - z)
+This equation will be used when writing a computer program
 ```
 
 Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
@@ -987,21 +963,26 @@ $$
 \end{aligned}
 $$
 
-For our example, the error signals for the output layer would be,
+For our example,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.1.svg)
 
+The error signal for the output layer would be,
+
 $$
-????
+\begin{aligned}
+\delta_{o}
+&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right) \\
+&= 0.524(1 - 0.524) \cdot \left(0.524 - 0.91\right) \\
+&= 0.524(0.476) \cdot -0.386 \\
+&= -0.096252
+\end{aligned}
 $$
 
 #### STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS
 
 Now that we have the error signal for the output layer,
 we can calculate the error signal for the hidden layers.
-
-The error signal for the hidden layers is the derivative of the activation function
-times the sum of the weights times the error signal of the next layer.
 
 $$
 \begin{aligned}
