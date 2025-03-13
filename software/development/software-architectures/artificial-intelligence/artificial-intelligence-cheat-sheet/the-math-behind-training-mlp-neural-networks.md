@@ -64,11 +64,11 @@ A very high level overview of the math behind training a multi-layer perceptron 
     [min-max scaling function $[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
 
 $$
-normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
+normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 $$
 
 $$
-normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)} \times 2 - 1
+normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)} \times 2 - 1
 $$
 
 * **STEP 4 - Forward Pass**
@@ -177,8 +177,8 @@ $$
 $$
 \begin{aligned}
 \delta_{h}
-&= f_{h}'(s_{h}) \cdot w_{o} \cdot \delta_{j} \\
-&= a_{h} \left(1 - a_{h}\right) \cdot w_{0} \cdot \delta_{o}
+&= f_{h}'(s_{h}) \cdot w_{oi} \cdot \delta_{o} \\
+&= a_{h} \left(1 - a_{h}\right) \cdot w_{oi} \cdot \delta_{o}
 \end{aligned}
 $$
 
@@ -854,7 +854,11 @@ $$
 &= \frac{\partial L}{\partial y_{o}} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
    \frac{\partial s_{o}}{\partial w_{i}} \\
+\end{aligned}
+$$
 
+$$
+\begin{aligned}
 \nabla L(b_{o}) &= \frac{\partial L}{\partial b} \\
 &= \frac{\partial L}{\partial y_{o}} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
@@ -939,7 +943,16 @@ $$
 &= \frac{\partial L}{\partial y_{o}} \cdot \frac{\partial y_{o}}{\partial s_{o}} \\
 &= \frac{\partial L}{\partial s_{o}} \\
 &= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
-&= y_{o}(1 - y_{o}) \cdot \left(y_{o} - z\right)
+\end{aligned}
+$$
+
+Which boils down to,
+
+$$
+\begin{aligned}
+\delta_{o}
+&= f_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
+&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
 \end{aligned}
 $$
 
@@ -963,7 +976,7 @@ $$
 \end{aligned}
 $$
 
-For our example,
+For our example, we're going to normalize the target output $z$ to 0.91, rather than 1.0.
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.1.svg)
 
@@ -983,18 +996,24 @@ $$
 
 Now that we have the error signal for the output layer,
 we can calculate the error signal for the hidden layers.
+Since we're propagating the error backwards, we start with
+the output layer. It just makes it easier.
 
 $$
 \begin{aligned}
 \nabla L(w_{i}) &= \frac{\partial L}{\partial w_{i}} \\
-&= \frac{\partial L}{\partial a} \cdot
-   \frac{\partial a}{\partial s} \cdot
-   \frac{\partial s}{\partial w_{i}} \\
+&= \frac{\partial L}{\partial a_{h}} \cdot
+   \frac{\partial a_{h}}{\partial s_{h}} \cdot
+   \frac{\partial s_{h}}{\partial w_{i}} \\
+\end{aligned}
+$$
 
-\nabla L(b) &= \frac{\partial L}{\partial b} \\
-&= \frac{\partial L}{\partial a} \cdot
-   \frac{\partial a}{\partial s} \cdot
-   \frac{\partial s}{\partial b} \\
+$$
+\begin{aligned}
+\nabla L(b_{h}) &= \frac{\partial L}{\partial b} \\
+&= \frac{\partial L}{\partial a_{h}} \cdot
+   \frac{\partial a_{h}}{\partial s_{h}} \cdot
+   \frac{\partial s_{h}}{\partial b_{h}} \\
 \end{aligned}
 $$
 
@@ -1004,9 +1023,9 @@ So let's find these derivatives,
 
 $$
 \begin{aligned}
-\frac{\partial L}{\partial a}
+\frac{\partial L}{\partial a_{h}}
 &= \frac{\partial L}{\partial s_{o}} \cdot
-   \frac{\partial s_{o}}{\partial a} \\
+   \frac{\partial s_{o}}{\partial a_{h}} \\
 \end{aligned}
 $$
 
@@ -1014,7 +1033,8 @@ where,
 
 $$
 \begin{aligned}
-\frac{\partial L}{\partial s_{o}} = \delta_{o} (from \; above)
+\frac{\partial L}{\partial s_{o}} = \delta_{o} \\
+(from \; above)
 \end{aligned}
 $$
 
@@ -1022,8 +1042,8 @@ and
 
 $$
 \begin{aligned}
-\frac{\partial s_{o}}{\partial a}
-&= \frac{\partial}{\partial a} \left(a_{h} w_{o} + b_{o}\right) \\
+\frac{\partial s_{o}}{\partial a_{h}}
+&= \frac{\partial}{\partial a_{h}} \left(a_{h} w_{o} + b_{o}\right) \\
 &= w_{o}
 \end{aligned}
 $$
@@ -1101,13 +1121,22 @@ $$
 \delta_{h}
 &= \frac{\partial L}{\partial a} \cdot \frac{\partial a}{\partial s} \\
 &= \frac{\partial L}{\partial s} \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+&= \delta_{j} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+\end{aligned}
+$$
+
+Which boils down to,
+
+$$
+\begin{aligned}
+\delta_{h}
+&= f_{h}'(s_{h}) \cdot w_{oi} \cdot \delta_{o} \\
+&= a_{h} \left(1 - a_{h}\right) \cdot w_{oi} \cdot \delta_{o}
 \end{aligned}
 $$
 
 ```text
 This equation will be used when writing a computer program
-d (hidden) =  d (output) * w * a (1 - a)
 ```
 
 Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
