@@ -30,8 +30,9 @@ Table of Contents
     * [STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---the-error-signal-for-the-hidden-layers)
     * [STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---the-new-weights--biases-for-the-output-layer)
     * [STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---the-new-weights--biases-for-the-hidden-layers)
-    * [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
-* [STEP 6 - SAVE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
+  * [STEP 6 - SAVE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
+* [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
+* [STEP 7 - SAVE WEIGHTS & BIASES TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-weights--biases-to-a-file)
 
 Documentation and Reference
 
@@ -1510,9 +1511,33 @@ b_{h[2]}
 \end{aligned}
 $$
 
-#### OUR EXAMPLE OVER 10 ITERATIONS
+### STEP 6 - UPDATE WEIGHTS & BIASES
+
+Simple use the new weights and biases for the next iteration.
+
+## OUR EXAMPLE OVER 10 ITERATIONS
 
 If we keep doing this, we will eventually get to the minimum of the Loss Function.
+
+For example, after the first iteration the loss we be
+
+$$
+\begin{aligned}
+L &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
+&= \frac{1}{2} \cdot \left(0.524 - 0.91\right)^2 \\
+&= 0.074498
+\end{aligned}
+$$
+
+After the second iteration the loss will be
+
+$$
+\begin{aligned}
+L &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
+&= \frac{1}{2} \cdot \left(0.50842 - 0.91\right)^2 \\
+&= 0.0675
+\end{aligned}
+$$
 
 | Iteration | $w_{o[0]}$ | $w_{o[1]}$ | $w_{o[2]}$ | $b_{o}$ | $w_{h[0][0]}$ | $w_{h[0][1]}$ | $w_{h[1][0]}$ | $w_{h[1][1]}$ | $w_{h[2][0]}$ | $w_{h[2][1]}$ | $b_{h[0]}$ | $b_{h[1]}$ | $b_{h[2]}$ | Loss |
 |-----------|------------|------------|------------|---------|---------------|---------------|---------------|---------------|---------------|---------------|------------|------------|------------|------|
@@ -1527,6 +1552,6 @@ If we keep doing this, we will eventually get to the minimum of the Loss Functio
 | 8         | 0.53368    | -0.99504   | 0.00560    | 0.57704 | -0.49528      | -0.99528      | -0.50904      | 0.4904        | 1.0           | 0.0           | 0.50952    | 0.48204    | 0.5        | 0.09 |
 | 9         | 0.53789    | -0.99442   | 0.00630    | 0.58667 | -0.49469      | -0.99469      | -0.51017      | 0.4892        | 1.0           | 0.0           | 0.51071    | 0.47980    | 0.5        | 0.07 |
 
-## STEP 6 - SAVE WEIGHTS & BIASES
+## STEP 7 - SAVE WEIGHTS & BIASES TO A FILE
 
-??
+We you have finished training the neural network, save the weights and biases to a file.
