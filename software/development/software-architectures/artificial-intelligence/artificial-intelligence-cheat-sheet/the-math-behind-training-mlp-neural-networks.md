@@ -78,7 +78,8 @@ $$
   * Normalize the input data using a min-max values above
 
 $$
-s_{h} = f(w_{0}...,b_{h})
+s_{h}
+= f(w_{0}...,b_{h})
 = \sum_{i=0}^{n} x_i w_i + b_{h}
 $$
 
@@ -86,21 +87,25 @@ $$
   [the activation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-32---the-activation-function-for-the-hidden-layers)
   using
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
+  or
+  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-tanh-function)
 
 $$
-\begin{aligned}
 a_{h}
-&= f_{h}(s_{h}) \\
+= f_{h}(s_{h}) \\
 \sigma_{h}(s_{h})
-&= \frac{1}{1 + e^{-s_{h}}}
-\end{aligned}
+= \frac{1}{1 + e^{-s_{h}}}
+\quad or \quad
+\tanh_{h}(s_{h})
+= \frac{e^{s_{h}} - e^{-s_{h}}}{e^{s_{h}} + e^{-s_{h}}}
 $$
 
 * Step 4.3  - Calculate
   [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-33---the-summation-function-for-the-output-layer)
 
 $$
-s_{o} = f(w_{0}...,b_{o})
+s_{o}
+= f(w_{0}...,b_{o})
 = \sum_{i=0}^{n} x_i w_i + b_{o}
 $$
 
@@ -108,14 +113,17 @@ $$
   [the activation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-34---the-activation-function-for-the-output-layer)
   using
   [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
+  or
+  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-tanh-function)
 
 $$
-\begin{aligned}
-y_{o}
-&= f_{o}(s_{o}) \\
+a_{o}
+= f_{o}(s_{o}) \\
 \sigma_{o}(s_{o})
-&= \frac{1}{1 + e^{-s_{o}}}
-\end{aligned}
+= \frac{1}{1 + e^{-s_{o}}}
+\quad or \quad
+\tanh_{o}(s_{o})
+= \frac{e^{s_{o}} - e^{-s_{o}}}{e^{s_{o}} + e^{-s_{o}}}
 $$
 
 * **The Loss Function**
@@ -150,9 +158,11 @@ $$
 
 $$
 \begin{aligned}
-w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
+w_{i_{new}}
+&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
 &= w_{i} - \eta \delta_{o} \cdot a_{i} \\
-b_{new} &= b_{o} - \eta \nabla L(b_{o}) \\
+b_{new}
+&= b_{o} - \eta \nabla L(b_{o}) \\
 &= b_{o} - \eta \delta_{o}
 \end{aligned}
 $$
@@ -167,7 +177,8 @@ $$
 \begin{aligned}
 \delta_{o}
 &= f_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
-&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
+&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right) \ for \ sigmoid \\
+&= (1 - y_{0}^2) \cdot \left(y_{0} - z\right) \quad \ for \ tanh
 \end{aligned}
 $$
 
@@ -178,7 +189,8 @@ $$
 \begin{aligned}
 \delta_{h}
 &= f_{h}'(s_{h}) \cdot w_{oi} \cdot \delta_{o} \\
-&= a_{h} \left(1 - a_{h}\right) \cdot w_{oi} \cdot \delta_{o}
+&= a_{h} \left(1 - a_{h}\right) \cdot w_{oi} \cdot \delta_{o} \ for \ sigmoid \\
+&= (1 - a_{h}^2) \cdot w_{oi} \cdot \delta_{o} \quad \ for \ tanh
 \end{aligned}
 $$
 
@@ -352,7 +364,7 @@ all values will be set to 0.5.
 The formula to normalize a training dataset using min-max $[0, 1]$ scaling is,
 
 $$
-normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
+normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 $$
 
 where
@@ -360,7 +372,7 @@ where
 * $data$ is the input data
 * $min(dataset)$ is the minimum value of the dataset
 * $max(dataset)$ is the maximum value of the dataset
-* $normalized \; data$ is the output
+* $normalized \ data$ is the output
 
 ```text
 This equation and finding the min max values will be used when writing a computer program
@@ -401,7 +413,7 @@ i0 -> Normalized   i1 -> Normalized   z0 -> Normalized
 The formula to normalize a training dataset using min-max $[-1, 1]$ scaling is,
 
 $$
-normalized \; data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
+normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 \times 2 - 1
 $$
 
@@ -433,7 +445,8 @@ The summation function $s$ is the weighted sum of the inputs plus a bias term.
 
 $$
 \begin{aligned}
-s = f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b \\
+s
+= f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b \\
 &= \sum_{i=0}^{n} x_i w_i + b
 \end{aligned}
 $$
@@ -486,7 +499,8 @@ then adds a bias term.
 
 $$
 \begin{aligned}
-s_{h} = f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{h} \\
+s_{h}
+= f(w_{0}...,b) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{h} \\
 &= \sum_{i=0}^{n} x_i w_i + b_{h}
 \end{aligned}
 $$
@@ -499,7 +513,8 @@ For our example, the summation function for the hidden layer nodes would be,
 
 $$
 \begin{aligned}
-s_{h[0]} &= \left(x_{[0]} w_{h[0][0]} + x_{[1]} w_{h[0][1]} + b_{h[0]}\right) \\
+s_{h[0]}
+&= \left(x_{[0]} w_{h[0][0]} + x_{[1]} w_{h[0][1]} + b_{h[0]}\right) \\
 &= \left((0.5 \cdot -0.5) + (0.5 \cdot -1.0) + 0.5\right) \\
 &= \left(-0.25 - 0.5 + 0.5\right) \\
 &= \left(-0.25\right)
@@ -508,7 +523,8 @@ $$
 
 $$
 \begin{aligned}
-s_{h[1]} &= \left(x_{[0]} w_{h[1][0]} + x_{[1]} w_{h[1][1]} + b_{h[1]}\right) \\
+s_{h[1]}
+&= \left(x_{[0]} w_{h[1][0]} + x_{[1]} w_{h[1][1]} + b_{h[1]}\right) \\
 &= \left((0.5 \cdot -0.5) + (0.5 \cdot 0.5) + 0.5\right) \\
 &= \left(-0.25 + 0.25 + 0.5\right) \\
 &= \left(0.5\right)
@@ -517,7 +533,8 @@ $$
 
 $$
 \begin{aligned}
-s_{h[2]} &= \left(x_{[0]} w_{h[2][0]} + x_{[1]} w_{h[2][1]} + b_{h[2]}\right) \\
+s_{h[2]}
+&= \left(x_{[0]} w_{h[2][0]} + x_{[1]} w_{h[2][1]} + b_{h[2]}\right) \\
 &= \left((0.5 \cdot 1.0) + (0.5 \cdot 0.0) + 0.5\right) \\
 &= \left(0.5 + 0.0 + 0.5\right) \\
 &= \left(1.0\right)
@@ -529,23 +546,25 @@ $$
 The output of the hidden layer nodes is the activation function,
 
 $$
-\begin{aligned}
 a_{h}
-&= f_{h}(s_{h}) \\
+= f_{h}(s_{h}) \\
 \sigma_{h}(s_{h})
-&= \frac{1}{1 + e^{-s_{h}}}
-\end{aligned}
+= \frac{1}{1 + e^{-s_{h}}}
+\quad or \quad
+\tanh_{h}(s_{h})
+= \frac{e^{s_{h}} - e^{-s_{h}}}{e^{s_{h}} + e^{-s_{h}}}
 $$
 
 ```text
 This equation will be used when writing a computer program
 ```
 
-For our example, the activation function for the hidden layer nodes would be,
+For our example, the sigmoid activation function for the hidden layer nodes would be,
 
 $$
 \begin{aligned}
-a_{h[0]} &= f_{h[0]}(s_{h[0]}) \\
+a_{h[0]}
+&= f_{h[0]}(s_{h[0]}) \\
 &= \sigma_{h[0]}(-0.25) \\
 &= 0.4378
 \end{aligned}
@@ -553,7 +572,8 @@ $$
 
 $$
 \begin{aligned}
-a_{h[1]} &= f_{h[1]}(s_{h[1]}) \\
+a_{h[1]}
+&= f_{h[1]}(s_{h[1]}) \\
 &= \sigma_{h[1]}(0.5) \\
 &= 0.6225
 \end{aligned}
@@ -561,9 +581,23 @@ $$
 
 $$
 \begin{aligned}
-a_{h[2]} &= f_{h[2]}(s_{h[2]}) \\
+a_{h[2]}
+&= f_{h[2]}(s_{h[2]}) \\
 &= \sigma_{h[2]}(1.0) \\
 &= 0.7310
+\end{aligned}
+$$
+
+For the tanh activation function it would be,
+
+$$
+\begin{aligned}
+a_{h[0]}
+&= -0.2449 \\
+a_{h[1]}
+&= 0.4621 \\
+a_{h[2]}
+&= 0.7616
 \end{aligned}
 $$
 
@@ -573,7 +607,9 @@ The summation function for the output layer is the same as the hidden layer,
 
 $$
 \begin{aligned}
-s_{o} = f(w_{0}...,b_{o}) &= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{o} \\
+s_{o}
+= f(w_{0}...,b_{o})
+&= x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{o} \\
 &= \sum_{i=0}^{n} x_i w_i + b_{o}
 \end{aligned}
 $$
@@ -582,15 +618,29 @@ $$
 This equation will be used when writing a computer program
 ```
 
-For our example, the summation function for the output layer node would be,
+For our example, the summation function for the output layer node for sigmoid would be,
 
 $$
 \begin{aligned}
-s_{o} &= \left(a_{h[0]} w_{o[0]} + a_{h[1]} w_{o[1]} +
+s_{o}
+&= \left(a_{h[0]} w_{o[0]} + a_{h[1]} w_{o[1]} +
    a_{h[2]} w_{o[2]} + b_{o}\right) \\
 &= \left(0.4378 \cdot 0.5 + 0.6225 \cdot -1.0 + 0.7310 \cdot 0.0 + 0.5\right) \\
 &= \left(0.2189 - 0.6225 + 0.0 + 0.5\right) \\
 &= \left(0.0964\right)
+\end{aligned}
+$$
+
+for tanh it would be,
+
+$$
+\begin{aligned}
+s_{o}
+&= \left(a_{h[0]} w_{o[0]} + a_{h[1]} w_{o[1]} +
+   a_{h[2]} w_{o[2]} + b_{o}\right) \\
+&= \left(-0.2449 \cdot 0.5 + 0.4621 \cdot -1.0 + 0.7616 \cdot 0.0 + 0.5\right) \\
+&= \left(-0.1225 - 0.4621 + 0.0 + 0.5\right) \\
+&= \left(-0.0836\right)
 \end{aligned}
 $$
 
@@ -599,26 +649,39 @@ $$
 And the output of the output layer node is the activation function,
 
 $$
-\begin{aligned}
-y_{o}
-&= f_{o}(s_{o}) \\
+a_{o}
+= f_{o}(s_{o}) \\
 \sigma_{o}(s_{o})
-&= \frac{1}{1 + e^{-s_{o}}}
-\end{aligned}
+= \frac{1}{1 + e^{-s_{o}}}
+\quad or \quad
+\tanh_{o}(s_{o})
+= \frac{e^{s_{o}} - e^{-s_{o}}}{e^{s_{o}} + e^{-s_{o}}}
 $$
 
 ```text
 This equation will be used when writing a computer program
 ```
 
-For our example, the activation function for the output layer node would be,
+For our example, the sigmoid activation function for the output layer node would be,
+
+$$
+\begin{aligned}
+y_{o}
+&= f_{o}(s_{o}) \\
+&= f_{o}(0.0964) \\
+&= \sigma_{o}(0.0964) \\
+&= 0.5241
+\end{aligned}
+$$
+
+For the tanh activation function it would be,
 
 $$
 \begin{aligned}
 y_{o} &= f_{o}(s_{o}) \\
-&= f_{o}(0.0964) \\
-&= \sigma_{o}(0.0964) \\
-&= 0.5241
+&= f_{o}(-0.0836) \\
+&= \tanh_{o}(-0.0836) \\
+&= -0.0834
 \end{aligned}
 $$
 
@@ -885,10 +948,8 @@ $$
 \begin{aligned}
 \frac{\partial y}{\partial s_{o}}
 &= \frac{\partial}{\partial s_{o}} f_{o}(s_{o}) \\
-&= \frac{\partial}{\partial s_{o}} \sigma_{o}(s_{o}) \\
-&= \sigma_{o}'(s_{o}) \\
-&= \sigma_{o_{o}}(s_{o})(1 - \sigma_{o}(s_{o})) \\
-&= y_{o}(1 - y_{o})
+&= \frac{\partial}{\partial s_{o}} f{o}(s_{o}) \\
+&= f{o}'(s_{o}) \\
 \end{aligned}
 $$
 
@@ -921,7 +982,7 @@ $$
 &= \frac{\partial L}{\partial y_{o}} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
    \frac{\partial s_{o}}{\partial w_{i}} \\
-&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot a_{i} \\
+&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \cdot a_{i} \\
 \end{aligned}
 $$
 
@@ -931,7 +992,7 @@ $$
 &= \frac{\partial L}{\partial y} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
    \frac{\partial s_{o}}{\partial b_{o}} \\
-&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \cdot 1 \\
+&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \cdot 1 \\
 \end{aligned}
 $$
 
@@ -942,23 +1003,38 @@ $$
 \delta_{o}
 &= \frac{\partial L}{\partial y_{o}} \cdot \frac{\partial y_{o}}{\partial s_{o}} \\
 &= \frac{\partial L}{\partial s_{o}} \\
-&= \left(y_{o} - z\right) \cdot y_{o}(1 - y_{o}) \\
+&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \\
 \end{aligned}
 $$
 
-Which boils down to,
+Which boils down to
 
 $$
-\begin{aligned}
 \delta_{o}
-&= f_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
-&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right)
-\end{aligned}
+= f_{o}'(s_{o}) \cdot \left(y_{0} - z\right)
 $$
 
 ```text
 This equation will be used when writing a computer program
 ```
+
+For the sigmoid function,
+
+$$
+\begin{aligned}
+&= \sigma_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
+&= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right) \\
+\end{aligned}
+$$
+
+For the tanh function,
+
+$$
+\begin{aligned}
+&= \tanh_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
+&= \left(1 - y_{0}^2\right) \cdot \left(y_{0} - z\right) \\
+\end{aligned}
+$$
 
 Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
 
@@ -980,7 +1056,7 @@ For our example, we're going to normalize the target output $z$ to 0.91, rather 
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.1.svg)
 
-The error signal for the output layer would be,
+The error signal for the output layer using a sigmoid function would be,
 
 $$
 \begin{aligned}
@@ -989,6 +1065,18 @@ $$
 &= 0.524(1 - 0.524) \cdot \left(0.524 - 0.91\right) \\
 &= 0.524(0.476) \cdot -0.386 \\
 &= -0.096252
+\end{aligned}
+$$
+
+Using the tanh function would be,
+
+$$
+\begin{aligned}
+\delta_{o}
+&= (1 - y_{o}^2) \cdot \left(y_{o} - z\right) \\
+&= (1 - -0.084^2) \cdot \left(-0.084 - 0.91\right) \\
+&= (1 - 0.007) \cdot -0.084 \\
+&= -0.0834
 \end{aligned}
 $$
 
@@ -1034,7 +1122,7 @@ where,
 $$
 \begin{aligned}
 \frac{\partial L}{\partial s_{o}} = \delta_{o} \\
-(from \; above)
+(from \ above)
 \end{aligned}
 $$
 
