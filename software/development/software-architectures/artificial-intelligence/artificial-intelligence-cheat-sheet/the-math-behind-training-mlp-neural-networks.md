@@ -1407,17 +1407,127 @@ $$
 
 #### STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS
 
-??
+Now let's use the gradient descent formula above for all the
+$w$ and $b$,
+
+$$
+\theta_{new} = \theta - \eta \nabla f(\theta)
+$$
+
+We use this for each parameter $w$ and $b$ to get the new values,
+
+$$
+\begin{aligned}
+w_{h_{new}}
+&= w_{h} - \eta \nabla L(w_{h}) \\
+&= w_{h} - \eta \delta_{h} \cdot x_{i} \\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{h_{new}}
+&= b_{h} - \eta \nabla L(b_{h}) \\
+&= b_{h} - \eta \delta_{h}
+\end{aligned}
+$$
+
+For our example,
+
+![IMAGE training-multi-layer-perceptron-neural-network-step5.4 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.4.svg)
+
+The new weights and biases for the hidden layer using a sigmoid function would be,
+
+$$
+\begin{aligned}
+w_{h[0][0]}
+&= -0.5 - (0.1 \cdot -0.01185 \cdot 0.5) \\
+&= -0.49941
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{h[0][1]}
+&= -1.0 - (0.1 \cdot -0.01185 \cdot 0.5) \\
+&= -0.99941
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{h[1][0]}
+&= -0.5 - (0.1 \cdot 0.02261 \cdot 0.5) \\
+&= -0.50113
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{h[1][1]}
+&= 0.5 - (0.1 \cdot 0.02261 \cdot 0.5) \\
+&= 0.4988
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{h[2][0]}
+&= 1.0 - (0.1 \cdot 0.0 \cdot 0.5) \\
+&= 1.0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{h[2][1]}
+&= -0.0 - (0.1 \cdot 0.0 \cdot 0.5) \\
+&= 0.0
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{h[0]}
+&= 0.5 - (0.1 \cdot -0.01185) \\
+&= 0.50119
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{h[1]}
+&= 0.5 - (0.1 \cdot 0.02261) \\
+&= 0.49774
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{h[2]}
+&= 0.5 - (0.1 \cdot 0.0) \\
+&= 0.5
+\end{aligned}
+$$
 
 #### OUR EXAMPLE OVER 10 ITERATIONS
 
-If we keep doing this, we will eventually get to the minimum of the function $L(w,b)$.
+If we keep doing this, we will eventually get to the minimum of the Loss Function.
 
-| $w$ | $\nabla L(w)$ | $w_{new}$ | | $b$ | $\nabla L(b)$ | $b_{new}$  | | $L(w,b)$ |
-|-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
-|           |               | 3.0000    | |            |               | 4.0000    | | ??.0000  |
+| Iteration | $w_{o[0]}$ | $w_{o[1]}$ | $w_{o[2]}$ | $b_{o}$ | $w_{h[0][0]}$ | $w_{h[0][1]}$ | $w_{h[1][0]}$ | $w_{h[1][1]}$ | $w_{h[2][0]}$ | $w_{h[2][1]}$ | $b_{h[0]}$ | $b_{h[1]}$ | $b_{h[2]}$ | Loss |
+|-----------|------------|------------|------------|---------|---------------|---------------|---------------|---------------|---------------|---------------|------------|------------|------------|------|
+| 0         | 0.5        | -1.0       | 0.0        | 0.5     | -0.5          | -1.0          | -0.5          | 0.5           | 1.0           | 0.0           | 0.5        | 0.5        | 0.5        | 0.25 |
+| 1         | 0.50421    | -0.99938   | 0.00070    | 0.50963 | -0.49941      | -0.99941      | -0.50113      | 0.4988        | 1.0           | 0.0           | 0.50119    | 0.49774    | 0.5        | 0.23 |
+| 2         | 0.50842    | -0.99876   | 0.00140    | 0.51926 | -0.49882      | -0.99882      | -0.50226      | 0.4976        | 1.0           | 0.0           | 0.50238    | 0.49549    | 0.5        | 0.21 |
+| 3         | 0.51263    | -0.99814   | 0.00210    | 0.52889 | -0.49823      | -0.99823      | -0.50339      | 0.4964        | 1.0           | 0.0           | 0.50357    | 0.49324    | 0.5        | 0.19 |
+| 4         | 0.51684    | -0.99752   | 0.00280    | 0.53852 | -0.49764      | -0.99764      | -0.50452      | 0.4952        | 1.0           | 0.0           | 0.50476    | 0.49100    | 0.5        | 0.17 |
+| 5         | 0.52105    | -0.99690   | 0.00350    | 0.54815 | -0.49705      | -0.99705      | -0.50565      | 0.4940        | 1.0           | 0.0           | 0.50595    | 0.48876    | 0.5        | 0.15 |
+| 6         | 0.52526    | -0.99628   | 0.00420    | 0.55778 | -0.49646      | -0.99646      | -0.50678      | 0.4928        | 1.0           | 0.0           | 0.50714    | 0.48652    | 0.5        | 0.13 |
+| 7         | 0.52947    | -0.99566   | 0.00490    | 0.56741 | -0.49587      | -0.99587      | -0.50791      | 0.4916        | 1.0           | 0.0           | 0.50833    | 0.48428    | 0.5        | 0.11 |
+| 8         | 0.53368    | -0.99504   | 0.00560    | 0.57704 | -0.49528      | -0.99528      | -0.50904      | 0.4904        | 1.0           | 0.0           | 0.50952    | 0.48204    | 0.5        | 0.09 |
+| 9         | 0.53789    | -0.99442   | 0.00630    | 0.58667 | -0.49469      | -0.99469      | -0.51017      | 0.4892        | 1.0           | 0.0           | 0.51071    | 0.47980    | 0.5        | 0.07 |
 
-You can see the function $L(w,b)$ is getting closer to zero.
+You can see the Loss Function getting closer to zero.
 
 ## STEP 6 - SAVE WEIGHTS & BIASES
 
