@@ -13,9 +13,24 @@ Table of Contents
 * [STEP 2 - MIN & MAX INPUT VALUES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-input-values)
 * [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-loop)
   * [STEP 3 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---normalization)
+    * [MIN-MAX SCALING FUNCTION [0, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
+    * [MIN-MAX SCALING FUNCTION [-1, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
   * [STEP 4 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---forward-pass)
+    * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function)
+    * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-activation-function)
+    * [STEP 4.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-41---the-summation-function-for-the-hidden-layers)
+    * [STEP 4.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-42---the-activation-function-for-the-hidden-layers)
+    * [STEP 4.3 - THE SUMMATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---the-summation-function-for-the-output-layer)
+    * [STEP 4.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-44---the-activation-function-for-the-output-layer)
   * [LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#loss-functions)
   * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-5---backward-pass)
+    * [THE GRADIENT DECENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-gradient-decent-formula)
+    * [AN EXAMPLE OF THE GRADIENT DECENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#an-example-of-the-gradient-decent-formula)
+    * [STEP 5.1 - THE ERROR SIGNAL FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-51---the-error-signal-for-the-output-layer)
+    * [STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---the-error-signal-for-the-hidden-layers)
+    * [STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---the-new-weights--biases-for-the-output-layer)
+    * [STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---the-new-weights--biases-for-the-hidden-layers)
+    * [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
 * [STEP 6 - SAVE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
 
 Documentation and Reference
@@ -159,7 +174,7 @@ $$
 $$
 \begin{aligned}
 w_{i_{new}}
-&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
+&= w_{i} - \eta \nabla L(w_{i}) \\
 &= w_{i} - \eta \delta_{o} \cdot a_{i} \\
 b_{new}
 &= b_{o} - \eta \nabla L(b_{o}) \\
@@ -200,12 +215,12 @@ using the gradient descent formula and our error signal
 
 $$
 \begin{aligned}
-w_{i_{new}}
-&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
-&= w_{i} - \eta \delta_{o} \cdot a_{i} \\
-b_{new}
-&= b - \eta \nabla L(b) \\
-&= b - \eta \delta_{o}
+w_{o_{new}}
+&= w_{o} - \eta \nabla L(w_{o}) \\
+&= w_{o} - \eta \delta_{o} \cdot a_{i} \\
+b_{onew}
+&= b_{o} - \eta \nabla L(b_{o}) \\
+&= b_{o} - \eta \delta_{o}
 \end{aligned}
 $$
 
@@ -1338,9 +1353,9 @@ We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
-w_{i_{new}}
-&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
-&= w_{i} - \eta \delta_{o} \cdot a_{i} \\
+w_{o_{new}}
+&= w_{o} - \eta \nabla L(w_{o}) \\
+&= w_{o} - \eta \delta_{o} \cdot a_{i} \\
 \end{aligned}
 $$
 
@@ -1392,29 +1407,7 @@ $$
 
 #### STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS
 
-We use this for each parameter $w$ and $b$ to get the new values,
-
-$$
-\begin{aligned}
-w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \\
-&= w_{i} - \eta \delta_{h} \cdot a_{i} \\
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-b_{new} &= b - \eta \nabla L(b) \\
-&= b - \eta \delta_{h} \\
-\end{aligned}
-$$
-
-For our example, the new weights and biases for the output layer would be,
-
-![IMAGE training-multi-layer-perceptron-neural-network-step5.4 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.4.svg)
-
-$$
-????
-$$
+??
 
 #### OUR EXAMPLE OVER 10 ITERATIONS
 
