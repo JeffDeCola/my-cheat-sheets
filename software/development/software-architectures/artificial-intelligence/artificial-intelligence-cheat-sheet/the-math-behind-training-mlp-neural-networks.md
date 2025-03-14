@@ -230,12 +230,12 @@ using the gradient descent formula and our error signal
 
 $$
 \begin{aligned}
-w_{i_{new}}
-&= w_{i} - \eta \nabla L(w_{i}) \\
-&= w_{i} - \eta \delta_{h} \cdot a_{i} \\
+w_{h_{new}}
+&= w_{h} - \eta \nabla L(w_{h}) \\
+&= w_{h} - \eta \delta_{h} \cdot x_{i} \\
 b_{new}
-&= b - \eta \nabla L(b) \\
-&= b - \eta \delta_{h}
+&= b_{h} - \eta \nabla L(b_{h}) \\
+&= b_{h} - \eta \delta_{h}
 \end{aligned}
 $$
 
@@ -1526,8 +1526,6 @@ If we keep doing this, we will eventually get to the minimum of the Loss Functio
 | 7         | 0.52947    | -0.99566   | 0.00490    | 0.56741 | -0.49587      | -0.99587      | -0.50791      | 0.4916        | 1.0           | 0.0           | 0.50833    | 0.48428    | 0.5        | 0.11 |
 | 8         | 0.53368    | -0.99504   | 0.00560    | 0.57704 | -0.49528      | -0.99528      | -0.50904      | 0.4904        | 1.0           | 0.0           | 0.50952    | 0.48204    | 0.5        | 0.09 |
 | 9         | 0.53789    | -0.99442   | 0.00630    | 0.58667 | -0.49469      | -0.99469      | -0.51017      | 0.4892        | 1.0           | 0.0           | 0.51071    | 0.47980    | 0.5        | 0.07 |
-
-You can see the Loss Function getting closer to zero.
 
 ## STEP 6 - SAVE WEIGHTS & BIASES
 
