@@ -201,7 +201,7 @@ using the gradient descent formula and our error signal
 $$
 \begin{aligned}
 w_{i_{new}}
-&= w_{i} - \eta \nabla L(w_{i}) \\
+&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
 &= w_{i} - \eta \delta_{o} \cdot a_{i} \\
 b_{new}
 &= b - \eta \nabla L(b) \\
@@ -946,10 +946,10 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial y}{\partial s_{o}}
+\frac{\partial y_{o}}{\partial s_{o}}
 &= \frac{\partial}{\partial s_{o}} f_{o}(s_{o}) \\
-&= \frac{\partial}{\partial s_{o}} f{o}(s_{o}) \\
-&= f{o}'(s_{o}) \\
+&= \frac{\partial}{\partial s_{o}} f_{o}(s_{o}) \\
+&= f_{o}'(s_{o}) \\
 \end{aligned}
 $$
 
@@ -957,9 +957,9 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial s}{\partial w_{i}}
-&= \frac{\partial}{\partial w_{i}} \left(\sum_{i=0}^{n} a_i w_i + b\right) \\
-&= \frac{\partial}{\partial w_{i}} \left(a_0 w_0 + a_1 w_1 + \cdots + a_n w_n + b\right) \\
+\frac{\partial s_{o}}{\partial w_{i}}
+&= \frac{\partial}{\partial w_{i}} \left(\sum_{i=0}^{n} a_i w_i + b_{o}\right) \\
+&= \frac{\partial}{\partial w_{i}} \left(a_0 w_0 + a_1 w_1 + \cdots + a_n w_n + b_{o}\right) \\
 &= a_{i}
 \end{aligned}
 $$
@@ -968,7 +968,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial s}{\partial b_{o}} &= \frac{\partial}{\partial b_{o}} \left(\sum_{i=0}^{n} x_i w_i + b_{o}\right) \\
+\frac{\partial s_{o}}{\partial b_{o}} &= \frac{\partial}{\partial b_{o}} \left(\sum_{i=0}^{n} x_i w_i + b_{o}\right) \\
 &= \frac{\partial}{\partial b_{o}} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b_{o}\right) \\
 &= 1
 \end{aligned}
@@ -982,17 +982,17 @@ $$
 &= \frac{\partial L}{\partial y_{o}} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
    \frac{\partial s_{o}}{\partial w_{i}} \\
-&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \cdot a_{i} \\
+&= \left(y_{o} - z\right) \cdot f_{o}'(s_{o}) \cdot a_{i} \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-\nabla L(b)
+\nabla L(b_{o})
 &= \frac{\partial L}{\partial y} \cdot
    \frac{\partial y_{o}}{\partial s_{o}} \cdot
    \frac{\partial s_{o}}{\partial b_{o}} \\
-&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \cdot 1 \\
+&= \left(y_{o} - z\right) \cdot f_{o}'(s_{o}) \cdot 1 \\
 \end{aligned}
 $$
 
@@ -1003,7 +1003,7 @@ $$
 \delta_{o}
 &= \frac{\partial L}{\partial y_{o}} \cdot \frac{\partial y_{o}}{\partial s_{o}} \\
 &= \frac{\partial L}{\partial s_{o}} \\
-&= \left(y_{o} - z\right) \cdot f{o}'(s_{o}) \\
+&= \left(y_{o} - z\right) \cdot f_{o}'(s_{o}) \\
 \end{aligned}
 $$
 
@@ -1022,6 +1022,7 @@ For the sigmoid function,
 
 $$
 \begin{aligned}
+\delta_{o}
 &= \sigma_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
 &= y_{0} \left(1 - y_{0}\right) \cdot \left(y_{0} - z\right) \\
 \end{aligned}
@@ -1031,6 +1032,7 @@ For the tanh function,
 
 $$
 \begin{aligned}
+\delta_{o}
 &= \tanh_{o}'(s_{o}) \cdot \left(y_{0} - z\right) \\
 &= \left(1 - y_{0}^2\right) \cdot \left(y_{0} - z\right) \\
 \end{aligned}
@@ -1047,7 +1049,7 @@ $$
 
 $$
 \begin{aligned}
-\nabla L(b)
+\nabla L(b_{o})
 = \delta_{o}
 \end{aligned}
 $$
@@ -1074,9 +1076,9 @@ $$
 \begin{aligned}
 \delta_{o}
 &= (1 - y_{o}^2) \cdot \left(y_{o} - z\right) \\
-&= (1 - -0.084^2) \cdot \left(-0.084 - 0.91\right) \\
-&= (1 - 0.007) \cdot -0.084 \\
-&= -0.0834
+&= (1 - -0.08438^2) \cdot \left(-0.08438 - 0.91\right) \\
+&= (0.99288) \cdot -0.99438 \\
+&= -0.9873
 \end{aligned}
 $$
 
@@ -1084,8 +1086,8 @@ $$
 
 Now that we have the error signal for the output layer,
 we can calculate the error signal for the hidden layers.
-Since we're propagating the error backwards, we start with
-the output layer. It just makes it easier.
+Like above, we first want to find the gradient of the loss function
+with respect to each $w$ and $b$,
 
 $$
 \begin{aligned}
@@ -1107,7 +1109,10 @@ $$
 
 So let's find these derivatives,
 
-1- The **partial derivative of the mse loss function with respect to the hidden layer output $a$**. This is the tricky part. We need to use the chain rule of calculus to find the derivative of the loss function with respect to the hidden layer output $y_{o}$.
+1- The **partial derivative of the mse loss function with respect to the hidden layer output $a$**.
+This is the tricky part. We need to use the chain rule of
+calculus to find the derivative of the loss function with respect
+to the hidden layer output $y_{o}$.
 
 $$
 \begin{aligned}
@@ -1131,17 +1136,17 @@ and
 $$
 \begin{aligned}
 \frac{\partial s_{o}}{\partial a_{h}}
-&= \frac{\partial}{\partial a_{h}} \left(a_{h} w_{o} + b_{o}\right) \\
-&= w_{o}
+&= \frac{\partial}{\partial a_{h}} \left(\sum_{i=0}^{n} a_i w_i + b_{o}\right) \\
+&= w_{oi}
 \end{aligned}
 $$
 
-Hence,
+I use the notation $w_{oi}$ to mean one of the output weights. Hence,
 
 $$
 \begin{aligned}
-\frac{\partial L}{\partial a}
-&= \delta_{o} \cdot w_{o}
+\frac{\partial L}{\partial a_{h}}
+&= \delta_{o} w_{oi}
 \end{aligned}
 $$
 
@@ -1149,12 +1154,10 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial a}{\partial s}
-&= \frac{\partial}{\partial s} f_{h}(s) \\
-&= \frac{\partial}{\partial s} \sigma_{h}(s) \\
-&= \sigma_{h}'(s) \\
-&= \sigma_{h_{o}}(s)(1 - \sigma_{h}(s)) \\
-&= a_{h}(1 - a_{h})
+\frac{\partial a_{h}}{\partial s_{h}}
+&= \frac{\partial}{\partial s_{h}} f_{h}(s_{h}) \\
+&= \frac{\partial}{\partial s_{h}} f_{h}(s_{h}) \\
+&= f_{h}'(s_{h})
 \end{aligned}
 $$
 
@@ -1162,10 +1165,10 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial s}{\partial w_{i}}
-&= \frac{\partial}{\partial w_{i}} \left(\sum_{i=0}^{n} a_i w_i + b\right) \\
-&= \frac{\partial}{\partial w_{i}} \left(a_0 w_0 + a_1 w_1 + \cdots + a_n w_n + b\right) \\
-&= a_{i}
+\frac{\partial s_{h}}{\partial w_{i}}
+&= \frac{\partial}{\partial w_{i}} \left(\sum_{i=0}^{n} x_i w_i + b_{h}\right) \\
+&= \frac{\partial}{\partial w_{i}} \left(x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{h}\right) \\
+&= x_{i}
 \end{aligned}
 $$
 
@@ -1173,8 +1176,9 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial s}{\partial b} &= \frac{\partial}{\partial b} \left(\sum_{i=1}^{n} x_i w_i + b\right) \\
-&= \frac{\partial}{\partial b} \left(a_1 w_1 + a_2 w_2 + \cdots + a_n w_n + b\right) \\
+\frac{\partial s_{h}}{\partial b_{h}}
+&= \frac{\partial}{\partial b_{h}} \left(\sum_{i=0}^{n} x_i w_i + b_{h}\right) \\
+&= \frac{\partial}{\partial b_{h}} \left(x_0 w_0 + x_1 w_1 + \cdots + x_n w_n + b_{h}\right) \\
 &= 1
 \end{aligned}
 $$
@@ -1184,32 +1188,31 @@ Putting it all together,
 $$
 \begin{aligned}
 \nabla L(w_{i})
-&= \frac{\partial L}{\partial a} \cdot
-   \frac{\partial a}{\partial s} \cdot
-   \frac{\partial s}{\partial w_{i}} \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot a_{i} \\
+&= \frac{\partial L}{\partial a_{h}} \cdot
+   \frac{\partial a_{h}}{\partial s_{h}} \cdot
+   \frac{\partial s_{h}}{\partial w_{oi}} \\
+&= \delta_{o} w_{oi} \cdot f_{h}'(s_{h}) \cdot x_{i}
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
 \nabla L(b)
-&= \frac{\partial L}{\partial a} \cdot
-   \frac{\partial a}{\partial s} \cdot
-   \frac{\partial s}{\partial b} \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot 1 \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \\
+&= \frac{\partial L}{\partial a_{h}} \cdot
+   \frac{\partial a_{h}}{\partial s_{h}} \cdot
+   \frac{\partial s_{h}}{\partial b_{h}} \\
+&= \delta_{o} w_{o} \cdot f_{h}'(s_{h}) \cdot 1 \\
 \end{aligned}
 $$
 
-In Neural Networks, let's define the error signal as $\delta_{h}$,
+As above, let's define the hidden layer error signal as $\delta_{h}$,
 
 $$
 \begin{aligned}
 \delta_{h}
-&= \frac{\partial L}{\partial a} \cdot \frac{\partial a}{\partial s} \\
-&= \frac{\partial L}{\partial s} \\
-&= \delta_{j} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+&= \frac{\partial L}{\partial a_{h}} \cdot \frac{\partial a_{h}}{\partial s_{h}} \\
+&= \frac{\partial L}{\partial s_{h}} \\
+&= \delta_{j} w_{o} \cdot f_{h}'(s_{h})
 \end{aligned}
 $$
 
@@ -1218,8 +1221,7 @@ Which boils down to,
 $$
 \begin{aligned}
 \delta_{h}
-&= f_{h}'(s_{h}) \cdot w_{oi} \cdot \delta_{o} \\
-&= a_{h} \left(1 - a_{h}\right) \cdot w_{oi} \cdot \delta_{o}
+&= f_{h}'(s_{h}) \cdot w_{oi} \delta_{o} \\
 \end{aligned}
 $$
 
@@ -1227,35 +1229,106 @@ $$
 This equation will be used when writing a computer program
 ```
 
+For the sigmoid function,
+
+$$
+\begin{aligned}
+\delta_{h}
+&= \sigma_{h}'(s_{h}) \cdot w_{oi} \delta_{o} \\
+\end{aligned}
+$$
+
+For the tanh function,
+
+$$
+\begin{aligned}
+\delta_{h}
+&= \tanh_{h}'(s_{h}) \cdot w_{oi} \delta_{o} \\
+\end{aligned}
+$$
+
 Hence the gradient of the loss function with respect to $w_{i}$ and $b$ is,
 
 $$
 \begin{aligned}
 \nabla L(w_{i})
-&= \delta_{h} \cdot a_{i} \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h}) \cdot a_{i}
+&= \delta_{h} \cdot x_{i}
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-\nabla L(b)
-&= \delta_{h} \\
-&= \delta_{o} \cdot w_{o} \cdot a_{h}(1 - a_{h})
+\nabla L(b_{h})
+&= \delta_{h}
 \end{aligned}
 $$
 
-For our example, the error signals for the hidden layer would be,
+For our example,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step5.2 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.2.svg)
 
+The error signal for the hidden layer using a sigmoid function would be,
+
 $$
-????
+\begin{aligned}
+\delta_{h[0]}
+&= \sigma_{h[0]}'(s_{h[0]}) \cdot w_{o[0]} \delta_{o} \\
+&= 0.4378(1 - 0.4378) \cdot 0.5 \cdot -0.096252 \\
+&= -0.01185
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\delta_{h[1]}
+&= \sigma_{h[1]}'(s_{h[1]}) \cdot w_{o[1]} \delta_{o} \\
+&= 0.6225(1 - 0.6225) \cdot -1.0 \cdot -0.986252 \\
+&= 0.02261
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\delta_{h[2]}
+&= \sigma_{h[2]}'(s_{h[2]}) \cdot w_{o[2]} \delta_{o} \\
+&= 0.7310(1 - 0.7310) \cdot 0.0 \cdot -0.096252 \\
+&= 0.0000
+\end{aligned}
+$$
+
+Using the tanh function would be,
+
+$$
+\begin{aligned}
+\delta_{h[0]}
+&= \tanh_{h[0]}'(s_{h[0]}) \cdot w_{o[0]} \delta_{o} \\
+&= (1 - 0.2449^2) \cdot 0.5 \cdot -0.9873 \\
+&= -0.46404
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\delta_{h[1]}
+&= \tanh_{h[1]}'(s_{h[1]}) \cdot w_{o[1]} \delta_{o} \\
+&= (1 - 0.4621^2) \cdot -1.0 \cdot -0.9873 \\
+&= 0.77646
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\delta_{h[2]}
+&= \tanh_{h[2]}'(s_{h[2]}) \cdot w_{o[2]} \delta_{o} \\
+&= (1 - 0.7616^2) \cdot 0.0 \cdot -0.9873 \\
+&= 0.0000
+\end{aligned}
 $$
 
 #### STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER
 
-Now let's use the gradient descent formula above for $w$ and $b$,
+Now let's use the gradient descent formula above for all the
+$w$ and $b$,
 
 $$
 \theta_{new} = \theta - \eta \nabla f(\theta)
@@ -1265,24 +1338,56 @@ We use this for each parameter $w$ and $b$ to get the new values,
 
 $$
 \begin{aligned}
-w_{i_{new}} &= w_{i} - \eta \nabla L(w_{i}) \\
+w_{i_{new}}
+&= w_{i} - \eta \nabla L(w_{i}) \cdot a_{i} \\
 &= w_{i} - \eta \delta_{o} \cdot a_{i} \\
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-b_{new} &= b - \eta \nabla L(b) \\
-&= b - \eta \delta_{o} \\
+b_{o_{new}}
+&= b_{o} - \eta \nabla L(b_{o}) \\
+&= b_{o} - \eta \delta_{o}
 \end{aligned}
 $$
 
-For our example, the new weights and biases for the output layer would be,
+For our example,
 
 ![IMAGE training-multi-layer-perceptron-neural-network-step5.3 IMAGE](../../../../../docs/pics/training-multi-layer-perceptron-neural-network-step5.3.svg)
 
+The new weights and biases for the output layer using a sigmoid function would be,
+
 $$
-????
+\begin{aligned}
+w_{o[0]}
+&= 0.5 - (0.1 \cdot -0.096252 \cdot 0.4378) \\
+&= 0.50421
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{o[1]}
+&= -1.0 - (0.1 \cdot -0.096252 \cdot 0.6225) \\
+&= -0.99938
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+w_{o[2]}
+&= 0.0 - (0.1 \cdot -0.096252 \cdot 0.7310) \\
+&= 0.00070
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+b_{o}
+&= 0.5 - (0.1 \cdot -0.096252) \\
+&= 0.50963
+\end{aligned}
 $$
 
 #### STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS
