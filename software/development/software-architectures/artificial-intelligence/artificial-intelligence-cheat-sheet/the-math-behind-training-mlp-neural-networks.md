@@ -30,7 +30,7 @@ Table of Contents
     * [STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---the-error-signal-for-the-hidden-layers)
     * [STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---the-new-weights--biases-for-the-output-layer)
     * [STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---the-new-weights--biases-for-the-hidden-layers)
-  * [STEP 6 - SAVE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---save-weights--biases)
+  * [STEP 6 - UPDATE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---update-weights--biases)
 * [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
 * [STEP 7 - SAVE WEIGHTS & BIASES TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-weights--biases-to-a-file)
 
@@ -1519,38 +1519,53 @@ Simple use the new weights and biases for the next iteration.
 
 If we keep doing this, we will eventually get to the minimum of the Loss Function.
 
-For example, after the first iteration the loss we be
+| Iteration |   Loss   |
+|-----------|----------|
+| 0         | 0.07446  |
+| 1         | 0.07242  |
+| 2         | 0.07044  |
+| 3         | 0.06852  |
+| 4         | 0.06666  |
+| 5         | 0.06486  |
+| 6         | 0.06312  |
+| 7         | 0.06143  |
+| 8         | 0.05979  |
+| 9         | 0.05820  |
+| ...       | ...      |
+| 100       | 0.00985  |
+| ...       | ...      |
+| 1000      | 0.00006  |
 
-$$
-\begin{aligned}
-L &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
-&= \frac{1}{2} \cdot \left(0.524 - 0.91\right)^2 \\
-&= 0.074498
-\end{aligned}
-$$
+You test run this yourself using my golang package
+[mlp go package](https://github.com/JeffDeCola/my-go-packages/tree/master/mlp)
 
-After the second iteration the loss will be
+These are the parameters to use,
 
-$$
-\begin{aligned}
-L &= \frac{1}{2} \left(y_{o} - z\right)^2 \\
-&= \frac{1}{2} \cdot \left(0.50842 - 0.91\right)^2 \\
-&= 0.0675
-\end{aligned}
-$$
-
-| Iteration | $w_{o[0]}$ | $w_{o[1]}$ | $w_{o[2]}$ | $b_{o}$ | $w_{h[0][0]}$ | $w_{h[0][1]}$ | $w_{h[1][0]}$ | $w_{h[1][1]}$ | $w_{h[2][0]}$ | $w_{h[2][1]}$ | $b_{h[0]}$ | $b_{h[1]}$ | $b_{h[2]}$ | Loss |
-|-----------|------------|------------|------------|---------|---------------|---------------|---------------|---------------|---------------|---------------|------------|------------|------------|------|
-| 0         | 0.5        | -1.0       | 0.0        | 0.5     | -0.5          | -1.0          | -0.5          | 0.5           | 1.0           | 0.0           | 0.5        | 0.5        | 0.5        | 0.25 |
-| 1         | 0.50421    | -0.99938   | 0.00070    | 0.50963 | -0.49941      | -0.99941      | -0.50113      | 0.4988        | 1.0           | 0.0           | 0.50119    | 0.49774    | 0.5        | 0.23 |
-| 2         | 0.50842    | -0.99876   | 0.00140    | 0.51926 | -0.49882      | -0.99882      | -0.50226      | 0.4976        | 1.0           | 0.0           | 0.50238    | 0.49549    | 0.5        | 0.21 |
-| 3         | 0.51263    | -0.99814   | 0.00210    | 0.52889 | -0.49823      | -0.99823      | -0.50339      | 0.4964        | 1.0           | 0.0           | 0.50357    | 0.49324    | 0.5        | 0.19 |
-| 4         | 0.51684    | -0.99752   | 0.00280    | 0.53852 | -0.49764      | -0.99764      | -0.50452      | 0.4952        | 1.0           | 0.0           | 0.50476    | 0.49100    | 0.5        | 0.17 |
-| 5         | 0.52105    | -0.99690   | 0.00350    | 0.54815 | -0.49705      | -0.99705      | -0.50565      | 0.4940        | 1.0           | 0.0           | 0.50595    | 0.48876    | 0.5        | 0.15 |
-| 6         | 0.52526    | -0.99628   | 0.00420    | 0.55778 | -0.49646      | -0.99646      | -0.50678      | 0.4928        | 1.0           | 0.0           | 0.50714    | 0.48652    | 0.5        | 0.13 |
-| 7         | 0.52947    | -0.99566   | 0.00490    | 0.56741 | -0.49587      | -0.99587      | -0.50791      | 0.4916        | 1.0           | 0.0           | 0.50833    | 0.48428    | 0.5        | 0.11 |
-| 8         | 0.53368    | -0.99504   | 0.00560    | 0.57704 | -0.49528      | -0.99528      | -0.50904      | 0.4904        | 1.0           | 0.0           | 0.50952    | 0.48204    | 0.5        | 0.09 |
-| 9         | 0.53789    | -0.99442   | 0.00630    | 0.58667 | -0.49469      | -0.99469      | -0.51017      | 0.4892        | 1.0           | 0.0           | 0.51071    | 0.47980    | 0.5        | 0.07 |
+```go
+// Neural Network Parameters
+nnp := mlp.NeuralNetworkParameters{
+  InputNodes:              2,
+  InputNodeLabels:         []string{"x[0]", "x[1]"},
+  HiddenLayers:            1,
+  HiddenNodesPerLayer:     []int{3},
+  OutputNodes:             1,
+  OutputNodeLabels:        []string{"y[0]"},
+  LearningRate:            0.1,
+  Epochs:                  10,
+  DatasetCSVFile:          "dataset.csv",
+  Initialization:          "file", // "random" or "file"
+  WeightsAndBiasesCSVFile: "weights-and-biases.csv",
+  MinMaxInput:             []float64{0.0, 100.0, 0.0, 100.0, 0.0, 100.0},
+  MinMaxOutput:            []float64{0.0, 100.0},
+  UseMinMaxInput:          false,
+  UseMinMaxOutput:         true,
+  NormalizeInputData:      true,
+  NormalizeOutputData:     true,
+  NormalizeMethod:         "zero-to-one",        // "zero-to-one" or "minus-one-to-one"
+  ActivationFunction:      "sigmoid",            // "sigmoid" or "tanh"
+  LossFunction:            "mean-squared-error", // "mean-squared-error" or "cross-entropy"
+}
+```
 
 ## STEP 7 - SAVE WEIGHTS & BIASES TO A FILE
 
