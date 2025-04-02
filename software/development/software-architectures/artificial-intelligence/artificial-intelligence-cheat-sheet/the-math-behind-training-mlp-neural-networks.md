@@ -34,17 +34,19 @@ Table of Contents
 * [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
 * [STEP 7 - SAVE MIN-MAX TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-min-max-to-a-file)
 * [STEP 8 - SAVE WEIGHTS & BIASES TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-8---save-weights--biases-to-a-file)
+* [TRY IT YOURSELF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#try-it-yourself)
 
 Documentation and Reference
 
 * [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
 * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
 * [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
+  * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
+    is an AI model of this cheat sheet
   * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
   * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
   * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
-* [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
 
 ## OVERVIEW
 
@@ -243,9 +245,12 @@ $$
   * [update weights & biases](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---update-weights--biases)
     and loop on dataset and epochs
 
-* **STEP 7 & 8 - Save Everything**
+* **STEP 7 - Save Min-Max**
 
   * [Save min-max to a file](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-min-max-to-a-file)
+
+* **STEP 8 - Save Weights & Biases**
+
   * [Save weights & biases to a file](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-8---save-weights--biases-to-a-file)
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
@@ -1539,37 +1544,6 @@ If we keep doing this, we will eventually get to the minimum of the Loss Functio
 | ...       | ...      |
 | 1000      | 0.00006  |
 
-You test run this yourself using my golang package
-[mlp go package](https://github.com/JeffDeCola/my-go-packages/tree/master/mlp)
-
-These are the parameters to use,
-
-```go
-// Neural Network Parameters
-nnp := mlp.NeuralNetworkParameters{
-  InputNodes:              2,
-  InputNodeLabels:         []string{"x[0]", "x[1]"},
-  HiddenLayers:            1,
-  HiddenNodesPerLayer:     []int{3},
-  OutputNodes:             1,
-  OutputNodeLabels:        []string{"y[0]"},
-  LearningRate:            0.1,
-  Epochs:                  10,
-  DatasetCSVFile:          "dataset.csv",
-  Initialization:          "file", // "random" or "file"
-  WeightsAndBiasesCSVFile: "weights-and-biases.csv",
-  MinMaxInput:             []float64{0.0, 100.0, 0.0, 100.0, 0.0, 100.0},
-  MinMaxOutput:            []float64{0.0, 100.0},
-  UseMinMaxInput:          false,
-  UseMinMaxOutput:         true,
-  NormalizeInputData:      true,
-  NormalizeOutputData:     true,
-  NormalizeMethod:         "zero-to-one",        // "zero-to-one" or "minus-one-to-one"
-  ActivationFunction:      "sigmoid",            // "sigmoid" or "tanh"
-  LossFunction:            "mean-squared-error", // "mean-squared-error" or "cross-entropy"
-}
-```
-
 ## STEP 7 - SAVE MIN-MAX TO A FILE
 
 We you have finished training the neural network, save the
@@ -1578,3 +1552,11 @@ min-max from dataset to a file. Will be used in testing and prediction mode.
 ## STEP 8 - SAVE WEIGHTS & BIASES TO A FILE
 
 Obviously save the trained weights and biases to a file. That's why we're here.
+
+## TRY IT YOURSELF
+
+I tested this entire cheat sheet in
+[my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
+repo using my
+[mlp](https://github.com/JeffDeCola/my-go-packages/tree/master/neural-networks/mlp)
+go package.
