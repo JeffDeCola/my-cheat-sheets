@@ -1,8 +1,8 @@
 # MY CHEAT SHEETS
 
-[![CodeClimate Issues](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-cheat-sheets/issues)
-[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+[![Maintainability](https://qlty.sh/badges/a4a0af5c-2016-41f7-9509-eba590d29448/maintainability.svg)](https://qlty.sh/gh/JeffDeCola/projects/my-cheat-sheets)
 
 _A place to keep all my cheat sheets
 for the complete development of
@@ -12,7 +12,7 @@ figured out over time. It's an ongoing process._
 
 **I - SOFTWARE CHEAT SHEETS**
 
-* **[DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development)**
+* **[DEVELOPMENT](https://github.com/JeffDeCola/my-cheat-sheets#development-sw)**
   * DEVELOPMENT ENVIRONMENTS
   * LANGUAGES
   * OPERATING SYSTEMS
@@ -73,9 +73,9 @@ Documentation and Reference
 
 ## I - SOFTWARE CHEAT SHEETS
 
-![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.jpg)
+![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.svg)
 
-### DEVELOPMENT
+### DEVELOPMENT SW
 
 * DEVELOPMENT ENVIRONMENTS
 
