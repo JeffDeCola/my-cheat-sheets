@@ -1,9 +1,17 @@
 # MONITORS CHEAT SHEET
 
-`monitors` _are monitors._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Lets discuss monitors._
+
+Table of Contents
+
+* [TECHNOLOGY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/monitors-cheat-sheet#technology)
+* [PORTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/monitors-cheat-sheet#ports)
+* [COMMON RATIOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/monitors-cheat-sheet#common-ratios)
+* [OLDER RESOLUTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/monitors-cheat-sheet#older-resolutions)
+* [NEWER RESOLUTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/monitors-cheat-sheet#newer-resolutions)
 
 ## TECHNOLOGY
 
@@ -91,7 +99,7 @@ PPI based on 27".
 | 4K  / 4K DCI |  4096 |  2160 |   8.84M | 171.51 |1.89:1  |     |     |   X |
 |   4K UHD     |  3840 |  2160 |   8.29M | 163.18 |  16:9  |   X |   X |     |
 |   4K WHD     |  5120 |  2160 |   11.0M | 205.81 |  21:9  |   X |     |     |
-|   4K DCI (CS)|  4096    1716 |   7.02M | 164.48 |2.39:1  |     |     |   X |
+|   4K DCI (CS)|  4096 |  1716 |   7.02M | 164.48 |2.39:1  |     |     |   X |
 |              |       |       |         |        |        |     |     |     |
 | 5K           |  5120 |  2700 |  13.82M | 214.38 |1.89:1  |     |   X |     |
 |   5K UHD     |  4800 |  2700 |  12.96M | 203.97 |  16:9  |     |   X |     |
@@ -107,5 +115,4 @@ PPI based on 27".
 
 CS is CinemaScope.
 
-![IMAGE - monitor-resolutions - IMAGE](../../../../docs/pics/monitor-resolutions.jpg)
-
+![IMAGE - monitor-resolutions - IMAGE](../../../../../docs/pics/other/monitor-resolutions.jpg)

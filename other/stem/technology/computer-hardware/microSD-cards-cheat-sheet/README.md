@@ -1,9 +1,15 @@
 # microSD CARDS CHEAT SHEET
 
-`microSD cards` _are removable flash memory._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Removable flash memory._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/microSD-cards-cheat-sheet#overview)
+* [STORAGE CAPACITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/microSD-cards-cheat-sheet#storage-capacity)
+* [SPEED CLASSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/microSD-cards-cheat-sheet#speed-classes)
 
 ## OVERVIEW
 

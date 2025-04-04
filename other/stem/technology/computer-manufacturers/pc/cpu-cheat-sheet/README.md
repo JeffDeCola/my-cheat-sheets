@@ -1,14 +1,21 @@
 # CPU CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _The most common desktop Intel and AMD CPUs._
 
-Documents and references,
+Table of Contents
+
+* [DESKTOP INTEL CORE I7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/cpu-cheat-sheet#desktop-intel-core-i7)
+* [OLDER INTEL DESKTOP PROCESSORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/cpu-cheat-sheet#older-intel-desktop-processors)
+* [DESKTOP AMD RYZEN 7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/cpu-cheat-sheet#desktop-amd-ryzen-7)
+
+Documents and Reference
 
 * A good website that your can search CPUs
   [here](https://www.techpowerup.com/cpu-specs/)
 * [cpu benchmarks](https://www.cpubenchmark.net/high_end_cpus.html)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## DESKTOP INTEL CORE I7
 

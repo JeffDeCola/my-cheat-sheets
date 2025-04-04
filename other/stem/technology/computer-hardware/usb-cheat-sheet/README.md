@@ -1,9 +1,15 @@
 # USB CHEAT SHEET
 
-`usb` _universal serial bus specifications._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Universal serial bus specifications._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/usb-cheat-sheet#overview)
+* [USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/usb-cheat-sheet#usb)
+* [APPLE THUNDERBOLT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/usb-cheat-sheet#apple-thunderbolt)
 
 ## OVERVIEW
 
