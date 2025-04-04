@@ -1,20 +1,36 @@
 # INSTALL AND CONFIGURE OS CHEAT SHEET
 
-`install and configure OS` _distribution on your Hummingboard._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-* [INSTALL "IGNITION" ON A microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-ignition-on-a-microsd-card)
-* [USE "IGNITION" TO INSTALL AN OS ON A microSD CARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#use-ignition-to-install-an-os-on-a-microsd-card)
-* [FULL LIST OF DISTRIBUTIONS FROM SOLIDRUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#full-list-of-distributions-from-solidrun)
-* [BASIC CONFIGURATION (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#basic-configuration-debian)
-* [INSTALL GO & GO TOOLS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-go--go-tools-debian)
-* [CONNECT TO WIFI (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#connect-to-wifi-debian)
+_Install and configure an OS distribution on your Hummingboard._
 
-Some fun things you can do with your hummingboard,
+Table of Contents
 
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install)
+  * [METHOD 1 - FLASH IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#method-1---flash-image)
+  * [METHOD 2 - OLD-WAY - "IGNITION"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#method-2---old-way---ignition)
+* [BASIC CONFIGURATION (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#basic-configuration-debian)
+* [UPDATE AND UPGRADE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#update-and-upgrade)
+  * [CHANGE PASSWORD FOR USER DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#change-password-for-user-debian)
+  * [RENAME YOUR HUMMINGBOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#rename-your-hummingboard)
+  * [ADD NEW USER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#add-new-user)
+  * [UPDATE PATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#update-path)
+  * [GET GIT & GITHUB WORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#get-git--github-working)
+* [INSTALL GO & GO TOOLS (DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#install-go--go-tools-debian)
+* [CONNECT TO WIFI(DEBIAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet#connect-to-wifi-debian)
+
+Documentation and Reference
+
+* Hummingboard
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+* Raspberry Pi
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
 * [Create DNS Server using BIND Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## INSTALL
 

@@ -1,10 +1,16 @@
 # WIRELESS LAN CHEAT SHEET
 
-`wireless lan` _also called Wi-Fi, is technology for radio wireless
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Wireless lan, also called Wi-Fi, is technology for radio wireless
 local area networking of devices based on the IEEE 802.11 standards._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [WHY IS IT CALLED WI-FI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/networks/wan-lan/wireless-lan-cheat-sheet#why-is-it-called-wi-fi)
+* [VERSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/networks/wan-lan/wireless-lan-cheat-sheet#versions)
+* [SECURITY LEVELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/networks/wan-lan/wireless-lan-cheat-sheet#security-levels)
 
 ## WHY IS IT CALLED WI-FI
 

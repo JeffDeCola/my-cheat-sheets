@@ -1,9 +1,13 @@
 # TELECOMMUNICATIONS STANDARDS CHEAT SHEET
 
-`telecommunication standards` _compairs the 1G to 5G technologies._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Telecommunication standards compares the 1G to 5G technologies._
+
+Table of Contents
+
+* [STANDARDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/networks/cellular/telecommunication-standards-cheat-sheet#standards)
 
 ## STANDARDS
 
