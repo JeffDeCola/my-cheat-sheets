@@ -1,6 +1,9 @@
 # INSTALL & CONFIGURE OS CHEAT SHEET
 
-_Install & configure OS distribution on your Raspberry Pi._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Install & configure an OS distribution on your Raspberry Pi._
 
 Table of Contents
 
@@ -22,12 +25,17 @@ Table of Contents
 * [INPUT & OUTPUT USING GPIO PINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#input--output-using-gpio-pins)
 * [ADDING 4 GPIO PINS - USING SERIAL PINS FOR GPIO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet#adding-4-gpio-pins---using-serial-pins-for-gpio)
 
-Some fun things you can do with your raspberry pi,
+Documentation and Reference
 
+* Hummingboard
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+* Raspberry Pi
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
 * [Create DNS Server using BIND Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## DOWNLOAD IMAGE
 
@@ -169,7 +177,7 @@ git config --list
 ```
 
 Refer to my
-[cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
+[git cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
 for more info.
 
 ### Use ssh Keys to ssh into your RasPI
@@ -326,20 +334,20 @@ Some specs,
 * There are 5V and 3.3V power pins
 
 For fun I wrote a golang program to control these pins
-[raspi-gpio](https://github.com/JeffDeCola/my-go-examples/tree/master/single-board-computers/raspi-gpio).
+[push-button-raspberry-pi-gpio-periph](https://github.com/JeffDeCola/my-go-examples/tree/master/iot/raspberry-pi/push-button-raspberry-pi-gpio-periph).
 
 This is how I set up the led and button on a breadboard,
 
-![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../../../docs/pics/raspberry-pi-input-and-output-using-gpio-pins.jpg)
+![IMAGE - raspberry-pi-input-and-output-using-gpio-pins - IMAGE](../../../../../../docs/pics/other/raspberry-pi-input-and-output-using-gpio-pins.svg)
 
 Here is the GPIO pin map I got from
-[raspberrypi.org](raspberrypi.org),
+[raspberrypi.org](http://raspberrypi.org),
 
-![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../../../docs/pics/raspberry-pi-gpio-pins.png)
+![IMAGE - raspberry-pi-gpio-pins.png - IMAGE](../../../../../../docs/pics/other/raspberry-pi-gpio-pins.png)
 
 What it would look like to connect to another device,
 
-![IMAGE - raspi-connecting.jpg - IMAGE](../../../../../../docs/pics/raspi-connecting.jpg)
+![IMAGE - raspberry-pi-connecting-to-another-device - IMAGE](../../../../../../docs/pics/other/raspberry-pi-connecting-to-another-device.svg)
 
 ## ADDING 4 GPIO PINS - USING SERIAL PINS FOR GPIO
 

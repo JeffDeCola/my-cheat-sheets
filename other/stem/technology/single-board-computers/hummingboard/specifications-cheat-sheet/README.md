@@ -1,14 +1,30 @@
 # SPECIFICATIONS CHEAT SHEET
 
-`specifications` _of SolidRun's Hummingboard SBC._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_SolidRun's Hummingboard SBC specs._
+
+Table of Contents
+
+* [SOLIDRUN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#solidrun)
+* [HUMMINGBOARD PRODUCT LIST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#hummingboard-product-list)
+* [CARRIER BOARD OPTIONS & SPECS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#carrier-board-options--specs)
+  * [Carrier Board (Pro)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#carrier-board-pro)
+* [MICRO-SOM (SYSTEM ON MODULE) OPTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#micro-som-system-on-module-options)
+  * [i2eX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#i2ex)
+  * [i4](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet#i4)
 
 Documentation and Reference
 
-* [Hummingboard Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
-* [Raspberry Pi Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* Hummingboard
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+* Raspberry Pi
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
 
 ## SOLIDRUN
 
@@ -48,8 +64,7 @@ It requires 5V, 2A microUSB power.
 * Ethernet       10/100/1000
 * mSATA II       512GB mSATA SSD
 * RTC Chip       NXO PCF8523 (external battery (CR1620) using 2 pin header)
-* GPIO           26 pin - Same configuration as
-                 [Raspberry Pi](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+* GPIO           26 pin - Same configuration as Raspberry Pi
 * Audio          Analog Stereo and MIC in
 
 ## MICRO-SOM (SYSTEM ON MODULE) OPTIONS

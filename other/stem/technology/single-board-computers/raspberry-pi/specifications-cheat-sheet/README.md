@@ -1,18 +1,26 @@
 # SPECIFICATIONS CHEAT SHEET
 
-`specifications` _of Raspberry Pi models SBCs._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-* [Raspi 1 Model B+ / Raspi 2 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-1-model-b--raspi-2-model-b)
-* [Raspi 3 Model B / Raspi 3 Model B+](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-3-model-b--raspi-3-model-b)
-* [Raspi 4 Model B (4GB) / Raspi 4 Model B (8GB)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-4-model-b-4gb--raspi-4-model-b-8gb)
+_Raspberry Pi model's SBC specs._
+
+Table of Contents
+
+* [Raspi 1 Model B+ / Raspi 2 Model B](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-1-model-b--raspi-2-model-b)
+* [Raspi 3 Model B / Raspi 3 Model B+](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-3-model-b--raspi-3-model-b)
+* [Raspi 4 Model B (4GB) / Raspi 4 Model B (8GB)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-4-model-b-4gb--raspi-4-model-b-8gb)
 
 Documentation and Reference
 
-* [Hummingboard Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
-* [Raspberry Pi Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* Hummingboard
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/install-and-configure-os-cheat-sheet)
+* Raspberry Pi
+  [specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+  and
+  [install](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/install-and-configure-os-cheat-sheet)
 
 ## Raspi 1 Model B+ / Raspi 2 Model B
 
