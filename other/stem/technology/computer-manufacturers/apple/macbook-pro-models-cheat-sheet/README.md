@@ -1,19 +1,19 @@
 # MACBOOK PRO MODELS CHEAT SHEET
 
-`macbook pro models` _are the part numbers for the various Macbook Pros._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Table of Contents,
+_Macbook pro models are the part numbers for the various Macbook Pros._
 
-* [2020 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2020-mid)
-* [2019 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2019-mid)
-* [2018 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2018-mid)
-* [2017 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2017-mid)
-* [2016 (LATE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/computer-hardware/apple/macbook-pro-models-cheat-sheet#2016-late)
+Table of Contents
+
+* [2020 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet#2022-mid)
+* [2019 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet#2019-mid)
+* [2018 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet#2018-mid)
+* [2017 (MID)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet#2017-mid)
+* [2016 (LATE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet#2016-late)
 
 Note that LL/A is the USA region.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## 2022 (MID)
 

@@ -1,9 +1,14 @@
 # SSD CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Solid state drives._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [NAND TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/ssd-cheat-sheet#nand-types)
+* [COMPARISON CHART](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/ssd-cheat-sheet#comparison-chart)
 
 ## NAND TYPES
 

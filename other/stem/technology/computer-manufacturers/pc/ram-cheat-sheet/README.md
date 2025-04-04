@@ -1,9 +1,14 @@
 # RAM CHEAT SHEET
 
-`ram` _is random access memory._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Random access memory._
+
+Table of Contents
+
+* [TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/ram-cheat-sheet#types)
+* [DESKTOP MEMORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/ram-cheat-sheet#desktop-memory)
 
 ## TYPES
 

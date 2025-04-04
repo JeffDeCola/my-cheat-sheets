@@ -1,9 +1,15 @@
 # HARD DRIVES CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Hard drives._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/hard-drives-cheat-sheet#types)
+* [RAID 0, 1, 5, 6](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/hard-drives-cheat-sheet#raid-0-1-5-6)
+* [RAID 10, 50](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-hardware/hard-drives-cheat-sheet#raid-10-50)
 
 ## TYPES
 
@@ -75,4 +81,3 @@ Raid 50 is Raid 5 and RAID 0 combined.
 |   | A1 | A2 | A3 |  P | A4 | A5 | A6 | P  | 6 TB |  75 | Perform / Reliable |
 |   | A7 | A8 |  P | A9 | A10| A11|  P | A12|      |     |  Strip 2 Par / Mir |
 |   |    |    |    |    |    |    |    |    |      |     |                    |
-
