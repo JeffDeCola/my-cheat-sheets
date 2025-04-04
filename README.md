@@ -73,7 +73,7 @@ Documentation and Reference
 
 ## I - SOFTWARE CHEAT SHEETS
 
-![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.svg)
+![IMAGE - creating-a-service-app - IMAGE](docs/pics/software/creating-a-service-app.svg)
 
 ### DEVELOPMENT SW
 
@@ -142,7 +142,6 @@ Documentation and Reference
   * API
 
     * [RESTful](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/RESTful-cheat-sheet)
-      ([RESTful-API-test](https://github.com/JeffDeCola/RESTful-API-test))
     * [youtube content id api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-content-id-api-cheat-sheet)
     * [youtube data api v3](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-data-api-v3-cheat-sheet)
     * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet)
@@ -305,12 +304,12 @@ Documentation and Reference
 
 ## II - HARDWARE CHEAT SHEETS
 
-![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/creating-an-asic-fpga.jpg)
+![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/hardware/creating-an-asic-fpga.svg)
 
 ### DEVELOPMENT HW
 
 * FPGA DEVELOPMENT BOARDS
-  
+
   * [Digilent ARTY-S7](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/development/fpga-development-boards/digilent-arty-s7-cheat-sheet)
 
 * HARDWARE ARCHITECTURES
@@ -438,7 +437,7 @@ _Other cheat sheets I'm interested in._
 
     * OVERVIEW
 
-      * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/cryptocurrency-and-mining/overview/cryptocurrency-cheat-sheet)
+      * [cryptocurrency](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/cryptocurrency-and-mining/overview/cryptocurrency/cryptocurrency-cheat-sheet)
         ([jeffCoin](https://github.com/JeffDeCola/jeffCoin),
         [crypto-miner-manager](https://github.com/JeffDeCola/crypto-miner-manager),
         [crypto-wallet-status](https://github.com/JeffDeCola/crypto-wallet-status))
@@ -492,13 +491,13 @@ _Other cheat sheets I'm interested in._
 
   * APPLIED
 
-    * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#software-cheat-sheets)
+    * [computer science (software)](https://github.com/JeffDeCola/my-cheat-sheets#i---software-cheat-sheets)
     * [control theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/control-theory-cheat-sheet)
     * [cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/cryptography-cheat-sheet)
     * [electrical engineering](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/electrical-engineering-cheat-sheet)
     * [game theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/game-theory-cheat-sheet)
     * [optimization](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/optimization-cheat-sheet)
-    * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets#science)
+    * [physical sciences (chemistry & physics)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/physical-science)
     * [probability and statistics](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/applied/probability-and-statistics-cheat-sheet)
 
   * NOTABLE EQUATIONS
@@ -520,7 +519,7 @@ _Other cheat sheets I'm interested in._
 
       * [category theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/category-theory-cheat-sheet)
       * [fundamental rules](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/fundamental-rules-cheat-sheet)
-      * [math logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/math-logic-cheat-sheet)
+      * [mathematics logic](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/mathematics-logic-cheat-sheet)
       * [set theory](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/set-theory-cheat-sheet)
       * [theory of computation (complexity theory)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/foundations/theory-of-computation-complexity-theory-cheat-sheet)
 

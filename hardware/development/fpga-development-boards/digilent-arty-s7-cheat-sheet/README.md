@@ -1,5 +1,8 @@
 # DIGILENT ARTY-S7 CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Digilent ARTY S7-50 is a FPGA development board._
 
 Table of Contents
@@ -32,7 +35,7 @@ A very short list of the arty S7-50 specs,
 * 250 pins
 * Internal clock speeds exceeding 450MHz
 
-![IMAGE - digilent-arty-s7-50.jpg - IMAGE](../../../../docs/pics/digilent-arty-s7-50.jpg)
+![IMAGE - digilent-arty-s7-50.jpg - IMAGE](../../../../docs/pics/hardware/digilent-arty-s7-50.svg)
 
 ## POWER
 
@@ -77,11 +80,11 @@ More specifically, the constraint file.
 
 This is how I set up the led and button on a breadboard,
 
-![IMAGE - arty-s7-input-and-output-using-pmod - IMAGE](../../../../docs/pics/arty-s7-input-and-output-using-pmod.jpg)
+![IMAGE - arty-s7-input-and-output-using-pmod - IMAGE](../../../../docs/pics/hardware/arty-s7-input-and-output-using-pmod.svg)
 
 This is the 12-pin Pmod pin map,
 
-![IMAGE - pmod-connector- IMAGE](../../../../docs/pics/pmod-connector.png)
+![IMAGE - pmod-connector- IMAGE](../../../../docs/pics/hardware/pmod-connector.png)
 
 These are the 4 Pmod ports on the ARTY-S7,
 

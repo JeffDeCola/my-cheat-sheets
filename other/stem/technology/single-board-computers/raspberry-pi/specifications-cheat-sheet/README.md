@@ -6,6 +6,11 @@
 * [Raspi 3 Model B / Raspi 3 Model B+](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-3-model-b--raspi-3-model-b)
 * [Raspi 4 Model B (4GB) / Raspi 4 Model B (8GB)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/single-board-computers/raspberry-pi/specifications-cheat-sheet#raspi-4-model-b-4gb--raspi-4-model-b-8gb)
 
+Documentation and Reference
+
+* [Hummingboard Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/hummingboard/specifications-cheat-sheet)
+* [Raspberry Pi Specs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/single-board-computers/raspberry-pi/specifications-cheat-sheet)
+
 View my entire list of cheat sheets on
 [my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
