@@ -1,12 +1,15 @@
 # IGT G23 and G23V2 UPRIGHT VIDEO SLOT MACHINE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _International Game Technology (IGT) G23 and G23v2
 Advanced Video Platform (AVP)
 Premium Upright
 Video Gaming Terminal (VGT)
-Video Slot Machine. Or the **IGT G23 UPRIGHT** for short_
+Video Slot Machine. Or the **IGT G23 UPRIGHT** for short._
 
-Table on Contents,
+Table on Contents
 
 * [TODO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#todo)
 * [MANUALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#manuals)
@@ -25,10 +28,6 @@ Table on Contents,
 * [AVP GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#avp-games)
   * [FAMILY 20 GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#family-20-games)
   * [FAMILY 14 GAMES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet#family-14-games)
-
-Documentation and reference,
-
-* [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## TODO
 
@@ -135,7 +134,7 @@ I do think Family 20 games want a AVP 4.0.
 |                          | DIAG KEY (FAM 20) (USB)   | -                   | DIAGUNV00114 (2019)  |
 |                          | DIAG KEY (FAM 14) (USB)   | -                   | DIAGNOSTIC-014-21 (2014) |
 
-![IMAGE - igt-g23-upright-components - IMAGE](../../../docs/pics/igt-g23-upright-components.jpg)
+![IMAGE - igt-g23-upright-components - IMAGE](../../../docs/pics/other/igt-g23-upright-components.jpg)
 
 ## LOCK LOCATIONS
 
@@ -146,7 +145,7 @@ There are 4 main locks,
 * BRAIN BOX (1 or 2 LOCKS)
 * BILL ACCEPTOR
 
-![IMAGE - igt-g23-upright-lock-locations - IMAGE](../../../docs/pics/igt-g23-upright-lock-locations.jpg)
+![IMAGE - igt-g23-upright-lock-locations - IMAGE](../../../docs/pics/other/igt-g23-upright-lock-locations.jpg)
 
 ## BRAIN BOX
 
@@ -277,7 +276,7 @@ How read game part numbers,
 |:--------------------------------|:--------------------------|:----------------------------------------|
 | ??                              | Lobstermania 3            | (x-Real, x-Line)                        |
 
-![IMAGE - igt-g23-family-20-selection-screen - IMAGE](../../../docs/pics/igt-g23-family-20-selection-screen.jpg)
+![IMAGE - igt-g23-family-20-selection-screen - IMAGE](../../../docs/pics/other/igt-g23-family-20-selection-screen.jpg)
 
 ### FAMILY 14 GAMES
 
@@ -292,4 +291,4 @@ How read game part numbers,
 | GI014-001O75-D008               | Wolf Run                  | (5-Real, 40-Line)                       |
 | GI014-001X43-C003               | Wolf Run MultiPlay        | UP TO 4 GAMES                           |
 
-![IMAGE - igt-g23-family-14-selection-screen - IMAGE](../../../docs/pics/igt-g23-family-14-selection-screen.jpg)
+![IMAGE - igt-g23-family-14-selection-screen - IMAGE](../../../docs/pics/other/igt-g23-family-14-selection-screen.jpg)

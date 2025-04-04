@@ -1,6 +1,10 @@
 # MY LUNCH RATINGS DTLA CHEAT SHEET
 
-_Listed from North to South and East to West_
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_When I used to work in DTLA, I made a list of lunch places organized
+from North to South and East to West._
 
 ## LITTLE TOKYO
 
@@ -28,7 +32,7 @@ _Listed from North to South and East to West_
 * TO DO
 * ONYX LOUNGE
 * YUKO KITCHEN _Great Japanese and desserts_ ****
-* STRADA EATERIA & COFFEE _ Amazing sandwiches and turkish coffee_ ****
+* STRADA EATERIA & COFFEE _Amazing sandwiches and turkish coffee_ ****
 
 ## 6TH
 
@@ -67,7 +71,7 @@ DEKKADANCE
 * TO DO
   * CASA NOSTRA RISTORANTE & BAR_
 * WOOD SPOON _Amazing Brazilian_ ****
-* NEW MOON _ Pretty Good Chinese_ ***
+* NEW MOON _Pretty Good Chinese_ ***
 
 ## OLYMPIC
 

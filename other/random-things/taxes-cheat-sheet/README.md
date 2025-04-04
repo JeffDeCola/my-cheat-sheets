@@ -1,5 +1,8 @@
 # TAXES CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Common tax info I find useful for filing Form 1040. This is not to be used as tax advice, these are just my opinions._
 
 Table of Contents
@@ -1862,4 +1865,4 @@ _In order used on form 1040._
 
 This illustration may help.
 
-![IMAGE - 1040-common-form-flow - IMAGE](../../../docs/pics/1040-common-form-flow.svg)
+![IMAGE - 1040-common-form-flow - IMAGE](../../../docs/pics/other/1040-common-form-flow.svg)

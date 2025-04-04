@@ -1,10 +1,13 @@
 # WILLIAMS 1990 DINER PINBALL MACHINE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Parts, part numbers and settings._
 
-Table on Contents,
+Table on Contents
 
-* [DINER OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#diner-overview)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#overview)
 * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#fuses)
 * [LAMPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#lamps)
 * [LEFT FLIPPER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#left-flipper)
@@ -20,16 +23,15 @@ Table on Contents,
   * [GAME DIFFICULTY SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#game-difficulty-settings)
   * [OTHER SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/williams-diner-pinball-machine-cheat-sheet#other-settings)
 
-Documentation and reference,
+Documentation and Reference
 
 * [The Internet Pinball Machine Database](https://www.ipdb.org/machine.cgi?id=681)
 * A great resource for system 11C systems from
   [pinwiki](https://www.pinwiki.com/wiki/index.php/Williams_System_9_-_11)
 * A resource from troubleshooting
   [here](https://techniek.flipperwinkel.nl/wms11/index1.htm)
-* [GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
-## DINER OVERVIEW
+## OVERVIEW
 
 * Model: 571
 * Serial Number: 571 420760
@@ -51,7 +53,7 @@ Documentation and reference,
 * 3-Bank Drop Targets: 2
 * Coins: 25 cents
 
-![IMAGE - diner-pinball.jpg - IMAGE](../../../docs/pics/diner-pinball.jpg)
+![IMAGE - diner-pinball.jpg - IMAGE](../../../docs/pics/other/williams-diner-pinball.jpg)
 
 ## FUSES
 
@@ -64,7 +66,7 @@ For example, Williams part number #5731-09651-00 is a 5 AMP fuse
 * Bussmann #MDL-5 or #MSL-5
 * Size: 3AG (Automotive glass) 1.25 inches with a diameter of 1/4 inch.
 
-![IMAGE - williams-diner-pinball-machine-fuses.jpg - IMAGE](../../../docs/pics/williams-diner-pinball-machine-fuses.jpg)
+![IMAGE - williams-diner-pinball-machine-fuses.jpg - IMAGE](../../../docs/pics/other/williams-diner-pinball-machine-fuses.jpg)
 
 ## LAMPS
 

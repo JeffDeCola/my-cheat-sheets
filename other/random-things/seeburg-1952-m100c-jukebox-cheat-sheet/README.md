@@ -1,8 +1,11 @@
 # SEEBURG 1952 M100C JUKEBOX CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _M100C parts and part numbers._
 
-Table on Contents,
+Table on Contents
 
 * [M100C](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#m100c)
   * [FUSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#fuses)
@@ -10,8 +13,6 @@ Table on Contents,
   * [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#vacuum-tubes)
 * [3W1 "WALL-O-MATIC"](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#3w1-wall-o-matic)
 * [TEARDROP EXTERNAL SPEAKERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet#teardrop-external-speakers)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## M100C
 
@@ -30,7 +31,7 @@ Table on Contents,
 * Cabinet Key: G245
 * Coins: 5, 10, 25 cents
 
-![IMAGE - seeburg_m100c.png - IMAGE](../../../docs/pics/seeburg_m100c.png)
+![IMAGE - seeburg-m100c.png - IMAGE](../../../docs/pics/other/seeburg-m100c.png)
 
 ### FUSES
 
@@ -65,7 +66,7 @@ There are a total of 3 Fluorescent lights.
     * 33", 25-watt, Daylight (5500K-6500K), T12 Bulb Shape
       * GE 10299 - F25T12/D/33 - 25 watt, 6500K, 1600 Lumens (Discontinued)
 
-![IMAGE - top-light-schematic-seeburg - IMAGE](../../../docs/pics/top-light-schematic-seeburg.jpg)
+![IMAGE - seeburg-top-light-schematic - IMAGE](../../../docs/pics/other/seeburg-top-light-schematic.jpg)
 
 * BOTTOM
   * **Ballast** 405546 (1)
@@ -83,7 +84,7 @@ There are a total of 3 Fluorescent lights.
       * PHILIPS 273284 - F20T12/D ALTO - 20 Watt, 6500K, 1075 Lumens
       * GE 80047 - F20T12/D/ECO - 20 watt, 6500K, 1025 Lumens
 
-![IMAGE - bottom-lights-schematic-seeburg - IMAGE](../../../docs/pics/bottom-lights-schematic-seeburg.jpg)
+![IMAGE - seeburg-bottom-lights-schematic - IMAGE](../../../docs/pics/other/seeburg-bottom-lights-schematic.jpg)
 
 ### VACUUM TUBES
 
@@ -109,9 +110,9 @@ GT stands for glass tubular.
 The 6SK7-GT tube controls the auto-volume control and recommend to leave empty.
 Get the 2050 RCA tube with the Seeburg name in green letters.
 
-![IMAGE - MRA3-L6 MASTER REMOTE AMPLIFIER SCHEMATIC - IMAGE](../../../docs/pics/MRA3-L6-master-remote-amplifier-schematic.jpg)
+![IMAGE - SEEBURG MRA3-L6 MASTER REMOTE AMPLIFIER SCHEMATIC - IMAGE](../../../docs/pics/other/seeburg-MRA3-L6-master-remote-amplifier-schematic.jpg)
 
-![IMAGE - MRA3-L6 MASTER REMOTE AMPLIFIER SCHEMATIC - IMAGE](../../../docs/pics/MRA3-L6-master-remote-amplifier-picture.jpg)
+![IMAGE - SEEBURG MRA3-L6 MASTER REMOTE AMPLIFIER SCHEMATIC - IMAGE](../../../docs/pics/other/seeburg-MRA3-L6-master-remote-amplifier-picture.jpg)
 
 Places to get tubes,
 
@@ -130,7 +131,7 @@ Places to get tubes,
 * Dimensions (HxWxD): 13"x12"x6"
 * Weight: 20lbs
 
-![IMAGE - seeburg_3w1w.png - IMAGE](../../../docs/pics/seeburg_3w1w.png)
+![IMAGE - seeburg_3w1w.png - IMAGE](../../../docs/pics/other/seeburg-3w1w.png)
 
 ## TEARDROP EXTERNAL SPEAKERS
 
@@ -145,8 +146,8 @@ Places to get tubes,
 * Dimensions (HxWxD): 17"x11"x5.5"
 * Weight: 12 lbs
 
-![IMAGE - seeburg-CVWS1-8-and-CVWS2-8-front.jpg - IMAGE](../../../docs/pics/seeburg-CVWS1-8-and-CVWS2-8-front.jpg)
+![IMAGE - seeburg-CVWS1-8-and-CVWS2-8-front.jpg - IMAGE](../../../docs/pics/other/seeburg-CVWS1-8-and-CVWS2-8-front.jpg)
 
-![IMAGE - seeburg-CVS4-8-front - IMAGE](../../../docs/pics/seeburg-CVS4-8-front.jpg)
+![IMAGE - seeburg-CVS4-8-front - IMAGE](../../../docs/pics/other/seeburg-CVS4-8-front.jpg)
 
-![IMAGE - seeburg-CVS4-8-back - IMAGE](../../../docs/pics/seeburg-CVS4-8-back.jpg)
+![IMAGE - seeburg-CVS4-8-back - IMAGE](../../../docs/pics/other/seeburg-CVS4-8-back.jpg)

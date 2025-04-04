@@ -1,46 +1,49 @@
 # ASTRONOMY CHEAT SHEET
 
-`astronomy` _is the branch of science which deals with celestial objects,
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+Astronomy is the branch of science which deals with celestial objects,
 space, and the physical universe as a whole._
 
-* [A BRIEF HISTORY OF ASTRONOMY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#a-brief-history-of-astronomy)
-  * [NICOLAUS COPERNICUS (1473-1543) POLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
-  * [TYCHO BRAHE (1546-1601) DANISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#tycho-brahe-1546-1601-danish)
-  * [JOHANNES KEPLER (1571-1630) GERMAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#johannes-kepler-1571-1630-german)
-  * [GALILEO GALILEI (1564-1642) ITALY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
-  * [SIR ISSAC NEWTON (1642-1727) ENGLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
-* [THE CELESTIAL SPHERE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#the-celestial-sphere)
-  * [MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#mapping-star-on-celestial-sphere-declination--right-ascension)
-  * [OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#observer-on-earth-finding-a-star-altitude--azimuth)
-* [OUR SOLAR SYSTEM & BEYOND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#our-solar-system--beyond)
-* [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#astronomical-units-and-scale)
-* [CELESTIAL BODIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#celestial-bodies)
-  * [STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
-    * [STAR MAGNITUDE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#star-magnitude)
-    * [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
-  * [CONSTELLATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
-  * [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#planets)
-  * [DWARF PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#dwarf-planets)
-  * [MOONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#moons)
-  * [ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#asteroids)
-  * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
-* [MESSIER & NEW GENERAL CATALOGUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#messier--new-general-catalogue)
-  * [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#galaxies)
-  * [STAR CLUSTERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#star-clusters)
-  * [NEBULAE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#nebulae)
-* [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
-* [SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#scale)
-  * [SUN & EARTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#sun--earth)
-  * [EARTH & MOON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--moon)
-  * [EARTH & MARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#earth--mars)
-  * [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
-* [FOR FUN - DEBUNKING THE FLAT EARTH MODEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet#for-fun---debunking-the-flat-earth-model)
+Table of Contents
 
-Check out whats in [our solar system & beyond](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
-on another cheat sheet.
+* [A BRIEF HISTORY OF ASTRONOMY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#a-brief-history-of-astronomy)
+  * [NICOLAUS COPERNICUS (1473-1543) POLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#nicolaus-copernicus-1473-1543-polish)
+  * [TYCHO BRAHE (1546-1601) DANISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#tycho-brahe-1546-1601-danish)
+  * [JOHANNES KEPLER (1571-1630) GERMAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#johannes-kepler-1571-1630-german)
+  * [GALILEO GALILEI (1564-1642) ITALY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#galileo-galilei-1564-1642--italy)
+  * [SIR ISSAC NEWTON (1642-1727) ENGLISH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#sir-issac-newton-1642-1727-english)
+* [THE CELESTIAL SPHERE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#the-celestial-sphere)
+  * [MAPPING STAR ON CELESTIAL SPHERE (DECLINATION & RIGHT ASCENSION)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#mapping-star-on-celestial-sphere-declination--right-ascension)
+  * [OBSERVER ON EARTH FINDING A STAR (ALTITUDE & AZIMUTH)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#observer-on-earth-finding-a-star-altitude--azimuth)
+* [OUR SOLAR SYSTEM & BEYOND](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#our-solar-system--beyond)
+* [ASTRONOMICAL UNITS AND SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#astronomical-units-and-scale)
+* [CELESTIAL BODIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#celestial-bodies)
+  * [STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#stars)
+    * [STAR MAGNITUDE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#star-magnitude)
+    * [NOTABLE STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#notable-stars)
+  * [CONSTELLATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#constellations)
+  * [PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#planets)
+  * [DWARF PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#dwarf-planets)
+  * [MOONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#moons)
+  * [ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#asteroids)
+  * [METEORITES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#meteorites)
+* [MESSIER & NEW GENERAL CATALOGUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#messier--new-general-catalogue)
+  * [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#galaxies)
+  * [STAR CLUSTERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#star-clusters)
+  * [NEBULAE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#nebulae)
+* [WHAT OBJECTS HAVE WE LANDED ON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#what-objects-have-we-landed-on)
+* [SCALE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#scale)
+  * [SUN & EARTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#sun--earth)
+  * [EARTH & MOON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#earth--moon)
+  * [EARTH & MARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#earth--mars)
+  * [TYPES OF STARS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#types-of-stars)
+* [FOR FUN - DEBUNKING THE FLAT EARTH MODEL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet#for-fun---debunking-the-flat-earth-model)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* Check out whats in [our solar system & beyond](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 
 ## A BRIEF HISTORY OF ASTRONOMY
 
@@ -206,12 +209,10 @@ This figure may help,
 * 0-122 AU from the sun.
 * 99.86% of the system’s mass is found in the Sun and the majority of the
   remaining 0.14% is contained within the solar system’s eight planets.
-* The four smaller
-  [inner planets](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#inner-planets),
+* The four smaller inner planets,
   also known as the “terrestrial planets”
   (Mercury, Venus, Earth and Mars), are primarily composed of rock and metal.
-* The four
-  [outer planets](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planets),
+* The four outer planets,
   also known as the “gas giants”
   (Jupiter, Saturn, Uranus and Neptune), are substantially
   larger and more massive than the inner planets.
@@ -220,7 +221,7 @@ This figure may help,
   the asteroid belt, comets and the Kuiper belt.
 
 For a complete rundown of our solar system, check out my
-[our solar system & beyond cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
+[our solar system & beyond cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md)
 
 ## ASTRONOMICAL UNITS AND SCALE
 
@@ -266,14 +267,14 @@ But the southern hemisphere doesn't really have a south pole star.
 
 Here are some other notable stars,
 
-* [Betelgeuse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betegeuse)
+* [Betelgeuse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betelgeuse)
   The brightest star in the night sky. Its
   ready to blow in the next million years. 430 light years away.
-* [Sirius](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
+* [Sirius](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
   is the brightest star in the sky and only 8.6
-  light years away. Sirius comes from the Greek word Seirius,
+  light years away. Sirius comes from the Greek word Sirius,
   meaning, "searing" or "scorching.
-* [Rigel](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
+* [Rigel](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
   has a blue color. 7th brightest star in the Constellation of orion.
   864 lights years away.
 
@@ -371,19 +372,19 @@ Its hard to comprehend scale, so this may help a bit.
 
 ### SUN & EARTH
 
-![IMAGE - scale-of-sun-and-earth - IMAGE](../../../../docs/pics/scale-of-sun-and-earth.jpg)
+![IMAGE - astronomy-scale-of-sun-and-earth - IMAGE](../../../../../docs/pics/other/astronomy-scale-of-sun-and-earth.svg)
 
 ### EARTH & MOON
 
-![IMAGE - scale-of-earth-and-moon - IMAGE](../../../../docs/pics/scale-of-earth-and-moon.jpg)
+![IMAGE - astronomy-scale-of-earth-and-moon - IMAGE](../../../../../docs/pics/other/astronomy-scale-of-earth-and-moon.svg)
 
 ### EARTH & MARS
 
-![IMAGE - scale-of-earth-and-mars - IMAGE](../../../../docs/pics/scale-of-earth-and-mars.jpg)
+![IMAGE - astronomy-scale-of-earth-and-mars - IMAGE](../../../../../docs/pics/other/astronomy-scale-of-earth-and-mars.svg)
 
 ### TYPES OF STARS
 
-![IMAGE - scale-of-types-of-stars - IMAGE](../../../../docs/pics/scale-of-types-of-stars.jpg)
+![IMAGE - astronomy-scale-of-types-of-stars - IMAGE](../../../../../docs/pics/other/astronomy-scale-of-types-of-stars.svg)
 
 ## FOR FUN - DEBUNKING THE FLAT EARTH MODEL
 
@@ -396,4 +397,4 @@ Anyway, here is my simple example out of thousands I use to
 debunk the flat earth model. In the flat earth model, how do you drive west
 to east without turning left the entire time?  Enjoy.
 
-![IMAGE - debunk-flat-earth-example-drive-west-east - IMAGE](../../../../docs/pics/debunk-flat-earth-example-drive-west-east.jpg)
+![IMAGE - astronomy-debunk-flat-earth-example-drive-west-east - IMAGE](../../../../../docs/pics/other/astronomy-debunk-flat-earth-example-drive-west-east.svg)

@@ -1,7 +1,10 @@
 # XILINX VIVADO CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Xilinx Vivado is a complete IDE for synthesis and analysis of HDL designs.
-I use it to burn an FPGA on a development board_
+I use it to burn an FPGA on a development board._
 
 Table of Contents
 
@@ -40,4 +43,4 @@ I use the digilent ARTY-S7 development board and the constraint file is
 
 This is my quick and dirty overview,
 
-![IMAGE - xilinx-vivado-flow - IMAGE](../../../../docs/pics/xilinx-vivado-flow.jpg)
+![IMAGE - xilinx-vivado-flow - IMAGE](../../../../docs/pics/hardware/xilinx-vivado-flow.svg)
