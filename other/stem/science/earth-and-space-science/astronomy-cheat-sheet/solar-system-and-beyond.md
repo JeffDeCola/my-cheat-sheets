@@ -1,51 +1,53 @@
 # OUR SOLAR SYSTEM & BEYOND CHEAT SHEET
 
-`our solar system and beyond` _goes over the main celestial bodies
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_A look at the main celestial bodies
 in our solar system and beyond._
 
-* [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sun)
-* [INNER/TERRESTRIAL PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#inner-terrestrial-planets)
-  * [MERCURY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mercury)
-  * [VENUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#venus)
-  * [EARTH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#earth)
-    * [THE MOON](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#the-moon)
-  * [MARS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mars)
-* [THE ASTEROID BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#the-asteroid-belt)
-  * [CERES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#ceres)
-* [OUTER PLANETS/GAS GIANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planets-gas-giants)
-  * [JUPITER & TROJAN ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#jupiter--trojan-asteroids)
-  * [SATURN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#saturn)
-  * [URANUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#uranus)
-  * [NEPTUNE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#neptune)
-* [KUIPER BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#kuiper-belt)
-  * [PLUTO (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
-  * [HAUMEA (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
-  * [MAKEMAKE (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
-* [SCATTERED DISC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#scattered-disc)
-  * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
-* [EDGE OF OUT SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#edge-of-out-solar-system)
-* [VOYAGER 1](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#voyager-1)
-* [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
-* [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
-  * [PROXIMA CENTAURI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#proxima-centauri)
-  * [SIRIUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
-  * [BETELGEUSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betegeuse)
-  * [RIGEL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
-* [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#galaxies)
-  * [CANIS MAJOR DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#canis-major-dwarf-galaxy)
-  * [LARGE MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#large-magellanic-cloud-dwarf-galaxy)
-  * [SMALL MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#small-magellanic-cloud-dwarf-galaxy)
-  * [ANDROMEDA GALAXY (M31)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy)
-  * [MACS0647-JD (FARTHEST OBJECT SEEN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#macs0647-jd-farthest-object-seen)
+Table of Contents
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [SUN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sun)
+* [INNER/TERRESTRIAL PLANETS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#innerterrestrial-planets)
+  * [MERCURY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mercury)
+  * [VENUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#venus)
+  * [EARTH](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#earth)
+    * [THE MOON](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#the-moon)
+  * [MARS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#mars)
+* [THE ASTEROID BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#the-asteroid-belt)
+  * [CERES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#ceres)
+* [OUTER PLANETS/GAS GIANTS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#outer-planetsgas-giants)
+  * [JUPITER & TROJAN ASTEROIDS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#jupiter--trojan-asteroids)
+  * [SATURN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#saturn)
+  * [URANUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#uranus)
+  * [NEPTUNE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#neptune)
+* [KUIPER BELT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#kuiper-belt)
+  * [PLUTO (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
+  * [HAUMEA (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
+  * [MAKEMAKE (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
+* [SCATTERED DISC](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#scattered-disc)
+  * [ERIS (DWARF PLANET)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#eris)
+* [EDGE OF OUT SOLAR SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#edge-of-out-solar-system)
+* [VOYAGER 1](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#voyager-1)
+* [OORT CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#oort-cloud)
+* [STARS (IN OUR MILKY WAY GALAXY)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#stars-in-our-milky-way-galaxy)
+  * [PROXIMA CENTAURI](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#proxima-centauri)
+  * [SIRIUS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#sirius)
+  * [BETELGEUSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#betelgeuse)
+  * [RIGEL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#rigel)
+* [GALAXIES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#galaxies)
+  * [CANIS MAJOR DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#canis-major-dwarf-galaxy)
+  * [LARGE MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#large-magellanic-cloud-dwarf-galaxy)
+  * [SMALL MAGELLANIC CLOUD DWARF GALAXY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#small-magellanic-cloud-dwarf-galaxy)
+  * [ANDROMEDA GALAXY (M31)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#andromeda-galaxy-m31)
+  * [MACS0647-JD (FARTHEST OBJECT SEEN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#macs0647-jd-farthest-object-seen)
 
 ## OVERVIEW
 
 Here is an illustration of our solar system, celestial bodies, and beyond,
 
-![IMAGE - solar-system-in-astronomical-units - IMAGE](../../../../docs/pics/solar-system-in-astronomical-units.jpg)
+![IMAGE - astronomy-solar-system-in-astronomical-units - IMAGE](../../../../../docs/pics/other/astronomy-solar-system-in-astronomical-units.svg)
 
 ## SUN
 
@@ -257,9 +259,9 @@ associated with Jupiter.
 * Stuff is Kuiper-belt objects (KBOs)
 * Chunks of ice
 * More Dwarf Planets
-  * [PLUTO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
-  * [HAUMEA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
-  * [MAKEMAKE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
+  * [PLUTO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#pluto)
+  * [HAUMEA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#haumea)
+  * [MAKEMAKE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/other/stem/science/earth-and-space-science/astronomy-cheat-sheet/solar-system-and-beyond.md#makemake)
 * Commits
 * Stretches across 20 astronomical units (AU) of space
 * Area of the outer solar system
