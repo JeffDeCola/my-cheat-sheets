@@ -1,6 +1,13 @@
 # NOTABLE EQUATIONS CHEAT SHEET
 
-_My list of beautiful and ground breaking math equations._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
+_My list of beautiful and ground breaking equations._
 
 Table of Contents
 
@@ -40,18 +47,8 @@ _Coming soon._
 
 ### SPACES
 
-_Coming soon._
-
 ### STRUCTURES
 
 #### LINEAR EQUATION
 
-A linear equation is the equation of any straight line,
-
-<p align="center">
-    <img src="svgs/y-eq-mx+b.svg"
-    align="middle"
-</p>
-
-More info in
-[algebra cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/structures/algebra-cheat-sheet#linear-functions-m-is-slope).
+_Coming soon._

@@ -1,8 +1,11 @@
 # GTA V MY STUFF CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _I like to play this game._
 
-Table of Contents,
+Table of Contents
 
 * [INTERACTIVE MENU (Press M)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#interactive-menu-press-m)
   * [INVENTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/gta-v-my-stuff-cheat-sheet#inventory)

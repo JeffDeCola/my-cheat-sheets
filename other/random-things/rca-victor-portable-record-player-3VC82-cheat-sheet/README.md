@@ -1,14 +1,17 @@
 # RCA VICTOR PORTABLE RECORD PLAYER 3VC82 CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _3VC82 parts and part numbers._
 
-Table on Contents,
+Table on Contents
 
-tbd
+* [3V3VC82 OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/rca-victor-portable-record-player-3VC82-cheat-sheet#overview)
+* [STYLUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/rca-victor-portable-record-player-3VC82-cheat-sheet#stylus)
+* [VACUUM TUBES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/rca-victor-portable-record-player-3VC82-cheat-sheet#vacuum-tubes)
 
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
-## 3VC82 OVERVIEW
+## OVERVIEW
 
 * Model: 3VC82
 * SErial Number: 012462

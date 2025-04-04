@@ -1,63 +1,68 @@
 # THE AMERICAN REVOLUTIONARY WAR (1775-1783) CHEAT SHEET
 
-`the-american-revolutionary-war` _(aka The War for Independence)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_The American Revolutionary War (aka The War for Independence)
 was between the colonies of British
 America and the British for America's Independence._
 
-For this cheat sheet `The American Revolutionary War` is actually two wars,
-`The American Revolution` and `The American War for Independence`
-(started later).
+Table of Contents
 
-* [PRE-WAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#pre-war)
+* [PRE-WAR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#pre-war)
 
-  * [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
-  * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1763-october-7-1763)
-  * [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
-  * [THE SONS OF LIBERTY (1765)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-sons-of-liberty-1765)
-  * [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
-  * [THE TEA ACT & THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-tea-act--the-boston-tea-party-december-16-1773)
-  * [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
-  * [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
+  * [GEORGE WASHINGTON & THE FRENCH AND INDIAN WAR (1754-1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#george-washington--the-french-and-indian-war-1754-1763)
+  * [THE ROYAL PROCLAMATION OF 1763 (October 7, 1763)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-royal-proclamation-of-1763-october-7-1763)
+  * [THE SUGAR, STAMP, DECLARATORY & TOWNSHEND ACTS (1764-1767)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-sugar-stamp-declaratory--townshend-acts-1764-1767)
+  * [THE SONS OF LIBERTY (1765)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-sons-of-liberty-1765)
+  * [THE BOSTON MASSACRE (March 5, 1770)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-boston-massacre-march-5-1770)
+  * [THE TEA ACT & THE BOSTON TEA PARTY (December 16, 1773)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-tea-act--the-boston-tea-party-december-16-1773)
+  * [FIRST CONTINENTAL CONGRESS (Fall 1774)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#first-continental-congress-fall-1774)
+  * [PAUL REVERE FAMOUS RIDE (April 18, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#paul-revere-famous-ride-april-18-1775)
 
-* [THE WAR BEGINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-war-begins)
+* [THE WAR BEGINS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-war-begins)
 
-  * [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-shot-heard-round-the-world-april-19-1775)
-  * [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-green-mountain-boys--fort-ticonderoga-may-10-1775)
-  * [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#continental-army--george-washington-1775)
-  * [THE BATTLE OF BUNKER HILL (June 17, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bunker-hill-june-17-1775)
-  * [EARLY WAR (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#early-war-1775)
-  * [FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#fortification-of-dorchester-heights-march-5-1776)
-  * [COMMON SENSE BY THOMAS PAINE (1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#common-sense-by-thomas-paine-1776)
-  * [DECLARATION OF INDEPENDENCE BY THOMAS JEFFERSON (JULY 4, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#declaration-of-independence-by-thomas-jefferson-july-4-1776)
+  * [THE SHOT HEARD ROUND THE WORLD (April 19, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-shot-heard-round-the-world-april-19-1775)
+  * [THE GREEN MOUNTAIN BOYS & FORT TICONDEROGA (May 10, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-green-mountain-boys--fort-ticonderoga-may-10-1775)
+  * [CONTINENTAL ARMY & GEORGE WASHINGTON (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#continental-army--george-washington-1775)
+  * [THE BATTLE OF BUNKER HILL (June 17, 1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-bunker-hill-june-17-1775)
+  * [EARLY WAR (1775)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#early-war-1775)
+  * [FORTIFICATION OF DORCHESTER HEIGHTS (MARCH 5, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#fortification-of-dorchester-heights-march-5-1776)
+  * [COMMON SENSE BY THOMAS PAINE (1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#common-sense-by-thomas-paine-1776)
+  * [DECLARATION OF INDEPENDENCE BY THOMAS JEFFERSON (JULY 4, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#declaration-of-independence-by-thomas-jefferson-july-4-1776)
 
-* [THE WAR MOVES SOUTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-war-moves-south)
+* [THE WAR MOVES SOUTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-war-moves-south)
 
-  * [THE NEW YORK AND NEW JERSEY CAMPAIGNS (1776-1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-york-and-new-jersey-campaigns-1776-1777)
-  * [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#washington-crossing-the-delaware-river-december-25-1776)
-  * [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benjamin-franklin-asking-france-for-help-december-1776)
-  * [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
-  * [THE BATTLE OF SARATOGA (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-saratoga-oct-7-1777)
-  * [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
-  * [THE BATTLE OF MONMOUTH (June 28, 1778)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-monmouth-june-28-1778)
-  * [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
-  * [AFRICAN AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#african-americans)
-  * [BENEDICT ARNOLD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#benedict-arnold)
+  * [THE NEW YORK AND NEW JERSEY CAMPAIGNS (1776-1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-new-york-and-new-jersey-campaigns-1776-1777)
+  * [WASHINGTON CROSSING THE DELAWARE RIVER (December 25, 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#washington-crossing-the-delaware-river-december-25-1776)
+  * [BENJAMIN FRANKLIN ASKING FRANCE FOR HELP (DECEMBER 1776)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#benjamin-franklin-asking-france-for-help-december-1776)
+  * [THE BATTLE OF BRANDYWINE CREEK (September 11, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-brandywine-creek-september-11-1777)
+  * [THE BATTLE OF SARATOGA (Oct 7, 1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-saratoga-oct-7-1777)
+  * [THE NEW BRITISH GENERAL - HENRY CLINTON (1777)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-new-british-general---henry-clinton-1777)
+  * [THE BATTLE OF MONMOUTH (June 28, 1778)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-monmouth-june-28-1778)
+  * [FRENCH & SPAIN ENTRY INTO THE WAR (1778-1779)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#french--spain-entry-into-the-war-1778-1779)
+  * [AFRICAN AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#african-americans)
+  * [BENEDICT ARNOLD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#benedict-arnold)
 
-* [THE WAR MOVES MORE SOUTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-war-moves-more-south)
+* [THE WAR MOVES MORE SOUTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-war-moves-more-south)
 
-  * [BRITISH TAKING THE SOUTH (1780-1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#british-taking-the-south-1780-1781)
-  * [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-guilford-courthouse-march-15-1781)
-  * [THE BATTLE OF YORKTOWN (October 17, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-yorktown-october-17-1781)
+  * [BRITISH TAKING THE SOUTH (1780-1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#british-taking-the-south-1780-1781)
+  * [THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-guilford-courthouse-march-15-1781)
+  * [THE BATTLE OF YORKTOWN (October 17, 1781)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-battle-of-yorktown-october-17-1781)
 
-* [THE AFTERMATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-aftermath)
+* [THE AFTERMATH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-aftermath)
 
-  * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
-  * [SLAVES & NATIVE AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#slaves--native-americans)
-  * [THE CONSTITUTION (September 17, 1787)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#the-constitution-september-17-1787)
-  * [OUR FIRST PRESIDENT (April 30, 1789)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/history/wars/the-american-revolutionary-war-cheat-sheet#our-first-president-april-30-1789)
+  * [TREATY OF PARIS & AFTERMATH (September 3, 1783)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#treaty-of-paris--aftermath-september-3-1783)
+  * [SLAVES & NATIVE AMERICANS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#slaves--native-americans)
+  * [THE CONSTITUTION (September 17, 1787)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#the-constitution-september-17-1787)
+  * [OUR FIRST PRESIDENT (April 30, 1789)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-revolutionary-war-cheat-sheet#our-first-president-april-30-1789)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [The War of 1812 (1812-1815)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-war-of-1812-cheat-sheet)
+* [The American Civil War (1861-1865)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/the-american-civil-war-cheat-sheet)
+* [WW1 (1914-1918)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/ww1-cheat-sheet)
+* [WW2 (1939-1945)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/american-history/wars/ww2-cheat-sheet)
 
 ## PRE-WAR
 
@@ -89,7 +94,7 @@ which declared the boundaries of settlement for inhabitants of the 13 colonies
 to be Appalachia. This was not acceptable
 to their colonists because they fought and wanted land.
 
-![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/1775-America-map.png)
+![IMAGE - 1775-America-map - IMAGE](../../../../docs/pics/other/1775-America-map.png)
 
 _The 13 colonies are in red, the pink area was claimed by Great Britain
 after the French and Indian War, and the orange region was claimed by Spain._
@@ -141,7 +146,7 @@ charged with murder, and they were defended by future President `John Adams`.
 
 The anger continued to grow over the next few years.
 
-![IMAGE - 1770-paul_revere_the_bloody_massacre - IMAGE](../../../../docs/pics/1770-paul_revere_the_bloody_massacre.jpg)
+![IMAGE - 1770-paul_revere_the_bloody_massacre - IMAGE](../../../../docs/pics/other/1770-paul_revere_the_bloody_massacre.jpg)
 
 _Paul Revere’s engraving of the Boston Massacre, about 29 known prints._
 
@@ -272,7 +277,7 @@ and the battle provided them with an important confidence boost.
 Although commonly referred to as the Battle of Bunker Hill,
 most of the fighting occurred on nearby Breed’s Hill.
 
-![IMAGE - 1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill - IMAGE](../../../../docs/pics/1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill.jpg)
+![IMAGE - 1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill - IMAGE](../../../../docs/pics/other/1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill.jpg)
 
 _The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 by
 artist John Trumbull depicting the death of Joseph Warren at the Battle of
@@ -319,7 +324,7 @@ to the british it was treason.
 It should be noted in an early draft he wrote about the abolishment of Slavery
 but it was removed because the south would not support that.
 
-![IMAGE - 1776-Declaration_of_Independence_(1819),_by_John_Trumbull - IMAGE](../../../../docs/pics/1776-Declaration_of_Independence_(1819),_by_John_Trumbull.jpg)
+![IMAGE - 1776-Declaration_of_Independence_(1819),_by_John_Trumbull - IMAGE](../../../../docs/pics/other/1776-Declaration_of_Independence_(1819),_by_John_Trumbull.jpg)
 
 _Declaration of Independence is a 12-by-18-foot (3.7 by 5.5 m) oil-on-canvas
 painting by American John Trumbull depicting the presentation
@@ -359,13 +364,13 @@ and ending in a small victory for the Colonials.
 General Lord Cornwallis had left 1,400 British troops.
 The british, defeated, abandoned southern New Jersey for the Winter.
 
-![IMAGE - 1776-Washington_Crossing_the_Delaware - IMAGE](../../../../docs/pics/1776-Washington_Crossing_the_Delaware.jpg)
+![IMAGE - 1776-Washington_Crossing_the_Delaware - IMAGE](../../../../docs/pics/other/1776-Washington_Crossing_the_Delaware.jpg)
 
 _Washington Crossing the Delaware is an 1851 oil-on-canvas
 painting by the German-American artist Emanuel Leutze
 located at The Metropolitan Museum of Art, New York City._
 
-![IMAGE - 1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776 - IMAGE](../../../../docs/pics/1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776.jpg)
+![IMAGE - 1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776 - IMAGE](../../../../docs/pics/other/1776-The-Capture-of-the-Hessians-at-Trenton-December-26-1776.jpg)
 
 _The Capture of the Hessians at Trenton, December 26, 1776 is the title of
 an oil painting by the American artist John Trumbull depicting the capture
@@ -400,7 +405,7 @@ and surrendered his entire army there on October 17.
 This was a great turning point of the war because it won for Americans
 the foreign assistance which was the last element needed for victory.
 
-![IMAGE - 1777-Surrender_of_General_Burgoyne.jpg - IMAGE](../../../../docs/pics/1777-Surrender_of_General_Burgoyne.jpg)
+![IMAGE - 1777-Surrender_of_General_Burgoyne.jpg - IMAGE](../../../../docs/pics/other/1777-Surrender_of_General_Burgoyne.jpg)
 
 _Surrender of General Burgoyne by John Trumbull, 1822
 Depicted at center are General John Burgoyne surrendering
@@ -419,7 +424,7 @@ as a new amd improved force and wanted to take Philadelphia back.
 But they didn't have to as the British left Philadelphia to
 pool their resources in New York.
 
-![IMAGE - 1777-The_March_to_Valley_Forge_William_Trego - IMAGE](../../../../docs/pics/1777-The_March_to_Valley_Forge_William_Trego.png)
+![IMAGE - 1777-The_March_to_Valley_Forge_William_Trego - IMAGE](../../../../docs/pics/other/1777-The_March_to_Valley_Forge_William_Trego.png)
 
 _The March to Valley Forge by William B. T. Trego depicts George Washington
 and the veterans of his army limping into their winter encampment
@@ -475,7 +480,7 @@ The British took part of Georgia and South Carolina. This was very brutal war.
 
 The Continental Congress sent Horatio Gates to the South
 and lost against Cornwallis. Then Washington sent his guy,
-Nathaneal Greene and there was `The Battle of Cowpens`
+Nathanael Greene and there was `The Battle of Cowpens`
 January 17, 1781 in South Carolina.
 
 ### THE BATTLE OF GUILFORD COURTHOUSE (March 15, 1781)
@@ -503,7 +508,7 @@ in the most important battle of the Revolutionary War.
 Cornwallis surrendered to Washington in the field at
 Yorktown on October 17, 1781, effectively ending the War for Independence.
 
-![IMAGE - 1781-Surrender-of-Lord-Cornwallis - IMAGE](../../../../docs/pics/1781-Surrender-of-Lord-Cornwallis.jpg)
+![IMAGE - 1781-Surrender-of-Lord-Cornwallis - IMAGE](../../../../docs/pics/other/1781-Surrender-of-Lord-Cornwallis.jpg)
 
 _The Surrender of Lord Cornwallis is an oil painting by John Trumbull located
 at The United States Capitol rotunda, Washington, D. C.._

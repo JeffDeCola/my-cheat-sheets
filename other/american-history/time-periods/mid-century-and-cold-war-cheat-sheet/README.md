@@ -1,13 +1,13 @@
 # MID-CENTURY & COLD WAR (1950-1999) CHEAT SHEET
 
-```txt
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`mid-century-and-cold-war` _tbd._
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_tbd._
 
 ## OVERVIEW
 
