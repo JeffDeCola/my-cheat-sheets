@@ -1,6 +1,9 @@
 # PHYSICS CHEAT SHEET
 
-```txt
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
@@ -157,7 +160,7 @@ Some derived units of a physical quantity,
 
 This illustration may help,
 
-![IMAGE - physics-overview-diagram - IMAGE](../../../../../docs/pics/physics-overview-diagram.jpg)
+![IMAGE - physics-overview-diagram - IMAGE](../../../../../docs/pics/other/physics-overview-diagram.svg)
 
 ## A QUICK DISCUSSION ON OBJECTS, MASS & MATTER
 
