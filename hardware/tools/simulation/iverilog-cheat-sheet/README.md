@@ -1,10 +1,13 @@
 # IVERILOG CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _iverilog (icaris verilog) is a free tool for simulation and synthesis._
 
 Table of Contents
 
-* [INSTALL IVERILOG](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-iverilog)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install)
   * [INSTALL ON LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-linux)
   * [INSTALL ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-windows)
   * [INSTALL ON macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/hardware/tools/simulation/iverilog-cheat-sheet#install-on-macos)
@@ -14,8 +17,8 @@ Table of Contents
 
 Documentation and Reference
 
-* iverilog
-  [home page](http://iverilog.icarus.com/)
+* icarus verilog
+  [home page](https://steveicarus.github.io/iverilog/)
 * iverilog
   [repo](  https://github.com/steveicarus/iverilog)
 * iverilog
@@ -152,7 +155,7 @@ vvp hello
 In this example we will create, synthesis and test an AND gate.
 The flow is as follows,
 
-![IMAGE - iVERILOG to .vcd FLOW - IMAGE](../../../../docs/pics/iverilog-to-vcd-flow.jpg)
+![IMAGE - iVERILOG to .vcd FLOW - IMAGE](../../../../docs/pics/hardware/iverilog-to-vcd-flow.svg)
 
 First, create your AND gate verilog file `and-gate.v`,
 
