@@ -1,8 +1,11 @@
 # postgreSQL CHEAT SHEET
 
-`postgreSQL` _is an open source object-relational database system._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-tl;dr,
+_postgreSQL is an open source object-relational database system._
+
+tl;dr
 
 ```bash
 # VERSIONS
@@ -34,7 +37,7 @@ GRANT ALL PRIVILEGES ON TABLE people TO jeffd;
 select * from people;
 ```
 
-Table of Contents,
+Table of Contents
 
 * [HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#history)
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#overview)
@@ -49,18 +52,15 @@ Table of Contents,
 * [LIST TABLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#list-tables)
 * [LIST ROWS OF TABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet#list-rows-of-table)  
 
-Documentation and reference,
+Documentation and Reference
 
 * [postgreSQL website](https://www.postgresql.org/)
 * To use with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/postgreSQL)
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples?tab=readme-ov-file#databases)
 * A great list of using
-  [go with databases](https://github.com/gostor/awesome-go-storage).
+  [go with databases](https://github.com/gostor/awesome-go-storage)
 * Check out my non-relational/NoSQL database cheat sheet on
   [redis](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## HISTORY
 
@@ -85,7 +85,7 @@ There are a few ways to interact with your database (server),
 
 Here is an illustration,
 
-![IMAGE - postgreSQL-server - IMAGE](../../../../../docs/pics/postgreSQL-server.jpg)
+![IMAGE - postgreSQL-server - IMAGE](../../../../../docs/pics/software/development/postgreSQL-server.svg)
 
 ## INSTALL POSTGRES (SERVER), PSQL (CLIENT) & PGADMIN4
 
@@ -236,8 +236,8 @@ ps aux | grep -i postgres
 ### LINUX
 
 Uses init.d SysV init script to start at boot. Refer to my
-cheat sheet 
-[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+cheat sheet
+[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet)
 for more information about init scripts at boot.
 
 Start,

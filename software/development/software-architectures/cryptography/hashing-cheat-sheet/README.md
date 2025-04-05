@@ -1,22 +1,24 @@
 # HASHING CHEAT SHEET
 
-_`Hashing` (fingerprinting) is changing a message into an unreadable string not for
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Hashing (fingerprinting) is changing a message into an unreadable string not for
 the purpose of hiding the message, but more for verifying the
 contents of the message._
 
-There are three main types of cryptography,
+Tables of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/cryptography/hashing-cheat-sheet#overview)
+
+Documentation and Reference
 
 * [asymmetric-cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/cryptography/asymmetric-cryptography-cheat-sheet)
 * [hashing](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/cryptography/hashing-cheat-sheet)
   **(You are here)**
 * [symmetric-cryptography](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/cryptography/symmetric-cryptography-cheat-sheet)
-
-Refer to
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples#cryptography)
-on cryptography for some hashing examples in go.
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [my-go-examples](https://github.com/JeffDeCola/my-go-examples#cryptography)
+  on cryptography
 
 ## OVERVIEW
 

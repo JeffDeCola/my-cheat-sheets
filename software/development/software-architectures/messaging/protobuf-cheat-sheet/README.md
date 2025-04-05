@@ -1,16 +1,19 @@
 # PROTOBUF CHEAT SHEET
 
-`protobuf` _short for protocol buffers is a method of
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Protobuf is short for protocol buffers is a method of
 serializing structured data (useful for messaging)._
 
-tl;dr,
+tl;dr
 
 ```bash
 protoc --version
 protoc --go_out=. messages.proto
 ```
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#overview)
 * [INSTALL PROTOBUF COMPILER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#install-protobuf-compiler)
@@ -20,13 +23,11 @@ Table of Contents,
 * [3. IMPLEMENT - IN YOUR CODE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#3-implement---in-your-code)
 * [USEFUL FOR RPC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet#useful-for-rpc)
 
-Documentation and reference,
+Documentation and Reference
 
 * For some examples with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples?tab=readme-ov-file#inter-process-communication-ipc)
+* [nats](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet)
 
 ## OVERVIEW
 
@@ -49,7 +50,7 @@ The flow is,
 
 Here is an illustration on how protobuf works,
 
-![IMAGE - protobuf - IMAGE](../../../../../docs/pics/protobuf.jpg)
+![IMAGE - protobuf - IMAGE](../../../../../docs/pics/software/development/protobuf.svg)
 
 ## INSTALL PROTOBUF COMPILER
 

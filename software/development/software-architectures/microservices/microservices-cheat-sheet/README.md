@@ -1,14 +1,21 @@
 # MICROSERVICES CHEAT SHEET
 
-`microservices` _runs in its own little world where
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Microservices run in its own little world where
 each service can be scaled independently._
 
-Visit my
-[data-crunch-engine](https://github.com/JeffDeCola/data-crunch-engine)
-repo as an example of a microservice.
+Table of Contents
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/microservices/microservices-cheat-sheet#overview)
+* [COMMUNICATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/microservices/microservices-cheat-sheet#communication)
+
+Documentation and Reference
+
+* Visit my
+  [data-crunch-engine](https://github.com/JeffDeCola/data-crunch-engine)
+  repo as an example of a microservice
 
 ## OVERVIEW
 
@@ -23,7 +30,7 @@ Benefits,
 
 As an illustration,
 
-![IMAGE - monolith vs microservice - IMAGE](../../../../../docs/pics/monolith-vs-microservice.jpg)
+![IMAGE - monolith vs microservice - IMAGE](../../../../../docs/pics/software/development/monolith-vs-microservice.svg)
 
 ## COMMUNICATION
 
