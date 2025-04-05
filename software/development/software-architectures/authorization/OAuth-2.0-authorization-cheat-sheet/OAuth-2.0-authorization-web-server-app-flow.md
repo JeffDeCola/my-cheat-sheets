@@ -1,17 +1,36 @@
 # OAuth 2.0 WEB SERVER APP AUTHORIZATION CHEAT SHEET
 
-`OAuth 2.0 Web Server Side Authorization Flow` _allows users to authenticate
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_OAuth 2.0 Web Server Side Authorization Flow allows users to authenticate
 themselves in order for an APP to gain access to their information via an API._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [HIGH-LEVEL VIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#high-level-view)
+* [THE STEPS TO LOG IN](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#the-steps-to-log-in)
+  * [STEP 1 - CREATE OAuth 2.0 CLIENT ID & SECRET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#step-1---create-oauth-20-client-id--secret)
+  * [STEP 2 - USER GETS REDIRECTED TO LOGIN TO ACCOUNT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#step-2---user-gets-redirected-to-login-to-account)
+  * [STEP 3 - GET AUTHORIZATION CODE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#step-3---get-authorization-code)
+  * [STEP 4 - USER AUTH CODE TO GET TOKEN (ACCESS AND REFRESH)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#step-4---user-auth-code-to-get-token-access-and-refresh)
+  * [STEP 5 - USE ACCESS TOKEN TO CALL API](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md#step-5---use-access-token-to-call-api)
+
+Documentation and Reference
+
+* [Web Server-Side Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md)
+  **<- YOU ARE HERE**
+* Client-Side Flow
+* Installed App Flow
+* Device Flow
+* [Service Account Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md)
 
 ## HIGH-LEVEL VIEW
 
 The following diagram illustrates how everything fits for
 Web Server-Side Flow,
 
-![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../../../docs/pics/OAuth-2.0-web-server-app-authorization-flow.jpg)
+![IMAGE - OAuth 2.0 Web Server APP Authorization Flow - IMAGE](../../../../../docs/pics/software/development/OAuth-2.0-web-server-app-authorization-flow.svg)
 
 ## THE STEPS TO LOG IN
 

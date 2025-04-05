@@ -1,5 +1,8 @@
 # ARTIFICIAL INTELLIGENCE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _An high level overview of artificial intelligence (AI)
 and a quick dive into machine learning (ML)._
 
@@ -22,8 +25,8 @@ Documentation and Reference
 * [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
   * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
-  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
-  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
+  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
+  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
   * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
 * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
 
@@ -71,7 +74,7 @@ I will focus on Machine Learning.
   * Fuzzy Logic
   * Evolutionary Algorithms
 
-![IMAGE - artificial-intelligence-hierarchy - IMAGE](../../../../../docs/pics/artificial-intelligence-hierarchy.svg)
+![IMAGE - artificial-intelligence-hierarchy - IMAGE](../../../../../docs/pics/software/development/artificial-intelligence-hierarchy.svg)
 
 ## MACHINE LEARNING
 

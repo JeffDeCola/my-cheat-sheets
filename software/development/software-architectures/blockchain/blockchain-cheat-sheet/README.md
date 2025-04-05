@@ -1,5 +1,8 @@
 # BLOCKCHAIN CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A blockchain is a digital way to save data and make it immutable._
 
 Table of Contents
@@ -12,7 +15,7 @@ Documentation and Reference
 
 * Check out a
   [single-node-blockchain-with-REST](https://github.com/JeffDeCola/my-go-examples/tree/master/architectures/blockchain/single-node-blockchain-with-REST)
-  I wrote in go.
+  I wrote in go
 
 ## OVERVIEW
 
@@ -48,7 +51,7 @@ with each block cryptographically linked to the previous one.
 
 Here is an illustration of a chain of blocks,
 
-![IMAGE - blockchain-data-hash - IMAGE](../../../../../docs/pics/blockchain-data-hash.jpg)
+![IMAGE - blockchain-data-hash - IMAGE](../../../../../docs/pics/software/development/blockchain-data-hash.svg)
 
 Now imagine if the data in block 1 is altered, even by 1 bit.
 That would create a new hash.
@@ -66,7 +69,7 @@ The goal is to find a nonce that will result in the
 hash to have that unique number (e.g. 000) at
 the start of the hash.
 
-![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](../../../../../docs/pics/blockchain-with-mining-data-hash-nonce.jpg)
+![IMAGE - blockchain-with-mining-data-hash-nonce - IMAGE](../../../../../docs/pics/software/development/blockchain-with-mining-data-hash-nonce.svg)
 
 ## WHY IS THIS IMMUTABLE - WHY DO WE ADD BLOCKS
 

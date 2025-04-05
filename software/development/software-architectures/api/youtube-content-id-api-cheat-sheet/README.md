@@ -1,13 +1,23 @@
 # YOUTUBE CONTENT ID API CHEAT SHEET
 
-`youtube-content-id-api` _is an api for YouTube's Rights Management System._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+```text
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
+_An api for YouTube's Rights Management System._
+
+Table of Contents
+
+* [WHAT IS YOUTUBE'S CONTENT-ID SYSTEM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-content-id-api-cheat-sheet#what-is-youtubes-content-id-system)
+* [YOUTUBE CONTENT PARTNER - ALLOWS ACCESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-content-id-api-cheat-sheet#youtube-content-partner---allows-access)
+* [AUTHENTIFICATION - CONTENT-ID USES OAuth 2.0](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-content-id-api-cheat-sheet#authentification---content-id-uses-oauth-20)
 
 ## WHAT IS YOUTUBE'S CONTENT-ID SYSTEM
 
-Content owners or Administartors will have access to their assets:
+Content owners or Administrators will have access to their assets:
 
 * Metadata
 * Ownership Information
@@ -18,7 +28,7 @@ Content owners or Administartors will have access to their assets:
 * Upload Videos
 
 Furthermore, by combining `Youtube Content ID` with `Youtube Data API`
-and `Youtube Player API`, you can enable your app to updload, manage and play videos.
+and `Youtube Player API`, you can enable your app to upload, manage and play videos.
 
 ## YOUTUBE CONTENT PARTNER - ALLOWS ACCESS
 
@@ -37,6 +47,5 @@ Google uses many ways to authenticate, such as `API Key`,  `Service Account` or
 
 YouTube's Content ID uses `OAuth 2.0 Client ID` for authentication.
 
-Refer to [OAuth 2.0 Authorization Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/OAuth-2.0-authorization-cheat-sheet)
+Refer to [OAuth 2.0 Authorization Cheat Sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet)
 for how to authenticate.
-

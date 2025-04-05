@@ -1,12 +1,27 @@
-# OAuth 2.0 SERVICE ACCOUNT AUTHERIZATION CHEAT SHEET
+# OAuth 2.0 SERVICE ACCOUNT AUTHORIZATION CHEAT SHEET
 
-`OAuth 2.0 Service Account Authorization Flow` _is using your
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_OAuth 2.0 Service Account Authorization Flow is using your
 service account to access your data or one of your teams data via g-suite._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
 
-## OAuth 2.0 SERVICE ACCOUNT FLOW - TO AUTHORISE API CALLS
+* [OAuth 2.0 SERVICE ACCOUNT FLOW - TO AUTHORIZE API CALLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md#oauth-20-service-account-flow---to-authorise-api-calls)
+* [CREATE OAuth 2.0 CLIENT ID & SECRET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md#create-oauth-20-client-id--secret)
+* [HIGH-LEVEL VIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md#high-level-view)
+
+Documentation and Reference
+
+* [Web Server-Side Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-web-server-app-flow.md)
+* Client-Side Flow
+* Installed App Flow
+* Device Flow
+* [Service Account Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/authorization/OAuth-2.0-authorization-cheat-sheet/OAuth-2.0-authorization-service-account-flow.md)
+  **<- YOU ARE HERE**
+
+## OAuth 2.0 SERVICE ACCOUNT FLOW - TO AUTHORIZE API CALLS
 
 A Service Account is a Google Account that can be used to
 authorize API calls without ANY user interaction. It's Server-to-Server.
@@ -32,4 +47,4 @@ You will now have a Client ID and a Secret.  Obviously, keep this in a safe plac
 The following diagram illustrates how everything fits together. To
 access a users info they must be in your g-suite domain.
 
-![IMAGE - OAuth 2.0 Service Account Authorization Flow - IMAGE](../../../../../docs/pics/OAuth-2.0-service-account-authorization-flow.jpg)
+![IMAGE - OAuth 2.0 Service Account Authorization Flow - IMAGE](../../../../../docs/pics/software/development/OAuth-2.0-service-account-authorization-flow.svg)
