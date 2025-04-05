@@ -1,9 +1,12 @@
 # REDIS CHEAT SHEET
 
-`redis` _is an open source non-relational (NoSQL) database system
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Redis is an open source non-relational (NoSQL) database system
 using key:value storage._
 
-tl;dr,
+tl;dr
 
 ```bash
 # VERSIONS
@@ -34,7 +37,7 @@ del jeff
 exit
 ```
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#overview)
 * [INSTALL REDIS (SERVER) & REDIS-CLI (CLIENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#install-redis-server--redis-cli-client)
@@ -44,20 +47,17 @@ Table of Contents,
 * [REDIS-CLI COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#redis-cli-commands)
 * [TO USE WITH GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/redis-cheat-sheet#to-use-with-go)
 
-Documentation and reference,
+Documentation and Reference
 
 * [redis website](https://redis.io/)
 * Full list of
-  [redis-cli commands](https://redis.io/commands#hash).
+  [redis-cli commands](https://redis.io/commands#hash)
 * To use with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis)
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples?tab=readme-ov-file#databases)
 * A great list of using
   [go with databases](https://github.com/gostor/awesome-go-storage)
 * Check out my relational database cheat sheet on
   [postgreSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/postgresql-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
@@ -73,7 +73,7 @@ There are a few ways to interact with your database (server),
 * Command Line
   * `redis-server` - The server itself
   * `redis-sentinel`
-  * `redis-benchmark` 
+  * `redis-benchmark`
   * `redis-check-aof`
   * `redis-check-dump`
 * redis-cli (client)
@@ -81,7 +81,7 @@ There are a few ways to interact with your database (server),
 
 Here is an illustration,
 
-![IMAGE - redis-server - IMAGE](../../../../../docs/pics/redis-server.jpg)
+![IMAGE - redis-server - IMAGE](../../../../../docs/pics/software/development/redis-server.svg)
 
 ## INSTALL REDIS (SERVER) & REDIS-CLI (CLIENT)
 
@@ -409,4 +409,3 @@ Full list of redis-cli commands
 
 Refer to my repo
 [my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/database/redis).
-

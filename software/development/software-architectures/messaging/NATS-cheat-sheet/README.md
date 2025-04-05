@@ -1,8 +1,11 @@
 # NATS CHEAT SHEET
 
-`NATS` _is a pub/sub messaging bus perfect for asynchronous microservice communication._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-tl;dr,
+_NATS is a pub/sub messaging bus perfect for asynchronous microservice communication._
+
+tl;dr
 
 ```bash
 nats-server -v
@@ -11,22 +14,20 @@ nats-server -DV -p 4222 -a 127.0.0.1
 go get -v -u github.com/nats-io/nats.go/
 ```
 
-Table of contents,
+Table of Contents
 
 * [NATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#nats)
 * [INSTALL A NATS SERVER (nats-server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#install-a-nats-server-nats-server)
 * [START NATS (nat-server)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#start-nats-nat-server)
 * [INSTALL NATS GO CLIENT LIBRARY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/NATS-cheat-sheet#install-nats-go-client-library)
 
-Documentation and reference,
+Documentation and Reference
 
 * [Official NATS site](https://nats.io/)
 * [Official github page](https://github.com/nats-io/nats-server)
 * For some examples with go, refer to my repo
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples?tab=readme-ov-file#inter-process-communication-ipc)
+* [protobuf](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/messaging/protobuf-cheat-sheet)
 
 ## NATS
 
@@ -92,7 +93,3 @@ The NATS server listens for client connections on TCP Port 4222.
 ```go
 go get -v -u github.com/nats-io/nats.go/
 ```
-
-Refer to my repo
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples#messaging)
-for how to connect to NATS and use via go.

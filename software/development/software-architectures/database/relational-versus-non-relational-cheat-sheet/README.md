@@ -1,22 +1,25 @@
 # RELATIONAL VS NON-RELATIONAL CHEAT SHEET
 
-`relational vs non-relational` _are the two main types of databases._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-* [RELATIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#relational--sql--rdbms)
-* [NON-RELATIONAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#non-relational--nosql)
+_Relational vs non-relational are the two main types of databases._
+
+Table of Contents
+
+* [RELATIONAL / SQL / RDBMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#relational--sql--rdbms)
+* [NON-RELATIONAL / NoSQL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#non-relational--nosql)
   * [KEY VALUE STORE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#key-value-store)
   * [WIDE COLUMN STORES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#wide-column-stores)
   * [DOCUMENT STORES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#document-stores)
   * [GRAPH DATABASES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#graph-databases)
   * [SEARCH ENGINES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/database/relational-versus-non-relational-cheat-sheet#search-engines)
 
-Documentation and reference,
+Documentation and Reference
 
+* [my-go-examples](https://github.com/JeffDeCola/my-go-examples?tab=readme-ov-file#databases)
 * A great list of using
   [go with databases](https://github.com/gostor/awesome-go-storage)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## RELATIONAL / SQL / RDBMS
 
