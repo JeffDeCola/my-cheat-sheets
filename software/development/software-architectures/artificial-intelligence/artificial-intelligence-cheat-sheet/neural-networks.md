@@ -1,5 +1,8 @@
 # NEURAL NETWORKS CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _This is a high level overview of neural networks._
 
 Table of Contents
@@ -23,8 +26,8 @@ Documentation and Reference
 * [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
   * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
-  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
-  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
+  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
+  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
   * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
 * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
 
@@ -59,7 +62,7 @@ An artificial neuron consists of the following components,
   * $y = f(s)$
 * Outputs the result $y$
 
-![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/neural-networks-mathematical-model-of-a-neuron.svg)
+![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/software/development/neural-networks-mathematical-model-of-a-neuron.svg)
 
 It’s important to stress that this model of a biological neuron is very coarse.
 For example, there are many different types of neurons, each with different
@@ -171,7 +174,7 @@ $$
 
 Nomenclature,
 
-![IMAGE - neural networks nomenclature - IMAGE](../../../../../docs/pics/neural-networks-nomenclature.svg)
+![IMAGE - neural networks nomenclature - IMAGE](../../../../../docs/pics/software/development/neural-networks-nomenclature.svg)
 
 ### PERCEPTRON (P)
 
@@ -201,7 +204,7 @@ neural network written in go.
   * Example: Predicting if a student will pass or fail based on
     the number of hours they studied
 
-![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/neural-networks-perceptron.svg)
+![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/software/development/neural-networks-perceptron.svg)
 
 ### MULTI-LAYER PERCEPTRON (MLP)
 
@@ -241,7 +244,7 @@ neural network written in go.
   * Example: Predicting student performance based on the number of hours
     they studied, their midterm grade, and their last test grade
 
-![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/neural-networks-feed-forward.svg)
+![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/software/development/neural-networks-feed-forward.svg)
 
 ### AUTO ENCODER (AE)
 
@@ -261,7 +264,7 @@ neural network written in go.
   * Image Compression
   * Example: Reducing the dimensionality of an image
 
-![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/neural-networks-auto-encoder.svg)
+![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/software/development/neural-networks-auto-encoder.svg)
 
 ### RECURRENT NEURAL NETWORKS (RNN)
 
@@ -283,7 +286,7 @@ neural network written in go.
   * Language Translation
   * Example: Predicting the next word in a sentence
 
-![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/neural-networks-recurrent.svg)
+![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/software/development/neural-networks-recurrent.svg)
 
 ### CONVOLUTIONAL NEURAL NETWORKS (CNN)
 
@@ -305,7 +308,7 @@ neural network written in go.
   * Image Segmentation
   * Example: Classifying images of cats and dogs
 
-![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/neural-networks-convolutional.svg)
+![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/software/development/neural-networks-convolutional.svg)
 
 ### GENERATIVE ADVERSARIAL NETWORKS (GAN)
 
@@ -330,4 +333,4 @@ neural network written in go.
   * Image-to-Image Translation
   * Example: Generating new images of human faces
 
-![IMAGE - neural networks generative adversarial - IMAGE](../../../../../docs/pics/neural-networks-generative-adversarial.svg)
+![IMAGE - neural networks generative adversarial - IMAGE](../../../../../docs/pics/software/development/neural-networks-generative-adversarial.svg)

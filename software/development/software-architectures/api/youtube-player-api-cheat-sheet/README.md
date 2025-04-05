@@ -1,13 +1,19 @@
 # YOUTUBE PLAYER API CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`youtube-player-api` _is an api for YouTube's ?????._
+An api for YouTube's Rights Management System.
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [YOUTUBE CONTENT PARTNER - ALLOWS ACCESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet#youtube-content-partner---allows-access)
+* [CREDENTIALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet#credentials)
+* [WHAT IT DOES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet#what-it-does)
 
 ## YOUTUBE CONTENT PARTNER - ALLOWS ACCESS
 
@@ -21,7 +27,7 @@ You will also see it listed as a Google's API service manager
 
 ## CREDENTIALS
 
-Coogle uses one of the following credentials for access:
+Google uses one of the following credentials for access:
 
 * API Key
 * Service Account
@@ -33,7 +39,7 @@ Content ID uses ???
 
 Content owners or Administrators will have access to their assets:
 
-* ?????
+* tbd
 
 By combining `YouTube Content ID` with `Youtube Data API`
 and `Youtube Player API`, you can enable your App to upload,

@@ -2,19 +2,16 @@
 
 _In-process and ipc overview._
 
-Table of Contents,
+Table of Contents
 
 * [SYNCHRONOUS AND ASYNCHRONOUS COMMUNICATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/communication/in-process-and-inter-process-communications-ipc-overview-cheat-sheet#synchronous-and-asynchronous-communication)
 * [CLIENT SERVER COMMUNICATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/communication/in-process-and-inter-process-communications-ipc-overview-cheat-sheet#client-server-communication)
 * [IN-PROCESS AND INTER-PROCESS COMMUNICATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/communication/in-process-and-inter-process-communications-ipc-overview-cheat-sheet#in-process-and-inter-process-communication)
 
-Documentation and reference,
+Documentation and Reference
 
 * [my-go-example](https://github.com/JeffDeCola/my-go-examples)
   has a lot of examples
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## SYNCHRONOUS AND ASYNCHRONOUS COMMUNICATION
 
@@ -31,12 +28,12 @@ Here is a high-level view,
 * Asynchronous – The client doesn’t block while waiting for a response,
   and the response, if any, may not be immediate
 
-![IMAGE - synchronous-and-asynchronous-communication.jpg - IMAGE](../../../../../docs/pics/synchronous-and-asynchronous-communication.jpg)
+![IMAGE - synchronous-and-asynchronous-communication.jpg - IMAGE](../../../../../docs/pics/software/development/communication-synchronous-and-asynchronous.svg)
 
 ## CLIENT SERVER COMMUNICATION
 
-![IMAGE - client-server-communication.jpg - IMAGE](../../../../../docs/pics/client-server-communication.jpg)
+![IMAGE - client-server-communication.jpg - IMAGE](../../../../../docs/pics/software/development/communication-client-server.svg)
 
 ## IN-PROCESS AND INTER-PROCESS COMMUNICATION
 
-![IMAGE - in-process-and-inter-process-communication.jpg - IMAGE](../../../../../docs/pics/in-process-and-inter-process-communication.jpg)
+![IMAGE - in-process-and-inter-process-communication.jpg - IMAGE](../../../../../docs/pics/software/development/communication-in-process-and-inter-process.svg)
