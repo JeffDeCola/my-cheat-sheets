@@ -1,5 +1,8 @@
 # WSL2 - BASH ON UBUNTU ON WINDOWS CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _wsl2 allows you to install linux on a windows machine._
 
 Table of Contents
@@ -13,9 +16,6 @@ Table of Contents
   * [METHOD 1 - USE WINDOWS SSH SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#method-1---use-windows-ssh-server)
   * [METHOD 2 - USE WSL2 SSH SERVER (TOO MUCH WORK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#method-2---use-wsl2-ssh-server-too-much-work)
 * [SETUP CODE DEVELOPMENT ENVIRONMENT ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/windows/wsl2-bash-on-ubuntu-on-windows-cheat-sheet#setup-code-development-environment-on-windows)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## WSL2 (WINDOWS SUBSYSTEM FOR LINUX)
 

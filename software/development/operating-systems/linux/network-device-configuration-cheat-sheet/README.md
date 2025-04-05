@@ -1,7 +1,23 @@
 # NETWORK DEVICE CONFIGURATION CHEAT SHEET
 
-`network device configuration` _will help you manage
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Network device configuration will help you manage
 your network devices._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#overview)
+* [SEE WHAT DEVICES/INTERFACE NAMES YOU HAVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#see-what-devicesinterface-names-you-have)
+* [ifupdown METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#ifupdown-method)
+  * [CONFIGURE YOUR NETWORK DEVICE FOR IFUPDOWN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#configure-your-network-device-for-ifupdown)
+  * [START/STOP networking.service](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#startstop-networkingservice)
+* [netplan METHOD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#netplan-method)
+  * [CONFIGURE YOUR NETWORK DEVICE FOR NETPLAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#configure-your-network-device-for-netplan)
+  * [netplan apply](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#netplan-apply)
+
+## OVERVIEW
 
 There are two methods we will go over,
 
@@ -9,9 +25,6 @@ There are two methods we will go over,
   (older method)
 * [netplan](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/network-device-configuration-cheat-sheet#netplan-method)
   (newer method)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## SEE WHAT DEVICES/INTERFACE NAMES YOU HAVE
 
@@ -34,7 +47,7 @@ to interface names like `enp0s3`.
 
 An older method to configure network interfaces.
 
-### CONFIGURE YOUR NETWORK DEVICE
+### CONFIGURE YOUR NETWORK DEVICE FOR IFUPDOWN
 
 Edit this file,
 
@@ -76,13 +89,13 @@ ifconfig -a
 You should see your new static ip address.
 
 For more information on services refer to my cheat sheet
-[systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet).
+[systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet).
 
 ## netplan METHOD
 
 A newer method to configure network interfaces.
 
-### CONFIGURE YOUR NETWORK DEVICE
+### CONFIGURE YOUR NETWORK DEVICE FOR NETPLAN
 
 Edit this .yaml file,
 

@@ -1,8 +1,11 @@
 # METHODS
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A method is a function with a special receiver argument._
 
-tl;dr,
+tl;dr
 
 ```go
 // BASIC FORMAT
@@ -50,6 +53,11 @@ Table of Contents
   * [PASSING STRUCT TO METHOD BY "REFERENCE" (POINTER) - STRUCT CHANGED](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#passing-struct-to-method-by-reference-pointer---struct-changed)
 * [WHY USE METHODS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#why-use-methods)
 * [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/methods.md#example---shapes)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## OVERVIEW
 
@@ -159,11 +167,11 @@ versa, so why use them?
 This example will calculate the **area** and **perimeter**
 of three shapes: **circles**, **rectangles** and **triangles**.
 
-the example is located in `my-go-examples` repo done three different ways,
+This example is located in `my-go-examples` repo done three different ways,
 
-* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-functions)
-* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/methods/shapes-using-methods)
-* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/shapes-using-interfaces)
+* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/functions/functions)
+* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/methods/methods)
+* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/interfaces/interfaces)
 
 You will see that using an interface you can go from this,
 

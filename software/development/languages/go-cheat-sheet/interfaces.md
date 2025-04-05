@@ -1,8 +1,11 @@
 # INTERFACES (SET OF METHOD SIGNATURES)
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Interfaces._
 
-tl;dr,
+tl;dr
 
 ```go
 // CREATE INTERFACE TYPE
@@ -45,6 +48,11 @@ Table of Contents
   * [POLYMORPHISM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#polymorphism)
 * [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/interfaces.md#example---shapes)
 
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
+
 ## OVERVIEW
 
 Interfaces are verbs, they do something.
@@ -81,7 +89,7 @@ So the interface is the parameter.  Its great!!
 
 This diagram may help,
 
-![IMAGE - interface - IMAGE](../../../../docs/pics/interfaces.jpg)
+![IMAGE - go-interface - IMAGE](../../../../docs/pics/software/development/go-interfaces.svg)
 
 ## BASIC FORMAT
 
@@ -233,11 +241,11 @@ _tbd._
 This example will calculate the **area** and **perimeter**
 of three shapes: **circles**, **rectangles** and **triangles**.
 
-the example is located in `my-go-examples` repo done three different ways,
+This example is located in `my-go-examples` repo done three different ways,
 
-* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-functions)
-* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/methods/shapes-using-methods)
-* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/shapes-using-interfaces)
+* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/functions/functions)
+* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/methods/methods)
+* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/interfaces/interfaces)
 
 You will see that using an interface you can go from this,
 

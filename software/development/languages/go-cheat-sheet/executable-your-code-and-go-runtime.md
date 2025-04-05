@@ -1,5 +1,8 @@
 # EXECUTABLE (YOUR CODE & GO RUNTIME)
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _An executable or binary is your running program._
 
 Table of Contents
@@ -7,6 +10,11 @@ Table of Contents
 * [GO EXECUTABLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#go-executable)
 * [GO RUNTIME (GOROUTINE SCHEDULER)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#go-runtime-goroutine-scheduler)
 * [GOROUTINES & THREADS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/executable-your-code-and-go-runtime.md#goroutines--threads)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## GO EXECUTABLE
 
@@ -19,7 +27,7 @@ This diagram shows how everything fits together.
 The bottom line, go likes to put goroutines on threads.  And the goroutines
 will bounce all over the place as the thread schedulers schedule things.
 
-![IMAGE - executable-your-code-and-go-runtime - IMAGE](../../../../docs/pics/executable-your-code-and-go-runtime.jpg)
+![IMAGE - go-executable-your-code-and-go-runtime - IMAGE](../../../../docs/pics/software/development/go-executable-your-code-and-go-runtime.svg)
 
 ## GO RUNTIME (GOROUTINE SCHEDULER)
 

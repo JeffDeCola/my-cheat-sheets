@@ -1,18 +1,25 @@
 # PACKAGES
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 Every thing in go is packages. A package is nothing but a
 directory with some code files
 It helps us organize our code into folders.
-
-* [godoc.org](https://godoc.org/)
-  _- Both standard and user packages. Also shows popular packages._
-* [golang.org](https://golang.org/pkg/)
-  _- Just official standard packages._
 
 Table of Contents
 
 * [GO GET A PACKAGE AND USE IT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md#go-get-a-package-and-use-it)
 * [LETS CREATE A CUSTOM PACKAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/packages.md#lets-create-a-custom-package)
+
+Documentation and Reference
+
+* [godoc.org](https://godoc.org/)
+  _- Both standard and user packages. Also shows popular packages._
+* [golang.org](https://golang.org/pkg/)
+  _- Just official standard packages._
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## GO GET A PACKAGE AND USE IT
 
@@ -42,7 +49,7 @@ func main() {
 ```
 
 For some examples of using packages, checkout my repo
-[my-go-example](https://github.com/JeffDeCola/my-go-examples#packages).
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples#packages).
 
 ## LETS CREATE A CUSTOM PACKAGE
 

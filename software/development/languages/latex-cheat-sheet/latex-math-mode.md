@@ -1,5 +1,8 @@
 # LaTeX MATH MODE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _The math mode of LaTex._
 
 Table of Contents
@@ -11,11 +14,14 @@ Table of Contents
 
 Documentation and Reference
 
+* [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+* [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
 * [LaTeX math mode document](https://www.overleaf.com/learn/latex/Mathematical_expressions)
 * [LaTeX math mode reference](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 * [KaTeX Supported Functions](https://katex.org/docs/supported.html)
 * [KaTeX Support Symbols](https://katex.org/docs/support_table.html)
-* [mathurl.com to help build your formulas](http://mathurl.com/)
+* [mathurl.com](http://mathurl.com/)
+  to help build your formulas
 
 ## DECLARING MATH MODE
 

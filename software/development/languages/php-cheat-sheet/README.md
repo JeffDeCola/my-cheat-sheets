@@ -1,17 +1,14 @@
 # PHP CHEAT SHEET
 
-```txt
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`php` _tbd._
+_tbd._
 
-Documentation and reference,
-
-* [my-php-containers](https://github.com/JeffDeCola/my-php-containers)
-
-[GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
-
-## TBD
+## OVERVIEW
 
 tbd

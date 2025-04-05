@@ -1,9 +1,12 @@
 # SSH & KEYS CHEAT SHEET
 
-`ssh and keys` _(secure socket shell) is a way to securely
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_ssh and keys (secure socket shell) is a way to securely
 communicate (via ssh keys) with a remote computer._
 
-tl;dr,
+tl;dr
 
 ```bash
 # KEYS
@@ -39,8 +42,8 @@ Table of Contents
   * [ADD PRIVATE KEY TO YOUR SSH AGENT (ssh-add)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#add-private-key-to-your-ssh-agent-ssh-add)
 * [SSH SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#ssh-server)
   * [INSTALL SSH SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#install-ssh-server)
-  * [CONFIGURE SSH SERVER (sshd_config)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#configure-ssh-server-sshdconfig)
-  * [PLACE PUBLIC KEY ON SERVER MACHINE (authorized_keys)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#place-public-key-on-server-machine-authorizedkeys)
+  * [CONFIGURE SSH SERVER (sshd_config)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#configure-ssh-server-sshd_config)
+  * [PLACE PUBLIC KEY ON SERVER MACHINE (authorized_keys)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#place-public-key-on-server-machine-authorized_keys)
   * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#test)
 * [SSH CLIENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#ssh-client)
   * [INSTALL SSH CLIENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#install-ssh-client)
@@ -53,11 +56,6 @@ Table of Contents
 * [CONNECT TO MACHINE ON PRIVATE NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#connect-to-machine-on-private-network)
   * [METHOD 1 - PORT FORWARDING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#method-1---port-forwarding)
   * [METHOD 2 - REVERSE SSH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ssh-and-keys-cheat-sheet#method-2---reverse-ssh)
-
-Documentation and Reference
-
-* View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## KEYS
 
@@ -79,7 +77,7 @@ key to decrypt.
 
 Here is an illustration using ssh for github,
 
-![IMAGE -  ssh keys github overview - IMAGE](../../../../../docs/pics/ssh-keys-github-overview.jpg)
+![IMAGE -  ssh keys github overview - IMAGE](../../../../../docs/pics/software/development/ssh-keys-github-overview.svg)
 
 ### GENERATE KEYS (ssh-keygen)
 

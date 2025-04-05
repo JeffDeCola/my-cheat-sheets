@@ -1,5 +1,8 @@
 # CONTROL STRUCTURES & FLOW CONTROL
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A control structure analyzes variables and chooses a direction
 in which to go based on given parameters.
 `for` Loops and `if`, `then`, `else` statements are perfect examples._
@@ -17,6 +20,11 @@ Table of Contents
   * [SWITCH (CASE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#switch-case)
   * [DEFER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#defer)
   * [SELECT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/control-structures-and-flow-control.md#select)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## LOOPS
 
@@ -190,4 +198,4 @@ Useful if opening a file, you can put the cleanup first, before you do stuff.
 Go’s select lets you wait on multiple channel operations.
 
 Refer to
-[CONCURRENCY / CHANNELS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/concurrency-channels.md).
+[go routines and channels](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md).

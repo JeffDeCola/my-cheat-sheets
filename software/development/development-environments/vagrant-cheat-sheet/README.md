@@ -1,5 +1,8 @@
 # VAGRANT CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Vagrant is a tool from HashiCorp that builds and deploys
 portable development environments._
 
@@ -64,7 +67,7 @@ Vagrant can run on providers such as,
 * VMware
 * AWS
 
-![IMAGE - vagrant-overview - IMAGE](../../../../docs/pics/vagrant-overview.jpg)
+![IMAGE - vagrant-overview - IMAGE](../../../../docs/pics/software/development/vagrant-overview.svg)
 
 ## HOW DOES IT WORK
 
@@ -189,4 +192,4 @@ vagrant box remove {VAGRANT IMAGE (BOX) NAME}
 
 An illustration of vagrant, docker and packer tools,
 
-![IMAGE -  vagrant docker packer - IMAGE](../../../../docs/pics/vagrant-docker-packer.jpg)
+![IMAGE -  vagrant docker packer - IMAGE](../../../../docs/pics/software/development/vagrant-docker-packer.svg)

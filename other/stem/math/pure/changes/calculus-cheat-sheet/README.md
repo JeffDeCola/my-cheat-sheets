@@ -30,6 +30,7 @@ Documentation and Reference
 
 * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
 * [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
+* [latex math mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
 
 ## OVERVIEW
 

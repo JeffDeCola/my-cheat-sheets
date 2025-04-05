@@ -1,5 +1,8 @@
 # WSL2 WITH XSERVER CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _`wsl2 with xserver._
 
 Table of Contents
@@ -29,7 +32,7 @@ export DISPLAY=:0
 If you want to scale the display, create a `.wslgconfig` file in your
 windows user directory.
 
-```txt
+```text
 [system-distro-env]
 ;WESTON_RDP_HI_DPI_SCALING=false
 WESTON_RDP_FRACTIONAL_HI_DPI_SCALING=true

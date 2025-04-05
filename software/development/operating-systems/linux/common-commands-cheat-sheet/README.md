@@ -1,8 +1,11 @@
 # COMMON COMMANDS CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A list of my favorite linux commands._
 
-Table of Contents,
+Table of Contents
 
 * [SYSTEM INFO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#system-info)
 * [HARDWARE INFO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#hardware-info)
@@ -17,10 +20,10 @@ Table of Contents,
 * [PROCESSES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#processes)
 * [NETWORKING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/common-commands-cheat-sheet#networking)
 
-I got a lot of this [here](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/).
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* I got a lot of this from
+  [here](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
 
 ## SYSTEM INFO
 

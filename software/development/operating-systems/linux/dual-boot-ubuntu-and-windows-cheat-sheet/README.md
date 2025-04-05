@@ -1,9 +1,14 @@
 # DUAL BOOT UBUNTU & WINDOWS
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Installing Ubuntu on PC that already has Windows installed._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [INSTALL USING A BOOTABLE THUMB DRIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dual-boot-ubuntu-and-windows-cheat-sheet#install-using-a-bootable-thumb-drive)
+* [AN ISSUE I HAD WITH INTEL RST](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dual-boot-ubuntu-and-windows-cheat-sheet#an-issue-i-had-with-intel-rst)
 
 ## INSTALL USING A BOOTABLE THUMB DRIVE
 
@@ -43,6 +48,7 @@ Drive and do a fresh install.
 **Now AHCI is being used, not RST.**  This was the trick.
 
 Last, after you have Windows reinstalled (using AHCI),
+
 * Put in `bootable Ubuntu USB thumb drive`
 * Reboot
 * Enter BIOS

@@ -1,5 +1,8 @@
 # INSTALL UBUNTU WITH GNOME DESKTOP CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Basic steps to install an Ubuntu distribution using bash with a GNOME desktop on VirtualBox._
 
 Table of Contents

@@ -1,5 +1,8 @@
 # INSTALL & CONFIGURE
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _OK, lets get go...ing.  Yep, that just happened._
 
 tl;dr
@@ -33,13 +36,20 @@ Table of Contents
   * [CONFIGURE WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#configure-windows)
 * [INSTALL GO TOOLS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/install-and-configure.md#install-go-tools)
 
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
+* [go-install-new-version](https://github.com/JeffDeCola/my-linux-shell-scripts/tree/master/go/go-install-new-version)
+  is an install script I wrote
+
 ## INSTALL/UPGRADE
 
 [Binary and source installs](https://golang.org/doc/install) are
 located here for windows, linux or mac. I would not install from a package.
 
-I wrote a
-[script](https://github.com/JeffDeCola/my-linux-shell-scripts/tree/master/software/go-install-new-version)
+I wrote a script
+[go-install-new-version](https://github.com/JeffDeCola/my-linux-shell-scripts/tree/master/go/go-install-new-version)
 to do this automatically.
 
 ### LINUX

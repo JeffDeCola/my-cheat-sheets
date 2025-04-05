@@ -1,5 +1,8 @@
 # GO CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Go is an open source language developed by google. Its concurrency
 mechanisms allows Apps to get the most out of multi core and
 networked systems._
@@ -386,7 +389,7 @@ networked systems._
     // VARIABLE SCOPE
         // LOCAL                                    // Inside curly brackets
         // PACKAGE                                  // Package level
-        // GLOBAL                                   // Module level - Capitalize                   
+        // GLOBAL                                   // Module level - Capitalize
 
     // DECLARE TYPE
     var a string                                    // var name type

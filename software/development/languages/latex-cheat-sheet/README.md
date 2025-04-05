@@ -1,5 +1,8 @@
 # LaTeX CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _LaTeX is an advanced markup language used for typesetting._
 
 Table of Contents
@@ -17,7 +20,10 @@ Table of Contents
 
 Documentation and Reference
 
+* [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+* [LaTeX graphs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-graphs.md)
 * [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
+* [ctan.org](https://ctan.org/) LaTeX packages
 
 ## OVERVIEW
 
@@ -60,7 +66,7 @@ The `.tex` syntax can look something like,
 
 The flow to create an image file `.svg` from a `.tex` file looks like,
 
-![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](../../../../docs/pics/latex-software-flow-to-create-svg-image-file.jpg)
+![IMAGE - latex-software-flow-to-create-svg-image-file - IMAGE](../../../../docs/pics/software/development/latex-software-flow-to-create-svg-image-file.svg)
 
 ## INSTALL LaTeX
 

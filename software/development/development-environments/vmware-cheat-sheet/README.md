@@ -1,5 +1,8 @@
 # VMWare CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _VMWare is a "virtualization" product, which allows you to
 run an operating systems._
 
@@ -19,7 +22,7 @@ Documentation and Reference
 The following diagram shows the difference between Virtual Machines
 and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/software/development/virtual-machine-vs-docker-container.svg)
 
 Virtual Machines
 

@@ -1,8 +1,11 @@
 # VARIABLES AND CONSTANTS
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Variables and constants._
 
-tl;dr,
+tl;dr
 
 ```go
 // VARIABLE
@@ -10,19 +13,19 @@ tl;dr,
     // VARIABLE SCOPE
         // LOCAL                                    // Inside curly brackets
         // PACKAGE                                  // Package level
-        // GLOBAL                                   // Module level - Capitalize                   
+        // GLOBAL                                   // Module level - Capitalize
 
     // DECLARE TYPE
     var a string                                    // var name type
 
     // ASSIGN VALUE
     a = "happy"                                     // name = value
-    
+
     // DECLARE & ASSIGN (INITIALIZE)
     var b int32 = 22                                // Verbose - var name type = value
     var c = 22                                      // Type Inference
     d := 32                                         // Shorthand Assignment (Preferred)
-    
+
     // PRINT
     fmt.Println(a, b ,c ,d)                         // happy 22 22 32
 
@@ -36,11 +39,11 @@ tl;dr,
 
     // GROUP DECLARE TYPE
     var a, b string                                 // var name1, name 2 ... type
-    
+
     // GROUP ASSIGN VALUE
     a = "hi a"                                      // name1 = value
     b = "hi b"                                      // name2 = value
-    
+
     // GROUP DECLARE & ASSIGN (INITIALIZE)
     var c, d string = "hi c", "hi d"                // Verbose - var name1, name 2 ... type = value1, value2, ...
     var e, f = "hi e", "hi f"                       // Type Inference
@@ -49,7 +52,7 @@ tl;dr,
         h = "hi h"
     )
     i, j := "hi i", "hi j"                          // Group Shorthand Assignment
-    
+
     // PRINT
     fmt.Println(a, b ,c ,d, e, f ,g, h, i, j)       // hi a hi b hi c hi d hi e hi f hi g hi h hi i hi j
  ```
@@ -64,6 +67,11 @@ Table of Contents
 * [TYPE INFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#type-inference)
 * [SHORTHAND ASSIGNMENT (PREFERRED METHOD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#shorthand-assignment-preferred-method)
 * [GROUPING VARIABLES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/variables-and-constants.md#grouping-variables)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## DECLARE TYPE AND ASSIGN VALUE
 
@@ -123,7 +131,7 @@ const a = 22                                    // Type Inference
 ```
 
 Escape Sequences (really used in formatting are considered constants).
-See [formating types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formating-types.md).
+See [formatting types](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet/formatting-types.md).
 
 ## IOTA
 

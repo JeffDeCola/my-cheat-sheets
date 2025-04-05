@@ -1,9 +1,12 @@
 # DNS CHEAT SHEET
 
-_A `DNS` (Domain Name Server) resolves hosts/domains into IP addresses
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_A DNS (Domain Name Server) resolves hosts/domains into IP addresses
 and visa versa.  Basically a large database._
 
-Table of Contents,
+Table of Contents
 
 * [DNS SERVER (NAME SERVER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#dns-server-name-server)
   * [BIND (A POPULAR NAME SERVER FOR LINUX)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#bind-a-popular-name-server-for-linux)
@@ -14,8 +17,9 @@ Table of Contents,
   * [NETWORK MANAGER (An App used by Centos and Red Hat)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#network-manager-an-app-used-by-centos-and-red-hat)
   * [PREVENT UPDATES FROM DHCP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/dns-cheat-sheet#prevent-updates-from-dhcp)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [create-dns-server-using-bind](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md)
 
 ## DNS SERVER (NAME SERVER)
 
