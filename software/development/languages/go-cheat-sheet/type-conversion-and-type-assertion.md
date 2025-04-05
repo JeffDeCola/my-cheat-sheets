@@ -1,5 +1,8 @@
 # TYPE CONVERSION & TYPE ASSERTION
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Converting one data type to another data type and
 proving its actually that type._
 
@@ -7,6 +10,11 @@ Table of Contents
 
 * [TYPE CONVERSION (TYPE CASTING)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md#type-conversion-type-casting)
 * [TYPE ASSERTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/type-conversion-and-type-assertion.md#type-assertion)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## TYPE CONVERSION (TYPE CASTING)
 

@@ -1,11 +1,19 @@
 # FORMATTING TYPES
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _How to make the output look pretty._
 
 Table of Contents
 
 * [FORMAT SPECIFIERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#format-specifiers)
 * [ESCAPE SEQUENCES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/formatting-types.md#escape-sequences)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## FORMAT SPECIFIERS
 

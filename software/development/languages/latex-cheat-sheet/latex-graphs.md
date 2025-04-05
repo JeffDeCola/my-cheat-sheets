@@ -1,6 +1,19 @@
 # LaTeX GRAPHS CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Use packages to create images._
+
+Table of Contents
+
+* [POPULAR GRAPHIC LaTeX PACKAGES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-graphs.md#popular-graphic-latex-packages)
+  * [tikzs](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-graphs.md#tikz)
+
+Documentation and Reference
+
+* [LaTex](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet)
+* [LaTeX math mode](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
 
 ## POPULAR GRAPHIC LaTeX PACKAGES
 

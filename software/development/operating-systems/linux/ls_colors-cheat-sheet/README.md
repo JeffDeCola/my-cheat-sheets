@@ -1,13 +1,26 @@
 # LS_COLORS CHEAT SHEET
 
-`LS_COLORS` _is an environment variable used to set different colors
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_LS_COLORS is an environment variable used to set different colors
 for different kinds of files when using the `ls` command._
 
-Setting `ls` color for macOS is
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
+Table of Contents
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [METHOD 1 - SET LS_COLORS ENV VARIABLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#method-1---set-ls_colors-env-variable)
+  * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#configure)
+  * [FIX THE 755/755 FILE ISSUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#fix-the-755755-file-issue)
+  * [FIX BASH FOR UBUNTU FOR WINDOWS DIRECTORY COLOR ISSUE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#fix-bash-for-ubuntu-for-windows-directory-color-issue)
+  * [TO TURN THIS OFF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#to-turn-this-off)
+* [METHOD 2 - USE DIRCOLORS TO SET LS_COLORS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#method-2---use-dircolors-to-set-ls_colors)
+  * [MY SETTINGS IN .BASH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#my-settings-in-bash)
+* [SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/ls_colors-cheat-sheet#settings)
+
+Documentation and Reference
+
+* [lscolors](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/lscolors-cheat-sheet)
+  (macOS)
 
 ## METHOD 1 - SET LS_COLORS ENV VARIABLE
 

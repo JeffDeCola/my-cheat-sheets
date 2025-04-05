@@ -1,5 +1,8 @@
 # VISUAL STUDIO CODE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Visual studio code is a code development environment._
 
 Table of Contents
@@ -8,6 +11,11 @@ Table of Contents
 * [CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#configure)
 * [USING VS CODE ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#using-vs-code-on-windows)
 * [ADDING A WINDOWS SHORTCUT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet#adding-a-windows-shortcut)
+
+Documentation and Reference
+
+* [vs code verilog-HDL extension](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/verilog-hdl-extension.md)
+* [vs code on windows wsl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md)
 
 ## INSTALL
 

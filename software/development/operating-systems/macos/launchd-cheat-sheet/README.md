@@ -1,8 +1,11 @@
 # LAUNCHD CHEAT SHEET
 
-`launchd` _controls what programs run when macOS boots._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-tl;dl,
+_launchd controls what programs run when macOS boots._
+
+tl;dl
 
 ```bash
 # VERSIONS
@@ -15,7 +18,7 @@ launchctl load ~/Library/LaunchAgents/local.say-hi.plist
 launchctl unload ~/Library/LaunchAgents/local.say-hi.plist
 ```
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet#overview)
 * [LAUNCHCTL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet#launchctl)
@@ -24,10 +27,10 @@ Table of Contents,
   * [CREATE AN AGENT (whatever.plist)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet#create-an-agent-whateverplist)
   * [LOAD/UNLOAD YOUR AGENT AT BOOT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet#loadunload-your-agent-at-boot)
 
-Documentation and reference,
+Documentation and Reference
 
-* View a list of all my-cheat-sheets on my
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+* [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet)
+  (linux)
 
 ## OVERVIEW
 
@@ -41,7 +44,7 @@ Documentation and reference,
 
 Here is an illustration,
 
-![IMAGE - launchd- IMAGE](../../../../../docs/pics/launchd.jpg)
+![IMAGE - launchd- IMAGE](../../../../../docs/pics/software/development/launchd.svg)
 
 ## LAUNCHCTL
 

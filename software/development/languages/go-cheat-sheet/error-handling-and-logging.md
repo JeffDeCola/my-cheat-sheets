@@ -1,5 +1,8 @@
 # ERROR HANDLING & LOGGING
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Using the non-standard `github.com/pkg/errors` and
 the `github.com/sirupsen/logrus` package._
 
@@ -7,6 +10,11 @@ Table of Contents
 
 * [ERROR HANDLING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#error-handling)
 * [LOGGING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/error-handling-and-logging.md#logging)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## ERROR HANDLING
 
@@ -51,20 +59,17 @@ func main() {
 ```
 
 Refer to
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/errors)
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/common-go/error-reporting/error-example)
 for an example using `github.com/pkg/errors` package.
 
 ## LOGGING
-
-I use the go package
-[logrus](https://github.com/sirupsen/logrus).
 
 A logger or logging give you information from a running program.
 Typically it uses stderr or a file.
 
 I like the following levels,
 
-* Panic
+* Panic (optional)
 * Fatal
 * Error
 * Warning
@@ -73,5 +78,7 @@ I like the following levels,
 * Trace
 
 Refer to
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/packages/logrus)
-for an example using `logrus` package.
+[my-go-examples](https://github.com/JeffDeCola/my-go-examples/tree/master/common-go/logging/jeffs-logger)
+for an example using
+[my logger](https://github.com/JeffDeCola/my-go-packages/tree/master/golang/logger)
+package.

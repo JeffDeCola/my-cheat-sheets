@@ -1,12 +1,15 @@
 # INIT SysV SCRIPT CHEAT SHEET
 
-`init SysV script` is **depreciated** and
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+Init SysV script is **depreciated** and
 [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-cheat-sheet)
 should be used.
 But systemd can still run these old init sysV scrips, so
-it is here for reference.
+it is here for reference. Also note Ubuntu 14.04 uses upstart.
 
-tl;dl,
+tl;dl
 
 ```bash
 # START/STOP
@@ -16,10 +19,17 @@ sudo /etc/init.d/say-hi stop
 ps -efa | grep init
 ```
 
-Note: Ubuntu 14.04 uses upstart.
+Table of Contents
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [INIT IS DEAD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet#init-is-dead)
+* [CREATE, START & STOP A SERVICE (BY WAY OF AN EXAMPLE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet#create-start--stop-a-service-by-way-of-an-example)
+  * [CREATE A SHELL SCRIPT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet#create-a-shell-script)
+  * [CREATE A INIT SysV SCRIPT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet#create-a-init-sysv-script)
+  * [START/STOP YOUR SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet#startstop-your-service)
+
+Documentation and Reference
+
+* [systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet)
 
 ## INIT IS DEAD
 
@@ -73,7 +83,7 @@ sudo nano /etc/init.d/say-hi
 
 with,
 
-```text
+```bash
 #!/bin/bash
 # say-hi daemon
 # chkconfig: 345 20 80
@@ -92,10 +102,10 @@ SCRIPTNAME=/etc/init.d/$NAME
 
 case "$1" in
 start)
-	printf "%-50s" "Starting $NAME..."
-	cd $./DAEMON_PATH
-	PID=`$DAEMON $DAEMONOPTS > /dev/null 2>&1 & echo $!`
-	#echo "Saving PID" $PID " to " $PIDFILE
+  printf "%-50s" "Starting $NAME..."
+  cd $./DAEMON_PATH
+  PID=`$DAEMON $DAEMONOPTS > /dev/null 2>&1 & echo $!`
+  #echo "Saving PID" $PID " to " $PIDFILE
         if [ -z $PID ]; then
             printf "%s\n" "Fail"
         else
@@ -130,8 +140,8 @@ stop)
 ;;
 
 restart)
-  	$0 stop
-  	$0 start
+    $0 stop
+    $0 start
 ;;
 
 *)
@@ -152,6 +162,7 @@ sudo update-rc.d say-hi defaults
 sudo /etc/init.d/say-hi start
 sudo /etc/init.d/say-hi stop
 ```
+
 check,
 
 ```bash

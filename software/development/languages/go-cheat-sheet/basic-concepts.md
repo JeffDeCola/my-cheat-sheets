@@ -1,5 +1,8 @@
 # BASIC CONCEPTS
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Go actually forces you to use a particular coding style.  This is a little
 painful at first, but actually great in the long run since
 it makes everyone's code look and feel the same.
@@ -15,6 +18,11 @@ Table of Contents
 * [GO BUILD](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-build)
 * [GO INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#go-install)
 * [THE OBJECT SIDE OF GO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/basic-concepts.md#the-object-side-of-go)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## BASIC STRUCTURE OF GO
 

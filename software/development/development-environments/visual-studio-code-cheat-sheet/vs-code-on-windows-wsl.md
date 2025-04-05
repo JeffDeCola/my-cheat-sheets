@@ -1,5 +1,8 @@
 # VS CODE ON WINDOWS WSL
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Using vs code on windows wsl (this is not for wsl2)._
 
 Table of Contents
@@ -13,6 +16,10 @@ Table of Contents
   * [DIAGRAM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md#diagram)
   * [WHAT YOU NEED ON WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md#what-you-need-on-windows)
   * [TWO VERSION OF GO (VS CODE and TERMINAL)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/visual-studio-code-cheat-sheet/vs-code-on-windows-wsl.md#two-version-of-go-vs-code-and-terminal)
+
+Documentation and Reference
+
+* [vs code](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/development-environments/visual-studio-code-cheat-sheet)
 
 ## OVERVIEW
 
@@ -132,7 +139,7 @@ figure out because you actually need two versions of go.
 
 Here's a diagram that might help explain what's going on
 
-![IMAGE - USING GO with WINDOWS VS CODE and BASH WSL TERMINAL - IMAGE](../../../../docs/pics/using-go-with-windows-vs-code-and-bash-wsl-terminal.jpg)
+![IMAGE - USING GO with WINDOWS VS CODE and BASH WSL TERMINAL - IMAGE](../../../../docs/pics/software/development/vs-code-using-go-with-windows-vs-code-and-bash-wsl-terminal.svg)
 
 ### WHAT YOU NEED ON WINDOWS
 

@@ -1,5 +1,8 @@
 # SOFTWARE INSTALL METHODS CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A very high level view on various software/app install methods._
 
 Table of Contents
@@ -24,7 +27,7 @@ The purest form of the install. Download source code
 
 Download the binary (e.g. _something.exe_) that has been already
 compiled for your machine. For example,
-[I install golang](https://github.com/JeffDeCola/my-linux-shell-scripts/blob/master/software/go-install-new-version/go-install-new-version.sh)
+[I install golang](https://github.com/JeffDeCola/my-linux-shell-scripts/tree/master/go/go-install-new-version)
 this way on my machine.
 
 * PROS

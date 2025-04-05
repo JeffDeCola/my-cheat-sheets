@@ -1,5 +1,8 @@
 # DATA TYPES
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Types or data types are a classification of data,
 that tells the compiler how to use that data.
 It also tells the computer how much space the data type
@@ -242,6 +245,11 @@ cheat sheet)
 (Refer to my
 [goroutines & channels](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/goroutines-and-channels.md)
 cheat sheet)
+
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 
 ## OVERVIEW
 
@@ -774,7 +782,7 @@ fmt.Println("Address of &r1 is", &r1)           // &{3 5}
 fmt.Println("Contents of pointer d is", d)      // &{3 5}
 ```
 
-![IMAGE - go pointers - IMAGE](../../../../docs/pics/go-pointers.jpg)
+![IMAGE - go pointers - IMAGE](../../../../docs/pics/software/development/go-pointers.svg)
 
 ### POINTER USES
 

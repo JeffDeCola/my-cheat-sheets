@@ -1,5 +1,8 @@
 # VIRTUALBOX CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _VirtualBox is a "virtualization" product, which allows you to
 run an operating system (guest) on top of your existing
 operating system (host)._
@@ -20,15 +23,13 @@ Documentation and Reference
 * [Install debian mini](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-debian-mini.md)
 * [Install ubuntu with GNOME desktop](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-ubuntu-with-gnome-desktop.md)
 * [Install windows](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/development-environments/virtualbox-cheat-sheet/install-windows.md)
-* View a list of all my-cheat-sheets on my
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## VIRTUAL MACHINE (VM) vs CONTAINER
 
 The following diagram shows the difference between Virtual Machines
 and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../docs/pics/software/development/virtual-machine-vs-docker-container.svg)
 
 Virtual Machines
 

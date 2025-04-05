@@ -1,8 +1,11 @@
 # CREATE DNS SERVER USING BIND
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _How to create a dns server using bind on linux._
 
-tl;dr,
+tl;dr
 
 ```bash
 # ON DNS SERVER
@@ -31,7 +34,7 @@ nslookup stimpy
 nslookup facebook.com
 ```
 
-Table of Contents,
+Table of Contents
 
 * [WHY DO WE NEED A LOCAL DNS SERVER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#why-do-we-need-a-local-dns-server)
 * [WHAT DNS IS YOUR MACHINE USING](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#what-dns-is-your-machine-using)
@@ -51,12 +54,11 @@ Table of Contents,
   * [WINDOWS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#windows)
 * [TEST](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/operating-systems/linux/dns-cheat-sheet/create-dns-server-using-bind.md#test)
 
-I want to credit Dani from
-[domoticproject.com](https://domoticproject.com/configuring-dns-server-raspberry-pi/)
-for a lot of this information.
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* Credit to Dani from
+  [domoticproject.com](https://domoticproject.com/configuring-dns-server-raspberry-pi/)
+   for a lot of this information
 
 ## WHY DO WE NEED A LOCAL DNS SERVER
 
@@ -82,7 +84,7 @@ ssh jeff@Jeffs-Raspi
 
 This illustration may help,
 
-![IMAGE - create-dns-server-on-your-raspberry-pi - IMAGE](../../../../../docs/pics/create-dns-server-on-your-raspberry-pi.jpg)
+![IMAGE - create-dns-server-on-your-raspberry-pi - IMAGE](../../../../../docs/pics/software/development/dns-create-dns-server-on-your-raspberry-pi.svg)
 
 From the above illustration, the benefits are apparent,
 

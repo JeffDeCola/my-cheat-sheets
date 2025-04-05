@@ -1,8 +1,11 @@
 # SYSTEMD CHEAT SHEET
 
-`systemd` _controls what programs run when linux boots up._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-tl;dl,
+_Systemd controls what programs run when linux boots up._
+
+tl;dl
 
 ```bash
 # VERSIONS
@@ -23,15 +26,23 @@ sudo systemctl enable yourservice
 sudo systemctl disable yourservice
 ```
 
-An older way to start a process at boot (depreciated), but scripts
-can still be used,
+Table of Contents
 
-* [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/init-sysv-script-cheat-sheet)
+* [SYSTEMD - A BRIEF HISTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#systemd---a-brief-history)
+* [SYSTEMCTL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#systemctl)
+* [UNITS (SERVICES, MOUNT POINTS, SOCKETS AND DEVICES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#units-services-mount-points-sockets-and-devices)
+* [CREATE, START & STOP A SERVICE (BY WAY OF AN EXAMPLE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#create-start--stop-a-service-by-way-of-an-example)
+  * [CREATE A SHELL SCRIPT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#create-a-shell-script)
+  * [CREATE A SERVICE (whatever.service)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#create-a-service-whateverservice)
+  * [START/STOP YOUR SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#startstop-your-service)
+  * [ENABLE/DISABLE A SERVICE AT BOOT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet#enabledisable-a-service-at-boot)
 
-Note: Ubuntu 14.04 uses upstart.
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [init SysV script](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/init-sysv-script-cheat-sheet)
+  (depreciated)
+* [launchd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/macos/launchd-cheat-sheet)
+  (macOS)
 
 ## SYSTEMD - A BRIEF HISTORY
 
@@ -44,7 +55,7 @@ There were alternative developed to replace init.
 * Upstart
 * Epoch
 * Mudar
-* systemd 
+* systemd
 
 `systemd` (System Management Daemon) is what used today and
 starts processes in parallel. `systemd` initializes user space

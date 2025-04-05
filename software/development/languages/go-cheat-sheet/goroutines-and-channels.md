@@ -1,10 +1,13 @@
 # GOROUTINES & CHANNELS
 
-_`goroutines` are lightweight concurrent threads of execution `go func()`
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_goroutines are lightweight concurrent threads of execution `go func()`
 where `channels` are pipes that allow them to message each other.
 This is a huge benefit of go since it can use multi-core environments._
 
-tl;dr,
+tl;dr
 
 ```go
 // GOROUTINES - CONCURRENT THREADS
@@ -69,8 +72,10 @@ Table of Contents
 
 Documentation and Reference
 
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
 * For goroutine and channel examples, see
-  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines).
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#goroutines)
 
 ## GOROUTINES - CONCURRENT THREADS
 
@@ -104,7 +109,7 @@ func main() {
 }
 ```
 
-![IMAGE - goroutines - IMAGE](../../../../docs/pics/goroutines.jpg)
+![IMAGE - goroutines - IMAGE](../../../../docs/pics/software/development/goroutines.jpg)
 
 ### WAITGROUP
 
@@ -204,7 +209,7 @@ func main() {
     fmt.Println("done")
 ```
 
-![IMAGE - goroutines-with-channels-not-buffered - IMAGE](../../../../docs/pics/goroutines-with-channels-not-buffered.jpg)
+![IMAGE - goroutines-with-channels-not-buffered - IMAGE](../../../../docs/pics/software/development/goroutines-with-channels-not-buffered.jpg)
 
 ### BUFFERED
 
@@ -249,7 +254,7 @@ func main() {
     fmt.Println("done")
 ```
 
-![IMAGE - goroutines-with-channels-buffered - IMAGE](../../../../docs/pics/goroutines-with-channels-buffered.jpg)
+![IMAGE - goroutines-with-channels-buffered - IMAGE](../../../../docs/pics/software/development/goroutines-with-channels-buffered.jpg)
 
 ### CHANNEL DIRECTION (MORE EXPLICIT)
 
@@ -303,4 +308,4 @@ A few things to note,
 * No forking allowed in go because forks and threads do not mix
 
 Refer to my example on running goroutines on multi-cores
-[here](https://github.com/JeffDeCola/my-go-examples/tree/master/goroutines/goroutines-multi-core).
+[here](https://github.com/JeffDeCola/my-go-examples/tree/master/go-runtime/goroutines/goroutines-multi-core).

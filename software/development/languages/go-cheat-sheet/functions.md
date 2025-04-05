@@ -1,5 +1,8 @@
 # FUNCTIONS
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Functions stand on their own, a black box._
 
 Just a note,
@@ -105,6 +108,11 @@ Table of Contents
 * [ANONYMOUS SELF EXECUTING FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#anonymous-self-executing-function)
 * [EXAMPLE - SHAPES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/go-cheat-sheet/functions.md#example---shapes)
 
+Documentation and Reference
+
+* [go-cheat-sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/languages/go-cheat-sheet#go-cheat-sheet)
+  main page
+
 ## BASIC FORMATS
 
 The basic format is,
@@ -170,7 +178,7 @@ func main() {
 
 ## PASSING ARGUMENTS - GO PASSES BY VALUE ONLY
 
-![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/go-function-passing-by-reference-and-value.jpg)
+![IMAGE - go function passing by reference and value - IMAGE](../../../../docs/pics/software/development/go-function-passing-by-reference-and-value.svg)
 
 ### PASSING ARGUMENTS TO FUNCTION BY VALUE (COPY) - ARGUMENT NOT CHANGED
 
@@ -369,9 +377,6 @@ func main() {
 }
 ```
 
-Another example is in
-[my-go-examples](https://github.com/JeffDeCola/my-go-examples/blob/master/basic-programming/callback/callback.go).
-
 Why would you do this? Not very popular in go. You
 don't want complexity in go or being too clever.
 
@@ -418,9 +423,9 @@ of three shapes: **circles**, **rectangles** and **triangles**.
 
 The example is located in `my-go-examples` repo done three different ways,
 
-* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/functions/shapes-using-functions)
-* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/methods/shapes-using-methods)
-* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/basic-syntax/interfaces/shapes-using-interfaces)
+* [shapes-using-functions](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/functions/functions)
+* [shapes-using-methods](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/methods/methods)
+* [shapes-using-interfaces](https://github.com/JeffDeCola/my-go-examples/tree/master/functions-methods-interfaces/interfaces/interfaces)
 
 You will see that using an interface you can go from this,
 
