@@ -1,10 +1,30 @@
 # AMAZON ELASTIC COMPUTE CLOUD (EC2) CHEAT SHEET
 
-`amazon elastic compute cloud (ec2)` _which is part of
-[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-provides IaaS._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Part of five main compute engines at `aws`,
+_Amazon elastic compute cloud (ec2) is an
+[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
+service that provides Infrastructure as a Service (IaaS)._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#overview)
+* [WHAT YOU NEED IN ORDER TO USE EC2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#what-you-need-in-order-to-use-ec2)
+* [FREE RESOURCE (t2.micro)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#free-resource-t2micro)
+* [EC2 REGIONS AND ZONES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#ec2-regions-and-zones)
+* [GCE MACHINE TYPES, PRICING & REGIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#gce-machine-types-pricing--regions)
+  * [INSTANCE TYPES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#instance-types)
+  * [PRICING FOR GENERAL PURPOSE TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#pricing-for-general-purpose-type)
+* [INTERACTING WITH EC2](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#interacting-with-ec2)
+* [ELASTIC COMPUTE CLOUD (EC2) MAIN SECTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#elastic-compute-cloud-ec2-main-sections)
+  * [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#images)
+  * [TBD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#tbd)
+  * [INSTANCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#instances)
+* [INSTANCES - SSH - KEY PAIR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#instances---ssh---key-pair)
+* [AWS BASIC COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet#aws-basic-commands)
+
+Amazon Service Architectures
 
 * FaaS - AWS Lambda
   [(aws lambda)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
@@ -16,22 +36,13 @@ Part of five main compute engines at `aws`,
 * IaaS - Amazon Elastic Compute Cloud
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
-Documentation and reference,
+Documentation and Reference
 
-* Your
-  [Images](??),
-  [Instances Templates](??),
-  [Instances Groups](??) and
-  [Instances](??)
-  ([VM boot disks](??)
-  via the console.
-* [Amazon EC2 Documentation](https://aws.amazon.com/ec2/)
-
-My repo example using `amazon ec2` is
-[hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [amazon ec2 documentation](https://aws.amazon.com/ec2/)
+* [amazon-elastic-compute-cloud-create-image-aws-cli](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-aws-cli.md)
+* [amazon-elastic-compute-cloud-create-image-packer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md)
+* my repo example using amazon ec2 is
+[hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
 
 ## OVERVIEW
 
@@ -194,7 +205,7 @@ There are a few ways to interact with `ec2`,
 * Using the aws cli (e.g. `aws`). See below.
 * Using aws SDK Client Libraries / API
   (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)).
-  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/amazon-aws).
+  [my-go-examples](https://github.com/JeffDeCola/my-go-examples#cloud-service-providers).
 
 This cheat sheet will focus on `aws`.
 
@@ -215,7 +226,7 @@ App/service may be running on `ec2`.  AS you can see in this example,
 the VM instances contain services.  It also shows
 `????` control the show (They deploy and scale VM instances).
 
-![IMAGE -  ec2-architecture-view - IMAGE](../../../../docs/pics/ec2-architecture-view.jpg)
+![IMAGE -  ec2-architecture-view - IMAGE](../../../../docs/pics/software/service-architectures/ec2-architecture-view.svg)
 
 ### IMAGES
 
@@ -239,7 +250,7 @@ Refer to these cheat sheets for creating a custom image
 
 * [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md).
   Do this one.  Your best option.
-* [Create a custom image using aws cli](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-aws-cli.md).
+* [Create a custom image using aws cli](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud--create-image-aws-cli.md).
 * Create a custom image using console - Just click a few buttons.
 
 List your images,
@@ -269,11 +280,4 @@ Use this anytime you connect to your instance.
 
 ## AWS BASIC COMMANDS
 
-
-
-
-
-
-
-
-
+tbd

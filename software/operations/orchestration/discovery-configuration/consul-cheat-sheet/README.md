@@ -1,10 +1,26 @@
 # CONSUL CHEAT SHEET
 
-`Consul` _is a distributed tool for service (VM, Instance, container)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Consul is a distributed tool for service (VM, Instance, container)
 discovery, configuration and orchestration._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#overview)
+* [INSTALL CONSUL ON UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#install-consul-on-ubuntu)
+* [AFTER INSTALL, VERSION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#after-install-version)
+* [CONSUL AGENT SERVER - NODES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#consul-agent-server---nodes)
+* [RUN CONSUL AGENT CLIENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#run-consul-agent-client)
+* [METHOD 1 - REGISTER AND QUERY A SERVICE VIA SERVICE DEFINITION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#method-1---register-and-query-a-service-via-service-definition)
+* [METHOD 2 - REGISTER AND QUERY A SERVICE VIA HTTP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#method-2---register-and-query-a-service-via-http)
+* [METHOD 3 - REGISTER AND QUERY A SERVICE VIA GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#method-3---register-and-query-a-service-via-go)
+* [CHECK HEALTH STATUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#check-health-status)
+* [QUERY SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#query-service)
+* [REGISTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#register)
+* [CONSUL AGENT (/CHECKS /SERVICES)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#consul-agent-checks-services)
+* [CONSUL TEMPLATE DAEMON - PROVIDING A WAY TO UPDATE A SERVICE CONFIG FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/discovery-configuration/consul-cheat-sheet#consul-template-daemon---providing-a-way-to-update-a-service-config-file)
 
 ## OVERVIEW
 
@@ -41,7 +57,7 @@ between themselves. Consul `load balances traffic between
 service instances` and `removes unhealthy instances` from
 receiving traffic.
 
-## INSTAL CONSUL ON UBUNTU
+## INSTALL CONSUL ON UBUNTU
 
 ```bash
 wget https://releases.hashicorp.com/consul/0.8.1/consul_0.8.1_linux_amd64.zip

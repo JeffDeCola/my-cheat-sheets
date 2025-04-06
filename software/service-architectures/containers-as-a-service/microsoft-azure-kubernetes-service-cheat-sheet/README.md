@@ -1,10 +1,13 @@
 # MICROSOFT AZURE KUBERNETES SERVICE (AKS) CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`microsoft azure kubernetes service (aks)` _which is part of
+_Microsoft azure kubernetes service (aks) is part of
 [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/cloud-services/microsoft-azure-cheat-sheet)
 provides CaaS._
 

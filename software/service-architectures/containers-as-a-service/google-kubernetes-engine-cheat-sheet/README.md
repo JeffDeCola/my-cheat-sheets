@@ -1,10 +1,24 @@
 # GOOGLE KUBERNETES ENGINE (GKE) CHEAT SHEET
 
-`google kubernetes engine (gke)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-allows you to deploy, manage and scale containerized applications on Kubernetes._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Part of four main compute engines at `gcp`,
+_Google kubernetes engine (gke) is a
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+service that provides Containers as a Service (CaaS)
+which allows you to deploy, manage and scale containerized applications on Kubernetes._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#free-resource)
+* [STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON GKE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-1---createdelete-kubernetes-cluster-on-gke)
+* [STEP 2 - CONNECT TO CLUSTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-2---connect-to-cluster)
+* [STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-3---deployment-deploy-dockerhub-image-to-cluster)
+* [STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-4---service-expose-container-to-the-world)
+* [KUBERNETES DASHBOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#kubernetes-dashboard)
+
+Google Service Architectures
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
@@ -15,25 +29,15 @@ Part of four main compute engines at `gcp`,
 * IaaS - Google Compute Engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
 
-Other CaaS solutions are,
+Documentation and Reference
 
-* [Amazon Elastic Container Service (ecs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet)
-* [Amazon Elastic Container Service for Kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet)
-* [Microsoft Azure Kubernetes Service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
-
-Documentation and reference,
-
-* [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
-* [Google Kubernetes Engine Documentation](https://cloud.google.com/kubernetes-engine/docs/)
-* [Quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
-* [Google Cloud Container SDK Reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
-* [kubectl (Kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
-
-My repo example using `gke` is
-[hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [my kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+* [google kubernetes engine documentation](https://cloud.google.com/kubernetes-engine/docs/)
+* [quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
+* [google cloud container SDK reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
+* [kubectl (kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
+* my repo example using gke is
+  [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
 
 ## OVERVIEW
 
@@ -44,7 +48,7 @@ A node pool is a “pool,” of machines with the same configuration.
 At `gke` you are not charged for the master node.
 
 Refer to my
-[My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+[my kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 for more information about Kubernetes.
 
 ## FREE RESOURCE

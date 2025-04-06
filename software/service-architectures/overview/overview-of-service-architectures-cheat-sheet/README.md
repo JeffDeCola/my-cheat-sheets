@@ -1,9 +1,13 @@
 # OVERVIEW OF SERVICE ARCHITECTURES CHEAT SHEET
 
-`overview of service architectures` is when vendors
-take care of infrastructure for you._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-The five main types are,
+_Vendors take care of infrastructure for you._
+
+## OVERVIEW
+
+The five main types are
 
 * SaaS - SOFTWARE AS A SERVICE
 * FaaS - FUNCTION AS A SERVICE
@@ -11,11 +15,6 @@ The five main types are,
 * CaaS - CONTAINERS AS A SERVICE
 * IaaS - INFRASTRUCTURE AS A SERVICE
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+As a high level view
 
-## OVERVIEW
-
-As a high level view,
-
-![IMAGE - overview of service architectures - IMAGE](../../../../docs/pics/overview-of-service-architectures.jpg)
+![IMAGE - overview of service architectures - IMAGE](../../../../docs/pics/software/service-architectures/overview-of-service-architectures.svg)

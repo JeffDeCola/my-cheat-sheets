@@ -1,5 +1,8 @@
 # PACKER CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Packer is useful for the automated BUILD of a custom image._
 
 Table of Contents
@@ -54,7 +57,7 @@ Packer supports building `images` for,
 
 Here is a high level view of packer,
 
-![IMAGE -  packer high level view - IMAGE](../../../../../docs/pics/packer-high-level-view.jpg)
+![IMAGE -  packer high level view - IMAGE](../../../../../docs/pics/software/operations/packer-high-level-view.svg)
 
 ## INSTALL PACKER
 
@@ -234,4 +237,4 @@ Again, to see a working example, go to my repo
 
 An illustration of vagrant, docker and packer tools,
 
-![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)
+![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/software/development/vagrant-docker-packer.svg)

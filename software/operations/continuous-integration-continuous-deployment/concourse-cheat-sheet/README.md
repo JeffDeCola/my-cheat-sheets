@@ -1,9 +1,12 @@
 # CONCOURSE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _Concourse is a pipelined CI/CD tool for software builds.
 It's main goal is to run tasks._
 
-TL;DR
+tl;dr
 
 ```bash
 # MY CONCOURSE SERVER
@@ -53,7 +56,7 @@ This illustration shows the basic structure of concourse. Refer to
 [my-cicd-pipeline-examples](https://github.com/JeffDeCola/my-cicd-pipeline-examples)
 for pipeline examples.
 
-![IMAGE - concourse overview - IMAGE](../../../../docs/pics/concourse-overview.svg)
+![IMAGE - concourse overview - IMAGE](../../../../docs/pics/software/operations/concourse-overview.svg)
 
 ## INSTALL
 
@@ -128,7 +131,7 @@ fly targets
 There are plenty of better explanations on the web then I could do here.
 
 I have a few examples in my repo
-[my-concourse-ci-tasks](https://github.com/JeffDeCola/my-concourse-ci-tasks).
+[my-cicd-pipeline-examples](https://github.com/JeffDeCola/my-cicd-pipeline-examples).
 
 ## SET/DESTROY PIPELINE
 

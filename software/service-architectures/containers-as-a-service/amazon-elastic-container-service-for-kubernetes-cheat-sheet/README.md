@@ -1,10 +1,27 @@
 # AMAZON ELASTIC CONTAINER SERVICE FOR KUBERNETES (EKS) CHEAT SHEET
 
-`amazon elastic container service for kubernetes` _which is part of
-[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-provides CaaS._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Part of five main compute engines at `aws`,
+```text
+*** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
+```
+
+_Amazon elastic container service for kubernetes is an
+[aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
+service that provides Containers as a Service (CaaS)._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#free-resource)
+* [STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON EKS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#step-1---createdelete-kubernetes-cluster-on-eks)
+* [STEP 2 - CONNECT TO CLUSTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#step-2---connect-to-cluster)
+* [STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#step-3---deployment-deploy-dockerhub-image-to-cluster)
+* [STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#step-4---service-expose-container-to-the-world)
+* [KUBERNETES DASHBOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet#kubernetes-dashboard)
+
+Amazon Service Architectures
 
 * FaaS - AWS Lambda
   [(aws lambda)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
@@ -16,21 +33,12 @@ Part of five main compute engines at `aws`,
 * IaaS - Amazon Elastic Compute Cloud
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
-Other CaaS solutions are,
+Documentation and Reference
 
-* [Google Kubernetes Engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
-* [Microsoft Azure Kubernetes Service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet)
-
-Documentation and reference,
-
-* [My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+* [my kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 * [Amazon EKS Documentation](https://aws.amazon.com/eks/)
-
-My repo example using `amazon eks` is
-[hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* my repo example using amazon eks is
+[hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks)
 
 ## OVERVIEW
 
@@ -39,7 +47,7 @@ you to use Kubernetes on AWS without needing to install and operate
 your own.
 
 Refer to my
-[My kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+[my kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 for more information about Kubernetes.
 
 ## FREE RESOURCE
@@ -76,9 +84,9 @@ To destroy your Kubernetes Cluster,
 ???
 ```
 
-Reference for this ?? SDK command [here]()
+Reference for this ?? SDK command ??
 
-## STEP 2 - CONNECT TO CLUSTER ??
+## STEP 2 - CONNECT TO CLUSTER
 
 To interact with the cluster, you need to hook it up to kubectl.
 
@@ -91,14 +99,14 @@ cluster you created.
 
 This will make a `???` configuration folder.
 
-## STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER) ??
+## STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)
 
 To deploy you can use a kubectl command (see below) or a yaml file.
 I like using a yaml file.
 
 Lets use a docker image (that has port 8080 exposed) from Dockerhub.
 I'm using docker image `hello-go-deploy-eks` from my repo
-[hello-go-deploy-eks](https://github.com/JeffDeCola/hello-go-deploy-eks),
+[hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks),
 
 ```bash
 kubectl create -f deploy.yaml
@@ -145,7 +153,7 @@ Delete your deployment,
 kubectl delete deployment jeffs-web-counter-deployment
 ```
 
-## STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD) ??
+## STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)
 
 Services are endpoints that export ports to the outside world.
 
@@ -187,7 +195,7 @@ Delete your service,
 kubectl delete service jeffs-web-counter
 ```
 
-## KUBERNETES DASHBOARD ??
+## KUBERNETES DASHBOARD
 
 If you noticed we used the addon KubernetesDashboard when we created our cluster.
 

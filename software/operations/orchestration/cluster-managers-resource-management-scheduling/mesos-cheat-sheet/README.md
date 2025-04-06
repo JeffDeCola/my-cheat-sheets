@@ -1,21 +1,24 @@
 # MESOS CHEAT SHEET
 
-`mesos` _gives you the ability to run both containerized,
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Mesos gives you the ability to run both containerized,
 and non-containerized workloads in a distributed manner._
 
-Documentation and reference,
+Table of Contents
 
-* [Mesos DC/OS Documentation](https://dcos.io/)
-* [Mesosphere Documentation](https://mesosphere.com/)
-* [Mesos Documentation](http://mesos.apache.org/)
-* My
-  [marathon cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
+* [OVERVIEW (MESOS, MESOSPHERE & MESOS DC/OS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet#overview-mesos-mesosphere--mesos-dc-os)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet#install)
+* [FRAMEWORK - MARATHON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet#framework---marathon)
 
-My Repo example is
-[hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon).
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [mesos DC/OS documentation](https://dcos.io/)
+* [mesosphere documentation](https://mesosphere.com/)
+* [mesos documentation](http://mesos.apache.org/)
+* [marathon cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet)
+* [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon)
 
 ## OVERVIEW (MESOS, MESOSPHERE & MESOS DC/OS)
 

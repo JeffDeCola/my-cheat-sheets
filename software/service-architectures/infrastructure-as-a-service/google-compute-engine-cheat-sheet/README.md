@@ -1,39 +1,15 @@
 # GOOGLE COMPUTE ENGINE (GCE) CHEAT SHEET
 
-`google compute engine (gce)` _which is part of
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google compute engine (gce) is a
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-provides high performance scalable Virtual Machine (VM) instances
+service that provides Infrastructure as a Service (IaaS)
+which provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
-Part of four main compute engines at `gcp`,
-
-* FaaS - Google Cloud Functions
-  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
-* PaaS - Google App Engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
-* CaaS - Google Kubernetes Engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
-* IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
-
-Documentation and reference,
-
-* Your
-  [Images](https://console.cloud.google.com/compute/images),
-  [Instances Templates](https://console.cloud.google.com/compute/instanceTemplates),
-  [Instances Groups](https://console.cloud.google.com/compute/instanceGroups) and
-  [Instances](https://console.cloud.google.com/compute/instances)
-  ([VM boot disks](https://console.cloud.google.com/compute/disks))
-  via the console.
-* [Google Compute Engine Documentation](https://cloud.google.com/compute/docs)
-* [Quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
-* [Google Compute Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
-* [go api / compute engine client libraries](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
-* A list of
-  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
-  I like.
-
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#overview)
 * [WHAT YOU NEED IN ORDER TO USE GCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#what-you-need-in-order-to-use-gce)
@@ -52,11 +28,38 @@ Table of Contents,
 * [SSH TO OTHER VMs - USING GCE INTERNAL DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#ssh-to-other-vms---using-gce-internal-dns)
 * [GCE HEALTH CHECK GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-health-check-gcloud-commands)
 
-My repo example using `gce` is
-[hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
+Google Service Architectures
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* FaaS - Google Cloud Functions
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
+* PaaS - Google App Engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+* CaaS - Google Kubernetes Engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* IaaS - Google Compute Engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
+
+Documentation and Reference
+
+* [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md)
+  I like using packer
+* [Create a custom image using gcloud](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-gcloud.md)
+* Create a custom image using console - Just click a few buttons
+* [images](https://console.cloud.google.com/compute/images),
+  [instances templates](https://console.cloud.google.com/compute/instanceTemplates),
+  [instances groups](https://console.cloud.google.com/compute/instanceGroups) and
+  [instances](https://console.cloud.google.com/compute/instances)
+  ([vm boot disks](https://console.cloud.google.com/compute/disks))
+  via the console
+* [google compute engine documentation](https://cloud.google.com/compute/docs)
+* [quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
+* [google compute Engine SDK reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
+* [go api / compute engine client libraries](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
+* A list of
+  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
+  I like
+* my repo example using gce is
+  [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 
 ## OVERVIEW
 
@@ -187,7 +190,7 @@ There are a few ways to interact with `gce`,
 * Using the SDK cli (e.g. `gcloud`). See below.
 * Using Google Cloud Client Libraries / API
   (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
-  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/google-gcp).
+  My [go example](https://github.com/JeffDeCola/my-go-examples#cloud-service-providers).
 
 This cheat sheet will be focused on the `gcloud`.
 

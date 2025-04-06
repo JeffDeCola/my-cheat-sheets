@@ -1,14 +1,22 @@
 # GOOGLE CLOUD FUNCTIONS (GCF) CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`google compute engine (gce)` _which is part of
+_Google cloud function (gcf) is a
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-provides functions._
+service that provides Function as a Service (FaaS)._
 
-Part of four main compute engines at `gcp`,
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet#free-resource)
+
+Google Service Architectures
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
@@ -21,13 +29,7 @@ Part of four main compute engines at `gcp`,
 
 Documentation and reference,
 
-* [Google Cloud Functions Documentation](https://cloud.google.com/functions/)
-
-My repo example using `gcf` is
-hello-go-deploy-gcf (coming soon).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [google cloud functions documentation](https://cloud.google.com/functions/)
 
 ## OVERVIEW
 
