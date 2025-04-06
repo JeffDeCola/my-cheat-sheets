@@ -1,14 +1,17 @@
 # MICROSOFT AZURE VIRTUAL MACHINES (VM) CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`microsoft azure virtual machines (vm)` _which is part of
+_Microsoft azure virtual machines (vm) is a
 [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
-provides IaaS._
+service that provides Infrastructure as a Service (IaaS)._
 
-Part of four main compute engines at `microsoft azure`,
+Microsoft Azure Service Architectures
 
 * FaaS - Microsoft Azure Functions
   [(azure functions)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/microsoft-azure-functions-cheat-sheet)
@@ -19,22 +22,21 @@ Part of four main compute engines at `microsoft azure`,
 * IaaS - Microsoft Azure Virtual Machines
   [(azure vm)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet)
 
-Documentation and reference,
+Table of Contents
 
-* [Microsoft Azure VM Documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/microsoft-azure-virtual-machines-cheat-sheet#free-resource)
 
-My repo example using `azure vm` is
-[hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm).
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [microsoft azure vm documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/)
+* [hello-go-deploy-azure-vm](https://github.com/JeffDeCola/hello-go-deploy-azure-vm)
+  is my repo using azure vm
 
 ## OVERVIEW
 
 tbd
 
 ## FREE RESOURCE
-
-tbd
 
 Full list of [free microsoft azure services](https://azure.microsoft.com/en-us/free/free-account-faq/).

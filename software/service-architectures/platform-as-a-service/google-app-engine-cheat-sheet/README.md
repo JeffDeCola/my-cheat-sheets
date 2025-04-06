@@ -7,6 +7,17 @@ _Google app engine (gae) is a
 [gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
 service that provides Platform as a Service (PaaS)._
 
+Google Cloud Platform Service Architectures
+
+* FaaS - Google Cloud Functions
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
+* PaaS - Google App Engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+* CaaS - Google Kubernetes Engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* IaaS - Google Compute Engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
+
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#overview)
@@ -24,17 +35,6 @@ Table of Contents
 * [FILE/DIRECTOR STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#filedirector-structure)
 * [EXAMPLE 3 - LETS ADD A SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#example-3---lets-add-a-service)
 
-Google Service Architectures
-
-* FaaS - Google Cloud Functions
-  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
-* PaaS - Google App Engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
-* CaaS - Google Kubernetes Engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
-* IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
-
 Documentation and Reference
 
 * [google app engine documentation](https://cloud.google.com/appengine/docs)
@@ -42,8 +42,8 @@ Documentation and Reference
 * [quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
 * [google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
 * [google app.yaml file reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref)
-* My repo example using gae is
-  [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+* [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
+  is my repo using gae
 
 ## OVERVIEW
 

@@ -1,6 +1,9 @@
 # AMAZON WEB SERVICES (AWS) CHEAT SHEET
 
-`amazon web services (aws)` _is a massive suite of cloud computing services like
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Amazon web services (aws) is a massive suite of cloud computing services like
 [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)
 or
 [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)._

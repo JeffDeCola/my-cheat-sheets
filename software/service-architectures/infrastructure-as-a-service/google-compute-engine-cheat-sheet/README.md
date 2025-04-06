@@ -9,6 +9,17 @@ service that provides Infrastructure as a Service (IaaS)
 which provides high performance scalable Virtual Machine (VM) instances
 that you can use to run an App/service._
 
+Google Cloud Platform Service Architectures
+
+* FaaS - Google Cloud Functions
+  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
+* PaaS - Google App Engine
+  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+* CaaS - Google Kubernetes Engine
+  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+* IaaS - Google Compute Engine
+  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
+
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#overview)
@@ -28,17 +39,6 @@ Table of Contents
 * [SSH TO OTHER VMs - USING GCE INTERNAL DNS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#ssh-to-other-vms---using-gce-internal-dns)
 * [GCE HEALTH CHECK GCLOUD COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-health-check-gcloud-commands)
 
-Google Service Architectures
-
-* FaaS - Google Cloud Functions
-  [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
-* PaaS - Google App Engine
-  [(gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
-* CaaS - Google Kubernetes Engine
-  [(gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
-* IaaS - Google Compute Engine
-  [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
-
 Documentation and Reference
 
 * [Create a custom image using packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md)
@@ -55,11 +55,10 @@ Documentation and Reference
 * [quickstart using console](https://cloud.google.com/compute/docs/quickstart-linux)
 * [google compute Engine SDK reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/compute/)
 * [go api / compute engine client libraries](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library))
-* A list of
-  [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
+* [basic gce commands](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet#gce-basic-gcloud-commands)
   I like
-* my repo example using gce is
-  [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
+* [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
+  is my repo example using gce
 
 ## OVERVIEW
 
@@ -75,7 +74,7 @@ There are no upfront investments.  Pay what you use.
 In order to use `gce` you will need,
 
 * ACCOUNT - GCP Account (with billing).
-* CREDENTIALS - Service Account ($HOME/.config/gcloud/<name>.json).
+* CREDENTIALS - Service Account ($HOME/.config/gcloud/[name].json).
 * API - `gcloud` cli or client libraries.
 * YOUR WORLD AT GOOGLE - Project at google.
 * CONNECT TO VM - ssh keys ($HOME/.ssh/gcp-ssh-key.pub and gcp-ssh-key (pair)).
