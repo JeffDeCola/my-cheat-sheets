@@ -1,18 +1,22 @@
 # CREATE A CUSTOM IMAGE USING PACKER CHEAT SHEET
 
-`create a custom image using packer` _is a way
-to create a custom image on `gce`._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-My Repo example is [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce).
+_Create a custom image using packer is a way
+to create a custom image on gce._
 
-Documentation and reference,
+Table of Contents
 
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md#overview)
+* [GIVE PACKER AUTHENTICATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md#give-packer-authentication)
+* [BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-packer.md#basic-gce-packer-template-file-a-good-place-to-start)
+
+Documentation and Reference
+
+* [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
 * [gce template file reference](https://www.packer.io/docs/builders/googlecompute.html)
-* My cheat sheet on
-  [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet)
 
 ## OVERVIEW
 
@@ -23,7 +27,7 @@ The following illustration shows how `packer` controls the automation of
 building an `image`.  As you can see, it all stems from one
 configuration file `gce-packer-template.json`.
 
-![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/gce-create-custom-image-packer.jpg)
+![IMAGE -  google compute engine create custom image packer - IMAGE](../../../../docs/pics/software/service-architectures/gce-create-custom-image-packer.svg)
 
 ## GIVE PACKER AUTHENTICATION
 
@@ -33,7 +37,7 @@ variable `$GCP_JEFFS_SERVICE_ACCOUNT_PATH` that points to the
 location of the service account file.
 
 For information how to set this up checkout my cheat sheet
-[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#identity--access-management-iam---service-accounts)
+[here](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#identity--access-management-iam---service-accounts).
 
 ## BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)
 

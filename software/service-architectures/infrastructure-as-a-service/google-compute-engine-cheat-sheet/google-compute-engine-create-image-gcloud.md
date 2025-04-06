@@ -1,10 +1,14 @@
 # CREATE A CUSTOM IMAGE USING GCLOUD CHEAT SHEET
 
-`create a custom image using gcloud` _is a way
-to create a custom image on `gce`._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+_Create a custom image using gcloud is a way
+to create a custom image on gce._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet/google-compute-engine-create-image-gcloud.md#overview#overview)
 
 ## OVERVIEW
 
