@@ -1,14 +1,22 @@
 # AMAZON ELASTIC CONTAINER SERVICE (ECS) CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`amazon elastic container service` _which is part of
+_Amazon elastic container service is an
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-provides CaaS._
+service that provides Containers as a Service (CaaS)._
 
-Part of five main compute engines at `aws`,
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-cheat-sheet#free-resource)
+
+Amazon Service Architectures
 
 * FaaS - AWS Lambda
   [(aws lambda)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
@@ -20,22 +28,16 @@ Part of five main compute engines at `aws`,
 * IaaS - Amazon Elastic Compute Cloud
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
-Documentation and reference,
+Documentation and Reference
 
 * [Amazon ECS Documentation](https://aws.amazon.com/ecs/)
-
-My repo example using `amazon ecs` is
-[hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* my repo example using amazon ecs is
+  [hello-go-deploy-amazon-ecs](https://github.com/JeffDeCola/hello-go-deploy-amazon-ecs)
 
 ## OVERVIEW
 
 tbd
 
 ## FREE RESOURCE
-
-tbd
 
 Full list of [free aws services](https://aws.amazon.com/free/).

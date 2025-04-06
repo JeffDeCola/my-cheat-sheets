@@ -1,10 +1,34 @@
 # INSTALL CONCOURSE USING AN ANSIBLE ROLE ON GCE
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 ```text
 **** OLD - ARCHIVED INFORMATION ****
 ```
 
 _The following will install and configure concourse as 2 web and 4 workers._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#overview)
+* [CLONE ROLES REPOS TO /ROLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#clone-roles-repos-to-role)
+* [CREATE FOLLOWING INSTANCES (2X WEB/ 4X WORKER)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#create-following-instances-2x-web-4x-worker)
+* [LOCAL INVENTORY (HOSTS) FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#local-inventory-hosts-file)
+* [SSH INTO TO GET KEYS IN ~/.ssh/known_hosts](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#ssh-into-to-get-keys-in-sshknown_hosts)
+* [GENERATE KEYS FOR 2 WEB AND 4 WORKERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#generate-keys-for-2-web-and-4-workers)
+* [CREATE THE CONCOURSE PLAYBOOK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#create-the-concourse-playbook)
+* [RUN PLAYBOOK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#run-playbook)
+* [TESTING AND TROUBLESHOOTING - LOCALLY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#testing-and-troubleshooting---locally)
+* [TESTING AND TROUBLESHOOTING - POSTGRESQL - ON THE INSTANCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#testing-and-troubleshooting---postgresql---on-the-instance)
+* [TESTING AND TROUBLESHOOTING - CONCOURSE - ON THE INSTANCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#testing-and-troubleshooting---concourse---on-the-instance)
+* [HOW ANSIBLE KICKS OFF CONCOURSE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#how-ansible-kicks-off-concourse)
+* [CONNECT LOCAL MACHINE TO CONCOURSE via FLY](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#connect-local-machine-to-concourse-via-fly)
+* [LOGIN TO CONCOURSE (HTTP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-ansible-google-compute-engine.md#login-to-concourse-http)
+
+Documentation and Reference
+
+* [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md)
 
 ## OVERVIEW
 

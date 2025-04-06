@@ -1,10 +1,24 @@
 # ANSIBLE CHEAT SHEET
 
-`ansible` _is a configuration management and provisioning
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Ansible is a configuration management and provisioning
 tool for deploying a server/service._
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Table of Contents
+
+* [WHAT CAN YOU DO WITH ANSIBLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#what-can-you-do-with-ansible)
+* [ANSIBLE USES SSH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#ansible-uses-ssh)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#install)
+  * [macOS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#macos)
+  * [UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#ubuntu)
+* [INVENTORY FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#inventory-file)
+* [COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#commands)
+* [MODULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#modules)
+* [AD HOC COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#ad-hoc-commands)
+* [PLAYBOOK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#playbook)
+* [ROLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/configuration-management/ansible-cheat-sheet#roles)
 
 ## WHAT CAN YOU DO WITH ANSIBLE
 

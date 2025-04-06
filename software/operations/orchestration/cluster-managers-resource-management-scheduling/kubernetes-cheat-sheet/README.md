@@ -1,9 +1,12 @@
 # KUBERNETES CHEAT SHEET
 
-`kubernetes` _(aka k8s) is an open source container orchestration platform.
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Kubernetes (aka k8s) is an open source container orchestration platform.
 Automating the deployment, scaling and management of containers._
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet#overview)
 * [FEATURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet#features)
@@ -13,22 +16,19 @@ Table of Contents,
 * [KUBECTL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet#kubectl)
 * [BASIC KUBECTL COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet#basic-kubectl-commands)
 
-Documentation and reference,
+Documentation and Reference
 
-* [Kubernetes Documentation](https://dcos.io/)
-* [kubectl (Kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
+* [kubernetes documentation](https://dcos.io/)
+* [kubectl (kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-My CaaS cheat sheets and repos are,
+CaaS
 
-* [Amazon - elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet),
+* [amazon - elastic container service for kubernetes (eks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/amazon-elastic-container-service-for-kubernetes-cheat-sheet),
   [hello-go-deploy-amazon-eks](https://github.com/JeffDeCola/hello-go-deploy-amazon-eks)
-* [Google - kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
+* [google - kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
   [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-* [Microsoft - azure kubernetes service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet),
+* [microsoft - azure kubernetes service (aks)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/microsoft-azure-kubernetes-service-cheat-sheet),
   [hello-go-deploy-aks](https://github.com/JeffDeCola/hello-go-deploy-aks)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
@@ -43,7 +43,7 @@ Its a perfect solution for microservices.
 
 Here is a high level view of a Kubernetes Cluster,
 
-![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../../../docs/pics/kubernetes-cluster-architecture.jpg)
+![IMAGE - kubernetes-cluster-architecture - IMAGE](../../../../../docs/pics/software/operations/kubernetes-cluster-architecture.svg)
 
 * Master Node
   * The brains of the cluster

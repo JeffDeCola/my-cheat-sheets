@@ -1,8 +1,10 @@
 # DOCKER CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 [![My dockerhub](https://img.shields.io/badge/website-dockerhub-blue)](https://hub.docker.com/u/jeffdecola)
 
-Docker is useful for the automated BUILD of a docker custom image.
+_Docker is useful for the automated BUILD of a docker custom image.
 Docker is also useful for the automated DEPLOY of a docker
 custom image in an loosely isolated environment._
 
@@ -47,7 +49,8 @@ Table of Contents
 * [IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#images)
   * [PULL DOCKER IMAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#pull-docker-images)
   * [CHECK THE HISTORY OF AN IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#check-the-history-of-an-image)
-  * [CREATE IMAGE USING DOCKERFILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#create-image-using-dockerfile)
+  * [BUILD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#build)
+  * [BUILD FOR A DIFFERENT PLATFORM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#build-for-a-different-platform)
   * [COMPILE YOUR CODE INSIDE BASE IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#compile-your-code-inside-base-image)
   * [PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#put-your-appservice-into-smaller-image-multi-stage-build)
   * [PUSH IMAGE TO dockerhub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/docker-cheat-sheet#push-image-to-dockerhub)
@@ -72,7 +75,7 @@ Documentation and Reference
 The following diagram shows the difference between Virtual Machines
 and Containers,
 
-![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/virtual-machine-vs-docker-container.jpg)
+![IMAGE - virtual-machine-vs-docker-container - IMAGE](../../../../../docs/pics/software/development/virtual-machine-vs-docker-container.svg)
 
 Virtual Machines
 
@@ -155,7 +158,7 @@ services. Then, with a single command, you create and
 start all the services from your configuration.
 
 Here is an example of using docker-compose to
-[start up concourse services using two docker containers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose/README.md).
+[start up concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md).
 
 ## IMAGES
 
@@ -271,14 +274,14 @@ Hence, you should compile your code in the base image during build.
 
 Here is an illustration why,
 
-![IMAGE - compile-code-in-docker-base-image - IMAGE](../../../../../docs/pics/compile-code-in-docker-base-image.jpg)
+![IMAGE - docker-compile-code-in-docker-base-image - IMAGE](../../../../../docs/pics/software/operations/docker-compile-code-in-docker-base-image.svg)
 
 ### PUT YOUR APP/SERVICE INTO SMALLER IMAGE (MULTI-STAGE BUILD)
 
 Now that you compiled your code and created an image its just too big.
 You can use multi-stage to place your app/service in a smaller image ~`13MB`,
 
-![IMAGE - multi-stage-build-to-keep-image-small - IMAGE](../../../../../docs/pics/multi-stage-build-to-keep-image-small.jpg)
+![IMAGE - docker-multi-stage-build-to-keep-image-small - IMAGE](../../../../../docs/pics/software/operations/docker-multi-stage-build-to-keep-image-small.svg)
 
 ### PUSH IMAGE TO dockerhub
 
@@ -400,4 +403,4 @@ docker logs -f hello-go
 
 An illustration of vagrant, docker and packer tools,
 
-![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/vagrant-docker-packer.jpg)
+![IMAGE -  vagrant docker packer - IMAGE](../../../../../docs/pics/software/development/vagrant-docker-packer.svg)

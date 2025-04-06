@@ -1,10 +1,30 @@
 # GOOGLE APP ENGINE (GAE) CHEAT SHEET
 
-`google app engine (gae)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-provides a serverless application platform that you can use to run an App._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Part of four main compute engines at `gcp`,
+_Google app engine (gae) is a
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+service that provides Platform as a Service (PaaS)._
+
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#overview)
+* [FREE RESOURCE (STANDARD ENVIRONMENT ONLY)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#free-resource-standard-environment-only)
+* [TWO ENVIRONMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#two-environments)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#install)
+* [LOCAL APP SERVER & CONSOLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#local-app-server--console)
+* [EXAMPLE 1 - A SIMPLE EXAMPLE USING GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#example-1---a-simple-example-using-go)
+  * [STEP 1 - CREATE TWO FILES IN A DIRECTORY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#step-1---create-two-files-in-a-directory)
+  * [STEP 2 - TEST RUN ON YOUR LOCAL DEVELOPMENT SERVER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#step-2---test-run-on-your-local-development-server)
+  * [STEP 3 - EDIT CODE ON THE FLY AND SEE RESULTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#step-3---edit-code-on-the-fly-and-see-results)
+  * [STEP 4 - DEPLOY TO GAE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#step-4---deploy-to-gae)
+  * [STEP 5 - VIEW AT GAE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#step-5---view-at-gae)
+* [EXAMPLE 2 - LETS ADD A LITTLE STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#example-2---lets-add-a-little-structure)
+* [FILE/DIRECTOR STRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#filedirector-structure)
+* [EXAMPLE 3 - LETS ADD A SERVICE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet#example-3---lets-add-a-service)
+
+Google Service Architectures
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
@@ -15,19 +35,15 @@ Part of four main compute engines at `gcp`,
 * IaaS - Google Compute Engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
 
-Documentation and reference,
+Documentation and Reference
 
-* [Google App Engine Documentation](https://cloud.google.com/appengine/docs)
-* [Quickstart standard environment using go](https://cloud.google.com/appengine/docs/standard/go/)
-* [Quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
-* [Google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
-* [Google app.yaml file reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref)
-
-My repo example using `gae` is
-[hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [google app engine documentation](https://cloud.google.com/appengine/docs)
+* [quickstart standard environment using go](https://cloud.google.com/appengine/docs/standard/go/)
+* [quickstart flexible environment using go](https://cloud.google.com/appengine/docs/flexible/go/)
+* [google App Engine SDK Reference (gcloud compute)](https://cloud.google.com/sdk/gcloud/reference/app/)
+* [google app.yaml file reference](https://cloud.google.com/appengine/docs/standard/go111/config/appref)
+* My repo example using gae is
+  [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
 
 ## OVERVIEW
 
@@ -109,7 +125,7 @@ Here is a very simple example using two file to test everything
 is working.
 
 You can pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-01-gae).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae).
 
 ### STEP 1 - CREATE TWO FILES IN A DIRECTORY
 
@@ -226,7 +242,7 @@ For example 2, lets get a little more structured with some static web pages.
     * gae-logo.jpg
 
 You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-02-gae).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae).
 
 ## EXAMPLE 3 - LETS ADD A SERVICE
 
@@ -234,4 +250,4 @@ Lets do something dynamic.  How about a Webpage that
 displays a running count.
 
 You can look at or pull the example I placed in my repo
-[here](https://github.com/JeffDeCola/hello-go-deploy-gae/tree/master/example-03-gae).
+[here](https://github.com/JeffDeCola/hello-go-deploy-gae).

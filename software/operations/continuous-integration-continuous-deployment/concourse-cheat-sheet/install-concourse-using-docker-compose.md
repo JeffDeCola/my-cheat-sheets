@@ -1,5 +1,8 @@
 # INSTALL CONCOURSE USING DOCKER-COMPOSE
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _This is a cheat sheet on how to install concourse using docker-compose._
 
 Table on Contents
@@ -10,6 +13,10 @@ Table on Contents
 * [IF YOU GET AN IMAGE ERROR](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#if-you-get-an-image-error)
 * [START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#start-your-docker-compose-containers-automatically-at-bootcrash-using-systemd)
 * [USE YOUR OWN POSTGRES DATABASE RATHER THEN DOCKER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-using-docker-compose.md#use-your-own-postgres-database-rather-then-docker)
+
+Documentation and Reference
+
+* [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md)
 
 ## INSTALL USING DOCKER-COMPOSE
 
@@ -108,7 +115,7 @@ docker-compose down
 ## START YOUR DOCKER-COMPOSE CONTAINERS AUTOMATICALLY AT BOOT/CRASH (USING SYSTEMD)
 
 I wrote a cheat sheet on this which has this info;
-[systemd systemctl](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/systemd-systemctl-cheat-sheet)
+[systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/linux/services/systemd-cheat-sheet)
 
 The goal is to start `start-concourse.sh` on boot/crash.
 

@@ -1,19 +1,23 @@
 # MARATHON CHEAT SHEET
 
-`marathon` _is a framework that runs on top of Mesos
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Marathon is a framework that runs on top of Mesos
 which consists of a scheduler and executor._
 
-Documentation and reference,
+Table of Contents
 
-* [Marathon Documentation](https://mesosphere.github.io/marathon/)
-* My
-  [mesos cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet#install)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet#overview)
+* [MARATHON .JSON FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet#marathon-json-file)
+* [DEPLOY DOCKER CONTAINER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/marathon-cheat-sheet#deploy-docker-container)
 
-My Repo example is
-[hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon).
+Documentation and Reference
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [marathon documentation](https://mesosphere.github.io/marathon/)
+* [mesos cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/mesos-cheat-sheet)
+* [hello-go-deploy-marathon](https://github.com/JeffDeCola/hello-go-deploy-marathon)
 
 ## INSTALL
 
@@ -64,5 +68,6 @@ As an example,
 To deploy your app, send the json file to marathon,
 
 ```bash
-curl -X PUT http://10.141.141.10:8080/v2/apps/jeffAPP -d @app.json -H "Content-type: application/json"
+curl -X PUT http://10.141.141.10:8080/v2/apps/jeffAPP \
+    -d @app.json -H "Content-type: application/json"
 ```

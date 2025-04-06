@@ -1,14 +1,22 @@
 # AWS LAMBDA CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`aws lambda` _which is part of
+_AWS Lambda is an
 [aws](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
-provides FaaS._
+service that provides Function as a Service (FaaS)._
 
-Part of five main compute engines at `aws`,
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet#free-resource)
+
+Amazon Service Architectures
 
 * FaaS - AWS Lambda
   [(aws lambda)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/aws-lambda-cheat-sheet)
@@ -20,22 +28,14 @@ Part of five main compute engines at `aws`,
 * IaaS - Amazon Elastic Compute Cloud
   [(amazon ec2)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet)
 
-Documentation and reference,
+Documentation and Reference
 
 * [AWS Lambda Documentation](https://aws.amazon.com/lambda/)
-
-My repo example using `aws lambda` is
-hello-go-deploy-aws-lambda (coming soon).
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
 tbd
 
 ## FREE RESOURCE
-
-tbd
 
 Full list of [free aws services](https://aws.amazon.com/free/).

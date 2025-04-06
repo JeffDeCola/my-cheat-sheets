@@ -1,11 +1,14 @@
 # GIT CHEAT SHEET
 
-`git` _is a free and open source
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_git is a free and open source
 DVCS (Distributed Version Control System)._
 
-tl;dr,
+tl;dr
 
-```txt
+```bash
 # CONFIGURATION SETTINGS
 git config --global user.name "Jeff DeCola (<HOSTNAME/MACHINE NAME>)"
 git config --global user.email <YOUR-EMAIL>
@@ -27,7 +30,8 @@ git ls-files --stage
 git update-index --chmod=+x path/to/file
 ```
 
-Table of Contents,
+Table of Contents
+
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#overview)
 * [INSTALL GIT LOCAL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#install-git-local)
 * [CONFIGURE SOME SETTINGS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#configure-some-settings)
@@ -58,9 +62,6 @@ Table of Contents,
 * [MIGRATE FROM BITBUCKET TO GITHUB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#migrate-from-bitbucket-to-github)
 * [FILE PERMISSIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#file-permissions)
 * [MY NOTES - HOW I CREATE A LOCAL/REMOTE REPO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet#my-notes---how-i-create-a-localremote-repo)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## OVERVIEW
 
@@ -163,7 +164,7 @@ git remote -v
 
 This is an illustration on how everything fits together,
 
-![IMAGE -  ssh keys github overview - IMAGE](../../../../docs/pics/ssh-keys-github-overview.jpg)
+![IMAGE -  ssh keys github overview - IMAGE](../../../../docs/pics/software/development/ssh-keys-github-overview.svg)
 
 Generate public and private keys,
 
@@ -241,7 +242,7 @@ The Git Work flow, showing how everything fits together,
 * Fork and Clone a repo.
 * Versions.
 
-![IMAGE - GIT Repo Workflow Diagram - IMAGE](../../../../docs/pics/GIT-Repo-Workflow-Diagram.jpg)
+![IMAGE - git-repo-workflow-diagram - IMAGE](../../../../docs/pics/software/development/git-repo-workflow-diagram.svg)
 
 From the above diagram, I put it into a timeline flow. It shows,
 
@@ -250,7 +251,7 @@ From the above diagram, I put it into a timeline flow. It shows,
 * Branches for each repo.
 * The latest version for each branch (HEAD).
 
-![IMAGE - GIT Repo Timeline - IMAGE](../../../../docs/pics/GIT-Repo-Workflow-Timeline.jpg)
+![IMAGE - git-repo-workflow-timeline - IMAGE](../../../../docs/pics/software/development/git-repo-workflow-timeline.svg)
 
 NOTE: This above is a perfect example of why you need to `rebase`
 your branches (see below) if you don't create a new branch
@@ -258,7 +259,7 @@ your branches (see below) if you don't create a new branch
 
 A simpler view of the git workflow,
 
-![IMAGE - Simple GIT Repo Workflow Diagram - IMAGE](../../../../docs/pics/Simple-GIT-Repo-Workflow-Diagram.jpg)
+![IMAGE - Simple GIT Repo Workflow Diagram - IMAGE](../../../../docs/pics/software/development/Simple-GIT-Repo-Workflow-Diagram.jpg)
 
 ## CREATING A REPO
 
@@ -538,7 +539,7 @@ git rebase master
 Now your branch has all the edits plus
 the branches edits.
 
-![IMAGE - GIT Rebase - IMAGE](../../../../docs/pics/Git-Rebase.jpg)
+![IMAGE - git-rebase - IMAGE](../../../../docs/pics/software/development/git-rebase.svg)
 
 ## CREATE / DELETE A BRANCH
 

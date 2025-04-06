@@ -1,18 +1,21 @@
 # CREATE A CUSTOM IMAGE USING PACKER CHEAT SHEET
 
-`create a custom image using packer` _is a way
-to create a custom image on `ec2`._
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-My Repo example is [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2).
+_A way to create a custom image on ec2 using packer._
 
-Documentation and reference,
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md#overview)
+* [GIVE PACKER AUTHENTICATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md#give-packer-authentication)
+* [BASIC GCE PACKER TEMPLATE FILE (A GOOD PLACE TO START)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-architectures/infrastructure-as-a-service/amazon-elastic-compute-cloud-cheat-sheet/amazon-elastic-compute-cloud-create-image-packer.md#basic-gce-packer-template-file-a-good-place-to-start)
+
+Documentation and Reference
 
 * [ec2 template file reference](https://www.packer.io/docs/builders/amazon.html)
-* My cheat sheet on
-  [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations-tools/orchestration/builds-deployment-containers/packer-cheat-sheet)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+* [packer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/builds-deployment-containers/packer-cheat-sheet)
+* my repo example is [hello-go-deploy-amazon-ec2](https://github.com/JeffDeCola/hello-go-deploy-amazon-ec2)
 
 ## OVERVIEW
 
@@ -23,7 +26,7 @@ The following illustration shows how `packer` controls the automation of
 building an `image`.  As you can see, it all stems from one
 configuration file `ec2-packer-template.json`.
 
-![IMAGE -  amazon elastic compute cloud create custom image packer - IMAGE](../../../../docs/pics/ec2-create-custom-image-packer.jpg)
+![IMAGE -  amazon elastic compute cloud create custom image packer - IMAGE](../../../../docs/pics/software/service-architectures/ec2-create-custom-image-packer.svg)
 
 ## GIVE PACKER AUTHENTICATION
 

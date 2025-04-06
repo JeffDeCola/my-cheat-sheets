@@ -1,11 +1,23 @@
 # INSTALL CONCOURSE ON VIRTUALBOX USING VAGRANT
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 ```text
 **** OLD - ARCHIVED INFORMATION ****
 ```
 
 _This method has been depreciated at concourse, but I'm sure you can
 find vagrant files that others have made._
+
+Table of Contents
+
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md#install)
+* [BRIDGE CONCOURSE NETWORK TO HOME LAN (198.168.1.x)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/install-concourse-on-virtualbox-using-vagrant.md#bridge-concourse-network-to-home-lan-1981681x)
+
+Documentation and Reference
+
+* [concourse](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/operations/continuous-integration-continuous-deployment/concourse-cheat-sheet/README.md)
 
 ## INSTALL
 
