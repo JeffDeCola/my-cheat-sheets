@@ -1,19 +1,28 @@
 # GOOGLE CLOUD PUB/SUB CHEAT SHEET
 
-`google cloud pub/sub` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google cloud pub/sub, which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet),
 is a fully-managed real-time messaging service that allows you to
 send and receive messages between independent applications._
 
-Documentation and reference,
+Table of Contents
 
-* [Google Cloud Pub/Sub Documentation](https://cloud.google.com/pubsub/docs/)
-* [Quickstart using console](https://cloud.google.com/pubsub/docs/quickstart-console)
-* [Quickstart using gcloud pubsub](https://cloud.google.com/pubsub/docs/quickstart-cli)
-* [Google Cloud Pub/Sub SDK Reference (gcloud pubsub)](https://cloud.google.com/sdk/gcloud/reference/pubsub/)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#free-resource)
+* [LOCAL PUB/SUB INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#local-pubsub-install)
+* [STEP 1 - START](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#step-1---start)
+* [STEP 2 - CALL evn-init](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#step-2---call-evn-init)
+* [GCLOUD BETA - PUB/SUB](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md#gcloud-beta---pubsub)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [google cloud pub/sub documentation](https://cloud.google.com/pubsub/docs/)
+* [quickstart using console](https://cloud.google.com/pubsub/docs/quickstart-console)
+* [quickstart using gcloud pubsub](https://cloud.google.com/pubsub/docs/quickstart-cli)
+* [google cloud pub/sub sdk reference (gcloud pubsub)](https://cloud.google.com/sdk/gcloud/reference/pubsub/)
 
 ## OVERVIEW
 
@@ -24,7 +33,7 @@ to send and receive messages between independent applications.
 
 As of my last update, the free resources are,
 
-* 10GB of messages per month.
+* 10GB of messages per month
 
 Full list of [free gcp services](https://cloud.google.com/free/docs/gcp-free-tier).
 
@@ -52,7 +61,9 @@ Make your code call the API running in the local
 instance instead of the production API, hence
 run the env-init command in another terminal,
 
-$(gcloud beta emulators pubsub env-init)
+```bash
+gcloud beta emulators pubsub env-init
+```
 
 To see command line arguments,
 
@@ -82,4 +93,3 @@ This lists everything, so it can be a long list.
 ```bash
 gcloud beta pubsub subscriptions list
 ```
-

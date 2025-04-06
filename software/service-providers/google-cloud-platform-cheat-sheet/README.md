@@ -8,28 +8,41 @@ _Google cloud platform (gcp) is a massive suite of cloud computing services like
 or
 [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)._
 
-Documentation and reference,
+Table of Contents
 
-* [Your GCP Dashboard](https://console.cloud.google.com/home/dashboard)
-* [Google Cloud Platform Documentation](https://cloud.google.com/docs)
-* [Google Cloud Platform SDK Documentation (gcloud, gsutil, bq)](https://cloud.google.com/sdk/docs/)
-* [Google Cloud Platform SDK Reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
+* [MY GCP CHEAT SHEETS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#my-gcp-cheat-sheets)
+* [GCP FREE RESOURCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#gcp-free-resources)
+* [GOOGLE CLOUD PLATFORM (GCP) OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#google-cloud-platform-gcp-overview)
+* [GCF, GAE, GKE & GCE (THE ENGINES ON GCP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#gcf-gae-gke--gce-the-engines-on-gcp)
+* [GET AN ACCOUNT AT GCP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#get-an-account-at-gcp)
+* [IDENTITY & ACCESS MANAGEMENT (IAM) - SERVICE ACCOUNTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#identity--access-management-iam---service-accounts)
+* [INTERACTING WITH GCP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#interacting-with-gcp)
+* [GCLOUD CLI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#gcloud-cli)
+  * [GCLOUD CLI - INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#gcloud-cli---install)
+  * [GCLOUD CLI - CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#gcloud-cli---configure)
+* [SOME BASIC GCP COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet#some-basic-gcp-commands)
+
+Documentation and Reference
+
+* [gcp dashboard](https://console.cloud.google.com/home/dashboard)
+* [gcp documentation](https://cloud.google.com/docs)
+* [gcp sdk documentation](https://cloud.google.com/sdk/docs/)
+  (gcloud, gsutil, bq)
+* [gcp sdk reference (gcloud)](https://cloud.google.com/sdk/gcloud/reference/)
 * [go on google cloud platform](https://cloud.google.com/go/docs/)
-
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
 
 ## MY GCP CHEAT SHEETS
 
 Here are my gcp cheat sheets so far,
 
-* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet),
-  [hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae)
-* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet),
-  [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
-* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet),
-  [hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce)
+* [google app engine (gae)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/platform-as-a-service/google-app-engine-cheat-sheet)
+  ([hello-go-deploy-gae](https://github.com/JeffDeCola/hello-go-deploy-gae))
+* [google kubernetes engine (gke)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet)
+  ([hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke))
+* [google compute engine (gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
+  ([hello-go-deploy-gce](https://github.com/JeffDeCola/hello-go-deploy-gce))
 * [google cloud pub/sub](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-pub-sub.md)
+* [google cloud spanner](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md)
 * [google cloud storage](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md)
 * [google source repositories (git)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md)
 * [google stackdriver monitoring](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md)
@@ -218,7 +231,7 @@ So what is this all good for?
 
 Here is a high-level illustration,
 
-![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../docs/pics/gce-vs-gke-vs-gae.jpg)
+![IMAGE -  gce-vs-gke-vs-gae - IMAGE](../../../docs/pics/software/service-providers/gce-vs-gke-vs-gae.svg)
 
 ## GET AN ACCOUNT AT GCP
 
@@ -229,8 +242,8 @@ account.
 Create a Project which will have a name and ID.
 Then submit your billing information.
 
-* [Redeem a Promotion](https://console.cloud.google.com/billing/redeem)
-* [Your gcp Dashboard](https://console.cloud.google.com/home/dashboard)
+* [Redeem a promotion](https://console.cloud.google.com/billing/redeem)
+* [Your gcp dashboard](https://console.cloud.google.com/home/dashboard)
 
 ## IDENTITY & ACCESS MANAGEMENT (IAM) - SERVICE ACCOUNTS
 
@@ -238,7 +251,7 @@ Allowing Apps & users access & rights via service accounts.
 
 As an illustration,
 
-![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../docs/pics/software/service-providers/gcp-cloud-identity-and-access-management.svg)
 
 You create service account and define the roles those users or Apps can do.
 
@@ -309,7 +322,7 @@ There are a few ways to interact with `gcp`,
 * Using the SDK cli (e.g. `gcloud`). See below.
 * Using Google Cloud Client Libraries / API
   (e.g. [go](https://cloud.google.com/compute/docs/api/libraries#google_apis_go_client_library)).
-  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/google-gcp).
+  My [go example](https://github.com/JeffDeCola/my-go-examples#cloud-service-providers).
 
 ## GCLOUD CLI
 

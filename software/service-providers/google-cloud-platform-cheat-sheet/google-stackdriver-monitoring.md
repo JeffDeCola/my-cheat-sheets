@@ -1,22 +1,28 @@
 # GOOGLE STACKDRIVER MONITORING CHEAT SHEET
 
-`google stackdriver monitoring` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google stackdriver monitoring, which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet),
 provides visibility into the performance, uptime, and overall
 health of cloud-powered applications._
 
-Documentation and reference,
+Table of Contents
 
-* [Google Stackdriver Monitoring Documentation](https://cloud.google.com/stackdriver/docs/)
-* [Quickstart](https://cloud.google.com/monitoring/docs/quickstart)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md#free-resource)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-stackdriver-monitoring.md#install)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [google stackdriver monitoring documentation](https://cloud.google.com/stackdriver/docs/)
+* [quickstart](https://cloud.google.com/monitoring/docs/quickstart)
 
 ## OVERVIEW
 
 Stackdriver Monitoring provides visibility into the performance,
-uptime, and overall health of cloud-powered applications. 
+uptime, and overall health of cloud-powered applications.
 
 ## FREE RESOURCE
 

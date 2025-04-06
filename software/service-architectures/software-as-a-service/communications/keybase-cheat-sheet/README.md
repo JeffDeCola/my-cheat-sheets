@@ -1,12 +1,21 @@
 # KEYBASE CHEAT SHEET
 
-`keybase` is secure groups, files and chat for everyone. It also has
-encrypted private and group repos.
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-Documentation and reference,
+```text
+*** DEPRECIATED ***
+```
 
-* View a list of all my-cheat-sheets on my
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
+_Keybase is secure groups, files and chat for everyone. It also has
+encrypted private and group repos._
+
+Table of Contents
+
+* [WHY DO YOU NEED THIS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/keybase-cheat-sheet#why-do-you-need-this)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/keybase-cheat-sheet#install)
+  * [LINUX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/keybase-cheat-sheet#linux)
+  * [GO](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/communications/keybase-cheat-sheet#go)
 
 ## WHY DO YOU NEED THIS
 
@@ -22,7 +31,7 @@ Refer to your keybase app to create a repo and then just use normal git.
 ## INSTALL
 
 The easiest way to install is being going to the website
-[here](https://keybase.io/)
+[here](https://keybase.io/).
 
 ### LINUX
 

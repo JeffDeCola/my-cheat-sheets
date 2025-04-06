@@ -1,19 +1,26 @@
 # GOOGLE SOURCE REPOSITORIES (GIT) CHEAT SHEET
 
-`google source repositories (git)` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-_is a private git repositories hosted on Google Cloud Platform
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google source repositories (git), which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet),
+is a private git repositories hosted on Google Cloud Platform
 that has a lot of limitations._
 
-Documentation and reference,
+Table of Contents
 
-* [Your repos](https://source.cloud.google.com/repos)
-* [Google Source Repositories Documentation](https://cloud.google.com/source-repositories/docs/)
-* [Quickstart](https://cloud.google.com/source-repositories/docs/quickstart)
-* [Google Source Repositories SDK Reference (gcloud source)](https://cloud.google.com/sdk/gcloud/reference/source/)
+* [OVERVIEW (NOT FOR DEVELOPMENT USE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md#overview-not-for-development-use)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md#free-resource)
+* [MIRROR A REPO](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md#mirror-a-repo)
+* [CREATE/CLONE A REPO ON GOOGLE GIT](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-source-repositories-git.md#createclone-a-repo-on-google-git)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [your repos](https://source.cloud.google.com/repos)
+* [google source repositories documentation](https://cloud.google.com/source-repositories/docs/)
+* [quickstart](https://cloud.google.com/source-repositories/docs/quickstart)
+* [google source repositories sdk reference (gcloud source)](https://cloud.google.com/sdk/gcloud/reference/source/)
 
 ## OVERVIEW (NOT FOR DEVELOPMENT USE)
 
@@ -61,7 +68,7 @@ Check your repo [here](https://source.cloud.google.com/repos)
 
 Clone your new repo,
 
-```
+```bash
 gcloud source repos clone <your-repo-name>
 ```
 

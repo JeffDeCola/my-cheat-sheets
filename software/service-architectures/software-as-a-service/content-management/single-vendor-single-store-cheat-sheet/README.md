@@ -1,36 +1,37 @@
 # SINGLE-VENDOR SINGLE-STORE CHEAT SHEET
 
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
 _A Single-Vendor (Single-Store) E-Commerce Platform.
 More simply, **an online store**._
 
-My other repos showing different platforms,
+Other Configurations
 
 * [multi-vendor marketplace](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/multi-vendor-marketplace-cheat-sheet)
 * [multi-vendor multi-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/multi-vendor-multi-store-cheat-sheet)
 * [single-vendor single-store](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet)
   **(You are Here)**
 
-Table of Contents,
+Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#overview)
 * [USERS (ADMIN, VENDORS & CUSTOMERS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#users-admin-vendors--customers)
-* [STEPS TO CREATE AN ONLINE STORE USING WORDPRESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#steps-to-create-an-online-store-using-wordpress)
+* [CREATE AN ONLINE STORE USING WORDPRESS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#create-an-online-store-using-wordpress)
   * [SOFTWARE STACK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#software-stack)
-  * [INSTALL & BASIC OCNFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#install--basic-ocnfiguration)
+  * [INSTALL & BASIC CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#install--basic-configuration)
   * [USERS & PAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#users--pages)
   * [BASIC WOOCOMMERCE CONFIGURATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#basic-woocommerce-configuration)
   * [PRETTY IT UP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/single-vendor-single-store-cheat-sheet#pretty-it-up)
 
-Documentation and reference,
+Documentation and Reference
 
-* See my offsite
+* my offsite
   [demo of an online store](https://single-vendor-single-store.jeffdecola.com)
-* [WordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/wordpress-cheat-sheet)
+* [wordPress](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/software-as-a-service/content-management/wordpress-cheat-sheet)
   content management system
 * [WooCommerce](https://woocommerce.com/)
   e-commerce plugin
-* View a list of all my-cheat-sheets on my
-  [github webpage](https://jeffdecola.github.io/my-cheat-sheets/)
 
 ## OVERVIEW
 
@@ -41,14 +42,15 @@ on a private server using,
 * WordPress (Content Management System)
 * WooCommerce PlugIn (E-Commerce Platform)
 
-Or more simply, this illustration shows an **online store** hosted on your private server,
+Or more simply, this illustration shows an **online store**
+hosted on your private server,
 
-![IMAGE - single-vendor-single-store.jpg - IMAGE](../../../../docs/pics/single-vendor-single-store.jpg)
+![IMAGE - single-vendor-single-store.jpg - IMAGE](../../../../../docs/pics/software/service-architectures/single-vendor-single-store.svg)
 
 ## USERS (ADMIN, VENDORS & CUSTOMERS)
 
 There are 3 main users of an E-Commerce site that have
-the following capabilities, 
+the following capabilities,
 
 * **ADMIN**
   * Manages Stores
@@ -67,7 +69,7 @@ the following capabilities,
   * Browsing Products/Categories
   * Live Search
   * Coupons/Discount Codes
-  * SEO Optimised
+  * SEO Optimized
   * Purchasing
   * Shipping/Tracking
 
@@ -80,7 +82,7 @@ These are the high-level steps I did to create my
 
 * WORDPRESS
   * WooCommerce Plugin
-    * WooCommerce Shiping & Tax Plugin
+    * WooCommerce Shipping & Tax Plugin
     * Creative Mail by Constant Contact Plugin
     * Facebook for WooCommerce Plugin
     * Google Ads & Marketing by Kliken Plugin
@@ -132,7 +134,7 @@ What you should have for pages,
 
 ### BASIC WOOCOMMERCE CONFIGURATION
 
-* Go throught the steps to get the store up means having a product.
+* Go through the steps to get the store up means having a product.
   * Add a product
   * Setup payments
   * Setup tax
@@ -143,4 +145,3 @@ What you should have for pages,
 How to make it look better using the WooCommerce Storefront Theme,
 
 * Add a logo
-* 

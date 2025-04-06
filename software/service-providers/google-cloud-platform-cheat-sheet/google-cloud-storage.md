@@ -1,21 +1,29 @@
 # GOOGLE CLOUD STORAGE CHEAT SHEET
 
-`google cloud storage` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
-_is a scalable, fully managed, highly reliable, and cost-efficient
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google cloud storage, which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet),
+is a scalable, fully managed, highly reliable, and cost-efficient
 object/blob store. Used for pictures, videos, objects, blobs,
 and other unstructured data._
 
-Documentation and reference,
+Table of Contents
 
-* [Your Buckets](https://console.cloud.google.com/storage/browser)
-* [Google Cloud Storage Documentation](https://cloud.google.com/storage/docs/)
-* [Quickstart using console](https://cloud.google.com/storage/docs/quickstart-console)
-* [Quickstart using gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil)
-* [Google Cloud Storage gsutil tool documentation](https://cloud.google.com/storage/docs/gsutil)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md#free-resource)
+* [CREATE A BUCKET USING gsutil](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md#create-a-bucket-using-gsutil)
+* [UPLOAD/DOWNLOAD FILES/FOLDERS TO/FROM BUCKET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md#uploaddownload-filesfolders-tofrom-bucket)
+* [OTHER COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-storage.md#other-commands)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [buckets](https://console.cloud.google.com/storage/browser)
+* [google cloud storage documentation](https://cloud.google.com/storage/docs/)
+* [quickstart using console](https://cloud.google.com/storage/docs/quickstart-console)
+* [quickstart using gsutil](https://cloud.google.com/storage/docs/quickstart-gsutil)
+* [google cloud storage gsutil tool documentation](https://cloud.google.com/storage/docs/gsutil)
 
 ## OVERVIEW
 
@@ -80,7 +88,7 @@ gsutil cp filename gs://my-awesome-bucket/folder
 
 Download a file,
 
-```
+```bash
 gsutil cp gs://my-awesome-bucket/filename filename
 ```
 

@@ -70,7 +70,7 @@ But this is controlled by `systemd`.
 
 Here is an illustration,
 
-![IMAGE - systemd- IMAGE](../../../../../docs/pics/systemd.jpg)
+![IMAGE - systemd- IMAGE](../../../../../../docs/pics/software/development/systemd.svg)
 
 ## SYSTEMCTL
 

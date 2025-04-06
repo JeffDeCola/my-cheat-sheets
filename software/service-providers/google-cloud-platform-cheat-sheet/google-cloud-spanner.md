@@ -1,20 +1,31 @@
 # GOOGLE CLOUD SPANNER CHEAT SHEET
 
-```
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+```text
 *** THIS CHEAT SHEET IS UNDER CONSTRUCTION - CHECK BACK SOON ***
 ```
 
-`google cloud spanner` _which is part of
-[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)
+_Google cloud spanner, which is part of
+[gcp](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet),
 is a horizontally scalable relational database
 service from google._
 
-Documentation and reference,
+Table of Contents
 
-* [Cloud Spanner Documentation](https://cloud.google.com/spanner/docs/)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#free-resource)
+* [SCALES HORIZONTALLY (Adding machines)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#scales-horizontally-adding-machines)
+* [GOOGLE CLOUD PLATFORM](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#google-cloud-platform)
+* [CREATE AN INSTANCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#create-an-instance)
+* [CREATE A DATABASE IN THAT INSTANCE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#create-a-database-in-that-instance)
+* [WRITE TO DATABASE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#write-to-database)
+* [READ FROM DATABASE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/service-providers/google-cloud-platform-cheat-sheet/google-cloud-spanner.md#read-from-database)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [cloud spanner documentation](https://cloud.google.com/spanner/docs/)
 
 ## OVERVIEW
 
@@ -68,8 +79,8 @@ Where snippet.go is [here](https://github.com/GoogleCloudPlatform/golang-samples
 
 ## WRITE TO DATABASE
 
-TBD
+tbd
 
 ## READ FROM DATABASE
 
-TBD
+tbd
