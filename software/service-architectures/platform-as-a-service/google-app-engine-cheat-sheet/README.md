@@ -62,7 +62,7 @@ Within each service, you deploy versions of that service.
 Each version then runs within one or more instances, depending on
 how much traffic you configured it to handle.
 
-![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/gae-app-service-view.jpg)
+![IMAGE -  gae-app-service-view - IMAGE](../../../../docs/pics/software/service-architectures/gae-app-service-view.svg)
 
 ## FREE RESOURCE (STANDARD ENVIRONMENT ONLY)
 
