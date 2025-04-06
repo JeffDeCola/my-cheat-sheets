@@ -1,6 +1,9 @@
 # GOOGLE CLOUD PLATFORM (GCP) CHEAT SHEET
 
-`google cloud platform (gcp)` _is a massive suite of cloud computing services like
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_Google cloud platform (gcp) is a massive suite of cloud computing services like
 [amazon web services (aws)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet)
 or
 [microsoft azure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/microsoft-azure-cheat-sheet)._

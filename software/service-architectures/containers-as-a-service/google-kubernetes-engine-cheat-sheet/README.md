@@ -8,17 +8,7 @@ _Google kubernetes engine (gke) is a
 service that provides Containers as a Service (CaaS)
 which allows you to deploy, manage and scale containerized applications on Kubernetes._
 
-Table of Contents
-
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#overview)
-* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#free-resource)
-* [STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON GKE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-1---createdelete-kubernetes-cluster-on-gke)
-* [STEP 2 - CONNECT TO CLUSTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-2---connect-to-cluster)
-* [STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-3---deployment-deploy-dockerhub-image-to-cluster)
-* [STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-4---service-expose-container-to-the-world)
-* [KUBERNETES DASHBOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#kubernetes-dashboard)
-
-Google Service Architectures
+Google Cloud Platform Service Architectures
 
 * FaaS - Google Cloud Functions
   [(gcf)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/function-as-a-service/google-cloud-functions-cheat-sheet)
@@ -29,15 +19,26 @@ Google Service Architectures
 * IaaS - Google Compute Engine
   [(gce)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/infrastructure-as-a-service/google-compute-engine-cheat-sheet)
 
+Table of Contents
+
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#overview)
+* [FREE RESOURCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#free-resource)
+* [STEP 1 - CREATE/DELETE KUBERNETES CLUSTER ON GKE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-1---createdelete-kubernetes-cluster-on-gke)
+* [STEP 2 - CONNECT TO CLUSTER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-2---connect-to-cluster)
+* [STEP 3 - DEPLOYMENT (DEPLOY DOCKERHUB IMAGE TO CLUSTER)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-3---deployment-deploy-dockerhub-image-to-cluster)
+* [STEP 4 - SERVICE (EXPOSE CONTAINER TO THE WORLD)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#step-4---service-expose-container-to-the-world)
+* [KUBERNETES DASHBOARD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-architectures/containers-as-a-service/google-kubernetes-engine-cheat-sheet#kubernetes-dashboard)
+
 Documentation and Reference
 
-* [my kubernetes cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
+* [kubernetes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/operations/orchestration/cluster-managers-resource-management-scheduling/kubernetes-cheat-sheet)
 * [google kubernetes engine documentation](https://cloud.google.com/kubernetes-engine/docs/)
 * [quickstart](https://cloud.google.com/kubernetes-engine/docs/quickstart)
 * [google cloud container SDK reference (gcloud container)](https://cloud.google.com/sdk/gcloud/reference/container/)
-* [kubectl (kubernetes cli)](https://kubernetes.io/docs/reference/kubectl/overview/)
-* my repo example using gke is
-  [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+* [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
+  kubernetes cli
+* [hello-go-deploy-gke](https://github.com/JeffDeCola/hello-go-deploy-gke)
+   is my repo using gke
 
 ## OVERVIEW
 
