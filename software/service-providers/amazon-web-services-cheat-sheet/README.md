@@ -8,12 +8,22 @@ _Amazon web services (aws) is a massive suite of cloud computing services like
 or
 [google cloud platform (gcp)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/google-cloud-platform-cheat-sheet)._
 
-Documentation and reference,
+Table of Contents
 
-* [Amazon Web Services Documentation](https://aws.amazon.com)
+* [AWS FREE RESOURCES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#aws-free-resources)
+* [AMAZON WEB SERVICES (AWS) OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#amazon-web-services-aws-overview)
+* [GET AN ACCOUNT AT AWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#get-an-account-at-aws)
+* [IDENTITY & ACCESS MANAGEMENT (IAM) - ACCESS KEYS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#identity--access-management-iam---access-keys)
+* [VIRTUAL PRIVATE CLOUD](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#virtual-private-cloud)
+* [INTERACTING WITH AWS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#interacting-with-aws)
+* [AWS CLI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#aws-cli)
+  * [AWS CLI - INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#aws-cli---install)
+  * [AWS CLI - CONFIGURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#aws-cli---configure)
+* [SOME BASIC AWS COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/service-providers/amazon-web-services-cheat-sheet#some-basic-aws-commands)
 
-View my entire list of cheat sheets on
-[my GitHub Webpage](https://jeffdecola.github.io/my-cheat-sheets/).
+Documentation and Reference
+
+* [aws documentation](https://aws.amazon.com)
 
 ## AWS FREE RESOURCES
 
@@ -253,7 +263,7 @@ Where Users have groups & policies and Roles (apps) have just policies.
 
 As an illustration,
 
-![IMAGE -  gcp-cloud-identity-and-access-management- IMAGE](../../../docs/pics/gcp-cloud-identity-and-access-management.jpg)
+![IMAGE -  aws-identity-and-access-management - IMAGE](../../../docs/pics/software/service-providers/aws-identity-and-access-management.svg)
 
 Refer to the console
 [here](https://console.aws.amazon.com/iam/home#/home)
@@ -284,7 +294,7 @@ There are a few ways to interact with `aws`,
 * Using the aws cli (e.g. `aws`). See below.
 * Using aws SDK Client Libraries / API
   (e.g. [go](https://docs.aws.amazon.com/sdk-for-go/api/)).
-  My [go example](https://github.com/JeffDeCola/my-go-examples/tree/master/cloud-services/amazon-aws).
+  My [go example](https://github.com/JeffDeCola/my-go-examples#cloud-service-providers).
 
 This cheat sheet will focus on `aws`.
 

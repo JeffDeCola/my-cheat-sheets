@@ -73,7 +73,7 @@ Documentation and Reference
 
 ## I - SOFTWARE CHEAT SHEETS
 
-![IMAGE - creating-a-service-app - IMAGE](docs/pics/software/creating-a-service-app.svg)
+![IMAGE - creating-a-service-app - IMAGE](docs/pics/creating-a-service-app.svg)
 
 ### DEVELOPMENT SW
 
@@ -304,7 +304,7 @@ Documentation and Reference
 
 ## II - HARDWARE CHEAT SHEETS
 
-![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/hardware/creating-an-asic-fpga.svg)
+![IMAGE - creating-an-asic-fpga - IMAGE](docs/pics/creating-an-asic-fpga.svg)
 
 ### DEVELOPMENT HW
 
