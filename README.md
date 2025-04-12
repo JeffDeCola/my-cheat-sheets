@@ -367,7 +367,9 @@ _Other cheat sheets I'm interested in._
 
 * PRE-PRODUCTION
 
-  * _coming soon_
+  * [main-steps-to-complete-a-film](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/[main-steps-to-complete-a-film)
+  * [producers-checklist](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/producers-checklist-cheat-sheet)
+  * [team-breakdown-and-tasks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/team-breakdown-and-tasks)
 
 * PRODUCTION
 
@@ -375,7 +377,9 @@ _Other cheat sheets I'm interested in._
 
 * POST-PRODUCTION
 
-  * [sound design team](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-cheat-sheet)
+  * [post-production-schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
+  * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow)
+  * [visual-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-design-team-elements-and-workflow)
 
 ### RANDOM THINGS
 
