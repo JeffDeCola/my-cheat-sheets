@@ -367,9 +367,9 @@ _Other cheat sheets I'm interested in._
 
 * PRE-PRODUCTION
 
-  * [main-steps-to-complete-a-film](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/[main-steps-to-complete-a-film)
-  * [producers-checklist](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/producers-checklist-cheat-sheet)
-  * [team-breakdown-and-tasks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/overview/team-breakdown-and-tasks)
+  * [main-steps-to-complete-a-film](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/main-steps-to-complete-a-film-cheat-sheet)
+  * [producers-checklist](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet)
+  * [team-breakdown-and-tasks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/team-breakdown-and-tasks)
 
 * PRODUCTION
 
