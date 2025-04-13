@@ -7,8 +7,8 @@ _The pokemon base set booster box._
 
 Table of Contents
 
-* [OVERVIEW](#overview)
-* [VARIATIONS](#variations)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/pokemon-base-set-1st-edition-1999-cheat-sheet#overview)
+* [VARIATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/pokemon-base-set-1st-edition-1999-cheat-sheet#variations)
 
 ## OVERVIEW
 
