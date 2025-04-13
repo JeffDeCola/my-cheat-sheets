@@ -26,3 +26,7 @@ Documents and References
 ## PRODUCTION
 
 ## POST-PRODUCTION
+
+![IMAGE - film-post-production-visual-elements.svg - IMAGE](../../../../docs/pics/other/film-post-production-visual-elements.svg)
+
+![IMAGE - film-post-production-visual-workflow.svg - IMAGE](../../../../docs/pics/other/film-post-production-visual-workflow.svg)
