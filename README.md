@@ -378,8 +378,8 @@ _Other cheat sheets I'm interested in._
 * POST-PRODUCTION
 
   * [post-production-schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
-  * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow)
-  * [visual-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-design-team-elements-and-workflow)
+  * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
+  * [visual-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
 
 ### RANDOM THINGS
 

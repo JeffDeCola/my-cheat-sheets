@@ -59,3 +59,7 @@ Everything is gathered for the Re-Recording/Final Mix.
 ## EFFECTS
 
 ## MUSIC
+
+![IMAGE - film-post-production-sound-design-elements.svg - IMAGE](../../../../docs/pics/other/film-post-production-sound-design-elements.svg)
+
+![IMAGE - film-post-production-sound-design-workflow.svg - IMAGE](../../../../docs/pics/other/film-post-production-sound-design-workflow.svg)
