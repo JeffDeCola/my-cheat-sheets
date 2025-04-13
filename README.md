@@ -388,6 +388,7 @@ _Other cheat sheets I'm interested in._
 * [igt g23 and g23v2 upright video slot machine](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/igt-g23-and-g23v2-upright-video-slot-machine-cheat-sheet)
 * [rca victor portable record player 3VC82](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/rca-victor-portable-record-player-3VC82-cheat-sheet)
 * [my lunch ratings dtla](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/my-lunch-ratings-dtla-cheat-sheet)
+* [pokemon-base-set-1st-edition-1999](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/pokemon-base-set-1st-edition-1999-cheat-sheet)
 * [seeburg 1952 m100c jukebox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/seeburg-1952-m100c-jukebox-cheat-sheet)
 * [taxes](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/taxes-cheat-sheet)
 * [typical highway interchanges](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/typical-highway-interchanges-cheat-sheet)
