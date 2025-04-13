@@ -64,7 +64,7 @@ Documents and References
 
 ### PRODUCTION TEAM
 
-* MAIN TEAM
+* MAIN PRODUCTION TEAM
   * **Executive Producer** -
     _Money_
   * **Producer** -
@@ -75,24 +75,18 @@ Documents and References
     _Provides confidence that film budget & Production Schedule are aligned_
   * **Unit Production Manager (UPM)** -
     _Sets up/Runs Production, gets equipment, hires crew_
-  * **Production Coordinator (PC)** -
-    _Reports to UPM, day to day operations, call sheets, paperwork_
   * **Post-Production Supervisor** -
     _Manages post-production, delivery_
-  * **Legal Counsel** -
-    _Oversees legal paperwork, counsel_
-  * **Accountant** -
-    _Handles money and keeps an accounting_
   * **Publicist** -
     _Promotes movie, gets media coverage_
   * **Social Media** -
     _Promotes, builds audience_
-  * **Location Manager** -
-    _Finds locations_
-  * **Casting** -
-    _Finds cast_
 
 * LEGAL/MONEY TEAM
+  * **Legal Counsel** -
+    _Oversees legal paperwork, counsel_
+  * **Accountant** -
+    _Handles money and keeps an accounting_
   * **Payroll Company** -
     _Pays people_
   * **Insurance Broker** -
@@ -104,6 +98,34 @@ Documents and References
   * **Clearance House**
     _For Production Design_
 
+* MAIN ARTISTIC TEAM
+  * **Director** -
+    _Artistic Vision_
+  * **Editor** -
+    _Edits film_
+  * **Storyboard Artist** -
+    _Creates Storyboard_
+  * **Director of Photography (DP)**-
+    _Cinematographer, camera, lighting_
+  * **1st Assistant Director** -
+    _Manages set, schedules, call sheets_
+  * **2nd Assistant Director** -
+    _Manages set, schedules, call sheets_
+  * **Production Coordinator (PC)** -
+    _Reports to UPM, day to day operations, call sheets, paperwork_
+  * **Production Designer** -
+    _Designs sets, props, costumes
+  * **Composer** -
+    _Creates music_
+  * **Location Manager** -
+    _Finds locations_
+  * **Casting** -
+    _Finds cast_
+  * **Lead Costume Designer** -
+    _Designs costumes_
+  * **Lead Makeup Artist** -
+    _Designs makeup_
+
 * HOUSES
   * **Post Production House** -
     _Post Production, color_
@@ -112,65 +134,99 @@ Documents and References
   * **Sound House** -
     _Sound Design_
 
-### MAIN CREW
-
-* MAIN CREW
-  * **Director** -
-  _Artistic Vision_
-  * **Assistant Director** -
-  _Manages Set, Schedules, Call Sheets_
-  * **Editor** -
-  _Edits film_
-  * **Storyboard Artist** -
-  _Creates Storyboard_
-  * **Director of Photography (DP)**-
-  _Cinematographer, camera, lighting_
-  * **Head Production Designer** -
-  _Designs sets, props, costumes_
-  * **Lead Costume Designer** -
-  _Designs costumes_
-  * **Lead Makeup Artist** -
-  _Designs makeup_
-  * **Script Supervisor** -
-  _Keeps track of script changes, continuity_
-
 ## NOTABLE TASKS AND RESPONSIBILITIES
 
 ### PRE-PRODUCTION
 
-* PRODUCTION OFFICE - _Producer_
-* SCREENPLAY - _Writer_
-* BUDGET - _Line Producer_
-* PRODUCTION SCHEDULE - _Producer, Unit Production Manager (UPM)_
-* SHOOTING SCHEDULE - _1st AD_
-* STORYBOARD - _Director, 1st AD, DP_
-* SHOT LIST - _DP, Director_
-* HIRE CREW -_Producer, Unit Production Manager (UPM)_
-* INSURANCE - _Producer, Line Producer_
-* LOCATIONS - _Location Manager_
-* PROPS - Property Master
-* PRODUCTION DESIGN - _Production Designer_
-* CASTING - _Casting Director_
-* WARDROBE - _Costume Designer_
-* REHEARSALS - _Director, Actors_
-* CREW MEETINGS - _Producer, Director, UPM, DP, 1st AD_
-* SUPPLIERS - _Unit Production Manager_
+* MANAGEMENT
+  * FINANCING - _Executive Producer, Producer_
+  * PRODUCTION OFFICE - _Producer_
+  * LEGAL CONTRACTS - Legal Counsel, Producer
+  * BUDGET - _Line Producer_
+  * PRODUCTION SCHEDULE - _Producer, Unit Production Manager (UPM)_
+  * SHOOTING SCHEDULE - _1st AD_
+  * HIRE CREW -_Producer, Unit Production Manager (UPM)_
+  * INSURANCE CERTIFICATES - _Producer, Line Producer_
+  * PERMITS & CLEARANCES - Location Manager, Unit Production Manager (UPM)
+  * PAYROLL SETUP - Line Producer, Accountant, Payroll Company
+  * SAFETY PLANNING - UPM, 1st AD
+* ARTISTIC
+  * SCREENPLAY - _Writer_
+  * STORYBOARD - _Director, 1st AD, DP_
+  * SHOT LIST - _DP, Director_
+  * SCRIPT BREAKDOWN - 1st AD, Production Coordinator
+  * VISUAL EFFECTS PLANNING - VFX Supervisor, Director, DP (if applicable)
+  * SOUND DESIGN CONCEPT - Sound Designer, Director (early planning)
+  * LOCATIONS - _Location Manager_
+  * PROPS - Property Master
+  * PRODUCTION DESIGN - _Production Designer_
+  * CASTING - _Casting Director_
+  * WARDROBE - _Costume Designer_
+  * COSTUME FITTINGS - Costume Designer, Actors
+  * MAKEUP/HAIR TESTS - Makeup Artist, Hair Stylist
+  * REHEARSALS - _Director, Actors_
+  * CALL SHEETS - 2nd AD, Production Coordinator
+* FOR PRODUCTION
+  * CREW MEETINGS - _Producer, Director, UPM, DP, 1st AD_
+  * EQUIPMENT RENTAL - DP (camera), Sound Mixer (audio),
+    Gaffer (lighting), Key Grip (grip)
+  * CATERING ARRANGEMENTS - Production Coordinator, UPM
+  * TECH/CAMERA TESTS - DP, Camera Department
+  * TRANSPORTATION LOGISTICS - Transportation Coordinator, UPM
 
 ### PRODUCTION
 
-* CALL SHEETS/REPORTS - _2nd AD, Production Coordinator (PC)_
-* DEAL MEMOS/CONTRACTS - _Producer, Production Coordinator (PC)_
-* SCHEDULES - _1st AD, UPM, PC_
-* PRODUCTION REPORTS -_1st AD, UPM, PC_
+* ADMINISTRATIVE
+  * DEAL MEMOS/CONTRACTS - Producer, Production Coordinator (PC)
+  * DAILY COST REPORTS - Line Producer, Production Accountant
+  * PETTY CASH MANAGEMENT - Production Accountant, PC
+  * CREW/CAST TIMECARDS - 2nd AD, PC, Department Heads
+* SET MANAGEMENT
+  * CALL SHEETS/REPORTS - 2nd AD, Production Coordinator (PC)
+  * DAILY SCHEDULES - 1st AD, UPM, PC
+  * PRODUCTION REPORTS - 1st AD, UPM, PC
+  * SET OPERATIONS - 1st AD, UPM
+  * SAFETY MONITORING - 1st AD, UPM, Safety Officer
+  * CREW COORDINATION - 1st AD, Department Heads
+* CREATIVE EXECUTION
+  * DIRECTING TALENT - Director
+  * CAMERA OPERATIONS - Director of Photography, Camera Crew
+  * LIGHTING SETUP - Gaffer, Lighting Crew
+  * SOUND RECORDING - Sound Mixer, Boom Operator
+  * SCRIPT CONTINUITY - Script Supervisor
+  * ART DEPARTMENT EXECUTION - Production Designer, Art Director
+  * COSTUME MANAGEMENT - Costume Designer, Wardrobe Department
+  * MAKEUP/HAIR EXECUTION - Makeup Artist, Hair Stylist
+  * PROPS MANAGEMENT - Property Master
+* TECHNICAL OPERATIONS
+  * DATA MANAGEMENT - DIT (Digital Imaging Technician)
+  * DAILIES REVIEW - Director, DP, Producer
+  * EQUIPMENT MAINTENANCE - Department Heads
+  * TRANSPORTATION COORDINATION - Transportation Coordinator
+  * CATERING/CRAFT SERVICES - Catering Company, Craft Service Person
 
 ### POST-PRODUCTION
 
-* 1st CUT -_Editor_
-* 2nd CUT -_Director, Editor_
-* DIRECTORS CUT - _Director, Editor_
-* PICTURE LOCK - _Director, Editor_
-* SOUND DESIGN - _Sound Design House
-* COLOR CORRECTION_ Conform Editor, Colorist
-* VFX - _VFX House_
-* MUSIC - _Composer, Music Editor, Music Supervisor_
-* COMPOSED MUSIC/SCORE - _Composer,  Music Editor, Music Supervisor_
+* EDITING STAGES
+  * ASSEMBLY CUT - Editor
+  * 1st CUT - Editor
+  * nth CUT - Director, Editor
+  * DIRECTOR'S CUT - Director, Editor
+  * PICTURE LOCK - Director, Editor, Producer
+* VISUAL
+  * Refer to
+* SOUND DESIGN
+  * DIALOGUE EDITING - Dialogue Editor
+  * ADR (ADDITIONAL DIALOGUE RECORDING) - ADR Supervisor, Sound Editor
+  * FOLEY RECORDING - Foley Artist, Foley Mixer
+  * SOUND DESIGN - Sound Designer, Sound Design House
+  * SOUND EFFECTS EDITING - Sound Effects Editor
+  * MUSIC COMPOSITION/SCORE - Composer, Music Editor
+  * MUSIC LICENSING - Music Supervisor
+  * SOUND MIXING - Re-recording Mixer
+  * FINAL MIX - Re-recording Mixer, Director, Producer
+* MASTERING & DELIVERY
+  * DELIVERABLES CREATION - Post-Production House
+  * DCP (DIGITAL CINEMA PACKAGE) - Post-Production House (for theatrical release)
+  * STREAMING/BROADCAST MASTERS - Post-Production House
+  * CLOSED CAPTIONING/SUBTITLES - Subtitling Service
