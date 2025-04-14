@@ -3,7 +3,8 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_The pokemon base set booster box._
+_The pokemon base set is a 102-card set released by Wizards of the Coast
+in 1999, modeled after the Japanese set from 1996._
 
 Table of Contents
 
@@ -31,7 +32,8 @@ Table of Contents
 * Formats
   * Booster box (36 packs of 11 cards each)
   * Theme decks
-  * Starter decks
+  * Starter decks contained 60 cards including one random holographic card
+  * Two-player starter sets included two 30-card decks
 
 ## PRINT VARIATIONS
 
@@ -49,9 +51,12 @@ Table of Contents
   * No drop shadow
   * Thinner typeface in the upper right HP portion of the card
   * Pikachu has red cheeks
+  * Lighter, more vibrant color scheme compared to Unlimited
 * **UNLIMITED**
   * Drop shadow and copyright date "1995, 96, 98"
   * Pikachu has red cheeks
+  * Darker, more saturated colors
+  * Font for HP different
 * **DATED UNLIMITED**
   * UK print
   * Copyright date 1999-2000

@@ -83,7 +83,7 @@ Documents and References
   * **Social Media** -
     _Promotes, builds audience_
   * **Distribution** -
-    _Finds distribution, negotiates deals_  
+    _Finds distribution, negotiates deals_
 
 * LEGAL/MONEY TEAM
   * **Legal Counsel** -
