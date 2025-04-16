@@ -4,7 +4,10 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_Sound design is the process of specifying, acquiring, or generating sound elements._
+_Sound design is part of Post Production,
+focusing on the process of specifying, acquiring, manipulating,
+and generating sound elements. The bulk of this work is done at a Sound House
+or Audio Post Facility._
 
 Table of Contents
 
@@ -15,6 +18,7 @@ Table of Contents
 Documents and References
 
 * watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* [post production schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
 * [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
 
 ## ELEMENTS

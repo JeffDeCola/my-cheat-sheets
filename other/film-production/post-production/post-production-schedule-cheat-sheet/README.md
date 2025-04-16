@@ -3,7 +3,8 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_Main steps of a post production flow._
+_Main steps of a post production schedule with a 3.5 month schedule for picture
+lock and ?? months for video and audio workflows._
 
 Table of Contents
 
@@ -14,6 +15,8 @@ Table of Contents
 Documents and References
 
 * watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
+* [sound design team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
 
 ## OVERVIEW
 
@@ -24,44 +27,42 @@ first day of principle photography.
 
 ## PRE-PICTURE LOCK
 
-* WEEK 1-6
-  * ROUGH EDITING (6 Weeks)
+* **WEEK 1-6**
+  * DAILIES/ASSEMBLY (6 Weeks)
     * _Editor_
     * Scenes get shown to Director et al.
     * Director provides feedback throughout this process
     * This process can start on the first day of principle photography
-  * **1st CUT**
-    * Send to Producers, etc… for feedback
-* WEEK 7-10
+* **WEEK 7-10**
   * EDITING (4 Weeks)
     * _Editor and Director_
     * After 1st CUT, the Editor and Director work together in an editing suite
-  * **DIRECTOR’S CUT 1.0**
-    * Send to Producers, etc… for feedback
-* WEEK 11
+  * **FIRST CUT 1.0**
+    * Send to Producers, etc. for feedback
+* **WEEK 11**
   * NOTES FROM 1st CUT (2-3 Days)
     * _Editor and Director_
     * Going over notes from Producers et al.
   * **DIRECTOR’S CUT X.X**
     * Ready to screen
-  * **1st SCREENING** (night)
+  * **1st SCREENING**
     * _Producer and selected people, I suggest including composer_
     * Fill out questioner (very important)
-* WEEK 12-13
+* **WEEK 12-13**
   * REVIEW SCREENING NOTES (2 Weeks)
     * _Editor and Director_
     * Go over screening notes.
   * SEND NEWER DIRECTOR CUTS SCREENERS TO OTHER PEOPLE
     * Get more feedback.
-  * **FINAL SCREENING (Optional)**
+  * **FINAL SCREENING**
     * _Producer and selected people_
     * Fill out questioner. Very Important.
-* WEEK 14
+* **WEEK 14**
   * FINAL EDIT (2-3 Days)
     * _Editor and Director_
     * Last chance to go over final notes and edits
   * **--> PICTURE LOCK <--**
-    * Expensive to change things after Picture Lock
+    * Very expensive to change things after Picture Lock
   * **TRANSFER FILES IN REELS**
     * _Editor, Director and Producer_
     * Reels/notes to Sound House – Temp sound with additional sound elements
@@ -77,7 +78,7 @@ After picture lock, the schedule depends on the time and
 schedule of the post houses. I suggest getting
 a post production supervisor.
 
-* WEEK 1
+* **WEEK 1**
   * SOUND
     * Sound House will need a week to get the files setup and organize their team
   * VISUAL
@@ -86,7 +87,7 @@ a post production supervisor.
   * MUSIC
     * Composer still has a few weeks to compose music from Picture Lock
     * Director working with Producer to get Music Rights
-* WEEK 2
+* **WEEK 2**
   * SOUND
     * **SOUND SPOTTING SESSION (a day)**
       * _Producer, Director, Re-Recording mixer and sound team_
@@ -102,7 +103,7 @@ a post production supervisor.
     * Work on an Visual Effects
   * MUSIC
     * Composer still working on music
-* WEEK 3
+* **WEEK 3**
   * SOUND
     * **MIXING STAGE ( a few days)**
       * _Director, Producer. re-recording mixer and the Sound team_
@@ -120,7 +121,7 @@ a post production supervisor.
       * _Director, Producer, Composer, Musicians and Sound Engineers_
     * **FILM SCORE COMPLETE**
       * Provide the stems to Music Editor
-* WEEK 4
+* **WEEK 4**
   * SOUND
     * **MIXING STAGE (a few days)**
       * _Director, Producer. re-recording mixer and the Sound team_
@@ -141,13 +142,13 @@ a post production supervisor.
     * **MUSIC EDITING SESSION (a day or so)**
       * _Music Editor and Director_
       * Send score to Sound House for Final Mix
-* WEEK 5
+* **WEEK 5**
   * SOUND
     * **FINAL MIX/RE-RECORDING START (a few days)**
       * _Director, Producer, Re-Recording Mixer and the Sound Team_
   * VISUAL
     * Waiting for Printmaster from Sound House
-* WEEK 6
+* **WEEK 6**
   * SOUND
     * **FINAL MIX/RE-RECORDING END**
       * Director, Producer, Re-Recording Mixer and the Sound Team 
@@ -156,13 +157,13 @@ a post production supervisor.
   * **PRINTMASTER COMPLETE**
     * Final audio master
     * Send to Color House
-* WEEK 7
+* **WEEK 7**
   * **--> FINAL LAYBACK <-- (an afternoon)**
     * _Director, Producer, Re-Recording Mixer and the Sound Team_
     * Sound House will do the final layback
     * Film will run in real time
     * This is the final step before the film is sent to the lab
-* WEEK 8
+* **WEEK 8**
   * **FINAL CHECK**
     * _Director, Producer, Studio Post Executives, Colorist, and anyone else
       can be invited_
@@ -170,7 +171,7 @@ a post production supervisor.
     * Final Layback - First time seeing the Sound (printmaster)
       and Color together.
     * Any changes will require money
-* WEEK 9
+* **WEEK 9**
   * DELIVERABLES
     * Done at Color House
     * HDCam-SR Master
@@ -179,7 +180,7 @@ a post production supervisor.
     * ProRes HQ (8 Channel)
   * BACKUPS
     * Get backups of all files from Sound and Color House 
-* WEEK 10
+* **WEEK 10**
   * **PRIVATE SCREENING**
     * _Cast, Crew, Family, Friends, Publicists, etc_
     * Not a premiere, just a private screening
