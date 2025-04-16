@@ -15,6 +15,7 @@ Table of Contents
 Documents and References
 
 * watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
 
 ## ELEMENTS
 
