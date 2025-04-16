@@ -4,7 +4,11 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_Visual design is the process of specifying, acquiring, or generating visual elements._
+_Visual design is part of Post Production,
+focusing on the process of specifying, acquiring, manipulating, and generating
+visual elements.
+The bulk of this work is done at a Visual Effects House,
+Color House and/or a Post Production Facility._
 
 Table of Contents
 
@@ -15,6 +19,7 @@ Table of Contents
 Documents and References
 
 * watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* [post production schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
 * [sound design team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
 
 ## ELEMENTS
