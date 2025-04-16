@@ -57,7 +57,7 @@ Once the film is picture locked, the sound design team can begin their work.
 * **SOUND SPOTTING**
   * The sound design team meets with the director and editor to discuss
     the sound design of the film
-* **GATHER SOUND ELEMENTS**
+* **GATHER/CREATE SOUND ELEMENTS**
   * **MUSIC**
     * This includes score, licensed music, and any additional music
   * **DIALOG**
