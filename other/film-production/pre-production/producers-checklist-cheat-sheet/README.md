@@ -20,10 +20,14 @@ Table of Contents
 
 Documents and References
 
-* watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
-* [post production schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
-* [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
-* [sound design team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
+* a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* pre-production
+  * [producers-checklist](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet)
+    **(You are here)**
+* post-production
+  * [post-production schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
+  * [sound design team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
+  * [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
 
 ## INFRASTRUCTURE
 
@@ -80,7 +84,7 @@ Documents and References
     _Supports the Producers in certain roles_
   * **Line Producer** -
     _Provides confidence that film budget & Production Schedule are aligned_
-  * **Production Supervisor** -
+  * **Production Supervisor/Coordinator** -
     _Manages day to day operations of the Production_
   * **Post-Production Supervisor** -
     _Manages day to day operations of the Post Production_
@@ -90,7 +94,7 @@ Documents and References
 * **MARKETING/DISTRIBUTION TEAM**
   * **Publicist** -
     _Promotes movie, gets media coverage_
-  * **Social Media** -
+  * **Social Media/Website** -
     _Promotes, builds audience_
   * **Distribution** -
     _Finds distribution, negotiates deals_
