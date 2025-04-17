@@ -33,36 +33,36 @@ Documents and References
 
 ## LEGAL DOCUMENTS
 
-* LEGAL
+* **LEGAL**
   * Engagement Letter with Legal
-* INSURANCE
+* **INSURANCE**
   * Liability/Production Insurance
   * E&O Insurance
   * Workers' Compensation Insurance
-* SCRIPT
+* **SCRIPT**
   * Literary Purchase Agreement
   * Copyright Registration
   * Title Opinion / Title Report
   * Script Clearance Report
-* MUSIC
+* **MUSIC**
   * Music License Agreement(s)
-* PAYROLL
+* **PAYROLL**
   * Payroll (Use a film company)
-* LOCATION
+* **LOCATION**
   * Location Agreements
   * Insurance Certificates
   * Permits
   * Location Release Forms
-* PROPS/SET
+* **PROPS/SET**
   * Clearance Report (props/set)
   * Clearance Releases & Licenses
-* ACTORS AND CREW
+* **ACTORS AND CREW**
   * Deal Memos/Crew Agreements
   * Actor Contracts (SAG + Rider)
   * W-4 & I-9
-* GUILDS
+* **GUILDS**
   * SAG Contract
-* ANIMALS
+* **ANIMALS**
   * American Humane Association
 
 ## MAIN TEAM
