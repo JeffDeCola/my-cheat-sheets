@@ -3,7 +3,9 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_The main duties of a producer._
+_A Producer responsible for making the film.
+So they need to have a good team and make
+sure that team is completing their tasks._
 
 Table of Contents
 
@@ -18,12 +20,15 @@ Table of Contents
 Documents and References
 
 * watch a movie I produced on [amazon](https://www.amazon.com/gp/video/detail/B00TTB7Q3U)
+* [post production schedule](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/post-production-schedule-cheat-sheet)
+* [visual team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
+* [sound design team elements and workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
 
 ## INFRASTRUCTURE
 
-* Setup Company
-* Bank Account with Checking and Credit Card
-* Production house
+* Setup a Production Company
+* Setup a Bank Account with Checking and Credit Card
+* Get/Rent a Production House
 
 ## MAIN LEGAL DOCUMENTS/FORMS
 
@@ -32,6 +37,7 @@ Documents and References
 * INSURANCE
   * Liability/Production Insurance
   * E&O Insurance
+  * Workers' Compensation Insurance
 * SCRIPT
   * Literary Purchase Agreement
   * Copyright Registration
@@ -40,8 +46,7 @@ Documents and References
 * MUSIC
   * Music License Agreement(s)
 * PAYROLL
-  * Payroll (Use film company)
-  * Workers' Compensation Insurance
+  * Payroll (Use a film company)
 * LOCATION
   * Location Agreements
   * Insurance Certificates
@@ -65,17 +70,17 @@ Documents and References
   * **Executive Producer** -
     _Money_
   * **Producer** -
-    _Manages, implements, delivers_
+    _Manages, implements, delivers the film_
   * **Associate Producer(s)** -
     _Supports the Producers in certain roles_
   * **Line Producer** -
     _Provides confidence that film budget & Production Schedule are aligned_
   * **Production Supervisor** -
-    _Manages day to day operations_
+    _Manages day to day operations of the Production_
+  * **Post-Production Supervisor** -
+    _Manages day to day operations of the Post Production_
   * **Unit Production Manager (UPM)** -
     _Sets up/Runs Production, gets equipment, hires crew_
-  * **Post-Production Supervisor** -
-    _Manages post-production, delivery_
 
 * MARKETING/DISTRIBUTION TEAM
   * **Publicist** -
@@ -88,7 +93,7 @@ Documents and References
 * LEGAL/MONEY TEAM
   * **Legal Counsel** -
     _Oversees legal paperwork, counsel_
-  * **Accountant** -
+  * **Accountant(s)** -
     _Handles money and keeps an accounting_
   * **Payroll Company** -
     _Pays people_
@@ -119,7 +124,7 @@ Documents and References
   * **Production Designer** -
     _Designs sets, props, costumes
   * **Composer** -
-    _Creates music_
+    _Creates score
   * **Location Manager** -
     _Finds locations_
   * **Casting** -
@@ -131,124 +136,150 @@ Documents and References
 
 * HOUSES
   * **Post Production House** -
-    _Post Production, color_
+    _Post Production, colorist_
   * **VFX House** -
     _Visual Effects_
   * **Sound House** -
     _Sound Design_
   * **Recording Studio** -
-    _Composer, Musicians_
+    _Score_
 
 ## NOTABLE TASKS AND RESPONSIBILITIES
+
+### EARLY STAGES
+
+* VERY EARLY STAGES
+
+  * FINANCING - _Executive Producer, Producer_
+  * BUDGET - _Producer, Line Producer_
+  * LEGAL CONTRACTS - _Producer, Legal Counsel_
+  * LITERARY PURCHASE AGREEMENT - _Producer, Legal Counsel_
+  * HIRE MAIN TEAM - _Producer, Executive Producer_
 
 ### PRE-PRODUCTION
 
 * MANAGEMENT
-  * FINANCING - _Executive Producer, Producer_
+
   * PRODUCTION OFFICE - _Producer_
-  * LEGAL CONTRACTS - Legal Counsel, Producer
-  * BUDGET - _Line Producer_
-  * PRODUCTION SCHEDULE - _Producer, Unit Production Manager (UPM)_
-  * SHOOTING SCHEDULE - _1st AD_
+  * PRODUCTION SCHEDULE - _Producer, Production Supervisor,
+    Unit Production Manager (UPM)_
   * HIRE CREW -_Producer, Unit Production Manager (UPM)_
+  * SHOOTING SCHEDULE - _1st AD_
   * INSURANCE CERTIFICATES - _Producer, Line Producer_
-  * PERMITS & CLEARANCES - Location Manager, Unit Production Manager (UPM)
-  * PAYROLL SETUP - Line Producer, Accountant, Payroll Company
-  * SAFETY PLANNING - UPM, 1st AD
+  * PERMITS & CLEARANCES - _Location Manager, Unit Production Manager (UPM)_
+  * PAYROLL SETUP - _Line Producer, Accountant, Payroll Company_
+  * SAFETY PLANNING - _Unit Production Manager (UPM), 1st AD_
 * ARTISTIC
-  * SCREENPLAY - _Writer_
-  * STORYBOARD - _Storyboard Artist, Director, 1st AD, DP_
-  * SHOT LIST - _DP, Director_
+  * SCREENPLAY - _Writer(s)_
+  * STORYBOARD - _Storyboard Artist, Director, 1st AD, Director of Photography (DP)_
+  * SHOT LIST - _Director, Director of Photography (DP), 1st AD_
   * SCRIPT BREAKDOWN - 1st AD, Production Coordinator
-  * VISUAL EFFECTS PLANNING - VFX Supervisor, Director, DP (if applicable)
-  * SOUND DESIGN CONCEPT - Sound Designer, Director (early planning)
+  * VISUAL EFFECTS PLANNING - _VFX Supervisor, Director,
+    Director of Photography_ (if applicable)
+  * SOUND DESIGN CONCEPT - _Sound Designer, Director_ (early planning)
   * LOCATIONS - _Location Manager_
-  * PROPS - Property Master
+  * PROPS - _Property Master_
   * PRODUCTION DESIGN - _Production Designer_
   * CASTING - _Casting Director_
   * WARDROBE - _Costume Designer_
-  * COSTUME FITTINGS - Costume Designer, Actors
-  * MAKEUP/HAIR TESTS - Makeup Artist, Hair Stylist
+  * COSTUME FITTINGS - _Director, Costume Designer, Actors_
+  * MAKEUP/HAIR TESTS - _Director, Makeup Artist, Hair Stylist_
   * REHEARSALS - _Director, Actors_
-  * CALL SHEETS - 1st AD, 2nd AD, Production Coordinator
-* FOR PRODUCTION
+  * CALL SHEETS - _1st AD, 2nd AD, Production Coordinator_
+* PRODUCTION PREP
   * CREW MEETINGS - _Producer, Director, UPM, DP, 1st AD_
   * EQUIPMENT RENTAL - DP (camera), Sound Mixer (audio),
     Gaffer (lighting), Key Grip (grip)
-  * CATERING ARRANGEMENTS - Production Coordinator, UPM
-  * TECH/CAMERA TESTS - DP, Camera Department
-  * TRANSPORTATION LOGISTICS - Transportation Coordinator, UPM
+  * CATERING ARRANGEMENTS - _Production Coordinator, Unit Production Manager (UPM)_
+  * TECH/CAMERA TESTS - _Camera Department, Unit Production Manager (UPM)_
+  * TRANSPORTATION LOGISTICS - _Transportation Coordinator,
+    Unit Production Manager (UPM)_
 
 ### PRODUCTION
 
 * ADMINISTRATIVE
-  * DEAL MEMOS/CONTRACTS - Producer, Production Coordinator (PC)
-  * DAILY COST REPORTS - Line Producer, Production Accountant
-  * PETTY CASH MANAGEMENT - Production Accountant, PC
-  * CREW/CAST TIMECARDS - 2nd AD, PC, Department Heads
+  * DEAL MEMOS/CONTRACTS - _Producer, Production Supervisor_
+  * DAILY COST REPORTS - _Line Producer, Accountant_
+  * PETTY CASH MANAGEMENT - _Accountant, 2nd AD_
+  * CREW/CAST TIMECARDS - _2nd AD, Department Heads_
 * SET MANAGEMENT
-  * CALL SHEETS/REPORTS - 2nd AD, Production Coordinator (PC)
-  * DAILY SCHEDULES - 1st AD, UPM, PC
-  * PRODUCTION REPORTS - Script Supervisor, 1st AD, UPM
-  * SET OPERATIONS - 1st AD, UPM
-  * SAFETY MONITORING - 1st AD, UPM, Safety Officer
-  * CREW COORDINATION - 1st AD, Department Heads
+  * CALL SHEETS/REPORTS - _2nd AD_
+  * DAILY SCHEDULES - _1st AD, Unit Production Manager (UPM)_
+  * PRODUCTION REPORTS - _Script Supervisor, 1st AD, Unit Production Manager (UPM)_
+  * SET OPERATIONS - _1st AD, Unit Production Manager (UPM)_
+  * SAFETY MONITORING - _1st AD, Safety Officer, Production Supervisor,
+    Department Heads_
+  * CREW COORDINATION - _1st AD, Department Heads_
 * CREATIVE EXECUTION
-  * DIRECTING TALENT - Director
-  * CAMERA OPERATIONS - Director of Photography, Camera Crew
-  * LIGHTING SETUP - Gaffer, Lighting Crew
-  * SOUND RECORDING - Sound Mixer, Boom Operator
-  * SCRIPT CONTINUITY - Script Supervisor
-  * ART DEPARTMENT EXECUTION - Production Designer, Art Director
-  * COSTUME MANAGEMENT - Costume Designer, Wardrobe Department
-  * MAKEUP/HAIR EXECUTION - Makeup Artist, Hair Stylist
-  * PROPS MANAGEMENT - Property Master
+  * DIRECTING TALENT - _Director_
+  * CAMERA OPERATIONS - _Director of Photography, Camera Crew_
+  * LIGHTING SETUP - _Gaffer, Lighting Crew_
+  * SOUND RECORDING - _Sound Mixer, Boom Operator_
+  * SCRIPT CONTINUITY - _Script Supervisor_
+  * ART DEPARTMENT EXECUTION - _Production Designer, Art Director_
+  * PROPS MANAGEMENT - _Property Master_
+  * COSTUME MANAGEMENT - _Costume Designer, Wardrobe Department_
+  * MAKEUP/HAIR EXECUTION - _Makeup Artist, Hair Stylist_
 * TECHNICAL OPERATIONS
-  * DATA MANAGEMENT - DIT (Digital Imaging Technician)
-  * DAILIES REVIEW - Director, DP, Producer
-  * EQUIPMENT MAINTENANCE - Department Heads
-  * TRANSPORTATION COORDINATION - Transportation Coordinator
-  * CATERING/CRAFT SERVICES - Catering Company, Craft Service Person
+  * DATA MANAGEMENT - _DIT (Digital Imaging Technician)_
+  * DAILIES REVIEW - _Producer, Director, Director of Photography (DP), Editor_
+  * EQUIPMENT MAINTENANCE - _Department Heads_
+  * TRANSPORTATION COORDINATION - _Transportation Coordinator_
+  * CATERING/CRAFT SERVICES - _Catering Company, Craft Services_
 
 ### POST-PRODUCTION
 
 * EDITING STAGES
-  * Dailies - Editor
-  * 1st CUT - Editor
-  * nth CUT - Director, Editor
-  * DIRECTOR'S CUT - Director, Editor
-  * SCREENINGS - Director, Producer, etc...
-  * **PICTURE LOCK** - Director, Editor, Producer
+  * DAILIES - _Editor_
+  * FIRST CUT (EDITORS CUT) - _Editor_
+  * nTH CUT - _Director, Editor_
+  * DIRECTOR'S CUT - _Director, Editor_
+  * SCREENINGS - _Director, Producer, etc._
+  * **PICTURE LOCK** - _Director, Editor, Producer_
+* TURNOVER MEETINGS
+  * COLOR HOUSE - _Producer, Post Production Manager, Editor_
+  * VFX HOUSE - _Producer, VFX House Manager, Editor_
+  * SOUND DESIGN HOUSE - _Producer, Sound Design House Manager, Editor_
+  * COMPOSER - _Producer, Composer, Editor_
+* SPOTTING SESSIONS
+  * COLOR SPOTTING SESSION - _Post Producer Supervisor, Director,
+    Editor, Sound Designer, Colorist_
+  * VFX SPOTTING SESSIONS - _Post Producer Supervisor, Director,
+    VFX Supervisor, VFX House_
+  * SOUND DESIGN SPOTTING SESSION - _Post Producer Supervisor, Director,
+    Sound Designer, Re-Recording Mixer_
+  * SCORE SPOTTING SESSIONS - _Post Producer Supervisor, Director, Composer_
 * VISUAL
-    ([visual-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet))
+  * [visual-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
   * VFX (VISUAL EFFECTS)
-    * CGI - VFX Supervisor, VFX House
+    * CGI/ETC - VFX Supervisor, VFX House_
+    * VFX REVIEWS - _VFX Supervisor, Director, Editor, VFX House_
+    * VFX TURNOVER - _VFX House_
   * TITLES & CREDITS - Title Designer, VFX House
-    * TITLES - VFX House
-    * GRAPHICS - Graphic Designer, VFX House
+    * TITLES - _VFX House
+    * GRAPHICS - _Graphic Designer, VFX House_
   * COLOR
-    * COLOR GRADING - Colorist, Color House
-  * INTEGRATION
-    * VFX INTEGRATION - VFX Supervisor, VFX House
-    * **PICTURE MASTER** - Post-Production House
+    * COLOR GRADING - _Colorist, Color House_
+    * VFX INTEGRATION - _VFX Supervisor, VFX House_
+  * **PICTURE MASTER** - _Post-Production House_
 * SOUND DESIGN
-   ([sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet))
+  * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
   * DIALOG
-    * DIALOGUE EDITING - Dialogue Editor
-    * ADR (ADDITIONAL DIALOGUE RECORDING) - ADR Supervisor, Sound Editor, Actors
+    * DIALOGUE EDITING - _Dialogue Editor_
+    * ADR (ADDITIONAL DIALOGUE RECORDING) - _ADR Supervisor, Sound Editor, Actors_
   * MUSIC
-    * MUSIC COMPOSITION/SCORE - Composer, Music Editor
-    * LICENSED MUSIC - Music Supervisor, Music Editor
+    * MUSIC COMPOSITION/SCORE - _Composer, Music Editor_
+    * LICENSED MUSIC - _Music Supervisor, Music Editor_
   * EFFECTS
-    * FOLEY RECORDING - Foley Artist, Foley Mixer
-    * WALLA (AMBIENCE) - Sound Designer, Sound Mixer
+    * FOLEY RECORDING - _Foley Artist, Foley Mixer_
+    * WALLA (AMBIENCE) - _Sound Designer, Sound Mixer_
   * SOUND DESIGN MIX
-    * DUBBING/RE-RECORDING - Re-recording Mixer
-    * **PRINTMASTER** - Re-recording Mixer, Director, Producer
-* PRINTMASTER AND PICTURE MASTER
-  * **FINAL LAYBACK** - Post-production House
+    * DUBBING/RE-RECORDING - _Re-recording Mixer_
+  * **PRINTMASTER** - _Re-recording Mixer, Director, Producer_
+* PRINTMASTER & PICTURE MASTER
+  * **FINAL LAYBACK** - _Post-production House_
 * MASTERING & DELIVERY
-  * DELIVERABLES CREATION - Post-Production House
-  * DCP (DIGITAL CINEMA PACKAGE) - Post-Production House (for theatrical release)
-  * STREAMING/BROADCAST MASTERS - Post-Production House
-  * CLOSED CAPTIONING/SUBTITLES - Subtitling Service
+  * DELIVERABLES CREATION - _Post-Production House_
+  * DCP (DIGITAL CINEMA PACKAGE) - _Post-Production House_ (for theatrical release)
+  * STREAMING/BROADCAST MASTERS - _Post-Production House_
+  * CLOSED CAPTIONING/SUBTITLES - _Subtitling Service_
