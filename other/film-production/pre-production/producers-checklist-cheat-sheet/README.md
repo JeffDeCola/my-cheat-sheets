@@ -35,13 +35,16 @@ Documents and References
 
 * **LEGAL**
   * Engagement Letter with Legal
+  * Business Entity Formation (LLC)
 * **INSURANCE**
   * Liability/Production Insurance
+  * Equipment insurance
   * E&O Insurance
   * Workers' Compensation Insurance
 * **SCRIPT**
   * Literary Purchase Agreement
   * Copyright Registration
+  * Chain of Title
   * Title Opinion / Title Report
   * Script Clearance Report
 * **MUSIC**
@@ -60,6 +63,7 @@ Documents and References
   * Deal Memos/Crew Agreements
   * Actor Contracts (SAG + Rider)
   * W-4 & I-9
+  * Non-Disclosure Agreements (NDA)
 * **GUILDS**
   * SAG Contract
 * **ANIMALS**
@@ -90,6 +94,8 @@ Documents and References
     _Promotes, builds audience_
   * **Distribution** -
     _Finds distribution, negotiates deals_
+  * **Film Festival Coordinator** -
+    _Finds film festivals_
 
 * **LEGAL/MONEY TEAM**
   * **Legal Counsel** -
@@ -124,6 +130,8 @@ Documents and References
     _Reports to UPM, day to day operations, call sheets, paperwork_
   * **Production Designer** -
     _Designs sets, props, costumes
+  * **Script Supervisor** -
+    _Continuity, script notes_
   * **Composer** -
     _Creates score
   * **Location Manager** -
@@ -153,6 +161,7 @@ Documents and References
   * FINANCING - _Executive Producer, Producer_
   * BUDGET - _Producer, Line Producer_
   * LEGAL CONTRACTS - _Producer, Legal Counsel_
+  * BUSINESS ENTITY FORMATION- _Producer, Legal Counsel_
   * LITERARY PURCHASE AGREEMENT - _Producer, Legal Counsel_
   * HIRE MAIN TEAM - _Producer, Executive Producer_
 
