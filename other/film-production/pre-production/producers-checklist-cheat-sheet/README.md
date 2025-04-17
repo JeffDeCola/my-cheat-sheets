@@ -148,8 +148,7 @@ Documents and References
 
 ### EARLY STAGES
 
-* VERY EARLY STAGES
-
+* **SET UP**
   * FINANCING - _Executive Producer, Producer_
   * BUDGET - _Producer, Line Producer_
   * LEGAL CONTRACTS - _Producer, Legal Counsel_
@@ -158,8 +157,7 @@ Documents and References
 
 ### PRE-PRODUCTION
 
-* MANAGEMENT
-
+* **MANAGEMENT**
   * PRODUCTION OFFICE - _Producer_
   * PRODUCTION SCHEDULE - _Producer, Production Supervisor,
     Unit Production Manager (UPM)_
@@ -169,7 +167,7 @@ Documents and References
   * PERMITS & CLEARANCES - _Location Manager, Unit Production Manager (UPM)_
   * PAYROLL SETUP - _Line Producer, Accountant, Payroll Company_
   * SAFETY PLANNING - _Unit Production Manager (UPM), 1st AD_
-* ARTISTIC
+* **ARTISTIC**
   * SCREENPLAY - _Writer(s)_
   * STORYBOARD - _Storyboard Artist, Director, 1st AD, Director of Photography (DP)_
   * SHOT LIST - _Director, Director of Photography (DP), 1st AD_
@@ -186,7 +184,7 @@ Documents and References
   * MAKEUP/HAIR TESTS - _Director, Makeup Artist, Hair Stylist_
   * REHEARSALS - _Director, Actors_
   * CALL SHEETS - _1st AD, 2nd AD, Production Coordinator_
-* PRODUCTION PREP
+* **PRODUCTION PREP**
   * CREW MEETINGS - _Producer, Director, UPM, DP, 1st AD_
   * EQUIPMENT RENTAL - DP (camera), Sound Mixer (audio),
     Gaffer (lighting), Key Grip (grip)
@@ -197,12 +195,12 @@ Documents and References
 
 ### PRODUCTION
 
-* ADMINISTRATIVE
+* **ADMINISTRATIVE**
   * DEAL MEMOS/CONTRACTS - _Producer, Production Supervisor_
   * DAILY COST REPORTS - _Line Producer, Accountant_
   * PETTY CASH MANAGEMENT - _Accountant, 2nd AD_
   * CREW/CAST TIMECARDS - _2nd AD, Department Heads_
-* SET MANAGEMENT
+* **SET MANAGEMENT**
   * CALL SHEETS/REPORTS - _2nd AD_
   * DAILY SCHEDULES - _1st AD, Unit Production Manager (UPM)_
   * PRODUCTION REPORTS - _Script Supervisor, 1st AD, Unit Production Manager (UPM)_
@@ -210,7 +208,7 @@ Documents and References
   * SAFETY MONITORING - _1st AD, Safety Officer, Production Supervisor,
     Department Heads_
   * CREW COORDINATION - _1st AD, Department Heads_
-* CREATIVE EXECUTION
+* **CREATIVE EXECUTION**
   * DIRECTING TALENT - _Director_
   * CAMERA OPERATIONS - _Director of Photography, Camera Crew_
   * LIGHTING SETUP - _Gaffer, Lighting Crew_
@@ -220,7 +218,7 @@ Documents and References
   * PROPS MANAGEMENT - _Property Master_
   * COSTUME MANAGEMENT - _Costume Designer, Wardrobe Department_
   * MAKEUP/HAIR EXECUTION - _Makeup Artist, Hair Stylist_
-* TECHNICAL OPERATIONS
+* **TECHNICAL OPERATIONS**
   * DATA MANAGEMENT - _DIT (Digital Imaging Technician)_
   * DAILIES REVIEW - _Producer, Director, Director of Photography (DP), Editor_
   * EQUIPMENT MAINTENANCE - _Department Heads_
@@ -229,19 +227,19 @@ Documents and References
 
 ### POST-PRODUCTION
 
-* EDITING STAGES
+* **EDITING STAGES**
   * DAILIES - _Editor_
   * FIRST CUT (EDITORS CUT) - _Editor_
   * nTH CUT - _Director, Editor_
   * DIRECTOR'S CUT - _Director, Editor_
   * SCREENINGS - _Director, Producer, etc._
-  * **PICTURE LOCK** - _Director, Editor, Producer_
-* TURNOVER MEETINGS
+  * **-> PICTURE LOCK <-** - _Director, Editor, Producer_
+* **TURNOVER MEETINGS**
   * COLOR HOUSE - _Producer, Post Production Manager, Editor_
   * VFX HOUSE - _Producer, VFX House Manager, Editor_
   * SOUND DESIGN HOUSE - _Producer, Sound Design House Manager, Editor_
   * COMPOSER - _Producer, Composer, Editor_
-* SPOTTING SESSIONS
+* **SPOTTING SESSIONS**
   * COLOR SPOTTING SESSION - _Post Producer Supervisor, Director,
     Editor, Sound Designer, Colorist_
   * VFX SPOTTING SESSIONS - _Post Producer Supervisor, Director,
@@ -249,7 +247,7 @@ Documents and References
   * SOUND DESIGN SPOTTING SESSION - _Post Producer Supervisor, Director,
     Sound Designer, Re-Recording Mixer_
   * SCORE SPOTTING SESSIONS - _Post Producer Supervisor, Director, Composer_
-* VISUAL
+* **VISUAL**
   * [visual-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/visual-team-elements-and-workflow-cheat-sheet)
   * VFX (VISUAL EFFECTS)
     * CGI/ETC - VFX Supervisor, VFX House_
@@ -261,24 +259,24 @@ Documents and References
   * COLOR
     * COLOR GRADING - _Colorist, Color House_
     * VFX INTEGRATION - _VFX Supervisor, VFX House_
-  * **PICTURE MASTER** - _Post-Production House_
-* SOUND DESIGN
+  * **-> PICTURE MASTER <-** - _Post-Production House_
+* **SOUND DESIGN**
   * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
-  * DIALOG
+  * DIALOG*
     * DIALOGUE EDITING - _Dialogue Editor_
     * ADR (ADDITIONAL DIALOGUE RECORDING) - _ADR Supervisor, Sound Editor, Actors_
-  * MUSIC
+  * MUSIC*
     * MUSIC COMPOSITION/SCORE - _Composer, Music Editor_
     * LICENSED MUSIC - _Music Supervisor, Music Editor_
-  * EFFECTS
+  * EFFECTS*
     * FOLEY RECORDING - _Foley Artist, Foley Mixer_
     * WALLA (AMBIENCE) - _Sound Designer, Sound Mixer_
-  * SOUND DESIGN MIX
+  * **SOUND DESIGN MIX**
     * DUBBING/RE-RECORDING - _Re-recording Mixer_
-  * **PRINTMASTER** - _Re-recording Mixer, Director, Producer_
-* PRINTMASTER & PICTURE MASTER
-  * **FINAL LAYBACK** - _Post-production House_
-* MASTERING & DELIVERY
+  * **-> PRINTMASTER <-** - _Re-recording Mixer, Director, Producer_
+* **PRINTMASTER & PICTURE MASTER**
+  * **-> FINAL LAYBACK <-** - _Post-production House_
+* **MASTERING & DELIVERY**
   * DELIVERABLES CREATION - _Post-Production House_
   * DCP (DIGITAL CINEMA PACKAGE) - _Post-Production House_ (for theatrical release)
   * STREAMING/BROADCAST MASTERS - _Post-Production House_
