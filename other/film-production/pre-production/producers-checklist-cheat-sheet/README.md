@@ -10,9 +10,10 @@ sure that team is completing their tasks._
 Table of Contents
 
 * [INFRASTRUCTURE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#infrastructure)
-* [MAIN LEGAL DOCUMENTS/FORMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#main-legal-documentsforms)
+* [LEGAL DOCUMENTS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#legal-documents)
 * [MAIN TEAM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#main-team)
 * [NOTABLE TASKS AND RESPONSIBILITIES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#notable-tasks-and-responsibilities)
+  * [EARLY STAGES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#early-stages)
   * [PRE-PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#pre-production)
   * [PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#production)
   * [POST-PRODUCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/pre-production/producers-checklist-cheat-sheet#post-production)
@@ -30,7 +31,7 @@ Documents and References
 * Setup a Bank Account with Checking and Credit Card
 * Get/Rent a Production House
 
-## MAIN LEGAL DOCUMENTS/FORMS
+## LEGAL DOCUMENTS
 
 * LEGAL
   * Engagement Letter with Legal
@@ -66,7 +67,7 @@ Documents and References
 
 ## MAIN TEAM
 
-* MAIN PRODUCTION TEAM
+* **MAIN PRODUCTION TEAM**
   * **Executive Producer** -
     _Money_
   * **Producer** -
@@ -82,7 +83,7 @@ Documents and References
   * **Unit Production Manager (UPM)** -
     _Sets up/Runs Production, gets equipment, hires crew_
 
-* MARKETING/DISTRIBUTION TEAM
+* **MARKETING/DISTRIBUTION TEAM**
   * **Publicist** -
     _Promotes movie, gets media coverage_
   * **Social Media** -
@@ -90,7 +91,7 @@ Documents and References
   * **Distribution** -
     _Finds distribution, negotiates deals_
 
-* LEGAL/MONEY TEAM
+* **LEGAL/MONEY TEAM**
   * **Legal Counsel** -
     _Oversees legal paperwork, counsel_
   * **Accountant(s)** -
@@ -106,7 +107,7 @@ Documents and References
   * **Clearance House**
     _For Production Design_
 
-* MAIN ARTISTIC TEAM
+* **MAIN ARTISTIC TEAM**
   * **Director** -
     _Artistic Vision_
   * **Editor** -
@@ -134,7 +135,7 @@ Documents and References
   * **Lead Makeup Artist** -
     _Designs makeup_
 
-* HOUSES
+* **HOUSES**
   * **Post Production House** -
     _Post Production, colorist_
   * **VFX House** -
@@ -262,16 +263,16 @@ Documents and References
   * **-> PICTURE MASTER <-** - _Post-Production House_
 * **SOUND DESIGN**
   * [sound-design-team-elements-and-workflow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/film-production/post-production/sound-design-team-elements-and-workflow-cheat-sheet)
-  * DIALOG*
+  * DIALOG
     * DIALOGUE EDITING - _Dialogue Editor_
     * ADR (ADDITIONAL DIALOGUE RECORDING) - _ADR Supervisor, Sound Editor, Actors_
-  * MUSIC*
+  * MUSIC
     * MUSIC COMPOSITION/SCORE - _Composer, Music Editor_
     * LICENSED MUSIC - _Music Supervisor, Music Editor_
-  * EFFECTS*
+  * EFFECTS
     * FOLEY RECORDING - _Foley Artist, Foley Mixer_
     * WALLA (AMBIENCE) - _Sound Designer, Sound Mixer_
-  * **SOUND DESIGN MIX**
+  * SOUND DESIGN MIX
     * DUBBING/RE-RECORDING - _Re-recording Mixer_
   * **-> PRINTMASTER <-** - _Re-recording Mixer, Director, Producer_
 * **PRINTMASTER & PICTURE MASTER**
