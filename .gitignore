@@ -9,6 +9,10 @@ id_rsa*
 # PGP KEYS
 *.pgp
 
+# SFTP EXTENSION
+.vscode/
+sftp.json
+
 # macOS
 .DS_Store
 
