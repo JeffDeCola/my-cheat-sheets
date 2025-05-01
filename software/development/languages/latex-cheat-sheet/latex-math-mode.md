@@ -55,7 +55,7 @@ $$
 E=mc^2
 $$
 
-### Block Mode using begin{equation} for equation numbering
+### Block Mode equation numbering
 
 ```text
 \begin{equation}
@@ -136,6 +136,16 @@ E=mc^2
 
 $$
 E=mc^2
+$$
+
+**Einsteins famous equation with box**
+
+```text
+\boxed{E=mc^2}
+```
+
+$$
+\boxed{E=mc^2}
 $$
 
 **Pythagorean Theorem**
