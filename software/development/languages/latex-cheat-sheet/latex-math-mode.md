@@ -55,7 +55,7 @@ $$
 E=mc^2
 $$
 
-### Block Mode using begin{equation}
+### Block Mode using begin{equation} for equation numbering
 
 ```text
 \begin{equation}
@@ -67,6 +67,18 @@ $$
 \begin{equation}
    E=mc^2
 \end{equation}
+$$
+
+If begin{equation} doesn't work on github, you could do this,
+
+```text
+$$
+E=mc^2 \qquad (1)
+$$
+```
+
+$$
+E=mc^2 \qquad (1)
 $$
 
 ## FORMATTING MULTIPLE EQUATIONS
@@ -100,7 +112,7 @@ $$
 $$
 \begin{gathered}
     a=b+c \\
-    d+e=f
+    d+e=f+s
 \end{gathered}
 $$
 ```
@@ -108,7 +120,7 @@ $$
 $$
 \begin{gathered}
     a=b+c \\
-    d+e=f
+    d+e=f+s
 \end{gathered}
 $$
 
