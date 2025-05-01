@@ -57,6 +57,8 @@ $$
 
 ### Block Mode equation numbering
 
+This may not work on github,
+
 ```text
 \begin{equation}
    E=mc^2
@@ -138,7 +140,7 @@ $$
 E=mc^2
 $$
 
-**Einsteins famous equation with box**
+**Einsteins famous equation with box (Does not work on github)**
 
 ```text
 \boxed{E=mc^2}
@@ -146,6 +148,16 @@ $$
 
 $$
 \boxed{E=mc^2}
+$$
+
+**Einsteins famous equation with color (Does not work on github)**
+
+```text
+\color{green}{E=mc^2}
+```
+
+$$
+\color{green}{E=mc^2}
 $$
 
 **Pythagorean Theorem**
