@@ -150,14 +150,24 @@ $$
 \boxed{E=mc^2}
 $$
 
-**Einsteins famous equation with color (Does not work on github)**
+**Einsteins famous equation with color**
 
 ```text
-\color{green}{E=mc^2}
+\color{blue}{E=mc^2}
 ```
 
 $$
-\color{green}{E=mc^2}
+\color{blue}{E=mc^2}
+$$
+
+**Einsteins famous equation with bold color**
+
+```text
+\color{blue}{\mathbf{E=mc^2}}
+```
+
+$$
+\color{blue}{\mathbf{E=mc^2}}
 $$
 
 **Pythagorean Theorem**
