@@ -7,9 +7,9 @@ _Setting up an ARK: Survival Ascended (ASA) server on a linux box using SteamCMD
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random/random-things/setting-up-an-arc-survival-ascended-server-cheat-sheet#overview)
-* [INSTALLATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random/random-things/setting-up-an-arc-survival-ascended-server-cheat-sheet#installation)
-* [MANAGEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random/random-things/setting-up-an-arc-survival-ascended-server-cheat-sheet#management)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet#overview)
+* [INSTALLATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet#management)
+* [MANAGEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet#management)
 
 Documentation and Reference
 
