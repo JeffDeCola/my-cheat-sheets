@@ -7,7 +7,7 @@ _Installing Ubuntu on a PC._
 
 Table of Contents
 
-* [??]()
+* tbd
 
 ## INSTALL USING A BOOTABLE THUMB DRIVE
 
