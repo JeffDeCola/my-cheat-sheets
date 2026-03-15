@@ -31,3 +31,9 @@ Hosting a Dedicated Server using SteamCMD.
 
 Using ARK Server Manager (ASM) tool to handle updates and
 settings via a visual interface.
+
+## MANAGED HOSTING
+
+Using NITRADO to host an ARK: Survival Ascended server.
+
+
