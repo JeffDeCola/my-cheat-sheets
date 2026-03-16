@@ -111,7 +111,7 @@ Documentation and Reference
 * OPERATING SYSTEMS
 
   * OVERVIEW
-    * [common-linux-distributions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/overview/common-commands-cheat-sheet)
+    * [common-linux-distributions](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/overview/common-linux-distributions-cheat-sheet)
     * [os-stack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/overview/os-stack-cheat-sheet)
     * [unix-family-tree](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/operating-systems/overview/unix-family-tree-cheat-sheet)
 
