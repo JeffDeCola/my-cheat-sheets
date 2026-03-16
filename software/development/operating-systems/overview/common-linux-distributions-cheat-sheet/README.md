@@ -1,4 +1,4 @@
-# COMMON DISTRIBUTIONS CHEAT SHEET
+# COMMON LINUX-DISTRIBUTIONS CHEAT SHEET
 
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
@@ -14,10 +14,10 @@ Table of Contents
 
 ## OVERVIEW
 
-A distro is an oPerating system consisting of a few components.
+A distro is an operating system consisting of a few components.
 
 * **COMPONENTS**
-  * Linux Kernal
+  * Linux Kernel
   * Package Management System
   * Desktop
 
@@ -41,18 +41,21 @@ Latest few years,
 | 9        | Stretch      |  2017 | 2022              | 2020              |
 | 10       | Buster       |  2019 | 2024              | 2022              |
 | 11       | Bullseye     |  2021 | 2026              | 2024              |
-| 12       | Bookworm     |  2023 | TBD               | TBD               |
-| 13       | Trixie       |  TBD  | TBD               | TBD               |
+| 12       | Bookworm     |  2023 | 2026              | 2028              |
+| 13       | Trixie       |  2025 | 2028              | 2030              |
+| 14       | Forky        |  TBD  | TBD               | TBD               |
 
 ## UBUNTU VERSIONS
 
 Ubuntu is released every six months, with long-term support (LTS)
 releases every two years. General support is 5 years and security support is 10.
 
-| VERSIONS       | CODE NAME    | YEAR  | GENERAL SUPPORT   | SECURITY SUPPORT  |
-|:---------------|-------------:|------:|------------------:|------------------:|
-| 14.04 LTS      | Trusty       |  2014 | 2019              | 2024              |
-| 16.04 LTS      | Xenial       |  2016 | 2021              | 2026              |
-| 18.04 LTS      | Bionic       |  2018 | 2023              | 2028              |
-| 20.04 LTS      | Focal        |  2010 | 2025              | 2030              |
-| 22.04 LTS      | Jammy        |  2012 | 2027              | 2032              |
+| VERSIONS       | CODE NAME    | YEAR  | GENERAL SUPPORT   | SECURITY SUPPORT |
+|:---------------|-------------:|------:|------------------:|-----------------:|
+| 14.04 LTS      | Trusty       |  2014 | 2019              | 2024             |
+| 16.04 LTS      | Xenial       |  2016 | 2021              | 2026             |
+| 18.04 LTS      | Bionic       |  2018 | 2023              | 2028             |
+| 20.04 LTS      | Focal        |  2020 | 2025              | 2030             |
+| 22.04 LTS      | Jammy        |  2022 | 2027              | 2032             |
+| 24.04 LTS      | Noble        |  2024 | 2029              | 2036             |
+| 26.04 LTS      | TBD          |  2026 | 2031              | 2038             |

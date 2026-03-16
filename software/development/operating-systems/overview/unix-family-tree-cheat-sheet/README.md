@@ -7,4 +7,4 @@ _The history of the modern OS._
 
 ## OVERVIEW
 
-![IMAGE - unix-family-tree - IMAGE](../../../../docs/pics/software/development/unix-family-tree.svg)
+![IMAGE - unix-family-tree - IMAGE](../../../../../docs/pics/software/development/unix-family-tree.svg)
