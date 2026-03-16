@@ -7,4 +7,4 @@ _The anatomy of an OS stack._
 
 ## THE STACK
 
-![IMAGE - os-stack - IMAGE](../../../../docs/pics/software/development/os-stack.svg)
+![IMAGE - os-stack - IMAGE](../../../../../docs/pics/software/development/os-stack.svg)
