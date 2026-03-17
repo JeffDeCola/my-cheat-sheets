@@ -1,0 +1,129 @@
+# PROXMOX - INSTALL, CONFIGURE AND CREATE VM
+
+[![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
+[![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
+
+_How to install proxmox on a dell poweredge rack server and create a VM._
+
+Table of Contents
+
+* [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#make-proxmox-usb)
+* [BOOT FROM USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#boot-from-usb)
+* [INSTALL PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#install-proxmox)
+* [UPDATE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#update-proxmox)
+* [PARTITION HDD VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#partition-hdd-virtual-disk)
+* [ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#add-a-filesystem-and-mount-it-sas-data)
+* [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
+* [CREATE A VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#create-a-vm)
+  
+## MAKE PROXMOX USB
+
+* Download Proxmox VE ISO from
+  [proxmox.com/en/downloads](http://proxmox.com/en/downloads)
+* Flash it to a USB drive using Rufus (Windows)
+* Use an 8GB+ USB stick
+
+## BOOT FROM USB
+
+* Plug USB into the R730
+* Get the virtual console and keyboard ready
+* Reboot the server (cold)
+* Press F11 at the Dell POST screen to get the boot menu (use virtual keyboard)
+* Bios Boot Menu
+  * One-Shot BIOS Boot Menu
+  * Select your USB drive to boot
+
+## INSTALL PROXMOX
+
+* Install Proxmox VE (Graphical)
+* Target disk: SSD virtual disk
+* Set your static IP: 192.168.20.135
+* Set hostname "r730.proxmox"
+* Install - takes about 5–10 minutes
+
+## UPDATE PROXMOX
+
+Access proxmox via your ip (192.168.20.135:8006) and chose r730 -> Shell
+
+```bash
+apt update && apt dist-upgrade -y
+```
+
+If you hit subscription errors, disable the enterprise repo
+and add the no-subscription repo.
+
+## PARTITION HDD VIRTUAL DISK
+
+Run `fdisk -l` to see your disks
+
+```bash
+fdisk -l
+```
+
+You'll see two disks:
+
+* `/dev/sda` = SSD RAID 10 (744GB) — Proxmox OS lives here
+  * `/dev/sda1` — 1007K BIOS boot
+  * `/dev/sda2` — 1G EFI System
+  * `/dev/sda3` — 743G Linux LVM
+* `/dev/sdb` = SAS RAID 5 (3.27TB) — no partitions yet
+
+Create a single partition using the full drive
+
+```bash
+apt install parted -y
+parted /dev/sdb mklabel gpt
+parted /dev/sdb mkpart primary 0% 100%
+```
+
+Run `fdisk -l` again to confirm `/dev/sdb1` now appears.
+
+## ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)
+
+We put XFS directly on `/dev/sdb1` — one big directory that holds everything
+(VM disks, backups, ISOs). No LVM needed.
+
+Format the partition with XFS
+
+```bash
+mkfs.xfs /dev/sdb1
+```
+
+Mount it — tell Linux this partition lives at `/mnt/sas-data`
+
+```bash
+mkdir -p /mnt/sas-data
+mount /dev/sdb1 /mnt/sas-data
+```
+
+Make it auto-mount on every reboot
+
+```bash
+echo '/dev/sdb1 /mnt/sas-data xfs defaults 0 2' >> /etc/fstab
+```
+
+Verify it mounted correctly and check the size
+
+```bash
+df -h
+```
+
+You should see `/dev/sdb1` mounted at `/mnt/sas-data` with ~3.3TB available.
+
+## ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)
+
+Tell Proxmox to use this directory for all bulk storage
+
+```text
+Datacenter → Storage → Add → Directory
+ID:        SAS-Data
+Directory: /mnt/sas-data
+Content:   Disk Image, Backup, ISO Image, Snippets
+```
+
+## CREATE A VM - UBUNTU
+
+```bash
+wget -P /mnt/sas-data/template/iso/ \
+  https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso
+```
