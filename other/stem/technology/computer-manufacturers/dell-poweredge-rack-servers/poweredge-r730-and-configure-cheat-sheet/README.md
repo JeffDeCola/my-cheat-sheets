@@ -7,8 +7,8 @@ _A dell rack server._
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#overview)
-* [CONFIGURE RAID DRIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#configure-raid-drives)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#overview)
+* [CONFIGURE RAID DRIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#configure-raid-drives)
 
 ## OVERVIEW
 

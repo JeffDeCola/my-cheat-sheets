@@ -7,15 +7,15 @@ _How to install proxmox on a dell poweredge rack server and create a VM._
 
 Table of Contents
 
-* [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#make-proxmox-usb)
-* [BOOT FROM USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#boot-from-usb)
-* [INSTALL PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-promox-cheat-sheet#install-proxmox)
-* [UPDATE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#update-proxmox)
-* [PARTITION HDD VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#partition-hdd-virtual-disk)
-* [ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#add-a-filesystem-and-mount-it-sas-data)
-* [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
-* [CREATE A VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet#create-a-vm)
-  
+* [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#make-proxmox-usb)
+* [BOOT FROM USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#boot-from-usb)
+* [INSTALL PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#install-proxmox)
+* [UPDATE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#update-proxmox)
+* [PARTITION HDD VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#partition-hdd-virtual-disk)
+* [ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-a-filesystem-and-mount-it-sas-data)
+* [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
+* [CREATE A VM - UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-vm---ubuntu)
+
 ## MAKE PROXMOX USB
 
 * Download Proxmox VE ISO from
