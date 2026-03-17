@@ -436,8 +436,8 @@ _Other cheat sheets I'm interested in._
 
     * DELL POWEREDGE RACK SERVERS
 
-      * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet)
-      * [install and configure proxmox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet)
+      * [poweredge r730 and configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet)
+      * [proxmox - install, configure and create vm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet)
 
     * PC
 
