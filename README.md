@@ -434,9 +434,10 @@ _Other cheat sheets I'm interested in._
 
       * [macbook pro models](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/apple/macbook-pro-models-cheat-sheet)
 
-    * DELL
+    * DELL POWEREDGE RACK SERVERS
 
-      * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell/poweredge-r730-cheat-sheet)
+      * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet)
+      * [install and configure proxmox](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/install-and-configure-proxmox-cheat-sheet)
 
     * PC
 
