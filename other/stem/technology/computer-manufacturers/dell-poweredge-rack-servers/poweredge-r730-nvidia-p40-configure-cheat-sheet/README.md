@@ -7,14 +7,14 @@ _Configure a dell rack server._
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#overview)
-* [CONFIGURE RAID VIRTUAL DRIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#configure-raid-virtual-drives)
-* [CONFIGURE NVIDIA TESLA P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#configure-nvidia-tesla-p40)
-  * [IOMMU SETUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#iommu-setup)
-  * [FIX FAN NOISE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#rix-fan-noise)
-  * [CONFIGURE PROXMOX TO USE CUDA CORES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#configure-proxmox-to-use-cuda-cores)
-  * [CREATE VM - ADD PASSTHROUGH FOR THIS VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#configure-vm---add-passthrough-for-this-vm)
-  * [ADD NVIDIA DRIVERS TO VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-and-configure-cheat-sheet#add-nvidia-drivers-to-vm)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#overview)
+* [CONFIGURE RAID VIRTUAL DRIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#configure-raid-virtual-drives)
+* [CONFIGURE NVIDIA TESLA P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#configure-nvidia-tesla-p40)
+  * [IOMMU SETUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#iommu-setup)
+  * [FIX FAN NOISE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#fix-fan-noise)
+  * [CONFIGURE PROXMOX TO USE CUDA CORES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#configure-proxmox-to-use-cuda-cores)
+  * [CREATE VM - ADD PASSTHROUGH FOR THIS VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#create-vm---add-passthrough-for-this-vm)
+  * [ADD NVIDIA DRIVERS TO VM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#add-nvidia-drivers-to-vm)
 
 ## OVERVIEW
 
