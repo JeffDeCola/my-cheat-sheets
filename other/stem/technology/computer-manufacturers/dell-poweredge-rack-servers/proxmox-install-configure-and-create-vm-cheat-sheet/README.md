@@ -5,6 +5,12 @@
 
 _How to install proxmox on a dell poweredge rack server and create a VM._
 
+tl;dr
+
+```text
+shutdown -h now
+```
+
 Table of Contents
 
 * [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#make-proxmox-usb)
@@ -41,9 +47,25 @@ Table of Contents
 * Set hostname "r730.proxmox"
 * Install - takes about 5–10 minutes
 
+As a side note, may have to run this to set hostname properly
+
+```bash
+hostnamectl set-hostname r730.proxmox
+```
+
+To check
+
+```bash
+nano /etc/hosts
+```
+
 ## UPDATE PROXMOX
 
-Access proxmox via your ip (192.168.20.135:8006) and chose r730 -> Shell
+To be able to ssh into proxmox I copied my public keys to it
+
+```bash
+ssh-copy-id root@192.168.20.135
+```
 
 ```bash
 apt update && apt dist-upgrade -y
@@ -123,7 +145,85 @@ Content:   Disk Image, Backup, ISO Image, Snippets
 
 ## CREATE A VM - UBUNTU
 
+Get the latest version, I got
+
 ```bash
 wget -P /mnt/sas-data/template/iso/ \
   https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso
 ```
+
+Head to [192.168.20.135:8006](192.168.20.135:8006)
+and click Create VM in the top right.
+
+General Tab
+
+```text
+Node: r730
+VM ID: 101
+Name: ubuntu-general
+click start at boot
+```
+
+OS tab:
+
+```text
+Storage: SAS-Data
+ISO Image: ubuntu-24.04.4-live-server-amd64.iso
+Type: Linux
+Version: 6.x - 2.6 Kernel
+```
+
+System tab:
+
+```text
+Machine: q35
+BIOS: OVMF (UEFI)
+EFI Storage: SSD-Fast
+SCSI Controller: VirtIO SCSI single
+Qemu Agent: check this
+```
+
+Disks tab:
+
+```text
+Bus/Device: SCSI
+Storage: SSD-Fast
+Disk size: 40
+Cache: Write back
+Discard: checked
+SSD emulation: checked
+```
+
+CPU tab:
+
+```text
+Sockets: 1
+Cores: 4
+Type: host
+```
+
+Memory tab:
+
+```text
+Memory: 8192 (that's 8GB)
+Ballooning: checked
+Minimum memory: 512
+```
+
+Network tab:
+
+```text
+Bridge: vmbr0
+Model: VirtIO (paravirtualized)
+Firewall: checked
+```
+
+Review and create.
+
+Now start the VM
+
+* Select VM 101 in the left panel
+* Click Start (top right)
+* Then click Console to open the display
+
+Go threw the ubuntu setup process.
