@@ -5,6 +5,31 @@
 
 _Configure a dell rack server._
 
+tl;dr
+
+```text
+iDRAC
+    racadm getsysinfo                 # Server info
+    racadm serveraction powerdown
+    racadm serveraction powerup
+    racadm serveraction powercycle
+ON PROXMOX (SEE PROXMOX CHEAT SHEET FOR MORE COMMANDS)
+    pvesm status                      # Storage
+    ipmitool sdr                      # all sensors
+    ipmitool sdr type Fan             $ Fan speed
+    ipmitool sdr type Temperature
+    lspci | grep -i nvidia            # Confirm P40 visible
+    lspci -v | grep -A20 "Tesla P40"  # Full p40 info
+    ipmitool chassis power status
+    ipmitool chassis power on
+    ipmitool chassis power off
+    ipmitool chassis power reset
+ON VM WITH P40
+    nvidia-smi                        # Full P40 overview
+    watch -n1 nvidia-smi              # live refresh every second
+    nvidia-smi dmon                   # live stats (utilization, temp, power)
+```
+
 Table of Contents
 
 * [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#overview)
@@ -293,7 +318,7 @@ sudo reboot
 
 If there are issues, you may have to get rid of secure boot.
 
-check if your p40 is alive on you vm
+Check if your p40 is alive on you vm
 
 ```bash
 nvidia-smi

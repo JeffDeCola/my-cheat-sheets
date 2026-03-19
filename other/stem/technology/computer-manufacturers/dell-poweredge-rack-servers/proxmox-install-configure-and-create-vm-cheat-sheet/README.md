@@ -8,7 +8,25 @@ _How to install proxmox on a dell poweredge rack server and create a VM._
 tl;dr
 
 ```text
-shutdown -h now
+ON PROXMOX
+    shutdown -h now                       # shutdown enter proxmox
+    qm list                               # qm is the proxmox cli for managing vms
+    qm status 102
+    qm start 102
+    qm stop 102
+    qm reboot 102
+    qm shutdown 102
+    qm terminal 102
+    pvesm status                          # All storage pools
+    pvesm list SSD-Fast                   # Contents of SSD-Fast
+    pvesm list SAS-Data                   # Contents of SAS-Data
+    df -h                                 # Disk usage
+ON VM
+    nvidia-smi                            # Full P40 overview
+    watch -n1 nvidia-smi                  # live refresh every second
+    nvidia-smi dmon                       # live stats (utilization, temp, power)
+    lspci -v | grep -A20 "Tesla P40"      # full P40 detail
+    lscpu                                 # CPU info
 ```
 
 Table of Contents
