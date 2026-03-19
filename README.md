@@ -153,12 +153,18 @@ Documentation and Reference
     * [youtube player api](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/api/youtube-player-api-cheat-sheet)
 
   * ARTIFICIAL INTELLIGENCE
-
-    * [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-      * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
-      ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks))
-      * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
-    * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ollama-cheat-sheet)
+    * AI-FUNDAMENTALS
+      * [artificial intelligence overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview.md)
+      * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks.md)
+          ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks))
+      * [math behind training mlp neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks.md)
+    * LLM-INFERENCE-STACK
+      * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/llm.md)
+      * [llm-training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/llm-training.md)
+      * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama.md)
+    * AI-APPLICATIONS
+      * [openclaw autonomous ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-applications/openclaw-autonomous-ai-agent.md)
+      * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-applications/open-webui-chatbot.md)
 
   * AUTHORIZATION
 

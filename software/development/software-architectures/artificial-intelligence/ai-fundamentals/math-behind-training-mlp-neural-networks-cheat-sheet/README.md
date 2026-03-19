@@ -60,7 +60,7 @@ so that the output is as close as possible to the target output.
 
 The steps to training a neural network are shown below,
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-training-steps IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-training-steps.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-training-steps IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-training-steps.svg)
 
 ## TL;DR
 
@@ -264,7 +264,7 @@ Since we are dealing with neural networks, let's quickly review our model of a n
 Check out a more detailed view in my cheat sheets
 [mathematical model of a neuron](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron).
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-model-neuron IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-model-neuron.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-model-neuron IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-model-neuron.svg)
 
 An artificial neuron consists of the following components,
 
@@ -286,7 +286,7 @@ An artificial neuron consists of the following components,
 As we go through this cheat sheet,
 we will use the following multi-layer perceptron (MLP) neural network as our example.
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network.svg)
 
 where
 
@@ -353,7 +353,7 @@ For our example, we will assume the weights and biases were initialized using a 
     * outputWeight {0.5 -1.0 0.0}
     * outputBias {0.5}
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step1 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step1.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step1 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step1.svg)
 
 ## STEP 2 - MIN & MAX VALUES
 
@@ -386,7 +386,7 @@ reducing the influence of unusual values of out model.
 On a side note, if there is only one line in the dataset,
 all values will be set to 0.5.
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step3 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step3.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step3 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step3.svg)
 
 #### Min-Max Scaling Function [0, 1]
 
@@ -466,7 +466,7 @@ Forward propagation is the process of moving the input data through the
 neural network to get an output. Each Hidden out output node will
 calculate a Summation Function and apply an Activation Function.
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step4 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step4.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step4 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step4.svg)
 
 #### THE SUMMATION FUNCTION
 
@@ -1085,7 +1085,7 @@ $$
 
 For our example, we're going to normalize the target output $z$ to 0.91, rather than 1.0.
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.1.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.1.svg)
 
 The error signal for the output layer using a sigmoid function would be,
 
@@ -1294,7 +1294,7 @@ $$
 
 For our example,
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.2 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.2.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.2 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.2.svg)
 
 The error signal for the hidden layer using a sigmoid function would be,
 
@@ -1383,7 +1383,7 @@ $$
 
 For our example,
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.3 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.3.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.3 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.3.svg)
 
 The new weights and biases for the output layer using a sigmoid function would be,
 
@@ -1448,7 +1448,7 @@ $$
 
 For our example,
 
-![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.4 IMAGE](../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.4.svg)
+![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.4 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.4.svg)
 
 The new weights and biases for the hidden layer using a sigmoid function would be,
 
