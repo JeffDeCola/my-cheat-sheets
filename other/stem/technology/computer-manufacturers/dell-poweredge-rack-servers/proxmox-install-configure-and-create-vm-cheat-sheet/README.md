@@ -39,6 +39,8 @@ Table of Contents
 * [ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-a-filesystem-and-mount-it-sas-data)
 * [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
 * [CREATE A VM - UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-vm---ubuntu)
+* [CREATE A LXC - DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-lxc---debian)
+* [BACKUP VMs/LXCs USING PROXMOX]()
 
 ## MAKE PROXMOX USB
 
@@ -170,8 +172,7 @@ wget -P /mnt/sas-data/template/iso/ \
   https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso
 ```
 
-Head to [192.168.20.135:8006](192.168.20.135:8006)
-and click Create VM in the top right.
+Head to your proxmox UI and click Create VM in the top right.
 
 General Tab
 
@@ -245,3 +246,127 @@ Now start the VM
 * Then click Console to open the display
 
 Go threw the ubuntu setup process.
+
+> NOTE: Uncheck "Set up this disk as an LVM group"
+> Just "Use an entire disk".
+
+When you first login, you should update and upgrade your distro.
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+## CREATE A LXC - DEBIAN
+
+First we need a Debian 12 LXC template.
+This is a special debian made for proxmox.
+In the Proxmox UI
+
+```text
+Click on your node (the server name) in the left panel
+Click local storage
+Click CT Templates
+Click Templates button at the top
+Search for debian-12 and download it
+```
+
+Once this special template is downloaded
+click Create CT button at the top right of the Proxmox UI.
+
+General Tab
+
+```text
+CT ID: 201
+Hostname: lxc-debian-tailscale
+Password: (set something strong, you'll need it)
+SSH key: CAn create this later
+Unprivileged container: NO (uncheck it — make it privileged)
+```
+
+Template Tab
+
+```text
+Storage: local
+Template: debian-12-standard
+```
+
+Disks Tab
+
+```text
+Storage: SAS-Data
+Size: 4GB
+```
+
+CPU tab
+
+```text
+Cores: 1
+```
+
+Memory Tab
+
+```text
+RAM: 256
+Swap: 256
+```
+
+Network Tab
+
+```text
+Bridge: vmbr0
+IPv4: DHCP (We assign static IP at router)
+```
+
+DNS TAb
+
+```text
+Leave as default
+```
+
+Review and create.
+
+You may have to allow root logins, from proxmox
+
+```bash
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+systemctl restart sshd
+```
+
+When you first login, you should update and upgrade your distro.
+
+```bash
+apt update && sudo apt upgrade -y
+```
+
+May also want to create your ssh keys
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "Keys for Github (lxc-debian-tailscale)"
+```
+
+## BACKUP VMs/LXCs USING PROXMOX
+
+Once you get some VMs setup you can now add a backup
+
+```text
+Datacenter → Backup → Add
+```
+
+Then set
+
+```text
+Storage: SAS-Data
+Schedule: 0 2 * * * (2am daily)
+Mode: Snapshot
+Compression: ZSTD
+Pick the VMs, LXC you want for this backup
+```
+
+Under retention for this backup pick what you want, I picked
+
+```bash
+Ollama VM — 2 days since it's 117GB
+Everything else — 7 day retention
+```
+
+Hit create

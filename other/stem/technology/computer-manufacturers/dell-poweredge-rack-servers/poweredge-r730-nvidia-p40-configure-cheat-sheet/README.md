@@ -16,7 +16,7 @@ iDRAC
 ON PROXMOX (SEE PROXMOX CHEAT SHEET FOR MORE COMMANDS)
     pvesm status                      # Storage
     ipmitool sdr                      # all sensors
-    ipmitool sdr type Fan             $ Fan speed
+    ipmitool sdr type Fan             # Fan speed
     ipmitool sdr type Temperature
     lspci | grep -i nvidia            # Confirm P40 visible
     lspci -v | grep -A20 "Tesla P40"  # Full p40 info

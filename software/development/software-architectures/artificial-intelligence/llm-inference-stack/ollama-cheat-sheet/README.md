@@ -30,7 +30,7 @@ Table of contents
 ### The Stack
 
 ```text
-      OpenClaw                  The orchestrator - listens, acts, manages (not AI)
+      OpenClaw / Open WebUI     The orchestrator - listens, acts, manages (not AI)
       Ollama                    The inference server - hosts and serves the AI model
       LLM                       The AI model — where the actual intelligence lives
         llama3.1:8b             Meta        8B params   ~5GB   Fast, lightweight
@@ -47,20 +47,19 @@ Table of contents
 ### CLAUDE VS HOMELAB
 
 ```text
-                    Claude              Your Homelab
+                    CLAUDE                  HOMELAB
 
-LLM                 Claude (Anthropic)  LLaMA, DeepSeek, Qwen
-Inference server    Anthropic cloud     Ollama
-Hosting             Anthropic cloud     Your P40
-Agent               Built into Claude   OpenClaw
-Interface           claude.ai           Telegram, iPhone app, etc.
-Memory              Per session only    Persistent (OpenClaw)
-Privacy             Data goes to        100% stays on your
-                    Anthropic           hardware
-Cost                Subscription        Free after hardware
-Internet access     Yes (web search)    Via OpenClaw tools
-Knowledge cutoff    Aug 2025            Depends on model
-Control             None                100% yours
+LLM                 Claude (Anthropic)      LLaMA, DeepSeek, Qwen, etc...
+Inference server    Anthropic cloud         Ollama
+Hosting             Anthropic cloud         Your P40
+Agent               Built into Claude       OpenClaw
+Interface           claude.ai               Telegram, iPhone app, etc.
+Memory              Per session only        Persistent (OpenClaw)
+Privacy             Data goes to Anthropic  100% stays on your hardware
+Cost                Subscription            Free after hardware investment
+Internet access     Yes (web search)        Via OpenClaw tools
+Knowledge cutoff    Aug 2025                Depends on model
+Control             None                    100% yours
 ```
 
 > This whole thing is called a Self-hosted AI Stack —
@@ -110,6 +109,7 @@ This is called RAG — Retrieval Augmented Generation.
 OpenClaw fetches fresh data and feeds it to the LLM as context.
 
 Example — manually feeding context:
+
 ```bash
 ollama run llama3.1:8b "Today is March 19 2026. The weather in Waltham MA \
 is 52F and cloudy. Jeff's meeting is at 3pm. Given this information, should \
@@ -140,4 +140,48 @@ verify
 
 ```bash
 ollama list
+```
+
+## CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES
+
+By default Ollama only listens on localhost (127.0.0.1).
+To allow other VMs on your network to connect you need to
+configure it to listen on all interfaces (0.0.0.0).
+
+### Check what Ollama is currently listening on
+
+```bash
+ss -tlnp | grep 11434
+```
+
+Expected output after fix
+
+```bash
+LISTEN 0      4096               *:11434            *:*
+```
+
+Set OLLAMA_HOST environment variable
+
+```bash
+sudo systemctl edit ollama
+```
+
+Add these lines
+
+```text
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0:11434"
+```
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart ollama
+ss -tlnp | grep 11434
+```
+
+Verify from another VM
+
+```bash
+curl http://192.168.20.141:11434
+# Should return: Ollama is running
 ```
