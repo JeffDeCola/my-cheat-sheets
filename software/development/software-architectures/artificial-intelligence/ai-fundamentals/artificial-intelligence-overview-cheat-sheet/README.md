@@ -8,27 +8,27 @@ and a quick dive into machine learning (ML)._
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#overview)
-* [TYPES OF AI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#types-of-ai)
-  * [CAPABILITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#capability)
-  * [FUNCTIONALITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#functionality)
-* [ARTIFICIAL INTELLIGENCE HIERARCHY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#artificial-intelligence-hierarchy)
-* [MACHINE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#machine-learning)
-  * [CLASSICAL LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#classical-learning)
-  * [DEEP LEARNING (NEURAL NETWORKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#deep-learning-neural-networks)
-  * [ENSEMBLE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#ensemble-learning)
-  * [REINFORCEMENT LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet#reinforcement-learning)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#overview)
+* [TYPES OF AI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#types-of-ai)
+  * [CAPABILITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#capability)
+  * [FUNCTIONALITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#functionality)
+* [ARTIFICIAL INTELLIGENCE HIERARCHY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#artificial-intelligence-hierarchy)
+* [MACHINE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#machine-learning)
+  * [CLASSICAL LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#classical-learning)
+  * [DEEP LEARNING (NEURAL NETWORKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#deep-learning-neural-networks)
+  * [ENSEMBLE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#ensemble-learning)
+  * [REINFORCEMENT LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#reinforcement-learning)
 
 Documentation and Reference
 
-* [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
+* [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md)
 * [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
   * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
   * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
   * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
   * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
   * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
-* [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
+* [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
 
 ## OVERVIEW
 
@@ -93,12 +93,12 @@ There are many types of Machine Learning such as,
       * Pattern Recognition
       * Dimensionality Reduction Visualization
   * **Deep Learning** (Neural Networks)
-    * [Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
-    * [Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
-    * [Auto Encoders (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
-    * [Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
-    * [Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
-    * [Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
+    * [Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
+    * [Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
+    * [Auto Encoders (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
+    * [Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
+    * [Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
+    * [Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
     * etc...
   * **Ensemble Learning**
     * Boosting
@@ -146,7 +146,7 @@ It is the most popular type of machine learning today. A Neural Network is a
 working system at the heart of a Deep Learning algorithm that helps it process
 raw data.
 
-* **[Neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)**
+* **[Neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md)**
   * Like a human brain
   * A network of nodes that are interconnected
   * Each node is a neuron that is connected to other neurons
@@ -154,25 +154,25 @@ raw data.
 
 There are many types of neural networks such as,
 
-* **[Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)**
+* **[Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)**
   * The simplest form of a neural network
   * Used for simple classification tasks
   * Example: Is this email spam or not spam?
-* **[Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)**
+* **[Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)**
   * Data moves in one direction
   * No loops in the network
   * Used for simple classification tasks
   * Example: Is this email spam or not spam?
-* **[Auto Encoder (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)**
+* **[Auto Encoder (AE)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)**
   * Used for reducing dimensionality
   * Example: Reducing the number of features in an image
-* **[Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)**
+* **[Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)**
   * Used for sequential data
   * Example: Predicting the next word in a sentence
-* **[Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)**
+* **[Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)**
   * Used for image data
   * Example: Image recognition
-* **[Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)**
+* **[Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)**
   * Used for generating new data
   * Example: Generating new images
 
