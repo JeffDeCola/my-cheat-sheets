@@ -446,6 +446,10 @@ _Other cheat sheets I'm interested in._
       * [poweredge r730 nvidia p40 configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet)
       * [proxmox - install, configure and create vm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet)
 
+    * NVIDIA
+
+      * [datacenter ai/gpu accelerators](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/nvidia/datacenter-ai-gpu-accelerators-cheat-sheet)
+
     * PC
 
       * [cpu](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/pc/cpu-cheat-sheet)
