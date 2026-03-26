@@ -38,7 +38,12 @@ Table of Contents
   * [AUTOMATED DAILY BACKUPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#automated-daily-backups)
   * [BACKUP LOCATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#backup-locations)
 * [ADMIN CHEAT COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#admin-cheat-commands)
-
+  * [ENABLE/DISABLE CHEATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#enabledisable-cheats)
+  * [COMMON COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#common-commands)
+  * [SPAWNING ITEMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#spawning-items)
+  * [TAMING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#taming)
+  * [SERVER MANAGEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#server-management)
+  
 Documentation and Reference
 
 * [cdp1337 GitHub](https://github.com/cdp1337/ARKSurvivalAscended-Linux)
@@ -298,15 +303,57 @@ ls -la /home/arkserver/ark-backups/
 
 ## ADMIN CHEAT COMMANDS
 
-Connect to server and open the console (Tab)
+### ENABLE/DISABLE CHEATS
+
+Enable/disable cheats
 
 ```text
-enablecheats <ADMIN PASSWORD>
+enablecheats YOUR_ADMIN_PASSWORD
+admincheat disablecheats
 ```
 
-Give yourself items
+### COMMON COMMANDS
 
-```text
-cheat gfi MetalIngot 100 0 0
-cheat gfi StoneWall 100 0 0
-```
+| Command | What it does |
+|---|---|
+| `cheat fly` | Fly mode |
+| `cheat walk` | Back to walking |
+| `cheat ghost` | No-clip through walls |
+| `cheat god` | Invincible |
+| `cheat infinitestats` | Unlimited health/stamina/food/water/weight |
+| `cheat giveresources` | Gives 50 of every resource |
+| `cheat addexperience 1000 0 0` | Give yourself XP |
+| `cheat settimeofday 12:00` | Set time to noon |
+| `cheat destroywilddinos` | Wipe all wild dinos (forces respawn) |
+| `cheat saveworld` | Force save the world |
+| `cheat teleport` | Teleport where you're looking |
+| `cheat setplayerpos X Y Z` | Teleport to coordinates |
+
+### SPAWNING ITEMS
+
+| Command | What it does |
+|---|---|
+| `cheat gfi MetalIngot 100 0 0` | 100 metal ingots |
+| `cheat gfi StoneWall 100 0 0` | 100 stone walls |
+| `cheat gfi MetalWall 100 0 0` | 100 metal walls |
+| `cheat gfi CementPaste 100 0 0` | 100 cementing paste |
+| `cheat gfi Polymer 100 0 0` | 100 polymer |
+| `cheat gfi Electronics 100 0 0` | 100 electronics |
+
+### TAMING
+
+| Command | What it does |
+|---|---|
+| `cheat forcetame` | Instantly tame what you're looking at |
+| `cheat dotame` | Tame without riding ability |
+| `cheat settargetdinocolor 0 1` | Change dino color (region 0, color 1) |
+
+### SERVER MANAGEMENT
+
+| Command | What it does |
+|---|---|
+| `cheat broadcast message` | Send message to all players |
+| `cheat kickplayer EOSID` | Kick a player |
+| `cheat saveworld` | Force save |
+| `cheat listplayers` | Show connected players |
+| `cheat whoami` | Show your EOS ID | Opus 4.6Extended
