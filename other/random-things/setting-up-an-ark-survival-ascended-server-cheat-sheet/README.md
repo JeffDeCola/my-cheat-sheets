@@ -37,6 +37,7 @@ Table of Contents
   * [MANUAL BACKUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#manual-backup)
   * [AUTOMATED DAILY BACKUPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#automated-daily-backups)
   * [BACKUP LOCATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#backup-locations)
+* [ADMIN CHEAT COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#admin-cheat-commands)
 
 Documentation and Reference
 
@@ -157,6 +158,20 @@ If you don't forward it,
 your server stays invisible in the server browser.
 Friends connect via direct IP instead.
 
+I would also add fail2ban to stop anyone from ssh attacks.
+It's stock anyone from trying password more than 5 times.
+Locks them out for 10 minutes.
+
+```bash
+sudo apt install fail2ban -y
+```
+
+Check it's working
+
+```bash
+sudo systemctl status fail2ban
+```
+
 ## CONFIGURATION
 
 ### SERVER PASSWORD (FRIENDS ONLY)
@@ -257,10 +272,10 @@ Set up cron job to run daily at 4am:
 sudo crontab -e
 ```
 
-Add this line:
+Add this line to backup every 2 hours:
 
 ```text
-0 4 * * * /home/arkserver/backup_ark.sh
+0 */2 * * * /home/arkserver/backup_ark.sh
 ```
 
 Test it now to make sure it works:
@@ -280,3 +295,18 @@ ls -la /home/arkserver/ark-backups/
 * Automated backups: `/home/arkserver/ark-backups/`
 * Nitrado import files: `/home/arkserver/files-from-nitrado/`
 * Original fresh server backup: `/home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/SavedArks/Ragnarok_WP_ORIGINAL_BACKUP/`
+
+## ADMIN CHEAT COMMANDS
+
+Connect to server and open the console (Tab)
+
+```text
+enablecheats <ADMIN PASSWORD>
+```
+
+Give yourself items
+
+```text
+cheat gfi MetalIngot 100 0 0
+cheat gfi StoneWall 100 0 0
+```
