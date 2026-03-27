@@ -14,6 +14,7 @@ ollama list                                          # list all downloaded model
 ollama pull llama3.1:8b                              # download a model
 ollama rm llama3.1:8b                                # delete a model
 ollama run llama3.1:8b                               # interactive chat
+ollama run llama3.1:8b --verbose                     # shows info like tokens
 ollama run llama3.1:8b "explain neural networks"     # one-shot prompt
 ollama ps                                            # models loaded in VRAM
 ollama show llama3.1:8b                              # model info
@@ -23,7 +24,19 @@ curl http://localhost:11434                          # check Ollama is running
 
 Table of contents
 
-* tbd
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#overview)
+  * [The Stack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#the-stack)
+  * [Claude vs Homelab](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#claude-vs-homelab)
+  * [How Ollama Fits In — Request Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#how-ollama-fits-in--request-flow)
+  * [What OpenClaw Actually Does](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#what-openclaw-actually-does)
+  * [Picking Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#picking-your-llm)
+  * [Feeding Knowledge Into Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#feeding-knowledge-into-your-llm)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#install)
+* [MODELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#models)
+  * [Models I Have](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#models-i-have)
+  * [What Model to Use](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#what-model-to-use)
+  * [Tokens/s on P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#tokenss-on-p40)
+* [CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#configure-ollama-to-listen-on-all-interfaces)
 
 ## OVERVIEW
 
@@ -44,7 +57,7 @@ Table of contents
 > They do not connect to the internet or seek new information.
 > Their knowledge stops at their training cutoff date.
 
-### CLAUDE VS HOMELAB
+### Claude vs Homelab
 
 ```text
                     CLAUDE                  HOMELAB
@@ -65,7 +78,7 @@ Control             None                    100% yours
 > This whole thing is called a Self-hosted AI Stack —
 > running AI on your own hardware instead of the cloud.
 
-### HOW OLLAMA FITS IN — REQUEST FLOW
+### How Ollama Fits In — Request Flow
 
 ```text
 You ask a question
@@ -84,7 +97,7 @@ OpenClaw takes action based on the answer
 > Note: Ollama keeps the model warm in VRAM for a few minutes after
 > each request — so the second question is always faster than the first.
 
-### WHAT OPENCLAW ACTUALLY DOES
+### What OpenClaw Actually Does
 
 An AI agent does more than feed knowledge — it:
 
@@ -94,15 +107,18 @@ An AI agent does more than feed knowledge — it:
 * **Plans**              — breaks tasks into steps and executes them
 * **Runs autonomously**  — wakes up on a schedule without you asking
 
-### PICKING YOUR LLM
+### Picking Your LLM
 
 You pick your LLM (frozen brain) based on a few things:
 
-* **Different training data**      — some focused on code, some on science, some on general knowledge
-* **Different sizes**              — more parameters = more capacity to store knowledge and reason
-* **Different specializations**    — some are tuned for reasoning, some for speed, some for tool calling
+* **Different training data**      — some focused on code, some on science,
+                                     some on general knowledge
+* **Different sizes**              — more parameters = more capacity
+                                     to store knowledge and reason
+* **Different specializations**    — some are tuned for reasoning,
+                                     some for speed, some for tool calling
 
-### FEEDING KNOWLEDGE INTO YOUR LLM
+### Feeding Knowledge Into Your LLM
 
 You can feed an LLM knowledge directly. OpenClaw does this automatically.
 This is called RAG — Retrieval Augmented Generation.
@@ -125,14 +141,11 @@ I installed ollama on my dell rack server that has a nvidia Tesla P40 in it.
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-## PULL MODELS
+## MODELS
 
 Pull some models
 
 ```bash
-ollama pull deepseek-r1:32b      # heavy reasoning + agent tasks (~20GB)
-ollama pull qwen2.5-coder:32b    # coding + tool calling for OpenClaw (~20GB)
-ollama pull llama3.1:8b          # fast lightweight everyday responses (~5GB)
 ollama pull qwen3:8b             # quick tests + lightweight fallback (~5GB)
 ```
 
@@ -142,13 +155,46 @@ verify
 ollama list
 ```
 
+### Models I Have
+
+**Updated March 2026**
+
+| Model | Parameters | Disk Size | VRAM (Q4) | Context Window | Reasoning | Tool Calling | Use Case | Notes |
+|-------|-----------|-----------|-----------|----------------|-----------|-------------|----------|-------|
+| **phi4-mini** | 3.8B | 2.5 GB | ~3 GB | 16K | No | No | Fast chat, quick Q&A | Fastest model, best for simple tasks |
+| **llama3.1:8b** | 8B | 4.9 GB | ~5 GB | 128K | No | Yes | General purpose, everyday tasks | Meta model, huge community, solid all-rounder |
+| **qwen3:8b** | 8B | 5.2 GB | ~5 GB | 40K | Yes (/think) | Yes | Agents, tool calling, fallback | Default for OpenClaw agents on VM 103/104 |
+| **qwen2.5-coder:32b** | 32B | 19 GB | ~20 GB | 32K | No | Yes | Coding, refactoring, code review | Best local coding model, fills P40 VRAM |
+| **glm-4.7-flash** | ~9B | 19 GB | ~12 GB | 1M | No | No | Long context analysis | Huge context window, good for large documents |
+| **deepseek-r1:32b** | 32B | 19 GB | ~20 GB | 128K | Yes (CoT) | **No** | Deep reasoning, math, complex analysis | Chain-of-thought built in, NO tool calling |
+
+### What Model to Use
+
+* **Fastest response:** phi4-mini
+* **Best all-rounder:** llama3.1:8b
+* **Best for agents:** qwen3:8b (tool calling + reasoning)
+* **Best for coding:** qwen2.5-coder:32b
+* **Best for long docs:** glm-4.7-flash (1M context)
+* **Best for hard problems:** deepseek-r1:32b (but no tool calling)
+
+### Tokens/s on P40
+
+| Model | Prompt Eval | Generation |
+|-------|-------------|------------|
+| phi4-mini | ~800+ t/s | ~50-65 t/s |
+| llama3.1:8b | ~500+ t/s | ~30-45 t/s |
+| qwen3:8b | ~450+ t/s | ~25-42 t/s |
+| qwen2.5-coder:32b | ~150+ t/s | ~12-18 t/s |
+| glm-4.7-flash | ~300+ t/s | ~20-30 t/s |
+| deepseek-r1:32b | ~150+ t/s | ~12-18 t/s |
+
 ## CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES
 
 By default Ollama only listens on localhost (127.0.0.1).
 To allow other VMs on your network to connect you need to
 configure it to listen on all interfaces (0.0.0.0).
 
-### Check what Ollama is currently listening on
+### Check What Ollama is Currently Listening On
 
 ```bash
 ss -tlnp | grep 11434
