@@ -449,6 +449,7 @@ _Other cheat sheets I'm interested in._
     * NVIDIA
 
       * [datacenter ai/gpu accelerators](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/nvidia/datacenter-ai-gpu-accelerators-cheat-sheet)
+      * [workstation ai/gpu cards](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/nvidia/workstation-ai-gpu-cards-cheat-sheet)
 
     * PC
 
