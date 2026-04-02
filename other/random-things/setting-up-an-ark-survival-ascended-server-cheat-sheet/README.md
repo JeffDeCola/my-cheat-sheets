@@ -164,7 +164,7 @@ your server stays invisible in the server browser.
 Friends connect via direct IP instead.
 
 I would also add fail2ban to stop anyone from ssh attacks.
-It's stock anyone from trying password more than 5 times.
+It's stops anyone from trying password more than 5 times.
 Locks them out for 10 minutes.
 
 ```bash
@@ -237,13 +237,11 @@ Your friends use your public IP (found in the manage.py service details):
 open <your ip>:7708
 ```
 
-> NOTE: The password be here if it worked
-
 ## BACKUPS
 
 ### MANUAL BACKUP
 
-In the management console (`manageark`), press `B` to create a backup.
+In the management console manage.py, press `B` to create a backup.
 
 ### AUTOMATED DAILY BACKUPS
 
@@ -271,25 +269,25 @@ find $BACKUP_DIR -name "*.tar.gz" -mtime +7 -delete
 echo "Backup complete: ragnarok_backup_$DATE.tar.gz"
 ```
 
-Set up cron job to run daily at 4am:
+Set up cron job to backup every 2 hours
 
 ```bash
 sudo crontab -e
 ```
 
-Add this line to backup every 2 hours:
+Add
 
 ```text
 0 */2 * * * /home/arkserver/backup_ark.sh
 ```
 
-Test it now to make sure it works:
+Test it
 
 ```bash
 sudo sh /home/arkserver/backup_ark.sh
 ```
 
-Then check:
+Check
 
 ```bash
 ls -la /home/arkserver/ark-backups/
@@ -356,4 +354,4 @@ admincheat disablecheats
 | `cheat kickplayer EOSID` | Kick a player |
 | `cheat saveworld` | Force save |
 | `cheat listplayers` | Show connected players |
-| `cheat whoami` | Show your EOS ID | Opus 4.6Extended
+| `cheat whoami` | Show your EOS ID |
