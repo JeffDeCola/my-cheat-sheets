@@ -32,8 +32,8 @@ Documentation and Reference
 
 ## OVERVIEW
 
-Artificial Intelligence (AI) is the term used to describe the ability of a
-machine to perform a cognitive processes.
+Artificial Intelligence (AI) is the term used to describe the ability
+of a machine to perform a cognitive processes.
 
 ## TYPES OF AI
 
