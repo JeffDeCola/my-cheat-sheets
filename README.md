@@ -159,15 +159,15 @@ Documentation and Reference
       * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet)
         ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks))
       * [math behind training mlp neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet)
-    * APPLICATIONS/ORCHESTRATION LAYER
-      * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/applications-orchestration/ai-stack-configurations-cheat-sheet)
-      * [openclaw autonomous ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/applications-orchestration/openclaw-autonomous-ai-agent-cheat-sheet)
-      * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/applications-orchestration/open-webui-chatbot-cheat-sheet)
+    * APPLICATION/ORCHESTRATION LAYER
+      * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration/ai-stack-configurations-cheat-sheet#ai-stack-configurations-cheat-sheet)
+      * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration/openclaw-ai-agentcheat-sheet#openclaw-ai-agent-cheat-sheet)
+      * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
     * INFERENCE LAYER
-      * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet)
+      * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#ollama-cheat-sheet)
     * LLM LAYER
-      * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet)
-      * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet)
+      * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)
+      * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet#llm-training-cheat-sheet)
 
   * AUTHORIZATION
 
