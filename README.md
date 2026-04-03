@@ -206,6 +206,7 @@ Documentation and Reference
 
 * SOURCE / VERSION CONTROL
 
+  * [clone a repo and make it your own](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/clone-a-repo-and-make-it-your-own-cheat-sheet)
   * [git](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/source-version-control/git-cheat-sheet)
 
 ### OPERATIONS
