@@ -8,11 +8,13 @@ using the cdp1337/ARKSurvivalAscended-Linux
 community install script._
 
 ```text
-Manage server:          sudo /home/steam/ArkSurvivalAscended/manage.py
-Check status:           htop or sudo ss -ulnp | grep 7708
-View logs:              sudo tail -f /home/steam/ArkSurvivalAscended/ShooterGame.log
-Gameplay Config:        /home/steam/ArkSurvivalAscended/Game.ini
-Player Facing Config:   /home/steam/ArkSurvivalAscended/GameUserSettings.ini
+Manage server:                    sudo /home/steam/ArkSurvivalAscended/manage.py
+Check status:                     htop or sudo ss -ulnp | grep 7708
+View logs:                        sudo tail -f /home/steam/ArkSurvivalAscended/ShooterGame.log
+Gameplay Config:                  /home/steam/ArkSurvivalAscended/Game.ini
+(softlink)                          /home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/Config/WindowsServer/Game.ini
+Player Facing Config:             /home/steam/ArkSurvivalAscended/GameUserSettings.ini
+(softlink)                          /home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini
 ```
 
 Table of Contents
@@ -37,13 +39,14 @@ Table of Contents
   * [MANUAL BACKUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#manual-backup)
   * [AUTOMATED DAILY BACKUPS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#automated-daily-backups)
   * [BACKUP LOCATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#backup-locations)
+* [RESTORE FROM BACKUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#restore-from-backup)
 * [ADMIN CHEAT COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#admin-cheat-commands)
   * [ENABLE/DISABLE CHEATS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#enabledisable-cheats)
   * [COMMON COMMANDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#common-commands)
   * [SPAWNING ITEMS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#spawning-items)
   * [TAMING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#taming)
   * [SERVER MANAGEMENT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/random-things/setting-up-an-ark-survival-ascended-server-cheat-sheet/#server-management)
-  
+
 Documentation and Reference
 
 * [cdp1337 GitHub](https://github.com/cdp1337/ARKSurvivalAscended-Linux)
@@ -298,6 +301,17 @@ ls -la /home/arkserver/ark-backups/
 * Automated backups: `/home/arkserver/ark-backups/`
 * Nitrado import files: `/home/arkserver/files-from-nitrado/`
 * Original fresh server backup: `/home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/SavedArks/Ragnarok_WP_ORIGINAL_BACKUP/`
+
+## RESTORE FROM BACKUP
+
+It will look like the following. You can copy the .ark file to your server saves to restore a backup.
+
+```txt
+cd /tmp
+tar -xzf /home/arkserver/ark-backups/ragnarok_backup_2026-04-14_00-00.tar.gz
+cp /tmp/Ragnarok_WP.ark /home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/SavedArks/Ragnarok_WP/Ragnarok_WP.ark
+chown steam:steam /home/steam/ArkSurvivalAscended/AppFiles/ShooterGame/Saved/SavedArks/Ragnarok_WP/Ragnarok_WP.ark
+```
 
 ## ADMIN CHEAT COMMANDS
 
