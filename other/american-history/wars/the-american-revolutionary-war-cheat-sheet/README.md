@@ -277,7 +277,7 @@ and the battle provided them with an important confidence boost.
 Although commonly referred to as the Battle of Bunker Hill,
 most of the fighting occurred on nearby Breed’s Hill.
 
-![IMAGE - 1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill - IMAGE](../../../../docs/pics/other/1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker's_Hill.jpg)
+![IMAGE - 1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker_s_Hill - IMAGE](../../../../docs/pics/other/1775-The_Death_of_General_Warren_at_the_Battle_of_Bunker_s_Hill.jpg)
 
 _The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 by
 artist John Trumbull depicting the death of Joseph Warren at the Battle of
