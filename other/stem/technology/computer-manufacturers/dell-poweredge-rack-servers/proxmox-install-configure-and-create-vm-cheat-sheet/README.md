@@ -40,7 +40,8 @@ Table of Contents
 * [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
 * [CREATE A VM - UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-vm---ubuntu)
 * [CREATE A LXC - DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-lxc---debian)
-* [BACKUP VMs/LXCs USING PROXMOX]()
+* [BACKUP VMs/LXCs USING PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#backup-vmslxcs-using-proxmox)
+* [CONFIGURE PROXMOX FOR PACKER BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#configure-proxmox-for-packer-builds)
 
 ## MAKE PROXMOX USB
 
@@ -370,3 +371,69 @@ Everything else — 7 day retention
 ```
 
 Hit create
+
+## CONFIGURE PROXMOX FOR PACKER BUILDS
+
+On Proxmox create a packer user:
+
+```bash
+pveum user add packer@pam --comment "Packer build user"
+```
+
+Create a role with required permissions:
+
+```bash
+pveum role add Packer -privs \
+  "VM.Allocate \
+  VM.Clone \
+  VM.Config.CDROM \
+  VM.Config.CPU \
+  VM.Config.Cloudinit \
+  VM.Config.Disk \
+  VM.Config.HWType \
+  VM.Config.Memory \
+  VM.Config.Network \
+  VM.Config.Options \
+  VM.Audit \
+  VM.PowerMgmt \
+  Datastore.AllocateSpace \
+  Datastore.AllocateTemplate \
+  Datastore.Audit \
+  Sys.Modify \
+  SDN.Use \
+  VM.Console \
+  VM.GuestAgent.Audit \
+  VM.GuestAgent.Unrestricted"
+```
+
+Assign the role to the packer user at the root level:
+
+```bash
+pveum aclmod / -user packer@pam -role Packer
+```
+
+Assign SDN permissions:
+
+```bash
+pveum aclmod /sdn/zones/localnetwork -user packer@pam -role Packer
+```
+
+Create the API token:
+
+```bash
+pveum user token add packer@pam mytoken --privsep=0
+```
+
+| Permission                     | Why Needed                    |
+|--------------------------------|-------------------------------|
+| `VM.Allocate`                  | Create/delete VMs             |
+| `VM.Clone`                     | Clone VMs                     |
+| `VM.Config.*`                  | Configure VM hardware         |
+| `VM.Audit`                     | Read VM config                |
+| `VM.PowerMgmt`                 | Start/stop VMs                |
+| `VM.Console`                   | Send boot keystrokes via VNC  |
+| `VM.GuestAgent.Audit`          | Query VM IP via guest agent   |
+| `VM.GuestAgent.Unrestricted`   | Full guest agent access       |
+| `Datastore.*`                  | Upload ISO, allocate disk     |
+| `SDN.Use`                      | Attach VM to network bridge   |
+| `Sys.Modify`                   | System-level modifications    |
