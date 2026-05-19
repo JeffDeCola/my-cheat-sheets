@@ -1,4 +1,4 @@
-# repo-generic-.gitignore
+# .gitignore
 
 # CONCOURSE SECRETS
 .concourse-secrets.yml
@@ -22,3 +22,5 @@ sftp.json
 # TAR FILES
 *.tar.gz
 *.tar.gz.gpg
+
+# repo-generic.gitignore SPECIFIC BELOW ---------------------------------------------
