@@ -7,41 +7,49 @@ _This is a high level overview of neural networks._
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#overview)
-* [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron)
-  * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-summation-function)
-  * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-activation-function)
-  * [THE OUTPUT FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#the-output-function)
-* [ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#architectures)
-  * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#perceptron-p)
-  * [MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#multi-layer-perceptron-mlp)
-  * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#auto-encoder-ae)
-  * [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#recurrent-neural-networks-rnn)
-  * [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#convolutional-neural-networks-cnn)
-  * [GENERATIVE ADVERSARIAL NETWORKS (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#generative-adversarial-networks-gan)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#overview)
+* [MATHEMATICAL MODEL OF A NEURON](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#mathematical-model-of-a-neuron)
+  * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#the-summation-function)
+  * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#the-activation-function)
+  * [THE OUTPUT FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#the-output-function)
+* [ARCHITECTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#architectures)
+  * [PERCEPTRON (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#perceptron-p)
+  * [MULTI-LAYER PERCEPTRON (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#multi-layer-perceptron-mlp)
+  * [AUTO ENCODER (AE)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#auto-encoder-ae)
+  * [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#recurrent-neural-networks-rnn)
+  * [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#convolutional-neural-networks-cnn)
+  * [GENERATIVE ADVERSARIAL NETWORKS (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#generative-adversarial-networks-gan)
 
 Documentation and Reference
 
-* [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-* [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
-  * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
-  * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
-  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
-  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
-  * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
-* [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md)
+* AI Fundamentals
+  * [artificial intelligence overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#artificial-intelligence-overview-cheat-sheet)
+  * **[neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#neural-networks-cheat-sheet)**
+    ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks?tab=readme-ov-file#my-neural-networks))
+    **YOU ARE HERE**
+  * [math behind training mlp neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#math-behind-training-mlp-neural-networks-cheat-sheet)
+* Application/Orchestration Layer
+  * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#ai-stack-configurations---from-chatbots-to-agents-cheat-sheet)
+  * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/openclaw-ai-agent-cheat-sheet#openclaw-ai-agent-cheat-sheet)
+  * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
+* Inference Layer
+  * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#ollama-cheat-sheet)
+* LLM Layer
+  * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)
+  * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet#llm-training-cheat-sheet)
 
 ## OVERVIEW
 
 A neural network is
 
 * A series of algorithms that endeavors to recognize
-underlying relationships in a set of data through a process that mimics the
-way the human brain operates.
+  underlying relationships in a set of data through a process that mimics the
+  way the human brain operates.
 * The neural network itself is not an algorithm, but rather a framework for many
-different machine learning algorithms to work together and process complex data inputs.
+  different machine learning algorithms to work together and process
+  complex data inputs.
 * Such systems "learn" to perform tasks by considering examples, generally without
-being programmed with any task-specific rules.
+  being programmed with any task-specific rules.
 
 ## MATHEMATICAL MODEL OF A NEURON
 
@@ -62,7 +70,7 @@ An artificial neuron consists of the following components,
   * $y = f(s)$
 * Outputs the result $y$
 
-![IMAGE mathematical model of a neuron - IMAGE](../../../../../docs/pics/software/development/neural-networks-mathematical-model-of-a-neuron.svg)
+![IMAGE mathematical model of a neuron - IMAGE](../../../../../../docs/pics/software/development/neural-networks-mathematical-model-of-a-neuron.svg)
 
 It’s important to stress that this model of a biological neuron is very coarse.
 For example, there are many different types of neurons, each with different
@@ -174,7 +182,7 @@ $$
 
 Nomenclature,
 
-![IMAGE - neural networks nomenclature - IMAGE](../../../../../docs/pics/software/development/neural-networks-nomenclature.svg)
+![IMAGE - neural networks nomenclature - IMAGE](../../../../../../docs/pics/software/development/neural-networks-nomenclature.svg)
 
 ### PERCEPTRON (P)
 
@@ -204,7 +212,7 @@ neural network written in go.
   * Example: Predicting if a student will pass or fail based on
     the number of hours they studied
 
-![IMAGE - neural networks perceptron - IMAGE](../../../../../docs/pics/software/development/neural-networks-perceptron.svg)
+![IMAGE - neural networks perceptron - IMAGE](../../../../../../docs/pics/software/development/neural-networks-perceptron.svg)
 
 ### MULTI-LAYER PERCEPTRON (MLP)
 
@@ -244,7 +252,7 @@ neural network written in go.
   * Example: Predicting student performance based on the number of hours
     they studied, their midterm grade, and their last test grade
 
-![IMAGE - neural networks feed-forward - IMAGE](../../../../../docs/pics/software/development/neural-networks-feed-forward.svg)
+![IMAGE - neural networks feed-forward - IMAGE](../../../../../../docs/pics/software/development/neural-networks-feed-forward.svg)
 
 ### AUTO ENCODER (AE)
 
@@ -264,7 +272,7 @@ neural network written in go.
   * Image Compression
   * Example: Reducing the dimensionality of an image
 
-![IMAGE - neural networks auto encoder - IMAGE](../../../../../docs/pics/software/development/neural-networks-auto-encoder.svg)
+![IMAGE - neural networks auto encoder - IMAGE](../../../../../../docs/pics/software/development/neural-networks-auto-encoder.svg)
 
 ### RECURRENT NEURAL NETWORKS (RNN)
 
@@ -286,7 +294,7 @@ neural network written in go.
   * Language Translation
   * Example: Predicting the next word in a sentence
 
-![IMAGE - neural networks recurrent - IMAGE](../../../../../docs/pics/software/development/neural-networks-recurrent.svg)
+![IMAGE - neural networks recurrent - IMAGE](../../../../../../docs/pics/software/development/neural-networks-recurrent.svg)
 
 ### CONVOLUTIONAL NEURAL NETWORKS (CNN)
 
@@ -308,7 +316,7 @@ neural network written in go.
   * Image Segmentation
   * Example: Classifying images of cats and dogs
 
-![IMAGE - neural networks convolutional - IMAGE](../../../../../docs/pics/software/development/neural-networks-convolutional.svg)
+![IMAGE - neural networks convolutional - IMAGE](../../../../../../docs/pics/software/development/neural-networks-convolutional.svg)
 
 ### GENERATIVE ADVERSARIAL NETWORKS (GAN)
 
@@ -333,4 +341,4 @@ neural network written in go.
   * Image-to-Image Translation
   * Example: Generating new images of human faces
 
-![IMAGE - neural networks generative adversarial - IMAGE](../../../../../docs/pics/software/development/neural-networks-generative-adversarial.svg)
+![IMAGE - neural networks generative adversarial - IMAGE](../../../../../../docs/pics/software/development/neural-networks-generative-adversarial.svg)
