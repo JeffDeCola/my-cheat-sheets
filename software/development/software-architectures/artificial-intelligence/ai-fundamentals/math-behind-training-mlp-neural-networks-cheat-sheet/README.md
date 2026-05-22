@@ -7,50 +7,60 @@ _The math behind training a multi-layer perceptron (MLP) neural network._
 
 Table of Contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#overview)
-* [TL;DR](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#tldr)
-* [MATHEMATICAL MODEL OF NEURAL NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mathematical-model-of-neural-network)
-* [MLP ARCHITECTURE USED FOR THIS EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mlp-architecture-used-for-this-example)
-* [THE TRAINING DATASET](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-dataset)
-* [STEP 1 - INITIALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-1---initialization)
-* [STEP 2 - MIN & MAX VALUES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-values)
-* [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-training-loop)
-  * [STEP 3 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-3---normalization)
-    * [MIN-MAX SCALING FUNCTION [0, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
-    * [MIN-MAX SCALING FUNCTION [-1, 1]](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
-  * [STEP 4 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-4---forward-pass)
-    * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-summation-function)
-    * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-activation-function)
-    * [STEP 4.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-41---the-summation-function-for-the-hidden-layers)
-    * [STEP 4.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-42---the-activation-function-for-the-hidden-layers)
-    * [STEP 4.3 - THE SUMMATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---the-summation-function-for-the-output-layer)
-    * [STEP 4.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-44---the-activation-function-for-the-output-layer)
-  * [LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#loss-functions)
-  * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-5---backward-pass)
-    * [THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-gradient-descent-formula)
-    * [AN EXAMPLE USING THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#an-example-using-the-gradient-descent-formula)
-    * [STEP 5.1 - THE ERROR SIGNAL FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-51---the-error-signal-for-the-output-layer)
-    * [STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---the-error-signal-for-the-hidden-layers)
-    * [STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---the-new-weights--biases-for-the-output-layer)
-    * [STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---the-new-weights--biases-for-the-hidden-layers)
-  * [STEP 6 - UPDATE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---update-weights--biases)
-* [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#our-example-over-10-iterations)
-* [STEP 7 - SAVE MIN-MAX TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-min-max-to-a-file)
-* [STEP 8 - SAVE WEIGHTS & BIASES TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-8---save-weights--biases-to-a-file)
-* [TRY IT YOURSELF](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#try-it-yourself)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#overview)
+* [TL;DR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#tldr)
+* [MATHEMATICAL MODEL OF NEURAL NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mathematical-model-of-neural-network)
+* [MLP ARCHITECTURE USED FOR THIS EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mlp-architecture-used-for-this-example)
+* [THE TRAINING DATASET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-training-dataset)
+* [STEP 1 - INITIALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-1---initialization)
+* [STEP 2 - MIN & MAX VALUES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-2---min--max-values)
+* [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-training-loop)
+  * [STEP 3 - NORMALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-3---normalization)
+    * [Min-Max Scaling Function [0, 1]](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#min-max-scaling-function-0-1)
+    * [Min-Max Scaling Function [-1, 1]](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#min-max-scaling-function--1-1)
+  * [STEP 4 - FORWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-4---forward-pass)
+    * [THE SUMMATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-summation-function)
+    * [THE ACTIVATION FUNCTION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-activation-function)
+      * [The Sigmoid Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-sigmoid-function)
+      * [The Tanh Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-tanh-function)
+    * [STEP 4.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-41---the-summation-function-for-the-hidden-layers)
+    * [STEP 4.2 - THE ACTIVATION FUNCTION FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-42---the-activation-function-for-the-hidden-layers)
+    * [STEP 4.3 - THE SUMMATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-43---the-summation-function-for-the-output-layer)
+    * [STEP 4.4 - THE ACTIVATION FUNCTION FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-44---the-activation-function-for-the-output-layer)
+  * [LOSS FUNCTIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#loss-functions)
+    * [Mean Squared Error (MSE) Loss Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mean-squared-error-mse-loss-function)
+  * [STEP 5 - BACKWARD PASS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-5---backward-pass)
+    * [THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-gradient-descent-formula)
+    * [AN EXAMPLE USING THE GRADIENT DESCENT FORMULA](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#an-example-using-the-gradient-descent-formula)
+    * [STEP 5.1 - THE ERROR SIGNAL FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-51---the-error-signal-for-the-output-layer)
+    * [STEP 5.2 - THE ERROR SIGNAL FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-52---the-error-signal-for-the-hidden-layers)
+    * [STEP 5.3 - THE NEW WEIGHTS & BIASES FOR THE OUTPUT LAYER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-53---the-new-weights--biases-for-the-output-layer)
+    * [STEP 5.4 - THE NEW WEIGHTS & BIASES FOR THE HIDDEN LAYERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-54---the-new-weights--biases-for-the-hidden-layers)
+  * [STEP 6 - UPDATE WEIGHTS & BIASES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-6---update-weights--biases)
+* [OUR EXAMPLE OVER 10 ITERATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#our-example-over-10-iterations)
+* [STEP 7 - SAVE MIN-MAX TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-7---save-min-max-to-a-file)
+* [STEP 8 - SAVE WEIGHTS & BIASES TO A FILE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-8---save-weights--biases-to-a-file)
+* [TRY IT YOURSELF](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#try-it-yourself)
 
 Documentation and Reference
 
-* [artificial intelligence](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet)
-* [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md)
-* [my-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main)
-  * [the-math-behind-training-mlp-neural-networks](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks)
-    is an AI model of this cheat sheet
-  * [mlp-classification-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-classification-example)
-  * [mlp-image-recognition-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-image-recognition-example)
-  * [mlp-regression-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/mlp/mlp-regression-example)
-  * [perceptron-simple-example](https://github.com/JeffDeCola/my-neural-networks/tree/main/perceptron/perceptron-simple-example)
-* [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
+* AI Fundamentals
+  * [artificial intelligence overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#artificial-intelligence-overview-cheat-sheet)
+  * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#neural-networks-cheat-sheet)
+    ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks?tab=readme-ov-file#my-neural-networks))
+  * **[math behind training mlp neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#math-behind-training-mlp-neural-networks-cheat-sheet)**
+    **YOU ARE HERE**
+* Application/Orchestration Layer
+  * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#ai-stack-configurations---from-chatbots-to-agents-cheat-sheet)
+  * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/openclaw-ai-agent-cheat-sheet#openclaw-ai-agent-cheat-sheet)
+  * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
+* Inference Layer
+  * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#ollama-cheat-sheet)
+* LLM Layer
+  * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)
+  * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet#llm-training-cheat-sheet)
+* Mathematics
+  * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
   * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
 
 ## OVERVIEW
@@ -64,7 +74,8 @@ The steps to training a neural network are shown below,
 
 ## TL;DR
 
-A very high level overview of the math behind training a multi-layer perceptron (MLP) neural network.
+A very high level overview of the math behind training a multi-layer perceptron
+(MLP) neural network.
 
 * **STEP 1 - Initialization**
   * Initialize the weights & biases of a mlp neural network by using a
@@ -73,29 +84,30 @@ A very high level overview of the math behind training a multi-layer perceptron 
 * **STEP 2 - Min-Max Values**
 
   * Find the
-    [min & max values](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-2---min--max-values)
+    [min & max values](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-2---min--max-values)
     of each input & output of the dataset
 
 * **STEP 3 - Normalization**
 
   * Used to normalize input & output of dataset using the
-    [min-max scaling function $[0, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function-0-1)
+    [min-max scaling function $[0, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#min-max-scaling-function-0-1)
     or
   * Used to normalize input & output of dataset using the
-    [min-max scaling function $[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#min-max-scaling-function--1-1)
+    [min-max scaling function $[-1, 1]$](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#min-max-scaling-function--1-1)
 
 $$
 normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 $$
 
 $$
-normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)} \times 2 - 1
+normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
+\times 2 - 1
 $$
 
 * **STEP 4 - Forward Pass**
 
 * Step 4.1 - Calculate
-  [the summation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-41---the-summation-function-for-the-hidden-layers)
+  [the summation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-41---the-summation-function-for-the-hidden-layers)
   * Normalize the input data using a min-max values above
 
 $$
@@ -105,11 +117,11 @@ s_{h}
 $$
 
 * Step 4.2 Calculate
-  [the activation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-42---the-activation-function-for-the-hidden-layers)
+  [the activation function for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-42---the-activation-function-for-the-hidden-layers)
   using
-  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
+  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-sigmoid-function)
   or
-  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-tanh-function)
+  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-tanh-function)
 
 $$
 a_{h}
@@ -122,7 +134,7 @@ a_{h}
 $$
 
 * Step 4.3  - Calculate
-  [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-43---the-summation-function-for-the-output-layer)
+  [the summation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-43---the-summation-function-for-the-output-layer)
 
 $$
 s_{o}
@@ -131,11 +143,11 @@ s_{o}
 $$
 
 * Steps 4.4 - Calculate
-  [the activation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-44---the-activation-function-for-the-output-layer)
+  [the activation function for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-44---the-activation-function-for-the-output-layer)
   using
-  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-sigmoid-function)
+  [the sigmoid function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-sigmoid-function)
   or
-  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#the-tanh-function)
+  [the tanh function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-tanh-function)
 
 $$
 a_{o}
@@ -150,7 +162,7 @@ $$
 * **The Loss Function**
 
   * We will be using the
-    [mean squared error (mse) loss function](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#mean-squared-error-mse-loss-function)
+    [mean squared error (mse) loss function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mean-squared-error-mse-loss-function)
     on each output node
   * The goal is to minimize the loss function $L(w_{0}...,b)$ by using
     the gradient descent formula
@@ -191,7 +203,8 @@ $$
 * **STEP 5 - Backward Pass**
 
 * Step 5.1 - Calculate
-[the error signal for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-51---the-error-signal-for-the-output-layer) where the target output $z$ is normalized within a pre-defined range
+[the error signal for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-51---the-error-signal-for-the-output-layer)
+where the target output $z$ is normalized within a pre-defined range
   * Normalize the output target data using a min-max values above
 
 $$
@@ -204,7 +217,7 @@ $$
 $$
 
 * Step 5.2 - Calculate
-[the error signal for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-52---the-error-signal-for-the-hidden-layers)
+[the error signal for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-52---the-error-signal-for-the-hidden-layers)
 
 $$
 \begin{aligned}
@@ -216,7 +229,7 @@ $$
 $$
 
 * Step 5.3 - Calculate
-[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-53---the-new-weights--biases-for-the-output-layer)
+[the new weights & biases for the output layer](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-53---the-new-weights--biases-for-the-output-layer)
 using the gradient descent formula and our error signal
 
 $$
@@ -231,7 +244,7 @@ b_{onew}
 $$
 
 * Step 5.4 - Calculate
-[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-54---the-new-weights--biases-for-the-hidden-layers)
+[the new weights & biases for the hidden layers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-54---the-new-weights--biases-for-the-hidden-layers)
 using the gradient descent formula and our error signal
 
 $$
@@ -247,22 +260,22 @@ $$
 
 * **STEP 6 - Update Weights & Biases**
 
-  * [update weights & biases](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-6---update-weights--biases)
+  * [update weights & biases](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-6---update-weights--biases)
     and loop on dataset and epochs
 
 * **STEP 7 - Save Min-Max**
 
-  * [Save min-max to a file](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-7---save-min-max-to-a-file)
+  * [Save min-max to a file](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-7---save-min-max-to-a-file)
 
 * **STEP 8 - Save Weights & Biases**
 
-  * [Save weights & biases to a file](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/the-math-behind-training-mlp-neural-networks.md#step-8---save-weights--biases-to-a-file)
+  * [Save weights & biases to a file](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-8---save-weights--biases-to-a-file)
 
 ## MATHEMATICAL MODEL OF NEURAL NETWORK
 
 Since we are dealing with neural networks, let's quickly review our model of a neuron.
 Check out a more detailed view in my cheat sheets
-[mathematical model of a neuron](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/software-architectures/artificial-intelligence/artificial-intelligence-cheat-sheet/neural-networks.md#mathematical-model-of-a-neuron).
+[mathematical model of a neuron](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#mathematical-model-of-a-neuron).
 
 ![IMAGE mlp-training-multi-layer-perceptron-neural-network-model-neuron IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-model-neuron.svg)
 
@@ -336,7 +349,8 @@ The first step is to initialize the weights and biases of the neural network.
 This can either be done randomly or by using a configuration file.
 The values are usually between -1 and 1.
 
-For our example, we will assume the weights and biases were initialized using a configuration file,
+For our example, we will assume the weights and biases were initialized using
+a configuration file,
 
 * **HIDDEN LAYER**
   * NODE 0
@@ -357,7 +371,8 @@ For our example, we will assume the weights and biases were initialized using a 
 
 ## STEP 2 - MIN & MAX VALUES
 
-Before we normalize the input dataset, we need to find the min and max values of each input.
+Before we normalize the input dataset, we need to find the min and max values
+of each input.
 For our example, the min and max values of the input dataset are,
 
 ```csv
@@ -404,7 +419,8 @@ where
 * $normalized \ data$ is the output
 
 ```text
-This equation and finding the min max values will be used when writing a computer program
+This equation and finding the min max values will be used when writing
+a computer program
 ```
 
 For example, from our dataset,
@@ -447,7 +463,8 @@ normalized \ data = \frac{data - min(dataset)}{max(dataset) - min(dataset)}
 $$
 
 ```text
-This equation and finding the min max values will be used when writing a computer program
+This equation and finding the min max values will be used when writing
+a computer program
 ```
 
 For our example, the input dataset would look like,
@@ -588,7 +605,8 @@ $$
 This equation will be used when writing a computer program
 ```
 
-For our example, the sigmoid activation function for the hidden layer nodes would be,
+For our example, the sigmoid activation function for the hidden layer
+nodes would be,
 
 $$
 \begin{aligned}
@@ -647,7 +665,8 @@ $$
 This equation will be used when writing a computer program
 ```
 
-For our example, the summation function for the output layer node for sigmoid would be,
+For our example, the summation function for the output layer node for sigmoid
+would be,
 
 $$
 \begin{aligned}
@@ -691,7 +710,8 @@ $$
 This equation will be used when writing a computer program
 ```
 
-For our example, the sigmoid activation function for the output layer node would be,
+For our example, the sigmoid activation function for the output layer
+node would be,
 
 $$
 \begin{aligned}
@@ -746,7 +766,8 @@ What does this mean?
 
 1. We will calculate the gradient of the loss function with respect
    to the weights and biases
-2. Then we will adjust (get new) weights and biases in the opposite direction of the gradient
+2. Then we will adjust (get new) weights and biases in the opposite direction
+   of the gradient
 
 But first, we need to understand the gradient descent formula.
 
@@ -896,7 +917,7 @@ $$
 
 If we keep doing this, we will eventually get to the minimum of the function $f(x,y)$.
 
-| $x$ | $\nabla f(x)$ | $x_{new}$ | | $y$ | $\nabla f(y)$ | $y_{new}$  | | $f(x,y)$ |
+| $x$       | $\nabla f(x)$ | $x_{new}$ | | $y$        | $\nabla f(y)$ | $y_{new}$ | | $f(x,y)$ |
 |-----------|---------------|-----------|-|------------|---------------|-----------|-|----------|
 |           |               | 3.0000    | |            |               | 4.0000    | | 25.0000  |
 | 3.0000    | 6.0000        | 2.4000    | | 4.0000     | 8.0000        | 3.2000    | | 16.0000  |
@@ -937,7 +958,10 @@ L(w_{0}...,b_{o}) &= \frac{1}{2} \left(f_{o} (\sum_{i=0}^{n} a_i w_i + b_{o}) - 
 \end{aligned}
 $$
 
-Like above, we first want to find the gradient of the loss function with respect to each $w_{i}$ and $b$. But, it is a little more difficult than the above example since we have a function (loss function) of a function (activation function) of a function (summation function).
+Like above, we first want to find the gradient of the loss function with
+respect to each $w_{i}$ and $b$. But, it is a little more difficult than
+the above example since we have a function (loss function) of a function
+(activation function) of a function (summation function).
 So we need to use the chain rule of calculus first,
 
 $$
@@ -1083,7 +1107,8 @@ $$
 \end{aligned}
 $$
 
-For our example, we're going to normalize the target output $z$ to 0.91, rather than 1.0.
+For our example, we're going to normalize the target output $z$ to 0.91, rather
+than 1.0.
 
 ![IMAGE mlp-training-multi-layer-perceptron-neural-network-step5.1 IMAGE](../../../../../../docs/pics/software/development/mlp-training-multi-layer-perceptron-neural-network-step5.1.svg)
 
@@ -1138,7 +1163,8 @@ $$
 
 So let's find these derivatives,
 
-1- The **partial derivative of the mse loss function with respect to the hidden layer output $a$**.
+1- The **partial derivative of the mse loss function with respect to the hidden
+layer output $a$**.
 This is the tricky part. We need to use the chain rule of
 calculus to find the derivative of the loss function with respect
 to the hidden layer output $y_{o}$.
@@ -1179,7 +1205,8 @@ $$
 \end{aligned}
 $$
 
-2 - The **partial derivative of the hidden layer output function with respect to the summation function $s$**,
+2 - The **partial derivative of the hidden layer output function with
+respect to the summation function $s$**,
 
 $$
 \begin{aligned}

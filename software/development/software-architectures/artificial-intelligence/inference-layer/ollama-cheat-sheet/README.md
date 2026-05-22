@@ -24,19 +24,38 @@ curl http://localhost:11434                          # check Ollama is running
 
 Table of contents
 
-* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#overview)
-  * [The Stack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#the-stack)
-  * [Claude vs Homelab](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#claude-vs-homelab)
-  * [How Ollama Fits In — Request Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#how-ollama-fits-in--request-flow)
-  * [What OpenClaw Actually Does](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#what-openclaw-actually-does)
-  * [Picking Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#picking-your-llm)
-  * [Feeding Knowledge Into Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#feeding-knowledge-into-your-llm)
-* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#install)
-* [MODELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#models)
-  * [Models I Have](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#models-i-have)
-  * [What Model to Use](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#what-model-to-use)
-  * [Tokens/s on P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#tokenss-on-p40)
-* [CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-inference-stack/ollama-cheat-sheet#configure-ollama-to-listen-on-all-interfaces)
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#overview)
+  * [The Stack](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#the-stack)
+  * [Claude vs Homelab](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#claude-vs-homelab)
+  * [How Ollama Fits In — Request Flow](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#how-ollama-fits-in--request-flow)
+  * [What OpenClaw Actually Does](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#what-openclaw-actually-does)
+  * [Picking Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#picking-your-llm)
+  * [Feeding Knowledge Into Your LLM](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#feeding-knowledge-into-your-llm)
+* [INSTALL](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#install)
+* [MODELS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#models)
+  * [Models I Have](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#models-i-have)
+  * [What Model to Use](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#what-model-to-use)
+  * [Tokens/s on P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#tokenss-on-p40)
+* [CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#configure-ollama-to-listen-on-all-interfaces)
+  * [Check What Ollama is Currently Listening On](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#check-what-ollama-is-currently-listening-on)
+
+Documentation and Reference
+
+* AI Fundamentals
+  * [artificial intelligence overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#artificial-intelligence-overview-cheat-sheet)
+  * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#neural-networks-cheat-sheet)
+    ([my-neural-networks](https://github.com/JeffDeCola/my-neural-networks?tab=readme-ov-file#my-neural-networks))
+  * [math behind training mlp neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#math-behind-training-mlp-neural-networks-cheat-sheet)
+* Application/Orchestration Layer
+  * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#ai-stack-configurations---from-chatbots-to-agents-cheat-sheet)
+  * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/openclaw-ai-agent-cheat-sheet#openclaw-ai-agent-cheat-sheet)
+  * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
+* Inference Layer
+  * **[ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet)**
+    **YOU ARE HERE**
+* LLM Layer
+  * [llm](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)
+  * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet#llm-training-cheat-sheet)
 
 ## OVERVIEW
 
@@ -157,16 +176,16 @@ ollama list
 
 ### Models I Have
 
-**Updated March 2026**
+Updated March 2026
 
-| Model | Parameters | Disk Size | VRAM (Q4) | Context Window | Reasoning | Tool Calling | Use Case | Notes |
-|-------|-----------|-----------|-----------|----------------|-----------|-------------|----------|-------|
-| **phi4-mini** | 3.8B | 2.5 GB | ~3 GB | 16K | No | No | Fast chat, quick Q&A | Fastest model, best for simple tasks |
-| **llama3.1:8b** | 8B | 4.9 GB | ~5 GB | 128K | No | Yes | General purpose, everyday tasks | Meta model, huge community, solid all-rounder |
-| **qwen3:8b** | 8B | 5.2 GB | ~5 GB | 40K | Yes (/think) | Yes | Agents, tool calling, fallback | Default for OpenClaw agents on VM 103/104 |
-| **qwen2.5-coder:32b** | 32B | 19 GB | ~20 GB | 32K | No | Yes | Coding, refactoring, code review | Best local coding model, fills P40 VRAM |
-| **glm-4.7-flash** | ~9B | 19 GB | ~12 GB | 1M | No | No | Long context analysis | Huge context window, good for large documents |
-| **deepseek-r1:32b** | 32B | 19 GB | ~20 GB | 128K | Yes (CoT) | **No** | Deep reasoning, math, complex analysis | Chain-of-thought built in, NO tool calling |
+| Model                  | Parameters | Disk Size | VRAM (Q4) | Context Window | Reasoning    | Tool Calling | Use Case                               | Notes                                         |
+|------------------------|------------|-----------|-----------|----------------|--------------|--------------|----------------------------------------|-----------------------------------------------|
+| **phi4-mini**          | 3.8B       | 2.5 GB    | ~3 GB     | 16K            | No           | No           | Fast chat, quick Q&A                   | Fastest model, best for simple tasks          |
+| **llama3.1:8b**        | 8B         | 4.9 GB    | ~5 GB     | 128K           | No           | Yes          | General purpose, everyday tasks        | Meta model, huge community, solid all-rounder |
+| **qwen3:8b**           | 8B         | 5.2 GB    | ~5 GB     | 40K            | Yes (/think) | Yes          | Agents, tool calling, fallback         | Default for OpenClaw agents on VM 103/104     |
+| **qwen2.5-coder:32b**  | 32B        | 19 GB     | ~20 GB    | 32K            | No           | Yes          | Coding, refactoring, code review       | Best local coding model, fills P40 VRAM       |
+| **glm-4.7-flash**      | ~9B        | 19 GB     | ~12 GB    | 1M             | No           | No           | Long context analysis                  | Huge context window, good for large documents |
+| **deepseek-r1:32b**    | 32B        | 19 GB     | ~20 GB    | 128K           | Yes (CoT)    | **No**       | Deep reasoning, math, complex analysis | Chain-of-thought built in, NO tool calling    |
 
 ### What Model to Use
 
@@ -179,14 +198,14 @@ ollama list
 
 ### Tokens/s on P40
 
-| Model | Prompt Eval | Generation |
-|-------|-------------|------------|
-| phi4-mini | ~800+ t/s | ~50-65 t/s |
-| llama3.1:8b | ~500+ t/s | ~30-45 t/s |
-| qwen3:8b | ~450+ t/s | ~25-42 t/s |
-| qwen2.5-coder:32b | ~150+ t/s | ~12-18 t/s |
-| glm-4.7-flash | ~300+ t/s | ~20-30 t/s |
-| deepseek-r1:32b | ~150+ t/s | ~12-18 t/s |
+| Model             | Prompt Eval | Generation |
+|-------------------|-------------|------------|
+| phi4-mini         | ~800+ t/s   | ~50-65 t/s |
+| llama3.1:8b       | ~500+ t/s   | ~30-45 t/s |
+| qwen3:8b          | ~450+ t/s   | ~25-42 t/s |
+| qwen2.5-coder:32b | ~150+ t/s   | ~12-18 t/s |
+| glm-4.7-flash     | ~300+ t/s   | ~20-30 t/s |
+| deepseek-r1:32b   | ~150+ t/s   | ~12-18 t/s |
 
 ## CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES
 

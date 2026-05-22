@@ -1,4 +1,4 @@
-# PROXMOX - INSTALL, CONFIGURE AND CREATE VM
+# PROXMOX - INSTALL, CONFIGURE AND CREATE VM CHEAT SHEET
 
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
@@ -42,6 +42,11 @@ Table of Contents
 * [CREATE A LXC - DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-lxc---debian)
 * [BACKUP VMs/LXCs USING PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#backup-vmslxcs-using-proxmox)
 * [CONFIGURE PROXMOX FOR PACKER BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#configure-proxmox-for-packer-builds)
+
+Documentation and Reference
+
+* [poweredge r730 nvidia p40 configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#poweredge-r730-nvidia-p40-configure-cheat-sheet)
+* [jeffs-proxmox-image-ubuntu](https://github.com/JeffDeCola/my-packer-image-builds/tree/master/proxmox-images/jeffs-proxmox-image-ubuntu)
 
 ## MAKE PROXMOX USB
 
