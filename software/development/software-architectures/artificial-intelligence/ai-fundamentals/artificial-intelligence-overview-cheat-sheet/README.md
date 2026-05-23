@@ -40,7 +40,7 @@ Documentation and Reference
 ## OVERVIEW
 
 Artificial Intelligence (AI) is the term used to describe the ability
-of a machine to perform a cognitive processes.
+of a machine to perform cognitive processes.
 
 ## TYPES OF AI
 
@@ -51,6 +51,7 @@ do (Functionality).
 
 * **Machine Learning** (Narrow AI / Weak AI)
   * Designed for a specific task
+  * Most modern AI, including ML systems and LLMs, falls here
 * **Machine Intelligence** (General AI / Strong AI)
   * Can perform any intellectual task that a human can
 * **Machine Consciousness** (Superintelligent AI)
@@ -99,6 +100,9 @@ There are many types of Machine Learning such as,
       * Clustering
       * Pattern Recognition
       * Dimensionality Reduction Visualization
+    * Self-Supervised Learning
+      * Next-token prediction (LLMs)
+      * Masked token prediction (BERT-style)
   * **Deep Learning** (Neural Networks)
     * [Perceptron (P)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#perceptron-p)
     * [Multi-Layer Perceptron (MLP)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#multi-layer-perceptron-mlp)
@@ -106,6 +110,9 @@ There are many types of Machine Learning such as,
     * [Recurrent Neural Networks (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#recurrent-neural-networks-rnn)
     * [Convolutional Neural Networks (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#convolutional-neural-networks-cnn)
     * [Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#generative-adversarial-networks-gan)
+    * [Transformers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#transformers)
+      * [Large Language Models (LLMs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)
+      * Vision Transformers (ViT)
     * etc...
   * **Ensemble Learning**
     * Boosting
@@ -113,11 +120,17 @@ There are many types of Machine Learning such as,
     * Stacking
   * **Reinforcement Learning**
 
+> **Note:** Large Language Models (LLMs) sit inside Deep Learning as a
+> specific application of the Transformer architecture. They span three
+> categories in this sheet: Deep Learning (Transformers as architecture),
+> Self-Supervised Learning (pretraining), and Reinforcement Learning
+> (RLHF alignment).
+
 ### CLASSICAL LEARNING
 
 Classical learning is the most common type of machine learning.
-It can be broken down into two categories: Supervised and Unsupervised.
-Both systems learn from mistakes and makes predictions on new data.
+It can be broken down into three categories: Supervised, Unsupervised, and Self-Supervised.
+These systems learn from mistakes and makes predictions on new data.
 
 #### SUPERVISED LEARNING
 
@@ -146,10 +159,23 @@ output and the system learns to find patterns in the data.
   * Used for reducing the number of features in data
   * Example: Reducing the number of features in an image
 
+#### SELF-SUPERVISED LEARNING
+
+In self-supervised learning, the system creates its own labels from
+unlabeled data by hiding part of the input and learning to predict it.
+This is the regime that modern LLMs are pretrained under.
+
+* **Next-token prediction**
+  * Predict the next word given previous words
+  * Example: GPT-style LLM pretraining
+* **Masked token prediction**
+  * Predict hidden words given surrounding context
+  * Example: BERT pretraining
+
 ### DEEP LEARNING (NEURAL NETWORKS)
 
 Deep learning is a subset of machine learning that uses neural networks.
-It is the most popular type of machine learning today. A Neural Network is a
+It is a very popular type of machine learning today. A Neural Network is a
 working system at the heart of a Deep Learning algorithm that helps it process
 raw data.
 
@@ -182,6 +208,17 @@ There are many types of neural networks such as,
 * **[Generative Adversarial Networks (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#generative-adversarial-networks-gan)**
   * Used for generating new data
   * Example: Generating new images
+* **[Transformers](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#transformers)**
+  * Architecture using self-attention to process sequences in parallel
+  * Largely replaced RNNs for sequence tasks
+  * Foundation for most modern LLMs, vision, and multimodal models
+  * **[Large Language Models (LLMs)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet)**
+    * Transformers scaled to billions of parameters
+    * Trained via self-supervised learning on massive text corpora
+    * Example: ChatGPT, Claude, Llama
+  * **Vision Transformers (ViT)**
+    * Transformers applied to image data
+    * Example: Image classification, object detection
 
 ### ENSEMBLE LEARNING
 
@@ -200,6 +237,30 @@ and combine them to make a more powerful model. There are three types,
 
 ### REINFORCEMENT LEARNING
 
-Reinforcement learning is a type of machine learning that is used to
-train an agent to make a sequence of decisions. Examples include
-game playing and robotics.
+Reinforcement learning is a type of machine learning that trains an
+agent to make a sequence of decisions by interacting with an environment
+and receiving rewards.
+
+Core concepts,
+
+* **Agent** - the learner/decision maker
+* **Environment** - what the agent interacts with
+* **Reward** - feedback signal the agent tries to maximize
+* **Policy** - the agent's strategy for choosing actions
+
+Common approaches,
+
+* **Q-Learning**
+  * Learn the value of taking an action in a state
+* **Policy Gradient**
+  * Directly learn the policy
+* **Actor-Critic**
+  * Combines value-based and policy-based methods
+
+Applications,
+
+* Game playing (AlphaGo, Atari)
+* Robotics
+* **RLHF (Reinforcement Learning from Human Feedback)**
+  * Used to align LLMs with human preferences
+  * Turns a raw pretrained LLM into an instruction-following assistant
