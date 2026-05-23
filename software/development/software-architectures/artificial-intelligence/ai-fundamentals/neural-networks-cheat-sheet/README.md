@@ -19,6 +19,7 @@ Table of Contents
   * [RECURRENT NEURAL NETWORKS (RNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#recurrent-neural-networks-rnn)
   * [CONVOLUTIONAL NEURAL NETWORKS (CNN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#convolutional-neural-networks-cnn)
   * [GENERATIVE ADVERSARIAL NETWORKS (GAN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#generative-adversarial-networks-gan)
+  * [TRANSFORMERS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#transformers)
 
 Documentation and Reference
 
@@ -133,8 +134,7 @@ $$
 $$
 
 <p align="center">
-    <img src="svgs/sigmoid-function.svg"
-    align="middle"
+    <img src="svgs/sigmoid-function.svg" alt="sigmoid function">
 </p>
 
 * [Tanh Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-tanh-function-using-the-quotient-rule)
@@ -153,8 +153,7 @@ $$
 $$
 
 <p align="center">
-    <img src="svgs/tanh-function.svg"
-    align="middle"
+    <img src="svgs/tanh-function.svg" alt="tanh function">
 </p>
 
 ### THE OUTPUT FUNCTION
@@ -264,8 +263,9 @@ neural network written in go.
   * The Encoder compresses the input data
   * The Decoder decompresses the compressed data
 * TRAINING:
-  * The network is trained to minimize the difference between the input and output
-  common patterns and generalize the data.
+  * The network is trained to minimize the difference between the input
+    and output
+  * The encoder learns to find common patterns and generalize the data
 * APPLICATION:
   * AEs to find common patterns and generalize the data
   * Dimensionality Reduction
@@ -342,3 +342,39 @@ neural network written in go.
   * Example: Generating new images of human faces
 
 ![IMAGE - neural networks generative adversarial - IMAGE](../../../../../../docs/pics/software/development/neural-networks-generative-adversarial.svg)
+
+### TRANSFORMERS
+
+* DESCRIPTION:
+  * A type of neural network designed to handle sequential data
+  * Unlike RNNs, it processes the entire sequence in parallel rather
+    than step-by-step
+  * Built around the **self-attention mechanism**, which lets each token
+    in the sequence weigh the relevance of every other token
+  * Made up of stacked encoder and/or decoder blocks
+  * Introduced in the 2017 paper
+    [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+* FUNCTION:
+  * Input tokens are converted to embeddings and combined with
+    positional encodings (since there is no recurrence to provide order)
+  * Self-attention computes Query (Q), Key (K), and Value (V) vectors
+    for each token
+  * Attention scores determine how much each token attends to every other token
+  * Multi-head attention runs several attention operations in parallel to
+    capture different types of relationships
+  * Feed-forward layers (MLPs) and residual connections refine the
+    representations
+* TRAINING:
+  * Trained using backpropagation and gradient descent
+  * Typically pretrained on massive unlabeled corpora using
+    self-supervised objectives (next-token or masked-token prediction)
+  * Often fine-tuned on a specific task afterward
+  * Training is highly parallelizable, which is what enabled scaling to
+    billions of parameters
+* APPLICATION:
+  * Language modeling and text generation
+    ([LLMs](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-cheat-sheet#llm-cheat-sheet))
+  * Language translation
+  * Image classification (Vision Transformers / ViT)
+  * Multimodal models (text + image + audio)
+  * Example: ChatGPT, Claude, Llama, BERT, GPT, ViT
