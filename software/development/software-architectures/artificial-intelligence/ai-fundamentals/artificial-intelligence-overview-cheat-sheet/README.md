@@ -3,7 +3,7 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_An high level overview of artificial intelligence (AI)
+_A high level overview of artificial intelligence (AI)
 and a quick dive into machine learning (ML)._
 
 Table of Contents
