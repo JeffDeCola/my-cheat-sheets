@@ -248,15 +248,13 @@ $$
 
 which can also be written as,
 
-<table align="center">
-<tr>
-<td>
+<div align="center">
+<table><tr><td style="border: 3px solid #000; padding: 8px 30px;">
 
 $$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
-</td>
-</tr>
-</table>
+</td></tr></table>
+</div>
 
 So giving the example above of $f(x) = x^2 + 2$, the derivative is
 
