@@ -248,9 +248,13 @@ $$
 
 which can also be written as,
 
+<table align="center"><tr><td>
+
 $$
-\boxed{\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}}
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}
 $$
+
+</td></tr></table>
 
 So giving the example above of $f(x) = x^2 + 2$, the derivative is
 
