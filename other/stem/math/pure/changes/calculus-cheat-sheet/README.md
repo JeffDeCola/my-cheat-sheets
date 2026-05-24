@@ -249,7 +249,7 @@ $$
 which can also be written as,
 
 <div align="center">
-<table><tr><td style="border: 3px solid #000; padding: 8px 30px;">
+<table><tr><td style="border: 10px solid #000; padding: 8px 300px;">
 
 $$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
