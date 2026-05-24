@@ -521,7 +521,7 @@ $$
 
 <p align="center">
     <img src="svgs/sigmoid-function.svg"
-    align="middle"
+    alt="sigmoid function">
 </p>
 
 ##### The Tanh Function
@@ -535,7 +535,7 @@ $$
 
 <p align="center">
     <img src="svgs/tanh-function.svg"
-    align="middle"
+    alt="sigmoid function">
 </p>
 
 #### STEP 4.1 - THE SUMMATION FUNCTION FOR THE HIDDEN LAYERS
@@ -811,7 +811,7 @@ This represents a paraboloid (a bowl-shaped surface)
 
 <p align="center">
     <img src="svgs/f-of-x-and-y-equals-x-squared-plus-y-squared.svg"
-    align="middle"
+    alt="f-of-x-and-y-equals-x-squared-plus-y-squared">
 </p>
 
 NOTE: COULD NOT GET THIS PERFECT - IGNORE THE LIP
