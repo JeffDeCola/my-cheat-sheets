@@ -134,7 +134,8 @@ $$
 $$
 
 <p align="center">
-    <img src="svgs/sigmoid-function.svg" alt="sigmoid function">
+    <img src="svgs/sigmoid-function.svg"
+    alt="sigmoid function">
 </p>
 
 * [Tanh Function](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-tanh-function-using-the-quotient-rule)
@@ -153,7 +154,8 @@ $$
 $$
 
 <p align="center">
-    <img src="svgs/tanh-function.svg" alt="tanh function">
+    <img src="svgs/tanh-function.svg"
+    alt="tanh function">
 </p>
 
 ### THE OUTPUT FUNCTION

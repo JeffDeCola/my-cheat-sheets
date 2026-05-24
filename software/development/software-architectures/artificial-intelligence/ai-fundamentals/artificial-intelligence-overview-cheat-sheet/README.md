@@ -241,14 +241,14 @@ Reinforcement learning is a type of machine learning that trains an
 agent to make a sequence of decisions by interacting with an environment
 and receiving rewards.
 
-Core concepts,
+Core concepts
 
 * **Agent** - the learner/decision maker
 * **Environment** - what the agent interacts with
 * **Reward** - feedback signal the agent tries to maximize
 * **Policy** - the agent's strategy for choosing actions
 
-Common approaches,
+Common approaches
 
 * **Q-Learning**
   * Learn the value of taking an action in a state
@@ -257,7 +257,7 @@ Common approaches,
 * **Actor-Critic**
   * Combines value-based and policy-based methods
 
-Applications,
+Applications
 
 * Game playing (AlphaGo, Atari)
 * Robotics
