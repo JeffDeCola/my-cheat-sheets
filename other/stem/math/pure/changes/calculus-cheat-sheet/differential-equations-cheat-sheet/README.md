@@ -407,12 +407,6 @@ $$\displaystyle P(t) = 100 \, e^{0.231 t}$$
 
 </td></tr></table>
 
-<table align="center"><tr><td>
-
-$$P(t) = 100 \, e^{0.231 t}$$
-
-</td></tr></table>
-
 ### RADIOACTIVE DECAY
 
 Consider a radioactive substance that decays at a rate proportional
@@ -459,12 +453,6 @@ $$\displaystyle N(t) = N_0 \, e^{-0.139 t}$$
 
 </td></tr></table>
 
-<table align="center"><tr><td>
-
-$$N(t) = N_0 \, e^{-0.139 t}$$
-
-</td></tr></table>
-
 ### EXPONENTIAL LEARNING RATE DECAY
 
 In machine learning, the learning rate $\eta$ controls how big a
@@ -498,12 +486,6 @@ would be,
 <table align="center"><tr><td>
 
 $$\displaystyle \eta(100) = 0.1 \cdot e^{-0.01 \cdot 100} = 0.1 \cdot e^{-1} = 0.0368$$
-
-</td></tr></table>
-
-<table align="center"><tr><td>
-
-$$\eta(100) = 0.1 \cdot e^{-0.01 \cdot 100} = 0.1 \cdot e^{-1} = 0.0368$$
 
 </td></tr></table>
 
