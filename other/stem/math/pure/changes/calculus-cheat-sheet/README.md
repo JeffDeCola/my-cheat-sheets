@@ -254,7 +254,17 @@ $$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
 </td></tr></table>
 
-$$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
+<table align="center"><tr><td>
+
+$$\lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
+
+</td></tr></table>
+
+<table align="center"><tr><td>
+
+$$\displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
+
+</td></tr></table>
 
 So giving the example above of $f(x) = x^2 + 2$, the derivative is
 
