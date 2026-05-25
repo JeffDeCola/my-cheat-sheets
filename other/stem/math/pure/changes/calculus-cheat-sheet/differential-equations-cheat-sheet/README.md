@@ -22,8 +22,8 @@ Table of Contents
 Documentation and Reference
 
 * [calculus](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet)
-* [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders)
-* [latex math mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+* [latex math mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#latex-math-mode-cheat-sheet)
+  ([my-latex-renders](https://github.com/JeffDeCola/my-latex-renders))
 
 ## OVERVIEW
 
@@ -142,12 +142,6 @@ Therefore, the specific solution to this initial value problem is
 <table align="center"><tr><td>
 
 $$\displaystyle y = x^2$$
-
-</td></tr></table>
-
-<table align="center"><tr><td>
-
-$$y = x^2$$
 
 </td></tr></table>
 
@@ -409,6 +403,12 @@ Therefore, the population at time $t$ would be,
 
 <table align="center"><tr><td>
 
+$$\displaystyle P(t) = 100 \, e^{0.231 t}$$
+
+</td></tr></table>
+
+<table align="center"><tr><td>
+
 $$P(t) = 100 \, e^{0.231 t}$$
 
 </td></tr></table>
@@ -455,6 +455,12 @@ Therefore, the amount remaining at time $t$ would be,
 
 <table align="center"><tr><td>
 
+$$\displaystyle N(t) = N_0 \, e^{-0.139 t}$$
+
+</td></tr></table>
+
+<table align="center"><tr><td>
+
 $$N(t) = N_0 \, e^{-0.139 t}$$
 
 </td></tr></table>
@@ -488,6 +494,12 @@ where $\eta_0$ is the initial learning rate at $t = 0$.
 As an example, with an initial learning rate $\eta_0 = 0.1$ and a
 decay rate $k = 0.01$, the learning rate at training step $t = 100$
 would be,
+
+<table align="center"><tr><td>
+
+$$\displaystyle \eta(100) = 0.1 \cdot e^{-0.01 \cdot 100} = 0.1 \cdot e^{-1} = 0.0368$$
+
+</td></tr></table>
 
 <table align="center"><tr><td>
 

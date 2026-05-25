@@ -35,7 +35,8 @@ Table of Contents
 Documentation and Reference
 
 * [differential equations](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet)
-* [my-latex-renders](https://github.com/JeffDeCola/my-latex-renders) and [latex math mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md)
+* [latex math mode](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/software/development/languages/latex-cheat-sheet/latex-math-mode.md#latex-math-mode-cheat-sheet)
+  ([my-latex-renders](https://github.com/JeffDeCola/my-latex-renders))
 
 ## OVERVIEW
 
@@ -250,7 +251,7 @@ which can also be written as,
 
 <table align="center"><tr><td>
 
-$$\displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
+$$\displaystyle \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
 </td></tr></table>
 
@@ -470,7 +471,7 @@ is written as
 
 <table align="center"><tr><td>
 
-$$\displaystyle\int f(x) dx = F(x) + C$$
+$$\displaystyle \int f(x) dx = F(x) + C$$
 
 </td></tr></table>
 
