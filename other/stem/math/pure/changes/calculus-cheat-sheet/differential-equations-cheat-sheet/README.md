@@ -141,6 +141,12 @@ Therefore, the specific solution to this initial value problem is
 
 <table align="center"><tr><td>
 
+$$\displaystyle y = x^2$$
+
+</td></tr></table>
+
+<table align="center"><tr><td>
+
 $$y = x^2$$
 
 </td></tr></table>

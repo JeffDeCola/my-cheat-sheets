@@ -521,13 +521,7 @@ is written as
 
 <table align="center"><tr><td>
 
-$$\displaystyle\int_{a}^{b} f(x) dx = F(b) - F(a)$$
-
-</td></tr></table>
-
-<table align="center"><tr><td>
-
-$$\int_{a}^{b} f(x) dx = F(b) - F(a)$$
+$$\displaystyle \int_{a}^{b} f(x) dx = F(b) - F(a)$$
 
 </td></tr></table>
 
