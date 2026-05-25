@@ -250,18 +250,6 @@ which can also be written as,
 
 <table align="center"><tr><td>
 
-$$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
-
-</td></tr></table>
-
-<table align="center"><tr><td>
-
-$$\lim\limits_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
-
-</td></tr></table>
-
-<table align="center"><tr><td>
-
 $$\displaystyle\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
 </td></tr></table>
@@ -482,9 +470,7 @@ is written as
 
 <table align="center"><tr><td>
 
-$$
-\int f(x) dx = F(x) + C
-$$
+$$\displaystyle\int f(x) dx = F(x) + C$$
 
 </td></tr></table>
 
@@ -535,9 +521,13 @@ is written as
 
 <table align="center"><tr><td>
 
-$$
-\int_{a}^{b} f(x) dx = F(b) - F(a)
-$$
+$$\displaystyle\int_{a}^{b} f(x) dx = F(b) - F(a)$$
+
+</td></tr></table>
+
+<table align="center"><tr><td>
+
+$$\int_{a}^{b} f(x) dx = F(b) - F(a)$$
 
 </td></tr></table>
 
