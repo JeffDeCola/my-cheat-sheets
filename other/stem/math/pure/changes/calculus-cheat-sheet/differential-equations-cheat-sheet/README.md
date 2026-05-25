@@ -42,11 +42,26 @@ In short: calculus gives you the tools (derivatives and integrals), and differen
 
 It's important to understand the role of $f(x)$ in both calculus and differential equations.
 
-| CONTEXT                | WHAT f(x) REPRESENTS               | WHAT WE WANT TO FIND                 |
-|------------------------|------------------------------------|--------------------------------------|
-| CALCULUS (Derivatives) | $f(x)$ is the original function    | The derivative $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate    | Function $F(x)=\int f(x)dx + C$      |
-| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ | Solve for $y(x)$ by integrating      |
+| CONTEXT                | WHAT f(x) REPRESENTS                                                                             | WHAT WE WANT TO FIND                 |
+|------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function                                                                  | The derivative $f'(x)=\frac{dy}{dx}$ |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate                                                                  | Function $F(x)=\int f(x)dx + C$      |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ - $y(x)$ is the unknown function and $f(x)$ is the given rate | Solve for $y(x)$ by integrating      |
+
+> **Why the notation shifts:** In calculus there's only one function in
+> the room - $f(x)$ - so it gets the spotlight. In differential
+> equations there are two: the **unknown** function you're solving for,
+> and the **given** rule describing its rate of change. The convention
+> assigns:
+>
+> * $y(x)$ → the unknown function (the "main" function - what you want to find)
+> * $f(x)$ → the given right-hand side (the rate of change)
+>
+> Think of it like a detective story: in calculus, $f(x)$ is the
+> suspect you're investigating. In DiffEQ, $y(x)$ is the suspect
+> you're hunting, and $f(x)$ is the clue. The clue and the suspect
+> can't share a name - that's why $y$ gets promoted to "main function"
+> when you move from calculus to DiffEQ.
 
 It's also important to understand the notation,
 
