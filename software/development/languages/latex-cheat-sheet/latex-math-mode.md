@@ -150,6 +150,22 @@ $$
 \boxed{E=mc^2}
 $$
 
+**Einsteins famous equation with box (Will work on github)**
+
+```text
+<table align="center"><tr><td>
+
+E=mc^2
+
+</td></tr></table>
+```
+
+<table align="center"><tr><td>
+
+$$E=mc^2$$
+
+</td></tr></table>
+
 **Einsteins famous equation with color**
 
 ```text

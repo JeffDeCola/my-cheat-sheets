@@ -248,13 +248,11 @@ $$
 
 which can also be written as,
 
-<table align="center" border="2" cellpadding="15">
-<tr><td>
+<table align="center"><tr><td>
 
 $$\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
 
-</td></tr>
-</table>
+</td></tr></table>
 
 So giving the example above of $f(x) = x^2 + 2$, the derivative is
 
@@ -470,9 +468,13 @@ $$
 
 is written as
 
+<table align="center"><tr><td>
+
 $$
 \int f(x) dx = F(x) + C
 $$
+
+</td></tr></table>
 
 where `F(x)` is the antiderivative of `f(x)` and `C` is the constant of
 integration. The reason we use F(x) is to avoid confusion with the original function f(x)
@@ -519,9 +521,13 @@ $$
 
 is written as
 
+<table align="center"><tr><td>
+
 $$
 \int_{a}^{b} f(x) dx = F(b) - F(a)
 $$
+
+</td></tr></table>
 
 where `F(b)` is the antiderivative of `f(x)` evaluated at `b` and
 `F(a)` is the antiderivative of `f(x)` evaluated at `a`. This is

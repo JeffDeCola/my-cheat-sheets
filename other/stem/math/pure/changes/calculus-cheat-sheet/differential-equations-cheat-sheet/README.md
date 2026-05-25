@@ -35,9 +35,10 @@ It focuses on rates of change and accumulation.
 * **Differential Equations** (DiffEQ) are a specific branch of mathematics
 that deals with equations involving derivatives.
 A differential equation expresses a relationship between a function and its derivatives.
-Differential equations are used to
-model real-world phenomena involving rates of
+Differential equations are used to model real-world phenomena involving rates of
 change and accumulation.
+
+In short: calculus gives you the tools (derivatives and integrals), and differential equations puts those tools to work modeling real systems.
 
 It's important to understand the role of $f(x)$ in both calculus and differential equations.
 
@@ -49,9 +50,40 @@ It's important to understand the role of $f(x)$ in both calculus and differentia
 
 It's also important to understand the notation,
 
-* $dx$ means a small change in x
-* $dy$ means a small change in y
+* $dx$ means infinitesimal step (small change) in x
+* $dy$ means infinitesimal step (small change) in y
 * $\frac{dy}{dx}$ means the rate of change of y with respect to x
+
+<p align="center">
+    <img src="svgs/delta-y-vs-dy.svg"
+    alt="delta-y-vs-dy">
+</p>
+
+From this diagram, a secant line (not shown) connects the two points
+on the curve where the slope is $\frac{\Delta y}{\Delta x}$.
+As $\Delta x$ shrinks to zero the secant rotates into the
+tangent line (green) and the slope is $\frac{dy}{dx}$, which is the derivative,
+the instantaneous rate of change. Formally written as,
+
+$$
+\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}
+$$
+
+There are two branches of Calculus,
+
+* Differential Calculus
+  * Rate of change and slopes
+  * **Derivatives** - One quantity changes with respect to another
+  * Example: If you have a function describing the position of a falling object,
+    its derivative gives you the object's velocity, and the derivative of
+    velocity gives you acceleration
+
+* Integral Calculus
+  * Opposite of differential calculus
+  * Finding area under curve
+  * **Integrals** - Accumulation of a quantity over an interval
+  * Example: If you have a function describing the velocity of a falling object,
+    its integral gives you the object's position
 
 ## HOW TO SOLVE A DIFFERENTIAL EQUATION
 
@@ -326,3 +358,11 @@ $$ k = \frac{1}{3} ln \frac{200}{100} = \frac{1}{3} ln 2 =0.231$$
 Therefore, the population at time t would be,
 
 $$ P(t) = 100e^{0.231t} $$
+
+### RADIOACTIVE DECAY
+
+tbd
+
+### EXPONENTIAL LEARNING
+
+tbd
