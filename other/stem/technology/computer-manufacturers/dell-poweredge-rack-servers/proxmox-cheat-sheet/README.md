@@ -1,4 +1,4 @@
-# PROXMOX - INSTALL, CONFIGURE AND CREATE VM CHEAT SHEET
+# PROXMOX CHEAT SHEET
 
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
@@ -8,6 +8,27 @@ _How to install proxmox on a dell poweredge rack server and create a VM._
 tl;dr
 
 ```text
+PROXMOX
+    Storage / VM
+        pvesm status                                             # Storage status
+    Hardware sensors
+        ipmitool sdr                                             # All sensors
+        ipmitool sdr type Fan                                    # Fan speed
+        ipmitool sdr type Temperature                            # Temperatures
+    Power chassis
+        ipmitool chassis power status                            # Power state
+        ipmitool chassis power on                                # Power on
+        ipmitool chassis power off                               # Power off
+        ipmitool chassis power reset                             # Hard reboot
+    GPU verify
+        lspci | grep -i nvidia                                   # Confirm P40 visible
+        lspci -v | grep -A20 "Tesla P40"                         # Full P40 info
+        lspci -nnk | grep -A3 "82:00.0"                          # Verify P40 bound to vfio-pci
+        dmesg | grep -e DMAR -e IOMMU                            # Verify IOMMU enabled
+    Fan control
+        systemctl status fan-control.service                     # Verify fan override service
+
+
 ON PROXMOX
     shutdown -h now                       # shutdown enter proxmox
     qm list                               # qm is the proxmox cli for managing vms
@@ -31,22 +52,11 @@ ON VM
 
 Table of Contents
 
-* [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#make-proxmox-usb)
-* [BOOT FROM USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#boot-from-usb)
-* [INSTALL PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#install-proxmox)
-* [UPDATE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#update-proxmox)
-* [PARTITION HDD VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#partition-hdd-virtual-disk)
-* [ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-a-filesystem-and-mount-it-sas-data)
-* [ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#add-sas-data-to-proxmox-keep-bulk-data-and-backups)
-* [CREATE A VM - UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-vm---ubuntu)
-* [CREATE A LXC - DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#create-a-lxc---debian)
-* [BACKUP VMs/LXCs USING PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#backup-vmslxcs-using-proxmox)
-* [CONFIGURE PROXMOX FOR PACKER BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-install-configure-and-create-vm-cheat-sheet#configure-proxmox-for-packer-builds)
+tbd
 
 Documentation and Reference
 
-* [poweredge r730 nvidia p40 configure](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-nvidia-p40-configure-cheat-sheet#poweredge-r730-nvidia-p40-configure-cheat-sheet)
-* [jeffs-proxmox-image-ubuntu](https://github.com/JeffDeCola/my-packer-image-builds/tree/master/proxmox-images/jeffs-proxmox-image-ubuntu)
+tbd
 
 ## MAKE PROXMOX USB
 
