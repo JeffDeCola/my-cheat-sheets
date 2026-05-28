@@ -56,7 +56,8 @@ tbd
 
 Documentation and Reference
 
-tbd
+* [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#poweredge-r730-cheat-sheet)
+* [nvidia tesla p40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/nvidia-tesla-p40-cheat-sheet#nvidia-tesla-p40-cheat-sheet)
 
 ## MAKE PROXMOX USB
 
@@ -452,3 +453,252 @@ pveum user token add packer@pam mytoken --privsep=0
 | `Datastore.*`                  | Upload ISO, allocate disk     |
 | `SDN.Use`                      | Attach VM to network bridge   |
 | `Sys.Modify`                   | System-level modifications    |
+
+
+
+
+### IOMMU SETUP
+
+IOMMU (Input/Output Memory Management Unit) is what allows
+Proxmox to hand a physical PCI device (like the P40) directly
+to a VM as if the device were plugged straight into that VM's
+motherboard. Without IOMMU, the host kernel always owns the
+device and the VM can only access it through emulation.
+
+This section turns on the capability — the next section
+binds the specific P40 to it.
+
+First, edit grub (the bootloader config the server reads at
+power-on):
+
+```bash
+nano /etc/default/grub
+```
+
+Change the `GRUB_CMDLINE_LINUX_DEFAULT` line to:
+
+```text
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
+```
+
+* `intel_iommu=on` — activates the Intel CPU's IOMMU hardware.
+* `iommu=pt` — passthrough mode (only enables IOMMU for
+  devices that need it, leaving everything else alone for
+  performance).
+
+Apply the change:
+
+```bash
+update-grub
+```
+
+Next, add the VFIO kernel modules so they load on every boot:
+
+```bash
+nano /etc/modules
+```
+
+Append:
+
+```text
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
+```
+
+* `vfio` — the core framework that makes passthrough possible.
+* `vfio_iommu_type1` — creates the memory isolation boundary
+  around the VM.
+* `vfio_pci` — the module that actually claims a PCI device
+  away from the host.
+* `vfio_virqfd` — handles interrupt signaling from the device
+  (legacy; merged into vfio core on kernel 6.x+, harmless to
+  list).
+
+Reboot:
+
+```bash
+reboot
+```
+
+Verify IOMMU is active after reboot:
+
+```bash
+dmesg | grep -e DMAR -e IOMMU
+```
+
+Look for:
+
+```text
+DMAR: IOMMU enabled
+```
+
+Confirm the P40 is in its own IOMMU group (so it can be passed
+through cleanly without dragging other devices along):
+
+```bash
+find /sys/kernel/iommu_groups/ -type l | grep -i 82:00
+```
+
+The P40 (and only the P40) should appear under a single group
+number. If other devices share its group, passthrough is still
+possible but requires passing the whole group together — or
+applying the ACS override patch.
+
+### BIND P40 FOR CUDA PASSTHROUGH
+
+IOMMU is now on, but the host's default NVIDIA driver
+(`nouveau`) will still try to grab the P40 at boot. This
+section tells the host to ignore the P40 entirely and hand it
+to `vfio-pci`, which holds it ready for a VM.
+
+First, find the P40's vendor:device ID:
+
+```bash
+lspci -nn | grep -i nvidia
+```
+
+You should see something like:
+
+```text
+82:00.0 3D controller [0302]: NVIDIA Corporation GP102GL [Tesla P40] [10de:1b38] (rev a1)
+```
+
+The `[10de:1b38]` is the ID we need — `10de` is NVIDIA's
+vendor ID, `1b38` is the P40 specifically. The `82:00.0` part
+is the PCI address (it may differ on your R730 depending on
+which slot the card is in).
+
+Blacklist nouveau and bind the P40 to vfio-pci:
+
+```bash
+echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+echo "options vfio-pci ids=10de:1b38" >> /etc/modprobe.d/vfio.conf
+update-initramfs -u
+reboot
+```
+
+After reboot, verify the P40 is now bound to vfio-pci (use
+your actual PCI address):
+
+```bash
+lspci -nnk | grep -A3 "82:00.0"
+```
+
+You should see:
+
+```text
+82:00.0 3D controller [0302]: NVIDIA Corporation GP102GL [Tesla P40] [10de:1b38]
+        Subsystem: NVIDIA Corporation Device [10de:11d9]
+        Kernel driver in use: vfio-pci
+        Kernel modules: nvidiafb, nouveau
+```
+
+The line that matters is `Kernel driver in use: vfio-pci`.
+That confirms the P40 is bound correctly and ready for VM
+passthrough.
+
+Note: you'll reboot twice across these two sections (once
+after IOMMU setup, once after vfio-pci binding). IOMMU has to
+be active before vfio-pci can claim the device meaningfully,
+so the two-step reboot is intentional.
+
+
+
+
+## CREATE VM WITH GPU PASSTHROUGH
+
+Create a vm but do not power it on yet. In Proxmox UI, go to.
+
+VM 102 → Hardware → Add → PCI Device
+
+```bash
+Device: 0000:82:00.0    ← your P40
+All Functions: checked
+ROM-Bar: checked
+PCI-Express: checked
+Primary GPU: leave unchecked
+```
+
+Now we need to add a serial port
+
+VM 102 → Hardware → Add → Serial Port
+
+```text
+Serial Port: 0
+```
+
+Edit the VM Config on Proxmox Host
+
+```bash
+nano /etc/pve/qemu-server/102.conf
+```
+
+Add this line at the very top:
+
+```text
+args: -cpu host,kvm=off
+```
+
+Then find the `hostpci` line (the P40 entry) and make sure it looks like this:
+
+```text
+hostpci0: 0000:82:00.0,pcie=1,rombar=1
+```
+
+Then add this line anywhere in the file:
+
+```bash
+vga: std
+```
+
+Start VM and when finished that come back and install the drivers.
+
+
+### CONFIGURE PROXMOX TO USE CUDA CORES
+
+ We need to configure proxmox so a VM will be able to run
+ Nvidia drivers and use the P40 for CUDA.
+
+```bash
+echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
+echo "options vfio-pci ids=10de:1b38" >> /etc/modprobe.d/vfio.conf
+update-initramfs -u
+reboot
+```
+
+Check that it worked
+
+```bash
+lspci -nnk | grep -A3 "82:00.0"
+```
+
+You're looking for Kernel driver in use: vfio-pci.
+That confirms the P40 is bound correctly and ready for
+passthrough.
+
+
+### ADD PCI DEVICE TO VM
+
+tbd
+
+### EDIT VM CONFIG FILE
+
+tbd
+
+## ADD NVIDIA DRIVERS TO VM
+
+```bash
+sudo apt install -y nvidia-driver-550 nvidia-utils-550
+sudo reboot
+```
+
+If there are issues, you may have to get rid of secure boot.
+
+Check if your p40 is alive on you vm
+
+```bash
+nvidia-smi
+```
+
