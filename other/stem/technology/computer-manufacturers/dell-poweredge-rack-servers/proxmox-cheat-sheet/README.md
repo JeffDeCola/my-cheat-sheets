@@ -3,117 +3,208 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_How to install proxmox on a dell poweredge rack server and create a VM._
+_How to install Proxmox on a Dell PowerEdge, create VMs and LXCs,
+and configure GPU passthrough._
 
 tl;dr
 
 ```text
-PROXMOX
-    Storage / VM
-        pvesm status                                             # Storage status
-    Hardware sensors
-        ipmitool sdr                                             # All sensors
-        ipmitool sdr type Fan                                    # Fan speed
-        ipmitool sdr type Temperature                            # Temperatures
-    Power chassis
-        ipmitool chassis power status                            # Power state
-        ipmitool chassis power on                                # Power on
-        ipmitool chassis power off                               # Power off
-        ipmitool chassis power reset                             # Hard reboot
-    GPU verify
-        lspci | grep -i nvidia                                   # Confirm P40 visible
-        lspci -v | grep -A20 "Tesla P40"                         # Full P40 info
-        lspci -nnk | grep -A3 "82:00.0"                          # Verify P40 bound to vfio-pci
-        dmesg | grep -e DMAR -e IOMMU                            # Verify IOMMU enabled
+PROXMOX (run on host)
+    VM management (qm)
+        qm list                                  # All VMs
+        qm status 102                            # VM 102 status
+        qm start 102                             # Start VM
+        qm stop 102                              # Stop VM (hard)
+        qm shutdown 102                          # Shutdown VM (graceful)
+        qm reboot 102                            # Reboot VM
+        qm terminal 102                          # Serial console
+    Storage
+        pvesm status                             # All storage pools
+        pvesm list SSD-Fast                      # Contents of SSD-Fast
+        pvesm list SAS-Data                      # Contents of SAS-Data
+        df -h                                    # Disk usage
+    Hardware sensors (via R730 BMC)
+        ipmitool sdr                             # All sensors
+        ipmitool sdr type Fan                    # Fan speeds
+        ipmitool sdr type Temperature            # Temperatures
+    Power chassis (via R730 BMC)
+        ipmitool chassis power status            # Power state
+        ipmitool chassis power on                # Power on
+        ipmitool chassis power off               # Power off
+        ipmitool chassis power reset             # Hard reboot
+    GPU passthrough verify
+        lspci | grep -i nvidia                   # Confirm GPU visible
+        lspci -nnk | grep -A3 "82:00.0"          # Verify GPU bound to vfio-pci
+        dmesg | grep -e DMAR -e IOMMU            # Verify IOMMU enabled
     Fan control
-        systemctl status fan-control.service                     # Verify fan override service
-
-
-ON PROXMOX
-    shutdown -h now                       # shutdown enter proxmox
-    qm list                               # qm is the proxmox cli for managing vms
-    qm status 102
-    qm start 102
-    qm stop 102
-    qm reboot 102
-    qm shutdown 102
-    qm terminal 102
-    pvesm status                          # All storage pools
-    pvesm list SSD-Fast                   # Contents of SSD-Fast
-    pvesm list SAS-Data                   # Contents of SAS-Data
-    df -h                                 # Disk usage
-ON VM
-    nvidia-smi                            # Full P40 overview
-    watch -n1 nvidia-smi                  # live refresh every second
-    nvidia-smi dmon                       # live stats (utilization, temp, power)
-    lspci -v | grep -A20 "Tesla P40"      # full P40 detail
-    lscpu                                 # CPU info
+        systemctl status fan-control.service     # Verify fan override service
+    Power
+        shutdown -h now                          # Shutdown Proxmox host
 ```
 
 Table of Contents
 
-tbd
+* [INSTALL AND CONFIGURE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#install-and-configure-proxmox)
+  * [MAKE PROXMOX USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#make-proxmox-usb)
+  * [BOOT FROM USB](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#boot-from-usb)
+  * [INSTALL PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#install-proxmox)
+  * [UPDATE PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#update-proxmox)
+* [SSD-FAST STORAGE (MAIN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#ssd-fast-storage-main)
+* [SAS-DATA STORAGE (BULK)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#sas-data-storage-bulk)
+  * [PARTITION HDD VIRTUAL DISK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#partition-hdd-virtual-disk)
+  * [ADD A FILESYSTEM AND MOUNT IT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#add-a-filesystem-and-mount-it)
+  * [ADD SAS-DATA TO PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#add-sas-data-to-proxmox)
+* [CREATE A VM - UBUNTU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#create-a-vm---ubuntu)
+* [CREATE A LXC - DEBIAN](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#create-a-lxc---debian)
+* [BACKUP VMs/LXCs USING PROXMOX](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#backup-vmslxcs-using-proxmox)
+* [CONFIGURE PROXMOX FOR PACKER BUILDS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#configure-proxmox-for-packer-builds)
+* [NVIDIA P40 GPU](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#nvidia-p40-gpu)
+  * [IOMMU SETUP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#iommu-setup)
+  * [BIND GPU FOR PASSTHROUGH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#bind-gpu-for-passthrough)
+  * [CREATE VM WITH GPU PASSTHROUGH - ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/proxmox-cheat-sheet#create-vm-with-gpu-passthrough-ollama)
 
 Documentation and Reference
 
 * [poweredge r730](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#poweredge-r730-cheat-sheet)
 * [nvidia tesla p40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/nvidia-tesla-p40-cheat-sheet#nvidia-tesla-p40-cheat-sheet)
 
-## MAKE PROXMOX USB
+## INSTALL AND CONFIGURE PROXMOX
 
+Let's install proxmox on the R730 and set up some VMs and containers.
+
+### MAKE PROXMOX USB
+
+Make a proxmox USB stick,
+
+* Use an 8GB+ USB stick
 * Download Proxmox VE ISO from
   [proxmox.com/en/downloads](http://proxmox.com/en/downloads)
 * Flash it to a USB drive using Rufus (Windows)
-* Use an 8GB+ USB stick
 
-## BOOT FROM USB
+### BOOT FROM USB
 
-* Plug USB into the R730
-* Get the virtual console and keyboard ready
-* Reboot the server (cold)
-* Press F11 at the Dell POST screen to get the boot menu (use virtual keyboard)
-* Bios Boot Menu
-  * One-Shot BIOS Boot Menu
-  * Select your USB drive to boot
+Done via iDRAC virtual console (no monitor or keyboard
+attached to the R730).
 
-## INSTALL PROXMOX
+* Plug the USB stick into the R730 (physical)
+* From your workstation, open iDRAC at `https://<idrac-ip>`
+* Launch Virtual Console from the iDRAC dashboard
+* Cold-reboot the server (iDRAC Power → Reset System, or the
+  physical button)
+* Press **F11** via the virtual keyboard at the Dell POST
+  screen to get the One-Shot BIOS Boot Menu
+* Select your USB drive to boot
 
-* Install Proxmox VE (Graphical)
-* Target disk: SSD virtual disk
-* Set your static IP: 192.168.20.135
-* Set hostname "r730.proxmox"
-* Install - takes about 5–10 minutes
+### INSTALL PROXMOX
 
-As a side note, may have to run this to set hostname properly
+Still in the iDRAC virtual console, the Proxmox installer
+will boot from the USB and present an installer menu,
+
+* Select **Install Proxmox VE (Graphical)**
+* Target disk: the SSD virtual disk (`/dev/sda`, ~744GB —
+  the SSD-Fast RAID 10 from the R730 cheat sheet). Don't pick
+  `/dev/sdb` — that's SAS-Data.
+* Network config:
+  * IP/CIDR: `192.168.20.135/24`
+  * Gateway: `192.168.20.1`
+  * DNS: `192.168.20.1` (or whatever you use)
+  * Hostname FQDN: `r730.proxmox`
+* Install — takes about 5–10 minutes
+
+When the installer finishes, it prompts to reboot. Eject the
+USB stick (or unmap the virtual media in iDRAC) and let the
+server boot into Proxmox.
+
+If the hostname didn't stick (sometimes the installer's
+hostname doesn't fully propagate), set it manually after first
+login,
 
 ```bash
 hostnamectl set-hostname r730.proxmox
 ```
 
-To check
+Verify,
 
 ```bash
-nano /etc/hosts
+hostnamectl status
+cat /etc/hosts
 ```
 
-## UPDATE PROXMOX
+### UPDATE PROXMOX
 
-To be able to ssh into proxmox I copied my public keys to it
+Back on your workstation, copy your SSH public key to Proxmox
+so you don't have to type the password every time,
 
 ```bash
 ssh-copy-id root@192.168.20.135
 ```
 
+Then SSH in,
+
+```bash
+ssh root@192.168.20.135
+```
+
+Before updating, switch from the enterprise repo (paid
+subscription required) to the no-subscription repo,
+
+```bash
+# Disable enterprise repos
+sed -i 's/^deb/#deb/' /etc/apt/sources.list.d/pve-enterprise.list
+sed -i 's/^deb/#deb/' /etc/apt/sources.list.d/ceph.list 2>/dev/null || true
+
+# Add no-subscription repo (replace 'bookworm' with your Debian
+# codename — 'trixie' for Proxmox 9.x; check with cat /etc/os-release)
+echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" \
+  > /etc/apt/sources.list.d/pve-no-subscription.list
+```
+
+Now update,
+
 ```bash
 apt update && apt dist-upgrade -y
 ```
 
-If you hit subscription errors, disable the enterprise repo
-and add the no-subscription repo.
+## SSD-FAST STORAGE (MAIN)
 
-## PARTITION HDD VIRTUAL DISK
+SSD-Fast (`/dev/sda`, 744 GiB RAID 10) is the **main disk** —
+think of it as the C: drive on a Windows box. Proxmox itself
+boots from here, and the LVM thin pool that holds VM disks
+lives here too.
 
-Run `fdisk -l` to see your disks
+The Proxmox installer set this up automatically during
+INSTALL PROXMOX — no manual setup needed. The installer
+carved `/dev/sda` into,
+
+* `/dev/sda1` — 1MB BIOS boot
+* `/dev/sda2` — 1GB EFI system
+* `/dev/sda3` — 743GB Linux LVM (the `pve` volume group)
+  * `root` — 96GB Proxmox OS
+  * `swap` — 8GB swap
+  * `data` — ~610GB LVM thin pool (VM disks live here)
+
+Verify the layout from the Proxmox shell,
+
+```bash
+lsblk
+vgs
+lvs
+```
+
+## SAS-DATA STORAGE (BULK)
+
+SAS-Data (`/dev/sdb`, 3.3 TiB RAID 5) is the **bulk disk** —
+the equivalent of a D: drive holding everything that doesn't
+need to live on the fast SSD: backups, ISOs, LXC templates,
+overflow VM disks.
+
+Unlike SSD-Fast, the installer didn't touch this array. We
+need to partition it, format it, mount it, and register it
+with Proxmox manually.
+
+### PARTITION HDD VIRTUAL DISK
+
+Run `fdisk -l` to see your disks,
 
 ```bash
 fdisk -l
@@ -127,7 +218,7 @@ You'll see two disks:
   * `/dev/sda3` — 743G Linux LVM
 * `/dev/sdb` = SAS RAID 5 (3.27TB) — no partitions yet
 
-Create a single partition using the full drive
+Create a single partition using the full drive,
 
 ```bash
 apt install parted -y
@@ -137,31 +228,31 @@ parted /dev/sdb mkpart primary 0% 100%
 
 Run `fdisk -l` again to confirm `/dev/sdb1` now appears.
 
-## ADD A FILESYSTEM AND MOUNT IT (SAS-DATA)
+### ADD A FILESYSTEM AND MOUNT IT
 
 We put XFS directly on `/dev/sdb1` — one big directory that holds everything
 (VM disks, backups, ISOs). No LVM needed.
 
-Format the partition with XFS
+Format the partition with XFS,
 
 ```bash
 mkfs.xfs /dev/sdb1
 ```
 
-Mount it — tell Linux this partition lives at `/mnt/sas-data`
+Mount it — tell Linux this partition lives at `/mnt/sas-data`,
 
 ```bash
 mkdir -p /mnt/sas-data
 mount /dev/sdb1 /mnt/sas-data
 ```
 
-Make it auto-mount on every reboot
+Make it auto-mount on every reboot,
 
 ```bash
 echo '/dev/sdb1 /mnt/sas-data xfs defaults 0 2' >> /etc/fstab
 ```
 
-Verify it mounted correctly and check the size
+Verify it mounted correctly and check the size,
 
 ```bash
 df -h
@@ -169,9 +260,9 @@ df -h
 
 You should see `/dev/sdb1` mounted at `/mnt/sas-data` with ~3.3TB available.
 
-## ADD SAS-DATA TO PROXMOX (KEEP BULK DATA AND BACKUPS)
+### ADD SAS-DATA TO PROXMOX
 
-Tell Proxmox to use this directory for all bulk storage
+Tell Proxmox to use this directory for all bulk storage,
 
 ```text
 Datacenter → Storage → Add → Directory
@@ -182,16 +273,16 @@ Content:   Disk Image, Backup, ISO Image, Snippets
 
 ## CREATE A VM - UBUNTU
 
-Get the latest version, I got
+Get the latest version, I got,
 
 ```bash
 wget -P /mnt/sas-data/template/iso/ \
   https://releases.ubuntu.com/24.04/ubuntu-24.04.4-live-server-amd64.iso
 ```
 
-Head to your proxmox UI and click Create VM in the top right.
+Head to your Proxmox UI and click Create VM in the top right.
 
-General Tab
+General tab,
 
 ```text
 Node: r730
@@ -200,7 +291,7 @@ Name: ubuntu-general
 click start at boot
 ```
 
-OS tab:
+OS tab,
 
 ```text
 Storage: SAS-Data
@@ -209,7 +300,7 @@ Type: Linux
 Version: 6.x - 2.6 Kernel
 ```
 
-System tab:
+System tab,
 
 ```text
 Machine: q35
@@ -219,7 +310,7 @@ SCSI Controller: VirtIO SCSI single
 Qemu Agent: check this
 ```
 
-Disks tab:
+Disks tab,
 
 ```text
 Bus/Device: SCSI
@@ -230,7 +321,7 @@ Discard: checked
 SSD emulation: checked
 ```
 
-CPU tab:
+CPU tab,
 
 ```text
 Sockets: 1
@@ -238,7 +329,7 @@ Cores: 4
 Type: host
 ```
 
-Memory tab:
+Memory tab,
 
 ```text
 Memory: 8192 (that's 8GB)
@@ -246,7 +337,7 @@ Ballooning: checked
 Minimum memory: 512
 ```
 
-Network tab:
+Network tab,
 
 ```text
 Bridge: vmbr0
@@ -256,18 +347,18 @@ Firewall: checked
 
 Review and create.
 
-Now start the VM
+Now start the VM,
 
 * Select VM 101 in the left panel
 * Click Start (top right)
 * Then click Console to open the display
 
-Go threw the ubuntu setup process.
+Go through the Ubuntu setup process.
 
 > NOTE: Uncheck "Set up this disk as an LVM group"
 > Just "Use an entire disk".
 
-When you first login, you should update and upgrade your distro.
+When you first log in, update and upgrade your distro,
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -275,9 +366,8 @@ sudo apt update && sudo apt upgrade -y
 
 ## CREATE A LXC - DEBIAN
 
-First we need a Debian 12 LXC template.
-This is a special debian made for proxmox.
-In the Proxmox UI
+First we need a Debian 12 LXC template. This is a special Debian
+made for Proxmox. In the Proxmox UI,
 
 ```text
 Click on your node (the server name) in the left panel
@@ -287,54 +377,54 @@ Click Templates button at the top
 Search for debian-12 and download it
 ```
 
-Once this special template is downloaded
-click Create CT button at the top right of the Proxmox UI.
+Once this template is downloaded, click Create CT at the top
+right of the Proxmox UI.
 
-General Tab
+General tab,
 
 ```text
 CT ID: 201
 Hostname: lxc-debian-tailscale
 Password: (set something strong, you'll need it)
-SSH key: CAn create this later
+SSH key: Can create this later
 Unprivileged container: NO (uncheck it — make it privileged)
 ```
 
-Template Tab
+Template tab,
 
 ```text
 Storage: local
 Template: debian-12-standard
 ```
 
-Disks Tab
+Disks tab,
 
 ```text
 Storage: SAS-Data
 Size: 4GB
 ```
 
-CPU tab
+CPU tab,
 
 ```text
 Cores: 1
 ```
 
-Memory Tab
+Memory tab,
 
 ```text
 RAM: 256
 Swap: 256
 ```
 
-Network Tab
+Network tab,
 
 ```text
 Bridge: vmbr0
-IPv4: DHCP (We assign static IP at router)
+IPv4: DHCP (we assign static IP at router)
 ```
 
-DNS TAb
+DNS tab,
 
 ```text
 Leave as default
@@ -342,20 +432,20 @@ Leave as default
 
 Review and create.
 
-You may have to allow root logins, from proxmox
+Inside the LXC, you may have to allow root logins,
 
 ```bash
 sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 systemctl restart sshd
 ```
 
-When you first login, you should update and upgrade your distro.
+When you first log in, update and upgrade your distro,
 
 ```bash
-apt update && sudo apt upgrade -y
+apt update && apt upgrade -y
 ```
 
-May also want to create your ssh keys
+May also want to create your ssh keys,
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "Keys for Github (lxc-debian-tailscale)"
@@ -363,40 +453,40 @@ ssh-keygen -t rsa -b 4096 -C "Keys for Github (lxc-debian-tailscale)"
 
 ## BACKUP VMs/LXCs USING PROXMOX
 
-Once you get some VMs setup you can now add a backup
+Once you get some VMs set up, you can add a backup,
 
 ```text
 Datacenter → Backup → Add
 ```
 
-Then set
+Then set,
 
 ```text
 Storage: SAS-Data
 Schedule: 0 2 * * * (2am daily)
 Mode: Snapshot
 Compression: ZSTD
-Pick the VMs, LXC you want for this backup
+Pick the VMs, LXCs you want for this backup
 ```
 
-Under retention for this backup pick what you want, I picked
+Under retention for this backup pick what you want. I picked,
 
-```bash
+```text
 Ollama VM — 2 days since it's 117GB
 Everything else — 7 day retention
 ```
 
-Hit create
+Hit create.
 
 ## CONFIGURE PROXMOX FOR PACKER BUILDS
 
-On Proxmox create a packer user:
+If you use Packer to build VM templates, on Proxmox create a Packer user,
 
 ```bash
 pveum user add packer@pam --comment "Packer build user"
 ```
 
-Create a role with required permissions:
+Create a role with required permissions,
 
 ```bash
 pveum role add Packer -privs \
@@ -422,19 +512,19 @@ pveum role add Packer -privs \
   VM.GuestAgent.Unrestricted"
 ```
 
-Assign the role to the packer user at the root level:
+Assign the role to the Packer user at the root level,
 
 ```bash
 pveum aclmod / -user packer@pam -role Packer
 ```
 
-Assign SDN permissions:
+Assign SDN permissions,
 
 ```bash
 pveum aclmod /sdn/zones/localnetwork -user packer@pam -role Packer
 ```
 
-Create the API token:
+Create the API token,
 
 ```bash
 pveum user token add packer@pam mytoken --privsep=0
@@ -454,123 +544,74 @@ pveum user token add packer@pam mytoken --privsep=0
 | `SDN.Use`                      | Attach VM to network bridge   |
 | `Sys.Modify`                   | System-level modifications    |
 
+## NVIDIA P40 GPU
 
+I installed an NVIDIA Tesla P40 in the R730 for local LLM
+inference (Ollama). Three steps to make the card usable from a
+VM,
 
+1. **IOMMU SETUP** — turn on passthrough capability at the kernel level.
+2. **BIND GPU FOR PASSTHROUGH** — claim the GPU for `vfio-pci` so the host won't.
+3. **CREATE VM WITH GPU PASSTHROUGH - OLLAMA** — hand the GPU to VM 102.
+
+For the card itself (specs, install, NVIDIA driver setup), see
+the
+[nvidia tesla p40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/nvidia-tesla-p40-cheat-sheet#nvidia-tesla-p40-cheat-sheet)
+cheat sheet.
 
 ### IOMMU SETUP
 
-IOMMU (Input/Output Memory Management Unit) is what allows
-Proxmox to hand a physical PCI device (like the P40) directly
-to a VM as if the device were plugged straight into that VM's
-motherboard. Without IOMMU, the host kernel always owns the
-device and the VM can only access it through emulation.
+IOMMU lets Proxmox hand a PCI device directly to a VM. Without
+it, only emulated access works.
 
-This section turns on the capability — the next section
-binds the specific P40 to it.
-
-First, edit grub (the bootloader config the server reads at
-power-on):
+Edit grub,
 
 ```bash
 nano /etc/default/grub
 ```
 
-Change the `GRUB_CMDLINE_LINUX_DEFAULT` line to:
+Set the cmdline,
 
 ```text
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
 ```
 
-* `intel_iommu=on` — activates the Intel CPU's IOMMU hardware.
-* `iommu=pt` — passthrough mode (only enables IOMMU for
-  devices that need it, leaving everything else alone for
-  performance).
-
-Apply the change:
+Apply, add the VFIO modules, reboot,
 
 ```bash
 update-grub
-```
 
-Next, add the VFIO kernel modules so they load on every boot:
-
-```bash
-nano /etc/modules
-```
-
-Append:
-
-```text
+cat >> /etc/modules << 'EOF'
 vfio
 vfio_iommu_type1
 vfio_pci
 vfio_virqfd
-```
+EOF
 
-* `vfio` — the core framework that makes passthrough possible.
-* `vfio_iommu_type1` — creates the memory isolation boundary
-  around the VM.
-* `vfio_pci` — the module that actually claims a PCI device
-  away from the host.
-* `vfio_virqfd` — handles interrupt signaling from the device
-  (legacy; merged into vfio core on kernel 6.x+, harmless to
-  list).
-
-Reboot:
-
-```bash
 reboot
 ```
 
-Verify IOMMU is active after reboot:
+Verify after reboot,
 
 ```bash
-dmesg | grep -e DMAR -e IOMMU
+dmesg | grep -e DMAR -e IOMMU                       # look for: DMAR: IOMMU enabled
+find /sys/kernel/iommu_groups/ -type l | sort -V    # GPU should be in its own group
 ```
 
-Look for:
+### BIND GPU FOR PASSTHROUGH
 
-```text
-DMAR: IOMMU enabled
-```
+IOMMU is on, but `nouveau` still grabs the GPU at boot. Bind
+the GPU to `vfio-pci` so the host ignores it.
 
-Confirm the P40 is in its own IOMMU group (so it can be passed
-through cleanly without dragging other devices along):
-
-```bash
-find /sys/kernel/iommu_groups/ -type l | grep -i 82:00
-```
-
-The P40 (and only the P40) should appear under a single group
-number. If other devices share its group, passthrough is still
-possible but requires passing the whole group together — or
-applying the ACS override patch.
-
-### BIND P40 FOR CUDA PASSTHROUGH
-
-IOMMU is now on, but the host's default NVIDIA driver
-(`nouveau`) will still try to grab the P40 at boot. This
-section tells the host to ignore the P40 entirely and hand it
-to `vfio-pci`, which holds it ready for a VM.
-
-First, find the P40's vendor:device ID:
+Find the vendor:device ID,
 
 ```bash
 lspci -nn | grep -i nvidia
+# e.g. 82:00.0 ... [Tesla P40] [10de:1b38]
 ```
 
-You should see something like:
-
-```text
-82:00.0 3D controller [0302]: NVIDIA Corporation GP102GL [Tesla P40] [10de:1b38] (rev a1)
-```
-
-The `[10de:1b38]` is the ID we need — `10de` is NVIDIA's
-vendor ID, `1b38` is the P40 specifically. The `82:00.0` part
-is the PCI address (it may differ on your R730 depending on
-which slot the card is in).
-
-Blacklist nouveau and bind the P40 to vfio-pci:
+Blacklist nouveau and bind to vfio-pci (replace `10de:1b38`
+with your ID),
 
 ```bash
 echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
@@ -579,126 +620,58 @@ update-initramfs -u
 reboot
 ```
 
-After reboot, verify the P40 is now bound to vfio-pci (use
-your actual PCI address):
+Verify (use your PCI address),
 
 ```bash
 lspci -nnk | grep -A3 "82:00.0"
+# look for: Kernel driver in use: vfio-pci
 ```
 
-You should see:
+### CREATE VM WITH GPU PASSTHROUGH - OLLAMA
+
+Create VM 102 following CREATE A VM - UBUNTU above (do not
+power it on yet). Then,
+
+VM 102 → Hardware → Add → PCI Device,
 
 ```text
-82:00.0 3D controller [0302]: NVIDIA Corporation GP102GL [Tesla P40] [10de:1b38]
-        Subsystem: NVIDIA Corporation Device [10de:11d9]
-        Kernel driver in use: vfio-pci
-        Kernel modules: nvidiafb, nouveau
-```
-
-The line that matters is `Kernel driver in use: vfio-pci`.
-That confirms the P40 is bound correctly and ready for VM
-passthrough.
-
-Note: you'll reboot twice across these two sections (once
-after IOMMU setup, once after vfio-pci binding). IOMMU has to
-be active before vfio-pci can claim the device meaningfully,
-so the two-step reboot is intentional.
-
-
-
-
-## CREATE VM WITH GPU PASSTHROUGH
-
-Create a vm but do not power it on yet. In Proxmox UI, go to.
-
-VM 102 → Hardware → Add → PCI Device
-
-```bash
-Device: 0000:82:00.0    ← your P40
+Device: 0000:82:00.0    ← your GPU
 All Functions: checked
 ROM-Bar: checked
 PCI-Express: checked
 Primary GPU: leave unchecked
 ```
 
-Now we need to add a serial port
-
-VM 102 → Hardware → Add → Serial Port
+VM 102 → Hardware → Add → Serial Port,
 
 ```text
 Serial Port: 0
 ```
 
-Edit the VM Config on Proxmox Host
+Edit the VM config,
 
 ```bash
 nano /etc/pve/qemu-server/102.conf
 ```
 
-Add this line at the very top:
+Add at the top,
 
 ```text
 args: -cpu host,kvm=off
 ```
 
-Then find the `hostpci` line (the P40 entry) and make sure it looks like this:
+Make sure the hostpci line reads,
 
 ```text
 hostpci0: 0000:82:00.0,pcie=1,rombar=1
 ```
 
-Then add this line anywhere in the file:
+Add anywhere,
 
-```bash
+```text
 vga: std
 ```
 
-Start VM and when finished that come back and install the drivers.
-
-
-### CONFIGURE PROXMOX TO USE CUDA CORES
-
- We need to configure proxmox so a VM will be able to run
- Nvidia drivers and use the P40 for CUDA.
-
-```bash
-echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
-echo "options vfio-pci ids=10de:1b38" >> /etc/modprobe.d/vfio.conf
-update-initramfs -u
-reboot
-```
-
-Check that it worked
-
-```bash
-lspci -nnk | grep -A3 "82:00.0"
-```
-
-You're looking for Kernel driver in use: vfio-pci.
-That confirms the P40 is bound correctly and ready for
-passthrough.
-
-
-### ADD PCI DEVICE TO VM
-
-tbd
-
-### EDIT VM CONFIG FILE
-
-tbd
-
-## ADD NVIDIA DRIVERS TO VM
-
-```bash
-sudo apt install -y nvidia-driver-550 nvidia-utils-550
-sudo reboot
-```
-
-If there are issues, you may have to get rid of secure boot.
-
-Check if your p40 is alive on you vm
-
-```bash
-nvidia-smi
-```
-
+Start the VM and install the NVIDIA drivers — see the
+[nvidia tesla p40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/nvidia-tesla-p40-cheat-sheet#add-nvidia-drivers-to-vm)
+cheat sheet, ADD NVIDIA DRIVERS section.
