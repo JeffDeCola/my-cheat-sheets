@@ -3,11 +3,11 @@
 [![jeffdecola.com](https://img.shields.io/badge/website-jeffdecola.com-blue)](https://jeffdecola.com)
 [![MIT License](https://img.shields.io/:license-mit-blue.svg)](https://jeffdecola.mit-license.org)
 
-_Illustrating the three main types of ai configurations today._
+_Illustrating the three main types of AI configurations today._
 
 Table of Contents
 
-* tbd
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#overview)
 
 Documentation and Reference
 
@@ -20,7 +20,6 @@ Documentation and Reference
   * **[ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#ai-stack-configurations---from-chatbots-to-agents-cheat-sheet)**
     **YOU ARE HERE**
   * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/openclaw-ai-agent-cheat-sheet#openclaw-ai-agent-cheat-sheet)
-  * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
 * Inference Layer
   * [ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#ollama-cheat-sheet)
 * LLM Layer
@@ -28,5 +27,8 @@ Documentation and Reference
   * [llm training](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/llm-layer/llm-training-cheat-sheet#llm-training-cheat-sheet)
 
 ## OVERVIEW
+
+The current state of AI as of May 2026. Examples shown reflect tools I
+use; broader landscape includes ChatGPT, Cursor, Gemini, etc...
 
 ![IMAGE - ai-stack-configurations-from-chatbots-to-agents.svg - IMAGE](../../../../../../docs/pics/software/development/ai-stack-configurations-from-chatbots-to-agents.svg)

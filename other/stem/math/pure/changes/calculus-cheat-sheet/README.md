@@ -93,9 +93,11 @@ As $\Delta x$ shrinks to zero the secant rotates into the
 tangent line (green) and the slope is $\frac{dy}{dx}$, which is the derivative,
 the instantaneous rate of change. Formally written as,
 
-$$
-\lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}
-$$
+<table align="center"><tr><td>
+
+$$\displaystyle \lim_{\Delta x \to 0} \frac{\Delta y}{\Delta x} = \frac{dy}{dx}$$
+
+</td></tr></table>
 
 There are two branches of Calculus,
 

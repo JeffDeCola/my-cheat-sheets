@@ -9,39 +9,25 @@ tl;dr
 
 ```text
 iDRAC (racadm)
-    racadm getsysinfo                                            # Server info
     racadm serveraction powerdown                                # Power off
     racadm serveraction powerup                                  # Power on
     racadm serveraction powercycle                               # Hard reboot
     racadm get System.ThermalSettings.ThirdPartyPCIFanResponse   # Verify fan response setting
-PROXMOX
-    Storage / VM
-        pvesm status                                             # Storage status
-    Hardware sensors
-        ipmitool sdr                                             # All sensors
-        ipmitool sdr type Fan                                    # Fan speed
-        ipmitool sdr type Temperature                            # Temperatures
-    Power chassis
-        ipmitool chassis power status                            # Power state
-        ipmitool chassis power on                                # Power on
-        ipmitool chassis power off                               # Power off
-        ipmitool chassis power reset                             # Hard reboot
-    GPU verify
-        lspci | grep -i nvidia                                   # Confirm P40 visible
-        lspci -v | grep -A20 "Tesla P40"                         # Full P40 info
-        lspci -nnk | grep -A3 "82:00.0"                          # Verify P40 bound to vfio-pci
-        dmesg | grep -e DMAR -e IOMMU                            # Verify IOMMU enabled
-    Fan control
-        systemctl status fan-control.service                     # Verify fan override service
-ON VM WITH P40
-    nvidia-smi                                                   # Full P40 overview
-    watch -n1 nvidia-smi                                         # Live refresh every second
-    nvidia-smi dmon                                              # Live stats (utilization, temp, power)
+    racadm set iDRAC.Users.2.Password <new-password>             # Change password
+    racadm getsysinfo                                            # Server info (model, service tag, etc.)
+    racadm getniccfg                                             # iDRAC network config
+    racadm getsel                                                # System event log
+    racadm racreset                                              # Reset iDRAC if it gets wedged
 ```
 
 Table of Contents
 
-tbs
+* [OVERVIEW](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#overview)
+* [CONFIGURE IDRAC](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#configure-idrac)
+* [CONFIGURE RAID VIRTUAL DRIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#configure-raid-virtual-drives)
+* [FIX FAN NOISE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#fix-fan-noise)
+  * [Attempted: racadm thermal settings](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#attempted-racadm-thermal-settings)
+  * [Solution: IPMI override via systemd](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/technology/computer-manufacturers/dell-poweredge-rack-servers/poweredge-r730-cheat-sheet#solution-ipmi-override-via-systemd)
 
 Documentation and Reference
 
@@ -55,25 +41,22 @@ Documentation and Reference
 ## CONFIGURE IDRAC
 
 iDRAC (Integrated Dell Remote Access Controller) is the R730's
-out-of-band management processor. It runs independently of the
+management processor. It runs independently of the
 main system and lets you control the server (power, BIOS, RAID,
 virtual console) over the network even when the OS is off or
 the server is powered down.
 
 iDRAC has its own dedicated ethernet port on the back of the
-R730 (labeled with a wrench icon), its own IP address, and its
-own login.
+R730, its own IP address, and its own login.
 
-Two ways to access iDRAC, ssh or browser.
-Default factory credentials are `root` / `calvin`. **Change
-these immediately on first access** via the web UI or
-`racadm set iDRAC.Users.2.Password <new-password>`.
+There are two ways to access iDRAC, ssh or browser.
+Default factory credentials are `root` / `calvin`.
 SSH'ing into iDRAC drops you into the `racadm` shell,
 **not** a Linux shell. Linux commands like `pvesm status` or
 `ls` will return `COMMAND NOT RECOGNIZED`. Only `racadm`
 commands work.
 
-Useful racadm commands
+Useful racadm commands.
 
 ```bash
 racadm getsysinfo               # Server info (model, service tag, IPs, BIOS)
@@ -82,14 +65,10 @@ racadm getsel                   # System event log
 racadm racreset                 # Reset iDRAC if it gets wedged
 ```
 
-Look up your service tag with `racadm getsysinfo` (e.g.
-`<SERVICE-TAG>`). You'll need it for Dell support and firmware
-downloads.
-
 ## CONFIGURE RAID VIRTUAL DRIVES
 
-This R730 uses the embedded **PERC H730 Mini** controller in
-RAID mode (not HBA mode) with two virtual disks:
+The R730 uses the embedded **PERC H730 Mini** controller in
+RAID mode (not HBA mode). I set mine as follows,
 
 * **SSD-Fast** (800GB raw / ~610 GiB thin pool for VMs)
   * RAID 10, 4x400GB SSD
@@ -103,7 +82,7 @@ RAID mode (not HBA mode) with two virtual disks:
 The SSD array is sized for fast VM disk I/O; the SAS array is
 the bulk cold-storage tier.
 
-Confirm the controller status first. In iDRAC:
+Confirm the controller status first,
 
 ```text
 Storage → Controllers → PERC H730 Mini
@@ -118,7 +97,7 @@ controller falls back to **Write Through** (slower, but no
 data risk). The steps below assume BBU is Ready and use Write
 Back.
 
-Create the first virtual disk:
+Create the first virtual disk,
 
 ```text
 Storage → Virtual Disks → Create Virtual Disk
@@ -133,7 +112,7 @@ Storage → Virtual Disks → Create Virtual Disk
   * T10 Protection Information Capability: Disabled
 ```
 
-Assign the hot spare:
+Assign the hot spare,
 
 ```text
 Storage → Virtual Disks → Manage
@@ -146,7 +125,7 @@ Verify in **Physical Disks** that the drive is now marked as a
 hot spare.
 
 Repeat the process for the second virtual disk with these
-changes:
+changes,
 
 ```text
   * Virtual Disk Name:    SAS-Data
@@ -168,7 +147,7 @@ Storage → Controllers → PERC H730 Mini → Setup
 ```
 
 After the OS is installed and the host is up, you can verify
-the layout from the Proxmox shell:
+the layout from the Proxmox shell,
 
 ```bash
 lsblk                # See the RAID virtual disks as sda, sdb
@@ -184,87 +163,79 @@ pool for VM disks. `sdb` (3.3 TiB, the SAS-Data RAID 5) is a
 single XFS partition mounted at `/mnt/sas-data`.
 
 ## FIX FAN NOISE
-   
-   The R730's thermal management ramps the fans up when it detects
-   an unknown PCIe card (the P40), because iDRAC has no profile for
-   it. The P40 manages its own thermals — it doesn't need the chassis
-   fans at full speed — so the noise is unnecessary.
-   
-   Two prerequisites that help on their own:
-   
-   * Connect **both power supplies** — the R730 runs the fans
-     harder when only one PSU is connected.
-   * Make sure the P40 is seated in a slot with good airflow.
-   
-   ### Attempted: racadm thermal settings
-   
-   The "official" Dell knob is to tell iDRAC not to use third-party
-   PCIe response curves:
-   
-```bash
-   # SSH into iDRAC
-   racadm set System.ThermalSettings.ThirdPartyPCIFanResponse 0
-   racadm get System.ThermalSettings.ThirdPartyPCIFanResponse   # verify
-```
 
-   Optionally also cap the minimum fan speed:
+The R730's thermal management ramps the fans up when it detects
+an unknown PCIe card (the P40), because iDRAC has no profile for
+it. The P40 manages its own thermals — it doesn't need the chassis
+fans at full speed — so the noise is unnecessary.
+
+Make sure **both power supplies** are used. The R730 runs the fans
+harder when only one PSU is connected.
+
+### Attempted: racadm thermal settings
+
+The "official" Dell knob is to tell iDRAC not to use third-party
+PCIe response curves:
 
 ```bash
-   racadm set System.ThermalSettings.MinimumFanSpeed 25
+# SSH into iDRAC
+racadm set System.ThermalSettings.ThirdPartyPCIFanResponse 0
+racadm get System.ThermalSettings.ThirdPartyPCIFanResponse   # verify
 ```
 
-   **On this R730 these settings didn't fully resolve the fan
-   ramp-up.** If they work for you, great. If not, see the IPMI
-   override below.
-
-   ### Solution: IPMI override via systemd
-
-   Bypass iDRAC's thermal logic entirely and pin the fans to 25%
-   using raw IPMI commands. The override doesn't persist across
-   reboots, so it gets wrapped in a systemd service that re-applies
-   it on every boot.
-
-   The fan control script:
+Optionally also cap the minimum fan speed:
 
 ```bash
-   cat << 'EOF' > /usr/local/bin/fan-control.sh
-   #!/bin/bash
-   # Disable automatic fan control
-   ipmitool raw 0x30 0x30 0x01 0x00
-   # Set fans to 25%
-   ipmitool raw 0x30 0x30 0x02 0xff 0x19
-   EOF
-
-   chmod +x /usr/local/bin/fan-control.sh
+racadm set System.ThermalSettings.MinimumFanSpeed 25
 ```
 
-   The systemd service that runs it on every boot:
+**On this R730 these settings didn't fully resolve the fan
+ramp-up.** If they work for you, great. If not, see the IPMI
+override below.
+
+### Solution: IPMI override via systemd
+
+Bypass iDRAC's thermal logic entirely and pin the fans to 25%
+using raw IPMI commands. The override doesn't persist across
+reboots, so it gets wrapped in a systemd service that re-applies
+it on every boot.
+
+The fan control script,
 
 ```bash
-   cat << 'EOF' > /etc/systemd/system/fan-control.service
-   [Unit]
-   Description=Dell Fan Control Override
-   After=multi-user.target
+cat << 'EOF' > /usr/local/bin/fan-control.sh
+#!/bin/bash
+# Disable automatic fan control
+ipmitool raw 0x30 0x30 0x01 0x00
+# Set fans to 25%
+ipmitool raw 0x30 0x30 0x02 0xff 0x19
+EOF
 
-   [Service]
-   Type=oneshot
-   ExecStart=/usr/local/bin/fan-control.sh
-
-   [Install]
-   WantedBy=multi-user.target
-   EOF
+chmod +x /usr/local/bin/fan-control.sh
 ```
 
-   Enable and verify:
+The systemd service that runs it on every boot,
 
 ```bash
-   systemctl daemon-reload
-   systemctl enable fan-control.service
-   systemctl start fan-control.service
-   systemctl status fan-control.service
+cat << 'EOF' > /etc/systemd/system/fan-control.service
+[Unit]
+Description=Dell Fan Control Override
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/fan-control.sh
+
+[Install]
+WantedBy=multi-user.target
+EOF
 ```
 
-   Note: this section is needed because the P40 is passively cooled
-   and confuses iDRAC's automatic fan control. See the
-   [NVIDIA Tesla P40 cheat sheet](../nvidia-tesla-p40-cheat-sheet)
-   for more on the card.
+Enable and verify,
+
+```bash
+systemctl daemon-reload
+systemctl enable fan-control.service
+systemctl start fan-control.service
+systemctl status fan-control.service
+```

@@ -15,9 +15,13 @@ Table of Contents
   * [f(x) in DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#fx-in-differential-equations)
 * [CLASSIFICATION OF DIFFERENTIAL EQUATIONS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#classification-of-differential-equations)
   * [BY TYPE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-type)
+  * [BY LINEARITY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-linearity)
   * [BY ORDER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#by-order)
 * [EXAMPLES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#examples)
   * [POPULATION GROWTH](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#population-growth)
+  * [RADIOACTIVE DECAY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#radioactive-decay)
+  * [EXPONENTIAL LEARNING RATE DECAY](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#exponential-learning-rate-decay)
+  * [GRADIENT FLOW (CONTINUOUS GRADIENT DESCENT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#gradient-flow-continuous-gradient-descent)
 
 Documentation and Reference
 
@@ -26,6 +30,26 @@ Documentation and Reference
   ([my-latex-renders](https://github.com/JeffDeCola/my-latex-renders))
 
 ## OVERVIEW
+
+Nature speaks to us in **rates of change**, not in absolute values.
+We don't directly observe a population - we observe that it grows
+proportionally to itself. We don't directly observe position - we
+observe that gravity produces a constant acceleration. We don't
+directly observe temperature - we observe that heat flows from hot
+to cold.
+
+This is why **differential equations exist**. Newton and Leibniz
+invented calculus in the 1600s specifically to handle this kind
+of problem: given a description of how something _changes_, work
+backward to find the thing itself.
+
+**Solving a differential equation means working backward** from a
+rate of change to the function that produced it. Calculus runs the
+relationship forward (function → rate of change via differentiation).
+Differential equations run it backward (rate of change → function
+via integration).
+
+---
 
 * **Calculus** is a broad field of mathematics that includes
 differentiation (finding derivatives) and
@@ -236,13 +260,14 @@ $$
 
 ### f(x) in DIFFERENTIAL EQUATIONS
 
-In differential equations, $f(x)$ is often used to represent
-the derivative of another function $y(x)$.
+In differential equations, $y(x)$ is the unknown function
+we're solving for, and $f(x)$ is the given right-hand side -
+the rate of change.
 Like integrals, start with the rate of change and find the function
 by **separation of variables**.
 
 $$
-f(x) = \frac{dy}{dx}
+\frac{dy}{dx} = f(x)
 $$
 
 Separate the variables,
@@ -262,12 +287,6 @@ $$
 $$
 
 As an example,
-
-$$
-f(x) = \frac{dy}{dx} = 2x + 3
-$$
-
-or
 
 $$
 \frac{dy}{dx} = 2x + 3
@@ -310,6 +329,39 @@ $$
 $$
 
 where $u$ is a function of $x$ and $t$.
+
+### BY LINEARITY
+
+* **Linear** differential equations have the unknown function $y$
+  and its derivatives appearing only to the first power, never
+  multiplied together, and never inside nonlinear functions like
+  $\sin$, $\cos$, $e^y$, or $\sqrt{y}$. For example,
+
+$$
+\frac{dy}{dx} + 3y = x^2
+$$
+
+* **Nonlinear** differential equations involve $y$ or its derivatives
+  in a nonlinear way. For example,
+
+$$
+\frac{dy}{dx} + y^2 = x
+$$
+
+  or the pendulum equation,
+
+$$
+\frac{d^2y}{dx^2} + \sin(y) = 0
+$$
+
+**Why this matters:** Linear differential equations have well-developed
+solution techniques and obey **superposition** — if $y_1$ and $y_2$
+are both solutions, then so is $c_1 y_1 + c_2 y_2$. Nonlinear equations
+generally don't, and often require numerical methods.
+
+Note that the population growth equation $\frac{dP}{dt} = kP$ is
+**linear** (despite modeling exponential growth), because $P$ appears
+to the first power.
 
 ### BY ORDER
 

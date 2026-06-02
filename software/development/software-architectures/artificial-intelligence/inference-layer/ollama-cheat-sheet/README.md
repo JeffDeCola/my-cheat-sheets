@@ -5,7 +5,7 @@
 
 _Ollama is a local LLM server that lets you download
 and run AI models (LLMs) like Llama, Mistral, and others on
-your own hardware via a simple API."_
+your own hardware via a simple API._
 
 tl;dr
 
@@ -37,7 +37,6 @@ Table of contents
   * [What Model to Use](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#what-model-to-use)
   * [Tokens/s on P40](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#tokenss-on-p40)
 * [CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#configure-ollama-to-listen-on-all-interfaces)
-  * [Check What Ollama is Currently Listening On](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet#check-what-ollama-is-currently-listening-on)
 
 Documentation and Reference
 
@@ -49,7 +48,6 @@ Documentation and Reference
 * Application/Orchestration Layer
   * [ai stack configurations - from chatbots to agents](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/ai-stack-configurations-from-chatbots-to-agents-cheat-sheet#ai-stack-configurations---from-chatbots-to-agents-cheat-sheet)
   * [openclaw ai agent](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/openclaw-ai-agent-cheat-sheet#openclaw-ai-agent-cheat-sheet)
-  * [open webui chatbot](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/application-orchestration-layer/open-webui-chatbot-cheat-sheet#open-webui-chatbot-cheat-sheet)
 * Inference Layer
   * **[ollama](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/inference-layer/ollama-cheat-sheet)**
     **YOU ARE HERE**
@@ -209,44 +207,41 @@ Updated March 2026
 
 ## CONFIGURE OLLAMA TO LISTEN ON ALL INTERFACES
 
-By default Ollama only listens on localhost (127.0.0.1).
-To allow other VMs on your network to connect you need to
-configure it to listen on all interfaces (0.0.0.0).
+   By default Ollama only listens on localhost (127.0.0.1).
+   To allow other VMs on your network to connect, configure
+   it to listen on all interfaces (0.0.0.0).
 
-### Check What Ollama is Currently Listening On
-
-```bash
-ss -tlnp | grep 11434
-```
-
-Expected output after fix
+   Check current state,
 
 ```bash
-LISTEN 0      4096               *:11434            *:*
+   ss -tlnp | grep 11434
 ```
 
-Set OLLAMA_HOST environment variable
+   Set OLLAMA_HOST environment variable,
 
 ```bash
-sudo systemctl edit ollama
+   sudo systemctl edit ollama
 ```
 
-Add these lines
+   Add,
 
 ```text
-[Service]
-Environment="OLLAMA_HOST=0.0.0.0:11434"
+   [Service]
+   Environment="OLLAMA_HOST=0.0.0.0:11434"
 ```
 
+   Apply and verify,
+
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl restart ollama
-ss -tlnp | grep 11434
+   sudo systemctl daemon-reload
+   sudo systemctl restart ollama
+   ss -tlnp | grep 11434
+   # Should show: LISTEN 0  4096  *:11434  *:*
 ```
 
-Verify from another VM
+   Verify from another VM,
 
 ```bash
-curl http://192.168.20.141:11434
-# Should return: Ollama is running
+   curl http://192.168.20.141:11434
+   # Should return: Ollama is running
 ```
