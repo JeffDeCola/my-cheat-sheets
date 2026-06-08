@@ -18,6 +18,13 @@ Table of Contents
   * [DEEP LEARNING (NEURAL NETWORKS)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#deep-learning-neural-networks)
   * [ENSEMBLE LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#ensemble-learning)
   * [REINFORCEMENT LEARNING](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#reinforcement-learning)
+* [ML / LLM TERMS REFERENCE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#ml--llm-terms-reference)
+  * [HARDWARE LAYER](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#hardware-layer)
+  * [PRECISION / NUMBER FORMAT](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#precision--number-format)
+  * [DATA STRUCTURES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#data-structures)
+  * [ARCHITECTURE (THE BLUEPRINT)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#architecture-the-blueprint)
+  * [TRAINING (PARAMETERS CHANGING)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#training-parameters-changing)
+  * [INFERENCE (PARAMETERS FROZEN)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#inference-parameters-frozen)
 
 Documentation and Reference
 
@@ -263,3 +270,69 @@ Applications
 * **RLHF (Reinforcement Learning from Human Feedback)**
   * Used to align LLMs with human preferences
   * Turns a raw pretrained LLM into an instruction-following assistant
+
+## ML / LLM TERMS REFERENCE
+
+### HARDWARE LAYER
+
+| Term             | What It Is                                                                 |
+|------------------|----------------------------------------------------------------------------|
+| **GPU**          | Physical chip that runs ML compute (e.g. P40, V100, A40)                   |
+| **TPU**          | Google's ML-specific chip, Tensor Processing Unit                          |
+| **CUDA cores**   | General compute units on NVIDIA GPUs, do all math without Tensor Cores     |
+| **Tensor Cores** | Specialized FP16 accelerator units, V100 and newer, ~10x faster training   |
+| **VRAM**         | GPU memory — weights, gradients, and activations all live here             |
+
+### PRECISION / NUMBER FORMAT
+
+| Term      | What It Is                                                                 |
+|-----------|----------------------------------------------------------------------------|
+| **FP32**  | 32-bit floating point, full precision, standard for training               |
+| **FP16**  | 16-bit floating point, half precision, needs Tensor Cores to get speedup   |
+| **FP64**  | 64-bit, overkill for ML, used in scientific computing                      |
+
+### DATA STRUCTURES
+
+| Term             | What It Is                                                                 |
+|------------------|----------------------------------------------------------------------------|
+| **Tensor**       | N-dimensional array of numbers — universal data structure for all of ML    |
+| **Parameters**   | All weights and biases in a network — what training learns                 |
+| **Weights**      | Numbers on connections between neurons, learned during training            |
+| **Biases**       | Per-neuron offset values, also learned during training                     |
+| **Gradients**    | Direction and magnitude to adjust weights during backprop                  |
+
+### ARCHITECTURE (THE BLUEPRINT)
+
+| Term               | What It Is                                                                |
+|--------------------|---------------------------------------------------------------------------|
+| **Architecture**   | The blueprint — how a neural network is structured and connected          |
+| **MLP**            | Multi-Layer Perceptron, simplest architecture, fully connected layers     |
+| **CNN**            | Convolutional Neural Network, designed for images                         |
+| **RNN / LSTM**     | Older sequence models, largely replaced by Transformers                   |
+| **Transformer**    | Modern architecture — self-attention + MLP stacked N times                |
+| **Self-attention** | Lets every token look at every other token to understand context          |
+| **LLM**            | Large Language Model — a large Transformer trained to predict next token  |
+
+### TRAINING (PARAMETERS CHANGING)
+
+| Term              | What It Is                                                                |
+|-------------------|---------------------------------------------------------------------------|
+| **Training**      | Learning process — adjusting parameters via forward pass + backprop       |
+| **Forward pass**  | Data flows input → output through the network, produces a prediction      |
+| **Backprop**      | Backpropagation — computes gradients by working backward through network  |
+| **Loss**          | How wrong the prediction is — the number training tries to minimize       |
+| **Epoch**         | One full pass over the entire training dataset                            |
+| **Batch**         | Subset of data processed together before updating weights                 |
+| **RLHF**          | Reinforcement Learning from Human Feedback — shapes behavior post-train   |
+
+### INFERENCE (PARAMETERS FROZEN)
+
+| Term            | What It Is                                                                  |
+|-----------------|-----------------------------------------------------------------------------|
+| **Inference**   | Using a trained model to predict — forward pass with frozen weights         |
+| **Base model**  | Raw pre-trained model, next-token predictor, no instruction following       |
+| **Fine-tuning** | Additional training on specific data to adjust a pre-trained model          |
+| **Ollama**      | Local inference engine wrapper — loads model, runs forward pass, streams    |
+| **llama.cpp**   | The actual inference engine Ollama wraps underneath                         |
+| **Gorgonia**    | Go ML library — computation graph, autograd, CUDA support                   |
+| **vLLM**        | Production inference server, high throughput                                |

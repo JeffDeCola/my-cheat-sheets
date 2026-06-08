@@ -66,11 +66,11 @@ In short: calculus gives you the tools (derivatives and integrals), and differen
 
 It's important to understand the role of $f(x)$ in both calculus and differential equations.
 
-| CONTEXT                | WHAT f(x) REPRESENTS                                                                             | WHAT WE WANT TO FIND                 |
-|------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------|
-| CALCULUS (Derivatives) | $f(x)$ is the original function                                                                  | The derivative $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate                                                                  | Function $F(x)=\int f(x)dx + C$      |
-| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ - $y(x)$ is the unknown function and $f(x)$ is the given rate | Solve for $y(x)$ by integrating      |
+| CONTEXT                | WHAT f(x) REPRESENTS                                  | WHAT WE WANT TO FIND                      |
+|------------------------|-------------------------------------------------------|-------------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function                       | The derivative $f'(x)=\frac{dy}{dx}$      |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate                       | The antiderivative $F(x)=\int f(x)dx + C$ |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the giving rate of change (right hand side) | Solve for $y(x)$ by integrating           |
 
 > **Why the notation shifts:** In calculus there's only one function in
 > the room - $f(x)$ - so it gets the spotlight. In differential
@@ -129,13 +129,22 @@ There are two branches of Calculus,
 > The goal of diffEQ is to find the function $y(x)$ that satisfies the
 > differential equation.
 
-The most common technique for simple differential equations is
-**separation of variables** — rearrange the equation so all the $y$
-terms are on one side and all the $x$ terms are on the other, then
-integrate both sides.
+Different kinds of differential equations call for different techniques,
 
-Given this first-order ordinary differential equation, let's walk
-through the steps to solve it.
+* Separation of variables
+* Integrating factors
+* Characteristic equations
+* Laplace transforms
+* Numerical methods
+* etc...
+
+This cheat sheet focuses on **separation of variables**,
+which is the most common technique for simple first-order equations
+and handles a huge range of practical problems (population growth,
+radioactive decay, learning rate decay, and more).
+The technique works by rearranging the equation so all the $y$
+terms are on one side and all the $x$ terms are on the other, then
+integrating both sides.
 
 $$
 \frac{dy}{dx} = 2x
@@ -325,10 +334,10 @@ $$
 For example,
 
 $$
-\frac{\partial u}{\partial t} = \frac{\partial^2 u}{\partial x^2}
+\frac{\partial y}{\partial z} = 2x
 $$
 
-where $u$ is a function of $x$ and $t$.
+where $y$ is a function of two variables: $y(x, z)$.
 
 ### BY LINEARITY
 

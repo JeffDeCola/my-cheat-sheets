@@ -42,19 +42,19 @@ Example             A40, A100, L40S         RTX Pro 4000, Arc B70   RTX 3090, RT
 
 ## ACCELERATORS
 
-| GPU | Year / Arch | VRAM / Type | Bandwidth | Tensor Cores / FP16 | TDP / PCIe | Used Price | Best For |
-|-----|-------------|-------------|-----------|---------------------|------------|------------|----------|
-| **Tesla P40** _(mine)_ | 2016 / Pascal | 24 GB GDDR5X | 346 GB/s | None / Slow (1/64) | 250W / 3.0 | ~$150 | Budget 8–30B inference |
-| **Tesla T4** | 2018 / Turing | 16 GB GDDR6 | 300 GB/s | 320 (2nd gen) / 65 TFLOPS | 70W / 3.0 | ~$200–300 | Low-power inference |
-| **Tesla V100 PCIe** | 2017 / Volta | 16 or 32 GB HBM2 | 900 GB/s | 640 (1st gen) / 28 TFLOPS | 250W / 3.0 | ~$300–600 | Tensor cores + HBM bandwidth |
-| **A30** | 2020 / Ampere | 24 GB HBM2 | 933 GB/s | 224 (3rd gen) / 165 TFLOPS | 165W / 4.0 | ~$400–600 | MIG, low power, great bandwidth |
-| **A40** | 2020 / Ampere | 48 GB GDDR6 | 696 GB/s | 336 (3rd gen) / 150 TFLOPS | 300W / 4.0 | ~$900 | Big VRAM on a budget |
-| **A100 PCIe/SXM** | 2020 / Ampere | 40 or 80 GB HBM2e | 2,039 GB/s | 432 (3rd gen) / 312 TFLOPS | 250–400W / 4.0 | ~$5,000+ | Training + large inference |
-| **L4** | 2023 / Ada | 24 GB GDDR6 | 300 GB/s | 240 (4th gen) / 121 TFLOPS | 72W / 4.0 | ~$2,000–3,000 | Modern T4 replacement |
-| **L40S** | 2023 / Ada | 48 GB GDDR6 | 864 GB/s | 568 (4th gen) / 733 TFLOPS | 300W / 4.0 | ~$7,000+ | Big models + rendering |
-| **H100 PCIe/SXM** | 2023 / Hopper | 80 GB HBM3 | 3,350 GB/s | 528 (4th gen) / 1,979 TFLOPS | 350–700W / 5.0 | ~$25,000+ | Frontier training + inference |
-| **H200 SXM** | 2024 / Hopper | 141 GB HBM3e | 4,800 GB/s | 528 (4th gen) / 1,979 TFLOPS | 700W / 5.0 | ~$30,000+ | Massive models + KV cache |
-| **B200** | 2025 / Blackwell | 192 GB HBM3e | 8,000 GB/s | Next gen / ~4,500 TFLOPS | 1,000W / 5.0 | N/A | Next-gen frontier |
+| GPU                       | Year / Arch      | VRAM / Type          | Bandwidth  | Tensor Cores / FP16          | TDP / PCIe     | Used Price    | Best For                          |
+|---------------------------|------------------|----------------------|------------|------------------------------|----------------|---------------|-----------------------------------|
+| **Tesla P40** _(mine)_    | 2016 / Pascal    | 24 GB GDDR5X         | 346 GB/s   | None / Slow (1/64)           | 250W / 3.0     | ~$150         | Budget 8–30B inference            |
+| **Tesla T4**              | 2018 / Turing    | 16 GB GDDR6          | 300 GB/s   | 320 (2nd gen) / 65 TFLOPS    | 70W / 3.0      | ~$200–300     | Low-power inference               |
+| **Tesla V100 PCIe**       | 2017 / Volta     | 16 or 32 GB HBM2     | 900 GB/s   | 640 (1st gen) / 28 TFLOPS    | 250W / 3.0     | ~$300–600     | Tensor cores + HBM bandwidth      |
+| **A30**                   | 2020 / Ampere    | 24 GB HBM2           | 933 GB/s   | 224 (3rd gen) / 165 TFLOPS   | 165W / 4.0     | ~$400–600     | MIG, low power, great bandwidth   |
+| **A40**                   | 2020 / Ampere    | 48 GB GDDR6          | 696 GB/s   | 336 (3rd gen) / 150 TFLOPS   | 300W / 4.0     | ~$900         | Big VRAM on a budget              |
+| **A100 PCIe/SXM**         | 2020 / Ampere    | 40 or 80 GB HBM2e    | 2,039 GB/s | 432 (3rd gen) / 312 TFLOPS   | 250–400W / 4.0 | ~$5,000+      | Training + large inference        |
+| **L4**                    | 2023 / Ada       | 24 GB GDDR6          | 300 GB/s   | 240 (4th gen) / 121 TFLOPS   | 72W / 4.0      | ~$2,000–3,000 | Modern T4 replacement             |
+| **L40S**                  | 2023 / Ada       | 48 GB GDDR6          | 864 GB/s   | 568 (4th gen) / 733 TFLOPS   | 300W / 4.0     | ~$7,000+      | Big models + rendering            |
+| **H100 PCIe/SXM**         | 2023 / Hopper    | 80 GB HBM3           | 3,350 GB/s | 528 (4th gen) / 1,979 TFLOPS | 350–700W / 5.0 | ~$25,000+     | Frontier training + inference     |
+| **H200 SXM**              | 2024 / Hopper    | 141 GB HBM3e         | 4,800 GB/s | 528 (4th gen) / 1,979 TFLOPS | 700W / 5.0     | ~$30,000+     | Massive models + KV cache         |
+| **B200**                  | 2025 / Blackwell | 192 GB HBM3e         | 8,000 GB/s | Next gen / ~4,500 TFLOPS     | 1,000W / 5.0   | N/A           | Next-gen frontier                 |
 
 ## PCIe vs SXM
 
@@ -86,13 +86,13 @@ workstation and consumer cards are worth considering for local LLM inference.
 The R730 has PCIe 3.0 x16 slots, passive GPU cooling via chassis fans,
 and limited GPU power delivery. All cards must be passive cooled PCIe.
 
-| GPU | VRAM | Bandwidth | TDP | Used Price | Notes |
-|-----|------|-----------|-----|------------|-------|
-| **Tesla P40** _(current)_ | 24 GB | 346 GB/s | 250W | ~$150 | No tensor cores, but 24 GB is solid |
-| **Tesla T4** | 16 GB | 300 GB/s | 70W | ~$200–300 | Low power, tensor cores, but only 16 GB |
-| **V100 PCIe 32 GB** | 32 GB | 900 GB/s | 250W | ~$500 | 2.6x bandwidth over P40, tensor cores, HBM2 |
-| **A30** | 24 GB | 933 GB/s | 165W | ~$400–600 | Best bandwidth-per-dollar, MIG, low power |
-| **A40** | 48 GB | 696 GB/s | 300W | ~$900 | Double the VRAM, check R730 power headroom |
+| GPU                       | VRAM  | Bandwidth | TDP  | Used Price  | Notes                                        |
+|---------------------------|-------|-----------|------|-------------|----------------------------------------------|
+| **Tesla P40** _(current)_ | 24 GB | 346 GB/s  | 250W | ~$150       | No tensor cores, but 24 GB is solid          |
+| **Tesla T4**              | 16 GB | 300 GB/s  | 70W  | ~$200–300   | Low power, tensor cores, but only 16 GB      |
+| **V100 PCIe 32 GB**       | 32 GB | 900 GB/s  | 250W | ~$500       | 2.6x bandwidth over P40, tensor cores, HBM2  |
+| **A30**                   | 24 GB | 933 GB/s  | 165W | ~$400–600   | Best bandwidth-per-dollar, MIG, low power    |
+| **A40**                   | 48 GB | 696 GB/s  | 300W | ~$900       | Double the VRAM, check R730 power headroom   |
 
 The A30 and A40 are PCIe 4.0 cards but will run fine in the R730's 3.0 slots
 at reduced bandwidth. Everything A100 and above typically needs a newer server
