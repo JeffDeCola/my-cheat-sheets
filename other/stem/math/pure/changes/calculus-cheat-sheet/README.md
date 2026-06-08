@@ -13,6 +13,7 @@ Table of Contents
 * [DIFFERENTIAL CALCULUS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#differential-calculus)
   * [THE DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#the-derivative)
   * [DEFINITION OF A DERIVATIVE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#definition-of-a-derivative)
+  * [DERIVATIVE NOTATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#derivative-notation)
   * [BASIC DERIVATIVE RULES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#basic-derivative-rules)
   * [HIGHER-ORDER DERIVATIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#higher-order-derivatives)
   * [PARTIAL DERIVATIVES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#partial-derivatives)
@@ -31,6 +32,7 @@ Table of Contents
 * [EXAMPLES - INTEGRALS](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#examples---integrals)
   * [FINDING DISTANCE FUNCTION (Using the Power Rule)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-distance-function-using-the-power-rule)
   * [FINDING THE DISTANCE TRAVELED (Using a Definite Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-the-distance-traveled-using-a-definite-integral)
+  * [FINDING AREA OF A CIRCLE (Using a Double Integral)](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet#finding-area-of-a-circle-using-a-double-integral)
 
 Documentation and Reference
 
@@ -55,11 +57,11 @@ In short: calculus gives you the tools (derivatives and integrals), and differen
 
 It's important to understand the role of $f(x)$ in both calculus and differential equations.
 
-| CONTEXT                | WHAT f(x) REPRESENTS                                                                             | WHAT WE WANT TO FIND                 |
-|------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------|
-| CALCULUS (Derivatives) | $f(x)$ is the original function                                                                  | The derivative $f'(x)=\frac{dy}{dx}$ |
-| CALCULUS (Integrals)   | $f(x)$ is function to integrate                                                                  | Function $F(x)=\int f(x)dx + C$      |
-| DIFFERENTIAL EQUATIONS | $f(x)$ is the derivative of $y(x)$ - $y(x)$ is the unknown function and $f(x)$ is the given rate | Solve for $y(x)$ by integrating      |
+| CONTEXT                | WHAT f(x) REPRESENTS                                  | WHAT WE WANT TO FIND                      |
+|------------------------|-------------------------------------------------------|-------------------------------------------|
+| CALCULUS (Derivatives) | $f(x)$ is the original function                       | The derivative $f'(x)=\frac{dy}{dx}$      |
+| CALCULUS (Integrals)   | $f(x)$ is function to integrate                       | The antiderivative $F(x)=\int f(x)dx + C$ |
+| DIFFERENTIAL EQUATIONS | $f(x)$ is the giving rate of change (right hand side) | Solve for $y(x)$ by integrating           |
 
 > **Why the notation shifts:** In calculus there's only one function in
 > the room - $f(x)$ - so it gets the spotlight. In differential
@@ -287,6 +289,45 @@ f'(x) &= 2x
 \end{aligned}
 $$
 
+### DERIVATIVE NOTATION
+
+You will see the derivative written in several equivalent ways.
+They all mean the same thing — they just emphasize different
+aspects of what a derivative is.
+
+| NOTATION            | WHAT IT EMPHASIZES                                       | CONVENTION                                      |
+|---------------------|----------------------------------------------------------|-------------------------------------------------|
+| $\frac{dy}{dx}$     | "How does $y$ change as $x$ changes?"                    | $y$ is the **output value** (Leibniz, 1600s)    |
+| $\frac{df}{dx}$     | "How does $f$ change as $x$ changes?"                    | $f$ is the **function itself**                  |
+| $f'(x)$             | Same as $\frac{df}{dx}$, just shorter                    | $f$ is the function (Lagrange)                  |
+| $\frac{d}{dx} f(x)$ | "Apply the derivative operator $\frac{d}{dx}$ to $f(x)$" | $\frac{d}{dx}$ is an **operator** acting on $f$ |
+
+**Why so many?** Historically, Leibniz wrote relationships between
+variables like $y = x^2 + 3$, so the rate of change was naturally
+$\frac{dy}{dx}$. Later, when functions became objects in their own
+right (with names like $f$, $g$, $h$), notations like $\frac{df}{dx}$
+and $f'(x)$ emerged to put the _function name_ on top.
+
+**Why this matters for partial derivatives:** When a function has
+more than one variable — like $f(x, y)$ — you can't write
+$\frac{dy}{dx}$ anymore, because $y$ is now an _input_, not an
+output. You have to name the function explicitly:
+
+$$
+\frac{\partial f}{\partial x}
+$$
+
+The symbol changes from $d$ to $\partial$ to signal "there are other
+variables I'm holding constant." But the structure — _function over
+input_ — is the same as $\frac{df}{dx}$.
+
+So the progression makes sense:
+
+| Variables          | Notation                                         |
+|--------------------|--------------------------------------------------|
+| One variable       | $\frac{df}{dx}$ (or $\frac{dy}{dx}$, or $f'(x)$) |
+| Multiple variables | $\frac{\partial f}{\partial x}$                  |
+
 ### BASIC DERIVATIVE RULES
 
 #### Power Rule
@@ -417,25 +458,27 @@ $$
 f(x, y) = x^2 y + 3y
 $$
 
-This function has two inputs, so its graph is a 3D surface. We can
-slice it into 2D curves and take a normal derivative of each slice —
-back to the same derivative we already know. Let's evaluate both partial derivatives at the point $(x, y) = (1, 2)$.
+This function has two inputs, so its graph is a 3D surface. A
+partial derivative slices the surface along one direction and
+measures the slope of that slice.
 
 **The partial derivative with respect to $x$** treats $y$ as a constant.
-Plugging in $y = 2$ turns the function into a slice that depends only
-on $x$,
+Differentiating each term with respect to $x$,
 
-$$
-f(x, 2) = 2x^2 + 6
-$$
-
-Taking the derivative of that slice with respect to $x$,
+* $x^2 y$ → $y$ is constant, so the derivative is $2xy$
+* $3y$ → no $x$, so the derivative is $0$
 
 $$
 \frac{\partial f}{\partial x} = 2xy
 $$
 
-For example, as shown in the diagram the slope at $(1, 2)$, is $2(1)(2) = 4$.
+This is a **function**, not a number — it gives the slope in the
+$x$-direction at _any_ point $(x, y)$. To get the slope at a
+specific point, plug it in. For example, at $(x, y) = (1, 2)$,
+
+$$
+\frac{\partial f}{\partial x}\bigg|_{(1,2)} = 2(1)(2) = 4
+$$
 
 <p align="center">
     <img src="svgs/partial-derivative-with-respect-to-x.svg"
@@ -443,28 +486,28 @@ For example, as shown in the diagram the slope at $(1, 2)$, is $2(1)(2) = 4$.
 </p>
 
 **The partial derivative with respect to $y$** treats $x$ as a constant.
-Plugging in $x = 1$ turns the function into a slice that depends only
-on $y$,
+Differentiating each term with respect to $y$,
 
-$$
-f(1, y) = 4y
-$$
-
-Taking the derivative of that slice with respect to $y$,
+* $x^2 y$ → $x^2$ is constant, so the derivative is $x^2$
+* $3y$ → derivative is $3$
 
 $$
 \frac{\partial f}{\partial y} = x^2 + 3
 $$
 
-For example, the slope at $(1, 2)$, is $(1)^2 + 3 = 4$.
+Again, this is a function. To get the slope at $(x, y) = (1, 2)$,
+
+$$
+\frac{\partial f}{\partial y}\bigg|_{(1,2)} = (1)^2 + 3 = 4
+$$
 
 <p align="center">
     <img src="svgs/partial-derivative-with-respect-to-y.svg"
     alt="partial-derivative-with-respect-to-y">
 </p>
 
-Once we fix the other variable, finding a partial derivative reduces
-to taking a normal derivative of the slice.
+The bar notation $\big|_{(1,2)}$ means "evaluate at the point $(1, 2)$"
+— same idea as the bar notation in the definite integral section.
 
 Partial derivatives are used in differential equations
 (see the [differential equations cheat sheet](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/other/stem/math/pure/changes/calculus-cheat-sheet/differential-equations-cheat-sheet#differential-equations-cheat-sheet))
@@ -1101,3 +1144,65 @@ $$
 $$
 
 So the car travels $100$ miles between hour $1$ and hour $3$.
+
+### FINDING AREA OF A CIRCLE (Using a Double Integral)
+
+We can derive the famous formula for the area of a circle,
+$A = \pi R^2$, using a **double integral**.
+
+A double integral is the 2D version of an integral. Where a single
+integral sums up rectangles of width $dx$ along a line, a double
+integral sums up tiny patches of area $dA$ over a 2D region,
+
+$$
+A = \iint_R dA
+$$
+
+where $R$ is the region (in our case, the disk of radius $R$) and
+$dA$ is an infinitesimal patch of area.
+
+**Switching to polar coordinates.** Circles are awkward in $(x, y)$
+coordinates because the boundary $x^2 + y^2 = R^2$ is curved. But
+in **polar coordinates** $(r, \theta)$, a circle is just $r = R$
+— much easier. Polar coordinates use,
+
+* $r$ — distance from the origin
+* $\theta$ — angle from the positive $x$-axis
+
+In polar coordinates, the area patch becomes,
+
+$$
+dA = r \, dr \, d\theta
+$$
+
+The extra $r$ shows up because patches near the edge of the disk
+are wider than patches near the center (a "pie slice" gets fatter
+as you move outward).
+
+**Setting up the integral.** To sweep out the entire disk of radius
+$R$, $r$ ranges from $0$ to $R$ and $\theta$ ranges from $0$ to
+$2\pi$ (a full revolution),
+
+$$
+A = \int_0^{2\pi} \int_0^R r \, dr \, d\theta
+$$
+
+**Inner integral** (integrate over $r$, treating $\theta$ as constant),
+
+$$
+\int_0^R r \, dr = \left[ \frac{r^2}{2} \right]_0^R = \frac{R^2}{2}
+$$
+
+**Outer integral** (integrate the result over $\theta$),
+
+$$
+A = \int_0^{2\pi} \frac{R^2}{2} \, d\theta = \frac{R^2}{2} \cdot 2\pi
+$$
+
+Therefore, the area of a circle of radius $R$ is,
+
+<table align="center"><tr><td>
+
+$$\displaystyle A = \pi R^2$$
+
+</td></tr></table>

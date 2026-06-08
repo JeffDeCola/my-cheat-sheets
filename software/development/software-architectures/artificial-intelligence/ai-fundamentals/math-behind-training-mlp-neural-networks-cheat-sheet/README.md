@@ -11,7 +11,7 @@ Table of Contents
 * [TL;DR](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#tldr)
 * [MATHEMATICAL MODEL OF NEURAL NETWORK](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mathematical-model-of-neural-network)
 * [MLP ARCHITECTURE USED FOR THIS EXAMPLE](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#mlp-architecture-used-for-this-example)
-* [THE TRAINING DATASET](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-training-dataset)
+* [THE TRAINING DATASET - AN EXAMPLE FOR THIS MLP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-training-dataset---an-example-for-this-mlp)
 * [STEP 1 - INITIALIZATION](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-1---initialization)
 * [STEP 2 - MIN & MAX VALUES](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#step-2---min--max-values)
 * [THE TRAINING LOOP](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/math-behind-training-mlp-neural-networks-cheat-sheet#the-training-loop)
@@ -44,6 +44,9 @@ Table of Contents
 
 Documentation and Reference
 
+* Proof
+  * my [golang proof](https://github.com/JeffDeCola/my-neural-networks/tree/main/math/the-math-behind-training-mlp-neural-networks#the-math-behind-training-mlp-neural-network)
+  of this math
 * AI Fundamentals
   * [artificial intelligence overview](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/artificial-intelligence-overview-cheat-sheet#artificial-intelligence-overview-cheat-sheet)
   * [neural networks](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/software/development/software-architectures/artificial-intelligence/ai-fundamentals/neural-networks-cheat-sheet#neural-networks-cheat-sheet)
@@ -327,7 +330,7 @@ where
   * One output value
     * $yo$
 
-## THE TRAINING DATASET
+## THE TRAINING DATASET - AN EXAMPLE FOR THIS MLP
 
 The training dataset is the data used to train the neural network.
 The dataset consists of input values and the corresponding output values.
